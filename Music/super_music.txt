@@ -1,0 +1,43 @@
+music_station = "super_station"
+music = {
+	song = "sp_event_japan_youkai_war_music"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "sp_event_yukari_path_the_end_music"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "sp_event_Youkai_civilwar_start_music"
+	chance = {
+		factor = 0
+	}
+}
+
+music = {
+	song = "sp_event_Remilia_path_the_end_music"
+	chance = {
+		factor = 0
+	}
+}
+
+music = {
+	song = "Thank_you_for_dears_music"
+	chance = {
+		factor = 0
+	}
+}
+
+music = {
+	song = "Notzan_ACT_Necrofantasia_music"
+	chance = {
+		factor = 0
+	}
+}
+
+
+

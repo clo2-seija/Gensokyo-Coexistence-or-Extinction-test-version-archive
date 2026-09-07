@@ -1,0 +1,35 @@
+music = {
+	name = "sp_event_japan_youkai_war_music"
+	file = "Akane_Pulse_of_Nirvana_Fires_of_Hokkai.ogg"
+}
+
+music = {
+	name = "sp_event_yukari_path_the_end_music"
+	file = "Melodic_Taste_Necrofantasia.ogg"
+}
+
+music = {
+	name = "sp_event_Youkai_civilwar_start_music"
+	file = "Pandemonic_planet _Trinity.ogg"
+}
+
+music = {
+	name = "sp_event_Remilia_path_the_end_music"
+	file = "Akane_Scarlet_Destiny.ogg"
+}
+
+music = {
+	name = "Thank_you_for_dears_music"
+	file = "Thank_you_for_dears.ogg"
+}
+
+music = {
+	name = "Notzan_ACT_Necrofantasia_music"
+	file = "Notzan_ACT_Necrofantasia.ogg"
+}
+
+
+
+
+
+
