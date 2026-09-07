@@ -1,0 +1,390 @@
+Youkai_japan_war = {
+	icon = decision_category_army_reform
+	picture = GFX_decision_cat_picture_operational_planning
+	priority = 1000
+	allowed = {
+		tag = KYO
+		
+	}
+	visible = {
+		has_completed_focus = KYO_zhunbeijiuxu
+		NOT = {
+			has_completed_focus = KYO_shenglizhihoudeyaoguaihuiyi
+		}
+	}  
+}
+
+KYO_barrier_crisis_category = {
+	icon = decision_category_army_reform
+	
+	priority = 950
+	scripted_gui = KYO_barrier_crisis_decision_ui
+
+	allowed = { 
+		original_tag = KYO
+	}
+
+	visible = {
+		OR = {
+			has_country_flag = KYO_barrier_crisis_active
+			has_country_flag = KYO_barrier_postwar_active
+		}
+		NOT = { has_country_flag = KYO_barrier_reconstruction_completed }
+		NOT = { has_country_flag = KYO_hyakki_system_disabled }
+	}
+
+	visible_when_empty = yes
+}
+KYO_hyakki_coalition_category = {
+	icon = decision_category_army_reform
+	
+	priority = 900
+	scripted_gui = KYO_hyakki_coalition_decision_ui
+
+	allowed = {
+		original_tag = KYO
+	}
+
+	visible = {
+		has_country_flag = KYO_hyakki_coalition_initialized
+		NOT = { has_country_flag = KYO_hyakki_system_disabled }
+	}
+
+	visible_when_empty = yes
+}
+
+KYO_lunar_campaign_category = {
+	icon = generic_prepare_civil_war
+	priority = 990
+	scripted_gui = KYO_lunar_campaign_decision_ui
+	allowed = { original_tag = KYO }
+	visible = {
+		has_country_flag = KYO_lunar_campaign_unlocked
+		has_country_flag = KYO_gensokyo_united_against_lunar
+	}
+	visible_when_empty = yes
+}
+
+
+
+
+
+KYO_postwar_interference_category = {
+	icon = GFX_decision_category_usa_congress
+	
+	scripted_gui = KYO_lunar_scale_decision_ui
+	priority = 1000
+	allowed = { original_tag = KYO }
+	visible = {
+		has_country_flag = KYO_lunar_scale_active
+		has_country_flag = KYO_postwar_transition_active
+		is_ai = no
+	}
+	visible_when_empty = yes
+}
+
+
+KYO_civil_war_decision = { 
+	icon = decision_category_army_reform
+	picture = GFX_decision_picture_gensokyo_civilwar 
+	scripted_gui = KYO_civil_war_decision_ui
+
+	priority = 1000
+	
+	allowed = {
+		original_tag = KYO
+	}
+
+	visible = {
+
+		
+
+			
+		has_country_flag = KYO_player_civil_war_faction
+		is_ai = no
+		has_country_flag = KYO_cws_system_active
+		NOT = { has_country_flag = KYO_civil_war_unified }
+		NOT = { has_global_flag = KYO_four_way_civil_war_over }
+		has_country_flag = KYO_four_way_civil_war_started
+	
+
+
+		
+		
+	}
+	visible_when_empty = yes
+
+	
+}
+
+
+
+# 舊「妖怪毀滅度」內容保留在 overlay 以便 backtrack，但永不顯示。
+KYO_civil_war_decision_legacy_disabled = {
+	icon = decision_category_army_reform
+	priority = -100
+	allowed = { always = no }
+	visible = { always = no }
+	visible_when_empty = no
+}
+
+Shrine_navy_decision = {
+	icon = GFX_decision_category_ITA_cooperation_programs
+	picture = GFX_decision_cat_picture_generic_shipbuilding
+	
+	visible = {
+		has_completed_focus =  KYO_Moriya_Shrine_ship
+	}
+	visible_when_empty = yes
+
+	
+}
+
+Tsukumogami_ship_decision = {
+	icon = GFX_decision_category_ITA_cooperation_programs
+	picture = GFX_decision_picture_Tsukumogami
+
+	priority = 100 
+	 
+	visible = {
+		has_completed_focus =  KYO_Tsukumogami_ship
+	}
+	visible_when_empty = yes          
+	
+}
+
+yukari_control_everything={
+	icon = GFX_decision_category_usa_congress
+	picture = GFX_decision_cat_picture_operational_planning
+
+	priority = 100 
+
+	visible = {
+		has_completed_focus = KYO_Yukari_start
+	}
+	visible_when_empty = no 
+} 
+   
+progressbar_category ={
+	icon = GFX_decision_category_gre_paying_ifc_debt
+	
+	priority = 100 
+ 
+	scripted_gui = ui_progressbar 
+	allowed = { 
+		always = yes  
+	}
+	visible = { 
+		tag = KYO
+		always = no
+	}   
+  
+	visible_when_empty = no
+}
+
+shou_progressbar_category ={
+	icon = GFX_decision_category_gre_paying_ifc_debt
+	 
+	priority = 150    
+ 
+	scripted_gui = shou_ui_progressbar  
+	allowed = {
+		always = yes
+	}    
+	visible = {
+		tag = KYO
+		has_country_flag = shou_progressbar_unlock
+	}
+ 
+	visible_when_empty = no
+}  
+
+five_precepts_progressbar_category = {
+
+	icon = GFX_decision_category_gre_paying_ifc_debt
+	 
+	priority = 200  
+
+	scripted_gui = five_precepts_ui_progressbar
+
+	allowed = {
+		always = yes 
+	} 
+	visible = {   
+		tag = KYO
+		has_country_flag = five_precepts_progressbar_unlock
+	}
+
+	visible_when_empty = no  
+} 
+ 
+scarlet_prestige_system = { 
+
+	icon = GFX_decision_category_generic_propaganda
+	 
+	priority = 250  
+ 
+	scripted_gui = scarlet_prestige_attached_window 
+
+	allowed = {
+		original_tag = KYO
+	}
+	visible = {
+		has_country_flag = unlock_remilia_unquie_decision
+	}
+	visible_when_empty = no
+}
+
+
+
+KYO_industry_projects = { 
+
+	icon = GFX_decision_category_generic_industry
+	picture = GFX_decision_cat_generic_mefo_bills
+	 
+	priority = 100
+ 
+	
+
+	allowed = {
+		original_tag = KYO
+	}
+
+	visible = {
+		has_country_flag = unlock_industry_projects
+	}
+
+	visible_when_empty = no
+}
+
+KYO_hijiri_world_revolution = {
+	icon = GFX_decision_category_generic_propaganda
+	picture = GFX_decision_cat_picture_operational_planning
+	priority = 260
+	allowed = {
+		original_tag = KYO
+	}
+	visible = {
+		has_country_flag = KYO_hijiri_world_salvation_started
+	}
+	visible_when_empty = no
+}
+
+
+KYO_seija_distribution_category= {
+
+	icon = GFX_decision_category_SOV_permanent_revolution
+	picture = GFX_decision_picture_seija_decision
+	priority = 300
+	allowed = { tag = KYO }
+	visible = { has_country_flag = KYO_seija_distribution_unlocked }
+}
+
+
+
+
+
+KYO_lunar_invasion_warning_category = {
+	icon = generic_prepare_civil_war
+	priority = 1005
+	allowed = { original_tag = KYO }
+	visible = {
+		has_country_flag = KYO_lunar_invasion_timer_active
+		NOT = { has_country_flag = KYO_lunar_invasion_started }
+	}
+	visible_when_empty = yes
+}
+
+KYO_lunar_reconstruction_category = {
+	icon = generic_political_discourse
+	priority = 850
+	allowed = { original_tag = KYO }
+	visible = {
+		has_country_flag = KYO_lunar_reconstruction_started
+		NOT = { has_country_flag = KYO_lunar_reconstruction_completed }
+	}
+	visible_when_empty = yes
+}
+
+KYO_love_story_category = {
+	icon = generic_political_discourse
+	priority = 500
+	allowed = { original_tag = KYO }
+	visible = { has_country_flag = KYO_love_story_choices_unlocked }
+	visible_when_empty = yes
+}
+
+KYO_yukari_archive_category = {
+	icon = generic_political_discourse
+	priority = 510
+	allowed = { original_tag = KYO }
+	visible = {
+		OR = {
+			AND = {
+				has_country_flag = KYO_reimi_archive_unlocked
+				NOT = { has_country_flag = KYO_reimi_archive_completed }
+			}
+			AND = {
+				has_country_flag = KYO_yukari_archive_unlocked
+				NOT = { has_country_flag = KYO_yukari_archive_completed }
+			}
+		}
+	}
+	visible_when_empty = yes
+}
+
+
+KYO_lunar_debug_category = {
+	icon = generic_prepare_civil_war
+	priority = 2000
+	allowed = { original_tag = KYO }
+	visible = {
+		original_tag = KYO
+		is_debug = yes
+	}
+	visible_when_empty = yes
+}
+
+KYO_first_war_debug_category = {
+	icon = GFX_decision_category_usa_congress
+	picture = GFX_decision_cat_picture_operational_planning
+	priority = 2000
+
+	allowed = {
+		original_tag = KYO
+	}
+
+	visible = {
+		original_tag = KYO
+		is_debug = yes
+		
+	}
+
+	visible_when_empty = yes
+}
+
+KYO_cws_debug_category = {
+	icon = decision_category_army_reform
+	priority = 2000
+	allowed = { original_tag = KYO }
+	visible = {
+		is_debug = yes
+		is_ai = no
+		always = no
+	}
+	visible_when_empty = yes
+}
+
+KYO_lunar_scale_debug_category = {
+	icon = GFX_decision_category_usa_congress
+	picture = GFX_decision_cat_picture_operational_planning
+	priority = 3000
+	allowed = { original_tag = KYO }
+	visible = {
+		original_tag = KYO
+		is_debug = yes
+		always = no
+	}
+	visible_when_empty = yes
+}
+# YAKUMO_ROUTE_V05_CATEGORIES_END

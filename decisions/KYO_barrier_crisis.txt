@@ -1,0 +1,1577 @@
+KYO_barrier_crisis_category = {
+
+	# 十節點制下每 20 日惡化一次。
+	KYO_barrier_deterioration_cycle = {
+		icon = generic_prepare_civil_war
+		days_mission_timeout = 20
+		is_good = no
+
+		activation = {
+			has_country_flag = KYO_barrier_crisis_active
+			NOT = {
+				has_country_flag = KYO_barrier_postwar_active
+			}
+		}
+		available = {
+			always = no
+		}
+
+		timeout_effect = {
+			hidden_effect = {
+				KYO_worsen_random_barrier_node = yes
+			}
+			custom_effect_tooltip = KYO_barrier_going_to_worsen_tt
+			
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = KYO_barrier_timeout_crisis_active
+					}
+				}
+				random_list = {
+					30 = {
+						set_country_flag = KYO_barrier_timeout_crisis_active
+						activate_mission = KYO_barrier_timeout_crisis
+						custom_effect_tooltip = KYO_barrier_timeout_crisis_mission_tt
+						custom_effect_tooltip = KYO_barrier_going_to_worsen_tt
+					}
+					70 = {
+						custom_effect_tooltip = KYO_barrier_going_to_worsen_tt
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = KYO_barrier_crisis_active
+				}
+				activate_mission = KYO_barrier_deterioration_cycle
+			}
+		}
+	}
+
+	# 戰後改為 150 日惡化一次，保留為八雲紫路線的低頻長期系統。
+	KYO_barrier_postwar_deterioration_cycle = {
+		icon = generic_prepare_civil_war
+		days_mission_timeout = 150
+		is_good = no
+		activation = { has_country_flag = KYO_barrier_postwar_active }
+		available = { always = no }
+		timeout_effect = {
+			custom_effect_tooltip = KYO_barrier_going_to_worsen_tt
+			hidden_effect = {
+
+				KYO_check_barrier_rebuild_completion = yes
+
+				if = {
+					limit = { has_country_flag = KYO_barrier_postwar_active }
+					KYO_worsen_random_barrier_node = yes
+					activate_mission = KYO_barrier_postwar_deterioration_cycle
+				}
+				
+			}
+			
+		}
+	}
+
+	KYO_barrier_timeout_crisis = {
+		icon = generic_operation
+		days_mission_timeout = 45
+		is_good = no
+		activation = {
+			has_country_flag = KYO_barrier_timeout_crisis_active
+		}
+		available = {
+			always = no
+		}
+		timeout_effect = {
+			hidden_effect = {
+				KYO_apply_barrier_timeout_disaster = yes
+			}
+			custom_effect_tooltip = KYO_barrier_going_to_worsen_tt
+			custom_effect_tooltip = KYO_barrier_going_to_worsen_tt
+			clr_country_flag = KYO_barrier_timeout_crisis_active
+		}
+	}
+
+	KYO_resolve_barrier_timeout_crisis = {
+		icon = generic_construction
+		cost = 60
+		days_remove = 14
+		visible = {
+			has_country_flag = KYO_barrier_timeout_crisis_active
+		}
+		available = {
+			has_country_flag = KYO_barrier_timeout_crisis_active
+			command_power > 29
+		}
+		cancel_trigger = {
+			NOT = {
+				has_country_flag = KYO_barrier_timeout_crisis_active
+			}
+		}
+		complete_effect = {
+			KYO_resolve_barrier_timeout_crisis = yes
+		}
+	}
+
+	# [1] 博麗神社：四個通用決議，後接兩個地區特色決議。
+
+	
+
+	KYO_evacuate_hakurei_node = {
+		icon = generic_civil_support
+		cost = 25
+		days_remove = 14
+		days_re_enable = 90
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 1
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_hakurei > 1
+			}
+			NOT = {
+				has_country_flag = KYO_barrier_hakurei_evacuated
+			}
+		}
+
+		complete_effect = {
+			KYO_evacuate_hakurei_node = yes
+
+			add_manpower = 200
+		}
+	}
+
+	KYO_repair_hakurei_node = {
+		icon = generic_construction
+		cost = 35
+		days_remove = 14
+		days_re_enable = 30
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 1
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_hakurei > 0
+			}
+			command_power > 14
+		}
+
+		complete_effect = {
+			KYO_repair_hakurei_node = yes
+		}
+	}
+
+	KYO_transfer_hakurei_node = {
+		icon = generic_operation
+		cost = 20
+		days_remove = 3
+		days_re_enable = 45
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 1
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_hakurei > 0
+			}
+		}
+
+		complete_effect = {
+			KYO_transfer_hakurei_node = yes
+		}
+	}
+
+	KYO_hakurei_local_restriction = {
+		icon = generic_civil_support
+		cost = 30
+		days_remove = 5
+		days_re_enable = 60
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 1
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_hakurei > 0
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KYO_hakurei_local_restriction_tt
+			subtract_from_variable = {
+				KYO_barrier_hakurei = 1
+			}
+			add_timed_idea = {
+				idea = KYO_barrier_hakurei_ritual_restriction_idea
+				days = 45
+			}
+			hidden_effect = {
+				KYO_clamp_barrier_nodes = yes
+			}
+		}
+	}
+
+	KYO_hakurei_specialist_intervention = {
+		icon = generic_construction
+		cost = 55
+		days_remove = 10
+		days_re_enable = 90
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 1
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_hakurei > 1
+			}
+			command_power > 24
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KYO_hakurei_specialist_intervention_tt
+			subtract_from_variable = {
+				KYO_barrier_hakurei = 2
+			}
+			add_command_power = -25
+			hidden_effect = {
+				KYO_clamp_barrier_nodes = yes
+			}
+		}
+	}
+
+	# [2] 妖怪山：四個通用決議，後接兩個地區特色決議。
+
+	
+	
+
+	KYO_evacuate_mountain_node = {
+		icon = generic_civil_support
+		cost = 25
+		days_remove = 14
+		days_re_enable = 90
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 2
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_mountain > 1
+			}
+			NOT = {
+				has_country_flag = KYO_barrier_mountain_evacuated
+			}
+		}
+
+		complete_effect = {
+			KYO_evacuate_mountain_node = yes
+
+			add_manpower = 4000
+		}
+	}
+
+	KYO_repair_mountain_node = {
+		icon = generic_construction
+		cost = 35
+		days_remove = 14
+		days_re_enable = 30
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 2
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_mountain > 0
+			}
+			command_power > 14
+		}
+
+		complete_effect = {
+			KYO_repair_mountain_node = yes
+		}
+	}
+
+	KYO_transfer_mountain_node = {
+		icon = generic_operation
+		cost = 20
+		days_remove = 3
+		days_re_enable = 45
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 2
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_mountain > 0
+			}
+		}
+
+		complete_effect = {
+			KYO_transfer_mountain_node = yes
+		}
+	}
+
+	KYO_mountain_local_restriction = {
+		icon = generic_civil_support
+		cost = 30
+		days_remove = 5
+		days_re_enable = 60
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 2
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_mountain > 0
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KYO_mountain_local_restriction_tt
+			subtract_from_variable = {
+				KYO_barrier_mountain = 1
+			}
+			add_timed_idea = {
+				idea = KYO_barrier_mountain_press_suspension_idea
+				days = 45
+			}
+			hidden_effect = {
+				KYO_clamp_barrier_nodes = yes
+			}
+		}
+	}
+
+	KYO_mountain_specialist_intervention = {
+		icon = generic_construction
+		cost = 55
+		days_remove = 10
+		days_re_enable = 90
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 2
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_mountain > 1
+			}
+			command_power > 24
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KYO_mountain_specialist_intervention_tt
+			subtract_from_variable = {
+				KYO_barrier_mountain = 2
+			}
+			add_command_power = -25
+			hidden_effect = {
+				KYO_clamp_barrier_nodes = yes
+			}
+		}
+	}
+
+	# [3] 迷途竹林：四個通用決議，後接兩個地區特色決議。
+
+	
+
+	KYO_evacuate_bamboo_node = {
+		icon = generic_civil_support
+		cost = 25
+		days_remove = 14
+		days_re_enable = 90
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 3
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_bamboo > 1
+			}
+			NOT = {
+				has_country_flag = KYO_barrier_bamboo_evacuated
+			}
+		}
+
+		complete_effect = {
+			KYO_evacuate_bamboo_node = yes
+			add_manpower = 2000
+		}
+	}
+
+	KYO_repair_bamboo_node = {
+		icon = generic_construction
+		cost = 35
+		days_remove = 14
+		days_re_enable = 30
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 3
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_bamboo > 0
+			}
+			command_power > 14
+		}
+
+		complete_effect = {
+			KYO_repair_bamboo_node = yes
+		}
+	}
+
+	KYO_transfer_bamboo_node = {
+		icon = generic_operation
+		cost = 20
+		days_remove = 3
+		days_re_enable = 45
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 3
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_bamboo > 0
+			}
+		}
+
+		complete_effect = {
+			KYO_transfer_bamboo_node = yes
+		}
+	}
+
+	KYO_bamboo_local_restriction = {
+		icon = generic_civil_support
+		cost = 30
+		days_remove = 5
+		days_re_enable = 60
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 3
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_bamboo > 0
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KYO_bamboo_local_restriction_tt
+			subtract_from_variable = {
+				KYO_barrier_bamboo = 1
+			}
+			add_timed_idea = {
+				idea = KYO_barrier_bamboo_path_seal_idea
+				days = 45
+			}
+			hidden_effect = {
+				KYO_clamp_barrier_nodes = yes
+			}
+		}
+	}
+
+	KYO_bamboo_specialist_intervention = {
+		icon = generic_construction
+		cost = 55
+		days_remove = 10
+		days_re_enable = 90
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 3
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_bamboo > 1
+			}
+			command_power > 24
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KYO_bamboo_specialist_intervention_tt
+			subtract_from_variable = {
+				KYO_barrier_bamboo = 2
+			}
+			add_command_power = -25
+			hidden_effect = {
+				KYO_clamp_barrier_nodes = yes
+			}
+		}
+	}
+
+	# [4] 魔法森林：四個通用決議，後接兩個地區特色決議。
+
+	
+
+	KYO_evacuate_forest_node = {
+		icon = generic_civil_support
+		cost = 25
+		days_remove = 14
+		days_re_enable = 90
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 4
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_forest > 1
+			}
+			NOT = {
+				has_country_flag = KYO_barrier_forest_evacuated
+			}
+		}
+
+		complete_effect = {
+			KYO_evacuate_forest_node = yes
+			add_manpower = 1000
+		}
+	}
+
+	KYO_repair_forest_node = {
+		icon = generic_construction
+		cost = 35
+		days_remove = 14
+		days_re_enable = 30
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 4
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_forest > 0
+			}
+			command_power > 14
+		}
+
+		complete_effect = {
+			KYO_repair_forest_node = yes
+		}
+	}
+
+	KYO_transfer_forest_node = {
+		icon = generic_operation
+		cost = 20
+		days_remove = 3
+		days_re_enable = 45
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 4
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_forest > 0
+			}
+		}
+
+		complete_effect = {
+			KYO_transfer_forest_node = yes
+		}
+	}
+
+	KYO_forest_local_restriction = {
+		icon = generic_civil_support
+		cost = 30
+		days_remove = 5
+		days_re_enable = 60
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 4
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_forest > 0
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KYO_forest_local_restriction_tt
+			subtract_from_variable = {
+				KYO_barrier_forest = 1
+			}
+			add_timed_idea = {
+				idea = KYO_barrier_forest_experiment_moratorium_idea
+				days = 45
+			}
+			hidden_effect = {
+				KYO_clamp_barrier_nodes = yes
+			}
+		}
+	}
+
+	KYO_forest_specialist_intervention = {
+		icon = generic_construction
+		cost = 55
+		days_remove = 10
+		days_re_enable = 90
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 4
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_forest > 1
+			}
+			command_power > 24
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KYO_forest_specialist_intervention_tt
+			subtract_from_variable = {
+				KYO_barrier_forest = 2
+			}
+			add_command_power = -25
+			hidden_effect = {
+				KYO_clamp_barrier_nodes = yes
+			}
+		}
+	}
+
+	# [5] 舊地獄舊都：四個通用決議，後接兩個地區特色決議。
+
+	
+
+	KYO_evacuate_old_capital_node = {
+		icon = generic_civil_support
+		cost = 25
+		days_remove = 14
+		days_re_enable = 90
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 5
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_old_capital > 1
+			}
+			NOT = {
+				has_country_flag = KYO_barrier_old_capital_evacuated
+			}
+		}
+
+		complete_effect = {
+			KYO_evacuate_old_capital_node = yes
+			add_manpower = 10000
+		}
+	}
+
+	KYO_repair_old_capital_node = {
+		icon = generic_construction
+		cost = 35
+		days_remove = 14
+		days_re_enable = 30
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 5
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_old_capital > 0
+			}
+			command_power > 14
+		}
+
+		complete_effect = {
+			KYO_repair_old_capital_node = yes
+		}
+	}
+
+	KYO_transfer_old_capital_node = {
+		icon = generic_operation
+		cost = 20
+		days_remove = 3
+		days_re_enable = 45
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 5
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_old_capital > 0
+			}
+		}
+
+		complete_effect = {
+			KYO_transfer_old_capital_node = yes
+		}
+	}
+
+	KYO_old_capital_local_restriction = {
+		icon = generic_civil_support
+		cost = 30
+		days_remove = 5
+		days_re_enable = 60
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 5
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_old_capital > 0
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KYO_old_capital_local_restriction_tt
+			subtract_from_variable = {
+				KYO_barrier_old_capital = 1
+			}
+			add_timed_idea = {
+				idea = KYO_barrier_old_capital_output_curtailment_idea
+				days = 45
+			}
+			hidden_effect = {
+				KYO_clamp_barrier_nodes = yes
+			}
+		}
+	}
+
+	KYO_old_capital_specialist_intervention = {
+		icon = generic_construction
+		cost = 55
+		days_remove = 10
+		days_re_enable = 90
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 5
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_old_capital > 1
+			}
+			command_power > 24
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KYO_old_capital_specialist_intervention_tt
+			subtract_from_variable = {
+				KYO_barrier_old_capital = 2
+			}
+			add_command_power = -25
+			hidden_effect = {
+				KYO_clamp_barrier_nodes = yes
+			}
+		}
+	}
+
+	# [6] 人里：四個通用決議，後接兩個地區特色決議。
+
+	
+
+	KYO_evacuate_human_village_node = {
+		icon = generic_civil_support
+		cost = 25
+		days_remove = 14
+		days_re_enable = 90
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 6
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_human_village > 1
+			}
+			NOT = {
+				has_country_flag = KYO_barrier_human_village_evacuated
+			}
+		}
+
+		complete_effect = {
+			KYO_evacuate_human_village_node = yes
+			add_manpower = 20000
+		}
+	}
+
+	KYO_repair_human_village_node = {
+		icon = generic_construction
+		cost = 35
+		days_remove = 14
+		days_re_enable = 30
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 6
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_human_village > 0
+			}
+			command_power > 14
+		}
+
+		complete_effect = {
+			KYO_repair_human_village_node = yes
+		}
+	}
+
+	KYO_transfer_human_village_node = {
+		icon = generic_operation
+		cost = 20
+		days_remove = 3
+		days_re_enable = 45
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 6
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_human_village > 0
+			}
+		}
+
+		complete_effect = {
+			KYO_transfer_human_village_node = yes
+		}
+	}
+
+	KYO_human_village_local_restriction = {
+		icon = generic_civil_support
+		cost = 30
+		days_remove = 5
+		days_re_enable = 60
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 6
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_human_village > 0
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KYO_human_village_local_restriction_tt
+			subtract_from_variable = {
+				KYO_barrier_human_village = 1
+			}
+			add_timed_idea = {
+				idea = KYO_barrier_human_village_school_closure_idea
+				days = 45
+			}
+			hidden_effect = {
+				KYO_clamp_barrier_nodes = yes
+			}
+		}
+	}
+
+	KYO_human_village_specialist_intervention = {
+		icon = generic_construction
+		cost = 55
+		days_remove = 10
+		days_re_enable = 90
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 6
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_human_village > 1
+			}
+			command_power > 24
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KYO_human_village_specialist_intervention_tt
+			subtract_from_variable = {
+				KYO_barrier_human_village = 2
+			}
+			add_command_power = -25
+			hidden_effect = {
+				KYO_clamp_barrier_nodes = yes
+			}
+		}
+	}
+
+	# [7] 紅魔館霧之湖：四個通用決議，後接兩個地區特色決議。
+
+	
+
+	KYO_evacuate_scarlet_lake_node = {
+		icon = generic_civil_support
+		cost = 25
+		days_remove = 14
+		days_re_enable = 90
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 7
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_scarlet_lake > 1
+			}
+			NOT = {
+				has_country_flag = KYO_barrier_scarlet_lake_evacuated
+			}
+		}
+
+		complete_effect = {
+			KYO_evacuate_scarlet_lake_node = yes
+			add_manpower = 1000
+		}
+	}
+
+	KYO_repair_scarlet_lake_node = {
+		icon = generic_construction
+		cost = 35
+		days_remove = 14
+		days_re_enable = 30
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 7
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_scarlet_lake > 0
+			}
+			command_power > 14
+		}
+
+		complete_effect = {
+			KYO_repair_scarlet_lake_node = yes
+		}
+	}
+
+	KYO_transfer_scarlet_lake_node = {
+		icon = generic_operation
+		cost = 20
+		days_remove = 3
+		days_re_enable = 45
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 7
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_scarlet_lake > 0
+			}
+		}
+
+		complete_effect = {
+			KYO_transfer_scarlet_lake_node = yes
+		}
+	}
+
+	KYO_scarlet_lake_local_restriction = {
+		icon = generic_civil_support
+		cost = 30
+		days_remove = 5
+		days_re_enable = 60
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 7
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_scarlet_lake > 0
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KYO_scarlet_lake_local_restriction_tt
+			subtract_from_variable = {
+				KYO_barrier_scarlet_lake = 1
+			}
+			add_timed_idea = {
+				idea = KYO_barrier_scarlet_lake_fog_lockdown_idea
+				days = 45
+			}
+			hidden_effect = {
+				KYO_clamp_barrier_nodes = yes
+			}
+		}
+	}
+
+	KYO_scarlet_lake_specialist_intervention = {
+		icon = generic_construction
+		cost = 55
+		days_remove = 10
+		days_re_enable = 90
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 7
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_scarlet_lake > 1
+			}
+			command_power > 24
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KYO_scarlet_lake_specialist_intervention_tt
+			subtract_from_variable = {
+				KYO_barrier_scarlet_lake = 2
+			}
+			add_command_power = -25
+			hidden_effect = {
+				KYO_clamp_barrier_nodes = yes
+			}
+		}
+	}
+
+	# [8] 太陽花田：四個通用決議，後接兩個地區特色決議。
+
+	
+
+	KYO_evacuate_sunflower_node = {
+		icon = generic_civil_support
+		cost = 25
+		days_remove = 14
+		days_re_enable = 90
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 8
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_sunflower > 1
+			}
+			NOT = {
+				has_country_flag = KYO_barrier_sunflower_evacuated
+			}
+		}
+
+		complete_effect = {
+			KYO_evacuate_sunflower_node = yes
+			add_manpower = 2000
+		}
+	}
+
+	KYO_repair_sunflower_node = {
+		icon = generic_construction
+		cost = 35
+		days_remove = 14
+		days_re_enable = 30
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 8
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_sunflower > 0
+			}
+			command_power > 14
+		}
+
+		complete_effect = {
+			KYO_repair_sunflower_node = yes
+		}
+	}
+
+	KYO_transfer_sunflower_node = {
+		icon = generic_operation
+		cost = 20
+		days_remove = 3
+		days_re_enable = 45
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 8
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_sunflower > 0
+			}
+		}
+
+		complete_effect = {
+			KYO_transfer_sunflower_node = yes
+		}
+	}
+
+	KYO_sunflower_local_restriction = {
+		icon = generic_civil_support
+		cost = 30
+		days_remove = 5
+		days_re_enable = 60
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 8
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_sunflower > 0
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KYO_sunflower_local_restriction_tt
+			subtract_from_variable = {
+				KYO_barrier_sunflower = 1
+			}
+			add_timed_idea = {
+				idea = KYO_barrier_sunflower_field_closure_idea
+				days = 45
+			}
+			hidden_effect = {
+				KYO_clamp_barrier_nodes = yes
+			}
+		}
+	}
+
+	KYO_sunflower_specialist_intervention = {
+		icon = generic_construction
+		cost = 55
+		days_remove = 10
+		days_re_enable = 90
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 8
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_sunflower > 1
+			}
+			command_power > 24
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KYO_sunflower_specialist_intervention_tt
+			subtract_from_variable = {
+				KYO_barrier_sunflower = 2
+			}
+			add_command_power = -25
+			hidden_effect = {
+				KYO_clamp_barrier_nodes = yes
+			}
+		}
+	}
+
+	# [9] 彼岸：四個通用決議，後接兩個地區特色決議。
+
+
+	KYO_evacuate_higan_node = {
+		icon = generic_civil_support
+		cost = 25
+		days_remove = 14
+		days_re_enable = 90
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 9
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_higan > 1
+			}
+			NOT = {
+				has_country_flag = KYO_barrier_higan_evacuated
+			}
+		}
+
+		complete_effect = {
+			KYO_evacuate_higan_node = yes
+			add_manpower = 666
+		}
+	}
+
+	KYO_repair_higan_node = {
+		icon = generic_construction
+		cost = 35
+		days_remove = 14
+		days_re_enable = 30
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 9
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_higan > 0
+			}
+			command_power > 14
+		}
+
+		complete_effect = {
+			KYO_repair_higan_node = yes
+		}
+	}
+
+	KYO_transfer_higan_node = {
+		icon = generic_operation
+		cost = 20
+		days_remove = 3
+		days_re_enable = 45
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 9
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_higan > 0
+			}
+		}
+
+		complete_effect = {
+			KYO_transfer_higan_node = yes
+		}
+	}
+
+	KYO_higan_local_restriction = {
+		icon = generic_civil_support
+		cost = 30
+		days_remove = 5
+		days_re_enable = 60
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 9
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_higan > 0
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KYO_higan_local_restriction_tt
+			subtract_from_variable = {
+				KYO_barrier_higan = 1
+			}
+			add_timed_idea = {
+				idea = KYO_barrier_higan_ferry_restriction_idea
+				days = 45
+			}
+			hidden_effect = {
+				KYO_clamp_barrier_nodes = yes
+			}
+		}
+	}
+
+	KYO_higan_specialist_intervention = {
+		icon = generic_construction
+		cost = 55
+		days_remove = 10
+		days_re_enable = 90
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 9
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_higan > 1
+			}
+			command_power > 24
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KYO_higan_specialist_intervention_tt
+			subtract_from_variable = {
+				KYO_barrier_higan = 2
+			}
+			add_command_power = -25
+			hidden_effect = {
+				KYO_clamp_barrier_nodes = yes
+			}
+		}
+	}
+
+	# [10] 幽明結界：四個通用決議，後接兩個地區特色決議。
+
+
+
+	KYO_evacuate_netherworld_node = {
+		icon = generic_civil_support
+		cost = 25
+		days_remove = 14
+		days_re_enable = 90
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 10
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_netherworld > 1
+			}
+			NOT = {
+				has_country_flag = KYO_barrier_netherworld_evacuated
+			}
+		}
+
+		complete_effect = {
+			KYO_evacuate_netherworld_node = yes
+			add_manpower = 2500
+		}
+	}
+
+	KYO_repair_netherworld_node = {
+		icon = generic_construction
+		cost = 35
+		days_remove = 14
+		days_re_enable = 30
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 10
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_netherworld > 0
+			}
+			command_power > 14
+		}
+
+		complete_effect = {
+			KYO_repair_netherworld_node = yes
+		}
+	}
+
+	KYO_transfer_netherworld_node = {
+		icon = generic_operation
+		cost = 20
+		days_remove = 3
+		days_re_enable = 45
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 10
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_netherworld > 0
+			}
+		}
+
+		complete_effect = {
+			KYO_transfer_netherworld_node = yes
+		}
+	}
+
+	KYO_netherworld_local_restriction = {
+		icon = generic_civil_support
+		cost = 30
+		days_remove = 5
+		days_re_enable = 60
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 10
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_netherworld > 0
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KYO_netherworld_local_restriction_tt
+			subtract_from_variable = {
+				KYO_barrier_netherworld = 1
+			}
+			add_timed_idea = {
+				idea = KYO_barrier_netherworld_crossing_restriction_idea
+				days = 45
+			}
+			hidden_effect = {
+				KYO_clamp_barrier_nodes = yes
+			}
+		}
+	}
+
+	KYO_netherworld_specialist_intervention = {
+		icon = generic_construction
+		cost = 55
+		days_remove = 10
+		days_re_enable = 90
+
+		visible = {
+			check_variable = {
+				KYO_barrier_selected_node = 10
+			}
+		}
+
+		available = {
+			check_variable = {
+				KYO_barrier_netherworld > 1
+			}
+			command_power > 24
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = KYO_netherworld_specialist_intervention_tt
+			subtract_from_variable = {
+				KYO_barrier_netherworld = 2
+			}
+			add_command_power = -25
+			hidden_effect = {
+				KYO_clamp_barrier_nodes = yes
+			}
+		}
+	}
+
+	KYO_yukari_central_barrier_network = {
+		icon = generic_operation
+		cost = 45
+		days_remove = 5
+		days_re_enable = 30
+		visible = {
+			has_country_flag = KYO_yukari_barrier_method_unlocked
+		}
+		complete_effect = {
+			KYO_use_yukari_central_barrier_network = yes
+		}
+	}
+
+	KYO_kasen_grassroots_maintenance = {
+		icon = generic_civil_support
+		cost = 30
+		days_remove = 10
+		days_re_enable = 30
+		visible = {
+			has_country_flag = KYO_kasen_barrier_method_unlocked
+		}
+		complete_effect = {
+			KYO_use_kasen_grassroots_maintenance = yes
+		}
+	}
+
+	KYO_okina_backdoor_redeployment = {
+		icon = generic_prepare_civil_war
+		cost = 25
+		days_remove = 3
+		days_re_enable = 30
+		visible = {
+			has_country_flag = KYO_okina_barrier_method_unlocked
+		}
+		complete_effect = {
+			KYO_use_okina_backdoor_redeployment = yes
+		}
+	}
+}
