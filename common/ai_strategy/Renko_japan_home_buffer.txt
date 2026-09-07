@@ -1,0 +1,120 @@
+# 战争期间常驻本土准备兵池，关东、关西、北九州共用 30% 需求。
+Renko_japan_home_buffer = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		has_war = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = put_unit_buffers
+		order_id = 9190
+		ratio = 0.3
+		states = { 282 531 528 }
+		area = Renko_japan_home_islands
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = yes
+	}
+}
+
+# 对幻想乡作战，或任一本土州被当前敌国控制时，集中回防。
+# 与常态兵池共享 order_id，取最高 ratio；1.2 用超额需求确保回防。
+Renko_japan_home_recall = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		has_war = yes
+		OR = {
+			has_war_with = KYO
+			any_enemy_country = {
+				OR = {
+					controls_state = 282  # 关东
+					controls_state = 531  # 关西
+					controls_state = 528  # 北九州
+					controls_state = 529  # 山阳
+					controls_state = 530  # 四国
+					controls_state = 532  # 东海道
+					controls_state = 533  # 北东北
+					controls_state = 534  # 甲信越
+					controls_state = 535  # 北陆
+					controls_state = 536  # 北海道
+					controls_state = 1018 # 南九州
+					controls_state = 1019 # 南东北
+					controls_state = 1020 # 山阴
+				}
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = put_unit_buffers
+		order_id = 9190
+		ratio = 1.2
+		states = { 282 531 528 }
+		area = Renko_japan_home_islands
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = yes
+	}
+
+	# 与回防兵池共同启停，提高本土前线索兵需求，休整期间也保持。
+	ai_strategy = {
+		type = front_unit_request
+		area = Renko_japan_home_islands
+		value = 70
+	}
+}
+
+# 仅日本本土陆上前线按 60 天循环：强攻 30 天、自行判断 15 天、休整 15 天。
+# global.num_days 仅用于计算周期相位；作用范围由本土 area 限定。
+Renko_japan_home_attack_cycle = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		has_war = yes
+		set_temp_variable = { Renko_japan_home_cycle_day = global.num_days }
+		modulo_temp_variable = { Renko_japan_home_cycle_day = 60 }
+		check_variable = { Renko_japan_home_cycle_day < 30 }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+		area = Renko_japan_home_islands
+		ratio = 0
+		priority = 9999
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+		manual_attack = yes
+	}
+}
+
+# 日本本土陆上前线在周期最后 15 天停止计划进攻、积攒计划，保留局部攻击。
+Renko_japan_home_rest_cycle = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		has_war = yes
+		set_temp_variable = { Renko_japan_home_cycle_day = global.num_days }
+		modulo_temp_variable = { Renko_japan_home_cycle_day = 60 }
+		check_variable = { Renko_japan_home_cycle_day > 44 }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+		area = Renko_japan_home_islands
+		ratio = 0
+		priority = 9999
+		ordertype = front
+		execution_type = careful
+		execute_order = no
+		manual_attack = yes
+	}
+}

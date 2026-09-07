@@ -1,0 +1,6 @@
+areas = {
+	Renko_japan_home_islands = {
+		# 日本中部、北部、南部，覆盖列岛本土。
+		strategic_regions = { 154 299 300 }
+	}
+}
