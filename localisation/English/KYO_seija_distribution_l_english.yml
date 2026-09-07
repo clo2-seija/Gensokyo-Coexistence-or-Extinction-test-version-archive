@@ -1,0 +1,229 @@
+﻿l_english:
+
+  # ===========================================================================
+  # 正邪路线——浩劫后的重建配给
+  #
+  # 为兼容现有决议脚本，保留原有 localization key 与变量名称：
+  # common_youkai  → 灾民安置与医疗
+  # human          → 粮食生产与民生
+  # revolutionary  → 工坊复产与建设
+  # opposition     → 交通运输与防卫
+  #
+  # 画面上不再把种族与政治立场混为四类人群，而是呈现四条重建生命线。
+  # ===========================================================================
+
+  KYO_reconstruction_command:0 "The command post for rebuilding from ruins"
+  KYO_reconstruction_command_desc:0 "The revolution ended the old regime, but it did not allow the collapsed houses to rise again, nor did it refill the empty granaries. The civil war left behind wounded, displaced people, abandoned fields, extinguished workshops, and roads cut off by artillery fire. Gensokyo survived, but had not yet truly returned from the catastrophe.\n\n Seija set up the reconstruction command post in an old hall without a proper roof. There will be no victory celebration here; only an inventory of medicine, food, timber, tools, vehicles, and the remaining working hands. Every piece of supplies must be sent to where it is most needed, to bring light back to the shelters, to let the fields sprout again, to rekindle the fires, and to allow the first supply vehicle to traverse the ruins.\n\n She has already overturned the old world. Now, she will prove that she too can rebuild a new Gensokyo from the rubble."
+
+  # ---------------------------------------------------------------------------
+  # 第一条生命线：灾民安置与医疗
+  # ---------------------------------------------------------------------------
+
+  KYO_common_youkai_satisfaction_0:0 "Resettlement and Rescue: Nowhere to Go"
+  KYO_common_youkai_satisfaction_1:0 "Resettlement and Rescue: Tents in the Wind and Rain"
+  KYO_common_youkai_satisfaction_2:0 "Resettlement and Rescue: Barely Enough Room to Stay"
+  KYO_common_youkai_satisfaction_3:0 "Resettlement and Rescue: Lights Reappear"
+  KYO_common_youkai_satisfaction_4:0 "Resettlement and Rescue: New Homes Completed"
+  KYO_common_youkai_satisfaction_5:0 "Resettlement and Rescue: Homes Reborn"
+
+  KYO_common_youkai_satisfaction_0_desc:0 "Temporary shelters could no longer accommodate the continuous influx of refugees. The wounded were not receiving treatment, and those who had lost their homes and the poor began to leave the rationing areas to find their own way to survive."
+  KYO_common_youkai_satisfaction_1_desc:0 "Rags, tents, and crumbling walls barely provided shelter from the night wind, but medicine, beds, and clean drinking water were severely lacking. Many had survived the war, but might not survive this season."
+  KYO_common_youkai_satisfaction_2_desc:0 "The most basic shelter, drinking water, and first aid had been guaranteed. The victims are still crammed into temporary shelters, but at least they don't have to worry about being driven back to the ruins every day."
+  KYO_common_youkai_satisfaction_3_desc:0 "The ambulance station began to operate steadily, and temporary shelters were gradually replaced with houses suitable for wintering. As night fell, lights were once again lit in some previously dark settlements."
+  KYO_common_youkai_satisfaction_4_desc:0 "Damaged settlements have been gradually repaired, long-term wounded have received care, and displaced people have been resettled in new communities. Reconstruction is finally no longer just about sustaining life."
+  KYO_common_youkai_satisfaction_5_desc:0 "The camps that were once crowded with wounded and refugees have been transformed into new streets and alleys. Survivors from different backgrounds have settled here, forming communities born from the ruins."
+
+  # ---------------------------------------------------------------------------
+  # 第二条生命线：粮食生产与民生
+  # ---------------------------------------------------------------------------
+
+  KYO_human_satisfaction_0:0 "Food and Livelihood: Grain Warehouses Running Low"
+  KYO_human_satisfaction_1:0 "Food and Livelihood: Hunger Spreads"
+  KYO_human_satisfaction_2:0 "Food and Livelihood: Minimum Food Stipend"
+  KYO_human_satisfaction_3:0 "Food and Livelihood: Cooking Smoke Returns"
+  KYO_human_satisfaction_4:0 "Food and People's Livelihood: Granaries Gradually Filling"
+  KYO_human_satisfaction_5:0 "Food and Livelihood: Abundant New Life"
+
+  KYO_human_satisfaction_0_desc:0 "The granaries are empty, the fields are abandoned and unattended, and the catch from fishing and gathering from the mountains cannot fill the gap. Hunger is pushing the survivors back into a cycle of scrambling and fleeing."
+  KYO_human_satisfaction_1_desc:0 "Rations were sporadic and unavailable, forcing farmers to use their harvested grain to stave off hunger. Farmers, fishermen, and gatherers continued to work, but everyone knew the next food shortage could be just around the corner."
+  KYO_human_satisfaction_2_desc:0 "Minimum food rations were secured, and the fields were being cultivated again. Gensokyo could not yet feed everyone, but the worst of the famine had been averted."
+  KYO_human_satisfaction_3_desc:0 "Fields, canals, mills, and communal kitchens are gradually returning to use. Morning cooking fires burn once more, and chimney smoke is the first familiar sight to return among the ruins."
+  KYO_human_satisfaction_4_desc:0 "Food production is sufficient to maintain stable rations and leave reserves for the next season. People can finally think about next year, instead of just calculating how much rice they have left tonight."
+  KYO_human_satisfaction_5_desc:0 "A new food network connects farmland, forests, rivers, and settlements. Surplus grain appears in warehouses, communal canteens no longer serve only thin porridge, and famine is becoming a fading memory."
+
+  # ---------------------------------------------------------------------------
+  # 第三条生命线：工坊复产与建设
+  # ---------------------------------------------------------------------------
+
+  KYO_revolutionary_satisfaction_0:0 "Workshop Construction: All Industries Shut Down"
+  KYO_revolutionary_satisfaction_1:0 "Workshop Construction: Barely Struggling to Stay afloat"
+  KYO_revolutionary_satisfaction_2:0 "Workshop Construction: Repair and Sustainment"
+  KYO_revolutionary_satisfaction_3:0 "Workshop Construction: The Furnace Rekindled"
+  KYO_revolutionary_satisfaction_4:0 "Workshop Construction: Reconstruction Accelerates"
+  KYO_revolutionary_satisfaction_5:0 "Workshop Construction: New Town Taking Shape"
+
+  KYO_revolutionary_satisfaction_0_desc:0 "Tools are lost, machines are damaged, and most workshops that could repair houses and farm implements have ceased operations. The ruins are piled up, but there aren't enough people and equipment to clear them away."
+  KYO_revolutionary_satisfaction_1_desc:0 "The craftsmen and reconstruction team barely managed to keep going by salvaging salvaged parts; for every tool they repaired, they risked breaking two more. The project was constantly delayed, and exhaustion was consuming the remaining technicians."
+  KYO_revolutionary_satisfaction_2_desc:0 "Basic tools and building materials were provided, and workshops were able to repair farm implements, vehicles, and temporary housing. Gensokyo began to stop deteriorating, but it was far from truly recovering."
+  KYO_revolutionary_satisfaction_3_desc:0 "The long-extinguished fires were rekindled, and the woodworking, forging, kappa machinery, and tsukumogami workshops gradually resumed production. For the first time, the ruins shrank at a visible rate."
+  KYO_revolutionary_satisfaction_4_desc:0 "Construction teams and production committees across the region have established stable collaborations, and housing, warehouses, and public facilities are being completed one after another. Reconstruction no longer relies on temporary patchwork efforts by a few individuals."
+  KYO_revolutionary_satisfaction_5_desc:0 "Gensokyo is now capable of manufacturing new equipment, rather than simply dismantling old wreckage. New workshops, streets, and public buildings are rising from the battlefield, announcing that this society has begun to create its own future."
+
+  # ---------------------------------------------------------------------------
+  # 第四条生命线：交通运输与防卫
+  # ---------------------------------------------------------------------------
+
+  KYO_opposition_satisfaction_0:0 "Transportation Defense: Roads Severed"
+  KYO_opposition_satisfaction_1:0 "Transportation Defense: Isolated Roads Difficult to Travel"
+  KYO_opposition_satisfaction_2:0 "Transportation Defense: Main Lines Maintained"
+  KYO_opposition_satisfaction_3:0 "Transportation Defense: Road Network Restored"
+  KYO_opposition_satisfaction_4:0 "Transportation Defense: Connecting All Directions"
+  KYO_opposition_satisfaction_5:0 "Transportation Defense: Mountains and Rivers Reconnected"
+
+  KYO_opposition_satisfaction_0_desc:0 "Bridges collapsed, roads were cratered and blocked by rubble, and scattered armed groups and bandits began attacking warehouses. Even if supplies existed, they could not be safely delivered to those waiting."
+  KYO_opposition_satisfaction_1_desc:0 "A few transport convoys are still risking their way through, but vehicles, fuel, and escorts are far from sufficient. Remote settlements can only wait for a convoy that may not even arrive."
+  KYO_opposition_satisfaction_2_desc:0 "Main supply routes, warehouses, and bridges are minimally protected, and vital supplies can move between a few core settlements. The surrounding areas remain intermittently isolated."
+  KYO_opposition_satisfaction_3_desc:0 "Local transport teams, defense forces, and road repair crews have begun unified operations. Routes that previously required days of detours are now finally passable again."
+  KYO_opposition_satisfaction_4_desc:0 "A stable road network connects granaries, workshops, hospitals, and settlements, and local defenses are sufficient to prevent looters from destroying reconstruction efforts. Gensokyo is once again a unified entity."
+  KYO_opposition_satisfaction_5_desc:0 "From mountain trails to river-crossing bridges, a complete transport and defense network traverses Gensokyo. No matter if disaster or war strikes again, no region will have to wait alone in the darkness."
+
+  # ---------------------------------------------------------------------------
+  # 长期危机
+  # ---------------------------------------------------------------------------
+
+  KYO_distribution_black_market:0 "Lifesaving supplies are flowing into underground channels."
+  KYO_distribution_black_market_desc:0 "The gaps in the rationing lines are being widened by hunger, speculation, and despair. Every missing crate of supplies brings a medical station, granary, or construction team to a standstill."
+
+  KYO_distribution_local_riots:0 "Hunger Uproar Outside the Warehouse"
+  KYO_distribution_local_riots_desc:0 "The long-deprived population is no longer willing to wait. They gather outside the warehouses and dispatch stations, demanding that the reconstruction achievements not remain merely in reports."
+
+  KYO_distribution_cadre_exhaustion:0 "A Dispatcher Collapses Beside the Ledgers"
+  KYO_distribution_cadre_exhaustion_desc:0 "Those responsible for registration, transportation, and coordination have been working tirelessly without rest. Without more manpower and a clearer system, the reconstruction system may collapse under its own weight."
+
+  # ---------------------------------------------------------------------------
+  # 决议类别与资源操作
+  # ---------------------------------------------------------------------------
+
+  KYO_seija_distribution_category:0 "Rebuilding Gensokyo from the Ruins"
+  KYO_seija_distribution_category_desc:0 "Victory only bought Gensokyo a chance to start over. Now, Seija must allocate limited resources to four reconstruction lifelines: resettling the wounded and displaced, restoring food production, restarting workshop construction, and maintaining transportation and defense networks. The collapse of any one lifeline will drag down the other three; but existing stocks are insufficient to restore all areas simultaneously.\n\n Current Total Resources: [?KYO_seija_supplies_total|0]\n Resources Already Deployed: [?KYO_seija_supplies_allocated|0]\n Resettlement and Medical Care: [?KYO_common_youkai_supply|0]\n Food and Livelihood: [?KYO_human_supply|0]\n Workshops and Construction: [?KYO_revolutionary_supply|0]\n Transportation and Defense: [?KYO_opposition_supply|0]\n\n The investment in each lifeline will refresh weekly to the corresponding reconstruction status. When any project is at level 0 or 1, malicious events are more likely to occur in Lunar Capital."
+
+  KYO_seija_distribution_status:0 "View the four reconstruction lifelines"
+  KYO_seija_distribution_status_desc:0 "Current total resources: [?KYO_seija_supplies_total|0]\n Resources already deployed: [?KYO_seija_supplies_allocated|0]\n Resettlement and Medical Care: [?KYO_common_youkai_supply|0]\n Food and Livelihood: [?KYO_human_supply|0]\n Workshops and Construction: [?KYO_revolutionary_supply|0]\n Transportation and Defense: [?KYO_opposition_supply|0]"
+
+  KYO_seija_add_supply_common_youkai:0 "Deploy 1 unit of resources to Resettlement and Medical Care"
+  KYO_seija_remove_supply_common_youkai:0 "1 unit of supplies transferred from resettlement and medical care"
+
+  KYO_seija_add_supply_humans:0 "1 unit of supplies allocated to food and livelihood"
+  KYO_seija_remove_supply_humans:0 "1 unit of supplies transferred from food and livelihood"
+
+  KYO_seija_add_supply_revolutionaries:0 "1 unit of supplies allocated to workshops and construction"
+  KYO_seija_remove_supply_revolutionaries:0 "1 unit of supplies transferred from workshops and construction"
+
+  KYO_seija_add_supply_opposition:0 "1 unit of supplies allocated to transportation and defense"
+  KYO_seija_remove_supply_opposition:0 "1 unit of supplies transferred from transportation and defense"
+
+  # ---------------------------------------------------------------------------
+  # 配给系统开场
+  # ---------------------------------------------------------------------------
+
+  kyo_seija_distribution.1.t:0 "Let tomorrow come first"
+  kyo_seija_distribution.1.d:0 "Four maps are hanging on the wall of the reconstruction command post. The first map marked the wounded, the homeless, and a makeshift camp still leaking; the second depicted abandoned fields, empty granaries, and a communal stove that had been relit; the third recorded workshops, tools, and building materials that could be repaired; the last map was filled with broken bridges, dangerous roads, and transport routes requiring escort.\n\n All the markers demanded supplies, and none could wait indefinitely. Without shelter and medical care, the survivors wouldn't survive; without food, society would collapse in the next season; without tools, reconstruction would forever remain a mere inventory of ruins; without roads and defenses, the supplies in the warehouses couldn't be delivered anywhere.\n\n Seija stood before the map, dividing the first batch of supplies into four portions. The quantity was laughably small, but the new world in the ruins could only begin from here."
+  kyo_seija_distribution.1.a:0 "Dividing them out piece by piece, pulling Gensokyo back from the ruins."
+
+  # ---------------------------------------------------------------------------
+  # 两组生命线之间的调度选项
+  # ---------------------------------------------------------------------------
+
+  kyo_seija_distribution.common_to_humans.a:0 "First, protect the fields, granaries, and cooking stoves."
+  kyo_seija_distribution.humans_to_common.a:0 "The wounded and homeless cannot wait any longer."
+  kyo_seija_distribution.revolutionaries_to_opposition.a:0 "First, get supplies out of the country and safeguard every lifeline."
+  kyo_seija_distribution.opposition_to_revolutionaries.a:0 "Without tools and a fire, the road will eventually be cut off again."
+
+  # ---------------------------------------------------------------------------
+  # 安置医疗与粮食民生之间的风味事件
+  # ---------------------------------------------------------------------------
+
+  kyo_seija_distribution.10.t:0 "Grain next to the medicine box"
+  kyo_seija_distribution.10.d:0 "The last batch of grain that can safely survive the winter was found in the warehouse, next to which were urgently needed medicines and clean cloths for the aid station. The transport vehicle could only make one trip: to the fields to save next season's harvest; to the resettlement area to save the wounded who were deteriorating."
+
+  kyo_seija_distribution.11.t:0 "The last batch of timber before the rainstorm"
+  kyo_seija_distribution.11.d:0 "With the rainy season approaching, the resettlement camp needed timber to reinforce the roof, and the food committee was also anxious to repair leaky barns and irrigation facilities. The same batch of timber could help one side weather the storm, but it could only leave the other side to continue using rags to cover the cracks."
+
+  kyo_seija_distribution.12.t:0 "Settling Down First, or Reclaiming Farmland First?"
+  kyo_seija_distribution.12.d:0 "A group of survivors arrive at the abandoned village. They can either repair their shelters first, allowing the elderly, children, and the wounded to stay, or immediately prepare the fields, trying to make up for lost time before the next harvest. Whichever option they choose, the other task will be postponed."
+
+  kyo_seija_distribution.16.t:0 "Hospital Beds and Public Cooking Stations"
+  kyo_seija_distribution.16.d:0 "The temperature plummets after nightfall. The aid station demands that fuel be reserved for the hospital wards, while the public cooking station warns that if they cannot continue cooking, several settlements will not receive hot food tomorrow. Seija faces not a question of which is more worthwhile, but rather which loss is more unbearable."
+
+  # ---------------------------------------------------------------------------
+  # 工坊建设与运输防卫之间的风味事件
+  # ---------------------------------------------------------------------------
+
+  kyo_seija_distribution.13.t:0 "The Only Engine That Still Works"
+  kyo_seija_distribution.13.d:0 "Kappa repairs an old engine. The workshop wanted to convert it into a generator to resume the production of tools and building materials; the transport team wanted to load it onto trucks to resupply remote settlements. The engine couldn't be in both places simultaneously."
+
+  kyo_seija_distribution.14.t:0 "Bridge or Factory?"
+  kyo_seija_distribution.14.d:0 "The recovery team dragged a batch of intact steel beams from the ruins. The construction committee planned to use them to support the factory that was about to resume construction, but the transport team pointed out that the northern bridges could collapse at any time. The workshop could manufacture more supplies, but the bridges would determine whether these supplies could be delivered to distant places."
+
+  kyo_seija_distribution.15.t:0 "Lights on the Night Road"
+  kyo_seija_distribution.15.d:0 "The remaining lamps and fuel could be given to the workshop so that the reconstruction team could continue working at night; they could also be allocated to transport escorts to illuminate the mountain roads that were frequently attacked. The furnace fires and vehicle lights symbolized recovery, but the inventory could only allow one place to be lit first."
+
+  kyo_seija_distribution.17.t:0 "Where Should the Scrap Metal Go?"
+  kyo_seija_distribution.17.d:0 "Tsukumogami and the craftsmen recovered a large amount of scrap metal from the battlefield. The construction team could reforge it into tools, pipes, and building supports; the local defense forces needed parts to repair vehicles, roadblocks, and escort equipment. Every piece of debris could become part of a new life, or a shield protecting it."
+
+  # ---------------------------------------------------------------------------
+  # 恶性事件
+  # ---------------------------------------------------------------------------
+
+  kyo_seija_distribution.20.t:0 "Lifesaving supplies flowed into underground channels."
+  kyo_seija_distribution.20.d:0 "Several boxes of medicine, rations, and tools appeared in no receipt records, yet were sold at high prices at a secret market days later. Some profited from the disaster, while others were forced to trade their remaining possessions for survival because they were never allocated official rations. The black market is devouring the reconstruction system, exposing cracks it hasn't yet addressed."
+  kyo_seija_distribution.20.a:0 "First investigate large-scale reselling; temporarily tolerate exchanges between survivors."
+  kyo_seija_distribution.20.b:0 "Allocate cadres and supplies to reconnect the malfunctioning ration lines."
+  kyo_seija_distribution.20.c:0 "Conduct a comprehensive search of warehouses and markets to stop the outflow of supplies."
+
+  kyo_seija_distribution.21.t:0 "The Crowd Outside the Warehouse"
+  kyo_seija_distribution.21.d:0 "Survivors, long deprived of support, gathered outside the warehouse. They had no unified banner, no coherent program, only empty bowls, broken tools, and bloodstained bandages placed at the door, repeatedly asking: The war is over, so why is survival still so difficult? If command cannot provide an answer, the unrest will soon escalate into a clash."
+  kyo_seija_distribution.21.a:0 "Let the locals borrow supplies from existing warehouses first."
+  kyo_seija_distribution.21.b:0 "Send reconstruction cadres with supplies."
+  kyo_seija_distribution.21.c:0 "Seal the warehouse doors to prevent the situation from spiraling completely out of control."
+
+  kyo_seija_distribution.22.t:0 "Someone collapsed beside the ledgers."
+  kyo_seija_distribution.22.d:0 "The cadres responsible for registration and dispatch hadn't had a full night's sleep for weeks. By day, they inventoried the perpetually insufficient inventory; by night, they revised plans disrupted by roads, weather, and disputes. At dawn, a dispatcher finally collapsed beside a table piled high with application forms. If every shortfall continued to be addressed through manpower alone, the reconstruction command would collapse before Gensokyo."
+  kyo_seija_distribution.22.a:0 "Let the existing personnel weather this round."
+  kyo_seija_distribution.22.b:0 "Transfer more personnel and reorganize the entire dispatch system."
+  kyo_seija_distribution.22.c:0 "Suspend secondary projects and first sort out the chaotic accounts."
+
+
+
+
+
+ KYO_seija_mirror_of_the_odd:0 "The Exorcist's Mirror"
+ KYO_seija_watched_revolutionary:0 "The Revolutionary Under Supervision"
+ KYO_seija_decisive_reconstruction:0 "The Decisive One on the Ruins"
+ KYO_seija_builder_after_reversal:0 "The Builders After the Upside Down"
+ KYO_nue_social_mirror:0 "The Mirror on the Margins of Society"
+ KYO_koishi_unconscious_trial:0 "Unconscious Judgment"
+ KYO_flandre_broken_blood:0 "Shattered Blood Name"
+ KYO_kogasa_worksite_armorer:0 "Umbrella Craftsman Construction Site Coordinator"
+
+
+
+
+ KYO_seija_nightmare_fuel:"The Controller of Fear"
+
+ KYO_seija_the_destoryer:0 "The Destroyer of Order"
+ 
+ KYO_seija_the_great_one:0 "The Great Inverter"
+ 
+ KYO_seija_the_child_from_the_moon:0 "Child Under the Moon"
+
+ KYO_seija_the_losted_one:0 "The Abandoned on the Ground"
+
+ KYO_seija_the_mercy_one:0 "The Compassionate One"
+
+ KYO_seija_the_topest_man:0 "The Supreme Commander"
+
+ KYO_seija_the_order_himself:0 "Order Itself"
+
+
+ KYO_seija_the_enlightened_one:0 "The Enlightened One"

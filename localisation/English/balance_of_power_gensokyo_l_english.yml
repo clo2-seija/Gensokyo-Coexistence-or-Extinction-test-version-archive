@@ -1,0 +1,108 @@
+﻿l_english:
+
+
+
+
+
+
+
+ 
+  # ===== 永琳侧：存续 =====
+ Stand_for_Eirin:0 "Let the healer answer first"
+ Stand_for_Eirin_desc:0 "That night, Eirin opened Eientei's medicine storehouse, and the rabbits ran along the animal trails to various wounded soldier camps. Before dawn, the first group of people who had been deemed beyond saving opened their eyes again; she immediately returned the casualty report, demanding that all figures be recalculated."
+ Stand_for_Eirin_tooltip:0 "§YEffect Summary:§!\n- The scales tipped towards §BEirin's path to survival§!\n- Eientei's medicine carts began entering various wounded soldier camps\n- Potential follow-up events related to the rescued wounded may occur."
+ Stand_for_Eirin_blocked:0 "§REientei's medicine carts have not yet been permitted to leave the Bamboo Forest of the Lost.§!"
+
+ give_Eirin_power:0 "Reclaim Tomorrow"
+ give_Eirin_power_desc:0 "Yukari hands the dispatch seal to Eirin. Boxes of sealed medicine are moved out, idle vehicles are driven to the wounded soldiers' camp, and empty mansions are filled with makeshift beds. At dawn, for the first time, no one dies on the streets because they can't get their medicine."
+ give_Eirin_power_tooltip:0 "§YEffect Summary:§!\n- The scales tip significantly in Eirin's favor. §BEirin's path to survival.§!\n- All sealed medicine depots are opened, and idle vehicles are used to transport the wounded.\n- More people deemed beyond saving will receive further treatment."
+ give_Eirin_power_blocked:0 "§RYukari has not yet handed the dispatch seal to Eirin.§!"
+
+ help_eirin_more:0 "Let the medicine boxes arrive first"
+ help_eirin_more_desc:0 "Half of the cargo was unloaded from the grain trucks, which were then used to transport wounded soldiers along the way; classrooms in temple schools were converted into wards overnight; Kappa dismantled parts from its workshops to repair the transport trucks parked by the roadside. Eirin visited each patient, crossing off each case of “unable to help” from the records."
+ help_eirin_more_tooltip:0 "§YEffect Summary:§!\n- The scales tip slightly in favor of §BEirin's path to survival§!\n- Empty houses converted into wards, vehicles prioritized for evacuating the wounded\n- No more deaths due to delayed medication in the wounded soldiers' camp"
+ help_eirin_more_blocked:0 "§RInsufficient medication, manpower, or available vehicles.§!"
+
+ eirin_strike_back:0 "Rejecting “Powerlessness”"
+ eirin_strike_back_desc:0 "When someone again claimed that casualties were inevitable, Eirin did not argue with him. She let in several wounded soldiers who had been deemed hopeless but were now able to walk on their own, and placed the undistributed medications on the table. From then on, no one dared to write negligence as fate."
+ eirin_strike_back_tooltip:0 "§YEffect Summary:§!\n- The scales clearly tip in favor of §BEirin's path to survival§!\n- Wounded soldiers abandoned prematurely receive renewed treatment\n- Those who delayed, concealed, or abandoned the wounded are investigated"
+ eirin_strike_back_blocked:0 "§RNo one has yet attempted to cover up the casualties with “helplessness.”§!"
+
+
+ # ===== 幽幽子侧：送别 =====
+ Stand_for_yuyuko:0 "Let the dead return to their seats"
+ Stand_for_yuyuko_desc:0 "Yuyuko has Youmu bring over the hats, scabbards, amulets, and dolls given by children left behind by the fallen, placing them one by one on the empty chairs in the meeting room. After the meeting resumes, each speaker must first read out the name of a deceased person."
+ Stand_for_yuyuko_tooltip:0 "§YEffect Summary:§!\n- The scales tip towards §MYuyuko's farewell§! Shifts\n- Hakugyokurou begins searching for identities for the unidentified dead\n- Unclaimed belongings will be returned to their loved ones"
+ Stand_for_yuyuko_blocked:0 "§RHakugyokurou has not yet been authorized to guide the souls left behind by the war.§!"
+
+ give_yuyuko_power:0 "No one shall die without a name"
+ give_yuyuko_power_desc:0 "The road to the Netherworld is thus opened. Youmu leads people through trenches, ruins, and unclaimed wastelands, with soul-guiding butterflies identifying every wisp of wandering soul fire among the rubble. The numbers on the battle report have reverted to names, and the missing have finally found their place."
+ give_yuyuko_power_tooltip:0 "§YEffect Summary:§!\n- The scales tip significantly in favor of §MYuyuko's farewell§!\n- The Soul-Guiding Butterfly enters the battlefield ruins, searching for the missing and the dead\n- The forgotten dead will regain their names and their place of rest"
+ give_yuyuko_power_blocked:0 "§RThe road to Netherworld is not yet fully open.§!"
+
+ help_yuyuko_more:0 "Let the Soul-Guiding Butterfly be the last"
+ help_yuyuko_more_desc:0 "Hakugyokurou's lantern hangs from the village entrance all the way to the depths of the ruins. After the rescue team leaves, Youmu and the Soul-Guiding Butterfly will continue their search until the last message is delivered, the last item is claimed, and the last wandering spirit no longer roams alone."
+ help_yuyuko_more_tooltip:0 "§YEffect Summary:§!\n- The scales tip slightly in favor of §MYuyuko's farewell path§!\n- The search team enters the lost settlement and the unclaimed burial ground\n- Last messages, items, and news of the deaths are delivered to relatives and friends."
+ help_yuyuko_more_blocked:0 "§RThere is a lack of manpower to continue searching for the dead and their belongings.§!"
+
+ yuyuko_strike_back:0 "Rejection of “Necessary Sacrifice”"
+ yuyuko_strike_back_desc:0 "When the casualties were once again overshadowed by the word “necessary,” the lights at the banquet suddenly dimmed. One after another, the souls of the dead appeared behind empty chairs, and Yuyuko calmly read out their names. The clinking of glasses gradually ceased, and the order that caused the casualties was placed back on the table."
+ yuyuko_strike_back_tooltip:0 "§YEffect Summary:§!\n- The scales clearly tipped in favor of §MYuyuko's farewell ceremony§!\n-The names and experiences of the dead were publicly read out\n-The order that once considered them a necessary loss was re-examined"
+ yuyuko_strike_back_blocked:0 "§RNo one has yet attempted to list the dead as a single line of loss figures.§!"
+
+
+ # ===== 紫居中：两岸皆不可弃 =====
+ yukari_balance_all:0 "Yukari's Balance: Neither Side Can Be Abandoned"
+ yukari_balance_all_desc:0 "Yukari simultaneously opens two gaps before the ruins: stretchers and the wounded pass through the first gap, directly reaching Eientei; relics and the soul fire following behind pass through the second gap, entering Hakugyokurou. She stands between the two groups until both the living and the dead are received."
+ yukari_balance_all_tooltip:0 "§YEffect Summary:§!\n- The balance returns to the center, or slows its continued shift.\n- The wounded are sent to Eientei, and the souls of the dead are guided by Hakugyokurou.\n- A subsequent event involving both sides may occur."
+ yukari_balance_all_blocked:0 "§RThe medicine cart and the soul-guiding butterfly are still running parallel; Yukari does not need to intervene.§!"
+
+
+ # ===== 白玉楼侧修正 =====
+ yuyuko_side_modifier:0 "Hakugyokurou Refuses to Forget"
+ yuyuko_side_modifier_1:0 "Hakugyokurou: Butterflies and Medicine Carts Ride Side by Side"
+ yuyuko_side_modifier_2:0 "Hakugyokurou: The Dead Regain Their Names"
+ yuyuko_side_modifier_3:0 "Hakugyokurou: Souls Have a Place to Return To"
+ yuyuko_side_modifier_4:0 "Hakugyokurou: Empty Chairs Are No Longer Nameless"
+
+
+ # ===== 永远亭侧修正 =====
+ eirin_side_modifier:0 "Eientei Refuses to Accept Obituary"
+ eirin_side_modifier_1:0 "Eientei: Medicine cart and butterfly go hand in hand"
+ eirin_side_modifier_2:0 "Eientei: Medicine chest arrives at the wounded camp first"
+ eirin_side_modifier_3:0 "Eientei: The abandoned wounded return to the world"
+ eirin_side_modifier_4:0 "Eientei: Obituaries must not be written first"
+
+
+ # ===== 天平界面 =====
+ KYO_balance:0 "Medicine cup and soul-guiding butterfly"
+ KYO_balance_desc:0 "Before the same ruins, Eientei carries away those still warm, while Hakugyokurou leads away unseen souls. Each time the medicine cart saves a life, the pointer shifts towards Eirin; each time the soul-guiding butterfly takes away a deceased person, the pointer shifts towards Yuyuko. Yukari keeps both paths open, because Gensokyo cannot abandon the living, nor can she pretend the dead never existed."
+
+ yukari_control_well_center:0 "The medicine cart and the soul-guiding butterfly travel side by side."
+ yukari_control_well_left:0 "The medicine cart is driving at the very front."
+ yukari_control_well_right:0 "The Soul-Guiding Butterfly Remains Until the End"
+
+
+ # ===== 永琳：存续 =====
+ side_with_Eirin:0 "Eirin: Snatch Tomorrow Back from the Hands of Death"
+ eirin_side_1:0 "The Medicine Vault Remains Open All Night"
+ eirin_side_2:0 "There's Still a Chance to Save"
+ eirin_side_3:0 "The Stretcher Crosses the Animal Trail"
+ eirin_side_4:0 "Let the Living Go Home First"
+ eirin_side_5:0 "Tear Up the Written Obituary"
+ eirin_side_6:0 "Never Resist Stagnation"
+
+
+ # ===== 幽幽子：送别 =====
+ side_with_yuyuko:0 "Yuyuko: Don't Let Death Erase a Life"
+ yuyuko_side_1:0 "The Gates of Netherworld Remain Open All Night"
+ yuyuko_side_2:0 "Higan Accepts the Belongings"
+ yuyuko_side_3:0 "Saigyou Ayakashi remembers names"
+ yuyuko_side_4:0 "Let the deceased go home first"
+ yuyuko_side_5:0 "The empty chair has found a new owner"
+ yuyuko_side_6:0 "Departure still has meaning"
+
+
+ # ===== 紫的最终回答 =====
+ yukari_control_everything:0 "The living return, the dead are remembered"
+ yukari_control_everything_desc:0 "From then on, each returning team would split into two lines before the barrier: those still warm would be sent to Eientei, while their belongings and the soul fire following them would be sent to Hakugyokurou. Yukari stood at the fork in the road, and only after the last stretcher and the last soul-guiding butterfly had passed through the gap did she finally close her folding fan."

@@ -1,0 +1,56 @@
+﻿l_english:
+
+ # ==============================
+ # Scarlet prestige decision system
+ # ==============================
+    scarlet_prestige_system:0 "Scarlet Devil Mansion Power Center: Authority Assessment"
+    scarlet_prestige_system_desc:0 "True rule is not only built on the monarch's prestige, but also on the authoritative order of the core subjects. The status of the core figures in Scarlet Devil Mansion determines who shares power, who conveys the king's will, and directly affects the regime's efficiency of governance, internal strife, and external expansion."
+
+ 
+
+ # ==============================
+ # Scarlet prestige GUI
+ # ==============================
+    scarlet_prestige_gui_title:0 "SDM"
+    scarlet_prestige_gui_subtitle:0 "Vampire Hegemony"
+    scarlet_prestige_gui_close_tt:0 "Closed"
+    scarlet_prestige_gui_hint:0 "Tip: Prestige only increases; when a member's prestige is significantly higher or lower than other members (difference ≥ 3), a special political advantage and internal imbalance effect will be triggered."
+
+ scarlet_prestige_tt_sakuya:0 "Sakuya\n Current Prestige: [?scarlet_prestige_sakuya]"
+ scarlet_prestige_tt_meiling:0 "Meiling\n Current Prestige: [?scarlet_prestige_meiling]"
+ scarlet_prestige_tt_remilia:0 "Remilia\n Current Prestige: [?scarlet_prestige_remilia]"
+ scarlet_prestige_tt_flandre:0 "Flandre\n Current Prestige: [?scarlet_prestige_flandre]"
+ scarlet_prestige_tt_patchouli:0 "Patchouli\n Current Prestige: [?scarlet_prestige_patchouli]"
+
+ # ==============================
+ # Prestige buff/debuff ideas
+ # ==============================
+scarlet_prestige_sakuya_dominant:0 "The Head Maid Decides"
+scarlet_prestige_sakuya_dominant_desc:0 "When Sakuya is considered the most important, everything in Scarlet Devil Mansion is automatically arranged. The tea is hot, the floor is bright, the documents are neatly arranged, and even those who have made mistakes find a place to stand."
+
+scarlet_prestige_sakuya_neglected:0 "The head maid can't work overtime today."
+scarlet_prestige_sakuya_neglected_desc:0 "When Sakuya is clearly neglected, order is maintained, but forget about the “I'll take care of everything” perfect service."
+
+scarlet_prestige_meiling_dominant:0 "There's a super-capable fighter at the door."
+scarlet_prestige_meiling_dominant_desc:0 "When Meiling is valued, everyone at Scarlet Devil Mansion feels at ease. After all, the guy at the door looks like she's yawning, but when she gets going, she can send the trouble back, door and all."
+
+scarlet_prestige_meiling_neglected:0 "The sleeping doorman."
+scarlet_prestige_meiling_neglected_desc:0 "When Meiling is neglected, someone still guards the door, but the guard looks like she's about to fall asleep any second. As for whether she's really asleep… it's best not to gamble."
+
+scarlet_prestige_remilia_dominant:0 "The Everlasting Crimson Moon"
+scarlet_prestige_remilia_dominant_desc:0 "When Remilia receives the most attention, the entire Scarlet Devil Mansion enters a state of “whatever the young lady says is right.” Even if she points to a map and says the moon is under her control, everyone around her will nod first."
+
+scarlet_prestige_remilia_neglected:0 "The Young Lady Isn't So Majestic Today"
+scarlet_prestige_remilia_neglected_desc:0 "When Remilia's presence is overshadowed, the scene becomes a bit awkward. The throne is still there, the cloak is still magnificent, but everyone's gaze towards her starts to resemble that of someone comforting a child."
+
+scarlet_prestige_flandre_dominant:0 "The Most Pampered Sister in the Entire Mansion"
+scarlet_prestige_flandre_dominant_desc:0 "When Flandre receives special attention, Scarlet Devil Mansion enters a dangerous yet delicate mode of pampering her. Everyone tries their best to make her happy, because no one wants to know what she might destroy when she's unhappy."
+
+scarlet_prestige_flandre_neglected:0 "My sister is alone today."
+scarlet_prestige_flandre_neglected_desc:0 "When Flandre is ignored, the question isn't “whether she'll cause a scene,” but rather “how she plans to remind everyone that she's still there.” This is usually not a quiet affair."
+
+scarlet_prestige_patchouli_dominant:0 "The Seven-Colored Magician is watching you."
+scarlet_prestige_patchouli_dominant_desc:0 "When Patchouli is given attention, Scarlet Devil Mansion becomes filled with an academic pressure that says, “Don't mess around, she really will come after you.” The bookshelves, the formulas, the plans—everything feels more like a trap than usual."
+
+scarlet_prestige_patchouli_neglected:0 "A coughing sound came from the library"
+scarlet_prestige_patchouli_neglected_desc:0 "When Patchouli is ignored, she won't complain. At most, she'll just keep coughing, keep flipping through books, and keep adding everyone to her mental blacklist. By the time you realize she has a problem, it's usually too late."

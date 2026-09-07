@@ -1,0 +1,56 @@
+﻿l_simp_chinese:
+
+ # ==============================
+ # Scarlet prestige decision system
+ # ==============================
+    scarlet_prestige_system:0 "红魔馆权力中枢：权威评议"
+    scarlet_prestige_system_desc:0 "真正的统治，不只建立在君主的威名之上，也建立在核心臣属的权威秩序之中。红魔馆诸位核心人物的地位高低，将决定谁能分掌权力、谁能传达王意，并直接影响这座政权的统御效率、内部倾轧与对外扩张。"
+
+ 
+
+ # ==============================
+ # Scarlet prestige GUI
+ # ==============================
+    scarlet_prestige_gui_title:0 "红魔馆§Y统治权势§!"
+    scarlet_prestige_gui_subtitle:0 "吸血鬼霸权"
+    scarlet_prestige_gui_close_tt:0 "关闭"
+    scarlet_prestige_gui_hint:0 "提示：威严只会增加；当某位成员的威严明显高于或低于其他成员（差距≥3）时，将触发特殊的政治优势与内部失衡效果。"
+
+ scarlet_prestige_tt_sakuya:0 "咲夜\n当前威望：[?scarlet_prestige_sakuya]"
+ scarlet_prestige_tt_meiling:0 "美铃\n当前威望：[?scarlet_prestige_meiling]"
+ scarlet_prestige_tt_remilia:0 "蕾米莉亚\n当前威望：[?scarlet_prestige_remilia]"
+ scarlet_prestige_tt_flandre:0 "芙兰朵露\n当前威望：[?scarlet_prestige_flandre]"
+ scarlet_prestige_tt_patchouli:0 "帕秋莉\n当前威望：[?scarlet_prestige_patchouli]"
+
+ # ==============================
+ # Prestige buff/debuff ideas
+ # ==============================
+scarlet_prestige_sakuya_dominant:0 "女仆长说了算"
+scarlet_prestige_sakuya_dominant_desc:0 "当咲夜被认为最受重视时，红魔馆的一切都会自动排好。茶是热的，地是亮的，文件是整齐的，连犯错的人都会自己找地方站好。"
+
+scarlet_prestige_sakuya_neglected:0 "女仆长今天没法加班"
+scarlet_prestige_sakuya_neglected_desc:0 "当咲夜明显被冷落，馆内秩序虽然还在，但那种“我全都帮你们处理好”的完美服务就别想了。"
+
+scarlet_prestige_meiling_dominant:0 "门口有个超能打的"
+scarlet_prestige_meiling_dominant_desc:0 "当美铃受重视，红魔馆上下都会很安心。毕竟门口那位看起来在打呵欠，真动起手来却能把麻烦连人带门一起送回去。"
+
+scarlet_prestige_meiling_neglected:0 "睡着的门卫"
+scarlet_prestige_meiling_neglected_desc:0 "当美铃被冷落，门还是有人守，只是守门的人看起来像下一秒就会睡着。至于是不是真的睡着……最好别赌。"
+
+scarlet_prestige_remilia_dominant:0 "永远鲜红的幼月"
+scarlet_prestige_remilia_dominant_desc:0 "当蕾米莉亚备受瞩目，整个红魔馆都会进入“大小姐说什么都对”的状态。就算她指着地图说月亮归她管，旁边的人也会先点头。"
+
+scarlet_prestige_remilia_neglected:0 "今天的大小姐不太威严"
+scarlet_prestige_remilia_neglected_desc:0 "当蕾米莉亚的存在感反而被盖过去，场面就会变得有点尴尬。王座还在，披风也很华丽，只是大家看她的眼神开始有点像在哄小孩。"
+
+scarlet_prestige_flandre_dominant:0 "全馆最受宠的妹妹"
+scarlet_prestige_flandre_dominant_desc:0 "当芙兰受到特别重视，红魔馆会进入一种危险又微妙的宠妹模式。所有人都在努力让她开心，因为谁都不想知道她不开心时会拆掉什么。"
+
+scarlet_prestige_flandre_neglected:0 "妹妹今天没人陪"
+scarlet_prestige_flandre_neglected_desc:0 "当芙兰被冷落，问题就不是“她会不会闹”，而是“她打算用什么方式提醒所有人自己还在这里”。这通常不会很安静。"
+
+scarlet_prestige_patchouli_dominant:0 "七色魔法使正在看着你"
+scarlet_prestige_patchouli_dominant_desc:0 "当帕秋莉受重视，红魔馆就会充满一种‘别乱来，她真的会算到你头上’的学术压迫感。书架、术式、计划书，全都比平常更像陷阱。"
+
+scarlet_prestige_patchouli_neglected:0 "图书馆里传来咳嗽声"
+scarlet_prestige_patchouli_neglected_desc:0 "当帕秋莉被冷落，她嘴上不会抱怨，最多只是继续咳、继续翻书、继续把所有人记进脑内黑名单。等你发现她有问题时，通常已经晚了。"

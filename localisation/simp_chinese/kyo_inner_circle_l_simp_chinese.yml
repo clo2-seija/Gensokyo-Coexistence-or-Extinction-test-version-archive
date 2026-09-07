@@ -1,0 +1,9 @@
+﻿l_simp_chinese:
+ kyo_inner_circle_title_text: "命莲寺教团"
+ kyo_fuhrer_name_text: "圣白莲"
+ kyo_leader_tooltip: ""
+ kyo_fuhrer_tooltip: "命莲寺的领袖，统领众人的人"
+ kyo_fuhrer_leader_name: "教主"
+ kyo_apprentice_trait: "学徒"
+ kyo_ascended_advisor_1_name_text: "§Y[GetAscendedAdvisorName1]§!"
+ kyo_ascended_advisor_3_name_text: "§Y[GetAscendedAdvisorName3]§!"

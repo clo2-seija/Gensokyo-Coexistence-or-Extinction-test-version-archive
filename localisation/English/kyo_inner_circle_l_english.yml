@@ -1,0 +1,9 @@
+﻿l_english:
+ kyo_inner_circle_title_text: "Myouren Temple Order"
+ kyo_fuhrer_name_text: "Byakuren Hijiri"
+ kyo_leader_tooltip: ""
+ kyo_fuhrer_tooltip: "The leader of the Myouren Temple, the one who commands the people"
+ kyo_fuhrer_leader_name: "The leader"
+ kyo_apprentice_trait: "The apprentice"
+ kyo_ascended_advisor_1_name_text: "§Y[GetAscendedAdvisorName1]§!"
+ kyo_ascended_advisor_3_name_text: "§Y[GetAscendedAdvisorName3]§!"

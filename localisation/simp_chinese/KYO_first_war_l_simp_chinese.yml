@@ -1,0 +1,1403 @@
+﻿l_simp_chinese:
+ # v1.0：十地点结界、每区六决议、十二名新候选人、季度人选与履行度衰退。§Y§!
+ 
+ KYO_barrier_crisis_category:0 "结界危机"
+ KYO_barrier_crisis_category_desc:0 "紫大人，十处关键地点的观测结果已整理完毕。\n\n每处结界节点依恶化程度分为五个阶段，由零至四。绿色标记代表结构正常，黄色代表边界已开始偏移，红色则表示节点正在碎裂。查阅标记便能确认当地目前的状态，以及恶化持续造成的影响。\n\n各地问题并不相同。博丽神社、妖怪山、迷途竹林与其余节点，都需要依照地形、居民与结界结构采取不同措施。选定地点后，相关处置方案会一并呈上。\n\n请不要只注意已经转红的区域。黄色意味著我们仍有时间，也意味著下一次报告可能已经太迟。"
+
+
+KYO_hyakki_coalition_category:0 "百妖协议"
+KYO_hyakki_coalition_category_desc:0 "紫大人，百妖协议目前仍由三名委员长分别主持军务、信仰与万民事务，所有相互冲突的命令，最后仍由您居中裁定。\n\n我已将三名现任委员长与您的仲裁席置于上方，十二名可能接任的候选人则依委员会分列于下。查阅个别肖像，即可调出该人物目前能推动的方案。\n\n协议并不稳固。每三十日，三个委员会中必有一处因拖延、耗损或彼此掣肘而失去10点履行度，事前无法确定会落在哪一方。\n\n每九十日，我会依局势指定一名本季受到关注的候选人。若季度结算时，此人已成为所属委员会的委员长，先前集中于她身上的人力、声望与准备便能转化为额外成果；若未能取得席位，这一季的机会也将随之消失。\n\n十二人都愿意维持协议，但她们对『维持』二字的理解并不相同。"
+
+
+ KYO_military_committee_name:0 "幻想乡联合军务委员会"
+ KYO_military_committee_short:0 "军务委员会"
+
+ KYO_faith_committee_name:0 "幻想乡信仰协调委员会"
+ KYO_faith_committee_short:0 "信仰委员会"
+
+ KYO_mobilization_committee_name:0 "幻想乡万民动员委员会"
+ KYO_mobilization_committee_short:0 "万民委员会"
+
+ KYO_yukari_chief_arbiter:0 "总仲裁人：八云紫"
+
+ KYO_barrier_deterioration_cycle:0 "结界问题恶化"
+
+ KYO_barrier_timeout_crisis:0 "结界连锁§Y碎裂效应§!"
+
+ KYO_resolve_barrier_timeout_crisis:0 "组织跨区域紧急封锁"
+ KYO_resolve_barrier_timeout_crisis_tt:0 "点下后开始 14 日的跨区域封锁，完成时取消连锁§Y碎裂效应§!；必须在时限内完成。"
+
+ KYO_initialize_first_war_system_tt:0 "开启处理§R结界危机§!的决议系统"
+ KYO_initialize_hyakki_coalition_tt:0 "建立§Y八云紫§!主导的§0百妖协议§!，人们会共同努力度过难关吗§R?§!"
+
+ KYO_barrier_node_hakurei_tooltip:0 "§Y博丽神社§!\n目前恶化：§Y[?KYO_barrier_hakurei|0]/4§!\n点击以显示此地区决议。"
+
+
+ KYO_evacuate_hakurei_node:0 "博丽神社：疏散高风险居民"
+ KYO_repair_hakurei_node:0 "博丽神社：修补结界裂隙"
+ KYO_transfer_hakurei_node:0 "博丽神社：转移裂口压力"
+ KYO_evacuate_hakurei_node_tt:0 "标记博丽神社已完成疏散。"
+
+ KYO_repair_hakurei_node_tt:0 "博丽神社恶化 §G-1§!。"
+ KYO_transfer_hakurei_node_tt:0 "博丽神社恶化 §G-1§!，魔法森林恶化 §R+1§!。"
+ 
+KYO_barrier_hakurei_stage_1:0 "博丽神社结界：微弱异动"
+KYO_barrier_hakurei_stage_2:0 "博丽神社结界：裂痕扩张"
+KYO_barrier_hakurei_stage_3:0 "博丽神社结界：临界失控"
+KYO_barrier_hakurei_stage_4:0 "博丽神社结界：崩溃在即"
+
+
+
+ KYO_barrier_node_mountain_tooltip:0 "§Y妖怪山§!\n目前恶化：§Y[?KYO_barrier_mountain|0]/4§!\n点击以显示此地区决议。"
+
+ KYO_evacuate_mountain_node:0 "妖怪山：疏散高风险居民"
+ KYO_repair_mountain_node:0 "妖怪山：修补结界裂隙"
+ KYO_transfer_mountain_node:0 "妖怪山：转移裂口压力"
+ KYO_evacuate_mountain_node_tt:0 "标记妖怪山已完成疏散。"
+
+ KYO_repair_mountain_node_tt:0 "妖怪山恶化 §G-1§!。"
+ KYO_transfer_mountain_node_tt:0 "妖怪山恶化 §G-1§!，旧地狱旧都恶化 §R+1§!。"
+
+ KYO_barrier_mountain_stage_1:0 "妖怪山结界：微弱异动"
+ KYO_barrier_mountain_stage_2:0 "妖怪山结界：裂痕扩张"
+ KYO_barrier_mountain_stage_3:0 "妖怪山结界：临界失控"
+ KYO_barrier_mountain_stage_4:0 "妖怪山结界：崩溃在即"
+
+
+ KYO_barrier_node_bamboo_tooltip:0 "§Y迷途竹林§!\n目前恶化：§Y[?KYO_barrier_bamboo|0]/4§!\n点击以显示此地区决议。"
+
+ KYO_evacuate_bamboo_node:0 "迷途竹林：疏散高风险居民"
+ KYO_repair_bamboo_node:0 "迷途竹林：修补结界裂隙"
+ KYO_transfer_bamboo_node:0 "迷途竹林：转移裂口压力"
+ KYO_evacuate_bamboo_node_tt:0 "标记迷途竹林已完成疏散。"
+
+ KYO_repair_bamboo_node_tt:0 "迷途竹林恶化 §G-1§!。"
+ KYO_transfer_bamboo_node_tt:0 "迷途竹林恶化 §G-1§!，人里恶化 §R+1§!。"
+
+ KYO_barrier_bamboo_stage_1:0 "迷途竹林结界：微弱异动"
+ KYO_barrier_bamboo_stage_2:0 "迷途竹林结界：裂痕扩张"
+ KYO_barrier_bamboo_stage_3:0 "迷途竹林结界：临界失控"
+ KYO_barrier_bamboo_stage_4:0 "迷途竹林结界：崩溃在即"
+
+
+ KYO_barrier_node_forest_tooltip:0 "§Y魔法森林§!\n目前恶化：§Y[?KYO_barrier_forest|0]/4§!\n点击以显示此地区决议。"
+
+ KYO_evacuate_forest_node:0 "魔法森林：疏散高风险居民"
+ KYO_repair_forest_node:0 "魔法森林：修补结界裂隙"
+ KYO_transfer_forest_node:0 "魔法森林：转移裂口压力"
+ KYO_contain_forest_node_tt:0 "魔法森林获得一次封锁；下次一般恶化若落在此处会被吸收，并使八云紫中央协调度 +1。"
+ KYO_evacuate_forest_node_tt:0 "标记魔法森林已完成疏散。"
+
+ KYO_repair_forest_node_tt:0 "魔法森林恶化 §G-1§!。"
+ KYO_transfer_forest_node_tt:0 "魔法森林恶化 §G-1§!，太阳花田恶化 §R+1§!。"
+
+ KYO_barrier_forest_stage_1:0 "魔法森林结界：微弱异动"
+ KYO_barrier_forest_stage_2:0 "魔法森林结界：裂痕扩张"
+ KYO_barrier_forest_stage_3:0 "魔法森林结界：临界失控"
+ KYO_barrier_forest_stage_4:0 "魔法森林结界：崩溃在即"
+
+
+ KYO_barrier_node_old_capital_tooltip:0 "§Y旧地狱旧都§!\n目前恶化：§Y[?KYO_barrier_old_capital|0]/4§!\n点击以显示此地区决议。"
+
+ KYO_evacuate_old_capital_node:0 "旧地狱旧都：疏散高风险居民"
+ KYO_repair_old_capital_node:0 "旧地狱旧都：修补结界裂隙"
+ KYO_transfer_old_capital_node:0 "旧地狱旧都：转移裂口压力"
+ KYO_evacuate_old_capital_node_tt:0 "标记旧地狱旧都已完成疏散。"
+
+ KYO_repair_old_capital_node_tt:0 "旧地狱旧都恶化 §G-1§!。"
+ KYO_transfer_old_capital_node_tt:0 "旧地狱旧都恶化 §G-1§!，妖怪山恶化 §R+1§!。"
+
+ KYO_barrier_old_capital_stage_1:0 "旧地狱旧都结界：微弱异动"
+ KYO_barrier_old_capital_stage_2:0 "旧地狱旧都结界：裂痕扩张"
+ KYO_barrier_old_capital_stage_3:0 "旧地狱旧都结界：临界失控"
+ KYO_barrier_old_capital_stage_4:0 "旧地狱旧都结界：崩溃在即"
+
+
+ KYO_barrier_node_human_village_tooltip:0 "§Y人里§!\n目前恶化：§Y[?KYO_barrier_human_village|0]/4§!\n点击以显示此地区决议。"
+
+ KYO_evacuate_human_village_node:0 "人里：疏散高风险居民"
+ KYO_repair_human_village_node:0 "人里：修补结界裂隙"
+ KYO_transfer_human_village_node:0 "人里：转移裂口压力"
+ KYO_evacuate_human_village_node_tt:0 "标记人里已完成疏散。"
+
+ KYO_repair_human_village_node_tt:0 "人里恶化 §G-1§!。"
+ KYO_transfer_human_village_node_tt:0 "人里恶化 §G-1§!，红魔馆雾之湖恶化 §R+1§!。"
+
+ KYO_barrier_human_village_stage_1:0 "人里结界：微弱异动"
+ KYO_barrier_human_village_stage_2:0 "人里结界：裂痕扩张"
+ KYO_barrier_human_village_stage_3:0 "人里结界：临界失控"
+ KYO_barrier_human_village_stage_4:0 "人里结界：崩溃在即"
+
+
+ KYO_barrier_node_scarlet_lake_tooltip:0 "§Y红魔馆雾之湖§!\n目前恶化：§Y[?KYO_barrier_scarlet_lake|0]/4§!\n点击以显示此地区决议。"
+
+ KYO_evacuate_scarlet_lake_node:0 "红魔馆雾之湖：疏散高风险居民"
+ KYO_repair_scarlet_lake_node:0 "红魔馆雾之湖：修补结界裂隙"
+ KYO_transfer_scarlet_lake_node:0 "红魔馆雾之湖：转移裂口压力"
+ KYO_evacuate_scarlet_lake_node_tt:0 "标记红魔馆雾之湖已完成疏散。"
+
+ KYO_repair_scarlet_lake_node_tt:0 "红魔馆雾之湖恶化 §G-1§!。"
+ KYO_transfer_scarlet_lake_node_tt:0 "红魔馆雾之湖恶化 §G-1§!，人里恶化 §R+1§!。"
+
+ KYO_barrier_scarlet_lake_stage_1:0 "红魔馆雾之湖结界：微弱异动"
+ KYO_barrier_scarlet_lake_stage_2:0 "红魔馆雾之湖结界：裂痕扩张"
+ KYO_barrier_scarlet_lake_stage_3:0 "红魔馆雾之湖结界：临界失控"
+ KYO_barrier_scarlet_lake_stage_4:0 "红魔馆雾之湖结界：崩溃在即"
+
+
+ KYO_barrier_node_sunflower_tooltip:0 "§Y太阳花田§!\n目前恶化：§Y[?KYO_barrier_sunflower|0]/4§!\n点击以显示此地区决议。"
+
+ KYO_evacuate_sunflower_node:0 "太阳花田：疏散高风险居民"
+ KYO_repair_sunflower_node:0 "太阳花田：修补结界裂隙"
+ KYO_transfer_sunflower_node:0 "太阳花田：转移裂口压力"
+ KYO_evacuate_sunflower_node_tt:0 "标记太阳花田已完成疏散。"
+
+ KYO_repair_sunflower_node_tt:0 "太阳花田恶化 §G-1§!。"
+ KYO_transfer_sunflower_node_tt:0 "太阳花田恶化 §G-1§!，彼岸恶化 §R+1§!。"
+
+ KYO_barrier_sunflower_stage_1:0 "太阳花田结界：微弱异动"
+ KYO_barrier_sunflower_stage_2:0 "太阳花田结界：裂痕扩张"
+ KYO_barrier_sunflower_stage_3:0 "太阳花田结界：临界失控"
+ KYO_barrier_sunflower_stage_4:0 "太阳花田结界：崩溃在即"
+
+
+ KYO_barrier_node_higan_tooltip:0 "§Y彼岸§!\n目前恶化：§Y[?KYO_barrier_higan|0]/4§!\n点击以显示此地区决议。"
+
+ KYO_evacuate_higan_node:0 "彼岸：疏散高风险居民"
+ KYO_repair_higan_node:0 "彼岸：修补结界裂隙"
+ KYO_transfer_higan_node:0 "彼岸：转移裂口压力"
+ KYO_evacuate_higan_node_tt:0 "标记彼岸已完成疏散。"
+
+ KYO_repair_higan_node_tt:0 "彼岸恶化 §G-1§!。"
+ KYO_transfer_higan_node_tt:0 "彼岸恶化 §G-1§!，幽明结界恶化 §R+1§!。"
+
+ KYO_barrier_higan_stage_1:0 "彼岸结界：微弱异动"
+ KYO_barrier_higan_stage_2:0 "彼岸结界：裂痕扩张"
+ KYO_barrier_higan_stage_3:0 "彼岸结界：临界失控"
+ KYO_barrier_higan_stage_4:0 "彼岸结界：崩溃在即"
+
+
+KYO_evacuate_netherworld_node:0 "幽明结界：疏散高风险居民"
+ KYO_repair_netherworld_node:0 "幽明结界：修补结界裂隙"
+ KYO_transfer_netherworld_node:0 "幽明结界：转移裂口压力"
+
+ KYO_evacuate_netherworld_node_tt:0 "标记幽明结界已完成疏散。"
+ KYO_repair_netherworld_node_tt:0 "幽明结界恶化 §G-1§!。"
+ KYO_transfer_netherworld_node_tt:0 "幽明结界恶化 §G-1§!，博丽神社恶化 §R+1§!。"
+
+ KYO_netherworld_local_restriction:0 "幽明结界：限制幽灵通行"
+ KYO_netherworld_local_restriction_tt:0 "幽明结界恶化 §G-1§!。"
+
+ KYO_netherworld_specialist_intervention:0 "幽明结界：白玉楼重封生死门"
+ KYO_netherworld_specialist_intervention_tt:0 "使幽明结界恶化 §G-2§!。"
+
+ KYO_barrier_netherworld_stage_1:0 "幽明结界结界恶化：第 1 级"
+ KYO_barrier_netherworld_stage_2:0 "幽明结界结界恶化：第 2 级"
+ KYO_barrier_netherworld_stage_3:0 "幽明结界结界恶化：第 3 级"
+ KYO_barrier_netherworld_stage_4:0 "幽明结界结界恶化：第 4 级"
+
+  KYO_barrier_netherworld_crossing_restriction_idea:0 "幽明结界地区管制"
+
+
+
+
+ KYO_hakurei_local_restriction:0 "博丽神社：暂停参拜与大型仪式"
+ KYO_hakurei_local_restriction_tt:0 "博丽神社暂停参拜及大型仪式 45 日；神社结界恶化 §G-1§!。"
+ KYO_hakurei_specialist_intervention:0 "博丽神社：重设大结界锚点"
+ KYO_hakurei_specialist_intervention_tt:0 "使博丽神社恶化 §G-2§!。"
+ KYO_barrier_hakurei_ritual_restriction_idea:0 "博丽神社地区管制"
+
+
+ KYO_mountain_local_restriction:0 "妖怪山：暂停天狗报纸业务"
+ KYO_mountain_local_restriction_tt:0 "天狗报纸业务暂停 45 日；妖怪山结界恶化 §G-1§!。"
+ KYO_mountain_specialist_intervention:0 "妖怪山：封闭山顶飞行航路"
+ KYO_mountain_specialist_intervention_tt:0 "使妖怪山恶化 §G-2§!。"
+ KYO_barrier_mountain_press_suspension_idea:0 "妖怪山地区管制"
+
+
+ KYO_bamboo_local_restriction:0 "迷途竹林：封闭竹林引路标记"
+ KYO_bamboo_local_restriction_tt:0 "封闭迷途竹林引路标记 45 日；结界恶化 §G-1§!。"
+ KYO_bamboo_specialist_intervention:0 "迷途竹林：永远亭配置月相药剂"
+ KYO_bamboo_specialist_intervention_tt:0 "使迷途竹林恶化 §G-2§!。"
+ KYO_barrier_bamboo_path_seal_idea:0 "迷途竹林地区管制"
+
+ 
+ KYO_forest_local_restriction:0 "魔法森林：暂停魔法实验"
+ KYO_forest_local_restriction_tt:0 "魔法森林暂停大型实验 45 日；结界恶化 §G-1§!!。"
+ KYO_forest_specialist_intervention:0 "魔法森林：埋设魔力接地桩"
+ KYO_forest_specialist_intervention_tt:0 "使魔法森林恶化 §G-2§!。"
+ KYO_barrier_forest_experiment_moratorium_idea:0 "魔法森林地区管制"
+
+
+ KYO_old_capital_local_restriction:0 "旧地狱旧都：降低地热与锻造输出"
+ KYO_old_capital_local_restriction_tt:0 "旧都降低地热与锻造输出 45 日；结界恶化 §G-1§!。"
+ KYO_old_capital_specialist_intervention:0 "旧地狱旧都：组织鬼族地脉巡查"
+ KYO_old_capital_specialist_intervention_tt:0 "使旧地狱旧都恶化 §G-2§!。"
+ KYO_barrier_old_capital_output_curtailment_idea:0 "旧地狱旧都地区管制"
+
+
+ KYO_human_village_local_restriction:0 "人里：寺子屋暂时停课"
+ KYO_human_village_local_restriction_tt:0 "寺子屋停课 45 日；人里结界恶化 §G-1§!。"
+ KYO_human_village_specialist_intervention:0 "人里：实施夜间结界宵禁"
+ KYO_human_village_specialist_intervention_tt:0 "使人里恶化 §G-2§!。"
+ KYO_barrier_human_village_school_closure_idea:0 "人里地区管制"
+
+
+ KYO_scarlet_lake_local_restriction:0 "红魔馆雾之湖：封锁湖面浓雾航路"
+ KYO_scarlet_lake_local_restriction_tt:0 "封锁雾之湖航路 45 日；结界恶化 §G-1§!。"
+ KYO_scarlet_lake_specialist_intervention:0 "红魔馆雾之湖：帕秋莉设置元素锚"
+ KYO_scarlet_lake_specialist_intervention_tt:0 "使红魔馆雾之湖恶化 §G-2§!。"
+ KYO_barrier_scarlet_lake_fog_lockdown_idea:0 "红魔馆雾之湖地区管制"
+
+
+ KYO_sunflower_local_restriction:0 "太阳花田：封闭太阳花田"
+ KYO_sunflower_local_restriction_tt:0 "太阳花田封闭 45 日；结界恶化 §G-1§!。"
+ KYO_sunflower_specialist_intervention:0 "太阳花田：幽香重整地下根系"
+ KYO_sunflower_specialist_intervention_tt:0 "使太阳花田恶化 §G-2§!。"
+ KYO_barrier_sunflower_field_closure_idea:0 "太阳花田地区管制"
+
+ KYO_higan_local_restriction:0 "彼岸：限制三途川渡船"
+ KYO_higan_local_restriction_tt:0 "限制三途川渡船 45 日；彼岸结界恶化 §G-1§!。"
+ KYO_higan_specialist_intervention:0 "彼岸：四季映姬清查境界纪录"
+ KYO_higan_specialist_intervention_tt:0 "使彼岸恶化 §G-2§!。"
+ KYO_barrier_higan_ferry_restriction_idea:0 "彼岸地区管制"
+ 
+ KYO_barrier_node_netherworld_tooltip:0 "§Y幽明结界§!\n幻想乡与冥界的入口。\n目前恶化：§Y[?KYO_barrier_netherworld|0]/4§!\n点击以显示此地区决议。"
+ 
+
+  KYO_barrier_summary_hakurei_tooltip:0 "§Y博丽神社§!\n目前恶化：§Y[?KYO_barrier_hakurei|0]/4§!\n政治点数获得与稳定度：\n1级 §R-2.5%§!｜2级 §R-5%§!｜3级 §R-7.5%§!｜4级 §R-10%§!\n绿：0；黄：1–2；红：3–4。"
+
+ KYO_barrier_summary_mountain_tooltip:0 "§Y妖怪山§!\n目前恶化：§Y[?KYO_barrier_mountain|0]/4§!\n计划速度与陆军情报：\n1级 §R-5%§!｜2级 §R-7.5%§!｜3级 §R-10%§!｜4级 §R-20%§!\n绿：0；黄：1–2；红：3–4。"
+
+ KYO_barrier_summary_bamboo_tooltip:0 "§Y迷途竹林§!\n目前恶化：§Y[?KYO_barrier_bamboo|0]/4§!\n部队经验损失与补给消耗：\n1级 §R+5%§!｜2级 §R+10%§!｜3级 §R+15%§!｜4级 §R+20%§!\n绿：0；黄：1–2；红：3–4。"
+
+ KYO_barrier_summary_forest_tooltip:0 "§Y魔法森林§!\n目前恶化：§Y[?KYO_barrier_forest|0]/4§!\n研究速度与工厂产出：\n1级 §R-5%§!｜2级 §R-7.5%§!｜3级 §R-10%§!｜4级 §R-12.5%§!\n绿：0；黄：1–2；红：3–4。"
+
+ KYO_barrier_summary_old_capital_tooltip:0 "§Y旧地狱旧都§!\n目前恶化：§Y[?KYO_barrier_old_capital|0]/4§!\n资源获得与陆军速度：\n1级 §R-5%§!｜2级 §R-7.5%§!｜3级 §R-10%§!｜4级 §R-12.5%§!\n绿：0；黄：1–2；红：3–4。"
+
+ KYO_barrier_summary_human_village_tooltip:0 "§Y人里§!\n目前恶化：§Y[?KYO_barrier_human_village|0]/4§!\n稳定度与可征人口：\n1级 §R-5%§!｜2级 §R-10%§!｜3级 §R-15%§!｜4级 §R-20%§!\n绿：0；黄：1–2；红：3–4。"
+
+ KYO_barrier_summary_scarlet_lake_tooltip:0 "§Y红魔馆雾之湖§!\n目前恶化：§Y[?KYO_barrier_scarlet_lake|0]/4§!\n步兵攻击与工厂产出：\n1级 §R-2.5%§!｜2级 §R-5%§!｜3级 §R-7.5%§!｜4级 §R-10%§!\n绿：0；黄：1–2；红：3–4。"
+
+ KYO_barrier_summary_sunflower_tooltip:0 "§Y太阳花田§!\n目前恶化：§Y[?KYO_barrier_sunflower|0]/4§!\n资源获得与建筑速度：\n1级 §R-2.5%§!｜2级 §R-5%§!｜3级 §R-7.5%§!｜4级 §R-10%§!\n绿：0；黄：1–2；红：3–4。"
+
+ KYO_barrier_summary_higan_tooltip:0 "§Y彼岸§!\n目前恶化：§Y[?KYO_barrier_higan|0]/4§!\n顺从度增长：\n1级 §R-2.5%§!｜2级 §R-5%§!｜3级 §R-7.5%§!｜4级 §R-10%§!\n部队经验损失：\n1级 §R+2.5%§!｜2级 §R+5%§!｜3级 §R+7.5%§!｜4级 §R+10%§!\n绿：0；黄：1–2；红：3–4。"
+
+ KYO_barrier_summary_netherworld_tooltip:0 "§Y幽明结界§!\n幻想乡与冥界的入口。\n目前恶化：§Y[?KYO_barrier_netherworld|0]/4§!\n可征人口与部队恢复率：\n1级 §R-5%§!｜2级 §R-7.5%§!｜3级 §R-10%§!｜4级 §R-12.5%§!\n绿：0；黄：1–2；红：3–4。"
+
+
+
+
+ KYO_military_fulfillment_tooltip:0 "军务委员会协议履行度：§Y[?KYO_fulfillment_military_committee|0]§!/100\n0–24 §Y拒绝协作§!；25–49 §Y勉强运作§!；50–74 §Y有效执行§!；75–100 §Y全面履行§!。"
+ KYO_add_military_fulfillment_5_tt:0 "军务委员会协议履行度增加 §G5§!。"
+ KYO_add_military_fulfillment_10_tt:0 "军务委员会协议履行度增加 §G10§!。"
+ KYO_add_military_fulfillment_15_tt:0 "军务委员会协议履行度增加 §G15§!。"
+ KYO_remove_military_fulfillment_5_tt:0 "军务委员会协议履行度降低 §R5§!。"
+ KYO_military_committee_fulfillment_0:0 "军务委员会：拒绝协作"
+ KYO_military_committee_fulfillment_1:0 "军务委员会：勉强运作"
+ KYO_military_committee_fulfillment_2:0 "军务委员会：有效执行"
+ KYO_military_committee_fulfillment_3:0 "军务委员会：全面履行"
+
+ KYO_faith_fulfillment_tooltip:0 "信仰委员会协议履行度：§Y[?KYO_fulfillment_faith_committee|0]§!/100\n0–24 §Y拒绝协作§!；25–49 §Y勉强运作§!；50–74 §Y有效执行§!；75–100 §Y全面履行§!。"
+ KYO_add_faith_fulfillment_5_tt:0 "信仰委员会协议履行度增加 §G5§!。"
+ KYO_add_faith_fulfillment_10_tt:0 "信仰委员会协议履行度增加 §G10§!。"
+ KYO_add_faith_fulfillment_15_tt:0 "信仰委员会协议履行度增加 §G15§!。"
+ KYO_remove_faith_fulfillment_5_tt:0 "信仰委员会协议履行度降低 §R5§!。"
+ KYO_faith_committee_fulfillment_0:0 "信仰委员会：拒绝协作"
+ KYO_faith_committee_fulfillment_1:0 "信仰委员会：勉强运作"
+ KYO_faith_committee_fulfillment_2:0 "信仰委员会：有效执行"
+ KYO_faith_committee_fulfillment_3:0 "信仰委员会：全面履行"
+
+ KYO_mobilization_fulfillment_tooltip:0 "万民委员会协议履行度：§Y[?KYO_fulfillment_mobilization_committee|0]§!/100\n0–24 §Y拒绝协作§!；25–49 §Y勉强运作§!；50–74 §Y有效执行§!；75–100 §Y全面履行§!。"
+ KYO_add_mobilization_fulfillment_5_tt:0 "万民委员会协议履行度增加 §G5§!。"
+ KYO_add_mobilization_fulfillment_10_tt:0 "万民委员会协议履行度增加 §G10§!。"
+ KYO_add_mobilization_fulfillment_15_tt:0 "万民委员会协议履行度增加 §G15§!。"
+ KYO_remove_mobilization_fulfillment_5_tt:0 "万民委员会协议履行度降低 §R5§!。"
+ KYO_mobilization_committee_fulfillment_0:0 "万民委员会：拒绝协作"
+ KYO_mobilization_committee_fulfillment_1:0 "万民委员会：勉强运作"
+ KYO_mobilization_committee_fulfillment_2:0 "万民委员会：有效执行"
+ KYO_mobilization_committee_fulfillment_3:0 "万民委员会：全面履行"
+
+ KYO_hyakki_leadership_cycle:0 "百妖协议例行审议"
+
+ KYO_yukari_central_barrier_network:0 "八云紫的中央结界网"
+
+ KYO_kasen_grassroots_maintenance:0 "华扇的结界维持方案"
+
+ KYO_okina_backdoor_redeployment:0 "隐岐奈的后户调度"
+
+ KYO_use_yukari_central_barrier_network_tt:0 "博丽神社与妖怪山恶化程度各 §G-1§!。"
+ KYO_use_kasen_grassroots_maintenance_tt:0 "博丽神社恶化程度 §G-1§!。；"
+ KYO_use_okina_backdoor_redeployment_tt:0 "妖怪山恶化程度 §G-1§!。"
+
+    KYO_register_scarlet_mansion_tt:0 "红魔馆加入军务委员会；提高协议履行度与蕾米莉亚影响力。"
+
+    KYO_register_eientei_tt:0 "永远亭加入万民委员会；提高协议履行度与永琳影响力。"
+
+    KYO_register_human_village_tt:0 "人间里提供粮食、翻译与行政；提高万民委员会协议履行度。"
+
+    KYO_register_hakugyokurou_tt:0 "白玉楼加入军务委员会；提高协议履行度与幽幽子影响力。"
+
+    KYO_register_tengu_command_tt:0 "天狗加入军务委员会；提高协议履行度与饭纲丸龙影响力。"
+
+    KYO_register_kappa_engineers_tt:0 "河童与山童加入万民委员会；提高协议履行度。"
+
+    KYO_register_fairy_network_tt:0 "妖精加入万民委员会；提高协议履行度但不争主导权。"
+
+    KYO_register_old_hell_tt:0 "地灵殿与旧地狱加入军务委员会；提高协议履行度与觉影响力。"
+
+    KYO_register_higan_court_tt:0 "是非曲直厅加入信仰委员会；提高协议履行度与四季映姬影响力。"
+
+    KYO_register_grassroots_network_tt:0 "草根妖怪加入万民委员会；提高协议履行度与赤蛮奇影响力。"
+
+    KYO_register_myouren_temple_tt:0 "命莲寺加入信仰委员会；提高白莲影响力。"
+
+    KYO_register_moriya_shrine_tt:0 "守矢神社加入信仰委员会；提高神奈子影响力。"
+
+    KYO_register_tsukumogami_tt:0 "付丧神加入万民委员会；提高雷鼓影响力。"
+
+    KYO_register_independent_strong_tt:0 "幽香加入军务委员会；提高军务委员会协议履行度与幽香影响力。"
+
+    #KYO_register_tanuki_network_tt:0 "狸猫伪装网加入万民委员会；提高猯藏影响力。"
+
+    #KYO_register_night_forest_network_tt:0 "夜行与森林妖怪加入万民委员会；小幅提高赤蛮奇影响力。"
+    
+    
+
+    #KYO_register_seija_underground_tt:0 "接受正邪的地下情报；她不签协议，但提高万民委员会协议履行度与正邪影响力。"
+
+    #KYO_invite_myouren_temple:0 "邀请命莲寺救援网"
+    #KYO_invite_moriya_shrine:0 "邀请守矢神社工程队"
+    #KYO_invite_tsukumogami:0 "接纳付丧神通信队"
+    #KYO_invite_tanuki_network:0 "接纳狸猫伪装网"
+    #KYO_invite_night_forest_network:0 "联络夜行与森林妖怪"
+    #KYO_request_independent_strong:0 "请求独立强者支援"
+    #KYO_accept_seija_underground_intel:0 "接受正邪的地下情报"
+
+   KYO_leader_remilia_tooltip:0 "蕾米莉亚\n影响力：§Y[?KYO_influence_remilia|0]§!\n成为军务委员会委员长时：突破 §G+12.5%§!、特种部队攻击 §G+10%§!、最大计划加成 §G+7.5%§!、顺从度增长 §R-7.5%§!。\n挑战者必须至少领先现任 5 点。"
+
+   KYO_leader_yuyuko_tooltip:0 "西行寺幽幽子\n影响力：§Y[?KYO_influence_yuyuko|0]§!\n成为军务委员会委员长时：补给宽限 §G+24 小时§!、缺乏补给惩罚 §G-12.5%§!、移动中组织度损失 §G-7.5%§!。\n挑战者必须至少领先现任 5 点。"
+
+   KYO_leader_suika_tooltip:0 "伊吹萃香\n影响力：§Y[?KYO_influence_suika|0]§!\n成为军务委员会委员长时：陆军组织度 §G+15%§!、增援率 §G+1%§!、装备缴获比例 §G+5%§!。\n挑战者必须至少领先现任 5 点。"
+
+   KYO_leader_yuuka_tooltip:0 "风见幽香\n影响力：§Y[?KYO_influence_yuuka|0]§!\n成为军务委员会委员长时：炮兵攻击 §G+10%§!、陆军攻击 §G+10%§!、补给消耗 §R+7.5%§!。\n挑战者必须至少领先现任 5 点。"
+
+
+   KYO_leader_byakuren_tooltip:0 "圣白莲\n影响力：§Y[?KYO_influence_byakuren|0]§!\n成为信仰委员会委员长时：稳定度 §G+10%§!、陆军组织度恢复 §G+10%§!、意识形态变化抵制力度 §G+17.5%§!。\n挑战者必须至少领先现任 5 点。"
+
+   KYO_leader_kanako_tooltip:0 "八坂神奈子\n影响力：§Y[?KYO_influence_kanako|0]§!\n成为信仰委员会委员长时：建筑速度 §G+10%§!、动员速度 §G+12.5%§!、民用工厂转军用工厂成本 §G-12.5%§!。\n挑战者必须至少领先现任 5 点。"
+
+   KYO_leader_satori_tooltip:0 "古明地觉\n影响力：§Y[?KYO_influence_satori|0]§!\n成为信仰委员会委员长时：陆军情报 §G+17.5%§!、计划速度 §G+10%§!、外国颠覆活动效率 §G-12.5%§!。\n挑战者必须至少领先现任 5 点。"
+
+   KYO_leader_megumu_tooltip:0 "饭纲丸龙\n影响力：§Y[?KYO_influence_megumu|0]§!\n成为信仰委员会委员长时：空中侦测 §G+12.5%§!、制空任务侦测能力 §G+12.5%§!、政治点数获得 §G+7.5%§!。\n挑战者必须至少领先现任 5 点。"
+
+
+   KYO_leader_sekibanki_tooltip:0 "赤蛮奇\n影响力：§Y[?KYO_influence_sekibanki|0]§!\n成为万民委员会委员长时：当地补给能力 §G+12.5%§!、陆军防御 §G+10%§!、增援率 §G+2.5%§!。\n挑战者必须至少领先现任 5 点。"
+
+   KYO_leader_eirin_tooltip:0 "八意永琳\n影响力：§Y[?KYO_influence_eirin|0]§!\n成为万民委员会委员长时：研究速度 §G+10%§!、有经验士兵损失 §G-12.5%§!、陆军损耗 §G-7.5%§!。\n挑战者必须至少领先现任 5 点。"
+
+   KYO_leader_raiko_tooltip:0 "堀川雷鼓\n影响力：§Y[?KYO_influence_raiko|0]§!\n成为万民委员会委员长时：最大指挥点数 §G+20§!、每日指挥点数增长 §G+12.5%§!、陆军组织度恢复 §G+10%§!。\n挑战者必须至少领先现任 5 点。"
+
+   KYO_leader_eiki_tooltip:0 "四季映姬\n影响力：§Y[?KYO_influence_eiki|0]§!\n成为万民委员会委员长时：顺从度增长 §G+12.5%§!、抵抗目标 §G-10%§!、每日政治点数 §G+0.125§!。\n挑战者必须至少领先现任 5 点。"
+      
+    
+ 
+ KYO_military_committee_joint_offensive:0 "军务众：群妖攻势"
+
+ KYO_faith_committee_field_relief:0 "信仰众：寺社互助"
+
+ KYO_mobilization_committee_night_routes:0 "万民众：联络网络"
+
+ KYO_activate_military_committee_support_tt:0 "依目前军务委员会主导者，获得 30 日的突破、计划、防御或恢复支援；消耗 5 协议履行度。"
+ KYO_activate_faith_committee_support_tt:0 "依目前信仰委员会主导者，获得 30 日的医疗、治理、工程或生产支援；消耗 5 协议履行度。"
+ KYO_activate_mobilization_committee_support_tt:0 "依目前万民委员会主导者，获得 30 日的补给、军心、渗透或革命动员支援；消耗 5 协议履行度。"
+
+ KYO_fading_stage_1:0 "界线变薄"
+ KYO_fading_stage_2:0 "名字正在消失"
+ KYO_fading_stage_3:0 "形体失去重量"
+ KYO_fading_stage_4:0 "幻想将被抹去"
+
+
+
+KYO_war_leader_remilia_idea:0 "军务委员长——蕾米莉亚的猩红军令"
+KYO_support_war_remilia:0 "红月下的全军号令"
+
+KYO_war_leader_yuyuko_idea:0 "军务委员长——幽幽子的冥界调度"
+KYO_support_war_yuyuko:0 "西行妖下的进军"
+
+KYO_war_leader_suika_idea:0 "军务委员长——萃香的百鬼聚阵"
+KYO_support_war_suika:0 "百鬼夜行再临"
+
+KYO_war_leader_yuuka_idea:0 "军务委员长——幽香的花田威权"
+KYO_support_war_yuuka:0 "万花齐放的威压"
+
+KYO_order_leader_byakuren_idea:0 "信仰委员长——白莲的慈悲护持"
+KYO_support_order_byakuren:0 "莲华护持全境"
+
+KYO_order_leader_kanako_idea:0 "信仰委员长——神奈子的现世神德"
+KYO_support_order_kanako:0 "风雨与御柱的神威"
+
+KYO_order_leader_satori_idea:0 "信仰委员长——觉的心念统合"
+KYO_support_order_satori:0 "第三只眼下的共同意志"
+
+KYO_order_leader_megumu_idea:0 "信仰委员长——饭纲丸龙的公论统制"
+KYO_support_order_megumu:0 "大天狗的全山号令"
+
+KYO_network_leader_sekibanki_idea:0 "万民委员长——赤蛮奇的草根代言"
+KYO_support_network_sekibanki:0 "巷口与暗处连成一片"
+
+KYO_network_leader_eirin_idea:0 "万民委员长——永琳的全域诊断"
+KYO_support_network_eirin:0 "月之贤者的处方"
+
+KYO_network_leader_raiko_idea:0 "万民委员长——雷鼓的万民共振"
+KYO_support_network_raiko:0 "雷鸣般的万民响应"
+
+KYO_network_leader_eiki_idea:0 "万民委员长——映姬的是非裁示"
+KYO_support_network_eiki:0 "净玻璃映照全境"
+
+
+
+ KYO_triangle_military_label:0 "§R军事§!／军务委员会"
+
+ KYO_triangle_faith_label:0 "§0宗教§!／信仰委员会"
+
+ KYO_triangle_mobilization_label:0 "§W群众§!／万民委员会"
+
+ KYO_yukari_chief_arbiter_tooltip:0 "八云紫是百妖协议的总仲裁人。三个委员会不是独立政治联盟，而是由她强制维持的战时统合架构。"
+
+ KYO_candidate_strip_title:0 "委员长候选人（点击肖像以显示角色决议）"
+
+
+
+ KYO_barrier_grassroots_maintenance_idea:0 "华扇的结界维护"
+
+ KYO_faith_block_title:0 "信仰委员会"
+ KYO_military_block_title:0 "军务委员会"
+ KYO_mobilization_block_title:0 "万民委员会"
+
+ KYO_first_war_debug_category:0 "KYO 第一次人妖大战 Debug 工具"
+ KYO_debug_initialize_systems:0 "[Debug] 初始化两套系统并解锁候选人"
+ KYO_debug_grant_resources:0 "[Debug] 补充政治点与指挥点"
+ KYO_debug_barrier_all_normal:0 "[结界] 全部设为 0 正常"
+ KYO_debug_barrier_showcase:0 "[结界] 套用 0–4 状态展示"
+ KYO_debug_barrier_all_critical:0 "[结界] 全部设为 4 碎裂"
+ KYO_debug_barrier_selected_up:0 "[结界] 所选节点 +1"
+ KYO_debug_barrier_selected_down:0 "[结界] 所选节点 -1"
+ KYO_debug_barrier_start_timeout:0 "[结界] 立即启动 45 日连锁碎裂"
+ KYO_debug_barrier_restart_cycle:0 "[结界] 重启 20 日一般恶化倒数"
+ KYO_debug_fulfillment_0:0 "[百妖] 三委员会履行度设为 0"
+ KYO_debug_fulfillment_25:0 "[百妖] 三委员会履行度设为 25"
+ KYO_debug_fulfillment_50:0 "[百妖] 三委员会履行度设为 50"
+ KYO_debug_fulfillment_75:0 "[百妖] 三委员会履行度设为 75"
+ KYO_debug_fulfillment_100:0 "[百妖] 三委员会履行度设为 100"
+ KYO_debug_selected_influence_up:0 "[百妖] 所选候选人影响力 +10"
+ KYO_debug_selected_influence_down:0 "[百妖] 所选候选人影响力 -10"
+ KYO_debug_force_selected_chair:0 "[百妖] 强制所选候选人成为委员长"
+ KYO_debug_run_leadership_checks:0 "[百妖] 立即执行委员长与危机检查"
+ KYO_debug_reset_influence:0 "[百妖] 重设十二人影响力"
+ KYO_first_war_debug_category_desc:0 "只在 `-debug` 模式出现。所有决议零成本且可重复，用于快速建立结界等级、履行度、候选人影响力、委员长与倒数任务测试情境。"
+ KYO_debug_initialize_systems_tt:0 "初始化结界危机与百妖协议、解锁十二名候选人、选取蕾米莉亚，并补充测试资源。"
+ KYO_debug_barrier_showcase_tt:0 "依序将十节点设为 0、1、2、3、4、0、1、2、3、4，用同一画面检查状态图示、顶部指示点与负面 idea。"
+ KYO_debug_force_selected_chair_tt:0 "忽略影响力门槛，直接让目前在百妖 GUI 点选的候选人成为其委员会委员长。"
+ KYO_debug_selected_influence_tt:0 "调整目前在百妖 GUI 点选候选人的影响力；不改变其他候选人。"
+ KYO_debug_barrier_selected_tt:0 "调整目前在结界 GUI 点选节点的恶化等级，完成后刷新对应地区 idea 与状态图。"
+ 
+ KYO_faith_candidate_block_title:0 "宗教候选人"
+ KYO_military_candidate_block_title:0 "军事候选人"
+ KYO_mobilization_candidate_block_title:0 "群众候选人"
+
+
+
+
+   KYO_emergency_rotation:0 "紧急轮调"
+
+
+ KYO_tokyo_bridgehead_secured:0 "东京桥头堡已稳固"
+ KYO_underground_supply_route:0 "地下补给路线"
+ KYO_emergency_rotation_idea:0 "紧急轮调制度"
+ KYO_tokyo_command_disrupted:0 "东京指挥网受扰"
+ KYO_barrier_evacuation_program:0 "结界危机疏散方案"
+ KYO_hyakki_leadership_cycle_desc:0 "每 30 日随机使一个委员会履行度 §R-5§!，接著刷新危机状态并检查三名委员长。"
+
+ KYO_candidate_remilia_value:0 "蕾米莉亚\n§Y[?KYO_influence_remilia|0]§!"
+ KYO_candidate_megumu_value:0 "饭纲丸龙\n§Y[?KYO_influence_megumu|0]§!"
+ KYO_candidate_yuyuko_value:0 "西行寺幽幽子\n§Y[?KYO_influence_yuyuko|0]§!"
+ KYO_candidate_eirin_value:0 "八意永琳\n§Y[?KYO_influence_eirin|0]§!"
+ KYO_candidate_byakuren_value:0 "圣白莲\n§Y[?KYO_influence_byakuren|0]§!"
+ KYO_candidate_kanako_value:0 "八坂神奈子\n§Y[?KYO_influence_kanako|0]§!"
+ KYO_candidate_sekibanki_value:0 "赤蛮奇\n§Y[?KYO_influence_sekibanki|0]§!"
+ KYO_candidate_raiko_value:0 "堀川雷鼓\n§Y[?KYO_influence_raiko|0]§!"
+  KYO_candidate_suika_value:0 "伊吹萃香\n§Y[?KYO_influence_suika|0]§!"
+  KYO_candidate_yuuka_value:0 "风见幽香\n§Y[?KYO_influence_yuuka|0]§!"
+  KYO_candidate_satori_value:0 "古明地觉\n§Y[?KYO_influence_satori|0]§!"
+  KYO_candidate_eiki_value:0 "四季映姬\n§Y[?KYO_influence_eiki|0]§!"
+
+  KYO_hyakki_inform_player_about_effect:"提示：百妖协议的委员会达到的履行度将会有的加成。"
+  KYO_hyakki_inform_player_about_effect_desc:"点击后将解除提示。"
+
+
+KYO_remilia_influence_political_campaign:0 "红月下的效忠宴"
+KYO_remilia_influence_political_campaign_tt:0 "红魔馆向各方领袖送出邀请。酒杯、座次与蕾米莉亚的目光，会让每位来客重新衡量自己应当站在哪一边。\n\n蕾米莉亚影响力 §G+5§!。"
+
+KYO_remilia_influence_industrial_campaign:0 "咲夜接管军需帐簿"
+KYO_remilia_influence_industrial_campaign_tt:0 "咲夜将工坊、仓库与运输路线重新编排。红魔馆的秩序开始深入军务委员会的每一笔物资调度。\n\n蕾米莉亚影响力 §G+8§!。"
+
+KYO_remilia_influence_manpower_campaign:0 "召集斯卡蕾特扈从"
+KYO_remilia_influence_manpower_campaign_tt:0 "美铃开放关卡，咲夜核准编制。愿意服从红魔馆规矩的妖怪，将在猩红旗帜下重新集结。\n\n蕾米莉亚影响力 §G+10§!。"
+
+KYO_remilia_spend_influence_for_fulfillment:0 "以红魔馆之名整肃军令"
+KYO_remilia_spend_influence_for_fulfillment_tt:0 "蕾米莉亚调动红魔馆掌握的关卡、军需与扈从，把争论不休的命令直接推向前线。\n\n消耗蕾米莉亚 §Y15§! 影响力，使军务委员会履行度 §G+20§!。"
+
+KYO_remilia_spend_influence_for_national_buff:0 "红月下的全军号令"
+KYO_remilia_spend_influence_for_national_buff_tt:0 "蕾米莉亚将整个军务体系变成自己的舞台。命令不再被讨论，只被执行。\n\n仅当本季军务议程由蕾米莉亚主持，且她担任军务委员长时可用。消耗 §Y20§! 军务履行度，获得60日专属加成。"
+
+KYO_quarterly_candidate_mandate_remilia:0 "本季军务议程：蕾米莉亚"
+KYO_quarterly_candidate_mandate_remilia_desc:0 "百妖协议本季将军务成果交由蕾米莉亚验收。若她同时掌握军务委员会，红魔馆的命令便能迅速转化为行动；若委员长另有其人，这份安排只能停留在纸面。"
+
+KYO_yuyuko_influence_political_campaign:0 "白玉楼的春宴请帖"
+KYO_yuyuko_influence_political_campaign_tt:0 "白玉楼送出的请帖没有威胁，只有花香、佳肴与幽幽子从容的笑意。然而赴宴者离去时，往往已答应了比预想更多的事情。\n\n西行寺幽幽子影响力 §G+5§!。"
+
+KYO_yuyuko_influence_industrial_campaign:0 "冥界幽灵整备军需"
+KYO_yuyuko_influence_industrial_campaign_tt:0 "妖梦负责清点，幽灵负责搬运。无须休息的亡者沿著冥界道路，将武器与补给送往最需要的地方。\n\n西行寺幽幽子影响力 §G+8§!。"
+
+KYO_yuyuko_influence_manpower_campaign:0 "召回徘徊的亡者"
+KYO_yuyuko_influence_manpower_campaign_tt:0 "幽幽子允许部分亡者暂缓离去，加入运输、守备与战地支援。这不是复生，而是让尚未放下执念者找到最后的去处。\n\n西行寺幽幽子影响力 §G+10§!。"
+
+KYO_yuyuko_spend_influence_for_fulfillment:0 "让亡者各得其所"
+KYO_yuyuko_spend_influence_for_fulfillment_tt:0 "白玉楼重新安排亡者、幽灵与冥界通道，使军务委员会积压的工作在寂静中逐一完成。\n\n消耗西行寺幽幽子 §Y15§! 影响力，使军务委员会履行度 §G+20§!。"
+
+KYO_yuyuko_spend_influence_for_national_buff:0 "西行妖下的静默进军"
+KYO_yuyuko_spend_influence_for_national_buff_tt:0 "花瓣落下之处，亡者让路，幽灵前行。白玉楼以近乎无声的方式接管整片战场的后方秩序。\n\n仅当本季军务议程由西行寺幽幽子主持，且她担任军务委员长时可用。消耗 §Y20§! 军务履行度，获得60日专属强力加成。"
+
+KYO_quarterly_candidate_mandate_yuyuko:0 "本季军务议程：西行寺幽幽子"
+KYO_quarterly_candidate_mandate_yuyuko_desc:0 "本季军务成果将由白玉楼负责收束。若幽幽子掌握军务委员会，亡者与生者的力量便能被安置到适当位置；若她未能主持委员会，冥界只会保持旁观。"
+
+KYO_suika_influence_political_campaign:0 "百鬼夜行的酒席"
+KYO_suika_influence_political_campaign_tt:0 "萃香不发公文，也不召开沉闷的会议。她只把酒倒满，让分散各地的妖怪重新坐到同一张桌前。\n\n伊吹萃香影响力 §G+5§!。"
+
+KYO_suika_influence_industrial_campaign:0 "鬼众搬空军需仓"
+KYO_suika_influence_industrial_campaign_tt:0 "沉重的武器、木箱与机械在鬼族手中算不上麻烦。原本需要数日的运输，很快便在笑骂与酒气中完成。\n\n伊吹萃香影响力 §G+8§!。"
+
+KYO_suika_influence_manpower_campaign:0 "以酒盏召集旧友"
+KYO_suika_influence_manpower_campaign_tt:0 "一只酒盏沿著山路、旧都与荒野传递。收到它的妖怪都明白，伊吹萃香正在找人，而真正的朋友不会装作没看见。\n\n伊吹萃香影响力 §G+10§!。"
+
+KYO_suika_spend_influence_for_fulfillment:0 "把散兵重新聚成一阵"
+KYO_suika_spend_influence_for_fulfillment_tt:0 "萃香将分散的部队、搬运队与地方武装聚到一处。它们未必守规矩，但至少愿意一同向前。\n\n消耗伊吹萃香 §Y15§! 影响力，使军务委员会履行度 §G+20§!。"
+
+KYO_suika_spend_influence_for_national_buff:0 "百鬼夜行再临"
+KYO_suika_spend_influence_for_national_buff_tt:0 "无数分散的妖气汇聚成洪流。没有整齐的队列，只有一群相信萃香、也相信彼此的妖怪共同前进。\n\n仅当本季军务议程由伊吹萃香主持，且她担任军务委员长时可用。消耗 §Y20§! 军务履行度，获得60日专属强力加成。"
+
+KYO_quarterly_candidate_mandate_suika:0 "本季军务议程：伊吹萃香"
+KYO_quarterly_candidate_mandate_suika_desc:0 "本季军务需要有人将分散的妖怪重新聚起。若萃香担任军务委员长，昔日百鬼夜行的连带将再次发挥作用；若她未能取得席位，各路妖怪依旧只会各走各的路。"
+
+KYO_yuuka_influence_political_campaign:0 "花田边界的无声警告"
+KYO_yuuka_influence_political_campaign_tt:0 "幽香不需要四处邀请。她只需撑著阳伞走过几个据点，便足以让旁观者重新理解太阳花田的分量。\n\n风见幽香影响力 §G+5§!。"
+
+KYO_yuuka_influence_industrial_campaign:0 "太阳花田徵调令"
+KYO_yuuka_influence_industrial_campaign_tt:0 "花田周边的道路、仓舍与劳力被重新安排。幽香不接受延误，也不接受任何人用混乱作为借口。\n\n风见幽香影响力 §G+8§!。"
+
+KYO_yuuka_influence_manpower_campaign:0 "召集花妖与荒野守卫"
+KYO_yuuka_influence_manpower_campaign_tt:0 "花妖、植物精与居住在荒野的妖怪陆续现身。她们不一定喜欢战争，但都知道不能让战火踩进幽香的花田。\n\n风见幽香影响力 §G+10§!。"
+
+KYO_yuuka_spend_influence_for_fulfillment:0 "让怠慢者记住季节"
+KYO_yuuka_spend_influence_for_fulfillment_tt:0 "幽香亲自过问军务委员会迟滞的工作。没有人愿意成为那个必须向她解释失败理由的人。\n\n消耗风见幽香 §Y15§! 影响力，使军务委员会履行度 §G+20§!。"
+
+KYO_yuuka_spend_influence_for_national_buff:0 "万花齐放的威压"
+KYO_yuuka_spend_influence_for_national_buff_tt:0 "花海在战线后方盛放，幽香则走在最前方。这份美丽并不带来安慰，而是在提醒所有敌人：自然也会选择进攻。\n\n仅当本季军务议程由风见幽香主持，且她担任军务委员长时可用。消耗 §Y20§! 军务履行度，获得60日专属强力加成。"
+
+KYO_quarterly_candidate_mandate_yuuka:0 "本季军务议程：风见幽香"
+KYO_quarterly_candidate_mandate_yuuka_desc:0 "本季军务成果将接受幽香的检视。若她坐上军务委员长的位置，所有拖延都会在压力下消失；若委员会由他人主持，太阳花田不会替别人的混乱收拾残局。"
+
+KYO_byakuren_influence_political_campaign:0 "命莲寺沿途说法"
+KYO_byakuren_influence_political_campaign_tt:0 "白莲带著弟子走入村落、避难所与前线营地。她不许诺轻易的和平，只要求众人相信共存仍值得继续尝试。\n\n圣白莲影响力 §G+5§!。"
+
+KYO_byakuren_influence_industrial_campaign:0 "寺众募集粮药器材"
+KYO_byakuren_influence_industrial_campaign_tt:0 "命莲寺向信众募集粮食、药品、工具与可修复的旧器。每一份微小捐助，都被送往最缺乏援助的地方。\n\n圣白莲影响力 §G+8§!。"
+
+KYO_byakuren_influence_manpower_campaign:0 "敲响命莲寺晨钟"
+KYO_byakuren_influence_manpower_campaign_tt:0 "钟声传过村落与废墟。僧众、信徒、受过命莲寺庇护的人，以及仍愿意相信白莲的人，纷纷前来协助。\n\n圣白莲影响力 §G+10§!。"
+
+KYO_byakuren_spend_influence_for_fulfillment:0 "把慈悲送到前线"
+KYO_byakuren_spend_influence_for_fulfillment_tt:0 "白莲要求信仰委员会停止空谈，将寺院、信众与救援据点真正连接起来，使承诺化为可被看见的援助。\n\n消耗圣白莲 §Y15§! 影响力，使信仰委员会履行度 §G+20§!。"
+
+KYO_byakuren_spend_influence_for_national_buff:0 "莲华护持全境"
+KYO_byakuren_spend_influence_for_national_buff_tt:0 "命莲寺将救援、庇护与劝导扩展至全境。白莲不替任何人逃避苦难，但她会确保没有人被独自留在苦难里。\n\n仅当本季信仰议程由圣白莲主持，且她担任信仰委员长时可用。消耗 §Y20§! 信仰履行度，获得60日专属强力加成。"
+
+KYO_quarterly_candidate_mandate_byakuren:0 "本季信仰议程：圣白莲"
+KYO_quarterly_candidate_mandate_byakuren_desc:0 "本季信仰工作将以命莲寺的救援与共存理念为中心。若白莲主持信仰委员会，这些承诺便能深入各地；若委员长另有其人，她的善意只能停留在有限的寺院网络中。"
+
+KYO_kanako_influence_political_campaign:0 "守矢神德巡行"
+KYO_kanako_influence_political_campaign_tt:0 "神奈子以祭典、神迹与公开巡行展示守矢神社的力量。她很清楚，信仰不只来自敬畏，也来自看得见的成果。\n\n八坂神奈子影响力 §G+5§!。"
+
+KYO_kanako_influence_industrial_campaign:0 "山神主持工业奉纳"
+KYO_kanako_influence_industrial_campaign_tt:0 "河童的技术、山民的劳力与信众的奉纳被纳入同一项工程。神奈子要的不是象征性的供品，而是能够运作的设施。\n\n八坂神奈子影响力 §G+8§!。"
+
+KYO_kanako_influence_manpower_campaign:0 "以御柱召集信众"
+KYO_kanako_influence_manpower_campaign_tt:0 "御柱立起，祭旗升上山道。守矢神社的信众与山中居民在神奈子的号召下投入运输、建设与守备。\n\n八坂神奈子影响力 §G+10§!。"
+
+KYO_kanako_spend_influence_for_fulfillment:0 "把信仰化为工程"
+KYO_kanako_spend_influence_for_fulfillment_tt:0 "神奈子接管停滞的计划，以守矢神社的组织力与河童技术，把模糊的愿景转化为道路、工坊与供应线。\n\n消耗八坂神奈子 §Y15§! 影响力，使信仰委员会履行度 §G+20§!。"
+
+KYO_kanako_spend_influence_for_national_buff:0 "风雨与御柱的神威"
+KYO_kanako_spend_influence_for_national_buff_tt:0 "守矢神社将信众、技术与山岳秩序全面动员。神奈子要让所有人看见，神明的力量能够建造，也能够支配。\n\n仅当本季信仰议程由八坂神奈子主持，且她担任信仰委员长时可用。消耗 §Y20§! 信仰履行度，获得60日专属强力加成。"
+
+KYO_quarterly_candidate_mandate_kanako:0 "本季信仰议程：八坂神奈子"
+KYO_quarterly_candidate_mandate_kanako_desc:0 "本季议程将检验守矢神社能否以实绩扩张信仰。若神奈子担任信仰委员长，祭祀、工程与行政将合为一体；若她未能主持委员会，计划便缺少足以推动全境的权威。"
+
+KYO_satori_influence_political_campaign:0 "倾听不敢说出的祈求"
+KYO_satori_influence_political_campaign_tt:0 "觉走访那些不愿向寺社开口的人。恐惧、怀疑与隐藏的怨恨无法逃过第三只眼，而她至少愿意承认那些情绪确实存在。\n\n古明地觉影响力 §G+5§!。"
+
+KYO_satori_influence_industrial_campaign:0 "地灵殿统整地下供应"
+KYO_satori_influence_industrial_campaign_tt:0 "旧地狱的矿产、运输兽与地底工坊被重新接入供应体系。觉以精确的安排，减少每一次隐瞒与浪费。\n\n古明地觉影响力 §G+8§!。"
+
+KYO_satori_influence_manpower_campaign:0 "召集被排斥的地底居民"
+KYO_satori_influence_manpower_campaign_tt:0 "地底聚集著太多不被地表欢迎的妖怪。觉不向她们保证会被理解，只承诺她们的工作与存在不会再被故意忽视。\n\n古明地觉影响力 §G+10§!。"
+
+KYO_satori_spend_influence_for_fulfillment:0 "揭开委员会隐藏的心思"
+KYO_satori_spend_influence_for_fulfillment_tt:0 "觉让推诿、私心与虚假的虔诚无处藏身。当每个人真正的盘算被摊开，信仰委员会终于能够继续工作。\n\n消耗古明地觉 §Y15§! 影响力，使信仰委员会履行度 §G+20§!。"
+
+KYO_satori_spend_influence_for_national_buff:0 "第三只眼下的共同意志"
+KYO_satori_spend_influence_for_national_buff_tt:0 "恐惧仍然存在，分歧也没有消失；但在无法彼此欺骗的情况下，各方只能承认真正的问题，并共同承担结果。\n\n仅当本季信仰议程由古明地觉主持，且她担任信仰委员长时可用。消耗 §Y20§! 信仰履行度，获得60日专属强力加成。"
+
+KYO_quarterly_candidate_mandate_satori:0 "本季信仰议程：古明地觉"
+KYO_quarterly_candidate_mandate_satori_desc:0 "本季信仰工作将处理那些被寺社话语掩盖的恐惧与猜疑。若觉掌握信仰委员会，第三只眼能迫使各方正视真实；若她未能取得席位，这些声音仍会被埋回沉默之中。"
+
+KYO_megumu_influence_political_campaign:0 "天狗报网塑造公论"
+KYO_megumu_influence_political_campaign_tt:0 "饭纲丸龙调整新闻、传令与山中流言的方向。当同一种说法反复出现在每张报纸上，它便会逐渐被当成共识。\n\n饭纲丸龙影响力 §G+5§!。"
+
+KYO_megumu_influence_industrial_campaign:0 "妖怪山工坊统合"
+KYO_megumu_influence_industrial_campaign_tt:0 "天狗的行政网络与河童的工坊被纳入共同调度。饭纲丸龙不亲自搬运物资，她只决定谁必须准时把物资送到。\n\n饭纲丸龙影响力 §G+8§!。"
+
+KYO_megumu_influence_manpower_campaign:0 "发布大天狗召集令"
+KYO_megumu_influence_manpower_campaign_tt:0 "命令沿著妖怪山的阶序迅速传递。鸦天狗、白狼天狗与依附山中的妖怪被逐级召集，没有人能假装没有收到消息。\n\n饭纲丸龙影响力 §G+10§!。"
+
+KYO_megumu_spend_influence_for_fulfillment:0 "让山中诸部同声"
+KYO_megumu_spend_influence_for_fulfillment_tt:0 "饭纲丸龙运用天狗社会的阶序、情报与传令体系，迫使信仰委员会的各方按照同一套安排展开工作。\n\n消耗饭纲丸龙 §Y15§! 影响力，使信仰委员会履行度 §G+20§!。"
+
+KYO_megumu_spend_influence_for_national_buff:0 "大天狗的全山号令"
+KYO_megumu_spend_influence_for_national_buff_tt:0 "从山顶到山脚，新闻、命令与物资沿著同一张网络流动。饭纲丸龙将妖怪山的阶序扩展到整个协议体系。\n\n仅当本季信仰议程由饭纲丸龙主持，且她担任信仰委员长时可用。消耗 §Y20§! 信仰履行度，获得60日专属强力加成。"
+
+KYO_quarterly_candidate_mandate_megumu:0 "本季信仰议程：饭纲丸龙"
+KYO_quarterly_candidate_mandate_megumu_desc:0 "本季信仰工作将仰赖天狗的传播与组织能力。若饭纲丸龙主持信仰委员会，她便能决定哪些声音传遍全境；若席位旁落，天狗报网只会服务妖怪山自身的利益。"
+
+KYO_sekibanki_influence_political_campaign:0 "巷口传开的不满"
+KYO_sekibanki_influence_political_campaign_tt:0 "赤蛮奇走进工棚、破屋与夜市，把众人不敢当面说出的话带进万民委员会。她不替上位者粉饰，也不轻易相信任何承诺。\n\n没有人注意到，一名挑染头发的天邪鬼总会在散会后收走那些抱怨、欠条与受伤者的证词，再将它们整理成更尖锐的文字。\n\n赤蛮奇影响力 §G+5§!。"
+
+KYO_sekibanki_influence_industrial_campaign:0 "破工坊间的互助线"
+KYO_sekibanki_influence_industrial_campaign_tt:0 "赤蛮奇串联零散工坊、修理铺与二手市场，影狼负责护送那些容易被抢走的工具与物资，若鹭姬则逐户确认粮食与药品是否真的送到需要的人手中。\n\n至于那名挑染头发的天邪鬼，她只在地图上增添几道不起眼的记号。今日运送零件的道路，往后也能运送传单、武器与不愿再低头的人。\n\n赤蛮奇影响力 §G+8§!。"
+
+KYO_sekibanki_influence_manpower_campaign:0 "夜路上的四道身影"
+KYO_sekibanki_influence_manpower_campaign_tt:0 "消息沿著熟人、后门与偏僻山路传开。影狼走在队伍外围，嗅出巡逻者与伏击者的气味；若鹭姬守著落单者、伤患与不敢继续前进的人；赤蛮奇则逐一确认来者是否可信。\n\n队伍最后，总有一道挑染发色的身影低声询问：你们只是想活过今天，还是已经厌倦永远被别人决定明天？\n\n赤蛮奇影响力 §G+10§!。"
+
+KYO_sekibanki_spend_influence_for_fulfillment:0 "把底层的帐摊上桌"
+KYO_sekibanki_spend_influence_for_fulfillment_tt:0 "欠粮、工伤、强征与失踪者的纪录被赤蛮奇一份份摔在万民委员会桌上。若鹭姬替受害者作证，影狼守在门外，确保没有人能靠威胁让证词消失。\n\n而在会场之外，那名挑染头发的天邪鬼正把每一次推诿、每一句傲慢与每一个未被处理的名字传往更远的地方。委员会解决的是眼前问题，她准备的却是下一次清算。\n\n消耗赤蛮奇 §Y15§! 影响力，使万民委员会履行度 §G+20§!。"
+
+KYO_sekibanki_spend_influence_for_national_buff:0 "暗路已连成一片"
+KYO_sekibanki_spend_influence_for_national_buff_tt:0 "赤蛮奇站在台前，迫使万民委员会承认底层妖怪有资格决定自己的生活。影狼让各地互助队不再任人驱散，若鹭姬则确保这股力量不会把弱者一同踩进泥里。\n\n在她们身后，那名挑染头发的天邪鬼早已将工坊、夜路、藏身处与不满者连成一张看不见的网。没有人公开谈论革命，但旧秩序已经开始发现，命令不再像过去那样有人服从。\n\n仅当本季万民议程由赤蛮奇主持，且她担任万民委员长时可用。消耗 §Y20§! 万民履行度，获得60日专属强力加成。"
+
+KYO_quarterly_candidate_mandate_sekibanki:0 "本季万民议程：赤蛮奇"
+KYO_quarterly_candidate_mandate_sekibanki_desc:0 "赤蛮奇是草根妖怪推到台前的代表。她的怀疑能拆穿空洞承诺，影狼的利爪保护散落各地的互助网，若鹭姬则让这场行动不至于失去最初想守护的人。\n\n然而，在三人身后，还有一名从不登记姓名、头发带著醒目挑染的天邪鬼。她不争夺委员长的席位，只悄悄记下每一处矛盾与裂缝。若赤蛮奇掌握万民委员会，草根妖怪将得到真正的组织空间；那些原本只为求生而建立的道路，也可能在无人察觉时通往更彻底的变革。"
+
+KYO_eirin_influence_political_campaign:0 "永远亭巡诊与风险告示"
+KYO_eirin_influence_political_campaign_tt:0 "永琳派出药师与妖兔，为各地居民检查伤病并发布清楚的风险指引。人们未必喜欢她的冷淡，却很难否认她的判断确实有效。\n\n八意永琳影响力 §G+5§!。"
+
+KYO_eirin_influence_industrial_campaign:0 "药师接管供给流程"
+KYO_eirin_influence_industrial_campaign_tt:0 "药材、粮食、器械与运输时程被重新计算。永琳将浪费视为可以诊断的病症，并毫不犹豫地切除失效环节。\n\n八意永琳影响力 §G+8§!。"
+
+KYO_eirin_influence_manpower_campaign:0 "按健康状况配置人手"
+KYO_eirin_influence_manpower_campaign_tt:0 "永远亭重新检查伤患、劳工与可动员人口，让每个人被安排到身体能够承受的位置。效率提高了，选择的余地也随之减少。\n\n八意永琳影响力 §G+10§!。"
+
+KYO_eirin_spend_influence_for_fulfillment:0 "以诊断修正民生失序"
+KYO_eirin_spend_influence_for_fulfillment_tt:0 "永琳将万民委员会视为一名病情复杂的患者。她不安慰，也不拖延，只逐项处理最可能致命的问题。\n\n消耗八意永琳 §Y15§! 影响力，使万民委员会履行度 §G+20§!。"
+
+KYO_eirin_spend_influence_for_national_buff:0 "月之贤者的全域处方"
+KYO_eirin_spend_influence_for_national_buff_tt:0 "全境的医疗、配给与劳力调度被纳入同一套计算。这份处方精确而有效，只是没有人能确定自己究竟是被救治，还是被管理。\n\n仅当本季万民议程由八意永琳主持，且她担任万民委员长时可用。消耗 §Y20§! 万民履行度，获得60日专属强力加成。"
+
+KYO_quarterly_candidate_mandate_eirin:0 "本季万民议程：八意永琳"
+KYO_quarterly_candidate_mandate_eirin_desc:0 "本季民生工作将接受永琳的诊断。若她主持万民委员会，医疗、配给与劳力都能被精确安排；若委员长另有其人，她的方案只能作为建议，无法成为全境标准。"
+
+KYO_raiko_influence_political_campaign:0 "雷鼓巡演串联街巷"
+KYO_raiko_influence_political_campaign_tt:0 "雷鼓带著付丧神在工棚、广场与临时聚落演奏。声音越过阶级与出身，让原本互不相识的人开始相信自己并不孤单。\n\n堀川雷鼓影响力 §G+5§!。"
+
+KYO_raiko_influence_industrial_campaign:0 "付丧神整修旧器"
+KYO_raiko_influence_industrial_campaign_tt:0 "被丢弃的工具、破损的机械与退役武器重新被唤醒。雷鼓让旧物证明，遭到淘汰不等于失去价值。\n\n堀川雷鼓影响力 §G+8§!。"
+
+KYO_raiko_influence_manpower_campaign:0 "鼓声召集被遗忘者"
+KYO_raiko_influence_manpower_campaign_tt:0 "鼓声从一个聚落传向下一个聚落。付丧神、流民与没有固定归属的妖怪循声而来，加入这场由被遗忘者组成的行动。\n\n堀川雷鼓影响力 §G+10§!。"
+
+KYO_raiko_spend_influence_for_fulfillment:0 "让散乱的脚步同时落下"
+KYO_raiko_spend_influence_for_fulfillment_tt:0 "雷鼓不强迫众人变得一模一样。她只让各自不同的声音找到能够并肩前进的位置，使万民委员会重新运转。\n\n消耗堀川雷鼓 §Y15§! 影响力，使万民委员会履行度 §G+20§!。"
+
+KYO_raiko_spend_influence_for_national_buff:0 "雷鸣般的万民响应"
+KYO_raiko_spend_influence_for_national_buff_tt:0 "鼓声传遍道路、工坊与聚落。那些长久被当成旧物与边角的人，如今用自己的声音证明她们仍然存在。\n\n仅当本季万民议程由堀川雷鼓主持，且她担任万民委员长时可用。消耗 §Y20§! 万民履行度，获得60日专属强力加成。"
+
+KYO_quarterly_candidate_mandate_raiko:0 "本季万民议程：堀川雷鼓"
+KYO_quarterly_candidate_mandate_raiko_desc:0 "本季万民工作将以付丧神与无归属者的互助网络为核心。若雷鼓主持委员会，分散的声音便能汇成共同力量；若她未能取得席位，这场响应仍会停留在街巷与舞台之间。"
+
+KYO_eiki_influence_political_campaign:0 "巡回说教与是非裁示"
+KYO_eiki_influence_political_campaign_tt:0 "映姬走访各地，听取争端并指出每一方不愿承认的过失。她的话并不讨喜，却让许多无处申诉者第一次得到回应。\n\n四季映姬影响力 §G+5§!。"
+
+KYO_eiki_influence_industrial_campaign:0 "清查侵占与不义征收"
+KYO_eiki_influence_industrial_campaign_tt:0 "被私吞的物资、被强占的工坊与被转嫁的负担逐一接受清查。映姬要求每一份资源回到应当承担责任的人手中。\n\n四季映姬影响力 §G+8§!。"
+
+KYO_eiki_influence_manpower_campaign:0 "召集愿为公义作证者"
+KYO_eiki_influence_manpower_campaign_tt:0 "地方调解者、记录员与愿意揭露不公的人被召集起来。她们未必强大，却愿意站出来证明是非并非只由强者决定。\n\n四季映姬影响力 §G+10§!。"
+
+KYO_eiki_spend_influence_for_fulfillment:0 "纠正万民委员会的偏私"
+KYO_eiki_spend_influence_for_fulfillment_tt:0 "映姬逐项审视委员会未能履行的承诺，逼迫既得利益者交还不属于自己的份额，并让责任落到具体的人身上。\n\n消耗四季映姬 §Y15§! 影响力，使万民委员会履行度 §G+20§!。"
+
+KYO_eiki_spend_influence_for_national_buff:0 "净玻璃映照全境"
+KYO_eiki_spend_influence_for_national_buff_tt:0 "所有借口、功过与隐瞒都被放到同一面镜前。映姬不能保证每个裁决都令人满意，但她会要求每个人接受同一套是非标准。\n\n仅当本季万民议程由四季映姬主持，且她担任万民委员长时可用。消耗 §Y20§! 万民履行度，获得60日专属强力加成。"
+
+KYO_quarterly_candidate_mandate_eiki:0 "本季万民议程：四季映姬"
+KYO_quarterly_candidate_mandate_eiki_desc:0 "本季万民工作将集中处理不公、侵占与责任归属。若映姬担任万民委员长，裁示便能真正约束各方；若她未能主持委员会，再正确的判断也可能只是一场无人执行的说教。"
+
+KYO_quarterly_candidate_mandate_success_idea:0 "本季议程的实际成果"
+
+KYO_quarterly_candidate_mandate_success_tt:0 "季末审议时，若本季议程的主持者仍担任所属委员会委员长，便能运用委员会权限将提案完整落实。\n\n所属委员会履行度 §G+10§!，并获得45日加成。"
+
+KYO_quarterly_candidate_mandate_failure_tt:0 "季末审议时，若本季议程的主持者未能掌握所属委员会，相关提案将在各方争议中遭到搁置，本季不获得任何成果。\n\n百妖协议将重新协商，并确立下一季议程。"
+
+ KYO_decay_military_fulfillment_tt:0 "本月军务委员会履行度 §R-10§!。"
+ KYO_decay_faith_fulfillment_tt:0 "本月信仰委员会履行度 §R-10§!。"
+ KYO_decay_mobilization_fulfillment_tt:0 "本月万民委员会履行度 §R-10§!。"
+
+ KYO_debug_reroll_quarterly_candidate:0 "(百妖)重新抽选季度受益候选人"
+ KYO_debug_trigger_fulfillment_decay:0 "(百妖)立即随机降低一项履行度"
+
+
+
+
+
+ KYO_special_contingent_lock_tt:0 "获得一支§Y特殊编制部队§!。\n该编制在完成§Y$KYO_future_start$§!前保持锁定，无法解散或任意改编。"
+
+ KYO_spawn_eientei_contingent_tt:0 "永远亭派出§Y3个医疗卫队§!。\n部队将锁定至完成§Y$KYO_future_start$§!。"
+
+ KYO_spawn_human_village_contingent_tt:0 "人间之里组建§Y5个警团师§!。\n部队将锁定至完成§Y$KYO_future_start$§!。"
+
+ KYO_spawn_tengu_contingent_tt:0 "天狗提供§Y120架战斗机与3个空降先锋师§!。\n部队将锁定至完成§Y$KYO_future_start$§!。"
+ KYO_spawn_kappa_contingent_tt:0 "河童提供§Y河童一式水蜘蛛战车设计、240辆轻战车与2个装甲工兵师§!。\n部队将锁定至完成§Y$KYO_future_start$§!。"
+ KYO_spawn_old_hell_contingent_tt:0 "旧地狱派出§Y3个突破军团§!。\n部队将锁定至完成§Y$KYO_future_start$§!。"
+ KYO_spawn_higan_contingent_tt:0 "彼岸派出§Y4个裁决防卫队§!，并解锁宪兵技术。\n部队将锁定至完成§Y$KYO_future_start$§!。"
+ KYO_spawn_grassroots_contingent_tt:0 "草根妖怪组建§Y10个妖怪民兵部队§!。\n部队将锁定至完成§Y$KYO_future_start$§!。"
+ KYO_unlock_hyakki_special_contingents_tt:0 "解锁所有由百妖协议提供的特殊编制；这些部队此后可以解散或改编。"
+
+  KYO_Kanako_wind_guard_reward_tt:0 "解锁陆军编制§Y「守矢御柱风神队」§!，并在首都部署 §G1§!支。\n部队将锁定至完成§Y$KYO_future_start$§!。"
+ KYO_Byakuren_life_guard_reward_tt:0 "解锁陆军编制§Y「命莲寺佛教部队」§!，并在首都部署 §G5§!支。\n部队将锁定至完成§Y$KYO_future_start$§!。"
+ KYO_Raiko_resonance_corps_reward_tt:0 "解锁陆军编制§Y「付丧神机动队」§!，并在首都部署 §G3§!支。\n部队将锁定至完成§Y$KYO_future_start$§!。"
+ KYO_Yuuka_annihilation_corps_reward_tt:0 "解锁陆军编制§Y「太阳花田歼灭队」§!，并在首都部署 §G2§!支。\n部队将锁定至完成§Y$KYO_future_start$§!。"
+
+
+
+KYO_executive_pair_cycle:0 "百妖协议季度议程协商"
+KYO_executive_pair_cycle_desc:0 "每逢季末，百妖协议便会在十二名代表之间展开新一轮协商。经过各方推举、交易与妥协后，两名代表将被推到台前，主持下一季的重要议程。\n\n若其中一人同时掌握其所属委员会，便可运用委员长权限，消耗§Y20§!点该委员会履行度，推行一次持续§Y60日§!的专属方案。"
+
+KYO_remilia_spend_influence_for_fulfillment_tt:0 "蕾米莉亚调动红魔馆的军需帐簿、关卡与扈从，将军务委员会迟迟未能执行的命令直接推向前线。\n\n消耗蕾米莉亚§Y15§!影响力，使军务委员会履行度§G+20§!。"
+
+KYO_yuyuko_spend_influence_for_fulfillment_tt:0 "幽幽子重新安排白玉楼的幽灵、冥界通道与妖梦掌握的运输队伍，让积压的军务在无声中逐一完成。\n\n消耗幽幽子§Y15§!影响力，使军务委员会履行度§G+20§!。"
+
+KYO_suika_spend_influence_for_fulfillment_tt:0 "萃香以酒宴与旧日情谊召回分散的鬼族和妖怪豪杰。这支队伍未必服从繁琐规则，却愿意替她把事情做完。\n\n消耗萃香§Y15§!影响力，使军务委员会履行度§G+20§!。"
+
+KYO_yuuka_spend_influence_for_fulfillment_tt:0 "幽香亲自过问迟滞的军务。面对她平静的注视，工坊、运输队与地方武装很快便不再提出拖延的理由。\n\n消耗幽香§Y15§!影响力，使军务委员会履行度§G+20§!。"
+
+KYO_byakuren_spend_influence_for_fulfillment_tt:0 "白莲要求寺众停止停留在经文与劝说之中，将粮食、药物、庇护所与信众真正送往需要援助的地方。\n\n消耗白莲§Y15§!影响力，使信仰委员会履行度§G+20§!。"
+
+KYO_kanako_spend_influence_for_fulfillment_tt:0 "神奈子将守矢神社的信众、河童技术与山中组织纳入同一项工程，把模糊的信仰承诺转化为能够运作的设施。\n\n消耗神奈子§Y15§!影响力，使信仰委员会履行度§G+20§!。"
+
+KYO_satori_spend_influence_for_fulfillment_tt:0 "觉揭开委员会成员隐藏的顾虑、私心与推诿。当真正的想法无法再被掩饰，各方只能重新面对尚未完成的工作。\n\n消耗觉§Y15§!影响力，使信仰委员会履行度§G+20§!。"
+
+KYO_megumu_spend_influence_for_fulfillment_tt:0 "饭纲丸龙调整天狗报网、传令体系与山中阶序，使分散的说法逐渐变成共同立场，并迫使各方依照同一套安排展开行动。\n\n消耗饭纲丸龙§Y15§!影响力，使信仰委员会履行度§G+20§!。"
+
+KYO_sekibanki_spend_influence_for_fulfillment_tt:0 "赤蛮奇把欠粮、工伤、失踪者与强制征收的纪录逐一摊在桌上。影狼守住会场外的道路，若鹭姬替不敢出面的受害者作证，而暗处那名挑染头发的天邪鬼则记下每一次推诿。\n\n消耗赤蛮奇§Y15§!影响力，使万民委员会履行度§G+20§!。"
+
+KYO_eirin_spend_influence_for_fulfillment_tt:0 "永琳将万民委员会视为一名病情复杂的患者。她重新计算粮食、医疗与劳力配置，优先切除最可能导致全面失序的环节。\n\n消耗永琳§Y15§!影响力，使万民委员会履行度§G+20§!。"
+
+KYO_raiko_spend_influence_for_fulfillment_tt:0 "雷鼓让付丧神、流民与无归属者的行动重新协调。她不要求每个人变得相同，只让不同的声音找到能够一同前进的位置。\n\n消耗雷鼓§Y15§!影响力，使万民委员会履行度§G+20§!。"
+
+KYO_eiki_spend_influence_for_fulfillment_tt:0 "映姬逐项审视委员会尚未兑现的承诺，确认责任究竟落在谁身上，并迫使侵占物资与逃避义务者交还不属于自己的份额。\n\n消耗映姬§Y15§!影响力，使万民委员会履行度§G+20§!。"
+
+KYO_remilia_spend_influence_for_national_buff:0 "红月下的全军号令"
+KYO_yuyuko_spend_influence_for_national_buff:0 "西行妖下的进军"
+KYO_suika_spend_influence_for_national_buff:0 "百鬼夜行再临"
+KYO_yuuka_spend_influence_for_national_buff:0 "万花齐放的威压"
+
+KYO_byakuren_spend_influence_for_national_buff:0 "莲华护持全境"
+KYO_kanako_spend_influence_for_national_buff:0 "风雨与御柱的神威"
+KYO_satori_spend_influence_for_national_buff:0 "第三只眼下的共同意志"
+KYO_megumu_spend_influence_for_national_buff:0 "大天狗的全山号令"
+
+KYO_sekibanki_spend_influence_for_national_buff:0 "巷口与暗处连成一片"
+KYO_eirin_spend_influence_for_national_buff:0 "月之贤者的处方"
+KYO_raiko_spend_influence_for_national_buff:0 "雷鸣般的万民响应"
+KYO_eiki_spend_influence_for_national_buff:0 "净玻璃映照全境"
+
+KYO_remilia_spend_influence_for_national_buff_tt:0 "蕾米莉亚将军务委员会化为红魔馆意志的延伸。咲夜整理命令，美铃稳住防线，而所有拒绝服从者都将被迫理解猩红军令的分量。\n\n仅当蕾米莉亚是本季议程主持者且担任军务委员长时可用。消耗§Y20§!军务履行度，获得60日专属强力加成。"
+
+KYO_yuyuko_spend_influence_for_national_buff_tt:0 "幽灵沿著冥界道路搬运补给，亡者填补后方的空缺，妖梦则确保每一道命令都被准确执行。白玉楼的进军安静，却不曾停下。\n\n仅当幽幽子是本季议程主持者且担任军务委员长时可用。消耗§Y20§!军务履行度，获得60日专属强力加成。"
+
+KYO_suika_spend_influence_for_national_buff_tt:0 "酒盏沿著山路与旧都传递，分散的鬼族、妖怪豪杰与地方武装再次聚到一起。没有整齐的队列，只有愿意并肩向前的百鬼。\n\n仅当萃香是本季议程主持者且担任军务委员长时可用。消耗§Y20§!军务履行度，获得60日专属强力加成。"
+
+KYO_yuuka_spend_influence_for_national_buff_tt:0 "花田周边的妖怪、工坊与物资在幽香的威权下转向战线。盛放的花海并不象征和平，而是在提醒敌人，自然也会选择进攻。\n\n仅当幽香是本季议程主持者且担任军务委员长时可用。消耗§Y20§!军务履行度，获得60日专属强力加成。"
+
+KYO_byakuren_spend_influence_for_national_buff_tt:0 "命莲寺将救援、庇护与沿途说法扩展至全境。白莲不允许慈悲成为逃避责任的理由，也不允许任何伤者被轻易遗弃。\n\n仅当白莲是本季议程主持者且担任信仰委员长时可用。消耗§Y20§!信仰履行度，获得60日专属强力加成。"
+
+KYO_kanako_spend_influence_for_national_buff_tt:0 "御柱立起，祭典、工程、河童技术与山中信众被纳入同一套安排。神奈子将以看得见的成果证明，信仰也能成为支撑全境的力量。\n\n仅当神奈子是本季议程主持者且担任信仰委员长时可用。消耗§Y20§!信仰履行度，获得60日专属强力加成。"
+
+KYO_satori_spend_influence_for_national_buff_tt:0 "恐惧与分歧没有消失，但在第三只眼下，没有人还能用虚假的虔诚掩饰真正的盘算。各方只能承认问题，并共同承担结果。\n\n仅当觉是本季议程主持者且担任信仰委员长时可用。消耗§Y20§!信仰履行度，获得60日专属强力加成。"
+
+KYO_megumu_spend_influence_for_national_buff_tt:0 "从妖怪山顶到山脚，报纸、命令与物资沿著天狗网络同时流动。饭纲丸龙不只传播共识，也决定哪些声音有资格成为共识。\n\n仅当饭纲丸龙是本季议程主持者且担任信仰委员长时可用。消耗§Y20§!信仰履行度，获得60日专属强力加成。"
+
+KYO_sekibanki_spend_influence_for_national_buff_tt:0 "赤蛮奇站在台前，迫使委员会承认底层妖怪的要求；影狼保护道路与据点，若鹭姬守住伤者与落单者。与此同时，一名挑染头发的天邪鬼正把工坊、藏身处与不满者连成更深的暗网。\n\n仅当赤蛮奇是本季议程主持者且担任万民委员长时可用。消耗§Y20§!万民履行度，获得60日专属强力加成。"
+
+KYO_eirin_spend_influence_for_national_buff_tt:0 "全境的医疗、配给、劳力与运输被纳入永琳的计算。这份处方精确而有效，只是很少有人能在她完成诊断后，仍保有拒绝治疗的余地。\n\n仅当永琳是本季议程主持者且担任万民委员长时可用。消耗§Y20§!万民履行度，获得60日专属强力加成。"
+
+KYO_raiko_spend_influence_for_national_buff_tt:0 "鼓声传过道路、工坊与聚落。付丧神、流民与被视为无用之物的妖怪循声响应，用自己的存在证明她们仍有能力改变局势。\n\n仅当雷鼓是本季议程主持者且担任万民委员长时可用。消耗§Y20§!万民履行度，获得60日专属强力加成。"
+
+KYO_eiki_spend_influence_for_national_buff_tt:0 "功过、责任与隐瞒都被放到净玻璃前检视。映姬不能保证所有裁示都令人满意，但她会要求每一方接受同样的是非标准。\n\n仅当映姬是本季议程主持者且担任万民委员长时可用。消耗§Y20§!万民履行度，获得60日专属强力加成。"
+
+KYO_remilia_convert_yuyuko_influence_to_fulfillment:0 "蕾米莉亚：命冥界为红月效力"
+KYO_yuyuko_convert_suika_influence_to_fulfillment:0 "幽幽子：邀百鬼赴白玉楼之约"
+KYO_suika_convert_yuuka_influence_to_fulfillment:0 "萃香：借花田之力聚众"
+KYO_yuuka_convert_remilia_influence_to_fulfillment:0 "幽香：让红魔军需改道"
+
+KYO_byakuren_convert_kanako_influence_to_fulfillment:0 "白莲：引导守矢信众入世"
+KYO_kanako_convert_satori_influence_to_fulfillment:0 "神奈子：将地底情报纳入神事"
+KYO_satori_convert_megumu_influence_to_fulfillment:0 "觉：让天狗公论转向"
+KYO_megumu_convert_byakuren_influence_to_fulfillment:0 "饭纲丸龙：重新诠释命莲寺善意"
+
+KYO_sekibanki_convert_eirin_influence_to_fulfillment:0 "赤蛮奇：把永远亭配给送进暗巷"
+KYO_eirin_convert_raiko_influence_to_fulfillment:0 "永琳：将付丧神路网纳入医疗轮调"
+KYO_raiko_convert_eiki_influence_to_fulfillment:0 "雷鼓：让彼岸纪录化为响应网"
+KYO_eiki_convert_sekibanki_influence_to_fulfillment:0 "映姬：让草根证言走入公议"
+
+KYO_remilia_convert_yuyuko_influence_to_fulfillment_tt:0 "蕾米莉亚利用白玉楼在亡者与冥界通道中的权威，迫使原本保持距离的幽灵运输队加入红魔馆主导的军务行动。\n\n幽幽子影响力§R-10§!，军务委员会履行度§G+10§!。"
+
+KYO_yuyuko_convert_suika_influence_to_fulfillment_tt:0 "幽幽子以宴席与旧日情谊收拢萃香身边的鬼族。她没有命令任何人，只让赴宴者在离席前答应替白玉楼完成几件事情。\n\n萃香影响力§R-10§!，军务委员会履行度§G+10§!。"
+
+KYO_suika_convert_yuuka_influence_to_fulfillment_tt:0 "萃香将太阳花田周边的物资、道路与地方妖怪拉入自己的集结网络。幽香未必赞同，但她的势力已在百鬼之间被重新分配。\n\n幽香影响力§R-10§!，军务委员会履行度§G+10§!。"
+
+KYO_yuuka_convert_remilia_influence_to_fulfillment_tt:0 "幽香迫使红魔馆控制的仓库与运输路线暂时改道。这不是协商，而是让蕾米莉亚明白，花田的要求同样不能被忽视。\n\n蕾米莉亚影响力§R-10§!，军务委员会履行度§G+10§!。"
+
+KYO_byakuren_convert_kanako_influence_to_fulfillment_tt:0 "白莲说服部分守矢信众将奉纳、工程与人手转投入救援。神奈子的神德因此被命莲寺重新解释为照顾众生的责任。\n\n神奈子影响力§R-10§!，信仰委员会履行度§G+10§!。"
+
+KYO_kanako_convert_satori_influence_to_fulfillment_tt:0 "神奈子将地灵殿收集的恐惧、流言与地方情绪纳入守矢神社的治理安排，使原本属于觉的情报成为神社扩张影响的工具。\n\n觉影响力§R-10§!，信仰委员会履行度§G+10§!。"
+
+KYO_satori_convert_megumu_influence_to_fulfillment_tt:0 "觉找出天狗报网中真正左右公论的人，并让她们无法忽视读者心中的怀疑。饭纲丸龙仍握著报纸，却不再能完全决定报纸要说什么。\n\n饭纲丸龙影响力§R-10§!，信仰委员会履行度§G+10§!。"
+
+KYO_megumu_convert_byakuren_influence_to_fulfillment_tt:0 "饭纲丸龙将命莲寺的救援、说法与善意重新包装成百妖协议的共同成果。白莲仍在帮助弱者，但功劳开始出现在另一套叙事之中。\n\n白莲影响力§R-10§!，信仰委员会履行度§G+10§!。"
+
+KYO_sekibanki_convert_eirin_influence_to_fulfillment_tt:0 "赤蛮奇把永远亭严密的配给路线引向工棚、暗巷与不在正式纪录中的聚落。影狼护送物资，若鹭姬确认分配，而那名挑染头发的天邪鬼则悄悄留下另一套路线图。\n\n永琳影响力§R-10§!，万民委员会履行度§G+10§!。"
+
+KYO_eirin_convert_raiko_influence_to_fulfillment_tt:0 "永琳将雷鼓串联的付丧神、旧工坊与地方据点重新编入医疗和供应轮调。原本自由生长的互助网络，逐渐变成一套精确而服从命令的体系。\n\n雷鼓影响力§R-10§!，万民委员会履行度§G+10§!。"
+
+KYO_raiko_convert_eiki_influence_to_fulfillment_tt:0 "雷鼓把彼岸保存的亡者纪录、失踪线索与地方争端转化为寻人、联络与互助的道路。冷冰冰的纪录开始在鼓声中重新连回活著的人。\n\n映姬影响力§R-10§!，万民委员会履行度§G+10§!。"
+
+KYO_eiki_convert_sekibanki_influence_to_fulfillment_tt:0 "映姬将赤蛮奇建立的草根联络网纳入公开申诉与调查程序。原本在巷口流传的证词获得正式分量，却也因此暴露在制度的目光之下。\n\n赤蛮奇影响力§R-10§!，万民委员会履行度§G+10§!。"
+
+
+
+    KYO_barrier_postwar_deterioration_cycle:0 "战后大结界巡守"
+    KYO_barrier_postwar_deterioration_cycle_desc:0 "战火已经止息，但大结界承受的创伤并未随胜利一同消失。破碎的灵力、错位的边界与仍在渗入的外界法则，使十处结界节点依旧可能再次动摇。\n\n战后建立的巡守体系，已将结界恶化的间隔延长至每§Y150日§!一次。这为幻想乡争取了时间，却还不足以保证它能安然度过下一个时代。\n\n完成§Y$KYO_gensokyo_rebuild_plan$§!并修复全部十个结界节点后，大结界将获得足以维持长期运作的新根基，此系统§Y决议§!将永久§R停用§Y。"
+
+ KYO_restored_great_barrier:0 "再铸博丽大结界"
+ KYO_restored_great_barrier_desc:0 "十处结界节点已全部恢复。曾经沿著山川、森林、冥界与人里蔓延的裂痕，如今重新闭合；战争留下的失序，也终于被一道完整的边界拦在幻想乡之外。\n\n新的博丽巫女立于神社之前，八云紫则在境界彼端完成最后的校准。这一次，大结界不再仅由古老约定与个人力量勉强维系。各地节点、巡守者与重建后的秩序共同支撑著它，使扩张后的大幻想乡第一次拥有了能够延续数代的根基。\n\n幻想乡曾经濒临消失，也曾在战火中越过原有的边界。如今，它不再只是从外界遗忘中残存的避难所，而是一个亲手证明自己有资格继续存在的世界。"
+
+KYO_tokyo_bridgehead_mission:0 "在东京站稳脚跟"
+KYO_tokyo_bridgehead_mission_desc:0 "东京是日本政治、铁路与军事调度的心脏。若我们能在§Y45日§!内控制东京，最初撕开的缺口便不再只是一次突袭，而会成为妖怪军队深入日本的前进基地。"
+
+KYO_tokyo_opening_deadline_mission:0 "四十五日决胜东京"
+KYO_tokyo_opening_deadline_mission_desc:0 "最初的震撼不会永远持续。日本军队正在从混乱中恢复，铁路上的增援也正向首都集中。\n\n开战方针带来的临时优势仅维持至任务期限；若未能在§Y45日§!内控制东京，这股先声夺人的攻势便会消散。"
+
+KYO_tokyo_division_count_mission:0 "把百妖编成军队"
+KYO_tokyo_division_count_mission_desc:0 "幻想乡从不缺少强大的妖怪，缺少的是能共同进退的军队。鬼族、妖精、天狗、地底居民与草根妖怪必须被编入可以持续作战的队伍。\n\n在§Y150日§!内使我军拥有至少§Y35个师§!。完成后将触发东京作战事件，并获得战时加成。"
+
+KYO_tokyo_active_manpower_mission:0 "唤醒幻想乡的军队"
+KYO_tokyo_active_manpower_mission_desc:0 "东京不会因少数强者的胜利而陷落。道路需要守卫，补给需要搬运，占领区需要驻守，漫长的战线更需要无数愿意踏上前线的人。\n\n在§Y90日§!内使陆军现役人力达到§Y250,000§!。"
+
+KYO_tokyo_rifle_stockpile_mission:0 "让每双手都有武器"
+KYO_tokyo_rifle_stockpile_mission_desc:0 "妖力能撕开防线，却无法替每一名士兵守住阵地。河童工坊、缴获仓库与临时兵工场必须日夜运转，直到新编部队不再空手等待。\n\n在§Y75日§!内使步兵装备库存超过§Y5,000§!。"
+
+KYO_tokyo_honshu_corridor_mission:0 "贯通本州战略走廊"
+KYO_tokyo_honshu_corridor_mission_desc:0 "夺取东京只是打开大门。唯有沿东海道向西推进，控制关西并切断中国地方，日本才能失去重新组织全国抵抗的能力。\n\n在§Y120日§!内控制东京、东海、关西与中国地方的指定州，使妖怪军队的控制线贯穿本州。"
+
+
+ KYO_first_war.1.t:0 "东京战役第一号总命令"
+ KYO_first_war.1.d:0 "东京是日本的心脏。夺取他将会有对整场战争有决定性的影响。军务委员会必须立刻决定，究竟要以何种方式打击首都。\n\n红魔馆主张以红雾遮蔽天空，在敌军尚未辨明局势前直取中枢；结界维护者要求先巩固跨越边界的补给走廊，避免先锋部队孤立于外界；其余妖怪势力则警告，这场战争不可能只靠少数强者结束，幻想乡必须做好长期动员的准备。"
+ KYO_first_war.1.a:0 "让红雾先一步复上东京"
+ KYO_first_war.1.b:0 "先撕断日本的神经"
+ KYO_first_war.1.c:0 "先守住平民与结界通道"
+
+
+ KYO_first_war.2.t:0 "日本的最后通牒" 
+ KYO_first_war.2.d:0 "日本政府的最后通牒已经送达。\n\n幻想乡军队势必须立即撤出东京，交出所有参与袭击、占领与破坏行动的妖怪，并在日本官员监督下永久封闭通往外界的入口。若拒绝服从，日本将把幻想乡视为敌对政权，动用一切力量收复首都，并彻底消除结界彼端的威胁。\n\n使者将文件放在百妖协议的长桌上，纸面上的措辞礼貌而冰冷。红魔馆拒绝交出任何一名扈从；妖怪山警告，日本军队已开始沿铁路集结；命莲寺要求优先考虑平民的安危；永远亭则指出，即使幻想乡此刻退让，日本也不可能容许幻想乡的存在。\n\n争论持续了整夜。有人仍相信战争可以被阻止，也有人早已明白，东京陷落的那一刻，退路便已经消失。\n\n当表决结果被逐一记录，会场陷入短暂的沉默。幻想乡拒绝撤退，拒绝交人，也拒绝把自身的存亡交给外界裁定。\n\n最后通牒被原封不动地退回。从这一刻起，东京不再是一场越界冲突的终点，而是第一次人妖大战的起点。" 
+ KYO_first_war.2.a:0 "那就让日本听见幻想乡的回答" 
+ 
+
+ KYO_first_war.3.t:0 "来自天照大神的光"
+ KYO_first_war.3.d:0 "黎明以前，一道光从天空落了下来。\n\n它没有雷声，没有火焰，也没有飞行器掠过云层的轰鸣。东京北方的日军补给站只在一瞬间被白光吞没，随后重新归于黑暗。当侦察队抵达时，仓库、铁轨、车辆与掩体已沿著同一条笔直轨迹断开，断面光滑得如同它们从未真正连在一起。\n\n附近村落的居民跪在路旁，坚称自己看见了天照大神睁开眼睛。幸存的士兵则说，那道光不像阳光，而像某种来自极远之处的注视——短暂、冷漠，甚至没有把地面上的人视作值得憎恨的敌人。\n\n一名随军僧侣称那是神佛对战争的警告；外界传来的基督徒流言，则把它说成上帝降下的审判。河童技师拒绝接受任何神话解释，却也无法说明何种武器能在没有爆炸、冲击与高温扩散的情况下，完成如此精确的切割。永远亭回收的金属残片更显示，破坏并非由地表已知技术造成。\n\n只有一项纪录令所有解释都更加不安：光芒降下之前，观测者曾在高空看见数个彼此平行的微弱亮点。它们没有随星辰移动，也没有受到云层遮蔽，仿佛某些东西正停留在天空之外，等待著某个早已决定好的时刻。\n\n日军把这场袭击称为天照大神的神罚。前线妖怪则开始低声谈论月亮、天外之物，以及一位从未现身的神。\n\n然而，神明若真的注视著这场战争，祂究竟站在哪一边？"
+ KYO_first_war.3.a:0 "封存残片——不要替那道光命名"
+
+
+
+KYO_first_war.10.t:0 "结界彼端的二十八日"
+KYO_first_war.10.d:0 "正式宣战尚未到来，但第一批妖怪已经越过结界。\n\n她们没有旗帜，也没有整齐的军服。天狗沿著高空记录东京的防空阵地与军事地点；河童混入工厂、车站与码头，测量每一座能被切断的桥梁与通讯设备；红魔馆的使魔藏身于屋顶、水塔和地下管线；命莲寺的信众则以救济、行脚与探访为名，替即将被战火吞没的人群寻找撤离道路。\n\n更多看不见的手正在城市深处活动。伪造的证件被送进官署，错误的调度表混入军方档案。日本把这些异常视为失窃、故障与无法解释的流言，却不知道自己的铁路、电话、港口与指挥体系，正被一点一点剖开。\n\n幻想乡只有§R28日§!。六项先遣方案中，只能完成§R3项§!。其余未能打通的道路，将在开战后由前线部队以更直接的方式夺取。\n\n二十八日后，潜伏者将同时收到最后一道信号。电话会沉默，军列会停在错误的月台，红雾将从城市内部升起，而结界另一端早已集结完毕的百妖军队，将沿著她们留下的道路踏入外界。\n\n日本尚未听见战争的声音。\n\n但战争已经进入东京。"
+KYO_first_war.10.a:0 "二十八日后，让百妖军越过结界"
+
+
+
+
+ KYO_advance_planning_deadline:0 "潜伏者的二十八日"
+ KYO_advance_planning_deadline_desc:0 "战争尚未正式爆发，但第一批妖怪早已越过结界。\n\n她们换上外界衣物，混入车站、码头、工厂与官署；天狗记下巡逻时间，河童测量铁路与电报设备，妖精躲进仓库与屋顶，式神则在无人注意的角落埋下标记。东京仍以为自己面对的只是几起无法解释的失踪、故障与流言，却不知道整座城市的弱点正被逐一记录。\n\n百妖协议只有§Y28日§!完成其中§Y3项先遣方案§!。期限结束后，所有潜伏人员都必须撤离、转入地下，或留在敌后等待开战信号。未能完成的准备，将在战争爆发后由前线部队强行补上。"
+
+
+ KYO_plan_seize_government:0 "把手伸进东京官署"
+ KYO_plan_seize_government_desc:0 "官署并不需要被正面攻破，只需要在命令传出以前，先让错误的人握住印章与钥匙。\n\n潜伏者将伪造通行证、调换值勤表，并确认政府机关、警察本部与军政档案室的入口。待红雾复上东京时，内应会封锁楼梯、切断电话，替突入部队打开通往中枢的道路。"
+
+
+ KYO_plan_cut_communications:0 "让日本的神经先行断裂"
+ KYO_plan_cut_communications_desc:0 "铁路传递军队，电报传递命令，广播则维持恐慌中的服从。只要这三者仍然运作，日本便能从最初的震撼中恢复。\n\n天狗与草根妖怪将侦察交换局、信号站与军用电话线；河童则准备能被伪装成普通故障的破坏装置。开战之时，东京将依旧亮著灯，却再也听不见外界的回答。"
+
+
+ KYO_plan_open_barrier_corridor:0 "在敌后埋下结界座标"
+ KYO_plan_open_barrier_corridor_desc:0 "越过裂口不难，让大批军队、物资与伤员稳定往返才是真正的问题。\n\n式神将在人烟稀少的神社、废弃隧道与地下设施中埋设座标，使原本短暂而危险的通道能在开战后迅速展开。这些标记平时只是不起眼的符纸、石块与绳结；当命令下达，它们将把幻想乡的道路直接接入敌军后方。"
+
+
+ KYO_plan_control_port_rail:0 "渗透港铁调度中枢"
+ KYO_plan_control_port_rail_desc:0 "东京的军队可以失去几座仓库，却不能失去港口与铁路。只要列车仍能运兵，船只仍能卸下军需，首都便不会真正孤立。\n\n先遣人员将混入车站、机务段与码头工班，记下转辙器、信号室、燃料库与调度名单的位置。开战之日，他们不必摧毁整条铁路，只需让几班列车驶向错误的月台，让几道关键信号永远停在红灯。"
+
+
+ KYO_plan_evacuate_civilians:0 "打开疏散平民的道路"
+ KYO_plan_evacuate_civilians_desc:0 "东京的平民不会知道红雾何时降下，也不会知道哪一条街道即将成为战场。若任由日本军方组织疏散，军队便能利用人群封锁道路，甚至把居民留在阵地之间。\n\n命莲寺信众、妖兔与熟悉东京的协力者将秘密标出避难所、医疗点与离城路线，并准备足以以假乱真的疏散告示。当战斗开始，真正安全的道路会先于政府命令在人群中传开。"
+
+
+ KYO_plan_great_red_mist:0 "把红雾藏进东京夜色"
+ KYO_plan_great_red_mist_desc:0 "红雾若从远方席卷而来，日本仍有时间拉响警报；若它从城市内部同时升起，军队便无法判断攻击究竟来自何方。\n\n红魔馆的使魔将潜入屋顶、水塔、地下管道与军营附近，预先布置能扩散雾气的魔法节点。待最后一道信号发出，东京的街灯、探照灯与瞄准镜将在同一刻失去作用，而红魔馆的部队早已知道该在雾中往哪里前进。"
+
+  KYO_incomplete_advance_plan:0 "敌后部署残缺"
+ KYO_incomplete_advance_plan_desc:0 "部分潜伏人员未能及时抵达指定位置，尚未建立的联络线也随开战而中断。前线部队只能在陌生街道、错误情报与敌军警戒中，强行完成原本应由先遣人员处理的工作。"
+
+KYO_seize_tokyo_arsenal:"获得敌人仓库的武器"
+
+
+
+
+ KYO_first_war.20.t:0 "东京战役第一号总命令"
+ KYO_first_war.20.d:0 "对日战争已无法回头。结界彼端的军队正在集结，日本的铁路、电报与官署也正从最初的震撼中恢复。东京不仅是一座城市，更是整个日本军政体系的心脏；若首都仍能持续下达命令，我们在边境取得的一切优势都可能被重新夺回。\n\n红魔馆主张以红雾遮蔽天空，在敌军尚未辨明局势前直取中枢；结界维护者要求先巩固跨越边界的补给走廊，避免先锋部队孤立于外界；其余妖怪势力则警告，这场战争不可能只靠少数强者结束，幻想乡必须做好长期动员的准备。\n\n无论采取何种方针，最初的混乱都不会永远持续。若未能在期限内夺取东京，我们便将失去这次先发制人的机会。"
+ KYO_first_war.20.a:0 "以红雾与速度击穿东京"
+ KYO_first_war.20.b:0 "先稳固跨界补给走廊"
+ KYO_first_war.20.c:0 "召集百妖，准备长期战争"
+
+
+ KYO_first_war.21.t:0 "东京已在妖怪军队掌中"
+ KYO_first_war.21.d:0 "红雾掠过皇居与官署，陌生的妖气沿著街道、车站与电报线蔓延。东京的行政中枢已停止运作，主要铁路枢纽与军需仓库也相继落入我军手中。\n\n然而，夺取首都并不代表战役已经结束。溃散的日军部队仍在市郊重整，部分司令部正试图携带档案与通讯设备撤离；数以百万计的平民则被困在停电、火灾与混乱之中。军务委员会必须立刻决定，东京究竟要成为向西推进的桥头堡、追击敌军的猎场，还是一座首先需要恢复秩序的城市。"
+ KYO_first_war.21.a:0 "控制港口、车站与军需仓库"
+ KYO_first_war.21.b:0 "不让任何日军司令部逃离"
+ KYO_first_war.21.c:0 "划设疏散区与临时管制区"
+
+
+ KYO_first_war.22.t:0 "百妖军的战斗序列"
+ KYO_first_war.22.d:0 "最初各自为战的妖怪群体，如今已扩编为足以维持整条战线的军队。天狗掌握天空与侦察，河童维持兵器与运输，鬼族充当突破主力，妖精、兽妖与地底居民则填补不断延伸的防线。\n\n问题在于，这支军队仍保留著幻想乡原有的性格。红魔馆不愿接受外人干涉自己的部队，天狗服从山中的阶序，鬼族看重领袖与情谊，草根妖怪更习惯依靠熟人与地方路线。建立统一指挥可以让命令迅速贯彻，却可能激起各派对中央控制的戒心；保留派系纵队能维持灵活与自主，却也可能让整条战线再次变成各打各的战场。"
+ KYO_first_war.22.a:0 "所有军队纳入统一战斗序列"
+ KYO_first_war.22.b:0 "让各派纵队自行寻找突破口"
+
+
+ KYO_first_war.23.t:0 "二十五万人踏上战线"
+ KYO_first_war.23.d:0 "从妖怪山到旧地狱，从人里边缘到迷途竹林，征召与自愿加入的队伍已遍布道路。有人真正拿起武器，有人修筑工事、搬运粮食、照顾伤员，也有人只是因家园已无处可退而被推向前线。\n\n万民委员会要求把这股力量一次投入战场，以压倒性的兵力撕开日本防线；永远亭则警告，没有轮调、医疗与伤员补充制度的大军，只会在数月内被疾病与疲惫拖垮。这不只是如何使用三十五万兵员的问题，而是幻想乡准备把自己的居民当成一次性的力量，还是能够长期维持的军队。"
+ KYO_first_war.23.a:0 "将全境人力投入总动员"
+ KYO_first_war.23.b:0 "建立永远亭轮调与后备制度"
+
+
+ KYO_first_war.24.t:0 "五千支步枪"
+ KYO_first_war.24.d:0 "河童工坊、东京军需仓库与前线缴获的武器，终于让步兵装备库存跨过了最初的缺口。数千支步枪整齐排列在仓库中，但它们的口径、零件与保养方式各不相同，有些来自日本正规军，有些则是在河童工坊中匆忙仿制。\n\n河童技师要求统一规格，使生产线与弹药供应不再被杂乱型号拖累；草根妖怪则指出，战场上仍有大量被遗弃、损坏或藏匿的武器，只要建立可靠的回收与修理网络，就不必把每一件装备都交给大工坊生产。"
+ KYO_first_war.24.a:0 "由河童制定统一兵工规格"
+ KYO_first_war.24.b:0 "让草根网络回收每一件可用武器"
+
+
+ KYO_first_war.25.t:0 "妖怪军队贯穿本州"
+ KYO_first_war.25.d:0 "从东京出发的控制线已穿过东海与关西，并延伸至中国地方。日本东西之间最重要的铁路、道路与城市走廊，如今已被妖怪军队切开并重新连接。日军仍在各地抵抗，但已难以依靠本州中央地带调动全国兵力。\n\n接下来的问题不再只是如何前进，而是如何维持这条漫长的控制线。军方要求优先修复铁路、桥梁与车站，使兵员和补给能沿本州快速流动；各派代表则主张建立正式的占领机构，接管地方官署、治安与粮食分配。前者能让战争继续，后者则决定我们究竟如何统治已经落入掌中的土地。"
+ KYO_first_war.25.a:0 "让军用列车贯穿整个本州"
+ KYO_first_war.25.b:0 "在各地设立妖怪占领机构"
+
+
+  KYO_barrier_crisis.1.t:0 "肉眼看不见的裂隙"
+ KYO_barrier_crisis.1.d:0 "巫女死亡后第十八日，博丽神社的异常不再只停留在一个座标。\n\n最先提出警告的是蓝。她将各地送回的测量纪录重新排列，发现妖怪山、迷途竹林、魔法森林与人里边缘，都出现了与神社相同的微小偏移。单独观察时，每一组读数都在容许范围内；只有将它们叠在一起，才能看见十条正朝不同方向缓慢移动的轨迹。\n\n紫亲自前往其中三处。肉眼看不见裂痕，手指也触不到缺口，但当她试图辨认内外、远近与前后时，原本明确的境界却出现了一瞬间的空白。\n\n隐岐奈从后户踏出时，发现其中一道门比预定位置偏了半步。华扇放出的动物则在穿越林线后拒绝返回，仿佛牠们已不再认得来时的方向。\n\n三位贤者分别用了不同的方法，却得到同一个结果。\n\n大结界没有裂开。\n\n是被大结界划分的土地，正在逐渐忘记自己究竟位于哪一边。\n\n第二十一日清晨，蓝将十处异常座标单独列出。那张纸后来成为第一份结界节点纪录，而在当时，它看起来更像一张尚未完成的死亡分布图。"
+ KYO_barrier_crisis.1.a:0 "将十处座标全部列入最高监视"
+
+
+KYO_barrier_crisis.2.t:0 "裂口之后，遗忘开始了"
+KYO_barrier_crisis.2.d:0 "第一道裂口出现后，异常并没有立刻夺走任何生命。\n\n它只是让一些妖怪开始变得不再被记得。\n\n最初只是细小的错漏。熟识多年的邻居叫不出彼此的名字，商贩忘记自己曾向谁赊帐，巡逻者明明刚与同伴交谈，转身后却想不起队伍里是否真的有那个人。\n\n几日之内，症状迅速扩散。有人回到住处，却发现家人将她当成陌生人；有人在工坊工作了数十年，墙上的轮值纪录却从未出现过她的名字；还有妖怪站在人群中央不断呼喊，周围的人明明听见声音，目光却总会从她身上滑开。\n\n她们没有消失。\n\n她们仍会感到寒冷，仍需要进食，也仍记得自己爱过谁、恨过谁、曾在哪一条河边长大。只是世界开始拒绝承认这些关系曾经存在。\n\n被遗忘的妖怪越来越多。她们在门上刻下名字，把自己的经历写满墙壁，彼此反复确认对方仍然存在。有些人甚至用绳索将自己与同伴绑在一起，害怕下一次松手后，对方便会成为一个从未认识过的陌生人。\n\n大结界没有发出警告。\n\n没有死亡，没有遗体，也没有任何东西能被正式列为损失。\n\n可幻想乡正在失去那些仍然活著的居民。"
+KYO_barrier_crisis.2.a:0 "她们还活著，却正在被幻想乡遗忘。"
+
+
+ KYO_barrier_crisis.3.t:0 "裂口后面没有风"
+ KYO_barrier_crisis.3.d:0 "紫在妖怪山北侧找到第一处能被直接观测的异常。\n\n它不像裂缝。没有破碎的光，也没有灵力从中泄漏。那里只是一段过于笔直的空白，细得如同有人用刀尖在风景上划过一笔。\n\n紫将扇尖伸向空白。\n\n扇尖没有穿过去，也没有被阻挡。它只是在接触那一瞬间失去了一小截，仿佛那部分从未属于这把扇子。\n\n裂口后面没有风，没有外界的气味，也没有另一侧传回的灵力。蓝布置的测量符同样得不到回应，因为那里并不存在一个可以被测量的『彼处』。\n\n『不是自然崩坏。』蓝说，『自然裂痕仍然会保留两侧。这里没有。』\n\n紫盯著那道空白，许久没有回答。\n\n大结界的作用，是决定何处属于幻想乡，何处属于外界。可眼前的异常并未跨越这道区分，也没有试图撕破它。\n\n它只是把『此处』与『彼处』之间原本存在的关系一并抹除了。\n\n若这种现象继续扩张，幻想乡不会像一座城那样倒塌。\n\n它会失去与世界相连的方式，直到再也无法证明自己曾经存在。"
+ KYO_barrier_crisis.3.a:0 "这不是裂开，而是被从世界上删去"
+
+
+ KYO_barrier_crisis.4.t:0 "紫在天亮前回来"
+ KYO_barrier_crisis.4.d:0 "天色尚未亮起，橙便听见庭院里传来极轻的脚步声。\n\n紫从间隙中走出时，衣袖沾著泥、水与已经干涸的血。她的扇子少了一角，右手指尖则留下数道无法自行愈合的细小伤口。那些伤并不深，却像是连她的妖力也无法确认伤口的边界。\n\n『紫大人，妳流血了。』橙立刻迎上去。\n\n『不是我的血。』紫回答。\n\n她没有解释那是谁的，也没有停下。\n\n房内，蓝仍坐在堆满算纸的桌前。十处节点、四十二次测量、七种误差来源与三套结界模型被排列得近乎残酷。每一张纸都指向不同结果，却又在最坏的那一点上彼此重合。\n\n『下一处最可能出现在人里或迷途竹林。』蓝说，『误差十二分之一。时间在三十六至四十八个时辰之间。若妖怪山再次偏移，推算全部作废。』\n\n紫只看了一眼。\n\n『重算。』\n\n『这已经是第九次。』\n\n『那就算第十次。』\n\n橙端来热水时，紫已经再次站到间隙之前。她没有处理伤口，也没有坐下。\n\n天亮以前，她还要走完剩下的节点。\n\n而蓝必须在下一张土地忘记自己以前，算出它将从哪里开始。"
+ KYO_barrier_crisis.4.a:0 "她们没有休息的时间"
+
+
+ KYO_barrier_crisis.5.t:0 "三位贤者的共同失败"
+ KYO_barrier_crisis.5.d:0 "三位贤者在博丽神社会面时，十处结界节点中已有六处出现偏移。\n\n紫主张切断异常区域与周围的境界，将崩坏暂时封闭在有限范围内。但这意味著数个聚落可能被一同隔离，而被转移的压力仍会在其他地方重新出现。\n\n隐岐奈提出以后户替代受损通道，重新建立各地之间的连结。可十处节点彼此牵连，每增加一扇替代之门，就会多出一条无法完全掌握的入口。她能打开道路，却无法保证道路最后仍通往原来的地方。\n\n华扇则要求以地脉、居民与地方守护者重新固定每处节点。这是最稳妥的方法，却需要大量人手长期驻守。仅靠三位贤者与她们的从者，连第一轮巡守都无法完成。\n\n争论持续了数个时辰。\n\n没有人说服另外两人，也没有任何一种方案足以单独挽救十处节点。\n\n最后，紫将十份纪录推到桌面中央。\n\n『我们没有时间争出谁是对的。』\n\n隐岐奈没有反驳。华扇也只是看著那些仍在增加的偏差。\n\n修补结界需要军队守住危险区域，需要寺社安定恐慌，需要河童维修器具，需要天狗传递消息，也需要无数住在节点附近、最先承受崩坏的小妖怪提供道路与人手。\n\n这不再是贤者能够从幕后处理的异变。\n\n幻想乡若要继续存在，就必须让原本互不信任的所有人一起动手。"
+ KYO_barrier_crisis.5.a:0 "召集百妖——这次没有谁能置身事外"
+
+
+ KYO_barrier_crisis.6.t:0 "白得过分的灰"
+ KYO_barrier_crisis.6.d:0 "结界裂口附近出现了灰。\n\n它们覆在草叶、石阶与倒下的树木上，颜色白得近乎刺眼。没有火灾，也没有任何东西被烧毁；灰烬摸起来冰冷干燥，却不会被风带走，也不会沾在手指上。\n\n更奇怪的是，现场没有妖气、怨气或死亡留下的浊气。通常即使一只最弱小的妖怪消逝，也会在附近留下短暂的痕迹。可这些白灰周围什么都没有，像是原本存在于那里的一切都被处理得过于彻底。\n\n永琳抵达后，只取了一小撮样本。\n\n她将灰放入数种药液，又以月光照过容器。原本沉在底部的白色颗粒忽然排列成极细的同心圆，随后在所有人眼前自行散开。\n\n永琳的手停了一瞬。\n\n『妳见过？』紫问。\n\n『我见过相似的结果。』\n\n『在哪里？』\n\n永琳没有回答。她只是封住容器，要求所有接触过白灰的人立刻接受检查，并禁止任何人把样本带离永远亭。\n\n蓝在纪录中写下：未知物质，非燃烧产物，无幻想乡已知术式残留。\n\n紫则在那行字旁加了一句。\n\n永琳知道它是什么。\n\n她只是不愿说出那个答案。"
+ KYO_barrier_crisis.6.a:0 "封存白灰，也记下永琳的沉默"
+
+
+ KYO_barrier_crisis.7.t:0 "大结界读数正常"
+ KYO_barrier_crisis.7.d:0 "十处节点正在偏移，妖怪开始遗失名字，裂口正在抹除空间之间的关系。\n\n然而，大结界的中央测量结果依旧正常。\n\n灵力总量没有下降，内外压力维持平衡，所有警戒术式都未曾启动。按照数字，幻想乡从未如此稳定。\n\n蓝重新校准法器，更换基准座标，甚至以不同时代留下的测量方法交叉验证。\n\n结果没有改变。\n\n若不是所有人都亲眼看见那些正在消失的事物，这份报告足以证明危机根本不存在。\n\n紫看完数据，只将报告翻到空白的背面。\n\n『从现在开始，正常也要记录。』\n\n因为当现实与测量互相矛盾时，最危险的可能并不是测量出了错。\n\n而是大结界已经不再把眼前的崩坏视为异常。"
+ KYO_barrier_crisis.7.a:0 "正常，才是最不正常的结果"
+
+
+ KYO_barrier_crisis.8.t:0 "测量中的偏差"
+ KYO_barrier_crisis.8.d:0 "第三轮全域测量完成后，蓝把所有结果锁进同一张座标图。\n\n偏差再次出现。\n\n它不大，不足以被单独判定为异常；但每次测量之间，那些节点都会朝同一方向移动极短的距离。法器没有移动，地脉没有变化，负责记录的人也彼此隔离。\n\n真正改变位置的不是测量点。\n\n而是测量点所代表的地方。\n\n博丽神社前，巫女死亡的座标仍是所有偏移的起点。从那里向外，十处节点如同被某种看不见的力量缓慢拖离原有位置。\n\n蓝在最后一页写下结论：大结界尚未失效，但它所保护的世界正在偏离大结界。\n\n这一次，没有人再把小数点后的差异当成误差。"
+ KYO_barrier_crisis.8.a:0 "把每一次偏移都写进纪录"
+
+
+  KYO_hyakki_council.1.t:0 "百妖协议的第一次会议"
+ KYO_hyakki_council.1.d:0 "博丽神社的临时会场从未坐过这么多彼此厌恶的人。\n\n红魔馆带来自己的护卫与规矩；白玉楼的使者安静地坐在另一端；妖怪山拒绝交出完整情报；命莲寺与守矢神社甚至在救援范围上都无法取得共识。地底居民不相信地上的承诺，草根妖怪则不相信任何有名号的大人物会在事后记得她们。\n\n八云紫没有要求她们和解。\n\n她只是把十处持续偏移的结界节点摊在桌上，然后将所有人分进三个彼此牵制的架构。\n\n军务委员会负责前线、守备与共同作战；信仰委员会负责救援、安置、消息与人心；万民委员会负责粮食、劳力、地方道路与那些从来进不了正式会议的需求。各方可以争夺委员长，可以拒绝别人的方案，也可以在每一项命令上讨价还价，但不得退出整体架构。\n\n至于三个委员会之间无法解决的冲突，全部交由紫裁断。\n\n『你们不必彼此信任。』紫的声音不高，会场却安静下来，『只要在幻想乡消失以前，学会同时做事。』\n\n没有人为这句话鼓掌。\n\n但也没有人起身离开。\n\n百妖协议就这样成立了。它不是盟友之间的约定，而是一道由八云紫亲手扣上的锁。"
+ KYO_hyakki_council.1.a:0 "先坐下——其他恩怨等活过这场危机再说"
+
+
+KYO_hyakki_council.2.t:0 "神灵庙拒绝向故国拔剑"
+KYO_hyakki_council.2.d:0 "丰聪耳神子拒绝在百妖协议上签字。\n\n对她而言，日本并非陌生的外国，而是她曾治理、改革过的故国。即使如今的日本已偏离她的理想，她也无法因此向其拔剑。\n\n『我可以批判如今的日本，但不能因失望而攻击自己曾经治理过的土地。』\n\n神灵庙因此拒绝出兵，也不接受百妖协议的军事调度。但庙门仍会开放，收容逃离战火的平民，为不愿参战者提供庇护。\n\n神子不会支持日本政府，也不会替百妖协议征服她的故国。"
+KYO_hyakki_council.2.a:0 "不签字，也不向故国拔剑"
+
+
+KYO_hyakki_council.10.t:0 "共同军令正在失效"
+KYO_hyakki_council.10.d:0 "军务委员会送出的作战命令，正逐渐失去约束力。\n\n各军团依旧会派遣代表出席会议，也会在地图上标出预定位置；可当命令真正送往营地时，部队往往以兵力不足、补给延误、道路不明或前线情况有变为由，自行修改集结时间与行军路线。\n\n没有人公开拒绝共同作战。\n\n然而，应当同时抵达的部队总会相隔数个时辰，预定接替防线的兵力也常在最后一刻改变方向。侦察情报来不及转化为攻势，补给已经送到的阵地却等不到守军，前线指挥者只能依靠各自的人手临时应对。\n\n军务委员会仍然存在，但它已经无法确保桌上的决定会被完整带到战场。\n\n§R军务委员会履行度已跌至危险范围，跨军团支援将受到限制。§!"
+KYO_hyakki_council.10.a:0 "命令仍在传递，服从却停在半路"
+
+KYO_hyakki_council.11.t:0 "救援体系开始停滞"
+KYO_hyakki_council.11.d:0 "信仰委员会承诺提供的医疗、安置与救援，正被延误与推诿一点点拖垮。\n\n收容地点等待粮食，粮车等待道路确认，医疗队等待伤员数量，而负责传递消息的人又在等待新的指示。每一个环节都有合理理由，每一份报告也都能说明自己为何尚未行动。\n\n没有人明确拒绝救援。\n\n可伤员仍然躺在临时棚屋里，离开危险区域的居民找不到可以落脚的地方，已经准备完成的物资也因无人接收而停在仓库。\n\n当各单位只愿意完成最狭窄的一部分责任时，整条救援体系便不再真正运作。百妖协议仍能公布新的安排，却越来越难保证那些安排会抵达需要的人面前。\n\n§R信仰委员会履行度已跌至危险范围，医疗、补给与居民安置将受到影响。§!"
+KYO_hyakki_council.11.a:0 "承诺没有消失，只是再也无法按时抵达"
+
+KYO_hyakki_council.12.t:0 "地方联络正在中断"
+KYO_hyakki_council.12.d:0 "万民委员会最先失去的，不是正式道路，而是那些依靠熟人、暗号与地方信任维持的小路。\n\n原本愿意替协议传递消息、搬运物资与引导队伍的地方联络者，开始减少回应。有人不再出席约定，有人擦去路旁的记号，也有人只愿意帮助自己熟识的聚落，不再替远方的军团承担风险。\n\n她们并未公开反抗百妖协议。\n\n只是太多要求被搁置，太多伤亡没有得到回复，太多物资在抵达地方以前便被重新分配。当底层居民一次次被要求付出，却看不见委员会履行自己的承诺，信任便会先于道路断裂。\n\n配给表仍然整齐，联络图上也仍画著完整的线。然而，其中一些线已经不再通向任何愿意回应的人。\n\n§R万民委员会履行度已跌至危险范围，地方联络与草根支援将逐步停摆。§!"
+KYO_hyakki_council.12.a:0 "道路还在，但愿意带路的人正在离开"
+
+
+KYO_hyakki_council.20.t:0 "百妖协议后的一百日"
+KYO_hyakki_council.20.d:0 "百妖协议成立至今，已经过了一百日。\n\n一百日前，几乎没有人相信这套架构能够维持。红魔馆不信任命莲寺，妖怪山不愿交出完整情报，地底对地上的承诺充满戒心，草根妖怪也早已厌倦替那些有名号的势力承担风险。\n\n可一百日过去了。\n\n三个委员会依旧在运作，军队仍按照共同时程集结，物资仍沿著协议建立的道路流动，各地代表也仍会在争吵过后回到自己的位置。她们没有忘记旧怨，更没有突然成为朋友，只是暂时把彼此的成见压在一旁，将备战放在更前面。\n\n这并不是理所当然的成果。\n\n对一个长久依靠孤立、猜忌与各自为政维持秩序的幻想乡而言，能让如此多互不信任的妖怪共同准备同一场战争，本身就已经近乎奇迹。\n\n百妖协议没有破产。\n\n它仍然脆弱，仍然吵闹，也仍然可能在任何一次失败后重新裂开。但至少在第一百日到来时，所有人仍朝著同一个方向前进。\n\n这已经值得幻想乡为之庆贺。"
+KYO_hyakki_council.20.a:0 "一百日未散，已是天大的可喜可贺"
+
+
+ KYO_hyakki_council.19.t:0 "同席之人"
+ KYO_hyakki_council.19.d:0 "八云紫的邀请以各种方式送抵幻想乡。\n\n有些信件从门缝下出现，有些落在戒备森严的会议桌上，还有一些直接穿过间隙，停在收件人的茶杯旁。信上的内容很短：博丽大结界正在恶化，幻想乡已无法再由少数贤者独力维持。凡是仍希望这片土地存在下去的人，都应前来。\n\n于是，幻想乡中最难以共处的一群人坐到了一起。吸血鬼与僧侣隔桌相望，神明审视著地底的妖怪，天狗记录每一句可能成为新闻的争执，草根妖怪则站在房间边缘，怀疑这是否又是一场由大人物决定一切的会谈。\n\n八云紫以伞尖轻敲地面。声音落下的瞬间，会场四周同时裂开数十道间隙。红魔馆的尖塔、妖怪山的御柱、冥界的樱树与人间之里的屋舍，分别出现在幽暗的缝隙彼端；每一处景象之上，都爬满了正在扩散的结界裂痕。方才的吵闹戛然而止。「妳们可以憎恨彼此，可以争夺权力，也可以在这张桌子下准备下一场背叛。」紫环视众人，语气平静得令人不寒而栗，「但从现在开始，谁妨碍幻想乡活下去，我就先让谁消失。」\n间隙中的眼睛缓缓睁开，凝视著席间的每一张面孔。\n「这不是请求，也不是商议。我召集各位，只是因为妳们仍有可用之处。证明我的判断没有错。」\n蕾米莉亚掩唇轻笑，指尖却停在了杯缘。神奈子追问最终的决定权究竟属于谁。映姬要求一切动员都必须受到约束。赤蛮奇则毫不客气地质问，为何直到灾难逼近，上位者才终于想起那些一直被踩在下面的人。\n紫没有制止，也没有回答。\n她只是收起间隙，回到主位坐下，仿佛所有反对早已被计算在内。\n没有人准备服从八云紫的每一道命令。\n但直到会议开始，也没有人敢起身离席。"
+ KYO_hyakki_council.19.a:0 "至少，她们愿意留在同一个房间里。"
+
+
+ KYO_hyakki_council.21.t:0 "百妖协议"
+ KYO_hyakki_council.21.d:0 "会议开始不到半个时辰，门外便排满了前来求援的人。\n\n妖怪山报告，结界附近的三条道路在一夜之间偏离原位，两支巡逻队至今没有回来；命莲寺带来了人里的消息，有人宣称异变源于神佛震怒，寺院与守矢神社的信众已经为此争吵不休；最后走进会场的是一名抱着空米袋的小妖怪。她既不知道该向谁求助，也不知道粮仓里的存粮究竟被谁调走了。\n\n问题并非无人做事，而是所有人都只管自己眼前的麻烦。红魔馆征用了河童准备修补结界的器材，永远亭配好的药物堆在竹林里无人运送，天狗封锁道路时也没有通知附近的村落。每个势力都在设法挽救幻想乡，结果却让彼此更加混乱。\n\n八云紫让蓝将桌上的报告重新分成三叠。\n\n军务委员会负责巡逻、武装与未来的作战准备；信仰委员会处理各地的宗教争端、流言与公开消息；群众委员会接管粮食、医疗、避难所与劳力调度。各方必须申报能够提供的人手和物资，由委员会自行推举委员长，所有调度则记入共同账册。若三个委员会无法取得一致，再交由紫裁决。\n\n蕾米莉亚首先要求军务享有优先权。白莲提醒她，守住道路没有意义，若道路两旁的人已经无粮可食。赤蛮奇则敲了敲桌面，要求账册定期贴在人里，让所有人都能看见东西送给了谁，又是谁总被排在最后。\n\n紫没有制止争论。\n\n「我不要求妳们彼此信任。」她等众人说完，才将协议推到长桌中央，「我只要求每一件事都有人负责。做不到，就把位置让给做得到的人。」\n\n签名陆续落在纸上。有人爽快，有人迟疑，也有人几乎划破纸面。无论各方是否情愿，从这一日起，幻想乡的巡逻队、粮食、药物与消息终于有了一套共同的调度办法。\n\n百妖协议正式生效。"
+ KYO_hyakki_council.21.a:0 "各委员会即刻开始工作。"
+
+
+ KYO_hyakki_council.22.t:0 "军务委员会"
+ KYO_hyakki_council.22.d:0 "军务委员会第一次议事尚未开始，屋外便传来急促的羽翼声。\n\n一名天狗侦察兵跌落在庭院中央。她带回半截沾血的旗帜，以及一项比伤势更加糟糕的消息：两支地方武装同时撤向山口，彼此都拒绝让路。敌人尚未追上，她们便已经拔刀相向。\n\n§T蕾米莉亚·斯卡雷特§!拾起旗帜，看了一眼便将它丢到桌面。\n\n「没有两支军队。」她说道，「从今天开始，只能有一个命令。」\n\n她要求所有武装服从统一指挥，以明确的阶级、编制与惩罚取代各自为战。那些不肯接受的人，在她眼中与临阵脱逃没有差别。\n\n§T伊吹萃香§!听完便笑出了声。她抓起酒盏，反问蕾米莉亚究竟打算派多少督军，才能逼一群互不相识的妖怪替彼此挡下子弹。萃香要亲自前往山口，把两边的领头者叫到一起；若一顿酒还不能让她们说实话，便用拳头。\n\n§T西行寺幽幽子§!没有参与两人的争执。她望向那截旗帜上尚未干涸的血迹，轻声询问撤退途中留下了多少遗体。活人争夺道路，亡者也在战场上越积越多；若冥界的入口失去控制，下一次回到山口的便不只敌军。\n\n§T风见幽香§!最后才开口。她从旗布上拈下一片被踩烂的花瓣，笑意温和得近乎可怕。\n\n「妳们可以慢慢讨论谁来带路。」她将花瓣放回桌上，「我先去把追兵埋进土里。」\n\n四人随即陷入争论。蕾米莉亚要的是服从，萃香要的是自愿追随；幽幽子计算战争如何穿过生死两界，幽香则打算以压倒性的力量结束问题。\n\n紫把她们放在一起，并非期待四种意志彼此妥协。她要的是让幻想乡最危险的四种力量朝向同一个敌人——至少在她们决定先攻击彼此前。\n\n庭院里，负伤的天狗仍在等待答案。\n\n而第一道命令，至今尚未有人签下。"
+ KYO_hyakki_council.22.a:0 "谁能让她们前进，谁便有资格下令。"
+
+
+ KYO_hyakki_council.23.t:0 "信仰委员会"
+ KYO_hyakki_council.23.d:0 "没有人知道那张纸最初出自何处。\n\n天亮以前，它已被贴在井边、门柱与寺院外墙。纸上声称结界即将彻底破裂，又指控妖怪正在暗中挑选可以牺牲的人类。到了正午，另一种说法开始流传：这一切都是神明为了夺取信仰而制造的灾祸。\n\n恐惧不需要证据。它只需要比澄清早到一步。\n\n§T圣白莲§!撕下其中一张，没有将它投入火中，而是带进人群。她不肯以另一个更悦耳的谎言掩盖它，只承认结界确实正在恶化，也承认协议尚未找到所有答案。\n\n「若我们连恐惧都不敢正视，又凭什么要求别人相信我们？」\n\n§T八坂神奈子§!并不反对诚实，却拒绝只靠劝慰等待恐慌自行消退。她命人升起御柱作为安全区域的标记，让守矢的信众引导伤者、分送饮水，并把无止尽的祈求转化为能被看见的行动。对她而言，不能保护任何人的信仰，很快便只剩一句空话。\n\n§T古明地觉§!站在人群边缘，听见了比谣言更加混乱的声音。有人害怕妖怪，有人害怕人类，有人根本不相信百妖协议能撑过下一周；更多人表面安静，心中却已在盘算逃往何处。\n\n她忽然说出了几个名字。\n\n藏在人群中煽动恐慌的人脸色骤变，周围也随之安静。觉没有逼迫任何人认罪，只提醒其他委员：她能找出说谎者，却不能替所有人决定何者值得相信。\n\n§T饭纲丸龙§!则抬头看向空中盘旋的鸦天狗。数封命令很快送上妖怪山：查明纸张来源、公布安全路线、让记者亲眼看见灾区，也准备好在消息伤及天狗利益之前改写标题。\n\n白莲看见了其中的操弄，神奈子看见了必要的效率，觉听见双方都未曾说出口的盘算。饭纲丸龙只是从容地展开报纸样张。\n\n「无论妳们喜不喜欢，」她说道，「明早醒来的人，只会记得自己读到了什么。」\n\n信仰委员会并未找出一个能让所有人安心的答案。她们只是决定，从今以后，每一场恐慌、每一句祈祷与每一则消息，都将成为彼此争夺的战场。"
+ KYO_hyakki_council.23.a:0 "恐惧总会开口；问题是由谁替它命名。"
+
+
+ KYO_hyakki_council.24.t:0 "群众委员会"
+ KYO_hyakki_council.24.d:0 "运粮车翻倒时，群众委员会的四名成员都在现场。\n\n布袋从车上滚落，白米洒满泥地。等待了一整日的人群立即向前涌去；守卫举起武器，哭声、怒骂与饥饿一同挤在狭窄的院门前。车夫大喊这批粮食另有去处，却没有人愿意再听。\n\n§T赤蛮奇§!的头颅越过混乱的人群，看见院墙后方还停著另一辆车。上面装满完好的米袋，几名大势力的随从正在悄悄搬运。\n\n她落回车前，一脚踩住准备逃走的管事。\n\n「前面的人为几把米互相踩死，后面的倒是一袋都没少。」赤蛮奇冷笑道，「这就是你们说的公平分配？」\n\n§T八意永琳§!没有理会争辩。她蹲到伤者身旁，只看了几眼便作出判断：谁需要立刻止血，谁可以等待，谁已经救不回来。她的声音没有一丝动摇，命令也精确得令人不忍直视。\n\n有人质问她为何放弃仍在喘息的人。\n\n「因为药只有这些。」永琳没有抬头，「若妳能带来更多，我便多救一个。」\n\n一记鼓声忽然压过混乱。\n\n§T堀川雷鼓§!站上翻倒的车架，鼓点由急转稳。付丧神跟著节奏抬走断裂的木板，妖精排成短短的人链，把散落的米重新收集起来；原本只顾争抢的人也逐渐找到自己能做的事。雷鼓没有朗读命令，只朝人群喊道：「不想今晚空著肚子，就别站在那里等别人救！」\n\n§T四季映姬·夜摩仙那度§!拦下准备殴打管事的赤蛮奇，也命守卫放下武器。粮食被私自转移需要审判，饥饿者的抢夺同样不能被视为理所当然。她当众宣布所有米袋的去向、伤者的优先顺序，以及负责者将接受的处置。\n\n赤蛮奇嫌她的裁决太慢；永琳认为公开每项安排只会妨碍效率；雷鼓则质问，如果每次救人都要先等规则写完，还能剩下多少活人。映姬没有退让。\n\n「今日可以因为情势危急而破例，明日便会有人让危急永远持续。」\n\n院门重新打开时，米仍然不够，伤者也没有全部获救。没有神迹降临，更没有谁能让饥饿凭空消失。\n\n然而武器已经放下，第一碗饭送到了最虚弱的人手中，那辆藏在墙后的粮车也被推回众人面前。\n\n紫从间隙另一端看完这一切，没有现身。\n\n前线的胜负可以在一天内改写。群众委员会所面对的，却是每一个普通人能否撑过这一天。"
+ KYO_hyakki_council.24.a:0 "胜利以前，先别让活人倒下。"
+
+
+ KYO_hyakki_council.25.t:0 "红雾中的一家人"
+ KYO_hyakki_council.25.d:0 "八云紫从不把红魔馆视为寻常的地方势力。\n\n那座洋馆并非依靠信仰、传统或共同理想维系。居住其中的人来自不同地方，怀著不同过去，甚至没有多少相似之处。她们唯一真正共有的，是都曾在某个时刻失去容身之处，最后被蕾米莉亚·斯卡雷特纳入自己的领地。\n\n蕾米莉亚以傲慢统治，也以傲慢庇护。她喜欢被仰望，厌恶服从他人，更不会把力量浪费在无法证明自身优越的事情上。然而紫看得很清楚，那份近乎任性的威严，正是红魔馆所有秩序的中心。只要蕾米莉亚仍坐在最高处，馆中的异邦人便知道自己应该站在哪里。\n\n十六夜咲夜负责将馆主的意志变成现实。蕾米莉亚可以在上一刻随口改变主意，咲夜却能在下一刻重新安排人员、时间与物资，让整座洋馆仿佛从未出现过混乱。她追求的并不只是效率，而是一种近乎残酷的完美；紫甚至怀疑，若红魔馆有朝一日失去咲夜，最先崩溃的或许不是秩序，而是所有人早已习以为常的依赖。\n\n帕秋莉·诺蕾姬很少离开图书馆，却比许多四处奔走的人看得更远。她的身体无法承受漫长作战，她的知识却能改变战场本身。气候、地形、视野、魔力与现代兵器，在她眼中都只是尚待拆解的问题。小恶魔则在那些晦涩的命令之间来回穿梭，笑著试探每一条规矩的边缘，却从未真正违背帕秋莉的意志。\n\n红美铃是洋馆最容易被低估的人。她会笑，会打瞌睡，也愿意给误闯者一次退回去的机会。但只要有人跨过不能跨越的界线，那份松散便会在一瞬间消失。紫知道，真正可靠的守卫从来不必时刻露出獠牙。\n\n至于地下室里的芙兰朵露——她不是士兵，也不是可以被写进普通作战计划的武器。她是一场被家人勉强安抚下来的灾难。若蕾米莉亚决定将妹妹带上战场，敌人需要担心的便不再是如何取胜，而是还有多少东西能完整留下。\n\n红魔馆不是一群彼此相似的人，而是一群带著裂痕的人，在蕾米莉亚身旁搭起的家。她们未必愿意为幻想乡牺牲，却会为了红魔馆而战至最后一刻。\n\n紫并不打算说服她们热爱这片土地。\n\n她只需要为红魔馆指出一个比内斗更加值得征服的方向。"
+ KYO_hyakki_council.25.a:0 "这样的一家人，正适合一场危险的战争。"
+
+
+ KYO_hyakki_council.26.t:0 "猩红的战争投资"
+ KYO_hyakki_council.26.d:0 "八云紫抵达时，红魔馆没有举办宴会。\n\n红美铃亲自推开正门。庭院两侧站满完成整编的卫队，平日散漫的妖精女仆也已换上便于行动的装束。她们没有高声迎接，只在紫经过时同时转身，动作虽称不上完美，却已足以让人看出反复操练留下的痕迹。\n\n大厅中央没有茶点，只有一幅摊开的外界地图。蕾米莉亚坐在长桌另一端，指尖停在东京的位置上，仿佛那座城市已是等待她接收的领地。\n\n「妳需要一支军队。」她先开了口，「而我需要一个配得上红魔馆的战场。」\n\n紫没有否认，也没有请求。她只是展开间隙，让日本的港口、铁路、兵营与防御阵地依次出现在众人眼前。\n\n「战场在这里。」紫说道，「能取得多少，由妳自己决定。」\n\n蕾米莉亚露出了满意的笑容，随即轻敲桌面。\n\n咲夜向前一步，将整理完毕的编制表放到紫面前。红魔馆的守卫、使魔与受过训练的妖精将组成两支独立作战部队，由红美铃负责日常训练与近距离作战。她们接受百妖军制定的战略目标，但保留红魔馆自己的指挥方式。\n\n帕秋莉随后摊开数张术式图。大图书馆将提供防护结界、通讯术式、火力支援与对外界兵器的分析；她不会承诺奇迹，只保证每一项尚未理解的武器，都会尽快失去原有的优势。小恶魔则打开封存已久的库房，将魔法媒介、珍稀矿材与可以立即投入作战的器具逐项搬出。\n\n更深处的军械库也随之开启。步枪、弹药、火炮零件与历年收集的外界装备被推入大厅。另一批箱中装著金银、宝石、古董与仍能在外界兑现的有价证明。那不是红魔馆的全部财富，却已足以支撑百妖军完成第一轮扩编。\n\n紫翻到编制表的最后一页，看见了一个没有被纳入任何部队的名字。\n\n§R芙兰朵露·斯卡雷特。§!\n\n旁边只有咲夜留下的一行注记：仅能由馆主亲自调动。\n\n楼梯上方传来轻微的笑声。芙兰朵露伏在栏杆旁，好奇地望著那些武器与陌生地名，七彩的翼晶在昏暗大厅里映出不祥的光。美铃没有移开视线，咲夜的手也始终靠近飞刀。\n\n紫合上编制表。\n\n「可以。」她说道，「百妖军会为妳们打开道路。至于道路尽头能留下什么，就看红魔馆的本事。」\n\n「说错了，紫。」蕾米莉亚站起身，猩红双眼俯视著地图，「这不是援助，也不是效忠。」\n\n她将旗帜插在东京的位置。\n\n「这是我对胜利的投资。」\n\n红魔馆就此投入战争。紫得到了一批足以武装新军的装备、可以转化为军费的资产，以及两支服从同一意志的作战部队。\n\n她也把幻想乡最锋利、最任性的一柄长矛，引向了结界之外。"
+ KYO_hyakki_council.26.a:0 "让猩红成为百妖军的矛尖。"
+
+ KYO_hyakki_council.27.t:0 "永远亭的月之流亡者"
+ KYO_hyakki_council.27.d:0 "八云紫从不相信永远亭只是一座医馆。\n\n迷途竹林能使寻常访客绕上一整夜，却拦不住间隙。紫看见妖兔在竹影间穿行，看见药炉整夜不熄，也看见那座古老宅邸深处，仍残留著与幻想乡截然不同的月之气息。\n\n永远亭收留的并不是普通隐士，而是一群无法回到故乡的人。\n\n§T八意永琳§!曾参与建立月之都的秩序。她通晓月人的医术、武器与制度，也曾教导如今统治月都的人。若她愿意留在月面，今日仍会是受人敬畏的贤者，没有必要躲进一片连阳光都难以照透的竹林。\n\n她之所以留在地上，答案始终只有一个。\n\n§T蓬莱山辉夜§!曾请永琳制成蓬莱之药，并亲自将它饮下。月都无法容忍沾染死亡与不死的公主，于是将辉夜放逐到地上。多年以后，月都派遣使者迎她归返，永琳本应亲手将公主带回月面。\n\n然而永琳杀死了同行的使者，放弃自己在月都拥有的一切，带著辉夜消失于地上。\n\n那不是一时心软，而是经过清醒判断后作出的背叛。永琳选择了自己的公主，而不是自己曾协助缔造的都城。从那一夜开始，她便不再是月都派往地上的贤者，而是月都最不能容许活著的知情者之一。\n\n辉夜同样不是传闻中那位只会躲在永琳身后的柔弱公主。她知道蓬莱之药意味著什么，仍选择饮下；她曾有机会返回月都，却选择留在人间。她的身体不再受到死亡支配，而她操纵永远与须臾的能力，甚至能使一段历史停滞在外界无法触及的地方。\n\n永远亭之所以能长久藏在竹林深处，从来不只是因为道路曲折。那里被一段不肯结束的永远包围，藏著月都不愿被地上知晓的罪行，也藏著两位不肯接受月都裁决的叛逆者。\n\n§T铃仙·优昙华院·因幡§!是另一名逃离月面的月兔。她曾是军人，熟悉月都的纪律，也知道那套纪律如何将恐惧包装成服从。§T因幡帝§!则恰好相反。她属于地上，年岁甚至比永远亭更加久远。竹林中的道路、妖兔与消息都由她掌握，使这群月之流亡者真正于幻想乡扎下了根。\n\n紫明白，向永远亭索取医疗支援，等同于将百妖军最脆弱的部分交到另一位贤者手中。永琳能决定多少人活著返回，也能看见军队每一处不愿公开的伤口。\n\n但紫同样明白另一件事。\n\n一群已经失去归途的人，通常比任何人都清楚容身之处有多么重要。"
+ KYO_hyakki_council.27.a:0 "她们背弃了月亮，如今必须选择是否守住此地。"
+
+
+ KYO_hyakki_council.28.t:0 "月之贤者开出的条件"
+KYO_hyakki_council.28.d:0 "八云紫抵达永远亭时，八意永琳正替一名天狗取出体内的弹片。\n\n伤者被按在染血的布面上，翅膀因疼痛不断抽动。铃仙维持她的意识，永琳的手始终稳定。金属落入盘中，发出一声轻响。\n\n永琳洗净双手，才转身看向紫。\n\n「再晚一个时辰，她就不必救了。」\n\n「所以我来了。」\n\n两位贤者没有寒暄。永琳知道紫需要药物、医师、伤员转运，以及一套不会随第一次溃退崩溃的医疗体系。\n\n「换句话说，妳要整个永远亭。」\n\n「我要妳们加入战争。」\n\n永琳沉默片刻。\n\n门扉被拉开。蓬莱山辉夜走入房内，身后的妖兔抬著数只木箱。\n\n「永远亭是否参战，不必只由妳们两位决定。」\n\n木箱打开，其中装著止血材料、手术器具、担架、野战药箱与月之技术改良的医疗设备。辉夜也将解除药室封存，以自身力量延缓药物劣化，使其能承受漫长运输。\n\n五百套支援器材将立即交给百妖军。永远亭会建立前线救护、伤员后送与防疫制度，治疗顺序由永琳决定，任何军官不得以身分替部下插队。\n\n铃仙将训练随军救护人员，维持伤患秩序并保护医疗队。她曾在月都军中服役，知道枪火下的恐慌如何蔓延，也知道怎样把濒临崩溃的人重新带回来。\n\n因幡帝则会开放妖兔掌握的竹林小路，让伤者、药物与消息避开主要道路。作为交换，百妖军不得强行征用妖兔，也不能把竹林居民视为可以随时补充的劳力。\n\n永琳最后提出三项条件。\n\n医疗判断由永远亭作主；任何人不得要求量产蓬莱之药；若月都以追捕辉夜、铃仙或她本人为由进入幻想乡，百妖协议不得交出任何一人。\n\n紫合起折扇。\n\n「月都若越过结界，便不是前来索回逃犯。」\n\n她的声音很轻，却不容商议。\n\n「那是入侵幻想乡。」\n\n永琳凝视著她，最后将医疗配置图推到桌面中央。\n\n「那么，从今天开始，把所有伤亡报告送到这里。」\n\n永远亭就此投入战争。百妖军获得完整医疗支援、五百套器材与妖兔的隐蔽运输。\n\n只有最后一只药匣没有开启。\n\n紫知道其中存放著蓬莱之药，也知道那是永远亭唯一不会提供的援助。\n\n永生救不了一个国家，只会让服下它的人永远看著国家死去。\n\n从这一天起，负伤不再必然意味著被留在原地。\n\n而月亮，也不再只是沉默地悬在战场上方。"
+KYO_hyakki_council.28.a:0 "先救下还能活的人；月亮的问题，之后再算。"
+
+
+ KYO_hyakki_council.29.t:0 "仍有人生活的地方"
+ KYO_hyakki_council.29.d:0 "八云紫透过间隙看过人间之里的每一种模样。\n\n清晨，炊烟从屋顶升起，商贩搬开门板，农户赶在日出前走向田地。寺子屋传出读书声，守卫在昨夜留下的脚印旁交换轮值。这里没有大妖怪足以改变天候的力量，也没有能够抵挡军队的高墙；一场失控的异变、一群闯入村落的妖兽，便足以使数代人的生活化为灰烬。\n\n然而幻想乡不能没有人间之里。\n\n妖怪因人类的记忆而获得名字，因传闻而留下形貌，也因恐惧与敬畏而不至于被遗忘。夜路上的禁忌、长者讲述的故事、门前驱邪的符纸，都在证明妖怪仍被这个世界承认。若人类全部离去，幻想乡或许还能维持一段时间，最后却只会成为一座住满妖怪、再也没有人记得妖怪为何存在的坟场。\n\n但人里也不是为妖怪准备的猎场。\n\n恐惧必须停在某条界线以前。它可以让人关紧门窗、避开荒野、记住黑暗中仍有异类存在；却不能严重到让人无法耕种、养育孩子或走出家门。妖怪若将人类捕食殆尽，摧毁的同样是自己的未来。\n\n人间之里的真正作用，便是让人类仍能以人类的方式活著。不是祭品，不是妖怪秩序下沉默的附属物，而是一群拥有自己的家庭、传统、忧虑与选择的人。\n\n§T上白泽慧音§!守护的正是这一点。\n\n她在寺子屋教授文字、算术与历史，也告诉孩子哪些道路不能在夜里行走，哪些妖怪可以交涉，哪些承诺绝不能轻信。这些知识看似琐碎，却使脆弱的人类能在妖怪环伺之地延续至今。慧音能隐藏一段历史，但她更常做的，是防止活著的人被强者从历史里抹去。\n\n§T藤原妹红§!则站在另一种位置上。\n\n她不属于人里的规章，也很少参与村落中的议论。她居住在竹林，替迷路者引路，将威胁村民的妖怪驱离，再若无其事地回到自己的孤独之中。数百年来，她看著一代代人出生、老去、死去；那些曾被她救回的孩子，最后都变成墓碑，而她仍然活著。\n\n正因如此，妹红比许多人更明白普通生命有多么短暂。\n\n紫需要的不是一群对妖怪俯首的人类。她需要人里继续运作，让田地有人耕种、道路有人维护、知识有人传承，也让妖怪始终记得，幻想乡并非只属于强者。\n\n如果百妖军越过结界击败日本，回头却发现人里已被征粮、征兵与恐惧掏空，那场胜利便没有保住幻想乡。\n\n紫收起间隙，朝寺子屋走去。\n\n这一次，她不能只向人类说明妖怪需要什么。\n\n她也必须回答，妖怪准备为人类保留什么。"
+ KYO_hyakki_council.29.a:0 "人里若无法继续生活，幻想乡便只剩一副空壳。"
+
+
+ KYO_hyakki_council.30.t:0 "人里提出的条件"
+ KYO_hyakki_council.30.d:0 "寺子屋的学生已经离开，黑板上仍留著尚未擦去的文字。\n\n上白泽慧音坐在讲桌后方，面前摆著三份整理完毕的资料：今年各处田地的收成、可以调动的车马，以及村落守卫目前能维持的道路范围。\n\n藤原妹红靠在窗边，双臂交叉。她没有向八云紫行礼，甚至没有掩饰自己的戒心。\n\n「妳准备从人里拿走多少？」慧音问道。\n\n「足以支撑战争。」紫答道，「但不会多到摧毁这里。」\n\n妹红冷笑了一声。\n\n「每个打开粮仓的人，起初都这么说。」\n\n紫没有反驳。人类没有理由只凭一位妖怪贤者的保证，便把数月后的口粮交出去。\n\n慧音将第一份资料推到桌面中央。\n\n人里愿意提供部分粮食、干粮、布匹与药材，也能组织车夫，把物资送往百妖军设立的集散地。铁匠、木匠与修车匠可以维护运输车辆、工具及外界兵器，但不会被强迫送往前线。\n\n商会掌握的仓库可以暂时开放，村落守卫则会维持人里通往竹林、神社与外围聚落的道路。寺子屋将负责整理调度纪录、确认各户所能承担的份量，避免某些家庭被反复征收，也避免有人趁混乱私藏原本应该送出的物资。\n\n作为交换，慧音要求百妖协议承认三项规矩。\n\n人里居民不得遭到强制征兵；任何部队不得自行闯入民宅索取粮食；所有征用都必须留下纪录，并在战后归还或补偿。人里可以协助一场保卫幻想乡的战争，却不会把自己的孩子交给妖怪填补伤亡。\n\n「我不反对你们迎击日本。」慧音直视著紫，「但我要确定，百妖军保卫的幻想乡里，仍然有普通人可以活下去。」\n\n紫拿起笔，在三项规矩下方写下自己的名字。\n\n「从今日起，未经人里同意的征收，一律视为劫掠。」\n\n妹红终于离开窗边，走到桌前。\n\n「纸上的规矩拦不住饿疯了的士兵。」\n\n「所以还需要妳。」紫说道。\n\n妹红沉默片刻。\n\n她不愿成为百妖军的将领，也不准备听从每一道来自协议的命令。但她同意守住人里外围的道路，护送运粮车与撤离的平民。若敌军突破前线，或任何妖怪部队试图趁乱洗劫村落，她会亲自前去阻止。\n\n「别因为我死不了，就把我当成可以随便丢出去的东西。」妹红警告道。\n\n紫合起折扇。\n\n「我不需要妳去死。」\n\n她看向窗外那些正在收起摊位的人们。\n\n「我要妳确保其他人不必死。」\n\n妹红盯著她看了许久，最后拿起笔，在慧音的名字旁画下一道简短的记号。\n\n黄昏以前，第一批车辆便从仓库前出发。车上装著粮食、布匹、工具与备用车轮，守卫沿途敲响铜锣，提醒行人让开道路。没有人欢呼，也没有人将这视为值得庆贺的时刻；人们只是默默计算家中还剩下多少粮食，以及下一次收成能否及时到来。\n\n慧音将作为人里的代表参与战时协调，监督物资征集与平民安置。妹红则负责守护运输道路，以及任何不应成为战场的地方。\n\n百妖协议得到的不只是一批物资。\n\n当人里愿意让车轮驶上道路，这场战争才第一次不再只是妖怪单方面决定的未来。"
+ KYO_hyakki_council.30.a:0 "不是服从，而是人里同意与我们同行。"
+
+ KYO_hyakki_council.31.t:0 "死者必须有去处"
+ KYO_hyakki_council.31.d:0 "八云紫很少将冥界视为另一个世界。\n\n生与死之间确实存在境界，但那道境界从来不是一道不可跨越的墙。亡者离开生者，记忆逐渐沉淀，执念得到安置，最后走向各自应去的地方。白玉楼所维持的，正是这套不容混乱的秩序。\n\n活人往往以为，死亡代表一切已经结束。\n\n然而战争会留下来不及收殓的尸体、无人知晓姓名的亡魂，以及仍然服从最后一道命令、不肯离开战场的士兵。若结界附近同时出现大量死亡，那些失去方向的灵魂便可能沿著裂口闯入幻想乡，使生者的土地逐渐与幽冥重叠。\n\n军队能击败敌人，却不能命令死者自行寻找归处。\n\n白玉楼之所以存在，并不是因为亡者需要一座华丽的宅邸，而是因为死亡必须有人整理。若所有幽灵都能凭执念返回生者身旁，那么每一场战争、每一次灾难，都会在结束后继续纠缠世界。\n\n§T西行寺幽幽子§!正是这套秩序的守护者之一。\n\n她能够操纵死亡，却很少以此夸耀。那份从容也不是对死者毫不在意。恰恰相反，正因她比任何人都接近死亡，才明白亡者不该被活人的野心永远束缚。\n\n她可以一边赏花，一边谈论数千人的死去；可以用近乎玩笑的口吻，指出一场战役将在冥界造成怎样的混乱。不了解她的人会将那视为冷漠，紫却知道，幽幽子只是不愿让悲伤支配自己的判断。\n\n§T魂魄妖梦§!则负责将幽幽子的判断化为实际行动。\n\n她既是人，也是半灵；既能理解活人对死亡的恐惧，也能踏上亡者行走的道路。白玉楼的守备、幽灵的引导与冥界之门的管理，大多由她亲自处理。她不擅长迂回，只要任务足够明确，便会一次又一次确认路线、人数与时间，直到没有任何环节被遗漏。\n\n这份近乎固执的责任感，正是百妖军所需要的。\n\n外界的铁路可能遭到轰炸，桥梁可能被摧毁，山路也可能被敌军封锁。冥界的道路却不完全受到物质世界限制。幽灵不需要休息，也能穿过许多凡人与车辆无法通行的地形。只要白玉楼愿意开放幽冥通道，百妖军便能在战线崩断时，保留一条不易遭到外界军队截断的运输与撤离路径。\n\n但紫同样清楚，亡者不是等待征用的兵源，冥界也不是一座可以任意开采的军械库。\n\n她必须说服幽幽子，让死者的道路暂时替生者开放；也必须保证这场战争不会把刚刚死去的人重新束缚在军旗下。\n\n紫展开间隙，看见白玉楼漫长的石阶与盛开的樱花。\n\n多年以前，她曾经在那里与一位旧友谈论生死。如今，她将再次越过冥界之门。\n\n这一次要谈的，是如何使更多人尚未走到死亡以前，便能平安返回。"
+ KYO_hyakki_council.31.a:0 "死亡若无归处，战争便永远不会真正结束。"
+
+
+ KYO_hyakki_council.32.t:0 "为生者开放的幽冥通道"
+KYO_hyakki_council.32.d:0 "八云紫抵达白玉楼时，魂魄妖梦正在石阶下清点空担架。\n\n幽灵沿庭院排成长列，有的携带药箱与物资，有的反复穿过临时开启的幽冥门扉，测量实体通行时产生的偏移。\n\n妖梦向紫行礼。\n\n「幽幽子大人正在等您。」\n\n「妳们知道我为何而来？」\n\n妖梦望向空担架。\n\n「最近送来的亡魂，已经说明了。」\n\n幽幽子坐在庭院深处，扇尖压著地图上一条被炸断的铁路。\n\n「活人的道路坏掉以后，终于想起死者也有道路了吗？」\n\n「我来借一条。」紫答道，「运送物资、撤离伤员，也让战死者不再徘徊于裂口附近。」\n\n「三条。」幽幽子微笑，「妳还是很贪心。」\n\n白玉楼愿意开放数条受控的幽冥支路，连接医疗站、物资集散地与撤离据点。每次启用都必须经过确认，并由妖梦或受过训练的半灵引导。\n\n无法沿普通道路撤离的重伤者，可以短暂穿越冥界边缘。只要灵魂尚未完全离体，妖梦便会将他们带回生者的一侧。\n\n幽灵则负责夜间运输、危险路段补给与失联部队搜索。桥梁倒塌、道路遭到封锁时，她们仍能把药品、粮食与弹药送往前线。\n\n妖梦另行整编四支幽灵部队。成员皆是原本居住于冥界、自愿接受白玉楼调度的幽灵，而非新近战死者。她们将守卫通道、掩护撤离，并在生者难以活动的区域支援百妖军。\n\n妖梦也整理出灵体作战规范，包括维持队形、抵抗驱邪武器、辨认敌我，以及避免幽灵受到战场执念影响而失控。\n\n庭院另一侧响起乐器试音。\n\n§T普莉兹姆利巴三姊妹§!也接受安排。露娜萨的琴音能安抚躁动亡灵，梅露兰能唤回逐渐涣散的意识，莉莉卡则把旋律改编成方向与警戒讯号。\n\n音乐将成为幽灵部队的通讯，也会把迷失的亡魂引离战场。\n\n幽幽子最后提出条件。\n\n任何新近战死者都不得被强行编入军队；百妖军不得拘束亡魂，阻止其前往应去之处；能辨认身分的死者必须留下纪录并通知所属势力。若有人利用通道藏匿尸体、处决俘虏或逃避调查，白玉楼将立即关闭所有入口。\n\n「我可以让亡者帮助妳。」幽幽子说，「但不能让活人以为，他们死后仍欠一场战争。」\n\n紫合起折扇。\n\n「刚死去的人，不属于任何军队。」\n\n「即使战况恶化？」妖梦问道。\n\n「尤其如此。」\n\n幽幽子将地图上的樱花轻轻扫开。\n\n「那么，这条路借给妳了。」\n\n幽冥门扉逐一开启。第一批幽灵抬起物资走入苍白光芒，另一端则有满身尘土的伤员等待接引。\n\n白玉楼就此投入战争。百妖军获得幽冥通道、四支幽灵部队、妖梦整理的作战经验，以及三姊妹建立的灵体通讯。\n\n而那些没能从战场返回的人，至少不会永远迷失在回家的路上。"
+KYO_hyakki_council.32.a:0 "让亡者守住道路，让生者得以归来。"
+
+
+ KYO_hyakki_council.33.t:0 "自然若仍存在"
+ KYO_hyakki_council.33.d:0 "八云紫抵达雾之湖时，一名妖精正试图搬开压住花丛的碎石。结界逸出的乱流掠过湖岸，她与手中的花瓣一同化作光点。附近的妖精安静片刻，很快又围到花丛旁，继续争论该从哪里用力。\n\n对妖精而言，死亡通常不值得长久悲伤。只要湖水仍在流动、森林依旧生长，她们终会从自然中再次出现。可紫等了很久，那名妖精始终没有回来。花丛下的泥土已被异常侵蚀，叶片灰白，连风都带不走一丝草木气味。\n\n妖精并非真正不死。她们只是把生命交给自然保管；一旦湖泊干涸、林地焚毁、季节停止轮替，她们便失去归来之处。外界军队不必刻意猎杀她们，只需将森林视为木材、将湖泊视为障碍，整群妖精便可能永远消失。\n\n远处，琪露诺撞破薄冰，大声宣称自己只是故意潜水。大妖精则抱起散落的花朵，把其他妖精带离灰白的土地。她们一个渴望证明自己最强，一个总能将四散的同伴重新聚拢。\n\n紫原本需要的是遍布林地的眼睛、能越过废墟的传令者，以及不受正规军习惯束缚的袭扰者。此刻她才明白，妖精愿意参战的理由更为直接。\n\n她们不懂国家，也不懂战略。她们只是拒绝让明日的湖面再也没有笑声。"
+ KYO_hyakki_council.33.a:0 "弱小，从来不等于可以被牺牲。"
+
+ KYO_hyakki_council.34.t:0 "最强者的作战会议"
+ KYO_hyakki_council.34.d:0 "雾之湖畔的会议从一开始便没有秩序。地图摊在木箱上，四角压著石头、松果、半块冰与一只茶杯。有人把集合当成野餐，有人为了座位打起弹幕。\n\n琪露诺站上木箱，双手叉腰。\n\n「让最强的我带头，把敌人全部冻住！」\n\n「不行。」紫答道，「妳若第一天便带所有人正面进攻，第二天就没有人侦察。」\n\n琪露诺正要抗议，大妖精已拉住她的衣角。她逐一叫回走散的妖精，安排熟悉道路的领队，也把害怕的孩子留在可靠的同伴身旁。混乱没有消失，却渐渐朝同一个方向集中。\n\n光之三妖精也提出各自的办法。桑尼能扭曲光线，制造假目标；露娜能消除声音，掩护小队通过；斯塔则能感知活动的生物，找出巡逻与伏兵。原本用来恶作剧的能力，合在一起便成了侦察、潜行与诱敌的手段。\n\n紫交给她们四项工作：监视湖岸与森林、传递简短消息、扰乱敌军道路，以及在火灾或轰炸发生时引导居民撤离。她同时下令，任何人都不得以妖精能够重生为由，命令她们反复送死。\n\n「那我把敌人引到湖上，再冻住湖面呢？」琪露诺问。\n\n「可以。」\n\n「果然只有最强者想得到！」\n\n大妖精随后将众人编成十二支行动群。她们没有统一制服，也走不出整齐队列；但每队都记住了一片区域、一条撤离道路，以及谁负责把大家带回来。\n\n黄昏以前，无数微光已散入芦苇、树冠与浓雾。幻想乡最不像军队的一群生命，就此用自己的方式投入战争。"
+ KYO_hyakki_council.34.a:0 "让妖精用自己的方式守住家园。"
+
+ KYO_hyakki_council.35.t:0 "天空不是中立的"
+ KYO_hyakki_council.35.d:0 "八云紫抵达妖怪山时，山上的风向标正在同一刻转动。\n\n白狼天狗沿著山道交接巡逻纪录，鸦天狗从云层降下，把装满底片与速记纸的皮袋送进大天狗的议事所。桌面上已摊著数张外界地图：铁路以红线标出，军营、港口、油库与防空阵地各有记号；有些位置旁甚至写著列车经过的时刻与守军换防的规律。\n\n这不是临时为紫准备的成果。天狗一直在观察结界外侧，只是从未把所有观察交给同一个人。\n\n犬走椛负责说明地面的部分。她不相信只从空中看见的道路，亲自核对坡度、林线、河床与能否让部队通过的窄口。地图上一条看似笔直的山路，被她划掉大半。\n\n「车辆能进去，出不来。只要前端受阻，整支队伍就会堵在谷里。」\n\n射命丸文随后推来一叠照片。照片中的兵营、车站与港区都从寻常人难以抵达的角度拍摄，连哨塔的视野死角也清楚可见。她翻页极快，语气仍带著记者惯有的轻快，却没有漏掉任何数字。\n\n「这支部队三天内换过两次番号；这批火炮昨晚才从北方运到；还有这里——他们在加筑防空阵地。若我们再晚几天，天空就不会像现在这么好走了。」\n\n紫没有称赞，只问了一句。\n\n「原始底片在哪里？」\n\n文的手停了半瞬，笑意仍在。\n\n「贤者大人是在怀疑我的报导？」\n\n「我怀疑所有经过选择的东西。」\n\n议事所因此安静下来。\n\n天狗的眼睛确实能替百妖军看见远方，但天空从来不中立。文知道什么样的影像足以改变人心，也习惯在真相外包上一层更容易传播的故事；大天狗掌握汇报渠道，能决定哪一份消息先送到、哪一份暂时压下；即使是最朴素的巡逻纪录，只要少了一段，也可能使一支部队走进错误的山谷。\n\n饭纲丸龙终于开口。\n\n「妖怪山可以共享情报，但不能把多年建立的组织交给一场尚未证明能获胜的合作。」\n\n她说得平静，没有掩饰真正的问题。天狗愿意参战，却不愿只充当别人的眼睛。若妖怪山承担侦察风险，它便要在战略决定中取得相应位置；若情报将由百妖协议使用，大天狗便要求知道谁能接触、谁负责核实，以及失误时由谁承担责任。\n\n紫望向墙上的地图。\n\n个别天狗能看见一列火车、一处军营或一支正在移动的队伍。只有持续运转的组织，才能把这些片段拼成敌军正在准备什么。这正是百妖军所欠缺的能力。\n\n然而，若绘制地图的人同时垄断地图，那么每一次进攻与撤退，都会先经过妖怪山的利益。\n\n紫收起折扇。\n\n「我不是来借几双眼睛。」\n\n她看向文、椛与饭纲丸龙。\n\n「我要建立一套即使妳们意见不合，真实情况仍能抵达前线的办法。」\n\n山风撞上紧闭的窗。桌上的纸张微微掀动，又被饭纲丸龙按回原位。\n\n真正的谈判，直到此刻才开始。"
+ KYO_hyakki_council.35.a:0 "看见敌人，只是情报工作的第一步。"
+
+
+ KYO_hyakki_council.36.t:0 "一张不能被垄断的地图"
+ KYO_hyakki_council.36.d:0 "第二天清晨，妖怪山最高处的议事所被改成了一间临时作战室。\n\n射命丸文带回最新的空中照片，犬走椛把地面巡逻所得逐一标上地图，数名书记天狗则依照时间排列各处变化。原本互不相连的纪录第一次叠在一起：铁路运量增加、军营灯火延长、港口货物转向，只要同时出现，便不再是寻常调动，而是战争正在接近的征兆。\n\n饭纲丸龙坐在地图另一侧，先提出妖怪山的条件。\n\n「侦察队仍由大天狗指挥。飞行路线不能让所有势力知道，原始资料也不得任意带离山中。」\n\n「可以。」紫答道，「但经核实的结果必须同时送往百妖协议，不得因对妖怪山不利便遭扣留。」\n\n「由谁判断是否核实？」\n\n椛将一张照片压在地图上。\n\n「让地面痕迹回答。车辙、炊烟、哨位、足迹与补给消耗，不会因谁的立场而改变。」\n\n文轻敲相机，补上一句。\n\n「空中影像保留原件与拍摄时间。分析稿可以写结论，但不能改动照片。至于公开报导——那仍然由我决定怎么写。」\n\n紫瞥了她一眼。\n\n「只要妳不把尚未公开的行动先印成头条。」\n\n「那得看这场战争值不值得一个好标题。」\n\n「等那个标题不会害死前线的人，妳想怎么写都行。」\n\n文笑了。那不是服从，而是她确认自己的笔仍未被夺走。\n\n协议随后逐项成形。鸦天狗将定期越过结界，轮流监视铁路、军营、港口、机场与防空阵地；每条航线都设置替代方向，避免固定行动被敌军掌握。椛带领白狼天狗核对地形，标记能供大部队通过的道路、可供小队渗透的山径，以及战况恶化时仍能使用的撤退线。\n\n所有消息将依来源与可信程度分级。单一目击只能列为待查，照片必须保留时间与位置，两条互不相干的来源相互印证后，才能进入每日战场图。重大异动则不等待例行汇报，直接交由最快的天狗送往指挥部。\n\n为防止日本方面反向渗透，饭纲丸龙另行设计了分层保密制度。侦察者只知道自己的航线，传递者不接触完整地图，各部队得到的则是与任务相关的部分。刻意散布的假路线会被用来寻找泄密源头，来历不明的情报也必须先由天狗与百妖协议各自核验。\n\n这套安排没有让任何一方完全满意。\n\n大天狗仍掌握山上的组织，却不能独占战场全貌；百妖协议取得稳定情报，却无权任意消耗天狗的侦察者；文保留报导与诠释的自由，但必须把新闻与军情分开；椛则得到明确命令，可以把「所有人都知道那里能走」之类的含糊说法，从作战会议里彻底删去。\n\n饭纲丸龙最后在协议上落下自己的印记。\n\n「妖怪山不是妳的耳目，八云紫。」\n\n「当然不是。」紫合起文件，「从今天起，妳们是这场战争不能被蒙住的那双眼睛。」\n\n议事所外，第一批鸦天狗已经起飞。她们穿过云层，分向结界外的铁路与港口。白狼天狗则沿山道出发，重新测量每一条可能承载军队的道路。\n\n桌上的地图仍留有大片空白。\n\n但从这一天开始，空白不再意味著百妖军只能猜测。"
+ KYO_hyakki_council.36.a:0 "敌军的每一次调动，都将留下痕迹。"
+
+ KYO_hyakki_council.37.t:0 "十三种螺丝的战争"
+ KYO_hyakki_council.37.d:0 "八云紫走进玄武泽的工坊时，一枚冒烟的齿轮正朝门口飞来。间隙在她面前张开，又把齿轮送回工作台旁的水桶。\n\n「只是小故障。」河城荷取从机器后探出头，脸上沾著机油。\n\n山城高岭倚在另一侧，毫不客气地拆穿她：「同一个小故障，今天第三次。」\n\n工坊里摆满步枪、通讯器、水力发电机与结界锚具。每件原型都能运作，却没有两件使用相同的螺丝、接头与刻度。不同河童各守著自己的设计，山童也不愿把木材、坑道和运输网交给竞争者。平日这只是生意；到了战场，却意味著一件武器坏了，必须等制造它的工坊送来专用零件。\n\n紫拿起两枚尺寸只差少许的螺栓。\n\n「开战后，一座桥的绞盘在外界损坏，要多久才能修好？」\n\n荷取迅速心算：「材料齐全，三天。」\n\n「若运料的山路先塌了呢？」高岭问。\n\n荷取没有回答。\n\n要建立工程队，首先得让两边放弃各自为政。荷取要求统一图纸、弹药和零件规格，但河童不愿公开多年累积的技术；高岭愿意提供采集地、工棚与山路人手，却拒绝让山童只做搬运苦工。\n\n「我们出木材、矿石和人，妳们却把名字刻在成品上。」高岭说，「这不叫合作。」\n\n「没有我们的机械，妳的材料只是一堆木头和石头。」荷取立刻回敬。\n\n「妳们可以继续争。」紫淡淡说道，「直到日本军替妳们拆掉所有工坊。」\n\n争吵暂时停下。键山雏从排水渠旁走来，手中缠著从废油与破损术式里聚集的厄。\n\n「还有这些。」她提醒道，「若产量扩大，事故与污染也会一起增加。没有人处理，工坊会先被自己的厄拖垮。」\n\n紫把战时计划摊上工作台：武器维修、桥梁构件、隧道、铁路、通讯和结界设备，每一项都标著最后期限。\n\n荷取与高岭终于不再看彼此，而是看向那张已经没有多少空白的时间表。\n\n她们仍然互不服气，但至少承认了一件事——下一场战争不能使用十三种彼此不相容的螺丝。"
+ KYO_hyakki_council.37.a:0 "战争不会等待工坊把争议吵完。"
+
+
+ KYO_hyakki_council.38.t:0 "同一张规格表"
+ KYO_hyakki_council.38.d:0 "第二天，河童与山童把第一份共同规格表放到了八云紫面前。\n\n荷取保留各工坊的核心技术，却统一了武器口径、零件尺寸、通讯接头与结界设备的外部介面。如此一来，任何工坊制造的零件都能送到前线使用，损坏的器材也不必再运回原来的制造者手中。\n\n「我会建立零件目录和巡回维修队。」荷取指著图纸说道，「步兵武器的耗料与工时至少能减少一成。只要别人在量产途中擅自改尺寸。」\n\n高岭冷笑一声，将另一张图压到旁边。\n\n山童负责的部分从工坊一路延伸到山体：伐木、采矿、搬运、桥梁、轨道与地下储藏区。她已找到几处可以重新开采的矿脉，也画出避开主要聚落的运输路线。四块新工业用地将被整理出来，其中两处生产民用器具，另外两处改为兵工线。\n\n「路由我们修，矿由我们挖，工棚也由我们搭。」高岭说，「山童必须参与采购与调度，不能等河童分剩下的材料。」\n\n「可以。」紫答道，「战时规格归百妖军共同使用；工坊名称、改良技术与合理收益仍归原作者。」\n\n荷取抬起头：「意思是，我们还能做生意？」\n\n「可以赚钱。」紫合起折扇，「但不能靠彼此不相容，把同一笔钱赚两次。」\n\n雏则在工程图边缘加上排水渠、废料区与轮班限制。她不插手机械和交易，只负责把聚集在工地上的厄引离人群。几处最危险的试验场也被重新选址，免得一次失控便烧掉整条生产线。\n\n午前，第一批标准件开始制造。河童校准机床，山童把木材与金属送入工棚；原本堆在角落的旧零件被重新分类，能用的留下，不能用的立即熔回原料。荷取与高岭依旧会为优先顺序争执，但她们争的已是同一张表上的数字。\n\n黄昏时，第一座制式桥梁在玄武泽上架起。河童制造的绞盘装进山童搭建的骨架，螺栓一次便顺利旋入。\n\n幻想乡还没有一座庞大的兵工城，也没有取用不尽的钢铁。但从这一天开始，每间工坊不再只为自己工作，每条道路也都通向同一场战争。\n\n紫需要的工程队，终于开始运转。"
+ KYO_hyakki_council.38.a:0 "让所有工坊按照同一场战争运转。"
+
+ KYO_hyakki_council.39.t:0 "三途河没有捷径"
+ KYO_hyakki_council.39.d:0 "八云紫踏上彼岸时，先收起了身后的间隙。\n\n这里不属于幻想乡任何势力。红色花海沿三途河岸铺向远方，亡者沉默地等待渡船；生前的爵位、力量与名声到了这里，都只剩下一段必须被衡量的生平。紫若直接越过河流，或许没有人拦得住她，但她今日是来请求是非曲直厅的帮助，而不是向彼岸展示贤者能无视多少规矩。\n\n渡船停在离岸不远处。小野冢小町倚著船桨睡得正熟，斗笠盖住半张脸，岸边的亡者已排成不短的一列。\n\n紫以折扇敲了敲船舷。\n\n「死神小姐，妳的乘客似乎等了很久。」\n\n小町掀起斗笠，毫无愧色地打了个呵欠。\n\n「活著时赶了一辈子，死后慢一会儿也没什么。倒是妳最好保留些精神，映姬大人今天一早就在整理妳送来的战时计划。」\n\n她撑船离岸，动作看似散漫，船身却稳稳避过河中的每一道暗流。这名死神懒散、爱闲谈，也总能替翘班找到理由；可她记得每一名亡者最后惦念的人，知道哪片水域藏著恶灵，也明白战争会让三途河变得多么拥挤。她只是从不肯用勤勉的模样证明自己有用。\n\n河对岸的是非曲直厅没有军营般的喧闹，只有纸页翻动与悔悟棒轻叩案面的声音。厅中端坐的四季映姬，是裁断幻想乡死者善恶的阎魔。净颇梨之镜前，身分不能遮掩罪过，漂亮话也不能改写做过的事。\n\n她的训斥尤其令人敬畏。映姬不靠怒吼压人，而是把一个念头的起因、行动与后果逐一拆开，直到对方再也找不到能藏身的借口。她能从一次偷懒讲到灵魂的去处，也能因一句自欺，说上几个时辰而不显疲倦。\n\n紫向来是让别人无话可说的那一个。\n\n然而面对映姬，她也不得不承认：若把说教与训斥当作一门本领，自己确实甘拜下风。\n\n殿门缓缓开启。书案上，百妖协议的每一页都已被密密麻麻地写满批注。\n\n紫第一次觉得，接下来几个时辰或许会比越过日本军的防线更难熬。"
+ KYO_hyakki_council.39.a:0 "有些关口，不能用间隙绕过。"
+
+
+ KYO_hyakki_council.40.t:0 "是非曲直厅的界线"
+ KYO_hyakki_council.40.d:0 "四季映姬没有请八云紫入座。\n\n「妳要求彼岸帮助百妖协议的必要性。」她按住桌上的文件，「那就先回答：谁能下令征用？拒绝交出粮食的居民如何处置？投降者是否仍被视为敌人？若妖怪吃了俘虏，妳准备用『天性』还是『战况紧急』替他辩解？」\n\n紫没有立刻回答。\n\n谈判从上午持续到三途河的雾色变暗。每当紫以存亡为理由，映姬便追问这项理由允许做到哪一步；每当紫提出战场不可能事事请示，映姬便要求把指挥官能自行决定的范围写清楚。\n\n「必要之事，不会仅因必要便自动成为正当。」映姬说，「若发令者同时也是唯一的裁断者，那就不是规则，只是权力替自己作证。」\n\n这句话没有给紫留下转圜的余地。\n\n最终，两人共同订下百妖军的战时戒律：征用物资必须登记来源，能补偿者不得掠夺；不得以种族或所属势力报复平民；投降与失去战斗能力者必须受到看管，不得虐待、吞食或私自处决；任何部队造成无关伤亡，都要留下纪录并由指挥者说明；战死者的姓名、遗物与去向则交由彼岸统一整理。\n\n映姬又在末尾添上一条。\n\n「八云紫本人，同样受此约束。」\n\n紫看了那行字片刻，拿起笔。\n\n「若规则只能管住弱者，它便没有存在的必要。」\n\n墨迹落定后，映姬才收起严厉的神色。她将亲自编写军纪与训练手册，派遣巡察者记录违规，并在百妖协议内保留独立裁决之权。这并非为战争赐予正义，而是防止求生之名成为所有恶行的通行证。\n\n小町负责三途河上的运输、伤亡登记与亡者接引。她听见工作内容时长叹一声，却仍把航线图收进怀里。庭渡久侘歌则接管通往彼岸的关口，分辨亡魂、怨灵与趁乱穿行者，避免战火使生死两界一同失序。\n\n「所以，彼岸愿意帮助幻想乡了？」紫问。\n\n「我只承认抵抗灭亡并非罪过。」映姬答道，「至于妳们是否在抵抗之中犯下新的罪，我会一直看著。」\n\n小町靠近紫，压低声音。\n\n「这已经算映姬大人答应了。再问下去，她能讲到明早。」\n\n「小町。」\n\n映姬的声音从书案后传来。\n\n「既然妳仍有余力闲谈，今日积下的渡船工作便全部补完。」\n\n死神的笑容顿时僵住。紫合起折扇，第一次在踏入是非曲直厅后露出一丝笑意。\n\n彼岸的援助，就此加入百妖协议。"
+ KYO_hyakki_council.40.a:0 "连战争，也必须回答何为是非。"
+
+  KYO_hyakki_council.41.t:0 "读心者与无心者的宫殿"
+ KYO_hyakki_council.41.d:0 "通往地灵殿的道路，比八云紫记忆中更加繁忙。\n\n运矿车沿著轨道穿过岩壁，旧地狱的住民在岔路口交换货物，火焰猫拖著装满亡骸的推车，从正在冒烟的坑道旁疾驰而过。几处隧道新添了支架，危险区域也挂上颜色分明的警示灯。\n\n地上总把这里想成一座堆满怨灵、罪人与野兽的深坑。真正走进来才会发现，这片不见阳光的土地有自己的道路、工坊、规矩与生活。它之所以没有被怨灵与地火吞没，是因为地灵殿仍在管理一切。\n\n古明地觉掌管所有能被看见的秩序。\n\n商人可以对官员说谎，部下可以对上司隐瞒，弱者也可能因恐惧而不敢指出危险；但没有人能在觉面前把真正的想法藏起来。她知道哪座矿场虚报产量，哪条坑道即将发生冲突，也知道一句恭敬背后究竟是服从、畏惧，还是等待机会的怨恨。\n\n地底居民未必喜欢她。被看穿从来不是令人愉快的经历。然而她们至少知道，觉不会被漂亮话收买，也不会只听强者的一面之词。在一座收留了无数被地上排斥者的城市里，这种令人不安的公正，反而比善意更值得信任。\n\n至于古明地恋，她掌管的是那些没有人注意到的地方。\n\n恋不主持会议，也不发布命令。她可能出现在废弃矿井，下一刻又坐在旧都屋顶；守卫记不得她何时经过，商贩也想不起是谁提醒自己仓库失火。迷路的孩子会莫名其妙回到家门前，堵塞的通风井会在事故发生以前被打开，几个准备斗殴的妖怪则会突然忘记自己为何生气。\n\n如果说觉处理的是众人不敢说出口的念头，恋便走进那些连当事者自己都没有察觉的空缺。没有人能追踪她，也没有人真正命令得了她；可旧地狱每一条被遗忘的窄巷、每一处不会出现在报告里的角落，似乎都曾留下她的脚步。\n\n一位被所有人看见，却因此遭到畏惧；一位能走到任何人身旁，却从不被记住。这对姊妹用彼此完全相反的方式，维持著旧地狱的运转。\n\n紫尚未抵达地灵殿正门，紧闭的门扉便自行开启。\n\n觉已坐在大厅深处。第三只眼望向来客，桌上放著两杯刚沏好的茶。\n\n「妳在路上已经想完地灵殿能替妳做什么了。」\n\n她没有寒暄。\n\n「现在，轮到妳听听地底想要什么。」"
+ KYO_hyakki_council.41.a:0 "在读心者面前，准备好的说辞没有意义。"
+
+
+ KYO_hyakki_council.42.t:0 "地上不肯看见的幻想乡"
+ KYO_hyakki_council.42.d:0 "八云紫还未开口，古明地觉便替她说出了来意。\n\n「妳需要我找出恐慌、谎言与敌意，需要燐处理亡骸、伤员与地下运输，也需要阿空成为足以震慑敌人的武器。」\n\n觉端起茶杯，语气平静得近乎冷淡。\n\n「地上的势力总是如此。平安时把我们称为不祥，遇到危险时，才想起不祥之物也有用处。」\n\n紫没有否认。任何辩解都会在觉读到之前便失去作用。\n\n一道声音忽然从紫身后传来。\n\n「那么，战争结束以后呢？」\n\n古明地恋蹲在椅背上，双手托著脸。没有人听见她进门，连紫也无法确定她究竟何时出现在那里。\n\n「等大家不害怕了，地上的人就会重新讨厌我们吗？」\n\n这个问题比觉的质问更加直接。\n\n「会。」紫答道。\n\n恋歪了歪头。觉的第三只眼则微微收紧。\n\n紫继续说道：「我不能命令所有人喜欢地底，也不会用一句团结掩盖长久的排斥。但百妖协议可以迫使她们承认，旧地狱不是危急时才能打开的仓库，而是幻想乡的一部分。」\n\n紫将协议草案推到觉面前。地灵殿将取得正式席位，能接触共同情报、参与物资分配，并拥有与地面聚落相同的避难和补给权。战后，任何势力都不得以地底妖怪危险、不洁或令人不安为由，将她们重新排除于共同秩序之外。\n\n「妳没有期待她们从此善待我们。」觉读著紫的思绪。\n\n「那不切实际。」\n\n「妳只是准备让排斥我们变得更加困难。」\n\n「制度通常只能先做到这一步。」\n\n觉沉默了片刻。她所读到的并非温情，也不是对地底居民迟来的歉意。紫仍在计算兵力、道路与风险；但至少在那份计算之中，地底不再是可以使用后丢弃的工具。\n\n地灵殿随后提出自己的安排。觉将协助辨认军中的恐慌、渗透者与刻意隐藏的敌意，但拒绝让读心成为监视所有人的借口。火焰猫燐负责坑道运输、灾区救援与战死者收容；灵乌路空则守卫地热设施，并在局势最危急时提供足以改变战场的火力。\n\n恋没有接受任何职位。\n\n她只是趴在桌边，用紫的笔在地图上画出数条弯曲的细线。那些路穿过废矿、怨灵聚集区与早已封闭的隧道，其中几条甚至不在地灵殿的纪录里。\n\n「这些地方可以走喔。」恋说，「因为大家都忘记了，所以也不会有人守著。」\n\n觉看著妹妹添上的最后一条路线，终于在协议上留下自己的名字。\n\n「地灵殿会帮助妳。」\n\n她抬眼望向紫。\n\n「不是因为地上终于接纳了我们，而是因为旧地狱也有权决定幻想乡的未来。」"
+ KYO_hyakki_council.42.a:0 "地底不是只在危急时才存在。"
+
+ KYO_hyakki_council.43.t:0 "那些坐不上长桌的家伙"
+ KYO_hyakki_council.43.d:0 "要我介绍草根妖怪？行啊。先把妳脑子里那些可怜、弱小、等著大人物拯救的东西扔掉。\n\n所谓草根，不是她们喜欢泥巴，也不是她们天生就该住在破屋和湖岸。只是每次有人分配粮食、药品和安全的住处，她们总被排在最后；每次需要运输、守夜、探路和埋葬人，她们又会突然排到最前面。\n\n赤蛮奇是三个里最难骗的。她听见团结，先问谁在发号施令；听见共同利益，就盯著利益最后进了谁的口袋。她不相信上位者会忽然长出良心，也不喜欢别人替她决定什么叫必要。人里外围的暗巷、废屋和夜路上到处都有她认识的家伙。谁挨饿、谁失踪、哪个守卫收了好处，她往往比官老爷更早知道。\n\n今泉影狼没那么多弯弯绕绕。危险来了，她先看能不能打；打不过，就带著身边的人撤。她熟悉森林边缘的兽径，知道哪条路能藏住气味，哪座破棚能躲过风雨。妳若拿漂亮话敷衍她，她可能听到一半便走了；可只要同伴真的遇险，她也是最先扑上去的那个。\n\n若鹭姬看起来最好说话，所以总有人以为她最好欺负。错了。她只是愿意把话说得温和，并不代表她没有底线。湖边谁家的孩子病了，哪个伤员缺药，哪处聚落缺了粮，她都记得。她不反对战斗，但每当其他人开始计算能放弃多少人时，她便会问：被放弃的为什么总是同一群？\n\n她们会吵架。赤蛮奇嫌影狼动手太快，影狼嫌赤蛮奇什么都要怀疑；若鹭姬想把每个人都带回来，另外两个则知道有些时候根本做不到。她们不是什么完美无缺的三人组，只是被逼到墙角时，仍愿意替彼此开辟道路。\n\n我喜欢她们吗？不尽然。赤蛮奇嫌我把事情闹得太大，影狼说我有时只顾著掀桌，若鹭姬更会在我准备点火以前，问附近还有没有无辜的人。烦得很。\n\n可那些坐在长桌旁的家伙最好记住：她们在地图上画一道箭头，只要一根手指；真正让粮食、消息和伤员沿著那道箭头走下去的，往往就是这些连椅子都没有的人。"
+ KYO_hyakki_council.43.a:0 "别把撑住一切的人放在最后。"
+
+
+ KYO_hyakki_council.44.t:0 "湖岸上的第四名旁听者"
+ KYO_hyakki_council.44.d:0 "鬼人正邪坐在湖岸外的一棵歪树上，隔著枝叶看八云紫与三名草根妖怪交涉。\n\n她不是来帮忙的。至少她自己是这么认为。\n\n紫没有带卫兵，也没有把她们叫进铺著地毯的会议室。几个人就站在半塌的仓棚旁，木箱充当桌子，上面摊著聚落、森林小径与湖岸水路的地图。\n\n「我们可以搬运、守夜、探路，也能把消息送进大妖怪找不到的地方。」赤蛮奇先开口，「但别把『能做』听成『随便使唤』。如果妳准备让我们替别人送死，现在就直说。」\n\n影狼用指尖压住几处森林聚落。\n\n「给我们能用的武器。敌人若摸到家门口，我们先保护自己人，不会因为哪个指挥官在远处催促，就把聚落扔下。」\n\n若鹭姬则指向湖上的几条水路。\n\n「受伤的人、年幼的妖怪，还有不能战斗的人，都必须有船、有药，也要有可以去的地方。不能只把能拿武器的人算进安排里。」\n\n她们没有要求爵位、旗帜或一座像样的总部。她们要的是不被任意征用，不被截走最后一袋粮食，也不会死在在无人知道的地方。\n\n紫逐项作答。地方聚落保有自卫优先权；百妖军必须向协助运输与侦察者提供装备、粮食和医疗；草根联络网不归任何单一势力所有，消息直接送交百妖协议；若有人伤亡，家属与聚落必须得到照应，不能用一句战况紧急便把事情抹去。\n\n赤蛮奇负责整理地方消息与联络节点，影狼组织夜间巡守及森林引路者，若鹭姬则统筹湖上运输、伤员转移与沿岸避难。她们仍然不是一支穿著相同制服的军队，却能让百妖协议的手真正伸到那些从未出现在正式地图上的角落。\n\n交涉将要结束时，紫忽然停了一瞬。\n\n她的目光越过赤蛮奇的肩膀，穿过枝叶与湖面的薄雾，准确落在正邪藏身的地方。\n\n没有开启间隙，也没有说出任何警告。仅仅一眼，意思便清楚得令人火大。\n\n——安分点。\n\n正邪原本已经想好几句足以搅乱现场的话。她可以提醒三人，贤者的承诺从来没有保证；也可以当场质问紫，等战争结束后，这些写在纸上的安排还剩多少。\n\n她最后却没有开口。\n\n「真是个不讲理的老太婆。」正邪低声嘀咕。\n\n树下，紫在协议上写下最后一行。赤蛮奇反复读过才点头，影狼收起地图，若鹭姬则开始询问第一批药品何时送到。\n\n至少这一次，坐在高处的人没有叫她们等待，也没有把她们排在最后。\n\n正邪靠回树干，决定暂时让那位贤者把事情做完。"
+ KYO_hyakki_council.44.a:0 "她们的声音，终于传到了长桌上。"
+
+
+ KYO_hyakki_council.45.t:0 "被丢下以前的声音"
+ KYO_hyakki_council.45.d:0 "付丧神？先别急著替她们难过。\n\n她们不需要谁蹲在废物堆旁，摆出一副同情弱者的嘴脸。她们真正忘不了的，也不是被遗弃的那一天，而是更早以前——还有人愿意伸手拿起她们的时候。\n\n九十九弁弁记得手指拨过琵琶弦的力度。宴席安静下来，听众望向演奏者，一件乐器便能让整间屋子只剩自己的声音。她总爱说自己才是最强的付丧神，至少那副骄傲比等著别人施舍有用得多。\n\n九十九八桥记得筝弦下传来的温度。她比弁弁更愿意相信明天，也更容易因一句需要妳而重新振作。别把那当成天真。只有真正被丢弃过的家伙，才知道再次被人期待是多么难得。\n\n多多良小伞记得雨水落在伞面、伞下的人握紧伞柄的感觉。她现在整天想著怎么吓人，偏偏总是失败；可论起街巷、民居、修补与锻造，她懂得比许多只会发号施令的家伙更多。毕竟一把伞最早想做的，从来只是替某个人挡雨。\n\n秦心由六十六副面具而生。那些面具曾在人前演出，承接欢笑、悲伤、愤怒与希望。现在她能看见情感在人群之间流动，也知道一张脸若失去了应有的感情，会变得多么空洞。\n\n至于堀川雷鼓，她早就学会不把命运绑在旧主人手里。旧力量会消失，她便寻找新的力量；旧舞台不要她，她便自己架起新的舞台。其他付丧神愿意听她的，不是因为她的鼓声最大，而是因为她能让一群散落在仓库、工坊与路边的旧物，知道彼此还在。\n\n她们怀念被使用的日子，却不愿再次成为任人取用的器具。这并不矛盾。\n\n被需要曾使她们幸福。真正令她们愤怒的，是使用者从未想过，被自己握在手里的东西也会记得，也会疼，甚至会在被丢掉以后继续活著。\n\n这一点，我比那些大人物清楚得多。"
+ KYO_hyakki_council.45.a:0 "被丢下的东西，也记得曾被珍惜。"
+
+
+ KYO_hyakki_council.46.t:0 "无人发现的旁听者"
+ KYO_hyakki_council.46.d:0 "鬼人正邪藏在旧货栈的屋梁后方，看著八云紫走进付丧神的聚集地。\n\n弁弁与八桥分坐两侧，雷鼓站在堆满旧乐器的木台中央。小伞靠著一只装满工具的木箱，秦心则换上一副没有笑意的面具。\n\n「先说清楚。」雷鼓敲了敲鼓缘，「妳今日来找的，究竟是一批方便好用的器具，还是一群有权决定自己要做什么的人？」\n\n「参与者。」紫答道，「器具不会向我提出条件，妳们会。」\n\n「战争结束以后呢？等道路修好了、器材补齐了，大家还会记得我们吗？」\n\n「有人会，有人不会。」紫没有许下空泛的保证，「所以妳们建立的工坊与联络网，战后仍由付丧神管理。百妖协议可以请求协助，不能把妳们重新登记成谁的财产。」\n\n谈判由此展开。\n\n弁弁与八桥将编写不同的乐曲信号。撤离、集合、敌袭与物资抵达，都能藏进旋律里，让分散各地的付丧神听见。小伞负责街巷联络、器材修补与锻造，并带领熟悉民居的妖怪检查避难处。秦心观察各聚落的情绪变化，在恐慌蔓延前找出源头，也以演出帮助人群重新安定。\n\n雷鼓则统合各地的旧物工坊、货栈与运输站。废弃的车辆可以拆出零件，损坏的器材能重新修复，散落在民间的消息也能沿著鼓声与乐曲迅速传开。这张网不隶属于任何官署，却能抵达正式命令最难触及的地方。\n\n她们也提出最后一项条件：任何付丧神都有权拒绝危险徵调。愿意协助，是自己的选择；昔日被谁制造、曾被谁持有，都不能成为命令她们服从的理由。\n\n紫在协议上写下这一条。\n\n正邪始终没有出声。她原本已经准备好在紫望过来时露出笑容，证明先前那句安分点根本吓不住自己。\n\n然而直到协议完成，紫一次也没有看向屋梁。\n\n不是故意忽略。这一次，她是真的没有发现正邪就在那里。\n\n正邪本该为此得意，嘴角却迟迟没有扬起。\n\n下方，雷鼓敲响第一声联络信号。弁弁与八桥的乐声随之加入，沉睡在货架与旧屋里的器物逐一回应。那不再是等待主人拿起自己的声音，而是一群曾被丢弃者自行决定，要为幻想乡做些什么。\n\n正邪没有跳下去打断她们。\n\n她只是坐在无人注意的阴影里，把紫今日答应的每一句话都记了下来。"
+ KYO_hyakki_council.46.a:0 "这一次，紫没有看见她。"
+
+  KYO_hyakki_council.47.t:0 "花海之中的古老妖怪"
+ KYO_hyakki_council.47.d:0 "八云紫走入太阳花田时，没有看见哨塔、栅栏或巡逻的妖怪。\n\n秋穰子正在田地边缘检查刚收下的谷物，秋静叶则沿著林线标记入秋后仍可通行的道路。居住在附近的小妖怪来回搬运粮袋，谈话声却始终压得很低。她们不是害怕敌人发现这里，而是不愿惊动花田中央的那位主人。\n\n风见幽香不需要守卫。\n\n紫还未走近，便看见那柄熟悉的阳伞。幽香站在向日葵之间，耐心剪去一片枯黄的叶子。她的动作很轻，甚至称得上温柔，仿佛外界正在发生的战争与她毫无关系。\n\n然而，紫知道这份平静意味著什么。\n\n幽香从不急著证明自己的力量。她不需要军队替自己制造声势，也不会在会议里争夺职位。那些曾经把她的微笑误认为友善、把她的沉默当作退让的人，通常没有机会犯第二次错误。\n\n她对弱者未必抱有恶意，却也不会因为弱小而特别宽容。她欣赏敢于站稳的人，也享受把虚张声势者逼到再也无法伪装的时刻。对幽香而言，力量不是用来装饰权位的东西，而是一个生物能否按照自身意志活下去的证明。\n\n如今，这份意志守著太阳花田。\n\n周边的农地因她的存在免受掠夺，弱小妖怪得以在花田附近建立聚落，秋姐妹也能维持收成与季节更替。幽香从未自称统治者，但所有生活在此处的妖怪都明白：只要她仍站在花海中央，便没有人能随意夺走这里的一切。\n\n紫踏上花间小径。\n\n幽香没有回头。\n\n「妳踩弯了三株向日葵。」\n\n「我避开了另外三百株。」紫答道。\n\n幽香这才转过身。她脸上带著一如往常的微笑，阳伞稍稍抬起，将落在紫身上的阴影一并移开。\n\n「那么，幻想乡的贤者。」她问，「妳准备拿什么赔我？」"
+ KYO_hyakki_council.47.a:0 "花田没有防线，因为她本人就是界线。"
+
+
+ KYO_hyakki_council.48.t:0 "一位失踪已久的老朋友"
+ KYO_hyakki_council.48.d:0 "八云紫没有立刻谈起战争。\n\n她与风见幽香沿著花间小径缓缓前行。秋穰子送来刚收成的果物，秋静叶则把周边道路与林地的图纸放在木桌上。幽香没有看那些准备，只替两人倒了茶。\n\n「妳希望秋姐妹替妳收集粮食，让附近的妖怪搬运物资，再让我去替妳打仗。」幽香端起茶杯，「很方便的安排。」\n\n「我希望妳们协助幻想乡。」\n\n「听起来只是换了一种说法。」\n\n紫望向远处成片的向日葵。\n\n「我有一位老朋友，叫魅魔。」\n\n幽香的伞沿微微抬起。\n\n「那个把麻烦一路带进梦幻馆的亡灵？」\n\n「正是她。若不是魅魔当年闯入妳的领地，妳未必会追著那场骚动来到幻想乡。」\n\n那是许久以前的事。魅魔将幻想乡的纷乱带到幽香门前，也让原本对外界毫无兴趣的花之妖怪，第一次把目光投向这片被结界包围的土地。幽香最初只是为了找出那名胆大妄为的亡灵，后来却在这里留下了自己的花田。\n\n「妳现在才想替我们互相介绍？」幽香问。\n\n「她已经失踪很久了。连我也不知道她去了哪里。」\n\n「失踪？」幽香轻笑一声，「那家伙只是去了没有我们的地方惹麻烦。她现在一定正在做些什么。等远方传来爆炸声，我们大概就知道了。」\n\n紫没有反驳。以她对魅魔的了解，这确实是最合理的推测。\n\n片刻后，幽香放下茶杯。\n\n「魅魔把我引到这里，不代表我欠幻想乡什么。」\n\n「当然。」紫说，「但敌人若踏进来，不会因为太阳花田没有参加会议，便绕过这片土地。她们会焚烧农地、征走粮食，也会把附近的妖怪赶进战场。」\n\n幽香脸上的笑意没有消失，花田里的风却忽然停了。\n\n紫将安排说得很清楚。秋穰子负责收成、粮食保存与农地调度；秋静叶整理林线、季节道路与外围聚落的撤离路径。当地妖怪将维持运输与地方警戒，不受任何单一势力任意征用。\n\n至于幽香，百妖协议不会命令她服从任何将领。只有在敌军威胁花田或幻想乡的存续时，她才依自己的判断参战。\n\n「妳倒是学会不命令我了。」幽香说。\n\n「我一向知道哪些命令没有意义。」\n\n幽香站起身，阳伞在肩上转过半圈。\n\n「那就告诉妳的百妖军，别逃得太快。」\n\n她望向花田之外，语气依旧温和。\n\n「等敌人走到我面前时，我希望还有人能活著看完。」"
+ KYO_hyakki_council.48.a:0 "幻想乡的战线上，将盛开不合时宜的花。"
+
+  KYO_hyakki_council.49.t:0 "紫所听闻的圣人"
+ KYO_hyakki_council.49.d:0 "八云紫认识幻想乡里大多数值得认识的人。\n\n她知道哪些妖怪可以用利益说服，哪些神明需要献上足够的敬意，也知道谁会为了一句冒犯追杀来客数日。然而，她与圣白莲并不熟悉。\n\n紫知道的是一段在妖怪、人类与僧侣之间流传已久的故事。\n\n白莲并非生来便能平静面对死亡。弟弟命莲去世后，她同样恐惧衰老，畏惧自己的生命终有一日归于寂灭。她修习妖术、恢复青春，也因此发现自己的力量依赖妖怪的存在。\n\n她最初保护妖怪，并不完全出于慈悲。\n\n这一点反而使紫愿意相信后来的故事。\n\n白莲曾为了保全自己而救助妖怪，却在一次次接触那些被讨伐、驱逐与恐惧的生命后，逐渐不再把她们视为维持法力的手段。她开始真正关心妖怪的命运，也开始相信人与妖怪并非只能以猎杀彼此的方式共存。\n\n人类最终发现了她的秘密。\n\n一位公开庇护妖怪的僧人，在人类眼中比妖怪更加危险。她被视为背叛者，被封入魔界，从历史与众人的视野中消失。多年以后，将她从封印中带回来的，恰恰是那些仍记得她的妖怪。\n\n命莲寺便建立在这段经历之上。\n\n紫不相信毫无裂痕的圣人。那种故事通常只是后人把不方便记载的部分删掉了。白莲却不同。她曾经恐惧、曾经自私，也曾经依靠自己后来决定保护的族群。她的慈悲不是与生俱来的纯洁，而是一个人看清自己以后，仍选择改变方向的结果。\n\n这让白莲变得更加可信，也更加难以控制。\n\n她不会因为贤者开口便接受命令，也不会因为战争迫近便放弃自己的原则。她所聚集的妖怪各自带著缺陷，彼此甚至称不上完全理解；可她仍让这些人留在同一座寺院里，共同吃饭、争吵、修行，再在第二天继续生活。\n\n幻想乡现在需要的，或许正是这种能力。\n\n紫在命莲寺的石阶前停下。钟声从院内传来，一群她只在报告里读过名字的妖怪正在等待。\n\n传闻已经说完了。\n\n接下来，她必须亲自认识圣白莲。"
+ KYO_hyakki_council.49.a:0 "传闻不能代替一次会面。"
+
+
+ KYO_hyakki_council.50.t:0 "没有贤者的幻想乡"
+ KYO_hyakki_council.50.d:0 "命莲寺的众人与八云紫听说的模样大致相同，却又不完全一样。\n\n纳兹琳站在离出口最近的位置，目光始终留意紫的双手与四周动静。村纱水蜜靠著廊柱，姿势不像僧侣，倒像随时准备翻过栏杆离开。云居一轮坐得过分端正，仿佛害怕任何失礼都会破坏谈判；寅丸星则守在圣白莲身旁，神情光明磊落得几乎令人无法怀疑。\n\n她们不像一个整齐的团体。\n\n白莲却能让她们留在同一间屋子里。\n\n「我原以为妳会更早来。」白莲替紫斟茶。\n\n「妳认为我一定会来？」\n\n「若情势还在妳的掌握中，妳会派式神送来一份协议。只有当幻想乡真的可能崩溃时，八云紫才会亲自走完这段石阶。」\n\n紫看了她片刻。\n\n「传闻没有提到妳如此直接。」\n\n「传闻也很少在意我说了什么。」\n\n紫摊开百妖协议的草案。她说明日本的威胁、各地正在进行的动员，以及幻想乡若各自迎战，会在敌人真正逼近以前便耗尽粮食、道路与彼此仅存的信任。\n\n白莲没有询问命莲寺能取得多少权力。\n\n「这场战争准备保护谁？」她问。\n\n「幻想乡。」\n\n「幻想乡是一片土地，不是答案。」\n\n紫沉默一瞬，重新回答。\n\n「生活在这里的人类、妖怪与其他众生。包括不能战斗的人，也包括不愿以仇恨证明忠诚的人。」\n\n「又准备牺牲谁？」\n\n「我不能保证没有人死亡。」紫说，「但我可以保证，不会在危险真正来临以前，便把任何群体写成理所当然的弃子。」\n\n白莲注视著她。她没有从这句话里听见慈悲，只听见一名贤者愿意承认自身能力的界限。\n\n那已经足以让谈判继续。\n\n命莲寺将开放寺院与周边设施，收容流离者、伤员与失去住处的家庭。寺中的妖怪会协助寻找物资、保护撤离道路、运送伤患并安定恐慌，但她们不会参与针对普通人类的报复，也不会以种族决定谁有资格获救。\n\n紫接受了这些条件。\n\n「我愿意帮助妳。」白莲最后说。\n\n紫微微挑眉。\n\n「妳如此信任我？」\n\n「这不是信任，而是判断。」\n\n白莲望向寺外。远处的聚落正为即将到来的战争加固屋顶、整理粮食，所有人都在等待某个能让各方停止争抢的命令。\n\n「没有妳，幻想乡会乱。」她说，「各方会封住自己的道路、扣下自己的粮食，只保护愿意服从自己的人。还没等敌人抵达，最弱小的众生便会先被抛下。」\n\n「妳认为我能阻止这一切？」\n\n「至少现在，只有妳能迫使她们坐在一起。」\n\n白莲起身，双手合十。\n\n「所以命莲寺会帮助八云紫维持幻想乡，也会在八云紫走错时提醒她。」\n\n紫收起协议。\n\n「后半句倒是多余。」\n\n「对妳而言，恐怕正好相反。」\n\n钟声再次传遍寺院。纳兹琳开始核对物资，村纱前去检查运输道路，一轮与星则著手安排第一批避难者。\n\n紫终于明白，那些传闻为何始终无法完整描述白莲。\n\n慈悲并没有使她柔弱。\n\n它只是让她比许多人更清楚，自己必须站在哪里。"
+ KYO_hyakki_council.50.a:0 "慈悲不会旁观混乱吞没众生。"
+
+  KYO_hyakki_council.51.t:0 "风雨与大地的条件"
+ KYO_hyakki_council.51.d:0 "八云紫抵达守矢神社时，八坂神奈子已经把妖怪山的地图铺满整张桌子。\n\n河童工坊、山中道路、聚落、河流与祭祀场所都被逐一标记。与其说她在等待谈判，不如说她早已开始规划动员。\n\n「守矢神社可以修路、集结劳力，也能让河童把工坊转入战时生产。」神奈子直截了当地说，「但我要正式的指挥权，不接受每项工程都由山下的会议反复干涉。」\n\n「妳可以指挥工程。」紫答道，「但不能把整座妖怪山变成守矢神社的私产。」\n\n坐在廊沿的泄矢诹访子晃了晃脚。\n\n「还有土地。」她提醒道，「神奈子看见道路和水坝，我看见道路下面住著谁。要是妳们把御柱插错地方，敌人还没来，山里的旧神就先翻脸了。」\n\n神奈子皱起眉，却没有反驳。\n\n最后的安排十分明确。神奈子统筹道路、水利、河童工坊与信仰动员；诹访子负责协调土地、地方神明及山中聚落。守矢神社取得百妖协议的正式席位，所有大型工程则必须同时得到两位神明的认可。\n\n「很好。」神奈子收起地图，「既然战争会改变幻想乡，那么守矢神社就不会只站在一旁观看。」\n\n诹访子从廊沿跳下。\n\n「先说好，弄坏山的人自己负责修。」\n\n紫望向石阶下方。第一批河童已经带著测量工具出发。\n\n山中的风向，开始改变了。"
+ KYO_hyakki_council.51.a:0 "风雨、土地与御柱皆已就位。"
+
+
+
+
+
+   KYO_hyakki_leadership.1.t:0 "蕾米莉亚主持军务委员会"
+ KYO_hyakki_leadership.1.d:0 "新一轮推举结束，蕾米莉亚取得军务委员长之位。她将各方送来的提案叠在手边，从容地望过每一名代表。\n\n『军务不是让各位轮流炫耀力量的宴会。可以争论，也可以反对；但一旦作出决定，就必须有人让它确实执行。』\n\n她轻敲桌面，露出近乎优雅的微笑。\n\n『既然将位置交给了我，就别期待一位只会主持会议的委员长。红魔馆会服从我的秩序，而我也会让整个委员会如此。』"
+ KYO_hyakki_leadership.1.a:0 "让红月统整军务"
+
+ KYO_hyakki_leadership.2.t:0 "西行寺幽幽子主持军务委员会"
+ KYO_hyakki_leadership.2.d:0 "西行寺幽幽子被推举为军务委员长。她没有急著谈论胜负，只先翻阅补给、人员与各地防务的纪录。\n\n『冥界见过太多被轻率决定的死亡。勇敢固然可敬，但不能拿来替准备不足辩护。』\n\n幽幽子合上文件，笑意轻柔，语气却不容敷衍。\n\n『每一道命令都要回答三件事：要完成什么、由谁承担，以及如何把还活著的人带回来。能回答，我便批准；不能，就重写。』"
+ KYO_hyakki_leadership.2.a:0 "让白玉楼衡量每一步"
+
+ KYO_hyakki_leadership.3.t:0 "伊吹萃香主持军务委员会"
+ KYO_hyakki_leadership.3.d:0 "伊吹萃香接过军务委员长的位置，随手把冗长的礼节省去，只在众人之间摆下一只酒盏。\n\n『百鬼不是一支靠绳子绑起来的队伍。真想让大家出力，就先让她们知道自己为何而来。』\n\n她举杯面向各方代表。\n\n『我不要求你们放下旧怨，也不要求谁向谁低头。需要并肩时，我会站在最前面；事情结束后，想吵架还是打架，我都奉陪。』"
+ KYO_hyakki_leadership.3.a:0 "让百鬼在酒盏前聚首"
+
+ KYO_hyakki_leadership.4.t:0 "风见幽香主持军务委员会"
+ KYO_hyakki_leadership.4.d:0 "风见幽香成为军务委员长后，只留下最必要的命令与最明确的责任分配。其余空话，全被她用伞尖推到一旁。\n\n『有能力的就完成工作，办不到的就及早说明。浪费别人的时间，再拿困难替自己辩解，才是真正的无能。』\n\n她微笑著望向会场。\n\n『我会保护值得保护的事物，也会亲手清除所有妨碍。请各位作出选择时，至少别高估自己能承受的后果。』"
+ KYO_hyakki_leadership.4.a:0 "让幽香清除所有阻碍"
+
+ KYO_hyakki_leadership.11.t:0 "圣白莲主持信仰委员会"
+ KYO_hyakki_leadership.11.d:0 "圣白莲获推举为信仰委员长。她没有许诺让所有分歧消失，也没有把慈悲说成不问是非的宽容。\n\n『我们可以信奉不同的道路，也可能永远无法彼此喜爱。但任何信仰若只照顾顺从自己的人，便只是披著善意外衣的支配。』\n\n她双手合十，平静地看向众人。\n\n『犯错者必须改正，伤人者必须被制止；可只要还有人愿意重新站起来，这个委员会就不会先将她推开。』"
+ KYO_hyakki_leadership.11.a:0 "让慈悲成为可以执行的原则"
+
+ KYO_hyakki_leadership.12.t:0 "八坂神奈子主持信仰委员会"
+ KYO_hyakki_leadership.12.d:0 "八坂神奈子接掌信仰委员会，随即要求各方将承诺化为明确的人力、物资与工程安排。\n\n『信仰若只能在祭坛前显得庄严，离开神社便毫无用处，那它就不值得任何人仰望。』\n\n她按住摊开的规划图，毫不掩饰自己的雄心。\n\n『我不要求众生先相信神明。让道路能走、让水能流、让共同完成的事留得下来——成果自然会替我们回答。』"
+ KYO_hyakki_leadership.12.a:0 "让神德接受成果的检验"
+
+ KYO_hyakki_leadership.13.t:0 "古明地觉主持信仰委员会"
+ KYO_hyakki_leadership.13.d:0 "古明地觉成为信仰委员长后，会场里那些被礼貌包装的念头，再也难以安稳藏在话语背后。\n\n『有人把偏见称作传统，把野心称作责任，也有人用谦逊掩饰不愿承担。』\n\n第三只眼缓缓扫过众人。\n\n『我不要求各位心中纯洁，只要求说出的理由与真正的理由一致。你们可以讨厌我；但在这张桌子前，没有人能靠欺骗自己来换取共识。』"
+ KYO_hyakki_leadership.13.a:0 "让所有心思摊在桌面上"
+
+ KYO_hyakki_leadership.14.t:0 "饭纲丸龙主持信仰委员会"
+ KYO_hyakki_leadership.14.d:0 "饭纲丸龙被推举为信仰委员长。她首先整理各方发布消息的方式，要求事实、推测与立场不得再混写成同一种说法。\n\n『众人不必相信同一套教义，至少应当生活在同一个现实里。』\n\n射命丸文笑问，这是否意味著报纸从此只能索然无味。\n\n『标题尽管写得惊天动地。』饭纲丸龙答道，『但若希望别人依照妳的话行动，就必须对结果负责。』"
+ KYO_hyakki_leadership.14.a:0 "让全境共用同一套消息"
+
+ KYO_hyakki_leadership.21.t:0 "赤蛮奇主持万民委员会"
+ KYO_hyakki_leadership.21.d:0 "赤蛮奇接过万民委员长的位置，带来的不是官署报告，而是由地方居民亲手补上的道路、聚落与需求纪录。\n\n『我们不要求上面的人相信我们，也不会因为一张任命就相信上面。』\n\n她让若鹭姬确认各地是否真正得到援助，让影狼处理欺压与抢夺，自己则追查每一项遭到忽略的问题。\n\n『想替万民作决定，可以。先走进她们住的地方，听完那些不方便写进报告的话。』"
+ KYO_hyakki_leadership.21.a:0 "让走过道路的人主持万民之事"
+
+ KYO_hyakki_leadership.22.t:0 "八意永琳主持万民委员会"
+ KYO_hyakki_leadership.22.d:0 "八意永琳成为万民委员长后，立即重新核对人口、物资与各地需求。她不接受以声量、地位或交情取代证据。\n\n『数字不比生命重要。但若连数字都不愿弄清楚，最后被忽略的仍然是没有能力替自己争取的人。』\n\n她允许任何地方提出异议，也要求每项异议附上可以查证的情况。\n\n『我会作出判断，也会留下全部纪录。若处方有错，责任在我，不在表格。』"
+ KYO_hyakki_leadership.22.a:0 "让数字回到每一个人身上"
+
+ KYO_hyakki_leadership.23.t:0 "堀川雷鼓主持万民委员会"
+ KYO_hyakki_leadership.23.d:0 "堀川雷鼓获推举为万民委员长。她没有建立另一套由上而下的命令，而是让付丧神、工匠与地方居民彼此联络、互相回应。\n\n『我们已经等过太久，总盼著某位主人想起自己。可若所有人都在等待，最先消失的声音便永远不会有人听见。』\n\n她举起鼓槌，敲出清亮的一声。\n\n『这张网不属于我。谁听见需要，谁就有权回应；谁传错消息，谁也必须亲自说明。』"
+ KYO_hyakki_leadership.23.a:0 "让鼓声连起彼此"
+
+ KYO_hyakki_leadership.24.t:0 "四季映姬主持万民委员会"
+ KYO_hyakki_leadership.24.d:0 "四季映姬接掌万民委员会后，首先要求所有决议留下理由、责任者与可供追查的结果。\n\n『困难可以解释选择，不能使伤害自动变得正当；弱势可以说明处境，也不能让欺瞒因此成为真实。』\n\n她的裁示没有固定偏向任何一方。\n\n『规则不是只用来要求无力者忍耐。它首先必须询问有力量的人：凭什么拿走更多、命令别人承受风险，又准备如何回答造成的结果。』"
+ KYO_hyakki_leadership.24.a:0 "让权力先回答它做过什么"
+
+
+ 
+
+ gensokyo_first_stage.44.t:0 "来不及完成的新结界"
+gensokyo_first_stage.44.d:0 "会议结束后，蓝仍留在房内。\n\n桌面上摊著两套完全不同的图纸。一套属于正在崩坏的博丽大结界，线条密集，修补标记几乎盖住了原本的结构；另一套则只有最基本的轮廓，那是三位贤者共同提出的新结界草案。\n\n新结界不会依赖单一节点，也不会再把所有负荷集中在博丽神社。各地的山川、寺社、聚落与妖怪势力都将成为支点，即使其中一处失守，整体也不会立即崩溃。\n\n它比旧结界更稳固，也更适合如今的幻想乡。\n\n可它还只存在于纸上。\n\n蓝计算了三次。即使所有势力停止争执，立即交出人力与物资，建立新结界仍需要远超现有期限的时间。部分妖怪的力量已经开始衰退，数处节点每天都在偏移，谁也无法保证下一次测量后，还有多少土地能被纳入新的架构。\n\n『最快也来不及。』蓝说。\n\n紫站在窗前，望著远处仍然平静的幻想乡。\n\n『我知道。』\n\n『那我们要放弃新结界吗？』\n\n『不。』紫转过身，『我们只是要让幻想乡撑到它完成。』\n\n办法已经摆在桌上。\n\n外界的人类正在遗忘妖怪，而日本是距离裂口最近、也最有能力将这种否定扩散出去的国度。只要日本仍将幻想视为迷信，裂口带来的侵蚀便不会停止。\n\n那么，就让日本亲眼看见。\n\n让军队看见妖怪能摧毁阵地，让城市知道红雾并非传说，让政府不得不承认结界彼端存在一个不能被忽视的世界。恐惧会重新给妖怪力量，混乱则能替新结界的建造争取时间。\n\n这不是长久之计。恐惧终会被习惯，武力也不能永远维持敬畏。\n\n但只要多争取一天，就可能多保住一处节点；多争取一个月，就可能让新结界多完成一部分。\n\n紫将旧结界的图纸阖上，把新的草案留在桌面中央。\n\n『准备越过裂口。』\n\n旧结界已经救不回来。\n\n如今的战争，只是为了让幻想乡活到新结界升起的那一天。"
+gensokyo_first_stage.44.a:0 "先从日本手中夺取时间"
+
+
+
+ 
+
+
+ KYO_after_war_this_focus_can_not_use:"完成§Y$KYO_shenglizhihoudeyaoguaihuiyi$§!"
+
+
+
+ KYO_tokyo_initial_shock:0 "红雾下的东京奇袭"
+ KYO_tokyo_initial_logistics:0 "结界彼端的补给线"
+ KYO_tokyo_initial_mobilization:0 "百妖越界集结"
+
+ KYO_tokyo_bridgehead_consolidated:0 "东京港铁桥头堡"
+ KYO_tokyo_command_hunt:0 "日军指挥链斩首行动"
+
+ KYO_tokyo_order_of_battle:0 "百妖军统一战斗序列"
+ KYO_tokyo_flexible_columns:0 "诸派妖军机动纵队"
+
+ KYO_tokyo_mass_muster:0 "幻想乡战时总动员"
+ KYO_tokyo_rotation_reserves:0 "永远亭伤员轮调与后备"
+
+ KYO_tokyo_arsenal_standardization:0 "河童统一兵工体制"
+ KYO_tokyo_weapon_recovery:0 "草根妖怪战场回收线"
+
+ KYO_tokyo_honshu_railnet:0 "贯穿本州的军用铁道"
+ KYO_tokyo_occupation_bureaus:0 "本州妖怪接管官署"
+
+
+
+
+
+#  KYO_hongmoguandexingdongfangan:0 "红魔馆的行动方案"
+#  KYO_hongmoguandexingdongfangan_desc:0 "贤者使者踏进红魔馆时，蕾米莉亚·斯卡雷特甚至没有问「你们要我做什么」，她先问的是：「战场在哪？」\n\n对大小姐而言，裂口不是恐怖，而是机会。她厌恶拖延与折衷，也不相信靠说服就能挽回人类逐渐淡去的敬畏。她的结论像贵族的命令一样简洁：既然恐惧在退潮，那就用秩序与痛感把它拉回来。\n\n红魔馆提出建立「妖怪专员辖区」，由红魔馆派系直接接管关键地带的人类人口与治安。人类被集中管理，所有动线、作息、配给与惩戒由专员统一指挥，确保恐惧不会零散消耗，而是长期维持在可控区间。\n\n咲夜负责时间与监管流程，让「看守」与「巡查」保持高效率；帕秋莉则以魔力运算与结界术式，让辖区的灵力回收与警戒系统常态化。蕾米莉亚最后只留下一句话，语气像在宣布晚宴菜单：\n\n「人类不会自然记得我们，那就让他们用一辈子记住。」"
+
+#  KYO_yongyuantingdezhongliguancha:0 "永远亭的医疗支援"
+#  KYO_yongyuantingdezhongliguancha_desc:0 "贤者抵达永远亭时，八意永琳"
+
+#  KYO_renleicunluodezhihui:0 "人类村落的意志力"
+#  KYO_renleicunluodezhihui_desc:0 "贤者走进人间里时，"
+ 
+#  KYO_xixingsideyoulingguancha:0 "幽幽子派遣妖梦"
+#  KYO_xixingsideyoulingguancha_desc:0 "贤者踏入白玉楼时，西行寺幽幽子先微笑，"
+ 
+#  KYO_tiangoudezhanluefenxi:0 "天狗的战略分析"
+#  KYO_tiangoudezhanluefenxi_desc:0 "天狗给予的不是简单的情报而已"
+
+#  KYO_hetongyushantongdegong_Chengduice:0 "河童与山童的工程师"
+#  KYO_hetongyushantongdegong_Chengduice_desc:0 "河童的第一句话永远是：「材料在哪？产能在哪？运输怎么走？」\n\n河城荷取代表河童工坊提出军备与工程的双线方案。"
+
+#  KYO_yaojingmendejuexin:0 "妖精们的决心"
+#  KYO_yaojingmendejuexin_desc:0 "妖精能提供什么? 人肉墙? 不适他们反抗世界的决心"
+
+#  KYO_dilingdiandehuiying:0 "被厌恶的妖怪们"
+#  KYO_dilingdiandehuiying_desc:0 "古明地觉，地底下的妖怪，永远不见太阳"
+
+#  KYO_shifeiquzhitingdecaijue:0 "是非曲直厅的裁决"
+#  KYO_shifeiquzhitingdecaijue_desc:0 "映姬、映姬、映姬在被她说教5小时候，他将会给予帮助"
+
+#  KYO_caogenyaoguaideshengyin:0 "草根妖怪的声音"
+#  KYO_caogenyaoguaideshengyin_desc:0 "古明地恋、射命丸文、铃仙、八云紫这些耳熟能详的妖怪，但大多数的妖怪连名字都没有，正在被遗忘的道路上"
+
+
+
+KYO_hongmoguandexingdongfangan:0 "红魔馆的行动方案"
+KYO_hongmoguandexingdongfangan_desc:0 "百妖协议可以统整各方的意见，却无法凭空变出一支能够撕开敌军防线的军队。\n\n八云紫因此决定前往红魔馆。那座长年笼罩于红雾与夜色中的洋馆，拥有幻想乡最接近正规军的组织：红美铃维持纪律严明的守备，十六夜咲夜能把庞杂的调度整理得毫无缝隙，帕秋莉掌握足以改变战场环境的大型魔法，而馆中使魔也早已习惯服从单一意志。\n\n最重要的，仍是蕾米莉亚·斯卡蕾特本人。她任性、傲慢，从不掩饰自己对支配与胜利的渴望。若能让她将目光投向结界彼端，红魔馆便可能成为百妖军最锋利的矛。\n\n紫将亲自踏入红魔馆，听听那位幼小的夜之王准备如何迎接一场真正的战争。"
+
+KYO_yongyuantingdezhongliguancha:0 "永远亭的医疗支援"
+KYO_yongyuantingdezhongliguancha_desc:0 "战争不会只在前线留下尸体。疾病、疲劳、药物短缺与无法及时撤离的伤员，同样足以拖垮一支军队。\n\n八云紫将前往迷途竹林深处的永远亭。那里远离外界道路，却拥有幻想乡最完整的医疗体系。妖兔熟悉竹林中的隐蔽通道，铃仙能在混乱中维持药品配发与伤员秩序，蓬莱山辉夜掌握著足以庇护永远亭的权威，而八意永琳则能将医疗、药物与后备人力整理成精确运转的体系。\n\n永琳从不因慈悲而救人。她计算存活率、恢复时间与资源消耗，也不会容许情感干扰判断。这份冷静或许令人不安，却正是百妖军最缺少的能力。\n\n紫必须确认，月之贤者愿意为这场战争提供多少药物，又准备为自己的协助附上什么条件。"
+
+KYO_renleicunluodezhihui:0 "人间之里的意志"
+KYO_renleicunluodezhihui_desc:0 "妖怪可以在夜里集结军队，却不能忽视幻想乡最大的人类聚落。\n\n八云紫决定前往人间之里。那里没有红魔馆的魔法，也没有妖怪山的工坊，居民大多只是农户、工匠、商贩与守卫。他们恐惧妖怪，依赖妖怪维持的秩序，也比任何人都清楚结界一旦崩溃，最先失去家园的将会是谁。\n\n寺子屋维系知识与地方秩序，商会掌握粮食、布匹与运输，村落守卫则熟悉每一条通往外围聚落的道路。若人里拒绝配合，百妖协议的后方将充满猜疑与抵抗；若他们愿意加入准备，幻想乡便能获得一个真正能长期支撑战争的腹地。\n\n紫不打算只向人类发布命令。她必须亲自走进村落，听见那些即将被卷入妖怪战争的人究竟要求什么。"
+
+KYO_xixingsideyoulingguancha:0 "白玉楼的幽冥通道"
+KYO_xixingsideyoulingguancha_desc:0 "活人的道路可能被炸毁、封锁或切断，死者走过的道路却遵循另一套规则。\n\n八云紫将前往冥界的白玉楼。那里的幽灵不需要睡眠，能穿越部分地形与障碍，也能在凡人难以行动的夜晚搬运物资与伤员。魂魄妖梦掌握白玉楼的守备与实际调度，只要给她清楚的任务，她便会以近乎固执的责任感将其完成。\n\n至于西行寺幽幽子，她表面从容，仿佛世间没有任何事情值得惊慌；可她比多数人更清楚，大量死亡会如何扰乱幽冥秩序。若战争让亡者失去归处，白玉楼也无法永远置身事外。\n\n紫将越过冥界之门，请一位认识多年的旧友决定：这一次，亡者的道路是否愿意替生者开放。"
+
+KYO_tiangoudezhanluefenxi:0 "天狗的战略分析"
+KYO_tiangoudezhanluefenxi_desc:0 "在第一支军队越过结界以前，百妖协议必须先知道日本军队在哪里、如何调动，又会从哪一条道路增援。\n\n八云紫将前往妖怪山。鸦天狗能在极短时间内越过大片土地，记录铁路、军营、港口与防空阵地；白狼天狗擅长巡逻、追踪与山地作战；大天狗掌握的组织则能让情报从个别观察变成持续更新的战场图景。\n\n但天狗从来不只是忠实记录世界。她们选择报导什么、隐瞒什么，也决定情报将流向谁的手中。射命丸文尤其清楚，文字与影像可以在敌军开火以前先改变局势；饭纲丸龙则更在意，妖怪山能从这场合作中取得什么位置。\n\n紫需要天狗的眼睛，也必须防止那些眼睛只替妖怪山自身服务。她将亲自登山，要求天狗把外界画成一张真正能用于战争的地图。"
+
+KYO_hetongyushantongdegong_Chengduice:0 "河童与山童的工程队"
+KYO_hetongyushantongdegong_Chengduice_desc:0 "一支军队无法只靠妖力前进。道路需要修复，武器需要保养，弹药需要统一，穿越结界的物资也必须有能够承受长期运转的器具。\n\n八云紫决定前往玄武泽与妖怪山的工坊区。河童擅长机械、兵器、通讯与水利，山童则熟悉木材、坑道、搬运与山地建设。她们常为材料、专利与利益彼此争执，却也是幻想乡少数能将一张草图迅速变成实物的群体。\n\n河城荷取懂得如何把外界技术拆开、改造，再装进妖怪能够使用的架构；山城高岭的人脉则深入采集地、工棚与地方交易网。若两方愿意共同工作，百妖军便能获得兵工、桥梁、铁路与结界设备的实际支援。\n\n紫将带著战时计划走进工坊。接下来要谈的，不是幻想乡能制造什么，而是在战争开始以前究竟来得及制造多少。"
+
+KYO_yaojingmendejuexin:0 "妖精们的决心"
+KYO_yaojingmendejuexin_desc:0 "妖精没有严格的军纪，也很少真正理解战略会议上的复杂计算。她们容易分心，会因一句挑衅改变方向，也可能在最不合适的时候把任务当成游戏。\n\n八云紫仍决定前往雾之湖与妖精聚集的森林。\n\n妖精与自然紧密相连，数量众多，而且即使被击倒，也能在自然仍然存在的地方重新出现。她们熟悉每一片林地、湖岸与废墟，可以担任侦察、传令、干扰与地方警戒。更重要的是，她们正在亲眼看见结界危机如何侵蚀自己的家园。\n\n琪露诺渴望证明自己并非只能制造麻烦，大妖精则能把四散的妖精重新带回正确方向。其他妖精或许说不出幻想乡存续的道理，却知道自己不愿让熟悉的湖泊、花丛与游戏场所从世界上消失。\n\n紫不是去征召一道毫无价值的肉墙。她要看看这群看似弱小的生命，究竟能以多大的决心反抗一个正在否定她们的世界。"
+
+KYO_dilingdiandehuiying:0 "被厌恶者的回应"
+KYO_dilingdiandehuiying_desc:0 "地底收留了许多被地上排斥、恐惧或遗忘的妖怪。她们习惯在没有阳光的地方生活，也早已不再期待地上的世界给予善意。\n\n八云紫将前往旧地狱深处的地灵殿。古明地觉能读取心灵，辨认谎言、恐慌与刻意隐藏的敌意；火焰猫燐熟悉亡骸、地下道路与灾难现场；灵乌路空掌握的力量，则足以成为战争中最危险的武器之一。地底居民还能利用坑道与旧地狱网络，提供地面势力难以建立的隐蔽运输线。\n\n然而，地灵殿没有义务相信百妖协议。地上的势力只有在需要力量时才想起她们，危机过后又可能重新把她们称为不祥之物。\n\n紫必须亲自走入那座沉默的宫殿，向一群早已看透虚伪的妖怪证明：这次的邀请不是临时利用。"
+
+KYO_shifeiquzhitingdecaijue:0 "是非曲直厅的裁决"
+KYO_shifeiquzhitingdecaijue_desc:0 "战时命令能要求服从，却无法回答所有事情是否正当。\n\n八云紫决定前往彼岸的是非曲直厅。幻想乡即将动员军队、征用物资、跨越结界，甚至把战火带入外界。每一项决定都可能拯救一部分人，也可能把另一部分人推向死亡。若没有可被承认的界线，百妖协议很快就会从求生的工具变成任意行使权力的借口。\n\n四季映姬不受任何妖怪势力指挥，也不会因局势紧急便放弃判断是非。她的说教漫长、严厉，经常让前来求助者后悔踏进厅门；可只要她愿意承认百妖协议的行动仍有其必要，部队与居民便能得到一套共同遵守的规则。\n\n紫知道这场拜访不会轻松。她仍必须前往彼岸，接受那位阎魔对这场战争可能长达数个时辰的质问。"
+
+KYO_caogenyaoguaideshengyin:0 "草根妖怪的声音"
+KYO_caogenyaoguaideshengyin_desc:0 "历史总会记住贤者、大妖怪与统领军队的名字，却很少记得那些负责搬运、守夜、带路与埋葬死者的小妖怪。\n\n八云紫决定离开主要道路，前往湖岸、森林边缘与那些不被正式地图重视的聚落。赤蛮奇、今泉影狼与若鹭姬并不代表某座宏伟宫殿，也没有能够命令整个幻想乡的权威。她们代表的是数量最多、生活最不稳定，也最先承受危机的底层妖怪。\n\n赤蛮奇怀疑所有来自上位者的承诺；影狼只相信真正能保护同伴的行动；若鹭姬则要求任何安排都不能把弱者当成可以舍弃的部分。她们彼此争吵，却也依靠熟人、暗路与地方互助，维持著百妖协议看不见的末端。\n\n若紫只向强者寻求战争，她得到的只会是一场属于强者的战争。她必须走进那些没有会议室的地方，听见无名妖怪愿意为幻想乡付出什么，又拒绝再承受什么。"
+
+KYO_reiko_music_playing:0 "付丧神们的呐喊"
+KYO_reiko_music_playing_desc:0 "付丧神最清楚，被需要与被丢弃之间往往只隔著一次损坏。\n\n八云紫将前往九十九姐妹与堀川雷鼓活动的聚集地。乐器、器具与旧物因长久被使用而获得生命，也因此比多数妖怪更了解人类的日常。她们能在工坊、货栈、民居与道路之间传递消息，也能把破损器材重新改造成可用之物。\n\n九十九弁弁与九十九八桥能以乐声传递信号、安定人群，也能让分散各地的付丧神彼此回应。多多良小伞熟悉街巷与民间生活，秦心则能透过情感的变化察觉恐慌与动摇。雷鼓本人更能把这些被忽视的声音组织成一张不依赖正式官署的联络网。\n\n她们不会轻易相信百妖协议。过去正是那些有权势者一次次使用她们，又在失去价值后把她们留在角落。\n\n紫要亲自面对这份怨气，询问付丧神是否愿意再次让自己的声音为整个幻想乡响起。"
+
+KYO_big_sis_yuuka_is_watching:0 "花田之主的威压"
+KYO_big_sis_yuuka_is_watching_desc:0 "太阳花田没有军营，也没有正式编制，却没有多少妖怪敢在未经允许的情况下踏入其中。\n\n八云紫将前往那片被阳光与花海覆盖的土地。秋穰子与秋静叶能协助调整收成、保存粮食与维持季节秩序，居住在周边的妖怪则熟悉农地、林线与通往外围的道路。只要花田愿意配合，百妖协议便能获得重要的粮食与地方支援。\n\n但这些都不是紫真正此行的核心。\n\n风见幽香才是那片土地不容忽视的主人。她不热衷会议，也不在意其他势力如何分配职位。她只尊重足够坚定的意志，以及不会在压力下退缩的人。若她愿意参战，任何正面防线都必须重新估算自己能承受多少力量。\n\n紫将走进盛开的向日葵之间。幽香会带著微笑迎接她，而那份微笑究竟代表兴趣、警告还是即将到来的暴力，只有见面后才能知道。"
+
+KYO_Kanako_god_of_war_and_wind:0 "风雨与御柱的战神"
+KYO_Kanako_god_of_war_and_wind_desc:0 "守矢神社从来不把信仰只留在祭坛前。\n\n八云紫将登上妖怪山，拜访八坂神奈子。她懂得以神迹吸引信众，也懂得将信仰转化为道路、水利、工坊与能够动员人群的制度。泄矢诹访子掌握土地与地方神明的旧有联系。\n\n守矢神社与河童工坊关系密切，也拥有覆盖山中聚落的信仰网络。若神奈子愿意投入准备，百妖协议便能在极短时间内建立新的道路、集结劳力，并把分散的祭祀场所转化为物资与人员节点。\n\n但神奈子不会无条件服从八云紫。她同样是一位试图塑造幻想乡未来的神明，也清楚危机会让旧有权力重新排列。\n\n紫将亲自踏上守矢神社的石阶。她需要的是战神的力量，而神奈子想要的，恐怕不只是一个参与战争的位置。"
+
+KYO_hijri_byakuren_mercy_for_all:0 "圣白莲的慈悲"
+KYO_hijri_byakuren_mercy_for_all_desc:0 "命莲寺并不是一支为战争而生的势力。\n\n八云紫仍决定亲自前往寺院。那里收留的不是一群没有裂痕的圣人，而是各自带著偏执、怨念、孤独与旧伤的妖怪。纳兹琳戒心深重，村纱水蜜始终在自由与失控之间徘徊，一轮自卑却愿意承担，寅丸星相信光明与正道。\n\n正因如此，命莲寺比许多地方更懂得如何让彼此不相容的人共同生活。寺院能收容流离者、组织救援、安定恐慌，也能让那些被战争推到边缘的人重新找到位置。\n\n圣白莲不会因为幻想乡需要胜利，就接受一切以胜利为名的手段。她愿意伸手救人，也会要求百妖协议说明，这场战争究竟准备保护谁，又打算牺牲谁。\n\n紫将走入命莲寺。她要请一位反对仇恨的僧人，为一场即将以恐惧维持幻想的战争提供力量。"
+
+

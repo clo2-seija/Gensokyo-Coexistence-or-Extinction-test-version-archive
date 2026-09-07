@@ -1,0 +1,573 @@
+﻿l_english:
+
+ KYO_Fade_away_1:"Vanishing"
+ KYO_Fade_away_1_desc:"As the gap widens, many Youkai initially forget their identities, then forget how to live independently, and finally lose their bodies."
+
+ KYO_Fade_away_2:"Vanishing"
+ KYO_Fade_away_2_desc:"As the gap widens, many Youkai initially forget their identities, then forget how to live independently, and finally lose their bodies."
+
+ KYO_Hakurai_death:"The Death of the Hakurei Shrine Maiden"
+ KYO_Hakurai_death_desc:"With the death of the Shrine Maiden, the balance between Youkai and humans is broken. No one, or Youkai, can replace the Shrine. Maiden's Balanced Rudder"
+
+ KYO_I_am_hungry:"We Need to Eat People"
+ KYO_I_am_hungry_desc:"Recent events are reawakening an old youkai hunger: the urge to devour humans."
+
+ KYO_Eiki_help:"Eiki's Organization Manual"
+ KYO_Eiki_help_desc:"Eiki, to prevent the Youkai from falling into the ancient habit of cannibalism, establishes a training plan for Yukari Yakumo's troops, making them more organized."
+
+ KYO_Nitori_help:"Kappa's industrial support"
+ KYO_Nitori_help_desc:"Kappa's industrial support greatly aids in the production of troop equipment, benefiting troop development."
+
+ KYO_Satori_help:"Satori's Psychological Support"
+ KYO_Satori_help_desc:"Satori may be among the most mistrusted youkai, but they understand the fears haunting the populace. Their help greatly alleviates Gensokyo's panic."
+
+ KYO_three_youkai:"Grassroots Youkai Community"
+ KYO_three_youkai_desc:"With the support of the grassroots Youkai, we have more support."
+
+ KYO_youkai_tech_is_best:"Youkai's technology is number one in the world"
+
+ KYO_youkai_new_army_1:"Youkai's new-style army"
+ KYO_youkai_new_army_1_desc:""
+ KYO_youkai_new_army_2:"Youkai's new-style army"
+ KYO_youkai_new_army_2_desc:""
+ KYO_youkai_new_army_3:"Youkai's new-style army"
+ KYO_youkai_new_army_3_desc:""
+ KYO_youkai_new_army_4:"Youkai's new-style army"
+ KYO_youkai_new_army_4_desc:""
+
+ KYO_youkai_new_mercenary_1:"Youkai's mercenaries"
+ KYO_youkai_new_mercenary_1_desc:""
+ KYO_youkai_new_mercenary_2:"Youkai's mercenaries"
+ KYO_youkai_new_mercenary_2_desc:""
+ KYO_youkai_new_mercenary_3:"Youkai's mercenaries"
+ KYO_youkai_new_mercenary_3_desc:""
+ KYO_youkai_new_mercenary_4:"Youkai's mercenaries"
+ KYO_youkai_new_mercenary_4_desc:""
+
+ KYO_strong_youkai:"The powerful and influential Youkai"
+ KYO_strong_youkai_desc:""
+
+ KYO_tengu_intelligen_agent_1:"Tengu's intelligence network"
+ KYO_tengu_intelligen_agent_1_desc:""
+ KYO_tengu_intelligen_agent_2:"Tengu's intelligence network"
+ KYO_tengu_intelligen_agent_2_desc:""
+
+  KYO_kogasa_idea:0 "Kogasa Tatara's Inspiration from Startles"
+  KYO_kogasa_idea_desc:0 "The forgotten paper umbrella transforms into tsukumogami; the little umbrella excels at creating a hole in “common sense.” Startles bring inspiration, and inspiration drives prototyping and improvement, thus accelerating the research pace."
+
+  KYO_reiko_idea:0 "Raiko Horikawa's Rhythmic Engineering"
+  KYO_reiko_idea_desc:0 "Thunderous rhythms divide the process into orderly segments—from experimental design to measurement feedback, everything proceeds on beat, aligning the R&D team and doubling efficiency."
+
+  KYO_benben_idea:0 "Benben Tsukumo's Biwa Acoustics"
+  KYO_benben_idea_desc:0 "Benben guides resonance with the sound of the ancient biwa, combining intuition and mathematics; inspiration from acoustics to materials science collide, paving the way for new equipment and technologies."
+
+  KYO_yatsuhashi_idea:0 "Yatsuhashi Tsukumo's Koto Structure"
+  KYO_yatsuhashi_idea_desc:0 "The tension, resonance, and structural design of the koto inspired modal analysis and framework optimization; under her tuning, prototype iterations became more precise and rapid."
+
+  KYO_kokoro_idea:0 "Hata no Kokoro's Menreiki"
+  KYO_kokoro_idea_desc:0 "Emotions are energy, and also the driving force of an organization. Using Menreiki, she mobilized morale and focus, guiding the team's emotions towards the same goal of “solving problems.”"
+
+  KYO_shinmyoumaru_idea:0 "Shinmyoumaru Sukuna's Machining Hammer"
+  KYO_shinmyoumaru_idea_desc:0 "Small miracles can also leverage big projects. The Machining Hammer brings ingenious and economical thinking: miniaturized processes, achieving big results with small resources, making research and prototyping more efficient."
+
+  KYO_Tsukumogami_idea:0 "Tsukumogami's Armaments"
+  KYO_Tsukumogami_idea_desc:0 "Old Things Awaken, New Ideas Reborn. Weapons become more intuitive and robust through ingenuity and dedication: infantry equipment becomes cheaper, more effective in offense and defense, and with continued research and development, the entire army benefits."
+
+ Shrine_navy_modifiers:"Moriya's Fleet Enhancement"
+
+ KYO_weak_ecomic:"Weak Industry"
+ KYO_weak_ecomic_desc:""
+
+ KYO_metro_system_1:"Gensokyo Metro System"
+ KYO_metro_system_1_desc:""
+ KYO_metro_system_2:"Gensokyo Metro System"
+ KYO_metro_system_2_desc:""
+ KYO_metro_system_3:"Gensokyo Metro System"
+ KYO_metro_system_3_desc:""
+
+ KYO_kappa_plan_for_land_1:"The Beginning of the Kappa Industrial Project"
+ KYO_kappa_plan_for_land_1_desc:""
+ KYO_kappa_plan_for_land_2:"Kappa Industry The progress of the industrial plan"
+ KYO_kappa_plan_for_land_2_desc:""
+ KYO_kappa_plan_for_land_3:"Completion of the Kappa industrial plan"
+ KYO_kappa_plan_for_land_3_desc:""
+
+ KYO_undergrond_nuke:"Underground nuclear facility"
+ KYO_undergrond_nuke_desc:""
+ 
+ KYO_nuclear_hotspring:"Gifts of geothermal energy"
+ KYO_nuclear_hotspring_desc:"Hot springs"
+
+ KYO_Satori_thanks:"Joy from Komeiji"
+ KYO_Satori_thanks_desc:""
+
+ KYO_farming_production_1:"Pesticide application"
+ KYO_farming_production_1_desc:""
+ KYO_farming_production_2:"Yuuka's Method"
+ KYO_farming_production_2_desc:""
+
+
+
+  KYO_death_of_yukari:0 "The death of Yukari Yakumo"
+  KYO_death_of_yukari_desc:0 "During the final boundary adjustment ceremony, Yukari Yakumo was engulfed by an explosion, leaving behind only fragmented reports and vague eyewitness accounts. Her body was never found, and even whether she still exists on this shore remains an unsolved mystery.\n\n However, all those who craved power eagerly chose to believe—that the founder of Gensokyo was no longer alive. As long as those golden eyes no longer gazed upon the archipelago, any hidden ambition no longer needed to disguise itself as obedience.\n\n With the disappearance of the one truly in control, the precarious balance began to crumble. Local leaders declared their own banners, old alliances were torn apart, and private armies and various wars sprang up like mushrooms after rain. The country continued to function on the surface, but internally it was like a building without its main beam, waiting for the first gust of wind to collapse completely.\n\n As long as the death of Yukari Yakumo remained in everyone's minds, government orders were nothing but scraps of paper, and authority vanished."
+
+
+
+ KYO_civil_war_isolation:0 "Isolated War Under the Moon"
+ KYO_civil_war_isolation_desc:0 "No external aid will cross the barrier, and no foreign power can decide the outcome for either side. Gensokyo has closed its doors; the victor can only emerge from this civil war."
+
+ KYO_civil_war_npc_pressure:0 "They are also sharpening their blades."
+ KYO_civil_war_npc_pressure_desc:0 "The opposing forces are not standing still awaiting annihilation. New defensive lines are being built, scattered troops are regrouping, and every hesitation buys them more time to prepare."
+
+ KYO_committee_central_archives:0 "Every key left behind by Yukari"
+ KYO_committee_central_archives_desc:0 "The Yakumo government did not take all the secrets. Border maps, supply routes, and emergency deployment plans still lie dormant in the central archives, awaiting their new owners to piece them together."
+
+ KYO_committee_military_assets:0 "The sealed armory reopens."
+ KYO_committee_military_assets_desc:0 "The weapons, instructors, and combat records left behind by the Military Affairs Committee have been transferred to our side. The forces that once belonged to the Allied Forces will now open the enemy's lines for us."
+
+ KYO_committee_faith_assets:0 "Prayers unite the army's heart"
+ KYO_committee_faith_assets_desc:0 "Temples, shrines, and local believers have chosen to maintain order on our side. The tolling of bells cannot stop the shells, but it can make the wavering take up their weapons again."
+
+ KYO_committee_mobilization_assets:0 "No idle hands in the countryside"
+ KYO_committee_mobilization_assets_desc:0 "Village rosters, local workshops, and grassroots transport lines have been mobilized. Every path, every warehouse, is beginning to operate for the front lines."
+
+ KYO_committee_military_chair:0 "An iron fist on the military council"
+ KYO_committee_military_chair_desc:0 "The Chairman of the Military Affairs Committee has taken command of the front lines. The dispersed troops will operate according to the same plan, breaking through the enemy's lines before they can react."
+
+ KYO_committee_faith_chair:0 "The bells tolled over the gunfire"
+ KYO_committee_faith_chair_desc:0 "The Chairman of the Faith Committee transformed the network of temples and shrines into a wartime order. The wounded were cared for, panic was calmed, and soldiers believed the war still held meaning."
+
+ KYO_committee_network_chair:0 "The mobilization station was at the alleyway."
+ KYO_committee_network_chair_desc:0 "The Chairman of the People's Committee did not rely on a grand headquarters. Craftsmen, messengers, and local representatives connected with each other, ensuring orders and supplies reached the front lines along countless inconspicuous roads."
+
+ KYO_legacy_doctrine_yakumo:0 "The old network still remembers its master."
+ KYO_legacy_doctrine_yakumo_desc:0 "The system of governance left by Yukari Yakumo was built on intelligence, foresight, and meticulous planning. Even in her absence, the old network that permeated Gensokyo still guided the war."
+
+ KYO_legacy_doctrine_remilia:0 "The scarlet first strike"
+ KYO_legacy_doctrine_remilia_desc:0 "Remilia believed that destiny belonged to those who first reached out to seize it. Scarlet Devil Mansion's army will crush hesitation with speed and impact, giving the enemy no chance to reconsider."
+
+ KYO_legacy_doctrine_hijiri:0 "No one will be abandoned."
+ KYO_legacy_doctrine_hijiri_desc:0 "Byakuren Hijiri refused to treat soldiers as mere numbers to be filled. Mutual aid, discipline, and a well-developed evacuation system enabled the army to withstand hardship without collapsing."
+
+ KYO_legacy_doctrine_seija:0 "Let the weak get their weapons first."
+ KYO_legacy_doctrine_seija_desc:0 "Seija was not prepared to fight according to the rules of the old rulers. The masses were swiftly armed, the enemy's equipment was seized, and resistance fighters scattered throughout the land would attack from every weak point."
+
+
+  KYO_everyone_will_survive:"Everyone will pull through"
+
+  KYO_kappa_orgnization_help:"Kappa's industrial assistance"
+  
+  KYO_oni_orgnization_help:"The power of the ghosts"
+
+   KYO_beastrealm_orgnization_help:0 "Fangs shatter the battle lines"
+ KYO_beastrealm_orgnization_help_desc:0 "Animal Realm's beast spirits join the offensive. They pursue the enemy's weaknesses, tearing open the battle lines with fierce and swift attacks."
+
+ KYO_ghost_orgnization_help:0 "The dead watch over the living"
+ KYO_ghost_orgnization_help_desc:0 "Hakugyokurou takes over casualty registration and rear transport. The ghosts maintain a silent order, allowing the front lines to hold out longer."
+
+ KYO_tengu_orgnization_help:0 "The wind arrives before the flags"
+ KYO_tengu_orgnization_help_desc:0 "Tengu's scouts, reporters, and air force crisscross the battlefield. Before the enemy even moves, the news has already reached our command."
+
+ KYO_eientei_orgnization_help:0 "No Death Allowed Today"
+ KYO_eientei_orgnization_help_desc:0 "Eientei's physicians and youkai rabbits establish a battlefield medical network. As long as a wounded soldier still draws breath, there is a chance to return them to the ranks."
+
+ KYO_last_chance_alliance_buff:0 "Gensokyo's Last Card"
+ KYO_last_chance_alliance_buff_desc:0 "The workshop operates day and night, healers rush to the front lines, scouts bring back intelligence, and reinforcements from all sides arrive one after another. All the strength accumulated so far will be staked in this final battle."
+
+  KYO_fairy_of_freeze:0 "Ice Fairy"
+  KYO_fairy_of_freeze_desc:0 "Winter is no longer just weather, but a battlefield condition that can be manipulated at will. Rivers freeze into natural bridges, mountain paths freeze into barricades, and enemy supply lines can turn into impassable ice tracks overnight.\n\n To her, the blizzard was merely a prank that went too far; to us, however, it was a strategic weapon capable of burying an entire army in snow. Whenever she was in a slightly better mood, frontline soldiers could move freely across the frozen land, while the enemy could only shiver in the cold wind, regretting ever stepping onto this battlefield."
+
+  KYO_hijiri_army_buff:0 "Myouren Temple Monk Soldiers"
+  KYO_hijiri_army_buff_desc:0 "Under the banner of the Myouren Temple, the chanting of sutras and the sound of military boots echoed across the plains. These monk soldiers, originally as ascetics who took up arms to protect the temple and the weak, were now drawn into a war that would determine the fate of the entire archipelago.\n\n They did not find pleasure in killing, nor did they boast of victory; instead, they viewed each expedition as a practice of the precept to “prevent further suffering.” Even during the march, they maintained their morning and evening prayers, and before battle, they performed rituals for the deceased on both sides, preserving a sense of solemnity even amidst iron and fire.\n\n Supported by this belief, the monks of Myouren Temple displayed extraordinary discipline and endurance. They could maintain formation despite dwindling supplies and hold their lines even on the verge of collapse. To their allies, they were an unshakeable fortress; to their enemies, they were a force clad in robes, more unyielding than any iron legion."
+
+  KYO_judge_of_all_life:0 "The Judge of All Things"
+  KYO_judge_of_all_life_desc:0 "Eiki Shiki, the arbiter of life and death. She swore oaths to no flag, nor cheered for any victory. When war turned the land to dust and names to numbers, she simply stood between judgment and silence, calmly recording each fall.\n\n For her, the battlefield was not a stage for glory, but a long, drawn-out record. Every life forced into battle, every unnecessary massacre, every lie concealed by power, would be written into that unseen book. No one could be sure when she would speak, but everyone knew she would eventually.\n\n Therefore, the “judgment of all things” hung like a shadow over the shoulders of armies and politicians: you could win a city, but not necessarily a trial; you could erase crimes with propaganda, but not cause and effect. As more and more souls were sent to Higan, the cost of war was no longer just resources and territory, but the moral debt of the entire regime."
+
+  KYO_remilia_army_buff:0 "The Iron Hoof of the Crimson Empire"
+  KYO_remilia_army_buff_desc:0 "Under the scarlet banner, Remilia was no longer just a noblewoman, but the very will of the empire. She stood on the high platform, her words short and absolute, forging fear, glory, and order into a single command. Cities learned to breathe in unison, workshops learned to rumble on schedule, and armies learned to crush hesitation with a single step.\n\n She didn't talk of compromise, only of “unity.” Every class had its place, every voice had to be aligned, and every march had to be as precise as a ceremony. Where iron hooves trampled, roads were rewritten as parade lines, people were rewritten as ranks, and the expansion of the crimson empire would be proclaimed as the self-evident law of survival."
+
+  KYO_seija_army_buff:0 "Subversive Tactics"
+  KYO_seija_army_buff_desc:0 "She read the rules backwards, and then reversed the battlefield as well. Direct conflict was merely a trap; retreat could be advance, and feigned weakness could be a clarion call. While the enemy was still measuring the front lines with a ruler, she had already woven the entire front into a reversed net using rumors, night raids, disguise, and division.\n\n In Seija Kijin's eyes, “rules” are never a neutral tool, but rather shackles used by the strong to solidify class. Since we are born to be placed at the bottom of the chessboard, let's overturn it. She breaks up squads, turns supplies into traps, and makes every battle a mockery of order itself.\n\n When subversion becomes the method, chaos is no longer out of control, but a weapon. The more the enemy relies on established procedures, the easier it is for them to bleed from her rule-breaking, until they realize: what they lost was not a battle, but the naivety of “believing the rules would protect them.”"
+
+  KYO_yakumo_army_buff:0 "Yukari Yakumo's Legacy"
+  KYO_yakumo_army_buff_desc:0 "Yukari Yakumo's death did not take her will with her.\n\n What she left behind wasn't just a slogan, but a whole set of things that could be “executed”: the use of barriers, the coordinates of boundaries, and the institutional design that forcibly bound the Youkai society to a single blueprint. The explosion erased her figure, but it also scattered her plans like ashes across the land, landing on the combat tables of military camps, the filing cabinets of government offices, and the sealed boxes in secret rooms.\n\n Ran Yakumo broke down the legacy into operable items: the hierarchy of garrison areas, the coding of passes, and the opening and closing procedures of gap passages. She didn't believe in miracles; she believed in processes and calculations. Chen, on the other hand, stuffed the same legacy into the cracks of people's hearts: an extra lamp during patrols, an extra road during evacuations, an extra handwritten distribution sheet outside the granary. Thus, the “barrier” was no longer just a line in the sky, but an order on the ground.\n\n§YThe Core of the Legacy§!\n- §WBoundary Combat§!: Rewrite terrain, distance, and line of sight into our rules.\n- §WGap Mobility§!: Not seeking the myth of teleportation, but only ensuring that supplies and reinforcements arrive before the enemy.\n- §WSystem Lock§!: Gradually binding private armies and local forces back to the same chain of command and legal system.\n\n As long as the Legacy continues to operate, the name Yakumo will continue to breathe on the battlefield. The enemy thought they had cut down a person, but they didn't see: she had already written herself into an invisible city."
+
+
+ KYO_foreign_machinery_1:0 "Outside World: Equipment Dependence"
+ KYO_foreign_machinery_1_desc:0 ""
+
+ KYO_foreign_machinery_2:0 "Disassembly and Reconstruction"
+ KYO_foreign_machinery_2_desc:0 ""
+
+ KYO_foreign_machinery_3:0 "Reverse Engineering System"
+ KYO_foreign_machinery_3_desc:0 ""
+
+ KYO_foreign_machinery_4:0 "Standardized Mass Production"
+ KYO_foreign_machinery_4_desc:0 ""
+
+ KYO_foreign_machinery_5:0 "Youkai's Industrial Dominance"
+ KYO_foreign_machinery_5_desc:0 "From equipment import to independent mass production, Youkai has mastered a complete modern industrial system. It can expand at an unprecedented speed, but it also constantly consumes resources, administrative capacity, and new technical talent; it is a powerful machine that cannot be easily stopped."
+
+ KYO_forced_labor_1:0 "Temporary Labor Recruitment"
+ KYO_forced_labor_1_desc:0 ""
+
+ KYO_forced_labor_2:0 "Labor Control Zones"
+ KYO_forced_labor_2_desc:0 ""
+
+ KYO_forced_labor_3:0 "Long-Term Labor Service System"
+ KYO_forced_labor_3_desc:0 ""
+
+ KYO_forced_labor_4:0 "Identity-Bound Labor Service System"
+ KYO_forced_labor_4_desc:0 "Occupation, residence, and public rations are fixed within the same identity system. Industry gained a near-inexhaustible labor force, but the autonomy, demographic base, and political identity of human society continued to decline."
+
+ KYO_twenty_four_hours_work_time:0 "24-Hour Work Shift"
+ KYO_twenty_four_hours_work_time_desc:0 "Factories and mines implemented 24-hour work shifts, and equipment no longer stopped due to the day-night cycle. While different shifts remained on paper, overtime and temporary replacements constantly encroached on rest time; machines got a full day, but workers did not."
+
+ KYO_sixteen_hours_work_time:0 "Sixteen-Hour Work Shift"
+ KYO_sixteen_hours_work_time_desc:0 "Daily work was fixed in two eight-hour shifts, with minimal time reserved for eating, inspection, and sleep. It was more stable than unplanned continuous labor, but still far exceeded the body's long-term endurance."
+
+ KYO_gensokyo_utopia:0 "Youkai Utopia"
+ KYO_gensokyo_utopia_desc:0 "Youkai's city boasted bright streetlights, stable electricity, modern medical care, and never-empty shelves. The Industrial Revolution is complete. Gensokyo no longer needs to rely on the pity of the Outside World, nor does it need to worry about being abandoned by the new era.\n\n Supporting all this is tightly managed human labor. Humans have basic necessities, but cannot freely choose their occupation, residence, or future; they no longer frequently face open violence, as orders have been transformed into credentials, rations, and regulations.\n\n This is not a nation entirely built on fear, nor a truly egalitarian community. It is stable, prosperous, and capable of long-term existence—only the boundary of this so-called utopia lies precisely between humanity and Youkai."
+
+
+
+ KYO_tengu_untrust_debuff_1:0 "Tengu's Fear"
+ KYO_tengu_untrust_debuff_1_desc:0 "Youkai Mountain is tengu's territory. Tengu still watches the government with wary and scrutinizing eyes, making the implementation of policies, maintaining public morale, and wartime mobilization even more difficult."
+
+ KYO_tengu_untrust_debuff_2:0 "Tengu's Observation"
+ KYO_tengu_untrust_debuff_2_desc:0 "Tengu has stopped openly resisting, but they still choose to keep their distance."
+
+ KYO_grassroot_rebal_1:0 "Grassroots Youkai's Counterattack"
+ KYO_grassroot_rebal_1_desc:0 "Sekibanki, Kagerou Imaizumi, Wakasagihime, and other grassroots youkai do not acknowledge the enemy's victory. They will make things difficult."
+
+ KYO_grassroot_rebal_2:0 "Grassroots Aftermath"
+ KYO_grassroot_rebal_2_desc:0 "Although the unrest has been suppressed, the discontent of grassroots youkai still echoes in the shadows. As long as life doesn't truly improve, this sentiment will inevitably resurface sooner or later."
+
+ KYO_yet_another_industry_debuff_1:0 "Industrial System in Disorder"
+ KYO_yet_another_industry_debuff_1_desc:0 "Civil war, destruction, and hasty conscription tore apart the original production chains. Resource allocation was chaotic, infrastructure construction stagnated, and both the military and civilian systems struggled to operate inefficiently and in short supply."
+
+ KYO_yet_another_industry_debuff_2:0 "Industrial Recovery Period"
+ KYO_yet_another_industry_debuff_2_desc:0 "The worst of the chaos has passed, but factories, resources, and construction networks have not yet fully recovered. The regime needs more time to readjust this broken industrial machine."
+
+ KYO_lunar_capital_plot_1:0 "Lunar Capital Conspiracy"
+ KYO_lunar_capital_plot_1_desc:0 "Lunar Capital's hand has not truly left Gensokyo. Infiltrators, surveillance networks, and covert operations continue to erode the existing order, causing intelligence leaks, shaking public morale, and even weakening the most basic counter-espionage capabilities."
+
+ KYO_lunar_capital_plot_2:0 "Lunar Capital Remnants of Infiltration"
+ KYO_lunar_capital_plot_2_desc:0 "Lunar Capital's influence has been weakened, but its remaining informants and infiltration network remain active. Any lapse in vigilance will allow these shadows from the Moon to once again reach into Gensokyo."
+
+ KYO_myouren_resistance_1:0 "Myouren Temple Resistance"
+ KYO_myouren_resistance_1_desc:0 "Myouren Temple continues to mobilize people with compassion, faith, and a different order. As long as Byakuren faction's appeal remains, the submission of the occupied territories is merely superficial; underground resistance will never cease."
+
+ KYO_myouren_resistance_2:0 "Myouren Temple Embers"
+ KYO_myouren_resistance_2_desc:0 "Myouren Temple's open resistance has been suppressed, but its remaining connections, prestige, and underground networks persist, continuing to slow the integration and control of the region."
+
+ KYO_yakumo_wrath_1:0 "Yakumo's Wrath"
+ KYO_yakumo_wrath_1_desc:0 "The Yakumo Clan's defeat doesn't mean the Yakumo power has fallen silent. Remnants, former retainers, and allies still secretly control everything, making mobilization, legislation, and power consolidation all costly."
+
+ KYO_yakumo_wrath_2:0 "The Yakumo Clan's Lingering Wrath"
+ KYO_yakumo_wrath_2_desc:0 "The fiercest counterattack has passed, but the shadow cast by the Yakumo power hasn't completely dissipated. Fear, hesitation, and old networks continue to hinder Scarlet Devil Mansion's progress."
+
+ KYO_uncontrol_flan_1:0 "The Out-of-Control Flandre"
+ KYO_uncontrol_flan_1_desc:0 "Flandre's power is still not truly under control. Whenever her emotions spiral out of balance again, Scarlet Devil Mansion must constantly divert its energy to deal with the impending calamity."
+
+ KYO_uncontrol_flan_2:0 "Flandre's Instability"
+ KYO_uncontrol_flan_2_desc:0 "Flandre has quieted down temporarily, but the danger has never truly left. Everyone knows she remains a potential disaster that could explode at any moment."
+
+
+
+ 
+
+ KYO_Scarlet_Sakuya_1:0 "The Head Maid's Inventory"
+ KYO_Scarlet_Sakuya_1_desc:0 "Sakuya's first task wasn't to restore order to the battlefield, but to clean up the chaos. Food, weapons, ledgers, and manpower were all put back in their proper places."
+
+ KYO_Scarlet_Sakuya_2:0 "Silver Table Process"
+ KYO_Scarlet_Sakuya_2_desc:0 "Sakuya Izayoi broke down the operations into manageable steps, ensuring that logistics didn't slow down Scarlet Devil Mansion."
+
+ KYO_Scarlet_Sakuya_3:0 "Izayoi's Scheduling"
+ KYO_Scarlet_Sakuya_3_desc:0 "From warehousing to rationing, from patrolling to shifts, everything operates according to her schedule."
+
+ KYO_Scarlet_Sakuya_4:0 "Absolute order in the institution."
+ KYO_Scarlet_Sakuya_4_desc:0 "Sakuya keeps chaos at bay. As long as she stands, the machines of Scarlet Devil Mansion will not stop."
+
+ KYO_Scarlet_Sakuya_5:0 "The perfect and elegant steward."
+ KYO_Scarlet_Sakuya_5_desc:0 "She is not merely a head maid, but the central hub that keeps the entire regime running efficiently."
+
+ KYO_Scarlet_Meiling_1:0 "Morning sentry at the gate."
+ KYO_Scarlet_Meiling_1_desc:0 "Meiling stands at the first gate, stopping all initial laxity and wishful thinking."
+
+ KYO_Scarlet_Meiling_2:0 "The gatekeeper's fist technique."
+ KYO_Scarlet_Meiling_2_desc:0 "She brings martial arts, discipline, and patience into the barracks, teaching new recruits to stand firm before throwing a punch."
+
+ KYO_Scarlet_Meiling_3:0 "Red Gate Defense Line"
+ KYO_Scarlet_Meiling_3_desc:0 "From checkpoints to garrisons, from high walls to mountain paths, the outer defenses of Scarlet Devil Mansion began to take shape."
+
+ KYO_Scarlet_Meiling_4:0 "The Sleepless Gatekeepers"
+ KYO_Scarlet_Meiling_4_desc:0 "Meiling taught the defending troops rotation, perseverance, and responsiveness, ensuring that defense was no longer merely a passive defense."
+
+ KYO_Scarlet_Meiling_5:0 "The Smiling Iron Wall"
+ KYO_Scarlet_Meiling_5_desc:0 "She still smiled, but everyone knew that behind that smile was an unyielding wall."
+
+ KYO_Scarlet_Remilia_1:0 "Red Moon Order"
+ KYO_Scarlet_Remilia_1_desc:0 "Remilia offered neither reassurance nor explanation. She simply wanted everyone to remember that new orders had been issued."
+
+ KYO_Scarlet_Remilia_2:0 "Scarlet's Wartime Will"
+ KYO_Scarlet_Remilia_2_desc:0 "She infused fear and pride into her army, making the act of attack itself the style of Scarlet Devil Mansion."
+
+ KYO_Scarlet_Remilia_3:0 "The Queen's March"
+ KYO_Scarlet_Remilia_3_desc:0 "The front lines pushed forward, and so did her rule. Remilia wanted not defeat, but subjugation."
+
+ KYO_Scarlet_Remilia_4:0 "Bloody Reign"
+ KYO_Scarlet_Remilia_4_desc:0 "She began to incorporate the occupied territories into her own order, making obedience a habit."
+
+ KYO_Scarlet_Remilia_5:0 "Imperial Power Under the Red Mist"
+ KYO_Scarlet_Remilia_5_desc:0 "Under the red mist and commands, war, occupation, and intimidation were finally molded into a single monarchy."
+
+ KYO_Scarlet_Flandre_1:0 "The Crack in the Basement"
+ KYO_Scarlet_Flandre_1_desc:0 "As long as Flandre's power leaks out even slightly, the front lines will be hit with even fiercer force, but the rear will also begin to feel uneasy."
+
+ KYO_Scarlet_Flandre_2:0 "The Restlessness of the Glass Wings"
+ KYO_Scarlet_Flandre_2_desc:0 "She is not a weapon, but a calamity that is barely held back. The closer she gets to the front lines, the harder it is for the rear to remain stable."
+
+ KYO_Scarlet_Flandre_3:0 "The Sister of Nightmare"
+ KYO_Scarlet_Flandre_3_desc:0 ""
+
+ KYO_Scarlet_Flandre_4:0 "The Devil's Sister Laughs"
+ KYO_Scarlet_Flandre_4_desc:0 "The enemy army will be torn apart first, but the workshops, the rear, and the hearts of the people will also crack because of her presence."
+
+ KYO_Scarlet_Flandre_5:0 "An Uncontrollable Catastrophe"
+ KYO_Scarlet_Flandre_5_desc:0 "She is capable of smashing through the strongest lines, but the entire nation must bear the tremors she brings."
+
+ KYO_Scarlet_Patchouli_1:0 "Disassembly on the Pages"
+ KYO_Scarlet_Patchouli_1_desc:0 "Patchouli begins disassembling the equipment of the Outside World, gradually incorporating unfamiliar technologies into the knowledge system of Scarlet Devil Mansion."
+
+ KYO_Scarlet_Patchouli_2:0 "Prototypes in the Great Library"
+ KYO_Scarlet_Patchouli_2_desc:0 "Research no longer stops on the pages; the library's deductions begin to translate into truly usable processes."
+
+ KYO_Scarlet_Patchouli_3:0 "Magical Engineering"
+ KYO_Scarlet_Patchouli_3_desc:0 "Magic and industry are connected by Patchouli, allowing production and research to advance simultaneously."
+
+ KYO_Scarlet_Patchouli_4:0 "The Sage's Mass Production Technique"
+ KYO_Scarlet_Patchouli_4_desc:0 "She makes theory serve the factory, allowing construction and mass production to be driven with equal calm and precision."
+
+ KYO_Scarlet_Patchouli_5:0 "The Immovable Great Library"
+ KYO_Scarlet_Patchouli_5_desc:0 "When Patchouli truly gets into the zone, the entire Scarlet Devil Mansion becomes an extension of her research."
+
+  
+
+
+
+
+
+
+
+
+  KYO_Echo_Propaganda_kyouko_0:"The Signature Mascot"
+  KYO_Echo_Propaganda_kyouko_1:"The Signature Mascot"
+  KYO_Echo_Propaganda_kyouko_2:"The Signature Mascot"
+  KYO_Echo_Propaganda_kyouko_3:"The Signature Mascot"
+
+  KYO_Ghost_Captain_marusa_0:"The Ghost Captain of the Fleet"
+  KYO_Ghost_Captain_marusa_1:"The Ghost Captain of the Fleet"
+  KYO_Ghost_Captain_marusa_2:"The Ghost Captain of the Fleet"
+  KYO_Ghost_Captain_marusa_3:"The Ghost Captain of the Fleet"
+
+  KYO_Cloud_Guardian_ichirin_0:"Ambassador for Internal Affairs"
+  KYO_Cloud_Guardian_ichirin_1:"Ambassador for Internal Affairs"
+  KYO_Cloud_Guardian_ichirin_2:"Ambassador for Internal Affairs"
+  KYO_Cloud_Guardian_ichirin_3:"Ambassador for Internal Affairs"
+
+  KYO_The_Tiger_Commandments_0:"Bishamonten"
+  KYO_The_Tiger_Commandments_1:"Bishamonten"
+  KYO_The_Tiger_Commandments_2:"Bishamonten"
+  KYO_The_Tiger_Commandments_3:"Bishamonten"
+
+  KYO_Treasure_Seeker_nazrin_0:"Resource and Intelligence Hunter"
+  KYO_Treasure_Seeker_nazrin_1:"Resource and Intelligence Hunter"
+  KYO_Treasure_Seeker_nazrin_2:"Resource and Intelligence Hunter"
+  KYO_Treasure_Seeker_nazrin_3:"Resource and Intelligence Hunter"
+
+
+
+ path_of_all_salvation:0 "The Way to Save All Beings"
+ path_of_all_salvation_desc:0 "Myouren Temple is no longer merely a refuge for the lost, but a road opening onto the world. Byakuren steers by compassion; Shou upholds order; Ichirin carries the teachings abroad; Nazrin exposes deceit in the shadows; Minamitsu links nations with her ship; and Kyouko sends the voice of peace to distant lands.\n\nWe will not force the world to bow through fear. Through relief, aid, negotiation, and practical action, we will prove that humans and youkai are not destined to be enemies. So long as someone is still willing to offer a hand, suffering need not be the world's only language."
+
+ revise_socialism_and_marx_1:0 "Revised Socialism and Marxist Thought"
+ revise_socialism_and_marx_1_desc:0 "Byakuren saw another kind of suffering in the modern world: workers swallowed up by machines, farmers locked up by debt, and the weak oppressed by the state and capital. She did not deny the ideals of equality and the liberation of labor; on the contrary, she believed these ideas should resonate with the compassion in Buddhism.\n\n But once ideals are monopolized by bureaucracy, party-states, and violence, they transform from a path to liberating all beings into new shackles. Myouren Temple will reorganize these ideas, returning them to the original question: How can the suffering no longer be treated as tools?"
+
+ revise_socialism_and_marx_2:0 "The Formation of Buddhist Socialism"
+ revise_socialism_and_marx_2_desc:0 "Through the practice of Byakuren and her disciples, Myouren Temple gradually formed a new path. It acknowledges the dignity of laborers, opposes exploitation and oppression, yet refuses to allow class hatred to become a new faith; it pursues equality and shared happiness, yet refuses to use secret police, purges, and fear to create so-called progress.\n\n One round views labor as a form of self-cultivation, Shou allows order to serve the weak, Nazrin ensures resources are not stolen by the nouveau riche, and Kyouko ensures the voices of the underprivileged are heard. Buddhism and socialism are no longer mutually exclusive here, but rather point to a simpler wish: that all beings can survive without devouring each other."
+
+ we_are_all_equal_1:0 "All beings are equal"
+ we_are_all_equal_1_desc:0 "Myouren Temple's equality is not a lighthearted slogan. Byakuren sheltered the prickly, dark, out-of-control, clumsy, and fractured Youkai, and witnessed the vulnerability of humanity exposed under fear, poverty, and oppression.\n\n It is precisely because she has witnessed these imperfections that she understands even more clearly: no one is born only to be ruled, nor is anyone born only to become a monster. Humans, Youkai, workers, refugees, the weak, and those who are different should all have the right to be recognized, protected, and reintegrated into society."
+
+ we_are_all_equal_2:0 "An Equal Nation Where Humans and Youkai Coexist"
+ we_are_all_equal_2_desc:0 "Equality is no longer just the doctrine of the Myouren Temple, but has become the foundation of the nation's operation. Humans are no longer merely the source of fear upon which Youkai depend for survival, and Youkai are no longer just shadows in human legends. They work together, guard together, receive education and relief together, and share the responsibilities of this new world.\n\n Shou guards the fairness of the system, Ichirin brings faith into the workshops and fields, Nazrin oversees resource allocation, Minamitsu connects distant communities, and Kyouko ensures that every faint voice can resonate. The world Byakuren seeks is not one without suffering, but one where suffering is no longer borne alone by any single group."
+
+ KYO_seija_redeeming_rebellion:0 "Shoji's Reverse Blade"
+ KYO_seija_redeeming_rebellion_desc:0 "Seija Kijin did not become a docile believer, nor did she abandon her aversion to power and hypocrisy. She simply acknowledged for the first time that mere inversion cannot save the oppressed.\n\n Now, she remains within the Myouren Temple, scrutinizing our systems, aid, and commands with the sharpest eye. She may make many uncomfortable, but she can also prevent compassion from turning into new arrogance, and prevent the order from growing the teeth of oppression again when no one questions it."
+
+ KYO_seija_grassroots_restitution:0 "Grassroots Repairman"
+ KYO_seija_grassroots_restitution_desc:0 "Seija returned to where she knew best: the grassroots youkai, the underprivileged communities, the fringes of ruins, and the people forgotten by power.\n\n This time, she no longer merely incited anger, but used the very language she had once used to hurt others to rebuild communication. She remained sharp, still rebellious, but began to channel that resistance into protecting the weak, exposing local oppression, and mending the gap between Myouren Temple and the underprivileged youkai."
+
+ KYO_aya_supportive_reporting:0 "Aya Shameimaru's support report"
+ KYO_aya_supportive_reporting_desc:0 "The *Bunbunmaru Newspaper* no longer treats Myouren Temple merely as a subject for dissection. Aya Shameimaru personally investigated, probed, and questioned, ultimately choosing to bear witness to Myouren Temple through her own writing.\n\n She did not portray Myouren Temple as a flawless holy site. Instead, she wrote about its cracks, troubles, and dangers, as well as how Byakuren and her disciples acknowledged and repaired them. Because this report did not blindly praise it, it made more tengu, youkai, and humanity willing to believe that the compassion of Myouren Temple is not a pretense, but a struggling reality."
+
+ KYO_choujuu_gigaku_wave:0 "The Popular Wave of Choujuu Gigaku" 
+ KYO_choujuu_gigaku_wave_desc:0 "Kyouko and Mystia, forming the Choujuu Gigaku ensemble, with Wriggle's help, incorporated the sounds of nature's insects into their music, creating a unique style.\n\n Their songs are wondrous, avant-garde, passionate, and sincere. While they cannot replace food and medicine, they can pull people's hearts back towards the future when they are most weary. More and more humans and Youkai are beginning to believe that the Myouren Temple brings not only order and relief, but also a new life worth looking forward to."
+
+ KYO_ichirin_determination:"A Round of Determination"
+
+  KYO_unidentified_watcher_of_myouren:0 "Unidentified Bystander"
+ KYO_unidentified_watcher_of_myouren_desc:0 "Nue Houjuu hasn't truly submitted to Myouren Temple, but she's no longer just a lurking destroyer. Her long debate with Minamitsu has led her to rethink the essence of Youkai: nature, fear, fantasy, the physical body, the name, and choice.\n\n She remains lurking within the temple, observing Byakuren's path with her unknowable eyes. Her presence prevents Myouren Temple from deceiving itself with simple answers, and further convinces Minamitsu that the essence of Youkai is not an unchangeable judgment."
+
+
+
+
+
+
+  KYO_yukari_gap_power:0 "Gap's Dominator"
+ KYO_yukari_gap_power_desc:0 ""
+
+ KYO_ran_gap_power:0 "Calculations in Gap"
+ KYO_ran_gap_power_desc:0 ""
+
+ KYO_chen_gap_power:0 "A helper in GAP"
+ KYO_chen_gap_power_desc:0 ""
+
+ KYO_renko_gap_power:0 "The Other Side of Memory"
+ KYO_renko_gap_power_desc:0 "An unfamiliar memory keeps recurring along the gap. The voice is broken, the name is blurred, but only one sentence never disappears—§GMerry!§!"
+ 
+ 
+
+
+
+
+
+
+
+
+
+ KYO_shikigami_Chen_1:"A gap youkai’s shikigami’s shikigami"
+ KYO_shikigami_Chen_1_desc:""
+ KYO_shikigami_Chen_2:"A gap youkai’s shikigami’s shikigami"
+ KYO_shikigami_Chen_2_desc:""
+ KYO_shikigami_Chen_3:"A gap youkai’s shikigami’s shikigami"
+ KYO_shikigami_Chen_3_desc:""
+ 
+ KYO_shikigami_Ran_1:"A gap youkai’s shikigami"
+ KYO_shikigami_Ran_1_desc:""
+ KYO_shikigami_Ran_2:"A gap youkai’s shikigami"
+ KYO_shikigami_Ran_2_desc:""
+ KYO_shikigami_Ran_3:"A gap youkai’s shikigami"
+ KYO_shikigami_Ran_3_desc:""
+
+ KYO_Boundaries_youkari:"Youkai of Boundaries"
+ KYO_Boundaries_youkari_desc:""
+
+ KYO_Let_start_war:"Start the battle for survival"
+
+
+
+
+  KYO_drug_backlash:0 "Expensive medical bills"
+  KYO_drug_backlash_desc:0 "Eientei could save many wounded soldiers who would otherwise have died, but it couldn't conjure medicine, equipment, or medical personnel out of thin air. As the battle lines stretched, rare medicinal herbs were prioritized for military hospitals, workshops shifted to producing injections and medical equipment, and remote villages had to wait even longer for ordinary medicines.\n\n The front lines relied on Eirin's medical skills to sustain themselves, but the rear was gradually slowed down by the heavy medical expenses. No one wanted to abandon the wounded, but every bed placed in Eientei's care reminded us: bringing people back from the brink of death is never a cheap thing."
+
+  KYO_ritual_fatigue:0 "Soul Weakness"
+  KYO_ritual_fatigue_desc:0 "The repeated rituals of summoning and comforting souls are blurring the line between the living and the dead. Those conducting the rituals are beginning to hear calls that don't exist, and returning ghosts are suddenly forgetting where they are. Some lose their way on marches, while others awaken to find only a long-abandoned homeland.\n\n Hakugyokurou has shortened the rituals and mandated rest, but the damage to the soul cannot be bandaged like a normal wound. Until fully recovered, recruitment, production, and military operations must all accommodate these increasingly weary souls."
+
+  KYO_gap_leak:0 "Pressure from Imperishable Night and Perfect Cherry Blossom"
+  KYO_gap_leak_desc:0 "The shadow of “Imperishable Night” and the chill of “Youmu” pressed down simultaneously, tightening the barrier like a thin veil. A faint hum emanated from the gap: intelligence leaked out, strange tales returned inward, and the boundary seemed to be cracked by invisible fingertips. Rumors spread in towns and cities, attracting the attention of the Outside World; allies hesitated, adversaries probed, and the hand in the shadows stretched ever longer. Yukari Yakumo gave a cold order: Mend it. Mend it again. Bear the cost yourselves. Thus, internal stability crumbled, resistance in occupied territories increased, and the balance of power in government affairs became unbalanced—the chessboard remained, but every move was more difficult than yesterday."
+
+
+
+
+
+  KYO_Bamboo_Forest_Guerrillas_1:0 "Bamboo Forest Guerrilla Team"
+KYO_Bamboo_Forest_Guerrillas_1_desc:0 "Reisen didn't treat the Bamboo Forest of the Lost as a natural trap. She first taught each squad to recognize wind direction, broken bamboo, and signals left by rabbits on the ground, then broke up patrols into two-person teams that could provide cover for each other.\n\n After engaging the enemy, they would only fire briefly before immediately changing course; upon discovering wounded soldiers, they would abandon the pursuit and prioritize bringing their comrades back to Eientei. When the enemy first entered the bamboo forest, they only saw constantly moving shadows, while our troops already knew where to appear and where to leave."
+
+KYO_Bamboo_Forest_Guerrillas_2:0 "Bamboo Forest Guerrilla Network"
+KYO_Bamboo_Forest_Guerrillas_2_desc:0 "The initial guerrilla squads had spread out along the bamboo forest. Ground Rabbits were responsible for relaying intelligence, concealing ammunition, and maintaining the trails, while Reisen used wavelength perturbation to create false footsteps, gunshots, and lights, drawing pursuers to uncharted territories.\n\n Each attack route was accompanied by an escape route, and each concealed stronghold guided troops to the next bamboo grove. The guerrillas were no longer just scattered soldiers familiar with their homeland, but a defensive network capable of self-contained contraction, relocation, and regrouping."
+
+KYO_Bamboo_Forest_Guerrillas_3:0 "Bamboo Forest of the Lost Defense Network"
+KYO_Bamboo_Forest_Guerrillas_3_desc:0 "The paths, warehouses, observation posts, and aid stations within the bamboo forest have formed a complete system. Command can temporarily convert any section of bamboo path into an ambush zone, supply line, or evacuation route, and nearby troops can automatically proceed to their designated positions after losing contact.\n\n The enemy still faces what appears to be the same sea of bamboo; for Reisen's troops, every bamboo shadow marks the next move. The Bamboo Forest of the Lost no longer relies on chance to lead astray—it has learned to change its course according to our will."
+
+KYO_Prototype_Hourai_Regimen_1:0 "Eirin drug trial"
+KYO_Prototype_Hourai_Regimen_1_desc:0 "Eirin isolated several controllable formulations from the principles of Hourai Elixir. These wouldn't grant immortality, but were used to enhance recovery, alleviate fatigue, and help subjects adapt to prolonged night battles.\n\n All participants had to undergo screening, understand the risks, and could withdraw at any time. Even so, the concentration of the drug in the military caused unease, and occasional insomnia, sensory hallucinations, and high fevers fueled the rapid spread of rumors. Eirin didn't conceal the reports—she knew better than anyone that being able to use a drug didn't mean it should be used without restraint."
+
+KYO_Prototype_Hourai_Regimen_2:0 "Battlefield Medicine Program"
+KYO_Prototype_Hourai_Regimen_2_desc:0 "After initial testing of the experimental formula, Eientei began establishing independent medication protocols for night combat units and special forces. Mobile medical teams adjusted dosages based on individual patient conditions, immediately discontinuing medication if any adverse reactions occurred, ensuring that the same prescription was no longer applicable to everyone.\n\n Training and resupply were thus significantly accelerated, but increased use also consumed more medical resources. Ordinary patients faced increasingly longer wait times, while military families worried whether their loved ones would have the freedom to choose between orders and voluntariness. Eirin refused to conceal these concerns, because if medicine were reduced to mere obedience, it would have strayed from its original purpose of healing."
+
+KYO_Lunarian_Fragments_1:0 "Eight-style underlying standard"
+KYO_Lunarian_Fragments_1_desc:0 "Eirin retrieved the old blueprints she had kept before leaving Lunar Capital, first demanding that the workshops standardize dimensions, measurement methods, and interface specifications. Equipment that could previously only be repaired by the maker could now have parts replaced by those from another workshop; medicines and electronic devices also had to undergo repeatable verification checks.\n\n She didn't directly hand over a weapon of the Moon that could change the war, but instead taught Gensokyo how to reliably manufacture the next one. The truly valuable thing wasn't the finished product on the blueprints, but the method that allowed knowledge to be understood, replicated, and continuously improved."
+
+KYO_Lunarian_Fragments_2:0 "Eight Italian General Standards"
+KYO_Lunarian_Fragments_2_desc:0 "The Eight-Style Standard has expanded from Eientei to the kappa workshop, supply depots, and research institutions. Parts manufactured in different regions are interchangeable, experimental results can be cross-verified, and damaged equipment at the front no longer needs to be sent back to its original manufacturer.\n\n Eirin insists on writing every modification into the public specifications. She doesn't intend for Gensokyo to rely on her memories forever, but rather to establish a system that can continue research, production, and error correction even without Eirin Yagokoro's personal supervision."
+
+KYO_Tewi_Lucky_Logistics_1:0 "Tewi's Silver Circulation Network"
+KYO_Tewi_Lucky_Logistics_1_desc:0 "Tewi Inaba knew which villages had stockpiled grain, which shops were willing to extend credit, and which inconspicuous paths could bypass the blockade. She sent rabbits on the ground to carry money, IOUs, and invoices to various places, delivering unsold inventory to areas in need, and then repaying the favors owed along the way with the next batch of goods.\n\n There were no grand banks, nor halls filled with rules and regulations. What supported this network was the credit of the merchants, the eyes and ears of the rabbits, and Tewi's ability to find an alternative route before the main road closed."
+
+KYO_Tewi_Lucky_Logistics_2:0 "Rabbit Print Circulation Network"
+KYO_Tewi_Lucky_Logistics_2_desc:0 "Tewi's temporary business has expanded into a distribution system covering various regions. Rabbit-marked tickets can be used for settlement between villages and towns, caravans share warehouses and escort routes, and scattered recycled metals and weapon parts are sent to workshops that need them most.\n\n Her so-called luck rarely comes from chance. It's the advance notice of countless rabbits on the ground, the trust built up over years of interactions, and the next truck she arranged while everyone else was still debating. As long as rabbit-marked tickets appear on the roads, supplies will always find a way to reach the front lines."
+
+KYO_Frost_Mist_Snow_1:0 "Frozen Sunset and Thin Snow"
+KYO_Frost_Mist_Snow_1_desc:0 "Hakugyokurou did not require the living to endure the bitter cold like the undead. The ghost scouts traversed the snowstorm first, searching for thin ice, sheltered spots, and abandoned buildings where supplies could be stored, then used spirit fire to mark safe routes for the following troops.\n\n The undead undertook tasks that wouldn't be slowed down by the low temperatures, while the living conserved their strength and equipment. At the end of the first exercise, everyone arrived at the finish line on time, and no one was left behind in the snow."
+
+KYO_Frost_Mist_Snow_2:0 "Frozen Clouds Marching Method"
+KYO_Frost_Mist_Snow_2_desc:0 "The living and the dead began to form fixed winter action teams. Ghosts were responsible for reconnaissance, communication, and night watch, while the living carried firepower and construction equipment; shelters and small stockpiles set up along the way meant that troops didn't have to carry all their supplies.\n\n Snowstorms were no longer just obstacles to overcome. Spirit fires could guide them in dense fog, falling snow could conceal their movements, and frozen roads could become unpredictable attack routes for the enemy."
+
+KYO_Frost_Mist_Snow_3:0 "Hakugyokurou Winter Tactics"
+KYO_Frost_Mist_Snow_3_desc:0 "Hakugyokurou had refined winter warfare into a complete tactic. From ghost reconnaissance and snow transport to the evacuation of the wounded, each unit knew when to continue advancing and when to retreat to the nearest shelter.\n\n When blizzards struck, supplies wouldn't be immediately interrupted, and scattered troops could regroup by following spirit fires. Winter, which in the past would have brought an entire army to a standstill, now ironically served to conceal our movements."
+
+KYO_Konpaku_Hundred_Day_1:0 "The Hundred-Day Training of the Instructor"
+KYO_Konpaku_Hundred_Day_1_desc:0 "Youmu didn't require ordinary soldiers to imitate her swordswomanship that could slice through buildings. The hundred-day training began with standing firm, maintaining formation, and properly sheathing the sword, gradually incorporating close-quarters assaults, alternating cover, and orderly retreats.\n\n “Don't think about cutting anything down yet,” she said, sheathing her sword and looking at the recruit who had fallen again. “Learn to find your comrades in the chaos, and bring them all back together.”\n\n After a hundred days, the soldiers still couldn't become Youmu Konpaku, but they were already able to stabilize the lines when their charge was stalled."
+
+KYO_Konpaku_Hundred_Day_2:0 "The Hundred-Day Training Corps"
+KYO_Konpaku_Hundred_Day_2_desc:0 "The first batch of soldiers to complete the hundred-day training were assigned to various units as instructors. The movements personally demonstrated by Youmu were broken down into standardized courses, allowing troops far from Hakugyokurou to learn the same formations, assault methods, and retreat rules.\n\n The most important outcome of this training wasn't simply achieving perfect uniformity in swordswomanship, but rather enabling troops to support each other even in prolonged battles and when the situation turned against them. As long as the ranks didn't break apart, a failed charge wouldn't immediately turn into a rout."
+
+KYO_Ghost_Analgesia_1:0 "The Doctrine of the Dead"
+KYO_Ghost_Analgesia_1_desc:0 "Yuyuko crossed out a sentence from the initial draft—“The dead have already died once, so there is no need to fear loss.”\n\n Ghosts still feel pain and may lose their memories or even completely dissipate after being injured. Hakugyokurou therefore established a special system of guidance and recuperation, allowing weakened dead to withdraw from the front lines and return to their original ranks after regaining their physical form. The dead are not an inexhaustible source of manpower; that is why every piece of experience preserved is all the more precious."
+
+KYO_Ghost_Analgesia_2:0 "Hakugyokurou Return System"
+KYO_Ghost_Analgesia_2_desc:0 "Guiding lamps and support personnel have been deployed to each unit. When a spirit begins to dissipate, nearby personnel will send it back to Hakugyokurou; if the front line loses contact, undead officers familiar with their former units will be responsible for gathering the remnants and restoring command.\n\n The living are handed over to medics, and the dead are sent to Higan; neither will be abandoned simply because they are temporarily unable to fight. When veterans return to their units after recuperation, they bring back not only combat power, but also experience that might have been lost in the chaos."
+
+KYO_Saigyou_Whisper_1:0 "Saigyou Ayakashi's Whispers"
+KYO_Saigyou_Whisper_1_desc:0 "Occasionally, faint whispers emanate from the depths of the seal of Saigyou Ayakashi. Yuyuko did not break the seal, allowing only a select few to access the outermost echoes under Youmu's supervision. These words could not directly predict the future, but they changed with hostility, fear, and lies, allowing eavesdroppers to detect infiltrators and impending attacks.\n\n However, the sounds heard beneath the tree sometimes followed people back to their dreams. Insomnia and unease began to appear in the military camp, forcing Youmu to be prepared to sever the out-of-control connections at any time."
+
+KYO_Saigyou_Whisper_2:0 "The Language of Flowers Across the Battlefront"
+KYO_Saigyou_Whisper_2_desc:0 "As the monitoring range expanded, Saigyou Ayakashi's whispers could now travel along spiritual energy lines to various positions. Commanders could discern enemy instability from the changes in the flower language, and ambushers could avoid detection before the enemy discovered them.\n\n Yuyuko still refused to let Saigyou Ayakashi bloom, but simply amplifying its sound was enough to influence more and more people. Outside the military camps, some began dreaming of unfamiliar cherry trees, fueling doubt and growing war-weariness. We gained eyes that could see into enemy territory, but we could no longer guarantee those eyes would only be focused on the battlefield."
+
+ KYO_Eirina_eternal_1:0 "Collaborative Rescue Network"
+ KYO_Eirina_eternal_1_desc:0 "Eientei opens battlefield medicine to all youkai."
+ KYO_Eirina_eternal_2:0 "Verifiable Existence Plan"
+ KYO_Eirina_eternal_2_desc:0 "Recording, verification, and medical processes give lives the opportunity to continue to change."
+ KYO_Eirina_eternal_3:0 "Sharing the Hourai Experience"
+ KYO_Eirina_eternal_3_desc:0 "Eirin no longer uses lunar knowledge as a secret tool to control others."
+ KYO_Eirina_eternal_4:0 "Never Stagnant"
+ KYO_Eirina_eternal_4_desc:0 "The meaning of extending life is to preserve choices, not to freeze the world."
+ KYO_Yuyuko_death_1:0 "Common Name Register"
+ KYO_Yuyuko_death_1_desc:0 "Hakugyokurou Let every deceased person have a name, a witness, and a final resting place."
+ KYO_Yuyuko_death_2:0 "Higan's Testimony"
+ KYO_Yuyuko_death_2_desc:0 "Farewell acknowledges loss, but refuses to turn the deceased into tools of command."
+ KYO_Yuyuko_death_3:0 "Saigyou Ayakashi's Memories"
+ KYO_Yuyuko_death_3_desc:0 "Yuyuko regains her history as a person, not just a position."
+ KYO_Yuyuko_death_4:0 "Departure Still Has Meaning"
+ KYO_Yuyuko_death_4_desc:0 "Remembering allows the world to move forward, without requiring anyone to prove their stance through death."
+
+
+ LUN_lunar_scientific_supremacy:0 "Legacy of the Brain of the Moon"
+LUN_lunar_scientific_supremacy_desc:0 "Lunar science has never been a blind search into the unknown. It dissects the universe, classifies its workings, and reassembles them according to need. Vast observation arrays continuously sweep the Earth and the stars, while research institutes complete their simulations, trials, and preparations for mass production long before war begins."
+
+LUN_watatsuki_integrated_discipline:0 "Watatsuki Integrated Discipline"
+LUN_watatsuki_integrated_discipline_desc:0 "Yorihime devises the doctrine; Toyohime directs the greater campaign. Their orders travel through a rigorously tested chain of command to every lunar rabbit unit. The soldiers need never guess at their commanders' intentions, nor may panic break their formation. They know when to advance, where to direct their fire, and at what level of losses to regroup and reform the line. Individuals may hesitate—the organization never does."
+
+LUN_lunar_integrated_command_network:0 "Lunar Command Network"
+LUN_lunar_integrated_command_network_desc:0 "Detection, analysis, command, and fire coordination are linked through a single lunar network. Every target sighted by a lunar rabbit at the front is immediately converted into coordinates shared with command centers and support units behind the lines. While terrestrial armies are still trying to identify the threat, the Lunar Capital has already ranked its priority and deployed its forces to precisely where they are needed."
+
+LUN_celestial_war_industry:0 "Celestial War-Industry Complex"
+LUN_celestial_war_industry_desc:0 "No industry in the Lunar Capital is ever entirely divorced from war. Precision workshops, research facilities, and transport hubs all possess the means to convert to military use; once a new weapon passes its trials, its specifications are transmitted to every production line at once. To the Lunar Capital, mobilization is not the improvised transformation of society, but the full activation of a war machine that was there all along."
+
+LUN_pure_logistics_standard:0 "Contamination-Free Logistics"
+LUN_pure_logistics_standard_desc:0 "Every piece of lunar equipment must remain operational in vacuum, extreme cold, radiation, and supernatural interference. Supplies are sealed in exact quantities, transport routes are continuously recalculated, and faulty components are replaced before they can disrupt operations. Mud, blizzards, and immense distances will not halt the lunar army—they will only leave the armies of Earth further behind."
+
+LUN_purification_weapon_system:0 "Purification Weapons System"
+LUN_purification_weapon_system_desc:0 "In lunar military doctrine, soldiers, firearms, aircraft, radar, and rear-echelon computation centers are not separate assets, but components of a single weapon system. Once a target is designated as impure, the entire apparatus turns upon it at once: observation arrays fix its position, aerial forces seal off every avenue of escape, and ground troops carry out its elimination according to predetermined procedure."

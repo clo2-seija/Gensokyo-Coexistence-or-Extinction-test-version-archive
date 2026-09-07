@@ -1,0 +1,108 @@
+﻿l_simp_chinese:
+
+
+
+
+
+
+
+ 
+  # ===== 永琳侧：存续 =====
+ Stand_for_Eirin:0 "让医者先回答"
+ Stand_for_Eirin_desc:0 "永琳当夜打开永远亭的药库，兔子们沿兽道奔向各处伤兵营。天亮以前，第一批原本被判定无救的人重新睁开眼睛；她随即退回那份伤亡报告，要求所有数字重新计算。"
+ Stand_for_Eirin_tooltip:0 "§Y效果摘要：§!\n- 天平向§B永琳的存续之道§!偏移\n- 永远亭的药车开始驶入各地伤兵营\n- 可能发生与获救伤员有关的后续事件"
+ Stand_for_Eirin_blocked:0 "§R永远亭的药车尚未获准驶出迷途竹林。§!"
+
+ give_Eirin_power:0 "把明日抢回来"
+ give_Eirin_power_desc:0 "紫将调度印交到永琳手中。封存的药物被整箱搬出，闲置车辆驶向伤兵营，空置宅邸铺满临时病床。到了清晨，街上第一次没有人因为等不到药物而死。"
+ give_Eirin_power_tooltip:0 "§Y效果摘要：§!\n- 天平大幅偏向§B永琳的存续之道§!\n- 封存药库全部开启，闲置车辆改运伤员\n- 更多被判定无救的人将获得再次救治"
+ give_Eirin_power_blocked:0 "§R紫尚未将调度印交给永琳。§!"
+
+ help_eirin_more:0 "让药箱先抵达"
+ help_eirin_more_desc:0 "粮车卸下一半货物，改载沿途伤员；寺子屋腾出教室，连夜铺成病房；河童拆下工坊零件，修好停在路边的运输车。永琳逐床复诊，将一个个『无能为力』从记录上划去。"
+ help_eirin_more_tooltip:0 "§Y效果摘要：§!\n- 天平小幅偏向§B永琳的存续之道§!\n- 空屋改作病房，车辆优先接走伤员\n- 伤兵营不再因药物迟到继续出现死者"
+ help_eirin_more_blocked:0 "§R药物、人手或可用车辆不足。§!"
+
+ eirin_strike_back:0 "驳回『无能为力』"
+ eirin_strike_back_desc:0 "当又有人声称伤亡不可避免，永琳没有与他争辩。她让几名曾被判定无救、如今已能自行行走的伤员推门而入，又将未曾发出的药物摆上桌面。自此，再没有人敢把疏失写成命运。"
+ eirin_strike_back_tooltip:0 "§Y效果摘要：§!\n- 天平明显偏向§B永琳的存续之道§!\n- 被过早放弃的伤员重新接受诊治\n- 延误、隐瞒与擅自放弃伤员者受到追查"
+ eirin_strike_back_blocked:0 "§R尚无人试图以『无能为力』掩盖伤亡。§!"
+
+
+ # ===== 幽幽子侧：送别 =====
+ Stand_for_yuyuko:0 "让亡者坐回席间"
+ Stand_for_yuyuko_desc:0 "幽幽子让妖梦搬来阵亡者留下的帽子、刀鞘、护身符与孩子送出的玩偶，将它们逐一放在会议厅的空椅上。会议重新开始后，每个发言者都必须先念出一名死者的姓名。"
+ Stand_for_yuyuko_tooltip:0 "§Y效果摘要：§!\n- 天平向§M幽幽子的送别之道§!偏移\n- 白玉楼开始为无名死者寻找身份\n- 无主遗物将被送回亲友手中"
+ Stand_for_yuyuko_blocked:0 "§R白玉楼尚未获准接引战争留下的亡魂。§!"
+
+ give_yuyuko_power:0 "不许任何人无名而逝"
+ give_yuyuko_power_desc:0 "通往冥界的道路就此开启。妖梦带人走遍战壕、废墟与无人收殓的荒地，引魂蝶在瓦砾间辨认每一缕徘徊的魂火。战报上的数字重新变回姓名，失踪者也终于有了去处。"
+ give_yuyuko_power_tooltip:0 "§Y效果摘要：§!\n- 天平大幅偏向§M幽幽子的送别之道§!\n- 引魂蝶进入战场废墟，寻找失踪者与亡魂\n- 被遗忘的死者将重新获得姓名与归处"
+ give_yuyuko_power_blocked:0 "§R通往冥界的道路尚未完全开放。§!"
+
+ help_yuyuko_more:0 "让引魂蝶走在最后"
+ help_yuyuko_more_desc:0 "白玉楼的灯笼从村口一直挂到废墟深处。救援队离去以后，妖梦与引魂蝶仍会继续搜寻，直到最后一封遗言被送出、最后一件遗物被认领、最后一个彷徨的灵不再独自游荡。"
+ help_yuyuko_more_tooltip:0 "§Y效果摘要：§!\n- 天平小幅偏向§M幽幽子的送别之道§!\n- 搜寻队进入失联聚落与无人收殓之地\n- 遗言、遗物与阵亡消息被送往亲友手中"
+ help_yuyuko_more_blocked:0 "§R缺少继续寻找亡者与遗物的人手。§!"
+
+ yuyuko_strike_back:0 "驳回『必要牺牲』"
+ yuyuko_strike_back_desc:0 "当伤亡再次被一句『必要』掩过，宴席上的灯火忽然暗下。一个又一个亡魂出现在空椅之后，幽幽子则平静地念出他们的姓名。杯盏声逐渐停止，那道造成伤亡的命令也被重新摆回桌上。"
+ yuyuko_strike_back_tooltip:0 "§Y效果摘要：§!\n- 天平明显偏向§M幽幽子的送别之道§!\n- 死者的姓名与遭遇被公开念出\n- 曾将他们视为必要损失的命令受到重审"
+ yuyuko_strike_back_blocked:0 "§R尚未有人试图把死者写成一行损失数字。§!"
+
+
+ # ===== 紫居中：两岸皆不可弃 =====
+ yukari_balance_all:0 "紫之衡：两岸皆不可弃"
+ yukari_balance_all_desc:0 "紫在废墟前同时开启两道间隙：担架与伤员穿过第一道，直接抵达永远亭；遗物与跟随其后的魂火穿过第二道，进入白玉楼。她站在两条队伍之间，直到生者与亡者都有人接住。"
+ yukari_balance_all_tooltip:0 "§Y效果摘要：§!\n- 天平回到中央，或减缓继续偏移\n- 伤员送往永远亭，亡魂由白玉楼接引\n- 可能发生双方共同参与的后续事件"
+ yukari_balance_all_blocked:0 "§R药车与引魂蝶仍在并行，紫无须介入。§!"
+
+
+ # ===== 白玉楼侧修正 =====
+ yuyuko_side_modifier:0 "白玉楼拒绝遗忘"
+ yuyuko_side_modifier_1:0 "白玉楼：蝶与药车并行"
+ yuyuko_side_modifier_2:0 "白玉楼：死者重获姓名"
+ yuyuko_side_modifier_3:0 "白玉楼：魂火尽有归处"
+ yuyuko_side_modifier_4:0 "白玉楼：空椅不再无名"
+
+
+ # ===== 永远亭侧修正 =====
+ eirin_side_modifier:0 "永远亭拒收讣告"
+ eirin_side_modifier_1:0 "永远亭：药车与蝶并行"
+ eirin_side_modifier_2:0 "永远亭：药箱先抵伤营"
+ eirin_side_modifier_3:0 "永远亭：弃伤者重返人间"
+ eirin_side_modifier_4:0 "永远亭：讣告不得先写"
+
+
+ # ===== 天平界面 =====
+ KYO_balance:0 "药盏与引魂蝶"
+ KYO_balance_desc:0 "同一片废墟前，永远亭抬走尚有体温的人，白玉楼领走无人看见的魂。药车每救回一人，指针便向永琳偏移；引魂蝶每送走一名逝者，指针便向幽幽子偏移。紫让两条道路始终畅通，因为幻想乡既不能抛下生者，也不能假装死者从未存在。"
+
+ yukari_control_well_center:0 "药车与引魂蝶并行"
+ yukari_control_well_left:0 "药车驶在最前方"
+ yukari_control_well_right:0 "引魂蝶留到最后"
+
+
+ # ===== 永琳：存续 =====
+ side_with_Eirin:0 "永琳：从死亡手中夺回明日"
+ eirin_side_1:0 "药库彻夜不闭"
+ eirin_side_2:0 "尚有一线可救"
+ eirin_side_3:0 "担架越过兽道"
+ eirin_side_4:0 "让生者先回家"
+ eirin_side_5:0 "撕去写好的讣告"
+ eirin_side_6:0 "永远拒绝停滞"
+
+
+ # ===== 幽幽子：送别 =====
+ side_with_yuyuko:0 "幽幽子：不让死亡抹去一生"
+ yuyuko_side_1:0 "冥界之门彻夜不闭"
+ yuyuko_side_2:0 "彼岸收下遗物"
+ yuyuko_side_3:0 "西行妖记得姓名"
+ yuyuko_side_4:0 "让逝者先回家"
+ yuyuko_side_5:0 "空椅重新有了主人"
+ yuyuko_side_6:0 "离去仍有意义"
+
+
+ # ===== 紫的最终回答 =====
+ yukari_control_everything:0 "生者归来，亡者有名"
+ yukari_control_everything_desc:0 "从此，每支归来的队伍都会在结界前分成两列：仍有体温者送往永远亭，随身遗物与跟随其后的魂火送往白玉楼。紫站在分岔处，直到最后一副担架与最后一只引魂蝶都穿过间隙，才终于合上折扇。"

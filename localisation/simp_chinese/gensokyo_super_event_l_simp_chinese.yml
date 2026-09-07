@@ -1,0 +1,49 @@
+﻿l_simp_chinese:
+
+sp_event_Second_World_War:0 "The Second World War"
+sp_event_Second_World_War_QUOTE:0 "Those who want to live, let them fight, and those who do not want to fight in this world of eternal struggle do not deserve to live. \n- Adolf Hitler"
+sp_event_Second_World_War_REMARK:0 "Here we go again..."
+  
+sp_event_Sino_Japanese:0 "The Second Sino-Japanese War"
+sp_event_Sino_Japanese_QUOTE:0 "We the Chinese nation have the spirit to fight the enemy to the last drop of our blood, the determination to recover our lost territory by our own efforts, and the ability to stand on our own feet in the family of nations. \n- Mao Zedong"
+sp_event_Sino_Japanese_REMARK:0 "Can China hold the Rising Sun?"
+
+
+sp_event_japan_youkai_war:0 "妖怪入侵现实"
+sp_event_japan_youkai_war_QUOTE:0 "人里里每一个人——不论高矮胖瘦——都在歌唱，歌声献给他们所臣服的存在！他们忘不了幻想乡，天空中那一片红色星辰；猩红月亮掠过时，将人的影子拉得又长又阴。他们咬牙切齿，嗥叫怒吼，声浪翻腾；而理智在妖怪面前，一点点融化成空。"
+sp_event_japan_youkai_war_REMARK:0 "接纳一切的幻想乡是很残酷的"
+
+sp_event_Youkai_civilwar_start:0 "妖怪阋墙"
+sp_event_Youkai_civilwar_start_QUOTE:0 "危险将从何处逼近，我们又该从何处预期它的到来？难道会有某个跨大西洋的军事巨人踏上大地，一击将我们粉碎？绝不可能。欧洲与亚洲的所有军队……纵使千年试行，也无法凭武力从俄亥俄河取走一口水，或在蓝岭山脉留下任何一道足迹。不——若毁灭注定属于我们，那我们必须自己成为它的始作俑者与终结者。作为一个由自由人组成的国家，我们将永远活下去，或以自我毁灭而死。」——亚伯拉罕·林肯 "
+sp_event_Youkai_civilwar_start_REMARK:0"妖怪的命运将会如何？"
+
+sp_event_Remilia_path_the_end:0 "Veni, vidi, vici."
+sp_event_Remilia_path_the_end_QUOTE:0 ""
+sp_event_Remilia_path_the_end_REMARK:0"Flectere si nequeo superos, Acheronta movebo."
+
+sp_event_Hijiri_path_the_end:0 "共存的新世界"
+sp_event_Hijiri_path_the_end_QUOTE:0 "我们击败了那些会将众生拖回仇恨、专制与恐惧的势力，但妖怪与人类之间漫长的隔阂，并不会因为一场胜利便立刻消失。旧日的伤口仍在，误解仍在，恐惧也仍会在夜色中低语。\n\n可至少从今日起，我们终于不必再用彼此的毁灭来证明自己的存在。妖怪可以不只作为恐惧而活，人类也可以不只在恐惧中记住妖怪。我们会争执，会犯错，会在同一条路上反复跌倒；但只要仍愿意伸手、仍愿意倾听、仍愿意把破碎之处一点点修补，终有一日，这片土地会真正学会共存。\n\n和平不是终点，而是众生终于得以共同前行的开始。"
+sp_event_Hijiri_path_the_end_REMARK:0 "道阻且长，行则将至"
+
+
+
+
+sp_event_yukari_path_the_end:0 "幻想将永不停止"
+sp_event_yukari_path_the_end_QUOTE:0 "你一旦开始怀疑自己是否能飞，你就永远再也飞不起来了。― J. M. 巴里，《彼得潘》"
+sp_event_yukari_path_the_end_REMARK:0 "幻想乡将永垂不朽"
+
+ sp_event_lunar_public_war:0 "第二次月面战争"
+ sp_event_lunar_public_war_REMARK:0 "是时候结束了"
+ sp_event_lunar_public_war_QUOTE:0 "所谓的洁净只不过是谎言。"
+
+ sp_event_yukari_world:0 "美丽新世界"
+ sp_event_yukari_world_REMARK:0 "幻想与科学将永不停息"
+ sp_event_yukari_world_QUOTE:0 "我不要一个只有幻想的过去，也不要一个只剩现实的未来。"
+
+
+ sp_event.3.t:0 "第二次月面战争"
+ sp_event.3.d:0 "地上与月上的两条战线同时展开。"
+ sp_event.3.a:0 "打开所有归路。"
+ sp_event.7.t:0 "紫所要的世界"
+ sp_event.7.d:0 "科学与幻想不必争夺唯一的真实。"
+ sp_event.7.a:0 "同一片星空仍容得下未知。"

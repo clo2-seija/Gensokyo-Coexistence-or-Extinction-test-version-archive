@@ -1,0 +1,49 @@
+﻿l_english:
+
+sp_event_Second_World_War:0 "The Second World War"
+sp_event_Second_World_War_QUOTE:0 "Those who want to live, let them fight, and those who do not want to fight in this world of eternal struggle do not deserve to live. \n- Adolf Hitler"
+sp_event_Second_World_War_REMARK:0 "Here we go again..."
+  
+sp_event_Sino_Japanese:0 "The Second Sino-Japanese War"
+sp_event_Sino_Japanese_QUOTE:0 "We the Chinese nation have the spirit to fight the enemy to the last drop of our blood, the determination to recover our lost territory by our own efforts, and the ability to stand on our own feet in the family of nations. \n- Mao Zedong"
+sp_event_Sino_Japanese_REMARK:0 "Can China hold the Rising Sun?"
+
+
+sp_event_japan_youkai_war:0 "Youkai Invading Reality"
+sp_event_japan_youkai_war_QUOTE:0 "Every single person in the village—regardless of height or weight—is singing, their songs dedicated to the being they submit to! They cannot forget Gensokyo, that patch of red stars in the sky; the long, dark shadows cast by the crimson moon as it streaks across. They grit their teeth, howl and roar, their voices surging; and reason, before Youkai, melts away, little by little."
+sp_event_japan_youkai_war_REMARK:0 "Gensokyo, accepting everything, is cruel."
+
+sp_event_Youkai_civilwar_start:0 "Youkai Strife"
+sp_event_Youkai_civilwar_start_QUOTE:0 "Where will danger approach, and how can we anticipate its arrival? “Will some transatlantic military giant set foot on our land and crush us in one blow? Absolutely not. All the armies of Europe and Asia… even after a thousand years of trials, could not take a drop of water from the Ohio River by force, or leave a single footprint in the Ran Ridge Mountains. No—if destruction is destined for us, then we must be its instigators and its terminators. As a nation of free men, we will live on forever, or die by self-destruction.” —Abraham Lincoln"
+sp_event_Youkai_civilwar_start_REMARK:0"What will be the fate of Youkai?"
+
+sp_event_Remilia_path_the_end:0 "Veni, vidi, vici."
+sp_event_Remilia_path_the_end_QUOTE:0 ""
+sp_event_Remilia_path_the_end_REMARK:0"Flectere si nequeo superos, Acheronta movebo."
+
+sp_event_Hijiri_path_the_end:0 "A New World of Coexistence"
+sp_event_Hijiri_path_the_end_QUOTE:0 "We have defeated the forces that would drag all beings back to hatred, tyranny, and fear, but the long-standing divide between Youkai and humanity will not disappear instantly with a single victory. The wounds of the past remain, the misunderstandings remain, and fear will still whisper in the night.\n\n But at least from this day forward, we no longer need to prove our existence through the destruction of each other. Youkai can live not only as fear, and humanity can remember Youkai not only in fear. We will argue, we will make mistakes, we will stumble repeatedly on the same path; but as long as we are still willing to reach out, still willing to listen, still willing to mend the broken pieces little by little, one day, this land will truly learn to coexist.\n\n Peace is not the end, but the beginning of all beings finally being able to move forward together."
+sp_event_Hijiri_path_the_end_REMARK:0 "The road is long and arduous, but perseverance will lead to success."
+
+
+
+
+sp_event_yukari_path_the_end:0 "Imagination will never cease."
+sp_event_yukari_path_the_end_QUOTE:0 "Once you begin to doubt whether you can fly, you will never fly again. — J. M. Barry, Peter Pan"
+sp_event_yukari_path_the_end_REMARK:0 "Gensokyo will live forever."
+
+ sp_event_lunar_public_war:0 "Second Lunar War"
+ sp_event_lunar_public_war_REMARK:0 "It's time to end it."
+ sp_event_lunar_public_war_QUOTE:0 "So-called purity is nothing but a lie."
+
+ sp_event_yukari_world:0 "Brave New World"
+ sp_event_yukari_world_REMARK:0 "Imagination and science will never cease."
+ sp_event_yukari_world_QUOTE:0 "I don't want a past that is only fantasy, nor a future that is only reality."
+
+
+ sp_event.3.t:0 "Second Lunar War"
+ sp_event.3.d:0 "Two fronts, one on Earth and one on the Moon, unfold simultaneously."
+ sp_event.3.a:0 "Opening all paths of return."
+ sp_event.7.t:0 "The world Yukari desires"
+ sp_event.7.d:0 "Science and fantasy need not contend for the sole truth."
+ sp_event.7.a:0 "The same starry sky can still accommodate the unknown."

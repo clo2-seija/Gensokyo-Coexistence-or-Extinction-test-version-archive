@@ -1,0 +1,328 @@
+﻿l_english:
+
+  Formosa_focus_tree:0 "Formosa (Taiwan) National Focus"
+
+  # Prologue
+  FOR_exile_on_formosa:0 "Exiled in Formosa"
+  FOR_exile_on_formosa_desc:0 "With the Japanese mainland falling to the Japanese, the government and military were forced to retreat to Taiwan. We must rebuild order on this island and prepare to retake Tokyo."
+
+  FOR_the_emperor_in_exile:0 "The Emperor in Exile"
+  FOR_the_emperor_in_exile_desc:0 "Emperor Showa witnessed the collapse of the empire. Exile is not an escape, but a tempering—from cowardice to responsibility."
+
+  FOR_emergency_diet_in_taipei:0 "Emergency Diet in Taipei"
+  FOR_emergency_diet_in_taipei_desc:0 "Reorganizing the Diet and Cabinet in Taipei, establishing legal authority and a command system, and making the government-in-exile a truly functional state."
+
+  # Political
+  FOR_rally_the_settlers:0 "Uniting the Support of the Expatriate Community"
+  FOR_rally_the_settlers_desc:0 "The scattered Japanese expatriate community still places their hopes on the government-in-exile. We must translate this support into manpower, material resources, and political mobilization."
+
+  FOR_promise_of_return:0 "The Oath of Destiny"
+  FOR_promise_of_return_desc:0 "We swear to our overseas compatriots, to Taiwan, and to ourselves: Tokyo will not fall forever."
+
+  FOR_taiwanese_question:0 "The Taiwan Issue"
+  FOR_taiwanese_question_desc:0 "The island has limited resources, a rapidly changing population structure, and unhealed historical wounds. If not handled properly, internal divisions will precede external enemies."
+
+  FOR_land_reform_and_compensation:0 "Land Reform and Compensation"
+  FOR_land_reform_and_compensation_desc:0 "Immigration, requisition, and food shortages can trigger conflict. Cooperation through reform and compensation is essential to solidify the island into a base for a counter-offensive."
+
+  FOR_security_laws_and_curfew:0 "Martial Law and Public Order"
+  FOR_security_laws_and_curfew_desc:0 "Order must be maintained, even with harsh measures. We must ensure stability in the rear to prevent internal turmoil from crippling the counter-offensive."
+
+  FOR_local_elites_and_advisory_council:0 "Local Gentry and Consultative Councils"
+  FOR_local_elites_and_advisory_council_desc:0 "Integrating local elites into political arrangements and establishing communication channels will allow rule to shift from coercion to cooperation."
+
+  FOR_language_and_education_compromise:0 "Equilibrium on Language and Education"
+  FOR_language_and_education_compromise_desc:0 "There is no need to choose between assimilation and division. Only by acknowledging differences can a shared national goal be achieved."
+
+  FOR_joint_service_program:0 "Joint Service Plan"
+  FOR_joint_service_program_desc:0 "Let native Taiwanese and expatriates train, serve, and sacrifice together—a community is established."
+
+  FOR_civic_identity_campaign:0 "Civil Identity Movement"
+  FOR_civic_identity_campaign_desc:0 "The counter-offensive is not just Japan's war, but also Taiwan's survival choice. Use shared destiny to heal the gap."
+
+  FOR_special_security_bureau:0 "Special Security Bureau"
+  FOR_special_security_bureau_desc:0 "Intelligence, infiltration, and sabotage are everywhere. We need an invisible knife to sever the enemy's tentacles on the island."
+
+  FOR_censorship_and_blacklists:0 "Censorship and Blacklists"
+  FOR_censorship_and_blacklists_desc:0 "At this critical juncture, speech and organization must be strictly monitored. Any wavering will become a fatal gap during the landing."
+
+  FOR_special_courts:0 "Special Court"
+  FOR_special_courts_desc:0 "Use extraordinary means to deal with insurgency and infiltration, maintaining absolute order in the rear during wartime."
+
+  FOR_rebuild_state_apparatus:0 "Rebuilding the State Machinery"
+  FOR_rebuild_state_apparatus_desc:0 "Finance, mobilization, security, and logistics must be institutionalized. The exiled state must function like a state."
+
+  FOR_imperial_pilgrimage:0 "Imperial Inspection Tour"
+  FOR_imperial_pilgrimage_desc:0 "The Emperor personally visits military camps and villages, hearing grievances and wishes—this exile will mold him into a new symbol of unification."
+
+  FOR_showa_reforms:0 "Showa Reforms"
+  FOR_showa_reforms_desc:0 "The hardships of exile force us to abandon old inertia. Reforms will cleanse the government and the public, reshaping its executive power."
+
+  FOR_meiji_spirit_of_the_showa:0 "The Meiji Spirit of the Showa Era"
+  FOR_meiji_spirit_of_the_showa_desc:0 "Just as the Meiji Restoration ushered Japan into a new era, the Showa era, through painful awakening, will lead the nation towards restoration."
+
+  FOR_national_unity_campaign:0 "National Unity Movement"
+  FOR_national_unity_campaign_desc:0 "A counter-offensive requires unity. Only by sharing goals with overseas residents and native islanders, and minimizing differences, can we direct our strength towards Tokyo."
+
+  # Industry
+  FOR_build_the_island_fortress:0 "Building Taiwan into a Fortress"
+  FOR_build_the_island_fortress_desc:0 "Industry, roads, ports, and airports will determine the possibility of a counter-offensive. Build Taiwan into the most solid forward base."
+
+  FOR_power_and_rail:0 "Electricity and Railways"
+  FOR_power_and_rail_desc:0 "War is a race of logistics and production capacity. Build railways, expand electricity, and ensure every bullet reaches the front lines on time."
+
+  FOR_harbor_of_kaohsiung:0 "Kaohsiung Naval Base"
+  FOR_harbor_of_kaohsiung_desc:0 "Expanding southern naval ports and supply facilities will allow the fleet to maintain long-term deployment and maintenance capabilities."
+
+  FOR_expand_taiwanese_docks:0 "Expanding Taiwan's shipyards"
+  FOR_expand_taiwanese_docks_desc:0 "Without ships, there is no way home. Expanding shipyards and naval ports will establish continuous shipbuilding and maintenance capabilities."
+
+  FOR_shipbuilding_program:0 "Shipbuilding Plan"
+  FOR_shipbuilding_program_desc:0 "Escort, amphibious landing support, and major battles all require ships. We must push shipyards to their limits."
+
+  FOR_ship_repair_yards:0 "Ship Repair Yards"
+  FOR_ship_repair_yards_desc:0 "Battle damage repair determines the fleet's ability to sustain operations. Turn maintenance capabilities into a strategic advantage."
+
+  FOR_airfields_and_factories:0 "Airports and Munitions Factories"
+  FOR_airfields_and_factories_desc:0 "Air superiority is the lifeline for amphibious landings and sea routes. We must simultaneously expand both airport operations and military supply production."
+
+  FOR_wartime_industry_board:0 "Wartime Industrial Committee"
+  FOR_wartime_industry_board_desc:0 "Concentrate resources, unify procurement and distribution, and ensure that critical military supplies are not slowed down by internal strife and factional disputes."
+
+  FOR_munitions_expansion:0 "Military Supply Expansion"
+  FOR_munitions_expansion_desc:0 "Shift Taiwan's machinery towards artillery shells and firearms, preparing sufficient firepower for the crossing and landing."
+
+  FOR_aviation_industry:0 "Aerospace Industry"
+  FOR_aviation_industry_desc:0 "The exiled air force must have a localized production and maintenance system. Use Taiwan's production capacity to reclaim the skies."
+
+  FOR_science_and_facilities:0 "Research and Experimental Facilities"
+  FOR_science_and_facilities_desc:0 "Establish land warfare and aviation experimental facilities on the island, concentrate research efforts, and provide a technological advantage for the counter-offensive."
+
+  FOR_nuclear_effort_in_exile:0 "Exiled Nuclear Program"
+  FOR_nuclear_effort_in_exile_desc:0 "Nuclear energy is not just a weapon, but also a symbol of national revival. Even in exile, we must maintain a technological edge."
+
+  # Army
+  FOR_reorganize_exiled_army:0 "Reorganizing the Exiled Army"
+  FOR_reorganize_exiled_army_desc:0 "The chaos of the retreat needs to be rectified: reorganization, replenishment of personnel, and restoration of discipline."
+
+  FOR_officer_retraining:0 "Officer Retraining"
+  FOR_officer_retraining_desc:0 "Past dogmas are insufficient to deal with youkai. We must cultivate an army capable of winning amphibious landings with new training and tactics."
+
+  FOR_island_defense_network:0 "Island Defense Network"
+  FOR_island_defense_network_desc:0 "Taiwan is our only rear. Construct fortifications and air defenses to prevent the enemy from destroying our bases with surprise attacks."
+
+  FOR_mechanized_core:0 "Mechanized Core"
+  FOR_mechanized_core_desc:0 "The future counter-offensive will not be an infantry charge, but a coordinated effort of armor and mobility. Build an elite core."
+
+  FOR_marine_divisions:0 "Marine Corps Division"
+  FOR_marine_divisions_desc:0 "Counter-offensives must involve landing. Establish dedicated amphibious forces so that landings no longer rely on hastily assembled units."
+
+  FOR_amphibious_training:0 "Amphibious Warfare Training"
+  FOR_amphibious_training_desc:0 "To go home, we must learn to cross the sea and land. Make training a habit, and learn from failures."
+
+  FOR_landing_craft_program:0 "Landing Craft Program"
+  FOR_landing_craft_program_desc:0 "Landing is not a gamble, but an industrial system. Make landing craft a standard capability."
+
+  # Navy
+  FOR_rebuild_the_kido_butai:0 "Rebuilding the Mobile Fleet"
+  FOR_rebuild_the_kido_butai_desc:0 "Without sea control, there is no way home. Rebuild the naval core and restore blue-water operational capabilities."
+
+  FOR_destroyer_program:0 "Destroyer Program"
+  FOR_destroyer_program_desc:0 "Escort and anti-submarine warfare determine our ability to maintain supply lines. Construct a maritime defense line with destroyers as the backbone."
+
+  FOR_naval_air_coordination:0 "Air-Sea Coordination"
+  FOR_naval_air_coordination_desc:0 "The fleet and air force must act like a single, coordinated force. Integrate intelligence, strike, and escort operations."
+
+  FOR_fleet_training_cycle:0 "Fleet Training Cycle"
+  FOR_fleet_training_cycle_desc:0 "Institutionalize training to continuously accumulate experience."
+
+  FOR_battleship_modernization:0 "Modernization of Capital Ships"
+  FOR_battleship_modernization_desc:0 "No matter how times change, a decisive battle may still occur. Let capital ships be the last line of defense."
+
+  FOR_submarine_screen:0 "Submarine Barrier"
+  FOR_submarine_screen_desc:0 "Use submarines for harassment and reconnaissance to weaken the enemy and create an opportunity for a counterattack."
+
+  # Air
+  FOR_rebuild_the_exile_air_force:0 "Rebuild the Exiled Air Force"
+  FOR_rebuild_the_exile_air_force_desc:0 "Evacuated pilots and ground crew are valuable assets. Reorganize the organization and airfield system to restore combat capability."
+
+  FOR_pilot_training_pipeline:0 "Pilot Training System"
+  FOR_pilot_training_pipeline_desc:0 "Pilot losses cannot be quickly compensated for. Establish a training pipeline to ensure a continuous replenishment of the air force."
+
+  FOR_fighter_production_push:0 "Fighter Jet Production Sprint"
+  FOR_fighter_production_push_desc:0 "The air must be seized before landing. Prioritize fighter jets to ensure air superiority and air defense."
+
+  FOR_nav_bomber_wings:0 "Maritime Strike Air Force"
+  FOR_nav_bomber_wings_desc:0 "Suppress enemy fleets and supply lines with air power to create an opening for landing."
+
+  FOR_air_defense_of_taiwan:0 "Taiwan Air Defense"
+  FOR_air_defense_of_taiwan_desc:0 "Protecting airports and industry is protecting the future of the counter-offensive."
+
+  FOR_airborne_recon_and_radar:0 "Aerial Reconnaissance and Radar"
+  FOR_airborne_recon_and_radar_desc:0 "Visibility is the key to victory. Use radar and reconnaissance to pinpoint enemy movements."
+
+  # Reconquest
+  FOR_plan_the_homecoming:0 "Operation Homecoming"
+  FOR_plan_the_homecoming_desc:0 "Political mobilization, fleet, and air force must all be in place. We will retake Tokyo with a meticulous plan."
+
+  FOR_launch_operation_return:0 "Initiating “Operation Homecoming”"
+  FOR_launch_operation_return_desc:0 "The counter-offensive begins. Our goal is not a symbolic raid, but a war to reclaim our homeland."
+
+  FOR_liberate_the_home_islands:0 "Liberate the Main Islands"
+  FOR_liberate_the_home_islands_desc:0 "One state, one port, one air force, one land force. Drive the Youkai from their homeland and let Japan rise again."
+
+  FOR_retake_tokyo_and_restore_the_diet:0 "Reclaim Tokyo, Rebuild Japan"
+  FOR_retake_tokyo_and_restore_the_diet_desc:0 "Tokyo returns to human hands, and the rule of law is restored. We will declare: Humanity has defeated the Youkai."
+
+  # Post-victory
+  FOR_restore_the_capital:0 "Rebuild the Capital"
+  FOR_restore_the_capital_desc:0 "The end of the war is only the beginning. We will relight Tokyo from the ruins."
+
+  FOR_purge_youkai_collaborators:0 "Purge the Accomplices"
+  FOR_purge_youkai_collaborators_desc:0 "Youkai's rule relied not only on claws but also on the betrayal of hearts. Purge the accomplices to rebuild trust."
+
+  FOR_reopen_the_diet:0 "Reopen the Diet"
+  FOR_reopen_the_diet_desc:0 "The extraordinary system of exile must be brought to a halt. The nation must return to a path of sustainable governance."
+
+  FOR_reform_the_imperial_state:0 "Reform the Imperial System"
+  FOR_reform_the_imperial_state_desc:0 "The Showa era grew during exile. With a new system and a new spirit, we must avoid repeating the mistakes of old Japan."
+
+  FOR_demobilize_with_dignity:0 "Orderly Demobilization"
+  FOR_demobilize_with_dignity_desc:0 "Shift the war machine back to peaceful reconstruction to avoid post-victory social collapse."
+
+  FOR_integrate_the_exile_veterans:0 "Settle Exiled Veterans"
+  FOR_integrate_the_exile_veterans_desc:0 "Give those who fought for national restoration a future: jobs, land, and dignity."
+
+  FOR_humanity_triumphant:0 "Humanity's Victory"
+  FOR_humanity_triumphant_desc:0 "Youkai will eventually dissipate, but humanity has learned unity and self-reliance through suffering."
+
+
+
+
+
+
+
+
+  ##################################
+  #################Ideas############
+  ##################################
+
+ FOR_exile_administration:0 "The Exiled Administrative System"
+ FOR_exile_administration_desc:0 "The ministries still exist, but only the remnants of their former glory remain. In borrowed offices, overcrowded military camps, and requisitioned colonial offices, the state continues to issue orders, because to admit silence is to admit death."
+
+ FOR_emperor_in_exile:0 "The Emperor in Exile"
+ FOR_emperor_in_exile_desc:0 "The mainland has fallen, the capital is silent, and the sea lies between the throne and Japan. However, as long as the Emperor remains, refugees and soldiers still possess something that defeat cannot completely take away: a reason to believe the nation is not yet dead."
+
+ FOR_emperor_hardened:0 "The Emperor Through Tribulations"
+ FOR_emperor_hardened_desc:0 "Exile strips away rituals and illusions. Now resting on the throne is a monarch forced to confront hunger, fear, and defeat, responding with forbearance."
+
+ FOR_government_in_exile:0 "Government-in-Exile"
+ FOR_government_in_exile_desc:0 "We no longer issue orders from Tokyo, but the chains of rule have not been broken. Every order signed in exile is a declaration to the world: Japan has not disappeared from history."
+
+ FOR_japanese_diaspora_support:0 "Support for the Japanese Diaspora"
+ FOR_japanese_diaspora_support_desc:0 "Merchants, immigrants, sailors, veterans, and displaced families, scattered overseas, continue to send aid. Some donate money, some send their children, and some can only send a letter promising that Japan is not alone."
+
+ FOR_taiwanese_tensions:0 "Taiwanese Discontent"
+ FOR_taiwanese_tensions_desc:0 "Taiwan has become our refuge, but not everyone living there sees the government-in-exile as a savior. Beneath the surface of order, resentment, weariness, and silent questioning are growing: Who should pay the price for Japan's survival?"
+
+ FOR_land_compromise:0 "Land Compromise"
+ FOR_land_compromise_desc:0 "The old colonial order cannot be faked back to normalcy. The government relinquished land, rights, and interests, in exchange for not loyalty, but time—and now, time is more precious than dignity."
+
+ FOR_martial_law:0 "Martial Law"
+ FOR_martial_law_desc:0 "Curfews, patrols, emergency trials, and military governors forcibly stitched the island together. In exile, freedom was a luxury; survival became the only truly important law."
+
+ FOR_advisory_council:0 "Advisory Meetings"
+ FOR_advisory_council_desc:0 "Bureaucrats, officers, local elites, and civilian representatives sat at the same table, not because they trusted each other, but because if collapse came, everyone would be swallowed up."
+
+ FOR_special_security_bureau:0 "Special Security Bureau"
+ FOR_special_security_bureau_desc:0 "Rumors, spies, defeatists, collaborators, and sympathizers lurked in every port and military camp. The Special Security Bureau existed to ensure the exiled regime did not decay from within."
+
+ FOR_reconstructed_bureaucracy:0 "Rebuilding the Bureaucracy"
+ FOR_reconstructed_bureaucracy_desc:0 "Archives were burned, departments scattered, and officials disappeared during the evacuation. The government machinery had to be reassembled piece by piece—not glorious, but someone had to inventory food, distribute rifles, and keep the lights burning."
+
+ FOR_meiji_spirit_revived:0 "The Meiji Spirit Rekindled"
+ FOR_meiji_spirit_revived_desc:0 "Japan once rebuilt itself under the pressure of a hostile world. Now, in an even darker situation, the exiles rekindled that memory: adaptation, endurance, modernization, and rising again before destruction becomes eternal."
+
+ FOR_unity_in_exile:0 "Unity in Exile"
+ FOR_unity_in_exile_desc:0 "Factional feuds had not truly disappeared, but defeat had silenced them temporarily. Soldiers, officials, immigrants, and refugees now clung to the same fragile truth: if they split, they would perish together."
+
+ # ---------
+ # Industry / Research
+ # ---------
+
+ FOR_logistics_modernization:0 "Logistics Modernization"
+ FOR_logistics_modernization_desc:0 "An exiled army has no room for waste. Every box of supplies, every liter of fuel, every bag of rice must reach the front lines, because failure in logistics means the troops will starve before the battle even begins."
+
+ FOR_wartime_industry_board:0 "Wartime Industrial Committee"
+ FOR_wartime_industry_board_desc:0 "Domestic factories have been lost, either captured, destroyed, or located far beyond our reach. The Wartime Industrial Committee must transform Taiwan into a fortified workshop, ensuring every machine operates in support of the promise of returning to Japan."
+
+ FOR_munitions_drive:0 "Military Supplies Production Movement"
+ FOR_munitions_drive_desc:0 "Public comfort must give way to artillery shells, rifles, uniforms, and engines. The people are told that every sacrifice today could become a bullet fired on the road to the liberation of Japan in the future."
+
+ FOR_aviation_industry:0 "Aerospace Industry"
+ FOR_aviation_industry_desc:0 "The skies over our homeland have been lost, and we cannot afford to lose them again. Engineers and pilots work in makeshift hangars, attempting to rebuild an air force from wreckage, memories, and despair."
+
+ FOR_research_directorate:0 "Research Bureau"
+ FOR_research_directorate_desc:0 "The universities and laboratories of yesteryear are no longer within our control, but not all their scholars are dead. Researchers summoned to exile are ordered to find a way to counter defeat before it provides the final answer."
+
+ FOR_nuclear_project:0 "Imperial Nuclear Program"
+ FOR_nuclear_project_desc:0 "Some weapons are not born of ambition, but of fear. If the old world has already shattered its balance, then Japan must seek a terrifying force capable of reshaping it."
+
+ # ---------
+ # Military
+ # ---------
+
+ FOR_exiled_general_staff:0 "Exiled General Staff"
+ FOR_exiled_general_staff_desc:0 "The General Staff no longer issues orders from the Imperial Center, but spreads out maps on makeshift desks in Taiwan. Every plan begins with the same wound: how to return to that fallen nation?"
+
+ FOR_island_garrison:0 "Island Garrison"
+ FOR_island_garrison_desc:0 "Taiwan is no longer just a rear colony. It is the last wall, the last port, and the last piece of land the Empire can still claim as its future."
+
+ FOR_mechanized_rearmament:0 "Mechanized Rearmament"
+ FOR_mechanized_rearmament_desc:0 "The next war cannot be fought by memory alone. Trucks, armor, engines, and modern organization must replace the broken shadows of the old army remnants."
+
+ FOR_amphibious_preparations:0 "Amphibious Warfare Preparation"
+ FOR_amphibious_preparations_desc:0 "The sea that once saved the government has now become its prison. To return to Japan, the exiles must learn not to cross the ocean as refugees, but to ride the waves as aggressors."
+
+ FOR_shipyard_mobilization:0 "Shipyard Mobilization"
+ FOR_shipyard_mobilization_desc:0 "Every dock was ordered to work. Fishing boats, merchant ship repair yards, civilian shipyards, and naval facilities were all forced to serve the same purpose: rebuilding the fleet that had brought Japan back to its homeland."
+
+ FOR_carrier_revival:0 "Revival of Aircraft Carrier Power"
+ FOR_carrier_revival_desc:0 "Aircraft carriers were once the spearhead of imperial power. Now, their survivors, retrained in exile, are determined to cast the shadow of the rising sun across the sea once more."
+
+ FOR_convoy_war:0 "Escort Operations"
+ FOR_convoy_war_desc:0 "The survival of the exiled regime depended on maritime transport. Protecting the transport convoys was not a secondary task, but the only remaining thread between resistance and famine."
+
+ FOR_fleet_training:0 "Fleet Training"
+ FOR_fleet_training_desc:0 "A fleet that once fled must relearn how to fight. Drills continue day and night, forging discipline from grief, shame, and the sea."
+
+ FOR_capital_ship_focus:0 "Capital Ships' Importance"
+ FOR_capital_ship_focus_desc:0 "Some officers still believe that a nation without large warships cannot call itself an empire. Whether as a symbol or a weapon, capital ships represent a promise: Japan has not accepted its insignificant fate."
+
+ FOR_exile_air_wings:0 "Exiled Air Force"
+ FOR_exile_air_wings_desc:0 "Pilots who escaped the fall of Japan now take to the skies in planes bearing familiar markings on foreign soil. Their aircraft are few in number, but each sortie tells the refugees below: the empire still has wings."
+
+ FOR_pilot_training:0 "Pilot Training"
+ FOR_pilot_training_desc:0 "There are too few surviving experienced pilots; there is no room for waste. Young pilots were trained at a brutal pace, because Japan's skies wouldn't be reclaimed by courage alone."
+
+ FOR_naval_strike_focus:0 "Emphasis on Anti-Ship Attacks"
+ FOR_naval_strike_focus_desc:0 "To reach the homeland, the enemy fleet had to be destroyed before they could crush us. We trained pilots to hunt down warships, as if Japan's future rested on every single torpedo."
+
+ FOR_radar_network:0 "Radar Network"
+ FOR_radar_network_desc:0 "The enemy must never again approach undetected. Radar stations rose like watchtowers across the island, guarding the skies and seas for a nation that had learned the cost of surprise attacks."
+
+ # ---------
+ # Reconquest / Victory
+ # ---------
+
+ FOR_homecoming_plan:0 "The Homecoming Plan"
+ FOR_homecoming_plan_desc:0 "It was called a plan, but for many, it was closer to prayer. Every map of the homeland was marked, modified, and studied repeatedly, all in preparation for the day exile would become homecoming."
+
+ FOR_victory_over_youkai:0 "Defeating Youkai"
+ FOR_victory_over_youkai_desc:0 "Beyond all predictions, after all humiliations, before the nightmare of the swallowing of the homeland, the exiles ultimately persevered. Defeating Youkai was not merely a military success; it proved that Japan could be severely damaged, but never erased."
+
+ FOR_restored_capital:0 "Liberation of the Imperial Capital"
+ FOR_restored_capital_desc:0 "The Imperial Capital awakens once more under the rising sun. Its streets were scarred, its people still reeling from the trauma, and its institutions hollowed out by occupation. But the return of the government had transformed the ruins into a new beginning."
+
+ FOR_showa_restoration:0 "Showa Restoration"
+ FOR_showa_restoration_desc:0 "The old order could not return unchanged, but the empire could not abandon the throne that had accompanied it through exile. The Showa Restoration wove a new covenant of survival, reform, and imperial legitimacy into a vow dedicated to this shattered nation."

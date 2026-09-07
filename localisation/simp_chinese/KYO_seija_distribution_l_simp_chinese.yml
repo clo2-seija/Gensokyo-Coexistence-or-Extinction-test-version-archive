@@ -1,0 +1,231 @@
+﻿l_simp_chinese:
+
+  # ===========================================================================
+  # 正邪路线——浩劫后的重建配给
+  #
+  # 为兼容现有决议脚本，保留原有 localization key 与变量名称：
+  # common_youkai  → 灾民安置与医疗
+  # human          → 粮食生产与民生
+  # revolutionary  → 工坊复产与建设
+  # opposition     → 交通运输与防卫
+  #
+  # 画面上不再把种族与政治立场混为四类人群，而是呈现四条重建生命线。
+  # ===========================================================================
+
+  KYO_reconstruction_command:0 "废墟重生指挥部"
+  KYO_reconstruction_command_desc:0 "革命终结了旧政权，却没有让倒塌的房屋自行立起，也没有让空粮仓重新装满。内战留下伤员、流民、荒废的田地、熄灭的工坊与被炮火截断的道路。幻想乡虽然活了下来，却还没有真正从浩劫中归来。\n\n正邪把重建指挥部设在一座没有完整屋顶的旧厅堂里。这里不安排庆功宴，只清点药品、种粮、木料、工具、车辆与还能工作的双手。每一份物资都必须被送往最需要的地方，让避难所出现灯火，让田地重新抽芽，让炉火再次燃起，也让第一辆补给车能够穿过废墟。\n\n她已经掀翻旧世界。现在，她要证明自己也能从碎片中建起一个新的幻想乡。"
+
+  # ---------------------------------------------------------------------------
+  # 第一条生命线：灾民安置与医疗
+  # ---------------------------------------------------------------------------
+
+  KYO_common_youkai_satisfaction_0:0 "安置救护：无处可归"
+  KYO_common_youkai_satisfaction_1:0 "安置救护：风雨中的帐篷"
+  KYO_common_youkai_satisfaction_2:0 "安置救护：勉强容身"
+  KYO_common_youkai_satisfaction_3:0 "安置救护：灯火重现"
+  KYO_common_youkai_satisfaction_4:0 "安置救护：新居落成"
+  KYO_common_youkai_satisfaction_5:0 "安置救护：家园重生"
+
+  KYO_common_youkai_satisfaction_0_desc:0 "临时住处已经无法容纳不断抵达的灾民，伤员得不到救治，失去家园的人类与妖怪开始离开配给区，自行寻找活路。"
+  KYO_common_youkai_satisfaction_1_desc:0 "破布、帐篷与残墙勉强挡住夜风，但药品、床位和干净饮水都严重不足。许多人活过了战争，却未必撑得过这个季节。"
+  KYO_common_youkai_satisfaction_2_desc:0 "最基本的住处、饮水与急救已经得到保障。灾民仍挤在临时安置点里，但至少不必每天担心被赶回废墟。"
+  KYO_common_youkai_satisfaction_3_desc:0 "救护站开始稳定运转，临时住所也逐渐替换为能够过冬的房屋。夜幕降临时，一些曾经漆黑的聚落重新亮起灯火。"
+  KYO_common_youkai_satisfaction_4_desc:0 "受损聚落陆续完成修缮，长期伤员得到照料，流离者也被安置进新的社区。重建终于不再只是维持生命。"
+  KYO_common_youkai_satisfaction_5_desc:0 "曾经挤满伤员与难民的营地已经变成新的街巷。不同来历的幸存者在这里安家，共同组成从废墟中诞生的聚落。"
+
+  # ---------------------------------------------------------------------------
+  # 第二条生命线：粮食生产与民生
+  # ---------------------------------------------------------------------------
+
+  KYO_human_satisfaction_0:0 "粮食民生：粮仓见底"
+  KYO_human_satisfaction_1:0 "粮食民生：饥饿蔓延"
+  KYO_human_satisfaction_2:0 "粮食民生：最低口粮"
+  KYO_human_satisfaction_3:0 "粮食民生：炊烟复起"
+  KYO_human_satisfaction_4:0 "粮食民生：仓廪渐实"
+  KYO_human_satisfaction_5:0 "粮食民生：丰饶新生"
+
+  KYO_human_satisfaction_0_desc:0 "粮仓已经空了，荒废田地无人照料，渔获与山林采集也无法填补缺口。饥饿正把幸存者重新推向争抢与逃亡。"
+  KYO_human_satisfaction_1_desc:0 "配给时有时无，种粮被迫拿来充饥。农户、渔民与采集者仍在劳动，但所有人都知道下一次断粮可能就在明天。"
+  KYO_human_satisfaction_2_desc:0 "最低限度的口粮得到保障，田地也重新有人耕作。幻想乡还无法吃饱，却已经能够避免最坏的饥荒。"
+  KYO_human_satisfaction_3_desc:0 "农田、水渠、磨坊与公共灶台逐步恢复。清晨再次有人升火做饭，炊烟成为废墟间最先回来的日常景象。"
+  KYO_human_satisfaction_4_desc:0 "粮食生产已经足以维持稳定配给，并为下一季留下储备。人们终于可以考虑明年，而不只是计算今晚还有多少米。"
+  KYO_human_satisfaction_5_desc:0 "新的粮食网络连接农田、山林、河流与聚落。仓库中出现余粮，公共食堂不再只供应稀粥，饥荒正成为逐渐远去的记忆。"
+
+  # ---------------------------------------------------------------------------
+  # 第三条生命线：工坊复产与建设
+  # ---------------------------------------------------------------------------
+
+  KYO_revolutionary_satisfaction_0:0 "工坊建设：百业停摆"
+  KYO_revolutionary_satisfaction_1:0 "工坊建设：残械苦撑"
+  KYO_revolutionary_satisfaction_2:0 "工坊建设：修补维生"
+  KYO_revolutionary_satisfaction_3:0 "工坊建设：炉火再燃"
+  KYO_revolutionary_satisfaction_4:0 "工坊建设：重建加速"
+  KYO_revolutionary_satisfaction_5:0 "工坊建设：新城初成"
+
+  KYO_revolutionary_satisfaction_0_desc:0 "工具遗失，机台损毁，能够修缮房屋与农具的工坊大多已经停摆。废墟堆在那里，没有足够的人手与器械将其清走。"
+  KYO_revolutionary_satisfaction_1_desc:0 "工匠和重建队依靠回收零件勉强开工，每修好一件工具都可能拆坏另外两件。工程不断延期，疲惫正在吞噬仅存的技术人员。"
+  KYO_revolutionary_satisfaction_2_desc:0 "基础工具与建筑材料得到配给，工坊能够修理农具、车辆和临时住房。幻想乡开始停止恶化，却还谈不上真正恢复。"
+  KYO_revolutionary_satisfaction_3_desc:0 "熄灭已久的炉火重新燃起，木工、锻造、河童机械与付丧神工坊陆续复产。废墟第一次以肉眼可见的速度减少。"
+  KYO_revolutionary_satisfaction_4_desc:0 "各地建设队与生产委员会已经形成稳定协作，住房、仓库与公共设施接连落成。重建不再依赖少数人的临时拼凑。"
+  KYO_revolutionary_satisfaction_5_desc:0 "幻想乡已经能够制造新设备，而不只是拆解旧残骸。新的工坊、街道与公共建筑从战场上升起，宣告这个社会开始创造自己的未来。"
+
+  # ---------------------------------------------------------------------------
+  # 第四条生命线：交通运输与防卫
+  # ---------------------------------------------------------------------------
+
+  KYO_opposition_satisfaction_0:0 "运输防卫：道路断绝"
+  KYO_opposition_satisfaction_1:0 "运输防卫：孤路难行"
+  KYO_opposition_satisfaction_2:0 "运输防卫：干线维持"
+  KYO_opposition_satisfaction_3:0 "运输防卫：路网复苏"
+  KYO_opposition_satisfaction_4:0 "运输防卫：四方相连"
+  KYO_opposition_satisfaction_5:0 "运输防卫：山河重联"
+
+  KYO_opposition_satisfaction_0_desc:0 "桥梁倒塌，道路被弹坑与瓦砾截断，零散武装和盗匪开始袭击仓库。物资即使存在，也无法安全送到等待的人手里。"
+  KYO_opposition_satisfaction_1_desc:0 "少数运输队仍在冒险通行，但车辆、燃料与护卫都远远不足。偏远聚落只能等待一支未必会抵达的车队。"
+  KYO_opposition_satisfaction_2_desc:0 "主要粮道、仓库和桥梁得到最低保护，重要物资可以在几个核心聚落之间流动。外围地区仍处在断断续续的孤立中。"
+  KYO_opposition_satisfaction_3_desc:0 "地方运输队、防卫队与道路修缮组开始统一调度。过去必须绕行数日的路程，如今终于能够再次通车。"
+  KYO_opposition_satisfaction_4_desc:0 "稳定路网将粮仓、工坊、医院与聚落连接起来，地方防卫也足以阻止掠夺者破坏重建成果。幻想乡重新成为一个整体。"
+  KYO_opposition_satisfaction_5_desc:0 "从山间小路到跨河桥梁，完整的运输与防卫网络贯穿幻想乡。无论灾害还是战争再次来临，各地都不必独自在黑暗中等待。"
+
+  # ---------------------------------------------------------------------------
+  # 长期危机
+  # ---------------------------------------------------------------------------
+
+  KYO_distribution_black_market:0 "救命物资流入暗渠"
+  KYO_distribution_black_market_desc:0 "配给线的漏洞正在被饥饿、投机与绝望扩大。每一箱消失的物资，都会让某处救护站、粮仓或建设队陷入停顿。"
+
+  KYO_distribution_local_riots:0 "仓门外的饥饿骚动"
+  KYO_distribution_local_riots_desc:0 "长期得不到支援的人群已经不愿继续等待。她们聚集在仓库和调度站外，要求重建成果不能永远只存在于报告里。"
+
+  KYO_distribution_cadre_exhaustion:0 "调度者倒在账册旁"
+  KYO_distribution_cadre_exhaustion_desc:0 "负责登记、运输与协调的人员长期没有休息。若没有更多人手与更清楚的制度，重建体系可能先被自己的重量压垮。"
+
+  # ---------------------------------------------------------------------------
+  # 决议类别与资源操作
+  # ---------------------------------------------------------------------------
+
+  KYO_seija_distribution_category:0 "从废墟中重建幻想乡"
+  KYO_seija_distribution_category_desc:0 "胜利只替幻想乡争取到重新开始的机会。如今，正邪必须把有限物资投入四条重建生命线：安置伤员与流离者、恢复粮食生产、重启工坊建设，以及打通运输与防卫网络。任何一条生命线崩溃，都会拖住其余三条；但现有库存又不足以让所有地方同时恢复。\n\n当前总物资：[?KYO_seija_supplies_total|0]\n已投入物资：[?KYO_seija_supplies_allocated|0]\n安置与医疗：[?KYO_common_youkai_supply|0]\n粮食与民生：[?KYO_human_supply|0]\n工坊与建设：[?KYO_revolutionary_supply|0]\n运输与防卫：[?KYO_opposition_supply|0]\n\n每条生命线的投入会在每周刷新为对应重建状态。任何项目处于0至1级时，每月都更容易爆发恶性事件。"
+
+  KYO_seija_distribution_status:0 "查看四条重建生命线"
+  KYO_seija_distribution_status_desc:0 "当前总物资：[?KYO_seija_supplies_total|0]\n已投入物资：[?KYO_seija_supplies_allocated|0]\n安置与医疗：[?KYO_common_youkai_supply|0]\n粮食与民生：[?KYO_human_supply|0]\n工坊与建设：[?KYO_revolutionary_supply|0]\n运输与防卫：[?KYO_opposition_supply|0]"
+
+  KYO_seija_add_supply_common_youkai:0 "向安置与医疗投入1份物资"
+  KYO_seija_remove_supply_common_youkai:0 "从安置与医疗调回1份物资"
+
+  KYO_seija_add_supply_humans:0 "向粮食与民生投入1份物资"
+  KYO_seija_remove_supply_humans:0 "从粮食与民生调回1份物资"
+
+  KYO_seija_add_supply_revolutionaries:0 "向工坊与建设投入1份物资"
+  KYO_seija_remove_supply_revolutionaries:0 "从工坊与建设调回1份物资"
+
+  KYO_seija_add_supply_opposition:0 "向运输与防卫投入1份物资"
+  KYO_seija_remove_supply_opposition:0 "从运输与防卫调回1份物资"
+
+  # ---------------------------------------------------------------------------
+  # 配给系统开场
+  # ---------------------------------------------------------------------------
+
+  kyo_seija_distribution.1.t:0 "先让明天到来"
+  kyo_seija_distribution.1.d:0 "重建指挥部的墙上挂着四张地图。第一张标记伤员、失去家园的人和仍在漏雨的临时营地；第二张画着荒废田地、空粮仓与重新升火的公共灶台；第三张记录可以修复的工坊、工具和建筑材料；最后一张则布满断桥、危险道路与需要护送的运输线。\n\n所有标记都在要求物资，而且都不能无限等待。没有住处与医疗，幸存者撑不过眼前；没有粮食，整个社会会在下一季倒下；没有工具，重建永远只能停留在清点废墟；没有道路与防卫，仓库里的东西就送不到任何地方。\n\n正邪站在地图前，把第一批物资拆成四份。数量少得令人发笑，可废墟中的新世界只能从这里开始。"
+  kyo_seija_distribution.1.a:0 "一份一份分下去，把幻想乡从废墟里拉回来。"
+
+  # ---------------------------------------------------------------------------
+  # 两组生命线之间的调度选项
+  # ---------------------------------------------------------------------------
+
+  kyo_seija_distribution.common_to_humans.a:0 "先保住田地、粮仓与灶台。"
+  kyo_seija_distribution.humans_to_common.a:0 "伤员与无家者不能再等。"
+  kyo_seija_distribution.revolutionaries_to_opposition.a:0 "先让物资走得出去，并守住每一条生命线。"
+  kyo_seija_distribution.opposition_to_revolutionaries.a:0 "没有工具与炉火，道路迟早也会再次断绝。"
+
+  # ---------------------------------------------------------------------------
+  # 安置医疗与粮食民生之间的风味事件
+  # ---------------------------------------------------------------------------
+
+  kyo_seija_distribution.10.t:0 "药箱旁的种粮"
+  kyo_seija_distribution.10.d:0 "仓库里找出了最后一批能够安全越冬的种粮，旁边则摆着救护站急需的药品和干净布料。运输车辆只够跑一趟：送往农田，可以保住下一季收成；送往安置区，则能救下眼前正在恶化的伤员。"
+
+  kyo_seija_distribution.11.t:0 "暴雨前的最后一批木料"
+  kyo_seija_distribution.11.d:0 "雨季将近，安置营地需要木料加固屋顶，粮食委员会也急着修补漏水的谷仓和灌溉设施。同一批木材能够让一边熬过风雨，却只能让另一边继续拿破布遮挡裂口。"
+
+  kyo_seija_distribution.12.t:0 "先安家，还是先复耕"
+  kyo_seija_distribution.12.d:0 "一批幸存者抵达荒废村落。她们可以先修缮住处，让老人、幼童与伤员留下；也可以立即整理田地，在下一次收获前抢回宝贵时间。无论选择哪一边，另一项工作都会被推迟。"
+
+  kyo_seija_distribution.16.t:0 "病床与公共灶台"
+  kyo_seija_distribution.16.d:0 "入夜后气温骤降。救护站要求把燃料留给病房，公共灶台则警告若不能继续烧火，几个聚落明天便领不到热食。正邪面对的不是谁更值得，而是哪一种损失更不能承受。"
+
+  # ---------------------------------------------------------------------------
+  # 工坊建设与运输防卫之间的风味事件
+  # ---------------------------------------------------------------------------
+
+  kyo_seija_distribution.13.t:0 "唯一还能发动的引擎"
+  kyo_seija_distribution.13.d:0 "河童修好了一具旧引擎。工坊希望把它改造成发电机，恢复工具与建筑材料的生产；运输队则想把它装上卡车，让偏远聚落重新收到补给。这具引擎无法同时待在两个地方。"
+
+  kyo_seija_distribution.14.t:0 "桥梁还是厂房"
+  kyo_seija_distribution.14.d:0 "回收队从废墟中拖出一批完整钢梁。建设委员会计划用它们支撑即将复工的厂房，运输队却指出北方桥梁随时可能垮塌。工坊能够制造更多物资，桥梁则决定这些物资能否送到远方。"
+
+  kyo_seija_distribution.15.t:0 "夜路上的灯"
+  kyo_seija_distribution.15.d:0 "仅存的灯具与燃料可以交给工坊，让重建队在夜间继续施工；也可以配给运输护卫，照亮那些经常遭到袭击的山路。炉火与车灯都象征恢复，但库存只容许一处先亮起来。"
+
+  kyo_seija_distribution.17.t:0 "废铁该去哪里"
+  kyo_seija_distribution.17.d:0 "付丧神与工匠从战场上回收了大量废铁。建设队能够把它们重新锻成工具、管线与建筑支架；地方防卫队则需要零件修理车辆、路障与护送装备。每一块残骸都可能成为新生活的一部分，也可能成为保护新生活的盾。"
+
+  # ---------------------------------------------------------------------------
+  # 恶性事件
+  # ---------------------------------------------------------------------------
+
+  kyo_seija_distribution.20.t:0 "救命物资流入暗渠"
+  kyo_seija_distribution.20.d:0 "几箱药品、口粮与工具没有出现在任何接收记录中，数日后却在秘密集市上被高价出售。有人靠灾难牟利，也有人只是因为官方配给永远轮不到自己，才不得不用仅剩的财物换取生存。黑市正在吞噬重建体系，也暴露出它尚未照顾到的裂缝。"
+  kyo_seija_distribution.20.a:0 "先追查大宗倒卖，暂时容忍求生者之间的交换。"
+  kyo_seija_distribution.20.b:0 "抽调干部与物资，把失灵的配给线重新接起来。"
+  kyo_seija_distribution.20.c:0 "全面清查仓库与市场，先止住物资外流。"
+
+  kyo_seija_distribution.21.t:0 "仓门外的人群"
+  kyo_seija_distribution.21.d:0 "长期得不到支援的幸存者聚集在仓库外。她们没有统一旗帜，也没有完整纲领，只把空碗、坏掉的工具和染血绷带放到门前，一遍遍追问：战争已经结束，为什么活下来仍然这么困难？若指挥部无法给出答案，骚动很快就会变成冲撞。"
+  kyo_seija_distribution.21.a:0 "让当地先从现有仓储中拆借物资。"
+  kyo_seija_distribution.21.b:0 "派重建干部带着补给赶过去。"
+  kyo_seija_distribution.21.c:0 "封锁仓门，先阻止局势彻底失控。"
+
+  kyo_seija_distribution.22.t:0 "有人倒在账册旁"
+  kyo_seija_distribution.22.d:0 "负责登记与调度的干部连续数周没有完整睡过一觉。白天，她们清点永远不够的库存；夜里，她们修改被道路、天气和争执打乱的计划。清晨到来时，一名调度员终于倒在堆满申请表的桌边。若仍把每一次缺口都压在人力上，重建指挥部迟早会先于幻想乡崩溃。"
+  kyo_seija_distribution.22.a:0 "让现有人员再撑过这一轮。"
+  kyo_seija_distribution.22.b:0 "抽调更多人手，重编整个调度体系。"
+  kyo_seija_distribution.22.c:0 "暂停次要工程，先把混乱的账目理清。"
+
+
+
+
+
+ KYO_seija_mirror_of_the_odd:0 "异类的照妖镜"
+ KYO_seija_watched_revolutionary:0 "被监督的革命者"
+ KYO_seija_decisive_reconstruction:0 "废墟上的果断者"
+ KYO_seija_builder_after_reversal:0 "颠倒之后的建设者"
+ KYO_nue_social_mirror:0 "社会边缘的镜子"
+ KYO_koishi_unconscious_trial:0 "无意识审判"
+ KYO_flandre_broken_blood:0 "破碎血名"
+ KYO_kogasa_worksite_armorer:0 "伞匠工地协调"
+
+
+
+
+ KYO_seija_nightmare_fuel:"恐惧的控制者"
+
+ KYO_seija_the_destoryer:0 "秩序毁灭者"
+ 
+ KYO_seija_the_great_one:0 "伟大的颠倒者"
+ 
+ KYO_seija_the_child_from_the_moon:0 "月下之子"
+
+ KYO_seija_the_losted_one:0 "地上的弃子"
+
+ KYO_seija_the_mercy_one:0 "充满慈悲者"
+
+ KYO_seija_the_topest_man:0 "最高指挥领袖"
+
+ KYO_seija_the_order_himself:0 "秩序本身"
+
+
+ KYO_seija_the_enlightened_one:0 "开明者"
+
+

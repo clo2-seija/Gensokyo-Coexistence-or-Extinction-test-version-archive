@@ -1,0 +1,345 @@
+﻿l_english:
+
+  kyo_human_commander:0 "Human Officer"
+  kyo_human_commander_desc:0 ""
+
+  kyo_fairy_swarm_leader:0 "Fairy Swarm Leader"
+  kyo_fairy_swarm_leader_desc:0 "Scattered, but never routed; they move as though at play."
+
+  kyo_oni_breaker:0 "Oni King"
+  kyo_oni_breaker_desc:0 "Commands like thunder; charges like a rising tide."
+
+  kyo_tengu_rapid_ops:0 "Tengu"
+  kyo_tengu_rapid_ops_desc:0 "Every gust carries intelligence."
+
+  kyo_kappa_engineer:0 "Kappa"
+  kyo_kappa_engineer_desc:0 "The very idea of an engineer."
+
+  kyo_yaksha_predator:0 "Youkai Beast"
+  kyo_yaksha_predator_desc:0 "A youkai in beast form."
+
+  kyo_tsukumogami_attunement:0 "Tsukumogami"
+  kyo_tsukumogami_attunement_desc:0 "When a tool has a heart, it answers the hand more readily."
+
+  kyo_ghost_coolheaded:0 "Ghost"
+  kyo_ghost_coolheaded_desc:0 "Unshaken and unconfused."
+
+  kyo_lunar_rabbit_tactics:0 "Moon Rabbit"
+  kyo_lunar_rabbit_tactics_desc:0 "Waves that pass from battlefield to battlefield."
+
+  kyo_vampire_overlord:0 "Vampire Lord"
+  kyo_vampire_overlord_desc:0 "The aristocracy of the world."
+
+  kyo_boundary_savant:0 "Youkai of Boundaries"
+  kyo_boundary_savant_desc:0 "Master of space."
+
+
+
+  kyo_loyal_scarlet:0 "Scarlet Devil Mansion Loyalist"
+  kyo_loyal_scarlet_desc:0 "By Remilia's command."
+
+  kyo_loyal_yakumo:0 "Retainer of the Yakumo Family"
+  kyo_loyal_yakumo_desc:0 ""
+
+  kyo_loyal_myouren:0 "Defender of Myouren Temple"
+  kyo_loyal_myouren_desc:0 ""
+
+  kyo_loyal_eientei:0 "Eientei Loyalist"
+  kyo_loyal_eientei_desc:0 ""
+
+  kyo_loyal_shrinedomain:0 "Under Hakurei Protection"
+  kyo_loyal_shrinedomain_desc:0 ""
+
+  kyo_loyal_tenguclan:0 "Loyalist of Tengu Society"
+  kyo_loyal_tenguclan_desc:0 ""
+
+  kyo_loyal_grassroots:0 "Grassroots Youkai"
+  kyo_loyal_grassroots_desc:0 "."
+
+  kyo_loyal_netherhouse:0 "Retainer of Hakugyokurou"
+  kyo_loyal_netherhouse_desc:0 "The snowy garden lies still as cherry blossoms fall."
+
+  kyo_loyal_chireiden:0 "Loyalist of the Komeiji Household"
+  kyo_loyal_chireiden_desc:0 "Mind-reading is a tool, not a game; underground silence governs the clamour above."
+
+  kyo_loyal_forest_of_magic:0 "Resident of the Forest of Magic"
+  kyo_loyal_forest_of_magic_desc:0 ""
+
+  kyo_loyal_lunar_capital:0 "Emissary of the Lunar Capital"
+  kyo_loyal_lunar_capital_desc:0 ""
+
+  kyo_loyal_beastrealm:0 "Three Families of the Animal Realm"
+  kyo_loyal_beastrealm_desc:0 "Fang, horn, and shell each hold a domain; together, they turn divided spoils into order."
+
+  kyo_loyal_gouyoku_alliance:0 "Gouyoku Alliance"
+  kyo_loyal_gouyoku_alliance_desc:0 "Desire is no sin. It is an engine."
+
+  kyo_loyal_kiketsu_family:0 "Kiketsu Family"
+  kyo_loyal_kiketsu_family_desc:0 "They treat the escape route as the front door."
+
+  kyo_loyal_keiga_family:0 "Keiga Family"
+  kyo_loyal_keiga_family_desc:0 "They believe violence is justice."
+
+  kyo_loyal_backdoor_coterie:0 "Disciples of the Back Door"
+  kyo_loyal_backdoor_coterie_desc:0 ""
+
+  kyo_loyal_human_village:0 "Human Village Self-Government Association"
+  kyo_loyal_human_village_desc:0 ""
+
+  kyo_loyal_oni_old_capital:0 "Oni Kings' Sake Society"
+  kyo_loyal_oni_old_capital_desc:0 "A sake cup can seal an alliance."
+
+  kyo_loyal_fairy_freecompany:0 "Fairy Free Company"
+  kyo_loyal_fairy_freecompany_desc:0 ""
+
+  kyo_loyal_moriyashrine:0 "Moriya Worship Association"
+  kyo_loyal_moriyashrine_desc:0 "They believe in miracles."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  perfect_and_elegant_maid:"Perfect and Elegant Maid"
+
+  perfect_and_elegant_maid_2:"Perfect Maid"
+
+  chinese_girl:"Chinese Girl"
+
+  chinese_girl_2:"Gatekeeper"
+
+  the_unmoving_great_library:"The Unmoving Great Library"
+
+  the_unmoving_great_library_2:"Keeper of Knowledge"
+
+  monster_working_in_a_dusty_library:"Devil of the Dusty Library"
+
+  monster_working_in_a_dusty_library_2:"Devil of the Dusty Library"
+
+	sister_of_the_devil:"Sister of the Devil"
+
+  sister_of_the_devil_2:"Calamity in the Basement"
+
+
+  eternally_young_scarlet_moon_advisor:"Eternally Young Scarlet Moon"
+  the_counterattacking_amanojaku_advisor:0 "The Counterattacking Amanojaku"
+  the_great_sealed_magician_advisor:0 "The Great Sealed Magician"
+  youkai_of_boundaries_advisor:0 "Youkai of Boundaries"
+  the_one_armed_horned_sennin:0 "The One-Armed, Horned Hermit"
+  the_ultimate_absolute_secret_god:0 "The Ultimate, Absolute Secret God"
+  black_cat_of_bad_omens:0 "Black Cat of Bad Omens"
+  shikigami_of_the_youkai_of_boundaries:0 "Shikigami of the Youkai of Boundaries"
+  brain_of_the_moon:0 "Brain of the Moon"
+  eternal_and_momentary_inmate:0 "Prisoner of Eternity and the Instantaneous"
+  traditional_fantastic_reporter:0 "Traditional Reporter of Fantasy"
+  delusionary_reporter:0 "Thoughtography Reporter"
+  fierce_wolf_tengu_of_the_mountain:0 "Fierce Wolf Tengu of the Mountain"
+  chief_of_the_crow_tengu:0 "Chief of the Crow Tengu"
+  ice_fairy:0 "Ice Fairy"
+  the_unidentified_fantastic_flying_girl:0 "The Unidentified Fantastic Flying Girl"
+  ghostly_girl_in_the_netherworld_tower:0 "Ghostly Girl in the Netherworld Tower"
+  half_phantom_gardener:0 "Half-Human, Half-Phantom Gardener"
+  goddess_who_invites_unfortunate_slips_of_the_tongue:0 "Goddess Who Invites Unfortunate Slips of the Tongue"
+  supreme_judge_of_paradise:0 "Supreme Judge of Paradise"
+  wicked_hermit:0 "Evil Immortal"
+  great_centipede_of_the_rainbow_dragon_cave:0 "Great Centipede of the Rainbow Dragon Cave"
+  butterfly_of_the_land_of_the_eternal_night:0 "Butterfly of the Land of Eternal Night"
+  tsuchigumo_of_the_dark_cave:0 "Tsuchigumo of the Dark Cave"
+  youkai_of_the_dusk:0 "Youkai of the Dusk"
+  little_bug_of_the_night:0 "Little Bug of the Night"
+  book_reading_youkai:0 "Book-Reading Youkai"
+  rokurokubi_horror:0 "Rokurokubi Horror"
+  hells_checkpoint_guard:0 "Hell's Checkpoint Guard"
+  night_sparrow:0 "Night Sparrow"
+  super_youkai_warhead:0 "Super Youkai Warhead"
+  girl_of_the_border_between_dream_and_reality:0 "Girl at the Boundary of Dream and Reality"
+  girl_of_the_secret_sealing_club:0 "Girl of the Secret Sealing Club"
+  the_girl_even_the_vengeful_spirits_fear:0 "The Girl Even the Vengeful Spirits Fear"
+  ravenous_beast:0 "Ravenous Beast"
+  white_rabbit_of_inaba:0 "White Rabbit of Inaba"
+  disciple_of_bishamonten:0 "Disciple of Bishamonten"
+  the_cheery_forgotten_umbrella:0 "The Cheery Forgotten Umbrella"
+  hell_fairy:0 "Fairy of Hell"
+  hells_wheelbarrow:0 "Hell's Wheelbarrow"
+  jealousy_of_the_kind_and_lovely_earth_spirits:0 "Jealousy of the Kind and Lovely Earth Spirits"
+  hells_solar_power:0 "Hell's Solar Power"
+  celestial_of_scarlet_perception:0 "Celestial of Scarlet Perception"
+  shrine_maiden_of_paradise:0 "Shrine Maiden of Paradise"
+  matriarch_of_the_kiketsu_family:0 "Matriarch of the Kiketsu Family"
+  ordinary_magician:0 "Ordinary Magician"
+  thunder_beat_tsukumogami:0 "Thunderous Beat Tsukumogami"
+  bamboo_forests_werewolf:0 "Werewolf of the Bamboo Forest"
+  freshwater_mermaid:0 "Freshwater Mermaid"
+  rainbow_colored_trader:0 "Rainbow-Colored Merchant"
+  ancient_shikaisen:0 "Ancient Shikaisen"
+  lunatic_moon_rabbit:0 "Lunatic Moon Rabbit"
+  tsukumogami_of_an_aging_biwa:0 "Tsukumogami of an Aging Biwa"
+  half_beast_of_knowledge_and_history:0 "Half-Beast of Knowledge and History"
+  kuda_gitsune:0 "Kuda-gitsune"
+  forgathering_dream_illusion_and_pandemonium:0 "Forgathering the Dreams and Illusions, and Pandemonium"
+  guide_of_the_sanzu_no_kawa:0 "Guide of the Sanzu River"
+  echoing_sutra_chant:0 "Echoing Sutra Chant"
+  descendant_of_the_kobito:0 "Descendant of the Inchlings"
+  the_avatar_of_mountains_and_lakes:0 "Avatar of Mountains and Lakes"
+
+  poltergeist_keyboardist:0 "Poltergeist Keyboardist"
+  poltergeist_trumpeter:0 "Poltergeist Trumpeter"
+  poltergeist_violinist:0 "Poltergeist Violinist"
+
+  yamawaro_of_the_mountain:0 "Business Youkai of the Mountain's Recesses"
+  the_closed_eye_of_love:0 "Koishi's Closed Third Eye"
+  thundering_vengeful_spirit:0 "Thundering Vengeful Spirit"
+  phantom_girl:0 "Phantom Girl"
+  the_nameless_existence:0 "The Nameless Existence"
+  jizo_who_can_be_counted_on:0 "Jizo Who Can Be Counted On"
+  dancing_duo_in_the_back_door_satono:0 "Dancing Duo of the Land of the Back Door (Satono)"
+  dancing_duo_in_the_back_door_mai:0 "Dancing Duo of the Land of the Back Door (Mai)"
+  captain_of_the_ghost_ship:0 "Captain of the Ghost Ship"
+  the_big_wheel_having_guarded_and_been_guarded:0 "The Great Wheel, Having Guarded and Been Guarded"
+  tsukumogami_of_a_koto:0 "Tsukumogami of a Koto"
+  goddess_of_misfortune:0 "Goddess of Misfortune"
+  treasure_hunting_mouse:0 "Treasure-Hunting Mouse"
+  lucky_cat:0 "Lucky Cat"
+  goddess_of_falling_leaves:0 "Goddess of Falling Leaves"
+  lunarian_princess_who_connects_sea_and_mountain:0 "Lunarian Princess Who Connects Sea and Mountain"
+  vital_point_of_the_brocaded_capital:0 "Vital Point of the Brocaded Capital"
+  oarfish_messenger_of_the_dragon_palace:0 "Oarfish Messenger of the Dragon Palace"
+  the_great_fairy:0 "The Great Fairy"
+  komainu_who_guards_shrines:0 "Komainu Who Guards Shrines"
+  goddess_of_harvest:0 "Goddess of Harvest"
+  ibaraki_douji_unmasked:0 "Ibaraki-douji Unmasked"
+  fearsome_oni_with_superhuman_strength:0 "Oni of Monstrous Strength"
+  the_taoist_saint:0 "The Taoist Saint"
+  goddess_of_sculptures:0 "Goddess of Sculptures"
+  black_horse_of_the_warrior_spirit:0 "Black Horse of the Warrior Spirit"
+  flower_master_of_the_four_seasons:0 "Flower Master of the Four Seasons"
+  highest_of_the_native_gods:0 "The Highest of the Native Gods"
+  jiangshi_of_the_ancient_tomb:0 "Jiangshi of the Ancient Tomb"
+  the_menreiki:0 "The Menreiki"
+  seven_colored_puppeteer:0 "Seven-Colored Puppeteer"
+  undying_phoenix:0 "Undying Phoenix"
+
+  sunlight_fairy:0 "Sunlight Fairy"
+  moonlight_fairy:0 "Moonlight Fairy"
+  starlight_fairy:0 "Starlight Fairy"
+
+  poisonous_doll:0 "Poisonous Doll"
+  harbinger_of_spring:0 "Harbinger of Spring"
+  bake_danuki_who_shifts_shapes:0 "Shape-Shifting Bake-danuki"
+  moon_rabbit_who_came_to_earth:0 "Moon Rabbit Who Came to Earth"
+  dango_loving_moon_rabbit:0 "Dango-Loving Moon Rabbit"
+  ruler_of_dreams:0 "Ruler of Dreams"
+  goddess_of_hell:0 "Goddess of Hell"
+  goddess_of_poverty:0 "Goddess of Poverty"
+  goddess_of_pestilence:0 "Goddess of Pestilence"
+
+  hanging_bucket:0 "Fearsome Well Spirit"
+  water_child:0 "Stillborn Idol of the Riverbed"
+  ushi_oni_of_the_riverbed:0 "Ushi-oni of the Riverbed"
+
+  Haniwa_Lance_corporal:0 "Haniwa Lance Corporal"
+  mountain_hag_of_the_smoky_path:0 "Mountain Hag of the Plateau"
+  goddess_of_magatama:0 "Genuine Magatama-Producing God"
+  king_of_the_silent_bliss_of_nirvana:0 "King of the Silent Bliss of Nirvana"
+  cerberus_of_forested_silence:0 "Cerberus of Forested Silence"
+  the_great_sage_of_small_sanctuaries:0 "Great Sage of the Small Sanctuary"
+  beautiful_stalker_of_hell:0 "Beautiful Stalker of Hell"
+  monster_of_tainted_organic_material:0 "Monster of Tainted Organic Material"
+
+  moon_rabbit_unit_two:0 "Moon Rabbit Unit Two"
+  lunarian_princess_who_wields_gods:0 "Lunarian Princess Who Wields the Gods"
+
+  chieftain_of_the_sanctuary_yamanba:0 "Chieftain of the Sanctuary Yamanba"
+  yamanba_who_crosses_the_border_gate:0 "Yamanba Who Crosses the Floating-World Gate"
+  unknown_disobedient_primitive_beast:0 "Rebellious Youkai Beast of Unknown Form"
+  the_princess_of_permanence:0 "Princess of Permanence"
+  the_apparition_that_crafts_fictitious_cities:0 "Apparition That Crafts Fictitious Cities"
+  guardian_god_of_the_sanctuary:0 "Guardian God of the Sanctuary"
+
+  geidontei_waitress:0 "Geidontei Waitress"
+  jailbreak_king:0 "Jailbreak King"
+  miko_of_the_moriya_shrine:0 "Shrine Maiden of the Moriya Shrine"
+  occult_maniac:0 "First President of the Secret Sealing Club"
+  winter_youkai:0 "Winter Youkai"
+  child_of_miare:0 "Child of Miare"
+  bookworm_of_the_human_village:0 "Bookworm of the Human Village"
+  proprietor_of_kourindou:0 "Proprietor of Kourindou"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Youkai_of_Boundaries:"Boundary's Youkai" 
+ Gensokyo_protector:"Gensokyo's Guardian"
+ The_Lonely_Guardian:"The Lone Guardian"
+ known_all_the_history: "Hifuu Club Members"
+
+ eirin_lunar_clinician_regent:"The Eternal Regent"
+ eirin_lunar_brain:"The Moon's Mind"
+
+ Border_of_Life:"The Ghost Girl of the Netherworld Pavilion"
+
+ youmu_hakurou_discipline:"Roukanken and Hakurouken"
+ half_ghost_half_human:"Half-Human, Half-Phantom"
+
+ eternally_young_scarlet_moon:"The Eternally Crimson Young Moon"
+
+ scarlet_lord_of_the_red_moon:"The Lord of the Crimson Moon"
+
+ counterattacking_amanojaku:"The Counterattacking Amanojaku"
+
+ inversion_agitator:"The Upside-Down Demagogue"
+
+ the_sealed_great_magician:"The Sealed Great Magician"
+
+ lotus_vow:"Lotus Vow"
+
+  goodwill_of_peace:"The Mission of Coexistence"
+
+ king_to_all_youkai:"The King of All Youkai"
+
+ KYO_ran_lunar_operations_mastermind:0 "The Nine-Tailed Fox Moon Combat Calculations"
+ KYO_ran_lunar_operations_mastermind_desc:0 "Ran incorporates allied coordination, supply consumption, and return coordinates into a single, unalterable calculation."
+ KYO_chen_lunar_pathfinder:0 "Moon Rainbow Beast Path Guide"
+ KYO_chen_lunar_pathfinder_desc:0 "Chen can quickly traverse complex terrain along paths ignored on the official map, leaving a return route for follow-up troops."

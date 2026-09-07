@@ -1,0 +1,1086 @@
+﻿l_english:
+ Youkai_japan_war:"The First youkai War" 
+
+ Youkai_Eirin:"Youkai Rabbit Medical Support Corps"
+
+ Youkai_Tengu:"Tengu Reconnaissance Unit Support"
+
+ Youkai_Fairy:"Fairy Stealth Unit Surprise Attack"
+
+ Youkai_grassroot:"Victory of the Ordinary Youkai"
+
+ Youkai_Satori:"The Komeiji sisters make their personal appearance"
+
+ Youkai_nitori:"Kappa works day and night"
+
+ Youkai_Youkari:"Yukari Yakumo makes her personal appearance"
+
+  the_end_of_japan_youkai_war:0"Fight or exterminate"
+
+
+ GSK_indproj_civ_1:0 "[FROM.GetName] Regional civilian industrial expansion"
+ GSK_indproj_civ_1_desc:0 "The kappa bring in machine tools, boilers, and crates of disassembled Outside World parts. Yamawaro measures the soil layers and reinforces the supports beside the foundation, connecting the previously scattered workshops into a usable production area. Once the chimney rises and the conveyor belt starts turning, [FROM.GetName] will have additional construction space and will establish a Civilian Factory, ensuring a stable supply of tools, building materials, and daily necessities to the market."
+
+ GSK_indproj_civ_2:0 "[FROM.GetName] Large-scale Civil Industrial Expansion"
+ GSK_indproj_civ_2_desc:0 "This is not an isolated workshop, but an entire new industrial district. Kappa is responsible for laying power lines and mechanical frames, while the yamawaro dig warehouses and level roads. Fairies relay messages among the material piles, making the entire construction site bustling with activity. Upon completion, [FROM.GetName] will add more construction space and establish two Civilian Factories, enabling local productivity and commerce to take off simultaneously."
+
+ GSK_indproj_mil_1:0 "[FROM.GetName] Regional Military Industrial Expansion"
+ GSK_indproj_mil_1_desc:0 "Kappa will transform old forges into standardized military production lines, while the yamawaro will house heavy steel and gunpowder magazines in reinforced factory buildings. The sounds of hammers, test firings, and haul truck wheels echoed across [FROM.GetName], symbolizing the formal integration of this land into the wartime production system. After completion, additional construction space will be added, and a Military Factory will be established."
+
+ GSK_indproj_mil_2:0 "[FROM.GetName] Large-scale Military Industrial Expansion"
+ GSK_indproj_mil_2_desc:0 "An even larger military production line will be established at [FROM.GetName]. Kappa (professional engineers) calibrate presses, assembly lines, and ammunition testing equipment day and night, while Yamawaro (professional engineers) delve underground to construct secure warehouses and transport routes, ensuring raw materials can enter, finished products can leave, and explosions won't blow the entire construction site to the sky. Upon completion, even more construction space will be added, and two Military Factories will be established, becoming a crucial core of the frontline military industry."
+
+ GSK_indproj_infrastructure:0 "[FROM.GetName] Regional Infrastructure Construction Projects"
+ GSK_indproj_infrastructure_desc:0 "Roads were widened, bridges were reinforced, and previously muddy and difficult sections of road were gradually compacted by the yamawaro. Kappa laid drainage ditches, simple repair stations, and cargo transfer points along the route, allowing convoys, supply teams, and patrols to pass more quickly. Upon completion, [FROM.GetName] will see a significant upgrade in infrastructure, making the flow of people, goods, and military supplies much smoother."
+
+ GSK_indproj_resource_prospecting:0 "[FROM.GetName] Regional Resource Exploration"
+ GSK_indproj_resource_prospecting_desc:0 "Yamawaro, equipped with probes and miners' lamps, drilled deep into the rock strata, while Kappa set up analyzers, steam cranes, and temporary smelting furnaces on the surface. They chipped away at the rock walls, recorded the veins, and searched for resources that could support industry in the soil, valleys, and abandoned pits. Upon completion of the project, [FROM.GetName] will commence resource exploration and discover different types of exploitable resources based on the characteristics of the region."
+
+ GSK_indproj_special_facility:0 "[FROM.GetName] Special Research Facility Construction"
+ GSK_indproj_special_facility_desc:0 "This project requires more meticulous planning than a typical factory. Kappa is responsible for installing precision instruments, isolation devices, and experimental power systems, while yamawaro constructs thick walls, underground pipelines, and safe passages, transforming the entire area into a closed facility capable of withstanding high-risk research. Once the final seal and security gate are lowered, [FROM.GetName] will complete the corresponding special research facility, paving the way for deeper technological breakthroughs."
+
+
+
+
+
+
+ KYO_industry_projects:0 "Construction Abounds"
+ KYO_industry_projects_desc:0 "From river workshops to mountain clinics, from mines to arsenals, a massive construction boom has swept across the land. Kappa, yamawaro, tengu, oni, fairies, and human craftsmen all join forces to bring back the sounds of machines, hawking, and the flow of wealth to the silent land."
+
+ GSK_indproj_282_civ_1:0 "River Bend Machine Workshop"
+ GSK_indproj_282_civ_1_desc:0 "Nitori converted an old waterwheel into a continuous machine tool, and fairies flew back and forth between scaffolding carrying screws and blueprints. New civilian workshops sprang up, and timber, pottery, and farm tools began to flood the market, instantly making the area bustling."
+
+ GSK_indproj_282_mil_2:0 "Raven Feather Armory Corridor"
+ GSK_indproj_282_mil_2_desc:0 "Aya Shameimaru touted this place as “the fastest-completed military supply miracle,” while Momiji Inubashiri truly kept a close watch on the construction site. The two military supply factories operated day and night, with firearms and ammunition rolling off the production line, even making a fortune for the surrounding vendors."
+
+ GSK_indproj_1018_mil_1:0 "Armored Weaponry Shop"
+ GSK_indproj_1018_mil_1_desc:0 "Outside the mountain gate, there was no longer only the sound of bells, but also the roar of hammers and bellows. With the support of monks and the Youkai, craftsmen established weapons workshops, and the new military supply factory gave this land its first stable and respectable armed production capacity."
+
+ GSK_indproj_1018_civ_1:0 "Morning Bell Commercial District"
+ GSK_indproj_1018_civ_1_desc:0 "As soon as the morning bell rang, carpenters, tailors, and grain merchants opened their shops. The new Civilian Factory spurred the gathering of warehousing, transportation, and vendors, transforming the once quiet area into a bustling, lucrative district."
+
+ GSK_indproj_1019_civ_2:0 "Autumn Harvest Processing Zone"
+ GSK_indproj_1019_civ_2_desc:0 "Minoriko Aki was busy overseeing the grain warehouses, while Shizuha Aki meticulously managed the drying, storage, and packaging processes. After the completion of the two Civilian Factories, grain was no longer simply harvested and left to its own devices; it could be processed, sold, and exchanged for more wealth and jobs."
+
+ GSK_indproj_1019_civ_1:0 "Abundant Grain Cooperative"
+ GSK_indproj_1019_civ_1_desc:0 "The harvest shouldn't just stop in the fields, so new cooperative workshops were built. Grains, dried fruits, and minimally processed foods began to be shipped steadily, ensuring that farmers, porters, and caravans all had food to eat and money to earn."
+
+ GSK_indproj_1020_civ_1:0 "Yamaguchi Distribution Center New Street"
+ GSK_indproj_1020_civ_1_desc:0 "What was originally just a crossroads has now sprouted warehouses, workshops, and stalls. The newly built Civilian Factory became the first pillar of the trade route, directly transforming the flow of goods passing through into local business and tax revenue."
+
+ GSK_indproj_1020_mil_1:0 "White Wolf Armory"
+ GSK_indproj_1020_mil_1_desc:0 "Momiji, accompanied by White Wolf Tengu, patrolled the area again and again, ensuring that every crate of ammunition was stored on time. The new supply factory finally provided a decent supply point behind the defensive line, putting the soldiers at ease, and the surrounding transportation industry also flourished."
+
+ GSK_indproj_526_civ_1:0 "Riverside Woodworking Association"
+ GSK_indproj_526_civ_1_desc:0 "The riverbank once held nothing but damp air and wood shavings. Now rows of saw benches and storage sheds line the water. The Civilian Factory has spurred lumber processing, furniture making, and tool repair—and the workers have even kept the nearby taverns thriving."
+
+ GSK_indproj_526_mil_1:0 "Will-o'-Wisp Forge"
+ GSK_indproj_526_mil_1_desc:0 "Yuugi came in person, carrying iron stock as casually as firewood before tossing it beside the furnace. Under the oni's vigorous hands, the new munitions plant took shape at remarkable speed. It produced more than weapons: it gave everyone the feeling that they truly could keep fighting."
+
+ GSK_indproj_528_mil_2:0 "Gale Artillery Assembly Line"
+ GSK_indproj_528_mil_2_desc:0 "The tengu calculated the mountain winds as precisely as the production process. Parts came uphill, gun carriages went down, and even the assembly line ran like a military exercise. Two Military Factories have turned this place into a genuine center of firepower, with orders and materiel surging together."
+
+ GSK_indproj_528_civ_1:0 "Cloudtop Trading Post"
+ GSK_indproj_528_civ_1_desc:0 "Aya photographs and writes from above while merchants below scramble for stalls and haggle over prices. The new Civilian Factory has brought storage and processing capacity to the highlands, allowing the mountain's goods to become money in the lowlands far more quickly."
+
+ GSK_indproj_529_civ_1:0 "Lamplit Artisan Street"
+ GSK_indproj_529_civ_1_desc:0 "The nights are quiet no longer. Once the lamps come on, shops and workshops open one after another. The new Civilian Factory has stabilized the production of textiles, food, and daily necessities, and the whole street seems to have suddenly learned how to grow by itself."
+
+ GSK_indproj_529_mil_2:0 "Red-Flame Steel Armaments Bureau"
+ GSK_indproj_529_mil_2_desc:0 "The oni take on the heaviest and dirtiest work, while the kappa regulate furnace temperatures and molds with almost punishing precision. With two Military Factories running, steel is no longer mere raw material: it becomes an unbroken stream of gun barrels, artillery frames, and the hard power needed to steady the situation."
+
+
+
+
+
+
+
+
+ GSK_indproj_524_resource_coal:0 "Oni Coal-Seam Works"
+ GSK_indproj_524_resource_coal_desc:0 "One wave of Yuugi's hand banished every trace of idleness from the mine. Entire coal seams were opened, mine carts thundered back and forth, and the black-gold boom lifted not only fuel supplies but every nearby workshop, kiln, and freight line."
+
+ GSK_indproj_525_infrastructure:0 "Eientei Emergency Lifeline"
+ GSK_indproj_525_infrastructure_desc:0 "This road was not built for appearances. It was built to save lives. Once the roads, bridges, and supply junctions were improved together, Eientei's medicine chests, stretchers, and physicians could reach every district more quickly. Patients survived, and workers could tackle major projects with greater confidence."
+
+ GSK_indproj_527_resource_steel:0 "Tengu Steel Ridge"
+ GSK_indproj_527_resource_steel_desc:0 "The tengu surveyed the mountain down to the last contour. Momiji sealed off the dangerous ground, while Aya had already begun drafting a special edition on the “steel boom.” Iron ore is now extracted more efficiently, steelmaking has expanded with it, and the whole region seems infused with newfound resolve."
+
+ GSK_indproj_1028_resource_steel:0 "Subterranean Ironworks Plan"
+ GSK_indproj_1028_resource_steel_desc:0 "The deeper veins are stifling and hot, but places like these hide what is truly valuable. New mining and smelting organizations are hauling iron out of the depths in bulk, supplying the armaments, construction, and railway sectors with the strength they lacked."
+
+ GSK_indproj_1029_resource_tungsten:0 "Mountain-Rock Tungsten Vein"
+ GSK_indproj_1029_resource_tungsten_desc:0 "The yamawaro chipped their way through cracks in the rock until they finally exposed a tungsten vein hard enough to make anyone swear. It is difficult to mine, but immensely valuable; this rare resource has at last given advanced industry and armaments the means to move up a generation."
+
+ GSK_indproj_1030_infrastructure:0 "White Wolf Patrol Highway"
+ GSK_indproj_1030_infrastructure_desc:0 "Momiji did not want an ordinary road. She wanted a hard-surfaced artery that patrols, supplies, and ambulances could all race along. Since its completion, Eientei's medicines arrive sooner, caravans run more often, and security and commerce have risen together."
+
+ GSK_indproj_1031_infrastructure:0 "Crow Tengu Airlift Towers"
+ GSK_indproj_1031_infrastructure_desc:0 "The tengu linked towers, cableways, and signal posts into a single network in one sweep. Aya even boasted that “we have drafted the wind itself into logistics.” With the infrastructure improved, casualty evacuation, emergency medicine deliveries, and high-value freight now move with astonishing speed, bringing the whole district to life."
+
+ GSK_indproj_537_resource_oil:0 "Underground Oil Wells"
+ GSK_indproj_537_resource_oil_desc:0 "When Kappa brought in their drilling rigs, everyone thought they were crazy; but when the black oil actually gushed from the ground, everyone immediately thought they were geniuses. With more fuel, machines, vehicles, and power generation all had more power, and the economy accelerated accordingly."
+
+ GSK_indproj_633_infrastructure:0 "Minoriko Aki Grain Transport Route"
+ GSK_indproj_633_infrastructure_desc:0 "Grain is most afraid of rotting on the way, so this route was designed from the beginning to accommodate storage, transportation, and resupply along the route. Minoriko Aki watched with satisfaction as convoys passed by, and the makeshift medical stations set up by Eientei greatly reduced the worries of laborers and merchants."
+
+ GSK_indproj_645_infrastructure:0 "Myouren Temple Rescue Route"
+ GSK_indproj_645_infrastructure_desc:0 "This wasn't just about building a road; it was about connecting resettlement, rescue, and distribution into a lifeline. After the roads were repaired, the wounded could be transported to treatment points faster, and supplies could reach surrounding settlements more reliably. The once quiet place gradually regained its vibrancy and the sounds of trade."
+
+ GSK_indproj_646_infrastructure:0 "Youkai Mountain Tunnel Network"
+ GSK_indproj_646_infrastructure_desc:0 "Yamawaro excel at turning ‘impossible’ into ‘open by this afternoon.’ Once the tunnels and mountain roads were cut through, tengu patrols moved faster, caravans made fewer detours, and both emergency medicine and military transport flowed far more smoothly."
+
+ GSK_indproj_647_resource_aluminium:0 "Wind Cave Light Metal Mine"
+ GSK_indproj_647_resource_aluminium_desc:0 "The light metal mine deep within the Wind Cave was finally developed by the system, and the Kappa were overjoyed, as if they had struck gold. With an abundance of aluminum, the aviation, machinery, and light industries all benefited, transforming this remote resource point into a sought-after territory."
+
+ GSK_indproj_648_infrastructure:0 "Human Village Roads and Clinics"
+ GSK_indproj_648_infrastructure_desc:0 "Newly paved roads, rebuilt bridges, and roadside clinics made daily life in the Human Village dependable again. Eientei's medical teams could arrive in time, goods moved more quickly, and the market grew livelier by the day."
+
+ GSK_indproj_684_infrastructure:0 "Oni Heavy Transport Route"
+ GSK_indproj_684_infrastructure_desc:0 "The oni found the original roads too narrow, too slow, and too cumbersome, so they simply widened, reinforced, and rebuilt them. With the heavy transport route opened, ore, steel, and large equipment could pass smoothly, and rescue and rest points were also set up along the way, significantly increasing the transportation capacity of the entire area."
+
+ GSK_indproj_745_infrastructure:0 "Border Link Line"
+ GSK_indproj_745_infrastructure_desc:0 "This line connected outposts, warehouses, clinics, and markets into one integrated system. Tengu handled information relay, while Eientei provided medical support. With the road completed, tasks that used to take days could now be completed in a single day, and the border finally felt like a truly breathing place."
+
+ GSK_indproj_609_resource_coal:0 "Old Mine Revitalization Project"
+ GSK_indproj_609_resource_coal_desc:0 "Long-abandoned mines have been relit, and truckloads of black coal are being transported out. The resumption of coal production not only feeds the boilers and furnaces but also sustains nearby workshops, freight depots, and small restaurants, bringing life back to the old area."
+
+
+ GSK_indproj_645_infrastructure:0 "Ambulance Route"
+ GSK_indproj_645_infrastructure_desc:0 "This wasn't just about building a road; it was about creating an unbroken lifeline connecting resettlement, rescue, and transportation. Keine helped coordinate manpower and supplies from settlements along the route, while Mokou personally led teams to clear obstacles and escort the wounded. With roads open, patients could be transported to treatment centers faster, and trucks could run more smoothly. The once-dull area finally lit up again."
+
+ GSK_indproj_530_civ_2:0 "Lifestyle, Consumer, and Industrial Zone"
+ GSK_indproj_530_civ_2_desc:0 "From sweets and textiles to tableware and lamps, two new civilian factories have transformed the entire district. The Three Fairies of Light steal materials one day and plaster advertisements everywhere the next, causing no end of commotion—but their mischief only makes the grand opening livelier. Once reserved for a privileged few, these refined goods now sustain jobs, trade, and a thriving street economy."
+
+ GSK_indproj_530_civ_1:0 "Glass and Fabric Factory"
+ GSK_indproj_530_civ_1_desc:0 "Rolls of fabric, glassware, and packaging boxes were produced one by one on the assembly line. The previously scattered small workshops were finally integrated into a factory capable of stable production. While the mischievous spirit would occasionally sneak into the warehouse and cause minor disturbances, once the finished products were actually rolling out of the factory gates, everyone could see that the money-making opportunities here had been completely secured."
+
+ GSK_indproj_531_civ_1:0 "Engineering Experimental Manufacturing Workshop"
+ GSK_indproj_531_civ_1_desc:0 "Blueprints were no longer just empty dreams lying on a desk, but were transformed into machines, tools, and marketable finished products. Kogasa always managed to find strange yet useful inspirations in old materials and scrap, saving prototypes a lot of time and effort. Once research and mass production were truly integrated, knowledge was no longer just empty talk, but the ability to generate profit."
+
+ GSK_indproj_531_mil_1:0 "Standard Armory"
+ GSK_indproj_531_mil_1_desc:0 "Every box number, every record, every process was meticulously checked, even screws and rivets had to be placed according to regulations. Eiki scrutinized the quality inspection reports line by line, forcing the entire military supply factory to become one of order and precision. The results were direct: stable production, low losses, and crystal-clear warehousing—everyone had to admit it was a resounding success."
+
+ GSK_indproj_532_civ_2:0 "Human Village Expansion Project"
+ GSK_indproj_532_civ_2_desc:0 "Carpenters, bricklayers, merchants, and apprentices were all swept up in this bustling construction frenzy. Keine helped coordinate manpower and schedules, ensuring the district expansion wasn't a chaotic mess. With the two Civilian Factories completed, Human Village immediately transitioned from “barely making ends meet” to a new phase of “being able to do business and support more people,” and the shouts on the streets were much louder than before."
+
+ GSK_indproj_532_mil_1:0 "Garrison Armory"
+ GSK_indproj_532_mil_1_desc:0 "This munitions factory wasn't for show; it was to ensure that checkpoints, patrols, and local garrisons received truly reliable equipment. Mokou was very direct with the samples, throwing anything unsuitable back for rework on the spot; Cirno, while leading a group of fairies busily working around the construction site, unexpectedly made the moving and delivery incredibly fast. When the first batch of munitions was distributed, even the surrounding blacksmiths and transport teams were busy."
+
+ GSK_indproj_533_mil_2:0 "Armory Joint Factory"
+ GSK_indproj_533_mil_2_desc:0 "These two military supply factories weren't the facades of any bigwig; they were the result of hard work and dedication, painstakingly built from the ground up. Some oversaw quality control, some pushed for progress, and some were responsible for smoothing things over when disputes arose. Small umbrellas refurbished and reused old parts, while ordinary workers seized every opportunity to save money, repair, and build, transforming this place into a truly capable and resilient base."
+
+ GSK_indproj_533_civ_1:0 "Mutual Aid and Cooperation Market"
+ GSK_indproj_533_civ_1_desc:0 "No one waited for handouts. Tools were gathered when needed, manpower was filled when needed, and space was provided for self-built stalls. The new Civilian Factory spurred the development of a market, warehouses, and a large number of small vendors. The Three Fairies of Light occasionally darted among the stalls, creating a lively atmosphere. Once money began flowing among the lowest strata of society, this place finally showed signs of turning its fortunes around."
+
+ GSK_indproj_534_mil_2:0 "Comprehensive Supply Depot Cluster"
+ GSK_indproj_534_mil_2_desc:0 "These two supply factories and depots operate as a unified whole, prioritizing speed. Mokou leads the escort, while Fairy relays messages everywhere. Goods that are in the rear warehouse today can be delivered to the front lines tomorrow. With supply lines secured, the war machine truly gets going, and even those in the surrounding area who make wooden crates, repair wheels, and transport provisions benefit from this windfall."
+
+ GSK_indproj_534_mil_1:0 "Supply Forge"
+ GSK_indproj_534_mil_1_desc:0 "Iron, timber, gunpowder, and spare parts are fed into the forge in sequence, then forged piece by piece into the most needed items for the front lines. Eiki is very strict about the process; anyone who dares to cut corners will be reprimanded on the spot. Cirno and Fairy run around the construction site, significantly speeding up the originally slow delivery process. The new supply factories not only support the front lines but also revitalize the artisans and businesses throughout the region."
+
+ GSK_indproj_535_mil_1:0 "Border Emergency Ordnance Depot"
+ GSK_indproj_535_mil_1_desc:0 "Here, the focus isn't on fancy features, but on speed—fast delivery, fast repair, and fast distribution. Once the supply factory was built, border outposts could immediately replenish any shortages, and old stockpiles no longer had to be artificially stretched to the point of obsolescence. Mokou occasionally personally tested new goods, and her few words of assertiveness and decisiveness were more persuasive than a full-page report."
+
+ GSK_indproj_535_civ_1:0 "Border Trade Workshop Area"
+ GSK_indproj_535_civ_1_desc:0 "Traveling merchants, short-distance transport, and small-scale processing gradually coalesced here. The new Civilian Factory transformed the border from a mere transit point into a place that truly retains money, people, and livelihoods. Keine also helped restore order along the border, preventing this bustling activity from descending into chaos."
+
+ GSK_indproj_536_civ_2:0 "Muddy Land Transformation Project"
+ GSK_indproj_536_civ_2_desc:0 "What was once a despised, neglected place has now been transformed, shovel by shovel, into a construction site, warehouses, and a new neighborhood. After two Civilian Factories were erected, vendors, workers, and moving crews flocked in, and even Cirno felt it was “finally starting to look decent.” The muddy land hadn't decreased much, but this area could now genuinely earn its own living and support more people."
+
+ GSK_indproj_536_mil_1:0 "Assault Weapons Factory"
+ GSK_indproj_536_mil_1_desc:0 "This military supply factory was all about directness: make what could be immediately deployed to the battlefield, then worry about anything else. Mokou appreciated this style; testing guns, inspecting knives, checking powder charges—nothing was overlooked. The fairies handled errands and deliveries, creating a strangely efficient atmosphere amidst the chaos of the construction site. The tension was rising, but the livelihoods of the nearby residents were becoming increasingly secure."
+
+
+ GSK_indproj_555_infrastructure:0 "Grassroots Mutual Aid Transportation Network"
+ GSK_indproj_555_infrastructure_desc:0 "There were no earth-shattering slogans, only shovels of earth, planks of wood, and sections of road slowly pieced together. Some carried messages, some moved materials, some kept watch at night, and some set up makeshift supply and aid stations along the route. Once this mutual aid transportation network was fully formed, the previously isolated and impoverished area was finally able to gradually attract people, goods, and life."
+
+  GSK_indproj_282_land_facility:0 "Ground Fortifications"
+ GSK_indproj_282_land_facility_desc:0 "Barracks, firing ranges, granaries, and training grounds will be organized and transformed from scattered open spaces into a true military preparedness zone. Wooden stakes are driven into the ground, talismans are affixed to fences, and transport vehicles and equipment move back and forth, gradually giving this land the appearance of “preparedness for war.”"
+
+ GSK_indproj_1082_air_facility:0 "Sky Dome Airfield"
+ GSK_indproj_1082_air_facility_desc:0 "New flight facilities will be built here. Runways will be leveled, control towers will be erected, and hangars and maintenance yards will be gradually completed. When the weathervane, lighting, and guiding barriers are all operational, this place will no longer be just a place to look up at the sky, but will become the true starting point for wings, machinery, and youkai power to take to the skies together."
+
+ GSK_indproj_530_nuclear_facility:0 "Deep Nuclear Energy Complex"
+ GSK_indproj_530_nuclear_facility_desc:0 "This construction will be quiet, yet destined to be arduous. Thick outer walls, enclosed passageways, layers of restricted areas, and core facilities will be gradually built, like sealing a scorching and dangerous force deep into the earth. When the reactor truly begins operation, this will become a silent yet undeniable complex, causing the entire region to revolve around its light and heat once more."
+
+
+  Shrine_navy_decision:"Fleet Balance Adjustments"
+  Shrine_navy_decision_desc:"What are the costs of upgrades?"
+  shrine_navy_decision_transport_up:0 "Enhancing Transport Capabilities (Trade-offs)"
+  shrine_navy_decision_strike_up:0 "Enhancing Anti-Ship Attacks (Trade-offs)"
+  shrine_navy_decision_hit_up:0 "Enhancing Accuracy (Trade-offs)"
+  shrine_navy_decision_sortie_up:0 "Enhancing Squadron Efficiency (Trade-offs)"
+  shrine_navy_decision_speed_up:0 "Enhancing Fleet Speed (Trade-offs)"
+  shrine_navy_decision_navy_xp_up:0 "Enhancing Experience Gain (Trade-offs)"
+  shrine_navy_decision_spotting_up:0 "Enhancing Detection Rate (Trade-offs)"
+  shrine_navy_decision_asw_up:0 "Enhancing Anti-Submarine Detection (Trade-offs)"
+
+
+  Tsukumogami_ship_decision:0 "Tsukumogami Tuning Project"
+  Tsukumogami_ship_decision_desc:0 "A hundred instruments ring out as spiritual light draws the bowstring taut. Old objects take the stage, and the tsukumogami §Ytune§! the system one part at a time:\n— §YEnable§! a companion's blessing to let that instrument take the lead, immediately quickening the tempo of research;\n— §RDisable§! it with a sudden break in the rhythm, returning its resources to the ensemble before the next movement begins.\n\n Switch freely among Surprise, Beat, Biwa, Koto, Menreiki, and Miracle Mallet, turning Gensokyo's research programme into an orchestra that moves from lyrical passages to explosive crescendos."
+
+  on_kogasa_idea_decisoin:0 "Activated: Kogasa - Scary Inspiration"
+  on_kogasa_idea_decisoin_desc:0 "Acquired National Spirit “§YKogasa Tatara's Scary Inspiration§!”."
+  on_kogasa_idea_decisoin_tooltip:0 "Acquired “§YKogasa Tatara's Scary Inspiration§!”."
+  on_kogasa_idea_decisoin_blocked:0 "Activation conditions not yet met (requires completion of relevant National Focus)."
+
+  off_kogasa_idea_decisoin:0 "Deactivated: Kogasa - Scary Inspiration"
+  off_kogasa_idea_decisoin_desc:0 "Removed National Spirit “§YKogasa Tatara's Scary Inspiration§!”."
+  off_kogasa_idea_decisoin_tooltip:0 "Removed “§YKogasa Tatara's Scary Inspiration§!”."
+  off_kogasa_idea_decisoin_blocked:0 "This National Spirit has not yet been acquired and cannot be deactivated."
+
+  on_reiko_idea_decisoin:0 "Activated: Raiko Horikawa's Beat Engineering"
+  on_reiko_idea_decisoin_desc:0 "Acquired National Spirit “§YRaiko Horikawa's Beat Engineering§!”."
+  on_reiko_idea_decisoin_tooltip:0 "Acquired “§YRaiko Horikawa's Beat Engineering§!”."
+  on_reiko_idea_decisoin_blocked:0 "Activation conditions not yet met (requires completion of the relevant National Focus)."
+
+  off_reiko_idea_decisoin:0 "Deactivated: Raiko Horikawa's Beat Engineering"
+  off_reiko_idea_decisoin_desc:0 "Removed National Spirit “§YRaiko Horikawa's Beat Engineering§!”."
+  off_reiko_idea_decisoin_tooltip:0 "Removed “§YRaiko Horikawa's Beat Engineering§!”."
+  off_reiko_idea_decisoin_blocked:0 "This National Focus has not yet been acquired and cannot be deactivated."
+
+  on_benben_idea_decisoin:0 "Activated: Benben Biwa Acoustics"
+  on_benben_idea_decisoin_desc:0 "Acquired National Focus “§YBenben Tsukumo's Biwa Acoustics§!”."
+  on_benben_idea_decisoin_tooltip:0 "Acquired “§YBenben Tsukumo's Biwa Acoustics§!”."
+  on_benben_idea_decisoin_blocked:0 "Activation conditions not yet met (requires completion of relevant National Focus)."
+
+  off_benben_idea_decisoin:0 "Deactivated: Benben Tsukumo's Biwa Acoustics"
+  off_benben_idea_decisoin_desc:0 "Removed National Spirit “§YBenben Tsukumo's Biwa Acoustics§!”."
+  off_benben_idea_decisoin_tooltip:0 "Removed “§YBenben Tsukumo's Biwa Acoustics§!”."
+  off_benben_idea_decisoin_blocked:0 "This National Spirit has not yet been acquired, so it cannot be deactivated."
+
+  on_yatsuhashi_idea_decisoin:0 "Activated: Yatsuhashi Tsukumo's Koto Structure"
+  on_yatsuhashi_idea_decisoin_desc:0 "Acquired National Spirit “§YYatsuhashi Tsukumo's Koto Structure§!”."
+  on_yatsuhashi_idea_decisoin_tooltip:0 "Acquired “§YYatsuhashi Tsukumo's Koto Structure§!”."
+  on_yatsuhashi_idea_decisoin_blocked:0 "Activation conditions not yet met (requires completion of the relevant National Focus)."
+
+  off_yatsuhashi_idea_decisoin:0 "Deactivated: Yatsuhashi Tsukumo's Koto Structure"
+  off_yatsuhashi_idea_decisoin_desc:0 "Removed National Spirit “§YYatsuhashi Tsukumo's Koto Structure§!”."
+  off_yatsuhashi_idea_decisoin_tooltip:0 "Removed “§YYatsuhashi Tsukumo's Koto Structure§!”."
+  off_yatsuhashi_idea_decisoin_blocked:0 "This National Spirit has not yet been obtained; deactivated."
+
+  on_kokoro_idea_decisoin:0 "Activated: Hata no Kokoro·Menreiki"
+  on_kokoro_idea_decisoin_desc:0 "Acquired National Spirit “§YHata no Kokoro's Menreiki§!”."
+  on_kokoro_idea_decisoin_tooltip:0 "Acquired “§YHata no Kokoro's Menreiki§!”."
+  on_kokoro_idea_decisoin_blocked:0 "Activation conditions not yet met (requires completion of relevant National Focus)."
+
+  off_kokoro_idea_decisoin:0 "Deactivated: Hata no Kokoro·Menreiki"
+  off_kokoro_idea_decisoin_desc:0 "Removed National Spirit “§YHata no Kokoro's Menreiki§!”."
+  off_kokoro_idea_decisoin_tooltip:0 "Removed “§YHata no Kokoro's Menreiki§!”."
+  off_kokoro_idea_decisoin_blocked:0 "This National Spirit has not yet been acquired and cannot be deactivated."
+
+  on_shinmyoumaru_idea_decisoin:0 "Activated: Shinmyoumaru·Magic Hammer"
+  on_shinmyoumaru_idea_decisoin_desc:0 "Acquired National Spirit “§YShinmyoumaru Sukuna's Magic Hammer§!”."
+  on_shinmyoumaru_idea_decisoin_tooltip:0 "Acquired “§YShinmyoumaru Sukuna's Magic Hammer§!”."
+  on_shinmyoumaru_idea_decisoin_blocked:0 "Activation conditions not yet met (requires completion of relevant National Focus)."
+
+  off_shinmyoumaru_idea_decisoin:0 "Deactivated: Shinmyoumaru·Magic Hammer"
+  off_shinmyoumaru_idea_decisoin_desc:0 "Removed National Spirit “§YShinmyoumaru Sukuna's Magic Hammer§!”."
+  off_shinmyoumaru_idea_decisoin_tooltip:0 "Removed “§YShinmyoumaru Sukuna's Magic Hammer§!”."
+  off_shinmyoumaru_idea_decisoin_blocked:0 "This national spirit has not yet been acquired, and cannot be deactivated."
+
+
+
+
+#honest_number_should_be_greater_1_tt: "§O守信§!度高于§Y20§!"
+#honest_number_should_be_greater_2_tt: "§O守信§!度高于§Y40§!"
+#honest_number_should_be_greater_3_tt: "§O守信§!度高于§Y70§!"
+#honest_number_should_be_greater_4_tt: "§O守信§!度高于§Y100§!"
+#
+#honest_number_go_up_10_tt: "§O守信§!提高§Y10§!"
+#honest_number_go_down_10_tt: "§O守信§!降低§Y10§!"
+#
+#peace_number_should_be_greater_1_tt: "§Y和平§!度高于§Y20§!"
+#peace_number_should_be_greater_2_tt: "§Y和平§!度高于§Y40§!"
+#peace_number_should_be_greater_3_tt: "§Y和平§!度高于§Y70§!"
+#peace_number_should_be_greater_4_tt: "§Y和平§!度高于§Y100§!"
+#
+#peace_number_go_up_10_tt: "§Y和平§!提高§Y10§!"
+#peace_number_go_down_10_tt: "§Y和平§!降低§Y10§!"
+#
+#lust_number_should_be_greater_1_tt: "§L无性§!度高于§Y20§!"
+#lust_number_should_be_greater_2_tt: "§L无性§!度高于§Y40§!"
+#lust_number_should_be_greater_3_tt: "§L无性§!度高于§Y70§!"
+#lust_number_should_be_greater_4_tt: "§L无性§!度高于§Y100§!"
+#
+#lust_number_go_up_10_tt: "§L无性§!提高§Y10§!"
+#lust_number_go_down_10_tt: "§L无性§!降低§Y10§!"
+#
+#wine_number_should_be_greater_1_tt: "§R戒酒§!度高于§Y20§!"
+#wine_number_should_be_greater_2_tt: "§R戒酒§!度高于§Y40§!"
+#wine_number_should_be_greater_3_tt: "§R戒酒§!度高于§Y70§!"
+#wine_number_should_be_greater_4_tt: "§R戒酒§!度高于§Y100§!"
+#
+#wine_number_go_up_10_tt: "§R戒酒§!提高§Y10§!"
+#wine_number_go_down_10_tt: "§R戒酒§!降低§Y10§!"
+#
+#honest_progressbar:"§O守信§!"
+#wine_progressbar:"§R戒酒§!"
+#peace_progressbar:"§Y和平§!"
+#lust_progressbar:"§L无性§!"
+
+
+ 
+
+ five_precepts_progressbar_category:0 "The Rudder of the Five Precepts"
+ five_precepts_progressbar_category_desc:0 "Byakuren clearly understands that if Myouren Temple wants to bring postwar Gensokyo back on track, compassion and aspirations alone are far from sufficient. The nation is like a ship navigating storms, with each disciple holding different ropes and oars, but the one who truly corrects the course is always Byakuren Hijiri.\n\n Not killing, not stealing, not committing adultery, not lying, not drinking alcohol—these five precepts are not merely the rules for monks, but also the self-restraint of the postwar regime, the five bottom lines that Myouren Temple attempts to reconnect with youkai, humanity, the nation, and ideals.\n\n Every adjustment is a trade-off; every step forward means another must be brought to a halt. What Byakuren aims to do is not to make everyone perfect immediately, but to gradually guide the entire ship back onto a path of coexistence amidst swaying and deviation."
+
+ five_precepts_progressbar_daily_add:0 "Test: Five Precepts Progress"
+ five_precepts_progressbar_daily_add_desc:0 "Temporarily increase the progress of the Five Precepts to test the internal practices and national changes within the Myouren Temple."
+
+ five_precepts_progressbar_daily_decrease:0 "Test: Five Precepts Regression"
+ five_precepts_progressbar_daily_decrease_desc:0 "Temporarily decrease the progress of the Five Precepts to test the internal practices and national changes within the Myouren Temple."
+
+ decision_peace_and_honest:0 "Peace Through Sincerity"
+ decision_peace_and_honest_desc:0 "When Byakuren corrects the nation's direction, they often cannot allow all virtues to grow simultaneously. To minimize harm to all beings and foster greater peace, we must first sacrifice some of the overly sharp “truth.” Peace will prevail, and the sharpness of outspokenness must be temporarily tempered."
+
+ decision_honest_and_lust:0 "Suppress Desire with Righteousness"
+ decision_honest_and_lust_desc:0 "When Myouren Temple chooses to face the nation and all living beings with greater candor and clarity, many runaway desires are brought back under control. Teaching everyone to face themselves honestly is itself a step toward Byakuren's path."
+
+ decision_lust_and_wine:0 "Temper Drink with Clarity"
+ decision_lust_and_wine_desc:0 "When desire is held in check, obsession and excess naturally begin to recede. Byakuren does not seek to sever every instinct by force. She means to bring the indulgences that could drag the nation down within the bounds of restraint."
+
+ decision_wine_and_peace:0 "Drown Conflict in Drink"
+ decision_wine_and_peace_desc:0 "A nation does not always regain its balance through the most rational means. Sometimes pent-up emotions must first be given room to escape. Indulgence will grow, but peace will weaken with it. Byakuren knows perfectly well that this can never be a lasting answer—only a temporary turn of the rudder amid the storm."
+
+ honest_progressbar:"§OFalse Speech§!"
+ wine_progressbar:"§RIntoxication§!"
+ peace_progressbar:"§YPeace§!"
+ lust_progressbar:"§LSexual Misconduct§!"
+
+ peace_number_go_up_10_tt:0 "§GPeace§! progress increases by §Y10§!"
+ honest_number_go_down_10_tt:0 "§RFalse Speech§! progress decreases by §Y10§!"
+ honest_number_go_up_10_tt:0 "§GFalse Speech§! progress increases by §Y10§!"
+ lust_number_go_down_10_tt:0 "§RSexual Misconduct§! progress decreases by §Y10§!"
+ lust_number_go_up_10_tt:0 "§GSexual Misconduct§! progress increases by §Y10§!"
+ wine_number_go_down_10_tt:0 "§RIntoxication§! progress decreases by §Y10§!"
+ wine_number_go_up_10_tt:0 "§GIntoxication§! progress increases by §Y10§!"
+ peace_number_go_down_10_tt:0 "§RPeace§! progress decreases by §Y10§!"
+
+ honest_number_should_be_greater_1_tt:0 "§YFalse Speech§! progress must be above §Y20§!"
+ honest_number_should_be_greater_2_tt:0 "§YFalse Speech§! progress must be above §Y40§!"
+ honest_number_should_be_greater_3_tt:0 "§YFalse Speech§! progress must be above §Y70§!"
+ honest_number_should_be_greater_4_tt:0 "§YFalse Speech§! progress must be above §Y100§!"
+
+ lust_number_should_be_greater_1_tt:0 "§YSexual Misconduct§! progress must be above §Y20§!"
+ lust_number_should_be_greater_2_tt:0 "§YSexual Misconduct§! progress must be above §Y40§!"
+ lust_number_should_be_greater_3_tt:0 "§YSexual Misconduct§! progress must be above §Y70§!"
+ lust_number_should_be_greater_4_tt:0 "§YSexual Misconduct§! progress must be above §Y100§!"
+
+ wine_number_should_be_greater_1_tt:0 "§YDrinking§! requires progress to reach §Y20§! or higher"
+ wine_number_should_be_greater_2_tt:0 "§YDrinking§! requires progress to reach §Y40§! or higher"
+ wine_number_should_be_greater_3_tt:0 "§YDrinking§! requires progress to reach §Y70§! or higher"
+ wine_number_should_be_greater_4_tt:0 "§YDrinking§! requires progress to reach §Y100§! or higher"
+
+ peace_number_should_be_greater_1_tt:0 "§YPeace§! Progress needs to reach §Y20§! or above"
+ peace_number_should_be_greater_2_tt:0 "§YPeaceful§! Progress needs to reach §Y40§! or higher"
+ peace_number_should_be_greater_3_tt:0 "§YPeaceful§! Progress needs to reach §Y70§! or higher"
+ peace_number_should_be_greater_4_tt:0 "§YPeaceful§! Progress needs to reach §Y100§! or higher"
+
+ shou_mission_one:0 "Shou's Trial: Shouldering the Myouren Temple"
+ shou_mission_one_desc:0 "Byakuren has placed the heaviest responsibility on Shou's shoulders. If she truly wants to become the second-in-command of the Myouren Temple, she cannot simply be a protector; she must learn to shoulder the weight of morale, order, and the nation's functioning."
+
+ shou_mission_two:0 "Shou's Test: The Pagoda and the Heart"
+ shou_mission_two_desc:0 "Shou has already shared the burden with Byakuren, but she still must confront her most genuine weaknesses. The pagoda, responsibility, mistakes, and shame will all force her to answer during this time: Can she maintain order even in her vulnerability?"
+
+ shou_mission_three:0 "Shou's Test: The Heart of a Tiger"
+ shou_mission_three_desc:0 "As the nation gradually stabilizes, Byakuren also demands that Shou face a higher level of responsibility. She cannot forever remain a kind guardian; she must learn to become a force that deters chaos and calms storms when necessary."
+
+ shou_mission_four:0 "Shou's Test: The Step After Master"
+ shou_mission_four_desc:0 "As infrastructure gradually recovers, Myouren Temple finally has the resources to ask deeper questions: If Byakuren isn't around, is Shou capable of handling things independently? This isn't a test of ability, but a final confirmation of faith."
+
+ nazrin_mission_one:0 "Nazrin's Test: Treasure and Truth"
+ nazrin_mission_one_desc:0 "Nazrin's nose and rat swarms can already find anything of value in the ruins. But Byakuren wants her to find not just resources, but also the order and reality that can restore the nation's function."
+
+ nazrin_mission_two:0 "Nazrin's Test: The Cold-Blooded Recycling"
+ nazrin_mission_two_desc:0 "Some reconstruction must be done with the taste of iron and blood. If Nazrin is to reclaim assets for Myouren Temple, she must prove she can turn the most unforgiving and dirty work into the foundation for the nation's survival."
+
+ nazrin_mission_two_part_2:0 "Nazrin's Test: Desserts and Fundraising"
+ nazrin_mission_two_part_2_desc:0 "Not every resource has to be salvaged from ruins. Byakuren wants Nazrin to try a softer, more complicated method to bring the Myouren Temple's goodwill and funds into the community."
+
+ nazrin_mission_three:0 "Nazrin's Test: Winning Hearts and Minds"
+ nazrin_mission_three_desc:0 "As intelligence, assets, and informants gradually weave a network, Nazrin will no longer be just someone patching up the loopholes for the Myouren Temple. She must prove that she can become a true pillar maintaining the nation's underworld order."
+
+ nazrin_mission_four:0 "Nazrin's Test: Staying by Shou's Side"
+ nazrin_mission_four_desc:0 "Byakuren sees it clearly: Nazrin's ultimate goal is never just recognition of her abilities, but rather her willingness to finally acknowledge where her heart truly belongs. If she can reach this point, it means that the wary mouse has finally found a place to settle down."
+
+ ichirin_mission_one:0 "Ichirin's Test: From Preaching to Building"
+ ichirin_mission_one_desc:0 "Ichirin has learned to speak in front of people, but Byakuren wants her to go further. Ideals that cannot be implemented on construction sites, in warehouses, and on production lines will remain mere slogans. Now, she must turn scriptures into reality."
+
+ ichirin_mission_two:0 "Ichirin's Test: Self-Discipline and Cultivation"
+ ichirin_mission_two_desc:0 "Ichirin is not a flawless monk. Her doubts, hesitations, and vulnerabilities remain. Byakuren wants her to undergo a deeper training in the truly heavy reality: not feigning purity, but struggling while still keeping her back straight."
+
+ ichirin_mission_two_part_2:0 "Ichirin's Test: Stepping into the Dust"
+ ichirin_mission_two_part_2_desc:0 "What the people see is never the scriptures, but the people themselves. If Ichirin can continue to face all beings with her own unsavory life, she might become the most down-to-earth and understandable disciple of Myouren Temple."
+
+ ichirin_mission_three:0 "Ichirin's Test: Planting Pure Land in the Ground"
+ ichirin_mission_three_desc:0 "Fields, sunshine, farm tools, and sweat—these most basic things can also become part of spiritual cultivation. Byakuren wants Ichirin to prove that the Pure Land on earth is not a lofty illusion, but a world that can be built inch by inch."
+
+ ichirin_mission_four:0 "Ichirin's Test: Stepping Out of Her Own Buddhist Practice"
+ ichirin_mission_four_desc:0 "When Ichirin truly arrives here with questions, responsibilities, and the dust of the world, she will no longer just be a disciple behind Byakuren, but someone who can interpret and carry the Dharma in her own way."
+
+ murasa_mission_one:0 "Minamitsu's Test: Sailing the Ship to the World"
+ murasa_mission_one_desc:0 "Byakuren wants Minamitsu to do more than just rescue and suppression; she must take the Palanquin Ship to meet the nations of the world. A dangerous spirit must learn to use her ship and flag to proclaim mercy and peace for the Myouren Temple."
+
+ murasa_mission_two:0 "Minamitsu's Test: Suppressing the Desire to Drown"
+ murasa_mission_two_desc:0 "Minamitsu's greatest enemy is not the Outside World, but herself. If she wants to remain by Byakuren's side, she must learn to confront the instinct that drags her to the bottom, instead of letting it control everything."
+
+ murasa_mission_two_part_2:0 "Minamitsu's Test: Falling into the Depths"
+ murasa_mission_two_part_2_desc:0 "Sometimes, the old wounds and resentments of the spirit speak before reason. If Minamitsu fails on this path, she will be dragged back to the bottom by her darkest instincts, forcing Myouren Temple to face its cruelest problems."
+
+ murasa_mission_three:0 "Minamitsu's Test: Helmsman"
+ murasa_mission_three_desc:0 "No matter how many shadows remain in her heart, as long as she holds the helm, Minamitsu is Myouren Temple's most reliable captain. Byakuren hopes she will slowly hone that danger into a power capable of leading everyone through the storms."
+
+ murasa_mission_four:0 "Minamitsu's Test: Unfinished Redemption"
+ murasa_mission_four_desc:0 "Minamitsu's journey is far from over. Byakuren doesn't demand she immediately become a harmless good person, but only hopes she continues this long and arduous task, ensuring that coexistence is not just an empty wish."
+
+ kyouko_mission_one:0 "Kyouko's Test: Sending Her Voice Further"
+ kyouko_mission_one_desc:0 "Kyouko's voice shouldn't remain confined within the walls of Myouren Temple. Byakuren hopes she can extend this enthusiasm and positive feedback further, letting those in need know where to go and letting those who want to lend a hand know what they can do."
+
+ kyouko_mission_two:0 "Kyouko's Test: The Qualification to Be Liked"
+ kyouko_mission_two_desc:0 "Kyouko wants everyone to like her, and she also wants more people to come closer to Myouren Temple because of her. But true closeness doesn't just come from excitement; it also comes from whether she can place her kindness where others need it most at the right time."
+
+ kyouko_mission_two_part_2:0 "Kyouko's Test: Learning to Be Quiet"
+ kyouko_mission_two_part_2_desc:0 "Kyouko's voice isn't always a lifesaver. If she consistently fails to discern timing and context, even the most sincere words will become jarring noise. Byakuren wants her to learn when to speak and when to listen first."
+
+ kyouko_mission_three:0 "Kyouko's Test: From Cheerleader to Disciple"
+ kyouko_mission_three_desc:0 "Kyouko has already brought warmth to many, but she can't stop there forever. Byakuren wants her to go further: study scriptures, cultivate her mind, and take on responsibilities, allowing her to grow from a gentle, carefree child into a pillar of the new generation of Myouren Temple."
+
+ kyouko_mission_four:0 "Kyouko's Test: Leaving Her Voice for Tomorrow"
+ kyouko_mission_four_desc:0 "When Kyouko finally learns to combine passion, judgment, and spiritual practice, she will no longer just be the little Youkai saved by Byakuren, but someone who can continue to speak for humanity and Youkai, ensuring the continuation of the ideal of coexistence."
+
+ decision_make_china_puppet:0 "Taking Over China with Compassion"
+ decision_make_china_puppet_desc:0 "Byakuren knows that if peace is to truly spread further, the Myouren Temple alone is not enough. If China is willing to submit to this banner, then the Myouren Temple's order will, for the first time, truly extend beyond Gensokyo."
+
+ decision_puppet_every_asia_country:0 "Taking Over China"
+ decision_puppet_every_asia_country_desc:0 "Byakuren Hijiri does not view the nation as merely conquerable land, but as a group that can still be guided towards peace. If Asian nations are willing to accept the Myouren Temple's order, then this ship will sail to a wider sea."
+
+ decision_puppet_every_democratic_country:0 "Inspiring Nations with Peace"
+ decision_puppet_every_democratic_country_desc:0 "Some nations are more likely to understand Byakuren's path because they are at least still willing to acknowledge public opinion, negotiation, and that people are not only meant to trample on each other. Myouren Temple will reach out to these countries, spreading the ideals of coexistence to a wider world."
+
+
+
+KYO_hijiri_world_revolution:0 "Buddhist Peaceful Revolution"
+KYO_hijiri_world_revolution_desc:0 "Myouren Temple will no longer wait for the world to heal itself. We will missionary work, negotiation, pressure, forge alliances, and ultimately integrate those countries that accept the path to salvation."
+
+KYO_hijiri_goodwill_mission:0 "Promoting Buddhist Goodwill to [FROM.GetName]"
+KYO_hijiri_goodwill_mission_desc:0 "Sending large missions of monks, organizers, teachers, and rescue workers. Their work will enhance foreign goodwill towards us, making future attempts to establish puppet regimes more likely to succeed."
+
+KYO_hijiri_attempt_peaceful_puppet_major:0"Promote Buddhist goodwill towards [FROM.GetName]"
+
+KYO_hijiri_prepare_puppet_network:0 "Prepare a redemption network"
+KYO_hijiri_prepare_puppet_network_desc:0 "Before another country can be brought into our sphere of influence, we must first establish channels of envoys, local liaisons, and a disciplined network of influence."
+
+KYO_hijiri_attempt_peaceful_puppet:0 "Demand peaceful submission from [FROM.GetName]"
+KYO_hijiri_attempt_peaceful_puppet_desc:0 "Attempt to transform the target into our puppet state. Higher favorability will increase the success rate. If there are too many puppet states that have not yet been integrated, other countries will become more difficult to control."
+
+KYO_hijiri_integrate_puppet_stage_one:0 "Begin gradual integration of [FROM.GetName]"
+KYO_hijiri_integrate_puppet_stage_one_desc:0 "Push the low-integration [FROM.GetName] into a deeper administrative relationship."
+
+KYO_hijiri_integrate_puppet_stage_two:0 "Completed integration of [FROM.GetName]"
+KYO_hijiri_integrate_puppet_stage_two_desc:0 "Completed the incremental integration process and absorbed the already integrated [FROM.GetName]. This will reduce some of the diplomatic fear caused by the puppet network."
+
+KYO_hijiri_unlock_goodwill_decisions_tt:0 "Unlocks a Decision to increase foreign favorability towards §YGensokyo§!."
+KYO_hijiri_prepare_puppets_tt:0 "Unlocks a Decision for preparations required before attempting puppetization."
+KYO_hijiri_unlock_puppet_decisions_tt:0 "Unlocks a Decision for the peaceful puppetization of other countries. Success rate depends on favorability and the current puppet burden."
+KYO_hijiri_unlock_integration_stage_1_tt:0 "Unlocks the first stage of puppet integration."
+KYO_hijiri_unlock_integration_stage_2_tt:0 "Unlocks the final stage of puppet integration and annexation."
+KYO_hijiri_unlock_anti_fascist_war_goal_tt:0 "After completing several puppetization operations, unlocks the anti-fascist war objective, National Focus."
+KYO_hijiri_unlock_anti_communist_war_goal_tt:0 "After completing more puppetization operations, unlocks the anti-communist war objective, National Focus."
+KYO_hijiri_puppet_success_tt:0 "The objective is to accept puppet status. The number of puppet states not yet integrated will increase, reducing the chances of future success."
+KYO_hijiri_puppet_failed_tt:0 "The target resisted our pressure, and its goodwill towards us has decreased."
+KYO_hijiri_integration_finished_tt:0 "This puppet state has been fully integrated. Future attempts at puppetization will bear less burden."
+
+KYO_hijiri_buddhist_goodwill:0 "Buddhist Goodwill Mission"
+KYO_hijiri_failed_puppet_pressure:0 "Resisting Political Pressure from the Myouren Temple"
+
+
+
+
+
+
+
+    civil_war_overcharge_combat:0 "Doomsday Call"
+    civil_war_overcharge_combat_desc:0 "All who breathe within our territory must be named; all who can lift stones, grasp blades, and carry provisions must not refuse. Women, children, and the elderly are all enlisted, like the last bricks of the city wall.\n We seek not retreat, but the end; until the bugle falls silent, the flag is broken, and the enemy and I return to dust."
+
+    civil_war_buring_the_road:0 "Order to Burn the Roads"
+    civil_war_buring_the_road_desc:0 "Behold, where we go, we leave neither ears of wheat nor wells; all that may be used by the enemy will first turn to ashes. The granaries will be emptied, the bridges broken, the fields burned, so that the pursuers will find no bread, the horses no grass.\n We set the roads ablaze, as if writing a curse upon the earth: Better this land be desolate for a time than let the enemy prolong its life with its harvest."
+
+    civil_war_deadless_attack:0 "The Rush of Immortality"
+    civil_war_deadless_attack_desc:0 "Behold, the people shout together and rush forward like a flood bursting its banks, asking neither of return nor of life or death. Those who hesitate will be utterly defeated, those who retreat will be disgraced; only those who press forward will trample fear underfoot.\n They smashed through enemy lines with their flesh and blood, their roars drowning out the cannon fire, until the enemy's ranks crumbled, or our army turned to dust."
+
+    civil_war_twenty_four_work_time:0 "24-hour work system"
+    civil_war_twenty_four_work_time_desc:0 "Day and night are no longer separated; sunlight and lamplight are one day. All who have hands to wield a hammer, all who have eyes to read a map, must work in shifts, without rest. The workshop doors are never closed, the furnace fires never extinguished, and the looms turn continuously like a heartbeat.\n Because the needs of war are like a thirsting famine, even a moment's rest is a luxury; we must exchange exhaustion for steel, darkness for ammunition, until the bugle calls cease, or until our bodies too return to dust."
+
+    civil_war_brainwash:0 "Forced Brainwashing"
+    civil_war_brainwash_desc:0 "Behold, let words be like iron chains on the hearts of all; let ears be sealed, mouths taught, and eyes see only one light. All who doubt will be called unclean, all who question will be called traitors.\n We will establish one voice, etch one memory, so that people forget their yesterday's selves and remember only today's commands; until all are of one mind and one tongue, there will be no more hesitation in war."
+
+  civil_war_bad_youkai:0 "The Law for Restraining Youkai"
+    civil_war_bad_youkai_desc:0 "Behold, those whose hearts are driven by lust and who boast of their blood will corrupt military discipline and scatter the hearts of the people. Therefore, this law is hereby established: Restrain the actions of those who plunder without permission, devour without cause, and slaughter in anger; all who desert their posts and disturb the people will be investigated.\n\n Remember this: swords can seize cities, but they cannot win hearts; if unleashed like wildfire, they will inevitably consume you. Only those who exercise restraint can form an army, only those who uphold the law can establish a nation, so that our people will not collapse due to their own rage."
+
+  civil_war_battle_guide:0 "The Laws of the Battlefield"
+    civil_war_battle_guide_desc:0 "Behold, even with swords drawn, laws must still be in hand. Therefore, let us establish rules for warfare, so that our troops may not kill indiscriminately out of anger, nor disturb the people out of greed; all those who arbitrarily slaughter surrendered or wounded, seize non-military supplies, or burn innocent dwellings shall be punished.\n\n Marches must be disciplined, defenses must be orderly, prisoners of war must be properly guarded, and spoils of war must be recorded. For an army without laws is like wildfire, burning away the enemy and itself; only those who uphold rules can unite the soldiers, keep the people's hearts from wavering, and ensure that war has boundaries to be maintained."
+
+  civil_war_instant_repair:0 "Repair immediately"
+    civil_war_instant_repair_desc:0 "Behold, bridges have broken across rivers, tracks are broken in the fields, and roads are full of rubble; if an army marches upon them, it will be slowed down, like sheep lost on their way. Therefore I issue this decree: Summon craftsmen, laborers, and porters, so that iron and wood may no longer be silent; let firelight illuminate the night, and let the sound of mallets serve as commands.\n\n All that has collapsed, let it be lifted; all that has cracked, let it be mended; all that has been burned, let it be rebuilt. Let supply routes be reopened, let the wheels of workshops turn again, and let our army not be defeated by its depletion."
+
+  civil_war_martial_law:0 "Martial Law Order"
+  civil_war_martial_law_desc:0 "Behold, war is imminent, and the city gates can no longer function as usual; therefore I hereby issue this decree of martial law, that all streets be guarded, and all entrances be checked. All who walk at night shall be questioned; all who gather in crowds shall be dispersed; all who spread rumors shall be investigated; all who disobey orders shall be punished.\n\n Granaries and workshops are for military use, roads and bridges are under military control; all entry and exit require documents, all travel is subject to bugle calls. For without strict orders, chaos will arise like worms in rotten wood, gnawing at the morale of the army; only by binding the people with laws and military discipline can the rear be kept in order, and the front lines be able to stand firm."
+
+  civil_war_banned_art:0 "The Forbidden Art"
+  civil_war_banned_art_desc:0 "Behold, under the red moon, the sealed gates are opened, ancient arts are unsealed once more; their names should not be uttered lightly, their forms should not be gazed upon for long. Demons will gather in darkness, dance with death; fire and sulfur will rain down, wails will fill the streets.\n\n Mortals are like grass, born in the morning and wither in the evening; once breath ceases, they return to dust. Destruction is imminent, judgment is at the door; know that all men must die, none can escape. What is done tonight will be a curse tomorrow, or a mark of the end times."
+
+  civil_war_seija_last_chance:0 "The Upside-Down End Times"
+    civil_war_seija_last_chance_desc:0 "Behold, a demon walks among mortals, constantly stirring up people to reject the old laws and despise the statutes; her mouth spews words of rebellion like fire igniting dry grass.\n\n She will lead people to destroy order, to break down doors and boundaries, so that kings will no longer be kings, and servants will no longer be servants; the superiors will be pulled down, and the inferiors will be pushed up; righteousness will be called evil, and evil will be called righteousness. The laws of the world will be overturned, the order of the sun and moon will be reversed, and everything will be revolutionized until dust rises and cities fall, and then people will know that the end times have come."
+
+  civil_war_in_the_name_of_yukari:0 "In the Name of Yukari"
+  civil_war_in_the_name_of_yukari_desc:0 "Behold, Yukari Yakumo walked the earth, and every word she spoke and every action she took was called the will of God; the boundaries she set were like commandments, and the arrangements she left behind were like prophecies. Though she is no longer before them, her name still shines above the darkness and the flames of war.\n\n The apostles Ran Yakumo and Chen did not look aside, but carried the name and went forth; they proclaimed the words of Yukari in the cities and the order of Yukari in the armies, that they might remember and follow it and not depart from it. All who doubt will be admonished, and all who turn away will be rebuked, for they say: This is not the way of man, but the way that Yukari has shown.\n\n Even if the world trembles, city walls crumble, and all things are overthrown, they still declare: even if heaven and earth change, this name cannot be abandoned; they would rather let flames engulf the earth than let “the will of Yukari” be fulfilled."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  the_civil_war_start_timer:0 "The Moment of Collapse"
+  the_civil_war_start_timer_desc:0 "The Civil War Begins. This is not a storm to be watched from the sidelines, but a year of devastation: after the waters recede, silt will remain; after the fires extinguish, scorched earth will remain.\n\n No one can escape, for all roads are cut off; no one can survive, for time only deepens the wounds. Cities collapse, villages lie empty, youkai perish, and humans die.\n\n If there is any outcome, there is only the coldest common sense: there are no winners here, only survivors."
+
+  the_civil_war_destory_all:0 "On the Brink of Collapse"
+  the_civil_war_destory_all_desc:0 "Reaching the critical point, the dam is about to burst. The final piece of the puzzle that Lunar Capital sought has now been replaced. What follows is no longer war, but catastrophe: like a flood overflowing its banks, like a drought demon devouring the fields, like a plague sweeping across the land.\n\n The so-called “purification,” which sounds like salvation to mortals, appears on earth as dust covering cities and blood flowing into rivers. The moment the filth is washed away, many names will be washed away with it."
+
+  the_civil_war_cheak_for_seija:0 "The Extinction of the Flame of Revolution"
+  the_civil_war_cheak_for_seija_desc:0 "The flames that once illuminated the night road have finally been extinguished by the wind and snow. The clamor has stopped, the slogans have dissipated, and only ashes and unfinished grievances remain in the streets and alleys. The cruelest aspect of revolution lies not in its ignition, but in the survival after it is extinguished, facing the shattered tiles and the unclaimed costs."
+
+  the_civil_war_cheak_for_remilia:0 "The End of Vampire Domination"
+  the_civil_war_cheak_for_remilia_desc:0 "The scarlet banners finally fell to the ground, like lingering clouds in the twilight. The iron hooves that once swaggered down on the city have ceased, the court music has stopped, leaving only empty cups and empty seats.\n\n The end of domination is not romantic; it is more like the silence after a landslide: leaving behind trampled streets, torn subjects, and an era that can never return to “nobility”."
+
+  the_civil_war_cheak_for_chen:0 "The Scattered Wishes of the Sages"
+  the_civil_war_cheak_for_chen_desc:0 "The wishes of the sages were not a piece of paper, but a thin layer of ice bought with years of balance. Now the thin ice has cracked, and fragments are scattered across the water.\n\n Some pick up the fragments as amulets, some use them to gap throats, and some simply throw them into the mud. The dying wish wasn't denied, but shattered by reality: the more one tries to hold onto it, the more one's hands are cut and bleeding from the fragments."
+
+  the_civil_war_cheak_for_hijiri:0 "The Sinking of the Ideal of Great Harmony"
+  the_civil_war_cheak_for_hijiri_desc:0 "Great Harmony was once described as spring water, nourishing all things; but when war breaks out, even spring water is stained with blood. The ideal wasn't wrong, just too slow, too slow to catch up with famine, gunfire, and fear.\n\n When the temple bell still rings, but can no longer call back people's hearts, one understands that this is not a failure of debate, but the common truth in years of disaster: in dire straits, survival comes first, then compassion."
+
+  the_civil_win_political_available:0 "Victors of the Youkai Civil War"
+  the_civil_win_political_available_desc:0 "The victors stand on the ruins, their feet not on steps, but on rubble and scorched earth. Flags can still be raised, commands can still be conveyed, but every order carries aftershocks.\n\n Because this civil war had no true victory, only a post-disaster reckoning: how many cities were reduced to empty shells, how many ethnic groups lost their roots, how many names were written into the register of the missing. What the victors gained was a Gensokyo that must be repaired immediately, but can never be restored to its former state."
+
+  
+
+
+
+
+
+  destory_number_go_up_10:0 "§RDestruction Level§! §BIncreases by§! §Y10§!"
+  destory_number_go_up_40:0 "§RDestruction Level§! §BIncreases by§! §Y40§!"
+
+  destory_number_go_down_10:0 "§RDestruction Level§! Decrease §Y10§!"
+  destory_number_go_down_5:0 "§RDestruction Level§! Decrease §Y5§!"
+
+ 
+
+
+ prestige_random_event_part_1:0 "Scarlet Devil Anecdotes from the Scarlet Devil Mansion"
+prestige_random_event_part_1_desc:0 "In this mansion, even a tea party, a casual remark, or a glance can become an echo of power."
+
+prestige_random_event_part_2:0 "Behind-the-Scenes Turbulence of Scarlet Devil Mansion"
+prestige_random_event_part_2_desc:0 "Behind the curtain, there is never peace. Favoritism, imbalance, testing, and neglect are all quietly rewriting the ruling order of Scarlet Devil Mansion."
+
+prestige_system_value_change_monthly:0 "Monthly Fluctuations in Authority"
+prestige_system_value_change_monthly_desc:0 "Authority doesn't come from nowhere. Every month, performance, public opinion, and the master's preferences reshuffle the positions of the members of Scarlet Devil Mansion."
+
+
+scarlet_prestige_sakuya:0 "Sakuya's Governing Talent"
+scarlet_prestige_sakuya_desc:0 "Sakuya Izayoi's most formidable talent has never been mere combat prowess, but her ability to hammer chaos into order. Documents, deployments, rationing, coordination—everything in her hands becomes an almost flawless process. The greater the Scarlet Devil Mansion's administrative efficiency, the more §YPolitical Power§! it will steadily generate for the regime."
+
+scarlet_prestige_meiling:0 "Meiling's Guardian Demeanor"
+scarlet_prestige_meiling_desc:0 "Hong Meiling does more than guard the gate: she steadies the spirit of the entire Scarlet Devil Mansion. Her reliability, warmth, and martial bearing inspire more people to follow the Mansion—and to believe this is a regime worth rallying behind. The stronger that faith becomes, the more §Ymanpower§! the Scarlet Devil Mansion can mobilize."
+
+scarlet_prestige_remilia:0 "Remilia's Deterrence"
+scarlet_prestige_remilia_desc:0 "Remilia's rule is built on awe. Her name, her crimson mist, and her supreme vampire monarchy command the bowing of her subjects and the hesitation of her enemies. The greater the stability within the regime and the higher the public's acceptance of war, the more stable §YStability§! and §YWar Support§! become."
+
+scarlet_prestige_flandre:0 "Flandre's Fairy Tale"
+scarlet_prestige_flandre_desc:0 "Flandre's existence is like a dark fairy tale: beautiful, innocent, bizarre, yet dangerous enough to make one afraid to think too deeply. The more rumors about her spread, the harder it is for the enemy to maintain peace. It makes hostile countries more prone to panic and unease, thereby reducing their §YStability§! and §YWar Support§!."
+
+scarlet_prestige_patchouli:0 "Patchouli's Knowledge"
+scarlet_prestige_patchouli_desc:0 "Patchouli's knowledge isn't just ordinary knowledge, but answers that can be directly translated into a war advantage. Magical theory, industrial models, experimental techniques, tactical support—her knowledge will continuously propel Scarlet Devil Mansion to greater heights. Scarlet Devil Mansion gains a §YResearch Speed bonus§!."
+
+
+ scarlet_prestige_sakuya_1:0 "Silver Pen and Ledgers"
+scarlet_prestige_sakuya_1_desc:0 "From inventory to document filing, from rationing to list transcription, Sakuya Izayoi's most basic yet terrifying side is revealed: she can transform a chaotic mess into a flawless answer."
+
+scarlet_prestige_sakuya_2:0 "The Head Maid's Etiquette"
+scarlet_prestige_sakuya_2_desc:0 "Further emphasizing Sakuya's dominance in reception, demeanor, and court etiquette. She's not just good at getting things done, she knows who should speak first, who should bow their head, and who doesn't even deserve to make a mistake in their posture."
+
+scarlet_prestige_sakuya_3:0 "Arrangements Engraved on the Clock Face"
+scarlet_prestige_sakuya_3_desc:0 "Promotes Sakuya's almost obsessive control over time and processes. Banquets, inspections, supplies, orders, and dispatches are all scheduled to the precise minute, as if the entire Scarlet Devil Mansion breathes to her second hand."
+
+scarlet_prestige_sakuya_4:0 "Leaves No Room for Disorder"
+scarlet_prestige_sakuya_4_desc:0 "Promotes Sakuya's image as order itself. Wherever she goes, chaos is flattened, delays are cut off, and any attempt to exploit loopholes within Scarlet Devil Mansion will ultimately crash into her meticulously organized walls."
+
+scarlet_prestige_sakuya_5:0 "Perfection is the Answer"
+scarlet_prestige_sakuya_5_desc:0 "Sculpts Sakuya into the irreplaceable head maid. She is no longer merely efficient, elegant, or meticulous, but the most intricate core component of Scarlet Devil Mansion's governing machine—her very existence is perfect administration."
+
+ scarlet_prestige_meiling_1:0 "The Smile at the Door"
+scarlet_prestige_meiling_1_desc:0 "First, let people remember Hong Meiling's most easily overlooked yet irreplaceable aspect: she stands at the door, speaks first, then strikes. That composure, friendliness, and tact are Scarlet Devil Mansion's first impression."
+
+scarlet_prestige_meiling_2:0 "Demeanor Between Fists and Feet"
+scarlet_prestige_meiling_2_desc:0 "Further emphasize Meiling's demeanor as a martial artist. She doesn't just throw people away; she knows when to block, when to yield, and when to deliver a decisive victory to save face for Scarlet Devil Mansion."
+
+scarlet_prestige_meiling_3:0 "Qi Flows Like a Wall"
+scarlet_prestige_meiling_3_desc:0 "Promote Meiling's mastery of qi and her ability to solidify her defenses. When she's serious, the doorway is no longer just a doorway, but a true boundary; the wind can pass through, but people cannot."
+
+scarlet_prestige_meiling_4:0 "A Gentle Guardian"
+scarlet_prestige_meiling_4_desc:0 "High-profile portrayal of Meiling's rare dual nature: she can hold off enemies, yet also offer a way out to visitors. Strength isn't about bullying the weak, but about ensuring the order behind the door doesn't always bleed."
+
+scarlet_prestige_meiling_5:0 "The Shield of Scarlet Devil Mansion"
+scarlet_prestige_meiling_5_desc:0 "To mold Meiling into the most solid defense of Scarlet Devil Mansion. Her name represents not only a dashing fighter, but also reliable, steadfast, and reassuring protection—as long as she stands, the door will not fall."
+
+
+scarlet_prestige_remilia_1:0 "The Descent of the Young Moon"
+scarlet_prestige_remilia_1_desc:0 "First, let people get used to looking up at Remilia again. She doesn't need lengthy pronouncements; she only needs to stand high, letting the arrogance and beauty of vampire nobility subside."
+
+scarlet_prestige_remilia_2:0 "The Crimson Pressure"
+scarlet_prestige_remilia_2_desc:0 "Further emphasizing Remilia's suffocating oppressive aura. Her cloak, her gaze, her tone that seems to look down on a toy—all these things silence those around her."
+
+scarlet_prestige_remilia_3:0 "The Throne in the Crimson Mist"
+scarlet_prestige_remilia_3_desc:0 "Promoting Remilia's image as a ruler bound to the crimson mist, the night, and a sense of dominance. She is not merely a leader, but an entity that makes the entire space feel like her domain."
+
+scarlet_prestige_remilia_4:0 "Even Fate Should Bow Down"
+scarlet_prestige_remilia_4_desc:0 "High-profile portrayal of Remilia's almost arrogant narrative of kingship: she is not one to accept fate, but one to bend it. Her rule, therefore, carries an undeniable aggressiveness."
+
+scarlet_prestige_remilia_5:0 "The Scarlet Queen"
+scarlet_prestige_remilia_5_desc:0 "To mold Remilia into a truly unchallengeable Scarlet Queen. Her name is no longer just that of the mistress of Scarlet Devil Mansion, but a symbol that makes nations bow down, armies tremble, and night itself seem to be crowning her."
+
+
+scarlet_prestige_flandre_1:0 "Children with Crystal Wings"
+scarlet_prestige_flandre_1_desc:0 "Let's start with the gentlest, yet most dangerous, place—let people know that there's a beautiful little sister in Scarlet Devil Mansion, as pretty as a fairytale illustration. What lies behind that beauty, we'll leave that for now."
+
+scarlet_prestige_flandre_2:0 "The Little Princess in the Tower"
+scarlet_prestige_flandre_2_desc:0 "Further, we'll package Flandre as a story shrouded in towers, locks, and secrets. She's like a princess, and also like a calamity; the less she's seen, the more allure she gains from rumors."
+
+scarlet_prestige_flandre_3:0 "Danger in the Candy House"
+scarlet_prestige_flandre_3_desc:0 "Let Flandre's image begin to take on a more pronounced dark fairytale feel: sweet, innocent, and inviting, but one wrong step, and what lies beneath the icing is no longer a treat, but a tooth."
+
+scarlet_prestige_flandre_4:0 "The Sister in the Depths of a Dream"
+scarlet_prestige_flandre_4_desc:0 "Cast Flandre as a figure straight out of Alice in Wonderland. She is a child who seems to have stepped from a dream, her logic and emotions never quite belonging to the ordinary world—endearing enough to put others at ease, yet dangerous enough to send a chill down their spines."
+
+scarlet_prestige_flandre_5:0 "The Most Beautiful Bad Ending"
+scarlet_prestige_flandre_5_desc:0 "Complete Flandre's transformation into a dark fairy tale: the most dazzling figure in the final chapter, the Scarlet Devil Mansion's most cherished little sister, and the one person no one truly wishes to anger."
+
+
+scarlet_prestige_patchouli_1:0 "Whispers Between the Pages"
+scarlet_prestige_patchouli_1_desc:0 "First, let people remember Patchouli's most basic authority: she always sits behind the books, yet knows everything. Every turn of the pages in the library slowly carries her name far and wide."
+
+scarlet_prestige_patchouli_2:0 "The Classification of Forbidden Books"
+scarlet_prestige_patchouli_2_desc:0 "Further emphasizing Patchouli's ability to organize and control knowledge. She doesn't simply collect books; she classifies dangers, numbers arcane arts, and establishes order in the forbidden world."
+
+scarlet_prestige_patchouli_3:0 "The Research of the Seven-Colored Mage"
+scarlet_prestige_patchouli_3_desc:0 "Promoting Patchouli's in-depth exploration of spells, experiments, and magical theory. Her value lies not only in knowing the answers but also in her ability to dismantle the unknown and create new answers herself."
+
+scarlet_prestige_patchouli_4:0 "The Central Hub of the Great Library"
+scarlet_prestige_patchouli_4_desc:0 "High-profile portrayal of Patchouli as the central hub of knowledge. Resources, industry, magic, sealing, research—everything ultimately returns to her desk, and she rewrites the chaos into actionable solutions."
+
+scarlet_prestige_patchouli_5:0 "Humanoid Library"
+scarlet_prestige_patchouli_5_desc:0 "Patchouli is molded into an irreplaceable embodiment of knowledge within Scarlet Devil Mansion. She is no longer merely a librarian, but the library itself—a living, breathing, thinking, and rewriting humanoid books that understand the world."
+
+
+
+ KYO_lunar_invasion_warning_category:0 "Lunar Capital Invasion Countdown"
+ KYO_lunar_invasion_warning_category_desc:0 "After Yukari Yakumo's return, Lunar Capital will need approximately two years to gain control of the major surface nations. The invasion will automatically begin when the countdown reaches zero; completing the invasion “before Lunar Capital” will grant a preemptive strike and a six-month bonus."
+ KYO_lunar_invasion_countdown:0 "Lunar Capital Invasion Preparation Complete"
+ KYO_lunar_invasion_countdown_desc:0 "§R730 days later, Lunar Capital will control the major surface nations and launch an invasion of Gensokyo.§! can be completed before the countdown, §Y, to preempt Lunar Capital,§!, initiate the war, and gain §G180 days of preemptive strike advantage,§!."
+
+
+
+ KYO_lunar_campaign_category:0 "Final Battle for the Moon"
+ KYO_lunar_campaign_category_desc:0 "The surface war can be viewed after it begins, but it will only officially start after completing National Focus (§Y and opening the gap to the Moon §!). Each round lasts 60 days; Lunar Capital's expected value retains its original dynamic calculation and difficulty selection, but is additionally reduced by 6 points (§G during the final calculation §!). The attacker wins when the attack value X is strictly greater than the defense value T; if X = T, the defender wins. When the player achieves their 3rd win, the Lunar Capital faction will declare full-scale war on any independent nations that have not yet engaged in combat; the United States will lift control upon the 4th win. The first side to achieve 6 wins ends the series."
+
+ KYO_lunar_reconstruction_category:0 "Lunar Capital Reconstruction and Secret Seal Post-War Dialogue"
+ KYO_lunar_reconstruction_category_desc:0 "Post-war work is divided into nine phases, each requiring 35 days. Players decide when to continue; the entire post-war dialogue will no longer automatically pop up from a single event."
+
+ KYO_love_story_category:0 "Sunset Vow: Optional Story"
+ KYO_love_story_category_desc:0 "These life stories are independent of each other. You can choose any chapter, or ignore them all."
+
+ KYO_yukari_archive_category:0 "Yukari Yakumo's File"
+ KYO_yukari_archive_category_desc:0 "Reimi's File and the Sealed Old Files: Progress on each item. Complete one to unlock the next."
+
+ KYO_lunar_campaign_gui_title:0 "§YSecond Lunar War§!"
+
+ KYO_lunar_campaign_gui_round:0 "§Y[?KYO_lunar_round|0]/11th Battle§! - §RRemaining [?KYO_lunar_days_remaining|0] Days§!"
+
+ KYO_lunar_campaign_gui_values:0 "§GAttack X: [?KYO_lunar_X|0]§! - §RDefence T: [?KYO_lunar_T|0]§!"
+
+ KYO_lunar_campaign_gui_score:0 "§GGensokyo [?KYO_lunar_attacker_wins|0]§! - §R[?KYO_lunar_defender_wins|0] Lunar Capital§!"
+
+ KYO_lunar_campaign_gui_expected:0 "§CExpected Value§! | §YE5§!: [?KYO_lunar_E5|0] | §YE6§!: [?KYO_lunar_E6|0] | §YE7§!: [?KYO_lunar_E7|0] | §YE8§!: [?KYO_lunar_E8|0]"
+
+ KYO_lunar_campaign_gui_support:0 "§GSurface Liberation§!: [?KYO_surface_liberated|0]/[?KYO_surface_selected|0] | §YFree Orders§!: [?KYO_lunar_free_orders|0]/4 | §CAffordable Tactics§!: [?KYO_lunar_affordable_tactics|0]/20"
+
+ KYO_lunar_campaign_gui_tactics_header:0 "§YAvailable Tactics This Round§!"
+
+ KYO_lunar_campaign_gui_attacker_state:0 "§G[GetKYOLunarAttackerState]§!"
+ KYO_lunar_campaign_gui_defender_state:0 "§R[GetKYOLunarDefenderState]§!"
+ KYO_lunar_campaign_gui_attacker_marks:0 "§G[GetKYOLunarAttackerMarks]§!"
+ KYO_lunar_campaign_gui_defender_marks:0 "§R[GetKYOLunarDefenderMarks]§!"
+ KYO_lunar_campaign_gui_battle_report:0 "[GetKYOLunarBattleReport]"
+ KYO_lunar_campaign_gui_rule:0 "§YDraw:§! 5 items are automatically drawn each round, items 6/7/8 require 25/40/60 Political Power. §RJudgment:§! A draw goes to the defending side; after six losses, the team will be forced to retreat and start over."
+
+ KYO_lunar_slot_empty:0 "§g— Not drawn —§!"
+
+ KYO_lunar_report_none:0 "Battle report: Awaiting the end of the 75-day countdown for this round."
+
+ KYO_lunar_attacker_state_1:0 "Hundred Youkai Soaring Through the Moon"
+ KYO_lunar_attacker_state_2:0 "Seizing the Opportunity to Deepen"
+ KYO_lunar_attacker_state_3:0 "Standing Firm in the Moon Sea"
+ KYO_lunar_attacker_state_4:0 "Obstructed in the Pure Realm"
+ KYO_lunar_attacker_state_5:0 "The Return Path is About to Be Broken"
+ KYO_lunar_attacker_state_6:0 "Defeated and Fleeing the Moon Sea"
+
+ KYO_lunar_defender_state_1:0 "The Pure Land is Flawless"
+ KYO_lunar_defender_state_2:0 "The Moon Guards Resolutely"
+ KYO_lunar_defender_state_3:0 "The Tide of Filth Knocks on the City"
+ KYO_lunar_defender_state_4:0 "The Outer City Covered in Dust"
+ KYO_lunar_defender_state_5:0 "The Royal City Stained"
+ KYO_lunar_defender_state_6:0 "The Fall of the Pure Land"
+
+ KYO_faction_earth_axis:0 "The Axis on Earth"
+
+ KYO_faction_lunarian_resistance_front:0 "Lunar Capital's Liberation Front"
+
+ KYO_faction_fantasy_alliance:0 "The Fantasy Alliance"
+
+ KYO_faction_coexistence_pact:0 "The Coexistence Agreement"
+
+ KYO_lunarian_surface_front:0 "Lunar Capital's Surface Purification Front"
+
+ KYO_lunarian_controlled_major:0 "Lunar Capital's Rule"
+ KYO_lunarian_controlled_major_desc:0 "The terrestrial regime acts under the orders of Lunar Capital; military, political, and public opinion must all submit to the so-called pure order."
+
+ KYO_lunarian_control_idea_1:0 "Lunar Capital's Rule I"
+ KYO_lunarian_control_idea_1_desc:0 "Lunar Capital's orders begin to suppress the terrestrial regime. Current Overall Penalty: §R5%§!."
+ KYO_lunarian_control_idea_2:0 "Lunar Capital Reign II"
+ KYO_lunarian_control_idea_2_desc:0 "Lunar Capital suffers its first defeat, and the control system begins to intensify conscription. Current Overall Penalty: §R10%§!."
+ KYO_lunarian_control_idea_3:0 "Lunar Capital Reign III"
+ KYO_lunarian_control_idea_3_desc:0 "Lunar Capital suffers continuous setbacks, and the surface military and political system bears a heavier price. Current Overall Penalty: §R20%§!."
+ KYO_lunarian_control_idea_4:0 "Lunar Capital Reign IV"
+ KYO_lunarian_control_idea_4_desc:0 "The Moon's defenses crumble, and the purification order is tearing apart surface nations. Current Overall Penalty: §R30%§!."
+ KYO_lunarian_control_idea_5:0 "Lunar Capital's Rule V"
+ KYO_lunarian_control_idea_5_desc:0 "Lunar Capital is on the verge of collapse; out-of-control conscription and repression have severely weakened the nation. Current total penalty: §R40%§!."
+ KYO_lunarian_control_idea_6:0 "Lunar Capital's Rule VI"
+ KYO_lunarian_control_idea_6_desc:0 "Lunar Capital's rule is collapsing; the surface control system has reached its most severe stage. Current total penalty: §R50%§!."
+
+ KYO_lunarian_faction_lock:0 "By Imperial Decree"
+ KYO_lunarian_faction_lock_desc:0 "The nation under this decree is forbidden from withdrawing from the purification front; any arbitrary actions are considered a form of defilement."
+
+ KYO_lunarian_control_fractured:0 "Lunar Orders Severed"
+ KYO_lunarian_control_fractured_desc:0 "The connection between Earth and the Moon has been severed; edicts from Lunar Capital no longer reach the entire land."
+
+ KYO_lunarian_crossline_disrupted:0 "The Celestial Path Blocked"
+ KYO_lunarian_crossline_disrupted_desc:0 "The Moon's defeat disrupts the Celestial Path, temporarily cutting off supplies and reinforcements for the surface armies."
+
+ KYO_lunarian_defeat_pressure_1:0 "The Moon's Prestige Fades: Celestial Voices Distorted"
+ KYO_lunarian_defeat_pressure_1_desc:0 "Lunar Capital suffers its first defeat; conflicting military orders begin to circulate on Earth."
+
+ KYO_lunarian_defeat_pressure_2:0 "The Moon's Prestige Fades: Edicts Collapse"
+ KYO_lunarian_defeat_pressure_2_desc:0 "Successive defeats shake the connection between the Moon and Earth; supplies, reinforcements, and morale all crumble."
+
+ KYO_lunarian_defeat_pressure_3:0 "The Moon's Power Fades: The Mandate of Heaven Ends"
+ KYO_lunarian_defeat_pressure_3_desc:0 "Lunar Capital can no longer dominate the land, and the controlled nations are gradually breaking free of the purification front."
+
+ KYO_gensokyo_wartime_coalition:0 "A Hundred Youkai Unite to Defend Lunar Capital"
+ KYO_gensokyo_wartime_coalition_desc:0 "The Three Committees of Hundred Youkai Accord put aside their differences and combined their forces, intelligence, and rescue efforts into a single battle."
+
+ KYO_lunar_preemptive_strike:0 "Before the Full Moon"
+ KYO_lunar_preemptive_strike_desc:0 "Taking advantage of Lunar Capital's inability to tighten its control over the surface, Gensokyo launched the first attack; for the next six months, the initiative on the battlefield remained with them."
+
+ KYO_world_life_can_change:0 "The Living Still Have Tomorrow"
+ KYO_world_life_can_change_desc:0 "Living is not about being forever sealed in today, but about still having the right to choose tomorrow."
+
+ KYO_world_memory_remains:0 "The Deceased Remain Named"
+ KYO_world_memory_remains_desc:0 "The deceased leave their names, the living carry on with their memories; farewell is therefore not forgetting."
+
+ KYO_world_science_and_fantasy:0 "Sharing the Same Starry Sky"
+ KYO_world_science_and_fantasy_desc:0 "Science no longer banishes fantasy, nor does fantasy fear the pursuit of knowledge; both will jointly understand this world."
+
+
+
+ KYO_lunar_debug_category:0 "Moon War Test Tool"
+ KYO_lunar_debug_category_desc:0 "Only displayed when the game is launched with -debug. Used for quickly checking countdowns, intrusion entry points, the GUI, and the display of wins for both sides; it will not appear in normal gameplay."
+ KYO_lunar_debug_open_gui:0 "DEBUG: Enables and resets the Moon War panel"
+ KYO_lunar_debug_open_gui_desc:0 "Without declaring war, directly unlocks the Moon War GUI, resets the win count for both sides, draws the first round of tactics, and grants four free commands. Suitable for purely checking the interface."
+ KYO_lunar_debug_start_countdown:0 "DEBUG: Add a two-year countdown."
+ KYO_lunar_debug_start_countdown_desc:0 "Initiate a 730-day Lunar Capital Invasion mission to test the natural expiration process."
+ KYO_lunar_debug_start_prewar_events:0 "DEBUG: Jump to six weeks before the war."
+ KYO_lunar_debug_start_prewar_events_desc:0 "Set the invasion timer to 43 days and immediately execute a pre-war tick to test faction naming and six weekly events."
+ KYO_lunar_debug_start_natural_invasion:0 "DEBUG: Immediately trigger a natural invasion."
+ KYO_lunar_debug_start_natural_invasion_desc:0 "Immediately enter the normal invasion portal after the countdown ends, without granting the preemptive strike buff."
+ KYO_lunar_debug_start_preemptive_invasion:0 "DEBUG: Immediately trigger a preemptive invasion."
+ KYO_lunar_debug_start_preemptive_invasion_desc:0 "Immediately enter the player-manual war portal and grant a 180-day preemptive strike buff."
+ KYO_lunar_debug_add_yukari_point:0 "DEBUG: Yukari Yakumo wins +1"
+ KYO_lunar_debug_add_yukari_point_desc:0 "Updated the GUI for Yukari Yakumo wins, and simultaneously tested Lunar Capital faction's phased debuffs and controlled nation breakaways."
+ KYO_lunar_debug_add_lunarian_point:0 "DEBUG: Lunar Capital wins +1"
+ KYO_lunar_debug_add_lunarian_point_desc:0 "Only updated the GUI for Lunar Capital wins and battle report markers, without performing formal round settlements."
+
+ KYO_lunar_campaign_gui_slot_1:0 "[GetKYOLunarSlot1]"
+ KYO_lunar_campaign_gui_slot_2:0 "[GetKYOLunarSlot2]"
+ KYO_lunar_campaign_gui_slot_3:0 "[GetKYOLunarSlot3]"
+ KYO_lunar_campaign_gui_slot_4:0 "[GetKYOLunarSlot4]"
+ KYO_lunar_campaign_gui_slot_5:0 "[GetKYOLunarSlot5]"
+ KYO_lunar_campaign_gui_slot_6:0 "[GetKYOLunarSlot6]"
+ KYO_lunar_campaign_gui_slot_7:0 "[GetKYOLunarSlot7]"
+ KYO_lunar_campaign_gui_slot_8:0 "[GetKYOLunarSlot8]"
+
+ KYO_lunar_reconstruct_purification_archives:0 "Abolished the Purification Institute"
+ KYO_lunar_reconstruct_purification_archives_desc:0 ""
+
+ KYO_lunar_restore_eirin_and_kaguya:0 "Old friends return to Lunar Capital"
+ KYO_lunar_restore_eirin_and_kaguya_desc:0 ""
+
+ KYO_lunar_issue_reconstruction_edict:0 "The Edict of the New Lunar Capital"
+ KYO_lunar_issue_reconstruction_edict_desc:0 "The Purification Institute is hereby abolished. Moon Rabbits and surface-born individuals gain equal residency rights. The Pure Ones shall no longer decide who is entitled to exist."
+
+ KYO_lunar_define_common_sky:0 "A Covenant for a Shared Sky"
+ KYO_lunar_define_common_sky_desc:0 "Life can change, departure still has meaning, and science and fantasy need not erase each other. Post-war Lunar Capital must accommodate these answers."
+
+ KYO_lunar_return_home:0 "The Allied Forces Embark on Their Return Journey"
+ KYO_lunar_return_home_desc:0 "Gap after gap opens on the lunar sea, sending survivors back to their respective homelands. Hundred Youkai Accord will also lay down its military orders and turn to repairing the world left by the war."
+
+ KYO_lunar_science_and_fantasy:0 "Allowing the Unknown to Exist"
+ KYO_lunar_science_and_fantasy_desc:0 "Observation can question the unknown, and barriers will reserve a place for the unknown. Science and fantasy no longer see each other as errors that must be eliminated."
+
+ KYO_lunar_reconcile_merry:0 "Two Names, One Life"
+ KYO_lunar_reconcile_merry_desc:0 "On the day she became Yukari Yakumo, Merry did not disappear. The maiden and the sage are not two people replacing each other, but rather two names for the same long life."
+
+ KYO_lunar_same_starry_sky:0 "Under the same starry sky"
+ KYO_lunar_same_starry_sky_desc:0 "Yukari adds the final coordinates to the ancient star map. She doesn't know if her former companions will see it, but she has finally written down the answer that is thousands of years overdue."
+
+ KYO_lunar_route_epilogue:0 "The Last Page of the Journey"
+ KYO_lunar_route_epilogue_desc:0 "The Surface Report, the Moon's Records, and the Secretly Sealed Manuscript are placed together. Yukari closes her folding fan and, for the first time, looks towards a tomorrow where she no longer needs to calculate for the war."
+
+ KYO_love_story_encounter:0 "Youmu's Encounter with Reisen"
+ KYO_love_story_encounter_desc:0 "Optional reading: Short story consisting of events 1 and 3."
+ KYO_love_story_bamboo_maze:0 "Lost in the Bamboo Shadows"
+ KYO_love_story_bamboo_maze_desc:0 "Optional reading: Short story consisting of events 2, 4, and 5."
+ KYO_love_story_unchanging_court:0 "The Test of Strength in the Unchanging Academy"
+ KYO_love_story_unchanging_court_desc:0 "Optional reading: Short story consisting of events 6 and 7."
+ KYO_love_story_night_dew_case:0 "The Night Dew Case"
+ KYO_love_story_night_dew_case_desc:0 "Optional reading: Short story consisting of events 8 and 9."
+ KYO_love_story_three_lines:0 "Three Lines Engraved Simultaneously"
+ KYO_love_story_three_lines_desc:0 "Optional reading: Short stories consisting of events 10 to 12."
+ KYO_love_story_bamboo_lantern:0 "Bamboo Lantern and Small Mat"
+ KYO_love_story_bamboo_lantern_desc:0 "Optional reading: Short stories consisting of events 13 to 15."
+ KYO_love_story_snow_garden:0 "Snow Garden Asks About Flowers"
+ KYO_love_story_snow_garden_desc:0 "Optional reading: Short stories consisting of events 16 to 18."
+ KYO_love_story_reversal_night:0 "Day Off"
+ KYO_love_story_reversal_night_desc:0 "Optional reading: Long story consisting of events 19 to 25."
+ KYO_love_story_night_run:0 "The Ending"
+ KYO_love_story_night_run_desc:0 "Optional reading: Independent Event 26."
+
+  KYO_reimi_archive_1:0 "Reimi's File 1"
+ KYO_reimi_archive_1_desc:0 "Organizing Volume One: Reimi's File."
+
+ KYO_reimi_archive_2:0 "Reimi's Files 2"
+ KYO_reimi_archive_2_desc:0 "Organizing Volume 2 of Reimi's Files."
+
+ KYO_reimi_archive_3:0 "Reimi's Files 3"
+ KYO_reimi_archive_3_desc:0 "Organizing Reimi's Files from Volume 3."
+
+ KYO_reimi_archive_4:0 "Reimi's Files 4"
+ KYO_reimi_archive_4_desc:0 "Organizing Reimi's Files from Volume 4."
+
+ KYO_reimi_archive_5:0 "Reimi's Files 5"
+ KYO_reimi_archive_5_desc:0 "Organizing Reimi's Files from Volume 5."
+
+
+ KYO_yukari_archive_1:0 "Secretly Sealed Old Files 1"
+ KYO_yukari_archive_1_desc:0 "Organizing Secretly Sealed Old Files from Volume 1."
+
+ KYO_yukari_archive_2:0 "Secretly Sealed Old Files 2"
+ KYO_yukari_archive_2_desc:0 "Organizing Secretly Sealed Old Files from Volume 2."
+
+ KYO_yukari_archive_3:0 "Secretly Sealed Old Files 3"
+ KYO_yukari_archive_3_desc:0 "Organizing Secretly Sealed Old Files from Volume 3."
+
+ KYO_yukari_archive_4:0 "Secretly Sealed Old Files 4"
+ KYO_yukari_archive_4_desc:0 "Organizing the Secretly Sealed Old Files of Volume 4."
+
+ KYO_yukari_archive_5:0 "Secretly Sealed Old Files 5"
+ KYO_yukari_archive_5_desc:0 "Organizing the Secretly Sealed Old Files of Volume 5."
+
+ KYO_yukari_archive_6:0 "Secretly Sealed Old Files 6"
+ KYO_yukari_archive_6_desc:0 "Organizing the Secretly Sealed Old Files of Volume 6."
+
+ KYO_yukari_archive_7:0 "Secretly Sealed Old Files 7"
+ KYO_yukari_archive_7_desc:0 "Organizing the Secretly Sealed Old Files of Volume 7."
+
+ KYO_yukari_archive_8:0 "Secretly Sealed Old Files 8"
+ KYO_yukari_archive_8_desc:0 "Organizing the Secretly Sealed Old Files of Volume 8."
+
+ KYO_yukari_archive_9:0 "Secretly Sealed Old Files 9"
+ KYO_yukari_archive_9_desc:0 "Organizing the Secretly Sealed Old Files of Volume 9."
+
+ KYO_lunar_score_marks_0:0 "○○○○○○"
+ KYO_lunar_score_marks_1:0 "●○○○○○"
+ KYO_lunar_score_marks_2:0 "●●○○○○"
+ KYO_lunar_score_marks_3:0 "●●●○○○"
+ KYO_lunar_score_marks_4:0 "●●●●○○"
+ KYO_lunar_score_marks_5:0 "●●●●●○"
+ KYO_lunar_score_marks_6:0 "●●●●●●"
+
+ KYO_lunar_report_1_win:0 "§YThe Moon Login | Victory in This Round§!\n The Moon Sea is calm, yet Tengu spreads its location throughout the army with a whirlwind. Satori Komeiji peels away the surveillance gaps from the defenders' thoughts, and Koishi lights up the landing point on an unnoticed path; Gap tears open the long night behind the Moonbow Watchtower, and Gensokyo's banner falls on the Moon for the first time."
+
+ KYO_lunar_report_1_loss:0 "§YLunar Landing | Defeat This Round§!\n Yorihime calls down the gatekeeper god, whose divine light drives the beachhead back to the gap. The Komeiji sisters redraw the blind spots, the tengu recover those cut off from the force, and the advance team defends the last route home.\n\n Yukari closes her folding fan: “The moon is still there. We are still here too. Regroup. We will try again.”"
+
+ KYO_lunar_report_2_win:0 "§YFirst Gate | Victory This Round§!\n Byakuren stood before the descending gods, her Buddha-light opening the army's first breach. Suika laughed as she rallied the oni and hurled them against the gate on the schedule Ran had calculated; the hundred youkai who had fought as scattered bands a thousand years ago now crossed the Lunar Capital's threshold in a single, united stride."
+
+ KYO_lunar_report_2_loss:0 "§YFirst Gate | Defeat in this round§!\n Toyohime folded the long street, the charging army deviating from the gate in a few steps. Byakuren used magic to protect the retreating army, the oni braving divine fire to drag back the Kappa heavy artillery.\n\n Yukari gazed at the ever-changing long street: “She can fold roads, but she can't break our army. Bring back the wounded. Next time, breach the gate head-on.”"
+
+ KYO_lunar_report_3_win:0 "§YLunar Capital Outer Wall | Victory in this round§!\n Red mist obscured Lunar Capital's silver-white sky, and Nitori directed artillery fire to pierce the outer wall following the beacon in the fog. Humans and Youkai crossed the same section of the wall, but did not turn their weapons on the civilian houses; the Lunarians hiding behind the doors saw for the first time that the newcomers were not the city-slaughtering fiends the Lunar Capital had described."
+
+ KYO_lunar_report_3_loss:0 "§YLunar Capital Outer Wall | Defeat in this round§! moon Rabbit fired crisscrossing shots from the rooftops and corridors, forcing the besieging army to retreat from the breach.\n Kappa left a trail of escape in the red mist, while Scarlet Devil Mansion covered the rear of the convoy with a final volley.\n\n Yukari stood outside the walls: “What we've lost is only a section of the outer wall, not this war. Everyone come back, and we'll cross it again.”"
+
+ KYO_lunar_report_4_win:0 "§YInner City Moon Canal | Victory in this round§!\n Eientei allowed the wounded to stand again, while Hakugyokurou led the spirits of the fallen across the moon canal. The living advanced along the left bank, while the dead followed from the right; the two armies met before the inner city gate, and even death could not stop Gensokyo's advance."
+
+ KYO_lunar_report_4_loss:0 "§YInner City Moon Canal | This round's defeat§!\n The purification spell sealed off the Moon Canal, separating the wounded soldiers from their return journey. Reisen disrupted the moon rabbit's signal with her Mad Eyes, and Youmu escorted the wounded one by one through the remaining passage.\n\n Yukari personally held up the closing gap: “Bring back the living first, and don't forget the names of the dead. If the road is blocked, I will open another one.”"
+
+ KYO_lunar_report_5_win:0 "§YBefore the palace steps | Victory this round§!\n Reimi erected a temporary torii gate on the lunar land, pinning the Hakurei's return path before the palace steps. The Moriya gods, following the coordinates calculated by Ran, descended their pillars; the moment the retreat was secured, Yukari gathered the countless gaps, causing them to simultaneously bite into the royal castle's protective walls."
+
+ KYO_lunar_report_5_loss:0 "§YBefore the Palace Steps | Defeat in This Round§!\n The Watatsuki sisters concentrated all their divine spirits and moon rabbits before the palace steps, and the sacred pillars were shattered one by one by the divine light. Reimi failed to hold the ceremony, and Ran and Chen kept shortening their return path. The allied forces retreated to their defensive line before the gap closed.\n\n Yukari did not turn around: “They only held the steps. Go back, stand firm, and come back up.”"
+
+ KYO_lunar_report_6_win:0 "§YThe Final Moon Gate | Victory in This Round§!\n Crimson mist covered the sky, war drums shook the moon, the sacred pillars and the sea of flowers crossed the final gap together, and Hakugyokurou's soul-guiding butterflies followed the military flag into the royal city. An inside agent broke the seal from within the city, and the allied forces shattered the gate hinges from outside. Finally, the Moon Gate opened with a deafening roar between the two forces. No single banner could claim this victory alone."
+
+ KYO_lunar_report_6_loss:0 "§YThe Final Moon Gate | This Round's Defeat§!\n The Final Moon Gate closed again before the entire army, and Lunar Capital's divine fire poured down the city walls. Byakuren and Suika held the flanks, while Yukari ordered all forces to retreat along the same gap, leaving no one behind on the moon.\n\n She was the last to cross the passage: “Doors can close again, gaps can open again. As long as Gensokyo is still here, this war is not over.”"
+
+ KYO_lunar_extra_draw_6:0 "Add 6th tactic (25 Political Power)"
+ KYO_lunar_extra_draw_6_desc:0 "Draw another tactic from those not yet used this round; if the discount for tactic 10 has not been used, reduce this cost by 15 Political Power."
+ KYO_lunar_extra_draw_7:0 "Add 7th tactic (40 Political Power)"
+ KYO_lunar_extra_draw_7_desc:0 "Draw another tactic from those not yet used this round; if the discount for tactic 10 has not been used, reduce this cost by 15 Political Power."
+ KYO_lunar_extra_draw_8:0 "Added 8th tactic (60 Political Power)"
+ KYO_lunar_extra_draw_8_desc:0 "Draw another tactic from those not yet available this round; if the discount for tactic 10 has not been used, the cost is reduced by 15 Political Power."
+
+
+  KYO_lunar_tactic_1:0 "Gap of Ten Thousand Armies"
+ KYO_lunar_tactic_1_desc:0 "Yakumo's system merges the landing points, timing, and return routes of each army into a single boundary channel, allowing the vanguard to simultaneously penetrate the Moon.\n\n§YConsumption:§! Rifle 400\n§YEffect:§! X ← X + 14\n§YAfter use X:§![?KYO_lunar_preview_1|0]\n This tactic does not consume resources when holding a free order."
+
+ KYO_lunar_slot_tactic_1:0 "§Y01§! §WGap of Ten Thousand Armies§!"
+
+
+ KYO_lunar_tactic_2:0 "Night Parade Shatters the Gate"
+ KYO_lunar_tactic_2_desc:0 "The oni acts as the spearhead of the siege, gathering superhuman strength under unified command to forcibly break open the gates of Lunar Capital, paving the way for the mixed army.\n\n§YConsumption:§! Rifle 700\n§YEffect:§! X ← X + 26\n§YAfter use X:§![?KYO_lunar_preview_2|0]\n This tactic does not consume resources when holding a free order."
+
+ KYO_lunar_slot_tactic_2:0 "§Y02§! §WNight Parade Shatters the Gate§!"
+
+
+ KYO_lunar_tactic_3:0 "Kappa Artillery Salvo"
+ KYO_lunar_tactic_3_desc:0 "Kappa workshops publish firing tables, coordinates, and ammunition scheduling, allowing artillery scattered in various locations to unleash firepower on the same target.\n\n§YConsumption:§! Artillery 80 + Rifle 100\n§YEffect:§! X ← X + 20\n§YAfter use, X:§![?KYO_lunar_preview_3|0]\n This tactic does not consume resources when holding a free order."
+
+ KYO_lunar_slot_tactic_3:0 "§Y03§! §WKappa Artillery Salvo§!"
+
+
+ KYO_lunar_tactic_4:0 "Peerless Wind God"
+ KYO_lunar_tactic_4_desc:0 "The tengu reconnaissance network shares wind direction, enemy location, and the Moon's terrain, allowing the Allied forces to gain advance knowledge of garrison movements and positional weaknesses.\n\n§YConsumption:§! Command Power 25\n§YEffect:§! X ← X + 8 + 2G\n§YAfter use X:§![?KYO_lunar_preview_4|0]\n This tactic does not consume resources when holding a free order."
+
+ KYO_lunar_slot_tactic_4:0 "§Y04§! §WPeerless Wind God§!"
+
+
+ KYO_lunar_tactic_5:0 "A Hundred Instruments Sound the Charge"
+ KYO_lunar_tactic_5_desc:0 "Tsukumogami awaken vehicles and workshop machinery, organizing transport, repair, and assault forces into a high-speed mobile column.\n\n§YConsumption:§! Motorized Equipment 180\n§YEffect:§! X ← X + min(21, 6 + 3G)\n§YAfter use X:§![?KYO_lunar_preview_5|0]\n This tactic does not consume resources when holding a free order."
+
+ KYO_lunar_slot_tactic_5:0 "§Y05§! §WA Hundred Instruments Sound the Charge§!"
+
+
+ KYO_lunar_tactic_6:0 "Eirin Takes the Field"
+ KYO_lunar_tactic_6_desc:0 "Eientei leveraged its longstanding prestige to persuade Lunar Capital's medical officers and technicians to defect, while simultaneously rotating wounded soldiers to preserve strength for the next offensive.\n\n§YConsumption:§! Support Equipment 100+ Political Power 15\n§YEffect:§! X ← X + 10; Next Round Initial X + 6\n§YAfter Use X:§![?KYO_lunar_preview_6|0]\n This tactic does not consume resources when holding a free order."
+
+ KYO_lunar_slot_tactic_6:0 "§Y06§! §WEirin Takes the Field§!"
+
+
+ KYO_lunar_tactic_7:0 "Roukanken and Hakurouken"
+ KYO_lunar_tactic_7_desc:0 "Hakugyokurou records the fallen, gathers the lost souls, and escorts the wounded back to the front lines via safe passages.\n\n§YConsumption:§! Command Power 35\n§YEffect:§! X ← X + 12\n§YAfter use, X:§![?KYO_lunar_preview_7|0]\n This tactic does not consume resources when holding a free order."
+
+ KYO_lunar_slot_tactic_7:0 "§Y07§! §WRoukanken and Hakurouken§!"
+
+
+ KYO_lunar_tactic_8:0 "Fantasy Seal"
+ KYO_lunar_tactic_8_desc:0 "The Hakurei Barrier fixes the retreat routes of humans, Youkai, and God at the same coordinates, making it impossible for the Lunar Capital spell to easily sever the allied forces.\n\n§YConsumption:§! Political Power 35\n§YEffect:§! X ← X + 6 + 4H\n§YAfter use, X:§![?KYO_lunar_preview_8|0]\n This tactic does not consume resources when holding a free token."
+
+ KYO_lunar_slot_tactic_8:0 "§Y08§! §WFantasy Seal§!"
+
+
+ KYO_lunar_tactic_9:0 "Dance of the Powerful Clans"
+
+ KYO_lunar_tactic_9_desc:0 "Divine Spirit Mausoleum reorganized the allied forces' deployment using ancient military tactics, integrating the main attack, feint, and reserve forces into the same battle formation, rapidly expanding their existing advantage.\n\n§YConsumption:§! Army Experience 20\n§YEffect:§! X ← floor(1.15X) + 5\n§YAfter use, X:§![?KYO_lunar_preview_9|0]\n This tactic does not consume resources when holding a free order."
+
+ KYO_lunar_slot_tactic_9:0 "§Y09§! §WDance of the Powerful Clans§!"
+
+
+ KYO_lunar_tactic_10:0 "Grassroots Supply Network"
+ KYO_lunar_tactic_10_desc:0 "Beast Path, Small Settlements, and Grassroots Youkai are linked together to form a transport line outside of military orders, delivering supplies to positions that are difficult to reach by regular supplies.\n\n§YConsumption:§! Motorized Equipment 120\n§YEffect:§! X ← X + 10; Next additional draw -15PP\n§YAfter use X:§![?KYO_lunar_preview_10|0]\n This tactic does not consume resources when holding a free token."
+
+ KYO_lunar_slot_tactic_10:0 "§Y10§! §WGrassroots Supply Network§!"
+
+
+ KYO_lunar_tactic_11:0 "Scarlet Mist over the Moon"
+ KYO_lunar_tactic_11_desc:0 "Scarlet Devil Mansion expands the red fog across the entire war zone, blocking the moon rabbit's observation and firing range, providing cover for the Allied advance.\n\n§YConsumption:§! Command Power 50 + Aircraft Equipment 40\n§YEffect:§! X ← floor(1.25X)\n§YAfter use X:§![?KYO_lunar_preview_11|0]\n This tactic does not consume resources when holding a free order."
+
+ KYO_lunar_slot_tactic_11:0 "§Y11§! §WScarlet Mist over the Moon§!"
+
+
+ KYO_lunar_tactic_12:0 "Superhuman “Byakuren Hijiri”"
+ KYO_lunar_tactic_12_desc:0 "Myouren Temple units jointly charged into the breach in the position; the vanguard broke through the enemy lines head-on, while the rearguard held the wounded and the entire army's retreat route.\n\n§YConsumption:§! Political Power 40 + Command Power 25\n§YEffect:§! If X < T: +ceil((T-X)/2) + 8; otherwise + 8\n§YAfter use, X:§![?KYO_lunar_preview_12|0]\n This tactic does not consume resources when holding a free order."
+
+ KYO_lunar_slot_tactic_12:0 "§Y12§! §WSuperhuman “Byakuren Hijiri”§!"
+
+
+ KYO_lunar_tactic_13:0 "Beasts of the Wicked Path"
+ KYO_lunar_tactic_13_desc:0 "Animal Realm Legion reinforces the weakest point of the defense, expanding existing gains with ruthless and efficient assaults.\n\n§YConsumption:§! Political Power 45\n§YEffect:§! X ← floor(1.18X) + 8\n§YAfter use X:§![?KYO_lunar_preview_13|0]\n This tactic does not consume resources when holding a free order."
+
+ KYO_lunar_slot_tactic_13:0 "§Y13§! §WBeasts of the Wicked Path§!"
+
+
+ KYO_lunar_tactic_14:0 "Flowers, Birds, Wind, and Moon"
+ KYO_lunar_tactic_14_desc:0 "Garden of the Sun transformed its youkai power into a sea of flowers covering the battlefield, and then concentrated its firepower according to the allied forces' timing to avoid affecting the vanguard.\n\n§YConsumption:§! Artillery 100 + Command Power 45\n§YEffect:§! X ← floor(1.30X) + 4\n§YAfter use X:§![?KYO_lunar_preview_14|0]\n This tactic does not consume resources when holding a free order."
+
+ KYO_lunar_slot_tactic_14:0 "§Y14§! §WFlowers, Birds, Wind, and Moon§!"
+
+
+ KYO_lunar_tactic_15:0 "The Strongest Fairies"
+ KYO_lunar_tactic_15_desc:0 "The fairy army, relying on the Moon's natural regeneration, used continuous charges to contain the defending forces and fill every gap in the battle line.\n\n§YConsumption:§! Motorized Equipment 150 + Political Power 20\n§YEffect:§! X ← X + 5 + 5G\n§YAfter use, X:§![?KYO_lunar_preview_15|0]\n This tactic does not consume resources when holding a free order."
+
+ KYO_lunar_slot_tactic_15:0 "§Y15§! §WThe Strongest Fairies§!"
+
+
+ KYO_lunar_tactic_16:0 "Sea of Trees of Hourai — Phoenix Reborn"
+ KYO_lunar_tactic_16_desc:0 "Hourai immortals take turns enduring fatal spells, wearing down the defenders with an unyielding frontal offensive, ultimately tearing apart Lunar Capital's formation.\n\n§YConsumption:§! Support Equipment 120 + Army Experience 30\n§YEffect:§! X ← max(X+8, floor((X+30)^2/100))\n§YAfter use, X:§![?KYO_lunar_preview_16|0]\n When holding a free token, this tactic does not consume resources."
+
+ KYO_lunar_slot_tactic_16:0 "§Y16§! §WSea of Trees of Hourai — Phoenix Reborn§!"
+
+
+ KYO_lunar_tactic_17:0 "Necro-Fantasia"
+ KYO_lunar_tactic_17_desc:0 "The Yakumo Front simultaneously rewrites multiple boundaries, allowing forces from all sides to transcend distances, walls, and defenses, arriving at the decisive battle position at the same instant.\n\n§YConsumption:§! Political Power70＋Command Power60\n§YEffect:§! X ← max(X+8, floor((X/8)^2))\n§YAfter use, X:§![?KYO_lunar_preview_17|0]\n This tactic does not consume resources when holding a free order."
+
+ KYO_lunar_slot_tactic_17:0 "§Y17§! §WNecro-Fantasia§!"
+
+
+ KYO_lunar_tactic_18:0 "Reverse Hierarchy"
+ KYO_lunar_tactic_18_desc:0 "The underdog's insubordination reverses the balance of power, while the rebels within Lunar Capital disrupt the imperial edict with their dissenting voices, turning their initial disadvantage into an opportunity to attack.\n\n§YConsumption:§! Army Experience 45\n§YEffect:§! If X < T: +floor(0.60(T-X)) + 10; otherwise +8\n§YAfter use, X:§![?KYO_lunar_preview_18|0]\n This tactic does not consume resources when holding a free order."
+
+ KYO_lunar_slot_tactic_18:0 "§Y18§! §WReverse Hierarchy§!"
+
+
+ KYO_lunar_tactic_19:0 "Super Ego"
+ KYO_lunar_tactic_19_desc:0 "Palace of the Earth Spirits reconnaissance network simultaneously captures conscious hostility and unconscious blind spots, transforming traces of previous engagements into new battlefield intelligence.\n\n§YConsumption:§! Army Experience 30 + Political Power 20\n§YEffect:§! X ← X + max(6, floor(0.70A))\n§YAfter use, X:§![?KYO_lunar_preview_19|0]\n This tactic does not consume resources when holding a free order."
+
+ KYO_lunar_slot_tactic_19:0 "§Y19§! §WSuper Ego§!"
+
+
+ KYO_lunar_tactic_20:0 "United as One"
+ KYO_lunar_tactic_20_desc:0 "Hundred Youkai Accord gathers all military orders, supplies, and reserves; no faction monopolizes the spoils, and no troops are abandoned in the rear.\n\n§YConsumption:§! Support Equipment 80 + Command Power 30\n§YEffect:§! If X < T: X ← floor((X+T)/2) + 12; otherwise + 10\n§YAfter use, X:§![?KYO_lunar_preview_20|0]\n When holding a free order, this tactic does not consume resources."
+
+ KYO_lunar_slot_tactic_20:0 "§Y20§! §WUnited as One§!"

@@ -1,0 +1,198 @@
+﻿l_english:
+
+ KYO_MOKU_coal:0 "Mokou Charcoal Fire"
+ KYO_MOKU_coal_desc:0 "Bamboo Forest of the Lost leaves behind a large amount of withered bamboo, fallen wood, and unusable plant waste every day. Fujiwara no Mokou sends these to charcoal kilns, gasifiers, and fuel workshops, transforming them into coke, gas, and industrial fuel. The long years had given her a deeper understanding of the temperature and variations of the flames than any other craftsman. Even when the furnace went out of control, she dared to stand in the most dangerous spot to adjust the heat. The problem was that Mokou occasionally forgot that the other workers weren't Hourai immortals, so all the safety procedures were rewritten three times by Keine herself."
+
+
+ KYO_chireiden_nuclear_org:0 "Palace of the Earth Spirits Nuclear Energy Research Institute"
+ KYO_chireiden_nuclear_org_desc:0 "The sun deep within the scorching Hell ruins no longer burns only for the underground. The research institute, built around Utsuho Reiuji's power, constructed reaction facilities, cooling systems, and multiple enclosed zones, attempting to convert the energy powerful enough to incinerate Former Hell into measurable, controllable, and replicable technology. Satori Komeiji would notice the researchers' unspoken oversights, while Rin Kaenbyou was responsible for accident handling and evacuation routes. The research here wasn't just about releasing more powerful energy, but also about how to ensure the underground environment remained intact after things went out of control."
+
+
+ KYO_yakumo_boundary_labs:0 "Yakumo Boundary Information Center"
+ KYO_yakumo_boundary_labs_desc:0 "Yakumo Boundary Information Center has no public address, and no door leads to the same place forever. Yukari Yakumo uses gaps to traverse locations that shouldn't be connected on the map, while Ran meticulously analyzes eyewitness reports, intercepted messages, and personnel movements into rigorous deductions. Chen is responsible for contacting those low-level figures who won't speak to official intelligence agencies. The information center isn't content with simply collecting secrets; it excels at uncovering deliberately overlooked details on the borderline between rumor and fact. Many people have worked for it unknowingly, yet no one can prove they've ever seen its headquarters."
+
+
+ KYO_rabbit_qm_corps:0 "Inaba Industrial Bureau"
+ KYO_rabbit_qm_corps_desc:0 "Inaba Industrial Bureau's warehouse always seems to be in chaos: Youkai rabbits carry parts through the corridors, production forms are constantly being altered, yet scarce materials always seem to arrive on the production line on time. Tewi Inaba was responsible for procurement, exchange, and finding shortcuts not prohibited by the rules; Reisen rearranged shifts, labeling, and inspection processes; and Eirin Yagokoro decided which designs could be put into production. The Industry Bureau was particularly adept at replacing parts and adjusting processes when materials were scarce, preventing factories from shutting down due to shortages of any one material. As for why some supplies arrived before the requisition forms were even completed, Tewi usually attributed it simply to good luck."
+
+
+ KYO_nareko_road_construction:0 "Road Construction by the Ancestor God"
+ KYO_nareko_road_construction_desc:0 "Nareko Michigami once guarded a road so long it was almost forgotten by the world, so she knew better than any engineer: building a road was easy; keeping it in use was difficult. She would personally inspect bridges, tunnels, rest stops, and dangerous bends, and would use her ability to block roads to test whether checkpoints and detours were truly effective. Nareko did not advocate connecting everything; some roads should be open, while some entrances must remain permanently closed. Whenever a new road opens, she still prepares a riddle at the crossroads; at least in her view, those who can't even read road signs shouldn't venture into the wilderness alone."
+
+
+ KYO_mystia_food_industry:0 "Night Sparrow Catering"
+ KYO_mystia_food_industry_desc:0 "The dim yellow light at the edge of the bamboo forest has now expanded from a small cart into a canteen and mobile kitchen spread throughout the night roads. Mystia Lorelei delivers grilled eel, hot soup, and easily preserved meals to night-shift factories, patrol posts, and remote inns, her songs guiding weary guests to places where hot food is still available. Night Sparrow Catering has no fixed menu; the chef decides the dishes based on the ingredients available that day, but no matter what, Mystia's prized grilled eel is always present. She insists that grilled eel can cure night blindness, and as for why guests always suddenly can't see the way before finding the restaurant, she never gives a direct answer."
+
+
+ KYO_yorigami_ensurance:0 "Yorigami Insurance"
+ KYO_yorigami_ensurance_desc:0 "Few people are willing to trust an insurance company run by the goddesses of poverty and pestilence—until they discover that no one understands disaster better than the Yorigami sisters. Joon recruits clients, values their property, and drafts the contracts; Shion need only linger in a building to identify the calamity most likely to befall it. Their reviews are brutally strict and their premiums never cheap, but once a policy takes effect, valid claims are paid without needless delay. The sisters may be poor comforters, yet they know better than anyone that fine words are worthless after someone loses their final possession."
+
+
+ KYO_komeiji_hot_spring_hotel:0 "Komeiji Onsen Ryokan"
+ KYO_komeiji_hot_spring_hotel_desc:0 "Geothermal energy rises from the cracks in the rocks, perpetually filling the baths near the Palace of the Earth Spirits with steam. Guests don't need to ask; Satori Komeiji prepares the perfect water temperature, medicinal bath, and quiet room in advance. This thoughtfulness is sometimes relaxing, sometimes utterly unsettling. Hidden deep within the inn are several open-air baths discovered by Koishi; it's said that one can only stumble upon them by accident when completely forgetting they're looking for them."
+
+
+ KYO_Komachi_shipping_company:0 "Komachi Transport Company"
+ KYO_Komachi_shipping_company_desc:0 "If you only looked at the timetable, Komachi Transport Company would probably have gone out of business long ago. Cargo ships are occasionally late, and the boatmen might even take a nap next to the cargo, but no other company knows Gensokyo's waterways, undercurrents, and dense fog better than Komachi Onozuka. Whether the cargo has to cross torrential rains, Youkai territory, or waters where the living shouldn't tread, she always finds a route. Eiki Shiki regularly checks the company's backlog of orders, usually during the few most efficient days of the year."
+
+
+ KYO_yuuka_flower_farm:0 "Yuuka Flower Farm"
+ KYO_yuuka_flower_farm_desc:0 "The farm entrance bears only one rule: Do not harm the flowers. Yuuka Kazami cultivates herbs, ornamental flowers, and species long extinct in the Outside World, refusing to let noisy machinery disrupt their growth. The gardeners must learn to discern soil moisture, wind direction, and whether a gentle fragrance signifies satisfaction or a warning. As long as the rules are followed, visitors can see Gensokyo's most magnificent flower fields; those who trample the flowerbeds usually don't return."
+
+
+ KYO_chen_cat_store:0 "Chen-Chen Cat Shelter"
+ KYO_chen_cat_store_desc:0 "Before becoming a cat, Chen was a nameless, homeless stray cat who would still be friendly to passersby. She remembers the eaves on cold nights and the paws that reached out but received no response, and therefore doesn't want other cats to experience the same. The shelter doesn't prioritize quickly rehoming cats: those who want to adopt must learn to care for them, undergo observation, and gain the cat's approval. Chen believes that while shelter can be arranged by others, who becomes family should be decided by the plants themselves."
+
+
+ KYO_youmu_gardening_club:0 "Scarlet Dream Gardening Club"
+ KYO_youmu_gardening_club_desc:0 "Youmu Konpaku is accustomed to pruning branches and leaves neatly, as if gardens should also receive sword training; Hong Meiling, on the other hand, believes more in the flow of qi, thinking that it's not a bad thing for plants to grow crookedly occasionally. The two often argue for ages about whether to prune or leave a branch, but in doing so, they have saved many gardens destroyed by war, frost, and neglect. Scarlet Dream Gardening Club not only teaches flower planting but also revitalizes abandoned land in villages, allowing ruins to grow again with things that can provide shade, bear fruit, and be remembered."
+
+
+ KYO_raccon_raccoon_organization:0 "Tanuki-Tanuki Transformations"
+ KYO_raccon_raccoon_organization_desc:0 "Mamizou Futatsuiwa believes that a change of clothes fools only the eye. A true disguise must alter the voice, posture, and even the wearer's sense of who they used to be. Tanuki-Tanuki Transformations thus offers costumes, stage styling, and complete makeovers wrought with tanuki magic. A customer may meet a noble, an elder, a youkai, or a perfect stranger in the mirror. The studio never asks why someone needs a new face; it merely warns that appearances can be borrowed, while habits are what betray a disguise."
+
+
+ KYO_kaguya_waste_day_and_night:0 "Kaguya Waste Day and Night"
+ KYO_kaguya_waste_day_and_night_desc:0 "This travel agency doesn't have a shortest route. Kaguya Houraisan's personally designed itineraries often begin with moon-viewing in a bamboo forest, interspersed with puzzles, banquets, treasure hunts, and several locations not on the map; the yokai rabbit leading the way will even add new side paths on its own. Travelers might only intend to while away an afternoon, but return feeling like they've spent a whole week. Kaguya is quite satisfied with this—if travel only takes you to your destination, it would be a waste of the eternal night."
+
+
+ KYO_cirno_ice_cream_factory:0 "The Ultimate Ice Cream Factory"
+ KYO_cirno_ice_cream_factory_desc:0 "The factory doesn't have complex refrigeration machines; Cirno herself is the most important cold source for the entire production line. The fairies decide the flavors, shapes, and toppings based on their mood that day, so the menu is often finalized after the store opens. Occasionally, a new flavor appears that no one can clearly describe, and Cirno will directly name it the “Ultimate Limited Edition.” She has only one requirement for quality: the ice cream must never melt before the customer finishes eating it. If it does melt, she will immediately refreeze it and announce that the problem has been perfectly solved."
+
+
+ KYO_wriggle_bug_company:0 "Wriggle Nightbug Company"
+ KYO_wriggle_bug_company_desc:0 "Wriggle Nightbug doesn't accept requests to “eliminate all the insects you see.” The Wriggle Nightbug Company's insect swarms first distinguish between crop-eating pests, soil-maintaining insects, and pollinators, then use scent, light, and migration routes to lure the truly harmful groups away from the farmland. The effect isn't as fast as poison, but it won't cause the fields to lose their vitality for the next season. Many farmers initially distrusted pest control companies run by insects, until they discovered that Wriggle often knew better than anyone else what was missing from her fields."
+
+
+ KYO_momoyo_mining_company:0 "Momoyo Centipede Mining"
+ KYO_momoyo_mining_company_desc:0 "Momoyo Himemushi seldom sits in an office reading production reports. She is usually underground with the miners, following veins through the rock. Momoyo Centipede Mining uses centipede youkai to sense subterranean vibrations and locate deposits, then brings in kappa machinery for excavation, support, and transport. The mine is known for rough discipline and blunter complaints, but when a tunnel turns dangerous, Momoyo is always the first in and the last out. To her, a true discovery means bringing the ore and every worker back alive."
+
+
+
+  KYO_yukari_train_train_love:0 "Secret Sealed Train Association"
+ KYO_yukari_train_train_love_desc:0 "Yukari Yakumo harbored a deep affection for trains that she herself couldn't explain. The train whistle, the vibrations of wheels rolling on the tracks, and the ever-receding scenery outside the window always awaken a fragmented memory: in some era long since lost to memory, it seems a girl once sat beside her in a train carriage, talking about the starry sky, boundaries, and the distant places yet to be reached.\n\n Yukari can no longer remember that person's name, or even be sure if it's all a real past event, or a remnant of a bygone dream. She only knows that it was once her closest friend; and after so much time, that person might long be gone.\n\n So, Yukari funded the establishment of the Secret-Sealed Train Association, collecting old train tickets, repairing abandoned stations, and organizing train trips to various parts of Gensokyo. On every commemorative train, an unoccupied seat is left, but Yukari never explains who it belongs to. Perhaps what she wants to commemorate is not the train itself, but the name she has lost, yet which has never truly left."
+
+
+ KYO_backdoor_dancer_coupon:0 "Back Door Dancers"
+ KYO_backdoor_dancer_coupon_desc:0 "The Back Door Dancers sell no public tickets and have no fixed stage. Satono Nishida and Mai Teireida travel through back doors scattered across Gensokyo, suddenly appearing behind factories, mines, and training camps. Their dances awaken the dormant mental and life energy of those nearby: exhausted workers take up their tools again, and wavering formations recover their rhythm. Yet every performance is also an observation conducted for Okina Matara. No one knows whether the dancers have merely come to lend a hand, or are searching on behalf of the god of the back door for the next person worth taking away."
+
+
+ KYO_yakuza_organization:0 "Triads"
+ KYO_yakuza_organization_desc:0 "The syndicate unites the Gouyoku Alliance, Kiketsu Family, and Keiga Family, although none truly trusts the other two. The Gouyoku Alliance controls minerals, fuel, and underground trade; the Kiketsu Family handles contracts, intelligence, and the division of profits; the Keiga Family provides transport, guards, and coercion best omitted from written agreements. They fight constantly over territory, then close ranks the moment an outsider competes with them. This is not a reputable enterprise—it is a system that makes breach of contract too expensive to contemplate."
+
+
+ KYO_ran_calculator_organization:0 "Ran Yakumo Accountant"
+ KYO_ran_calculator_organization_desc:0 "Ran Yakumo Accountant isn't responsible for making the accounts look good; they're only responsible for finding where the corruption began. In Ran's view, the significance of an account isn't explaining how much was spent yesterday, but calculating which warehouse will run out of funds first tomorrow, which transportation line will soon stop, and which project is simply impossible to complete on time. Inventory, taxes, labor hours, losses, and risks are all fed into the Shikigami Calculator and then compiled into a report without a single superfluous explanation. Clients can question the conclusions, but it's difficult to persuade the formula to change the answer. The only project the firm has consistently struggled to resolve is the expense reports for snacks Chen submits after each field job."
+
+
+ KYO_three_fairies_organization:0 "Three Fairies of Light Company"
+ KYO_three_fairies_organization_desc:0 "Three Fairies of Light Company's registered services include environmental surveys, facility security, stage setup, lost and found, transportation, and prank cleanup, because the three founders can never decide what the company should actually be doing. Sunny Milk can refract light, making her suitable for setting up lighting and camouflage; Luna Child can eliminate sound, specializing in soundproofing and covert transportation; Star Sapphire uses her ability to sense moving objects to handle patrols and searches. They'll take on almost any job, and most of the time they actually manage to complete it. The only thing clients need to figure out is whether the chaos is part of the job, or just something the three fairies find amusing on a whim."
+
+
+
+
+
+ KYO_koppa_organization:0 "Kappa Universal Weapon Manufacturing Company"
+ KYO_koppa_organization_desc:0 "Kappa Universal Weapon Manufacturing Company is a consortium of mechanical workshops along the Youkai Mountain river, responsible for producing rifles, machine guns, mortars, and various infantry equipment. Kappa applies its complex experience in hydraulic machinery to weapon manufacturing, giving its products excellent waterproofing and durability, allowing them to quickly return to operation even when covered in mud and water. Part specifications can occasionally be perplexing, but once handed to someone familiar with the machinery, almost no damage is unrepairable on-site."
+
+
+ KYO_koppa_tank_organization:0 "Kappa Amphibious Armor Manufacturing Company"
+ KYO_koppa_tank_organization_desc:0 "Kappa Amphibious Armor Manufacturing Company specializes in developing armored vehicles capable of traversing rivers, mud, and treacherous mountain paths. Sealed hulls, hydraulic transmissions, and buoyancy systems are the most valued technologies here, enabling vehicles to emerge from directions the enemy deems impassable. Although early prototypes occasionally sank to the bottom, Kappa engineers insist that this simply means the surfacing process is not yet complete."
+
+
+ KYO_Eirin_organization:0 "Eientei Yagokoro Pharmaceutical Factory"
+ KYO_Eirin_organization_desc:0 "Eientei Yagokoro Pharmaceutical Factory produces military medicines, first-aid equipment, antidotes, and battlefield medical supplies according to Eirin Yagokoro's formulas. Reisen is responsible for drug inspection and usage training, while the Inabas deliver crates of supplies to various medical stations. The medicines here often save wounded soldiers deemed hopeless by other doctors, but Eirin never allows anyone to arbitrarily modify the dosage."
+
+
+ KYO_byakuren_air_lift_organization:0 "Myouren Temple Palanquin Airlift Company"
+ KYO_byakuren_air_lift_organization_desc:0 "Myouren Temple's Palanquin Airlift Company carries the Palanquin Ship's long-range experience into an age of modern aviation, combining magic and machinery to transport personnel, food, and medicine. Ichirin and Unzan handle heavy loading; Minamitsu charts routes through bad weather; and Byakuren requires every aircraft to reserve space for wounded people and refugees. Its members argue constantly about routes, discipline, and risk, but few step back when the aircraft truly have to fly."
+
+
+ KYO_lunarian_aero_organization:0 "Lunar Capital Moon Rabbit Space Agency"
+ KYO_lunarian_aero_organization_desc:0 "The Lunar Capital Moon Rabbit Space Agency builds lunar spacecraft, long-range observation equipment, and high-altitude combat systems. Every component undergoes repeated purification in a cleanroom; every deviation is logged, traced, and attributed to possible terrestrial contamination. Its moon rabbit technicians work with obsessive precision, although the agency never records how many consecutive nights they are made to work."
+
+
+ KYO_nethernight_interceptor_organization:0 "Hakugyokurou Night Flight Team"
+ KYO_nethernight_interceptor_organization_desc:0 "Hakugyokurou Night Flight Team utilizes the undead's perception of darkness, fog, and the presence of life to develop aircraft specifically designed for nighttime interception missions. Ghosts can act as navigators in unlit environments, while Youmu Konpaku rigorously trains and disciplines crews prone to deviating from their flight paths. Yuyuko Saigyouji rarely interfered with the design process, only requesting that the night flight formations not disturb the cherry blossoms near Saigyou Ayakashi."
+
+
+ KYO_tengu_aero_organization:0 "Tengu Aviation Company"
+ KYO_tengu_aero_organization_desc:0 "Tengu Aviation Company is jointly run by tengu pilots, mountain craftsmen, and kappa technicians, primarily manufacturing high-speed fighters, reconnaissance aircraft, and communication aircraft. tengu incorporates its understanding of wind direction and airflow into every design, striving to complete reconnaissance and attack before the enemy notices. Sometimes, even before a new aircraft's performance has passed formal review, Aya Shameimaru has already prepared enough test flight records to fill the front page."
+
+
+ KYO_shrine_maiden_organization:0 "Hakurei Shrine Printing Shop"
+ KYO_shrine_maiden_organization_desc:0 "Hakurei Shrine Printing Shop standardizes the production of talisman paper cutting, incantation drawing, and basic spells, with the final spiritual infusion completed by the shrine maiden. The amulets manufactured here can be used for exorcism, sealing, vigilance, and maintaining small-scale barriers, allowing magical tools that were previously difficult to mass-produce to be sent to various places. The printing presses can run day and night; the only real limitation to production is how long the shrine maiden herself can sustain it."
+
+
+ KYO_magican_study_organization:0 "Forest of Magic Joint Magical Workshop"
+ KYO_magican_study_organization_desc:0 "Forest of Magic Joint Magical Workshop attempts to organize the previously closed-off spells, magical devices, and alchemical techniques into reproducible military products. Alice Margot Lloyd provides sophisticated puppetry technology, while other magicians in the forest bring their treasured materials and research. They are rarely willing to reveal all their secrets, but they unanimously agree that as long as the experimental records remain intact, an explosion cannot be considered a complete failure."
+
+
+
+
+  KYO_tsukumogami_drydocks:0 "Hundred-Tool Dock"
+ KYO_tsukumogami_drydocks_desc:0 "This dock is run by tsukumogami, a repairman, and a large number of old tools that refuse to retire. Decommissioned boilers, broken anchor chains, and guns of dubious origin all find a second use here, sometimes even gaining a sense of self. The warships built here aren't necessarily quiet, but any disgruntled component will often complain before it actually breaks down."
+
+
+ KYO_moriya_shipyards:0 "Kamikaze Shipbuilding"
+ KYO_moriya_shipyards_desc:0 "Kamikaze Shipbuilding, overseen by Moriya Shrine, incorporates shipbuilding techniques modeled after kappa into the shrine's industry. Before each ship is launched, it undergoes a solemn ritual of prayer before the gods and an inspection by cheap kappa: the former to invigorate the crew, the latter to ensure the ship doesn't sink after the prayers. The kappa workers insist the engineering is sacred and perfect, yet no one dares to test it at sea."
+
+
+ KYO_oni_ironworks:0 "Mighty Oni Drunken Forge Heavy Industries"
+ KYO_oni_ironworks_desc:0 "Mighty Oni Drunken Forge Heavy Industries is famous for thick armour, brutal smithing, and strong sake served throughout the working day. Its armour tests are admirably direct: place a steel plate in the middle of a feast, and if it survives a night's brawling without cracking, send it to production. Sake stains on the blueprints are officially classified as proprietary oni engineering marks."
+
+
+ KYO_youkaimountain_arsenal:0 "Tengu Wind Flying Machine Bureau"
+ KYO_youkaimountain_arsenal_desc:0 "The Aircraft Bureau is jointly run by Tengu test pilots and Kappa technicians, who have a long-standing debate about whether the aircraft itself or the pilot's inherent skill is more important. Here, the standard for measuring an aircraft includes not only speed, ceiling, and handling performance, but also whether it can circle Youkai Mountain before the next special edition is printed. Accident reports are usually very short because Aya Shameimaru always arrives at the scene before the investigators."
+
+
+ KYO_scarlet_armory:0 "Scarlet Assembly Workshop"
+ KYO_scarlet_armory_desc:0 "Scarlet Assembly Workshop specializes in assembling chassis, engines, and weapons from different sources into vehicles that conform to Scarlet Devil Mansion's aesthetic. Sakuya is responsible for maintaining order in the production process, Patchouli solves the illogical power problems, and Koakuma is responsible for relabeling parts of dubious origin. The finished product always has an elegant and clean appearance; as for what you see after opening the armor plating, Scarlet Devil Mansion is not responsible. Salute to the great Remilia!"
+
+
+ KYO_old_hell_smeltery:0 "Unlicensed Tank Black Furnace"
+ KYO_old_hell_smeltery_desc:0 "Unlicensed Tank Black Furnace doesn't inquire about parts origin, doesn't offer long-term warranties, and refuses to explain why a Kappa engine, tangled wiring, and a ground-level seat might appear on the same tank. The only acceptance criterion here is whether the vehicle can drive out of Former Hell's worst roads. Only if it can drive back on its own will the boss consider issuing a receipt."
+
+
+ KYO_rapid_colt_armor_bureau:0 "Black Horse Flying Armored Bureau"
+ KYO_rapid_colt_armor_bureau_desc:0 "Black Horse Early Ghost believes that armored vehicles only have two states: accelerating or blocking others from accelerating. Armored Bureau design meetings are mostly held directly on the runway, with engineers having to explain modifications while riding in the vehicle. The products here are extremely fast and have tremendous impact; the main function of the seat is to prevent the driver from being thrown out of the vehicle when turning."
+
+
+ KYO_kourindou_refit_works:0 "Kourindou Old Goods Re-employment Center"
+ KYO_kourindou_refit_works_desc:0 "Rinnosuke Morichika firmly believes that every machine from the Outside World has a proper purpose; it's just that the instruction manual usually doesn't come to Gensokyo with it. Thus, agricultural engines, abandoned vehicles, and unrecognized electronic devices can all be reassembled here into military equipment. They may not work as originally intended, but Kourindou insists that this is precisely the profundity of ancient technology, and the price is non-negotiable. A cunning merchant everyone hates."
+
+
+ KYO_keystone_armor_board:0 "Tenshi & Tenjin Heavy Industries"
+ KYO_keystone_armor_board_desc:0 "Tenshi Hinanawi believes that whether the problem is excessive recoil, instability, or soft ground, it can be solved by adding another stone. The engineers' task is not to negate it, but to strengthen the suspension before the vehicle collapses the bridge. The final product is convincingly heavy and almost unbelievably stable."
+
+
+ KYO_earthspider_mechanics:0 "Tsuchigumo Eight-Legged Mobile Workshop"
+ KYO_earthspider_mechanics_desc:0 "Tsuchigumo Eight-Legged Mobile Workshop specializes in building walking machines capable of traversing tunnels, ruins, and rugged mountain paths. Their craftsmen can disassemble and assemble entire vehicles in extremely confined underground spaces and consistently fail to understand why surface engineers insist on vehicles having only four wheels. According to the workshop, adding extra legs isn't strange; it's about preserving the machine's dignity after a fall."
+
+
+ KYO_inversion_works:0 "Underdog Inverted Firepower Depot"
+ KYO_inversion_works_desc:0 "Firepower Depot stipulates that all universally accepted designs must first be inverted. The turret might be hidden beneath the chassis, the decoy placed in the most conspicuous position, and the actual weapon fired from the direction the enemy least wants to believe. Seija's acceptance criteria are simple: if a general can understand a weapon at first glance, it must be returned for redoing."
+
+
+ KYO_chimata_convoy_trust:0 "Chimata Exchange"
+ KYO_chimata_convoy_trust_desc:0 "Chimata Exchange arranges routes for merchantmen, supply ships, and cargo of complicated provenance. Its flags are often brighter than the ships' paint, and its manifests thicker than their charts. Chimata Tenkyuu insists that nothing at sea is truly ownerless—some goods have simply not yet been registered, appraised, and charged a transaction fee."
+
+
+ KYO_sanzu_shipyards:0 "Sanzu River Ferry Association"
+ KYO_sanzu_shipyards_desc:0 "The association's boatmen are familiar with dense fog, undercurrents, and waters that are not normally navigable by living people. Sailing times are not always accurate, because Komachi Onozuka believes that arriving safely is more important than being on time, and also because she occasionally oversleeps on shore. Strangely, the more dangerous the route, the less often the goods transported by the association are late."
+
+
+ KYO_wakasagihime_littoral:0 "Mermaid Submarine Workshop"
+ KYO_wakasagihime_littoral_desc:0 "Mermaid Submarine Workshop relies on the understanding of currents, echoes, and lakebed topography among the aquatic inhabitants to build low-noise submersible vessels. Each new boat must quietly pass by schools of fish in Misty Lake; only if it doesn't scare them away does it pass its sea trials. The workshop doesn't pursue the most ferocious appearance, because a truly quiet hunter doesn't need to be seen by everyone."
+
+
+ KYO_parsee_coastalworks:0 "Mizuhashi Shipbuilding Company “Why Is the Other Side Better?”"
+ KYO_parsee_coastalworks_desc:0 "Parsee Mizuhashi never praises the boats they build, but they can immediately point out an enemy ship's superior weaponry—an extra cannon, a faster speed, or a thicker layer of armor. Every instance of envy is written into new improvement requests and sent to exhausted engineers. The employees rarely receive praise, but the boats they build never cease to improve."
+
+
+ KYO_nazrin_salvage:0 "Mouse Shipwreck Treasure Hunting and Salvage Club"
+ KYO_nazrin_salvage_desc:0 "The salvage society combines dowsing rods, swarms of mice, and Nazrin's near-instinctive eye for value to locate wrecked ships, missing cargo, and remains someone would rather keep concealed. She often recovers a shipment before its owner admits it is gone, then presents an invoice calculated to the last coin. Nazrin always reminds her clients that a ‘free’ shipwreck usually hides the costliest trouble."
+
+
+ KYO_prismriver_acoustics:0 "Prismriver Symphony Society"
+ KYO_prismriver_acoustics_desc:0 "The Prismriver sisters programmed sonar, shipboard communications, and acoustic decoys into a series of playable musical scores. Each set of equipment underwent a live test: if the crew could still accurately determine the direction of the enemy ship, the equipment passed the test; if everyone could no longer hear the direction, it would be re-registered as an acoustic jammer and sold as usual."

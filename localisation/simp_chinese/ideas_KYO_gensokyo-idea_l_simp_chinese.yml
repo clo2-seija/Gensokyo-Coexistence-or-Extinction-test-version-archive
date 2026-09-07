@@ -1,0 +1,573 @@
+﻿l_simp_chinese:
+
+ KYO_Fade_away_1:"正在消逝"
+ KYO_Fade_away_1_desc:"随著裂缝的撕裂，很多的妖怪，一开始是忘记自己的身份，再来是忘记如何生活自理，到最后丧失自己的躯体"
+
+ KYO_Fade_away_2:"正在消逝"
+ KYO_Fade_away_2_desc:"随著裂缝的撕裂，很多的妖怪，一开始是忘记自己的身份，再来是忘记如何生活自理，到最后丧失自己的躯体"
+
+ KYO_Hakurai_death:"博丽巫女的死亡"
+ KYO_Hakurai_death_desc:"随这巫女的死亡，妖怪与人类的平衡也打破了，没有人或妖怪可以取代巫女平衡的船舵"
+
+ KYO_I_am_hungry:"我们需要吃人"
+ KYO_I_am_hungry_desc:"妖怪的天性，但由于近期的事件，开始回归妖怪陋习<吃人>"
+
+ KYO_Eiki_help:"映姬的组织化手册"
+ KYO_Eiki_help_desc:"映姬为了让妖怪不要堕入吃人的古老习性，为八云紫的部队建立一份部队的训练计划，让妖怪更有组织性"
+
+ KYO_Nitori_help:"河童的工业辅助"
+ KYO_Nitori_help_desc:"河童的工业辅助，极大的帮助部队装备的生产，有利于部队建设"
+
+ KYO_Satori_help:"觉妖怪的心灵建设"
+ KYO_Satori_help_desc:"觉妖怪虽为一群最不受人待见的妖怪，但他们却是一群可以看透群众恐惧的妖怪，有了他们极大的帮助缓解幻想乡的恐慌"
+
+ KYO_three_youkai:"草根妖怪共同体"
+ KYO_three_youkai_desc:"有了底层妖怪的支持，使我们有更多人的支持"
+
+ KYO_youkai_tech_is_best:"妖怪的科技世界第一"
+
+ KYO_youkai_new_army_1:"妖怪新式军队"
+ KYO_youkai_new_army_1_desc:""
+ KYO_youkai_new_army_2:"妖怪新式军队"
+ KYO_youkai_new_army_2_desc:""
+ KYO_youkai_new_army_3:"妖怪新式军队"
+ KYO_youkai_new_army_3_desc:""
+ KYO_youkai_new_army_4:"妖怪新式军队"
+ KYO_youkai_new_army_4_desc:""
+
+ KYO_youkai_new_mercenary_1:"妖怪雇佣军"
+ KYO_youkai_new_mercenary_1_desc:""
+ KYO_youkai_new_mercenary_2:"妖怪雇佣军"
+ KYO_youkai_new_mercenary_2_desc:""
+ KYO_youkai_new_mercenary_3:"妖怪雇佣军"
+ KYO_youkai_new_mercenary_3_desc:""
+ KYO_youkai_new_mercenary_4:"妖怪雇佣军"
+ KYO_youkai_new_mercenary_4_desc:""
+
+ KYO_strong_youkai:"呼风唤雨的大妖怪"
+ KYO_strong_youkai_desc:""
+
+ KYO_tengu_intelligen_agent_1:"天狗情报网路"
+ KYO_tengu_intelligen_agent_1_desc:""
+ KYO_tengu_intelligen_agent_2:"天狗情报网路"
+ KYO_tengu_intelligen_agent_2_desc:""
+
+  KYO_kogasa_idea:0 "多多良小伞的惊吓灵感"
+  KYO_kogasa_idea_desc:0 "被遗忘的纸伞化为付丧神，小伞最擅长把“常识”撑出一个洞。惊吓带来灵感，灵感推动试作与改良，研究节奏因此更快。"
+
+  KYO_reiko_idea:0 "堀川雷鼓的节拍工学"
+  KYO_reiko_idea_desc:0 "雷鸣般的律动将流程切分成有序的小节——从试验设计到量测回馈都按拍推进，让研发团队步调整齐、效率倍增。"
+
+  KYO_benben_idea:0 "九十九弁弁的琵琶声学"
+  KYO_benben_idea_desc:0 "弁弁以古琵琶之声引导共振，将直觉与数理结合；从声学到材料学的灵感相互碰撞，为新式装备与技术开路。"
+
+  KYO_yatsuhashi_idea:0 "九十九八桥的筝韵结构"
+  KYO_yatsuhashi_idea_desc:0 "琴筝的张力、共鸣与结构设计启发了模态分析与框架优化；在她的调弦下，试作迭代更为精确而迅速。"
+
+  KYO_kokoro_idea:0 "秦心的面灵气"
+  KYO_kokoro_idea_desc:0 "情绪是能量，也是组织的动力。心以面灵气调度士气与专注，将团队情感导向“解题”的同一面具。"
+
+  KYO_shinmyoumaru_idea:0 "少名针妙丸的万宝槌"
+  KYO_shinmyoumaru_idea_desc:0 "小小的奇迹也能撬动大工程。万宝槌带来灵巧与节省的思路：微缩制程、以小博大，让研究与试作更精省。"
+
+  KYO_Tsukumogami_idea:0 "付丧神之军器"
+  KYO_Tsukumogami_idea_desc:0 "旧物觉醒，新意重生。兵器因灵而顺手、因念而坚实：步兵装备成本更低、攻防更佳，配合研发推进，全军受益。"
+
+ Shrine_navy_modifiers:"守矢的舰队强化"
+
+ KYO_weak_ecomic:"残弱的工业"
+ KYO_weak_ecomic_desc:""
+
+ KYO_metro_system_1:"幻想乡地铁系统"
+ KYO_metro_system_1_desc:""
+ KYO_metro_system_2:"幻想乡地铁系统"
+ KYO_metro_system_2_desc:""
+ KYO_metro_system_3:"幻想乡地铁系统"
+ KYO_metro_system_3_desc:""
+
+ KYO_kappa_plan_for_land_1:"河童工业计划的开始"
+ KYO_kappa_plan_for_land_1_desc:""
+ KYO_kappa_plan_for_land_2:"河童工业计划的进行"
+ KYO_kappa_plan_for_land_2_desc:""
+ KYO_kappa_plan_for_land_3:"河童工业计划的完成"
+ KYO_kappa_plan_for_land_3_desc:""
+
+ KYO_undergrond_nuke:"地底核设施"
+ KYO_undergrond_nuke_desc:""
+ 
+ KYO_nuclear_hotspring:"地热的馈赠"
+ KYO_nuclear_hotspring_desc:"温泉"
+
+ KYO_Satori_thanks:"来自古明地的喜悦"
+ KYO_Satori_thanks_desc:""
+
+ KYO_farming_production_1:"农药泼洒"
+ KYO_farming_production_1_desc:""
+ KYO_farming_production_2:"幽香的办法"
+ KYO_farming_production_2_desc:""
+
+
+
+  KYO_death_of_yukari:0 "八云紫之死"
+  KYO_death_of_yukari_desc:0 "在最后一次调整境界的仪式中，八云紫被爆炸吞没，只留下支离破碎的报告与模糊的目击证词。尸体从未被寻获，连她是否仍在此岸，都成了无人能解的谜题。\n\n然而，所有渴求权力者都迫不及待地选择相信——那位幻想乡的开创者已不在人世。只要那双金瞳不再俯瞰列岛，任何隐匿的野心都无须再伪装成服从。\n\n随著真正掌控大局的人消失，原本勉强维持的平衡开始断裂。地方妖怪首领纷纷自立旗号，旧盟约被撕碎，私人武装与各式战争如雨后春笋般出现。这个国家在表面上仍然运转，内里却像抽去了中梁的楼阁，只等第一阵风便会全线崩塌。\n\n只要「八云紫之死」仍悬在众人的心头，政府命令只是一张废纸，权威荡然无存。"
+
+
+
+ KYO_civil_war_isolation:0 "月幕之下的孤立战争"
+ KYO_civil_war_isolation_desc:0 "没有外援会越过结界，也没有外国能够替任何一方决定胜负。幻想乡已经封闭门户，胜利者只能从这场内战中诞生。"
+
+ KYO_civil_war_npc_pressure:0 "他们也在磨利刀锋"
+ KYO_civil_war_npc_pressure_desc:0 "敌对阵营没有停在原地等待灭亡。新的防线正在建立，溃散的部队重新集结，每一次迟疑都会为他们争取更多准备时间。"
+
+ KYO_committee_central_archives:0 "紫留下的每一把钥匙"
+ KYO_committee_central_archives_desc:0 "八云政府没有带走全部秘密。边界图、补给路线与紧急调度方案仍沉睡在中央档案库中，等待新的主人将它们重新拼合。"
+
+ KYO_committee_military_assets:0 "封存军械库再启"
+ KYO_committee_military_assets_desc:0 "军务委员会遗留的武器、教官与作战记录已经归入我方。曾经属于联合军的力量，如今将为我们打开敌人的战线。"
+
+ KYO_committee_faith_assets:0 "祈愿汇成军心"
+ KYO_committee_faith_assets_desc:0 "寺社、道场与地方信众选择维持我方秩序。钟声不能挡住炮弹，却能让动摇者重新握紧武器。"
+
+ KYO_committee_mobilization_assets:0 "乡野间没有闲置之手"
+ KYO_committee_mobilization_assets_desc:0 "村落名册、地方工坊与草根运输线已经纳入动员。每一条小路、每一间仓库，都开始为前线运转。"
+
+ KYO_committee_military_chair:0 "军议席上的铁腕"
+ KYO_committee_military_chair_desc:0 "军务委员长取得了前线指挥权。分散的部队将依照同一份计划行动，在敌人反应以前击穿阵地。"
+
+ KYO_committee_faith_chair:0 "钟声压过炮火"
+ KYO_committee_faith_chair_desc:0 "信仰委员长将寺社网络化为战时秩序。伤者得到照料，恐慌受到安抚，士兵也相信这场战争仍有值得坚持的意义。"
+
+ KYO_committee_network_chair:0 "巷口就是动员处"
+ KYO_committee_network_chair_desc:0 "万民委员长不依赖宏伟的司令部。工匠、信使与地方代表彼此串联，使命令和物资沿着无数不起眼的道路抵达前线。"
+
+ KYO_legacy_doctrine_yakumo:0 "旧网仍记得主人"
+ KYO_legacy_doctrine_yakumo_desc:0 "八云紫留下的统治体系建立在情报、预判与精密调度之上。即使她已不在，遍布幻想乡的旧网仍能引导战争。"
+
+ KYO_legacy_doctrine_remilia:0 "猩红色的先手"
+ KYO_legacy_doctrine_remilia_desc:0 "蕾米莉亚相信命运属于首先伸手夺取它的人。红魔馆的军队将以速度和冲击粉碎迟疑，不给敌人留下重新选择的机会。"
+
+ KYO_legacy_doctrine_hijiri:0 "不舍弃任何一人"
+ KYO_legacy_doctrine_hijiri_desc:0 "圣白莲拒绝把士兵视为可以随意填补的数字。互助、纪律与完善的后送体系，使军队能够承受苦战而不至崩溃。"
+
+ KYO_legacy_doctrine_seija:0 "让弱者先拿到武器"
+ KYO_legacy_doctrine_seija_desc:0 "正邪不准备按照旧统治者的规则作战。群众被迅速武装，敌人的装备遭到夺取，遍布各地的反抗者将从每个薄弱之处发起进攻。"
+
+
+  KYO_everyone_will_survive:"所有人都将撑过去"
+
+  KYO_kappa_orgnization_help:"河童的工业帮助"
+  
+  KYO_oni_orgnization_help:"鬼的威力"
+
+   KYO_beastrealm_orgnization_help:0 "獠牙踏碎战线"
+ KYO_beastrealm_orgnization_help_desc:0 "畜生界的兽灵加入攻势。它们追逐敌军的破绽，以凶猛而迅速的突击撕开战线。"
+
+ KYO_ghost_orgnization_help:0 "死者守望生者"
+ KYO_ghost_orgnization_help_desc:0 "白玉楼接管伤亡登记与后方运输。幽灵维持着沉默的秩序，使前线得以坚守更久。"
+
+ KYO_tengu_orgnization_help:0 "风先于军旗抵达"
+ KYO_tengu_orgnization_help_desc:0 "天狗的斥候、记者与航空队穿梭于战场上空。敌军尚未行动，消息便已送到我们的指挥部。"
+
+ KYO_eientei_orgnization_help:0 "今日不准死"
+ KYO_eientei_orgnization_help_desc:0 "永远亭的医师与妖兔建立战地救护网。只要还有一口气，伤员便有机会重新回到队伍。"
+
+ KYO_last_chance_alliance_buff:0 "幻想乡的最后一张牌"
+ KYO_last_chance_alliance_buff_desc:0 "工坊昼夜运转，医师奔赴前线，斥候带回情报，各方援军相继抵达。所有积攒至今的力量，都将在这场决战中一次押上。"
+
+  KYO_fairy_of_freeze:0 "冰之妖精"
+  KYO_fairy_of_freeze_desc:0 "冬季不再只是气候，而是可以任意扭动的战场条件。河面结成天然桥梁，山径封冻成拒马，敌军补给线能在一夜之间变成滑不动的冰道。\n\n对她来说，暴风雪只是不小心用力过头的恶作剧；对我们而言，却是能把整支军队埋进雪中的战略武器。只要她心情稍微好一点，前线士兵便能在冰封大地上肆意穿梭，而敌人只能在寒风中颤抖著后悔踏入这片战场。"
+
+  KYO_hijiri_army_buff:0 "命莲寺僧兵"
+  KYO_hijiri_army_buff_desc:0 "在命莲寺的旗帜下，诵经声与军靴声一同回荡于原野。这些僧兵原本只是为了护持寺院与弱小者而拿起武器的修行者，如今却被卷入决定整个列岛命运的战争之中。\n\n他们不以杀戮为乐，也不以胜利自矜，而是将每一次出征视作「阻止更多苦难」的戒律实践。行军途中仍维持早晚课诵，临战之前为敌我两方的亡者预立超度，让部队在铁与火之间仍保有一丝庄严。\n\n在这样的信念支撑下，命莲寺僧兵展现出异常的纪律与忍耐力。他们能在补给匮乏中维持队形，在溃败边缘仍咬牙守住防线。对盟友而言，他们是稳如山岭的屏障；对敌人而言，则是披著袈裟、却比任何钢铁军团更难撼动的队伍。"
+
+  KYO_judge_of_all_life:0 "万物之裁"
+  KYO_judge_of_all_life_desc:0 "四季映姬，掌管生死分际的仲裁者。她不向任何旗帜宣誓，也不为任何胜利喝采。当战争把土地磨成灰，把名字抹成数字，她只是站在宣判与沉默之间，冷静地记录每一次坠落。\n\n对她而言，战场不是荣耀的舞台，而是一张漫长的案卷。每一条被迫出征的生命、每一次不必要的屠戮、每一份被权力掩饰的谎言，都会被写入那本看不见的簿册之中。没有人能确定她何时开口，但所有人都知道她终会开口。\n\n因此，「万物之裁」像阴影一样覆在军队与政客的肩上：你可以赢下一座城市，却不一定赢得审判；你可以用宣传抹去罪行，却抹不去因果。当越来越多亡魂被送往彼岸，战争的代价也不再只是资源与领土，而是整个政权的道德债务。"
+
+  KYO_remilia_army_buff:0 "鲜红帝国的铁蹄"
+  KYO_remilia_army_buff_desc:0 "在猩红的旗帜下，蕾米莉亚不再只是贵族，而是帝国意志本身。她站上高台，语句短促而绝对，将恐惧、荣耀与秩序锻成同一条命令。城市学会整齐地呼吸，工坊学会按时地轰鸣，军队则学会以同一个步伐踏碎犹豫。\n\n她不谈妥协，只谈「统一」。每一个阶层都有位置，每一种声音都要对齐，每一次行军都要像仪式般精准。铁蹄踏过之处，道路被改写成阅兵线，人民被改写成队列，而鲜红帝国的扩张，将被宣告为天经地义的生存法则。"
+
+  KYO_seija_army_buff:0 "颠覆战法"
+  KYO_seija_army_buff_desc:0 "她把规则倒过来读，然后把战场也一并倒过来。正面冲突只是陷阱，撤退可以是前进，示弱可以是号角。当敌人还在用尺量战线，她已经用谣言、夜袭、伪装与分化把整个前线织成一张反向的网。\n\n在鬼人正邪的眼里，「规则」从来不是中立的工具，而是强者用来固定阶级的枷锁。既然我们生来被安排在棋盘的最底层，那就把棋盘掀了。她让小队化整为零，让补给化作陷阱，让每一次交战都变成对秩序本身的嘲弄。\n\n当颠复成为方法，混乱就不再是失控，而是武器。敌人越依赖既定流程，就越容易在她的反规则里失血，直到他们发现: 自己输掉的不是一场战役，而是「相信规则会保护他们」的那份天真。"
+
+  KYO_yakumo_army_buff:0 "八云紫的遗产"
+  KYO_yakumo_army_buff_desc:0 "八云紫死去的那一刻，并没有把她的意志一同带走。\n\n她留下的不是一段口号，而是一整套能被「执行」的东西：结界的运用、境界的座标、以及把妖怪社会勉强拴在同一张图纸上的制度设计。爆炸抹去了她的身影，却也把她的布局像灰烬般撒向各地，落进军营的作战桌、官署的档案柜、与密室里的封印盒。\n\n八云蓝把遗产拆成可运行的条目：守备区的层级、通行证的编码、间隙通道的启闭规程。她不相信奇迹，她相信流程与验算。橙则把同一份遗产塞进人心的缝隙里：巡逻时多一盏灯、避难时多一条路、粮仓外多一张手写的分配表。于是「结界」不再只是天上的线，而成了地上的秩序。\n\n§Y遗产的核心§!\n- §W境界作战§!：把地形、距离与视线，重新写成我们的规则。\n- §W间隙机动§!：不求瞬移神话，只求让补给与增援比敌人早一步抵达。\n- §W制度锁扣§!：把各地私兵与地方势力，逐步扣回同一套指挥链与法度。\n\n只要遗产仍在运作，八云之名就仍在战场上呼吸。敌人以为他们砍倒的是一个人，却没看见：她早把自己写进了一座看不见的城。"
+
+
+ KYO_foreign_machinery_1:0 "外界器械依赖"
+ KYO_foreign_machinery_1_desc:0 ""
+
+ KYO_foreign_machinery_2:0 "拆解与重构"
+ KYO_foreign_machinery_2_desc:0 ""
+
+ KYO_foreign_machinery_3:0 "逆向工程体系"
+ KYO_foreign_machinery_3_desc:0 ""
+
+ KYO_foreign_machinery_4:0 "标准化量产"
+ KYO_foreign_machinery_4_desc:0 ""
+
+ KYO_foreign_machinery_5:0 "妖怪工业主导权"
+ KYO_foreign_machinery_5_desc:0 "从设备引进到自主量产，妖怪已经掌握完整的现代工业体系。它能够以前所未有的速度扩建，却也不断吞噬资源、行政能力与新的技术人才；这是一部强大，却不能轻易停下的机器。"
+
+ KYO_forced_labor_1:0 "临时劳务征集"
+ KYO_forced_labor_1_desc:0 ""
+
+ KYO_forced_labor_2:0 "劳动管制区"
+ KYO_forced_labor_2_desc:0 ""
+
+ KYO_forced_labor_3:0 "长期劳役编制"
+ KYO_forced_labor_3_desc:0 ""
+
+ KYO_forced_labor_4:0 "身份绑定劳役制"
+ KYO_forced_labor_4_desc:0 "职业、住所与公共配给被固定在同一套身份制度之中。工业获得了近乎取之不尽的劳力，但人类社会的自主性、人口基础与政治认同也在持续衰退。"
+
+ KYO_twenty_four_hours_work_time:0 "全天候轮转制"
+ KYO_twenty_four_hours_work_time_desc:0 "工厂与矿区实行全天候轮转，设备不再因昼夜交替而停机。纸面上仍有不同班次，实际上的加班与临时替补却不断侵占休息时间；机器得到了完整的一天，劳工没有。"
+
+ KYO_sixteen_hours_work_time:0 "十六小时劳务制"
+ KYO_sixteen_hours_work_time_desc:0 "每日劳动被固定为两段八小时，并保留最低限度的进食、检查与睡眠时间。它比毫无规划的连续劳役更加稳定，却仍然远远超过人体能够长期承受的范围。"
+
+ KYO_gensokyo_utopia:0 "妖怪乌托邦"
+ KYO_gensokyo_utopia_desc:0 "妖怪的城市拥有明亮街灯、稳定电力、现代医疗与从不空缺的货架。工业革命已经完成，幻想乡不必再依赖外界的怜悯，也不必担忧自己被新时代遗弃。\n\n支撑这一切的，是受到严密管理的人类劳动。人类获得基本生活保障，却无法自由选择职业、住所与未来；他们不再经常面对公开暴力，因为命令已经化为证件、配给与规章。\n\n这并非一个完全建立在恐惧上的国家，也不是一个真正平等的共同体。它稳定、繁荣，并且能够长久存在——只是所谓乌托邦的边界，恰好画在人类与妖怪之间。"
+
+
+
+ KYO_tengu_untrust_debuff_1:0 "天狗的疑惧"
+ KYO_tengu_untrust_debuff_1_desc:0 "妖怪山是天狗的地盘。天狗仍以戒备与审视的目光注视著政府，让政令推行、民心稳定与战时动员都变得更加艰难。"
+
+ KYO_tengu_untrust_debuff_2:0 "天狗的观望"
+ KYO_tengu_untrust_debuff_2_desc:0 "天狗已不再公开抗拒，但他们仍选择保持距离。"
+
+ KYO_grassroot_rebal_1:0 "草根妖怪的反扑"
+ KYO_grassroot_rebal_1_desc:0 "赤蛮奇、今泉影狼、若鹭姬这些草根妖怪并不承认敌人的胜利。她们将会让行动变得困难"
+
+ KYO_grassroot_rebal_2:0 "草根的余波"
+ KYO_grassroot_rebal_2_desc:0 "骚动虽已被压下，可草根妖怪的不满仍在暗处回响。只要生活没有真正好转，这股情绪迟早还会再度聚拢。"
+
+ KYO_yet_another_industry_debuff_1:0 "工业体系失序"
+ KYO_yet_another_industry_debuff_1_desc:0 "内战、破坏与仓促征发撕裂了原有的生产链。资源调度混乱、基础建设停滞，军工与民用体系都在低效与短缺中艰难运转。"
+
+ KYO_yet_another_industry_debuff_2:0 "工业修复期"
+ KYO_yet_another_industry_debuff_2_desc:0 "最严重的混乱已经过去，但工厂、资源与建设网路仍未完全恢复。政权还需要更多时间，才能把这套残破的工业机器重新校正。"
+
+ KYO_lunar_capital_plot_1:0 "月都阴谋"
+ KYO_lunar_capital_plot_1_desc:0 "月之都的手并未真正离开幻想乡。潜伏者、监视网与暗中的操盘仍在侵蚀现有秩序，使情报外泄、民心动摇，甚至连最基本的防谍能力都遭到削弱。"
+
+ KYO_lunar_capital_plot_2:0 "月都残余渗透"
+ KYO_lunar_capital_plot_2_desc:0 "月都势力已遭削弱，但残存的耳目与渗透网络仍在活动。只要稍有松懈，这些来自月面的阴影就会再一次伸手介入幻想乡。"
+
+ KYO_myouren_resistance_1:0 "命莲寺抵抗"
+ KYO_myouren_resistance_1_desc:0 "命莲寺仍以慈悲、信念与另一套秩序动员人心。只要白莲一系的号召力尚未消散，占领地区的顺从就只是表面，地下的反抗始终不会停息。"
+
+ KYO_myouren_resistance_2:0 "命莲寺余烬"
+ KYO_myouren_resistance_2_desc:0 "命莲寺的公开抵抗虽已被压制，但它留下的人脉、声望与地下联络网依旧存在，持续拖慢对地方的整合与掌控。"
+
+ KYO_yakumo_wrath_1:0 "八云之怒"
+ KYO_yakumo_wrath_1_desc:0 "八云家的败退不代表八云势力已经沉默。残党、旧臣与依附者仍在暗中牵制一切，让动员、法令与权力整合都要付出更高的代价。"
+
+ KYO_yakumo_wrath_2:0 "八云家的余怒"
+ KYO_yakumo_wrath_2_desc:0 "最猛烈的反扑已经过去，但八云势力留下的阴影仍未完全消散。恐惧、观望与旧有关系网，依旧拖住红魔馆向前推进的步伐。"
+
+ KYO_uncontrol_flan_1:0 "失控的芙兰朵露"
+ KYO_uncontrol_flan_1_desc:0 "芙兰朵露的力量仍未被真正掌控。只要她的情绪再次失衡，红魔馆就必须不断分出精力去收拾那场随时可能降临的灾厄。"
+
+ KYO_uncontrol_flan_2:0 "芙兰朵露的不稳定"
+ KYO_uncontrol_flan_2_desc:0 "芙兰朵露暂时安静了下来，但危险从未真正离开。所有人都清楚，她依然是一颗不知道何时会被引爆的灾星。"
+
+
+
+ 
+
+ KYO_Scarlet_Sakuya_1:0 "女仆长的清点"
+ KYO_Scarlet_Sakuya_1_desc:0 "咲夜先整理的不是战场，而是失序。粮、枪、账册与人手都被她重新摆回该在的位置。"
+
+ KYO_Scarlet_Sakuya_2:0 "银表流程"
+ KYO_Scarlet_Sakuya_2_desc:0 "十六夜咲夜把馆务拆成一段段可执行的工序，让后勤不再拖慢红魔馆的步伐。"
+
+ KYO_Scarlet_Sakuya_3:0 "十六夜排程"
+ KYO_Scarlet_Sakuya_3_desc:0 "从仓储到配给，从巡逻到轮值，一切都按着她的时间走。"
+
+ KYO_Scarlet_Sakuya_4:0 "馆务绝对秩序"
+ KYO_Scarlet_Sakuya_4_desc:0 "咲夜让混乱只能在门外徘徊。只要她还站着，红魔馆的机器就不会停。"
+
+ KYO_Scarlet_Sakuya_5:0 "完美而潇洒的总管"
+ KYO_Scarlet_Sakuya_5_desc:0 "她不是单纯的女仆长，而是让整个政权高效运转的中枢。"
+
+ KYO_Scarlet_Meiling_1:0 "门前晨哨"
+ KYO_Scarlet_Meiling_1_desc:0 "美铃站在第一道门前，把最初的松散与侥幸全都拦下。"
+
+ KYO_Scarlet_Meiling_2:0 "守门人的拳法"
+ KYO_Scarlet_Meiling_2_desc:0 "她把武术、纪律与耐心带进军营，让新兵学会先站稳再出拳。"
+
+ KYO_Scarlet_Meiling_3:0 "红门防线"
+ KYO_Scarlet_Meiling_3_desc:0 "从关卡到驻军，从高墙到山道，红魔馆的外层防网开始成形。"
+
+ KYO_Scarlet_Meiling_4:0 "不眠门卫军"
+ KYO_Scarlet_Meiling_4_desc:0 "美铃让守备部队学会轮换、坚守与反应，让防御不再只是被动挨打。"
+
+ KYO_Scarlet_Meiling_5:0 "微笑的铁壁"
+ KYO_Scarlet_Meiling_5_desc:0 "她依旧带着笑，可谁都知道，那道笑意后面是一堵推不动的墙。"
+
+ KYO_Scarlet_Remilia_1:0 "红月号令"
+ KYO_Scarlet_Remilia_1_desc:0 "蕾米莉亚不安抚，也不解释。她只让所有人记住，新的命令已经降下。"
+
+ KYO_Scarlet_Remilia_2:0 "斯卡雷特战时意志"
+ KYO_Scarlet_Remilia_2_desc:0 "她把恐惧与骄傲编进军队，让进攻本身变成红魔馆的风格。"
+
+ KYO_Scarlet_Remilia_3:0 "女王的进军"
+ KYO_Scarlet_Remilia_3_desc:0 "战线向前推，统治也跟着向前推。蕾米莉亚要的不是击败，而是压服。"
+
+ KYO_Scarlet_Remilia_4:0 "血色统治"
+ KYO_Scarlet_Remilia_4_desc:0 "她开始把占领地纳入自己的秩序，让服从逐渐变成习惯。"
+
+ KYO_Scarlet_Remilia_5:0 "红雾下的帝权"
+ KYO_Scarlet_Remilia_5_desc:0 "在红雾与命令之下，战争、占领与威慑终于被捏成同一个王权。"
+
+ KYO_Scarlet_Flandre_1:0 "地下室的裂音"
+ KYO_Scarlet_Flandre_1_desc:0 "只要芙兰的力量稍微外泄，前线就会得到更凶猛的冲击，可后方也会开始不安。"
+
+ KYO_Scarlet_Flandre_2:0 "玻璃翼的躁动"
+ KYO_Scarlet_Flandre_2_desc:0 "她不是兵器，而是被勉强牵住的灾厄。越接近前线，后方越难保持平稳。"
+
+ KYO_Scarlet_Flandre_3:0 "恶梦的妹妹"
+ KYO_Scarlet_Flandre_3_desc:0 ""
+
+ KYO_Scarlet_Flandre_4:0 "恶魔之妹的笑声"
+ KYO_Scarlet_Flandre_4_desc:0 "敌军会先被撕开，可工坊、后方与民心也会因她的存在而发出裂响。"
+
+ KYO_Scarlet_Flandre_5:0 "无法关住的天灾"
+ KYO_Scarlet_Flandre_5_desc:0 "她足以把最坚固的阵地砸穿，但整个国家都必须承受她带来的摇晃。"
+
+ KYO_Scarlet_Patchouli_1:0 "书页上的拆解"
+ KYO_Scarlet_Patchouli_1_desc:0 "帕秋莉开始拆解外界器械，把陌生技术一点点纳入红魔馆的知识体系。"
+
+ KYO_Scarlet_Patchouli_2:0 "大图书馆试作"
+ KYO_Scarlet_Patchouli_2_desc:0 "研究不再停在书页上，图书馆的推导开始转成真正可用的工艺。"
+
+ KYO_Scarlet_Patchouli_3:0 "魔导工学"
+ KYO_Scarlet_Patchouli_3_desc:0 "魔法与工业被帕秋莉接在一起，让生产与科研同时往前推。"
+
+ KYO_Scarlet_Patchouli_4:0 "贤者的量产术"
+ KYO_Scarlet_Patchouli_4_desc:0 "她让理论开始服务于工厂，让建造与量产获得同样冷静而精确的推动。"
+
+ KYO_Scarlet_Patchouli_5:0 "不动的大图书馆"
+ KYO_Scarlet_Patchouli_5_desc:0 "当帕秋莉真正进入状态时，整座红魔馆都会变成她的研究延伸。"
+
+  
+
+
+
+
+
+
+
+
+  KYO_Echo_Propaganda_kyouko_0:"招牌吉祥物"
+  KYO_Echo_Propaganda_kyouko_1:"招牌吉祥物"
+  KYO_Echo_Propaganda_kyouko_2:"招牌吉祥物"
+  KYO_Echo_Propaganda_kyouko_3:"招牌吉祥物"
+
+  KYO_Ghost_Captain_marusa_0:"舰队的幽灵舰长"
+  KYO_Ghost_Captain_marusa_1:"舰队的幽灵舰长"
+  KYO_Ghost_Captain_marusa_2:"舰队的幽灵舰长"
+  KYO_Ghost_Captain_marusa_3:"舰队的幽灵舰长"
+
+  KYO_Cloud_Guardian_ichirin_0:"内部的事务大使"
+  KYO_Cloud_Guardian_ichirin_1:"内部的事务大使"
+  KYO_Cloud_Guardian_ichirin_2:"内部的事务大使"
+  KYO_Cloud_Guardian_ichirin_3:"内部的事务大使"
+
+  KYO_The_Tiger_Commandments_0:"毘沙门天"
+  KYO_The_Tiger_Commandments_1:"毘沙门天"
+  KYO_The_Tiger_Commandments_2:"毘沙门天"
+  KYO_The_Tiger_Commandments_3:"毘沙门天"
+
+  KYO_Treasure_Seeker_nazrin_0:"资源与情报猎人"
+  KYO_Treasure_Seeker_nazrin_1:"资源与情报猎人"
+  KYO_Treasure_Seeker_nazrin_2:"资源与情报猎人"
+  KYO_Treasure_Seeker_nazrin_3:"资源与情报猎人"
+
+
+
+ path_of_all_salvation:0 "普救众生之道"
+ path_of_all_salvation_desc:0 "命莲寺不再只是一座收留迷途者的寺院，而是一条向世界展开的道路。白莲以慈悲掌舵，星守护秩序，一轮传播教义，娜兹玲清理暗处的欺瞒，水蜜驾船连通诸国，响子则把和平的声音送往远方。\n\n我们不以恐惧迫使世界低头，而以救济、援助、交涉与实际行动证明：人类与妖怪并非注定为敌。只要仍有人愿意伸手，苦难就不会是世界唯一的语言。"
+
+ revise_socialism_and_marx_1:0 "修正社会主义与马克思思想"
+ revise_socialism_and_marx_1_desc:0 "白莲看见了现代世界的另一种苦难：工人被机器吞没，农民被债务锁住，弱者被国家与资本共同压低头。她并不否认平等与劳动解放的理想，恰恰相反，她认为这些思想本应与佛法中的慈悲相通。\n\n但理想一旦被官僚、党国与暴力垄断，便会从解放众生的道路，变成新的枷锁。命莲寺将重新整理这些思想，使其回到最初的问题：受苦者如何不再被当作工具？"
+
+ revise_socialism_and_marx_2:0 "佛法社会主义的成形"
+ revise_socialism_and_marx_2_desc:0 "经过白莲与弟子们的实践，命莲寺逐渐形成了一套新的道路。它承认劳动者的尊严，反对剥削与压迫，却不让阶级仇恨成为新的信仰；它追求平等与共有的幸福，却拒绝用秘密警察、清洗与恐惧来制造所谓的进步。\n\n一轮将劳动视为修心，星让秩序服务于弱者，娜兹玲确保资源不被新贵窃取，响子让底层声音被听见。佛法与社会主义在此不再彼此排斥，而是共同指向一个更朴素的愿望：让众生不必互相吞噬，也能活下去。"
+
+ we_are_all_equal_1:0 "众生皆平等"
+ we_are_all_equal_1_desc:0 "命莲寺的平等，并不是一句轻飘飘的口号。白莲收留过带刺的、阴暗的、失控的、笨拙的、满身裂痕的妖怪，也看见过人类在恐惧、贫穷与压迫下露出的脆弱。\n\n正因为她见过这些不完美，才更明白：没有谁天生只配被统治，也没有谁天生只能成为怪物。人类、妖怪、工人、流民、弱者与异类，都应当拥有被承认、被保护、被重新接纳进社会的资格。"
+
+ we_are_all_equal_2:0 "人妖共生的平等国度"
+ we_are_all_equal_2_desc:0 "平等已经不再只是命莲寺的教义，而成为国家运转的根基。人类不再只是妖怪赖以存在的恐惧来源，妖怪也不再只是人类传说中的阴影。她们共同劳动、共同守卫、共同接受教育与救济，也共同承担这个新世界的责任。\n\n星守住制度的公正，一轮把信念带进工坊与田野，娜兹玲监督资源分配，水蜜连接远方社群，响子让每一个微弱声音都能回响。白莲所追求的世界并非没有痛苦，而是痛苦不再由某一群人独自背负。"
+
+ KYO_seija_redeeming_rebellion:0 "正寺中的逆刃"
+ KYO_seija_redeeming_rebellion_desc:0 "鬼人正邪没有变成温顺的信徒，也没有放弃对权力与虚伪的厌恶。她只是第一次承认，单纯的颠倒并不能拯救被压迫者。\n\n如今，她留在命莲寺之内，以最尖锐的眼光审视我们的制度、援助与命令。她会让许多人不舒服，却也能阻止慈悲变成新的傲慢，阻止秩序在无人质疑时重新长出压迫的牙。"
+
+ KYO_seija_grassroots_restitution:0 "草根的修补者"
+ KYO_seija_grassroots_restitution_desc:0 "正邪回到了她最熟悉的地方：草根妖怪、底层社群、废墟边缘与被权力遗忘的人群之中。\n\n这一次，她不再只是煽动怒火，而是用自己曾经伤害过的语言去重新建立沟通。她仍然尖锐，仍然反骨，却开始把那份反抗用在保护弱者、揭穿地方压迫、修补命莲寺与底层妖怪之间的裂缝上。"
+
+ KYO_aya_supportive_reporting:0 "射命丸文的支持报道"
+ KYO_aya_supportive_reporting_desc:0 "《文文。新闻》不再只把命莲寺当成可供拆解的题材。射命丸文亲自调查、试探、质疑，最后选择以自己的笔为命莲寺作证。\n\n她并未把命莲寺写成完美无缺的圣地。相反，她写下那些裂痕、麻烦与危险，也写下白莲与弟子们如何承认并修补它们。正因这份报道不盲目赞美，反而让更多天狗、妖怪与人类愿意相信：命莲寺的慈悲不是伪装，而是一种正在艰难运转的现实。"
+
+ KYO_choujuu_gigaku_wave:0 "鸟兽伎乐的流行浪潮" 
+ KYO_choujuu_gigaku_wave_desc:0 "响子与米斯蒂娅组成的鸟兽伎乐，在莉格露的帮助下，将自然虫鸣融入音乐之中，形成了独一无二的风格。\n\n她们的歌声奇妙、前卫、热烈而真诚。它无法替代粮食与药品，却能在众人最疲惫的时候，把心重新拉向未来。越来越多的人类与妖怪开始相信，命莲寺带来的不仅是秩序与救济，也是一种值得期待的新生活。"
+
+ KYO_ichirin_determination:"一轮的决心"
+
+  KYO_unidentified_watcher_of_myouren:0 "正体不明的旁观者"
+ KYO_unidentified_watcher_of_myouren_desc:0 "封兽鵺并未真正归顺命莲寺，但她也不再只是暗处的破坏者。与水蜜的漫长辩论让她开始重新思考妖怪的本质：自然、恐惧、幻想、肉身、名字，以及选择。\n\n她仍潜伏在寺中，用正体不明的眼睛观察白莲的道路。她的存在让命莲寺无法用简单答案欺骗自己，也让水蜜更加坚信：妖怪的本质并不是无法改变的判决。"
+
+
+
+
+
+
+  KYO_yukari_gap_power:0 "间隙的主宰"
+ KYO_yukari_gap_power_desc:0 ""
+
+ KYO_ran_gap_power:0 "间隙中的演算"
+ KYO_ran_gap_power_desc:0 ""
+
+ KYO_chen_gap_power:0 "间隙中的帮手"
+ KYO_chen_gap_power_desc:0 ""
+
+ KYO_renko_gap_power:0 "记忆的彼端"
+ KYO_renko_gap_power_desc:0 "一段陌生的记忆，正沿著间隙反复传来。声音破碎，名字模糊，只有一句话始终没有消失——§G梅莉!§!"
+ 
+ 
+
+
+
+
+
+
+
+
+
+ KYO_shikigami_Chen_1:"间隙妖怪的式神的式神"
+ KYO_shikigami_Chen_1_desc:""
+ KYO_shikigami_Chen_2:"间隙妖怪的式神的式神"
+ KYO_shikigami_Chen_2_desc:""
+ KYO_shikigami_Chen_3:"间隙妖怪的式神的式神"
+ KYO_shikigami_Chen_3_desc:""
+ 
+ KYO_shikigami_Ran_1:"间隙妖怪的式神"
+ KYO_shikigami_Ran_1_desc:""
+ KYO_shikigami_Ran_2:"间隙妖怪的式神"
+ KYO_shikigami_Ran_2_desc:""
+ KYO_shikigami_Ran_3:"间隙妖怪的式神"
+ KYO_shikigami_Ran_3_desc:""
+
+ KYO_Boundaries_youkari:"境界的妖怪"
+ KYO_Boundaries_youkari_desc:""
+
+ KYO_Let_start_war:"开启存亡之战"
+
+
+
+
+  KYO_drug_backlash:0 "高昂的医药费"
+  KYO_drug_backlash_desc:0 "永远亭能够救回许多原本必死的伤员，却无法凭空变出药材、器械与医护人员。随着战线延长，珍稀药材被优先送往军医院，工坊转而生产针剂和医疗设备，偏远村落则必须等待更久才能得到普通药物。\n\n前线依赖永琳的医术维持，后方却逐渐被沉重的医疗开支拖慢。没有人愿意放弃伤员，但每一张送入永远亭的病床，都在提醒我们：把人从死亡边缘带回来，从来不是一件廉价的事。"
+
+  KYO_ritual_fatigue:0 "灵魂虚弱"
+  KYO_ritual_fatigue_desc:0 "反复举行的招魂与安魂仪式正在扰乱生者与亡者之间的界线。主持仪式的人开始听见并不存在的呼唤，归来的幽灵也会突然忘记自己身在何处。有人在行军中失去方向，有人醒来以后，只记得一个早已无人居住的故乡。\n\n白玉楼已经缩短仪式时间，并强制安排休养，但灵魂的损伤无法像普通伤口那样包扎。在彻底恢复以前，无论征募、生产还是军事行动，都必须迁就这些逐渐疲惫的灵魂。"
+
+  KYO_gap_leak:0 "永与妖的压迫"
+  KYO_gap_leak_desc:0 "「永夜抄」的阴影与「妖妖梦」的寒潮同时压来，结界如薄纱般绷紧。间隙传出细微的嗡鸣：情报外渗、异闻内返，边界像被不可见的指尖按出裂纹。市镇谣语滋长，外界的目光被吸引；同盟迟疑，对手试探，阴影里的手越伸越长。八云紫冷冷下令：补缝。再补缝。代价自行承担。于是内部稳定动摇、占领地抗性拔高、政务消耗失衡——棋盘仍在，但每一步都比昨日更难落子。"
+
+
+
+
+
+  KYO_Bamboo_Forest_Guerrillas_1:0 "竹林游击队"
+KYO_Bamboo_Forest_Guerrillas_1_desc:0 "铃仙没有把迷途竹林当成一座天然陷阱。她先让每支小队学会辨认风向、断竹与地上兔留下的暗号，再把巡逻队拆成能够彼此掩护的两人小组。\n\n接敌以后只进行短暂射击，随后立刻换路；发现伤员便放弃追击，优先把同伴带回永远亭。敌人第一次进入竹林时，看到的只是不断移动的影子，而我军已经知道该从哪里出现，又该从哪里离开。"
+
+KYO_Bamboo_Forest_Guerrillas_2:0 "竹林游击网"
+KYO_Bamboo_Forest_Guerrillas_2_desc:0 "最初的游击小队已经沿竹林铺开。地上兔负责传递情报、隐藏弹药与维护小径，铃仙则利用波长扰动制造错误的脚步、枪声与灯火，让追兵不断扑向无人之处。\n\n每条进攻路线旁都保留一条撤退路线，每座隐蔽据点也能引导部队转往下一片竹林。游击队不再只是熟悉家乡的散兵，而是一张能够自行收缩、转移与重新集结的防卫网。"
+
+KYO_Bamboo_Forest_Guerrillas_3:0 "迷途竹林防卫网"
+KYO_Bamboo_Forest_Guerrillas_3_desc:0 "竹林中的小径、仓库、观察点与救护所已经连成完整体系。指挥部能够把任何一段竹径临时改为伏击区、运输线或撤离通道，附近部队也能在失去联络后自行前往预定位置。\n\n敌人面对的仍是一片看似相同的竹海；对铃仙的部队而言，每一道竹影都标示着下一步行动。迷途竹林终于不再依靠偶然使人迷失——它已经学会按照我们的意志改变道路。"
+
+KYO_Prototype_Hourai_Regimen_1:0 "永琳药物试验"
+KYO_Prototype_Hourai_Regimen_1_desc:0 "永琳从蓬莱药的原理中分离出几种能够控制的配方。它们不会使人不死，只用于提高恢复能力、缓解疲劳，并帮助受试者适应长时间夜战。\n\n所有参加者都必须接受检查、了解风险，也可以随时退出。即使如此，药材向军方集中仍引起了不安，偶尔出现的失眠、感官错乱与高热也让传闻迅速扩散。永琳没有隐瞒报告——她比任何人都清楚，能够使用一种药，并不等于应该无限制地使用它。"
+
+KYO_Prototype_Hourai_Regimen_2:0 "战地药物计划"
+KYO_Prototype_Hourai_Regimen_2_desc:0 "试验配方通过初步检验后，永远亭开始为夜战部队和特殊兵种建立独立用药方案。移动医疗队会根据体质调整剂量，出现异常便立即停药，不再让同一份处方适用于所有人。\n\n训练与整补因此明显加快，但扩大使用也占用了更多医护力量。普通患者等待得越来越久，军属则担忧亲人是否会在命令与自愿之间作出真正自由的选择。永琳拒绝掩盖这些质疑，因为医学若只剩下服从，就已经背离了治病的本意。"
+
+KYO_Lunarian_Fragments_1:0 "八意式底层标准"
+KYO_Lunarian_Fragments_1_desc:0 "永琳取出离开月都以前保存的旧图纸，首先要求工坊统一尺寸、计量方式与接口规格。过去只能由制作者本人维修的器械，如今可以更换来自另一座工坊的零件；药物与电子设备也必须经过可以重复验证的检查。\n\n她没有直接交出某件足以改变战争的月面兵器，而是教会幻想乡如何稳定地制造下一件。真正珍贵的并非图纸上的成品，而是让知识能够被理解、复制与继续改进的方法。"
+
+KYO_Lunarian_Fragments_2:0 "八意式通用标准"
+KYO_Lunarian_Fragments_2_desc:0 "八意式标准已经从永远亭扩展到河童工坊、军需仓库与研究机构。不同地区制造的零件可以互换，实验结果能够彼此验证，前线损坏的装备也不必再送回原来的制作者手中。\n\n永琳坚持把每一项修改写入公开规范。她不准备让幻想乡永远依赖自己的记忆，而是要建立一个即使没有八意永琳亲自监督，也能继续研究、生产与修正错误的体系。"
+
+KYO_Tewi_Lucky_Logistics_1:0 "帝的银子流通网"
+KYO_Tewi_Lucky_Logistics_1_desc:0 "因幡帝知道哪座村庄囤着粮食，哪家商铺愿意赊账，也知道哪条不起眼的小路能够避开封锁。她让地上兔带着银钱、借据和货单穿梭各地，把卖不出去的存货送往短缺之处，再用下一批货物偿还沿途欠下的人情。\n\n没有宏伟的银行，也没有写满规章的大厅。支撑这张网络的是商人的信用、兔群的耳目，以及帝总能在道路封闭以前先找到另一条路的本领。"
+
+KYO_Tewi_Lucky_Logistics_2:0 "兔印流通网"
+KYO_Tewi_Lucky_Logistics_2_desc:0 "帝的临时生意已经扩展成覆盖各地的流通体系。兔印票据可以在村镇之间结算，商队共享仓库与护送路线，零散回收的金属和武器零件也会被送往最需要它们的工坊。\n\n她所谓的幸运，很少真的来自偶然。那是无数地上兔提前听见的消息，是多年交往积累的信用，也是她在所有人还在争论时便已经安排好的下一辆货车。只要兔印仍在道路上出现，物资就总能找到抵达前线的方法。"
+
+KYO_Frost_Mist_Snow_1:0 "冻霞薄雪"
+KYO_Frost_Mist_Snow_1_desc:0 "白玉楼没有要求生者像亡灵一样忍受严寒。幽灵侦察队先行穿过风雪，寻找薄冰、避风处与可以保存物资的废弃建筑，再用灵火为后续部队标明安全路线。\n\n亡者承担不会被低温拖慢的工作，生者则保存体力与装备。第一次演练结束时，所有人都按时抵达终点，也没有谁被遗留在雪地之中。"
+
+KYO_Frost_Mist_Snow_2:0 "冻霞行军法"
+KYO_Frost_Mist_Snow_2_desc:0 "生者与亡灵开始组成固定的冬季行动队。幽灵负责侦察、传讯与夜间警戒，生者携带火力和修筑器材；沿途设置的避寒点与小型储备库，则让部队不必把所有物资背在身上。\n\n风雪不再只是需要克服的阻碍。灵火能够在浓雾中引路，落雪可以掩盖行踪，而被冻结的道路也能成为敌人难以预料的进攻方向。"
+
+KYO_Frost_Mist_Snow_3:0 "白玉楼冬季战法"
+KYO_Frost_Mist_Snow_3_desc:0 "白玉楼已经把严寒作战整理成完整战法。从幽灵侦察、雪地运输到伤员撤离，每支部队都知道何时继续前进，何时转入最近的避寒据点。\n\n暴雪来临时，补给不会立即中断，失散部队也能循着灵火重新集结。过去足以迫使整支军队停下的冬季，如今反而替我们的行动遮蔽声音与踪迹。"
+
+KYO_Konpaku_Hundred_Day_1:0 "庭师的百日训"
+KYO_Konpaku_Hundred_Day_1_desc:0 "妖梦没有要求普通士兵模仿她斩断楼阁的剑术。百日训练从站稳脚步、保持队形与正确收刀开始，再逐步加入近距离突击、交替掩护和有序撤退。\n\n「先别想着斩开什么。」她收剑看向又一次跌倒的新兵，「学会在混乱里找到同伴，再把他们一起带回来。」\n\n百日之后，士兵仍不可能成为魂魄妖梦，却已经能够在冲锋受阻时稳住阵线。"
+
+KYO_Konpaku_Hundred_Day_2:0 "百日训教导团"
+KYO_Konpaku_Hundred_Day_2_desc:0 "第一批完成百日训练的士兵被派往各部队担任教导员。妖梦亲自示范的动作被拆成统一课程，使远离白玉楼的部队也能学习相同的队形、突击方式与撤退规则。\n\n这套训练最重要的成果并不是让所有人挥刀如一，而是让部队在长时间战斗和局势失利时仍能彼此照应。只要队伍没有散开，一次失败的冲锋便不会立刻变成溃败。"
+
+KYO_Ghost_Analgesia_1:0 "亡灵轮替学说"
+KYO_Ghost_Analgesia_1_desc:0 "幽幽子划掉了最初草案中的一句话——「亡者已经死过一次，所以无须畏惧损失」。\n\n幽灵仍会感到痛苦，也可能在灵体受创后失去记忆，甚至彻底消散。白玉楼因此建立专门的引导与休养制度，让虚弱的亡灵退出战线，在恢复形体以后返回原来的队伍。亡者不是取之不尽的兵源；正因如此，每一份保存下来的经验才更值得珍惜。"
+
+KYO_Ghost_Analgesia_2:0 "白玉楼归阵体系"
+KYO_Ghost_Analgesia_2_desc:0 "引导用的灵灯与接应人员已经配置到各支部队。灵体开始消散时，附近人员会将其送回白玉楼；阵线失去联络后，熟悉旧部的亡灵军官则负责召集残兵并恢复指挥。\n\n生者交给军医，亡者送往彼岸，两者都不会因为一时无法战斗而被抛弃。经过休养的老兵重新归队时，带回来的不仅是战力，还有那些本来可能随混乱一同消失的经验。"
+
+KYO_Saigyou_Whisper_1:0 "西行妖的低语"
+KYO_Saigyou_Whisper_1_desc:0 "封印深处的西行妖偶尔会传出模糊低语。幽幽子没有解除封印，只允许少数人员在妖梦监护下接触最外层的回声。那些话语无法直接预言未来，却会随着敌意、恐惧与谎言发生变化，使监听者察觉潜伏者和即将发动的进攻。\n\n然而，树下听见的声音有时也会跟随人们回到梦中。失眠与不安开始在军营出现，妖梦只得随时准备斩断失控的联系。"
+
+KYO_Saigyou_Whisper_2:0 "遍及战线的花语"
+KYO_Saigyou_Whisper_2_desc:0 "随着监听范围扩大，西行妖的低语已经能够沿灵力线路传往各处阵地。指挥官从花语的变化中辨认敌军动摇之处，伏击者也能在对方发现以前避开搜查。\n\n幽幽子仍然拒绝让西行妖开花，但仅仅放大它的声音，便足以影响越来越多的人。军营之外也开始有人梦见陌生的樱树，质疑声与厌战情绪随之滋长。我们获得了一双能够窥见敌阵的眼睛，却再也无法保证那双眼睛只注视战场。"
+
+ KYO_Eirina_eternal_1:0 "共同救治网络"
+ KYO_Eirina_eternal_1_desc:0 "永远亭把战地医疗向所有人妖开放。"
+ KYO_Eirina_eternal_2:0 "可验证的存续方案"
+ KYO_Eirina_eternal_2_desc:0 "记录、复核与医疗流程让生命得到继续改变的机会。"
+ KYO_Eirina_eternal_3:0 "蓬莱经验公开化"
+ KYO_Eirina_eternal_3_desc:0 "永琳不再把月之知识当作支配他人的密室工具。"
+ KYO_Eirina_eternal_4:0 "永远不是停滞"
+ KYO_Eirina_eternal_4_desc:0 "延长生命的意义是保留选择，而非冻结世界。"
+ KYO_Yuyuko_death_1:0 "共同姓名簿"
+ KYO_Yuyuko_death_1_desc:0 "白玉楼让每一位死者都有姓名、见证与归处。"
+ KYO_Yuyuko_death_2:0 "彼岸的见证"
+ KYO_Yuyuko_death_2_desc:0 "送别承认失去，却拒绝把亡者变成命令工具。"
+ KYO_Yuyuko_death_3:0 "西行妖的记忆"
+ KYO_Yuyuko_death_3_desc:0 "幽幽子重新取得作为一个人的历史，而不只是职务。"
+ KYO_Yuyuko_death_4:0 "离去仍有意义"
+ KYO_Yuyuko_death_4_desc:0 "纪念让世界继续前行，不要求任何人以死亡证明立场。"
+
+
+ LUN_lunar_scientific_supremacy:0 "月之頭腦的遺產"
+ LUN_lunar_scientific_supremacy_desc:0 "月都的科學從來不是對未知的摸索，而是將宇宙拆解、分類，再依照需要重新組合。龐大的觀測陣列持續掃描地表與星空，研究機關則在戰爭開始以前完成推演、驗證與量產準備。"
+
+ LUN_watatsuki_integrated_discipline:0 "綿月式統合軍紀"
+ LUN_watatsuki_integrated_discipline_desc:0 "依姬制定戰法，豐姬調整全局，命令沿著經過反覆校驗的指揮鏈傳至每一支月兔部隊。士兵不必猜測上級意圖，也不容許恐慌破壞隊形。她們知道何時前進、向何處射擊、在何種傷亡下重整防線。個體或許會遲疑，整個組織卻不會。"
+
+ LUN_lunar_integrated_command_network:0 "月球指揮網"
+ LUN_lunar_integrated_command_network_desc:0 "偵測、判讀、下令與火力引導被連入同一套月面網路。前線月兔看見的每個目標，都會立刻成為後方指揮機關與支援單位共享的座標。當地上的軍隊仍在辨認敵情，月都已經完成威脅排序，將部隊送往最準確的位置。"
+
+ LUN_celestial_war_industry:0 "天穹兵工體系"
+ LUN_celestial_war_industry_desc:0 "月都沒有與戰爭完全無關的工業。精密工坊、研究設施與運輸節點都保留轉入軍事用途的接口；新式武器一旦通過驗證，規格便會同步送往所有產線。對月都而言，動員不是臨時改造社會，而是讓原本隱藏的戰爭機構全面運轉。"
+
+ LUN_pure_logistics_standard:0 "無塵戰場規格"
+ LUN_pure_logistics_standard_desc:0 "所有月都軍械都必須在真空、極寒、輻射與妖力干擾下維持運作。補給品按照精確數量封裝，運輸路線由演算機關持續修正，故障部件則在影響作戰以前完成替換。泥濘、暴雪與漫長距離不會使月軍停下，只會讓地上的敵人更快失去追趕能力。"
+
+ LUN_purification_weapon_system:0 "淨化兵器序列"
+ LUN_purification_weapon_system_desc:0 "在月都的軍事理論中，士兵、槍械、飛行器、雷達與後方演算機關並非彼此分離的單位，而是同一套兵器的不同部件。目標一旦被判定為污穢，整套體系便會同時轉向：觀測鎖定位置，空中力量壓制退路，地面部隊依照預定程序完成清除。"

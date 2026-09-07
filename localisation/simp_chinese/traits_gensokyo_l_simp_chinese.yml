@@ -1,0 +1,345 @@
+﻿l_simp_chinese:
+
+  kyo_human_commander:0 "人类军官"
+  kyo_human_commander_desc:0 ""
+
+  kyo_fairy_swarm_leader:0 "妖精群领"
+  kyo_fairy_swarm_leader_desc:0 "散而不溃，动若嬉戏。"
+
+  kyo_oni_breaker:0 "鬼王"
+  kyo_oni_breaker_desc:0 "喝令如雷，冲锋如潮。"
+
+  kyo_tengu_rapid_ops:0 "天狗"
+  kyo_tengu_rapid_ops_desc:0 "风声即情报。"
+
+  kyo_kappa_engineer:0 "河童"
+  kyo_kappa_engineer_desc:0 "工程师的概念"
+
+  kyo_yaksha_predator:0 "妖兽"
+  kyo_yaksha_predator_desc:0 "动物妖怪"
+
+  kyo_tsukumogami_attunement:0 "付丧神"
+  kyo_tsukumogami_attunement_desc:0 "器有心则手更顺。"
+
+  kyo_ghost_coolheaded:0 "幽灵"
+  kyo_ghost_coolheaded_desc:0 "不惊、不乱。"
+
+  kyo_lunar_rabbit_tactics:0 "玉兔"
+  kyo_lunar_rabbit_tactics_desc:0 "战场间的波动"
+
+  kyo_vampire_overlord:0 "吸血鬼领主"
+  kyo_vampire_overlord_desc:0 "世界的贵族"
+
+  kyo_boundary_savant:0 "境界妖怪"
+  kyo_boundary_savant_desc:0 "空间的主宰"
+
+
+
+  kyo_loyal_scarlet:0 "红魔馆效忠者"
+  kyo_loyal_scarlet_desc:0 "遵雷米莉亚之令。"
+
+  kyo_loyal_yakumo:0 "八云家直属"
+  kyo_loyal_yakumo_desc:0 ""
+
+  kyo_loyal_myouren:0 "命莲寺护持"
+  kyo_loyal_myouren_desc:0 ""
+
+  kyo_loyal_eientei:0 "永远亭效忠者"
+  kyo_loyal_eientei_desc:0 ""
+
+  kyo_loyal_shrinedomain:0 "博丽之庇"
+  kyo_loyal_shrinedomain_desc:0 ""
+
+  kyo_loyal_tenguclan:0 "忠于天狗社会"
+  kyo_loyal_tenguclan_desc:0 ""
+
+  kyo_loyal_grassroots:0 "草根妖怪成员"
+  kyo_loyal_grassroots_desc:0 "。"
+
+  kyo_loyal_netherhouse:0 "白玉楼麾下"
+  kyo_loyal_netherhouse_desc:0 "雪庭静，樱雨落。"
+
+  kyo_loyal_chireiden:0 "忠于古明地统治"
+  kyo_loyal_chireiden_desc:0 "读心是工具，不是玩笑；她们以地下的沉默管理地表的喧哗。"
+
+  kyo_loyal_forest_of_magic:0 "魔法之森居住者"
+  kyo_loyal_forest_of_magic_desc:0 ""
+
+  kyo_loyal_lunar_capital:0 "月都使者"
+  kyo_loyal_lunar_capital_desc:0 ""
+
+  kyo_loyal_beastrealm:0 "畜生界三家"
+  kyo_loyal_beastrealm_desc:0 "牙、角与壳各治一方；她们把利益分赃成秩序。"
+
+  kyo_loyal_gouyoku_alliance:0 "刚欲同盟"
+  kyo_loyal_gouyoku_alliance_desc:0 "欲望不是错，是引擎。"
+
+  kyo_loyal_kiketsu_family:0 "鬼杰组"
+  kyo_loyal_kiketsu_family_desc:0 "她们把后路当正门走。"
+
+  kyo_loyal_keiga_family:0 "劲牙组"
+  kyo_loyal_keiga_family_desc:0 "她们相信暴力就是正义。"
+
+  kyo_loyal_backdoor_coterie:0 "后户门徒"
+  kyo_loyal_backdoor_coterie_desc:0 ""
+
+  kyo_loyal_human_village:0 "人里自治会"
+  kyo_loyal_human_village_desc:0 ""
+
+  kyo_loyal_oni_old_capital:0 "鬼王酒豪会"
+  kyo_loyal_oni_old_capital_desc:0 "酒杯是结盟器。"
+
+  kyo_loyal_fairy_freecompany:0 "妖精自由营"
+  kyo_loyal_fairy_freecompany_desc:0 ""
+
+  kyo_loyal_moriyashrine:0 "守矢奉祀会"
+  kyo_loyal_moriyashrine_desc:0 "她们相信奇迹。"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  perfect_and_elegant_maid:"完美而潇洒的从者"
+
+  perfect_and_elegant_maid_2:"完美的从者"
+
+  chinese_girl:"华人小娘"
+
+  chinese_girl_2:"门卫"
+
+  the_unmoving_great_library:"不动的大图书馆"
+
+  the_unmoving_great_library_2:"知识的管理者"
+
+  monster_working_in_a_dusty_library:"就职于尘封图书馆的魔物"
+
+  monster_working_in_a_dusty_library_2:"就职于尘封图书馆的魔物"
+
+	sister_of_the_devil:"恶魔之妹"
+
+  sister_of_the_devil_2:"在地下室的灾厄"
+
+
+  eternally_young_scarlet_moon_advisor:"永远猩红的幼月"
+  the_counterattacking_amanojaku_advisor:0 "反击的天邪鬼"
+  the_great_sealed_magician_advisor:0 "被封印的大魔法使"
+  youkai_of_boundaries_advisor:0 "境界的妖怪"
+  the_one_armed_horned_sennin:0 "独臂有角的仙人"
+  the_ultimate_absolute_secret_god:0 "究极的绝对秘神"
+  black_cat_of_bad_omens:0 "凶兆的黑猫"
+  shikigami_of_the_youkai_of_boundaries:0 "境界妖怪的式神"
+  brain_of_the_moon:0 "月之头脑"
+  eternal_and_momentary_inmate:0 "永远与须臾的囚人"
+  traditional_fantastic_reporter:0 "传统的幻想记者"
+  delusionary_reporter:0 "念写的幻想记者"
+  fierce_wolf_tengu_of_the_mountain:0 "山中凶猛的狼天狗"
+  chief_of_the_crow_tengu:0 "鸦天狗的首领"
+  ice_fairy:0 "冰之妖精"
+  the_unidentified_fantastic_flying_girl:0 "身份不明的幻想飞行少女"
+  ghostly_girl_in_the_netherworld_tower:0 "冥界楼阁的亡灵少女"
+  half_phantom_gardener:0 "半人半灵的庭师"
+  goddess_who_invites_unfortunate_slips_of_the_tongue:0 "招致不幸口误的女神"
+  supreme_judge_of_paradise:0 "乐园的最高裁判长"
+  wicked_hermit:0 "邪仙"
+  great_centipede_of_the_rainbow_dragon_cave:0 "虹龙洞的大蜈蚣"
+  butterfly_of_the_land_of_the_eternal_night:0 "永夜国度的蝴蝶"
+  tsuchigumo_of_the_dark_cave:0 "黑暗洞窟的土蜘蛛"
+  youkai_of_the_dusk:0 "宵暗的妖怪"
+  little_bug_of_the_night:0 "夜之小虫"
+  book_reading_youkai:0 "读书的妖怪"
+  rokurokubi_horror:0 "辘轳首的怪谈"
+  hells_checkpoint_guard:0 "地狱关卡的番人"
+  night_sparrow:0 "夜雀"
+  super_youkai_warhead:0 "超妖怪弹头"
+  girl_of_the_border_between_dream_and_reality:0 "梦与现实的境界少女"
+  girl_of_the_secret_sealing_club:0 "秘封俱乐部的少女"
+  the_girl_even_the_vengeful_spirits_fear:0 "连怨灵都畏惧的少女"
+  ravenous_beast:0 "贪婪的兽"
+  white_rabbit_of_inaba:0 "因幡的白兔"
+  disciple_of_bishamonten:0 "毘沙门天的弟子"
+  the_cheery_forgotten_umbrella:0 "愉快的遗忘之伞"
+  hell_fairy:0 "地狱的妖精"
+  hells_wheelbarrow:0 "地狱的手推车"
+  jealousy_of_the_kind_and_lovely_earth_spirits:0 "地底亲切可爱的嫉妒心"
+  hells_solar_power:0 "地狱的太阳能"
+  celestial_of_scarlet_perception:0 "绯想天的天人"
+  shrine_maiden_of_paradise:0 "乐园的巫女"
+  matriarch_of_the_kiketsu_family:0 "鬼杰组的女头目"
+  ordinary_magician:0 "普通的魔法使"
+  thunder_beat_tsukumogami:0 "雷鸣节拍的付丧神"
+  bamboo_forests_werewolf:0 "竹林的狼人"
+  freshwater_mermaid:0 "淡水人鱼"
+  rainbow_colored_trader:0 "虹色的商人"
+  ancient_shikaisen:0 "古代的尸解仙"
+  lunatic_moon_rabbit:0 "狂气的月兔"
+  tsukumogami_of_an_aging_biwa:0 "古琵琶的付丧神"
+  half_beast_of_knowledge_and_history:0 "知识与历史的半兽"
+  kuda_gitsune:0 "管狐"
+  forgathering_dream_illusion_and_pandemonium:0 "萃集梦想、虚幻、以及百鬼夜行"
+  guide_of_the_sanzu_no_kawa:0 "三途川的引路人"
+  echoing_sutra_chant:0 "回响的诵经声"
+  descendant_of_the_kobito:0 "小人族的末裔"
+  the_avatar_of_mountains_and_lakes:0 "山与湖的化身"
+
+  poltergeist_keyboardist:0 "骚灵键盘手"
+  poltergeist_trumpeter:0 "骚灵小号手"
+  poltergeist_violinist:0 "骚灵小提琴手"
+
+  yamawaro_of_the_mountain:0 "深山的经商妖怪"
+  the_closed_eye_of_love:0 "闭上的恋之瞳"
+  thundering_vengeful_spirit:0 "轰鸣的怨灵"
+  phantom_girl:0 "幽影的少女"
+  the_nameless_existence:0 "无名的存在"
+  jizo_who_can_be_counted_on:0 "可靠的地藏"
+  dancing_duo_in_the_back_door_satono:0 "后户之国的双人舞（里乃）"
+  dancing_duo_in_the_back_door_mai:0 "后户之国的双人舞（舞）"
+  captain_of_the_ghost_ship:0 "幽灵船的船长"
+  the_big_wheel_having_guarded_and_been_guarded:0 "守护与被守护的大轮"
+  tsukumogami_of_a_koto:0 "古筝的付丧神"
+  goddess_of_misfortune:0 "厄神"
+  treasure_hunting_mouse:0 "寻宝的鼠妖"
+  lucky_cat:0 "招财猫"
+  goddess_of_falling_leaves:0 "落叶的神"
+  lunarian_princess_who_connects_sea_and_mountain:0 "连结海与山的月之公主"
+  vital_point_of_the_brocaded_capital:0 "锦都的命脉"
+  oarfish_messenger_of_the_dragon_palace:0 "龙宫的使者"
+  the_great_fairy:0 "大妖精"
+  komainu_who_guards_shrines:0 "守护神社的狛犬"
+  goddess_of_harvest:0 "丰收之神"
+  ibaraki_douji_unmasked:0 "露出鬼面的茨木童子"
+  fearsome_oni_with_superhuman_strength:0 "怪力的鬼"
+  the_taoist_saint:0 "道教的圣人"
+  goddess_of_sculptures:0 "造形之神"
+  black_horse_of_the_warrior_spirit:0 "武人魂的黑马"
+  flower_master_of_the_four_seasons:0 "四季之花的主宰"
+  highest_of_the_native_gods:0 "土著神的顶点"
+  jiangshi_of_the_ancient_tomb:0 "古坟的僵尸"
+  the_menreiki:0 "面气灵"
+  seven_colored_puppeteer:0 "七色的人偶使"
+  undying_phoenix:0 "不死的凤凰"
+
+  sunlight_fairy:0 "日光妖精"
+  moonlight_fairy:0 "月光妖精"
+  starlight_fairy:0 "星光妖精"
+
+  poisonous_doll:0 "毒人偶"
+  harbinger_of_spring:0 "春之使者"
+  bake_danuki_who_shifts_shapes:0 "变化自在的化狸"
+  moon_rabbit_who_came_to_earth:0 "来到地上的月兔"
+  dango_loving_moon_rabbit:0 "团子控的月兔"
+  ruler_of_dreams:0 "梦境的支配者"
+  goddess_of_hell:0 "地狱的女神"
+  goddess_of_poverty:0 "贫穷神"
+  goddess_of_pestilence:0 "疫病神"
+
+  hanging_bucket:0 "可怕的水井妖怪"
+  water_child:0 "水子偶像"
+  ushi_oni_of_the_riverbed:0 "河床的牛鬼"
+
+  Haniwa_Lance_corporal:0 "埴轮枪兵伍长"
+  mountain_hag_of_the_smoky_path:0 "栖息于高地的山女郎"
+  goddess_of_magatama:0 "勾玉匠神"
+  king_of_the_silent_bliss_of_nirvana:0 "寂灭为乐的鬼之王"
+  cerberus_of_forested_silence:0 "死寂的刻耳柏洛斯"
+  the_great_sage_of_small_sanctuaries:0 "圣域的猿神"
+  beautiful_stalker_of_hell:0 "地狱的貌美跟踪狂"
+  monster_of_tainted_organic_material:0 "污秽的有机怪物"
+
+  moon_rabbit_unit_two:0 "月兔二号机"
+  lunarian_princess_who_wields_gods:0 "使役众神的月之公主"
+
+  chieftain_of_the_sanctuary_yamanba:0 "圣域栖居的山姥之长"
+  yamanba_who_crosses_the_border_gate:0 "跨越浮世门关的山姥"
+  unknown_disobedient_primitive_beast:0 "原形不明的反骨妖兽"
+  the_princess_of_permanence:0 "恒久姬"
+  the_apparition_that_crafts_fictitious_cities:0 "创造虚构都市之怪"
+  guardian_god_of_the_sanctuary:0 "圣域的守护神"
+
+  geidontei_waitress:0 "鲵吞亭的女侍"
+  jailbreak_king:0 "反狱王"
+  miko_of_the_moriya_shrine:0 "守矢神社的巫女"
+  occult_maniac:0 "秘封俱乐部初代部长"
+  winter_youkai:0 "冬之妖怪"
+  child_of_miare:0 "御阿礼之子"
+  bookworm_of_the_human_village:0 "人里书痴"
+  proprietor_of_kourindou:0 "香霖堂店主"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Youkai_of_Boundaries:"境界的妖怪" 
+ Gensokyo_protector:"幻想乡的守护者"
+ The_Lonely_Guardian:"孤高的守护者"
+ known_all_the_history: "秘封俱乐部成员"
+
+ eirin_lunar_clinician_regent:"永远的摄政"
+ eirin_lunar_brain:"月之头脑"
+
+ Border_of_Life:"幽冥楼阁的亡灵少女"
+
+ youmu_hakurou_discipline:"楼观与白楼"
+ half_ghost_half_human:"半人半灵"
+
+ eternally_young_scarlet_moon:"永远鲜红的幼月"
+
+ scarlet_lord_of_the_red_moon:"红月之君"
+
+ counterattacking_amanojaku:"逆袭的天邪鬼"
+
+ inversion_agitator:"颠倒的煽动者"
+
+ the_sealed_great_magician:"被封印的大魔法使"
+
+ lotus_vow:"莲华誓愿"
+
+  goodwill_of_peace:"共存使命"
+
+ king_to_all_youkai:"众妖怪的王"
+
+ KYO_ran_lunar_operations_mastermind:0 "九尾月面作战演算"
+ KYO_ran_lunar_operations_mastermind_desc:0 "蓝把联军协同、补给消耗与返程坐标写进同一套不可删减的演算。"
+ KYO_chen_lunar_pathfinder:0 "月虹兽道向导"
+ KYO_chen_lunar_pathfinder_desc:0 "橙能沿正式地图忽略的道路快速穿过复杂地形，并为后续部队留下归路。"

@@ -1,0 +1,329 @@
+﻿l_simp_chinese:
+
+  Formosa_focus_tree:0 "福尔摩沙（台湾）国策"
+
+  # Prologue
+  FOR_exile_on_formosa:0 "流亡福尔摩沙"
+  FOR_exile_on_formosa_desc:0 "日本本土沦陷于妖怪之手，政府与军队被迫撤至台湾。我们必须在这座岛屿上重建秩序，并为夺回东京做好准备。"
+
+  FOR_the_emperor_in_exile:0 "天皇在流亡"
+  FOR_the_emperor_in_exile_desc:0 "昭和天皇亲眼见证帝国的崩塌。流亡并非逃避，而是磨砺——从怯懦走向担当。"
+
+  FOR_emergency_diet_in_taipei:0 "台北紧急国会"
+  FOR_emergency_diet_in_taipei_desc:0 "在台北重组国会与内阁，确立法统与指挥体系，让流亡政府成为真正可运作的国家。"
+
+  # Political
+  FOR_rally_the_settlers:0 "凝聚侨民支持"
+  FOR_rally_the_settlers_desc:0 "离散的日本侨民仍将希望寄托于流亡政府。我们必须把支持转化为人力、物资与政治动员。"
+
+  FOR_promise_of_return:0 "必归之誓"
+  FOR_promise_of_return_desc:0 "我们向侨民、向台湾、也向自己宣誓：东京不会永远沉沦。"
+
+  FOR_taiwanese_question:0 "台湾问题"
+  FOR_taiwanese_question_desc:0 "岛内资源有限、人口结构骤变、历史伤痕未愈。若处理不当，内部分裂会先于外敌到来。"
+
+  FOR_land_reform_and_compensation:0 "土地改革与补偿"
+  FOR_land_reform_and_compensation_desc:0 "迁入、征用与粮食短缺会引发冲突。以改革与补偿换取合作，才能把岛屿凝成反攻的基地。"
+
+  FOR_security_laws_and_curfew:0 "戒严与治安法"
+  FOR_security_laws_and_curfew_desc:0 "秩序必须维持，即使手段严厉。我们要确保后方稳定，不让反攻事业被内部动荡拖垮。"
+
+  FOR_local_elites_and_advisory_council:0 "地方士绅与咨议会"
+  FOR_local_elites_and_advisory_council_desc:0 "吸纳地方菁英进入政治安排，建立沟通渠道，让统治从强制走向合作。"
+
+  FOR_language_and_education_compromise:0 "语言与教育折衷"
+  FOR_language_and_education_compromise_desc:0 "不必在同化与割裂之间二选一。让制度承认差异，才能换取共同的国家目标。"
+
+  FOR_joint_service_program:0 "联合服役计划"
+  FOR_joint_service_program_desc:0 "让本岛人与侨民一起训练、一起服役、一起牺牲——共同体从此建立。"
+
+  FOR_civic_identity_campaign:0 "公民认同运动"
+  FOR_civic_identity_campaign_desc:0 "反攻不只是日本人的战争，也是台湾的生存选择。用共同命运弥合裂缝。"
+
+  FOR_special_security_bureau:0 "特别保安局"
+  FOR_special_security_bureau_desc:0 "情报、渗透与破坏无处不在。我们需要一把隐形的刀，切断敌人在岛内的触手。"
+
+  FOR_censorship_and_blacklists:0 "审查与黑名单"
+  FOR_censorship_and_blacklists_desc:0 "在存亡关头，言论与组织必须被严格监控。任何动摇都会在登陆时变成致命裂缝。"
+
+  FOR_special_courts:0 "特别法庭"
+  FOR_special_courts_desc:0 "以非常手段处理叛乱与渗透，让后方在战争时期保持绝对秩序。"
+
+  FOR_rebuild_state_apparatus:0 "重建国家机器"
+  FOR_rebuild_state_apparatus_desc:0 "财政、动员、治安与后勤必须制度化。流亡国家也要像国家一样运转。"
+
+  FOR_imperial_pilgrimage:0 "御巡幸"
+  FOR_imperial_pilgrimage_desc:0 "天皇亲访军营与乡里，听见怨与愿——这场流亡将把他塑造成新的统合象征。"
+
+  FOR_showa_reforms:0 "昭和改革"
+  FOR_showa_reforms_desc:0 "流亡的磨难迫使我们抛弃旧的惰性。以改革整肃朝野，重塑政府的执行力。"
+
+  FOR_meiji_spirit_of_the_showa:0 "昭和的明治精神"
+  FOR_meiji_spirit_of_the_showa_desc:0 "如同明治维新曾把日本带入新世，昭和也将以痛苦的觉醒，带领国家走向复国。"
+
+  FOR_national_unity_campaign:0 "国族团结运动"
+  FOR_national_unity_campaign_desc:0 "反攻需要同心。让侨民与本岛人共享目标，把分歧压到最低，才能把力量指向东京。"
+
+  # Industry
+  FOR_build_the_island_fortress:0 "把台湾建成要塞"
+  FOR_build_the_island_fortress_desc:0 "工业、道路、港口与机场将决定反攻的可能性。把台湾建设成最坚固的前进基地。"
+
+  FOR_power_and_rail:0 "电力与铁路"
+  FOR_power_and_rail_desc:0 "战争是物流与产能的竞赛。修铁路、扩电力，让每一颗子弹都能准时到前线。"
+
+  FOR_harbor_of_kaohsiung:0 "高雄军港"
+  FOR_harbor_of_kaohsiung_desc:0 "扩建南部军港与补给设施，让舰队能够长时间维持出航与维修。"
+
+  FOR_expand_taiwanese_docks:0 "扩建台湾船坞"
+  FOR_expand_taiwanese_docks_desc:0 "没有船，就没有回家的路。扩建船坞与军港，建立持续造舰与维修能力。"
+
+  FOR_shipbuilding_program:0 "造舰计划"
+  FOR_shipbuilding_program_desc:0 "护航、登陆支援与主力决战都需要舰艇。我们必须把船坞推到极限。"
+
+  FOR_ship_repair_yards:0 "舰艇修理厂"
+  FOR_ship_repair_yards_desc:0 "战损修复决定舰队能否持续作战。把维修能力变成战略优势。"
+
+  FOR_airfields_and_factories:0 "机场与军需工厂"
+  FOR_airfields_and_factories_desc:0 "制空权是登陆与海上航线的生命线。我们必须把机场与军需生产同时做大。"
+
+  FOR_wartime_industry_board:0 "战时产业委员会"
+  FOR_wartime_industry_board_desc:0 "集中资源、统一采购与配给，确保关键军需不被内耗与派系争夺拖慢。"
+
+  FOR_munitions_expansion:0 "军需扩张"
+  FOR_munitions_expansion_desc:0 "把台湾的机器转向炮弹与枪械，为那场横渡与登陆准备足够的火力。"
+
+  FOR_aviation_industry:0 "航空工业"
+  FOR_aviation_industry_desc:0 "流亡空军必须有本地化生产与维修体系。用台湾的产能换回天空。"
+
+  FOR_science_and_facilities:0 "科研与实验设施"
+  FOR_science_and_facilities_desc:0 "在岛上建立陆战与航空实验设施，集中科研力量，为反攻提供技术优势。"
+
+  FOR_nuclear_effort_in_exile:0 "流亡核计划"
+  FOR_nuclear_effort_in_exile_desc:0 "核能不只是武器，也是国家复兴的象征。即使在流亡中，我们也要保持技术前沿。"
+
+  # Army
+  FOR_reorganize_exiled_army:0 "整编流亡陆军"
+  FOR_reorganize_exiled_army_desc:0 "撤退带来的混乱需要整顿：重编序列、补充兵员、恢复纪律。"
+
+  FOR_officer_retraining:0 "军官再训练"
+  FOR_officer_retraining_desc:0 "过去的教条不足以应对妖怪。我们必须以新的训练与战法，塑造能打赢登陆战的军队。"
+
+  FOR_island_defense_network:0 "岛屿防卫网"
+  FOR_island_defense_network_desc:0 "台湾是我们的唯一后方。构筑要塞与防空，让敌人无法以奇袭摧毁我们的基地。"
+
+  FOR_mechanized_core:0 "机械化核心"
+  FOR_mechanized_core_desc:0 "未来的反攻不是步兵冲锋，而是装甲与机动力的协同。打造精锐核心。"
+
+  FOR_marine_divisions:0 "海军陆战队师"
+  FOR_marine_divisions_desc:0 "反攻必须登陆。建立专门的两栖部队，让登陆不再依赖临时拼凑。"
+
+  FOR_amphibious_training:0 "两栖作战训练"
+  FOR_amphibious_training_desc:0 "要回家，就必须学会渡海与登陆。把训练变成习惯，把失败变成教材。"
+
+  FOR_landing_craft_program:0 "登陆艇计划"
+  FOR_landing_craft_program_desc:0 "登陆不是一场赌局，而是一套工业体系。让登陆艇成为我们的常备能力。"
+
+  # Navy
+  FOR_rebuild_the_kido_butai:0 "重建机动舰队"
+  FOR_rebuild_the_kido_butai_desc:0 "没有制海权，就没有回家的路。重建海军核心，恢复远洋作战能力。"
+
+  FOR_destroyer_program:0 "驱逐舰计划"
+  FOR_destroyer_program_desc:0 "护航与反潜决定我们能否维持补给线。以驱逐舰为骨干，构筑海上防线。"
+
+  FOR_naval_air_coordination:0 "海空协同"
+  FOR_naval_air_coordination_desc:0 "舰队与航空兵必须像一把刀一样行动。让情报、打击与护航合为一体。"
+
+  FOR_fleet_training_cycle:0 "舰队训练周期"
+  FOR_fleet_training_cycle_desc:0 "把训练制度化，让经验不断累积。"
+
+  FOR_battleship_modernization:0 "主力舰现代化"
+  FOR_battleship_modernization_desc:0 "无论时代如何变化，决战仍可能到来。让主力舰成为最后的保险。"
+
+  FOR_submarine_screen:0 "潜艇屏障"
+  FOR_submarine_screen_desc:0 "以潜艇骚扰与侦察削弱敌人，争取反攻的窗口。"
+
+  # Air
+  FOR_rebuild_the_exile_air_force:0 "重建流亡空军"
+  FOR_rebuild_the_exile_air_force_desc:0 "撤离的飞行员与地勤是宝贵资产。重整编制与机场体系，恢复战力。"
+
+  FOR_pilot_training_pipeline:0 "飞行员训练体系"
+  FOR_pilot_training_pipeline_desc:0 "飞行员的损失无法快速弥补。建立训练流水线，确保空军持续补充。"
+
+  FOR_fighter_production_push:0 "战斗机生产冲刺"
+  FOR_fighter_production_push_desc:0 "登陆前必须先夺取天空。以战斗机为优先，确保制空与防空。"
+
+  FOR_nav_bomber_wings:0 "海上打击航空队"
+  FOR_nav_bomber_wings_desc:0 "用航空兵压制敌方舰队与运输线，为登陆创造窗口。"
+
+  FOR_air_defense_of_taiwan:0 "台湾防空"
+  FOR_air_defense_of_taiwan_desc:0 "保护机场与工业，就是保护反攻的未来。"
+
+  FOR_airborne_recon_and_radar:0 "空中侦察与雷达"
+  FOR_airborne_recon_and_radar_desc:0 "看得见，才打得赢。用雷达与侦察锁定敌人的动向。"
+
+  # Reconquest
+  FOR_plan_the_homecoming:0 "回乡作战计划"
+  FOR_plan_the_homecoming_desc:0 "政治动员、舰队与空军都必须到位。我们将以周密计划，夺回东京。"
+
+  FOR_launch_operation_return:0 "启动“归乡行动”"
+  FOR_launch_operation_return_desc:0 "反攻开始。我们的目标不是一次象征性突袭，而是夺回家园的战争。"
+
+  FOR_liberate_the_home_islands:0 "解放本土诸岛"
+  FOR_liberate_the_home_islands_desc:0 "一州一港、一空一陆。把妖怪逐出家园，让日本重新站起来。"
+
+  FOR_retake_tokyo_and_restore_the_diet:0 "夺回东京，重建日本"
+  FOR_retake_tokyo_and_restore_the_diet_desc:0 "东京回到人类手中，法统得以恢复。我们将宣布：人类赢了妖怪。"
+
+  # Post-victory
+  FOR_restore_the_capital:0 "重建首都"
+  FOR_restore_the_capital_desc:0 "战争结束只是开始。我们要把东京从废墟中重新点亮。"
+
+  FOR_purge_youkai_collaborators:0 "清算协力者"
+  FOR_purge_youkai_collaborators_desc:0 "妖怪的统治不只靠利爪，也靠人心的背叛。清算协力者，才能重建信任。"
+
+  FOR_reopen_the_diet:0 "重开国会"
+  FOR_reopen_the_diet_desc:0 "流亡时期的非常体制必须收束。让国家回到可持续的治理轨道。"
+
+  FOR_reform_the_imperial_state:0 "改革帝国体制"
+  FOR_reform_the_imperial_state_desc:0 "昭和在流亡中成长。以新的制度与新的精神，避免旧日本重蹈覆辙。"
+
+  FOR_demobilize_with_dignity:0 "有序复员"
+  FOR_demobilize_with_dignity_desc:0 "把战争机器转回和平建设，避免胜利后的社会崩溃。"
+
+  FOR_integrate_the_exile_veterans:0 "安置流亡老兵"
+  FOR_integrate_the_exile_veterans_desc:0 "让为复国而战的人拥有未来：工作、土地与尊严。"
+
+  FOR_humanity_triumphant:0 "人类的胜利"
+  FOR_humanity_triumphant_desc:0 "妖怪终将退散，而人类在苦难中学会了团结与自强。"
+
+
+
+
+
+
+
+
+  ##################################
+  #################Ideas############
+  ##################################
+
+ FOR_exile_administration:0 "流亡行政体系"
+ FOR_exile_administration_desc:0 "各部省仍然存在，却只剩下昔日荣光的残影。在借来的办公室、拥挤的军营与被征用的殖民官署中，国家仍持续发布命令，因为一旦承认沉默，就等同承认死亡。"
+
+ FOR_emperor_in_exile:0 "流亡中的天皇"
+ FOR_emperor_in_exile_desc:0 "本土已经沦陷，帝都陷入沉默，大海横亘于皇座与日本之间。然而，只要天皇仍在，难民与官兵便仍拥有一件败北无法彻底夺走的东西：相信国家尚未断气的理由。"
+
+ FOR_emperor_hardened:0 "历经磨难的天皇"
+ FOR_emperor_hardened_desc:0 "流亡剥去了仪式与幻象。如今留在皇座上的，是一位被迫直视饥饿、恐惧与败北，并以忍耐作为回答的君主。"
+
+ FOR_government_in_exile:0 "流亡政府"
+ FOR_government_in_exile_desc:0 "我们已不再从东京发号施令，但统治的链条尚未断裂。每一道在流亡中签署的命令，都是对世界宣告：日本尚未从历史中消失。"
+
+ FOR_japanese_diaspora_support:0 "日本离散社群支援"
+ FOR_japanese_diaspora_support_desc:0 "商人、移民、船员、老兵与流离失所的家庭散居海外，却仍不断送来援助。有些人捐出金钱，有些人送来子弟，也有人只能寄来一封信，承诺日本并非孤身一人。"
+
+ FOR_taiwanese_tensions:0 "台湾人的不满"
+ FOR_taiwanese_tensions_desc:0 "台湾成为了我们的避难所，但并非所有生活于此的人都将流亡政府视为拯救者。在秩序的表面之下，怨怼、疲惫与沉默的质问正在滋长：究竟该由谁来为日本的存续付出代价？"
+
+ FOR_land_compromise:0 "土地妥协"
+ FOR_land_compromise_desc:0 "旧日的殖民秩序无法假装一切照常般重新降临。政府让出了土地、权利与利益，换来的不是忠诚，而是时间——而现在，时间比尊严更加珍贵。"
+
+ FOR_martial_law:0 "戒严体制"
+ FOR_martial_law_desc:0 "宵禁、巡逻、紧急审判与军政长官，以武力将岛屿勉强缝合。在流亡之中，自由被视为奢侈品；生存，成了唯一真正重要的法律。"
+
+ FOR_advisory_council:0 "咨询会议"
+ FOR_advisory_council_desc:0 "官僚、军官、地方菁英与民间代表坐上同一张桌子，并不是因为他们彼此信任，而是因为一旦崩溃降临，所有人都将被一同吞没。"
+
+ FOR_special_security_bureau:0 "特别保安局"
+ FOR_special_security_bureau_desc:0 "谣言、间谍、失败主义者、合作者与妖怪同情者，潜伏于每一座港口与军营之中。特别保安局的存在，是为了确保流亡政权不会从内部开始腐烂。"
+
+ FOR_reconstructed_bureaucracy:0 "重建官僚体系"
+ FOR_reconstructed_bureaucracy_desc:0 "档案被焚毁，各部门四散，官员在撤离途中失踪。政府机器只能一片一片重新组装起来——这并不光荣，但总得有人清点粮食、分配步枪，并让灯火继续亮著。"
+
+ FOR_meiji_spirit_revived:0 "明治精神再起"
+ FOR_meiji_spirit_revived_desc:0 "日本曾经在敌意重重的世界压力下重塑自身。如今，在更加黑暗的处境中，流亡者再次唤起那段记忆：适应、忍耐、现代化，并在灭亡成为永恒之前重新站起。"
+
+ FOR_unity_in_exile:0 "流亡中的团结"
+ FOR_unity_in_exile_desc:0 "派系仇怨并未真正消失，但败北迫使它们暂时沉默。士兵、官员、移民与难民如今只能抓住同一个脆弱的事实：若是分裂，他们便会一同灭亡。"
+
+ # ---------
+ # Industry / Research
+ # ---------
+
+ FOR_logistics_modernization:0 "后勤现代化"
+ FOR_logistics_modernization_desc:0 "一支流亡军队没有浪费的余裕。每一箱物资、每一公升燃油、每一袋米都必须抵达前线，因为如今后勤的失败，意味著部队还未开战便会先行饿死。"
+
+ FOR_wartime_industry_board:0 "战时工业委员会"
+ FOR_wartime_industry_board_desc:0 "本土的工厂已经失去，不是被夺取，便是遭摧毁，或已远在我们无法触及之处。战时工业委员会必须将台湾改造成一座堡垒工坊，让每一台机器都为重返日本的承诺而运转。"
+
+ FOR_munitions_drive:0 "军需生产运动"
+ FOR_munitions_drive_desc:0 "民生舒适必须让位于砲弹、步枪、军服与引擎。人民被告知，今日每一分牺牲，都可能成为未来射向日本解放之路的一颗子弹。"
+
+ FOR_aviation_industry:0 "航空工业"
+ FOR_aviation_industry_desc:0 "本土上空曾经失守，而我们不能再次失去天空。工程师与飞行员在临时机库中工作，试图用残骸、记忆与绝望，重新打造一支空军。"
+
+ FOR_research_directorate:0 "研究总局"
+ FOR_research_directorate_desc:0 "昔日的大学与实验室已非我们所能掌握，但它们的学者并非全数死去。被召集到流亡地的研究者，被命令在败北给出最终答案之前，先替国家找到对抗败北的方法。"
+
+ FOR_nuclear_project:0 "帝国核计划"
+ FOR_nuclear_project_desc:0 "有些武器并非诞生于野心，而是诞生于恐惧。若妖怪已经粉碎了旧世界的平衡，那么日本便必须寻求足以重塑平衡的可怖力量。"
+
+ # ---------
+ # Military
+ # ---------
+
+ FOR_exiled_general_staff:0 "流亡参谋本部"
+ FOR_exiled_general_staff_desc:0 "参谋本部已不再从帝国中心发号施令，而是在台湾的临时办公桌上摊开地图。每一份计划都从同一个伤口开始：该如何回到那个已经沦陷的国家？"
+
+ FOR_island_garrison:0 "岛屿守备队"
+ FOR_island_garrison_desc:0 "台湾不再只是后方殖民地。它是最后的城墙、最后的港口，也是帝国仍能声称拥有未来的最后一片土地。"
+
+ FOR_mechanized_rearmament:0 "机械化再武装"
+ FOR_mechanized_rearmament_desc:0 "下一场战争无法只靠记忆来作战。卡车、装甲、引擎与现代化编制，必须取代旧军残部的破碎影子。"
+
+ FOR_amphibious_preparations:0 "两栖作战准备"
+ FOR_amphibious_preparations_desc:0 "曾经拯救政府的大海，如今也成了囚禁政府的牢笼。若要重返日本，流亡者必须学会不再以难民身分横渡海洋，而是以进攻者之姿踏浪而回。"
+
+ FOR_shipyard_mobilization:0 "造船厂动员"
+ FOR_shipyard_mobilization_desc:0 "每一座船坞都被命令投入工作。渔船、商船修理场、民间船厂与海军设施，全都被迫服务于同一个目的：重建那支将日本带回本土的舰队。"
+
+ FOR_carrier_revival:0 "航母力量复兴"
+ FOR_carrier_revival_desc:0 "航空母舰曾是帝国力量的长矛。如今，它的幸存者在流亡中重新训练，决心让旭日的影子再次投向大海。"
+
+ FOR_convoy_war:0 "护航战"
+ FOR_convoy_war_desc:0 "流亡政权的存亡取决于海上运输。保护运输船队并非次要任务，而是抵抗与饥荒之间仅存的一道细线。"
+
+ FOR_fleet_training:0 "舰队训练"
+ FOR_fleet_training_desc:0 "一支曾经败逃的舰队，必须重新学会战斗。操演日夜不止，将悲痛、耻辱与海水锻造成纪律。"
+
+ FOR_capital_ship_focus:0 "主力舰重视"
+ FOR_capital_ship_focus_desc:0 "仍有军官相信，没有大型战舰的国家便无法自称帝国。不论是象征还是武器，主力舰都代表著一项承诺：日本尚未接受渺小的命运。"
+
+ FOR_exile_air_wings:0 "流亡航空队"
+ FOR_exile_air_wings_desc:0 "从日本陷落中逃出的飞行员，如今在异乡土地上驾驶印有熟悉标志的飞机升空。他们的战机寥寥无几，但每一次出击，都在告诉下方的难民：帝国仍有双翼。"
+
+ FOR_pilot_training:0 "飞行员训练"
+ FOR_pilot_training_desc:0 "幸存的老练飞行员太少，已经没有浪费的余裕。年轻飞行员被以残酷的速度训练，因为日本的天空不会只靠勇气便被夺回。"
+
+ FOR_naval_strike_focus:0 "对舰攻击重视"
+ FOR_naval_strike_focus_desc:0 "若要抵达本土，敌方舰队必须在它们击溃我们之前先被摧毁。我们训练飞行员猎杀战舰，仿佛日本的未来系于每一枚鱼雷之上。"
+
+ FOR_radar_network:0 "雷达网"
+ FOR_radar_network_desc:0 "敌人绝不能再次在无人察觉中逼近。整座岛屿上，雷达站如守望塔般升起，为一个已经学会奇袭代价的国家警戒天空与海洋。"
+
+ # ---------
+ # Reconquest / Victory
+ # ---------
+
+ FOR_homecoming_plan:0 "归乡计划"
+ FOR_homecoming_plan_desc:0 "它被称为计划，但对许多人而言，它更接近祈祷。每一张本土地图都被标记、修改与反复研究，只为等待流亡成为归还的那一天。"
+
+ FOR_victory_over_youkai:0 "战胜妖怪"
+ FOR_victory_over_youkai_desc:0 "在所有预测之外，在所有羞辱之后，在吞噬本土的恶梦面前，流亡者终究撑了下来。战胜妖怪不只是军事上的成功，更证明了日本可以被重创，却无法被抹去。"
+
+ FOR_restored_capital:0 "帝都光复"
+ FOR_restored_capital_desc:0 "帝都再次于旭日之下苏醒。它的街道满是伤痕，人民仍惊魂未定，制度也被占领掏空，但政府的回归，已将废墟转化为新的开端。"
+
+ FOR_showa_restoration:0 "昭和维新"
+ FOR_showa_restoration_desc:0 "旧秩序无法毫无改变地归来，但帝国也不能抛弃陪伴它度过流亡的皇座。昭和维新将生存、改革与帝国正统性编织成新的誓约，献给这个破碎的国家。"
+

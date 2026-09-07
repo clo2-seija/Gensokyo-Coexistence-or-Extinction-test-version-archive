@@ -1,0 +1,1086 @@
+﻿l_simp_chinese:
+ Youkai_japan_war:"第一次人妖大战" 
+
+ Youkai_Eirin:"妖兔医疗辅助军"
+
+ Youkai_Tengu:"天狗侦察部队支援"
+
+ Youkai_Fairy:"妖精隐形部队奇袭"
+
+ Youkai_grassroot:"普通妖怪们的胜利"
+
+ Youkai_Satori:"古明地姊妹亲自出场"
+
+ Youkai_nitori:"河童日以继夜的工作"
+
+ Youkai_Youkari:"八云紫亲自出场"
+
+  the_end_of_japan_youkai_war:0"战斗或者灭绝"
+
+
+ GSK_indproj_civ_1:0 "[FROM.GetName]地区民用工业扩建"
+ GSK_indproj_civ_1_desc:0 "河童们拖来机床、锅炉与一箱箱外界拆解零件，山童则在地基旁测量土层、加固支柱，把原本零散的工坊串成一片可用的生产区。等烟囱升起、传送带转动后，[FROM.GetName]将新增建设空间，并建立一座民用工厂，让工具、建材与日用品能稳定流入市场。"
+
+ GSK_indproj_civ_2:0 "[FROM.GetName]大型民用工业扩建"
+ GSK_indproj_civ_2_desc:0 "这不是一座孤零零的工坊，而是一整片新工业街区。河童负责铺设动力管线与机械骨架，山童开凿仓库、整平道路，妖精们在材料堆之间来回传话，让整个工地像被点燃般忙碌起来。完成后，[FROM.GetName]将追加更多建设空间，并建立两座民用工厂，使地方生产力与商业流通一同起飞。"
+
+ GSK_indproj_mil_1:0 "[FROM.GetName]地区军工扩建"
+ GSK_indproj_mil_1_desc:0 "河童将旧式锻炉改造成标准化军工产线，山童则把厚重钢材与火药仓安置进加固厂房。铁锤声、测试射击声与搬运车轮声在[FROM.GetName]轮番响起，象征这片土地正式被纳入战时生产体系。工程完成后，当地将追加建设空间，并建立一座军用工厂。"
+
+ GSK_indproj_mil_2:0 "[FROM.GetName]大型军工扩建"
+ GSK_indproj_mil_2_desc:0 "一条更庞大的军工产线将在[FROM.GetName]展开。河童们日夜校准压床、装配台与弹药检测装置，山童则深入地下修建安全仓库与运输通道，确保原料能进、成品能出、爆炸不会把整片工地掀上天。完成后，当地将追加更多建设空间，并建立两座军用工厂，成为支撑前线的重要兵工核心。"
+
+ GSK_indproj_infrastructure:0 "[FROM.GetName]地区基础建设工程"
+ GSK_indproj_infrastructure_desc:0 "道路被拓宽，桥梁被加固，原本泥泞难行的路段被山童一段段重新夯实。河童则在沿线铺设排水沟、简易维修站与货物转运点，让车队、补给队与巡逻队都能更快通过。工程完成后，[FROM.GetName]将提升一级基础建设，使人流、货流与军需调度都变得更加顺畅。"
+
+ GSK_indproj_resource_prospecting:0 "[FROM.GetName]地区资源探勘"
+ GSK_indproj_resource_prospecting_desc:0 "山童带著探针与矿灯钻入岩层深处，河童则在地表架起分析仪、蒸汽吊车与临时冶炼炉。她们敲开石壁、记录矿脉走向，从泥土、溪谷与废坑中寻找能支撑工业的财富。工程完成后，[FROM.GetName]将展开资源探勘，并依地区特性发现不同种类的可开采资源。"
+
+ GSK_indproj_special_facility:0 "[FROM.GetName]特殊研究设施建设"
+ GSK_indproj_special_facility_desc:0 "这项工程需要比普通工厂更严密的规划。河童负责安装精密仪器、隔离装置与实验用动力系统，山童则修筑厚重墙体、地下管线与安全通道，将整片区域改造成能承受高风险研究的封闭设施。当最后一道符札与警戒门落下后，[FROM.GetName]将建成对应的特殊研究设施，为更深层的技术突破开辟道路。"
+
+
+
+
+
+
+ KYO_industry_projects:0 "百业兴造"
+ KYO_industry_projects_desc:0 "从河道工坊到山路诊所，从矿坑到兵工厂，各地都被卷入一场热火朝天的建设潮。河童、山童、天狗、鬼族、妖精与人类工匠一齐上阵，让沉寂的土地重新响起机器、叫卖与财富流动的声音。"
+
+ GSK_indproj_282_civ_1:0 "河湾机巧工坊"
+ GSK_indproj_282_civ_1_desc:0 "荷取把旧水车改成了连轴机床，妖精们抱着螺丝和图纸在脚手架间飞来飞去。新的民用工坊拔地而起，木材、陶器与农具开始成批流入市场，这片地方一下子热闹了起来。"
+
+ GSK_indproj_282_mil_2:0 "鸦羽军械长廊"
+ GSK_indproj_282_mil_2_desc:0 "射命丸文把这里吹成了“最快完工的军需奇迹”，犬走椛则真的把工地守得滴水不漏。两座军需工厂昼夜开工，枪械与弹药滚滚下线，连周边小贩都跟着赚了个盆满钵满。"
+
+ GSK_indproj_1018_mil_1:0 "护持兵器所"
+ GSK_indproj_1018_mil_1_desc:0 "山门外不再只有钟声，也有铁锤与风箱的轰鸣。工匠们在僧众与妖怪护持下建立起兵器作坊，新的军需工厂让这片土地第一次拥有了稳定而像样的武装生产能力。"
+
+ GSK_indproj_1018_civ_1:0 "晨钟商作区"
+ GSK_indproj_1018_civ_1_desc:0 "清晨的钟声一响，木匠、裁缝、粮商便一起开门营业。新的民用工厂带动仓储、运输与摊贩聚集，原本安静的地段如今成了能生钱、能养人的热闹街区。"
+
+ GSK_indproj_1019_civ_2:0 "秋收加工带"
+ GSK_indproj_1019_civ_2_desc:0 "秋穰子忙着盯粮仓，秋静叶则把风干、储藏与包装流程理得清清楚楚。两座民用工厂落成后，粮食不再只是收上来就完事，而是能被加工、出售、换成更多财富与岗位。"
+
+ GSK_indproj_1019_civ_1:0 "丰谷合作社"
+ GSK_indproj_1019_civ_1_desc:0 "丰收不该只停在田里，于是新的合作工坊被建了起来。谷物、果干和粗加工食品开始稳定出货，让农户、脚夫和商队全都跟着有饭吃、有钱赚。"
+
+ GSK_indproj_1020_civ_1:0 "山口集散新街"
+ GSK_indproj_1020_civ_1_desc:0 "原本只是路口，如今却长出了仓库、作坊与摊位。新建的民用工厂成了商路的第一颗钉子，把过路的货流直接变成了本地的生意与税收。"
+
+ GSK_indproj_1020_mil_1:0 "白狼预备军械库"
+ GSK_indproj_1020_mil_1_desc:0 "椛带着白狼天狗巡过一遍又一遍，确保每一箱军火都能按时入库。新的军需工厂让防线后方终于有了像样的补给点，士兵安心，周边的运输业也跟着红火起来。"
+
+ GSK_indproj_526_civ_1:0 "溪畔木工联合会"
+ GSK_indproj_526_civ_1_desc:0 "河边原本只有潮气和木屑，现在多了成排的锯台与仓棚。民用工厂带动了木材加工、家具制作和工具修理，连附近酒馆的生意都被工人们一并养活了。"
+
+ GSK_indproj_526_mil_1:0 "鬼火锻造棚"
+ GSK_indproj_526_mil_1_desc:0 "勇仪亲自来了一趟，扛着铁料像扛柴火一样随手就扔进炉边。新的军需工厂在鬼族的豪快劳作下迅速成形，产出的不只是兵器，还有一股让人相信“真能打下去”的气势。"
+
+ GSK_indproj_528_mil_2:0 "疾风火炮总装线"
+ GSK_indproj_528_mil_2_desc:0 "天狗们把山风和工序一样算得极准，零件从上坡运来，炮架从下坡送走，连装配都像在打一场演练。两座军需工厂使这里成了真正的火力核心，订单和军资一起暴涨。"
+
+ GSK_indproj_528_civ_1:0 "云上贸易站"
+ GSK_indproj_528_civ_1_desc:0 "文在高处拍照写稿，商人们则在下面抢摊位、谈价格。新建的民用工厂为这片高地带来了仓储与加工能力，山上的货终于能更快地变成山下的钱。"
+
+ GSK_indproj_529_civ_1:0 "夜灯手工业街"
+ GSK_indproj_529_civ_1_desc:0 "夜里不再冷清，灯火一亮，小店和作坊便一间接一间开门。新的民用工厂让纺织、食品和日用品生产稳定下来，整条街都像突然学会了自己生长。"
+
+ GSK_indproj_529_mil_2:0 "赤焰炼钢军需局"
+ GSK_indproj_529_mil_2_desc:0 "鬼族负责最重最脏的活，河童则把炉温和模具调到近乎苛刻。两座军需工厂一开，钢铁不再只是原料，而是源源不断的枪管、炮架与压得住局势的硬实力。"
+
+
+
+
+
+
+
+
+ GSK_indproj_524_resource_coal:0 "鬼族煤层开采"
+ GSK_indproj_524_resource_coal_desc:0 "勇仪一挥手，矿坑里的懒散气立刻没了影。煤层被整片打开，矿车来回轰响，不只是燃料多了，连周边工坊、炉窑和运输行都被这一波黑金热潮带着往上冲。"
+
+ GSK_indproj_525_infrastructure:0 "永远亭急救干线"
+ GSK_indproj_525_infrastructure_desc:0 "这条路修的不是表面热闹，而是命。道路、桥梁与补给节点一并整备后，永远亭的药箱、担架和医师能更快赶到各处，病患活得下来，工人也更敢放开手脚去干大工程。"
+
+ GSK_indproj_527_resource_steel:0 "天狗炼钢岭"
+ GSK_indproj_527_resource_steel_desc:0 "天狗把山体勘得清清楚楚，椛负责封锁危险地段，文则已经开始写“钢铁腾飞”的号外。铁矿被更高效地采出，炼钢规模随之扩大，整片地区像被注入了一股硬邦邦的底气。"
+
+ GSK_indproj_1028_resource_steel:0 "地下熔铁计划"
+ GSK_indproj_1028_resource_steel_desc:0 "矿脉深处又闷又热，可越是这样的地方，越藏得住真正值钱的东西。新的采掘与冶炼组织把铁资源成批拉出地底，为兵工、建筑和铁路全都补上了一口硬气。"
+
+ GSK_indproj_1029_resource_tungsten:0 "山岩钨芯矿"
+ GSK_indproj_1029_resource_tungsten_desc:0 "山童们沿着岩缝一点点往里凿，终于把这条坚硬到让人骂娘的钨矿脉掏了出来。它难挖，却也值钱得很，先进工业和军备都因这批稀有资源而真正有了升级的本钱。"
+
+ GSK_indproj_1030_infrastructure:0 "白狼巡逻公路"
+ GSK_indproj_1030_infrastructure_desc:0 "椛要的不是一条普通的路，而是一条能让巡逻、补给和救护车一起飞起来的硬路。公路修通后，永远亭的药品能更快送达，商队也跑得更勤，安全与生意一起往上抬。"
+
+ GSK_indproj_1031_infrastructure:0 "鸦天狗空运塔群"
+ GSK_indproj_1031_infrastructure_desc:0 "天狗把高塔、索道和信号点一口气串成了网，文甚至夸张地说“连风都被我们编入了后勤”。基础设施改善后，伤员后送、紧急送药和高价值物资转运都快得惊人，这地方因此真正活络起来。"
+
+ GSK_indproj_537_resource_oil:0 "地底燃油井"
+ GSK_indproj_537_resource_oil_desc:0 "河童把钻机搬进来时，所有人都觉得她们疯了；等黑油真从地里冒出来，所有人又立刻觉得她们是天才。燃料一多，机器、车辆和发电全都更有底气，经济也跟着踩下了油门。"
+
+ GSK_indproj_633_infrastructure:0 "秋穰子粮运干道"
+ GSK_indproj_633_infrastructure_desc:0 "粮食最怕烂在半路上，所以这条路从一开始就兼顾仓储、运输和沿线补给。秋穰子满意地看着车队一批批过去，而永远亭设下的简易医疗站也让劳工与商旅少了许多后顾之忧。"
+
+ GSK_indproj_645_infrastructure:0 "命莲寺救护驿路"
+ GSK_indproj_645_infrastructure_desc:0 "这不是单纯修路，而是把安置、救援与流通接成一条命脉。路修好后，伤员能更快送到治疗点，物资也能更稳地抵达周边聚落，原本沉闷的地方逐渐恢复了人气与买卖声。"
+
+ GSK_indproj_646_infrastructure:0 "妖怪山山隧网络"
+ GSK_indproj_646_infrastructure_desc:0 "山童最擅长的就是把“不可能通”变成“今天就能走”。一段段隧道和山路被打通后，天狗巡逻更快，商队绕行更少，连急救与军运都比以前顺畅得多。"
+
+ GSK_indproj_647_resource_aluminium:0 "风穴轻金属矿"
+ GSK_indproj_647_resource_aluminium_desc:0 "风穴深处的轻金属矿终于被系统开发出来，河童们高兴得像捡到宝。铝材一多，航空、机械和轻型工业全都跟着受益，这地方也因此从偏僻资源点摇身一变成了抢手地盘。"
+
+ GSK_indproj_648_infrastructure:0 "人里保健与道路整修"
+ GSK_indproj_648_infrastructure_desc:0 "新铺的道路、新设的桥梁和沿路的诊疗点一起落成，人里的日常因此重新变得可靠。永远亭的医药支援不再难以及时抵达，商货也流得更快，街市跟着一日比一日热闹。"
+
+ GSK_indproj_684_infrastructure:0 "鬼族重车通道"
+ GSK_indproj_684_infrastructure_desc:0 "鬼族嫌原来的路太窄、太慢、太没劲，于是干脆直接拓宽、加固、重修。重车通道一打通，矿石、钢材和大型设备都能顺利通过，沿线还顺带设下救护与休整点，整片区域的运力猛地上了一个台阶。"
+
+ GSK_indproj_745_infrastructure:0 "边境联络线"
+ GSK_indproj_745_infrastructure_desc:0 "这条线把哨所、仓库、诊所和集市串成了一体。天狗负责信息传递，永远亭补上医疗支援，路一修通，过去要拖上好几天的事如今能在一天内跑完，边境也终于像个真正会呼吸的地方。"
+
+ GSK_indproj_609_resource_coal:0 "旧矿复燃工程"
+ GSK_indproj_609_resource_coal_desc:0 "废弃多时的矿坑重新亮起了灯，黑乎乎的煤块一车接一车往外运。煤炭复产不只喂饱了锅炉和熔炉，也把附近的工坊、货站与小饭馆一并养活，老地方一下又有了生气。"
+
+
+ GSK_indproj_645_infrastructure:0 "救护驿路"
+ GSK_indproj_645_infrastructure_desc:0 "这不只是修一条路，更是把安置、救援与流通连成一条不断线的命脉。慧音帮忙统筹沿线聚落的人手与物资，妹红则亲自带队清障、护送伤员。道路一通，病患能更快送到治疗点，货车也能更稳地跑起来，原本沉闷的地带终于重新亮起了灯火。"
+
+ GSK_indproj_530_civ_2:0 "生活消费工业圈"
+ GSK_indproj_530_civ_2_desc:0 "从糖果、布匹到餐具与灯具，两座新的民用工厂一下把整片区域带热了。三月精今天偷搬材料、明天乱贴广告，闹得鸡飞狗跳，却也让开张的气氛格外热烈。原本只被少数人享用的精致货物，如今成了能带动就业、贸易与街市繁荣的真正产业。"
+
+ GSK_indproj_530_civ_1:0 "玻璃与布匹厂"
+ GSK_indproj_530_civ_1_desc:0 "布卷、玻璃器皿和包装箱在流水线上一件件成形，原本零散的小作坊终于被整合成了能稳定出货的工厂。三月精时不时溜进仓库捣点小乱，可等成车商品真的驶出厂门时，谁都看得出来，这地方的钱路已经被彻底打通了。"
+
+ GSK_indproj_531_civ_1:0 "工学试制作坊"
+ GSK_indproj_531_civ_1_desc:0 "图纸不再只是压在案头的空想，而是一件件变成机器、器具和能卖钱的成品。小伞总能从旧物和废料里翻出奇怪却好用的灵感，让试作少走不少弯路。研究和量产被真正接起来后，知识终于不只是漂亮话，而是能自己生出利润的本事。"
+
+ GSK_indproj_531_mil_1:0 "标准兵装厂"
+ GSK_indproj_531_mil_1_desc:0 "每个箱号、每份记录、每一道工序都被反复核对，连螺丝与铆钉都要按规矩摆放。映姬对着质检报告一句一句挑问题，硬是把整座军需工厂逼成了讲秩序、讲精度的样子。结果也很直接：产量稳、损耗低、仓储清清楚楚，谁看了都得承认这是一笔漂亮账。"
+
+ GSK_indproj_532_civ_2:0 "人里扩建计划"
+ GSK_indproj_532_civ_2_desc:0 "木匠、瓦工、商人和学徒全都被卷进了这场热火朝天的建设潮。慧音帮着协调人手和日程，确保街区扩建不是一团乱麻。两座民用工厂一落地，人里立刻从“勉强过日子”跨进了“能做生意、能养更多人”的新阶段，街上的吆喝声都比以前响亮了不少。"
+
+ GSK_indproj_532_mil_1:0 "守备军械处"
+ GSK_indproj_532_mil_1_desc:0 "这座军需工厂不是为了摆气派，而是为了让关卡、巡逻队和地方守备真正拿到可靠装备。妹红对样品最直接，不合手的当场就扔回去重做；琪露诺则带着一群妖精在工地附近瞎忙，却意外把搬运和传递做得飞快。等第一批军械发下去时，连周边的铁匠和运输队都跟着忙了起来。"
+
+ GSK_indproj_533_mil_2:0 "武备联合厂"
+ GSK_indproj_533_mil_2_desc:0 "这两座军需工厂不是哪一家大人物的门面，而是底层自己一点点拼出来的硬本事。有人盯质量，有人催进度，有人负责在吵起来时把场子重新压回正轨。小伞把旧零件翻新再用，普通妖怪们则把能省的、能修的、能做的全都抓在手里，硬是把这地方做成了真能打、真能撑的根据地。"
+
+ GSK_indproj_533_civ_1:0 "互助合作市场"
+ GSK_indproj_533_civ_1_desc:0 "没人等着别人施舍，缺工具就凑，缺人手就顶，缺地方就自己搭棚。新的民用工厂带动了市集、仓储和一大批小商贩，三月精还时不时在摊位间乱窜，闹得热闹非凡。钱开始在最底层的人群里流动后，这地方终于有了翻身的样子。"
+
+ GSK_indproj_534_mil_2:0 "综合兵站群"
+ GSK_indproj_534_mil_2_desc:0 "这两座军需工厂和兵站一体运转，讲究的就是一个快字。妹红带队护运，妖精四处传信，货物今天还在后方仓里，明天就已经能送到前线门口。补给线一稳，战争机器才算真正转了起来，连周边做木箱、修车轮、运粮草的人都跟着吃上了这波红利。"
+
+ GSK_indproj_534_mil_1:0 "补给锻炉"
+ GSK_indproj_534_mil_1_desc:0 "铁料、木料、火药和配件被按顺序送进炉边，再一件件打成前线最缺的东西。映姬对流程抓得很严，谁敢偷工减料就得当场挨训；琪露诺和妖精们则在工地上跑前跑后，把本来慢吞吞的传递硬是催快了一截。新的军需工厂不仅供养了前线，也带活了整片地方的工匠与买卖。"
+
+ GSK_indproj_535_mil_1:0 "边境应急军械点"
+ GSK_indproj_535_mil_1_desc:0 "这里不追求花样，只求东西来得快、修得快、发得快。军需工厂一建成，边境哨所缺什么就能立刻补什么，旧库存再也不用被硬生生撑到报废。妹红偶尔亲自试用新货，几句够不够硬、够不够狠，比一整页报告都更有说服力。"
+
+ GSK_indproj_535_civ_1:0 "边贸工坊区"
+ GSK_indproj_535_civ_1_desc:0 "往来客商、短程运输和小型加工在这里慢慢拧成了一股劲。新的民用工厂让边境不再只是个过路点，而是真能留住钱、留住人、留住活计的地方。慧音还帮着把沿线的秩序重新理顺，让这股热闹不至于一下乱成一锅粥。"
+
+ GSK_indproj_536_civ_2:0 "泥地翻身工程"
+ GSK_indproj_536_civ_2_desc:0 "曾经被嫌弃的烂地方，如今被一铲一铲挖成了工地、仓棚和新街区。两座民用工厂拔起来后，商贩、工人和搬运队一拥而入，连琪露诺都觉得这里“终于有点像样了”。泥地没变少多少，可这片地方已经真的能自己赚钱、自己养活更多人了。"
+
+ GSK_indproj_536_mil_1:0 "突击兵器厂"
+ GSK_indproj_536_mil_1_desc:0 "这座军需工厂讲究的就是直接：先做能立刻上战场的，再谈别的。妹红对这种风格最看得顺眼，试枪、验刀、看装药，一样不落；妖精们则负责跑腿送件，把杂乱的工地闹得反而有种异样的效率。火药味越来越重，可附近人的饭碗也跟着越来越稳。"
+
+
+ GSK_indproj_555_infrastructure:0 "基层互助交通网"
+ GSK_indproj_555_infrastructure_desc:0 "没有什么惊天动地的口号，只有一锹土、一块木板、一段一段慢慢接起来的路。有人传信，有人搬料，有人守夜，有人沿线搭起简易补给与救护点。等这套互助交通网真正成形后，原本闭塞又贫瘠的地方，总算也能把人流、货流和生气一点点带起来。"
+
+  GSK_indproj_282_land_facility:0 "地上战备工事"
+ GSK_indproj_282_land_facility_desc:0 "营舍、靶场、仓廪与演练用地将被一并整理起来，原本散乱的空地会被修成一处真正能承载军势的战备区域。木桩被打入泥土，符札贴上围栏，运输车与搬运妖怪来来去去，让这片土地渐渐有了“备战”该有的样子。"
+
+ GSK_indproj_1082_air_facility:0 "天穹飞行场"
+ GSK_indproj_1082_air_facility_desc:0 "新的飞行设施将于此兴建。跑道会被平整，塔台会被立起，机库与整备场也将逐步完工。等到风向标、照明与引导结界一同运转时，这里便不再只是仰望天空的地方，而会成为真正让羽翼、机械与妖力共同升空的起点。"
+
+ GSK_indproj_530_nuclear_facility:0 "深层核能工区"
+ GSK_indproj_530_nuclear_facility_desc:0 "这项建设不会喧哗，却注定沉重。厚重的外壁、封闭的通路、层层叠叠的警戒区与核心设施都会被一点点筑起，像把灼热而危险的力量封进大地深处。等反应炉真正开始运转时，这里将成为一处沉默却无法忽视的工区，让整片地区都围绕着它的光与热重新转动起来。"
+
+
+  Shrine_navy_decision:"舰队权衡调整"
+  Shrine_navy_decision_desc:"升级的代价是什么?"
+  shrine_navy_decision_transport_up:0 "强化运输能力（取舍）"
+  shrine_navy_decision_strike_up:0 "强化对舰打击（取舍）"
+  shrine_navy_decision_hit_up:0 "强化命中率（取舍）"
+  shrine_navy_decision_sortie_up:0 "强化出击效率（取舍）"
+  shrine_navy_decision_speed_up:0 "强化舰队速度（取舍）"
+  shrine_navy_decision_navy_xp_up:0 "强化经验获取（取舍）"
+  shrine_navy_decision_spotting_up:0 "强化发现率（取舍）"
+  shrine_navy_decision_asw_up:0 "强化反潜侦测（取舍）"
+
+
+  Tsukumogami_ship_decision:0 "付丧神・调律专案"
+  Tsukumogami_ship_decision_desc:0 "百器鸣动，灵光上弦。把旧物请上舞台，由付丧神们为体系逐一「§Y调律§!」：\n— §Y启用§!某位同伴的加护，如同让那件乐器主奏，研究节拍立刻加快；\n— §R停用§!时一记断拍，将资源收回编制，转入下一段乐句。\n\n在「惊吓」「节拍」「琵琶」「筝韵」「面灵气」「万宝槌」之间自由切换，让幻想乡的研发像乐团般时而咏叹、时而爆发。"
+
+  on_kogasa_idea_decisoin:0 "启用：小伞·惊吓灵感"
+  on_kogasa_idea_decisoin_desc:0 "获得国家精神「§Y多多良小伞的惊吓灵感§!」。"
+  on_kogasa_idea_decisoin_tooltip:0 "获得「§Y多多良小伞的惊吓灵感§!」。"
+  on_kogasa_idea_decisoin_blocked:0 "尚未满足启用条件（需要完成相关国策）。"
+
+  off_kogasa_idea_decisoin:0 "停用：小伞·惊吓灵感"
+  off_kogasa_idea_decisoin_desc:0 "移除国家精神「§Y多多良小伞的惊吓灵感§!」。"
+  off_kogasa_idea_decisoin_tooltip:0 "移除「§Y多多良小伞的惊吓灵感§!」。"
+  off_kogasa_idea_decisoin_blocked:0 "尚未获得此国家精神，无法停用。"
+
+  on_reiko_idea_decisoin:0 "启用：雷鼓·节拍工学"
+  on_reiko_idea_decisoin_desc:0 "获得国家精神「§Y堀川雷鼓的节拍工学§!」。"
+  on_reiko_idea_decisoin_tooltip:0 "获得「§Y堀川雷鼓的节拍工学§!」。"
+  on_reiko_idea_decisoin_blocked:0 "尚未满足启用条件（需要完成相关国策）。"
+
+  off_reiko_idea_decisoin:0 "停用：雷鼓·节拍工学"
+  off_reiko_idea_decisoin_desc:0 "移除国家精神「§Y堀川雷鼓的节拍工学§!」。"
+  off_reiko_idea_decisoin_tooltip:0 "移除「§Y堀川雷鼓的节拍工学§!」。"
+  off_reiko_idea_decisoin_blocked:0 "尚未获得此国家精神，无法停用。"
+
+  on_benben_idea_decisoin:0 "启用：弁弁·琵琶声学"
+  on_benben_idea_decisoin_desc:0 "获得国家精神「§Y九十九弁弁的琵琶声学§!」。"
+  on_benben_idea_decisoin_tooltip:0 "获得「§Y九十九弁弁的琵琶声学§!」。"
+  on_benben_idea_decisoin_blocked:0 "尚未满足启用条件（需要完成相关国策）。"
+
+  off_benben_idea_decisoin:0 "停用：弁弁·琵琶声学"
+  off_benben_idea_decisoin_desc:0 "移除国家精神「§Y九十九弁弁的琵琶声学§!」。"
+  off_benben_idea_decisoin_tooltip:0 "移除「§Y九十九弁弁的琵琶声学§!」。"
+  off_benben_idea_decisoin_blocked:0 "尚未获得此国家精神，无法停用。"
+
+  on_yatsuhashi_idea_decisoin:0 "启用：八桥·筝韵结构"
+  on_yatsuhashi_idea_decisoin_desc:0 "获得国家精神「§Y九十九八桥的筝韵结构§!」。"
+  on_yatsuhashi_idea_decisoin_tooltip:0 "获得「§Y九十九八桥的筝韵结构§!」。"
+  on_yatsuhashi_idea_decisoin_blocked:0 "尚未满足启用条件（需要完成相关国策）。"
+
+  off_yatsuhashi_idea_decisoin:0 "停用：八桥·筝韵结构"
+  off_yatsuhashi_idea_decisoin_desc:0 "移除国家精神「§Y九十九八桥的筝韵结构§!」。"
+  off_yatsuhashi_idea_decisoin_tooltip:0 "移除「§Y九十九八桥的筝韵结构§!」。"
+  off_yatsuhashi_idea_decisoin_blocked:0 "尚未获得此国家精神，无法停用。"
+
+  on_kokoro_idea_decisoin:0 "启用：秦心·面灵气"
+  on_kokoro_idea_decisoin_desc:0 "获得国家精神「§Y秦心的面灵气§!」。"
+  on_kokoro_idea_decisoin_tooltip:0 "获得「§Y秦心的面灵气§!」。"
+  on_kokoro_idea_decisoin_blocked:0 "尚未满足启用条件（需要完成相关国策）。"
+
+  off_kokoro_idea_decisoin:0 "停用：秦心·面灵气"
+  off_kokoro_idea_decisoin_desc:0 "移除国家精神「§Y秦心的面灵气§!」。"
+  off_kokoro_idea_decisoin_tooltip:0 "移除「§Y秦心的面灵气§!」。"
+  off_kokoro_idea_decisoin_blocked:0 "尚未获得此国家精神，无法停用。"
+
+  on_shinmyoumaru_idea_decisoin:0 "启用：针妙丸·万宝槌"
+  on_shinmyoumaru_idea_decisoin_desc:0 "获得国家精神「§Y少名针妙丸的万宝槌§!」。"
+  on_shinmyoumaru_idea_decisoin_tooltip:0 "获得「§Y少名针妙丸的万宝槌§!」。"
+  on_shinmyoumaru_idea_decisoin_blocked:0 "尚未满足启用条件（需要完成相关国策）。"
+
+  off_shinmyoumaru_idea_decisoin:0 "停用：针妙丸·万宝槌"
+  off_shinmyoumaru_idea_decisoin_desc:0 "移除国家精神「§Y少名针妙丸的万宝槌§!」。"
+  off_shinmyoumaru_idea_decisoin_tooltip:0 "移除「§Y少名针妙丸的万宝槌§!」。"
+  off_shinmyoumaru_idea_decisoin_blocked:0 "尚未获得此国家精神，无法停用。"
+
+
+
+
+#honest_number_should_be_greater_1_tt: "§O守信§!度高于§Y20§!"
+#honest_number_should_be_greater_2_tt: "§O守信§!度高于§Y40§!"
+#honest_number_should_be_greater_3_tt: "§O守信§!度高于§Y70§!"
+#honest_number_should_be_greater_4_tt: "§O守信§!度高于§Y100§!"
+#
+#honest_number_go_up_10_tt: "§O守信§!提高§Y10§!"
+#honest_number_go_down_10_tt: "§O守信§!降低§Y10§!"
+#
+#peace_number_should_be_greater_1_tt: "§Y和平§!度高于§Y20§!"
+#peace_number_should_be_greater_2_tt: "§Y和平§!度高于§Y40§!"
+#peace_number_should_be_greater_3_tt: "§Y和平§!度高于§Y70§!"
+#peace_number_should_be_greater_4_tt: "§Y和平§!度高于§Y100§!"
+#
+#peace_number_go_up_10_tt: "§Y和平§!提高§Y10§!"
+#peace_number_go_down_10_tt: "§Y和平§!降低§Y10§!"
+#
+#lust_number_should_be_greater_1_tt: "§L无性§!度高于§Y20§!"
+#lust_number_should_be_greater_2_tt: "§L无性§!度高于§Y40§!"
+#lust_number_should_be_greater_3_tt: "§L无性§!度高于§Y70§!"
+#lust_number_should_be_greater_4_tt: "§L无性§!度高于§Y100§!"
+#
+#lust_number_go_up_10_tt: "§L无性§!提高§Y10§!"
+#lust_number_go_down_10_tt: "§L无性§!降低§Y10§!"
+#
+#wine_number_should_be_greater_1_tt: "§R戒酒§!度高于§Y20§!"
+#wine_number_should_be_greater_2_tt: "§R戒酒§!度高于§Y40§!"
+#wine_number_should_be_greater_3_tt: "§R戒酒§!度高于§Y70§!"
+#wine_number_should_be_greater_4_tt: "§R戒酒§!度高于§Y100§!"
+#
+#wine_number_go_up_10_tt: "§R戒酒§!提高§Y10§!"
+#wine_number_go_down_10_tt: "§R戒酒§!降低§Y10§!"
+#
+#honest_progressbar:"§O守信§!"
+#wine_progressbar:"§R戒酒§!"
+#peace_progressbar:"§Y和平§!"
+#lust_progressbar:"§L无性§!"
+
+
+ 
+
+ five_precepts_progressbar_category:0 "五戒之舵"
+ five_precepts_progressbar_category_desc:0 "白莲很清楚，命莲寺若想把战后的幻想乡重新带回正轨，光靠慈悲与愿望远远不够。国家就像一艘穿过风浪的船，众弟子各自握住不同的绳索与船桨，而真正校正方向的人，始终是圣白莲。\n\n不杀生、不偷盗、不邪淫、不妄语、不饮酒——这五戒并不只是僧人的清规，更是战后政权的自我约束，是命莲寺试图把妖怪、人类、国家与理想重新接到一起的五条底线。\n\n每一次调整，都是一次取舍；每一次前进，也都意味着另一处必须收束。白莲要做的，不是让所有人立刻完美无缺，而是在摇晃与偏离之中，一点一点把整艘船重新带回能够通向共存的航道。"
+
+ five_precepts_progressbar_daily_add:0 "测试：五戒精进"
+ five_precepts_progressbar_daily_add_desc:0 "临时提升五戒进度，用于测试命莲寺内部的修行与国家变化。"
+
+ five_precepts_progressbar_daily_decrease:0 "测试：五戒退转"
+ five_precepts_progressbar_daily_decrease_desc:0 "临时降低五戒进度，用于测试命莲寺内部的修行与国家变化。"
+
+ decision_peace_and_honest:0 "以诚换和"
+ decision_peace_and_honest_desc:0 "白莲校正国家方向时，往往不能让所有美德同时增长。想让众生少受伤害、让局势更趋平和，就必须先牺牲一部分过度尖锐的“真实”。和平上升，而直言的锋利便要暂时收束。"
+
+ decision_honest_and_lust:0 "以正压欲"
+ decision_honest_and_lust_desc:0 "当命莲寺选择更坦率、更清明地面对国家与众生时，许多失控的欲念也会被压回去。让众人学会诚实地面对自己，本身就是对白莲之道的一次靠拢。"
+
+ decision_lust_and_wine:0 "以净制醉"
+ decision_lust_and_wine_desc:0 "欲望若能被约束，沉迷与放纵自然也会跟着退潮。白莲要的不是强行斩断众生的一切本能，而是让那些会拖垮国家的放纵，慢慢回到可被克制的范围。"
+
+ decision_wine_and_peace:0 "以醉消争"
+ decision_wine_and_peace_desc:0 "有时候，国家并不是靠最理智的方式稳下来，而是靠暂时宣泄与松绑，让压抑的情绪先退一步。放纵会增长，平和却会因此削弱。白莲很清楚，这种调整从来不是长久之计，只是风浪中短暂的偏舵。"
+
+ honest_progressbar:"§O妄语§!"
+ wine_progressbar:"§R饮酒§!"
+ peace_progressbar:"§Y和平§!"
+ lust_progressbar:"§L邪淫§!"
+
+ peace_number_go_up_10_tt:0 "§G和平§!进度增加§Y10§!"
+ honest_number_go_down_10_tt:0 "§R妄语§!进度减少§Y10§!"
+ honest_number_go_up_10_tt:0 "§G妄语§!进度增加§Y10§!"
+ lust_number_go_down_10_tt:0 "§R邪淫§!进度减少§Y10§!"
+ lust_number_go_up_10_tt:0 "§G邪淫§!进度增加§Y10§!"
+ wine_number_go_down_10_tt:0 "§R饮酒§!进度减少§Y10§!"
+ wine_number_go_up_10_tt:0 "§G饮酒§!进度增加§Y10§!"
+ peace_number_go_down_10_tt:0 "§R和平§!进度减少§Y10§!"
+
+ honest_number_should_be_greater_1_tt:0 "§Y妄语§!进度需达到§Y20§!以上"
+ honest_number_should_be_greater_2_tt:0 "§Y妄语§!进度需达到§Y40§!以上"
+ honest_number_should_be_greater_3_tt:0 "§Y妄语§!进度需达到§Y70§!以上"
+ honest_number_should_be_greater_4_tt:0 "§Y妄语§!进度需达到§Y100§!以上"
+
+ lust_number_should_be_greater_1_tt:0 "§Y邪淫§!进度需达到§Y20§!以上"
+ lust_number_should_be_greater_2_tt:0 "§Y邪淫§!进度需达到§Y40§!以上"
+ lust_number_should_be_greater_3_tt:0 "§Y邪淫§!进度需达到§Y70§!以上"
+ lust_number_should_be_greater_4_tt:0 "§Y邪淫§!进度需达到§Y100§!以上"
+
+ wine_number_should_be_greater_1_tt:0 "§Y饮酒§!进度需达到§Y20§!以上"
+ wine_number_should_be_greater_2_tt:0 "§Y饮酒§!进度需达到§Y40§!以上"
+ wine_number_should_be_greater_3_tt:0 "§Y饮酒§!进度需达到§Y70§!以上"
+ wine_number_should_be_greater_4_tt:0 "§Y饮酒§!进度需达到§Y100§!以上"
+
+ peace_number_should_be_greater_1_tt:0 "§Y和平§!进度需达到§Y20§!以上"
+ peace_number_should_be_greater_2_tt:0 "§Y和平§!进度需达到§Y40§!以上"
+ peace_number_should_be_greater_3_tt:0 "§Y和平§!进度需达到§Y70§!以上"
+ peace_number_should_be_greater_4_tt:0 "§Y和平§!进度需达到§Y100§!以上"
+
+ shou_mission_one:0 "星的考验：扛起命莲寺"
+ shou_mission_one_desc:0 "白莲已经把最沉的责任放到星肩上。她若想真正成为命莲寺的二把手，就不能只会守护，而必须学会接过军心、秩序与国家运转的重量。"
+
+ shou_mission_two:0 "星的考验：宝塔与人心"
+ shou_mission_two_desc:0 "星已经能替白莲分担重担，可她仍得面对自己最真实的弱点。宝塔、责任、失误与羞愧，全都会在这段时间里逼着她回答：她究竟能不能在脆弱中仍然守住秩序？"
+
+ shou_mission_three:0 "星的考验：猛虎之心"
+ shou_mission_three_desc:0 "当国家逐渐站稳，白莲也要求星去面对更高一层的责任。她不能永远只是善良的守卫者，而必须学会在必要时成为威慑混乱、压住风暴的力量。"
+
+ shou_mission_four:0 "星的考验：师父之后的那一步"
+ shou_mission_four_desc:0 "基础建设逐渐恢复，命莲寺终于有余裕去问更深的问题：若白莲不在眼前，星是否已经足以独当一面？这不是能力的试炼，而是信念的最后确认。"
+
+ nazrin_mission_one:0 "娜兹玲的考验：宝藏与真相"
+ nazrin_mission_one_desc:0 "娜兹玲的鼻子与鼠群早已能在废墟里翻出一切有价值的东西。可白莲要她找回的，不只是物资，也是能让国家重新运转的秩序与真实。"
+
+ nazrin_mission_two:0 "娜兹玲的考验：冷硬的回收"
+ nazrin_mission_two_desc:0 "有些重建必须带着铁与血的味道。娜兹玲若要替命莲寺收拢资产，就必须证明自己能把最不近人情的脏活，做成整个国家得以延续的根基。"
+
+ nazrin_mission_two_part_2:0 "娜兹玲的考验：甜点与募资"
+ nazrin_mission_two_part_2_desc:0 "并不是每一份资源都得从废墟里翻出来。白莲要娜兹玲试着用另一种更柔软、也更麻烦的方法，把命莲寺的善意与资金一同带进人群之中。"
+
+ nazrin_mission_three:0 "娜兹玲的考验：众鼠归心"
+ nazrin_mission_three_desc:0 "当情报、资产与耳目都慢慢织成网络，娜兹玲也将不再只是替命莲寺补漏洞的那个人。她必须证明，自己已经能成为维系国家暗面秩序的真正支柱。"
+
+ nazrin_mission_four:0 "娜兹玲的考验：留在星的身边"
+ nazrin_mission_four_desc:0 "白莲看得很清楚，娜兹玲的终点从来不只是能力被承认，而是她终于愿意承认自己的心归向何处。若她能走到这里，就代表那只警惕的老鼠，终于为自己找到可以停下来的地方。"
+
+ ichirin_mission_one:0 "一轮的考验：从布道到建设"
+ ichirin_mission_one_desc:0 "一轮已经学会站在人前说话，但白莲要她更进一步。理想若不能落进工地、仓储与生产线，那就只会停在口号里。现在，她要去把经文变成现实。"
+
+ ichirin_mission_two:0 "一轮的考验：克己与修心"
+ ichirin_mission_two_desc:0 "一轮并不是毫无裂痕的僧人。她的怀疑、迟疑与脆弱都还在。白莲要她在真正繁重的现实里完成一次更深的修练：不是装作清净，而是带着挣扎，仍把背脊挺直。"
+
+ ichirin_mission_two_part_2:0 "一轮的考验：走入尘土"
+ ichirin_mission_two_part_2_desc:0 "百姓看见的从来不是经文，而是人。若一轮能带着自己的不体面继续去面对众生，她也许反而会成为命莲寺最接地气、最能被人理解的一位弟子。"
+
+ ichirin_mission_three:0 "一轮的考验：把净土种在地上"
+ ichirin_mission_three_desc:0 "田野、阳光、农具与汗水，这些最朴素的东西，也能成为修心的一部分。白莲要一轮证明，人间净土不是高悬的幻景，而是能够被一寸寸做出来的世界。"
+
+ ichirin_mission_four:0 "一轮的考验：走出自己的佛法"
+ ichirin_mission_four_desc:0 "当一轮真的带着疑问、责任与人间的泥土一路走到这里，她也将不再只是白莲身后的弟子，而会成为能以自己的方式诠释佛法、承载佛法的人。"
+
+ murasa_mission_one:0 "水蜜的考验：把船驶向世界"
+ murasa_mission_one_desc:0 "白莲要水蜜做的，不只是救援与镇压，而是带着圣辇船去见世界各国。一个危险的亡灵，必须学会用自己手中的船与旗，去替命莲寺宣告慈悲与和平。"
+
+ murasa_mission_two:0 "水蜜的考验：压住溺亡之欲"
+ murasa_mission_two_desc:0 "水蜜最大的敌人不是外界，而是自己。她若想继续留在白莲身边，就必须学会正面面对那股会把人拖下水底的本能，而不是任由它支配一切。"
+
+ murasa_mission_two_part_2:0 "水蜜的考验：向深处坠去"
+ murasa_mission_two_part_2_desc:0 "有些时候，亡灵的旧伤与怨恨会先于理智开口。若水蜜在这条路上失败，她便会再次被自己最黑暗的本能拖回水底，让命莲寺面对最残酷的问题。"
+
+ murasa_mission_three:0 "水蜜的考验：掌舵者"
+ murasa_mission_three_desc:0 "无论她心中还有多少阴影，只要手掌握着舵轮，水蜜就是命莲寺最可靠的船长。白莲希望她把那份危险，慢慢磨成能够带众人穿过风浪的力量。"
+
+ murasa_mission_four:0 "水蜜的考验：未完成的救赎"
+ murasa_mission_four_desc:0 "水蜜的路还远没有走完。白莲并不要求她立刻成为无害的好人，只希望她继续完成这场漫长而艰难的课题，让共存不只是纸上的空愿。"
+
+ kyouko_mission_one:0 "响子的考验：把声音送得更远"
+ kyouko_mission_one_desc:0 "响子的声音不该只停在命莲寺院墙之内。白莲希望她把这份热诚与回响送向更远的地方，让需要帮助的人知道路在哪里，让想伸手的人知道自己能做什么。"
+
+ kyouko_mission_two:0 "响子的考验：被喜欢的资格"
+ kyouko_mission_two_desc:0 "响子想让大家都喜欢自己，也想让更多人因她而靠近命莲寺。可真正的亲近并不只来自热闹，也来自她能否在正确的时候，把自己的善意放到别人最需要的地方。"
+
+ kyouko_mission_two_part_2:0 "响子的考验：学会安静"
+ kyouko_mission_two_part_2_desc:0 "响子的声音不是总能救场。若她始终分不清时机与场合，再真诚的好话也会变成刺耳的噪音。白莲希望她学会，什么时候该喊，什么时候该先听。"
+
+ kyouko_mission_three:0 "响子的考验：从开心果到弟子"
+ kyouko_mission_three_desc:0 "响子已经把温暖带给许多人，可她不能永远只停在这里。白莲要她更进一步：读经、修心、承担工作，让她从春风一样的孩子，慢慢长成命莲寺的新一代栋梁。"
+
+ kyouko_mission_four:0 "响子的考验：把声音留给明天"
+ kyouko_mission_four_desc:0 "当响子终于学会热情、判断与修行并存，她也将不再只是白莲救下的小妖怪，而会成为能继续替人类与妖怪发声、让共存理念延续下去的人。"
+
+ decision_make_china_puppet:0 "以慈悲接管中华"
+ decision_make_china_puppet_desc:0 "白莲知道，若想让和平真正扩散到更远的地方，光靠命莲寺一地是不够的。若中华愿意归于这面旗帜之下，那么命莲寺的秩序也将第一次真正跨出幻想乡。"
+
+ decision_puppet_every_asia_country:0 "接管中华"
+ decision_puppet_every_asia_country_desc:0 "圣白莲并不把国家看作单纯可征服的土地，而看作仍可能被引向和平的群体。若亚洲诸国愿意接受命莲寺的秩序，那么这艘船便会驶向更大的海域。"
+
+ decision_puppet_every_democratic_country:0 "以和平感召诸国"
+ decision_puppet_every_democratic_country_desc:0 "有些国家更容易理解白莲的道路，因为它们至少仍愿意承认民意、承认协商、承认人与人之间并非只能彼此踩踏。命莲寺将向这些国家伸出手，把共存的理念推向更广阔的世界。"
+
+
+
+KYO_hijiri_world_revolution:0 "佛教和平革命"
+KYO_hijiri_world_revolution_desc:0 "命莲寺不再等待世界自行痊愈。我们将传教、交涉、施压、缔结连带，并最终整合那些接受救赎之道的国家。"
+
+KYO_hijiri_goodwill_mission:0 "对[FROM.GetName]宣扬佛教善意"
+KYO_hijiri_goodwill_mission_desc:0 "派出耗费庞大的僧侣、组织者、教师与救援人员任务团。他们的工作将提升外国对我们的善意，使日后建立傀儡政权的行动更可能成功。"
+
+KYO_hijiri_attempt_peaceful_puppet_major:0"对[FROM.GetName]宣扬佛教善意"
+
+KYO_hijiri_prepare_puppet_network:0 "筹备救赎网络"
+KYO_hijiri_prepare_puppet_network_desc:0 "在另一个国家能被纳入我们的势力圈之前，必须先建立使节管道、地方联络人，以及纪律严明的势力网络。"
+
+KYO_hijiri_attempt_peaceful_puppet:0 "要求[FROM.GetName]和平归顺"
+KYO_hijiri_attempt_peaceful_puppet_desc:0 "尝试将目标转化为我们的傀儡国。较高的好感度会提升成功机率。若尚未整合的傀儡国过多，其他国家将会变得更难控制。"
+
+KYO_hijiri_integrate_puppet_stage_one:0 "对[FROM.GetName]开始渐进整合"
+KYO_hijiri_integrate_puppet_stage_one_desc:0 "将低整合度的[FROM.GetName]推入更深层的行政关系。"
+
+KYO_hijiri_integrate_puppet_stage_two:0 "完成[FROM.GetName]的整合"
+KYO_hijiri_integrate_puppet_stage_two_desc:0 "完成渐进整合程序，并吞并已整合的[FROM.GetName]。这将减少由傀儡网络所造成的部分外交恐惧。"
+
+KYO_hijiri_unlock_goodwill_decisions_tt:0 "解锁决议，用以提升外国对§Y幻想乡§!的好感度。"
+KYO_hijiri_prepare_puppets_tt:0 "解锁傀儡化尝试前所需的准备决议。"
+KYO_hijiri_unlock_puppet_decisions_tt:0 "解锁目标决议，用以和平傀儡化其他国家。成功率取决于好感度与目前的傀儡负担。"
+KYO_hijiri_unlock_integration_stage_1_tt:0 "解锁傀儡整合的第一阶段。"
+KYO_hijiri_unlock_integration_stage_2_tt:0 "解锁傀儡整合与吞并的最终阶段。"
+KYO_hijiri_unlock_anti_fascist_war_goal_tt:0 "在完成数次傀儡化行动后，解锁反法西斯战争目标国策。"
+KYO_hijiri_unlock_anti_communist_war_goal_tt:0 "在完成更多傀儡化行动后，解锁反共产主义战争目标国策。"
+KYO_hijiri_puppet_success_tt:0 "目标接受傀儡地位。尚未整合的傀儡国数量将增加，降低未来行动的成功机率。"
+KYO_hijiri_puppet_failed_tt:0 "目标抵抗了我们的施压，对我们的好感度下降。"
+KYO_hijiri_integration_finished_tt:0 "该傀儡国已被完全整合。未来的傀儡化尝试将承受较少负担。"
+
+KYO_hijiri_buddhist_goodwill:0 "佛教善意使团"
+KYO_hijiri_failed_puppet_pressure:0 "抵抗命莲寺政治施压"
+
+
+
+
+
+
+
+    civil_war_overcharge_combat:0 "末日征召"
+    civil_war_overcharge_combat_desc:0 "凡在我境内有气息者，皆要被点名；凡能抬起石、握住刃、搬运粮秣者，皆不可推辞。妇人、少者、白发者，同列军籍，如同城墙最后的砖。\n我们不求退路，只求终局；直到号角止息，旗帜折断，仇敌与我同归尘土。"
+
+    civil_war_buring_the_road:0 "焚路之令"
+    civil_war_buring_the_road_desc:0 "看哪，我们行过之处，不留麦穗，也不留井泉；凡可供敌者，必先化为灰。仓廪要倒空，桥梁要折断，田地要焚烧，使追兵得不著饼，马得不著草。\n我们将道路点燃，如同在大地写下咒诅：宁使此土一时荒凉，不使仇敌以其果实续命。"
+
+    civil_war_deadless_attack:0 "不死之冲"
+    civil_war_deadless_attack_desc:0 "看哪，众人同声呼喊，便向前奔走，如洪水决堤，不问归路，也不问存亡。凡迟疑者心必溃散，凡退却者名必蒙羞；惟有向前者，得以把恐惧踏在脚下。\n他们以血肉撞开敌阵，以怒吼压过炮声，直到仇敌的队列碎裂，或我军尽归于尘土。"
+
+    civil_war_twenty_four_work_time:0 "24小时工作制"
+    civil_war_twenty_four_work_time_desc:0 "昼夜不再分开；日光与灯火同作一日。凡有手能握锤者，凡有眼能辨图者，皆要轮番而作，不可停歇。工坊的门不闭，炉火不熄，机轮如心跳般连续转动。\n因战时的需要如饥渴临到，片刻的安歇都成奢侈；我们要以疲惫换取钢铁，以黑夜换取弹药，直到号角止息，或直到身体也归于尘土。"
+
+    civil_war_brainwash:0 "强制洗脑"
+    civil_war_brainwash_desc:0 "看哪，话语要像铁锁扣在众人的心上；耳要被封，口要被教，眼只许看见同一种光。凡疑惑者必被指为不洁，凡追问者必被称为背叛。\n我们要立一条声音，刻一种记忆，使人忘记昨日的自己，只记得今日的命令；直到众人同心同舌，战争便再无迟疑。"
+
+  civil_war_bad_youkai:0 "束妖之律"
+    civil_war_bad_youkai_desc:0 "看哪，凡心随嗜欲奔走、以血气自夸者，必使军纪败坏，使民心离散。故今立律令：约束妖怪之行，不可擅自掠夺，不可私行吞噬，不可因怒而屠戮；凡离队扰民者，必受审问。\n\n你们要记念：刀剑可夺城池，却夺不得人心；若放纵如野火，终必烧及己身。惟有克制者得以成军，惟有守法者得以立国，使我众不因自身的狂暴而先行崩解。"
+
+  civil_war_battle_guide:0 "战场之法度"
+    civil_war_battle_guide_desc:0 "看哪，刀剑既出，仍须有法度在手。故今立交战之准则，使我众不因忿怒而滥杀，不因贪欲而扰民；凡擅自屠戮降者与伤者、夺取非军需之物、焚毁无辜之居所者，必受追究。\n\n行军当有节制，守备当有次序，俘虏当有看管，战利当有登记。因无法度之军如野火，烧尽仇敌，也烧尽自身；惟守准则者，能使兵心合一，使民心不散，使战争仍有边界可止。"
+
+  civil_war_instant_repair:0 "即刻修补"
+    civil_war_instant_repair_desc:0 "看哪，桥折于河，轨断于野，道路满是碎石；若军行其上，必致迟滞，如羊迷途。故我发令：召匠人、役夫与搬运者，使铁与木不再沉默；以火光照夜，以槌声代号令。\n\n凡倒塌者，当扶起；凡裂开者，当缝合；凡被焚者，当重立。使补给之路再通，使工坊之轮再转，使我军不因残缺而败退。"
+
+  civil_war_martial_law:0 "战区戒严令"
+  civil_war_martial_law_desc:0 "看哪，刀兵临近，城门之内不可再如常日；故我立戒严之令，使诸街有守，使诸口有检。凡夜行者，必受盘问；凡聚众者，必被驱散；凡传谣者，必受审察；凡抗命者，必受刑罚。\n\n粮仓与工坊归于军用，道路与桥梁归于军管；出入皆需文书，往来皆听号角。因若无严令，乱象如虫生于朽木，必啃噬军心；惟以律法束民，以军纪束众，使后方不乱，前线得以站立。"
+
+  civil_war_banned_art:0 "禁忌的艺术"
+  civil_war_banned_art_desc:0 "看哪，在红月之下，封印之门被开，古老的技艺再度启封；其名不可轻呼，其形不可久视。恶魔要在黑暗中聚会，与死亡共舞；火与硫磺如雨降下，哀号充满街巷。\n\n凡人如草，朝生暮枯；气息一断，便归尘土。毁灭就在眼前，审判在门口；你们当知道，人都终将一死，无一人能逃。惟有今夜所行，将在来日成为咒诅，或成为末日的印记。"
+
+  civil_war_seija_last_chance:0 "颠倒之末时"
+    civil_war_seija_last_chance_desc:0 "看哪，有一恶魔在凡间行走，不断地煽动众人，使他们厌弃旧律，轻看法度；他口中吐出反叛之言，如火点燃枯草。\n\n他要带领人们破坏秩序，拆毁门闩与界线，使君不再为君，仆不再为仆；上者被拉下，下者被推上；正被称为邪，邪被称为正。世界的规律要被翻转，日月的次序要被颠倒，万事都要被革命，直到尘土腾起，城邑倾覆，众人方知末时已至。"
+
+  civil_war_in_the_name_of_yukari:0 "以紫之名"
+  civil_war_in_the_name_of_yukari_desc:0 "看哪，八云紫既曾行走于世，她口中的一句、手中的一举，都被称为上帝所许的旨意；她所立的界线如同诫命，她所留下的安排如同预言。虽然她如今不在众人眼前，她的名却仍在黑夜与烽烟之上发光。\n\n使徒八云蓝与橙不作旁顾，便要背负那名而行；将紫的言语传于城邑，将紫的秩序传于军中，使众人记念、遵行、不可偏离。凡疑惑者要被劝戒，凡背离者要被斥责；因他们说：这不是人的道路，乃是紫所指示的道路。\n\n纵使世界震动、城墙崩裂、万物倾覆，他们仍要宣告：即便天地改换，亦不可放下此名；宁可叫烈火吞噬大地，也要使「紫之旨意」被成全。"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  the_civil_war_start_timer:0 "崩线之刻"
+  the_civil_war_start_timer_desc:0 "内战开始。这不是一场可以旁观的风波，而是一场覆地的灾年：水退之后必留淤泥，火熄之后必剩焦黑。\n\n没人能逃脱，因路都被切断；没人能度过，因岁月只会把伤口磨深。城有城的塌，乡有乡的空，妖有妖的亡，人有人的绝。\n\n若要说结果，便只有一句最冷的常理：这里没有赢家，只有幸存者。"
+
+  the_civil_war_destory_all:0 "崩溃的边缘"
+  the_civil_war_destory_all_desc:0 "已至临界，堤防将决。月之都所求的最后一块拼图，也在此刻扣上缺口。接下来不再是战争，而是灾变：如洪水漫堤，如旱魃噬田，如瘟疠过境。\n\n所谓「净化」，在凡人耳中听来像救赎，在地上看来却是尘埃覆城、血水入河。污秽被洗去的那一刻，许多名字也会一并被洗去。"
+
+  the_civil_war_cheak_for_seija:0 "革命之火的熄灭"
+  the_civil_war_cheak_for_seija_desc:0 "曾经照亮夜路的火舌，终究被风雪压灭。喧嚣停了，口号散了，街巷只剩灰与未竟的怨。革命最残酷之处，不在于燃起，而在于熄灭后还要活下去，面对一地的碎瓦与无人认领的代价。"
+
+  the_civil_war_cheak_for_remilia:0 "吸血鬼霸权的终结"
+  the_civil_war_cheak_for_remilia_desc:0 "猩红的旌旗终于垂地，如同暮色里的残云。昔日以威严压城的铁蹄停了，宫廷的乐声也停了，只剩空杯与空座。\n\n霸权的终结不带浪漫，它更像山崩后的沉寂：留下被踏碎的街道、被撕裂的臣民，以及一个再也回不到『高贵』的时代。"
+
+  the_civil_war_cheak_for_chen:0 "贤者遗愿的散落"
+  the_civil_war_cheak_for_chen_desc:0 "贤者的遗愿并非一纸文书，而是用多年平衡换来的薄冰。如今薄冰裂了，碎片漂散在各处水面。\n\n有人捡起碎片当作护符，有人拿去割人喉，有人干脆丢进泥里。遗愿不是被否定，而是被现实磨碎：越想守住它，越被碎片割得满手是血。"
+
+  the_civil_war_cheak_for_hijiri:0 "大同理想的沉没"
+  the_civil_war_cheak_for_hijiri_desc:0 "大同曾被说得像春水，能润万物；可战乱一起，春水也会被血染。理想不是错，只是太慢，慢到追不上饥荒、炮火与恐惧。\n\n当寺钟仍响，却再也唤不回人心，便明白这不是辩论的失败，而是灾年里的常理：人在绝境，先求活命，后谈慈悲。"
+
+  the_civil_win_political_available:0 "妖怪内战的胜利者"
+  the_civil_win_political_available_desc:0 "胜利者立于废墟之上，脚下不是台阶，是瓦砾与焦土。旗帜仍能升起，号令仍能传达，但每一道命令都带著余震。\n\n因这场内战没有真正的凯旋，只有灾后的清点：多少城池成了空壳，多少族群失了根，多少名字被写进失踪册。胜者所得，是一个必须立刻修补、却再也无法回到从前的幻想乡。"
+
+  
+
+
+
+
+
+  destory_number_go_up_10:0 "§R毁灭度§!§B上升§!§Y10§!"
+  destory_number_go_up_40:0 "§R毁灭度§!§B上升§!§Y40§!"
+
+  destory_number_go_down_10:0 "§R毁灭度§!下降§Y10§!"
+  destory_number_go_down_5:0 "§R毁灭度§!下降§Y5§!"
+
+ 
+
+
+ prestige_random_event_part_1:0 "红魔馆的台前逸闻"
+prestige_random_event_part_1_desc:0 "在这座府邸里，连一次茶会、一句闲话、一道目光，都会变成权力的回声。"
+
+prestige_random_event_part_2:0 "红魔馆的幕后波澜"
+prestige_random_event_part_2_desc:0 "帷幕之后从不安静。宠信、失衡、试探与冷落，都在悄悄改写红魔馆的统治秩序。"
+
+prestige_system_value_change_monthly:0 "每月权威浮动"
+prestige_system_value_change_monthly_desc:0 "威严不会凭空而来。每过一个月，表现、风评与主人的偏好，都会让红魔馆诸位成员的地位重新洗牌。"
+
+
+scarlet_prestige_sakuya:0 "咲夜的治理才能"
+scarlet_prestige_sakuya_desc:0 "十六夜咲夜最可怕的地方，从来不只是战斗，而是她能把混乱压成秩序。文书、调度、配给、统筹，在她手里都能被整理成近乎完美的流程。红魔馆的行政效率将越强，也将为政权持续带来更多§Y政治点数§!。"
+
+scarlet_prestige_meiling:0 "美铃的门卫风采"
+scarlet_prestige_meiling_desc:0 "红美铃站在门前，不只是守门，更像替整座红魔馆把人心稳住。她的可靠、亲和与武人的气势，会让更多人愿意追随红魔馆，也让更多人相信这座政权值得依附。红魔馆便越能动员更多§Y人力§!。"
+
+scarlet_prestige_remilia:0 "蕾米莉亚的威慑"
+scarlet_prestige_remilia_desc:0 "蕾米莉亚的统治建立在敬畏之上。她的名字、她的红雾、她那种高高在上的吸血鬼王权，都会让臣属低头、让敌人迟疑。政权内部稳定，民众对战争的接受度越强，提高§Y稳定度§!与§Y战争支持度§!。"
+
+scarlet_prestige_flandre:0 "芙兰的童话传说"
+scarlet_prestige_flandre_desc:0 "芙兰朵露的存在像一则黑暗童话：美丽、稚气、怪诞，却又危险得让人不敢深想。关于她的传闻越是扩散，敌人内部就越难维持平静。让敌对国家越容易陷入恐慌与不安，从而降低其§Y稳定度§!与§Y战争支持度§!。"
+
+scarlet_prestige_patchouli:0 "帕秋莉的学识"
+scarlet_prestige_patchouli_desc:0 "帕秋莉·诺蕾姬掌握的不是普通知识，而是能直接转化为战争优势的答案。魔法理论、工业模型、实验技术、战术支援，她的学识会不断推动红魔馆变得更强。红魔馆将获得§Y科研速度加成§!。"
+
+
+ scarlet_prestige_sakuya_1:0 "银笔与账册"
+scarlet_prestige_sakuya_1_desc:0 "从库房清点到文书归档，从配给统计到名单誊录，先让人们看见十六夜咲夜最基础、也最可怕的一面：她能把一团烂账整理成一份毫无破绽的答案。"
+
+scarlet_prestige_sakuya_2:0 "女仆长的礼法"
+scarlet_prestige_sakuya_2_desc:0 "进一步强调咲夜在接待、仪态与宫廷礼节上的支配力。她不只是会做事，更知道该让谁先开口、谁该低头、谁连站姿都不配出错。"
+
+scarlet_prestige_sakuya_3:0 "刻在钟面上的安排"
+scarlet_prestige_sakuya_3_desc:0 "宣扬咲夜对时间与流程的近乎偏执的掌控。宴会、巡查、补给、传令与调度全都被排进正确的刻度里，像整座红魔馆都在照着她的秒针呼吸。"
+
+scarlet_prestige_sakuya_4:0 "让失序无处落脚"
+scarlet_prestige_sakuya_4_desc:0 "高调塑造咲夜作为秩序本身的形象。她所到之处，混乱会被压平，拖延会被切断，任何想在红魔馆内部钻空子的行为，最终都会撞上她整理好的墙。"
+
+scarlet_prestige_sakuya_5:0 "完美即为答案"
+scarlet_prestige_sakuya_5_desc:0 "将咲夜塑造成无人可以替代的完美女仆长。她不再只是高效、优雅或严谨，而是红魔馆统治机器里最精密的一枚核心零件——她的存在本身，就是完美的行政。"
+
+ scarlet_prestige_meiling_1:0 "门前的笑容"
+scarlet_prestige_meiling_1_desc:0 "先让人们记住红美铃最容易被忽视、却也最难替代的一面：她站在门前，先说话，再出手。那份从容、亲切与分寸，本身就是红魔馆对外的第一张脸。"
+
+scarlet_prestige_meiling_2:0 "拳脚之间的体面"
+scarlet_prestige_meiling_2_desc:0 "进一步强调美铃作为武人的风范。她不是只会把人打出去，更懂得什么时候该拦、什么时候该让、什么时候该用一记足够漂亮的胜利替红魔馆争面子。"
+
+scarlet_prestige_meiling_3:0 "气行如墙"
+scarlet_prestige_meiling_3_desc:0 "宣扬美铃对气的运用与稳固防线的能力。她一旦认真，门口就不再只是门口，而是一道真正的边界；风能过去，人不能。"
+
+scarlet_prestige_meiling_4:0 "温柔的守护者"
+scarlet_prestige_meiling_4_desc:0 "高调塑造美铃那种少见的双重气质：她能挡下敌人，也会对来客留一步台阶。强大不是为了欺负弱者，而是为了让门后的秩序不必时时见血。"
+
+scarlet_prestige_meiling_5:0 "红魔馆之盾"
+scarlet_prestige_meiling_5_desc:0 "将美铃塑造成红魔馆最稳固的防线。她的名字不只代表帅气的武斗家，也代表可靠、厚重与足以让人安心的守护——只要她还站着，门就不会失守。"
+
+
+scarlet_prestige_remilia_1:0 "幼月垂临"
+scarlet_prestige_remilia_1_desc:0 "先让人们重新习惯抬头仰望蕾米莉亚。她不需要长篇大论，只需要站在高处，让那份属于吸血鬼贵族的傲慢与美丽先压下来。"
+
+scarlet_prestige_remilia_2:0 "鲜红的威压"
+scarlet_prestige_remilia_2_desc:0 "进一步强调蕾米莉亚令人窒息的压迫感。她的披风、她的目光、她那种像在俯视玩具般的语气，都会让旁人先一步学会噤声。"
+
+scarlet_prestige_remilia_3:0 "红雾中的王座"
+scarlet_prestige_remilia_3_desc:0 "宣扬蕾米莉亚与红雾、夜色和支配感绑定的统治形象。她不只是一个领袖，而是会让整片空间都变得像她领地的存在。"
+
+scarlet_prestige_remilia_4:0 "命运也该低头"
+scarlet_prestige_remilia_4_desc:0 "高调塑造蕾米莉亚那种近乎狂妄的王权叙事：她不是接受命运的人，而是要把命运掰弯的人。她的统治，因此带着一种不容辩驳的侵略性。"
+
+scarlet_prestige_remilia_5:0 "鲜红女王"
+scarlet_prestige_remilia_5_desc:0 "将蕾米莉亚塑造成真正不可挑战的鲜红女王。她的名字不再只是红魔馆之主，而是足以让国家低头、让军队颤抖、让夜晚本身都像在替她加冕的象征。"
+
+
+scarlet_prestige_flandre_1:0 "水晶羽翼的孩子"
+scarlet_prestige_flandre_1_desc:0 "先从最温和、也最危险的地方开始——让人们知道红魔馆里有一位像童话插图一样漂亮的妹妹。至于那份漂亮背后藏着什么，暂时先不说明。"
+
+scarlet_prestige_flandre_2:0 "高塔里的小公主"
+scarlet_prestige_flandre_2_desc:0 "进一步把芙兰包装成一则被高塔、锁与秘密包裹起来的故事。她像公主，也像灾厄，越是不被看见，就越容易在流言里长出魅力。"
+
+scarlet_prestige_flandre_3:0 "糖果屋里的危险"
+scarlet_prestige_flandre_3_desc:0 "让芙兰的形象开始带上更明显的黑童话气息：甜美、稚气、引人靠近，可一旦走错一步，糖霜下面藏着的就不再是点心，而是牙齿。"
+
+scarlet_prestige_flandre_4:0 "梦境深处的妹妹"
+scarlet_prestige_flandre_4_desc:0 "高调把芙兰塑造成类似爱丽丝梦游仙境般的存在。她像从梦里走出来的孩子，逻辑和情绪都不太属于正常世界，因此既可爱得让人放松，也危险得让人发冷。"
+
+scarlet_prestige_flandre_5:0 "最美丽的坏结局"
+scarlet_prestige_flandre_5_desc:0 "将芙兰彻底定格为一则完整的黑暗童话：她是结局里最夺目的角色，是红魔馆最被宠爱的妹妹，也是所有人最不想真正惹怒的那一个。"
+
+
+scarlet_prestige_patchouli_1:0 "书页之间的低语"
+scarlet_prestige_patchouli_1_desc:0 "先让人们记住帕秋莉最基础的权威：她总坐在书后，却什么都知道。图书馆里的每一页翻动声，都会慢慢把她的名字传出去。"
+
+scarlet_prestige_patchouli_2:0 "禁书的分类法"
+scarlet_prestige_patchouli_2_desc:0 "进一步强调帕秋莉对知识的整理与支配能力。她不是单纯地收藏书，而是在给危险分级、给秘术编号、给整个禁忌世界排出秩序。"
+
+scarlet_prestige_patchouli_3:0 "七色魔法使的研究"
+scarlet_prestige_patchouli_3_desc:0 "宣扬帕秋莉在术式、实验与魔法理论上的深度探索。她的价值不只在于知道答案，更在于她能把未知拆开，再亲手把它做成新的答案。"
+
+scarlet_prestige_patchouli_4:0 "大图书馆中枢"
+scarlet_prestige_patchouli_4_desc:0 "高调塑造帕秋莉作为知识中枢的地位。物资、工业、魔法、封印、研究，一切最终都会绕回她的桌面，而她会把混乱重新写成可执行的方案。"
+
+scarlet_prestige_patchouli_5:0 "人形图书馆"
+scarlet_prestige_patchouli_5_desc:0 "将帕秋莉塑造成红魔馆中无人可以替代的知识化身。她不再只是管理图书馆的人，而是图书馆本身——一座会呼吸、会思考、也会把世界读懂后重新写下的人形书库。"
+
+
+
+ KYO_lunar_invasion_warning_category:0 "月都入侵倒数"
+ KYO_lunar_invasion_warning_category_desc:0 "八云紫复出后，月都需要约两年完成对地表主要国家的控制。倒数归零时入侵自动爆发；提前完成“抢在月都之前”可先制开战并取得六个月增益。"
+ KYO_lunar_invasion_countdown:0 "月都入侵准备完成"
+ KYO_lunar_invasion_countdown_desc:0 "§R730日后，月都将控制地表主要国家并向幻想乡发动入侵。§!\n\n可在倒数前完成§Y抢在月都之前§!，主动开始战争并获得§G180日先发制人增益§!。"
+
+
+
+ KYO_lunar_campaign_category:0 "月面决战指挥部"
+ KYO_lunar_campaign_category_desc:0 "地表战争开始后即可查看，但只有完成国策§Y打开通往月面的间隙§!后才会正式启动。每轮持续60天；月都期望值保留原有动态计算与难度选择，并在最终计算时额外§G降低6点§!。进攻值X严格大于防卫值T时进攻方获胜，X=T由防守方获胜。玩家取得第3胜时，月都阵营将向尚未交战的独立国家全面宣战；第4胜时美国解除控制。先取得6胜的一方结束本次系列。"
+
+ KYO_lunar_reconstruction_category:0 "月都重建与秘封后日谈"
+ KYO_lunar_reconstruction_category_desc:0 "终战后的工作分九个阶段推进，每一项需35日。玩家决定何时继续，不再由一个事件自动弹出整条后日谈。"
+
+ KYO_love_story_category:0 "落日誓约：可选故事"
+ KYO_love_story_category_desc:0 "这些生活故事彼此独立。你可以选择任意篇章，也可以全部忽略。"
+
+ KYO_yukari_archive_category:0 "八云紫的档案"
+ KYO_yukari_archive_category_desc:0 "玲未档案与秘封旧档各项目推进。完成一项开启下一项。"
+
+ KYO_lunar_campaign_gui_title:0 "§Y第二次月面战争§!"
+
+ KYO_lunar_campaign_gui_round:0 "§Y第[?KYO_lunar_round|0]/11战§!｜§R剩余[?KYO_lunar_days_remaining|0]天§!"
+
+ KYO_lunar_campaign_gui_values:0 "§G进攻 X：[?KYO_lunar_X|0]§!§R防卫 T：[?KYO_lunar_T|0]§!"
+
+ KYO_lunar_campaign_gui_score:0 "§G幻想乡 [?KYO_lunar_attacker_wins|0]§!－§R[?KYO_lunar_defender_wins|0] 月都§!"
+
+ KYO_lunar_campaign_gui_expected:0 "§C期望值§!§YE5§!：[?KYO_lunar_E5|0]§YE6§!：[?KYO_lunar_E6|0]§YE7§!：[?KYO_lunar_E7|0]§YE8§!：[?KYO_lunar_E8|0]"
+
+ KYO_lunar_campaign_gui_support:0 "§G地表解放§! [?KYO_surface_liberated|0]/[?KYO_surface_selected|0]§Y无偿令§! [?KYO_lunar_free_orders|0]/4§C可负担战术§! [?KYO_lunar_affordable_tactics|0]/20"
+
+ KYO_lunar_campaign_gui_tactics_header:0 "§Y本轮可用战术§!§g前五项为基础抽取，后三项为追加抽取§!"
+
+ KYO_lunar_campaign_gui_attacker_state:0 "§G[GetKYOLunarAttackerState]§!"
+ KYO_lunar_campaign_gui_defender_state:0 "§R[GetKYOLunarDefenderState]§!"
+ KYO_lunar_campaign_gui_attacker_marks:0 "§G[GetKYOLunarAttackerMarks]§!"
+ KYO_lunar_campaign_gui_defender_marks:0 "§R[GetKYOLunarDefenderMarks]§!"
+ KYO_lunar_campaign_gui_battle_report:0 "[GetKYOLunarBattleReport]"
+ KYO_lunar_campaign_gui_rule:0 "§Y抽取：§!每轮自动5项，第6/7/8项需25/40/60政治点。§R判定：§!平手归防守方；六败后将撤退，重新来过。"
+
+ KYO_lunar_slot_empty:0 "§g— 未抽取 —§!"
+
+ KYO_lunar_report_none:0 "战报：等待本轮七十五日倒数结束。"
+
+ KYO_lunar_attacker_state_1:0 "百妖凌月"
+ KYO_lunar_attacker_state_2:0 "乘隙深入"
+ KYO_lunar_attacker_state_3:0 "立足月海"
+ KYO_lunar_attacker_state_4:0 "受阻净界"
+ KYO_lunar_attacker_state_5:0 "归路将断"
+ KYO_lunar_attacker_state_6:0 "败走月海"
+
+ KYO_lunar_defender_state_1:0 "净土无瑕"
+ KYO_lunar_defender_state_2:0 "月防肃然"
+ KYO_lunar_defender_state_3:0 "秽潮叩城"
+ KYO_lunar_defender_state_4:0 "外郭蒙尘"
+ KYO_lunar_defender_state_5:0 "王城染秽"
+ KYO_lunar_defender_state_6:0 "净土陷落"
+
+ KYO_faction_earth_axis:0 "地上轴心"
+
+ KYO_faction_lunarian_resistance_front:0 "月都解放阵线"
+
+ KYO_faction_fantasy_alliance:0 "幻想同盟"
+
+ KYO_faction_coexistence_pact:0 "共存协约"
+
+ KYO_lunarian_surface_front:0 "月都地表净化阵线"
+
+ KYO_lunarian_controlled_major:0 "月都垂治"
+ KYO_lunarian_controlled_major_desc:0 "地上政权奉月都敕令行事，军政与舆论皆须服从所谓的纯净秩序。"
+
+ KYO_lunarian_control_idea_1:0 "月都垂治 I"
+ KYO_lunarian_control_idea_1_desc:0 "月都的命令开始压制地表政权。当前综合惩罚：§R5%§!。"
+ KYO_lunarian_control_idea_2:0 "月都垂治 II"
+ KYO_lunarian_control_idea_2_desc:0 "月都战况首次失利，控制体系开始加重征调。当前综合惩罚：§R10%§!。"
+ KYO_lunarian_control_idea_3:0 "月都垂治 III"
+ KYO_lunarian_control_idea_3_desc:0 "月都连续受挫，地表军政体系承受更沉重的代价。当前综合惩罚：§R20%§!。"
+ KYO_lunarian_control_idea_4:0 "月都垂治 IV"
+ KYO_lunarian_control_idea_4_desc:0 "月面防线动摇，纯化命令正在撕裂地表国家。当前综合惩罚：§R30%§!。"
+ KYO_lunarian_control_idea_5:0 "月都垂治 V"
+ KYO_lunarian_control_idea_5_desc:0 "月都濒临失败，失控的征调与镇压严重削弱全国。当前综合惩罚：§R40%§!。"
+ KYO_lunarian_control_idea_6:0 "月都垂治 VI"
+ KYO_lunarian_control_idea_6_desc:0 "月都统治走向崩溃，地表控制体系达到最严重阶段。当前综合惩罚：§R50%§!。"
+
+ KYO_lunarian_faction_lock:0 "奉月敕令"
+ KYO_lunarian_faction_lock_desc:0 "受敕国家不得退出净化阵线，任何独断皆被视作污秽侵染。"
+
+ KYO_lunarian_control_fractured:0 "月令中绝"
+ KYO_lunarian_control_fractured_desc:0 "地月联系已经断裂，来自月都的敕令不再传遍全国。"
+
+ KYO_lunarian_crossline_disrupted:0 "天路受阻"
+ KYO_lunarian_crossline_disrupted_desc:0 "月面战败扰乱天路，地表诸军暂时失去补给与增援。"
+
+ KYO_lunarian_defeat_pressure_1:0 "月威渐衰：天音失真"
+ KYO_lunarian_defeat_pressure_1_desc:0 "月都初尝败绩，彼此冲突的军令开始传向地上。"
+
+ KYO_lunarian_defeat_pressure_2:0 "月威渐衰：敕令崩解"
+ KYO_lunarian_defeat_pressure_2_desc:0 "接连败退动摇月地联系，补给、增援与军心一并涣散。"
+
+ KYO_lunarian_defeat_pressure_3:0 "月威渐衰：天命断绝"
+ KYO_lunarian_defeat_pressure_3_desc:0 "月都再也无法支配地上，受控诸国正逐一挣脱净化阵线。"
+
+ KYO_gensokyo_wartime_coalition:0 "百妖共御月都"
+ KYO_gensokyo_wartime_coalition_desc:0 "百妖协议三委员会放下分歧，将军队、情报与救援汇入同一战局。"
+
+ KYO_lunar_preemptive_strike:0 "月满之前"
+ KYO_lunar_preemptive_strike_desc:0 "趁月都尚未收紧对地表的支配，幻想乡率先出兵；此后半年，战场先机仍在我方。"
+
+ KYO_world_life_can_change:0 "生者仍有明日"
+ KYO_world_life_can_change_desc:0 "活着不是被永远封存在今日，而是仍有选择明日的权利。"
+
+ KYO_world_memory_remains:0 "逝者仍留其名"
+ KYO_world_memory_remains_desc:0 "逝者留下姓名，生者带着记忆继续前行，送别因此不等于遗忘。"
+
+ KYO_world_science_and_fantasy:0 "共望一片星空"
+ KYO_world_science_and_fantasy_desc:0 "科学不再驱逐幻想，幻想也不再畏惧求知；二者将共同认识这个世界。"
+
+
+
+ KYO_lunar_debug_category:0 "月战测试工具"
+ KYO_lunar_debug_category_desc:0 "仅在以 -debug 启动游戏时显示。用于快速检查倒计时、入侵入口、GUI 与双方胜场显示，不会出现在正常游戏中。"
+ KYO_lunar_debug_open_gui:0 "DEBUG：开启并重置月战面板"
+ KYO_lunar_debug_open_gui_desc:0 "不宣战，直接解锁月战 GUI、重置双方胜场、抽取第一轮战术，并给予四次免费指令。适合纯粹检查界面。"
+ KYO_lunar_debug_start_countdown:0 "DEBUG：挂上两年倒计时"
+ KYO_lunar_debug_start_countdown_desc:0 "启动 730 天月都入侵任务，用来测试自然到期流程。"
+ KYO_lunar_debug_start_prewar_events:0 "DEBUG：跳到战前六周"
+ KYO_lunar_debug_start_prewar_events_desc:0 "把入侵计时设为 43 天并立刻执行一次战前 tick，用来测试阵营命名与六个每周事件。"
+ KYO_lunar_debug_start_natural_invasion:0 "DEBUG：立即触发自然入侵"
+ KYO_lunar_debug_start_natural_invasion_desc:0 "立刻走倒计时结束后的正常入侵入口，不给予先发制人增益。"
+ KYO_lunar_debug_start_preemptive_invasion:0 "DEBUG：立即触发先制入侵"
+ KYO_lunar_debug_start_preemptive_invasion_desc:0 "立刻走玩家手动开战入口，并给予 180 天先发制人增益。"
+ KYO_lunar_debug_add_yukari_point:0 "DEBUG：八云紫方胜场 +1"
+ KYO_lunar_debug_add_yukari_point_desc:0 "更新 GUI 的八云紫方胜场，并同步测试月都阵营的分段减益与受控国家脱离。"
+ KYO_lunar_debug_add_lunarian_point:0 "DEBUG：月都方胜场 +1"
+ KYO_lunar_debug_add_lunarian_point_desc:0 "只更新 GUI 的月都方胜场与战报标记，不执行正式回合结算。"
+
+ KYO_lunar_campaign_gui_slot_1:0 "[GetKYOLunarSlot1]"
+ KYO_lunar_campaign_gui_slot_2:0 "[GetKYOLunarSlot2]"
+ KYO_lunar_campaign_gui_slot_3:0 "[GetKYOLunarSlot3]"
+ KYO_lunar_campaign_gui_slot_4:0 "[GetKYOLunarSlot4]"
+ KYO_lunar_campaign_gui_slot_5:0 "[GetKYOLunarSlot5]"
+ KYO_lunar_campaign_gui_slot_6:0 "[GetKYOLunarSlot6]"
+ KYO_lunar_campaign_gui_slot_7:0 "[GetKYOLunarSlot7]"
+ KYO_lunar_campaign_gui_slot_8:0 "[GetKYOLunarSlot8]"
+
+ KYO_lunar_reconstruct_purification_archives:0 "废除纯化院"
+ KYO_lunar_reconstruct_purification_archives_desc:0 ""
+
+ KYO_lunar_restore_eirin_and_kaguya:0 "故人重返月都"
+ KYO_lunar_restore_eirin_and_kaguya_desc:0 ""
+
+ KYO_lunar_issue_reconstruction_edict:0 "新月都的敕令"
+ KYO_lunar_issue_reconstruction_edict_desc:0 "纯化院就此废除，月兔与地表出生者获得同等居民权。纯净从此不得决定谁有资格存在。"
+
+ KYO_lunar_define_common_sky:0 "为共同星空立约"
+ KYO_lunar_define_common_sky_desc:0 "生命可以改变，离去仍有意义，科学与幻想也无须互相抹除。战后的月都必须容纳这些答案。"
+
+ KYO_lunar_return_home:0 "联军踏上归途"
+ KYO_lunar_return_home_desc:0 "一道道间隙在月海上打开，将幸存者送回各自的故乡。百妖协议也将放下军令，转而修复战争留下的世界。"
+
+ KYO_lunar_science_and_fantasy:0 "允许未知存在"
+ KYO_lunar_science_and_fantasy_desc:0 "观测可以追问未知，结界也会为未知保留容身之处。科学与幻想不再把彼此视为必须消除的错误。"
+
+ KYO_lunar_reconcile_merry:0 "两个名字，一段人生"
+ KYO_lunar_reconcile_merry_desc:0 "在成为八云紫的那一天，梅莉并未消失。少女与贤者不是互相取代的两个人，而是同一段漫长人生的两种名字。"
+
+ KYO_lunar_same_starry_sky:0 "同一片星空下"
+ KYO_lunar_same_starry_sky_desc:0 "紫在古老星图上补下最后一个坐标。她不知道昔日的同行者能否看见，却终于写下迟到了数千年的答案。"
+
+ KYO_lunar_route_epilogue:0 "旅途的最后一页"
+ KYO_lunar_route_epilogue_desc:0 "地表报告、月面记录与秘封手稿被放在一起。紫合起折扇，第一次望向一个不再需要她为战争计算的明天。"
+
+ KYO_love_story_encounter:0 "妖梦与铃仙的邂逅"
+ KYO_love_story_encounter_desc:0 "可选阅读事件1与3组成的短篇。"
+ KYO_love_story_bamboo_maze:0 "竹影迷途"
+ KYO_love_story_bamboo_maze_desc:0 "可选阅读事件2、4与5组成的短篇。"
+ KYO_love_story_unchanging_court:0 "不变之院的试锋"
+ KYO_love_story_unchanging_court_desc:0 "可选阅读事件6与7组成的短篇。"
+ KYO_love_story_night_dew_case:0 "夜露小案"
+ KYO_love_story_night_dew_case_desc:0 "可选阅读事件8与9组成的短篇。"
+ KYO_love_story_three_lines:0 "三线同刻"
+ KYO_love_story_three_lines_desc:0 "可选阅读事件10至12组成的短篇。"
+ KYO_love_story_bamboo_lantern:0 "竹灯小席"
+ KYO_love_story_bamboo_lantern_desc:0 "可选阅读事件13至15组成的短篇。"
+ KYO_love_story_snow_garden:0 "雪庭问花"
+ KYO_love_story_snow_garden_desc:0 "可选阅读事件16至18组成的短篇。"
+ KYO_love_story_reversal_night:0 "休息日"
+ KYO_love_story_reversal_night_desc:0 "可选阅读事件19至25组成的长篇。"
+ KYO_love_story_night_run:0 "结局"
+ KYO_love_story_night_run_desc:0 "可选阅读独立事件26。"
+
+  KYO_reimi_archive_1:0 "玲未档案 1"
+ KYO_reimi_archive_1_desc:0 "整理第一卷玲未档案。"
+
+ KYO_reimi_archive_2:0 "玲未档案 2"
+ KYO_reimi_archive_2_desc:0 "整理第二卷玲未档案。"
+
+ KYO_reimi_archive_3:0 "玲未档案 3"
+ KYO_reimi_archive_3_desc:0 "整理第三卷玲未档案。"
+
+ KYO_reimi_archive_4:0 "玲未档案 4"
+ KYO_reimi_archive_4_desc:0 "整理第四卷玲未档案。"
+
+ KYO_reimi_archive_5:0 "玲未档案 5"
+ KYO_reimi_archive_5_desc:0 "整理第五卷玲未档案。"
+
+
+ KYO_yukari_archive_1:0 "秘封旧档 1"
+ KYO_yukari_archive_1_desc:0 "整理第一卷秘封旧档。"
+
+ KYO_yukari_archive_2:0 "秘封旧档 2"
+ KYO_yukari_archive_2_desc:0 "整理第二卷秘封旧档。"
+
+ KYO_yukari_archive_3:0 "秘封旧档 3"
+ KYO_yukari_archive_3_desc:0 "整理第三卷秘封旧档。"
+
+ KYO_yukari_archive_4:0 "秘封旧档 4"
+ KYO_yukari_archive_4_desc:0 "整理第四卷秘封旧档。"
+
+ KYO_yukari_archive_5:0 "秘封旧档 5"
+ KYO_yukari_archive_5_desc:0 "整理第五卷秘封旧档。"
+
+ KYO_yukari_archive_6:0 "秘封旧档 6"
+ KYO_yukari_archive_6_desc:0 "整理第六卷秘封旧档。"
+
+ KYO_yukari_archive_7:0 "秘封旧档 7"
+ KYO_yukari_archive_7_desc:0 "整理第七卷秘封旧档。"
+
+ KYO_yukari_archive_8:0 "秘封旧档 8"
+ KYO_yukari_archive_8_desc:0 "整理第八卷秘封旧档。"
+
+ KYO_yukari_archive_9:0 "秘封旧档 9"
+ KYO_yukari_archive_9_desc:0 "整理第九卷秘封旧档。"
+
+ KYO_lunar_score_marks_0:0 "○○○○○○"
+ KYO_lunar_score_marks_1:0 "●○○○○○"
+ KYO_lunar_score_marks_2:0 "●●○○○○"
+ KYO_lunar_score_marks_3:0 "●●●○○○"
+ KYO_lunar_score_marks_4:0 "●●●●○○"
+ KYO_lunar_score_marks_5:0 "●●●●●○"
+ KYO_lunar_score_marks_6:0 "●●●●●●"
+
+ KYO_lunar_report_1_win:0 "§Y月面登陆｜本轮胜利§!\n月海无风，天狗却以妖风将方位传遍全军。古明地觉从守军思绪中剥出监视空白，恋在无人察觉的道路上点亮落点；间隙撕开月虹哨塔后的长夜，幻想乡的军旗第一次落上月土。"
+
+ KYO_lunar_report_1_loss:0 "§Y月面登陆｜本轮失利§!\n依姬请下守门神，神光将滩头一路压回间隙。古明地姐妹重绘盲区，天狗带回失联者，先遣队则死守最后的归路。\n\n紫合起折扇：“月亮还在那里。我们也还在。重整，再来。”"
+
+ KYO_lunar_report_2_win:0 "§Y第一重城门｜本轮胜利§!\n白莲立于神降之前，梵光为全军撑开第一道缺口。萃香大笑着聚起鬼族，沿蓝计算的时序撞向城门；千年前各自为战的百鬼，今日以同一步伐踏碎月都的门槛。"
+
+ KYO_lunar_report_2_loss:0 "§Y第一重城门｜本轮失利§!\n丰姬折叠长街，冲锋的军势在数步之间偏离城门。白莲以法力护住撤军，鬼族冒着神火拖回河童重炮。\n\n紫望向变换不定的长街：“她能折叠道路，折不断我们的军势。带回伤员。下一次，正面破门。”"
+
+ KYO_lunar_report_3_win:0 "§Y月都外郭｜本轮胜利§!\n红雾遮断月都的银白天穹，荷取让炮火循着雾中信标击穿外郭。人类与妖怪越过同一段城墙，却没有把兵刃转向民居；躲在门后的月民第一次看清，来者并非月都口中的屠城恶鬼。"
+
+ KYO_lunar_report_3_loss:0 "§Y月都外郭｜本轮失利§!\n月兔自屋脊与回廊交叉射击，迫使攻城军退出缺口。河童在红雾中留下归路，红魔馆以最后一轮齐射替运输队断后。\n\n紫站在城墙之外：“失去的只是一段外郭，不是这场战争。所有人回来，我们会再越过去。”"
+
+ KYO_lunar_report_4_win:0 "§Y内城月渠｜本轮胜利§!\n永远亭让伤员重新站起，白玉楼则引领战死者的魂火渡过月渠。生者沿左岸推进，亡者自右岸相随；两支军势在内城门前汇合，连死亡也未能截断幻想乡的进军。"
+
+ KYO_lunar_report_4_loss:0 "§Y内城月渠｜本轮失利§!\n纯化术式封死月渠，伤兵与归路被隔在两端。铃仙以狂气之瞳扰乱月兔信号，妖梦逐一护送伤员穿过残存通道。\n\n紫亲手撑住即将闭合的间隙：“先带回生者，也别落下死者的名字。路断了，我会再开一条。”"
+
+ KYO_lunar_report_5_win:0 "§Y宫城阶前｜本轮胜利§!\n玲未在月土上立起临时鸟居，将博丽的归路钉在宫城阶前。守矢诸神循蓝计算的坐标降下御柱；退路稳固的一刻，紫收拢漫天间隙，让它们同时咬住王城护壁。"
+
+ KYO_lunar_report_5_loss:0 "§Y宫城阶前｜本轮失利§!\n绵月姐妹将神灵与月兔尽数集中于宫城阶前，御柱也被神光逐根震碎。玲未守住仪式，蓝与橙不断缩短归路，联军赶在间隙闭合以前退回防线。\n\n紫没有回头：“她们守住的只是台阶。退下去，站稳，再上来。”"
+
+ KYO_lunar_report_6_win:0 "§Y最后月门｜本轮胜利§!\n红雾覆空，战鼓震月，御柱与花海一同越过最后的间隙，白玉楼的引魂蝶紧随军旗飞入王城。内应自城中解除封印，联军从城外击碎门轴，最后月门在两股力量之间轰然开启。没有任何一面旗帜能够独占这场胜利。"
+
+ KYO_lunar_report_6_loss:0 "§Y最后月门｜本轮失利§!\n最后月门在全军面前重新闭合，月都的神火沿城墙倾泻而下。白莲与萃香守住两翼，紫命令所有势力沿同一道间隙撤离，无人被遗弃在月上。\n\n她最后一个跨过通道：“门可以再关，间隙也可以再开。只要幻想乡还在，这场战争就没有结束。”"
+
+ KYO_lunar_extra_draw_6:0 "追加第6项战术（25政治点）"
+ KYO_lunar_extra_draw_6_desc:0 "从本轮尚未出现的战术中再抽一项；若战术10的折扣尚未使用，本次费用减少15政治点。"
+ KYO_lunar_extra_draw_7:0 "追加第7项战术（40政治点）"
+ KYO_lunar_extra_draw_7_desc:0 "从本轮尚未出现的战术中再抽一项；若战术10的折扣尚未使用，本次费用减少15政治点。"
+ KYO_lunar_extra_draw_8:0 "追加第8项战术（60政治点）"
+ KYO_lunar_extra_draw_8_desc:0 "从本轮尚未出现的战术中再抽一项；若战术10的折扣尚未使用，本次费用减少15政治点。"
+
+
+  KYO_lunar_tactic_1:0 "万军间隙"
+ KYO_lunar_tactic_1_desc:0 "八云的体系将各军的落点、时序与归路合并为一套境界通道，使先遣军能够同时突入月面。\n\n§Y消耗：§!步枪400\n§Y效果：§!X ← X + 14\n§Y使用后 X：§![?KYO_lunar_preview_1|0]\n持有无偿令时，本战术不消耗资源。"
+
+ KYO_lunar_slot_tactic_1:0 "§Y01§!§W万军间隙§!"
+
+
+ KYO_lunar_tactic_2:0 "百鬼碎门"
+ KYO_lunar_tactic_2_desc:0 "鬼族担任攻城矛头，在统一号令下集结怪力，强行撞开月都城门，为混合军团开辟进路。\n\n§Y消耗：§!步枪700\n§Y效果：§!X ← X + 26\n§Y使用后 X：§![?KYO_lunar_preview_2|0]\n持有无偿令时，本战术不消耗资源。"
+
+ KYO_lunar_slot_tactic_2:0 "§Y02§!§W百鬼碎门§!"
+
+
+ KYO_lunar_tactic_3:0 "河童火炮齐射"
+ KYO_lunar_tactic_3_desc:0 "河童工坊公开射表、坐标与弹药调度，让分散各处的炮兵向同一目标倾泻火力。\n\n§Y消耗：§!火炮80＋步枪100\n§Y效果：§!X ← X + 20\n§Y使用后 X：§![?KYO_lunar_preview_3|0]\n持有无偿令时，本战术不消耗资源。"
+
+ KYO_lunar_slot_tactic_3:0 "§Y03§!§W河童火炮齐射§!"
+
+
+ KYO_lunar_tactic_4:0 "风神无双"
+ KYO_lunar_tactic_4_desc:0 "天狗侦察网共享风向、敌踪与月面地形，使联军提前掌握守军调动与阵地弱点。\n\n§Y消耗：§!指挥点25\n§Y效果：§!X ← X + 8 + 2G\n§Y使用后 X：§![?KYO_lunar_preview_4|0]\n持有无偿令时，本战术不消耗资源。"
+
+ KYO_lunar_slot_tactic_4:0 "§Y04§!§W风神无双§!"
+
+
+ KYO_lunar_tactic_5:0 "百器鸣笛"
+ KYO_lunar_tactic_5_desc:0 "付丧神唤醒车辆与工坊器械，将运输、维修和突击力量编成一支高速机动纵队。\n\n§Y消耗：§!摩托化装备180\n§Y效果：§!X ← X + min(21, 6 + 3G)\n§Y使用后 X：§![?KYO_lunar_preview_5|0]\n持有无偿令时，本战术不消耗资源。"
+
+ KYO_lunar_slot_tactic_5:0 "§Y05§!§W百器鸣笛§!"
+
+
+ KYO_lunar_tactic_6:0 "永琳的亲自到来"
+ KYO_lunar_tactic_6_desc:0 "永远亭以旧日威望争取月都医官与技术人员倒戈，同时轮转伤兵，为下一轮攻势保存战力。\n\n§Y消耗：§!支援装备100＋政治点15\n§Y效果：§!X ← X + 10；下轮初始X + 6\n§Y使用后 X：§![?KYO_lunar_preview_6|0]\n持有无偿令时，本战术不消耗资源。"
+
+ KYO_lunar_slot_tactic_6:0 "§Y06§!§W永琳的亲自到来§!"
+
+
+ KYO_lunar_tactic_7:0 "楼观剑与白楼剑"
+ KYO_lunar_tactic_7_desc:0 "白玉楼记录阵亡者、收拢迷失的亡魂，并护送伤员沿安全通道返回阵线。\n\n§Y消耗：§!指挥点35\n§Y效果：§!X ← X + 12\n§Y使用后 X：§![?KYO_lunar_preview_7|0]\n持有无偿令时，本战术不消耗资源。"
+
+ KYO_lunar_slot_tactic_7:0 "§Y07§!§W楼观剑与白楼剑§!"
+
+
+ KYO_lunar_tactic_8:0 "梦想封印"
+ KYO_lunar_tactic_8_desc:0 "博丽结界将人类、妖怪与神明的退路固定于同一坐标，使月都术式无法轻易割裂联军。\n\n§Y消耗：§!政治点35\n§Y效果：§!X ← X + 6 + 4H\n§Y使用后 X：§![?KYO_lunar_preview_8|0]\n持有无偿令时，本战术不消耗资源。"
+
+ KYO_lunar_slot_tactic_8:0 "§Y08§!§W梦想封印§!"
+
+
+ KYO_lunar_tactic_9:0 "豪族乱舞"
+
+ KYO_lunar_tactic_9_desc:0 "神灵庙以古代兵法重整联军部署，将主攻、佯动与预备队编入同一套战阵，迅速扩大既有优势。\n\n§Y消耗：§!陆军经验20\n§Y效果：§!X ← floor(1.15X) + 5\n§Y使用后 X：§![?KYO_lunar_preview_9|0]\n持有无偿令时，本战术不消耗资源。"
+
+ KYO_lunar_slot_tactic_9:0 "§Y09§!§W豪族乱舞§!"
+
+
+ KYO_lunar_tactic_10:0 "草根补给网"
+ KYO_lunar_tactic_10_desc:0 "兽道、小聚落与草根妖怪串联成军令之外的运输线，将物资送往正规补给难以抵达的阵地。\n\n§Y消耗：§!摩托化装备120\n§Y效果：§!X ← X + 10；下次追加抽取-15PP\n§Y使用后 X：§![?KYO_lunar_preview_10|0]\n持有无偿令时，本战术不消耗资源。"
+
+ KYO_lunar_slot_tactic_10:0 "§Y10§!§W草根补给网§!"
+
+
+ KYO_lunar_tactic_11:0 "月球红雾"
+ KYO_lunar_tactic_11_desc:0 "红魔馆将红雾扩展至整片战区，遮断月兔的观测与射界，为联军推进提供掩护。\n\n§Y消耗：§!指挥点50＋航空装备40\n§Y效果：§!X ← floor(1.25X)\n§Y使用后 X：§![?KYO_lunar_preview_11|0]\n持有无偿令时，本战术不消耗资源。"
+
+ KYO_lunar_slot_tactic_11:0 "§Y11§!§W月球红雾§!"
+
+
+ KYO_lunar_tactic_12:0 "超人「圣白莲」"
+ KYO_lunar_tactic_12_desc:0 "命莲寺诸部共同冲入阵地缺口；前队正面破阵，后队则守住伤员与全军退路。\n\n§Y消耗：§!政治点40＋指挥点25\n§Y效果：§!若X<T：+ceil((T-X)/2)+8；否则+8\n§Y使用后 X：§![?KYO_lunar_preview_12|0]\n持有无偿令时，本战术不消耗资源。"
+
+ KYO_lunar_slot_tactic_12:0 "§Y12§!§W超人「圣白莲」§!"
+
+
+ KYO_lunar_tactic_13:0 "邪道之畜生"
+ KYO_lunar_tactic_13_desc:0 "畜生界军团从守军最薄弱之处投入增援，以冷酷而高效的突击扩大既有战果。\n\n§Y消耗：§!政治点45\n§Y效果：§!X ← floor(1.18X) + 8\n§Y使用后 X：§![?KYO_lunar_preview_13|0]\n持有无偿令时，本战术不消耗资源。"
+
+ KYO_lunar_slot_tactic_13:0 "§Y13§!§W邪道之畜生§!"
+
+
+ KYO_lunar_tactic_14:0 "花鸟风月、啸风弄月"
+ KYO_lunar_tactic_14_desc:0 "太阳花田将妖力化作覆盖阵地的花海炮击，并依照联军时序收束火力，避免波及先锋。\n\n§Y消耗：§!火炮100＋指挥点45\n§Y效果：§!X ← floor(1.30X) + 4\n§Y使用后 X：§![?KYO_lunar_preview_14|0]\n持有无偿令时，本战术不消耗资源。"
+
+ KYO_lunar_slot_tactic_14:0 "§Y14§!§W花鸟风月、啸风弄月§!"
+
+
+ KYO_lunar_tactic_15:0 "最强妖精们"
+ KYO_lunar_tactic_15_desc:0 "妖精军势借月面自然迅速再生，以接连不断的冲锋牵制守军，填补阵线上的每一道缺口。\n\n§Y消耗：§!摩托化装备150＋政治点20\n§Y效果：§!X ← X + 5 + 5G\n§Y使用后 X：§![?KYO_lunar_preview_15|0]\n持有无偿令时，本战术不消耗资源。"
+
+ KYO_lunar_slot_tactic_15:0 "§Y15§!§W最强妖精们§!"
+
+
+ KYO_lunar_tactic_16:0 "蓬莱的树海·不死鸟重生"
+ KYO_lunar_tactic_16_desc:0 "蓬莱人轮替承受致命术式，以不会倒下的正面攻势消耗守军，最终撕开月都阵形。\n\n§Y消耗：§!支援装备120＋陆军经验30\n§Y效果：§!X ← max(X+8, floor((X+30)^2/100))\n§Y使用后 X：§![?KYO_lunar_preview_16|0]\n持有无偿令时，本战术不消耗资源。"
+
+ KYO_lunar_slot_tactic_16:0 "§Y16§!§W蓬莱的树海·不死鸟重生§!"
+
+
+ KYO_lunar_tactic_17:0 "Necro-Fantasia"
+ KYO_lunar_tactic_17_desc:0 "八云阵线同时改写多处境界，使各方军势跨越距离、城墙与防线，在同一瞬间抵达决战位置。\n\n§Y消耗：§!政治点70＋指挥点60\n§Y效果：§!X ← max(X+8, floor((X/8)^2))\n§Y使用后 X：§![?KYO_lunar_preview_17|0]\n持有无偿令时，本战术不消耗资源。"
+
+ KYO_lunar_slot_tactic_17:0 "§Y17§!§WNecro-Fantasia§!"
+
+
+ KYO_lunar_tactic_18:0 "Reverse Hierarchy"
+ KYO_lunar_tactic_18_desc:0 "下克上军势颠倒强弱，月都内部的反抗者则以逆言扰乱敕令，使原本的劣势化为进攻窗口。\n\n§Y消耗：§!陆军经验45\n§Y效果：§!若X<T：+floor(0.60(T-X))+10；否则+8\n§Y使用后 X：§![?KYO_lunar_preview_18|0]\n持有无偿令时，本战术不消耗资源。"
+
+ KYO_lunar_slot_tactic_18:0 "§Y18§!§WReverse Hierarchy§!"
+
+
+ KYO_lunar_tactic_19:0 "Super Ego"
+ KYO_lunar_tactic_19_desc:0 "地灵殿侦察网同时捕捉有意识的敌意与无意识的盲区，将前一轮交战痕迹转化为新的战场情报。\n\n§Y消耗：§!陆军经验30＋政治点20\n§Y效果：§!X ← X + max(6, floor(0.70A))\n§Y使用后 X：§![?KYO_lunar_preview_19|0]\n持有无偿令时，本战术不消耗资源。"
+
+ KYO_lunar_slot_tactic_19:0 "§Y19§!§WSuper Ego§!"
+
+
+ KYO_lunar_tactic_20:0 "万众一心"
+ KYO_lunar_tactic_20_desc:0 "百妖协议收拢全部军令、物资与预备队；没有势力独占战果，也没有部队被遗弃在后方。\n\n§Y消耗：§!支援装备80＋指挥点30\n§Y效果：§!若X<T：X←floor((X+T)/2)+12；否则+10\n§Y使用后 X：§![?KYO_lunar_preview_20|0]\n持有无偿令时，本战术不消耗资源。"
+
+ KYO_lunar_slot_tactic_20:0 "§Y20§!§W万众一心§!"

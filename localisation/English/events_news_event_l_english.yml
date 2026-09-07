@@ -1,0 +1,273 @@
+﻿l_english:
+
+
+   
+ kyo_news.1.t:0 "Legendary aliens suddenly appear on Japanese soil"
+ kyo_news.1.d:0 "Urgent dispatch from headquarters: Today, a large number of legendary, otherworldly creatures, existing only in rumors, broke through an unknown barrier, appearing on Japanese soil and attacking cities. The Imperial Household and high-ranking government officials are shocked and thrown into disarray; security, transportation, and social order are all in turmoil, and Japan is plunged into unprecedented chaos."
+ kyo_news.1.a:0 "Youkai? Youkai are real?"
+
+ kyo_news.2.t:0 "The youkai army is engaged in battle with the Imperial Army."
+ kyo_news.2.d:0 "Urgent dispatch from this newspaper: Large-scale battles against an alien army have broken out on various fronts across Japan. Witnesses claim that this army, composed of countless non-human beings, is not a rabble, but an armed group with clear command, organization, and objectives. Fragmentary intelligence from the front lines suggests that they seem to be under the common command of a great youkai named Yukari Yakumo.\n\n The military has not yet fully grasped the origins, ecology, and combat methods of these monsters, but it is certain that this is not a simple disturbance, but a war waged for survival. If their offensive cannot be contained as soon as possible, the fate of the Imperial homeland may face an extremely difficult situation."
+ kyo_news.2.a:0 "The situation is deteriorating."
+
+ kyo_news.3.t:0 "Bunbunmaru Newspaper Breaking News: Empire Collapses, Emperor Exiled! The Youkai Nation Shakes the World!"
+ kyo_news.3.d:0 "【Bunbunmaru Newspaper / Aya Shameimaru — Special Report】\n\n Dear readers, please remember this day. From this moment on, the Japanese Empire is no longer the nation that could decide its fate with its army and steel.\n\n After continuous warfare, the Imperial Army finally suffered a complete defeat. The great Youkai army, unified by Yukari Yakumo, has seized control of the archipelago, and the Emperor, who once sat high on the throne, has fled the mainland and gone into exile at the last moment. The human nations that once thought they could control everything have now witnessed firsthand just how terrifying it is when the Youkai are no longer just legends, but organizations, armies, and regimes.\n\n The world's reactions were even faster than the artillery fire on the battlefield. Shock, fear, uncertainty, and speculation overwhelmed the newly established Youkai regime overnight. Multiple countries urgently dispatched envoys and observation teams to attempt initial contact with the new authorities. They wanted to know how these inhuman victors intended to rule this land; and even more so, whether Youkai's victory would end in Japan."
+ kyo_news.3.a:0 "A new era has begun."
+
+kyo_news.4.t:0 "Extra from “Bunbunmaru Newspaper”: The New the Great Hakurei Barrier Project Officially Commences!"
+kyo_news.4.d:0 "Dear readers, the new the Great Hakurei Barrier project, overseen by Yukari Yakumo, officially commences today.\nThe damage to the old Great Hakurei Barrier can no longer be resolved through simple repairs, and the war has expanded the scope of the fantasy world far beyond what it once was. Mountains, cities, ley lines, and a large number of newly emerging youkai energy reactions must all be recalculated. The Yakumo family therefore decided to abandon the existing structure meant to prolong life and instead establish a new boundary sufficient to cover Gensokyo and the Japanese archipelago.\n\n The first survey team has already departed. Kappa and Yamawaro will be responsible for the engineering and equipment, while local temples, shrines, Youkai forces, and residents are required to assist in identifying ley lines, roads, and suitable locations for anchor points.\n\n In the coming months, numerous torii gates, ritual bases, and observation facilities will appear throughout the archipelago.\n\n Please note that these are not decorations. Each anchor point will become part of the new boundary. Once completed, Japan's mountains, cities, coastlines, and the original land of Gensokyo will, for the first time, be connected under the same boundary.\n\n Yukari Yakumo has not announced a specific completion date. This is not surprising—after all, what we are doing is not building a railway, but redefining “where Gensokyo ends.”\n\n At least from today onwards, this question no longer exists only on paper."
+kyo_news.4.a:0 "A new boundary begins with the first anchor point."
+
+
+   kyo_news.5.t:0 "Bunbunmaru Newspaper Flash: Street Speech in Seija, Protests Sweep Through Gensokyo!"
+ kyo_news.5.d:0 "【Bunbunmaru Newspaper / Aya Shameimaru — Special Report】\n\n Dear readers, the streets have been anything but quiet lately. Seija Kijin, with her mouth that's best at turning order into a joke, is traveling throughout Gensokyo, giving speeches to the lower-class Youkai and humans. She's very direct: the war is over, but the weak Youkai's stomachs aren't fuller, their roofs aren't more stable, and even the “vanishing” shadow still hangs over them. So more and more people are taking to the streets, chanting slogans, waving banners, and directing their anger at the new regime led by the Great Sage Yukari Yakumo.\n\n Most interestingly, this unrest isn't just limited to the Youkai. Even the previously silent humans have begun to join the fray, speaking out about rations, security, and whether there's any hope for tomorrow. Seija's greatest strength has never been providing answers, but rather articulating what others feel is “not right.” Whether this spark will ignite reform or another upheaval—let's wait and see."
+ kyo_news.5.a:0 "The winds are blowing in the streets."
+
+  kyo_news.6.t:0 "Bunbunmaru Newspaper Special Report: Byakuren Hijiri reappears, bringing life to the vulnerable."
+ kyo_news.6.d:0 "【Bunbunmaru Newspaper / Aya Shameimaru — Special Report】\n\n Dear readers, if you've recently seen people distributing food, medicine, and sheltering displaced people in villages, abandoned roads, temporary shelters, or even forgotten corners, it's probably not a coincidence.\n\n Those were people from the Myouren Temple, and standing at the forefront of this line was none other than Byakuren Hijiri, who had been sealed away for so long for sheltering youkai and preaching Buddhism.\n\n Her return wasn't just to recite scriptures. Byakuren was personally leading the disciples and followers of the Myouren Temple, delivering food, medicine, tools, and shelter to various places. Those weak youkai, who had been driven to the brink by war, hunger, and “disappearance,” finally had a place to breathe; and those humans, also caught in the chaos, saw for the first time on this increasingly cold land a power beyond mere conscription and command.\n\n More importantly, Byakuren kept repeating the same sentence: humans and youkai should not be bound together solely by fear. She was clearly serious—serious enough to be willing to put herself back into the eye of the storm, to fight for a path of reconciliation for this era."
+ kyo_news.6.a:0 "At least, someone is still willing to reach out."
+
+   kyo_news.7.t:0 "“Bunbunmaru Newspaper” Underground Observation: Satori Komeiji Doesn't Ask Who Wins, Only Who Dares to Reach In"
+ kyo_news.7.d:0 "【Bunbunmaru Newspaper / Aya Shameimaru — Special Report】\n\n Flags on the surface change one after another, but the underground shows little interest in cheering for anyone. Satori Komeiji of the Palace of the Earth Spirits makes this clear: she doesn't care who wins. Whether it's a sage, a rebel, or a revolutionary, as long as the final victor doesn't reach into the territory she controls, and doesn't drag the underground into their order, that's enough.\n\n This isn't cold-bloodedness, but a very realistic awareness of boundaries. The Palace of the Earth Spirits has seen too much excitement on the surface, which ultimately becomes the residue the underground has to clean up. She didn't believe in slogans or any “new future”; she only believed that control must be in her own hands. Anyone who tried to use war as a pretext to force their rule underground would be the one to truly make the Palace of the Earth Spirits speak."
+ kyo_news.7.a:0 "The underground has its own rules."
+
+ kyo_news.8.t:0 "Bunbunmaru Newspaper: Forest Notes: The Fairies Don't Understand Why They Have to Fight After Winning"
+ kyo_news.8.d:0 "【Bunbunmaru Newspaper / Aya Shameimaru — Special Report】\n\n If you were to ask who was most confused in this civil war, the answer would likely make many important figures lose face—it was the fairies.\n\n They truly didn't understand. They didn't understand why the war started, nor did they understand why, even after winning and driving out the outsiders, everyone still held up flags and continued to fight, continue to argue, and continue to point knives at their own people.\n\n For the fairies, victory should have been a celebration, a time for play, a chance to finally breathe a sigh of relief and fly around freely. But what they see now is more patrols, more arguments, and more gloomy faces. They don't understand power reshuffling or factional struggles; they only know: if even winning can't improve their lives, then what is the point of this war? To put it bluntly, even the youngest fairy is probably closer to the core issue than some of the higher-ups."
+ kyo_news.8.a:0 "Even the fairies can see something's wrong."
+
+ kyo_news.9.t:0 "Special Feature in “Bunbunmaru Newspaper”: Why Youkai Mountain Still Needs to Prepare for War"
+ kyo_news.9.d:0 "【Bunbunmaru Newspaper / Written by Megumu Iizunamaru】\n\n Youkai Mountain doesn't want to be involved in this conflict. For Tengu, the ideal situation has never been to escalate the war, but to maintain borders, preserve strength, and ensure the continued stable operation of order in the mountains. Every mobilization, every allocation of resources, and every contraction of defenses brought about by civil war weakens the forces that should be used to protect the mountains and maintain society. If war could be avoided, that would be best.\n\n But unfortunately, the situation will not bypass Youkai Mountain simply because of our restraint. Once war approaches, air routes, outposts, intelligence lines, and the safety of the mountain people cannot remain unaffected. Tengu may choose not to actively seize others' flags, but it cannot stand idly by and watch others decide its fate. Since non-participation is no longer an option, only one thing remains: to defend everything that must be defended at the lowest possible cost. This is not ambition, but responsibility."
+ kyo_news.9.a:0 "Avoiding war does not equate to abandoning defense."
+
+ kyo_news.10.t:0 "Bunbunmaru Newspaper > Bamboo Forest Rumors: Eientei Doesn't Care About the World, Only Hopes the War Won't Reach Their Doorstep"
+ kyo_news.10.d:0 "【Bunbunmaru Newspaper / Aya Shameimaru — Special Report】\n\n While the fighting rages outside, the Bamboo Forest of the Lost remains utterly silent. Eientei's attitude is actually simpler than many people think: Eirin Yagokoro and Kaguya Houraisan have no intention of taking sides. They have no interest in fighting for world domination, nor do they want to pay the price for anyone's ideals. For them, as long as the war doesn't spread to the bamboo forest, doesn't disrupt Eientei's order, and doesn't bring trouble all the way to their doorstep, that's enough.\n\n This indifference might be unpleasant, but frankly speaking, Eientei has never been a place that would easily change its pace for the sake of the outside world's conflicts. They will see, they will hear, and they will prepare necessary responses, but that doesn't mean they care about who wins or loses. Whether the world is in chaos or heroes rise up, as long as they aren't dragged into it, the moonlight deep in the bamboo forest will remain unchanged."
+ kyo_news.10.a:0 "Don't bring the flames of war into the bamboo forest."
+
+ kyo_news.11.t:0 "Higan's report in “Bunbunmaru Newspaper”: Eiki Shiki faces mountains of death, only helplessness remains."
+ kyo_news.11.d:0 "【Bunbunmaru Newspaper / Aya Shameimaru — Special Report】\n\n The place where war doesn't lie the most is, in the end, the dead.\n\n The most common sight in the Ministry of Right and Wrong these days isn't debate, nor the solemnity of the courtroom, but rather one death record after another being brought to the table. Eiki Shiki faced the ever-piling stacks of documents, reviewing names, causes of death, karmic consequences, and sins, as if the entire civil war had been compressed into cold pages of paper and handed to her.\n\n She understood, of course, where the situation was heading, and she could see how much folly, obsession, and avoidable sacrifice were involved. But her helplessness lay precisely there—she could judge the good and evil of the dead, but she couldn't rewrite the choices of the living. So she could only continue sitting at her desk, watching more names arrive, watching the situation slide inch by inch. Higan knew everything, yet couldn't stop the war in the mortal world; this was perhaps the most ironic aspect of this war."
+ kyo_news.11.a:0 "Death continues to arrive."
+
+  kyo_news.12.t:0 "“Bunbunmaru Newspaper” Netherworld Urgent Report: Hakugyokurou is almost overflowing with war dead?"
+ kyo_news.12.d:0 "【Bunbunmaru Newspaper / Aya Shameimaru — Special Report】\n\n Dear readers, if you still think war is only a matter on Earth, you are being too naive. Hakugyokurou has recently been receiving not flower-viewing visitors or lost souls, but a seemingly endless stream of new dead. The surge in ghosts has disrupted the once peaceful Netherworld, leaving it without a moment's tranquility.\n\n According to reliable sources, Yuyuko Saigyouji is now so busy she barely has time to eat. Yes, the very same Netherworld master who usually loves to talk about banquets, snacks, and leisure is now being dragged into an endless cycle of placement, distribution, and disposal of the dead. The cherry blossoms under Hakugyokurou are no longer just an elegant scene, but rather a final destination brutally filled with war.\n\n But more chilling than the sheer number of cases is the significance behind it: every day the civil war drags on, Netherworld grows heavier. While the living are still arguing about who should rule Gensokyo, the dead have already delivered the consequences to Hakugyokurou's doorstep in droves."
+ kyo_news.12.a:0 "The death toll continues to rise."
+
+ kyo_news.13.t:0 "Bunbunmaru Newspaper: Village Observations: Keine urges everyone to close doors and windows tightly and wait for the storm to pass on its own."
+ kyo_news.13.d:0 "【Bunbunmaru Newspaper / Aya Shameimaru — Special Report】\n\n Human Village has been unusually quiet lately.\n\n There are fewer stalls on the streets, the lights are dim at night, children no longer run outside freely, and adults speak in hushed tones while nailing doors even tighter. The reason, as you can probably guess, is that in this situation, there's very little that ordinary humans can do.\n\n Keine Kamishirasawa is now focusing almost all her energy on one thing: preventing the surviving humans from being dragged into this ever-growing disaster. She asked the residents to keep their doors and windows closed, reduce going out, and stop unnecessary gatherings, to stay indoors and weather the storm. It didn't sound honorable, did it? But it was the last bit of stability she could secure for Human Village.\n\n Keine understood, of course, that simply hiding wouldn't solve the problem. But when outside was a chaotic civil war, a power struggle, and widespread panic, a teacher could often only keep the doors closed for her students and villagers. As for when the storm outside would end—unfortunately, that was probably beyond Human Village's control."
+ kyo_news.13.a:0 "Close the doors first."
+
+ kyo_news.14.t:0 "“Bunbunmaru Newspaper” Revisiting Old Issues: Remilia was never a new idea; she just waited until today."
+ kyo_news.14.d:0 "【Bunbunmaru Newspaper / Aya Shameimaru — Special Report】\n\n \n\n Some people see Scarlet Devil Mansion's current actions as a spur-of-the-moment decision after the situation spiraled out of control. Unfortunately, this view is both naive and short-sighted. Remilia Scarlet's interest in Gensokyo is not a recent development.\n\n According to old secrets, this vampire heiress wasn't there as a guest when she first stepped into Gensokyo. She wanted to seize this land, to crush the rules of Yukari Yakumo and the sages, and to turn Gensokyo directly into Scarlet Devil Mansion's territory. And the result? She lost, and not in a dignified way. The truly interesting part comes later—Yukari Yakumo didn't kill her; instead, she spared her. It was because of this that Remilia left behind a reluctant promise: she would no longer cause trouble for Gensokyo.\n\n But now, the situation is different. Yukari Yakumo is dead, the old promises have lost their original object, and the young lady of Scarlet Devil Mansion naturally no longer intends to adhere to past boundaries. In other words, this isn't a sudden surge of ambition, but rather an old thought suppressed for many years finally finding its moment to resurface. Dear readers, the bells of Scarlet Devil Mansion never ring without reason—this time is no exception."
+ kyo_news.14.a:0 "Old scores are now being recalculated."
+
+ kyo_news.15.t:0 "Special report from “Bunbunmaru Newspaper”: Byakuren Hijiri, returning from the seal, is bringing compassion back to the battlefield."
+ kyo_news.15.d:0 "【Bunbunmaru Newspaper / Aya Shameimaru — Special Report】\n\n Dear readers, the winds blowing in Myouren Temple lately are quite different from elsewhere.\n\n While various regions were busy vying for power or holding knives to each other's throats, Byakuren Hijiri, rumored to have been sealed away for a thousand years for sheltering Youkai and preaching Buddhism, had returned to the public eye.\n\n However, she was no mere chanting abbot. Byakuren brought back not empty words, but food, medicine, tools, shelter, and a path for both humans and youkai to continue living. Those little Youkai who were nearly driven to the brink by war, hunger, and oblivion were now being sheltered one by one by Myouren Temple.\n\n More importantly, she had no intention of bowing to the old order, nor of handing Gensokyo over to vampires who ruled with fear. Byakuren was gathering followers to resist tyranny, spread Buddhism, and try to pull this era, torn apart by hatred, back to the concept of “coexistence.” Sounds difficult? Of course it is. But there are very few people willing to seriously pursue this cause these days."
+ kyo_news.15.a:0 "Compassion can also become a banner."
+
+ kyo_news.16.t:0 "“Bunbunmaru Newspaper” Street Edition: Sekibanki Says, the Weak Don't Survive to Be Cannon Fodder"
+ kyo_news.16.d:0 "【Bunbunmaru Newspaper / Aya Shameimaru — Special Report】\n\n Dear readers, compared to those big shots who always stand on high and talk about the future, I've recently been more interested in hearing what people on street corners and by the water are saying. For example, Sekibanki. She says she's never been some great youkai, not strong enough, and not bold enough to hurt anyone; most of the time, she just mingled among humans, selling fish that Wakasagihime caught from the water with Kagerou Imaizumi, barely making ends meet. That's not the life of a hero, just the way a weak youkai tries not to be squeezed out of the world.\n\n Later, youkai began to disappear. Sekibanki said she watched helplessly as those weaker than herself faded away, and so she believed Yukari Yakumo's rhetoric—that as long as war was waged outwards, as long as respect was regained, perhaps they, the common people, would have a glimmer of hope. And what happened? Those pushed to the front lines first were precisely the most easily discarded, the least valuable. Common people were the ones who took the bullets, the ones who filled the gaps, and the ones who died nameless.\n\n And the most ironic thing was that after the war, nothing really got better. The disappearance wasn't completely resolved, and life didn't return to a state where people could sell fish and live peacefully. Kagerou's temper grew increasingly fierce, Wakasagihime maintained her gentle yet aggrieved tone, while Sekibanki spoke most bluntly: if after victory, the weak are still only used to exchange for order, then what difference is there between such an order and a slower form of annihilation?"
+ kyo_news.16.a:0 "Even the weak remember who pushed them up first."
+
+ kyo_news.17.t:0 "“Bunbunmaru Newspaper” Final Report: Myouren Temple Ceases Resistance, Byakuren and Shou Wars Die During Retreat"
+ kyo_news.17.d:0 "【Bunbunmaru Newspaper / Aya Shameimaru — Special Report】\n\n Myouren Temple finally reached their breaking point.\n\n Facing forces several times their size and an increasingly narrow escape route, Byakuren Hijiri ordered all units to cease direct resistance and prioritize the evacuation of the wounded, followers, and civilians from the battlefield. She knew very well that continuing the fight would only result in more deaths in a battle with no chance of victory.\n\n But Byakuren themselves did not retreat. Nor did Shou Toramaru.\n\n According to the last survivors to escape, Byakuren and Shou personally stayed behind to cover the rear, maintaining order and protecting the others as they crossed the fire line. It wasn't a graceful rearguard action, but rather volleys of gunfire that relentlessly slammed people to the ground. Byakuren was hit first; Shou tried to pull her up, but the next volley swept them both down at the crossroads.\n\n When the remnants of Myouren Temple finally broke free of the encirclement, only the abbess, who would never rise again, and the disciple who had always stood by her side remained. Dear readers, mercy didn't win, but at least they allowed more people to escape alive."
+ kyo_news.17.a:0 "The flag of Myouren Temple has fallen."
+
+ kyo_news.18.t:0 "“Bunbunmaru Newspaper” Follow-up Report: Seija's Defeated and Missing, the Rebellion's Sparks Move to Remote Areas"
+ kyo_news.18.d:0 "【Bunbunmaru Newspaper / Aya Shameimaru — Special Report】\n\n \n\n Did Seija Kijin lose? If you're asking about the main battlefield, the answer is probably yes. She failed to hold her territory, failed to overthrow all those high-ranking figures, and those who had gathered under her banner scattered after a series of defeats. But if you're asking whether she'll just admit defeat—oh dear, that would be underestimating her.\n\n Latest news indicates that after her main force collapsed, Seija has completely retreated into the shadows, no longer trying to maintain a decent battle line, but instead breaking up her remaining usable forces into smaller, more elusive shadows, burrowing into mountain roads, abandoned villages, borderlands, and places with poor transportation. She no longer has the ability to fight a decent major battle, but she has a knack for making the victors sleepless every night.\n\n Burning warehouses, intercepting squads, destroying road signs, spreading rumors, inciting resentment among the lowest ranks—Seija was adept at these kinds of things. Her revolution didn't win, but she left behind the message of “don't let them get away with it.” In other words, the battlefield was over, but the trouble hadn't yet begun."
+ kyo_news.18.a:0 "Seija isn't dead yet."
+
+ kyo_news.19.t:0 "“Bunbunmaru Newspaper” Border Secret Report: Ran is seriously injured and unconscious; Chen takes her into the gap."
+ kyo_news.19.d:0 "【Bunbunmaru Newspaper / Aya Shameimaru — Special Report】\n\n The final collapse of the Yakumo clan's remnants was quieter than many had imagined. There were no heroic slogans, no desperate displays of strength, only a unit that had been repeatedly breached and could no longer support the entire battle line, barely maintaining a semblance of order on the verge of rout.\n\n And the most concerning news in this defeat undoubtedly came from Ran Yakumo. Frontline witnesses said that Ran was severely wounded while covering the retreat and never woke up after collapsing. She didn't die on the spot, but there was no sign that she could resume commanding the troops. As for Chen—that girl seemed more like someone who hadn't given up than anyone else. Someone saw her almost dragging Ran along, dodging pursuers, and finally disappearing in front of an extremely unstable crack.\n\n Yes, they hid in the gap.\n\n This doesn't seem like a dignified retreat; it's more like a temporary hideout after being driven to the brink. Don't be too quick to laugh; the most dangerous aspect of the Yakumo family's troubles is that what you think is over is actually just temporarily invisible. Ran remains calm in her coma, while Chen guards in the darkness, perhaps not waiting for peace, but for the next opportunity to reach out again."
+ kyo_news.19.a:0 "They haven't truly left the stage yet."
+
+ kyo_news.20.t:0 "“Bunbunmaru Newspaper” Final Extra: Remilia's Demise, Scarlet's Death is Gone"
+ kyo_news.20.d:0 "【Bunbunmaru Newspaper / Aya Shameimaru — Special Report】\n\n The final chapter of Scarlet Devil Mansion has finally arrived.\n\n According to the final battlefield records, Remilia Scarlet, after the defeat was inevitable, did not continue searching for an escape route. As if finally accepting her impending doom, she fled into the ruins of what could still be called a position, tearing through layer after layer of advancing troops. The casualties she inflicted in a short period were enough to silence any victor for a time after the battle.\n\n But even the most terrifying monster could not withstand the relentless barrage of gunfire. As the encirclement tightened, volleys of rifle fire pressed down, flashes of fire, smoke, and blood mingling together, grinding even monsters to dust. When someone finally found her among the piles of corpses and spent shell casings, they did not find a mangled body, but rather the still-majestic corpse of a vampire.\n\n How fitting for her ending. Magnificent, cruel, and utterly devastating. Dear readers, the red moon has set, but before it fell, it still dyed the entire night red."
+ kyo_news.20.a:0 "The red moon has finally fallen."
+
+  kyo_news.21.t:0 "Bunbunmaru Newspaper: Final Observation: The red moon won, but what will Gensokyo become?"
+ kyo_news.21.d:0 "【Bunbunmaru Newspaper / Aya Shameimaru — Special Report】\n\n The civil war is over, and the last one standing is Remilia Scarlet.\n\n The flag of Scarlet Devil Mansion flies high, the streets are reorganized into her order, and the army, rations, workshops, and territories are being brought into the palm of that vampire heiress at a familiar yet dangerous speed. She never hid her thoughts: the weak need to be ruled, chaos needs to be quelled, and those truly qualified to set the rules for the world should not be the majority, but only the one noble enough, powerful enough, and daring enough to issue commands.\n\n The question is, can Gensokyo truly withstand this victory? Remilia's rule will certainly be efficient and impressive. Roads will be more orderly, orders more explicit, rebels will disappear faster, and everyone will learn to look up in the same direction in a shorter time. But dear readers, is this order a new future, or a vast cage shrouded in red mist, where only looking up is permitted, no questioning allowed?\n\n She won; that's a fact everyone can see. But where will she take Gensokyo—to a truly lasting empire, or to a night that only grows quieter, more orderly, and more suffocating? The red moon has risen; whether it will illuminate the path or paint everyone the same color remains to be seen."
+ kyo_news.21.a:0 "Under the red moon, no one can pretend not to see."
+
+ kyo_news.22.t:0 "“Bunbunmaru Newspaper” Post-War Special Report: Byakuren have won, but will peace truly follow?"
+ kyo_news.22.d:0 "【Bunbunmaru Newspaper / Aya Shameimaru — Special Report】\n\n Byakuren Hijiri has won this civil war. For many, this is probably the least bad of the four answers, and the most like “hope.” The banner of the Myouren Temple was not raised by bloodline, nor by aristocratic authority, but by sheltering, providing food, preaching, escorting, and repeatedly lifting the weak from the ground. The future Byakuren speaks of isn't about forcing anyone to kneel, but about ensuring the survival of both humans and Youkai, where the strong no longer treat the weak as disposable pawns.\n\n But that's precisely the problem. Talking about peace is easy, but leading a group of people who have just fought a civil war, whose hands are still stained with blood, towards peace is anything but. Those who support vampires won't suddenly believe in compassion, those from the lower classes who chanted slogans with Seija won't abandon their doubts because of a few words of Buddhism, and the old wounds that have been torn apart time and again between humans and Youkai won't heal on their own.\n\n Byakuren can reach out, but she can't make everyone forget. Therefore, dear readers, the real question now isn't “Is Byakuren a good person?” Of course she is, excessively so. The real question is: in an era that has learned to speak with guns and hatred, will someone who constantly speaks of peace be proven by time, or will she be worn down by it? The bells of Myouren Temple have rung, but what follows is reconciliation, or another, slower, more arduous pilgrimage? This is what everyone must face."
+ kyo_news.22.a:0 "Hope is never the easiest path."
+
+ kyo_news.23.t:0 "Extra from “Bunbunmaru Newspaper”: Seija wins, Gensokyo is finally turned upside down."
+ kyo_news.23.d:0 "【Bunbunmaru Newspaper / Aya Shameimaru — Special Report】\n\n Seija Kijin won.\n\n Yes, you read that right. The one who ultimately overturned the old order wasn't the most ostentatious bigwigs, nor the remnants of the sages who were best at writing rules into laws, but the one who loved to stand high and mock all solemn slogans—the Amanojaku. Those who followed her to the end were mostly not the strongest, but rather the grassroots, those who had been oppressed for too long, and a group of people from the bottom who finally decided to stop being stepping stones for others.\n\n This certainly meant change, and not the kind of change that was simply a matter of changing a flag or a group of officials. What Seija brought was never stability, but questioning; not simply cleaning up the old order and continuing to use it, but forcing everyone to admit that the old system was built on a distribution of who deserved to be well-off and who should have silently disappeared. For those who had always lived at the bottom, this victory was like a crack that had finally shattered the ceiling.\n\n But what lay beyond the crack? That was the most unsettling part. Would Seija lead Gensokyo to a new world truly belonging to the weak, or to a place that would forever overturn tables and never allow any order to settle down? Her greatest strength was igniting fires, not finishing them; her greatest strength was exposing, not appeasing. Now that she has truly won, everyone must confront a question no one can answer definitively—that day, the youkai were no longer merely opponents, but had become the helmsmen; where would Gensokyo ultimately be led?"
+ kyo_news.23.a:0 "It wasn't just the throne that was overturned."
+
+ kyo_news.24.t:0 "Post-war communique from “Bunbunmaru Newspaper”: The rebellion has been suppressed, but what will the future hold for the Yakumo family?"
+ kyo_news.24.d:0 "【Bunbunmaru Newspaper / Aya Shameimaru — Special Report】\n\n The civil war is over, and victory has fallen into the hands of the Yakumo faction.\n\n The official statement is not complicated: the rebellion has been suppressed, and Gensokyo has returned to “correct order.” Those once fragmented banners have been felled one by one, local armed forces have been disbanded, reorganized, or purged, and the central command chain has been stitched back together. Many breathed a sigh of relief—at least from today onward, they no longer had to worry about waking up tomorrow to find out whose flag was flying over their heads.\n\n But dear readers, don't forget, this isn't the era where everything could be placed on the name of Yukari Yakumo. Now, those thrust into the forefront are her successors; and standing behind that child is the still calm, still precise, and still convinced that order must survive first—the Ran. Their victory resembles a “correction,” but precisely because of this, everyone is watching: is this restoration or continuation? Is it making the old system more stable, or is it pushing those grievances that should have been addressed back under the table once more?\n\n The rebellion did fail, but the problems didn't die with it. How will the weak and vulnerable survive? How will humanity be resettled? How much room for maneuver do the various factions have left? Will the future rely on authority, on systems, or on something more convincing? These questions remain unanswered. The Yakumo family's victory has temporarily calmed Gensokyo, but what will follow this calm is what everyone truly wants to know."
+ kyo_news.24.a:0 "The rebellion is over, but the answer is still unknown."
+
+ kyo_news.25.t:0 "Both newspapers simultaneously turned..."
+ kyo_news.25.d:0 "Today, both *Bunbunmaru Newspaper* and *Kakashi Spirit News* published lengthy reports about the Myouren Temple.\n\n In the article, Aya Shameimaru admits that she initially entered the Myouren Temple not to understand it, but to find its weaknesses. She wanted to find the hypocrisy of Byakuren, the disciples' lack of control, the loopholes in the accounts, and leverage that would give the tengu community the upper hand in negotiations.\n\n However, what she ultimately wrote was something else entirely.\n\n “What I saw was not perfection,” the article concludes. “There are too many troublesome people, too many unhealed wounds, too much goodwill that could easily go wrong in the Myouren Temple. But they didn't hide these things. They acknowledged the cracks and then patched them up inch by inch. If this is also hypocrisy, then there is nothing real in this world worth believing in.”\n\n Hatate Himekaidou published several photos in the *Kakashi Spirit News*: Kyouko helping a fallen child up, a dust-covered worker repairing a beam, Nazrin coldly handing over excess medicine to a patient, and Shou standing guard at the door for a weary reporter in the night.\n\n She wrote: “Photographs don't lie. At least this time, I didn't photograph saints, but a group of clumsy, tired, but genuinely caring people.”\n\n Neither newspaper portrayed Myouren Temple as a flawless sanctuary.\n\n And it was precisely because of this that many tengu began for the first time to believe that Byakuren's compassion was not just a slogan, but a struggling reality."
+ kyo_news.25.a:0 "The wind is changing direction."
+
+
+
+ kyo_news.26.t:0 "News Event 26"
+ kyo_news.26.d:0 "Enter the news article from kyo_news.26 here."
+ kyo_news.26.a:0 "Worth watching."
+
+ kyo_news.27.t:0 "News Event 27"
+ kyo_news.27.d:0 "Enter the news article from kyo_news.27 here."
+ kyo_news.27.a:0 "Worth watching."
+
+ kyo_news.28.t:0 "News Event 28"
+ kyo_news.28.d:0 "The news report for kyo_news.28 goes here."
+ kyo_news.28.a:0 "Worth watching."
+
+ kyo_news.29.t:0 "News Event 29"
+ kyo_news.29.d:0 "Enter the news article from kyo_news.29 here."
+ kyo_news.29.a:0 "Worth watching."
+
+ kyo_news.30.t:0 "News Event 30"
+ kyo_news.30.d:0 "Enter the news article titled kyo_news.30 here."
+ kyo_news.30.a:0 "Worth watching."
+
+ kyo_news.31.t:0 "News Event 31"
+ kyo_news.31.d:0 "Enter the news article from kyo_news.31 here."
+ kyo_news.31.a:0 "Worth watching."
+
+ kyo_news.32.t:0 "News Event 32"
+ kyo_news.32.d:0 "Enter the news article from kyo_news.32 here."
+ kyo_news.32.a:0 "Worth watching."
+
+ kyo_news.33.t:0 "News Event 33"
+ kyo_news.33.d:0 "The news report for kyo_news.33 goes here."
+ kyo_news.33.a:0 "Worth paying attention to."
+
+ kyo_news.34.t:0 "News Event 34"
+ kyo_news.34.d:0 "Enter the news text of kyo_news.34 here."
+ kyo_news.34.a:0 "Worth paying attention to."
+
+ kyo_news.35.t:0 "News Event 35"
+ kyo_news.35.d:0 "Enter the news text of kyo_news.35 here."
+ kyo_news.35.a:0 "Worth paying attention to."
+
+ kyo_news.36.t:0 "News Event 36"
+ kyo_news.36.d:0 "Enter the news text of kyo_news.36 here."
+ kyo_news.36.a:0 "Worth paying attention to."
+
+ kyo_news.37.t:0 "News Event 37"
+ kyo_news.37.d:0 "Enter the news text of kyo_news.37 here."
+ kyo_news.37.a:0 "Worth paying attention to."
+
+ kyo_news.38.t:0 "News Event 38"
+ kyo_news.38.d:0 "Enter the news text of kyo_news.38 here."
+ kyo_news.38.a:0 "Worth paying attention to."
+
+ kyo_news.39.t:0 "News Event 39"
+ kyo_news.39.d:0 "Enter the news text of kyo_news.39 here."
+ kyo_news.39.a:0 "Worth paying attention to."
+
+ kyo_news.40.t:0 "News Event 40"
+ kyo_news.40.d:0 "Enter the news text of kyo_news.40 here."
+ kyo_news.40.a:0 "Worth paying attention to."
+
+ kyo_news.41.t:0 "News Event 41"
+ kyo_news.41.d:0 "Enter the news text of kyo_news.41 here."
+ kyo_news.41.a:0 "Worth paying attention to."
+
+ kyo_news.42.t:0 "News Event 42"
+ kyo_news.42.d:0 "Enter the news text of kyo_news.42 here."
+ kyo_news.42.a:0 "Worth paying attention to."
+
+ kyo_news.43.t:0 "News Event 43"
+ kyo_news.43.d:0 "Enter the news text of kyo_news.43 here."
+ kyo_news.43.a:0 "Worth paying attention to."
+
+ kyo_news.44.t:0 "News Event 44"
+ kyo_news.44.d:0 "Enter the news text of kyo_news.44 here."
+ kyo_news.44.a:0 "Worth paying attention to."
+
+ kyo_news.45.t:0 "News Event 45"
+ kyo_news.45.d:0 "Enter the news text of kyo_news.45 here."
+ kyo_news.45.a:0 "Worth paying attention to."
+
+ kyo_news.46.t:0 "News Event 46"
+ kyo_news.46.d:0 "Enter the news text of kyo_news.46 here."
+ kyo_news.46.a:0 "Worth paying attention to."
+
+ kyo_news.47.t:0 "News Event 47"
+ kyo_news.47.d:0 "Enter the news text of kyo_news.47 here."
+ kyo_news.47.a:0 "Worth paying attention to."
+
+ kyo_news.48.t:0 "News Event 48"
+ kyo_news.48.d:0 "Enter the news text of kyo_news.48 here."
+ kyo_news.48.a:0 "Worth paying attention to."
+
+ kyo_news.49.t:0 "News Event 49"
+ kyo_news.49.d:0 "Enter the news text of kyo_news.49 here."
+ kyo_news.49.a:0 "Worth paying attention to."
+
+ kyo_news.50.t:0 "News Event 50"
+ kyo_news.50.d:0 "Enter the news article titled kyo_news.50 here."
+ kyo_news.50.a:0 "Worth watching."
+ 
+ kyo_news.51.t:0 "The Lunar Capital Declares War on Gensokyo"
+
+ kyo_news.51.d:0 "Today, several major nations simultaneously interrupted their normal broadcasts and issued identical war notices to Gensokyo. The notices referred to Youkai, God, and all life forms inexplicable by the Lunar Capital system as “surface contamination that must be eradicated,” and declared the immediate commencement of full-scale military action.\n\n Following the declaration of war, Lunarians, long hidden within the governments and armies of various nations, openly seized command. Moon Rabbit forces entered cities and military bases, and large quantities of The Moon's weapons were also transported from sealed facilities. The original military command systems of various nations were overwritten, and armies began to converge on Gensokyo-controlled areas.\n\n The Gensokyo coalition immediately entered a state of full-scale war. Yukari Yakumo announced that all parties would jointly resist the surface nations controlled by Lunar Capital and prepared to cross the gap, bringing the war directly to The Moon.\n\n The changes of government, cognitive interference, and covert military expansion that have occurred over the past few years have finally revealed their common origin. Lunar Capital is no longer hiding behind the nations of Earth; a war spanning the Earth's surface and the Moon has begun."
+
+ kyo_news.51.a:0 "The world is recording this moment."
+
+
+ kyo_news.52.t:0 "Lunar Capital's control network on the ground has been dismantled"
+
+ kyo_news.52.d:0 "Today, the last major nation under Lunar Capital's control ceased receiving orders from the Moon. Its military command system regained its independence, and facilities used for transmitting cognitive frequencies and remote military commands across the land were shut down.\n\n With government agencies and secret bases taken over, a large amount of sealed data began to surface. Records show that heads of state and high-ranking military officials from multiple countries were replaced, and officials who opposed Lunar Capital's interference were secretly detained or deleted from public records. The Lunarian forces hidden on the surface, having lost unified command, have successively surrendered or withdrawn.\n\n The Gensokyo coalition thus completed the liberation of the surface front. The controlled nations regained their autonomy, and Lunar Capital lost its main channel for acquiring manpower, industry, and intelligence from Earth.\n\n However, the Moon's defenses have not completely collapsed. The war on the surface is over, but the battle that will determine Lunar Capital's future continues."
+
+ kyo_news.52.a:0 "The world is recording this moment."
+
+
+ kyo_news.53.t:0 "Gensokyo's allied forces achieved victory on the Moon."
+
+ kyo_news.53.d:0 "News from the Moon confirms that the Gensokyo alliance has defeated Lunar Capital's main defenses.\n\n The expeditionary force landed on the Moon Sea through the giant gap behind the Hakurei Shrine, capturing supply nodes, spatial passages, and outer defenses in multiple rounds of battle. The Moon Rabbit's main force was forced to retreat, and the purification barrier, long considered impenetrable, became ineffective with the assistance of Eirin Yagokoro and Ran Yakumo.\n\n The alliance now controls the main roads leading to Lunar Capital, and the Moon's defense system has lost the ability to launch a large-scale counterattack. Gensokyo, who suffered a crushing defeat and retreated in the First Lunar War, have finally stepped onto the walls of Lunar Capital again.\n\n This victory has not automatically ended the remaining fighting on the surface, nor has it determined the post-war political arrangements for Lunar Capital. But it has proven that the pristine city high above the earth is neither inaccessible nor invincible."
+
+ kyo_news.53.a:0 "The world is recording this moment."
+
+
+ kyo_news.54.t:0 "Lunar Capital's purists have lost their dominance"
+
+ kyo_news.54.d:0 "With the simultaneous collapse of the surface control network and the Moon's defenses, the Purifiers, who ruled Lunar Capital, lost all major military and administrative power.\n\n The Purifiers attempted to initiate the final purification, demanding that the garrison burn down the districts contacted by the Allied Forces and destroy Earth's control records. This was rejected by numerous Moon Rabbits, administrators, and Lunar Capital's opposition. The palace control node subsequently opened from within, and the remaining garrison ceased resistance.\n\n The Watatsuki Sisters relinquished command of the Moon's defense forces, and the Purifiers, the extreme military law apparatus, and their affiliated armed forces were disbanded. The Gensokyo Allied Forces accepted the military surrender and declared that they would not collectively punish Lunar Capital residents and ordinary Moon\n\n Rabbits based on their origins. Lunar Capital itself was not destroyed, but the regime that interfered with Earth in the name of purity, eliminated dissent, and decided whether other life had the right to exist has officially ended."
+
+ kyo_news.54.a:0 "The world is recording this moment."
+
+
+ kyo_news.55.t:0 "Eirin and Kaguya return to Lunar Capital to oversee restructuring"
+
+ kyo_news.55.d:0 "After the collapse of the old regime in Lunar Capital, Eirin Yagokoro and Kaguya Houraisan returned to the Moon through the gap opened by Yukari Yakumo and began overseeing post-war reconstruction.\n\n As one of the founders of Lunar Capital's early institutions and city system, Eirin took over medical, judicial, and life support facilities to prevent the administrative system from completely collapsing during the change of regime. Kaguya, as the Moon Princess, organized a transitional council to protect the Moon Rabbit, surface-born individuals, and residents who had been persecuted by the Purification Institute in the past.\n\n The new authorities announced the dissolution of the Purification Institute and the extreme military command system, abolished the system of classifying residents based on their purity level, and continued to dismantle the observation, control, and cognitive interference networks spread across Earth. Lunar Capital's technology, gods, and culture will be preserved, but they must no longer be used to determine whether other worlds are eligible to exist.\n\n Eirin and Kaguya emphasized that their return was not a restoration of the old court, but rather a means to allow Lunar Capital, originally established as a refuge, to truly accommodate those who had been excluded by it for the first time."
+
+ kyo_news.55.a:0 "The world is recording this moment."
+
+
+
+
+   kyo_seija_news.1.t:0 "Lunar Capital Task Force Descends on Earth"
+  kyo_seija_news.1.d:0 "The Moon's army has established occupation zones on Earth. The Moon forces have swiftly seized control of transportation and military nodes and are demanding obedience from surrounding governments. Former rulers willing to cooperate can retain their positions, but diplomacy, military equipment, and key resources will be controlled by Moon officials.\n\n Lunar Capital calls this operation a necessary takeover of Earth's order, while some governments claim that accepting the rule of a higher civilization will prevent even greater casualties. Resistance groups have begun operating in various locations, and a war spanning Earth and the Moon is brewing."
+  kyo_seija_news.1.a:0 "The moon extended its dominion over the entire Earth for the first time."
+  # 事件概况：月都殖民战争公开化的世界新闻，应在月军势力实际生成时触发。
+  # 新闻方向：保持冷静第三人称，强调征服与政治接管，不使用紫线的灭绝或净化设定。
+
+  kyo_seija_news.2.t:0 "Gensokyo declares war on the Moon occupation forces"
+  kyo_seija_news.2.d:0 "The Gensokyo government, led by Seija Kijin, has rejected Lunar Capital's demands for submission and declared its intention to fight alongside all Earth forces resisting the Moon's rule. Gensokyo also issued the “World Flip Decision,” denying Lunar Capital the right to determine the political status of Earth's inhabitants.\n\n Even more surprisingly, Sagume Kishin, a former high-ranking member of Lunar Capital, signed the decision. Lunar Capital immediately labeled this a betrayal and warned that any nation aiding Gensokyo would be considered a hostile force."
+  kyo_seija_news.2.a:0 "The rebels on Earth pointed their spears at the moon."
+  # 事件概况：正邪宣战与探女签署决议合并成一则世界新闻。
+  # 新闻方向：突出地月政治等级受到挑战，以及探女公开倒向地球造成的震动。
+
+  kyo_seija_news.3.t:0 "Rebellious sentiments are spreading within the Moon Rabbit unit"
+  kyo_seija_news.3.d:0 "Lunar Capital's military has acknowledged that several Moon Rabbit units have disobeyed orders, deserted, and concealed acts of resistance. Unauthorized leaflets and copies of Earth broadcasts have also been found in military camps and transport units.\n\n These materials promote an ideology known as flippancy, advocating that those in lower positions have the right to question and overthrow their oppressors. Lunar Capital has launched a large-scale search, while Gensokyo denies establishing a new vassal state of the Moon, claiming that Lunar Capital's future should be decided by local resistance fighters."
+  kyo_seija_news.3.a:0 "Obedience is no longer seen as the only destiny of the Moon Rabbits."
+  # 事件概况：翻转主义传播达到世界可观察规模后的新闻事件。
+  # 新闻方向：让外界第一次确认月都内部出现阶级反抗，避免只写成幻想乡单方面宣传。
+
+  kyo_seija_news.4.t:0 "The Earth-Moon War Turns Against Each Other"
+  kyo_seija_news.4.d:0 "Lunar Capital's near-complete suppression operation suddenly descends into chaos. Multiple Moon Rabbit units defect simultaneously, the Earth Resistance reconnects supply lines, and launches a counterattack against the Moon Army's command nodes.\n\n Outside World cannot confirm whether this reversal stems from intelligence failure, internal mutiny, or some kind of Moon ability. What is certain is that Lunar Capital has lost its previous initiative, and Gensokyo and the Moon Resistance are pushing the battle lines towards Lunar Capital's homeland."
+  kyo_seija_news.4.a:0 "The predicted defeat did not materialize."
+  # 事件概况：探女与正邪共同逆转败局后的世界新闻。
+  # 新闻方向：外界只看见结果，不公开探女能力的完整运作，使私人事件仍保有独特信息。
+
+  kyo_seija_news.5.t:0 "The High Order of Lunar Capital Collapses"
+  kyo_seija_news.5.d:0 "The main institutions of Lunar Capital that maintain the colonial war and bloodline hierarchy have been taken over by the rebels. The lunar forces stationed on Earth lost their legitimate command, and various cooperating governments successively declared their secession from the Moon's control.\n\n Seija Kijin refused to become the new ruler of Lunar Capital and supported the establishment of a new political organization by the moon rabbit, ordinary residents, and anti-war activists. The long-standing hierarchical relationship between Earth and the Moon was thus broken, but where this new order will lead remains unanswered."
+  kyo_seija_news.5.a:0 "The Moon was forced to look up at the beings on Earth."
+  # 事件概况：正邪路线完成后的世界终局新闻，可与超级事件同时触发。
+  # 新闻方向：宣布殖民与等级体系瓦解，同时保留革命之后仍需继续建设的开放结局。
