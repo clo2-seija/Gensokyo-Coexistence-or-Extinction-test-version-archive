@@ -1,0 +1,961 @@
+add_namespace = KYO_inner_circle
+add_namespace = KYO_inner_circle_nazrin
+add_namespace = myouren
+
+
+country_event = {
+	id = KYO_inner_circle.01
+	title = GER_inner_circle.01.t
+	desc = GER_inner_circle.01.desc
+	picture = "[GetAscendingAdvisorPortrait]"
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = KYO_inner_circle_event_pending_flag
+		}
+	}
+
+	option = { #Replace Ascended Advisor 1
+		name = GER_inner_circle.01.a
+
+		ai_chance = {
+			base = 1
+			
+		}
+		
+		KYO_remove_replaced_advisor_1_effects = yes
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		set_variable = { KYO_ascended_advisor_1 = KYO_ascending_advisor }
+		KYO_add_replacing_advisor_effects = yes
+
+		hidden_effect = {
+			#Cleaning vars / flags / etc
+			clear_variable = KYO_ascending_advisor
+			clr_country_flag = KYO_inner_circle_event_pending_flag
+		}
+	}
+	
+
+	option = { #Replace Ascended Advisor 3
+		name = GER_inner_circle.01.c
+
+		ai_chance = {
+			base = 1
+			
+		}
+
+		KYO_remove_replaced_advisor_3_effects = yes
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		set_variable = { KYO_ascended_advisor_3 = KYO_ascending_advisor }
+		KYO_add_replacing_advisor_effects = yes
+
+		hidden_effect = {
+			#Cleaning vars / flags / etc
+			clear_variable = KYO_ascending_advisor
+			clr_country_flag = KYO_inner_circle_event_pending_flag
+		}
+	}
+
+	option = { # Abort - Ditch this advisor
+		name = GER_inner_circle.01.d
+
+		ai_chance = { #AI "knows" what its doing (pffff)
+			base = 0
+		}
+
+		if = {
+			limit = {
+				check_variable = { KYO_ascending_advisor = 1 }
+			}
+			uncomplete_national_focus = {
+				focus = KYO_our_rat_nazrin
+				uncomplete_children = no
+				refund_political_power = yes
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { KYO_ascending_advisor = 2 }
+			}
+			uncomplete_national_focus = {
+				focus = KYO_Ichirin_convert_everyone
+				uncomplete_children = no
+				refund_political_power = yes
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { KYO_ascending_advisor = 3 }
+			}
+			uncomplete_national_focus = {
+				focus = KYO_shou_money_beg
+				uncomplete_children = no
+				refund_political_power = yes
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { KYO_ascending_advisor = 4 }
+			}
+			uncomplete_national_focus = {
+				focus = KYO_murasa_war_army_leader
+				uncomplete_children = no
+				refund_political_power = yes
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { KYO_ascending_advisor = 5 }
+			}
+			uncomplete_national_focus = {
+				focus = KYO_kyouko_spring_time
+				uncomplete_children = no
+				refund_political_power = yes
+			}
+		}
+		else = {
+			log = "Something went terribly wrong with your nazis (no wonder)"
+		}
+
+		hidden_effect = {
+			#Cleaning vars / flags / etc
+			clear_variable = KYO_ascending_advisor
+			clr_country_flag = KYO_inner_circle_event_pending_flag
+
+			clr_country_flag = KYO_inner_circle_cd_flag
+		}
+	}
+}
+
+
+country_event = {
+	id = myouren.1
+	title = myouren.1.t
+	desc  = myouren.1.d
+	is_triggered_only = yes
+	option = { 
+		name = myouren.1.a
+		ai_chance = {
+			base = 5
+			modifier = {
+				KYO={
+					has_army_manpower = {
+						size > 1000000
+					}
+				}
+				factor = 30		
+			}
+			
+		}
+		KYO = {
+			set_autonomy = {
+				target = FROM
+				autonomy_state = autonomy_personal_union 
+			}
+		}
+		
+		
+	}
+	option = { 
+		name = myouren.1.a 
+		ai_chance = {
+			base = 5
+
+			modifier = {
+				KYO={
+					has_army_manpower = {
+						size < 1000000
+					}
+				}
+				factor = 30		
+			}
+			
+		}
+		declare_war_on = {
+			target = KYO
+			type = puppet_wargoal_focus
+		}
+		KYO ={
+			country_event = myouren.2
+		}
+		
+		
+	}
+}
+
+#拒絕與劇烈的反擊
+country_event = {
+	id = myouren.2
+	title = myouren.2.t
+	desc  = myouren.2.d
+	is_triggered_only = yes
+
+	option = { 
+		name = myouren.2.a
+		
+		
+		
+	}
+	
+		
+	
+}
+
+country_event = {
+	id = myouren.3
+	title = myouren.3.t
+	desc = myouren.3.d
+	picture = GFX_report_event_hijiri_2
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.3.a
+
+		country_event = {
+			id = myouren.4
+			days = 14
+		}
+	}
+}
+
+country_event = {
+	id = myouren.4
+	title = myouren.4.t
+	desc = myouren.4.d
+	picture = GFX_report_event_hijiri_2
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.4.a
+
+		country_event = {
+			id = myouren.5
+			days = 14
+		}
+	}
+}
+
+country_event = {
+	id = myouren.5
+	title = myouren.5.t
+	desc = myouren.5.d
+	picture = GFX_report_event_hijiri_9
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.5.a
+
+		country_event = {
+			id = myouren.6
+			days = 14
+		}
+	}
+}
+
+country_event = {
+	id = myouren.6
+	title = myouren.6.t
+	desc = myouren.6.d
+	picture = GFX_report_event_hijiri_2
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.6.a
+
+		country_event = {
+			id = myouren.7
+			days = 14
+		}
+	}
+}
+
+country_event = {
+	id = myouren.7
+	title = myouren.7.t
+	desc = myouren.7.d
+	picture = GFX_report_event_hijiri_2
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.7.a
+
+		country_event = {
+			id = myouren.8
+			days = 14
+		}
+	}
+}
+
+country_event = {
+	id = myouren.8
+	title = myouren.8.t
+	desc = myouren.8.d
+	picture = GFX_report_event_hijiri_2
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.8.a
+
+		country_event = {
+			id = myouren.9
+			days = 14
+		}
+	}
+}
+
+country_event = {
+	id = myouren.9
+	title = myouren.9.t
+	desc = myouren.9.d
+	picture = GFX_report_event_hijiri_2
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.9.a
+
+		hidden_effect = {
+			country_event = {
+				id = myouren.10
+				days = 15
+			}
+		}
+		
+	}
+}
+
+country_event = {
+	id = myouren.10
+	title = myouren.10.t
+	desc = myouren.10.d
+	picture = GFX_report_event_hijiri_2
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.10.a
+	}
+}
+
+#正邪事件鏈
+country_event = {
+	id = myouren.11
+	title = myouren.11.t
+	desc = myouren.11.d
+	picture = GFX_report_event_seija_rebel_2
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.11.a
+		country_event = { id = myouren.12 days = 2 }
+	}
+}
+
+country_event = {
+	id = myouren.12
+	title = myouren.12.t
+	desc = myouren.12.d
+	picture = GFX_report_event_seija_rebel_2
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.12.a
+		country_event = { id = myouren.13 days = 3 }
+	}
+}
+
+country_event = {
+	id = myouren.13
+	title = myouren.13.t
+	desc = myouren.13.d
+	picture = GFX_report_event_seija_rebel_2
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.13.a
+		country_event = { id = myouren.14 days = 5 }
+	}
+}
+
+country_event = {
+	id = myouren.14
+	title = myouren.14.t
+	desc = myouren.14.d
+	picture = GFX_report_event_seija_rebel_2
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.14.a
+		country_event = { id = myouren.15 days = 5 }
+	}
+}
+
+country_event = {
+	id = myouren.15
+	title = myouren.15.t
+	desc = myouren.15.d
+	picture = GFX_report_event_seija_rebel_2
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.15.a
+		country_event = { id = myouren.16 days = 3 }
+	}
+}
+
+country_event = {
+	id = myouren.16
+	title = myouren.16.t
+	desc = myouren.16.d
+	picture = GFX_report_event_seija_rebel_2
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.16.a
+		
+
+		add_ideas =  KYO_seija_redeeming_rebellion
+
+		every_possible_country = {
+			limit = { has_character = gensokyo_Seija}
+				random_character = {
+					limit = { is_character = gensokyo_Seija }
+					set_nationality = ROOT
+				}
+				random_character = {
+					limit = { is_character = gensokyo_wakasagihime }
+					set_nationality = ROOT
+				}
+				random_character = {
+					limit = { is_character = gensokyo_sekibanki }
+					set_nationality = ROOT
+				}
+				random_character = {
+					limit = { is_character = gensokyo_kagerou }
+					set_nationality = ROOT
+				}
+			
+		}
+
+		
+		
+		# TODO: 可在此加入招募正邪為顧問、將領或特殊角色的效果
+	}
+
+	option = {
+		name = myouren.16.b
+
+		add_ideas = KYO_seija_grassroots_restitution
+		
+		# TODO: 可在此加入草根妖怪支援、地方建設或抵抗削減效果
+	}
+}
+
+
+#射命丸文的事件
+country_event = {
+	id = myouren.17
+	title = myouren.17.t
+	desc = myouren.17.d
+	picture = GFX_report_event_hijiri_11
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.17.a
+		country_event = { id = myouren.18 days = 2 }
+	}
+}
+
+country_event = {
+	id = myouren.18
+	title = myouren.18.t
+	desc = myouren.18.d
+	picture = GFX_report_event_hijiri_13
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.18.a
+		country_event = { id = myouren.19 days = 3 }
+	}
+}
+
+country_event = {
+	id = myouren.19
+	title = myouren.19.t
+	desc = myouren.19.d
+	picture = GFX_report_event_hijiri_14
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.19.a
+		country_event = { id = myouren.20 days = 4 }
+	}
+}
+
+country_event = {
+	id = myouren.20
+	title = myouren.20.t
+	desc = myouren.20.d
+	picture = GFX_report_event_hijiri_12
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.20.a
+		country_event = { id = myouren.21 days = 4 }
+	}
+}
+
+country_event = {
+	id = myouren.21
+	title = myouren.21.t
+	desc = myouren.21.d
+	picture = GFX_report_event_hijiri_12
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.21.a
+		country_event = { id = myouren.22 days = 3 }
+	}
+}
+
+country_event = {
+	id = myouren.22
+	title = myouren.22.t
+	desc = myouren.22.d
+	picture = GFX_report_event_hijiri_12
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.22.a
+		add_ideas = KYO_aya_supportive_reporting
+
+		news_event = {
+			id = kyo_news.25
+			days = 3
+		}
+		
+	}
+}
+
+
+
+#响子的事件
+country_event = {
+	id = myouren.23
+	title = myouren.23.t
+	desc = myouren.23.d
+	picture = GFX_report_event_hijiri_10
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.23.a
+		country_event = { id = myouren.24 days = 2 }
+	}
+}
+
+country_event = {
+	id = myouren.24
+	title = myouren.24.t
+	desc = myouren.24.d
+	picture = GFX_report_event_hijiri_7
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.24.a
+		country_event = { id = myouren.25 days = 4 }
+	}
+}
+
+country_event = {
+	id = myouren.25
+	title = myouren.25.t
+	desc = myouren.25.d
+	picture = GFX_report_event_hijiri_6
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.25.a
+		country_event = { id = myouren.26 days = 5 }
+	}
+}
+
+country_event = {
+	id = myouren.26
+	title = myouren.26.t
+	desc = myouren.26.d
+	picture = GFX_report_event_hijiri_8
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.26.a
+		country_event = { id = myouren.27 days = 5 }
+	}
+}
+
+country_event = {
+	id = myouren.27
+	title = myouren.27.t
+	desc = myouren.27.d
+	picture = GFX_report_event_hijiri_5
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.27.a
+		add_ideas = KYO_choujuu_gigaku_wave
+	}
+}
+
+
+#一輪的事件
+country_event = {
+	id = myouren.28
+	title = myouren.28.t
+	desc = myouren.28.d
+	picture = GFX_report_event_hijiri_22
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.28.a
+		country_event = { id = myouren.29 days = 3 }
+	}
+}
+
+country_event = {
+	id = myouren.29
+	title = myouren.29.t
+	desc = myouren.29.d
+	picture = GFX_report_event_hijiri_22
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.29.a
+		country_event = { id = myouren.30 days = 4 }
+	}
+}
+
+country_event = {
+	id = myouren.30
+	title = myouren.30.t
+	desc = myouren.30.d
+	picture = GFX_report_event_hijiri_21
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.30.a
+		country_event = { id = myouren.31 days = 5 }
+	}
+}
+
+country_event = {
+	id = myouren.31
+	title = myouren.31.t
+	desc = myouren.31.d
+	picture = GFX_report_event_hijiri_20
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.31.a
+		country_event = { id = myouren.32 days = 4 }
+	}
+}
+
+country_event = {
+	id = myouren.32
+	title = myouren.32.t
+	desc = myouren.32.d
+	picture = GFX_report_event_hijiri_22
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.32.a
+
+		add_ideas = KYO_ichirin_determination
+	}
+}
+
+#水蜜
+country_event = {
+	id = myouren.33
+	title = myouren.33.t
+	desc = myouren.33.d
+	picture = GFX_report_event_hijiri_16
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.33.a
+		country_event = { id = myouren.34 days = 3 }
+	}
+}
+
+country_event = {
+	id = myouren.34
+	title = myouren.34.t
+	desc = myouren.34.d
+	picture = GFX_report_event_hijiri_15
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.34.a
+		country_event = { id = myouren.35 days = 3 }
+	}
+}
+
+country_event = {
+	id = myouren.35
+	title = myouren.35.t
+	desc = myouren.35.d
+	picture = GFX_report_event_hijiri_13
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.35.a
+		country_event = { id = myouren.36 days = 4 }
+	}
+}
+
+country_event = {
+	id = myouren.36
+	title = myouren.36.t
+	desc = myouren.36.d
+	picture = GFX_report_event_hijiri_13
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.36.a
+		country_event = { id = myouren.37 days = 4 }
+	}
+}
+
+country_event = {
+	id = myouren.37
+	title = myouren.37.t
+	desc = myouren.37.d
+	picture = GFX_report_event_hijiri_18
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.37.a
+		country_event = { id = myouren.38 days = 4 }
+	}
+}
+
+country_event = {
+	id = myouren.38
+	title = myouren.38.t
+	desc = myouren.38.d
+	picture = GFX_report_event_hijiri_19
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.38.a
+		country_event = { id = myouren.39 days = 4 }
+	}
+}
+
+country_event = {
+	id = myouren.39
+	title = myouren.39.t
+	desc = myouren.39.d
+	picture = GFX_report_event_hijiri_23
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.39.a
+		country_event = { id = myouren.40 days = 4 }
+	}
+}
+
+country_event = {
+	id = myouren.40
+	title = myouren.40.t
+	desc = myouren.40.d
+	picture = GFX_report_event_hijiri_3
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.40.a
+		country_event = { id = myouren.41 days = 3 }
+	}
+}
+
+country_event = {
+	id = myouren.41
+	title = myouren.41.t
+	desc = myouren.41.d
+	picture = GFX_report_event_hijiri_17
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.41.a
+		add_ideas = KYO_unidentified_watcher_of_myouren
+		
+	}
+}
+
+
+#白蓮有趣事件
+country_event = {
+	id = myouren.42
+	title = myouren.42.t
+	desc = myouren.42.d
+	picture = GFX_report_event_hijiri_11
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.42.a
+		country_event = { id = myouren.43 days = 2 }
+	}
+}
+
+country_event = {
+	id = myouren.43
+	title = myouren.43.t
+	desc = myouren.43.d
+	picture = GFX_report_event_hijiri_11
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.43.a
+		country_event = { id = myouren.44 days = 3 }
+	}
+}
+
+country_event = {
+	id = myouren.44
+	title = myouren.44.t
+	desc = myouren.44.d
+	picture = GFX_report_event_hijiri_11
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.44.a
+		country_event = { id = myouren.45 days = 3 }
+	}
+}
+
+country_event = {
+	id = myouren.45
+	title = myouren.45.t
+	desc = myouren.45.d
+	picture = GFX_report_event_hijiri_1
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.45.a
+		country_event = { id = myouren.46 days = 2 }
+	}
+}
+
+country_event = {
+	id = myouren.46
+	title = myouren.46.t
+	desc = myouren.46.d
+	picture = GFX_report_event_hijiri_1
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.46.a
+	}
+}
+
+
+country_event = {
+	id = myouren.47
+	title = myouren.47.t
+	desc = myouren.47.d
+	picture = GFX_report_event_hijiri_1
+
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.47.a
+		country_event = { id = myouren.48 days = 7 }
+	}
+}
+
+country_event = {
+	id = myouren.48
+	title = myouren.48.t
+	desc = myouren.48.d
+	picture = GFX_report_event_hijiri_23
+	is_triggered_only = yes
+
+	option = {
+		name = myouren.48.a
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

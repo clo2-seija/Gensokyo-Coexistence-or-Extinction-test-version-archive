@@ -1,0 +1,463 @@
+add_namespace = love_story
+
+# KYO_love_forever unlocks these arcs as independent optional decisions.
+# Events inside an opted-in arc retain their reader-controlled page navigation.
+
+# ============================================================================
+# 妖梦与铃仙的邂逅
+# ============================================================================
+country_event = {
+	id = love_story.1
+	title = love_story.1.t
+	desc = love_story.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.1.a
+
+		country_event = love_story.3
+	}
+}
+
+country_event = {
+	id = love_story.3
+	title = love_story.3.t
+	desc = love_story.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.3.a
+
+		country_event = love_story.1
+	}
+
+	option = {
+		name = love_story.3.b
+	}
+}
+
+
+# ============================================================================
+# 竹影迷途
+# ============================================================================
+
+country_event = {
+	id = love_story.2
+	title = love_story.2.t
+	desc = love_story.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.2.a
+
+		country_event = love_story.4
+	}
+}
+
+country_event = {
+	id = love_story.4
+	title = love_story.4.t
+	desc = love_story.4.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.4.a
+
+		country_event = love_story.2
+	}
+
+	option = {
+		name = love_story.4.b
+
+		country_event = love_story.5
+	}
+}
+
+country_event = {
+	id = love_story.5
+	title = love_story.5.t
+	desc = love_story.5.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.5.a
+
+		country_event = love_story.4
+	}
+
+	option = {
+		name = love_story.5.b
+	}
+}
+
+
+# ============================================================================
+# 不变之院的试锋
+# ============================================================================
+
+country_event = {
+	id = love_story.6
+	title = love_story.6.t
+	desc = love_story.6.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.6.a
+
+		country_event = love_story.7
+	}
+}
+
+country_event = {
+	id = love_story.7
+	title = love_story.7.t
+	desc = love_story.7.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.7.a
+
+		country_event = love_story.6
+	}
+
+	option = {
+		name = love_story.7.b
+	}
+}
+
+
+# ============================================================================
+# 夜露小案
+# ============================================================================
+
+country_event = {
+	id = love_story.8
+	title = love_story.8.t
+	desc = love_story.8.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.8.a
+
+		country_event = love_story.9
+	}
+}
+
+country_event = {
+	id = love_story.9
+	title = love_story.9.t
+	desc = love_story.9.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.9.a
+
+		country_event = love_story.8
+	}
+
+	option = {
+		name = love_story.9.b
+	}
+}
+
+
+# ============================================================================
+# 三线同刻
+# ============================================================================
+
+country_event = {
+	id = love_story.10
+	title = love_story.10.t
+	desc = love_story.10.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.10.a
+
+		country_event = love_story.11
+	}
+}
+
+country_event = {
+	id = love_story.11
+	title = love_story.11.t
+	desc = love_story.11.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.11.a
+
+		country_event = love_story.10
+	}
+
+	option = {
+		name = love_story.11.b
+
+		country_event = love_story.12
+	}
+}
+
+country_event = {
+	id = love_story.12
+	title = love_story.12.t
+	desc = love_story.12.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.12.a
+
+		country_event = love_story.11
+	}
+
+	option = {
+		name = love_story.12.b
+	}
+}
+
+
+# ============================================================================
+# 竹灯小席
+# ============================================================================
+
+country_event = {
+	id = love_story.13
+	title = love_story.13.t
+	desc = love_story.13.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.13.a
+
+		country_event = love_story.14
+	}
+}
+
+country_event = {
+	id = love_story.14
+	title = love_story.14.t
+	desc = love_story.14.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.14.a
+
+		country_event = love_story.13
+	}
+
+	option = {
+		name = love_story.14.b
+
+		country_event = love_story.15
+	}
+}
+
+country_event = {
+	id = love_story.15
+	title = love_story.15.t
+	desc = love_story.15.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.15.a
+
+		country_event = love_story.14
+	}
+
+	option = {
+		name = love_story.15.b
+	}
+}
+
+
+# ============================================================================
+# 雪庭问花
+# ============================================================================
+
+country_event = {
+	id = love_story.16
+	title = love_story.16.t
+	desc = love_story.16.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.16.a
+
+		country_event = love_story.17
+	}
+}
+
+country_event = {
+	id = love_story.17
+	title = love_story.17.t
+	desc = love_story.17.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.17.a
+
+		country_event = love_story.16
+	}
+
+	option = {
+		name = love_story.17.b
+
+		country_event = love_story.18
+	}
+}
+
+country_event = {
+	id = love_story.18
+	title = love_story.18.t
+	desc = love_story.18.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.18.a
+
+		country_event = love_story.17
+	}
+
+	option = {
+		name = love_story.18.b
+	}
+}
+
+
+# ============================================================================
+# 竹海反转夜
+# ============================================================================
+
+country_event = {
+	id = love_story.19
+	title = love_story.19.t
+	desc = love_story.19.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.19.a
+
+		country_event = love_story.20
+	}
+}
+
+country_event = {
+	id = love_story.20
+	title = love_story.20.t
+	desc = love_story.20.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.20.a
+
+		country_event = love_story.21
+	}
+}
+
+country_event = {
+	id = love_story.21
+	title = love_story.21.t
+	desc = love_story.21.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.21.a
+
+		country_event = love_story.22
+	}
+}
+
+country_event = {
+	id = love_story.22
+	title = love_story.22.t
+	desc = love_story.22.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.22.a
+
+		country_event = love_story.23
+	}
+}
+
+country_event = {
+	id = love_story.23
+	title = love_story.23.t
+	desc = love_story.23.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.23.a
+
+		country_event = love_story.24
+	}
+}
+
+country_event = {
+	id = love_story.24
+	title = love_story.24.t
+	desc = love_story.24.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.24.a
+
+		country_event = love_story.25
+	}
+}
+
+country_event = {
+	id = love_story.25
+	title = love_story.25.t
+	desc = love_story.25.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.25.a
+	}
+}
+
+
+# ============================================================================
+# 夜奔：刀剑与枪枝
+# ============================================================================
+
+country_event = {
+	id = love_story.26
+	title = love_story.26.t
+	desc = love_story.26.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story.26.a
+	}
+
+	option = {
+		name = love_story.26.b
+	}
+}

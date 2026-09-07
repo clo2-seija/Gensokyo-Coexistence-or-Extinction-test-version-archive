@@ -1,0 +1,255 @@
+add_namespace = kyo_seija_distribution
+
+country_event = {
+	id = kyo_seija_distribution.1
+	title = kyo_seija_distribution.1.t
+	desc = kyo_seija_distribution.1.d
+	picture = GFX_report_event_generic_political
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_seija_distribution.1.a
+		add_political_power = 25
+	}
+}
+
+country_event = {
+	id = kyo_seija_distribution.10
+	title = kyo_seija_distribution.10.t
+	desc = kyo_seija_distribution.10.d
+	picture = GFX_report_event_worker_protests
+	is_triggered_only = yes
+	trigger = { KYO_seija_distribution_active = yes }
+
+	option = {
+		name = kyo_seija_distribution.common_to_humans.a
+		ai_chance = { base = 50 }
+		KYO_seija_transfer_common_youkai_to_humans = yes
+		add_stability = -0.01
+	}
+	option = {
+		name = kyo_seija_distribution.humans_to_common.a
+		ai_chance = { base = 50 }
+		KYO_seija_transfer_humans_to_common_youkai = yes
+		add_political_power = -15
+	}
+}
+
+country_event = {
+	id = kyo_seija_distribution.11
+	title = kyo_seija_distribution.11.t
+	desc = kyo_seija_distribution.11.d
+	picture = GFX_report_event_worker_protests
+	is_triggered_only = yes
+	trigger = { KYO_seija_distribution_active = yes }
+
+	option = {
+		name = kyo_seija_distribution.common_to_humans.a
+		KYO_seija_transfer_common_youkai_to_humans = yes
+		add_war_support = -0.01
+	}
+	option = {
+		name = kyo_seija_distribution.humans_to_common.a
+		KYO_seija_transfer_humans_to_common_youkai = yes
+		add_stability = -0.01
+	}
+}
+
+country_event = {
+	id = kyo_seija_distribution.12
+	title = kyo_seija_distribution.12.t
+	desc = kyo_seija_distribution.12.d
+	picture = GFX_report_event_generic_political
+	is_triggered_only = yes
+	trigger = { KYO_seija_distribution_active = yes }
+
+	option = {
+		name = kyo_seija_distribution.common_to_humans.a
+		KYO_seija_transfer_common_youkai_to_humans = yes
+		add_political_power = -10
+	}
+	option = {
+		name = kyo_seija_distribution.humans_to_common.a
+		KYO_seija_transfer_humans_to_common_youkai = yes
+		add_political_power = -10
+	}
+}
+
+country_event = {
+	id = kyo_seija_distribution.13
+	title = kyo_seija_distribution.13.t
+	desc = kyo_seija_distribution.13.d
+	picture = GFX_report_event_generic_political
+	is_triggered_only = yes
+	trigger = { KYO_seija_distribution_active = yes }
+
+	option = {
+		name = kyo_seija_distribution.revolutionaries_to_opposition.a
+		KYO_seija_transfer_revolutionaries_to_opposition = yes
+		add_war_support = -0.01
+	}
+	option = {
+		name = kyo_seija_distribution.opposition_to_revolutionaries.a
+		KYO_seija_transfer_opposition_to_revolutionaries = yes
+		add_stability = -0.01
+	}
+}
+
+country_event = {
+	id = kyo_seija_distribution.14
+	title = kyo_seija_distribution.14.t
+	desc = kyo_seija_distribution.14.d
+	picture = GFX_report_event_generic_army
+	is_triggered_only = yes
+	trigger = { KYO_seija_distribution_active = yes }
+
+	option = {
+		name = kyo_seija_distribution.revolutionaries_to_opposition.a
+		KYO_seija_transfer_revolutionaries_to_opposition = yes
+		add_political_power = -15
+	}
+	option = {
+		name = kyo_seija_distribution.opposition_to_revolutionaries.a
+		KYO_seija_transfer_opposition_to_revolutionaries = yes
+		add_war_support = 0.01
+	}
+}
+
+country_event = {
+	id = kyo_seija_distribution.15
+	title = kyo_seija_distribution.15.t
+	desc = kyo_seija_distribution.15.d
+	picture = GFX_report_event_generic_army
+	is_triggered_only = yes
+	trigger = { KYO_seija_distribution_active = yes }
+
+	option = {
+		name = kyo_seija_distribution.revolutionaries_to_opposition.a
+		KYO_seija_transfer_revolutionaries_to_opposition = yes
+		add_stability = 0.01
+	}
+	option = {
+		name = kyo_seija_distribution.opposition_to_revolutionaries.a
+		KYO_seija_transfer_opposition_to_revolutionaries = yes
+		add_stability = -0.01
+	}
+}
+
+country_event = {
+	id = kyo_seija_distribution.16
+	title = kyo_seija_distribution.16.t
+	desc = kyo_seija_distribution.16.d
+	picture = GFX_report_event_worker_protests
+	is_triggered_only = yes
+	trigger = { KYO_seija_distribution_active = yes }
+
+	option = {
+		name = kyo_seija_distribution.common_to_humans.a
+		KYO_seija_transfer_common_youkai_to_humans = yes
+		add_political_power = -15
+	}
+	option = {
+		name = kyo_seija_distribution.humans_to_common.a
+		KYO_seija_transfer_humans_to_common_youkai = yes
+		add_war_support = -0.01
+	}
+}
+
+country_event = {
+	id = kyo_seija_distribution.17
+	title = kyo_seija_distribution.17.t
+	desc = kyo_seija_distribution.17.d
+	picture = GFX_report_event_generic_army
+	is_triggered_only = yes
+	trigger = { KYO_seija_distribution_active = yes }
+
+	option = {
+		name = kyo_seija_distribution.revolutionaries_to_opposition.a
+		KYO_seija_transfer_revolutionaries_to_opposition = yes
+		add_political_power = -10
+	}
+	option = {
+		name = kyo_seija_distribution.opposition_to_revolutionaries.a
+		KYO_seija_transfer_opposition_to_revolutionaries = yes
+		add_stability = -0.01
+	}
+}
+
+country_event = {
+	id = kyo_seija_distribution.20
+	title = kyo_seija_distribution.20.t
+	desc = kyo_seija_distribution.20.d
+	picture = GFX_report_event_worker_protests
+	is_triggered_only = yes
+	trigger = {
+		KYO_seija_distribution_active = yes
+		KYO_seija_any_group_starving = yes
+	}
+
+	option = {
+		name = kyo_seija_distribution.20.a
+		add_timed_idea = { idea = KYO_distribution_black_market days = 60 }
+	}
+	option = {
+		name = kyo_seija_distribution.20.b
+		add_political_power = -100
+	}
+	option = {
+		name = kyo_seija_distribution.20.c
+		add_stability = -0.05
+		add_war_support = -0.1
+	}
+}
+
+country_event = {
+	id = kyo_seija_distribution.21
+	title = kyo_seija_distribution.21.t
+	desc = kyo_seija_distribution.21.d
+	picture = GFX_report_event_worker_protests
+	is_triggered_only = yes
+	trigger = {
+		KYO_seija_distribution_active = yes
+		KYO_seija_any_group_starving = yes
+	}
+
+	option = {
+		name = kyo_seija_distribution.21.a
+		add_timed_idea = { idea = KYO_distribution_local_riots days = 45 }
+	}
+	option = {
+		name = kyo_seija_distribution.21.b
+		add_political_power = -100
+	}
+	option = {
+		name = kyo_seija_distribution.21.c
+		add_stability = -0.1
+		add_war_support = -0.05
+	}
+}
+
+country_event = {
+	id = kyo_seija_distribution.22
+	title = kyo_seija_distribution.22.t
+	desc = kyo_seija_distribution.22.d
+	picture = GFX_report_event_generic_political
+	is_triggered_only = yes
+	trigger = {
+		KYO_seija_distribution_active = yes
+		KYO_seija_any_group_starving = yes
+	}
+
+	option = {
+		name = kyo_seija_distribution.22.a
+		add_timed_idea = { idea = KYO_distribution_cadre_exhaustion days = 60 }
+	}
+	option = {
+		name = kyo_seija_distribution.22.b
+		add_political_power = -75
+		add_manpower = -10000
+	}
+	option = {
+		name = kyo_seija_distribution.22.c
+		add_stability = -0.05
+		
+	}
+}

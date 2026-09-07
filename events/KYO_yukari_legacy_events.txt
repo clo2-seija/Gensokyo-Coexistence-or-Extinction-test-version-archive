@@ -1,0 +1,137 @@
+add_namespace = KYO_yukari_legacy
+
+# 第一封信只寄給玩家所選陣營；三個 NPC 不收到事件。
+
+country_event = {
+	id = KYO_yukari_legacy.1
+	title = KYO_yukari_legacy.1.t
+	desc = { trigger = { has_country_flag = KYO_civil_role_yakumo } text = KYO_yukari_legacy.1.yakumo }
+	desc = { trigger = { has_country_flag = KYO_civil_role_remilia } text = KYO_yukari_legacy.1.remilia }
+	desc = { trigger = { has_country_flag = KYO_civil_role_hijiri } text = KYO_yukari_legacy.1.hijiri }
+	desc = { trigger = { has_country_flag = KYO_civil_role_seija } text = KYO_yukari_legacy.1.seija }
+	picture = GFX_report_event_yukari_death
+	is_triggered_only = yes
+	option = {
+		name = KYO_yukari_legacy.1.a
+		set_country_flag = KYO_renko_first_letter_received
+	}
+}
+
+# 辉夜姬的第六道难题
+country_event = {
+	id = KYO_yukari_legacy.2
+	title = KYO_yukari_legacy.2.t
+	desc = KYO_yukari_legacy.2.d
+	picture = GFX_report_event_yukari_legacy_2
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_yukari_legacy.2.a
+	}
+}
+
+# 写给少数人的风暴预言
+country_event = {
+	id = KYO_yukari_legacy.3
+	title = KYO_yukari_legacy.3.t
+	desc = KYO_yukari_legacy.3.d
+	picture = GFX_report_event_yukari_legacy_3
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_yukari_legacy.3.a
+
+		KYO_lunar_scale_add_left_1 = yes
+	}
+}
+
+# 向从未忘记月都的人求援
+country_event = {
+	id = KYO_yukari_legacy.4
+	title = KYO_yukari_legacy.4.t
+	desc = KYO_yukari_legacy.4.d
+	picture = GFX_report_event_yukari_legacy_4
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_yukari_legacy.4.a
+
+		KYO_lunar_scale_add_left_1 = yes
+	}
+}
+
+# 拔掉月都留在地上的眼睛
+country_event = {
+	id = KYO_yukari_legacy.5
+	title = KYO_yukari_legacy.5.t
+	desc = KYO_yukari_legacy.5.d
+	picture = GFX_report_event_yukari_legacy_5
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_yukari_legacy.5.a
+
+		KYO_lunar_scale_add_left_1 = yes
+	}
+}
+
+# 让八云紫变得无处不在
+country_event = {
+	id = KYO_yukari_legacy.6
+	title = KYO_yukari_legacy.6.t
+	desc = KYO_yukari_legacy.6.d
+	picture = GFX_report_event_yukari_legacy_6
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_yukari_legacy.6.a
+
+		KYO_lunar_scale_add_left_1 = yes
+	}
+}
+
+# 白鹭留下的第一条道路
+country_event = {
+	id = KYO_yukari_legacy.7
+	title = KYO_yukari_legacy.7.t
+	desc = KYO_yukari_legacy.7.d
+	picture = GFX_report_event_yukari_legacy_7
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_yukari_legacy.7.a
+	}
+}
+
+# 纯狐与地狱女神攻入月都
+country_event = {
+	id = KYO_yukari_legacy.8
+	title = KYO_yukari_legacy.8.t
+	desc = KYO_yukari_legacy.8.d
+	picture = GFX_report_event_yukari_legacy_8
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_yukari_legacy.8.a
+
+		KYO_lunar_scale_add_left_2 = yes
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

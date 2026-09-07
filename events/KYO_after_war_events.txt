@@ -1,0 +1,603 @@
+add_namespace = KYO_afterwar
+
+# 勝利後，百妖協議繼續存在。
+country_event = {
+	id = KYO_afterwar.1
+	title = KYO_afterwar.1.t
+	desc = KYO_afterwar.1.d
+	picture = GFX_report_event_yukari_2
+	is_triggered_only = yes
+	option = {
+		name = KYO_afterwar.1.a
+		set_country_flag = KYO_postwar_transition_active
+		KYO_initialize_lunar_scale = yes
+		add_stability = 0.03
+
+		KYO_add_civil_war_remilia_power = yes
+		
+	}
+}
+
+country_event = {
+	id = KYO_afterwar.2
+	title = KYO_afterwar.2.t
+	desc = KYO_afterwar.2.d
+	picture = GFX_report_event_yukari_1
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_afterwar.2.a
+		set_country_flag = KYO_postwar_human_status_protected
+
+		custom_effect_tooltip = KYO_add_faith_fulfillment_5_tt
+		add_to_variable = { KYO_fulfillment_faith_committee = 5 }
+		KYO_add_civil_war_hijiri_power = yes
+
+		country_event = { id = KYO_afterwar.3 days = 3 }
+	}
+
+	option = {
+		name = KYO_afterwar.2.b
+		set_country_flag = KYO_postwar_human_status_subjects
+
+		custom_effect_tooltip = KYO_add_military_fulfillment_5_tt
+		add_to_variable = { KYO_fulfillment_military_committee = 5 }
+		KYO_add_civil_war_remilia_power = yes
+
+		country_event = { id = KYO_afterwar.3 days = 3 }
+	}
+
+	option = {
+		name = KYO_afterwar.2.c
+		set_country_flag = KYO_postwar_human_status_local_citizens
+
+		custom_effect_tooltip = KYO_add_mobilization_fulfillment_5_tt
+		add_to_variable = { KYO_fulfillment_mobilization_committee = 5 }
+		KYO_add_civil_war_seija_power = yes
+
+		country_event = { id = KYO_afterwar.3 days = 3 }
+	}
+}
+
+country_event = {
+	id = KYO_afterwar.3
+	title = KYO_afterwar.3.t
+	desc = KYO_afterwar.3.d
+	picture = GFX_report_event_remilia_6
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_afterwar.3.a
+		set_country_flag = KYO_postwar_industry_centralized
+
+		add_political_power = 40
+
+		KYO_add_civil_war_remilia_power = yes
+
+		country_event = { id = KYO_afterwar.4 days = 3 }
+	}
+
+	option = {
+		name = KYO_afterwar.3.b
+		set_country_flag = KYO_postwar_industry_by_war_merit
+
+		custom_effect_tooltip = KYO_add_military_fulfillment_5_tt
+		add_to_variable = { KYO_fulfillment_military_committee = 5 }
+		KYO_add_civil_war_remilia_power = yes
+
+		country_event = { id = KYO_afterwar.4 days = 3 }
+	}
+
+	option = {
+		name = KYO_afterwar.3.c
+		set_country_flag = KYO_postwar_industry_local_councils
+
+		custom_effect_tooltip = KYO_add_mobilization_fulfillment_5_tt
+		add_to_variable = { KYO_fulfillment_mobilization_committee = 5 }
+		KYO_add_civil_war_seija_power = yes
+
+		country_event = { id = KYO_afterwar.4 days = 3 }
+	}
+}
+
+country_event = {
+	id = KYO_afterwar.4
+	title = KYO_afterwar.4.t
+	desc = KYO_afterwar.4.d
+	picture = GFX_report_event_hijiri_2
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_afterwar.4.a
+		set_country_flag = KYO_postwar_trials_public
+
+		add_stability = -0.05
+		add_war_support = 0.05
+		KYO_add_civil_war_seija_power = yes
+	}
+
+	option = {
+		name = KYO_afterwar.4.b
+		set_country_flag = KYO_postwar_amnesty_limited
+
+		add_stability = 0.05
+		custom_effect_tooltip = KYO_add_faith_fulfillment_5_tt
+		add_to_variable = { KYO_fulfillment_faith_committee = 5 }
+		KYO_add_civil_war_hijiri_power = yes
+	}
+
+	option = {
+		name = KYO_afterwar.4.c
+		set_country_flag = KYO_postwar_justice_deferred
+		add_political_power = 50
+	}
+}
+
+# 新結界與月都測距。
+country_event = {
+	id = KYO_afterwar.5
+	title = KYO_afterwar.5.t
+	desc = KYO_afterwar.5.d
+	picture = GFX_report_event_first_war_10
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_afterwar.5.a
+		KYO_add_civil_war_remilia_power = yes
+
+		country_event = { id = KYO_afterwar.6 days = 30 }
+	}
+
+	option = {
+		name = KYO_afterwar.5.b
+		KYO_add_civil_war_hijiri_power = yes
+		KYO_add_civil_war_seija_power = yes
+
+		country_event = { id = KYO_afterwar.6 days = 30 }
+	}
+
+	option = {
+		name = KYO_afterwar.5.c
+
+		country_event = { id = KYO_afterwar.6 days = 30 }
+	}
+}
+
+country_event = {
+	id = KYO_afterwar.6
+	title = KYO_afterwar.6.t
+	desc = KYO_afterwar.6.d
+	picture = GFX_report_event_first_war_17
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_afterwar.6.a
+		
+		KYO_add_civil_war_remilia_power = yes
+
+		country_event = { id = KYO_afterwar.7 days = 30 }
+	}
+
+	option = {
+		name = KYO_afterwar.6.b
+		
+
+		KYO_add_civil_war_hijiri_power = yes
+		KYO_add_civil_war_seija_power = yes
+
+		country_event = { id = KYO_afterwar.7 days = 30 }
+	}
+}
+
+country_event = {
+	id = KYO_afterwar.7
+	title = KYO_afterwar.7.t
+	desc = KYO_afterwar.7.d
+	picture = GFX_report_event_yukari_legacy_13
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_afterwar.7.a
+		
+		KYO_add_civil_war_remilia_power = yes
+
+		country_event = { id = KYO_afterwar.8 days = 30 }
+	}
+
+	option = {
+		name = KYO_afterwar.7.b
+		KYO_add_lunar_evidence = yes
+
+		KYO_add_civil_war_hijiri_power = yes
+		KYO_add_civil_war_seija_power = yes
+
+		country_event = { id = KYO_afterwar.8 days = 30 }
+	}
+}
+
+country_event = {
+	id = KYO_afterwar.8
+	title = KYO_afterwar.8.t
+	desc = KYO_afterwar.8.d
+	picture = GFX_report_event_yukari_legacy_13
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_afterwar.8.a
+
+		KYO_add_civil_war_remilia_power = yes
+	}
+
+	option = {
+		name = KYO_afterwar.8.b
+		KYO_add_civil_war_hijiri_power = yes
+	}
+}
+
+# 復員、地方自衛與被挪用的測量器材。
+country_event = {
+	id = KYO_afterwar.9
+	title = KYO_afterwar.9.t
+	desc = KYO_afterwar.9.d
+	picture = GFX_report_event_seija_rebel
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_afterwar.9.a
+		set_country_flag = KYO_postwar_disarmament_total
+
+		add_stability = 0.05
+		KYO_add_civil_war_hijiri_power = yes
+
+		country_event = { id = KYO_afterwar.10 days = 15 }
+	}
+
+	option = {
+		name = KYO_afterwar.9.b
+		set_country_flag = KYO_postwar_local_self_defense
+
+		add_to_variable = { KYO_fulfillment_mobilization_committee = 5 }
+		KYO_add_civil_war_seija_power = yes
+
+		country_event = { id = KYO_afterwar.10 days = 15 }
+	}
+
+	option = {
+		name = KYO_afterwar.9.c
+		set_country_flag = KYO_postwar_trace_measurement_gear
+		
+
+		country_event = { id = KYO_afterwar.10 days = 15 }
+	}
+}
+
+country_event = {
+	id = KYO_afterwar.10
+	title = KYO_afterwar.10.t
+	desc = KYO_afterwar.10.d
+	picture = GFX_report_event_seija_rebel_2
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_afterwar.10.a
+
+		add_to_variable = { KYO_fulfillment_faith_committee = 5 }
+		KYO_add_civil_war_hijiri_power = yes
+
+		country_event = {
+			id = KYO_afterwar.11
+			days = 7
+		}
+	}
+
+	option = {
+		name = KYO_afterwar.10.b
+
+		add_to_variable = { KYO_fulfillment_mobilization_committee = 5 }
+		KYO_add_civil_war_seija_power = yes
+
+		country_event = {
+			id = KYO_afterwar.11
+			days = 7
+		}
+	}
+}
+
+country_event = {
+	id = KYO_afterwar.11
+	title = KYO_afterwar.11.t
+	desc = KYO_afterwar.11.d
+
+	
+	
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_afterwar.11.a
+		
+	}
+}
+
+# 戰時聯軍的軍權歸屬。
+country_event = {
+	id = KYO_afterwar.12
+	title = KYO_afterwar.12.t
+	desc = KYO_afterwar.12.d
+	picture = GFX_report_event_remilia_6
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_afterwar.12.a
+		set_country_flag = KYO_postwar_unified_barrier_army
+
+		add_war_support = 0.05
+		add_political_power = 150
+		
+
+		country_event = { id = KYO_afterwar.13 days = 2 }
+	}
+
+	option = {
+		name = KYO_afterwar.12.b
+		set_country_flag = KYO_postwar_recognize_faction_armies
+
+		add_to_variable = { KYO_fulfillment_military_committee = 5 }
+		KYO_add_civil_war_hijiri_power = yes
+		KYO_add_civil_war_seija_power = yes
+
+		country_event = { id = KYO_afterwar.13 days = 2 }
+	}
+
+	option = {
+		name = KYO_afterwar.12.c
+		set_country_flag = KYO_postwar_military_committee_control
+
+		add_to_variable = { KYO_fulfillment_military_committee = 10 }
+
+		KYO_add_civil_war_remilia_power = yes
+
+		country_event = { id = KYO_afterwar.13 days = 2 }
+	}
+}
+
+country_event = {
+	id = KYO_afterwar.13
+	title = KYO_afterwar.13.t
+	desc = KYO_afterwar.13.d
+	picture = GFX_report_event_first_war_28
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_afterwar.13.a
+		KYO_add_civil_war_remilia_power = yes
+
+		country_event = { id = KYO_afterwar.14 days = 15 }
+	}
+
+	option = {
+		name = KYO_afterwar.13.b
+
+		KYO_add_civil_war_remilia_power = yes
+		KYO_add_civil_war_seija_power = yes
+
+		country_event = { id = KYO_afterwar.14 days = 15 }
+	}
+}
+
+country_event = {
+	id = KYO_afterwar.14
+	title = KYO_afterwar.14.t
+	desc = KYO_afterwar.14.d
+	picture = GFX_report_event_remilia_6
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_afterwar.14.a
+		set_country_flag = KYO_postwar_arsenals_central
+		
+		add_political_power = 45
+
+		KYO_add_civil_war_remilia_power = yes
+	}
+
+	option = {
+		name = KYO_afterwar.14.b
+		set_country_flag = KYO_postwar_arsenals_committee
+
+		add_to_variable = { KYO_fulfillment_military_committee = 5 }
+		KYO_add_civil_war_remilia_power = yes
+	}
+
+	option = {
+		name = KYO_afterwar.14.c
+		set_country_flag = KYO_postwar_arsenals_local
+
+		add_to_variable = { KYO_fulfillment_mobilization_committee = 5 }
+		KYO_add_civil_war_seija_power = yes
+	}
+}
+
+# 最後一次仲裁只把衝突延後至儀式結束。
+country_event = {
+	id = KYO_afterwar.15
+	title = KYO_afterwar.15.t
+	desc = KYO_afterwar.15.d
+	picture = GFX_report_event_first_war_13
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_afterwar.15.a
+		set_country_flag = KYO_last_arbitration_hard_ruling
+
+		add_war_support = 0.05
+		KYO_add_civil_war_remilia_power = yes
+
+		country_event = { id = KYO_afterwar.16 days = 7 }
+	}
+
+	option = {
+		name = KYO_afterwar.15.b
+		set_country_flag = KYO_last_arbitration_limited_guarantees
+
+		add_stability = 0.04
+		KYO_add_civil_war_hijiri_power = yes
+
+		country_event = { id = KYO_afterwar.16 days = 7 }
+	}
+
+	option = {
+		name = KYO_afterwar.15.c
+		set_country_flag = KYO_last_arbitration_deferred
+
+		add_political_power = 50
+		
+
+		country_event = { id = KYO_afterwar.16 days = 7 }
+	}
+}
+
+country_event = {
+	id = KYO_afterwar.16
+	title = KYO_afterwar.16.t
+	desc = KYO_afterwar.16.d
+	picture = GFX_report_event_yukari_legacy_12
+	is_triggered_only = yes
+	option = { name = KYO_afterwar.16.a }
+}
+
+
+country_event = {
+	id = KYO_afterwar.17
+	title = KYO_afterwar.17.t
+	desc = KYO_afterwar.17.d
+	picture = GFX_report_event_first_war_9
+	is_triggered_only = yes
+	option = {
+		name = KYO_afterwar.17.a
+		
+		KYO_finalize_lunar_scale = yes
+		country_event = { id = KYO_afterwar.18 days = 2 }
+	}
+	
+}
+
+country_event = {
+	id = KYO_afterwar.18
+	title = KYO_afterwar.18.t
+	desc = KYO_afterwar.18.d
+	picture = GFX_report_event_yukari_death
+	is_triggered_only = yes
+	option = {
+		name = KYO_afterwar.18.a
+		trigger = { check_variable = { KYO_lunar_left_weight > KYO_lunar_right_weight } }
+		country_event = KYO_afterwar.19
+	}
+	option = {
+		name = KYO_afterwar.18.b
+		trigger = { check_variable = { KYO_lunar_left_weight < KYO_lunar_right_weight } }
+		launch_nuke = {
+			province = 11908
+		}
+		country_event = KYO_afterwar.20
+	}
+}
+
+country_event = {
+	id = KYO_afterwar.19
+	title = KYO_afterwar.19.t
+	desc = KYO_afterwar.19.d
+	picture = GFX_report_event_first_war_1
+	is_triggered_only = yes
+	option = {
+		name = KYO_afterwar.19.a
+		complete_national_focus = KYO_Yukari_start
+		add_country_leader_trait = Gensokyo_protector
+		set_country_flag = KYO_yukari_survived_lunar_shot
+		clr_country_flag = KYO_lunar_scale_active
+		clr_country_flag = KYO_postwar_transition_active
+	}
+}
+
+country_event = {
+	id = KYO_afterwar.20
+	title = KYO_afterwar.20.t
+	desc = KYO_afterwar.20.d
+	picture = GFX_report_event_yukari_death
+	is_triggered_only = yes
+	option = {
+		name = KYO_afterwar.20.a
+		clr_country_flag = KYO_lunar_scale_active
+		clr_country_flag = KYO_postwar_transition_active
+		set_country_flag = KYO_renko_plan_b_activated
+
+		hidden_effect = {
+			KYO_snapshot_hyakki_for_civil_war = yes
+			KYO_disable_barrier_and_hyakki_systems = yes
+		}
+		
+		set_country_flag = gensokyo_is_at_civil_war
+		set_country_flag = yukari_will_not_survive
+		set_global_flag = KYO_yukari_killed_by_lunar_cannon
+		add_ideas = KYO_death_of_yukari
+		retire_character = gensokyo_Yukari
+		set_cosmetic_tag = KYO_emergency_goverment
+		gensokyo_Ran = {
+			add_country_leader_role = {
+				country_leader = {
+					ideology = gensokyo_balance
+					traits = { Youkai_of_Boundaries Gensokyo_protector }
+				}
+				promote_leader = yes
+			}
+		}
+		hidden_effect = {
+
+			country_event = { id = KYO_afterwar.21 days = 2 }
+			country_event = { id = kyo_postwar.17 days = 7 }
+			 
+		}
+		
+	}
+}
+
+country_event = {
+	id = KYO_afterwar.21
+	title = KYO_afterwar.21.t
+	desc = KYO_afterwar.21.d
+	picture = GFX_report_event_yukari_death
+	is_triggered_only = yes
+	option = { name = KYO_afterwar.21.a }
+}
+
+# kyo_postwar.11 已完成玩家選擇；此事件確認四國均已建立後才自動完成開戰國策。
+country_event = {
+	id = KYO_afterwar.23
+	title = KYO_afterwar.23.t
+	desc = KYO_afterwar.23.d
+	picture = GFX_report_event_first_war_5
+	is_triggered_only = yes
+
+	immediate = {
+
+		
+		}
+	
+
+
+
+	option = {
+		name = KYO_afterwar.23.a
+		if = {
+			limit = {
+				any_country = { has_country_flag = KYO_civil_role_yakumo }
+				any_country = { has_country_flag = KYO_civil_role_remilia }
+				any_country = { has_country_flag = KYO_civil_role_hijiri }
+				any_country = { has_country_flag = KYO_civil_role_seija }
+			}
+			complete_national_focus = KYO_war_never_change
+		}
+		else = {
+			country_event = { id = KYO_afterwar.23 days = 3 }
+		}
+	}
+}

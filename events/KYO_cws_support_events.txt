@@ -1,0 +1,354 @@
+add_namespace = KYO_cws
+
+country_event = {
+	id = KYO_cws.10
+	hidden = yes
+	is_triggered_only = yes
+	trigger = {
+		KYO_cws_system_is_active = yes
+		KYO_cws_yakumo_is_enemy = yes
+	}
+	immediate = {
+		activate_mission = KYO_cws_yakumo_campaign
+	}
+}
+
+country_event = {
+	id = KYO_cws.11
+	hidden = yes
+	is_triggered_only = yes
+	trigger = {
+		KYO_cws_system_is_active = yes
+		KYO_cws_remilia_is_enemy = yes
+	}
+	immediate = {
+		activate_mission = KYO_cws_remilia_campaign
+	}
+}
+
+country_event = {
+	id = KYO_cws.12
+	hidden = yes
+	is_triggered_only = yes
+	trigger = {
+		KYO_cws_system_is_active = yes
+		KYO_cws_hijiri_is_enemy = yes
+	}
+	immediate = {
+		activate_mission = KYO_cws_hijiri_campaign
+	}
+}
+
+country_event = {
+	id = KYO_cws.13
+	hidden = yes
+	is_triggered_only = yes
+	trigger = {
+		KYO_cws_system_is_active = yes
+		KYO_cws_seija_is_enemy = yes
+	}
+	immediate = {
+		activate_mission = KYO_cws_seija_campaign
+	}
+}
+
+
+
+
+country_event = {
+	id = KYO_cws.100
+	title = KYO_yukari_legacy.10.t
+	desc = KYO_yukari_legacy.10.d
+	picture = GFX_report_event_yukari_legacy_9
+	is_triggered_only = yes
+	trigger = {
+		KYO_cws_system_is_active = yes
+		has_country_flag = KYO_cws_legacy_story_active
+		NOT = { has_country_flag = KYO_cws_legacy_has_holder }
+	}
+	option = {
+		name = KYO_yukari_legacy.history_unseen
+		set_country_flag = KYO_cws_legacy_step_1_done
+		set_variable = { var = KYO_cws_legacy_progress_player value = 1 }
+		country_event = { id = KYO_cws.101 days = 4 }
+	}
+}
+
+country_event = {
+	id = KYO_cws.101
+	title = KYO_yukari_legacy.20.t
+	desc = KYO_yukari_legacy.20.d
+	picture = GFX_report_event_yukari_legacy_10
+	is_triggered_only = yes
+	trigger = {
+		KYO_cws_system_is_active = yes
+		has_country_flag = KYO_cws_legacy_story_active
+		NOT = { has_country_flag = KYO_cws_legacy_has_holder }
+	}
+	option = {
+		name = KYO_yukari_legacy.history_unseen
+		country_event = { id = KYO_cws.102 days = 4 }
+	}
+}
+
+country_event = {
+	id = KYO_cws.102
+	title = KYO_yukari_legacy.30.t
+	desc = KYO_yukari_legacy.30.d
+	picture = GFX_report_event_yukari_legacy_11
+	is_triggered_only = yes
+	trigger = {
+		KYO_cws_system_is_active = yes
+		has_country_flag = KYO_cws_legacy_story_active
+		NOT = { has_country_flag = KYO_cws_legacy_has_holder }
+	}
+	option = {
+		name = KYO_yukari_legacy.history_unseen
+		set_country_flag = KYO_cws_legacy_step_2_done
+		set_variable = { var = KYO_cws_legacy_progress_player value = 2 }
+		country_event = { id = KYO_cws.103 days = 4 }
+	}
+}
+
+country_event = {
+	id = KYO_cws.103
+	title = KYO_yukari_legacy.40.t
+	desc = KYO_yukari_legacy.40.d
+	picture = GFX_report_event_yukari_legacy_12
+	is_triggered_only = yes
+	trigger = {
+		KYO_cws_system_is_active = yes
+		has_country_flag = KYO_cws_legacy_story_active
+		NOT = { has_country_flag = KYO_cws_legacy_has_holder }
+	}
+	option = {
+		name = KYO_yukari_legacy.history_unseen
+		country_event = { id = KYO_cws.104 days = 4 }
+	}
+}
+
+country_event = {
+	id = KYO_cws.104
+	title = KYO_yukari_legacy.50.t
+	desc = KYO_yukari_legacy.50.d
+	picture = GFX_report_event_yukari_legacy_13
+	is_triggered_only = yes
+	trigger = {
+		KYO_cws_system_is_active = yes
+		has_country_flag = KYO_cws_legacy_story_active
+		NOT = { has_country_flag = KYO_cws_legacy_has_holder }
+	}
+	option = {
+		name = KYO_yukari_legacy.history_unseen
+		country_event = { id = KYO_cws.105 days = 4 }
+	}
+}
+
+country_event = {
+	id = KYO_cws.105
+	title = KYO_yukari_legacy.60.t
+	desc = KYO_yukari_legacy.60.d
+	picture = GFX_report_event_yukari_legacy_14
+	is_triggered_only = yes
+	trigger = {
+		KYO_cws_system_is_active = yes
+		has_country_flag = KYO_cws_legacy_story_active
+		NOT = { has_country_flag = KYO_cws_legacy_has_holder }
+	}
+	option = {
+		name = KYO_cws_legacy_story_final_option
+		set_country_flag = KYO_cws_legacy_step_3_done
+		set_variable = { var = KYO_cws_legacy_progress_player value = 3 }
+		KYO_cws_assign_legacy_holder_player = yes
+	}
+}
+
+country_event = {
+	id = KYO_cws.109
+	title = KYO_cws_legacy_story_lost_event.t
+	desc = KYO_cws_legacy_story_lost_event.d
+	picture = GFX_report_event_yukari_death
+	is_triggered_only = yes
+	trigger = {
+		KYO_cws_system_is_active = yes
+		has_country_flag = KYO_cws_legacy_has_holder
+		NOT = { has_country_flag = KYO_cws_legacy_holder_player }
+	}
+	option = {
+		name = KYO_cws_legacy_story_lost_event.a
+	}
+}
+
+country_event = {
+	id = KYO_cws.110
+	title = KYO_yukari_legacy_poem_title
+	desc = KYO_yukari_legacy_poem_1
+
+	picture = GFX_report_event_yukari_legacy_6
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story_go
+
+		country_event = {
+			id = KYO_cws.111
+			days = 0
+		}
+	}
+
+	option = {
+		name = KYO_yukari_legacy_poem_stop
+
+		# 停止閱讀
+	}
+}
+
+
+# 第二頁
+country_event = {
+	id = KYO_cws.111
+	title = KYO_yukari_legacy_poem_title
+	desc = KYO_yukari_legacy_poem_2
+
+	picture = GFX_report_event_yukari_legacy_6
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story_back
+
+		country_event = {
+			id = KYO_cws.110
+			days = 0
+		}
+	}
+
+	option = {
+		name = love_story_go
+
+		country_event = {
+			id = KYO_cws.112
+			days = 0
+		}
+	}
+}
+
+
+# 第三頁
+country_event = {
+	id = KYO_cws.112
+	title = KYO_yukari_legacy_poem_title
+	desc = KYO_yukari_legacy_poem_3
+
+	picture = GFX_report_event_yukari_legacy_6
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story_back
+
+		country_event = {
+			id = KYO_cws.111
+			days = 0
+		}
+	}
+
+	option = {
+		name = love_story_go
+
+		country_event = {
+			id = KYO_cws.113
+			days = 0
+		}
+	}
+}
+
+
+# 第四頁
+country_event = {
+	id = KYO_cws.113
+	title = KYO_yukari_legacy_poem_title
+	desc = KYO_yukari_legacy_poem_4
+
+	picture = GFX_report_event_yukari_legacy_6
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story_back
+
+		country_event = {
+			id = KYO_cws.112
+			days = 0
+		}
+	}
+
+	option = {
+		name = love_story_go
+
+		country_event = {
+			id = KYO_cws.114
+			days = 0
+		}
+	}
+}
+
+
+# 第五頁
+country_event = {
+	id = KYO_cws.114
+	title = KYO_yukari_legacy_poem_title
+	desc = KYO_yukari_legacy_poem_5
+
+	picture = GFX_report_event_yukari_legacy_6
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story_back
+
+		country_event = {
+			id = KYO_cws.113
+			days = 0
+		}
+	}
+
+	option = {
+		name = love_story_go
+
+		country_event = {
+			id = KYO_cws.115
+			days = 0
+		}
+	}
+}
+
+
+# 第六頁 / 最後一頁
+country_event = {
+	id = KYO_cws.115
+	title = KYO_yukari_legacy_poem_title
+	desc = KYO_yukari_legacy_poem_6
+
+	picture = GFX_report_event_yukari_legacy_6
+
+	is_triggered_only = yes
+
+	option = {
+		name = love_story_back
+
+		country_event = {
+			id = KYO_cws.114
+			days = 0
+		}
+	}
+
+	option = {
+		name = KYO_yukari_legacy_poem_stop
+
+		set_country_flag = KYO_yukari_legacy_poem_read
+
+		# 閱讀結束
+	}
+}

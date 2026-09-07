@@ -1,0 +1,2581 @@
+add_namespace = scarlet
+add_namespace = scarlet_news
+
+# ======================================================
+# Gensokyo: Coexistence or Extinction
+# Remilia (Scarlet) path - Event templates (1~30)
+# File: events/gensokyo_second_remilia.txt
+# NOTE:
+# - All events are templates: adjust triggers/effects/pictures later.
+# - Country scope is assumed to be KYO unless you script otherwise.
+# - Localisation keys are in events_gensokyo_second_remilia_l_simp_chinese.yml
+# ======================================================
+
+country_event = {
+	id = scarlet_news.1
+	title = scarlet_news.1.t
+	desc  = scarlet_news.1.d
+	#picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet_news.1.a
+		
+	}
+}
+country_event = {
+	id = scarlet_news.2
+	title = scarlet_news.2.t
+	desc  = scarlet_news.2.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+	option = { name = scarlet_news.2.a }
+}
+
+# -----------------------------
+# (1~5) Core cast introductions
+# -----------------------------
+country_event = {
+	id = scarlet.1
+	title = scarlet.1.t
+	desc  = scarlet.1.d
+	#picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.1.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.2
+	title = scarlet.2.t
+	desc  = scarlet.2.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+	option = { name = scarlet.2.a }
+}
+
+country_event = {
+	id = scarlet.3
+	title = scarlet.3.t
+	desc  = scarlet.3.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+	option = {
+		name = scarlet.3.a
+		# TODO: Remilia doctrine / declaration
+	}
+	
+}
+
+country_event = {
+	id = scarlet.4
+	title = scarlet.4.t
+	desc  = scarlet.4.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+	option = {
+		name = scarlet.4.a
+		# TODO: keep Flandre close
+	}
+	
+}
+
+country_event = {
+	id = scarlet.5
+	title = scarlet.5.t
+	desc  = scarlet.5.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+	option = { name = scarlet.5.a }
+}
+
+# -----------------------------------------
+# (6~10) A/B: Sakuya & Meiling management
+# -----------------------------------------
+country_event = {
+	id = scarlet.6
+	title = scarlet.6.t
+	desc  = scarlet.6.d
+	is_triggered_only = yes
+	option = { name = scarlet.6.a }
+	
+}
+
+country_event = {
+	id = scarlet.7
+	title = scarlet.7.t
+	desc  = scarlet.7.d
+	is_triggered_only = yes
+	option = { name = scarlet.7.a }
+}
+
+country_event = {
+	id = scarlet.8
+	title = scarlet.8.t
+	desc  = scarlet.8.d
+	is_triggered_only = yes
+	option = { 
+		name = scarlet.8.a
+		hidden_effect = {
+			scarlet_prestige_add_sakuya = yes
+			scarlet_prestige_add_sakuya = yes
+			scarlet_prestige_add_sakuya = yes
+			scarlet_prestige_add_sakuya = yes
+			scarlet_prestige_add_sakuya = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_sakuya_number_5_tt 
+	}
+	
+}
+
+country_event = {
+	id = scarlet.9
+	title = scarlet.9.t
+	desc  = scarlet.9.d
+	is_triggered_only = yes
+	option = { 
+		name = scarlet.9.a 
+		hidden_effect = {
+			scarlet_prestige_add_meiling = yes
+			scarlet_prestige_add_meiling = yes
+			scarlet_prestige_add_meiling = yes
+			scarlet_prestige_add_meiling = yes
+			scarlet_prestige_add_meiling = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_meiling_number_5_tt
+	}
+}
+
+country_event = {
+	id = scarlet.10
+	title = scarlet.10.t
+	desc  = scarlet.10.d
+	is_triggered_only = yes
+	option = { 
+		name = scarlet.10.a 
+		hidden_effect = {
+			scarlet_prestige_add_patchouli = yes
+			scarlet_prestige_add_patchouli = yes
+			scarlet_prestige_add_patchouli = yes
+			scarlet_prestige_add_patchouli = yes
+			scarlet_prestige_add_patchouli = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_patchouli_number_5_tt
+	}
+}
+
+# -----------------------------------------
+# (11~15) C/D: Sisters & leadership choice
+# -----------------------------------------
+country_event = {
+	id = scarlet.11
+	title = scarlet.11.t
+	desc  = scarlet.11.d
+	is_triggered_only = yes
+	option = { 
+		name = scarlet.11.a 
+		hidden_effect = {
+			scarlet_prestige_add_flandre = yes
+			scarlet_prestige_add_flandre = yes
+			scarlet_prestige_add_flandre = yes
+			scarlet_prestige_add_flandre = yes
+			scarlet_prestige_add_flandre = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_flandre_number_5_tt
+	}
+}
+
+country_event = {
+	id = scarlet.12
+	title = scarlet.12.t
+	desc  = scarlet.12.d
+	is_triggered_only = yes
+	option = { 
+		name = scarlet.12.a 
+		hidden_effect = {
+			scarlet_prestige_add_remilia = yes
+			scarlet_prestige_add_remilia = yes
+			scarlet_prestige_add_remilia = yes
+			scarlet_prestige_add_remilia = yes
+			scarlet_prestige_add_remilia = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_remilia_number_5_tt
+	}
+	
+}
+
+country_event = {
+	id = scarlet.13
+	title = scarlet.13.t
+	desc  = scarlet.13.d
+	is_triggered_only = yes
+	option = { 
+		name = scarlet.13.a
+		
+		
+	}
+}
+
+country_event = {
+	id = scarlet.14
+	title = scarlet.14.t
+	desc  = scarlet.14.d
+	is_triggered_only = yes
+	option = { name = scarlet.14.a }
+	
+}
+
+country_event = {
+	id = scarlet.15
+	title = scarlet.15.t
+	desc  = scarlet.15.d
+	is_triggered_only = yes
+	option = { name = scarlet.15.a }
+}
+
+# -----------------------------------------
+# (16~20) E: Library, radio, external ties
+# -----------------------------------------
+country_event = {
+	id = scarlet.16
+	title = scarlet.16.t
+	desc  = scarlet.16.d
+	is_triggered_only = yes
+	option = { name = scarlet.16.a }
+}
+
+country_event = {
+	id = scarlet.17
+	title = scarlet.17.t
+	desc  = scarlet.17.d
+	is_triggered_only = yes
+	option = { 
+		name = scarlet.17.a 
+		country_event = scarlet.18 
+	}
+	
+}
+
+country_event = {
+	id = scarlet.18
+	title = scarlet.18.t
+	desc  = scarlet.18.d
+	is_triggered_only = yes
+	option = { 
+		name = scarlet.18.a
+		country_event = scarlet.19
+	}
+}
+
+country_event = {
+	id = scarlet.19
+	title = scarlet.19.t
+	desc  = scarlet.19.d
+	is_triggered_only = yes
+	option = { name = scarlet.19.a }
+	
+}
+
+country_event = {
+	id = scarlet.20
+	title = scarlet.20.t
+	desc  = scarlet.20.d
+	is_triggered_only = yes
+	option = { 
+		name = scarlet.20.a 
+		country_event = scarlet.21
+	}
+}
+
+# -----------------------------------------
+# (21~25) Grand Knot: The Scarlet Mansion becomes a State
+# -----------------------------------------
+country_event = {
+	id = scarlet.21
+	title = scarlet.21.t
+	desc  = scarlet.21.d
+	is_triggered_only = yes
+	option = { 
+		name = scarlet.21.a 
+		country_event = scarlet.22
+	}
+}
+
+country_event = {
+	id = scarlet.22
+	title = scarlet.22.t
+	desc  = scarlet.22.d
+	is_triggered_only = yes
+	option = { name = scarlet.22.a }
+	
+}
+
+country_event = {
+	id = scarlet.23
+	title = scarlet.23.t
+	desc  = scarlet.23.d
+	is_triggered_only = yes
+	option = { 
+		name = scarlet.23.a 
+		country_event = scarlet.24
+	}
+}
+
+country_event = {
+	id = scarlet.24
+	title = scarlet.24.t
+	desc  = scarlet.24.d
+	is_triggered_only = yes
+	option = { name = scarlet.24.a }
+}
+
+country_event = {
+	id = scarlet.25
+	title = scarlet.25.t
+	desc  = scarlet.25.d
+	is_triggered_only = yes
+	option = { 
+		name = scarlet.25.a 
+		country_event = scarlet.26
+	}
+}
+
+country_event = {
+	id = scarlet.26
+	title = scarlet.26.t
+	desc  = scarlet.26.d
+	is_triggered_only = yes
+	option = { name = scarlet.26.a }
+	
+}
+
+country_event = {
+	id = scarlet.27
+	title = scarlet.27.t
+	desc  = scarlet.27.d
+	is_triggered_only = yes
+	option = { name = scarlet.27.a }
+}
+
+country_event = {
+	id = scarlet.28
+	title = scarlet.28.t
+	desc  = scarlet.28.d
+	is_triggered_only = yes
+	option = { name = scarlet.28.a }
+}
+
+country_event = {
+	id = scarlet.29
+	title = scarlet.29.t
+	desc  = scarlet.29.d
+	is_triggered_only = yes
+	option = { 
+		name = scarlet.29.a 
+		country_event = scarlet.30
+	}
+	
+}
+
+country_event = {
+	id = scarlet.30
+	title = scarlet.30.t
+	desc  = scarlet.30.d
+	is_triggered_only = yes
+	option = { name = scarlet.30.a }
+}
+
+
+# -----------------------------------------
+# (31~35) TODO: Section name
+# -----------------------------------------
+country_event = {
+	id = scarlet.31
+	title = scarlet.31.t
+	desc  = scarlet.31.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+	option = { name = scarlet.31.a }
+}
+
+country_event = {
+	id = scarlet.32
+	title = scarlet.32.t
+	desc  = scarlet.32.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+	option = { name = scarlet.32.a }
+}
+
+country_event = {
+	id = scarlet.33
+	title = scarlet.33.t
+	desc  = scarlet.33.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+	option = {
+		name = scarlet.33.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.34
+	title = scarlet.34.t
+	desc  = scarlet.34.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+	option = { 
+		name = scarlet.34.a 
+		country_event = scarlet.35
+	}
+}
+
+country_event = {
+	id = scarlet.35
+	title = scarlet.35.t
+	desc  = scarlet.35.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+	option = { name = scarlet.35.a }
+}
+
+# -----------------------------------------
+# (36~40) TODO: Section name
+# -----------------------------------------
+country_event = {
+	id = scarlet.36
+	title = scarlet.36.t
+	desc  = scarlet.36.d
+	is_triggered_only = yes
+	option = { name = scarlet.36.a }
+}
+
+country_event = {
+	id = scarlet.37
+	title = scarlet.37.t
+	desc  = scarlet.37.d
+	is_triggered_only = yes
+	option = { 
+		name = scarlet.37.a
+		set_country_flag = help_sakuya_end_seija
+	 }
+	option = { 
+		name = scarlet.37.b
+		set_country_flag = help_meiling_slove_tengu
+
+	}
+}
+
+country_event = {
+	id = scarlet.38
+	title = scarlet.38.t
+	desc  = scarlet.38.d
+	is_triggered_only = yes
+	option = { name = scarlet.38.a }
+}
+
+country_event = {
+	id = scarlet.39
+	title = scarlet.39.t
+	desc  = scarlet.39.d
+	is_triggered_only = yes
+	option = { name = scarlet.39.a }
+}
+
+country_event = {
+	id = scarlet.40
+	title = scarlet.40.t
+	desc  = scarlet.40.d
+	is_triggered_only = yes
+	option = { 
+		name = scarlet.40.a 
+		country_event = scarlet.41
+	}
+}
+
+# -----------------------------------------
+# (41~45) TODO: Section name
+# -----------------------------------------
+country_event = {
+	id = scarlet.41
+	title = scarlet.41.t
+	desc  = scarlet.41.d
+	is_triggered_only = yes
+	option = { 
+		name = scarlet.41.a 
+		country_event = scarlet.42
+	}
+}
+
+country_event = {
+	id = scarlet.42
+	title = scarlet.42.t
+	desc  = scarlet.42.d
+	is_triggered_only = yes
+	option = { name = scarlet.42.a }
+}
+
+country_event = {
+	id = scarlet.43
+	title = scarlet.43.t
+	desc  = scarlet.43.d
+	is_triggered_only = yes
+	option = {
+		name = scarlet.43.a
+		country_event = scarlet.44
+		
+	}
+}
+
+country_event = {
+	id = scarlet.44
+	title = scarlet.44.t
+	desc  = scarlet.44.d
+	is_triggered_only = yes
+	option = { name = scarlet.44.a country_event = scarlet.45 }
+}
+
+country_event = {
+	id = scarlet.45
+	title = scarlet.45.t
+	desc  = scarlet.45.d
+	is_triggered_only = yes
+	option = { name = scarlet.45.a country_event = scarlet.46 }
+}
+
+# -----------------------------------------
+# (46~50) TODO: Section name
+# -----------------------------------------
+country_event = {
+	id = scarlet.46
+	title = scarlet.46.t
+	desc  = scarlet.46.d
+	is_triggered_only = yes
+	option = { name = scarlet.46.a }
+}
+
+country_event = {
+	id = scarlet.47
+	title = scarlet.47.t
+	desc  = scarlet.47.d
+	is_triggered_only = yes
+	option = { name = scarlet.47.a country_event = scarlet.48 }
+}
+
+country_event = {
+	id = scarlet.48
+	title = scarlet.48.t
+	desc  = scarlet.48.d
+	is_triggered_only = yes
+	option = { name = scarlet.48.a country_event = scarlet.49 }
+}
+
+country_event = {
+	id = scarlet.49
+	title = scarlet.49.t
+	desc  = scarlet.49.d
+	is_triggered_only = yes
+	option = { name = scarlet.49.a }
+}
+
+country_event = {
+	id = scarlet.50
+	title = scarlet.50.t
+	desc  = scarlet.50.d
+	is_triggered_only = yes
+	option = { name = scarlet.50.a country_event = scarlet.51 }
+}
+
+# -----------------------------------------
+# (51~55) TODO: Section name
+# -----------------------------------------
+country_event = {
+	id = scarlet.51
+	title = scarlet.51.t
+	desc  = scarlet.51.d
+	is_triggered_only = yes
+	option = { name = scarlet.51.a }
+}
+
+country_event = {
+	id = scarlet.52
+	title = scarlet.52.t
+	desc  = scarlet.52.d
+	is_triggered_only = yes
+	option = { name = scarlet.52.a country_event = scarlet.53}
+}
+
+country_event = {
+	id = scarlet.53
+	title = scarlet.53.t
+	desc  = scarlet.53.d
+	is_triggered_only = yes
+	option = {
+		name = scarlet.53.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.54
+	title = scarlet.54.t
+	desc  = scarlet.54.d
+	is_triggered_only = yes
+	option = { name = scarlet.54.a }
+}
+
+country_event = {
+	id = scarlet.55
+	title = scarlet.55.t
+	desc  = scarlet.55.d
+	is_triggered_only = yes
+	option = { name = scarlet.55.a }
+}
+
+# -----------------------------------------
+# (56~60) TODO: Section name
+# -----------------------------------------
+country_event = {
+	id = scarlet.56
+	title = scarlet.56.t
+	desc  = scarlet.56.d
+	is_triggered_only = yes
+	option = { name = scarlet.56.a }
+}
+
+country_event = {
+	id = scarlet.57
+	title = scarlet.57.t
+	desc  = scarlet.57.d
+	is_triggered_only = yes
+	option = { name = scarlet.57.a country_event = scarlet.58 }
+}
+
+country_event = {
+	id = scarlet.58
+	title = scarlet.58.t
+	desc  = scarlet.58.d
+	is_triggered_only = yes
+	option = { name = scarlet.58.a country_event = scarlet.59 }
+}
+
+country_event = {
+	id = scarlet.59
+	title = scarlet.59.t
+	desc  = scarlet.59.d
+	is_triggered_only = yes
+	option = { name = scarlet.59.a country_event = scarlet.60 }
+}
+
+country_event = {
+	id = scarlet.60
+	title = scarlet.60.t
+	desc  = scarlet.60.d
+	is_triggered_only = yes
+	option = { name = scarlet.60.a country_event = scarlet.61 }
+}
+
+# -----------------------------------------
+# (61~65) TODO: Section name
+# -----------------------------------------
+country_event = {
+	id = scarlet.61
+	title = scarlet.61.t
+	desc  = scarlet.61.d
+	is_triggered_only = yes
+	option = { name = scarlet.61.a country_event = scarlet.62 }
+}
+
+country_event = {
+	id = scarlet.62
+	title = scarlet.62.t
+	desc  = scarlet.62.d
+	is_triggered_only = yes
+	option = { name = scarlet.62.a country_event = scarlet.63 }
+}
+
+country_event = {
+	id = scarlet.63
+	title = scarlet.63.t
+	desc  = scarlet.63.d
+	is_triggered_only = yes
+	option = {
+		name = scarlet.63.a
+		country_event = scarlet.64
+		
+	}
+}
+
+country_event = {
+	id = scarlet.64
+	title = scarlet.64.t
+	desc  = scarlet.64.d
+	is_triggered_only = yes
+	option = { name = scarlet.64.a country_event = scarlet.65 }
+}
+
+country_event = {
+	id = scarlet.65
+	title = scarlet.65.t
+	desc  = scarlet.65.d
+	is_triggered_only = yes
+	option = { name = scarlet.65.a country_event = scarlet.66 }
+}
+
+# -----------------------------------------
+# (66~70) TODO: Section name
+# -----------------------------------------
+country_event = {
+	id = scarlet.66
+	title = scarlet.66.t
+	desc  = scarlet.66.d
+	is_triggered_only = yes
+	option = { name = scarlet.66.a }
+}
+
+country_event = {
+	id = scarlet.67
+	title = scarlet.67.t
+	desc  = scarlet.67.d
+	is_triggered_only = yes
+	option = { name = scarlet.67.a }
+}
+
+country_event = {
+	id = scarlet.68
+	title = scarlet.68.t
+	desc  = scarlet.68.d
+	is_triggered_only = yes
+	option = { name = scarlet.68.a }
+}
+
+country_event = {
+	id = scarlet.69
+	title = scarlet.69.t
+	desc  = scarlet.69.d
+	is_triggered_only = yes
+	option = { name = scarlet.69.a country_event = scarlet.70 }
+}
+
+country_event = {
+	id = scarlet.70
+	title = scarlet.70.t
+	desc  = scarlet.70.d
+	is_triggered_only = yes
+	option = { name = scarlet.70.a }
+}
+
+# -----------------------------------------
+# (71~75) TODO: Section name
+# -----------------------------------------
+country_event = {
+	id = scarlet.71
+	title = scarlet.71.t
+	desc  = scarlet.71.d
+	is_triggered_only = yes
+	option = { name = scarlet.71.a  country_event = scarlet.72 }
+}
+
+country_event = {
+	id = scarlet.72
+	title = scarlet.72.t
+	desc  = scarlet.72.d
+	is_triggered_only = yes
+	option = { name = scarlet.72.a }
+}
+
+country_event = {
+	id = scarlet.73
+	title = scarlet.73.t
+	desc  = scarlet.73.d
+	is_triggered_only = yes
+	option = {
+		name = scarlet.73.a
+		country_event = scarlet.74
+		
+	}
+}
+
+country_event = {
+	id = scarlet.74
+	title = scarlet.74.t
+	desc  = scarlet.74.d
+	is_triggered_only = yes
+	option = { name = scarlet.74.a }
+}
+
+country_event = {
+	id = scarlet.75
+	title = scarlet.75.t
+	desc  = scarlet.75.d
+	is_triggered_only = yes
+	option = { name = scarlet.75.a country_event = scarlet.76}
+}
+
+# -----------------------------------------
+# (76~80) TODO: Section name
+# -----------------------------------------
+country_event = {
+	id = scarlet.76
+	title = scarlet.76.t
+	desc  = scarlet.76.d
+	is_triggered_only = yes
+	option = { name = scarlet.76.a country_event = scarlet.77}
+}
+
+country_event = {
+	id = scarlet.77
+	title = scarlet.77.t
+	desc  = scarlet.77.d
+	is_triggered_only = yes
+	option = { name = scarlet.77.a country_event = scarlet.78}
+}
+
+country_event = {
+	id = scarlet.78
+	title = scarlet.78.t
+	desc  = scarlet.78.d
+	is_triggered_only = yes
+	option = { name = scarlet.78.a country_event = scarlet.79}
+}
+
+country_event = {
+	id = scarlet.79
+	title = scarlet.79.t
+	desc  = scarlet.79.d
+	is_triggered_only = yes
+	option = { name = scarlet.79.a }
+}
+
+country_event = {
+	id = scarlet.80
+	title = scarlet.80.t
+	desc  = scarlet.80.d
+	is_triggered_only = yes
+	option = { name = scarlet.80.a }
+}
+
+# -----------------------------------------
+# (81~85) TODO: Section name
+# -----------------------------------------
+country_event = {
+	id = scarlet.81
+	title = scarlet.81.t
+	desc  = scarlet.81.d
+	is_triggered_only = yes
+	option = { name = scarlet.81.a }
+}
+
+country_event = {
+	id = scarlet.82
+	title = scarlet.82.t
+	desc  = scarlet.82.d
+	is_triggered_only = yes
+	option = { name = scarlet.82.a }
+}
+
+country_event = {
+	id = scarlet.83
+	title = scarlet.83.t
+	desc  = scarlet.83.d
+	is_triggered_only = yes
+	option = {
+		name = scarlet.83.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.84
+	title = scarlet.84.t
+	desc  = scarlet.84.d
+	is_triggered_only = yes
+	option = { name = scarlet.84.a }
+}
+
+country_event = {
+	id = scarlet.85
+	title = scarlet.85.t
+	desc  = scarlet.85.d
+	is_triggered_only = yes
+	option = { name = scarlet.85.a }
+}
+
+# -----------------------------------------
+# (86~90) TODO: Section name
+# -----------------------------------------
+country_event = {
+	id = scarlet.86
+	title = scarlet.86.t
+	desc  = scarlet.86.d
+	is_triggered_only = yes
+	option = { name = scarlet.86.a country_event = scarlet.87 }
+}
+
+country_event = {
+	id = scarlet.87
+	title = scarlet.87.t
+	desc  = scarlet.87.d
+	is_triggered_only = yes
+	option = { name = scarlet.87.a }
+}
+
+country_event = {
+	id = scarlet.88
+	title = scarlet.88.t
+	desc  = scarlet.88.d
+	is_triggered_only = yes
+	option = { name = scarlet.88.a country_event = scarlet.89 }
+}
+
+country_event = {
+	id = scarlet.89
+	title = scarlet.89.t
+	desc  = scarlet.89.d
+	is_triggered_only = yes
+	option = { name = scarlet.89.a country_event = scarlet.90}
+	#option = { name = scarlet.89.b }
+}
+
+country_event = {
+	id = scarlet.90
+	title = scarlet.90.t
+	desc  = scarlet.90.d
+	is_triggered_only = yes
+	option = { name = scarlet.90.a }
+}
+
+
+country_event = {
+	id = scarlet.91
+	title = scarlet.91.t
+	desc  = scarlet.91.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.91.a
+		country_event = scarlet.92
+		
+	}
+}
+
+country_event = {
+	id = scarlet.92
+	title = scarlet.92.t
+	desc  = scarlet.92.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.92.a
+		country_event = scarlet.93
+		
+	}
+}
+
+country_event = {
+	id = scarlet.93
+	title = scarlet.93.t
+	desc  = scarlet.93.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.93.a
+		country_event = scarlet.94
+		
+	}
+}
+
+country_event = {
+	id = scarlet.94
+	title = scarlet.94.t
+	desc  = scarlet.94.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.94.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.95
+	title = scarlet.95.t
+	desc  = scarlet.95.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.95.a
+		country_event = scarlet.96
+		
+	}
+}
+
+country_event = {
+	id = scarlet.96
+	title = scarlet.96.t
+	desc  = scarlet.96.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.96.a
+		country_event = scarlet.97
+		
+	}
+}
+
+country_event = {
+	id = scarlet.97
+	title = scarlet.97.t
+	desc  = scarlet.97.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.97.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.98
+	title = scarlet.98.t
+	desc  = scarlet.98.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.98.a
+		country_event = scarlet.99
+		
+	}
+}
+
+country_event = {
+	id = scarlet.99
+	title = scarlet.99.t
+	desc  = scarlet.99.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.99.a
+		country_event = scarlet.100
+		
+	}
+}
+
+country_event = {
+	id = scarlet.100
+	title = scarlet.100.t
+	desc  = scarlet.100.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.100.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.101
+	title = scarlet.101.t
+	desc  = scarlet.101.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.101.a
+		country_event = scarlet.102
+		
+	}
+}
+
+country_event = {
+	id = scarlet.102
+	title = scarlet.102.t
+	desc  = scarlet.102.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.102.a
+		country_event = scarlet.103
+		
+	}
+}
+
+country_event = {
+	id = scarlet.103
+	title = scarlet.103.t
+	desc  = scarlet.103.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.103.a
+		country_event = scarlet.104
+		
+	}
+}
+
+country_event = {
+	id = scarlet.104
+	title = scarlet.104.t
+	desc  = scarlet.104.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.104.a
+
+		random_list = {
+			50 = {
+				add_political_power = 300
+				add_breakthrough_points = {
+					specialization = specialization_nuclear
+					value = 2
+				}
+
+				add_tech_bonus = {
+					name = kyo_nuclear
+					bonus = 3
+					uses = 1
+					category = nuclear
+				}
+			}
+			50 = {
+				add_breakthrough_points = {
+					specialization = specialization_nuclear
+					value = 2
+				}
+				add_tech_bonus = {
+					name = kyo_nuclear
+					bonus = 3
+					uses = 1
+					category = nuclear
+				}
+			}
+		}
+		
+	}
+}
+
+country_event = {
+	id = scarlet.105
+	title = scarlet.105.t
+	desc  = scarlet.105.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.105.a
+		country_event = scarlet.106
+		
+	}
+}
+
+country_event = {
+	id = scarlet.106
+	title = scarlet.106.t
+	desc  = scarlet.106.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.106.a
+		country_event = scarlet.107
+		
+	}
+}
+
+country_event = {
+	id = scarlet.107
+	title = scarlet.107.t
+	desc  = scarlet.107.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.107.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.108
+	title = scarlet.108.t
+	desc  = scarlet.108.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.108.a
+		country_event = scarlet.109
+		
+	}
+}
+
+country_event = {
+	id = scarlet.109
+	title = scarlet.109.t
+	desc  = scarlet.109.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.109.a
+		country_event = scarlet.110
+		
+	}
+}
+
+country_event = {
+	id = scarlet.110
+	title = scarlet.110.t
+	desc  = scarlet.110.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.110.a
+		
+	}
+}
+
+
+country_event = {
+	id = scarlet.111
+	title = scarlet.111.t
+	desc  = scarlet.111.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.111.a
+
+		add_political_power = -300
+		add_stability = -0.1
+		add_war_support = -0.1
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = -1500
+		}
+		
+	}
+}
+
+#隨機事件
+
+country_event = {
+	id = scarlet.112
+	title = scarlet.112.t
+	desc  = scarlet.112.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.112.a
+		hidden_effect = {
+			scarlet_prestige_add_sakuya = yes
+			scarlet_prestige_add_sakuya = yes
+			scarlet_prestige_add_sakuya = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_sakuya_number_3_tt
+	}
+	option = {
+		name = scarlet.112.b
+		hidden_effect = {
+			scarlet_prestige_add_remilia = yes
+			scarlet_prestige_add_remilia = yes
+			scarlet_prestige_add_remilia = yes
+			scarlet_prestige_add_remilia = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_remilia_number_4_tt
+	}
+	option = {
+		name = scarlet.112.c
+		hidden_effect = {
+			scarlet_prestige_add_meiling = yes
+			scarlet_prestige_add_meiling = yes
+			scarlet_prestige_add_meiling = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_meiling_number_3_tt
+	}
+}
+
+country_event = {
+	id = scarlet.113
+	title = scarlet.113.t
+	desc  = scarlet.113.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.113.a
+		hidden_effect = {
+			scarlet_prestige_add_patchouli = yes
+			scarlet_prestige_add_patchouli = yes
+			scarlet_prestige_add_patchouli = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_patchouli_number_3_tt
+	}
+	option = {
+		name = scarlet.113.b
+		hidden_effect = {
+			scarlet_prestige_add_remilia = yes
+			scarlet_prestige_add_remilia = yes
+			scarlet_prestige_add_remilia = yes
+			scarlet_prestige_add_remilia = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_remilia_number_4_tt
+	}
+	option = {
+		name = scarlet.113.c
+		hidden_effect = {
+			scarlet_prestige_add_flandre = yes
+			scarlet_prestige_add_flandre = yes
+			scarlet_prestige_add_flandre = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_flandre_number_3_tt
+	}
+}
+
+country_event = {
+	id = scarlet.114
+	title = scarlet.114.t
+	desc  = scarlet.114.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.114.a
+		hidden_effect = {
+			scarlet_prestige_add_patchouli = yes
+			scarlet_prestige_add_patchouli = yes
+			scarlet_prestige_add_patchouli = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_patchouli_number_3_tt
+	}
+	option = {
+		name = scarlet.114.b
+		hidden_effect = {
+			scarlet_prestige_add_remilia = yes
+			scarlet_prestige_add_remilia = yes
+			scarlet_prestige_add_remilia = yes
+			scarlet_prestige_add_remilia = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_remilia_number_4_tt
+	}
+	option = {
+		name = scarlet.114.c
+		hidden_effect = {
+			scarlet_prestige_add_sakuya = yes
+			scarlet_prestige_add_sakuya = yes
+			scarlet_prestige_add_sakuya = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_sakuya_number_3_tt
+	}
+}
+
+country_event = {
+	id = scarlet.115
+	title = scarlet.115.t
+	desc  = scarlet.115.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.115.a
+		hidden_effect = {
+			scarlet_prestige_add_flandre = yes
+			scarlet_prestige_add_flandre = yes
+			scarlet_prestige_add_flandre = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_flandre_number_3_tt
+	}
+	option = {
+		name = scarlet.115.b
+		hidden_effect = {
+			scarlet_prestige_add_remilia = yes
+			scarlet_prestige_add_remilia = yes
+			scarlet_prestige_add_remilia = yes
+			scarlet_prestige_add_remilia = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_remilia_number_4_tt
+	}
+	option = {
+		name = scarlet.115.c
+		hidden_effect = {
+			scarlet_prestige_add_meiling = yes
+			scarlet_prestige_add_meiling = yes
+			scarlet_prestige_add_meiling = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_meiling_number_3_tt
+	}
+}
+
+country_event = {
+	id = scarlet.116
+	title = scarlet.116.t
+	desc  = scarlet.116.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.116.a
+		hidden_effect = {
+			scarlet_prestige_add_patchouli = yes
+			scarlet_prestige_add_patchouli = yes
+			scarlet_prestige_add_patchouli = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_patchouli_number_3_tt
+	}
+	option = {
+		name = scarlet.116.b
+		hidden_effect = {
+			scarlet_prestige_add_remilia = yes
+			scarlet_prestige_add_remilia = yes
+			scarlet_prestige_add_remilia = yes
+			scarlet_prestige_add_remilia = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_remilia_number_4_tt
+	}
+	option = {
+		name = scarlet.116.c
+		hidden_effect = {
+			scarlet_prestige_add_meiling = yes
+			scarlet_prestige_add_meiling = yes
+			scarlet_prestige_add_meiling = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_meiling_number_3_tt
+	}
+}
+
+country_event = {
+	id = scarlet.117
+	title = scarlet.117.t
+	desc  = scarlet.117.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.117.a
+		hidden_effect = {
+			scarlet_prestige_add_sakuya = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_sakuya_number_1_tt
+	}
+	option = {
+		name = scarlet.117.b
+		hidden_effect = {
+			scarlet_prestige_add_remilia = yes
+			scarlet_prestige_add_remilia = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_remilia_number_2_tt
+	}
+	option = {
+		name = scarlet.117.c
+		hidden_effect = {
+			scarlet_prestige_add_meiling = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_meiling_number_1_tt
+	}
+}
+
+country_event = {
+	id = scarlet.118
+	title = scarlet.118.t
+	desc  = scarlet.118.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.118.a
+		hidden_effect = {
+			scarlet_prestige_add_patchouli = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_patchouli_number_1_tt
+	}
+	option = {
+		name = scarlet.118.b
+		hidden_effect = {
+			scarlet_prestige_add_remilia = yes
+			scarlet_prestige_add_remilia = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_remilia_number_2_tt
+	}
+	option = {
+		name = scarlet.118.c
+		hidden_effect = {
+			scarlet_prestige_add_flandre = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_flandre_number_1_tt
+	}
+}
+
+country_event = {
+	id = scarlet.119
+	title = scarlet.119.t
+	desc  = scarlet.119.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.119.a
+		hidden_effect = {
+			scarlet_prestige_add_patchouli = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_patchouli_number_1_tt
+	}
+	option = {
+		name = scarlet.119.b
+		hidden_effect = {
+			scarlet_prestige_add_remilia = yes
+			scarlet_prestige_add_remilia = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_remilia_number_2_tt
+	}
+	option = {
+		name = scarlet.119.c
+		hidden_effect = {
+			scarlet_prestige_add_sakuya = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_sakuya_number_1_tt
+	}
+}
+
+country_event = {
+	id = scarlet.120
+	title = scarlet.120.t
+	desc  = scarlet.120.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.120.a
+		hidden_effect = {
+			scarlet_prestige_add_flandre = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_flandre_number_1_tt
+	}
+	option = {
+		name = scarlet.120.b
+		hidden_effect = {
+			scarlet_prestige_add_remilia = yes
+			scarlet_prestige_add_remilia = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_remilia_number_2_tt
+	}
+	option = {
+		name = scarlet.120.c
+		hidden_effect = {
+			scarlet_prestige_add_meiling = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_meiling_number_1_tt
+	}
+}
+
+country_event = {
+	id = scarlet.121
+	title = scarlet.121.t
+	desc  = scarlet.121.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.121.a
+		hidden_effect = {
+			scarlet_prestige_add_patchouli = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_patchouli_number_1_tt
+	}
+	option = {
+		name = scarlet.121.b
+		hidden_effect = {
+			scarlet_prestige_add_remilia = yes
+			scarlet_prestige_add_remilia = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_remilia_number_2_tt
+	}
+	option = {
+		name = scarlet.121.c
+		hidden_effect = {
+			scarlet_prestige_add_meiling = yes
+		}
+		custom_effect_tooltip = scarlet_prestige_add_meiling_number_1_tt
+	}
+}
+
+country_event = {
+	id = scarlet.122
+	title = scarlet.122.t
+	desc  = scarlet.122.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.122.a
+		country_event = scarlet.123
+		
+	}
+}
+
+country_event = {
+	id = scarlet.123
+	title = scarlet.123.t
+	desc  = scarlet.123.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.123.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.124
+	title = scarlet.124.t
+	desc  = scarlet.124.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.124.a
+		country_event = scarlet.125
+		
+	}
+
+	option = {
+		name = scarlet.124.b
+		country_event = scarlet.126
+		
+	}
+}
+
+country_event = {
+	id = scarlet.125
+	title = scarlet.125.t
+	desc  = scarlet.125.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.125.a
+
+		retire_country_leader = yes
+
+		gensokyo_Flandre = {
+			add_country_leader_role = {
+				country_leader = {
+						expire = "2000.1.1"
+						ideology = vampire_empire
+						traits = {
+
+							scarlet_lord_of_the_red_moon
+							
+							
+						}
+				
+				}	
+			promote_leader = yes
+			}
+			
+		}
+
+		country_event = {
+			id = scarlet.127
+			days = 2
+		}
+		
+	}
+}
+
+country_event = {
+	id = scarlet.126
+	title = scarlet.126.t
+	desc  = scarlet.126.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.126.a
+		country_event = scarlet.133
+		
+	}
+}
+
+country_event = {
+	id = scarlet.127
+	title = scarlet.127.t
+	desc  = scarlet.127.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.127.a
+		country_event = scarlet.128
+		
+	}
+}
+
+country_event = {
+	id = scarlet.128
+	title = scarlet.128.t
+	desc  = scarlet.128.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.128.a
+		country_event = {
+			id = scarlet.129
+			days = 2
+		}
+		
+	}
+}
+
+country_event = {
+	id = scarlet.129
+	title = scarlet.129.t
+	desc  = scarlet.129.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.129.a
+		country_event = scarlet.130
+		
+	}
+}
+
+country_event = {
+	id = scarlet.130
+	title = scarlet.130.t
+	desc  = scarlet.130.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.130.a
+		country_event = scarlet.131
+		
+	}
+}
+
+country_event = {
+	id = scarlet.131
+	title = scarlet.131.t
+	desc  = scarlet.131.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.131.a
+
+		country_event = {
+			id = scarlet.135
+			days = 7
+		}
+		
+	}
+}
+
+country_event = {
+	id = scarlet.132
+	title = scarlet.132.t
+	desc  = scarlet.132.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.132.a
+
+		country_event = {
+			id = scarlet.135
+			days = 7
+		}
+		
+	}
+}
+
+country_event = {
+	id = scarlet.133
+	title = scarlet.133.t
+	desc  = scarlet.133.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.133.a
+		country_event = scarlet.132
+		
+	}
+	option = {
+		name = scarlet.133.b
+		country_event = scarlet.134
+		
+	}
+}
+
+country_event = {
+	id = scarlet.134
+	title = scarlet.134.t
+	desc  = scarlet.134.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.134.a
+		country_event = {
+			id = scarlet.135
+			days = 7
+		}
+		
+	}
+}
+
+country_event = {
+	id = scarlet.135
+	title = scarlet.135.t
+	desc  = scarlet.135.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.135.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.136
+	title = scarlet.136.t
+	desc  = scarlet.136.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.136.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.137
+	title = scarlet.137.t
+	desc  = scarlet.137.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.137.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.138
+	title = scarlet.138.t
+	desc  = scarlet.138.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.138.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.139
+	title = scarlet.139.t
+	desc  = scarlet.139.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.139.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.140
+	title = scarlet.140.t
+	desc  = scarlet.140.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.140.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.141
+	title = scarlet.141.t
+	desc  = scarlet.141.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.141.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.142
+	title = scarlet.142.t
+	desc  = scarlet.142.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.142.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.143
+	title = scarlet.143.t
+	desc  = scarlet.143.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.143.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.144
+	title = scarlet.144.t
+	desc  = scarlet.144.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.144.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.145
+	title = scarlet.145.t
+	desc  = scarlet.145.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.145.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.146
+	title = scarlet.146.t
+	desc  = scarlet.146.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.146.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.147
+	title = scarlet.147.t
+	desc  = scarlet.147.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.147.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.148
+	title = scarlet.148.t
+	desc  = scarlet.148.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.148.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.149
+	title = scarlet.149.t
+	desc  = scarlet.149.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.149.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.150
+	title = scarlet.150.t
+	desc  = scarlet.150.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.150.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.151
+	title = scarlet.151.t
+	desc  = scarlet.151.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.151.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.152
+	title = scarlet.152.t
+	desc  = scarlet.152.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.152.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.153
+	title = scarlet.153.t
+	desc  = scarlet.153.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.153.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.154
+	title = scarlet.154.t
+	desc  = scarlet.154.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.154.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.155
+	title = scarlet.155.t
+	desc  = scarlet.155.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.155.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.156
+	title = scarlet.156.t
+	desc  = scarlet.156.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.156.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.157
+	title = scarlet.157.t
+	desc  = scarlet.157.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.157.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.158
+	title = scarlet.158.t
+	desc  = scarlet.158.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.158.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.159
+	title = scarlet.159.t
+	desc  = scarlet.159.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.159.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.160
+	title = scarlet.160.t
+	desc  = scarlet.160.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.160.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.161
+	title = scarlet.161.t
+	desc  = scarlet.161.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.161.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.162
+	title = scarlet.162.t
+	desc  = scarlet.162.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.162.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.163
+	title = scarlet.163.t
+	desc  = scarlet.163.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.163.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.164
+	title = scarlet.164.t
+	desc  = scarlet.164.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.164.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.165
+	title = scarlet.165.t
+	desc  = scarlet.165.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.165.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.166
+	title = scarlet.166.t
+	desc  = scarlet.166.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.166.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.167
+	title = scarlet.167.t
+	desc  = scarlet.167.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.167.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.168
+	title = scarlet.168.t
+	desc  = scarlet.168.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.168.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.169
+	title = scarlet.169.t
+	desc  = scarlet.169.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.169.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.170
+	title = scarlet.170.t
+	desc  = scarlet.170.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.170.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.171
+	title = scarlet.171.t
+	desc  = scarlet.171.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.171.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.172
+	title = scarlet.172.t
+	desc  = scarlet.172.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.172.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.173
+	title = scarlet.173.t
+	desc  = scarlet.173.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.173.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.174
+	title = scarlet.174.t
+	desc  = scarlet.174.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.174.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.175
+	title = scarlet.175.t
+	desc  = scarlet.175.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.175.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.176
+	title = scarlet.176.t
+	desc  = scarlet.176.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.176.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.177
+	title = scarlet.177.t
+	desc  = scarlet.177.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.177.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.178
+	title = scarlet.178.t
+	desc  = scarlet.178.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.178.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.179
+	title = scarlet.179.t
+	desc  = scarlet.179.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.179.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.180
+	title = scarlet.180.t
+	desc  = scarlet.180.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.180.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.181
+	title = scarlet.181.t
+	desc  = scarlet.181.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.181.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.182
+	title = scarlet.182.t
+	desc  = scarlet.182.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.182.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.183
+	title = scarlet.183.t
+	desc  = scarlet.183.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.183.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.184
+	title = scarlet.184.t
+	desc  = scarlet.184.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.184.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.185
+	title = scarlet.185.t
+	desc  = scarlet.185.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.185.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.186
+	title = scarlet.186.t
+	desc  = scarlet.186.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.186.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.187
+	title = scarlet.187.t
+	desc  = scarlet.187.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.187.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.188
+	title = scarlet.188.t
+	desc  = scarlet.188.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.188.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.189
+	title = scarlet.189.t
+	desc  = scarlet.189.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.189.a
+		
+	}
+}
+
+country_event = {
+	id = scarlet.190
+	title = scarlet.190.t
+	desc  = scarlet.190.d
+	#picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+
+	option = {
+		name = scarlet.190.a
+		
+	}
+}
+
+
+

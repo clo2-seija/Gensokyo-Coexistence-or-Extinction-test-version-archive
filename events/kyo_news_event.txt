@@ -1,0 +1,788 @@
+ add_namespace = kyo_news
+
+
+
+
+#news_event = {
+#	id = kyo_news.2 
+#	title = kyo_news.2.t #标题，用于本地化
+#	desc = kyo_news.2.d
+#	picture = GFX_news_event_nuke #新闻用图
+#
+#	major = yes # 填yes使得新闻为所有国家可见，否则只有触发国可见
+#
+#	is_triggered_only = yes # 是否为被动触发，是则不能用trigger = {}、mean_time_to_happen、fire_only_once
+#
+#
+#	fire_only_once = yes # 只触发一次，建议与trigger - {}同用，也就是只用于自动触发的新闻，而不要在被动触发的新闻中使用
+#	
+#	trigger = {
+#		#如果是自动触发事件，则触发器填在这里
+#	}
+#
+#	mean_time_to_happen = {
+#		#与上文事件同类代码一个道理
+#	}
+#
+#	immediate = {
+#		#新闻触发瞬间产生的效果
+#	}
+#	
+#	option = { 
+#		name = kyo_news.2.a 
+#		trigger = {}
+#	}
+#	
+#}
+
+news_event = {
+	id = kyo_news.1
+	title = kyo_news.1.t
+	desc = kyo_news.1.d
+	picture = GFX_news_event_remilia_2
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.1.a
+	}
+}
+
+news_event = {
+	id = kyo_news.2
+	title = kyo_news.2.t
+	desc = kyo_news.2.d
+	picture = GFX_news_event_yukari_1
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.2.a
+	}
+}
+
+news_event = {
+	id = kyo_news.3
+	title = kyo_news.3.t
+	desc = kyo_news.3.d
+	picture = GFX_news_event_yukari_2
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.3.a
+	}
+}
+
+news_event = {
+	id = kyo_news.4
+	title = kyo_news.4.t
+	desc = kyo_news.4.d
+	picture = GFX_news_event_yukari_3
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.4.a
+	}
+}
+
+news_event = {
+	id = kyo_news.5
+	title = kyo_news.5.t
+	desc = kyo_news.5.d
+	picture = GFX_news_event_seija_rebel
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.5.a
+	}
+}
+
+news_event = {
+	id = kyo_news.6
+	title = kyo_news.6.t
+	desc = kyo_news.6.d
+	picture = GFX_news_event_hijiri_1
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.6.a
+	}
+}
+
+news_event = {
+	id = kyo_news.7
+	title = kyo_news.7.t
+	desc = kyo_news.7.d
+	picture = GFX_news_event_gensokyo_6
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.7.a
+	}
+}
+
+news_event = {
+	id = kyo_news.8
+	title = kyo_news.8.t
+	desc = kyo_news.8.d
+	picture = GFX_news_event_gensokyo_7
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.8.a
+	}
+}
+
+news_event = {
+	id = kyo_news.9
+	title = kyo_news.9.t
+	desc = kyo_news.9.d
+	picture = GFX_news_event_gensokyo_8
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.9.a
+	}
+}
+
+news_event = {
+	id = kyo_news.10
+	title = kyo_news.10.t
+	desc = kyo_news.10.d
+	picture = GFX_news_event_gensokyo_4
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.10.a
+	}
+}
+
+news_event = {
+	id = kyo_news.11
+	title = kyo_news.11.t
+	desc = kyo_news.11.d
+	picture = GFX_news_event_gensokyo_3
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.11.a
+	}
+}
+
+news_event = {
+	id = kyo_news.12
+	title = kyo_news.12.t
+	desc = kyo_news.12.d
+	picture = GFX_news_event_gensokyo_9
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.12.a
+	}
+}
+
+news_event = {
+	id = kyo_news.13
+	title = kyo_news.13.t
+	desc = kyo_news.13.d
+	picture = GFX_news_event_gensokyo_10
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.13.a
+	}
+}
+
+news_event = {
+	id = kyo_news.14
+	title = kyo_news.14.t
+	desc = kyo_news.14.d
+	picture = GFX_news_event_remilia_7
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.14.a
+	}
+}
+
+news_event = {
+	id = kyo_news.15
+	title = kyo_news.15.t
+	desc = kyo_news.15.d
+	picture = GFX_news_event_hijiri_3
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.15.a
+	}
+}
+
+news_event = {
+	id = kyo_news.16
+	title = kyo_news.16.t
+	desc = kyo_news.16.d
+	picture = GFX_news_event_gensokyo_1
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.16.a
+	}
+
+}
+
+news_event = {
+	id = kyo_news.17
+	title = kyo_news.17.t
+	desc = kyo_news.17.d
+	picture = GFX_news_event_hijiri_6
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.17.a
+	}
+}
+
+news_event = {
+	id = kyo_news.18
+	title = kyo_news.18.t
+	desc = kyo_news.18.d
+	picture = GFX_news_event_seija_rebel_8
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.18.a
+	}
+}
+
+news_event = {
+	id = kyo_news.19
+	title = kyo_news.19.t
+	desc = kyo_news.19.d
+	picture = GFX_news_event_yukari_4
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.19.a
+	}
+}
+
+news_event = {
+	id = kyo_news.20
+	title = kyo_news.20.t
+	desc = kyo_news.20.d
+	picture = GFX_news_event_remilia_4
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.20.a
+	}
+}
+
+news_event = {
+	id = kyo_news.21
+	title = kyo_news.21.t
+	desc = kyo_news.21.d
+	picture = GFX_news_event_remilia_4
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.21.a
+	}
+}
+
+news_event = {
+	id = kyo_news.22
+	title = kyo_news.22.t
+	desc = kyo_news.22.d
+	picture = GFX_news_event_hijiri_7
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.22.a
+	}
+}
+
+news_event = {
+	id = kyo_news.23
+	title = kyo_news.23.t
+	desc = kyo_news.23.d
+	picture = GFX_news_event_seija_rebel_2
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.23.a
+	}
+}
+
+news_event = {
+	id = kyo_news.24
+	title = kyo_news.24.t
+	desc = kyo_news.24.d
+	picture = GFX_news_event_yukari_4
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.24.a
+	}
+}
+
+
+news_event = {
+	id = kyo_news.25
+	title = kyo_news.25.t
+	desc = kyo_news.25.d
+	picture = GFX_news_event_gensokyo_7
+
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.25.a
+	}
+}
+
+news_event = {
+	id = kyo_news.26
+	title = kyo_news.26.t
+	desc = kyo_news.26.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.26.a
+	}
+}
+
+news_event = {
+	id = kyo_news.27
+	title = kyo_news.27.t
+	desc = kyo_news.27.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.27.a
+	}
+}
+
+news_event = {
+	id = kyo_news.28
+	title = kyo_news.28.t
+	desc = kyo_news.28.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.28.a
+	}
+}
+
+news_event = {
+	id = kyo_news.29
+	title = kyo_news.29.t
+	desc = kyo_news.29.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.29.a
+	}
+}
+
+news_event = {
+	id = kyo_news.30
+	title = kyo_news.30.t
+	desc = kyo_news.30.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.30.a
+	}
+}
+
+news_event = {
+	id = kyo_news.31
+	title = kyo_news.31.t
+	desc = kyo_news.31.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.31.a
+	}
+}
+
+news_event = {
+	id = kyo_news.32
+	title = kyo_news.32.t
+	desc = kyo_news.32.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.32.a
+	}
+}
+
+news_event = {
+	id = kyo_news.33
+	title = kyo_news.33.t
+	desc = kyo_news.33.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.33.a
+	}
+}
+
+news_event = {
+	id = kyo_news.34
+	title = kyo_news.34.t
+	desc = kyo_news.34.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.34.a
+	}
+}
+
+news_event = {
+	id = kyo_news.35
+	title = kyo_news.35.t
+	desc = kyo_news.35.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.35.a
+	}
+}
+
+news_event = {
+	id = kyo_news.36
+	title = kyo_news.36.t
+	desc = kyo_news.36.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.36.a
+	}
+}
+
+news_event = {
+	id = kyo_news.37
+	title = kyo_news.37.t
+	desc = kyo_news.37.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.37.a
+	}
+}
+
+news_event = {
+	id = kyo_news.38
+	title = kyo_news.38.t
+	desc = kyo_news.38.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.38.a
+	}
+}
+
+news_event = {
+	id = kyo_news.39
+	title = kyo_news.39.t
+	desc = kyo_news.39.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.39.a
+	}
+}
+
+news_event = {
+	id = kyo_news.40
+	title = kyo_news.40.t
+	desc = kyo_news.40.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.40.a
+	}
+}
+
+news_event = {
+	id = kyo_news.41
+	title = kyo_news.41.t
+	desc = kyo_news.41.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.41.a
+	}
+}
+
+news_event = {
+	id = kyo_news.42
+	title = kyo_news.42.t
+	desc = kyo_news.42.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.42.a
+	}
+}
+
+news_event = {
+	id = kyo_news.43
+	title = kyo_news.43.t
+	desc = kyo_news.43.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.43.a
+	}
+}
+
+news_event = {
+	id = kyo_news.44
+	title = kyo_news.44.t
+	desc = kyo_news.44.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.44.a
+	}
+}
+
+news_event = {
+	id = kyo_news.45
+	title = kyo_news.45.t
+	desc = kyo_news.45.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.45.a
+	}
+}
+
+news_event = {
+	id = kyo_news.46
+	title = kyo_news.46.t
+	desc = kyo_news.46.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.46.a
+	}
+}
+
+news_event = {
+	id = kyo_news.47
+	title = kyo_news.47.t
+	desc = kyo_news.47.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.47.a
+	}
+}
+
+news_event = {
+	id = kyo_news.48
+	title = kyo_news.48.t
+	desc = kyo_news.48.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.48.a
+	}
+}
+
+news_event = {
+	id = kyo_news.49
+	title = kyo_news.49.t
+	desc = kyo_news.49.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.49.a
+	}
+}
+
+news_event = {
+	id = kyo_news.50
+	title = kyo_news.50.t
+	desc = kyo_news.50.d
+	picture = GFX_news_event_nuke
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_news.50.a
+	}
+}
+# YAKUMO_ROUTE_V04_NEWS_BEGIN
+news_event = {
+	id = kyo_news.51
+	title = kyo_news.51.t
+	desc = kyo_news.51.d
+	picture = GFX_news_event_yukari_6
+	major = yes
+	is_triggered_only = yes
+	option = { name = kyo_news.51.a }
+}
+
+news_event = {
+	id = kyo_news.52
+	title = kyo_news.52.t
+	desc = kyo_news.52.d
+	picture = GFX_news_event_yukari_7
+	major = yes
+	is_triggered_only = yes
+	option = { name = kyo_news.52.a }
+}
+
+news_event = {
+	id = kyo_news.53
+	title = kyo_news.53.t
+	desc = kyo_news.53.d
+	picture = GFX_news_event_yukari_5
+	major = yes
+	is_triggered_only = yes
+	option = { name = kyo_news.53.a }
+}
+
+news_event = {
+	id = kyo_news.54
+	title = kyo_news.54.t
+	desc = kyo_news.54.d
+	picture = GFX_news_event_yukari_8
+	major = yes
+	is_triggered_only = yes
+	option = { name = kyo_news.54.a }
+}
+
+news_event = {
+	id = kyo_news.55
+	title = kyo_news.55.t
+	desc = kyo_news.55.d
+	picture = GFX_news_event_gensokyo_5
+	major = yes
+	is_triggered_only = yes
+	option = { name = kyo_news.55.a }
+}
+# YAKUMO_ROUTE_V04_NEWS_END

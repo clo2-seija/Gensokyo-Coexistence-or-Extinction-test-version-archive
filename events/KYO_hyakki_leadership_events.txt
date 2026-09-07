@@ -1,0 +1,217 @@
+add_namespace = KYO_hyakki_leadership
+
+# 事件內容概要：蕾米莉亞以突破攻勢取得軍務委員會主導權。
+country_event = {
+	id = KYO_hyakki_leadership.1
+	title = KYO_hyakki_leadership.1.t
+	desc = KYO_hyakki_leadership.1.d
+
+	picture = GFX_gensokyo_Remilia_large
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_leadership.1.a
+		ai_chance = {
+			base = 100
+		}
+		KYO_apply_war_leader_remilia = yes
+	}
+}
+
+# 事件內容概要：幽幽子以冥界通道與部隊恢復能力接掌軍務委員會。
+country_event = {
+	id = KYO_hyakki_leadership.2
+	title = KYO_hyakki_leadership.2.t
+	desc = KYO_hyakki_leadership.2.d
+
+	picture = GFX_gensokyo_yuyuko_large
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_leadership.2.a
+		ai_chance = {
+			base = 100
+		}
+		KYO_apply_war_leader_yuyuko = yes
+	}
+}
+
+# 事件內容概要：伊吹萃香以鬼族正面戰力與凝聚力接掌軍務委員會。
+country_event = {
+	id = KYO_hyakki_leadership.3
+	title = KYO_hyakki_leadership.3.t
+	desc = KYO_hyakki_leadership.3.d
+
+	picture = GFX_gensokyo_suika_large
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_leadership.3.a
+		ai_chance = {
+			base = 100
+		}
+		KYO_apply_war_leader_suika = yes
+	}
+}
+
+# 事件內容概要：風見幽香以壓倒性戰力要求軍務委員會服從。
+country_event = {
+	id = KYO_hyakki_leadership.4
+	title = KYO_hyakki_leadership.4.t
+	desc = KYO_hyakki_leadership.4.d
+
+	picture = GFX_gensokyo_yuuka_large
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_leadership.4.a
+		ai_chance = {
+			base = 100
+		}
+		KYO_apply_war_leader_yuuka = yes
+	}
+}
+
+# 事件內容概要：聖白蓮以救援與治理聲望接掌信仰委員會。
+country_event = {
+	id = KYO_hyakki_leadership.11
+	title = KYO_hyakki_leadership.11.t
+	desc = KYO_hyakki_leadership.11.d
+
+	picture = GFX_gensokyo_Byakuren_large
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_leadership.11.a
+		ai_chance = {
+			base = 100
+		}
+		KYO_apply_order_leader_byakuren = yes
+	}
+}
+
+# 事件內容概要：八坂神奈子以工程與動員網絡取得信仰委員會主導權。
+country_event = {
+	id = KYO_hyakki_leadership.12
+	title = KYO_hyakki_leadership.12.t
+	desc = KYO_hyakki_leadership.12.d
+
+	picture = GFX_gensokyo_kanako_large
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_leadership.12.a
+		ai_chance = {
+			base = 100
+		}
+		KYO_apply_order_leader_kanako = yes
+	}
+}
+
+# 事件內容概要：古明地覺以情報、審訊與地下網絡接掌信仰委員會。
+country_event = {
+	id = KYO_hyakki_leadership.13
+	title = KYO_hyakki_leadership.13.t
+	desc = KYO_hyakki_leadership.13.d
+
+	picture = GFX_gensokyo_satori_large
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_leadership.13.a
+		ai_chance = {
+			base = 100
+		}
+		KYO_apply_order_leader_satori = yes
+	}
+}
+
+# 事件內容概要：飯綱丸龍以天狗情報網取得信仰委員會協調權。
+country_event = {
+	id = KYO_hyakki_leadership.14
+	title = KYO_hyakki_leadership.14.t
+	desc = KYO_hyakki_leadership.14.d
+
+	picture = GFX_gensokyo_Megumu_large
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_leadership.14.a
+		ai_chance = {
+			base = 100
+		}
+		KYO_apply_order_leader_megumu = yes
+	}
+}
+
+# 事件內容概要：赤蠻奇以草根補給網延續萬民委員會主導權。
+country_event = {
+	id = KYO_hyakki_leadership.21
+	title = KYO_hyakki_leadership.21.t
+	desc = KYO_hyakki_leadership.21.d
+
+	picture = GFX_gensokyo_sekibanki_large
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_leadership.21.a
+		ai_chance = {
+			base = 100
+		}
+		KYO_apply_network_leader_sekibanki = yes
+	}
+}
+
+# 事件內容概要：八意永琳以醫療、補給與精確調度接掌萬民委員會。
+country_event = {
+	id = KYO_hyakki_leadership.22
+	title = KYO_hyakki_leadership.22.t
+	desc = KYO_hyakki_leadership.22.d
+
+	picture = GFX_gensokyo_Eirin_large
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_leadership.22.a
+		ai_chance = {
+			base = 100
+		}
+		KYO_apply_network_leader_eirin = yes
+	}
+}
+
+# 事件內容概要：堀川雷鼓以付喪神通訊與軍心網絡接掌萬民委員會。
+country_event = {
+	id = KYO_hyakki_leadership.23
+	title = KYO_hyakki_leadership.23.t
+	desc = KYO_hyakki_leadership.23.d
+
+	picture = GFX_gensokyo_reiko_large
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_leadership.23.a
+		ai_chance = {
+			base = 100
+		}
+		KYO_apply_network_leader_raiko = yes
+	}
+}
+
+# 事件內容概要：四季映姬以裁決與秩序網接掌萬民委員會。
+country_event = {
+	id = KYO_hyakki_leadership.24
+	title = KYO_hyakki_leadership.24.t
+	desc = KYO_hyakki_leadership.24.d
+
+	picture = GFX_gensokyo_eiki_large
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_leadership.24.a
+		ai_chance = {
+			base = 100
+		}
+		KYO_apply_network_leader_eiki = yes
+	}
+}

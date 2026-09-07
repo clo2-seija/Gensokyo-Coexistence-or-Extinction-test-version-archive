@@ -1,0 +1,1446 @@
+# Yakumo Yukari route rebuild v0.5
+add_namespace = yakumo
+
+# ============================================================================
+# 八云家与新任巫女
+# ============================================================================
+country_event = {
+	id = yakumo.1
+	title = yakumo.1.t
+	desc = yakumo.1.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.1.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.2
+	title = yakumo.2.t
+	desc = yakumo.2.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.2.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.3
+	title = yakumo.3.t
+	desc = yakumo.3.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.3.a
+		set_country_flag = KYO_reimi_archive_unlocked
+		set_country_flag = KYO_reimi_archive_stage_1
+		add_political_power = 25
+	}
+}
+
+country_event = {
+	id = yakumo.4
+	title = yakumo.4.t
+	desc = yakumo.4.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.4.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.5
+	title = yakumo.5.t
+	desc = yakumo.5.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.5.a
+		add_power_balance_value = { id = KYO_balance value = 0 }
+	}
+	option = {
+		name = yakumo.5.b
+		add_power_balance_value = { id = KYO_balance value = -0.10 }
+	}
+	option = {
+		name = yakumo.5.c
+		add_power_balance_value = { id = KYO_balance value = 0.10 }
+	}
+}
+
+country_event = {
+	id = yakumo.6
+	title = yakumo.6.t
+	desc = yakumo.6.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.6.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.7
+	title = yakumo.7.t
+	desc = yakumo.7.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.7.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.8
+	title = yakumo.8.t
+	desc = yakumo.8.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.8.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.9
+	title = yakumo.9.t
+	desc = yakumo.9.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.9.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.10
+	title = yakumo.10.t
+	desc = yakumo.10.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.10.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.11
+	title = yakumo.11.t
+	desc = yakumo.11.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.11.a
+		if = {
+			limit = { has_character = gensokyo_Chen }
+			gensokyo_Chen = { add_attack = 1 add_planning = 1 }
+		}
+		add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = yakumo.12
+	title = yakumo.12.t
+	desc = yakumo.12.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.12.a
+		if = {
+			limit = { has_character = gensokyo_Ran }
+			gensokyo_Ran = { add_logistics = 1 add_planning = 1 }
+		}
+		army_experience = 10
+	}
+}
+
+country_event = {
+	id = yakumo.13
+	title = yakumo.13.t
+	desc = yakumo.13.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.13.a
+		add_political_power = 15
+		add_stability = 0.01
+	}
+	option = {
+		name = yakumo.13.b
+		add_political_power = -10
+		add_war_support = 0.01
+	}
+}
+
+country_event = {
+	id = yakumo.14
+	title = yakumo.14.t
+	desc = yakumo.14.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.14.a
+		add_political_power = 15
+		add_stability = 0.01
+	}
+	option = {
+		name = yakumo.14.b
+		add_political_power = -10
+		add_war_support = 0.01
+	}
+}
+
+# ============================================================================
+# 博丽玲未的记录
+# ============================================================================
+country_event = {
+	id = yakumo.15
+	title = yakumo.15.t
+	desc = yakumo.15.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.15.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.16
+	title = yakumo.16.t
+	desc = yakumo.16.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.16.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.17
+	title = yakumo.17.t
+	desc = yakumo.17.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.17.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.18
+	title = yakumo.18.t
+	desc = yakumo.18.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.18.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.19
+	title = yakumo.19.t
+	desc = yakumo.19.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.19.a
+		add_offsite_building = { type = industrial_complex level = 1 }
+	}
+}
+
+# ============================================================================
+# 永远亭历史
+# ============================================================================
+country_event = {
+	id = yakumo.20
+	title = yakumo.20.t
+	desc = yakumo.20.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.20.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.21
+	title = yakumo.21.t
+	desc = yakumo.21.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.21.a
+		capital_scope = {
+			add_resource = { type = steel amount = 5 }
+			add_resource = { type = aluminium amount = 3 }
+		}
+	}
+}
+
+country_event = {
+	id = yakumo.22
+	title = yakumo.22.t
+	desc = yakumo.22.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.22.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.23
+	title = yakumo.23.t
+	desc = yakumo.23.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.23.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.24
+	title = yakumo.24.t
+	desc = yakumo.24.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.24.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.25
+	title = yakumo.25.t
+	desc = yakumo.25.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.25.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.26
+	title = yakumo.26.t
+	desc = yakumo.26.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.26.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.27
+	title = yakumo.27.t
+	desc = yakumo.27.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.27.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.28
+	title = yakumo.28.t
+	desc = yakumo.28.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.28.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.29
+	title = yakumo.29.t
+	desc = yakumo.29.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.29.a
+
+	}
+}
+
+# ============================================================================
+# 白玉楼历史
+# ============================================================================
+country_event = {
+	id = yakumo.30
+	title = yakumo.30.t
+	desc = yakumo.30.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.30.a
+		army_experience = 15
+	}
+}
+
+country_event = {
+	id = yakumo.31
+	title = yakumo.31.t
+	desc = yakumo.31.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.31.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.32
+	title = yakumo.32.t
+	desc = yakumo.32.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.32.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.33
+	title = yakumo.33.t
+	desc = yakumo.33.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.33.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.34
+	title = yakumo.34.t
+	desc = yakumo.34.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.34.a
+		add_command_power = 20
+	}
+}
+
+country_event = {
+	id = yakumo.35
+	title = yakumo.35.t
+	desc = yakumo.35.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.35.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.36
+	title = yakumo.36.t
+	desc = yakumo.36.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.36.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.37
+	title = yakumo.37.t
+	desc = yakumo.37.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.37.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.38
+	title = yakumo.38.t
+	desc = yakumo.38.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.38.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.39
+	title = yakumo.39.t
+	desc = yakumo.39.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.39.a
+
+	}
+}
+
+# ============================================================================
+# 梅莉与八云紫的旧档案
+# ============================================================================
+country_event = {
+	id = yakumo.40
+	title = yakumo.40.t
+	desc = yakumo.40.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.40.a
+		set_country_flag = KYO_yukari_archive_unlocked
+		set_country_flag = KYO_yukari_archive_stage_1
+		add_tech_bonus = { name = KYO_yakumo_archive_bonus bonus = 0.5 uses = 1 category = electronics }
+	}
+}
+
+country_event = {
+	id = yakumo.41
+	title = yakumo.41.t
+	desc = yakumo.41.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.41.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.42
+	title = yakumo.42.t
+	desc = yakumo.42.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.42.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.43
+	title = yakumo.43.t
+	desc = yakumo.43.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.43.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.44
+	title = yakumo.44.t
+	desc = yakumo.44.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.44.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.45
+	title = yakumo.45.t
+	desc = yakumo.45.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.45.a
+		add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = yakumo.46
+	title = yakumo.46.t
+	desc = yakumo.46.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.46.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.47
+	title = yakumo.47.t
+	desc = yakumo.47.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.47.a
+		add_stability = 0.03
+	}
+}
+
+country_event = {
+	id = yakumo.48
+	title = yakumo.48.t
+	desc = yakumo.48.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.48.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.49
+	title = yakumo.49.t
+	desc = yakumo.49.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.49.a
+
+		add_country_leader_trait = known_all_the_history
+
+		country_event = {
+			id = yakumo.61
+			days = 30
+		}
+
+	}
+}
+
+# ============================================================================
+# 月都入侵与联合动员
+# ============================================================================
+country_event = {
+	id = yakumo.50
+	title = yakumo.50.t
+	desc = yakumo.50.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.50.a
+		set_variable = { KYO_lunar_difficulty = -6 }
+		KYO_lunar_start_series = yes
+	}
+	option = {
+		name = yakumo.50.b
+		set_variable = { KYO_lunar_difficulty = 0 }
+		KYO_lunar_start_series = yes
+	}
+	option = {
+		name = yakumo.50.c
+		set_variable = { KYO_lunar_difficulty = 6 }
+		KYO_lunar_start_series = yes
+	}
+}
+
+country_event = {
+	id = yakumo.51
+	title = yakumo.51.t
+	desc = yakumo.51.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.51.a
+		add_political_power = 50
+		add_tech_bonus = { name = KYO_lunar_control_network_bonus bonus = 0.5 uses = 1 category = electronics }
+	}
+}
+
+country_event = {
+	id = yakumo.52
+	title = yakumo.52.t
+	desc = yakumo.52.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.52.a
+		add_offsite_building = { type = arms_factory level = 1 }
+		add_equipment_to_stockpile = { type = support_equipment amount = 200 }
+	}
+}
+
+country_event = {
+	id = yakumo.53
+	title = yakumo.53.t
+	desc = yakumo.53.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.53.a
+		add_war_support = 0.03
+		set_country_flag = KYO_lunar_mediation_available
+	}
+}
+
+country_event = {
+	id = yakumo.54
+	title = yakumo.54.t
+	desc = yakumo.54.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.54.a
+		set_country_flag = KYO_lunar_mediation_available
+	}
+}
+
+country_event = {
+	id = yakumo.55
+	title = yakumo.55.t
+	desc = yakumo.55.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.55.a
+		
+		add_ideas = KYO_gensokyo_wartime_coalition
+	}
+}
+
+country_event = {
+	id = yakumo.56
+	title = yakumo.56.t
+	desc = yakumo.56.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.56.a
+		KYO_grant_lunar_free_order = yes
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = yakumo.57
+	title = yakumo.57.t
+	desc = yakumo.57.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.57.a
+		if = {
+			limit = { has_character = gensokyo_Ran }
+			gensokyo_Ran = {
+				add_unit_leader_trait = KYO_ran_lunar_operations_mastermind
+				add_planning = 1
+			}
+		}
+		army_experience = 15
+	}
+}
+
+country_event = {
+	id = yakumo.58
+	title = yakumo.58.t
+	desc = yakumo.58.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.58.a
+		if = {
+			limit = { has_character = gensokyo_Chen }
+			gensokyo_Chen = {
+				add_unit_leader_trait = KYO_chen_lunar_pathfinder
+				add_attack = 1
+			}
+		}
+		capital_scope = { add_resource = { type = tungsten amount = 3 } }
+	}
+}
+
+country_event = {
+	id = yakumo.59
+	title = yakumo.59.t
+	desc = yakumo.59.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.59.a
+		KYO_initialize_lunar_campaign = yes
+	}
+}
+
+# ============================================================================
+# 月面六胜战局
+# ============================================================================
+country_event = {
+	id = yakumo.60
+	title = yakumo.60.t
+	desc = yakumo.60.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.60.a
+		
+	}
+	
+}
+
+country_event = {
+	id = yakumo.61
+	title = yakumo.61.t
+	desc = yakumo.61.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.61.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.62
+	title = yakumo.62.t
+	desc = yakumo.62.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.62.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.80
+	title = yakumo.80.t
+	desc = yakumo.80.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.80.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.63
+	title = yakumo.63.t
+	desc = yakumo.63.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.63.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.64
+	title = yakumo.64.t
+	desc = yakumo.64.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.64.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.65
+	title = yakumo.65.t
+	desc = yakumo.65.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.65.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.66
+	title = yakumo.66.t
+	desc = yakumo.66.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.66.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.67
+	title = yakumo.67.t
+	desc = yakumo.67.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.67.a
+
+	}
+}
+
+country_event = {
+	id = yakumo.68
+	title = yakumo.68.t
+	desc = yakumo.68.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.68.a
+		news_event = { id = kyo_news.53 hours = 6 }
+	}
+}
+
+# ============================================================================
+# 终战、重建与秘封后日谈
+# ============================================================================
+country_event = {
+	id = yakumo.69
+	title = yakumo.69.t
+	desc = yakumo.69.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.69.a
+		set_country_flag = KYO_lunar_reconstruction_started
+		set_country_flag = KYO_lunar_reconstruction_stage_1
+		KYO_end_lunarian_surface_war = yes
+		news_event = { id = kyo_news.54 hours = 6 }
+	}
+}
+
+country_event = {
+	id = yakumo.70
+	title = yakumo.70.t
+	desc = yakumo.70.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.70.a
+		clr_country_flag = KYO_lunar_reconstruction_stage_1
+		set_country_flag = KYO_lunar_reconstruction_stage_2
+		add_political_power = 50
+		add_stability = 0.02
+		add_offsite_building = { type = industrial_complex level = 1 }
+	}
+}
+
+country_event = {
+	id = yakumo.71
+	title = yakumo.71.t
+	desc = yakumo.71.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.71.a
+		clr_country_flag = KYO_lunar_reconstruction_stage_2
+		set_country_flag = KYO_lunar_reconstruction_stage_3
+		news_event = { id = kyo_news.55 hours = 6 }
+		add_offsite_building = { type = industrial_complex level = 1 }
+	}
+}
+
+country_event = {
+	id = yakumo.72
+	title = yakumo.72.t
+	desc = yakumo.72.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.72.a
+		clr_country_flag = KYO_lunar_reconstruction_stage_3
+		set_country_flag = KYO_lunar_reconstruction_stage_4
+		capital_scope = {
+			add_resource = { type = steel amount = 8 }
+			add_resource = { type = aluminium amount = 5 }
+		}
+		add_stability = 0.03
+	}
+}
+
+country_event = {
+	id = yakumo.73
+	title = yakumo.73.t
+	desc = yakumo.73.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.73.a
+		clr_country_flag = KYO_lunar_reconstruction_stage_4
+		set_country_flag = KYO_lunar_reconstruction_stage_5
+		if = {
+			limit = { is_power_balance_in_range = { id = KYO_balance range < eirin_side_3 } }
+			add_ideas = KYO_world_life_can_change
+		}
+		else_if = {
+			limit = { is_power_balance_in_range = { id = KYO_balance range > yuyuko_side_3 } }
+			add_ideas = KYO_world_memory_remains
+		}
+		else = { add_ideas = KYO_world_science_and_fantasy }
+		country_event = { id = sp_event.7 hours = 12 }
+	}
+}
+
+country_event = {
+	id = yakumo.74
+	title = yakumo.74.t
+	desc = yakumo.74.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+
+	option = {
+		name = yakumo.74.a
+		KYO_lunar_prepare_retreat = yes
+		country_event = { id = yakumo.75 days = 90 }
+	}
+}
+
+country_event = {
+	id = yakumo.75
+	title = yakumo.75.t
+	desc = yakumo.75.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+
+	option = {
+		name = yakumo.75.a
+		KYO_lunar_restart_series = yes
+	}
+}
+
+country_event = {
+	id = yakumo.76
+	title = yakumo.76.t
+	desc = yakumo.76.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.76.a
+		clr_country_flag = KYO_lunar_reconstruction_stage_5
+		set_country_flag = KYO_lunar_reconstruction_stage_6
+		add_offsite_building = { type = arms_factory level = 1 }
+		add_equipment_to_stockpile = { type = support_equipment amount = 300 }
+	}
+}
+
+country_event = {
+	id = yakumo.77
+	title = yakumo.77.t
+	desc = yakumo.77.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.77.a
+		clr_country_flag = KYO_lunar_reconstruction_stage_6
+		set_country_flag = KYO_lunar_reconstruction_stage_7
+		add_tech_bonus = { name = KYO_science_and_fantasy_bonus bonus = 0.5 uses = 2 category = electronics }
+	}
+}
+
+country_event = {
+	id = yakumo.78
+	title = yakumo.78.t
+	desc = yakumo.78.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.78.a
+		clr_country_flag = KYO_lunar_reconstruction_stage_7
+		set_country_flag = KYO_lunar_reconstruction_stage_8
+		add_political_power = 75
+		add_stability = 0.03
+	}
+}
+
+country_event = {
+	id = yakumo.79
+	title = yakumo.79.t
+	desc = yakumo.79.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.79.a
+		clr_country_flag = KYO_lunar_reconstruction_stage_8
+		set_country_flag = KYO_lunar_reconstruction_stage_9
+		set_country_flag = KYO_yakumo_route_v04_completed
+	}
+}
+
+
+
+country_event = {
+	id = yakumo.81
+	title = yakumo.81.t
+	desc = yakumo.81.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.81.a
+		
+	}
+}
+
+country_event = {
+	id = yakumo.82
+	title = yakumo.82.t
+	desc = yakumo.82.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.82.a
+		
+	}
+}
+
+country_event = {
+	id = yakumo.83
+	title = yakumo.83.t
+	desc = yakumo.83.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.83.a
+		
+	}
+}
+
+country_event = {
+	id = yakumo.84
+	title = yakumo.84.t
+	desc = yakumo.84.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.84.a
+		
+	}
+}
+
+country_event = {
+	id = yakumo.85
+	title = yakumo.85.t
+	desc = yakumo.85.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.85.a
+		
+	}
+}
+
+country_event = {
+	id = yakumo.86
+	title = yakumo.86.t
+	desc = yakumo.86.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.86.a
+		
+	}
+}
+
+country_event = {
+	id = yakumo.87
+	title = yakumo.87.t
+	desc = yakumo.87.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.87.a
+		
+	}
+}
+
+country_event = {
+	id = yakumo.88
+	title = yakumo.88.t
+	desc = yakumo.88.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.88.a
+		
+	}
+}
+
+country_event = {
+	id = yakumo.89
+	title = yakumo.89.t
+	desc = yakumo.89.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.89.a
+		
+	}
+}
+
+country_event = {
+	id = yakumo.90
+	title = yakumo.90.t
+	desc = yakumo.90.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.90.a
+		
+	}
+}
+
+country_event = {
+	id = yakumo.91
+	title = yakumo.91.t
+	desc = yakumo.91.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.91.a
+		
+	}
+}
+
+country_event = {
+	id = yakumo.92
+	title = yakumo.92.t
+	desc = yakumo.92.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.92.a
+		
+	}
+}
+
+
+
+
+
+
+country_event = {
+	id = yakumo.99
+	title = yakumo.99.t
+	desc = yakumo.99.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = yakumo.99.a
+		clr_country_flag = KYO_lunar_reconstruction_stage_9
+		set_country_flag = KYO_lunar_reconstruction_completed
+		add_stability = 0.02
+	}
+}

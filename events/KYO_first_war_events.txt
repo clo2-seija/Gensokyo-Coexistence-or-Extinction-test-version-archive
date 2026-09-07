@@ -1,0 +1,246 @@
+add_namespace = KYO_first_war
+
+# 事件內容概要：越過結界的七個夜晚。百妖議會只有十四日從六項先遣行動選三項。
+country_event = {
+	id = KYO_first_war.10
+	title = KYO_first_war.10.t
+	desc = KYO_first_war.10.d
+	picture = GFX_report_event_first_war_17
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_first_war.10.a
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+# 事件內容概要：紅霧越過東京。依先遣方案結算橋頭堡、通訊、疏散與初期作戰效果。
+country_event = {
+	id = KYO_first_war.1
+	title = KYO_first_war.1.t
+	desc = KYO_first_war.1.d
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_first_war.1.a
+		ai_chance = { base = 40 }
+		KYO_resolve_tokyo_advance_plans = yes
+		add_command_power = 10
+		KYO_add_military_fulfillment_5 = yes
+	}
+	option = {
+		name = KYO_first_war.1.b
+		ai_chance = { base = 35 }
+		KYO_resolve_tokyo_advance_plans = yes
+		add_political_power = 25
+		KYO_add_mobilization_fulfillment_5 = yes
+	}
+	option = {
+		name = KYO_first_war.1.c
+		ai_chance = { base = 25 }
+		KYO_resolve_tokyo_advance_plans = yes
+		add_stability = 0.02
+		KYO_add_faith_fulfillment_5 = yes
+	}
+}
+# 事件內容概要：最後通牒。日本要求撤出東京、交出參與者並封閉裂口；百妖議會表決後正式宣戰。
+country_event = {
+	id = KYO_first_war.2
+	title = KYO_first_war.2.t
+	desc = KYO_first_war.2.d
+
+	picture = GFX_report_event_first_war_2
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_first_war.2.a
+		ai_chance = {
+			base = 100
+		}
+
+		if = {
+			limit = {
+				JAP = {
+					exists = yes
+				}
+			}
+
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = JAP
+					}
+				}
+				declare_war_on = {
+					target = JAP
+					type = annex_everything
+				}
+			}
+
+			
+			activate_mission = KYO_tokyo_bridgehead_mission
+			country_event = {
+				id = KYO_first_war.3
+				days = 15
+			}
+			news_event = {
+				id = kyo_news.2
+				days = 1
+			}
+			country_event = {
+				id = KYO_first_war.20
+				days = 1
+			}
+		}
+		else = {
+			set_country_flag = KYO_first_war_skipped_japan_absent
+			add_political_power = 50
+		}
+	}
+}
+
+# 事件內容概要：一條不屬於飛機的白線。補給站被無聲切開，日軍也不知來源；新增月都證據。
+country_event = {
+	id = KYO_first_war.3
+	title = KYO_first_war.3.t
+	desc = KYO_first_war.3.d
+
+	picture = GFX_report_event_first_war_1
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_first_war.3.a
+		ai_chance = {
+			base = 100
+		}
+		KYO_add_lunar_evidence = yes
+		set_country_flag = KYO_white_line_strike_recorded
+		KYO_check_all_bloc_leaders = yes
+	}
+}
+
+# 東京作戰事件鏈：開戰時選擇臨時作戰方針，完成各項任務後再決定成果用途。
+country_event = {
+	id = KYO_first_war.20
+	title = KYO_first_war.20.t
+	desc = KYO_first_war.20.d
+	picture = GFX_report_event_first_war_4
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_first_war.20.a
+		ai_chance = { base = 40 }
+		add_ideas = KYO_tokyo_initial_shock
+		KYO_start_tokyo_operation_chain = yes
+	}
+	option = {
+		name = KYO_first_war.20.b
+		ai_chance = { base = 35 }
+		add_ideas = KYO_tokyo_initial_logistics
+		KYO_start_tokyo_operation_chain = yes
+	}
+	option = {
+		name = KYO_first_war.20.c
+		ai_chance = { base = 25 }
+		add_ideas = KYO_tokyo_initial_mobilization
+		KYO_start_tokyo_operation_chain = yes
+	}
+}
+
+country_event = {
+	id = KYO_first_war.21
+	title = KYO_first_war.21.t
+	desc = KYO_first_war.21.d
+	picture = GFX_report_event_JAP_kodoha_coup_attempt_preparation
+	is_triggered_only = yes
+	option = {
+		name = KYO_first_war.21.a
+		ai_chance = { base = 40 }
+		add_ideas = KYO_tokyo_bridgehead_consolidated
+	}
+	option = {
+		name = KYO_first_war.21.b
+		ai_chance = { base = 35 }
+		add_ideas = KYO_tokyo_command_hunt
+	}
+	option = {
+		name = KYO_first_war.21.c
+		ai_chance = { base = 25 }
+		add_stability = 0.03
+		KYO_add_faith_fulfillment_5 = yes
+	}
+}
+
+country_event = {
+	id = KYO_first_war.22
+	title = KYO_first_war.22.t
+	desc = KYO_first_war.22.d
+	picture = GFX_report_event_first_war_3
+	is_triggered_only = yes
+	option = {
+		name = KYO_first_war.22.a
+		ai_chance = { base = 55 }
+		add_ideas = KYO_tokyo_order_of_battle
+	}
+	option = {
+		name = KYO_first_war.22.b
+		ai_chance = { base = 45 }
+		add_ideas = KYO_tokyo_flexible_columns
+	}
+}
+
+country_event = {
+	id = KYO_first_war.23
+	title = KYO_first_war.23.t
+	desc = KYO_first_war.23.d
+	picture = GFX_report_event_JAP_the_azad_hind
+	is_triggered_only = yes
+	option = {
+		name = KYO_first_war.23.a
+		ai_chance = { base = 50 }
+		add_ideas = KYO_tokyo_mass_muster
+	}
+	option = {
+		name = KYO_first_war.23.b
+		ai_chance = { base = 50 }
+		add_ideas = KYO_tokyo_rotation_reserves
+	}
+}
+
+country_event = {
+	id = KYO_first_war.24
+	title = KYO_first_war.24.t
+	desc = KYO_first_war.24.d
+	picture = GFX_report_event_generic_factory
+	is_triggered_only = yes
+	option = {
+		name = KYO_first_war.24.a
+		ai_chance = { base = 60 }
+		add_ideas = KYO_tokyo_arsenal_standardization
+	}
+	option = {
+		name = KYO_first_war.24.b
+		ai_chance = { base = 40 }
+		add_ideas = KYO_tokyo_weapon_recovery
+	}
+}
+
+country_event = {
+	id = KYO_first_war.25
+	title = KYO_first_war.25.t
+	desc = KYO_first_war.25.d
+	picture = GFX_report_event_first_war_5
+	is_triggered_only = yes
+	option = {
+		name = KYO_first_war.25.a
+		ai_chance = { base = 55 }
+		add_ideas = KYO_tokyo_honshu_railnet
+	}
+	option = {
+		name = KYO_first_war.25.b
+		ai_chance = { base = 45 }
+		add_ideas = KYO_tokyo_occupation_bureaus
+	}
+}

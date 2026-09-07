@@ -1,0 +1,3039 @@
+add_namespace = kyo_postwar
+
+
+country_event = {
+	id = kyo_postwar.1
+	title = kyo_postwar.1.t
+	desc = kyo_postwar.1.d
+
+	picture = GFX_report_event_yukari_2
+
+	is_triggered_only = yes
+	timeout_days = 14
+
+	# 將所有帳目、車輛與機械交給藍和河童重新清查
+	# 消耗現有後勤裝備，換取工業與裝甲研究成果
+	option = {
+		name = kyo_postwar.1.a
+
+		ai_chance = {
+			base = 50
+		}
+
+		add_equipment_to_stockpile = {
+			type = support_equipment_1
+			amount = -300
+		}
+
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = -400
+		}
+
+		add_tech_bonus = {
+			name = KYO_postwar_complete_audit
+			bonus = 0.50
+			uses = 2
+			category = industry
+		}
+
+		add_tech_bonus = {
+			name = KYO_postwar_captured_designs
+			bonus = 0.50
+			uses = 1
+			category = armor
+		}
+
+		army_experience = 15
+	}
+
+	# 不再追查來源，直接把能用的物資送進倉庫
+	# 獲得大量現成裝備與一座民用工廠，但掩蓋帳目問題
+	option = {
+		name = kyo_postwar.1.b
+
+		ai_chance = {
+			base = 50
+		}
+
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2500
+			producer = JAP
+		}
+
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 250
+			producer = JAP
+		}
+
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 500
+			producer = JAP
+		}
+
+		add_equipment_to_stockpile = {
+			type = train_equipment
+			amount = 25
+			producer = JAP
+		}
+
+		every_core_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+			}
+
+			random_select_amount = 1
+
+			add_extra_state_shared_building_slots = 1
+
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		add_to_variable = {
+			rebal_factor_var = 1
+		}
+
+		
+	}
+}
+
+
+country_event = {
+	id = kyo_postwar.2
+	title = kyo_postwar.2.t
+	desc = kyo_postwar.2.d
+
+	picture = GFX_report_event_first_war_17
+
+	is_triggered_only = yes
+	timeout_days = 14
+
+	# 拆除部分戰時兵工體系
+	# 銷毀與回收軍備，將設施改建為民用工業
+	option = {
+		name = kyo_postwar.2.a
+
+		ai_chance = {
+			base = 50
+		}
+
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -1500
+		}
+
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = -150
+		}
+
+		every_core_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+			}
+
+			random_select_amount = 2
+
+			add_extra_state_shared_building_slots = 1
+
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		add_tech_bonus = {
+			name = KYO_postwar_civilian_conversion
+			bonus = 0.50
+			uses = 1
+			category = industry
+		}
+	}
+
+	# 保留戰時統制與兵工生產線
+	# 取得軍工廠與武器，但地方軍事集團繼續存在
+	option = {
+		name = kyo_postwar.2.b
+
+		ai_chance = {
+			base = 50
+		}
+
+		every_core_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+			}
+
+			random_select_amount = 2
+
+			add_extra_state_shared_building_slots = 1
+
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 3500
+		}
+
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 300
+		}
+
+		add_equipment_to_stockpile = {
+			type = anti_air_equipment
+			amount = 100
+		}
+
+		add_command_power = 50
+
+		add_to_variable = {
+			rebal_factor_var = 1
+		}
+
+		
+	}
+}
+
+
+country_event = {
+	id = kyo_postwar.3
+	title = kyo_postwar.3.t
+	desc = kyo_postwar.3.d
+
+	picture = GFX_report_event_yukari_4
+
+	is_triggered_only = yes
+	timeout_days = 14
+
+	# 以車輛、列車與工程器材進行有序遷移
+	# 保留大部分人口，並改善安置地區的基礎設施
+	option = {
+		name = kyo_postwar.3.a
+
+		ai_chance = {
+			base = 50
+		}
+
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = -1000
+		}
+
+		add_equipment_to_stockpile = {
+			type = train_equipment
+			amount = -15
+		}
+
+		add_equipment_to_stockpile = {
+			type = support_equipment_1
+			amount = -200
+		}
+
+		282 = {
+			add_manpower = -8000000
+		}
+
+		532 = {
+			add_manpower = -3000000
+		}
+
+		534 = {
+			add_manpower = -1000000
+		}
+
+		1019 = {
+			add_manpower = -1000000
+		}
+
+		1082 = {
+			add_manpower = 10000000
+
+			if = {
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
+
+				add_extra_state_shared_building_slots = 3
+
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+		add_stability = 0.05
+	}
+
+	# 取消大規模疏散，直接架設河童監測設備並封鎖異常區域
+	# 保存運輸能力並獲得研究成果，但大量居民被留在危險區內
+	option = {
+		name = kyo_postwar.3.b
+
+		ai_chance = {
+			base = 50
+		}
+
+		add_manpower = -100000
+
+		add_equipment_to_stockpile = {
+			type = support_equipment_1
+			amount = -500
+		}
+
+		1082 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = ROOT
+				}
+
+				add_building_construction = {
+					type = radar_station
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+		add_tech_bonus = {
+			name = KYO_postwar_barrier_observation
+			bonus = 0.50
+			uses = 2
+			category = electronics
+		}
+
+		add_tech_bonus = {
+			name = KYO_postwar_barrier_engineering
+			bonus = 0.50
+			uses = 1
+			category = industry
+		}
+
+		add_to_variable = {
+			rebal_factor_var = 1
+		}
+
+		
+	}
+}
+
+
+country_event = {
+	id = kyo_postwar.4
+	title = kyo_postwar.4.t
+	desc = kyo_postwar.4.d
+
+	picture = GFX_report_event_first_war_30
+
+	is_triggered_only = yes
+	timeout_days = 14
+
+	# 以赦免換取投降、情報與武器
+	# 增加可用人力，並收回一批游擊隊持有的日本裝備
+	option = {
+		name = kyo_postwar.4.a
+
+		ai_chance = {
+			base = 50
+		}
+
+		add_manpower = 30000
+
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+			producer = JAP
+		}
+
+		add_equipment_to_stockpile = {
+			type = support_equipment_1
+			amount = 200
+			producer = JAP
+		}
+
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 400
+			producer = JAP
+		}
+
+		add_equipment_to_stockpile = {
+			type = train_equipment
+			amount = 20
+			producer = JAP
+		}
+
+		army_experience = -10
+	}
+
+	# 動用軍隊清剿據點
+	# 取得更多戰利品與實戰經驗，但造成大量傷亡與長期怨恨
+	option = {
+		name = kyo_postwar.4.b
+
+		ai_chance = {
+			base = 50
+		}
+
+		add_manpower = -30000
+
+		army_experience = 50
+
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 4000
+			producer = JAP
+		}
+
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 400
+			producer = JAP
+		}
+
+		add_equipment_to_stockpile = {
+			type = anti_air_equipment
+			amount = 120
+			producer = JAP
+		}
+
+		add_equipment_to_stockpile = {
+			type = support_equipment_1
+			amount = 100
+			producer = JAP
+		}
+
+		add_to_variable = {
+			rebal_factor_var = 1
+		}
+
+		country_event = {
+				id = kyo_postwar.5
+				days = 7
+			}
+
+		
+	}
+}
+
+
+country_event = {
+	id = kyo_postwar.5
+	title = kyo_postwar.5.t
+	desc = kyo_postwar.5.d
+
+	picture = GFX_report_event_first_war_23
+
+	is_triggered_only = yes
+	timeout_days = 14
+
+	# 建立統一結界軍，將日本裝甲資料交給河童改修
+	# 獲得專屬坦克設計與裝甲研究成果，但消耗大量後勤零件
+	option = {
+		name = kyo_postwar.5.a
+
+		ai_chance = {
+			base = 50
+		}
+
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = -500
+		}
+
+		add_equipment_to_stockpile = {
+			type = support_equipment_1
+			amount = -300
+		}
+
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -1000
+		}
+
+		army_experience = 30
+		add_command_power = 50
+
+		add_tech_bonus = {
+			name = KYO_kappa_japanese_armor_studies
+			bonus = 0.75
+			uses = 1
+			category = armor
+		}
+
+		if = {
+			limit = {
+				has_dlc = "No Step Back"
+			}
+
+			set_technology = {
+				basic_light_tank_chassis = 1
+			}
+
+			create_equipment_variant = {
+				name = "Kappa Type 95 Kai"
+				type = light_tank_chassis_2
+				parent_version = 0
+
+				modules = {
+					main_armament_slot = tank_small_cannon_2
+					turret_type_slot = tank_light_one_man_tank_turret
+					suspension_type_slot = tank_bogie_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_1 = empty
+					special_type_slot_2 = empty
+				}
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = light_tank_chassis_1
+					creator = "KYO"
+					version_name = "Kappa Type 95 Kai"
+				}
+
+				requested_factories = 3
+				progress = 0.40
+				amount = 120
+			}
+		}
+
+		else = {
+			add_equipment_to_stockpile = {
+				type = light_tank_equipment_1
+				amount = 120
+				producer = JAP
+			}
+		}
+	}
+
+	# 各派系保留自己的軍隊
+	# 地方勢力交出一部分武器作為交換，但中央無法建立統一裝甲軍
+	option = {
+		name = kyo_postwar.5.b
+
+		ai_chance = {
+			base = 50
+		}
+
+		add_command_power = -30
+		army_experience = -25
+
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 6000
+			producer = JAP
+		}
+
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 500
+			producer = JAP
+		}
+
+		add_equipment_to_stockpile = {
+			type = anti_air_equipment
+			amount = 200
+			producer = JAP
+		}
+
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 1000
+			producer = JAP
+		}
+
+		add_equipment_to_stockpile = {
+			type = train_equipment
+			amount = 50
+			producer = JAP
+		}
+
+		every_core_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+			}
+
+			random_select_amount = 1
+
+			add_extra_state_shared_building_slots = 1
+
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		add_to_variable = {
+			rebal_factor_var = 1
+		}
+
+		
+	}
+}
+
+
+country_event = {
+	id = kyo_postwar.6
+	title = kyo_postwar.6.t
+	desc = kyo_postwar.6.d
+
+	picture = GFX_report_event_yukari_3
+
+	is_triggered_only = yes
+	timeout_days = 14
+
+	# 將情報、結界監視與行政權集中到八雲紫手中
+	# 建立八雲情報體系，強化情報與滲透能力
+	option = {
+		name = kyo_postwar.6.a
+
+		ai_chance = {
+			base = 50
+		}
+
+		add_ideas = KYO_yakumo_boundary_labs
+
+		add_stability = 0.025
+
+		add_war_support = 0.025
+
+		add_command_power = 50
+
+		add_equipment_to_stockpile = {
+			type = support_equipment_1
+			amount = -500
+		}
+
+		
+
+		add_to_variable = {
+			rebal_factor_var = 1
+		}
+
+		
+	}
+
+	# 將重建與配給權交給地方議事機構
+	# 建立妖兔後勤組織，取得工廠與運輸裝備
+	option = {
+		name = kyo_postwar.6.b
+
+		ai_chance = {
+			base = 50
+		}
+
+		add_ideas = KYO_rabbit_qm_corps
+
+		add_equipment_to_stockpile = {
+			type = support_equipment_1
+			amount = 1000
+		}
+
+		add_equipment_to_stockpile = {
+			type = motorized_equipment
+			amount = 500
+		}
+
+		every_core_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+			}
+
+			random_select_amount = 1
+
+			add_extra_state_shared_building_slots = 2
+
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		add_tech_bonus = {
+			name = KYO_postwar_distributed_reconstruction
+			bonus = 0.50
+			uses = 1
+			category = industry
+		}
+	}
+	option = {
+		name = kyo_postwar.6.c
+
+		ai_chance = {
+			base = 50
+		}
+	}
+}
+
+
+
+
+
+#選擇要走的路線
+
+country_event = {
+	id = kyo_postwar.11
+	title = kyo_postwar.11.t
+	desc = kyo_postwar.11.d
+
+	picture = GFX_report_event_yukari_death
+
+	is_triggered_only = yes
+	timeout_days = 14
+
+	immediate = {
+		hidden_effect = {
+			KYO_disable_barrier_and_hyakki_systems = yes
+		}
+		
+		set_country_flag = kyo_civil_war_countdown
+		
+	}
+
+	option = {
+		name = kyo_postwar.11.a
+		
+		ai_chance = { base = 30 }
+
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		drop_cosmetic_tag = yes
+
+		set_cosmetic_tag = KYO_Seija
+		KYO_prepare_player_civil_role_seija = yes
+
+		add_ideas = {
+
+			KYO_death_of_yukari
+			KYO_judge_of_all_life
+			
+		}
+
+		
+
+		
+
+		hidden_effect = {
+
+			add_popularity = {
+				ideology = communism
+				popularity = 0.95
+			}
+
+			add_ideas = {
+
+				extensive_conscription
+				war_economy
+				KYO_death_of_yukari
+				
+				KYO_judge_of_all_life
+
+			}
+			536 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			
+
+			set_technology = {
+				militia_tech = 1
+			}
+			add_manpower = 100000
+			
+			set_stability = 0.35
+			set_war_support = 0.45
+			
+
+			division_template = {
+					name = "Rabel division"
+					division_names_group = CHI_INF_01
+					is_locked = no
+					force_allow_recruiting = yes
+
+					regiments = {
+						militia  = { x = 0 y = 0 }
+						militia  = { x = 0 y = 1 }
+						militia  = { x = 0 y = 2 }
+						militia  = { x = 0 y = 3 }
+						militia  = { x = 1 y = 0 }
+						militia  = { x = 1 y = 1 }
+						militia  = { x = 1 y = 2 }
+						militia  = { x = 1 y = 3 }
+						militia  = { x = 2 y = 0 }
+						militia  = { x = 2 y = 1 }
+						militia  = { x = 2 y = 2 }
+						militia  = { x = 2 y = 3 }
+						
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						
+					}	
+				}
+				536 = {
+					create_unit = {
+						division = "division_template = \"Rabel division\" start_experience_factor = 0.5 start_equipment_factor = 0.7"
+						owner = KYO
+						count = 15
+					}
+				}
+				division_template = {
+					name = "Army of red and white"
+					priority = 1
+					division_names_group = JAP_INF_01
+					is_locked = no
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						artillery_brigade = {
+							x = 3
+							y = 0
+						}
+							
+						
+						
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						artillery = {
+							x = 0
+							y = 1
+						}
+						recon = {
+							x = 0
+							y = 2
+						}
+						logistics_company = {
+							x = 0
+							y = 3
+						}
+						anti_air = {
+							x = 0
+							y = 4
+						}
+					}
+				}
+				536 = {
+					create_unit = {
+						division = "division_template = \"Army of red and white\" start_experience_factor = 0.8 start_equipment_factor = 1.0"
+						owner = KYO
+						count = 5
+					}
+				}
+		}
+		
+		
+
+		hidden_effect = {
+			country_event = {
+				id = kyo_postwar.15
+				days = 1
+			}
+
+			country_event = {
+				id = kyo_postwar.14
+				days = 7
+			}
+			
+			country_event = {
+				id = kyo_postwar.13
+				days = 14
+			}
+		}
+	}
+	option = {
+		name = kyo_postwar.11.e
+		trigger = {
+
+		}
+		ai_chance = { base = 30 }
+
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		drop_cosmetic_tag = yes
+
+		set_cosmetic_tag = KYO_remilia
+		KYO_prepare_player_civil_role_remilia = yes
+
+		add_ideas = {
+
+			KYO_death_of_yukari
+			KYO_judge_of_all_life
+			
+		}
+
+		hidden_effect = {
+
+
+			add_popularity = {
+					ideology = fascism
+					popularity = 0.95
+				}
+
+				add_ideas = {
+
+					extensive_conscription
+					war_economy
+					
+
+				}
+
+				
+				
+			
+				
+
+				add_manpower = 100000
+				
+				set_stability = 0.2
+				set_war_support = 0.8
+				
+				set_cosmetic_tag = KYO_remilia
+
+
+
+
+				division_template = {
+					name = "Scarlet division"
+					division_names_group = GER_PEN_01
+					is_locked = no
+					force_allow_recruiting = yes
+
+					regiments = {
+						mountaineers = { x = 0 y = 0 }
+						mountaineers = { x = 0 y = 1 }
+						mountaineers = { x = 0 y = 2 }
+						mountaineers = { x = 1 y = 0 }
+						mountaineers = { x = 1 y = 1 }
+						mountaineers = { x = 1 y = 2 }
+						mountaineers = { x = 2 y = 0 }
+						mountaineers = { x = 2 y = 1 }
+						mountaineers = { x = 2 y = 2 }
+						artillery_brigade = { x = 3 y = 0}
+					}
+					support = {
+						artillery = { x = 0 y = 0 }
+						engineer = {
+							x = 0
+							y = 1
+						}
+					}	
+				}
+				531 = {
+					create_unit = {
+						division = "division_template = \"Scarlet division\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+						owner = KYO
+						count = 10
+					}
+				}
+				division_template = {
+					name = "Army of Remilia"
+					priority = 1
+					division_names_group = GER_Inf_01
+					is_locked = no
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+							
+						
+						
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						artillery = {
+							x = 0
+							y = 1
+						}
+						rangers_support = {
+							x = 0
+							y = 2
+						}
+					}
+				}
+				531 = {
+					create_unit = {
+						division = "division_template = \"Army of Remilia\" start_experience_factor = 0.45 start_equipment_factor = 0.95"
+						owner = KYO
+						count = 15
+					}
+				}
+		}
+
+		
+		
+		hidden_effect = {
+			country_event = {
+				id = kyo_postwar.15
+				days = 1
+			}
+
+			country_event = {
+				id = kyo_postwar.12
+				days = 7
+			}
+			
+			country_event = {
+				id = kyo_postwar.13
+				days = 14
+			}
+		}
+	}
+	option = {
+		name = kyo_postwar.11.c
+		trigger = {
+
+		}
+		ai_chance = { base = 30 }
+
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+		}
+		drop_cosmetic_tag = yes
+
+		set_cosmetic_tag = KYO_hijiri
+		KYO_prepare_player_civil_role_hijiri = yes
+
+
+		add_ideas = {
+
+			KYO_death_of_yukari
+			KYO_judge_of_all_life
+			
+		}
+
+		hidden_effect = {
+
+		add_popularity = {
+				ideology = democratic
+				popularity = 0.95
+			}
+
+			add_ideas = {
+
+				extensive_conscription
+				civilian_economy
+				
+
+			}
+			
+			
+			
+			set_technology = {
+				militia_tech = 1
+			}
+
+			add_manpower = 100000
+			
+			set_stability = 0.7
+			set_war_support = 0.17
+
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 10
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 50
+			}
+
+			division_template = {
+					name = "buddhist division"
+					division_names_group = CHI_INF_01
+					is_locked = no
+					force_allow_recruiting = yes
+
+					regiments = {
+						militia  = { x = 0 y = 0 }
+						militia  = { x = 0 y = 1 }
+						militia  = { x = 0 y = 2 }
+						militia  = { x = 0 y = 3 }
+						militia  = { x = 1 y = 0 }
+						militia  = { x = 1 y = 1 }
+						militia  = { x = 1 y = 2 }
+						militia  = { x = 1 y = 3 }
+						militia  = { x = 2 y = 0 }
+						militia  = { x = 2 y = 1 }
+						militia  = { x = 2 y = 2 }
+						militia  = { x = 2 y = 3 }
+					}
+					support = {
+						
+						
+					}	
+				}
+				528 = {
+					create_unit = {
+						division = "division_template = \"buddhist division\" start_experience_factor = 0.5 start_equipment_factor = 1"
+						owner = KYO
+						count = 15
+					}
+				}
+				division_template = {
+					name = "Name of Hijiri"
+					priority = 1
+					division_names_group = JAP_INF_01
+					is_locked = no
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 }
+						infantry = { x = 2 y = 2 }
+						artillery_brigade = {
+							x = 3
+							y = 0
+						}
+						artillery_brigade = {
+							x = 3
+							y = 1
+						}
+						artillery_brigade = {
+							x = 3
+							y = 2
+						}
+							
+						
+						
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						artillery = {
+							x = 0
+							y = 1
+						}
+
+						logistics_company = {
+							x = 0
+							y = 2
+						}
+						anti_air = {
+							x = 0
+							y = 3
+						}
+					}
+				}
+				528 = {
+					create_unit = {
+						division = "division_template = \"Name of Hijiri\" start_experience_factor = 0.9 start_equipment_factor = 1"
+						owner = KYO
+						count = 5
+					}
+				}
+		}
+
+		
+
+		hidden_effect = {
+
+			set_global_flag = recruit_taoist
+
+			
+			country_event = {
+				id = kyo_postwar.15
+				days = 1
+			}
+
+			country_event = {
+				id = kyo_postwar.14
+				days = 7
+			}
+			
+			country_event = {
+				id = kyo_postwar.12
+				days = 14
+			}
+
+		}
+	}
+	option = {
+		name = kyo_postwar.11.b
+		trigger = {
+			#TODO
+			has_country_flag = i_complete_the_chen_path
+		}
+		ai_chance = { base = 30 }
+
+		set_cosmetic_tag = KYO_chen
+		KYO_prepare_player_civil_role_yakumo = yes
+
+
+
+		
+
+		
+
+		custom_effect_tooltip = this_path_is_not_complete_tt
+
+		add_ideas = {
+
+			KYO_death_of_yukari
+			KYO_judge_of_all_life
+
+		}
+
+
+
+		hidden_effect = {
+			add_popularity = {
+					ideology = neutrality
+					popularity = 0.95
+				}
+
+				add_ideas = {
+
+					extensive_conscription
+					war_economy
+					KYO_death_of_yukari
+					
+					KYO_judge_of_all_life
+					
+				}
+				add_manpower = 100000
+				add_political_power = 300
+				set_stability = 0.15
+				set_war_support = 0.5
+				
+				
+				set_cosmetic_tag = "KYO_chen"
+				
+
+
+
+				division_template = {
+					name = "Army of yukari"
+					priority = 1
+					division_names_group = RAJ_INF_01
+					is_locked = no
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 3 }
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						artillery = {
+							x = 0
+							y = 1
+						}
+						rangers_support = {
+							x = 0
+							y = 2
+						}
+					}
+				}
+				division_template = {
+					name = "Cavalry of Yukari"
+					priority = 1
+					division_names_group = RAJ_INF_01
+					is_locked = no
+					regiments = {
+						cavalry = { x = 0 y = 0 }
+						cavalry = { x = 0 y = 1 }
+						cavalry = { x = 0 y = 2 }
+						cavalry = { x = 0 y = 3 }
+						cavalry = { x = 1 y = 0 }
+						cavalry = { x = 1 y = 1 }
+						cavalry = { x = 1 y = 2 }
+						cavalry = { x = 1 y = 3 }
+						
+						
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						artillery = {
+							x = 0
+							y = 1
+						}
+						rangers_support = {
+							x = 0
+							y = 2
+						}
+					}
+				}
+				1082 = {
+					create_unit = {
+						division = "division_template = \"Army of yukari\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+						owner = KYO
+						count = 30
+					}
+				}
+				1082 = {
+					create_unit = {
+						division = "division_template = \"Cavalry of Yukari\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+						owner = KYO
+						count = 20
+					}
+				}
+		}
+		
+
+
+		hidden_effect = {
+			country_event = {
+				id = kyo_postwar.14
+				days = 1
+			}
+
+			country_event = {
+				id = kyo_postwar.13
+				days = 7
+			}
+			
+			country_event = {
+				id = kyo_postwar.12
+				days = 14
+			}
+		}
+	}
+}
+
+#正邪分裂
+#完成分裂後國家數值
+
+country_event = {
+	id = kyo_postwar.12
+	title = kyo_postwar.12.t
+	desc = kyo_postwar.12.d
+
+	picture = GFX_report_event_seija_rebel_2
+
+	is_triggered_only = yes
+	timeout_days = 14
+
+	immediate = {
+		hidden_effect={
+			create_dynamic_country = {
+				original_tag = KYO   #（发动内战的国家旗帜名称选用）
+					save_event_target_as = seija_goverment
+					KYO_prepare_npc_civil_role_seija = yes
+					transfer_state = 533
+					transfer_state = 536
+					transfer_state = 555
+					transfer_state = 537
+					set_politics = {
+						ruling_party = communism 
+					}
+					add_popularity = {
+						ideology = communism
+						popularity = 0.95
+					}
+
+					add_ideas = {
+
+						KYO_I_am_hungry
+						KYO_yet_another_industry_debuff_1
+
+						extensive_conscription
+						war_economy
+						KYO_death_of_yukari
+						KYO_seija_army_buff
+						KYO_judge_of_all_life
+
+					}
+					536 = {
+						add_building_construction = {
+							type = arms_factory
+							level = 5
+							instant_build = yes
+						}
+						add_building_construction = {
+							type = industrial_complex
+							level = 5
+							instant_build = yes
+						}
+					}
+					
+
+					set_technology = {
+						militia_tech = 1
+					}
+					add_manpower = 100000
+					add_political_power = 300
+					set_stability = 0.55
+					set_war_support = 0.65
+					add_equipment_to_stockpile = {
+						type = train_equipment
+						amount = 10
+					}
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 10000
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 1000
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment_1
+						amount = 2000
+					}
+					set_cosmetic_tag = KYO_Seija
+
+
+
+
+					division_template = {
+						name = "Rabel division"
+						division_names_group = CHI_INF_01
+						is_locked = no
+						force_allow_recruiting = yes
+
+						regiments = {
+							militia  = { x = 0 y = 0 }
+							militia  = { x = 0 y = 1 }
+							militia  = { x = 0 y = 2 }
+							militia  = { x = 0 y = 3 }
+							militia  = { x = 1 y = 0 }
+							militia  = { x = 1 y = 1 }
+							militia  = { x = 1 y = 2 }
+							militia  = { x = 1 y = 3 }
+							militia  = { x = 2 y = 0 }
+							militia  = { x = 2 y = 1 }
+							militia  = { x = 2 y = 2 }
+							militia  = { x = 2 y = 3 }
+							
+						}
+						support = {
+							artillery = { x = 0 y = 0 }
+							
+						}	
+					}
+					capital_scope = {
+						create_unit = {
+							division = "division_template = \"Rabel division\" start_experience_factor = 0.2 start_equipment_factor = 1"
+							owner = event_target:seija_goverment
+							count = 10
+						}
+					}
+					division_template = {
+						name = "Army of red and white"
+						priority = 1
+						division_names_group = JAP_INF_01
+						is_locked = no
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+							artillery_brigade = {
+								x = 3
+								y = 0
+							}
+								
+							
+							
+						}
+						support = {
+							engineer = {
+								x = 0
+								y = 0
+							}
+							artillery = {
+								x = 0
+								y = 1
+							}
+							recon = {
+								x = 0
+								y = 2
+							}
+							logistics_company = {
+								x = 0
+								y = 3
+							}
+							anti_air = {
+								x = 0
+								y = 4
+							}
+						}
+					}
+					capital_scope = {
+						create_unit = {
+							division = "division_template = \"Army of red and white\" start_experience_factor = 0.8 start_equipment_factor = 1.0"
+							owner = event_target:seija_goverment
+							count = 10
+						}
+					}
+
+					SWE = {
+						transfer_navy = {
+							target = event_target:seija_goverment
+						}
+					}
+					
+					
+					
+					
+					
+		
+					set_global_flag = recruit_gensokyo_shinmyoumaru
+				KYO = {
+					gensokyo_Seija  = {
+						set_nationality = event_target:seija_goverment						
+					}
+					gensokyo_shinmyoumaru  = {
+						set_nationality = event_target:seija_goverment
+					}
+					
+					gensokyo_wakasagihime = {
+						set_nationality = event_target:seija_goverment
+					}
+					gensokyo_sekibanki = {
+						set_nationality = event_target:seija_goverment
+					}
+					gensokyo_kagerou = {
+						set_nationality = event_target:seija_goverment
+					}
+				}
+
+				create_country_leader = {
+					name = gensokyo_Seija
+					picture = GFX_gensokyo_Seija_large
+					ideology = reverse_ideology 
+					traits = {
+
+						inversion_agitator
+						counterattacking_amanojaku
+
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = kyo_postwar.12.a
+		
+		ai_chance = { base = 30 }
+
+		hidden_effect = {
+
+		}
+	}
+
+}
+
+#聖分裂
+
+country_event = {
+	id = kyo_postwar.13
+	title = kyo_postwar.13.t
+	desc = kyo_postwar.13.d
+
+	picture = GFX_report_event_hijiri_2
+
+	is_triggered_only = yes
+	timeout_days = 14
+
+	immediate = {
+		hidden_effect={
+			create_dynamic_country = {
+				original_tag = KYO   #（发动内战的国家旗帜名称选用）
+					save_event_target_as = hijiri_goverment
+					KYO_prepare_npc_civil_role_hijiri = yes
+					
+					transfer_state = 528
+					transfer_state = 1018
+					transfer_state = 526
+					transfer_state = 645
+					transfer_state = 648
+					transfer_state = 1020
+					transfer_state = 529
+					set_politics = {
+						ruling_party = democratic 
+					}
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.95
+					}
+
+					add_ideas = {
+
+						KYO_I_am_hungry
+						KYO_yet_another_industry_debuff_1
+						extensive_conscription
+						civilian_economy
+						KYO_death_of_yukari
+						KYO_hijiri_army_buff
+						KYO_judge_of_all_life
+
+					}
+					
+					
+					
+					set_technology = {
+						militia_tech = 1
+					}
+
+					add_manpower = 500000
+					add_political_power = 300
+					set_stability = 0.95
+					set_war_support = 0.15
+					add_equipment_to_stockpile = {
+						type = train_equipment
+						amount = 10
+					}
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 12000
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment_1
+						amount = 2500 
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 300
+					}
+
+					event_target:hijiri_goverment = {
+						set_cosmetic_tag = KYO_hijiri
+					}
+
+
+
+
+					division_template = {
+						name = "buddhist division"
+						division_names_group = CHI_INF_01
+						is_locked = no
+						force_allow_recruiting = yes
+
+						regiments = {
+							militia  = { x = 0 y = 0 }
+							militia  = { x = 0 y = 1 }
+							militia  = { x = 0 y = 2 }
+							militia  = { x = 0 y = 3 }
+							militia  = { x = 1 y = 0 }
+							militia  = { x = 1 y = 1 }
+							militia  = { x = 1 y = 2 }
+							militia  = { x = 1 y = 3 }
+							militia  = { x = 2 y = 0 }
+							militia  = { x = 2 y = 1 }
+							militia  = { x = 2 y = 2 }
+							militia  = { x = 2 y = 3 }
+						}
+						support = {
+							
+							
+						}	
+					}
+					capital_scope = {
+						create_unit = {
+							division = "division_template = \"buddhist division\" start_experience_factor = 0.25 start_equipment_factor = 1"
+							owner = event_target:hijiri_goverment
+							count = 10
+						}
+					}
+					division_template = {
+						name = "Name of Hijiri"
+						priority = 1
+						division_names_group = JAP_INF_01
+						is_locked = no
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+							artillery_brigade = {
+								x = 3
+								y = 0
+							}
+							artillery_brigade = {
+								x = 3
+								y = 1
+							}
+							artillery_brigade = {
+								x = 3
+								y = 2
+							}
+								
+							
+							
+						}
+						support = {
+							engineer = {
+								x = 0
+								y = 0
+							}
+							artillery = {
+								x = 0
+								y = 1
+							}
+
+							logistics_company = {
+								x = 0
+								y = 2
+							}
+							anti_air = {
+								x = 0
+								y = 3
+							}
+						}
+					}
+					capital_scope = {
+						create_unit = {
+							division = "division_template = \"Name of Hijiri\" start_experience_factor = 0.7 start_equipment_factor = 1"
+							owner = event_target:hijiri_goverment
+							count = 5
+						}
+					}
+
+					FRA = {
+						transfer_navy = {
+							target = event_target:hijiri_goverment
+						}
+					}
+					
+					
+					
+					
+					
+		
+					set_global_flag = recruit_myouren
+				KYO = {
+					gensokyo_Byakuren  = {
+						set_nationality = event_target:hijiri_goverment						
+					}
+					gensokyo_shou  = {
+						set_nationality = event_target:hijiri_goverment
+					}
+					gensokyo_nazrin = {
+						set_nationality = event_target:hijiri_goverment
+					}
+					gensokyo_murasa = {
+						set_nationality = event_target:hijiri_goverment
+					}
+					gensokyo_ichirin = {
+						set_nationality = event_target:hijiri_goverment
+					}
+					gensokyo_kyouko = {
+						set_nationality = event_target:hijiri_goverment
+					}
+					gensokyo_Nue = {
+						set_nationality = event_target:hijiri_goverment
+					}
+				}
+
+				create_country_leader = {
+					name = gensokyo_Byakuren
+					picture = GFX_gensokyo_Byakuren_large
+					ideology = buddhist_liberal
+					traits = {
+						
+						the_sealed_great_magician
+						lotus_vow
+
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = kyo_postwar.13.a
+		
+		ai_chance = { base = 30 }
+
+		hidden_effect = {
+
+		}
+	}
+	
+}
+
+#蕾米分裂
+
+country_event = {
+	id = kyo_postwar.14
+	title = kyo_postwar.14.t
+	desc = kyo_postwar.14.d
+
+	picture = GFX_report_event_remilia_6
+
+	is_triggered_only = yes
+	timeout_days = 14
+
+	immediate = {
+		hidden_effect={
+			create_dynamic_country = {
+					original_tag = KYO   #（发动内战的国家旗帜名称选用）
+					save_event_target_as = remilia_goverment
+					KYO_prepare_npc_civil_role_remilia = yes
+					transfer_state = 532
+					transfer_state = 531
+					transfer_state = 530		
+					transfer_state = 535
+					set_politics = {
+						ruling_party = fascism
+					}
+					add_popularity = {
+						ideology = fascism
+						popularity = 0.95
+					}
+
+					add_ideas = {
+
+						KYO_I_am_hungry
+						KYO_yet_another_industry_debuff_1
+
+						extensive_conscription
+						war_economy
+						KYO_death_of_yukari
+						KYO_remilia_army_buff
+						KYO_judge_of_all_life
+
+					}
+
+					531 = {
+						add_building_construction = {
+							type = arms_factory
+							level = 5
+							instant_build = yes
+						}
+					
+					}
+					
+					
+
+					add_manpower = 100000
+					add_political_power = 300
+					set_stability = 0.30
+					set_war_support = 0.95
+					add_equipment_to_stockpile = {
+						type = train_equipment
+						amount = 10
+					}
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 20000
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 1000
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment_1
+						amount = 1000
+					}
+					set_cosmetic_tag = KYO_remilia
+
+
+
+
+					division_template = {
+						name = "Scarlet division"
+						division_names_group = GER_PEN_01
+						is_locked = no
+						force_allow_recruiting = yes
+
+						regiments = {
+							mountaineers = { x = 0 y = 0 }
+							mountaineers = { x = 0 y = 1 }
+							mountaineers = { x = 0 y = 2 }
+							mountaineers = { x = 1 y = 0 }
+							mountaineers = { x = 1 y = 1 }
+							mountaineers = { x = 1 y = 2 }
+							mountaineers = { x = 2 y = 0 }
+							mountaineers = { x = 2 y = 1 }
+							mountaineers = { x = 2 y = 2 }
+							artillery_brigade = { x = 3 y = 0}
+						}
+						support = {
+							artillery = { x = 0 y = 0 }
+							engineer = {
+								x = 0
+								y = 1
+							}
+						}	
+					}
+					capital_scope = {
+						create_unit = {
+							division = "division_template = \"Scarlet division\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+							owner = event_target:remilia_goverment
+							count = 10
+						}
+					}
+					division_template = {
+						name = "Army of Remilia"
+						priority = 1
+						division_names_group = GER_Inf_01
+						is_locked = no
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+								
+							
+							
+						}
+						support = {
+							engineer = {
+								x = 0
+								y = 0
+							}
+							artillery = {
+								x = 0
+								y = 1
+							}
+							rangers_support = {
+								x = 0
+								y = 2
+							}
+						}
+					}
+					capital_scope = {
+						create_unit = {
+							division = "division_template = \"Army of Remilia\" start_experience_factor = 0.45 start_equipment_factor = 1"
+							owner = event_target:remilia_goverment
+							count = 12
+						}
+					}
+
+					
+					
+
+						create_ship = {
+							type = ship_hull_submarine_1
+							equipment_variant = "S Class"
+							creator = ENG
+							name = "My ship name"
+						}
+						create_ship = {
+							type = ship_hull_submarine_1
+							equipment_variant = "S Class"
+							creator = ENG
+							name = "My ship name"
+						}
+						create_ship = {
+							type = ship_hull_submarine_1
+							equipment_variant = "S Class"
+							creator = ENG
+							name = "My ship name"
+						}
+						create_ship = {
+							type = ship_hull_submarine_1
+							equipment_variant = "S Class"
+							creator = ENG
+							name = "My ship name"
+						}
+
+						create_ship = {
+							type = ship_hull_submarine_1
+							equipment_variant = "S Class"
+							creator = ENG
+							name = "My ship name"
+						}
+
+						create_ship = {
+							type = ship_hull_submarine_1
+							equipment_variant = "S Class"
+							creator = ENG
+							name = "My ship name"
+						}
+
+						create_ship = {
+							type = ship_hull_submarine_1
+							equipment_variant = "S Class"
+							creator = ENG
+							name = "My ship name"
+						}
+
+						create_ship = {
+							type = ship_hull_submarine_1
+							equipment_variant = "S Class"
+							creator = ENG
+							name = "My ship name"
+						}
+						create_ship = {
+							type = ship_hull_submarine_1
+							equipment_variant = "S Class"
+							creator = ENG
+							name = "My ship name"
+						}
+						create_ship = {
+							type = ship_hull_submarine_1
+							equipment_variant = "S Class"
+							creator = ENG
+							name = "My ship name"
+						}
+						create_ship = {
+							type = ship_hull_submarine_1
+							equipment_variant = "S Class"
+							creator = ENG
+							name = "My ship name"
+						}
+						create_ship = {
+							type = ship_hull_submarine_1
+							equipment_variant = "S Class"
+							creator = ENG
+							name = "My ship name"
+						}
+
+						create_ship = {
+							type = ship_hull_submarine_1
+							equipment_variant = "S Class"
+							creator = ENG
+							name = "My ship name"
+						}
+
+						create_ship = {
+							type = ship_hull_submarine_1
+							equipment_variant = "S Class"
+							creator = ENG
+							name = "My ship name"
+						}
+
+						create_ship = {
+							type = ship_hull_submarine_1
+							equipment_variant = "S Class"
+							creator = ENG
+							name = "My ship name"
+						}
+
+						create_ship = {
+							type = ship_hull_submarine_1
+							equipment_variant = "S Class"
+							creator = ENG
+							name = "My ship name"
+						}
+						create_ship = {
+							type = ship_hull_submarine_1
+							equipment_variant = "S Class"
+							creator = ENG
+							name = "My ship name"
+						}
+						create_ship = {
+							type = ship_hull_submarine_1
+							equipment_variant = "S Class"
+							creator = ENG
+							name = "My ship name"
+						}
+						create_ship = {
+							type = ship_hull_submarine_1
+							equipment_variant = "S Class"
+							creator = ENG
+							name = "My ship name"
+						}
+						create_ship = {
+							type = ship_hull_submarine_1
+							equipment_variant = "S Class"
+							creator = ENG
+							name = "My ship name"
+						}
+
+						create_ship = {
+							type = ship_hull_submarine_1
+							equipment_variant = "S Class"
+							creator = ENG
+							name = "My ship name"
+						}
+
+						create_ship = {
+							type = ship_hull_submarine_1
+							equipment_variant = "S Class"
+							creator = ENG
+							name = "My ship name"
+						}
+
+						create_ship = {
+							type = ship_hull_submarine_1
+							equipment_variant = "S Class"
+							creator = ENG
+							name = "My ship name"
+						}
+
+						create_ship = {
+							type = ship_hull_submarine_1
+							equipment_variant = "S Class"
+							creator = ENG
+							name = "My ship name"
+						}
+
+
+						
+					
+					
+					
+					
+					
+					
+		
+			
+				KYO = {
+					gensokyo_Remilia  = {
+						set_nationality = event_target:remilia_goverment						
+					}
+					gensokyo_sakuya = {
+						set_nationality = event_target:remilia_goverment
+					}
+					gensokyo_Flandre = {
+						set_nationality = event_target:remilia_goverment
+					}
+					gensokyo_meiling = {
+						set_nationality = event_target:remilia_goverment
+					}
+					gensokyo_patchouli = {
+						set_nationality = event_target:remilia_goverment
+					}
+					gensokyo_koakuma = {
+						set_nationality = event_target:remilia_goverment
+					}
+				}	
+				
+
+				
+				create_country_leader = {
+					name = gensokyo_Remilia
+					picture = GFX_gensokyo_Remilia_large
+					ideology = vampire_empire
+					traits = {
+
+						eternally_young_scarlet_moon
+						scarlet_lord_of_the_red_moon
+
+					}
+				}
+				
+				
+
+				
+					
+
+				
+			#	set_politics = {
+			#		ruling_party = neutrality #（爆发之后由哪个党派执政）
+			#	}
+			#	add_popularity = {
+			#		ideology = neutrality #（爆发之后党派支持度）
+			#		popularity = 0.80
+			#	}
+			#	declare_war_on = {
+			#		target = KYO #（与哪个国家战争）
+			#		type = civil_war #（战争类型）
+			#	}
+			#	add_civil_war_target = KYO #（获得哪个国家的战争目标）
+			#	#load_focus_tree = RUT_focus #（给与内战国家国策）
+			#	add_ideas = { #（选择发动内战国家法律）
+			#		extensive_conscription
+			#		war_economy
+			#	}
+			}
+		}
+	}
+
+	option = {
+		name = kyo_postwar.14.a
+		
+		ai_chance = { base = 30 }
+
+		hidden_effect = {
+
+		}
+	}
+	
+}
+
+#八雲分裂
+
+country_event = {
+	id = kyo_postwar.15
+	title = kyo_postwar.15.t
+	desc = kyo_postwar.15.d
+
+	picture = GFX_report_event_first_war_7
+
+	is_triggered_only = yes
+	timeout_days = 14
+
+	immediate = {
+		hidden_effect={
+			create_dynamic_country = {
+					original_tag = KYO   #（发动内战的国家旗帜名称选用）
+					save_event_target_as = ran_goverment
+					KYO_prepare_npc_civil_role_yakumo = yes
+					transfer_state = 1082
+					transfer_state = 282
+					transfer_state = 534
+					transfer_state = 535
+					transfer_state = 1019
+					set_politics = {
+						ruling_party = neutrality
+					}
+					add_popularity = {
+						ideology = neutrality
+						popularity = 0.95
+					}
+
+					add_ideas = {
+
+						KYO_I_am_hungry
+						KYO_yet_another_industry_debuff_1
+						extensive_conscription
+						war_economy
+						KYO_death_of_yukari
+						KYO_judge_of_all_life
+						KYO_yakumo_army_buff
+						KYO_shikigami_Chen_3
+						KYO_shikigami_Ran_3
+						
+						
+					}
+					add_manpower = 300000
+					add_political_power = 600
+					set_stability = 0.15
+					set_war_support = 0.60
+					add_equipment_to_stockpile = {
+						type = train_equipment
+						amount = 10
+					}
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 100000
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 1000
+					}
+					add_equipment_to_stockpile = {
+						type = support_equipment_1
+						amount = 1500
+					}
+					add_equipment_to_stockpile = {
+						type = CAS_equipment_1
+						amount = 500
+						producer = GER
+					}
+					add_equipment_to_stockpile = {
+						type = medium_plane_airframe
+						amount = 500
+						producer = GER
+					}
+					
+					set_cosmetic_tag = "KYO_chen"
+					
+
+
+
+					division_template = {
+						name = "Army of yukari"
+						priority = 1
+						division_names_group = RAJ_INF_01
+						is_locked = no
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 1 y = 3 }
+						}
+						support = {
+							engineer = {
+								x = 0
+								y = 0
+							}
+							artillery = {
+								x = 0
+								y = 1
+							}
+							rangers_support = {
+								x = 0
+								y = 2
+							}
+						}
+					}
+					division_template = {
+						name = "Cavalry of Yukari"
+						priority = 1
+						division_names_group = RAJ_INF_01
+						is_locked = no
+						regiments = {
+							cavalry = { x = 0 y = 0 }
+							cavalry = { x = 0 y = 1 }
+							cavalry = { x = 0 y = 2 }
+							cavalry = { x = 0 y = 3 }
+							cavalry = { x = 1 y = 0 }
+							cavalry = { x = 1 y = 1 }
+							cavalry = { x = 1 y = 2 }
+							cavalry = { x = 1 y = 3 }
+							
+							
+						}
+						support = {
+							engineer = {
+								x = 0
+								y = 0
+							}
+							artillery = {
+								x = 0
+								y = 1
+							}
+							rangers_support = {
+								x = 0
+								y = 2
+							}
+						}
+					}
+					capital_scope = {
+						create_unit = {
+							division = "division_template = \"Army of yukari\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+							owner = event_target:ran_goverment
+							count = 20
+						}
+					}
+					capital_scope = {
+						create_unit = {
+							division = "division_template = \"Cavalry of Yukari\" start_experience_factor = 0.5 start_equipment_factor = 1.0"
+							owner = event_target:ran_goverment
+							count = 10
+						}
+					}
+
+
+					SOV = {
+						transfer_navy = {
+							target = event_target:ran_goverment
+						}
+					}
+					
+					
+					
+					
+					
+					
+
+			#	set_party_name = {
+			#		ideology = neutrality
+			#		long_name = KYO_Yukari_party_long 
+			#		name = KYO_Yukari_party
+			#	}
+					
+				KYO = {
+					gensokyo_Chen = {
+						set_nationality = event_target:ran_goverment
+					}
+					gensokyo_Ran = {
+						set_nationality = event_target:ran_goverment
+					}
+					gensokyo_Kasen = {
+						set_nationality = event_target:ran_goverment
+					}
+					gensokyo_Okina = {
+						set_nationality = event_target:ran_goverment
+					}
+					gensokyo_mai = {
+						set_nationality = event_target:ran_goverment
+					}
+					gensokyo_satono = {
+						set_nationality = event_target:ran_goverment
+					}
+					gensokyo_reimu  = {
+						set_nationality = event_target:ran_goverment
+					}
+					gensokyo_merry = {
+						set_nationality = event_target:ran_goverment
+					}
+					gensokyo_renko = {
+						set_nationality = event_target:ran_goverment
+					}
+					gensokyo_aunn = {
+						set_nationality = event_target:ran_goverment
+					}
+				}			
+
+
+					show_unit_leaders_tooltip = gensokyo_Chen
+					gensokyo_Chen = {
+						add_country_leader_role = {
+							country_leader = {
+								expire = "2000.1.1"
+								ideology = gensokyo_balance
+								traits = {
+
+									Youkai_of_Boundaries
+									Gensokyo_protector
+									
+								}
+							}
+							promote_leader = yes
+						}	 
+					
+					}
+
+				
+			#	set_politics = {
+			#		ruling_party = neutrality #（爆发之后由哪个党派执政）
+			#	}
+			#	add_popularity = {
+			#		ideology = neutrality #（爆发之后党派支持度）
+			#		popularity = 0.80
+			#	}
+			#	declare_war_on = {
+			#		target = KYO #（与哪个国家战争）
+			#		type = civil_war #（战争类型）
+			#	}
+			#	add_civil_war_target = KYO #（获得哪个国家的战争目标）
+			#	#load_focus_tree = RUT_focus #（给与内战国家国策）
+			#	add_ideas = { #（选择发动内战国家法律）
+			#		extensive_conscription
+			#		war_economy
+			#	}
+			}
+		}
+	}
+
+	option = {
+		name = kyo_postwar.15.a
+		
+		ai_chance = { base = 30 }
+
+		hidden_effect = {
+
+		}
+	}
+	
+}
+
+
+
+country_event = {
+	id = kyo_postwar.16
+	title = kyo_postwar.16.t
+	desc = kyo_postwar.16.d
+
+	picture = GFX_report_event_first_war_26
+
+	is_triggered_only = yes
+	timeout_days = 14
+
+	option = {
+		name = kyo_postwar.16.a
+		
+		ai_chance = { base = 30 }
+		
+		every_country = {
+			limit = {
+				KYO = {
+					any_core_state = {
+						
+						NOT = {
+							owner = {
+								tag = KYO
+							}
+						}			
+							
+						
+					}
+				}
+			}
+			declare_war_on = {
+			target = prev
+			type = civil_war
+			}
+		}
+		
+		declare_war_on = {
+			target = THIS
+			type = civil_war
+		}
+
+		hidden_effect = {
+
+		}
+	}
+	
+}
+
+
+#部隊刪除#全日本添加非軍事區
+
+country_event = {
+	id = kyo_postwar.17
+	title = kyo_postwar.17.t
+	desc = kyo_postwar.17.d
+
+	picture = GFX_report_event_first_war_29
+
+	is_triggered_only = yes
+	timeout_days = 14
+
+	immediate = {
+		hidden_effect = {
+			every_state = {
+			limit = {
+				controller = {
+					tag = KYO
+				}								
+			}
+			set_demilitarized_zone = yes
+		}
+		}
+		
+		
+		
+		
+	}
+
+	option = {
+		name = kyo_postwar.17.a
+		
+		ai_chance = { base = 30 }
+
+			delete_unit = {
+				state = 1082
+				disband = no
+			}
+			hidden_effect = {
+
+				country_event = {
+
+					id = kyo_postwar.18
+					days = 1
+
+				}
+			}
+			
+
+		hidden_effect = {
+
+		}
+	}
+	
+}
+
+
+#刪部隊的藏國策
+country_event = {
+	id = kyo_postwar.18
+	title = kyo_postwar.18.t
+	desc = kyo_postwar.18.d
+
+	is_triggered_only = yes
+	timeout_days = 14
+	hidden = yes
+
+	immediate = {
+
+		delete_unit = {
+				state = 1082
+				disband = no
+			}
+
+			every_state = {
+			limit = {
+				controller = {
+					tag = KYO
+				}								
+			}
+			set_demilitarized_zone = no
+		}
+		hidden_effect = {
+			KYO_unlock_hyakki_special_contingents = yes
+		}
+		country_event = kyo_postwar.11
+
+		news_event = {
+			id = kyo_news.14
+			days = 14
+		}
+		news_event = {
+			id = kyo_news.15
+			days = 28
+		}
+		news_event = {
+			id = kyo_news.16
+			days = 21
+		}
+	}
+
+	
+}
+
+
+country_event = {
+	id = kyo_postwar.24
+	title = kyo_postwar.24.t
+	desc = kyo_postwar.24.d
+	picture = GFX_report_event_first_war_15
+	is_triggered_only = yes
+
+	option = {
+		name = kyo_postwar.24.a
+		set_country_flag = KYO_cws_tutorial_seen
+	}
+}
+
+
+
+
+
+
+
+#################################################################################
+################################ Unused Event ###################################
+#################################################################################
+
+
+
+
+
+country_event = {
+	id = kyo_postwar.7
+	title = kyo_postwar.7.t
+	desc = kyo_postwar.7.d
+
+	picture = GFX_report_event_yukari_3
+
+	is_triggered_only = yes
+	timeout_days = 14
+
+	option = {
+		name = kyo_postwar.7.a
+		
+		ai_chance = { base = 30 }
+		
+
+		country_event = kyo_postwar.8
+	}
+	
+}
+
+country_event = {
+	id = kyo_postwar.8
+	title = kyo_postwar.8.t
+	desc = kyo_postwar.8.d
+
+	picture = GFX_report_event_yukari_1
+
+	is_triggered_only = yes
+	timeout_days = 14
+	
+
+	option = {
+		name = kyo_postwar.8.a
+		trigger = {
+			
+			has_country_flag = yukari_will_not_survive	
+
+		}
+		ai_chance = { base = 30 }
+
+		
+			country_event = kyo_postwar.10
+		
+		
+		
+		hidden_effect = {
+
+		}
+	}
+	option = {
+		name = kyo_postwar.8.a
+		trigger = {
+
+			
+			not={  has_country_flag =  yukari_will_not_survive	}
+
+		}
+
+		ai_chance = { base = 30 }
+
+		
+			country_event = kyo_postwar.9
+		
+		
+		
+	
+	}
+	
+}
+#八雲紫加強統治  銜接原本的八雲紫線
+country_event = {
+	id = kyo_postwar.9
+	title = kyo_postwar.9.t
+	desc = kyo_postwar.9.d
+
+	picture = GFX_report_event_yukari_4
+
+	is_triggered_only = yes
+	timeout_days = 14
+
+	option = {
+		name = kyo_postwar.9.a
+		
+		ai_chance = { base = 30 }
+
+		complete_national_focus = KYO_Yukari_start
+
+		add_country_leader_trait = Gensokyo_protector
+
+		hidden_effect = {
+
+		}
+	}
+
+}
+#八雲紫死亡
+country_event = {
+	id = kyo_postwar.10
+	title = kyo_postwar.10.t
+	desc = kyo_postwar.10.d
+
+	picture = GFX_report_event_yukari_death
+
+	is_triggered_only = yes
+	timeout_days = 14
+
+	option = {
+		name = kyo_postwar.10.a
+		
+		ai_chance = { base = 30 }
+
+		KYO_disable_barrier_and_hyakki_systems = yes
+		set_country_flag = gensokyo_is_at_civil_war
+
+		add_ideas = KYO_death_of_yukari
+
+		retire_character = gensokyo_Yukari
+
+		set_cosmetic_tag = KYO_emergency_goverment
+
+		gensokyo_Ran = {
+			add_country_leader_role = {
+				country_leader = {
+					ideology = gensokyo_balance
+					traits = {
+
+							Youkai_of_Boundaries
+							Gensokyo_protector
+								
+						}
+						
+				}
+				promote_leader = yes
+			}
+		}
+
+		launch_nuke = {
+    		province = 1182
+		}
+		launch_nuke = {
+    		province = 11908
+		}
+		launch_nuke = {
+    		province = 1097
+		}
+		launch_nuke = {
+    		province = 9998
+		}
+		launch_nuke = {
+    		province = 12072
+		}
+		launch_nuke = {
+    		province = 7087
+		}
+		launch_nuke = {
+    		province = 7157
+		}
+		launch_nuke = {
+    		province = 4188
+		}
+		launch_nuke = {
+    		province = 4184
+		}
+
+
+		country_event = {
+			id = kyo_postwar.17
+			days = 7
+		}
+
+
+
+		hidden_effect = {
+
+		}
+	}
+	
+}
+
+
+
+
+
+
+country_event = {
+	id = kyo_postwar.19
+	title = kyo_postwar.19.t
+	desc = kyo_postwar.19.d
+
+	is_triggered_only = yes
+	timeout_days = 14
+
+	option = {
+		name = kyo_postwar.19.a
+		
+		ai_chance = { base = 30 }
+
+		gensokyo_satori = {
+			set_nationality = event_target:remilia_goverment
+		}
+		gensokyo_koishi = {
+			set_nationality = event_target:remilia_goverment
+		}
+		gensokyo_orin = {
+			set_nationality = event_target:remilia_goverment
+		}
+		gensokyo_okuu = {
+			set_nationality = event_target:remilia_goverment
+		}
+
+		hidden_effect = {
+
+		}
+	}
+	
+}
+
+country_event = {
+	id = kyo_postwar.20
+	title = kyo_postwar.20.t
+	desc = kyo_postwar.20.d
+
+	is_triggered_only = yes
+	timeout_days = 14
+
+	option = {
+		name = kyo_postwar.20.a
+		
+		ai_chance = { base = 30 }
+
+		gensokyo_Cirno = {
+			set_nationality = event_target:seija_goverment
+		}
+
+		hidden_effect = {
+
+		}
+	}
+	
+}
+
+country_event = {
+	id = kyo_postwar.21
+	title = kyo_postwar.21.t
+	desc = kyo_postwar.21.d
+
+	is_triggered_only = yes
+	timeout_days = 14
+
+	option = {
+		name = kyo_postwar.21.a
+		
+		ai_chance = { base = 30 }
+
+		gensokyo_keine = {
+			set_nationality = event_target:hijiri_goverment
+		}
+		gensokyo_mokou = {
+			set_nationality = event_target:hijiri_goverment
+		}
+
+		hidden_effect = {
+
+		}
+	}
+	
+}
+
+
+#TODO月都勢力出來
+country_event = {
+	id = kyo_postwar.23
+	title = kyo_postwar.23.t
+	desc = kyo_postwar.23.d
+	picture = GFX_report_event_yukari_death
+	is_triggered_only = yes
+	option = {
+		name = kyo_postwar.23.a
+		set_global_flag = KYO_lunar_expedition_bureau_established
+		LUN = { set_country_flag = KYO_lunar_expedition_bureau_established }
+	}
+}
+
+
+
+
+
+
+
+
+
+country_event = {
+	id = kyo_postwar.22
+	title = kyo_postwar.22.t
+	desc = kyo_postwar.22.d
+
+	is_triggered_only = yes
+	timeout_days = 14
+
+	option = {
+		name = kyo_postwar.22.a
+		
+		ai_chance = { base = 30 }
+
+		hidden_effect = {
+
+		}
+	}
+	
+}
+
+#################################################################################
+################################ Unused Event ###################################
+#################################################################################
+
+
+

@@ -1,0 +1,720 @@
+add_namespace = shining_needle
+add_namespace = kyo_seija_news
+
+# ======================================================
+# Gensokyo: Coexistence or Extinction
+# Seija route - Story events
+#
+# All events are triggered only. Recommended focus hooks
+# are listed in shining_needle_focus_hooks.txt.
+# ======================================================
+
+# ------------------------------------------------------
+# I. Victory and the first distribution
+# ------------------------------------------------------
+
+country_event = {
+	id = shining_needle.1
+	title = shining_needle.1.t
+	desc = shining_needle.1.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.1.a
+		hidden_effect = { set_country_flag = shining_needle_1_seen }
+	}
+}
+
+country_event = {
+	id = shining_needle.2
+	title = shining_needle.2.t
+	desc = shining_needle.2.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.2.a
+		hidden_effect = { set_country_flag = kyo_seija_distribution_story_opened }
+	}
+}
+
+# ------------------------------------------------------
+# II. Nue - the social place of youkai
+# ------------------------------------------------------
+
+country_event = {
+	id = shining_needle.3
+	title = shining_needle.3.t
+	desc = shining_needle.3.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.3.a
+		hidden_effect = { set_country_flag = kyo_seija_nue_first_petition_seen }
+	}
+}
+
+country_event = {
+	id = shining_needle.4
+	title = shining_needle.4.t
+	desc = shining_needle.4.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.4.a
+		hidden_effect = { set_country_flag = kyo_seija_charter_event_seen }
+	}
+}
+
+# ------------------------------------------------------
+# III. Koishi - the unconscious trial
+# ------------------------------------------------------
+
+country_event = {
+	id = shining_needle.5
+	title = shining_needle.5.t
+	desc = shining_needle.5.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.5.a
+		hidden_effect = { set_country_flag = kyo_seija_koishi_entered_unconscious }
+	}
+}
+
+country_event = {
+	id = shining_needle.6
+	title = shining_needle.6.t
+	desc = shining_needle.6.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.6.a
+		hidden_effect = { set_country_flag = kyo_seija_unconscious_trial_seen }
+	}
+}
+
+country_event = {
+	id = shining_needle.7
+	title = shining_needle.7.t
+	desc = shining_needle.7.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.7.a
+		hidden_effect = { set_country_flag = kyo_seija_admitted_destruction }
+	}
+}
+
+country_event = {
+	id = shining_needle.8
+	title = shining_needle.8.t
+	desc = shining_needle.8.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.8.a
+		hidden_effect = { set_country_flag = kyo_seija_admitted_power }
+	}
+}
+
+country_event = {
+	id = shining_needle.9
+	title = shining_needle.9.t
+	desc = shining_needle.9.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.9.a
+		hidden_effect = { set_country_flag = kyo_seija_revolution_bound_to_itself }
+	}
+}
+
+# ------------------------------------------------------
+# IV. Flandre - blood, name and the period of company
+# ------------------------------------------------------
+
+country_event = {
+	id = shining_needle.10
+	title = shining_needle.10.t
+	desc = shining_needle.10.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.10.a
+		hidden_effect = { set_country_flag = kyo_seija_flandre_arrived }
+	}
+}
+
+country_event = {
+	id = shining_needle.11
+	title = shining_needle.11.t
+	desc = shining_needle.11.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.11.a
+		hidden_effect = { set_country_flag = kyo_seija_flandre_companion_period }
+	}
+}
+
+country_event = {
+	id = shining_needle.12
+	title = shining_needle.12.t
+	desc = shining_needle.12.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.12.a
+		hidden_effect = { set_country_flag = kyo_seija_flandre_found_self }
+	}
+}
+
+# ------------------------------------------------------
+# V. Three wounds converge
+# ------------------------------------------------------
+
+country_event = {
+	id = shining_needle.13
+	title = shining_needle.13.t
+	desc = shining_needle.13.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.13.a
+		hidden_effect = { set_country_flag = kyo_seija_three_lessons_convened }
+	}
+}
+
+# ------------------------------------------------------
+# VI. Material reconstruction
+# ------------------------------------------------------
+
+country_event = {
+	id = shining_needle.14
+	title = shining_needle.14.t
+	desc = shining_needle.14.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.14.a
+		hidden_effect = { set_country_flag = kyo_seija_distribution_reconstruction_phase }
+	}
+}
+
+country_event = {
+	id = shining_needle.15
+	title = shining_needle.15.t
+	desc = shining_needle.15.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.15.a
+		hidden_effect = { set_country_flag = kyo_seija_kogasa_worksite_story_seen }
+	}
+}
+
+country_event = {
+	id = shining_needle.16
+	title = shining_needle.16.t
+	desc = shining_needle.16.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.16.a
+		hidden_effect = { set_country_flag = kyo_seija_storehouse_policy_seen }
+		
+	}
+}
+
+country_event = {
+	id = shining_needle.17
+	title = shining_needle.17.t
+	desc = shining_needle.17.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.17.a
+		hidden_effect = { set_country_flag = kyo_seija_local_workshop_policy_seen }
+	}
+}
+
+country_event = {
+	id = shining_needle.18
+	title = shining_needle.18.t
+	desc = shining_needle.18.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.18.a
+		hidden_effect = { set_country_flag = kyo_seija_distribution_committee_phase }
+	}
+}
+
+# ------------------------------------------------------
+# VII. Theory, party and provisional program
+# ------------------------------------------------------
+
+country_event = {
+	id = shining_needle.19
+	title = shining_needle.19.t
+	desc = shining_needle.19.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.19.a
+		hidden_effect = { set_country_flag = kyo_seija_stolen_books_opened }
+	}
+}
+
+country_event = {
+	id = shining_needle.20
+	title = shining_needle.20.t
+	desc = shining_needle.20.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.20.a
+		hidden_effect = { set_country_flag = kyo_seija_rosa_trotsky_debate_seen }
+	}
+}
+
+country_event = {
+	id = shining_needle.21
+	title = shining_needle.21.t
+	desc = shining_needle.21.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.21.a
+		hidden_effect = { set_country_flag = kyo_seija_provisional_program_adopted }
+	}
+}
+
+country_event = {
+	id = shining_needle.22
+	title = shining_needle.22.t
+	desc = shining_needle.22.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.22.a
+		hidden_effect = { set_country_flag = kyo_seija_reconstruction_account_closed }
+	}
+}
+
+# ------------------------------------------------------
+# VIII. Sagume, the Moon and Seija's erased past
+# ------------------------------------------------------
+
+country_event = {
+	id = shining_needle.23
+	title = shining_needle.23.t
+	desc = shining_needle.23.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.23.a
+		hidden_effect = { set_country_flag = kyo_seija_sagume_arrived }
+	}
+}
+
+country_event = {
+	id = shining_needle.24
+	title = shining_needle.24.t
+	desc = shining_needle.24.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.24.a
+		hidden_effect = { set_country_flag = kyo_seija_lunar_occupation_plan_known }
+	}
+}
+
+country_event = {
+	id = shining_needle.25
+	title = shining_needle.25.t
+	desc = shining_needle.25.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.25.a
+		hidden_effect = { set_country_flag = kyo_seija_knows_sagume_truth }
+	}
+}
+
+country_event = {
+	id = shining_needle.26
+	title = shining_needle.26.t
+	desc = shining_needle.26.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.26.a
+		hidden_effect = { set_country_flag = kyo_seija_doremy_dream_network }
+	}
+}
+
+# ------------------------------------------------------
+# IX. Total war and the world-reversal resolution
+# ------------------------------------------------------
+
+country_event = {
+	id = shining_needle.27
+	title = shining_needle.27.t
+	desc = shining_needle.27.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.27.a
+		hidden_effect = { set_country_flag = kyo_seija_declared_war_on_lunarians }
+	}
+}
+
+country_event = {
+	id = shining_needle.28
+	title = shining_needle.28.t
+	desc = shining_needle.28.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.28.a
+		hidden_effect = {
+			set_country_flag = kyo_seija_total_war_council
+			set_country_flag = kyo_seija_distribution_wartime_phase
+		}
+	}
+}
+
+country_event = {
+	id = shining_needle.29
+	title = shining_needle.29.t
+	desc = shining_needle.29.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.29.a
+		hidden_effect = { set_country_flag = kyo_seija_world_reversal_resolution_signed }
+	}
+}
+
+country_event = {
+	id = shining_needle.30
+	title = shining_needle.30.t
+	desc = shining_needle.30.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.30.a
+		hidden_effect = { set_country_flag = kyo_seija_amanojaku_resolve }
+	}
+}
+
+# ------------------------------------------------------
+# X. Information war, lunar underground and reversal
+# ------------------------------------------------------
+
+country_event = {
+	id = shining_needle.31
+	title = shining_needle.31.t
+	desc = shining_needle.31.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.31.a
+		hidden_effect = { set_country_flag = kyo_seija_truth_ministry_oversight }
+	}
+}
+
+country_event = {
+	id = shining_needle.32
+	title = shining_needle.32.t
+	desc = shining_needle.32.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.32.a
+		hidden_effect = { set_country_flag = kyo_seija_lunar_underground_active }
+	}
+}
+
+country_event = {
+	id = shining_needle.33
+	title = shining_needle.33.t
+	desc = shining_needle.33.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.33.a
+		hidden_effect = { set_country_flag = kyo_seija_lunar_fate_reversed }
+	}
+}
+
+# ------------------------------------------------------
+# XI. Finale
+# ------------------------------------------------------
+
+country_event = {
+	id = shining_needle.34
+	title = shining_needle.34.t
+	desc = shining_needle.34.d
+	is_triggered_only = yes
+
+	option = {
+		name = shining_needle.34.a
+		hidden_effect = { set_country_flag = shining_needle_completed }
+	}
+}
+
+
+
+
+# ----------------------------------------------------------------------------
+# 商品、饮食与新消费
+# ----------------------------------------------------------------------------
+
+country_event = {
+	id = shining_needle.35
+	title = shining_needle.35.t
+	desc = shining_needle.35.d
+	is_triggered_only = yes
+
+	option = { name = shining_needle.35.a }
+}
+
+country_event = {
+	id = shining_needle.36
+	title = shining_needle.36.t
+	desc = shining_needle.36.d
+	is_triggered_only = yes
+
+	option = { name = shining_needle.36.a }
+}
+
+country_event = {
+	id = shining_needle.37
+	title = shining_needle.37.t
+	desc = shining_needle.37.d
+	is_triggered_only = yes
+
+	option = { name = shining_needle.37.a }
+}
+
+country_event = {
+	id = shining_needle.38
+	title = shining_needle.38.t
+	desc = shining_needle.38.d
+	is_triggered_only = yes
+
+	option = { name = shining_needle.38.a }
+}
+
+country_event = {
+	id = shining_needle.39
+	title = shining_needle.39.t
+	desc = shining_needle.39.d
+	is_triggered_only = yes
+
+	option = { name = shining_needle.39.a }
+}
+
+# ----------------------------------------------------------------------------
+# 文学、出版与大众文化
+# ----------------------------------------------------------------------------
+
+country_event = {
+	id = shining_needle.40
+	title = shining_needle.40.t
+	desc = shining_needle.40.d
+	is_triggered_only = yes
+
+	option = { name = shining_needle.40.a }
+}
+
+country_event = {
+	id = shining_needle.41
+	title = shining_needle.41.t
+	desc = shining_needle.41.d
+	is_triggered_only = yes
+
+	option = { name = shining_needle.41.a }
+}
+
+country_event = {
+	id = shining_needle.42
+	title = shining_needle.42.t
+	desc = shining_needle.42.d
+	is_triggered_only = yes
+
+	option = { name = shining_needle.42.a }
+}
+
+country_event = {
+	id = shining_needle.43
+	title = shining_needle.43.t
+	desc = shining_needle.43.d
+	is_triggered_only = yes
+
+	option = { name = shining_needle.43.a }
+}
+
+# ----------------------------------------------------------------------------
+# 废墟中的发现与新生活方式
+# ----------------------------------------------------------------------------
+
+country_event = {
+	id = shining_needle.44
+	title = shining_needle.44.t
+	desc = shining_needle.44.d
+	is_triggered_only = yes
+
+	option = { name = shining_needle.44.a }
+}
+
+country_event = {
+	id = shining_needle.45
+	title = shining_needle.45.t
+	desc = shining_needle.45.d
+	is_triggered_only = yes
+
+	option = { name = shining_needle.45.a }
+}
+
+country_event = {
+	id = shining_needle.46
+	title = shining_needle.46.t
+	desc = shining_needle.46.d
+	is_triggered_only = yes
+
+	option = { name = shining_needle.46.a }
+}
+
+# ----------------------------------------------------------------------------
+# 人物交流与有趣的小事
+# ----------------------------------------------------------------------------
+
+country_event = {
+	id = shining_needle.47
+	title = shining_needle.47.t
+	desc = shining_needle.47.d
+	is_triggered_only = yes
+
+	option = { name = shining_needle.47.a }
+}
+
+country_event = {
+	id = shining_needle.48
+	title = shining_needle.48.t
+	desc = shining_needle.48.d
+	is_triggered_only = yes
+
+	option = { name = shining_needle.48.a }
+}
+
+country_event = {
+	id = shining_needle.49
+	title = shining_needle.49.t
+	desc = shining_needle.49.d
+	is_triggered_only = yes
+
+	option = { name = shining_needle.49.a }
+}
+
+country_event = {
+	id = shining_needle.50
+	title = shining_needle.50.t
+	desc = shining_needle.50.d
+	is_triggered_only = yes
+
+	option = { name = shining_needle.50.a }
+}
+
+country_event = {
+	id = shining_needle.51
+	title = shining_needle.51.t
+	desc = shining_needle.51.d
+	is_triggered_only = yes
+
+	option = { name = shining_needle.51.a }
+}
+
+country_event = {
+	id = shining_needle.52
+	title = shining_needle.52.t
+	desc = shining_needle.52.d
+	is_triggered_only = yes
+
+	option = { name = shining_needle.52.a }
+}
+
+country_event = {
+	id = shining_needle.53
+	title = shining_needle.53.t
+	desc = shining_needle.53.d
+	is_triggered_only = yes
+
+	option = { name = shining_needle.53.a }
+}
+
+country_event = {
+	id = shining_needle.54
+	title = shining_needle.54.t
+	desc = shining_needle.54.d
+	is_triggered_only = yes
+
+	option = { name = shining_needle.54.a }
+}
+
+
+# ======================================================
+# World news events
+# ======================================================
+
+news_event = {
+	id = kyo_seija_news.1
+	title = kyo_seija_news.1.t
+	desc = kyo_seija_news.1.d
+	major = yes
+	is_triggered_only = yes
+
+	option = { name = kyo_seija_news.1.a }
+}
+
+news_event = {
+	id = kyo_seija_news.2
+	title = kyo_seija_news.2.t
+	desc = kyo_seija_news.2.d
+	major = yes
+	is_triggered_only = yes
+
+	option = { name = kyo_seija_news.2.a }
+}
+
+news_event = {
+	id = kyo_seija_news.3
+	title = kyo_seija_news.3.t
+	desc = kyo_seija_news.3.d
+	major = yes
+	is_triggered_only = yes
+
+	option = { name = kyo_seija_news.3.a }
+}
+
+news_event = {
+	id = kyo_seija_news.4
+	title = kyo_seija_news.4.t
+	desc = kyo_seija_news.4.d
+	major = yes
+	is_triggered_only = yes
+
+	option = { name = kyo_seija_news.4.a }
+}
+
+news_event = {
+	id = kyo_seija_news.5
+	title = kyo_seija_news.5.t
+	desc = kyo_seija_news.5.d
+	major = yes
+	is_triggered_only = yes
+
+	option = { name = kyo_seija_news.5.a }
+}

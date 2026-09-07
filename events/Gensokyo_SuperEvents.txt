@@ -1,0 +1,180 @@
+################
+# sp_event EVENTS #
+################
+
+add_namespace = sp_event
+
+
+
+
+country_event = {	#ww2
+	id = sp_event.1
+	title = sp_event.1.t
+	desc = sp_event.1.d
+	picture = GFX_report_event_diplomatic_message
+
+	is_triggered_only = no
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		always = no
+	}
+
+	option = {
+		name = sp_event.1.a
+		
+        set_global_flag = GER_WW2
+		set_global_flag = Super_Event_Visible
+		play_song = "sp_event_ww2"
+		
+		#WW2 Flag
+		set_global_flag = sp_event_WW2
+	}
+}
+
+country_event = {	#youkai japan war
+	id = sp_event.2
+	title = sp_event.2.t
+	desc = sp_event.2.d
+	picture = GFX_report_event_diplomatic_message
+
+	
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		JAP = { has_war_with = KYO }
+	}
+
+	option = {
+		name = sp_event.2.a
+		
+        set_global_flag = sp_event_japan_youkai_war
+		set_global_flag = Super_Event_Visible
+
+		play_song = "sp_event_japan_youkai_war_music"
+	}
+}
+
+country_event = {
+	id = sp_event.3
+	title = sp_event.3.t
+	desc = sp_event.3.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = sp_event.3.a
+		set_global_flag = sp_event_lunar_public_war
+		set_global_flag = Super_Event_Visible
+		set_global_flag = sp_event_Yukari_path_second_moon_war
+		play_song = "sp_event_yukari_path_the_end_music"
+	}
+}
+
+country_event = {	#civil war
+	id = sp_event.4
+	title = sp_event.2.t
+	desc = sp_event.2.d
+	picture = GFX_report_event_diplomatic_message
+
+	
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		KYO = {
+			has_completed_focus = KYO_war_never_change
+		}
+	}
+
+	option = {
+		name = sp_event.2.a
+		
+        set_global_flag = sp_event_Youkai_civilwar_start
+		set_global_flag = Super_Event_Visible
+
+		play_song = "sp_event_Youkai_civilwar_start_music"
+	}
+}
+
+country_event = {	#Remilia the end
+	id = sp_event.5
+	title = sp_event.2.t
+	desc = sp_event.2.d
+	picture = GFX_report_event_diplomatic_message
+
+	
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		KYO = {
+			has_completed_focus = KYO_cross_pacific
+		}
+	}
+
+	option = {
+		name = sp_event.2.a
+		
+        set_global_flag = sp_event_Remilia_path_the_end
+		set_global_flag = Super_Event_Visible
+
+		play_song = "sp_event_Remilia_path_the_end_music"
+	}
+}
+
+country_event = {	
+	id = sp_event.6
+	title = sp_event.2.t
+	desc = sp_event.2.d
+	picture = GFX_report_event_diplomatic_message
+
+	
+	
+	fire_only_once = yes
+	
+	hidden = yes
+	
+	trigger = {
+		KYO = {
+			has_completed_focus = KYO_hijiri_the_world_of_peace
+		}
+	}
+
+	option = {
+		name = sp_event.2.a
+		
+        set_global_flag = sp_event_Hijiri_path_the_end
+		set_global_flag = Super_Event_Visible
+
+		play_song = "Thank_you_for_dears_music"
+	}
+}
+
+country_event = {
+	id = sp_event.7
+	title = sp_event.7.t
+	desc = sp_event.7.d
+	picture = GFX_report_event_diplomatic_message
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+	option = {
+		name = sp_event.7.a
+		set_global_flag = sp_event_yukari_world
+		set_global_flag = sp_event_yukari_path_the_end
+		set_global_flag = Super_Event_Visible
+		play_song = "Notzan_ACT_Necrofantasia_music"
+	}
+}

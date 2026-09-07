@@ -1,0 +1,1479 @@
+add_namespace = gensokyo_first_stage
+
+
+
+country_event = {
+ 
+	id = gensokyo_first_stage.38
+	title = gensokyo_first_stage.38.t
+	desc = gensokyo_first_stage.38.d
+
+	is_triggered_only = yes
+
+
+	
+	option = {
+		name = gensokyo_first_stage.38.a
+		JAP ={
+			add_ideas = game_country_buff_1
+			
+		}
+		CHI ={
+			add_ideas = game_country_buff_2
+		
+		}
+		ai_chance = { base = 0 }	
+	}
+	option = {
+		name = gensokyo_first_stage.38.b
+
+		JAP ={
+			add_ideas = game_country_buff_2
+			
+		}
+		CHI ={
+			add_ideas = game_country_buff_2
+			
+		}
+		
+		ai_chance = { base = 0 }	
+	}
+	option = {
+		name = gensokyo_first_stage.38.c
+		
+		ai_chance = { base = 100 }	
+	}
+	option = {
+		name = gensokyo_first_stage.38.e
+
+		JAP ={
+			add_ideas = game_country_debuff
+			
+		}
+		
+		
+		ai_chance = { base = 0 }	
+	}
+
+}
+#巫女的死亡
+country_event = {
+	id = gensokyo_first_stage.39
+	title = gensokyo_first_stage.39.t
+	desc = gensokyo_first_stage.39.d
+
+	picture = GFX_report_event_miko_death
+
+	
+	is_triggered_only = yes
+	timeout_days = 14
+	option = {
+		name = gensokyo_first_stage.39.a
+		trigger = {
+			
+		}
+		ai_chance = { base = 1 }
+		
+		complete_national_focus = KYO_miko_death
+		set_country_flag = KYO_miko_death_site_recorded
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+#調查報告
+country_event = {
+	id = gensokyo_first_stage.40
+	title = gensokyo_first_stage.40.t
+	desc = gensokyo_first_stage.40.d
+
+	picture = GFX_report_event_miko_death
+	
+	is_triggered_only = yes
+	timeout_days = 14
+	option = {
+		name = gensokyo_first_stage.40.a
+		trigger = {
+			
+		}
+		ai_chance = { base = 1 }
+		
+		add_war_support = 0.05
+		add_stability = -0.025
+		
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = gensokyo_first_stage.40.b
+		trigger = {
+			
+		}
+		ai_chance = { base = 1 }
+
+		
+		add_stability = 0.05
+		add_war_support = -0.1
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+country_event = {
+	id = gensokyo_first_stage.41
+	title = gensokyo_first_stage.41.t
+	desc = gensokyo_first_stage.41.d
+
+	
+	is_triggered_only = yes
+	timeout_days = 14
+	option = {
+		name = gensokyo_first_stage.41.a
+		trigger = {
+			
+		}
+		ai_chance = { base = 1 }
+		
+		
+		add_stability = 0.05
+		
+		hidden_effect = {
+			
+		}
+	}
+	
+}
+
+#結界裂縫的起點
+country_event = {
+	id = gensokyo_first_stage.1
+	title = gensokyo_first_stage.1.t
+	desc = gensokyo_first_stage.1.d
+
+
+	picture = GFX_report_event_first_war_7
+	
+	is_triggered_only = yes
+	timeout_days = 14
+	option = {
+		name = gensokyo_first_stage.1.a
+		trigger = {
+			
+		}
+		ai_chance = { base = 1 }
+
+		
+		hidden_effect = {
+
+			KYO_refresh_fading_stage = yes
+
+		}
+		
+
+		add_ideas = KYO_fading_stage_1
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#消失的影子
+country_event = {
+	id = gensokyo_first_stage.2
+	title = gensokyo_first_stage.2.t
+	desc = gensokyo_first_stage.2.d
+
+	picture = GFX_report_event_first_war_8
+
+	
+	is_triggered_only = yes
+	timeout_days = 14
+	option = {
+		name = gensokyo_first_stage.2.a
+		trigger = {
+			
+		}
+		ai_chance = { base = 1 }
+		country_event = gensokyo_first_stage.3
+
+
+
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#三賢者會議
+country_event = {
+	id = gensokyo_first_stage.3
+	title = gensokyo_first_stage.3.t
+	desc = gensokyo_first_stage.3.d
+
+	picture = GFX_report_event_first_war_12
+
+	
+	is_triggered_only = yes
+	option = {
+		name = gensokyo_first_stage.3.a
+		trigger = {
+			
+		}
+		ai_chance = { base = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#妖怪現身東京！
+news_event = {
+	id = gensokyo_first_stage.4
+	title = gensokyo_first_stage.4.t
+	desc = gensokyo_first_stage.4.d
+
+	
+	fire_only_once = yes
+	trigger = {
+            ROOT = { tag = kyo }           # 是你的國家控制州
+            FROM = { original_tag = jap }  # 被奪取州的原擁有者
+            FROM.FROM = { state = 282 }       	
+	}
+
+	option = {
+		name = gensokyo_first_stage.4.a
+		trigger = {
+			
+		}
+		ai_chance = { base = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#幻想破界！妖怪進入現實世界！
+news_event = {
+	id = gensokyo_first_stage.5
+	title = gensokyo_first_stage.5.t
+	desc = gensokyo_first_stage.5.d
+
+	
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		KYO = {
+			has_war_with = JAP
+			}
+		}
+	option = {
+		name = gensokyo_first_stage.5.a
+
+		ai_chance = { base = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#第一次人妖大戰正式爆發！
+country_event = {
+	id = gensokyo_first_stage.6
+	title = gensokyo_first_stage.6.t
+	desc = gensokyo_first_stage.6.d
+
+	
+	is_triggered_only = yes
+	mean_time_to_happen = { days = 0 }
+
+	option = {
+		name = gensokyo_first_stage.6.a
+		
+		ai_chance = { base = 100 }
+
+		declare_war_on = {
+			target = JAP
+			type = annex_everything
+		}
+		
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#紅魔館突襲皇宮與國會！
+country_event = {
+	id = gensokyo_first_stage.7
+	title = gensokyo_first_stage.7.t
+	desc = gensokyo_first_stage.7.d
+
+	
+	is_triggered_only = yes
+	immediate = {
+
+	}	
+
+	option = {
+		name = gensokyo_first_stage.7.a
+		trigger = {
+			TAG = KYO
+		}
+		ai_chance = { base = 1 }
+		if = {
+			limit = {
+				JAP = { controls_state = 282 }
+			}
+			ROOT = {
+				transfer_state = 282
+			}
+		}
+
+	}
+	option = {
+		name = gensokyo_first_stage.7.b
+		trigger = {
+			TAG = JAP
+		}
+		ai_chance = { base = 1 }
+
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#永遠亭出動！妖兔接管戰場後勤
+country_event = {
+	id = gensokyo_first_stage.8
+	title = gensokyo_first_stage.8.t
+	desc = gensokyo_first_stage.8.d
+
+	
+	is_triggered_only = yes
+	option = {
+		name = gensokyo_first_stage.8.a
+		trigger = {
+			tag = KYO
+		}
+		ai_chance = { base = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = gensokyo_first_stage.8.b
+		trigger = {
+			tag = JAP
+		}
+		ai_chance = { base = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#天狗之眼：制空與情報同步作戰
+country_event = {
+	id = gensokyo_first_stage.9
+	title = gensokyo_first_stage.9.t
+	desc = gensokyo_first_stage.9.d
+
+	
+	is_triggered_only = yes
+	option = {
+		name = gensokyo_first_stage.9.a
+		trigger = {
+			TAG =KYO
+		}
+		ai_chance = { base = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = gensokyo_first_stage.9.b
+		trigger = {
+			TAG = JAP
+		}
+		ai_chance = { base = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#妖精奇襲：我們是最強的！
+country_event = {
+	id = gensokyo_first_stage.10
+	title = gensokyo_first_stage.10.t
+	desc = gensokyo_first_stage.10.d
+
+	
+	is_triggered_only = yes
+	option = {
+		name = gensokyo_first_stage.10.a
+		trigger = {
+			TAG = KYO
+		}
+		ai_chance = { base = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = gensokyo_first_stage.10.b
+		trigger = {
+			TAG = JAP
+		}
+		ai_chance = { base = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#夜色中的無聲者——草根妖怪的反擊！
+country_event = {
+	id = gensokyo_first_stage.11
+	title = gensokyo_first_stage.11.t
+	desc = gensokyo_first_stage.11.d
+
+	
+	is_triggered_only = yes
+	option = {
+		name = gensokyo_first_stage.11.a
+		trigger = {
+			TAG =KYO
+		}
+		ai_chance = { base = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = gensokyo_first_stage.11.b
+		trigger = {
+			TAG = JAP
+		}
+		ai_chance = { base = 1 }
+
+
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#無聲侵襲——地靈殿攻入潛意識
+country_event = {
+	id = gensokyo_first_stage.12
+	title = gensokyo_first_stage.12.t
+	desc = gensokyo_first_stage.12.d
+
+	
+	is_triggered_only = yes
+	option = {
+		name = gensokyo_first_stage.12.a
+		trigger = {
+			TAG =KYO
+		}
+		ai_chance = { base = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = gensokyo_first_stage.12.b
+		trigger = {
+			TAG = JAP
+		}
+		ai_chance = { base = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#河童工坊總動員——戰術兵器部署！
+country_event = {
+	id = gensokyo_first_stage.13
+	title = gensokyo_first_stage.13.t
+	desc = gensokyo_first_stage.13.d
+
+	
+	is_triggered_only = yes
+	option = {
+		name = gensokyo_first_stage.13.a
+		trigger = {
+			TAG =KYO
+		}
+		ai_chance = { base = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = gensokyo_first_stage.13.b
+		trigger = {
+			TAG = JAP
+		}
+		ai_chance = { base = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#境界操縱——八雲紫親自出手！
+country_event = {
+	id = gensokyo_first_stage.14
+	title = gensokyo_first_stage.14.t
+	desc = gensokyo_first_stage.14.d
+
+	
+	is_triggered_only = yes
+	option = {
+		name = gensokyo_first_stage.14.a
+		trigger = {
+			TAG = KYO
+		}
+		ai_chance = { base = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+	option = {
+		name = gensokyo_first_stage.14.b
+		trigger = {
+			TAG = JAP
+		}
+		ai_chance = { base = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+
+#幻想的現實化——日本已全數落入妖怪之手
+country_event = {
+	id = gensokyo_first_stage.15
+	title = gensokyo_first_stage.15.t
+	desc = gensokyo_first_stage.15.d
+
+	
+	fire_only_once = yes 
+	trigger = {
+		TAG = KYO
+		JAP = {
+			has_capitulated = yes
+		}
+	}
+	option = {
+		name = gensokyo_first_stage.15.a
+		trigger = {
+			
+		}
+		ai_chance = { base = 1 }
+		
+		hidden_effect = {
+			
+		}
+	}
+}
+#中妖戰爭
+country_event = {
+	id = gensokyo_first_stage.16
+	title = china.1.t
+	desc = china.1.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+	
+	is_triggered_only = yes
+	
+	option = { # Breaking point!
+		name = china.1.a
+		ai_chance = { factor = 90 }
+		effect_tooltip = {
+			KYO = {
+				add_war_support = 0.05
+				country_event = { id = gensokyo_first_stage.36 }
+				create_wargoal = {
+  					type = annex_everything
+  					target = CHI
+  				}
+  				create_wargoal = {
+  					type = annex_everything
+  					target = SHX
+  				}
+			}
+		}
+		hidden_effect = {
+			KYO = { country_event = { id = gensokyo_first_stage.36 } }
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0.5
+				has_war = yes
+			}
+			modifier = {
+				factor = 0.5
+				any_enemy_country = {
+					is_major = yes
+				}
+			}
+		}
+	}
+	option = { # Make more concessions
+		name = china.1.b
+		ai_chance = { factor = 10 }
+		KYO = {
+			set_truce = { target = ROOT days = 180 }
+			effect_tooltip = {
+				transfer_state = 608
+				transfer_state = 597
+				transfer_state = 614
+				add_state_claim = 613
+				if = {
+					limit = {
+						ROOT = { controls_state = 743 }
+					}
+					transfer_state = 743
+				}
+			}
+			country_event = { id = gensokyo_first_stage.37 }
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				OR = {
+					is_historical_focus_on = yes
+					has_country_flag = CHI_AI_RANDOM_HISTORICAL
+					has_game_rule = {
+						rule = CHI_ai_behavior
+						option = HISTORICAL
+					}
+				}
+				NOT = {
+					has_game_rule = { #used here instead of checking for default because people might not have WTT
+						rule = CHI_ai_behavior
+						option = ALTERNATE
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				KYO = {
+					has_war = yes
+				}
+			}
+			modifier = {
+				factor = 0.25
+				KYO = {
+					any_enemy_country = {
+						is_major = yes
+					}
+				}
+			}
+		}
+	}
+}
+# Chinese Refuse Concessions
+country_event = {
+	id = gensokyo_first_stage.36
+	title = china.1.t
+	desc = japan.1.d
+	picture = GFX_report_event_chinese_soldiers_01
+
+	is_triggered_only = yes
+	
+	option = {
+		name = japan.1.a
+		add_war_support = 0.05
+		create_wargoal = {
+  			type = annex_everything
+  			target = CHI
+  		}
+  		create_wargoal = {
+  			type = annex_everything
+  			target = SHX
+  		}
+		hidden_effect = {
+			country_event = { days = 5 id = news.1 }
+		}
+		USA = { set_country_flag = { flag = USA_china_window days = 60 value = 1 } }
+	}
+}
+
+# Chinese Concessions
+country_event = {
+	id = gensokyo_first_stage.37
+	title = china.1.t
+	desc = japan.2.d
+	picture = GFX_report_event_chinese_soldiers_running
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = japan.2.a
+		effect_tooltip = {
+			set_truce = { target = FROM days = 180 }
+		}
+		hidden_effect = {
+			country_event = { days = 5 id = news.2 }
+		}
+		if = {
+			limit = {
+				608 = {
+					is_controlled_by = FROM
+				}
+			}
+			KYO = {
+				transfer_state = 608
+			}
+		}
+		if = {
+			limit = {
+				597 = {
+					is_controlled_by = FROM
+				}
+			}
+			KYO = {
+				transfer_state = 597
+			}
+		}
+		if = {
+			limit = {
+				614 = {
+					is_controlled_by = FROM
+				}
+			}
+			KYO = {
+				transfer_state = 614
+			}
+		}
+		if = {
+			limit = {
+				743 = {
+					is_controlled_by = FROM
+				}
+			}
+			KYO = {
+				transfer_state = 743
+			}
+		}
+		add_state_claim = 613
+		if = {
+			limit = {
+				has_country_leader = { id = 700 ruling_only = yes }
+			}
+			remove_country_leader_trait = imperial_sanction
+		}
+		
+		add_ai_strategy = {
+			type = antagonize
+			id = "CHI"
+			value = 500
+		}
+	}
+}
+#如何對待philippines
+country_event = {
+	id = gensokyo_first_stage.17
+	title = gensokyo_first_stage.17.t
+	desc = gensokyo_first_stage.17.d
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = gensokyo_first_stage.17.a
+		trigger = {
+			
+		}
+		ai_chance = { base = 2 }
+		set_truce = {
+			target = USA
+			days = 1825
+		}
+		add_stability = 0.05
+	}
+	option = {
+		name = gensokyo_first_stage.17.b
+		
+		ai_chance = { base = 0.1 }
+		
+		create_wargoal = {
+			target = PHI
+			type = annex_everything
+		}
+	}
+}
+#如何對待USSR
+country_event = {
+	id = gensokyo_first_stage.18
+	title = gensokyo_first_stage.18.t
+	desc = gensokyo_first_stage.18.d
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = gensokyo_first_stage.18.a
+		trigger = {
+			
+		}
+		ai_chance = { base = 1 }
+
+		create_wargoal = {
+			target = sov
+			type = take_claimed_state
+		}
+		
+		add_stability = 0.05
+	}
+}
+#第一次幻想鄉代表總會議
+
+country_event = {
+	id = gensokyo_first_stage.19
+	title = gensokyo_first_stage.19.t
+	desc = gensokyo_first_stage.19.d
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = gensokyo_first_stage.19.a
+		trigger = {
+			
+		}
+		ai_chance = { base = 100 }
+
+		country_event = {
+			id = gensokyo_first_stage.20
+			
+		}
+		
+		
+	}
+
+}
+#第一次幻想鄉代表總會議
+country_event = {
+	id = gensokyo_first_stage.20
+	title = gensokyo_first_stage.20.t
+	desc = gensokyo_first_stage.20.d
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = gensokyo_first_stage.20.a
+		trigger = {
+			
+		}
+		ai_chance = { base = 75 }
+		
+		country_event = {
+			id = gensokyo_first_stage.21
+			
+		}
+		
+		
+	}
+	
+		
+		
+		
+}
+
+#紫之霸業
+country_event = {
+	id = gensokyo_first_stage.21
+	title = gensokyo_first_stage.21.t
+	desc = gensokyo_first_stage.21.d
+
+	is_triggered_only = yes
+	
+	
+	
+	option = {
+		name = gensokyo_first_stage.21.a
+		trigger = {
+			
+		}
+		ai_chance = { base = 100 }
+		
+		
+	}
+
+}
+#式神的奏報
+country_event = {
+	id = gensokyo_first_stage.22
+	title = gensokyo_first_stage.22.t
+	desc = gensokyo_first_stage.22.d
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = gensokyo_first_stage.22.a
+		trigger = {
+			
+		}
+		ai_chance = { base = 100 }
+		country_event = {
+			id = gensokyo_first_stage.23
+			days = 7
+		}
+		
+		
+	}
+	
+}
+#紫之獨白
+country_event = {
+	id = gensokyo_first_stage.23
+	title = gensokyo_first_stage.23.t
+	desc = gensokyo_first_stage.23.d
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = gensokyo_first_stage.23.a
+		trigger = {
+			
+		}
+		ai_chance = { base = 100 }
+		
+
+		
+		add_country_leader_trait = Gensokyo_protector
+
+		complete_national_focus = KYO_future_start
+		complete_national_focus = KYO_Yukari_start
+
+		hidden_effect = {
+			set_country_flag = yukari_rule_the_world
+		}
+		
+		
+	}
+
+}
+#紫之敗局
+country_event = {
+	id = gensokyo_first_stage.24
+	title = gensokyo_first_stage.24.t
+	desc = gensokyo_first_stage.24.d
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = gensokyo_first_stage.24.a
+		trigger = {
+			
+		}
+		ai_chance = { base = 100 }
+
+		country_event = {
+			id = gensokyo_first_stage.25
+			days = 7
+		}
+		
+	}
+
+}
+#議會的崩潰
+country_event = {
+	id = gensokyo_first_stage.25
+	title = gensokyo_first_stage.25.t
+	desc = gensokyo_first_stage.25.d
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = gensokyo_first_stage.25.a
+		trigger = {
+			
+		}
+		ai_chance = { base = 100 }
+
+		country_event={
+			id= gensokyo_first_stage.26
+			days = 7
+		}
+		
+	}
+
+}
+#封印下的聲音
+country_event = {
+	id = gensokyo_first_stage.26
+	title = gensokyo_first_stage.26.t
+	desc = gensokyo_first_stage.26.d
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = gensokyo_first_stage.26.a
+		trigger = {
+			
+		}
+		ai_chance = { base = 100 }
+
+		country_event={
+			id= gensokyo_first_stage.27
+			days = 7
+		}
+
+		
+		}
+
+}
+
+
+#黑暗中的火種
+country_event = {
+	id = gensokyo_first_stage.27
+	title = gensokyo_first_stage.27.t
+	desc = gensokyo_first_stage.27.d
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = gensokyo_first_stage.27.a
+		trigger = {
+			
+		}
+		ai_chance = { base = 100 }
+
+		country_event = {
+			id = gensokyo_first_stage.28
+			days = 7
+		}
+
+		
+	}
+
+}
+#紅霧的莊園
+country_event = {
+	id = gensokyo_first_stage.28
+	title = gensokyo_first_stage.28.t
+	desc = gensokyo_first_stage.28.d
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = gensokyo_first_stage.28.a
+		trigger = {
+			
+		}
+		ai_chance = { base = 100 }
+
+		
+		country_event = {
+			id = gensokyo_first_stage.29
+			days = 7
+		}
+		
+	}
+
+}
+#白蓮的歸來
+country_event = {
+	id = gensokyo_first_stage.29
+	title = gensokyo_first_stage.29.t
+	desc = gensokyo_first_stage.29.d
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = gensokyo_first_stage.29.a
+		trigger = {
+			
+		}
+		ai_chance = { base = 100 }
+
+		
+		country_event = {
+			id = gensokyo_first_stage.30
+			days = 7
+		}
+	}
+
+}
+#天邪鬼的號角
+country_event = {
+	id = gensokyo_first_stage.30
+	title = gensokyo_first_stage.30.t
+	desc = gensokyo_first_stage.30.d
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = gensokyo_first_stage.30.a
+		trigger = {
+			
+		}
+		ai_chance = { base = 100 }
+
+		country_event = {
+			id = gensokyo_first_stage.31
+			days = 7
+		}
+
+		
+	}
+
+}
+
+#誰將是幻想鄉的未來？
+country_event = {
+	id = gensokyo_first_stage.31
+	title = gensokyo_first_stage.31.t
+	desc = gensokyo_first_stage.31.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = who_will_rule_gensokyo
+		set_variable = {
+			SDM_legitimacy_value = 0		
+		}
+		set_variable = {
+			SEI_legitimacy_value = 0
+		}
+		set_variable = {
+			BYA_legitimacy_value = 0
+		}
+		set_variable = {
+			YUK_legitimacy_value = 0
+		}
+	}
+	
+	option = {
+		name = gensokyo_first_stage.31.a
+		trigger = {
+			
+		}
+		ai_chance = { base = 30 }
+
+		set_country_flag = fight_with_remilia
+		complete_national_focus = KYO_future_start
+		complete_national_focus = KYO_remilia_start
+		
+		set_politics = {
+
+			ruling_party = fascism
+			elections_allowed = no
+
+		}
+
+		hidden_effect = {
+			set_country_flag = remilia_rule_world
+		}
+		country_event = gensokyo_first_stage.32
+
+	}
+	option = {
+		name = gensokyo_first_stage.31.b
+		trigger = {
+			
+		}
+		ai_chance = { base = 30 }
+
+		set_country_flag = fight_with_Byakuren
+
+		complete_national_focus = KYO_future_start
+		complete_national_focus = KYO_Byakuren_start
+
+		set_politics = {
+			
+			ruling_party = democratic
+			elections_allowed = no
+
+		}
+
+		hidden_effect = {
+			set_country_flag = Byakuren_save_the_world
+		}
+
+		country_event = gensokyo_first_stage.32
+	}
+	option = {
+		name = gensokyo_first_stage.31.c
+		trigger = {
+			
+		}
+		ai_chance = { base = 30 }
+
+		set_country_flag = fight_with_seija
+		complete_national_focus = KYO_future_start
+		complete_national_focus = KYO_Seija_start
+
+		set_politics = {
+			
+			ruling_party = communism
+			elections_allowed = no
+
+		}
+
+		hidden_effect = {
+			set_country_flag = seija_world_revolution
+		}
+
+		country_event = gensokyo_first_stage.32
+
+	}
+	option = {
+		name = gensokyo_first_stage.31.e
+		trigger = {
+			
+		}
+		ai_chance = { base = 0 }
+
+		set_country_flag = fight_with_yukari
+
+		country_event = gensokyo_first_stage.32
+
+	}
+}
+
+#開始分裂
+country_event = {
+	id = gensokyo_first_stage.32
+	title = gensokyo_first_stage.32.t
+	desc = gensokyo_first_stage.32.d
+
+	is_triggered_only = yes
+
+	immediate = {
+		mark_focus_tree_layout_dirty = yes
+	}
+	#八雲紫分裂
+	option = {
+		name = gensokyo_first_stage.32.a
+		trigger = {
+			
+		}
+		ai_chance = { base = 100 }
+
+						
+	}
+	
+
+
+
+}
+#正邪分裂
+country_event = {
+	id = gensokyo_first_stage.33
+
+
+	is_triggered_only = yes
+
+	
+	immediate={
+		KYO_disable_barrier_and_hyakki_systems = yes
+		hidden_effect = {
+			start_civil_war = {
+
+				ideology = communism
+				size = 0.5
+				states = {
+					528 530
+				}
+			
+			}	
+		}
+		
+	}
+					
+
+}
+#聖白蓮分裂
+country_event = {
+	id = gensokyo_first_stage.34
+
+
+	is_triggered_only = yes
+
+	immediate = {
+		KYO_disable_barrier_and_hyakki_systems = yes
+		start_civil_war = {
+			ideology = democratic
+			size = 0.5
+			states = {
+				534 535 532 531 529
+			}
+		}	
+	}
+
+}
+#雷米莉亞分裂
+country_event = {
+	id = gensokyo_first_stage.35
+
+
+	is_triggered_only = yes
+
+
+	immediate = {
+		KYO_disable_barrier_and_hyakki_systems = yes
+		start_civil_war = {
+		
+			ideology = fascism
+			size = 0.5
+			states = {
+				282 533 536
+			}
+		}
+	}
+	
+
+}
+
+
+
+
+
+country_event = {
+
+	id = gensokyo_first_stage.42
+	title = gensokyo_first_stage.42.t
+	desc = gensokyo_first_stage.42.d
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = gensokyo_first_stage.42.a
+		
+		ai_chance = { base = 0 }
+
+		FOR = {
+			change_tag_from = KYO
+		}
+		custom_effect_tooltip = this_path_is_not_complete_tt
+
+		
+	}
+
+	option = {
+		name = gensokyo_first_stage.42.b
+		
+		ai_chance = { base = 50 }
+
+		
+
+		
+	}
+
+}
+
+#巫女死後自動完成國家國策
+# 第三次測量的微小偏差（巫女死亡後第十四日）
+country_event = {
+	id = gensokyo_first_stage.43
+	title = gensokyo_first_stage.43.t
+	desc = gensokyo_first_stage.43.d
+	picture = GFX_report_event_first_war_11
+	is_triggered_only = yes
+
+	option = {
+		name = gensokyo_first_stage.43.a
+		ai_chance = { base = 100 }
+		set_country_flag = KYO_third_measurement_drift
+		country_event = {
+			id = KYO_barrier_crisis.1
+			days = 4
+			random_days = 3
+		}
+	}
+}
+
+
+country_event = {
+
+	id = gensokyo_first_stage.44
+	title = gensokyo_first_stage.44.t
+	desc = gensokyo_first_stage.44.d
+
+	picture = GFX_report_event_first_war_14
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = gensokyo_first_stage.44.a
+		
+		ai_chance = { base = 0 }
+
+		add_political_power = 50
+		
+	}
+
+	
+
+}
+
+country_event = {
+
+	id = gensokyo_first_stage.45
+	title = gensokyo_first_stage.45.t
+	desc = gensokyo_first_stage.45.d
+
+	is_triggered_only = yes
+
+	
+	option = {
+		name = gensokyo_first_stage.45.a
+		
+		ai_chance = { base = 0 }
+
+		
+		
+	}
+
+	
+
+}
+
+
+#最新的號碼45

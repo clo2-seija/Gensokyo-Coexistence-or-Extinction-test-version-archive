@@ -1,0 +1,161 @@
+add_namespace = KYO_barrier_crisis
+
+# 事件內容概要：肉眼看不見的裂隙。第 18–21 日，紫、隱岐奈與華扇確認多地同時失去正確邊界；開啟十節點紀錄。
+country_event = {
+	id = KYO_barrier_crisis.1
+	title = KYO_barrier_crisis.1.t
+	desc = KYO_barrier_crisis.1.d
+	picture = GFX_report_event_first_war_6
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_barrier_crisis.1.a
+		ai_chance = {
+			base = 100
+		}
+
+		set_country_flag = KYO_barrier_cracks_revealed
+		complete_national_focus = KYO_jiejiechuxianliekou
+		KYO_add_lunar_evidence = yes
+
+		country_event = {
+			id = KYO_barrier_crisis.3
+			days = 2
+		}
+	}
+}
+
+# 事件內容概要：第一個忘記自己名字的妖怪。第一個節點失守時，用具體人物呈現幻想消逝。
+country_event = {
+	id = KYO_barrier_crisis.2
+	title = KYO_barrier_crisis.2.t
+	desc = KYO_barrier_crisis.2.d
+
+	picture = GFX_report_event_first_war_11
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_barrier_crisis.2.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = -0.03
+	}
+}
+
+# 事件內容概要：裂口後面沒有風。紫確認不是自然崩壞，而是「此處」與「彼處」的關係被抹除。
+country_event = {
+	id = KYO_barrier_crisis.3
+	title = KYO_barrier_crisis.3.t
+	desc = KYO_barrier_crisis.3.d
+
+	picture = GFX_report_event_first_war_9
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_barrier_crisis.3.a
+		ai_chance = {
+			base = 100
+		}
+
+		set_country_flag = KYO_barrier_is_spatial_erasure
+		country_event = {
+			id = KYO_barrier_crisis.4
+			days = 2
+		}
+	}
+}
+
+# 事件內容概要：紫在天亮前回來。橙發現紫連續奔走、衣袖帶血，藍仍在計算下一個崩壞點。
+country_event = {
+	id = KYO_barrier_crisis.4
+	title = KYO_barrier_crisis.4.t
+	desc = KYO_barrier_crisis.4.d
+	picture = GFX_report_event_first_war_10
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_barrier_crisis.4.a
+		ai_chance = {
+			base = 100
+		}
+
+		
+		country_event = {
+			id = KYO_barrier_crisis.6
+			days = 2
+		}
+	}
+}
+
+# 事件內容概要：三賢者沒有時間爭到底。三種方案都不足以單獨處理十處結界節點，百妖協議成為必要方案。 廢案
+country_event = {
+	id = KYO_barrier_crisis.5
+	title = KYO_barrier_crisis.5.t
+	desc = KYO_barrier_crisis.5.d
+
+	picture = GFX_report_event_first_war_13
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_barrier_crisis.5.a
+		ai_chance = {
+			base = 100
+		}
+
+		set_country_flag = KYO_three_sages_accept_mass_cooperation
+		
+	}
+}
+
+# 事件內容概要：白得過分的灰。裂隙附近沒有妖氣或怨氣，永琳認出異常卻不願解釋；增加一項證據。
+country_event = {
+	id = KYO_barrier_crisis.6
+	title = KYO_barrier_crisis.6.t
+	desc = KYO_barrier_crisis.6.d
+
+	picture = GFX_report_event_first_war_24
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_barrier_crisis.6.a
+		ai_chance = {
+			base = 100
+		}
+
+		set_country_flag = KYO_white_ash_evidence_recorded
+		KYO_add_lunar_evidence = yes
+	}
+}
+
+# 事件內容概要：大結界讀數正常。保留為既有巫女死亡事件鏈的轉接點，不在此包重複自動觸發。
+country_event = {
+	id = KYO_barrier_crisis.7
+	title = KYO_barrier_crisis.7.t
+	desc = KYO_barrier_crisis.7.d
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_barrier_crisis.7.a
+		ai_chance = {
+			base = 100
+		}
+		set_country_flag = KYO_barrier_readings_nominal
+	}
+}
+
+# 事件內容概要：測量的偏差。藍發現座標每次偏移；保留為既有 gensokyo_first_stage.43 的轉接點。
+country_event = {
+	id = KYO_barrier_crisis.8
+	title = KYO_barrier_crisis.8.t
+	desc = KYO_barrier_crisis.8.d
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_barrier_crisis.8.a
+		ai_chance = {
+			base = 100
+		}
+		set_country_flag = KYO_third_measurement_drift
+	}
+}

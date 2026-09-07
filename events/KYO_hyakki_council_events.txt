@@ -1,0 +1,654 @@
+add_namespace = KYO_hyakki_council
+
+# 事件內容概要：百妖協議第一次會議。這不是三個政治聯盟，而是八雲紫強行建立的戰時統合架構；她把互不信任者分塞進軍務、信仰、萬民三委員會，自己擔任總仲裁人。
+country_event = {
+	id = KYO_hyakki_council.1
+	title = KYO_hyakki_council.1.t
+	desc = KYO_hyakki_council.1.d
+	is_triggered_only = yes
+
+	picture = GFX_report_event_first_war_15
+
+	option = {
+		name = KYO_hyakki_council.1.a
+		ai_chance = {
+			base = 100
+		}
+
+		set_country_flag = KYO_hyakki_first_session_held
+		country_event = {
+			id = KYO_hyakki_council.2
+			days = 1
+		}
+	}
+}
+
+# 事件內容概要：拒絕戰爭的神靈廟，她不願意簽署任何協議，但仍提供人道援助。
+country_event = {
+	id = KYO_hyakki_council.2
+	title = KYO_hyakki_council.2.t
+	desc = KYO_hyakki_council.2.d
+
+	picture = GFX_report_event_first_war_16
+
+	
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.2.a
+		ai_chance = {
+			base = 100
+		}
+
+		set_country_flag = KYO_taoist_temple_neutral
+		set_country_flag = KYO_yukari_respected_taoist_neutrality
+		
+	}
+}
+
+
+
+# 事件內容概要：軍務委員會拒絕履行危機。各軍團拒絕服從共同作戰時程，支援在低於 10 時停用。
+country_event = {
+	id = KYO_hyakki_council.10
+	title = KYO_hyakki_council.10.t
+	desc = KYO_hyakki_council.10.d
+
+	picture = GFX_report_event_first_war_18
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.10.a
+		ai_chance = {
+			base = 100
+		}
+		add_war_support = -0.02
+	}
+}
+
+# 事件內容概要：信仰委員會拒絕履行危機。醫療、補給與居民安置出現互相推諉。
+country_event = {
+	id = KYO_hyakki_council.11
+	title = KYO_hyakki_council.11.t
+	desc = KYO_hyakki_council.11.d
+
+	picture = GFX_report_event_first_war_19
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.11.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = -0.02
+	}
+}
+
+# 事件內容概要：萬民委員會拒絕履行危機。地方聯絡員開始拒絕替有名號的軍團承擔風險。
+country_event = {
+	id = KYO_hyakki_council.12
+	title = KYO_hyakki_council.12.t
+	desc = KYO_hyakki_council.12.d
+	picture = GFX_report_event_first_war_20
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.12.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -25
+	}
+}
+
+
+
+# 事件內容概要：幻想鄉第一次真正坐在同一張桌前。十個既有主要團體都完成登記時觸發，不是開戰硬性前置。
+country_event = {
+	id = KYO_hyakki_council.20
+	title = KYO_hyakki_council.20.t
+	desc = KYO_hyakki_council.20.d
+	picture = GFX_report_event_first_war_21
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.20.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = 0.03
+		add_war_support = 0.03
+	}
+}
+
+
+# 事件內容概要：百妖協議的開場introduction，
+country_event = {
+	id = KYO_hyakki_council.19
+	title = KYO_hyakki_council.19.t
+	desc = KYO_hyakki_council.19.d
+	picture = GFX_report_event_first_war_31
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.19.a
+		ai_chance = {
+			base = 100
+		}
+
+		add_political_power = 50
+
+		country_event = KYO_hyakki_council.21
+	}
+}
+
+# 百妖協議事件 21
+country_event = {
+	id = KYO_hyakki_council.21
+	title = KYO_hyakki_council.21.t
+	desc = KYO_hyakki_council.21.d
+
+	picture = GFX_report_event_first_war_32
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.21.a
+
+		ai_chance = {
+			base = 100
+		}
+
+		# 效果填寫處
+	}
+}
+
+
+# 百妖協議事件 22
+country_event = {
+	id = KYO_hyakki_council.22
+	title = KYO_hyakki_council.22.t
+	desc = KYO_hyakki_council.22.d
+
+	picture = GFX_report_event_first_war_33
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.22.a
+
+		ai_chance = {
+			base = 100
+		}
+
+		# 效果填寫處
+	}
+}
+
+
+# 百妖協議事件 23
+country_event = {
+	id = KYO_hyakki_council.23
+	title = KYO_hyakki_council.23.t
+	desc = KYO_hyakki_council.23.d
+
+	picture = GFX_report_event_first_war_34
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.23.a
+
+		ai_chance = {
+			base = 100
+		}
+
+		# 效果填寫處
+	}
+}
+
+
+# 百妖協議事件 24
+country_event = {
+	id = KYO_hyakki_council.24
+	title = KYO_hyakki_council.24.t
+	desc = KYO_hyakki_council.24.d
+
+	picture = GFX_report_event_first_war_35
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.24.a
+
+		ai_chance = {
+			base = 100
+		}
+
+		# 效果填寫處
+	}
+}
+
+
+country_event = {
+	id = KYO_hyakki_council.25
+	title = KYO_hyakki_council.25.t
+	desc = KYO_hyakki_council.25.d
+	picture = GFX_report_event_first_war_36
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.25.a
+		country_event = {
+			id = KYO_hyakki_council.26
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = KYO_hyakki_council.26
+	title = KYO_hyakki_council.26.t
+	desc = KYO_hyakki_council.26.d
+	picture = GFX_report_event_first_war_36
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.26.a
+	}
+}
+
+
+country_event = {
+	id = KYO_hyakki_council.27
+	title = KYO_hyakki_council.27.t
+	desc = KYO_hyakki_council.27.d
+	picture = GFX_report_event_first_war_37
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.27.a
+
+		country_event = {
+			id = KYO_hyakki_council.28
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = KYO_hyakki_council.28
+	title = KYO_hyakki_council.28.t
+	desc = KYO_hyakki_council.28.d
+	picture = GFX_report_event_first_war_37
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.28.a
+	}
+}
+
+
+country_event = {
+	id = KYO_hyakki_council.29
+	title = KYO_hyakki_council.29.t
+	desc = KYO_hyakki_council.29.d
+	picture = GFX_report_event_first_war_38
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.29.a
+
+		country_event = {
+			id = KYO_hyakki_council.30
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = KYO_hyakki_council.30
+	title = KYO_hyakki_council.30.t
+	desc = KYO_hyakki_council.30.d
+	picture = GFX_report_event_first_war_38
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.30.a
+	}
+}
+
+
+
+
+country_event = {
+	id = KYO_hyakki_council.31
+	title = KYO_hyakki_council.31.t
+	desc = KYO_hyakki_council.31.d
+	picture = GFX_report_event_first_war_39
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.31.a
+
+		country_event = {
+			id = KYO_hyakki_council.32
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = KYO_hyakki_council.32
+	title = KYO_hyakki_council.32.t
+	desc = KYO_hyakki_council.32.d
+	picture = GFX_report_event_first_war_39
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.32.a
+	}
+}
+
+
+
+
+country_event = {
+	id = KYO_hyakki_council.33
+	title = KYO_hyakki_council.33.t
+	desc = KYO_hyakki_council.33.d
+	picture = GFX_report_event_first_war_40
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.33.a
+
+		country_event = {
+			id = KYO_hyakki_council.34
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = KYO_hyakki_council.34
+	title = KYO_hyakki_council.34.t
+	desc = KYO_hyakki_council.34.d
+	picture = GFX_report_event_first_war_40
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.34.a
+	}
+}
+
+
+country_event = {
+	id = KYO_hyakki_council.35
+	title = KYO_hyakki_council.35.t
+	desc = KYO_hyakki_council.35.d
+	picture = GFX_report_event_first_war_41
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.35.a
+
+		country_event = {
+			id = KYO_hyakki_council.36
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = KYO_hyakki_council.36
+	title = KYO_hyakki_council.36.t
+	desc = KYO_hyakki_council.36.d
+	picture = GFX_report_event_first_war_41
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.36.a
+	}
+}
+
+
+country_event = {
+	id = KYO_hyakki_council.37
+	title = KYO_hyakki_council.37.t
+	desc = KYO_hyakki_council.37.d
+	picture = GFX_report_event_first_war_42
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.37.a
+
+		country_event = {
+			id = KYO_hyakki_council.38
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = KYO_hyakki_council.38
+	title = KYO_hyakki_council.38.t
+	desc = KYO_hyakki_council.38.d
+	picture = GFX_report_event_first_war_42
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.38.a
+	}
+}
+
+
+country_event = {
+	id = KYO_hyakki_council.39
+	title = KYO_hyakki_council.39.t
+	desc = KYO_hyakki_council.39.d
+	picture = GFX_report_event_first_war_43
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.39.a
+
+		country_event = {
+			id = KYO_hyakki_council.40
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = KYO_hyakki_council.40
+	title = KYO_hyakki_council.40.t
+	desc = KYO_hyakki_council.40.d
+	picture = GFX_report_event_first_war_43
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.40.a
+	}
+}
+
+country_event = {
+	id = KYO_hyakki_council.41
+	title = KYO_hyakki_council.41.t
+	desc = KYO_hyakki_council.41.d
+	picture = GFX_report_event_first_war_44
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.41.a
+
+		country_event = {
+			id = KYO_hyakki_council.42
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = KYO_hyakki_council.42
+	title = KYO_hyakki_council.42.t
+	desc = KYO_hyakki_council.42.d
+	picture = GFX_report_event_first_war_44
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.42.a
+	}
+}
+
+country_event = {
+	id = KYO_hyakki_council.43
+	title = KYO_hyakki_council.43.t
+	desc = KYO_hyakki_council.43.d
+	picture = GFX_report_event_first_war_27
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.43.a
+
+		country_event = {
+			id = KYO_hyakki_council.44
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = KYO_hyakki_council.44
+	title = KYO_hyakki_council.44.t
+	desc = KYO_hyakki_council.44.d
+	picture = GFX_report_event_first_war_27
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.44.a
+	}
+}
+
+
+country_event = {
+	id = KYO_hyakki_council.45
+	title = KYO_hyakki_council.45.t
+	desc = KYO_hyakki_council.45.d
+	picture = GFX_report_event_first_war_45
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.45.a
+
+		country_event = {
+			id = KYO_hyakki_council.46
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = KYO_hyakki_council.46
+	title = KYO_hyakki_council.46.t
+	desc = KYO_hyakki_council.46.d
+	picture = GFX_report_event_first_war_45
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.46.a
+	}
+}
+
+
+country_event = {
+	id = KYO_hyakki_council.47
+	title = KYO_hyakki_council.47.t
+	desc = KYO_hyakki_council.47.d
+	picture = GFX_report_event_first_war_46
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.47.a
+
+		country_event = {
+			id = KYO_hyakki_council.48
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = KYO_hyakki_council.48
+	title = KYO_hyakki_council.48.t
+	desc = KYO_hyakki_council.48.d
+	picture = GFX_report_event_first_war_46
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.48.a
+	}
+}
+
+country_event = {
+	id = KYO_hyakki_council.49
+	title = KYO_hyakki_council.49.t
+	desc = KYO_hyakki_council.49.d
+	picture = GFX_report_event_first_war_34
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.49.a
+
+		country_event = {
+			id = KYO_hyakki_council.50
+			days = 1
+		}
+	}
+}
+
+country_event = {
+	id = KYO_hyakki_council.50
+	title = KYO_hyakki_council.50.t
+	desc = KYO_hyakki_council.50.d
+	picture = GFX_report_event_first_war_34
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.50.a
+	}
+}
+
+country_event = {
+	id = KYO_hyakki_council.51
+	title = KYO_hyakki_council.51.t
+	desc = KYO_hyakki_council.51.d
+	picture = GFX_report_event_first_war_28
+
+	is_triggered_only = yes
+
+	option = {
+		name = KYO_hyakki_council.51.a
+	}
+}
+

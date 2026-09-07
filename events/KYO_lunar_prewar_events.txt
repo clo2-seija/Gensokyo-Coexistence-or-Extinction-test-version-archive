@@ -1,0 +1,122 @@
+add_namespace = KYO_lunar_prewar
+
+# ============================================================================
+# Six weeks before the Lunar Capital invasion: surface coalition naming
+# ============================================================================
+country_event = {
+	id = KYO_lunar_prewar.1
+	title = KYO_lunar_prewar.1.t
+	desc = KYO_lunar_prewar.1.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = KYO_lunar_prewar.1.a
+		ai_chance = { factor = 1 }
+		KYO_form_gensokyo_faction_earth_axis = yes
+		add_war_support = 0.02
+		KYO_continue_pending_preemptive_lunar_invasion = yes
+	}
+	option = {
+		name = KYO_lunar_prewar.1.b
+		ai_chance = { factor = 1 }
+		KYO_form_gensokyo_faction_lunarian_resistance = yes
+		add_command_power = 15
+		KYO_continue_pending_preemptive_lunar_invasion = yes
+	}
+	option = {
+		name = KYO_lunar_prewar.1.c
+		ai_chance = { factor = 1 }
+		KYO_form_gensokyo_faction_fantasy_alliance = yes
+		add_stability = 0.02
+		KYO_continue_pending_preemptive_lunar_invasion = yes
+	}
+	option = {
+		name = KYO_lunar_prewar.1.e
+		ai_chance = { factor = 1 }
+		KYO_form_gensokyo_faction_coexistence_pact = yes
+		add_political_power = 25
+		KYO_continue_pending_preemptive_lunar_invasion = yes
+	}
+}
+
+# ============================================================================
+# Five weeks before invasion: diplomatic ciphers are replaced
+# ============================================================================
+country_event = {
+	id = KYO_lunar_prewar.2
+	title = KYO_lunar_prewar.2.t
+	desc = KYO_lunar_prewar.2.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = KYO_lunar_prewar.2.a
+		add_political_power = 25
+	}
+}
+
+# ============================================================================
+# Four weeks before invasion: broadcasts and ministries repeat one order
+# ============================================================================
+country_event = {
+	id = KYO_lunar_prewar.3
+	title = KYO_lunar_prewar.3.t
+	desc = KYO_lunar_prewar.3.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = KYO_lunar_prewar.3.a
+		add_stability = 0.02
+	}
+}
+
+# ============================================================================
+# Three weeks before invasion: armies receive the same lunar timetable
+# ============================================================================
+country_event = {
+	id = KYO_lunar_prewar.4
+	title = KYO_lunar_prewar.4.t
+	desc = KYO_lunar_prewar.4.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = KYO_lunar_prewar.4.a
+		add_war_support = 0.03
+	}
+}
+
+# ============================================================================
+# Two weeks before invasion: the controlled governments isolate themselves
+# ============================================================================
+country_event = {
+	id = KYO_lunar_prewar.5
+	title = KYO_lunar_prewar.5.t
+	desc = KYO_lunar_prewar.5.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = KYO_lunar_prewar.5.a
+		add_command_power = 25
+	}
+}
+
+# ============================================================================
+# One week before invasion: the final blank-page ultimatum
+# ============================================================================
+country_event = {
+	id = KYO_lunar_prewar.6
+	title = KYO_lunar_prewar.6.t
+	desc = KYO_lunar_prewar.6.d
+	picture = GFX_report_event_place_holder
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = KYO_lunar_prewar.6.a
+		add_offsite_building = { type = arms_factory level = 1 }
+	}
+}
