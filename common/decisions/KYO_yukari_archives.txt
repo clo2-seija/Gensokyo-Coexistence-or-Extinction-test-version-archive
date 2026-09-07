@@ -1,0 +1,213 @@
+KYO_yukari_archive_category = {
+
+KYO_reimi_archive_1 = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 28
+		fire_only_once = yes
+		visible = { has_country_flag = KYO_reimi_archive_stage_1 }
+		available = { has_country_flag = KYO_reimi_archive_stage_1 }
+		complete_effect = {
+			clr_country_flag = KYO_reimi_archive_stage_1
+			set_country_flag = KYO_reimi_archive_stage_2
+			country_event = { id = yakumo.15 hours = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_reimi_archive_2 = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 28
+		fire_only_once = yes
+		visible = { has_country_flag = KYO_reimi_archive_stage_2 }
+		available = { has_country_flag = KYO_reimi_archive_stage_2 }
+		complete_effect = {
+			clr_country_flag = KYO_reimi_archive_stage_2
+			set_country_flag = KYO_reimi_archive_stage_3
+			country_event = { id = yakumo.16 hours = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_reimi_archive_3 = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 28
+		fire_only_once = yes
+		visible = { has_country_flag = KYO_reimi_archive_stage_3 }
+		available = { has_country_flag = KYO_reimi_archive_stage_3 }
+		complete_effect = {
+			clr_country_flag = KYO_reimi_archive_stage_3
+			set_country_flag = KYO_reimi_archive_stage_4
+			country_event = { id = yakumo.17 hours = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_reimi_archive_4 = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 28
+		fire_only_once = yes
+		visible = { has_country_flag = KYO_reimi_archive_stage_4 }
+		available = { has_country_flag = KYO_reimi_archive_stage_4 }
+		complete_effect = {
+			clr_country_flag = KYO_reimi_archive_stage_4
+			set_country_flag = KYO_reimi_archive_stage_5
+			country_event = { id = yakumo.18 hours = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_reimi_archive_5 = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 28
+		fire_only_once = yes
+		visible = { has_country_flag = KYO_reimi_archive_stage_5 }
+		available = { has_country_flag = KYO_reimi_archive_stage_5 }
+		complete_effect = {
+			clr_country_flag = KYO_reimi_archive_stage_5
+			set_country_flag = KYO_reimi_archive_completed
+			country_event = { id = yakumo.19 hours = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_yukari_archive_1 = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 28
+		fire_only_once = yes
+		visible = { has_country_flag = KYO_yukari_archive_stage_1 }
+		available = { has_country_flag = KYO_yukari_archive_stage_1 }
+		complete_effect = {
+			clr_country_flag = KYO_yukari_archive_stage_1
+			set_country_flag = KYO_yukari_archive_stage_2
+			country_event = { id = yakumo.41 hours = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_yukari_archive_2 = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 28
+		fire_only_once = yes
+		visible = { has_country_flag = KYO_yukari_archive_stage_2 }
+		available = { has_country_flag = KYO_yukari_archive_stage_2 }
+		complete_effect = {
+			clr_country_flag = KYO_yukari_archive_stage_2
+			set_country_flag = KYO_yukari_archive_stage_3
+			country_event = { id = yakumo.42 hours = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_yukari_archive_3 = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 28
+		fire_only_once = yes
+		visible = { has_country_flag = KYO_yukari_archive_stage_3 }
+		available = { has_country_flag = KYO_yukari_archive_stage_3 }
+		complete_effect = {
+			clr_country_flag = KYO_yukari_archive_stage_3
+			set_country_flag = KYO_yukari_archive_stage_4
+			country_event = { id = yakumo.43 hours = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_yukari_archive_4 = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 28
+		fire_only_once = yes
+		visible = { has_country_flag = KYO_yukari_archive_stage_4 }
+		available = { has_country_flag = KYO_yukari_archive_stage_4 }
+		complete_effect = {
+			clr_country_flag = KYO_yukari_archive_stage_4
+			set_country_flag = KYO_yukari_archive_stage_5
+			country_event = { id = yakumo.44 hours = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_yukari_archive_5 = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 28
+		fire_only_once = yes
+		visible = { has_country_flag = KYO_yukari_archive_stage_5 }
+		available = { has_country_flag = KYO_yukari_archive_stage_5 }
+		complete_effect = {
+			clr_country_flag = KYO_yukari_archive_stage_5
+			set_country_flag = KYO_yukari_archive_stage_6
+			country_event = { id = yakumo.45 hours = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_yukari_archive_6 = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 28
+		fire_only_once = yes
+		visible = { has_country_flag = KYO_yukari_archive_stage_6 }
+		available = { has_country_flag = KYO_yukari_archive_stage_6 }
+		complete_effect = {
+			clr_country_flag = KYO_yukari_archive_stage_6
+			set_country_flag = KYO_yukari_archive_stage_7
+			country_event = { id = yakumo.46 hours = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_yukari_archive_7 = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 28
+		fire_only_once = yes
+		visible = { has_country_flag = KYO_yukari_archive_stage_7 }
+		available = { has_country_flag = KYO_yukari_archive_stage_7 }
+		complete_effect = {
+			clr_country_flag = KYO_yukari_archive_stage_7
+			set_country_flag = KYO_yukari_archive_stage_8
+			country_event = { id = yakumo.47 hours = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_yukari_archive_8 = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 28
+		fire_only_once = yes
+		visible = { has_country_flag = KYO_yukari_archive_stage_8 }
+		available = { has_country_flag = KYO_yukari_archive_stage_8 }
+		complete_effect = {
+			clr_country_flag = KYO_yukari_archive_stage_8
+			set_country_flag = KYO_yukari_archive_stage_9
+			country_event = { id = yakumo.48 hours = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_yukari_archive_9 = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 28
+		fire_only_once = yes
+		visible = { has_country_flag = KYO_yukari_archive_stage_9 }
+		available = { has_country_flag = KYO_yukari_archive_stage_9 }
+		complete_effect = {
+			clr_country_flag = KYO_yukari_archive_stage_9
+			set_country_flag = KYO_yukari_archive_completed
+			country_event = { id = yakumo.49 hours = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+}

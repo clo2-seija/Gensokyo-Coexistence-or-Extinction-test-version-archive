@@ -1,0 +1,1998 @@
+
+
+
+leader_traits = {
+
+	### Political ###
+
+	KR_backroom_backstabber = {
+		sprite = 13
+		random = no
+		political_power_factor = 0.1
+		war_stability_factor = 0.1
+
+		ai_will_do = { factor = 2 }
+	}
+	KR_compassionate_gentleman = {
+		sprite = 13
+		random = no
+		compliance_gain = 0.01
+		political_power_factor = 0.1
+
+		ai_will_do = { factor = 2 }
+	}
+	KR_flamboyant_brute = {
+		sprite = 13
+		random = no
+		war_support_factor = 0.15
+		stability_factor = 0.05
+
+		ai_will_do = { factor = 1 }
+	}
+
+	#Remilia
+
+	eternally_young_scarlet_moon_advisor = {
+
+		sprite = 13
+		random = no
+
+		breakthrough_factor = 0.05
+
+		army_attack_factor = 0.05
+
+		war_support_weekly = 0.003
+
+		production_factory_efficiency_gain_factor = 0.05
+
+		industrial_capacity_factory = 0.05
+
+
+
+	}
+	
+
+
+	#Sakuya
+
+	perfect_and_elegant_maid ={
+
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.2
+
+		stability_factor = 0.1
+
+		consumer_goods_factor = -0.1
+
+		trade_laws_cost_factor = -0.5
+
+		economy_cost_factor = -0.5
+
+		mobilization_laws_cost_factor = -0.25
+
+		high_command_cost_factor = -0.25
+
+		experience_gain_army_factor = 0.05
+
+	}
+
+	perfect_and_elegant_maid_2 ={
+
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.25
+
+		stability_factor = 0.15
+
+		consumer_goods_factor = -0.15
+
+		trade_laws_cost_factor = -0.75
+
+		economy_cost_factor = -0.75
+
+		mobilization_laws_cost_factor = -0.5
+
+		high_command_cost_factor = -0.5
+
+		experience_gain_army_factor = 0.1
+
+	}
+
+	#Meiling
+
+	chinese_girl = {
+
+		sprite = 13
+		random = no
+
+		army_defence_factor = 0.1
+		army_core_defence_factor = 0.15
+       	dig_in_speed_factor = 0.15
+        
+        surrender_limit = 0.15
+
+       
+        conscription_factor =  0.1
+        mobilization_speed = 0.15
+
+
+	}
+
+	chinese_girl_2 = {
+
+		sprite = 13
+		random = no
+
+		army_defence_factor = 0.15
+		army_core_defence_factor = 0.2
+       	dig_in_speed_factor = 0.2
+        
+        surrender_limit = 0.15
+
+       
+        conscription_factor =  0.15
+        mobilization_speed = 0.2
+
+
+	}
+
+
+	#Patchouli
+
+	the_unmoving_great_library ={
+		sprite = 13
+		random = no
+
+
+		
+        research_speed_factor = 0.25
+        political_power_gain = 0.15
+
+        
+        encryption_factor = 0.10
+        decryption_factor = 0.10
+
+        planning_speed = 0.15
+        max_planning = 0.1
+
+
+
+	}
+
+	the_unmoving_great_library_2 ={
+		sprite = 13
+		random = no
+
+
+		
+        research_speed_factor = 0.3
+        political_power_gain = 0.2
+
+        
+        encryption_factor = 0.15
+        decryption_factor = 0.15
+
+        planning_speed = 0.2
+        max_planning = 0.15
+
+
+
+	}
+
+	#Koakuma
+
+	monster_working_in_a_dusty_library = {
+
+		sprite = 13
+		random = no
+
+		research_speed_factor = 0.15
+		army_morale_factor = 0.1
+
+
+	}
+
+	monster_working_in_a_dusty_library_2 = {
+
+		sprite = 13
+		random = no
+
+		research_speed_factor = 0.2
+		army_morale_factor = 0.15
+
+
+	}
+
+
+	#Flandre
+
+	sister_of_the_devil = {
+
+		sprite = 13
+		random = no
+
+		breakthrough_factor = 0.15
+		air_mission_efficiency = 0.10
+        air_strategic_bomber_bombing_factor = 0.3
+        air_cas_present_factor = 0.15
+
+		equipment_bonus = {
+
+			infantry_equipment = {
+
+				breakthrough = 0.2
+
+			}
+			
+			artillery_equipment = {
+				instant = yes
+				soft_attack = 0.2
+				breakthrough = 0.1
+			}
+		}
+
+	}
+
+	sister_of_the_devil_2 = {
+
+		sprite = 13
+		random = no
+
+		breakthrough_factor = 0.2
+		air_mission_efficiency = 0.15
+        air_strategic_bomber_bombing_factor = 0.35
+        air_cas_present_factor = 0.2
+
+		equipment_bonus = {
+
+			infantry_equipment = {
+
+				breakthrough = 0.25
+
+			}
+			
+			artillery_equipment = {
+				instant = yes
+				soft_attack = 0.25
+				breakthrough = 0.15
+			}
+		}
+
+	}
+
+	# Seija Kijin — "The Counterattacking Amanojaku"
+	the_counterattacking_amanojaku_advisor = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.15
+		stability_factor = -0.08
+		war_support_factor = 0.12
+
+		economy_cost_factor = -0.25
+		mobilization_laws_cost_factor = -0.25
+
+		planning_speed = 0.10
+		experience_gain_army_factor = 0.05
+	}
+
+	# Sagume Kishin — "Goddess Who Invites Unfortunate Slips of the Tongue"
+	goddess_who_invites_unfortunate_slips_of_the_tongue = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.2
+		stability_factor = -0.2
+		army_attack_factor = 0.15
+		army_armor_attack_factor = 0.15
+		army_attack_against_major_factor = 0.1
+		army_artillery_attack_factor = 0.1
+		planning_speed = 0.25
+		max_planning = 0.20
+	}
+
+	# Eiki Shiki — "Supreme Judge of Paradise"
+	supreme_judge_of_paradise = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.30
+		stability_factor = 0.3
+
+		compliance_growth = 0.15
+		resistance_growth = -0.1
+
+		economy_cost_factor = 1.25
+		mobilization_laws_cost_factor = 0.75
+		trade_laws_cost_factor = 1.25
+		political_advisor_cost_factor = 1.25
+		
+	}
+
+	# Doremy Sweet
+	ruler_of_dreams = {
+		sprite = 13
+		random = no
+		stability_factor = 0.2
+		stability_weekly = 0.003
+		war_support_factor = 0.2
+		war_support_weekly = 0.003
+		
+		production_factory_max_efficiency_factor = 0.2
+		production_factory_efficiency_gain_factor = 0.2
+		line_change_production_efficiency_factor = 0.2
+		
+		weekly_manpower = 5000
+	}
+
+
+	# Byakuren Hijiri - The Great Sealed Magician
+	the_great_sealed_magician_advisor = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.12
+		stability_factor = 0.14
+		compliance_gain = 0.02
+		resistance_growth = -0.08
+		research_speed_factor = 0.06
+		consumer_goods_factor = -0.04
+		army_morale_factor = 0.05
+	}
+
+	# Yukari Yakumo - Youkai of Boundaries
+	youkai_of_boundaries_advisor = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.15
+		encryption_factor = 0.15
+		decryption_factor = 0.15
+		planning_speed = 0.15
+		max_planning = 0.12
+		no_supply_grace = 24
+		operation_fake_intel_outcome = 0.10
+	}
+
+	# Kasen Ibaraki - The One-Armed, Horned Sennin
+	the_one_armed_horned_sennin = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.10
+		war_support_factor = 0.06
+		army_defence_factor = 0.10
+		army_core_defence_factor = 0.08
+		dig_in_speed_factor = 0.12
+		training_time_factor = -0.05
+		mobilization_speed = 0.08
+	}
+
+	# Okina Matara - The Ultimate, Absolute Secret God
+	the_ultimate_absolute_secret_god = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.18
+		stability_factor = 0.06
+		research_speed_factor = 0.06
+		new_operative_slot_bonus = 1
+		agency_upgrade_time = -0.10
+		operation_outcome = 0.08
+		economy_cost_factor = -0.20
+	}
+
+	# Chen - Black Cat of Bad Omens
+	black_cat_of_bad_omens = {
+		sprite = 13
+		random = no
+
+		war_support_factor = 0.08
+		stability_factor = -0.04
+		army_speed_factor = 0.08
+		breakthrough_factor = 0.08
+		mobilization_speed = 0.10
+		enemy_operative_detection_chance_factor = 0.05
+	}
+
+	# Ran Yakumo - Shikigami of the Youkai of Boundaries
+	shikigami_of_the_youkai_of_boundaries = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.15
+		stability_factor = 0.05
+		research_speed_factor = 0.15
+		encryption_factor = 0.5
+		decryption_factor = 0.2
+		planning_speed = 0.15
+		max_planning = 0.1
+	}
+
+	# Eirin Yagokoro - Brain of the Moon
+	brain_of_the_moon = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.10
+		stability_factor = 0.05
+		research_speed_factor = 0.3
+		
+	
+		monthly_population = 0.15
+		attrition = -0.05
+	}
+
+	# Kaguya Houraisan - Eternal and Momentary Inmate
+	eternal_and_momentary_inmate = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.08
+		stability_factor = 0.12
+		research_speed_factor = 0.05
+		consumer_goods_factor = -0.06
+		economy_cost_factor = -0.18
+		trade_laws_cost_factor = -0.18
+	}
+
+	# Aya Shameimaru - Traditional Fantastic Reporter
+	traditional_fantastic_reporter = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.15
+		stability_factor = -0.1
+		operative_death_on_capture_chance = 0.5
+		operative_slot = 1
+		decryption_factor = 0.25
+		propaganda_mission_factor = 0.25
+		air_mission_efficiency = 0.15
+		mobilization_speed = 0.1
+	}
+
+	# Hatate Himekaidou - Delusionary Reporter
+	delusionary_reporter = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.2
+		operation_risk = -0.1
+		encryption_factor = 0.2
+		decryption_factor = 0.2
+		operation_fake_intel_outcome = 0.2
+		research_speed_factor = 0.05
+		
+	}
+
+	# Momiji Inubashiri - Fierce Wolf Tengu of the Mountain
+	fierce_wolf_tengu_of_the_mountain = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.05
+		army_defence_factor = 0.15
+		army_core_defence_factor = 0.15
+		dig_in_speed_factor = 0.2
+		max_dig_in = 2
+		land_reinforce_rate = 0.03
+	}
+
+	# Megumu Iizunamaru - Chief of the Crow Tengu
+	chief_of_the_crow_tengu = {
+		sprite = 13
+		random = no
+		operative_slot = 3
+		political_power_gain = -0.2
+		stability_factor = -0.1
+		war_support_factor = -0.1
+		air_mission_efficiency = 0.1
+		decryption_factor = 0.15
+		economy_cost_factor = -0.4
+		trade_laws_cost_factor = -0.3
+	}
+
+	# Cirno - Ice Fairy
+	ice_fairy = {
+		sprite = 13
+		random = no
+
+		war_support_factor = 0.08
+		stability_factor = -0.05
+		mobilization_speed = 0.12
+		army_attack_factor = 0.06
+		winter_attrition_factor = -0.08
+		consumer_goods_factor = 0.03
+	}
+
+	# Nue Houjuu - The Unidentified Fantastic Flying Girl
+	the_unidentified_fantastic_flying_girl = {
+		sprite = 13
+		random = no
+
+		political_power_gain = -0.1
+		stability_factor = -0.15
+		encryption_factor = 0.2
+		decryption_factor = 0.1
+		operation_fake_intel_outcome = 1
+		air_superiority_efficiency = 0.1
+		air_agility_factor = 0.1
+		air_detection = 0.2
+		planning_speed = 01
+	}
+
+	# Yuyuko Saigyouji - Ghostly Girl in the Netherworld Tower
+	ghostly_girl_in_the_netherworld_tower = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.12
+		war_support_factor = 0.08
+		surrender_limit = 0.12
+		experience_gain_army_factor = 0.05
+		consumer_goods_factor = 0.03
+		resistance_growth = -0.05
+	}
+
+	# Youmu Konpaku - Half-Phantom Gardener
+	half_phantom_gardener = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.05
+		experience_gain_army_factor = 0.14
+		breakthrough_factor = 0.10
+		army_attack_factor = 0.06
+		planning_speed = 0.12
+		max_planning = 0.10
+		training_time_factor = -0.05
+	}
+
+	# Seiga Kaku - Wicked Hermit
+	wicked_hermit = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.12
+		stability_factor = -0.06
+		encryption_factor = 0.15
+		operation_infiltrate_outcome = 0.10
+		operation_risk = -0.06
+		planning_speed = 0.08
+		resistance_growth_on_our_occupied_states = 0.05
+	}
+
+	# Momoyo Himemushi - Great Centipede of the Rainbow Dragon Cave
+	great_centipede_of_the_rainbow_dragon_cave = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.04
+		war_support_factor = 0.06
+		production_speed_buildings_factor = 0.12
+		local_resources_factor = 0.18
+		army_attack_factor = 0.06
+		consumer_goods_factor = -0.04
+	}
+
+	# Eternity Larva - Butterfly of the Land of the Eternal Night
+	butterfly_of_the_land_of_the_eternal_night = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.06
+		war_support_factor = 0.04
+		monthly_population = 0.05
+		mobilization_speed = 0.08
+		conscription_factor = 0.05
+		political_power_gain = 0.04
+	}
+
+	# Yamame Kurodani - Tsuchigumo of the Dark Cave
+	tsuchigumo_of_the_dark_cave = {
+		sprite = 13
+		random = no
+
+		army_defence_factor = 0.10
+		dig_in_speed_factor = 0.18
+		max_dig_in = 2
+		supply_consumption_factor = -0.05
+		attrition = -0.06
+		stability_factor = 0.03
+	}
+
+	# Rumia - Youkai of the Dusk
+	youkai_of_the_dusk = {
+		sprite = 13
+		random = no
+
+		war_support_factor = 0.10
+		stability_factor = -0.05
+		breakthrough_factor = 0.10
+		army_attack_factor = 0.06
+		planning_speed = 0.05
+		conscription_factor = 0.05
+	}
+
+	# Wriggle Nightbug - Little Bug of the Night
+	little_bug_of_the_night = {
+		sprite = 13
+		random = no
+
+		mobilization_speed = 0.10
+		conscription_factor = 0.06
+		army_speed_factor = 0.05
+		supply_consumption_factor = -0.05
+		war_support_factor = 0.05
+		stability_factor = 0.03
+	}
+
+	# Tokiko - Book Reading Youkai
+	book_reading_youkai = {
+		sprite = 13
+		random = no
+
+		research_speed_factor = 0.15
+		political_power_gain = 0.05
+		stability_factor = 0.05
+		decryption_factor = 0.05
+	}
+
+	# Sekibanki - Rokurokubi Horror
+	rokurokubi_horror = {
+		sprite = 13
+		random = no
+
+		weekly_manpower = 1000
+
+		intelligence_agency_defense = 3
+
+		planning_speed = 0.1
+
+		army_attack_factor = 0.1
+
+		enemy_operative_detection_chance_factor = 0.1
+	}
+
+	# Kutaka Niwatari - Hell Checkpoint Guard
+	hells_checkpoint_guard = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.10
+		army_defence_factor = 0.12
+		surrender_limit = 0.1
+		compliance_growth = 0.05
+		resistance_growth = -0.06
+		mobilization_speed = 0.05
+	}
+
+	# Mystia Lorelei - Night Sparrow
+	night_sparrow = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.05
+		war_support_factor = 0.06
+		war_support_weekly = 0.002
+		mobilization_speed = 0.08
+		consumer_goods_factor = -0.04
+	}
+
+	# Nitori Kawashiro - Super Youkai Warhead
+	super_youkai_warhead = {
+		sprite = 13
+		random = no
+
+		production_speed_buildings_factor = 0.12
+		production_speed_industrial_complex_factor = 0.10
+		production_speed_arms_factory_factor = 0.10
+		industry_repair_factor = 0.25
+		research_speed_factor = 0.05
+		consumer_goods_factor = -0.04
+	}
+
+	# Maribel Hearn - Girl of the Border Between Dream and Reality
+	girl_of_the_border_between_dream_and_reality = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.15
+		encryption_factor = 0.15
+		decryption_factor = 0.15
+		planning_speed = 0.15
+		max_planning = 0.15
+		no_supply_grace = 36
+		operation_fake_intel_outcome = 0.10
+	}
+
+	# Renko Usami - Girl of the Secret Sealing Club
+	girl_of_the_secret_sealing_club = {
+		sprite = 13
+		random = no
+
+		research_speed_factor = 0.15
+		drift_defence_factor = 0.35
+		foreign_subversive_activites = -0.35
+		decryption_factor = 0.1
+		political_power_gain = 0.1
+		stability_factor = 0.05
+	}
+
+	# Satori Komeiji - The Girl Even the Vengeful Spirits Fear
+	the_girl_even_the_vengeful_spirits_fear = {
+		sprite = 13
+		random = no
+
+		operative_slot = 2
+
+		stability_factor = -0.25
+		operation_infiltrate_cost = -0.25
+		operation_infiltrate_risk = -0.25
+		compliance_gain = 0.03
+		resistance_growth = -0.15
+		consumer_goods_factor = -0.1
+	}
+
+	# Yuuma Toutetsu - Ravenous Beast
+	ravenous_beast = {
+		sprite = 13
+		random = no
+
+		war_support_factor = 0.15
+		political_power_gain = 0.10
+		consumer_goods_factor = -0.06
+		mobilization_speed = 0.10
+		breakthrough_factor = 0.06
+		stability_factor = -0.04
+	}
+
+	# Tewi Inaba - White Rabbit of Inaba
+	white_rabbit_of_inaba = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.10
+		stability_factor = 0.08
+		consumer_goods_factor = -0.05
+		trade_laws_cost_factor = -0.15
+		economy_cost_factor = -0.08
+		enemy_operative_detection_chance_factor = 0.04
+	}
+
+	# Shou Toramaru - Disciple of Bishamonten
+	disciple_of_bishamonten = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.08
+		war_support_factor = 0.10
+		army_attack_factor = 0.08
+		army_defence_factor = 0.05
+		mobilization_laws_cost_factor = -0.20
+		compliance_growth = 0.04
+	}
+
+	# Kogasa Tatara - The Cheery Forgotten Umbrella
+	the_cheery_forgotten_umbrella = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.05
+		stability_factor = -0.02
+		breakthrough_factor = 0.10
+		planning_speed = 0.05
+		enemy_operative_detection_chance_factor = 0.08
+		mobilization_speed = 0.05
+	}
+
+	# Clownpiece - Hell Fairy
+	hell_fairy = {
+		sprite = 13
+		random = no
+
+		war_support_factor = 0.20
+		stability_factor = -0.10
+		mobilization_speed = 0.10
+		breakthrough_factor = 0.06
+		army_morale_factor = 0.08
+		political_power_gain = 0.05
+	}
+
+	# Rin Kaenbyou - Hell Wheelbarrow
+	hells_wheelbarrow = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.05
+		experience_gain_army_factor = 0.10
+		planning_speed = 0.05
+		conscription_factor = 0.05
+		supply_consumption_factor = -0.05
+		consumer_goods_factor = -0.04
+	}
+
+	# Parsee Mizuhashi - Jealousy of the Kind and Lovely Earth Spirits
+	jealousy_of_the_kind_and_lovely_earth_spirits = {
+		sprite = 13
+		random = no
+
+		political_power_gain = -0.25
+		stability_factor = -0.2
+		war_support_weekly = 0.005
+		war_support_factor = 0.4
+		consumer_goods_factor = 0.1
+	
+		resistance_growth = 0.1
+	}
+
+	# Utsuho Reiuji - Hell Solar Power
+	hells_solar_power = {
+		sprite = 13
+		random = no
+
+		war_support_factor = 0.10
+		stability_factor = 0.02
+		production_speed_buildings_factor = 0.10
+		research_speed_factor = 0.05
+		breakthrough_factor = 0.10
+		air_bombing_targetting = 0.08
+		air_mission_efficiency = 0.05
+	}
+
+	# Tenshi Hinanawi - Celestial of Scarlet Perception
+	celestial_of_scarlet_perception = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.05
+		army_defence_factor = 0.12
+		army_core_defence_factor = 0.16
+		dig_in_speed_factor = 0.18
+		max_dig_in = 2
+		land_reinforce_rate = 0.03
+	}
+
+	# Reimu Hakurei - Shrine Maiden of Paradise
+	shrine_maiden_of_paradise = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.25
+		stability_factor = 0.2
+		war_support_factor = 0.15
+		weekly_manpower = 5000
+		conscription = 0.025
+		economy_cost_factor = -0.5
+		mobilization_laws_cost_factor = -0.5
+		compliance_growth = 0.05
+	}
+
+	# Yachie Kicchou - Matriarch of the Kiketsu Family
+	matriarch_of_the_kiketsu_family = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.15
+		stability_factor = 0.08
+		trade_laws_cost_factor = -0.20
+		economy_cost_factor = -0.20
+		operation_outcome = 0.06
+		resistance_garrison_penetration_chance = 0.05
+	}
+
+	# Marisa Kirisame - Ordinary Magician
+	ordinary_magician = {
+		sprite = 13
+		random = no
+
+		research_speed_factor = 0.15
+		political_power_gain = 0.10
+		war_support_weekly = 0.002
+		production_factory_efficiency_gain_factor = 0.05
+		consumer_goods_factor = 0.04
+	}
+
+	# Raiko Horikawa - Thunder Beat Tsukumogami
+	thunder_beat_tsukumogami = {
+		sprite = 13
+		random = no
+
+		war_support_factor = 0.10
+		political_power_gain = 0.05
+		production_speed_buildings_factor = 0.08
+		army_morale_factor = 0.06
+		experience_gain_army_factor = 0.05
+		breakthrough_factor = 0.05
+	}
+
+	# Kagerou Imaizumi - Bamboo Forest Werewolf
+	bamboo_forests_werewolf = {
+		sprite = 13
+		random = no
+
+		war_support_factor = 0.08
+		stability_factor = -0.04
+		army_speed_factor = 0.08
+		breakthrough_factor = 0.08
+		mobilization_speed = 0.10
+		enemy_operative_detection_chance_factor = 0.05
+	}
+
+	# Wakasagihime - Freshwater Mermaid
+	freshwater_mermaid = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.05
+		consumer_goods_factor = -0.04
+		trade_laws_cost_factor = -0.10
+		naval_morale_factor = 0.06
+		naval_speed_factor = 0.04
+		production_speed_infrastructure_factor = 0.05
+	}
+
+	# Chimata Tenkyuu - Rainbow-Colored Trader
+	rainbow_colored_trader = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.15
+		consumer_goods_factor = -0.10
+		trade_laws_cost_factor = -0.40
+		economy_cost_factor = -0.25
+		mobilization_laws_cost_factor = -0.20
+		stability_factor = -0.02
+	}
+
+	# Mononobe no Futo - Ancient Shikaisen
+	ancient_shikaisen = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.10
+		stability_factor = 0.05
+		war_support_factor = 0.05
+		mobilization_speed = 0.06
+		planning_speed = 0.08
+		max_planning = 0.05
+	}
+
+	# Reisen Udongein Inaba - Lunatic Moon Rabbit
+	lunatic_moon_rabbit = {
+		sprite = 13
+		random = no
+
+		stability_factor = -0.1
+		political_power_gain = -0.05
+		planning_speed = 0.15
+		army_attack_factor = 0.1
+		war_support_factor = 0.15
+		air_mission_efficiency = 0.15
+	}
+
+	# Benben Tsukumo - Tsukumogami of an Aging Biwa
+	tsukumogami_of_an_aging_biwa = {
+		sprite = 13
+		random = no
+
+		war_support_factor = 0.10
+		political_power_gain = 0.05
+		production_speed_buildings_factor = 0.1
+		army_morale_factor = 0.06
+		experience_gain_army_factor = 0.05
+		breakthrough_factor = 0.05
+	}
+
+	# Keine Kamishirasawa - Half-Beast of Knowledge and History
+	half_beast_of_knowledge_and_history = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.10
+		political_power_gain = 0.06
+		research_speed_factor = 0.10
+		drift_defence_factor = 0.20
+		compliance_growth = 0.04
+		war_support_factor = 0.04
+	}
+
+	# Tsukasa Kudamaki - Kuda-gitsune
+	kuda_gitsune = {
+		sprite = 13
+		random = no
+
+
+		operative_slot = 1
+		political_power_gain = -0.1
+		stability_factor = -0.15
+
+		trade_laws_cost_factor = -0.75
+		economy_cost_factor = -0.5
+		operation_cost = -0.5
+	}
+
+	# Suika Ibuki - Forgathering Dream, Illusion, and Pandemonium
+	forgathering_dream_illusion_and_pandemonium = {
+		sprite = 13
+		random = no
+
+		war_support_factor = 0.12
+		stability_factor = -0.05
+		conscription_factor = 0.15
+		mobilization_speed = 0.18
+		breakthrough_factor = 0.10
+		army_morale_factor = 0.08
+	}
+
+	# Komachi Onozuka - Guide of the Sanzu no Kawa
+	guide_of_the_sanzu_no_kawa = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.06
+		war_support_factor = 0.04
+		surrender_limit = 0.08
+		resistance_growth = -0.05
+		political_power_gain = -0.03
+		consumer_goods_factor = 0.03
+	}
+
+	# Kyouko Kasodani - Echoing Sutra Chant
+	echoing_sutra_chant = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.06
+		war_support_factor = 0.04
+		monthly_population = 0.05
+		mobilization_speed = 0.08
+		conscription_factor = 0.05
+		political_power_gain = 0.04
+	}
+
+	# Shinmyoumaru Sukuna - Descendant of the Kobito
+	descendant_of_the_kobito = {
+		sprite = 13
+		random = no
+
+		production_speed_buildings_factor = 0.08
+		consumer_goods_factor = -0.05
+		political_power_gain = 0.05
+		research_speed_factor = 0.05
+		mobilization_speed = 0.06
+		production_factory_efficiency_gain_factor = 0.04
+	}
+
+	# Kanako Yasaka - Avatar of Mountains and Lakes
+	the_avatar_of_mountains_and_lakes = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.10
+		stability_factor = 0.08
+		war_support_factor = 0.05
+		production_speed_buildings_factor = 0.12
+		production_speed_infrastructure_factor = 0.12
+		monthly_population = 0.06
+	}
+
+	# Lyrica Prismriver - Poltergeist Keyboardist
+	poltergeist_keyboardist = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.05
+		war_support_factor = 0.06
+		political_power_gain = 0.04
+		experience_gain_army_factor = 0.03
+		planning_speed = 0.04
+	}
+
+	# Merlin Prismriver - Poltergeist Trumpeter
+	poltergeist_trumpeter = {
+		sprite = 13
+		random = no
+
+		war_support_factor = 0.10
+		stability_factor = 0.02
+		political_power_gain = 0.04
+		mobilization_speed = 0.06
+		army_morale_factor = 0.04
+	}
+
+	# Lunasa Prismriver - Poltergeist Violinist
+	poltergeist_violinist = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.08
+		war_support_factor = 0.04
+		political_power_gain = 0.04
+		consumer_goods_factor = -0.03
+		surrender_limit = 0.04
+	}
+
+	# Takane Yamashiro - Yamawaro of the Mountain
+	yamawaro_of_the_mountain = {
+		sprite = 13
+		random = no
+
+		production_speed_industrial_complex_factor = 0.12
+		production_speed_arms_factory_factor = 0.08
+		local_resources_factor = 0.08
+		trade_laws_cost_factor = -0.25
+		consumer_goods_factor = -0.04
+	}
+
+	# Koishi Komeiji - The Closed Eye of Love
+	the_closed_eye_of_love = {
+		sprite = 13
+		random = no
+
+		political_power_factor = -0.15
+		stability_factor = -0.2
+
+		weekly_manpower = 5000
+		conscription_factor = 0.1
+		non_core_manpower = 0.25
+	}
+
+	# Soga no Tojiko - Thundering Vengeful Spirit
+	thundering_vengeful_spirit = {
+		sprite = 13
+		random = no
+
+		breakthrough_factor = 0.10
+		army_attack_factor = 0.06
+		war_support_factor = 0.08
+		air_attack_factor = 0.05
+		experience_gain_army_factor = 0.05
+	}
+
+	# Satsuki Rin - Phantom Girl
+	phantom_girl = {
+		sprite = 13
+		random = no
+
+		planning_speed = 0.15
+		max_planning = 0.1
+		army_core_defence_factor = 0.1
+		dig_in_speed_factor = 0.1
+	
+	}
+
+	# Junko - The Nameless Existence
+	the_nameless_existence = {
+		sprite = 13
+		random = no
+
+		war_support_factor = 0.16
+		breakthrough_factor = 0.12
+		army_attack_factor = 0.10
+		army_attack_against_major_factor = 0.08
+		political_power_gain = 0.06
+		stability_factor = -0.04
+	}
+
+	# Narumi Yatadera - Jizo Who Can Be Counted On
+	jizo_who_can_be_counted_on = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.06
+		army_defence_factor = 0.10
+		army_core_defence_factor = 0.08
+		dig_in_speed_factor = 0.10
+		compliance_growth = 0.05
+	}
+
+	# Satono Nishida - Back Door Dancer
+	dancing_duo_in_the_back_door_satono = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.06
+		war_support_factor = 0.04
+		monthly_population = 0.05
+		mobilization_speed = 0.08
+		conscription_factor = 0.05
+		political_power_gain = 0.04
+	}
+
+	# Mai Teireida - Back Door Dancer
+	dancing_duo_in_the_back_door_mai = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.10
+		stability_factor = 0.05
+		war_support_factor = 0.05
+		mobilization_speed = 0.06
+		planning_speed = 0.08
+		max_planning = 0.05
+	}
+
+	# Murasa Minamitsu - Captain of the Ghost Ship
+	captain_of_the_ghost_ship = {
+		sprite = 13
+		random = no
+
+		naval_speed_factor = 0.10
+		naval_morale_factor = 0.10
+		convoy_raiding_efficiency_factor = 0.12
+		experience_gain_navy_factor = 0.08
+		screening_efficiency = 0.05
+	}
+
+	# Ichirin Kumoi - The Big Wheel Having Guarded and Been Guarded
+	the_big_wheel_having_guarded_and_been_guarded = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.10
+		war_support_factor = 0.06
+		army_defence_factor = 0.10
+		army_core_defence_factor = 0.08
+		dig_in_speed_factor = 0.12
+		training_time_factor = -0.05
+		mobilization_speed = 0.08
+	}
+
+	# Yatsuhashi Tsukumo - Tsukumogami of a Koto
+	tsukumogami_of_a_koto = {
+		sprite = 13
+		random = no
+
+		war_support_factor = 0.10
+		political_power_gain = 0.05
+		production_speed_buildings_factor = 0.08
+		army_morale_factor = 0.06
+		experience_gain_army_factor = 0.05
+		breakthrough_factor = 0.05
+	}
+
+	# Hina Kagiyama - Goddess of Misfortune
+	goddess_of_misfortune = {
+		sprite = 13
+		random = no
+
+		attrition = -0.08
+		army_defence_factor = 0.06
+		stability_factor = 0.06
+		dig_in_speed_factor = 0.05
+		resistance_growth = -0.04
+	}
+
+	# Nazrin - Treasure Hunting Mouse
+	treasure_hunting_mouse = {
+		sprite = 13
+		random = no
+
+		decryption_factor = 0.25
+		encryption_factor = 0.25
+		political_power_gain = -0.1
+		stability_factor = 0.1
+		local_resources_factor = 0.2
+		trade_laws_cost_factor = -0.2
+	}
+
+	# Mike Goutokuji - Lucky Cat
+	lucky_cat = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.10
+		stability_factor = 0.08
+		consumer_goods_factor = -0.05
+		trade_laws_cost_factor = -0.15
+		economy_cost_factor = -0.08
+		enemy_operative_detection_chance_factor = 0.04
+	}
+
+	# Shizuha Aki - Goddess of Falling Leaves
+	goddess_of_falling_leaves = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.06
+		war_support_factor = 0.04
+		supply_consumption_factor = -0.05
+		production_speed_infrastructure_factor = 0.08
+		winter_attrition_factor = -0.05
+	}
+
+	# Watatsuki no Toyohime - Lunarian Princess Who Connects Sea and Mountain
+	lunarian_princess_who_connects_sea_and_mountain = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.25
+		stability_factor = 0.15
+	
+		planning_speed = 0.1
+		navy_max_range_factor = 0.5
+		naval_speed_factor = 0.25
+	}
+
+	# Yuiman Asama - Vital Point of the Brocaded Capital
+	vital_point_of_the_brocaded_capital = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.1
+		stability_factor = 0.1
+		research_speed_factor = 0.2
+		
+		planning_speed = 0.10
+		max_planning = 0.1
+	}
+
+	# Iku Nagae - Oarfish Messenger of the Dragon Palace
+	oarfish_messenger_of_the_dragon_palace = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.05
+		political_power_gain = 0.06
+		war_support_factor = 0.05
+		air_mission_efficiency = 0.06
+		air_weather_penalty = -0.05
+	}
+
+	# Daiyousei - The Great Fairy
+	the_great_fairy = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.04
+		war_support_factor = 0.03
+		political_power_gain = 0.03
+		conscription_factor = 0.03
+		mobilization_speed = 0.03
+	}
+
+	# Aunn Komano - Komainu Who Guards Shrines
+	komainu_who_guards_shrines = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.06
+		army_defence_factor = 0.10
+		army_core_defence_factor = 0.08
+		dig_in_speed_factor = 0.10
+		compliance_growth = 0.05
+	}
+
+	# Minoriko Aki - Goddess of Harvest
+	goddess_of_harvest = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.06
+		consumer_goods_factor = -0.04
+		production_speed_infrastructure_factor = 0.10
+		monthly_population = 0.04
+		conscription_factor = 0.04
+	}
+
+	# Evil Kasen - Ibaraki Douji Unmasked
+	ibaraki_douji_unmasked = {
+		sprite = 13
+		random = no
+
+		war_support_factor = 0.08
+		stability_factor = -0.04
+		army_speed_factor = 0.08
+		breakthrough_factor = 0.08
+		mobilization_speed = 0.10
+		enemy_operative_detection_chance_factor = 0.05
+	}
+
+	# Yuugi Hoshiguma - Fearsome Oni with Superhuman Strength
+	fearsome_oni_with_superhuman_strength = {
+		sprite = 13
+		random = no
+
+		breakthrough_factor = 0.14
+		army_attack_factor = 0.10
+		war_support_factor = 0.08
+		army_morale_factor = 0.08
+		experience_gain_army_factor = 0.06
+	}
+
+	# Toyosatomimi no Miko - The Taoist Saint
+	the_taoist_saint = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.16
+		stability_factor = 0.08
+		war_support_factor = 0.05
+		research_speed_factor = 0.05
+		mobilization_laws_cost_factor = -0.15
+		drift_defence_factor = 0.20
+	}
+
+	# Keiki Haniyasushin - Goddess of Sculptures
+	goddess_of_sculptures = {
+		sprite = 13
+		random = no
+
+		production_speed_arms_factory_factor = 0.10
+		production_speed_industrial_complex_factor = 0.10
+		production_factory_efficiency_gain_factor = 0.06
+		research_speed_factor = 0.06
+		planning_speed = 0.06
+	}
+
+	# Saki Kurokoma - Black Horse of the Warrior Spirit
+	black_horse_of_the_warrior_spirit = {
+		sprite = 13
+		random = no
+
+		army_speed_factor = 0.10
+		breakthrough_factor = 0.10
+		army_attack_factor = 0.08
+		experience_gain_army_factor = 0.08
+		war_support_factor = 0.05
+	}
+
+	# Yuuka Kazami - Flower Master of the Four Seasons
+	flower_master_of_the_four_seasons = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.04
+		war_support_factor = 0.06
+		production_speed_buildings_factor = 0.12
+		local_resources_factor = 0.18
+		army_attack_factor = 0.06
+		consumer_goods_factor = -0.04
+	}
+
+	# Suwako Moriya - Highest of the Native Gods
+	highest_of_the_native_gods = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.10
+		political_power_gain = 0.08
+		production_speed_infrastructure_factor = 0.10
+		army_core_defence_factor = 0.06
+		local_supplies = 0.10
+	}
+
+	# Yoshika Miyako - Jiangshi of the Ancient Tomb
+	jiangshi_of_the_ancient_tomb = {
+		sprite = 13
+		random = no
+
+		conscription_factor = 0.06
+		army_attack_factor = 0.05
+		supply_consumption_factor = -0.05
+		war_support_factor = 0.05
+		attrition = -0.05
+		stability_factor = -0.02
+	}
+
+	# Hata no Kokoro - The Menreiki
+	the_menreiki = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.07
+		war_support_factor = 0.06
+		political_power_gain = 0.05
+		consumer_goods_factor = -0.03
+		drift_defence_factor = 0.15
+	}
+
+	# Alice Margatroid - Seven-Colored Puppeteer
+	seven_colored_puppeteer = {
+		sprite = 13
+		random = no
+
+		research_speed_factor = 0.08
+		planning_speed = 0.10
+		max_planning = 0.06
+		production_speed_arms_factory_factor = 0.05
+		production_factory_efficiency_gain_factor = 0.05
+	}
+
+	# Fujiwara no Mokou - Undying Phoenix
+	undying_phoenix = {
+		sprite = 13
+		random = no
+
+		attrition = -0.10
+		surrender_limit = 0.08
+		breakthrough_factor = 0.10
+		army_attack_factor = 0.08
+		war_support_factor = 0.06
+		stability_factor = -0.03
+	}
+
+	# Sunny Milk - Sunlight Fairy
+	sunlight_fairy = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.03
+		political_power_gain = 0.03
+		war_support_factor = 0.03
+		air_detection = 0.04
+		army_speed_factor = 0.02
+	}
+
+	# Luna Child - Moonlight Fairy
+	moonlight_fairy = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.05
+		political_power_gain = 0.05
+		war_support_factor = 0.05
+		
+	}
+
+	# Star Sapphire - Starlight Fairy
+	starlight_fairy = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.05
+		political_power_gain = 0.05
+		war_support_factor = 0.05
+		planning_speed = 0.05
+		max_planning = 0.05
+	}
+
+	# Medicine Melancholy - Poisonous Doll
+	poisonous_doll = {
+		sprite = 13
+		random = no
+
+
+		stability_factor = -0.15
+		war_support_factor = 0.15
+		attrition = 0.1
+		resistance_growth_on_our_occupied_states = 0.5
+		resistance_damage_to_garrison = -0.5
+		required_garrison_factor = -0.5
+		occupation_cost = -0.5
+	}
+
+	# Lily White - Harbinger of Spring
+	harbinger_of_spring = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.10
+		war_support_factor = 0.1
+		attrition = -0.1
+		monthly_population = 0.1
+		conscription_factor = 0.1
+		production_speed_infrastructure_factor = 0.05
+	}
+
+	# Mamizou Futatsuiwa - Bake-Danuki Who Shifts Shapes
+	bake_danuki_who_shifts_shapes = {
+		sprite = 13
+		random = no
+
+		operative_slot = 1
+
+		decryption_power = 1
+
+		operation_fake_intel_outcome = 0.5
+
+		political_power_gain = 0.15
+		stability_factor = 0.1
+	}
+
+	# Seiran - Moon Rabbit Who Came to Earth
+	moon_rabbit_who_came_to_earth = {
+		sprite = 13
+		random = no
+
+		air_mission_efficiency = 0.1
+		
+		planning_speed = 0.05
+		political_power_gain = 0.05
+		war_support_factor = 0.05
+	}
+
+	# Ringo - Dango-Loving Moon Rabbit
+	dango_loving_moon_rabbit = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.05
+		political_power_gain = 0.05
+		
+		planning_speed = 0.10
+		army_attack_factor = 0.1
+		war_support_factor = 0.05
+		air_mission_efficiency = 0.05
+	}
+
+	# Hecatia Lapislazuli - Goddess of Hell
+	goddess_of_hell = {
+		sprite = 13
+		random = no
+
+		war_support_factor = 0.14
+		political_power_gain = 0.08
+		breakthrough_factor = 0.10
+		army_attack_factor = 0.06
+		stability_factor = 0.03
+	}
+
+	# Shion Yorigami - Goddess of Poverty
+	goddess_of_poverty = {
+		sprite = 13
+		random = no
+
+		consumer_goods_factor = -0.12
+		production_speed_buildings_factor = -0.04
+		stability_factor = -0.04
+		political_power_gain = 0.04
+		trade_laws_cost_factor = -0.10
+	}
+
+	# Jo'on Yorigami - Goddess of Pestilence
+	goddess_of_pestilence = {
+		sprite = 13
+		random = no
+
+		consumer_goods_factor = -0.10
+		political_power_gain = 0.08
+		war_support_factor = 0.05
+		stability_factor = -0.03
+		economy_cost_factor = -0.12
+	}
+
+	# Kisume - Hanging Bucket
+	hanging_bucket = {
+		sprite = 13
+		random = no
+
+		production_speed_bunker_factor = 0.12
+		dig_in_speed_factor = 0.08
+		max_dig_in = 1
+		army_defence_factor = 0.05
+		stability_factor = 0.03
+	}
+
+	# Eika Ebisu - Water Child
+	water_child = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.04
+		war_support_factor = 0.03
+		political_power_gain = 0.03
+		monthly_population = 0.03
+		compliance_growth = 0.02
+	}
+
+	# Urumi Ushizaki - Ushi-Oni of the Riverbed
+	ushi_oni_of_the_riverbed = {
+		sprite = 13
+		random = no
+
+		war_support_factor = 0.10
+		stability_factor = -0.05
+		breakthrough_factor = 0.10
+		army_attack_factor = 0.06
+		planning_speed = 0.05
+		conscription_factor = 0.05
+	}
+
+	# Mayumi Joutouguu - Haniwa Lance Corporal
+	Haniwa_Lance_corporal = {
+		sprite = 13
+		random = no
+
+		breakthrough_factor = 0.14
+		army_attack_factor = 0.10
+		army_defence_factor = 0.10
+		dig_in_speed_factor = 0.08
+		production_speed_arms_factory_factor = 0.05
+	}
+
+	# Sannyo Komakusa - Mountain Hag of the Smoky Path
+	mountain_hag_of_the_smoky_path = {
+		sprite = 13
+		random = no
+
+		supply_consumption_factor = -0.15
+		army_speed_factor = 0.05
+		
+		trade_laws_cost_factor = -0.1
+		stability_factor = 0.1
+
+		consumer_goods_factor = -0.1
+	}
+
+	# Misumaru Tamatsukuri - Goddess of Magatama
+	goddess_of_magatama = {
+		sprite = 13
+		random = no
+
+		research_speed_factor = 0.1
+		production_speed_industrial_complex_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.05
+		encryption_factor = 0.05
+		political_power_gain = 0.05
+	}
+
+	# Nippaku Zanmu - King of the Silent Bliss of Nirvana
+	king_of_the_silent_bliss_of_nirvana = {
+		sprite = 13
+		random = no
+
+		stability_factor = -1
+		political_power_gain = -0.5
+
+		war_support_factor = 0.10
+		army_attack_factor = 0.3
+		army_morale_factor = 0.3
+		army_speed_factor = 0.3
+
+		resistance_growth = -0.25
+	}
+
+	# Mitsugashira Enoko - Cerberus of Forested Silence
+	cerberus_of_forested_silence = {
+		sprite = 13
+		random = no
+
+		army_speed_factor = 0.06
+		army_attack_factor = 0.06
+		breakthrough_factor = 0.06
+		war_support_factor = 0.04
+		enemy_operative_detection_chance_factor = 0.05
+	}
+
+	# Son Biten - Great Sage of Small Sanctuaries
+	the_great_sage_of_small_sanctuaries = {
+		sprite = 13
+		random = no
+
+		army_speed_factor = 0.10
+		breakthrough_factor = 0.10
+		army_attack_factor = 0.08
+		experience_gain_army_factor = 0.08
+		war_support_factor = 0.05
+	}
+
+	# Yomotsu Hisami - Beautiful Stalker of Hell
+	beautiful_stalker_of_hell = {
+		sprite = 13
+		random = no
+
+		army_defence_factor = 0.07
+		army_core_defence_factor = 0.06
+		dig_in_speed_factor = 0.06
+		war_support_factor = 0.04
+		operation_infiltrate_outcome = 0.06
+	}
+
+	# Tenkajin Chiyari - Monster of Tainted Organic Material
+	monster_of_tainted_organic_material = {
+		sprite = 13
+		random = no
+
+		army_attack_factor = 0.06
+		breakthrough_factor = 0.06
+		air_mission_efficiency = 0.06
+		war_support_factor = 0.05
+		attrition = 0.02
+	}
+
+	# Reisen II - Moon Rabbit Unit Two
+	moon_rabbit_unit_two = {
+		sprite = 13
+		random = no
+
+		air_mission_efficiency = 0.15
+		
+		planning_speed = 0.1
+		
+		war_support_factor = 0.15
+	}
+
+	# Watatsuki no Yorihime - Lunarian Princess Who Wields Gods
+	lunarian_princess_who_wields_gods = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.1
+		war_support_factor = 0.25
+		army_attack_factor = 0.2
+		army_defence_factor = 0.2
+		mobilization_laws_cost_factor = -1
+		compliance_growth = 0.15
+	}
+
+	# Chirizuka Ubame - Chieftain of the Sanctuary Yamanba
+	chieftain_of_the_sanctuary_yamanba = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.10
+		political_power_gain = 0.08
+		production_speed_infrastructure_factor = 0.10
+		army_core_defence_factor = 0.06
+		local_supplies = 0.10
+	}
+
+	# Sakata Nemuno - Yamanba Who Crosses the Border Gate
+	yamanba_who_crosses_the_border_gate = {
+		sprite = 13
+		random = no
+
+		mobilization_speed = 0.10
+		conscription_factor = 0.06
+		army_speed_factor = 0.05
+		supply_consumption_factor = -0.05
+		war_support_factor = 0.05
+		stability_factor = 0.03
+	}
+
+	# Houjuu Chimi - Unknown Disobedient Primitive Beast
+	unknown_disobedient_primitive_beast = {
+		sprite = 13
+		random = no
+
+		war_support_factor = 0.08
+		stability_factor = -0.04
+		army_speed_factor = 0.08
+		breakthrough_factor = 0.08
+		mobilization_speed = 0.10
+		enemy_operative_detection_chance_factor = 0.05
+	}
+
+	# Iwanaga Ariya - Princess of Permanence
+	the_princess_of_permanence = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.08
+		stability_factor = 0.12
+		research_speed_factor = 0.05
+		consumer_goods_factor = -0.06
+		economy_cost_factor = -0.18
+		trade_laws_cost_factor = -0.18
+	}
+
+	# Watari Nina - Apparition That Crafts Fictitious Cities
+	the_apparition_that_crafts_fictitious_cities = {
+		sprite = 13
+		random = no
+
+		political_power_gain = -0.3
+		stability_factor = -0.5
+		research_speed_factor = 0.4
+
+		planning_speed = 0.25
+		max_planning = 0.1
+	}
+
+	# Doushin Nareko - Guardian God of the Sanctuary
+	guardian_god_of_the_sanctuary = {
+		sprite = 13
+		random = no
+
+		army_core_defence_factor = 0.10
+		dig_in_speed_factor = 0.10
+		heat_attrition_factor = -0.10
+		stability_factor = 0.05
+		war_support_factor = 0.03
+	}
+
+	# Miyoi Okunoda - Geidontei Waitress
+	geidontei_waitress = {
+		sprite = 13
+		random = no
+
+		stability_factor = 0.05
+		war_support_factor = 0.06
+		war_support_weekly = 0.002
+		mobilization_speed = 0.08
+		consumer_goods_factor = -0.04
+	}
+
+	# Mizuchi Miyadeguchi - Jailbreak King
+	jailbreak_king = {
+		sprite = 13
+		random = no
+
+		operative_slot = 1
+		new_operative_slot_bonus = 10
+		own_operative_detection_chance_factor = -1
+		enemy_operative_detection_chance_factor = 1
+		operation_risk = -0.5
+		political_power_factor = -0.2
+		stability_factor = -0.35
+	}
+
+	# Sanae Kochiya - Miko of the Moriya Shrine
+	miko_of_the_moriya_shrine = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.12
+		stability_factor = 0.10
+		war_support_factor = 0.05
+		research_speed_factor = 0.04
+		conscription_factor = -0.03
+	}
+
+	# Sumireko Usami - Occult Maniac
+	occult_maniac = {
+		sprite = 13
+		random = no
+
+
+		political_power_factor = 0.15
+		research_speed_factor = 0.2
+		operation_steal_tech_outcome = 0.25
+	}
+
+	# Letty Whiterock - Winter Youkai
+	winter_youkai = {
+		sprite = 13
+		random = no
+
+		army_defence_factor = 0.10
+		dig_in_speed_factor = 0.1
+		winter_attrition_factor = -0.15
+		stability_factor = -0.05
+		army_org_factor = 0.05
+	}
+
+	# Hieda no Akyuu - Child of Miare
+	child_of_miare = {
+		sprite = 13
+		random = no
+
+		political_power_gain = 0.10
+		research_speed_factor = 0.1
+		production_speed_buildings_factor = 0.1
+		industrial_capacity_factory = 0.1
+		stability_factor = 0.05
+		drift_defence_factor = 0.15
+	}
+
+	# Kosuzu Motoori - Bookworm of the Human Village
+	bookworm_of_the_human_village = {
+		sprite = 13
+		random = no
+
+		research_speed_factor = 0.06
+		encryption_factor = 0.05
+		political_power_gain = 0.05
+		consumer_goods_factor = -0.03
+		stability_factor = 0.03
+	}
+
+	# Rinnosuke Morichika - Proprietor of Kourindou
+	proprietor_of_kourindou = {
+		sprite = 13
+		random = no
+
+		trade_laws_cost_factor = -0.20
+		economy_cost_factor = -0.10
+		consumer_goods_factor = -0.05
+		political_power_gain = 0.04
+		industry_repair_factor = 0.08
+		research_speed_factor = 0.03
+	}
+
+}

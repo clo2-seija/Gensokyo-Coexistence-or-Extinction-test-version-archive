@@ -1,0 +1,105 @@
+KYO_seija_distribution_category = {
+
+	KYO_seija_distribution_status = {
+		icon = generic_prepare_civil_war
+		available = { }
+		visible = { }
+		days_remove = 0
+		fire_only_once = no
+		days_re_enable = 1
+		cost = 0 
+		complete_effect = {
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+			
+			custom_effect_tooltip = KYO_seija_distribution_status_tooltip
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+				
+
+			KYO_seija_distribution_refresh_all = yes
+		}
+	}
+
+	KYO_seija_add_supply_common_youkai = {
+		icon = GFX_decision_generic_motorized
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 1
+		available = { KYO_seija_common_youkai_can_receive_supply = yes }
+		visible = { has_country_flag = KYO_seija_distribution_unlocked }
+		complete_effect = { KYO_seija_common_youkai_add_supply = yes }
+	}
+
+	KYO_seija_remove_supply_common_youkai = {
+		icon = GFX_decision_eng_trade_unions_demand
+		cost = 10
+		fire_only_once = no
+		days_re_enable = 1
+		available = { check_variable = { KYO_common_youkai_supply > 0 } }
+		visible = { has_country_flag = KYO_seija_distribution_unlocked }
+		complete_effect = { KYO_seija_common_youkai_remove_supply = yes }
+	}
+
+	KYO_seija_add_supply_humans = {
+		icon = GFX_decision_generic_motorized
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 1
+		available = { KYO_seija_humans_can_receive_supply = yes }
+		visible = { has_country_flag = KYO_seija_distribution_unlocked }
+		complete_effect = { KYO_seija_human_add_supply = yes }
+	}
+
+	KYO_seija_remove_supply_humans = {
+		icon = GFX_decision_eng_trade_unions_demand
+		cost = 10
+		fire_only_once = no
+		days_re_enable = 1
+		available = { check_variable = { KYO_human_supply > 0 } }
+		visible = { has_country_flag = KYO_seija_distribution_unlocked }
+		complete_effect = { KYO_seija_human_remove_supply = yes }
+	}
+
+	KYO_seija_add_supply_revolutionaries = {
+		icon = GFX_decision_generic_motorized
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 1
+		available = { KYO_seija_revolutionaries_can_receive_supply = yes }
+		visible = { has_country_flag = KYO_seija_distribution_unlocked }
+		complete_effect = { KYO_seija_revolutionary_add_supply = yes }
+	}
+
+	KYO_seija_remove_supply_revolutionaries = {
+		icon = GFX_decision_eng_trade_unions_demand
+		cost = 10
+		fire_only_once = no
+		days_re_enable = 1
+		available = { check_variable = { KYO_revolutionary_supply > 0 } }
+		visible = { has_country_flag = KYO_seija_distribution_unlocked }
+		complete_effect = { KYO_seija_revolutionary_remove_supply = yes }
+	}
+
+	KYO_seija_add_supply_opposition = {
+		icon = GFX_decision_generic_motorized
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 1
+		available = { KYO_seija_opposition_can_receive_supply = yes }
+		visible = { has_country_flag = KYO_seija_distribution_unlocked }
+		complete_effect = { KYO_seija_opposition_add_supply = yes }
+	}
+
+	KYO_seija_remove_supply_opposition = {
+		icon = GFX_decision_eng_trade_unions_demand
+		cost = 10
+		fire_only_once = no
+		days_re_enable = 1
+		available = { check_variable = { KYO_opposition_supply > 0 } }
+		visible = { has_country_flag = KYO_seija_distribution_unlocked }
+		complete_effect = { KYO_seija_opposition_remove_supply = yes }
+	}
+
+
+}

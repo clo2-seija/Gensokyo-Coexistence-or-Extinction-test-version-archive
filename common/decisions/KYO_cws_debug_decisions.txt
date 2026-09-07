@@ -1,0 +1,83 @@
+KYO_cws_debug_category = {
+	KYO_cws_debug_initialize_debug = {
+		icon = generic_operation
+		cost = 0
+		visible = { NOT = { has_country_flag = KYO_player_civil_war_faction } NOT = { has_country_flag = KYO_cws_debug_prewar_fast_forward_used } }
+		available = { NOT = { has_completed_focus = KYO_war_never_change } NOT = { any_country = { has_country_flag = KYO_civil_war_faction } } }
+		complete_effect = { KYO_cws_debug_fast_forward_prewar = yes }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_cws_debug_initialize = {
+		icon = generic_operation
+		cost = 0
+		visible = { has_country_flag = KYO_player_civil_war_faction }
+		available = { always = yes }
+		complete_effect = { KYO_cws_initialize_system = yes }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_cws_debug_simulate_yakumo = {
+		icon = generic_operation
+		cost = 0
+		visible = { KYO_cws_system_is_active = yes }
+		available = { always = yes }
+		complete_effect = { KYO_cws_enemy_yakumo_action = yes }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_cws_debug_simulate_remilia = {
+		icon = generic_operation
+		cost = 0
+		visible = { KYO_cws_system_is_active = yes }
+		available = { always = yes }
+		complete_effect = { KYO_cws_enemy_remilia_action = yes }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_cws_debug_simulate_hijiri = {
+		icon = generic_operation
+		cost = 0
+		visible = { KYO_cws_system_is_active = yes }
+		available = { always = yes }
+		complete_effect = { KYO_cws_enemy_hijiri_action = yes }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_cws_debug_simulate_seija = {
+		icon = generic_operation
+		cost = 0
+		visible = { KYO_cws_system_is_active = yes }
+		available = { always = yes }
+		complete_effect = { KYO_cws_enemy_seija_action = yes }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_cws_debug_grant_legacy = {
+		icon = generic_operation
+		cost = 0
+		visible = { KYO_cws_system_is_active = yes }
+		available = { always = yes }
+		complete_effect = { KYO_cws_assign_legacy_holder_player = yes }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_cws_debug_recalculate = {
+		icon = generic_operation
+		cost = 0
+		visible = { KYO_cws_system_is_active = yes }
+		available = { always = yes }
+		complete_effect = { KYO_cws_recalculate_support_tier = yes }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_cws_debug_cleanup = {
+		icon = generic_operation
+		cost = 0
+		visible = { KYO_cws_system_is_active = yes }
+		available = { always = yes }
+		complete_effect = { KYO_cws_cleanup_system = yes }
+		ai_will_do = { factor = 0 }
+	}
+
+}

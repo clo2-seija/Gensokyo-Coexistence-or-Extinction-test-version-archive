@@ -1,0 +1,156 @@
+KYO_love_story_category = {
+
+KYO_love_story_encounter = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 1
+		fire_only_once = yes
+		visible = {
+			has_country_flag = KYO_love_story_choices_unlocked
+			NOT = { has_country_flag = KYO_love_story_encounter_selected }
+		}
+		available = { always = yes }
+		complete_effect = {
+			set_country_flag = KYO_love_story_encounter_selected
+			country_event = { id = love_story.1 hours = 1 }
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+KYO_love_story_bamboo_maze = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 1
+		fire_only_once = yes
+		visible = {
+			has_country_flag = KYO_love_story_choices_unlocked
+			NOT = { has_country_flag = KYO_love_story_bamboo_maze_selected }
+		}
+		available = { always = yes }
+		complete_effect = {
+			set_country_flag = KYO_love_story_bamboo_maze_selected
+			country_event = { id = love_story.2 hours = 1 }
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+KYO_love_story_unchanging_court = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 1
+		fire_only_once = yes
+		visible = {
+			has_country_flag = KYO_love_story_choices_unlocked
+			NOT = { has_country_flag = KYO_love_story_unchanging_court_selected }
+		}
+		available = { always = yes }
+		complete_effect = {
+			set_country_flag = KYO_love_story_unchanging_court_selected
+			country_event = { id = love_story.6 hours = 1 }
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+KYO_love_story_night_dew_case = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 1
+		fire_only_once = yes
+		visible = {
+			has_country_flag = KYO_love_story_choices_unlocked
+			NOT = { has_country_flag = KYO_love_story_night_dew_case_selected }
+		}
+		available = { always = yes }
+		complete_effect = {
+			set_country_flag = KYO_love_story_night_dew_case_selected
+			country_event = { id = love_story.8 hours = 1 }
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+KYO_love_story_three_lines = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 1
+		fire_only_once = yes
+		visible = {
+			has_country_flag = KYO_love_story_choices_unlocked
+			NOT = { has_country_flag = KYO_love_story_three_lines_selected }
+		}
+		available = { always = yes }
+		complete_effect = {
+			set_country_flag = KYO_love_story_three_lines_selected
+			country_event = { id = love_story.10 hours = 1 }
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+KYO_love_story_bamboo_lantern = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 1
+		fire_only_once = yes
+		visible = {
+			has_country_flag = KYO_love_story_choices_unlocked
+			NOT = { has_country_flag = KYO_love_story_bamboo_lantern_selected }
+		}
+		available = { always = yes }
+		complete_effect = {
+			set_country_flag = KYO_love_story_bamboo_lantern_selected
+			country_event = { id = love_story.13 hours = 1 }
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+KYO_love_story_snow_garden = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 1
+		fire_only_once = yes
+		visible = {
+			has_country_flag = KYO_love_story_choices_unlocked
+			NOT = { has_country_flag = KYO_love_story_snow_garden_selected }
+		}
+		available = { always = yes }
+		complete_effect = {
+			set_country_flag = KYO_love_story_snow_garden_selected
+			country_event = { id = love_story.16 hours = 1 }
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+KYO_love_story_reversal_night = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 1
+		fire_only_once = yes
+		visible = {
+			has_country_flag = KYO_love_story_choices_unlocked
+			NOT = { has_country_flag = KYO_love_story_reversal_night_selected }
+		}
+		available = { always = yes }
+		complete_effect = {
+			set_country_flag = KYO_love_story_reversal_night_selected
+			country_event = { id = love_story.19 hours = 1 }
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+KYO_love_story_night_run = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 1
+		fire_only_once = yes
+		visible = {
+			has_country_flag = KYO_love_story_choices_unlocked
+			NOT = { has_country_flag = KYO_love_story_night_run_selected }
+		}
+		available = { always = yes }
+		complete_effect = {
+			set_country_flag = KYO_love_story_night_run_selected
+			country_event = { id = love_story.26 hours = 1 }
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+}

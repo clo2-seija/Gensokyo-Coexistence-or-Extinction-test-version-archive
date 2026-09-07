@@ -1,0 +1,765 @@
+KYO_lunar_invasion_warning_category = {
+	KYO_lunar_invasion_countdown = {
+		icon = generic_prepare_civil_war
+		priority = 100
+		days_mission_timeout = 730
+		selectable_mission = no
+		is_good = no
+		fire_only_once = yes
+		activation = {
+			has_country_flag = KYO_lunar_invasion_timer_active
+			NOT = { has_country_flag = KYO_lunar_invasion_started }
+		}
+		available = { always = no }
+		cancel_trigger = { has_country_flag = KYO_lunar_invasion_started }
+		timeout_effect = {
+			clr_country_flag = KYO_lunar_invasion_timer_active
+			set_country_flag = KYO_lunar_invasion_natural_start
+
+
+			custom_effect_tooltip = second_moon_war_start_tt
+
+			hidden_effect = {
+				KYO_begin_lunar_invasion = yes
+			}
+			
+		}
+	}
+}
+
+KYO_lunar_campaign_category = {
+
+KYO_lunar_extra_draw_6 = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 1
+		visible = {
+			has_country_flag = KYO_lunar_campaign_active
+			check_variable = { KYO_lunar_slot_6 = 0 }
+		}
+		available = {
+			OR = {
+				AND = { has_country_flag = KYO_lunar_next_draw_discount has_political_power > 9 }
+				AND = { NOT = { has_country_flag = KYO_lunar_next_draw_discount } has_political_power > 24 }
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = { has_country_flag = KYO_lunar_next_draw_discount has_political_power > 9 }
+				add_political_power = -10
+				clr_country_flag = KYO_lunar_next_draw_discount
+				KYO_lunar_draw_slot_6 = yes
+			}
+			else_if = {
+				limit = { NOT = { has_country_flag = KYO_lunar_next_draw_discount } has_political_power > 24 }
+				add_political_power = -25
+				KYO_lunar_draw_slot_6 = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_extra_draw_7 = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 1
+		visible = {
+			has_country_flag = KYO_lunar_campaign_active
+			check_variable = { KYO_lunar_slot_7 = 0 }
+			check_variable = { KYO_lunar_slot_6 > 0 }
+		}
+		available = {
+			OR = {
+				AND = { has_country_flag = KYO_lunar_next_draw_discount has_political_power > 24 }
+				AND = { NOT = { has_country_flag = KYO_lunar_next_draw_discount } has_political_power > 39 }
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = { has_country_flag = KYO_lunar_next_draw_discount has_political_power > 24 }
+				add_political_power = -25
+				clr_country_flag = KYO_lunar_next_draw_discount
+				KYO_lunar_draw_slot_7 = yes
+			}
+			else_if = {
+				limit = { NOT = { has_country_flag = KYO_lunar_next_draw_discount } has_political_power > 39 }
+				add_political_power = -40
+				KYO_lunar_draw_slot_7 = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_extra_draw_8 = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 1
+		visible = {
+			has_country_flag = KYO_lunar_campaign_active
+			check_variable = { KYO_lunar_slot_8 = 0 }
+			check_variable = { KYO_lunar_slot_7 > 0 }
+		}
+		available = {
+			OR = {
+				AND = { has_country_flag = KYO_lunar_next_draw_discount has_political_power > 44 }
+				AND = { NOT = { has_country_flag = KYO_lunar_next_draw_discount } has_political_power > 59 }
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = { has_country_flag = KYO_lunar_next_draw_discount has_political_power > 44 }
+				add_political_power = -45
+				clr_country_flag = KYO_lunar_next_draw_discount
+				KYO_lunar_draw_slot_8 = yes
+			}
+			else_if = {
+				limit = { NOT = { has_country_flag = KYO_lunar_next_draw_discount } has_political_power > 59 }
+				add_political_power = -60
+				KYO_lunar_draw_slot_8 = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_tactic_1 = {
+		icon = generic_prepare_civil_war
+		cost = 0
+		days_remove = 1
+		visible = {
+			has_country_flag = KYO_lunar_campaign_active
+			KYO_lunar_tactic_1_drawn = yes
+			NOT = { has_country_flag = KYO_lunar_tactic_1_used }
+		}
+		available = { KYO_lunar_tactic_1_affordable = yes }
+		complete_effect = {
+			if = {
+				limit = { check_variable = { KYO_lunar_free_orders > 0 } }
+				subtract_from_variable = { KYO_lunar_free_orders = 1 }
+				KYO_lunar_apply_tactic_1 = yes
+			}
+			else_if = {
+				limit = { KYO_lunar_tactic_1_resource_affordable = yes }
+				add_equipment_to_stockpile = { type = infantry_equipment amount = -400 }
+				KYO_lunar_apply_tactic_1 = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_tactic_2 = {
+		icon = generic_prepare_civil_war
+		cost = 0
+		days_remove = 1
+		visible = {
+			has_country_flag = KYO_lunar_campaign_active
+			KYO_lunar_tactic_2_drawn = yes
+			NOT = { has_country_flag = KYO_lunar_tactic_2_used }
+		}
+		available = { KYO_lunar_tactic_2_affordable = yes }
+		complete_effect = {
+			if = {
+				limit = { check_variable = { KYO_lunar_free_orders > 0 } }
+				subtract_from_variable = { KYO_lunar_free_orders = 1 }
+				KYO_lunar_apply_tactic_2 = yes
+			}
+			else_if = {
+				limit = { KYO_lunar_tactic_2_resource_affordable = yes }
+				add_equipment_to_stockpile = { type = infantry_equipment amount = -700 }
+				KYO_lunar_apply_tactic_2 = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_tactic_3 = {
+		icon = generic_prepare_civil_war
+		cost = 0
+		days_remove = 1
+		visible = {
+			has_country_flag = KYO_lunar_campaign_active
+			KYO_lunar_tactic_3_drawn = yes
+			NOT = { has_country_flag = KYO_lunar_tactic_3_used }
+		}
+		available = { KYO_lunar_tactic_3_affordable = yes }
+		complete_effect = {
+			if = {
+				limit = { check_variable = { KYO_lunar_free_orders > 0 } }
+				subtract_from_variable = { KYO_lunar_free_orders = 1 }
+				KYO_lunar_apply_tactic_3 = yes
+			}
+			else_if = {
+				limit = { KYO_lunar_tactic_3_resource_affordable = yes }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = -80 }
+				add_equipment_to_stockpile = { type = infantry_equipment amount = -100 }
+				KYO_lunar_apply_tactic_3 = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_tactic_4 = {
+		icon = generic_prepare_civil_war
+		cost = 0
+		days_remove = 1
+		visible = {
+			has_country_flag = KYO_lunar_campaign_active
+			KYO_lunar_tactic_4_drawn = yes
+			NOT = { has_country_flag = KYO_lunar_tactic_4_used }
+		}
+		available = { KYO_lunar_tactic_4_affordable = yes }
+		complete_effect = {
+			if = {
+				limit = { check_variable = { KYO_lunar_free_orders > 0 } }
+				subtract_from_variable = { KYO_lunar_free_orders = 1 }
+				KYO_lunar_apply_tactic_4 = yes
+			}
+			else_if = {
+				limit = { KYO_lunar_tactic_4_resource_affordable = yes }
+				add_command_power = -25
+				KYO_lunar_apply_tactic_4 = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_tactic_5 = {
+		icon = generic_prepare_civil_war
+		cost = 0
+		days_remove = 1
+		visible = {
+			has_country_flag = KYO_lunar_campaign_active
+			KYO_lunar_tactic_5_drawn = yes
+			NOT = { has_country_flag = KYO_lunar_tactic_5_used }
+		}
+		available = { KYO_lunar_tactic_5_affordable = yes }
+		complete_effect = {
+			if = {
+				limit = { check_variable = { KYO_lunar_free_orders > 0 } }
+				subtract_from_variable = { KYO_lunar_free_orders = 1 }
+				KYO_lunar_apply_tactic_5 = yes
+			}
+			else_if = {
+				limit = { KYO_lunar_tactic_5_resource_affordable = yes }
+				add_equipment_to_stockpile = { type = motorized_equipment amount = -180 }
+				KYO_lunar_apply_tactic_5 = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_tactic_6 = {
+		icon = generic_prepare_civil_war
+		cost = 0
+		days_remove = 1
+		visible = {
+			has_country_flag = KYO_lunar_campaign_active
+			KYO_lunar_tactic_6_drawn = yes
+			NOT = { has_country_flag = KYO_lunar_tactic_6_used }
+		}
+		available = { KYO_lunar_tactic_6_affordable = yes }
+		complete_effect = {
+			if = {
+				limit = { check_variable = { KYO_lunar_free_orders > 0 } }
+				subtract_from_variable = { KYO_lunar_free_orders = 1 }
+				KYO_lunar_apply_tactic_6 = yes
+			}
+			else_if = {
+				limit = { KYO_lunar_tactic_6_resource_affordable = yes }
+				add_equipment_to_stockpile = { type = support_equipment amount = -100 }
+				add_political_power = -15
+				KYO_lunar_apply_tactic_6 = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_tactic_7 = {
+		icon = generic_prepare_civil_war
+		cost = 0
+		days_remove = 1
+		visible = {
+			has_country_flag = KYO_lunar_campaign_active
+			KYO_lunar_tactic_7_drawn = yes
+			NOT = { has_country_flag = KYO_lunar_tactic_7_used }
+		}
+		available = { KYO_lunar_tactic_7_affordable = yes }
+		complete_effect = {
+			if = {
+				limit = { check_variable = { KYO_lunar_free_orders > 0 } }
+				subtract_from_variable = { KYO_lunar_free_orders = 1 }
+				KYO_lunar_apply_tactic_7 = yes
+			}
+			else_if = {
+				limit = { KYO_lunar_tactic_7_resource_affordable = yes }
+				add_command_power = -35
+				KYO_lunar_apply_tactic_7 = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_tactic_8 = {
+		icon = generic_prepare_civil_war
+		cost = 0
+		days_remove = 1
+		visible = {
+			has_country_flag = KYO_lunar_campaign_active
+			KYO_lunar_tactic_8_drawn = yes
+			NOT = { has_country_flag = KYO_lunar_tactic_8_used }
+		}
+		available = { KYO_lunar_tactic_8_affordable = yes }
+		complete_effect = {
+			if = {
+				limit = { check_variable = { KYO_lunar_free_orders > 0 } }
+				subtract_from_variable = { KYO_lunar_free_orders = 1 }
+				KYO_lunar_apply_tactic_8 = yes
+			}
+			else_if = {
+				limit = { KYO_lunar_tactic_8_resource_affordable = yes }
+				add_political_power = -35
+				KYO_lunar_apply_tactic_8 = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_tactic_9 = {
+		icon = generic_prepare_civil_war
+		cost = 0
+		days_remove = 1
+		visible = {
+			has_country_flag = KYO_lunar_campaign_active
+			KYO_lunar_tactic_9_drawn = yes
+			NOT = { has_country_flag = KYO_lunar_tactic_9_used }
+		}
+		available = { KYO_lunar_tactic_9_affordable = yes }
+		complete_effect = {
+			if = {
+				limit = { check_variable = { KYO_lunar_free_orders > 0 } }
+				subtract_from_variable = { KYO_lunar_free_orders = 1 }
+				KYO_lunar_apply_tactic_9 = yes
+			}
+			else_if = {
+				limit = { KYO_lunar_tactic_9_resource_affordable = yes }
+				army_experience = -20
+				KYO_lunar_apply_tactic_9 = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_tactic_10 = {
+		icon = generic_prepare_civil_war
+		cost = 0
+		days_remove = 1
+		visible = {
+			has_country_flag = KYO_lunar_campaign_active
+			KYO_lunar_tactic_10_drawn = yes
+			NOT = { has_country_flag = KYO_lunar_tactic_10_used }
+		}
+		available = { KYO_lunar_tactic_10_affordable = yes }
+		complete_effect = {
+			if = {
+				limit = { check_variable = { KYO_lunar_free_orders > 0 } }
+				subtract_from_variable = { KYO_lunar_free_orders = 1 }
+				KYO_lunar_apply_tactic_10 = yes
+			}
+			else_if = {
+				limit = { KYO_lunar_tactic_10_resource_affordable = yes }
+				add_equipment_to_stockpile = { type = motorized_equipment amount = -120 }
+				KYO_lunar_apply_tactic_10 = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_tactic_11 = {
+		icon = generic_prepare_civil_war
+		cost = 0
+		days_remove = 1
+		visible = {
+			has_country_flag = KYO_lunar_campaign_active
+			KYO_lunar_tactic_11_drawn = yes
+			NOT = { has_country_flag = KYO_lunar_tactic_11_used }
+		}
+		available = { KYO_lunar_tactic_11_affordable = yes }
+		complete_effect = {
+			if = {
+				limit = { check_variable = { KYO_lunar_free_orders > 0 } }
+				subtract_from_variable = { KYO_lunar_free_orders = 1 }
+				KYO_lunar_apply_tactic_11 = yes
+			}
+			else_if = {
+				limit = { KYO_lunar_tactic_11_resource_affordable = yes }
+				add_command_power = -50
+				add_equipment_to_stockpile = { type = small_plane_airframe amount = -40 }
+				KYO_lunar_apply_tactic_11 = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_tactic_12 = {
+		icon = generic_prepare_civil_war
+		cost = 0
+		days_remove = 1
+		visible = {
+			has_country_flag = KYO_lunar_campaign_active
+			KYO_lunar_tactic_12_drawn = yes
+			NOT = { has_country_flag = KYO_lunar_tactic_12_used }
+		}
+		available = { KYO_lunar_tactic_12_affordable = yes }
+		complete_effect = {
+			if = {
+				limit = { check_variable = { KYO_lunar_free_orders > 0 } }
+				subtract_from_variable = { KYO_lunar_free_orders = 1 }
+				KYO_lunar_apply_tactic_12 = yes
+			}
+			else_if = {
+				limit = { KYO_lunar_tactic_12_resource_affordable = yes }
+				add_political_power = -40
+				add_command_power = -25
+				KYO_lunar_apply_tactic_12 = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_tactic_13 = {
+		icon = generic_prepare_civil_war
+		cost = 0
+		days_remove = 1
+		visible = {
+			has_country_flag = KYO_lunar_campaign_active
+			KYO_lunar_tactic_13_drawn = yes
+			NOT = { has_country_flag = KYO_lunar_tactic_13_used }
+		}
+		available = { KYO_lunar_tactic_13_affordable = yes }
+		complete_effect = {
+			if = {
+				limit = { check_variable = { KYO_lunar_free_orders > 0 } }
+				subtract_from_variable = { KYO_lunar_free_orders = 1 }
+				KYO_lunar_apply_tactic_13 = yes
+			}
+			else_if = {
+				limit = { KYO_lunar_tactic_13_resource_affordable = yes }
+				add_political_power = -45
+				KYO_lunar_apply_tactic_13 = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_tactic_14 = {
+		icon = generic_prepare_civil_war
+		cost = 0
+		days_remove = 1
+		visible = {
+			has_country_flag = KYO_lunar_campaign_active
+			KYO_lunar_tactic_14_drawn = yes
+			NOT = { has_country_flag = KYO_lunar_tactic_14_used }
+		}
+		available = { KYO_lunar_tactic_14_affordable = yes }
+		complete_effect = {
+			if = {
+				limit = { check_variable = { KYO_lunar_free_orders > 0 } }
+				subtract_from_variable = { KYO_lunar_free_orders = 1 }
+				KYO_lunar_apply_tactic_14 = yes
+			}
+			else_if = {
+				limit = { KYO_lunar_tactic_14_resource_affordable = yes }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = -100 }
+				add_command_power = -45
+				KYO_lunar_apply_tactic_14 = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_tactic_15 = {
+		icon = generic_prepare_civil_war
+		cost = 0
+		days_remove = 1
+		visible = {
+			has_country_flag = KYO_lunar_campaign_active
+			KYO_lunar_tactic_15_drawn = yes
+			NOT = { has_country_flag = KYO_lunar_tactic_15_used }
+		}
+		available = { KYO_lunar_tactic_15_affordable = yes }
+		complete_effect = {
+			if = {
+				limit = { check_variable = { KYO_lunar_free_orders > 0 } }
+				subtract_from_variable = { KYO_lunar_free_orders = 1 }
+				KYO_lunar_apply_tactic_15 = yes
+			}
+			else_if = {
+				limit = { KYO_lunar_tactic_15_resource_affordable = yes }
+				add_equipment_to_stockpile = { type = motorized_equipment amount = -150 }
+				add_political_power = -20
+				KYO_lunar_apply_tactic_15 = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_tactic_16 = {
+		icon = generic_prepare_civil_war
+		cost = 0
+		days_remove = 1
+		visible = {
+			has_country_flag = KYO_lunar_campaign_active
+			KYO_lunar_tactic_16_drawn = yes
+			NOT = { has_country_flag = KYO_lunar_tactic_16_used }
+		}
+		available = { KYO_lunar_tactic_16_affordable = yes }
+		complete_effect = {
+			if = {
+				limit = { check_variable = { KYO_lunar_free_orders > 0 } }
+				subtract_from_variable = { KYO_lunar_free_orders = 1 }
+				KYO_lunar_apply_tactic_16 = yes
+			}
+			else_if = {
+				limit = { KYO_lunar_tactic_16_resource_affordable = yes }
+				add_equipment_to_stockpile = { type = support_equipment amount = -120 }
+				army_experience = -30
+				KYO_lunar_apply_tactic_16 = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_tactic_17 = {
+		icon = generic_prepare_civil_war
+		cost = 0
+		days_remove = 1
+		visible = {
+			has_country_flag = KYO_lunar_campaign_active
+			KYO_lunar_tactic_17_drawn = yes
+			NOT = { has_country_flag = KYO_lunar_tactic_17_used }
+		}
+		available = { KYO_lunar_tactic_17_affordable = yes }
+		complete_effect = {
+			if = {
+				limit = { check_variable = { KYO_lunar_free_orders > 0 } }
+				subtract_from_variable = { KYO_lunar_free_orders = 1 }
+				KYO_lunar_apply_tactic_17 = yes
+			}
+			else_if = {
+				limit = { KYO_lunar_tactic_17_resource_affordable = yes }
+				add_political_power = -70
+				add_command_power = -60
+				KYO_lunar_apply_tactic_17 = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_tactic_18 = {
+		icon = generic_prepare_civil_war
+		cost = 0
+		days_remove = 1
+		visible = {
+			has_country_flag = KYO_lunar_campaign_active
+			KYO_lunar_tactic_18_drawn = yes
+			NOT = { has_country_flag = KYO_lunar_tactic_18_used }
+		}
+		available = { KYO_lunar_tactic_18_affordable = yes }
+		complete_effect = {
+			if = {
+				limit = { check_variable = { KYO_lunar_free_orders > 0 } }
+				subtract_from_variable = { KYO_lunar_free_orders = 1 }
+				KYO_lunar_apply_tactic_18 = yes
+			}
+			else_if = {
+				limit = { KYO_lunar_tactic_18_resource_affordable = yes }
+				army_experience = -45
+				KYO_lunar_apply_tactic_18 = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_tactic_19 = {
+		icon = generic_prepare_civil_war
+		cost = 0
+		days_remove = 1
+		visible = {
+			has_country_flag = KYO_lunar_campaign_active
+			KYO_lunar_tactic_19_drawn = yes
+			NOT = { has_country_flag = KYO_lunar_tactic_19_used }
+		}
+		available = { KYO_lunar_tactic_19_affordable = yes }
+		complete_effect = {
+			if = {
+				limit = { check_variable = { KYO_lunar_free_orders > 0 } }
+				subtract_from_variable = { KYO_lunar_free_orders = 1 }
+				KYO_lunar_apply_tactic_19 = yes
+			}
+			else_if = {
+				limit = { KYO_lunar_tactic_19_resource_affordable = yes }
+				army_experience = -30
+				add_political_power = -20
+				KYO_lunar_apply_tactic_19 = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_tactic_20 = {
+		icon = generic_prepare_civil_war
+		cost = 0
+		days_remove = 1
+		visible = {
+			has_country_flag = KYO_lunar_campaign_active
+			KYO_lunar_tactic_20_drawn = yes
+			NOT = { has_country_flag = KYO_lunar_tactic_20_used }
+		}
+		available = { KYO_lunar_tactic_20_affordable = yes }
+		complete_effect = {
+			if = {
+				limit = { check_variable = { KYO_lunar_free_orders > 0 } }
+				subtract_from_variable = { KYO_lunar_free_orders = 1 }
+				KYO_lunar_apply_tactic_20 = yes
+			}
+			else_if = {
+				limit = { KYO_lunar_tactic_20_resource_affordable = yes }
+				add_equipment_to_stockpile = { type = support_equipment amount = -80 }
+				add_command_power = -30
+				KYO_lunar_apply_tactic_20 = yes
+			}
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+}
+
+KYO_lunar_reconstruction_category = {
+
+KYO_lunar_reconstruct_purification_archives = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 14
+		fire_only_once = yes
+		visible = { has_country_flag = KYO_lunar_reconstruction_stage_1 }
+		available = { has_country_flag = KYO_lunar_reconstruction_stage_1 }
+		complete_effect = {
+			clr_country_flag = KYO_lunar_reconstruction_stage_1
+			country_event = { id = yakumo.70 hours = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_restore_eirin_and_kaguya = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 14
+		fire_only_once = yes
+		visible = { has_country_flag = KYO_lunar_reconstruction_stage_2 }
+		available = { has_country_flag = KYO_lunar_reconstruction_stage_2 }
+		complete_effect = {
+			clr_country_flag = KYO_lunar_reconstruction_stage_2
+			country_event = { id = yakumo.71 hours = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_issue_reconstruction_edict = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 14
+		fire_only_once = yes
+		visible = { has_country_flag = KYO_lunar_reconstruction_stage_3 }
+		available = { has_country_flag = KYO_lunar_reconstruction_stage_3 }
+		complete_effect = {
+			clr_country_flag = KYO_lunar_reconstruction_stage_3
+			country_event = { id = yakumo.72 hours = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_define_common_sky = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 14
+		fire_only_once = yes
+		visible = { has_country_flag = KYO_lunar_reconstruction_stage_4 }
+		available = { has_country_flag = KYO_lunar_reconstruction_stage_4 }
+		complete_effect = {
+			clr_country_flag = KYO_lunar_reconstruction_stage_4
+			country_event = { id = yakumo.73 hours = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_return_home = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 14
+		fire_only_once = yes
+		visible = { has_country_flag = KYO_lunar_reconstruction_stage_5 }
+		available = { has_country_flag = KYO_lunar_reconstruction_stage_5 }
+		complete_effect = {
+			clr_country_flag = KYO_lunar_reconstruction_stage_5
+			country_event = { id = yakumo.76 hours = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_science_and_fantasy = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 14
+		fire_only_once = yes
+		visible = { has_country_flag = KYO_lunar_reconstruction_stage_6 }
+		available = { has_country_flag = KYO_lunar_reconstruction_stage_6 }
+		complete_effect = {
+			clr_country_flag = KYO_lunar_reconstruction_stage_6
+			country_event = { id = yakumo.77 hours = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_reconcile_merry = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 14
+		fire_only_once = yes
+		visible = { has_country_flag = KYO_lunar_reconstruction_stage_7 }
+		available = { has_country_flag = KYO_lunar_reconstruction_stage_7 }
+		complete_effect = {
+			clr_country_flag = KYO_lunar_reconstruction_stage_7
+			country_event = { id = yakumo.78 hours = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_same_starry_sky = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 14
+		fire_only_once = yes
+		visible = { has_country_flag = KYO_lunar_reconstruction_stage_8 }
+		available = { has_country_flag = KYO_lunar_reconstruction_stage_8 }
+		complete_effect = {
+			clr_country_flag = KYO_lunar_reconstruction_stage_8
+			country_event = { id = yakumo.79 hours = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+KYO_lunar_route_epilogue = {
+		icon = generic_political_discourse
+		cost = 0
+		days_remove = 14
+		fire_only_once = yes
+		visible = { has_country_flag = KYO_lunar_reconstruction_stage_9 }
+		available = { has_country_flag = KYO_lunar_reconstruction_stage_9 }
+		complete_effect = {
+			clr_country_flag = KYO_lunar_reconstruction_stage_9
+			country_event = sp_event.7
+			country_event = { id = yakumo.99 hours = 3 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+}

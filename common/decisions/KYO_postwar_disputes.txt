@@ -1,0 +1,434 @@
+KYO_postwar_interference_category = {
+
+
+
+	postwar_interference_time_limit={
+
+		icon = generic_prepare_civil_war
+
+		days_mission_timeout = 200
+
+		activation = {
+        	has_completed_focus = KYO_after_war_reform
+			NOT = {
+				has_completed_focus = KYO_future_start
+			}
+    	} 
+		
+		#条件
+		is_good = no
+
+		available = {
+			always = no
+			#条件，持续检测
+		}
+		visible = {
+			always = yes
+			#条件，持续检测,满足才显示决议
+		}
+
+		cancel_trigger = {
+			has_completed_focus = KYO_future_start
+		}
+		
+		#修正
+		
+		cancel_effect = {
+
+			
+
+		}
+		
+
+		#效果
+		timeout_effect = {
+
+			
+			
+			complete_national_focus = KYO_future_start
+			
+    	}
+	}
+
+	KYO_reconstruct_anonymous_coordinates = {
+	icon = generic_operation
+	cost = 50
+	fire_only_once = yes
+
+	visible = {
+		has_country_flag = KYO_lunar_scale_active
+		NOT = {
+			has_country_flag = KYO_lunar_scale_resolved
+		}
+		is_ai = no
+	}
+
+	available = {
+		
+	}
+
+	complete_effect = {
+		KYO_add_lunar_evidence = yes
+		KYO_lunar_scale_add_left_1 = yes
+
+		# 解锁下一个决议
+		set_country_flag = KYO_postwar_coordinates_reconstructed
+
+		hidden_effect = {
+			country_event = {
+				id = KYO_yukari_legacy.2
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+
+KYO_prepare_distributed_anchors = {
+	icon = generic_construction
+	cost = 50
+	fire_only_once = yes
+
+	visible = {
+		has_country_flag = KYO_lunar_scale_active
+		has_country_flag = KYO_postwar_coordinates_reconstructed
+		NOT = {
+			has_country_flag = KYO_lunar_scale_resolved
+		}
+		is_ai = no
+	}
+
+	complete_effect = {
+		KYO_add_ritual_protection = yes
+		
+
+		# 解锁下一个决议
+		set_country_flag = KYO_protection_distributed_anchors
+
+		hidden_effect = {
+			country_event = {
+				id = KYO_yukari_legacy.3
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+
+KYO_prepare_false_coordinates = {
+	icon = generic_operation
+	cost = 50
+	fire_only_once = yes
+
+	visible = {
+		has_country_flag = KYO_lunar_scale_active
+		has_country_flag = KYO_protection_distributed_anchors
+		NOT = {
+			has_country_flag = KYO_lunar_scale_resolved
+		}
+		is_ai = no
+	}
+
+	complete_effect = {
+		KYO_add_ritual_protection = yes
+		
+
+		# 解锁下一个决议
+		set_country_flag = KYO_protection_false_coordinates
+
+		hidden_effect = {
+			country_event = {
+				id = KYO_yukari_legacy.4
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+
+KYO_prepare_reverse_refraction = {
+	icon = generic_construction
+	cost = 50
+	fire_only_once = yes
+
+	visible = {
+		has_country_flag = KYO_lunar_scale_active
+		has_country_flag = KYO_protection_false_coordinates
+		NOT = {
+			has_country_flag = KYO_lunar_scale_resolved
+		}
+		is_ai = no
+	}
+
+	available = {
+		has_completed_focus = KYO_make_youkai_warlord_surrender
+	}
+
+	complete_effect = {
+		KYO_add_ritual_protection = yes
+		
+
+		# 解锁下一个决议
+		set_country_flag = KYO_protection_reverse_refraction
+		set_country_flag = KYO_renko_scale_offer_unlocked
+
+		hidden_effect = {
+			country_event = {
+				id = KYO_yukari_legacy.5
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+
+# 莲子：让紫活着，使未来仍能被观测与控制。
+KYO_renko_model_controllable_future = {
+	icon = generic_operation
+	cost = 35
+	fire_only_once = yes
+
+	visible = {
+		has_country_flag = KYO_lunar_scale_active
+		has_country_flag = KYO_renko_scale_offer_unlocked
+		has_country_flag = KYO_protection_reverse_refraction
+		NOT = {
+			has_country_flag = KYO_lunar_scale_resolved
+		}
+		is_ai = no
+	}
+
+	complete_effect = {
+		
+
+		# 解锁下一个决议
+		set_country_flag = KYO_renko_future_model_used
+
+		hidden_effect = {
+			country_event = {
+				id = KYO_yukari_legacy.6
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+
+# 探女交出月都使用的暗号与观测语法。
+KYO_sagume_supply_lunar_cipher = {
+	icon = generic_operation
+	cost = 45
+	fire_only_once = yes
+
+	visible = {
+		has_country_flag = KYO_lunar_scale_active
+		has_country_flag = KYO_renko_future_model_used
+		NOT = {
+			has_country_flag = KYO_lunar_scale_resolved
+		}
+		is_ai = no
+	}
+
+	available = {
+		has_completed_focus = KYO_kill_the_rebel
+	}
+
+	complete_effect = {
+		
+
+		# 解锁下一个决议
+		set_country_flag = KYO_sagume_lunar_cipher_supplied
+
+		hidden_effect = {
+			country_event = {
+				id = KYO_yukari_legacy.7
+			}
+		}
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+
+# 打开通往最终行动的道路。
+KYO_sagume_open_path_for_seija = {
+	icon = generic_political_pressure
+	cost = 30
+	fire_only_once = yes
+
+	visible = {
+		has_country_flag = KYO_lunar_scale_active
+		has_country_flag = KYO_sagume_lunar_cipher_supplied
+		NOT = {
+			has_country_flag = KYO_lunar_scale_resolved
+		}
+		is_ai = no
+	}
+	available = {
+		has_completed_focus = KYO_all_bow_yukari
+	}
+
+	complete_effect = {
+		KYO_lunar_scale_add_left_1 = yes
+
+		# 记录最终行动已经完成
+		set_country_flag = KYO_sagume_path_for_seija_opened
+
+		hidden_effect = {
+			country_event = {
+				id = KYO_yukari_legacy.8
+				days = 3
+			}
+		}
+
+	}
+
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+	# 蕾米莉亞看見紫死後的內戰命運，並用能力把它固定成現實。
+	KYO_remilia_bend_fate_toward_civil_war = {
+		icon = generic_political_pressure
+		cost = 10
+		fire_only_once = yes
+		visible = {
+			
+			has_country_flag = KYO_lunar_scale_active
+			has_country_flag = KYO_sagume_path_for_seija_opened
+			NOT = { has_country_flag = KYO_lunar_scale_resolved }
+			is_ai = no
+		}
+		complete_effect = {
+			set_country_flag = KYO_remilia_fate_intervention_used
+			KYO_lunar_scale_add_right_1 = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	# 眾神把紫之死定義為必要祭品，讓白蓮在災後取得道德與信仰正當性。
+	KYO_gods_consecrate_yukari_sacrifice = {
+		icon = generic_political_pressure
+		cost = 10
+		fire_only_once = yes
+		visible = {
+			
+			has_country_flag = KYO_lunar_scale_active
+			has_country_flag = KYO_sagume_path_for_seija_opened
+			NOT = { has_country_flag = KYO_lunar_scale_resolved }
+			is_ai = no
+		}
+		complete_effect = {
+			set_country_flag = KYO_gods_sacrifice_intervention_used
+			KYO_lunar_scale_add_right_2 = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
+}
+
+KYO_lunar_scale_debug_category = {
+	KYO_debug_start_lunar_scale = {
+		icon = generic_operation
+		cost = 0
+		fire_only_once = no
+		visible = {
+			is_debug = yes
+			NOT = { has_country_flag = KYO_lunar_scale_active }
+		}
+		complete_effect = {
+			set_country_flag = KYO_postwar_transition_active
+			KYO_initialize_lunar_scale = yes
+			set_country_flag = KYO_renko_scale_offer_unlocked
+			set_country_flag = KYO_sagume_scale_offer_unlocked
+			set_country_flag = KYO_remilia_scale_offer_unlocked
+			set_country_flag = KYO_gods_scale_offer_unlocked
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_debug_lunar_scale_left_2 = {
+		icon = generic_operation
+		cost = 0
+		fire_only_once = no
+		visible = {
+			is_debug = yes
+			has_country_flag = KYO_lunar_scale_active
+			NOT = { has_country_flag = KYO_lunar_scale_resolved }
+		}
+		complete_effect = { KYO_lunar_scale_add_left_1 = yes }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_debug_lunar_scale_right_2 = {
+		icon = generic_operation
+		cost = 0
+		fire_only_once = no
+		visible = {
+			is_debug = yes
+			has_country_flag = KYO_lunar_scale_active
+			NOT = { has_country_flag = KYO_lunar_scale_resolved }
+		}
+		complete_effect = { KYO_lunar_scale_add_right_1 = yes }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_debug_force_lunar_scale_left_decision = {
+		icon = generic_operation
+		cost = 0
+		fire_only_once = no
+		visible = {
+			is_debug = yes
+			has_country_flag = KYO_lunar_scale_active
+			NOT = { has_country_flag = KYO_lunar_scale_resolved }
+		}
+		complete_effect = { KYO_debug_force_lunar_scale_left = yes }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_debug_force_lunar_scale_right_decision = {
+		icon = generic_operation
+		cost = 0
+		fire_only_once = no
+		visible = {
+			is_debug = yes
+			has_country_flag = KYO_lunar_scale_active
+			NOT = { has_country_flag = KYO_lunar_scale_resolved }
+		}
+		complete_effect = { KYO_debug_force_lunar_scale_right = yes }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_debug_resolve_lunar_scale = {
+		icon = generic_operation
+		cost = 0
+		fire_only_once = no
+		visible = {
+			is_debug = yes
+			has_country_flag = KYO_lunar_scale_active
+			NOT = { has_country_flag = KYO_lunar_scale_resolved }
+		}
+		complete_effect = {
+			KYO_finalize_lunar_scale = yes
+			country_event = { id = KYO_afterwar.18 days = 1 }
+		}
+		ai_will_do = { factor = 0 }
+	}
+}
