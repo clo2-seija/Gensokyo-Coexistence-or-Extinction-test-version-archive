@@ -1,0 +1,1365 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_FOR_Seizo_Kobayashi_large"
+		texturefile = "gfx/characters/Formosa/Seizo_Kobayashi.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_Seija_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Seija_large.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_Seija_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Seija_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_Remilia_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Remilia_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_Remilia_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Remilia_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_Byakuren_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Byakuren_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_Byakuren_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Byakuren_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_Yukari_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Yukari_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_Yukari_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Yukari_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_Kasen_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Kasen_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_Kasen_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Kasen_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_Okina_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Okina_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_Okina_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Okina_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_Chen_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Chen_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_Chen_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Chen_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_Ran_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Ran_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_Ran_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Ran_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_Flandre_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Flandre_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_Flandre_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Flandre_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_Eirin_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Eirin_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_Eirin_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Eirin_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_kaguya_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Kaguya_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_kaguya_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Kaguya_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_Aya_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Aya_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_Aya_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Aya_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_Hatate_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Hatate_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_Hatate_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Hatate_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_Momiji_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Momiji_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_Momiji_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Momiji_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_Megumu_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Megumu_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_Megumu_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Megumu_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_Cirno_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Cirno_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_Cirno_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Cirno_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_Nue_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Nue_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_Nue_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Nue_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_yuyuko_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_yuyuko_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_yuyuko_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_yuyuko_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_youmu_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_youmu_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_youmu_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_youmu_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_sagume_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_sagume_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_sagume_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_sagume_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_eiki_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_eiki_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_eiki_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_eiki_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_seiga_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_seiga_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_seiga_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_seiga_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_momoyo_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_momoyo_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_momoyo_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_momoyo_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_larva_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_larva_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_larva_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_larva_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_yamame_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_yamame_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_yamame_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_yamame_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_rumia_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_rumia_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_rumia_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_rumia_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_wriggle_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_wriggle_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_wriggle_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_wriggle_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_tokiko_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_tokiko_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_tokiko_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_tokiko_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_sekibanki_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_sekibanki_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_sekibanki_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_sekibanki_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_kutaka_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_kutaka_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_kutaka_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_kutaka_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_mystia_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_mystia_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_mystia_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_mystia_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_nitori_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_nitori_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_nitori_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_nitori_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_merry_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_merry_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_merry_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_merry_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_renko_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_renko_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_renko_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_renko_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_satori_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_satori_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_satori_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_satori_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_yuma_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_yuma_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_yuma_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_yuma_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_sakuya_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_sakuya_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_sakuya_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_sakuya_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_reimu_youkai_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_reimu_youkai_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_reimu_youkai_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_reimu_youkai_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_tewi_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_tewi_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_tewi_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_tewi_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_shou_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_shou_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_shou_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_shou_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_kogasa_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_kogasa_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_kogasa_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_kogasa_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_clownpiece_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_clownpiece_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_clownpiece_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_clownpiece_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_orin_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_orin_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_orin_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_orin_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_koakuma_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_koakuma_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_koakuma_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_koakuma_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_meiling_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_meiling_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_meiling_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_meiling_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_parsee_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_parsee_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_parsee_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_parsee_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_okuu_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_okuu_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_okuu_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_okuu_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_tenshi_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_tenshi_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_tenshi_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_tenshi_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_reimu_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_reimu_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_reimu_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_reimu_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_patchouli_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_patchouli_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_patchouli_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_patchouli_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_reimu_sad_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_reimu_sad_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_reimu_sad_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_reimu_sad_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_yachie_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_yachie_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_yachie_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_yachie_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_marisa_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_marisa_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_marisa_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_marisa_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_reiko_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_reiko_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_reiko_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_reiko_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_kagerou_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_kagerou_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_kagerou_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_kagerou_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_wakasagihime_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_wakasagihime_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_wakasagihime_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_wakasagihime_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_chimata_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_chimata_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_chimata_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_chimata_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_futo_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_futo_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_futo_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_futo_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_reisen_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_reisen_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_reisen_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_reisen_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_benben_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_benben_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_benben_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_benben_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_keine_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_keine_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_keine_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_keine_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_tsukasa_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_tsukasa_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_tsukasa_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_tsukasa_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_suika_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_suika_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_suika_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_suika_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_komachi_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_komachi_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_komachi_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_komachi_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_kyouko_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_kyouko_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_kyouko_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_kyouko_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_shinmyoumaru_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_shinmyoumaru_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_shinmyoumaru_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_shinmyoumaru_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_kanako_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_kanako_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_kanako_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_kanako_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_lyrica_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_lyrica_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_lyrica_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_lyrica_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_merlin_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_merlin_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_merlin_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_merlin_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_lunasa_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_lunasa_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_lunasa_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_lunasa_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_takane_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_takane_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_takane_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_takane_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_koishi_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_koishi_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_koishi_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_koishi_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_tojiko_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_tojiko_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_tojiko_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_tojiko_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_rin_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_rin_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_rin_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_rin_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_junko_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_junko_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_junko_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_junko_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_narumi_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_narumi_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_narumi_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_narumi_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_murasa_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_murasa_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_murasa_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_murasa_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_ichirin_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_ichirin_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_ichirin_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_ichirin_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_yatsuhashi_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_yatsuhashi_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_yatsuhashi_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_yatsuhashi_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_hina_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_hina_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_hina_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_hina_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_nazrin_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_nazrin_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_nazrin_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_nazrin_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_mika_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_mika_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_mika_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_mika_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_Shizuha_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Shizuha_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_Shizuha_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_Shizuha_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_toyohime_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_toyohime_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_toyohime_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_toyohime_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_mai_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_mai_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_mai_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_mai_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_asama_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_asama_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_asama_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_asama_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_iku_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_iku_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_iku_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_iku_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_daiyosei_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_daiyosei_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_daiyosei_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_daiyosei_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_satono_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_satono_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_satono_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_satono_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_aunn_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_aunn_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_aunn_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_aunn_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_minoriko_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_minoriko_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_minoriko_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_minoriko_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_evil_kasen_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_evil_kasen_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_evil_kasen_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_evil_kasen_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_yuugi_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_yuugi_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_yuugi_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_yuugi_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_miko_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_miko_large.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_miko_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_miko_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_keiki_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_keiki_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_keiki_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_keiki_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_saki_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_saki_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_saki_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_saki_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_yuuka_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_yuuka_large.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_yuuka_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_yuuka_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_suwako_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_suwako_large.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_suwako_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_suwako_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_yoshika_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_yoshika_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_yoshika_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_yoshika_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_kokoro_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_kokoro_large.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_kokoro_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_kokoro_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_alice_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_alice_large.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_alice_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_alice_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_mokou_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_mokou_large.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_mokou_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_mokou_advisor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_sunny_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_sunny_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_sunny_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_sunny_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_luna_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_luna_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_luna_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_luna_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_star_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_star_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_star_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_star_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_iku_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_iku_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_iku_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_iku_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_medicine_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_medicine_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_medicine_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_medicine_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_lily_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_lily_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_lily_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_lily_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_mamizou_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_mamizou_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_mamizou_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_mamizou_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_seiran_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_seiran_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_seiran_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_seiran_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_ringo_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_ringo_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_ringo_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_ringo_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_doremy_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_doremy_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_doremy_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_doremy_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_hecatia_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_hecatia_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_hecatia_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_hecatia_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_shion_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_shion_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_shion_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_shion_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_joon_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_joon_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_joon_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_joon_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_kisume_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_kisume_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_kisume_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_kisume_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_eika_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_eika_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_eika_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_eika_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_urumi_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_urumi_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_urumi_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_urumi_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_sannyo_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_sannyo_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_sannyo_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_sannyo_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_misumaru_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_misumaru_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_misumaru_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_misumaru_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_zanmu_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_zanmu_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_zanmu_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_zanmu_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_enoko_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_enoko_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_enoko_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_enoko_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_biten_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_biten_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_biten_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_biten_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_hisami_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_hisami_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_hisami_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_hisami_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_chiyari_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_chiyari_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_chiyari_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_chiyari_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_reisen_2_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_reisen_2_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_reisen_2_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_reisen_2_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_yorihime_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_yorihime_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_yorihime_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_yorihime_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_ubame_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_ubame_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_ubame_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_ubame_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_nemuno_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_nemuno_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_nemuno_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_nemuno_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_chimi_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_chimi_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_chimi_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_chimi_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_ariya_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_ariya_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_ariya_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_ariya_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_nina_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_nina_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_nina_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_nina_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_nareko_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_nareko_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_nareko_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_nareko_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_miyoi_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_miyoi_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_miyoi_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_miyoi_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_mizuchi_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_mizuchi_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_mizuchi_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_mizuchi_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_sanae_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_sanae_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_sanae_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_sanae_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_sumireko_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_sumireko_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_sumireko_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_sumireko_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_letty_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_letty_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_letty_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_letty_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_akyuu_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_akyuu_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_akyuu_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_akyuu_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_kosuzu_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_kosuzu_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_kosuzu_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_kosuzu_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_gensokyo_rinnosuke_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_rinnosuke_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_rinnosuke_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_rinnosuke_advisor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_mayumi_large"
+		texturefile = "gfx/characters/gensokyo/gensokyo_mayumi_large.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_gensokyo_mayumi_advisor"
+		texturefile = "gfx/characters/gensokyo/gensokyo_mayumi_advisor.dds"
+	}
+
+
+	# Remilia (bloody)
+	SpriteType = {
+		name = "GFX_gensokyo_remilia_death_large"
+		texturefile = "gfx/characters/gensokyo/Remilia_death.png"
+	}
+	
+	# Seija (distorted)
+	SpriteType = {
+		name = "GFX_gensokyo_seija_death_large"
+		texturefile = "gfx/characters/gensokyo/Seija_death.png"
+		
+	}
+	
+
+	# Chen (screaming)
+	SpriteType = {
+		name = "GFX_gensokyo_chen_death_large"
+		texturefile = "gfx/characters/gensokyo/Chen_death.png"
+		
+	}
+	
+	# Byakuren Hijiri (neon blood)
+	SpriteType = {
+		name = "GFX_gensokyo_hijiri_death_large"
+		texturefile = "gfx/characters/gensokyo/Hijiri_death.png"
+		
+	}
+
+	spriteType = {
+    name = "GFX_gensokyo_Chen_new"
+    texturefile = "gfx/characters/gensokyo_alternative/gensokyo_Chen_new.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_Eirin_new"
+		texturefile = "gfx/characters/gensokyo_alternative/gensokyo_Eirin_new.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_Kaguya_new"
+		texturefile = "gfx/characters/gensokyo_alternative/gensokyo_Kaguya_new.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_Ran_new"
+		texturefile = "gfx/characters/gensokyo_alternative/gensokyo_Ran_new.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_Reimu_new"
+		texturefile = "gfx/characters/gensokyo_alternative/gensokyo_Reimu_new.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_toyohime_new"
+		texturefile = "gfx/characters/gensokyo_alternative/gensokyo_toyohime_new.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_watasuki"
+		texturefile = "gfx/characters/gensokyo_alternative/gensokyo_watasuki.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_yorihime_new"
+		texturefile = "gfx/characters/gensokyo_alternative/gensokyo_yorihime_new.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_youmu_new"
+		texturefile = "gfx/characters/gensokyo_alternative/gensokyo_youmu_new.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_Yukari_new"
+		texturefile = "gfx/characters/gensokyo_alternative/gensokyo_Yukari_new.dds"
+	}
+
+	spriteType = {
+		name = "GFX_gensokyo_yuyuko_new"
+		texturefile = "gfx/characters/gensokyo_alternative/gensokyo_yuyuko_new.dds"
+	}
+	
+
+}

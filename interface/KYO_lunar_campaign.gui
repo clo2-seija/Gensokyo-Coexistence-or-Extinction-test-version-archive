@@ -1,0 +1,41 @@
+guiTypes = {
+    containerWindowType = {
+        name = "KYO_lunar_campaign_ui_window"
+        position = { x = 0 y = 0 }
+        size = { width = 480 height = 744 }
+        instantTextBoxType = { name = "kyo_lunar_title" position = { x = 0 y = 2 } font = "hoi_24header" text = "KYO_lunar_campaign_gui_title" maxWidth = 480 maxHeight = 28 format = center }
+        iconType = { name = "kyo_lunar_yukari_base" position = { x = 4 y = 34 } spriteType = "GFX_KYO_lunar_yukari_red_base" }
+        iconType = { name = "kyo_lunar_moon_base" position = { x = 242 y = 34 } spriteType = "GFX_KYO_lunar_moon_purple_base" }
+        iconType = { name = "kyo_lunar_yukari" position = { x = 43 y = 38 } spriteType = "GFX_gensokyo_Yukari_new" }
+        iconType = { name = "kyo_lunar_toyohime" position = { x = 281 y = 38 } spriteType = "GFX_gensokyo_watasuki" }
+        instantTextBoxType = { name = "kyo_lunar_round" position = { x = 8 y = 254 } font = "hoi_18mbs" text = "KYO_lunar_campaign_gui_round" maxWidth = 464 maxHeight = 22 format = center }
+        instantTextBoxType = { name = "kyo_lunar_values" position = { x = 8 y = 278 } font = "hoi_24header" text = "KYO_lunar_campaign_gui_values" maxWidth = 464 maxHeight = 26 format = center }
+        instantTextBoxType = { name = "kyo_lunar_score" position = { x = 8 y = 306 } font = "hoi_18mbs" text = "KYO_lunar_campaign_gui_score" maxWidth = 464 maxHeight = 22 format = center }
+        instantTextBoxType = { name = "kyo_lunar_attacker_state" position = { x = 8 y = 332 } font = "hoi_16mbs" text = "KYO_lunar_campaign_gui_attacker_state" maxWidth = 224 maxHeight = 20 format = center }
+        instantTextBoxType = { name = "kyo_lunar_defender_state" position = { x = 248 y = 332 } font = "hoi_16mbs" text = "KYO_lunar_campaign_gui_defender_state" maxWidth = 224 maxHeight = 20 format = center }
+        instantTextBoxType = { name = "kyo_lunar_attacker_marks" position = { x = 8 y = 354 } font = "hoi_16mbs" text = "KYO_lunar_campaign_gui_attacker_marks" maxWidth = 224 maxHeight = 20 format = center }
+        instantTextBoxType = { name = "kyo_lunar_defender_marks" position = { x = 248 y = 354 } font = "hoi_16mbs" text = "KYO_lunar_campaign_gui_defender_marks" maxWidth = 224 maxHeight = 20 format = center }
+        instantTextBoxType = { name = "kyo_lunar_expected" position = { x = 12 y = 380 } font = "hoi_16mbs" text = "KYO_lunar_campaign_gui_expected" maxWidth = 456 maxHeight = 22 format = center }
+        instantTextBoxType = { name = "kyo_lunar_support" position = { x = 12 y = 404 } font = "hoi_16mbs" text = "KYO_lunar_campaign_gui_support" maxWidth = 456 maxHeight = 22 format = center }
+        instantTextBoxType = { name = "kyo_lunar_tactics_header" position = { x = 12 y = 428 } font = "hoi_16mbs" text = "KYO_lunar_campaign_gui_tactics_header" maxWidth = 456 maxHeight = 20 format = center }
+        iconType = { name = "kyo_lunar_slot_1_background" position = { x = 12 y = 450 } spriteType = "GFX_KYO_lunar_tactic_card_core" }
+        instantTextBoxType = { name = "kyo_lunar_slot_1" position = { x = 18 y = 455 } font = "hoi_16mbs" text = "KYO_lunar_campaign_gui_slot_1" maxWidth = 212 maxHeight = 22 format = center }
+        iconType = { name = "kyo_lunar_slot_2_background" position = { x = 244 y = 450 } spriteType = "GFX_KYO_lunar_tactic_card_core" }
+        instantTextBoxType = { name = "kyo_lunar_slot_2" position = { x = 250 y = 455 } font = "hoi_16mbs" text = "KYO_lunar_campaign_gui_slot_2" maxWidth = 212 maxHeight = 22 format = center }
+        iconType = { name = "kyo_lunar_slot_3_background" position = { x = 12 y = 486 } spriteType = "GFX_KYO_lunar_tactic_card_core" }
+        instantTextBoxType = { name = "kyo_lunar_slot_3" position = { x = 18 y = 491 } font = "hoi_16mbs" text = "KYO_lunar_campaign_gui_slot_3" maxWidth = 212 maxHeight = 22 format = center }
+        iconType = { name = "kyo_lunar_slot_4_background" position = { x = 244 y = 486 } spriteType = "GFX_KYO_lunar_tactic_card_core" }
+        instantTextBoxType = { name = "kyo_lunar_slot_4" position = { x = 250 y = 491 } font = "hoi_16mbs" text = "KYO_lunar_campaign_gui_slot_4" maxWidth = 212 maxHeight = 22 format = center }
+        iconType = { name = "kyo_lunar_slot_5_background" position = { x = 12 y = 522 } spriteType = "GFX_KYO_lunar_tactic_card_core" }
+        instantTextBoxType = { name = "kyo_lunar_slot_5" position = { x = 18 y = 527 } font = "hoi_16mbs" text = "KYO_lunar_campaign_gui_slot_5" maxWidth = 212 maxHeight = 22 format = center }
+        iconType = { name = "kyo_lunar_slot_6_background" position = { x = 244 y = 522 } spriteType = "GFX_KYO_lunar_tactic_card_extra" }
+        instantTextBoxType = { name = "kyo_lunar_slot_6" position = { x = 250 y = 527 } font = "hoi_16mbs" text = "KYO_lunar_campaign_gui_slot_6" maxWidth = 212 maxHeight = 22 format = center }
+        iconType = { name = "kyo_lunar_slot_7_background" position = { x = 12 y = 558 } spriteType = "GFX_KYO_lunar_tactic_card_extra" }
+        instantTextBoxType = { name = "kyo_lunar_slot_7" position = { x = 18 y = 563 } font = "hoi_16mbs" text = "KYO_lunar_campaign_gui_slot_7" maxWidth = 212 maxHeight = 22 format = center }
+        iconType = { name = "kyo_lunar_slot_8_background" position = { x = 244 y = 558 } spriteType = "GFX_KYO_lunar_tactic_card_extra" }
+        instantTextBoxType = { name = "kyo_lunar_slot_8" position = { x = 250 y = 563 } font = "hoi_16mbs" text = "KYO_lunar_campaign_gui_slot_8" maxWidth = 212 maxHeight = 22 format = center }
+        iconType = { name = "kyo_lunar_report_background" position = { x = 12 y = 596 } spriteType = "GFX_KYO_lunar_report_panel" }
+        instantTextBoxType = { name = "kyo_lunar_battle_report" position = { x = 22 y = 604 } font = "hoi_18mbs" text = "KYO_lunar_campaign_gui_battle_report" maxWidth = 436 maxHeight = 88 format = left }
+        instantTextBoxType = { name = "kyo_lunar_rule" position = { x = 12 y = 706 } font = "hoi_16mbs" text = "KYO_lunar_campaign_gui_rule" maxWidth = 456 maxHeight = 34 format = center }
+    }
+}

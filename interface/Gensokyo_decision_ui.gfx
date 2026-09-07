@@ -1,0 +1,154 @@
+spriteTypes = {
+	progressbartype = {
+		name = "GFX_mod_progressbar_horizontal"
+		textureFile1 = "gfx/progressbars/progressbar_full.dds"
+		textureFile2 = "gfx/progressbars/progressbar_empty.dds"
+		size = {
+			x = 422
+			y = 49
+		}
+		effectFile = "gfx/FX/progress.lua"
+
+		horizontal = yes
+
+		# color = {0.0  0.0  0.0  0.0}
+		# colortwo = {0.0  0.0  0.0  0.0}
+
+		#steps = 100
+	}
+
+	progressbartype = {
+		name = "GFX_mod_progressbar_vertical"
+		textureFile1 = "gfx/progressbars/progressbar_full.dds"
+		textureFile2 = "gfx/progressbars/progressbar_empty.dds"
+		size = {
+			x = 422
+			y = 49
+		}
+		effectFile = "gfx/FX/progress.lua"
+
+		horizontal = no
+
+		# color = {0.0  0.0  0.0  0.0}
+		# colortwo = {0.0  0.0  0.0  0.0}
+
+		#steps = 100
+	}
+
+	spriteType = {
+		name = "GFX_divider"
+		textureFile = "gfx/progressbars/divider.dds"
+	}
+
+	progressbartype = {
+		name = "GFX_progressbar_shou"
+		textureFile1 = "gfx/progressbars/shou_beast_descision_full.dds"
+		textureFile2 = "gfx/progressbars/shou_beast_descision_empty.dds"
+		size = {
+			x = 510
+			y = 510
+		}
+		effectFile = "gfx/FX/progress.lua"
+
+		horizontal = yes
+
+		# color = {0.0  0.0  0.0  0.0}
+		# colortwo = {0.0  0.0  0.0  0.0}
+
+		#steps = 100
+	}
+
+	progressbartype = {
+		name = "GFX_progressbar_peace"
+		textureFile1 = "gfx/progressbars/peace_progressbar_full.dds"
+		textureFile2 = "gfx/progressbars/peace_progressbar_empty.dds"
+		size = {
+			x = 100
+			y = 422
+		}
+		effectFile = "gfx/FX/progress.lua"
+
+		horizontal = no
+
+		# color = {0.0  0.0  0.0  0.0}
+		# colortwo = {0.0  0.0  0.0  0.0}
+
+		#steps = 100
+	}
+
+	progressbartype = {
+		name = "GFX_progressbar_honest"
+		textureFile1 = "gfx/progressbars/honest_progressbar_full.dds"
+		textureFile2 = "gfx/progressbars/honest_progressbar_empty.dds"
+		size = {
+			x = 100
+			y = 422
+		}
+		effectFile = "gfx/FX/progress.lua"
+
+		horizontal = no
+
+		# color = {0.0  0.0  0.0  0.0}
+		# colortwo = {0.0  0.0  0.0  0.0}
+
+		#steps = 100
+	}
+
+	progressbartype = {
+		name = "GFX_progressbar_lust"
+		textureFile1 = "gfx/progressbars/lust_progressbar_full.dds"
+		textureFile2 = "gfx/progressbars/lust_progressbar_empty.dds"
+		size = {
+			x = 100
+			y = 422
+		}
+		effectFile = "gfx/FX/progress.lua"
+
+		horizontal = no
+
+		# color = {0.0  0.0  0.0  0.0}
+		# colortwo = {0.0  0.0  0.0  0.0}
+
+		#steps = 100
+	}
+
+	progressbartype = {
+		name = "GFX_progressbar_wine"
+		textureFile1 = "gfx/progressbars/wine_progressbar_full.dds"
+		textureFile2 = "gfx/progressbars/wine_progressbar_empty.dds"
+		size = {
+			x = 100
+			y = 422
+		}
+		effectFile = "gfx/FX/progress.lua"
+
+		horizontal = no
+
+		# color = {0.0  0.0  0.0  0.0}
+		# colortwo = {0.0  0.0  0.0  0.0}
+
+		#steps = 100
+	}
+
+	progressbartype = {
+		name = "GFX_kyo_civilwar_progressbar"
+		textureFile1 = "gfx/progressbars/kyo_civilwar_progressbar_full.png"
+		textureFile2 = "gfx/progressbars/kyo_civilwar_progressbar_empty.png"
+		size = {
+			x = 512
+			y = 768
+		}
+		effectFile = "gfx/FX/progress.lua"
+
+		horizontal = no
+
+		# color = {0.0  0.0  0.0  0.0}
+		# colortwo = {0.0  0.0  0.0  0.0}
+
+		#steps = 100
+	}
+	spriteType = {
+		name = "GFX_dead_cross"
+		textureFile = "gfx/progressbars/cross.png"
+	}
+}

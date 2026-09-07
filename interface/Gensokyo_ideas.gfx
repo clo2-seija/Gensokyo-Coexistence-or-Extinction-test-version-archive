@@ -1,0 +1,953 @@
+spriteTypes = {	
+
+	#######################
+	####    Gensokyo   ####
+	#######################
+	
+	##Icon For: 正在消逝
+	SpriteType = { 
+		name = "GFX_idea_Fade_away"
+		texturefile = "gfx/interface/ideas/Fade_away.dds"
+	}
+	##Icon For: 博麗之死
+	SpriteType = { 
+		name = "GFX_idea_Hakurai_death"
+		texturefile = "gfx/interface/ideas/Hakurai_death.dds"
+	}
+	##Icon For: 我很餓
+	SpriteType = { 
+		name = "GFX_idea_I_am_hungry"
+		texturefile = "gfx/interface/ideas/I_am_hungry.dds"
+	}
+	##Icon For: Eiki
+	SpriteType = { 
+		name = "GFX_idea_Eiki_help"
+		texturefile = "gfx/interface/ideas/Eiki_help.dds"
+	}
+	##Icon For: Nitori
+	SpriteType = { 
+		name = "GFX_idea_Nitori_help"
+		texturefile = "gfx/interface/ideas/Nitori_help.dds"
+	}
+	##Icon For: Satori
+	SpriteType = { 
+		name = "GFX_idea_Satori_help"
+		texturefile = "gfx/interface/ideas/Satori_help.dds"
+	}
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_idea_three_youkai"
+		texturefile = "gfx/interface/ideas/three_youkai.dds"
+	}
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_idea_youkai_tech_is_best"
+		texturefile = "gfx/interface/ideas/youkai_tech_is_best.dds"
+	}
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_idea_youkai_new_army"
+		texturefile = "gfx/interface/ideas/youkai_new_army.dds"
+	}
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_idea_youkai_new_mercenary"
+		texturefile = "gfx/interface/ideas/youkai_new_mercenary.dds"
+	}
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_idea_strong_youkai"
+		texturefile = "gfx/interface/ideas/strong_youkai.dds"
+	}
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_idea_tengu_intelligen_agent"
+		texturefile = "gfx/interface/ideas/tengu_intelligen_agent.dds"
+	}
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_idea_metro_system"
+		texturefile = "gfx/interface/ideas/metro_system.dds"
+	}
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_idea_kappa_plan_for_land"
+		texturefile = "gfx/interface/ideas/kappa_plan_for_land.dds"
+	}
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_idea_undergrond_nuke"
+		texturefile = "gfx/interface/ideas/undergrond_nuke.dds"
+	}
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_idea_nuclear_hotspring"
+		texturefile = "gfx/interface/ideas/nuclear_hotspring.dds"
+	}
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_idea_Satori_thanks"
+		texturefile = "gfx/interface/ideas/Satori_thanks.dds"
+	}
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_idea_farming_production"
+		texturefile = "gfx/interface/ideas/farming_production.dds"
+	}
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_idea_farming_production_2"
+		texturefile = "gfx/interface/ideas/farming_production_2.dds"
+	}
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_idea_shikigami_Chen"
+		texturefile = "gfx/interface/ideas/shikigami_Chen.dds"
+	}
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_idea_shikigami_Ran"
+		texturefile = "gfx/interface/ideas/shikigami_Ran.dds"
+	}
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_idea_Boundaries_youkari"
+		texturefile = "gfx/interface/ideas/Boundaries_youkari.dds"
+	}
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_idea_weak_ecomic"
+		texturefile = "gfx/interface/ideas/weak_ecomic.dds"
+	} 
+	spriteType = {
+		name = "inner_circle_ichirin_dark"
+		texturefile = "gfx/interface/ideas/ichirin_dark.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "inner_circle_murusa_dark"
+		texturefile = "gfx/interface/ideas/murusa_dark.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "inner_circle_nazrin_dark"
+		texturefile = "gfx/interface/ideas/nazrin_dark.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "inner_circle_Shou_dark"
+		texturefile = "gfx/interface/ideas/Shou_dark.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "inner_circle_kyouko_dark"
+		texturefile = "gfx/interface/ideas/kyouko_dark.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "inner_circle_kyouko"
+		texturefile = "gfx/interface/ideas/kyouko.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "inner_circle_murusa"
+		texturefile = "gfx/interface/ideas/murusa.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "inner_circle_ichirin"
+		texturefile = "gfx/interface/ideas/ichirin.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "inner_circle_nazrin"
+		texturefile = "gfx/interface/ideas/nazrin.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "inner_circle_Shou"
+		texturefile = "gfx/interface/ideas/Shou.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_inner_circle_kyouko"
+		texturefile = "gfx/interface/ideas/kyouko.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_inner_circle_murusa"
+		texturefile = "gfx/interface/ideas/murusa.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_inner_circle_ichirin"
+		texturefile = "gfx/interface/ideas/ichirin.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_inner_circle_nazrin"
+		texturefile = "gfx/interface/ideas/nazrin.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_inner_circle_Shou"
+		texturefile = "gfx/interface/ideas/Shou.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_cirno_bad_smile"
+		texturefile = "gfx/interface/ideas/cirno_bad_smile.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_Saigyou_Whisper"
+		texturefile = "gfx/interface/ideas/Saigyou_Whisper.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_Ghost_Analgesia"
+		texturefile = "gfx/interface/ideas/Ghost_Analgesia.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_Konpaku_Hundred_Day"
+		texturefile = "gfx/interface/ideas/Konpaku_Hundred_Day.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_Frost_Mist_Snow"
+		texturefile = "gfx/interface/ideas/Frost_Mist_Snow.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_Yuyuko_death"
+		texturefile = "gfx/interface/ideas/Yuyuko_death.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_Tewi_Lucky_Logistics"
+		texturefile = "gfx/interface/ideas/Tewi_Lucky_Logistics.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_Prototype_Hourai_Regimen"
+		texturefile = "gfx/interface/ideas/Prototype_Hourai_Regimen.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_Lunarian_Fragments"
+		texturefile = "gfx/interface/ideas/Lunarian_Fragments.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_Eirina_eternal"
+		texturefile = "gfx/interface/ideas/Eirina_eternal.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_idea_Bamboo_Forest_Guerrillas"
+		texturefile = "gfx/interface/ideas/Bamboo_Forest_Guerrillas.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	SpriteType = {
+		name = "GFX_idea_death_of_yukari"
+		texturefile = "gfx/interface/ideas/death_of_yukari.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_fairy_of_freeze"
+		texturefile = "gfx/interface/ideas/Fairy_of_freeze.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_hijiri_army_buff"
+		texturefile = "gfx/interface/ideas/hijiri_army_buff.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_judge_of_all_life"
+		texturefile = "gfx/interface/ideas/judge_of_all_life.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_remilia_army_buff"
+		texturefile = "gfx/interface/ideas/remilia_army_buff.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_seija_army_buff"
+		texturefile = "gfx/interface/ideas/seija_army_buff.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_yakumo_army_buff"
+		texturefile = "gfx/interface/ideas/yakumo_army_buff.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_foreign_machinery"
+		texturefile = "gfx/interface/ideas/foreign_machinery.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_gensokyo_utopia"
+		texturefile = "gfx/interface/ideas/gensokyo_utopia.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_sixteen_hours_work_time"
+		texturefile = "gfx/interface/ideas/sixteen_hours_work_time.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_twenty_four_hours_work_time"
+		texturefile = "gfx/interface/ideas/twenty_four_hours_work_time.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_everyone_will_survive"
+		texturefile = "gfx/interface/ideas/everyone_will_survive.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_forced_labor"
+		texturefile = "gfx/interface/ideas/forced_labor.png"
+	}
+
+	## Icon For:
+	SpriteType = {
+		name = "GFX_idea_Eiki_disapoint"
+		texturefile = "gfx/interface/ideas/Eiki_disapoint.png"
+	}
+
+	## Icon For:
+	SpriteType = {
+		name = "GFX_idea_grassroot_rebal"
+		texturefile = "gfx/interface/ideas/grassroot_rebal.png"
+	}
+
+	## Icon For:
+	SpriteType = {
+		name = "GFX_idea_lunar_capital_plot"
+		texturefile = "gfx/interface/ideas/lunar_capital_plot.png"
+	}
+ 
+	## Icon For:
+	SpriteType = {
+		name = "GFX_idea_meiling_power"
+		texturefile = "gfx/interface/ideas/meiling_power.png"
+	}
+
+	## Icon For:
+	SpriteType = {
+		name = "GFX_idea_myouren_resistance"
+		texturefile = "gfx/interface/ideas/myouren_resistance.png"
+	}
+
+	## Icon For:
+	SpriteType = {
+		name = "GFX_idea_patchcholi_power"
+		texturefile = "gfx/interface/ideas/patchcholi_power.png"
+	}
+
+	## Icon For:
+	SpriteType = {
+		name = "GFX_idea_remilia_power"
+		texturefile = "gfx/interface/ideas/remilia_power.png"
+	}
+
+	## Icon For:
+	SpriteType = {
+		name = "GFX_idea_sakuya_working_time"
+		texturefile = "gfx/interface/ideas/sakuya_working_time.png"
+	}
+
+	## Icon For:
+	SpriteType = {
+		name = "GFX_idea_tengo_untrust_debuff"
+		texturefile = "gfx/interface/ideas/tengo_untrust_debuff.png"
+	}
+
+	## Icon For:
+	SpriteType = {
+		name = "GFX_idea_uncontrol_flan"
+		texturefile = "gfx/interface/ideas/uncontrol_flan.png"
+	}
+
+	## Icon For:
+	SpriteType = {
+		name = "GFX_idea_yakumo_wrath"
+		texturefile = "gfx/interface/ideas/yakumo_wrath.png"
+	}
+
+	## Icon For:
+	SpriteType = {
+		name = "GFX_idea_yet_another_industry_debuff"
+		texturefile = "gfx/interface/ideas/yet_another_industry_debuff.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_flandre_power"
+		texturefile = "gfx/interface/ideas/flandre_power.png"
+	}
+
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_idea_KYO_seija_dynamic_military_idea"
+		texturefile = "gfx/interface/ideas/KYO_seija_dynamic_military_idea.png" 
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_idea_KYO_seija_dynamic_industrial_idea"
+		texturefile = "gfx/interface/ideas/KYO_seija_dynamic_industrial_idea.png" 
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_idea_KYO_seija_dynamic_political_idea"
+		texturefile = "gfx/interface/ideas/KYO_seija_dynamic_political_idea.png" 
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_idea_path_of_all_salvation"
+		texturefile = "gfx/interface/ideas/path_of_all_salvation.png" 
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_idea_revise_socialism_and_marx"
+		texturefile = "gfx/interface/ideas/revise_socialism_and_marx.png" 
+	}
+
+	##Icon For: 
+	SpriteType = { 
+		name = "GFX_idea_we_are_all_equal"
+		texturefile = "gfx/interface/ideas/we_are_all_equal.png" 
+	}
+
+	##Icon For:
+SpriteType = {
+	name = "GFX_idea_barrier_mountain"
+	texturefile = "gfx/interface/ideas/barrier_mountain.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_barrier_netherworld"
+	texturefile = "gfx/interface/ideas/barrier_netherworld.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_barrier_old_capital"
+	texturefile = "gfx/interface/ideas/barrier_old_capital.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_barrier_scarlet_lake"
+	texturefile = "gfx/interface/ideas/barrier_scarlet_lake.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_barrier_sunflower"
+	texturefile = "gfx/interface/ideas/barrier_sunflower.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_barrier_bamboo"
+	texturefile = "gfx/interface/ideas/barrier_bamboo.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_barrier_forest"
+	texturefile = "gfx/interface/ideas/barrier_forest.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_barrier_hakurei"
+	texturefile = "gfx/interface/ideas/barrier_hakurei.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_barrier_higan"
+	texturefile = "gfx/interface/ideas/barrier_higan.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_barrier_human_village"
+	texturefile = "gfx/interface/ideas/barrier_human_village.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_network_leader_eiki"
+	texturefile = "gfx/interface/ideas/network_leader_eiki.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_network_leader_eirin"
+	texturefile = "gfx/interface/ideas/network_leader_eirin.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_chen_gap_power"
+	texturefile = "gfx/interface/ideas/chen_gap_power.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_Fade_away_1"
+	texturefile = "gfx/interface/ideas/Fade_away_1.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_Fade_away_2"
+	texturefile = "gfx/interface/ideas/Fade_away_2.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_Fade_away_3"
+	texturefile = "gfx/interface/ideas/Fade_away_3.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_Fade_away_4"
+	texturefile = "gfx/interface/ideas/Fade_away_4.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_faith_committee_fulfillment"
+	texturefile = "gfx/interface/ideas/faith_committee_fulfillment.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_military_committee_fulfillment"
+	texturefile = "gfx/interface/ideas/military_committee_fulfillment.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_mobilization_committee_fulfillment"
+	texturefile = "gfx/interface/ideas/mobilization_committee_fulfillment.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_network_leader_raiko"
+	texturefile = "gfx/interface/ideas/network_leader_raiko.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_network_leader_sekibanki"
+	texturefile = "gfx/interface/ideas/network_leader_sekibanki.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_order_leader_byakuren"
+	texturefile = "gfx/interface/ideas/order_leader_byakuren.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_order_leader_kanako"
+	texturefile = "gfx/interface/ideas/order_leader_kanako.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_order_leader_megumu"
+	texturefile = "gfx/interface/ideas/order_leader_megumu.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_order_leader_satori"
+	texturefile = "gfx/interface/ideas/order_leader_satori.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_ran_gap_power"
+	texturefile = "gfx/interface/ideas/ran_gap_power.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_renko_gap_power"
+	texturefile = "gfx/interface/ideas/renko_gap_power.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_restored_great_barrier"
+	texturefile = "gfx/interface/ideas/restored_great_barrier.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_war_leader_remilia"
+	texturefile = "gfx/interface/ideas/war_leader_remilia.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_war_leader_yuyuko"
+	texturefile = "gfx/interface/ideas/war_leader_yuyuko.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_yukari_gap_power"
+	texturefile = "gfx/interface/ideas/yukari_gap_power.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_war_leader_suika"
+	texturefile = "gfx/interface/ideas/war_leader_suika.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_war_leader_yuuka"
+	texturefile = "gfx/interface/ideas/war_leader_yuuka.png"
+}
+
+SpriteType = {
+		name = "GFX_idea_MOKU_coal"
+		texturefile = "gfx/interface/ideas/MOKU_coal.png"
+	}
+
+SpriteType = {
+		name = "GFX_idea_chireiden_nuclear_org" 
+		texturefile = "gfx/interface/ideas/chireiden_nuclear_org.png"		
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_three_fairies_organization"
+	texturefile = "gfx/interface/ideas/three_fairies_organization.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_ran_calculator_organization"
+	texturefile = "gfx/interface/ideas/ran_calculator_organization.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_yakuza_organization"
+	texturefile = "gfx/interface/ideas/yakuza_organization.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_backdoor_dancer_coupon"
+	texturefile = "gfx/interface/ideas/backdoor_dancer_coupon.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_yukari_train_train_love"
+	texturefile = "gfx/interface/ideas/yukari_train_train_love.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_momoyo_mining_company"
+	texturefile = "gfx/interface/ideas/momoyo_mining_company.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_wriggle_bug_company"
+	texturefile = "gfx/interface/ideas/wriggle_bug_company.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_cirno_ice_cream_factory"
+	texturefile = "gfx/interface/ideas/cirno_ice_cream_factory.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_kaguya_waste_day_and_night"
+	texturefile = "gfx/interface/ideas/kaguya_waste_day_and_night.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_raccon_raccoon_organization"
+	texturefile = "gfx/interface/ideas/raccon_raccoon_organization.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_youmu_gardening_club"
+	texturefile = "gfx/interface/ideas/youmu_gardening_club.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_chen_cat_store"
+	texturefile = "gfx/interface/ideas/chen_cat_store.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_yuuka_flower_farm"
+	texturefile = "gfx/interface/ideas/yuuka_flower_farm.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_Komachi_shipping_company"
+	texturefile = "gfx/interface/ideas/Komachi_shipping_company.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_komeiji_hot_spring_hotel"
+	texturefile = "gfx/interface/ideas/komeiji_hot_spring_hotel.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_yorigami_ensurance"
+	texturefile = "gfx/interface/ideas/yorigami_ensurance.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_mystia_food_industry"
+	texturefile = "gfx/interface/ideas/mystia_food_industry.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_nareko_road_construction"
+	texturefile = "gfx/interface/ideas/nareko_road_construction.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_rabbit_qm_corps"
+	texturefile = "gfx/interface/ideas/rabbit_qm_corps.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_yakumo_boundary_labs"
+	texturefile = "gfx/interface/ideas/yakumo_boundary_labs.png"
+}
+
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_drug_backlash"
+	texturefile = "gfx/interface/ideas/drug_backlash.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_gap_leak"
+	texturefile = "gfx/interface/ideas/gap_leak.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_human_satisfaction_0"
+	texturefile = "gfx/interface/ideas/human_satisfaction_0.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_human_satisfaction_1"
+	texturefile = "gfx/interface/ideas/human_satisfaction_1.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_human_satisfaction_2"
+	texturefile = "gfx/interface/ideas/human_satisfaction_2.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_opposition_satisfaction_0"
+	texturefile = "gfx/interface/ideas/opposition_satisfaction_0.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_opposition_satisfaction_1"
+	texturefile = "gfx/interface/ideas/opposition_satisfaction_1.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_opposition_satisfaction_2"
+	texturefile = "gfx/interface/ideas/opposition_satisfaction_2.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_revolutionary_satisfaction_0"
+	texturefile = "gfx/interface/ideas/revolutionary_satisfaction_0.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_revolutionary_satisfaction_1"
+	texturefile = "gfx/interface/ideas/revolutionary_satisfaction_1.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_revolutionary_satisfaction_2"
+	texturefile = "gfx/interface/ideas/revolutionary_satisfaction_2.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_ritual_fatigue"
+	texturefile = "gfx/interface/ideas/ritual_fatigue.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_youkai_satisfaction_0"
+	texturefile = "gfx/interface/ideas/youkai_satisfaction_0.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_youkai_satisfaction_1"
+	texturefile = "gfx/interface/ideas/youkai_satisfaction_1.png"
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_idea_youkai_satisfaction_2"
+	texturefile = "gfx/interface/ideas/youkai_satisfaction_2.png"
+}
+
+
+
+
+
+	
+} 

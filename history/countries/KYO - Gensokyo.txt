@@ -1,0 +1,306 @@
+capital = 1082
+# Recruit Characters
+
+country_event =  {
+	id = gensokyo_first_stage.38
+	days = 1
+}
+
+country_event =  {
+	id = gensokyo_first_stage.39
+	days = 14
+}
+set_variable = {
+	KR_welcome_splash_variable = 1
+}
+
+
+recruit_character = gensokyo_Seija
+recruit_character = gensokyo_Remilia
+recruit_character = gensokyo_Byakuren
+recruit_character = gensokyo_Yukari
+recruit_character = gensokyo_Kasen
+recruit_character = gensokyo_Okina
+recruit_character = gensokyo_Chen
+recruit_character = gensokyo_Ran
+recruit_character = gensokyo_Flandre
+recruit_character = gensokyo_Eirin
+recruit_character = gensokyo_kaguya
+recruit_character = gensokyo_Aya
+recruit_character = gensokyo_Hatate
+recruit_character = gensokyo_Momiji
+recruit_character = gensokyo_Megumu
+recruit_character = gensokyo_Cirno
+recruit_character = gensokyo_Nue
+recruit_character = gensokyo_yuyuko
+recruit_character = gensokyo_youmu
+recruit_character = gensokyo_sagume
+recruit_character = gensokyo_eiki
+recruit_character = gensokyo_seiga
+recruit_character = gensokyo_momoyo
+recruit_character = gensokyo_larva
+recruit_character = gensokyo_yamame
+recruit_character = gensokyo_rumia
+recruit_character = gensokyo_wriggle
+recruit_character = gensokyo_tokiko
+recruit_character = gensokyo_sekibanki
+recruit_character = gensokyo_kutaka
+recruit_character = gensokyo_mystia
+recruit_character = gensokyo_nitori
+recruit_character = gensokyo_merry
+recruit_character = gensokyo_renko
+recruit_character = gensokyo_satori
+recruit_character = gensokyo_yuma
+recruit_character = gensokyo_sakuya
+recruit_character = gensokyo_reimu_youkai
+recruit_character = gensokyo_tewi
+recruit_character = gensokyo_shou
+recruit_character = gensokyo_kogasa
+recruit_character = gensokyo_clownpiece
+recruit_character = gensokyo_orin
+recruit_character = gensokyo_koakuma
+recruit_character = gensokyo_meiling
+recruit_character = gensokyo_parsee
+recruit_character = gensokyo_okuu
+recruit_character = gensokyo_tenshi
+recruit_character = gensokyo_reimi
+recruit_character = gensokyo_patchouli
+recruit_character = gensokyo_reimu_sad
+recruit_character = gensokyo_yachie
+recruit_character = gensokyo_marisa
+recruit_character = gensokyo_reiko
+recruit_character = gensokyo_kagerou
+recruit_character = gensokyo_wakasagihime
+recruit_character = gensokyo_chimata
+recruit_character = gensokyo_futo
+recruit_character = gensokyo_reisen
+recruit_character = gensokyo_benben
+recruit_character = gensokyo_keine
+recruit_character = gensokyo_tsukasa
+recruit_character = gensokyo_suika
+recruit_character = gensokyo_komachi
+recruit_character = gensokyo_kyouko
+recruit_character = gensokyo_shinmyoumaru
+recruit_character = gensokyo_kanako
+recruit_character = gensokyo_lyrica
+recruit_character = gensokyo_merlin
+recruit_character = gensokyo_lunasa
+recruit_character = gensokyo_takane
+recruit_character = gensokyo_koishi
+recruit_character = gensokyo_tojiko
+recruit_character = gensokyo_rin
+recruit_character = gensokyo_junko
+recruit_character = gensokyo_narumi
+recruit_character = gensokyo_murasa
+recruit_character = gensokyo_ichirin
+recruit_character = gensokyo_yatsuhashi
+recruit_character = gensokyo_hina
+recruit_character = gensokyo_nazrin
+recruit_character = gensokyo_mika
+recruit_character = gensokyo_Shizuha
+
+recruit_character = gensokyo_mai
+recruit_character = gensokyo_asama
+recruit_character = gensokyo_iku
+recruit_character = gensokyo_daiyosei
+recruit_character = gensokyo_satono
+recruit_character = gensokyo_aunn
+recruit_character = gensokyo_minoriko
+recruit_character = gensokyo_evil_kasen
+recruit_character = gensokyo_yuugi
+recruit_character = gensokyo_miko
+recruit_character = gensokyo_keiki
+recruit_character = gensokyo_saki
+recruit_character = gensokyo_yuuka
+recruit_character = gensokyo_suwako
+recruit_character = gensokyo_yoshika
+recruit_character = gensokyo_kokoro
+recruit_character = gensokyo_alice
+recruit_character = gensokyo_mokou
+recruit_character = gensokyo_sunny
+recruit_character = gensokyo_luna
+recruit_character = gensokyo_star
+recruit_character = gensokyo_medicine
+recruit_character = gensokyo_lily
+recruit_character = gensokyo_mamizou
+recruit_character = gensokyo_doremy
+recruit_character = gensokyo_hecatia
+recruit_character = gensokyo_shion
+recruit_character = gensokyo_joon
+recruit_character = gensokyo_kisume
+recruit_character = gensokyo_eika
+recruit_character = gensokyo_urumi
+recruit_character = gensokyo_sannyo
+recruit_character = gensokyo_misumaru
+recruit_character = gensokyo_zanmu
+recruit_character = gensokyo_enoko
+recruit_character = gensokyo_biten
+recruit_character = gensokyo_hisami
+recruit_character = gensokyo_chiyari
+
+#recruit_character = gensokyo_reisen_2
+#recruit_character = gensokyo_yorihime
+#recruit_character = gensokyo_toyohime
+#recruit_character = gensokyo_seiran
+#recruit_character = gensokyo_ringo
+
+recruit_character = gensokyo_ubame
+recruit_character = gensokyo_nemuno
+recruit_character = gensokyo_chimi
+recruit_character = gensokyo_ariya
+recruit_character = gensokyo_nina
+recruit_character = gensokyo_nareko
+recruit_character = gensokyo_miyoi
+recruit_character = gensokyo_mizuchi
+recruit_character = gensokyo_sanae
+recruit_character = gensokyo_sumireko
+recruit_character = gensokyo_letty
+recruit_character = gensokyo_akyuu
+recruit_character = gensokyo_kosuzu
+recruit_character = gensokyo_rinnosuke
+recruit_character = gensokyo_mayumi
+
+oob = "KYO_1936"
+starting_train_buffer = 40
+set_research_slots = 2
+set_stability = 0.8
+set_war_support = 0.7
+add_command_power = 5
+air_experience = 10
+army_experience = 10
+navy_experience = 10
+set_convoys = 100
+
+set_rule = {
+
+	can_create_factions = yes
+	can_generate_female_aces = yes
+	
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	basic_train = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+}
+IF = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+	
+}
+IF = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+IF = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		basic_torpedo = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_heavy_battery = 1
+		
+		improved_ship_torpedo_launcher = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		mtg_transport = 1
+		coastal_defense_ships = 1
+		basic_depth_charges = 1
+		basic_cruiser_armor_scheme = 1
+		cruiser_submarines = 1
+		basic_dp_light_battery = 1
+	}
+}
+IF = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		basic_battleship = 1
+		early_battlecruiser = 1
+		early_carrier = 1
+		basic_carrier = 1
+		transport = 1
+	}
+}
+# Faction
+
+
+
+
+# Politics for 1936.1.1
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1934.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 10
+	fascism = 10
+	communism = 10
+	neutrality = 70
+}
+# Government/National Spirits
+add_ideas = {
+	
+	limited_conscription
+	volunteer_only
+	disarmed_nation
+	civilian_economy
+	closed_economy
+	KYO_I_am_hungry
+	KYO_weak_ecomic
+}
+
+
+
+
+
+
+
+set_variable = { KYO_inner_circle_days_to_start_focus = 75 }
+set_variable = { KYO_inner_circle_random_days = 30 }
+
+
+### UI ###
+set_variable = { KYO_ascended_advisor_1 = 0 } #Ascended Advisor Portrait
+
+set_variable = { KYO_ascended_advisor_3 = 0 } #Ascended Advisor Portrait
+

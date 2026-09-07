@@ -1,0 +1,1929 @@
+guiTypes = {
+
+containerWindowType = {
+		name = "KYO_barrier_crisis_decision_ui_window"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 512
+			height = 640
+		}
+
+		iconType = {
+			name = "KYO_barrier_map_background"
+			spriteType = "GFX_KYO_barrier_map_background"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_band"
+			spriteType = "GFX_KYO_barrier_summary_band"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_hakurei"
+			spriteType = "GFX_KYO_barrier_node_hakurei"
+			position = {
+				x = 10
+				y = 6
+			}
+			scale = 0.75
+			pdx_tooltip = KYO_barrier_summary_hakurei_tooltip
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_hakurei_green"
+			spriteType = "GFX_KYO_barrier_dot_green"
+			position = {
+				x = 30
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_hakurei_yellow"
+			spriteType = "GFX_KYO_barrier_dot_yellow"
+			position = {
+				x = 30
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_hakurei_red"
+			spriteType = "GFX_KYO_barrier_dot_red"
+			position = {
+				x = 30
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_mountain"
+			spriteType = "GFX_KYO_barrier_node_mountain"
+			position = {
+				x = 60
+				y = 6
+			}
+			scale = 0.75
+			pdx_tooltip = KYO_barrier_summary_mountain_tooltip
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_mountain_green"
+			spriteType = "GFX_KYO_barrier_dot_green"
+			position = {
+				x = 80
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_mountain_yellow"
+			spriteType = "GFX_KYO_barrier_dot_yellow"
+			position = {
+				x = 80
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_mountain_red"
+			spriteType = "GFX_KYO_barrier_dot_red"
+			position = {
+				x = 80
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_bamboo"
+			spriteType = "GFX_KYO_barrier_node_bamboo"
+			position = {
+				x = 110
+				y = 6
+			}
+			scale = 0.75
+			pdx_tooltip = KYO_barrier_summary_bamboo_tooltip
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_bamboo_green"
+			spriteType = "GFX_KYO_barrier_dot_green"
+			position = {
+				x = 130
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_bamboo_yellow"
+			spriteType = "GFX_KYO_barrier_dot_yellow"
+			position = {
+				x = 130
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_bamboo_red"
+			spriteType = "GFX_KYO_barrier_dot_red"
+			position = {
+				x = 130
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_forest"
+			spriteType = "GFX_KYO_barrier_node_forest"
+			position = {
+				x = 160
+				y = 6
+			}
+			scale = 0.75
+			pdx_tooltip = KYO_barrier_summary_forest_tooltip
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_forest_green"
+			spriteType = "GFX_KYO_barrier_dot_green"
+			position = {
+				x = 180
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_forest_yellow"
+			spriteType = "GFX_KYO_barrier_dot_yellow"
+			position = {
+				x = 180
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_forest_red"
+			spriteType = "GFX_KYO_barrier_dot_red"
+			position = {
+				x = 180
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_old_capital"
+			spriteType = "GFX_KYO_barrier_node_old_capital"
+			position = {
+				x = 210
+				y = 6
+			}
+			scale = 0.75
+			pdx_tooltip = KYO_barrier_summary_old_capital_tooltip
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_old_capital_green"
+			spriteType = "GFX_KYO_barrier_dot_green"
+			position = {
+				x = 230
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_old_capital_yellow"
+			spriteType = "GFX_KYO_barrier_dot_yellow"
+			position = {
+				x = 230
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_old_capital_red"
+			spriteType = "GFX_KYO_barrier_dot_red"
+			position = {
+				x = 230
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_human_village"
+			spriteType = "GFX_KYO_barrier_node_human_village"
+			position = {
+				x = 260
+				y = 6
+			}
+			scale = 0.75
+			pdx_tooltip = KYO_barrier_summary_human_village_tooltip
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_human_village_green"
+			spriteType = "GFX_KYO_barrier_dot_green"
+			position = {
+				x = 280
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_human_village_yellow"
+			spriteType = "GFX_KYO_barrier_dot_yellow"
+			position = {
+				x = 280
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_human_village_red"
+			spriteType = "GFX_KYO_barrier_dot_red"
+			position = {
+				x = 280
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_scarlet_lake"
+			spriteType = "GFX_KYO_barrier_node_scarlet_lake"
+			position = {
+				x = 310
+				y = 6
+			}
+			scale = 0.75
+			pdx_tooltip = KYO_barrier_summary_scarlet_lake_tooltip
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_scarlet_lake_green"
+			spriteType = "GFX_KYO_barrier_dot_green"
+			position = {
+				x = 330
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_scarlet_lake_yellow"
+			spriteType = "GFX_KYO_barrier_dot_yellow"
+			position = {
+				x = 330
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_scarlet_lake_red"
+			spriteType = "GFX_KYO_barrier_dot_red"
+			position = {
+				x = 330
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_sunflower"
+			spriteType = "GFX_KYO_barrier_node_sunflower"
+			position = {
+				x = 360
+				y = 6
+			}
+			scale = 0.75
+			pdx_tooltip = KYO_barrier_summary_sunflower_tooltip
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_sunflower_green"
+			spriteType = "GFX_KYO_barrier_dot_green"
+			position = {
+				x = 380
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_sunflower_yellow"
+			spriteType = "GFX_KYO_barrier_dot_yellow"
+			position = {
+				x = 380
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_sunflower_red"
+			spriteType = "GFX_KYO_barrier_dot_red"
+			position = {
+				x = 380
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_higan"
+			spriteType = "GFX_KYO_barrier_node_higan"
+			position = {
+				x = 410
+				y = 6
+			}
+			scale = 0.75
+			pdx_tooltip = KYO_barrier_summary_higan_tooltip
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_higan_green"
+			spriteType = "GFX_KYO_barrier_dot_green"
+			position = {
+				x = 430
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_higan_yellow"
+			spriteType = "GFX_KYO_barrier_dot_yellow"
+			position = {
+				x = 430
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_higan_red"
+			spriteType = "GFX_KYO_barrier_dot_red"
+			position = {
+				x = 430
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_netherworld"
+			spriteType = "GFX_KYO_barrier_node_netherworld"
+			position = {
+				x = 460
+				y = 6
+			}
+			scale = 0.75
+			pdx_tooltip = KYO_barrier_summary_netherworld_tooltip
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_netherworld_green"
+			spriteType = "GFX_KYO_barrier_dot_green"
+			position = {
+				x = 480
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_netherworld_yellow"
+			spriteType = "GFX_KYO_barrier_dot_yellow"
+			position = {
+				x = 480
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_summary_netherworld_red"
+			spriteType = "GFX_KYO_barrier_dot_red"
+			position = {
+				x = 480
+				y = 39
+			}
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "KYO_barrier_node_hakurei"
+			spriteType = "GFX_KYO_barrier_node_hakurei"
+			position = {
+				x = 420
+				y = 300
+			}
+			scale = 1.3
+			pdx_tooltip = KYO_barrier_node_hakurei_tooltip
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_hakurei_normal"
+			spriteType = "GFX_KYO_barrier_status_normal"
+			position = {
+				x = 420
+				y = 300
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_hakurei_glitch"
+			spriteType = "GFX_KYO_barrier_status_glitch"
+			position = {
+				x = 420
+				y = 300
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_hakurei_shattered"
+			spriteType = "GFX_KYO_barrier_status_shattered"
+			position = {
+				x = 420
+				y = 300
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_hakurei_selected"
+			spriteType = "GFX_KYO_barrier_node_selected"
+			position = {
+				x = 420
+				y = 300
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "KYO_barrier_node_mountain"
+			spriteType = "GFX_KYO_barrier_node_mountain"
+			position = {
+				x = 222
+				y = 112
+			}
+			scale = 1.3
+			pdx_tooltip = KYO_barrier_node_mountain_tooltip
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_mountain_normal"
+			spriteType = "GFX_KYO_barrier_status_normal"
+			position = {
+				x = 222
+				y = 112
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		 iconType = {
+		 	name = "KYO_barrier_node_mountain_glitch"
+		 	spriteType = "GFX_KYO_barrier_status_glitch"
+		 	position = {
+		 		x = 222
+		 		y = 112
+		 	}
+		 	scale = 1.3
+		 	alwaystransparent = yes
+		 }
+
+		 iconType = {
+		 	name = "KYO_barrier_node_mountain_shattered"
+		 	spriteType = "GFX_KYO_barrier_status_shattered"
+		 	position = {
+		 		x = 222
+		 		y = 112
+		 	}
+		 	scale = 1.3
+		 	alwaystransparent = yes
+		 }
+ 
+		iconType = {
+			name = "KYO_barrier_node_mountain_selected"
+			spriteType = "GFX_KYO_barrier_node_selected"
+			position = {
+				x = 222
+				y = 112
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "KYO_barrier_node_bamboo"
+			spriteType = "GFX_KYO_barrier_node_bamboo"
+			position = {
+				x = 350
+				y = 490
+			}
+			scale = 1.3
+			pdx_tooltip = KYO_barrier_node_bamboo_tooltip
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_bamboo_normal"
+			spriteType = "GFX_KYO_barrier_status_normal"
+			position = {
+				x = 350
+				y = 490
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_bamboo_glitch"
+			spriteType = "GFX_KYO_barrier_status_glitch"
+			position = {
+				x = 350
+				y = 490
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_bamboo_shattered"
+			spriteType = "GFX_KYO_barrier_status_shattered"
+			position = {
+				x = 350
+				y = 490
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_bamboo_selected"
+			spriteType = "GFX_KYO_barrier_node_selected"
+			position = {
+				x = 350
+				y = 490
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "KYO_barrier_node_forest"
+			spriteType = "GFX_KYO_barrier_node_forest"
+			position = {
+				x = 320
+				y = 305
+			}
+			scale = 1.3
+			pdx_tooltip = KYO_barrier_node_forest_tooltip
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_forest_normal"
+			spriteType = "GFX_KYO_barrier_status_normal"
+			position = {
+				x = 320
+				y = 305
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_forest_glitch"
+			spriteType = "GFX_KYO_barrier_status_glitch"
+			position = {
+				x = 320
+				y = 305
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_forest_shattered"
+			spriteType = "GFX_KYO_barrier_status_shattered"
+			position = {
+				x = 320
+				y = 305
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_forest_selected"
+			spriteType = "GFX_KYO_barrier_node_selected"
+			position = {
+				x = 320
+				y = 305
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "KYO_barrier_node_old_capital"
+			spriteType = "GFX_KYO_barrier_node_old_capital"
+			position = {
+				x = 340
+				y = 170
+			}
+			scale = 1.3
+			pdx_tooltip = KYO_barrier_node_old_capital_tooltip
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_old_capital_normal"
+			spriteType = "GFX_KYO_barrier_status_normal"
+			position = {
+				x = 340
+				y = 170
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_old_capital_glitch"
+			spriteType = "GFX_KYO_barrier_status_glitch"
+			position = {
+				x = 340
+				y = 170
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_old_capital_shattered"
+			spriteType = "GFX_KYO_barrier_status_shattered"
+			position = {
+				x = 340
+				y = 170
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_old_capital_selected"
+			spriteType = "GFX_KYO_barrier_node_selected"
+			position = {
+				x = 340
+				y = 170
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "KYO_barrier_node_human_village"
+			spriteType = "GFX_KYO_barrier_node_human_village"
+			position = {
+				x = 370
+				y = 382
+			}
+			scale = 1.3
+			pdx_tooltip = KYO_barrier_node_human_village_tooltip
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_human_village_normal"
+			spriteType = "GFX_KYO_barrier_status_normal"
+			position = {
+				x = 370
+				y = 382
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_human_village_glitch"
+			spriteType = "GFX_KYO_barrier_status_glitch"
+			position = {
+				x = 370
+				y = 382
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_human_village_shattered"
+			spriteType = "GFX_KYO_barrier_status_shattered"
+			position = {
+				x = 370
+				y = 382
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_human_village_selected"
+			spriteType = "GFX_KYO_barrier_node_selected"
+			position = {
+				x = 370
+				y = 382
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "KYO_barrier_node_scarlet_lake"
+			spriteType = "GFX_KYO_barrier_node_scarlet_lake"
+			position = {
+				x = 240
+				y = 240
+			}
+			scale = 1.3
+			pdx_tooltip = KYO_barrier_node_scarlet_lake_tooltip
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_scarlet_lake_normal"
+			spriteType = "GFX_KYO_barrier_status_normal"
+			position = {
+				x = 240
+				y = 240
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_scarlet_lake_glitch"
+			spriteType = "GFX_KYO_barrier_status_glitch"
+			position = {
+				x = 240
+				y = 240
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_scarlet_lake_shattered"
+			spriteType = "GFX_KYO_barrier_status_shattered"
+			position = {
+				x = 240
+				y = 240
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_scarlet_lake_selected"
+			spriteType = "GFX_KYO_barrier_node_selected"
+			position = {
+				x = 240
+				y = 240
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "KYO_barrier_node_sunflower"
+			spriteType = "GFX_KYO_barrier_node_sunflower"
+			position = {
+				x = 215
+				y = 505
+			}
+			scale = 1.3
+			pdx_tooltip = KYO_barrier_node_sunflower_tooltip
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_sunflower_normal"
+			spriteType = "GFX_KYO_barrier_status_normal"
+			position = {
+				x = 215
+				y = 505
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_sunflower_glitch"
+			spriteType = "GFX_KYO_barrier_status_glitch"
+			position = {
+				x = 215
+				y = 505
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_sunflower_shattered"
+			spriteType = "GFX_KYO_barrier_status_shattered"
+			position = {
+				x = 215
+				y = 505
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_sunflower_selected"
+			spriteType = "GFX_KYO_barrier_node_selected"
+			position = {
+				x = 215
+				y = 505
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "KYO_barrier_node_higan"
+			spriteType = "GFX_KYO_barrier_node_higan"
+			position = {
+				x = 40
+				y = 365
+			}
+			scale = 1.3
+			pdx_tooltip = KYO_barrier_node_higan_tooltip
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_higan_normal"
+			spriteType = "GFX_KYO_barrier_status_normal"
+			position = {
+				x = 40
+				y = 365
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_higan_glitch"
+			spriteType = "GFX_KYO_barrier_status_glitch"
+			position = {
+				x = 40
+				y = 365
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_higan_shattered"
+			spriteType = "GFX_KYO_barrier_status_shattered"
+			position = {
+				x = 40
+				y = 365
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_higan_selected"
+			spriteType = "GFX_KYO_barrier_node_selected"
+			position = {
+				x = 40
+				y = 365
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "KYO_barrier_node_netherworld"
+			spriteType = "GFX_KYO_barrier_node_netherworld"
+			position = {
+				x = 106
+				y = 230
+			}
+			scale = 1.3
+			pdx_tooltip = KYO_barrier_node_netherworld_tooltip
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_netherworld_normal"
+			spriteType = "GFX_KYO_barrier_status_normal"
+			position = {
+				x = 106
+				y = 230
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_netherworld_glitch"
+			spriteType = "GFX_KYO_barrier_status_glitch"
+			position = {
+				x = 106
+				y = 230
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_netherworld_shattered"
+			spriteType = "GFX_KYO_barrier_status_shattered"
+			position = {
+				x = 106
+				y = 230
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_barrier_node_netherworld_selected"
+			spriteType = "GFX_KYO_barrier_node_selected"
+			position = {
+				x = 106
+				y = 230
+			}
+			scale = 1.3
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "KYO_hyakki_coalition_decision_ui_window"
+		position = {
+			x = 0
+			y = 0
+		}
+		size = {
+			width = 512
+			height = 840
+		}
+
+		iconType = {
+			name = "KYO_hyakki_triangle_background"
+			spriteType = "GFX_KYO_hyakki_triangle_background"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+
+		instantTextBoxType = {
+			name = "KYO_military_corner_label"
+			position = {
+				x = 166
+				y = 28
+			}
+			text = "KYO_triangle_military_label"
+			font = "hoi_18b"
+			maxWidth = 180
+			maxHeight = 36
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "KYO_faith_corner_label"
+			position = {
+				x = 4
+				y = 288
+			}
+			text = "KYO_triangle_faith_label"
+			font = "hoi_18b"
+			maxWidth = 170
+			maxHeight = 36
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "KYO_mobilization_corner_label"
+			position = {
+				x = 338
+				y = 288
+			}
+			text = "KYO_triangle_mobilization_label"
+			font = "hoi_18b"
+			maxWidth = 170
+			maxHeight = 36
+			format = centre
+		}
+
+		iconType = {
+			name = "KYO_war_leader_remilia_portrait"
+			spriteType = "GFX_gensokyo_Remilia_large"
+			position = {
+				x = 223
+				y = 58
+			}
+			scale = 0.42
+			pdx_tooltip = KYO_leader_remilia_tooltip
+		}
+
+		iconType = {
+			name = "KYO_war_leader_yuyuko_portrait"
+			spriteType = "GFX_gensokyo_yuyuko_large"
+			position = {
+				x = 223
+				y = 58
+			}
+			scale = 0.42
+			pdx_tooltip = KYO_leader_yuyuko_tooltip
+		}
+
+		iconType = {
+			name = "KYO_war_leader_suika_portrait"
+			spriteType = "GFX_gensokyo_suika_large"
+			position = {
+				x = 223
+				y = 58
+			}
+			scale = 0.42
+			pdx_tooltip = KYO_leader_suika_tooltip
+		}
+
+		iconType = {
+			name = "KYO_war_leader_yuuka_portrait"
+			spriteType = "GFX_gensokyo_yuuka_large"
+			position = {
+				x = 223
+				y = 58
+			}
+			scale = 0.42
+			pdx_tooltip = KYO_leader_yuuka_tooltip
+		}
+
+		iconType = {
+			name = "KYO_order_leader_byakuren_portrait"
+			spriteType = "GFX_gensokyo_Byakuren_large"
+			position = {
+				x = 48
+				y = 318
+			}
+			scale = 0.42
+			pdx_tooltip = KYO_leader_byakuren_tooltip
+		}
+
+		iconType = {
+			name = "KYO_order_leader_kanako_portrait"
+			spriteType = "GFX_gensokyo_kanako_large"
+			position = {
+				x = 48
+				y = 318
+			}
+			scale = 0.42
+			pdx_tooltip = KYO_leader_kanako_tooltip
+		}
+
+		iconType = {
+			name = "KYO_order_leader_satori_portrait"
+			spriteType = "GFX_gensokyo_satori_large"
+			position = {
+				x = 48
+				y = 318
+			}
+			scale = 0.42
+			pdx_tooltip = KYO_leader_satori_tooltip
+		}
+
+		iconType = {
+			name = "KYO_order_leader_megumu_portrait"
+			spriteType = "GFX_gensokyo_Megumu_large"
+			position = {
+				x = 48
+				y = 318
+			}
+			scale = 0.42
+			pdx_tooltip = KYO_leader_megumu_tooltip
+		}
+
+		iconType = {
+			name = "KYO_network_leader_sekibanki_portrait"
+			spriteType = "GFX_gensokyo_sekibanki_large"
+			position = {
+				x = 398
+				y = 318
+			}
+			scale = 0.42
+			pdx_tooltip = KYO_leader_sekibanki_tooltip
+		}
+
+		iconType = {
+			name = "KYO_network_leader_eirin_portrait"
+			spriteType = "GFX_gensokyo_Eirin_large"
+			position = {
+				x = 398
+				y = 318
+			}
+			scale = 0.42
+			pdx_tooltip = KYO_leader_eirin_tooltip
+		}
+
+		iconType = {
+			name = "KYO_network_leader_raiko_portrait"
+			spriteType = "GFX_gensokyo_reiko_large"
+			position = {
+				x = 398
+				y = 318
+			}
+			scale = 0.42
+			pdx_tooltip = KYO_leader_raiko_tooltip
+		}
+
+		iconType = {
+			name = "KYO_network_leader_eiki_portrait"
+			spriteType = "GFX_gensokyo_eiki_large"
+			position = {
+				x = 398
+				y = 318
+			}
+			scale = 0.42
+			pdx_tooltip = KYO_leader_eiki_tooltip
+		}
+
+		iconType = {
+			name = "KYO_yukari_chief_arbiter_portrait"
+			spriteType = "GFX_gensokyo_Yukari_large"
+			position = {
+				x = 203
+				y = 205
+			}
+			scale = 0.68
+			pdx_tooltip = KYO_yukari_chief_arbiter_tooltip
+		}
+
+		iconType = {
+			name = "KYO_yukari_chief_arbiter_frame"
+			spriteType = "GFX_KYO_yukari_arbiter_frame"
+			position = {
+				x = 198
+				y = 200
+			}
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "KYO_yukari_chief_arbiter_label"
+			position = {
+				x = 156
+				y = 358
+			}
+			text = "KYO_yukari_chief_arbiter"
+			font = "hoi_16mbs"
+			maxWidth = 200
+			maxHeight = 36
+			format = centre
+		}
+
+		iconType = {
+			name = "KYO_military_fulfillment_green"
+			spriteType = "GFX_KYO_fulfillment_green"
+			position = {
+				x = 206
+				y = 154
+			}
+			pdx_tooltip = KYO_military_fulfillment_tooltip
+		}
+
+		iconType = {
+			name = "KYO_military_fulfillment_yellow"
+			spriteType = "GFX_KYO_fulfillment_yellow"
+			position = {
+				x = 206
+				y = 154
+			}
+			pdx_tooltip = KYO_military_fulfillment_tooltip
+		}
+
+		iconType = {
+			name = "KYO_military_fulfillment_orange"
+			spriteType = "GFX_KYO_fulfillment_orange"
+			position = {
+				x = 206
+				y = 154
+			}
+			pdx_tooltip = KYO_military_fulfillment_tooltip
+		}
+
+		iconType = {
+			name = "KYO_military_fulfillment_red"
+			spriteType = "GFX_KYO_fulfillment_red"
+			position = {
+				x = 206
+				y = 154
+			}
+			pdx_tooltip = KYO_military_fulfillment_tooltip
+		}
+
+		iconType = {
+			name = "KYO_faith_fulfillment_green"
+			spriteType = "GFX_KYO_fulfillment_green"
+			position = {
+				x = 30
+				y = 423
+			}
+			pdx_tooltip = KYO_faith_fulfillment_tooltip
+		}
+
+		iconType = {
+			name = "KYO_faith_fulfillment_yellow"
+			spriteType = "GFX_KYO_fulfillment_yellow"
+			position = {
+				x = 30
+				y = 423
+			}
+			pdx_tooltip = KYO_faith_fulfillment_tooltip
+		}
+
+		iconType = {
+			name = "KYO_faith_fulfillment_orange"
+			spriteType = "GFX_KYO_fulfillment_orange"
+			position = {
+				x = 30
+				y = 423
+			}
+			pdx_tooltip = KYO_faith_fulfillment_tooltip
+		}
+
+		iconType = {
+			name = "KYO_faith_fulfillment_red"
+			spriteType = "GFX_KYO_fulfillment_red"
+			position = {
+				x = 30
+				y = 423
+			}
+			pdx_tooltip = KYO_faith_fulfillment_tooltip
+		}
+
+		iconType = {
+			name = "KYO_mobilization_fulfillment_green"
+			spriteType = "GFX_KYO_fulfillment_green"
+			position = {
+				x = 382
+				y = 423
+			}
+			pdx_tooltip = KYO_mobilization_fulfillment_tooltip
+		}
+
+		iconType = {
+			name = "KYO_mobilization_fulfillment_yellow"
+			spriteType = "GFX_KYO_fulfillment_yellow"
+			position = {
+				x = 382
+				y = 423
+			}
+			pdx_tooltip = KYO_mobilization_fulfillment_tooltip
+		}
+
+		iconType = {
+			name = "KYO_mobilization_fulfillment_orange"
+			spriteType = "GFX_KYO_fulfillment_orange"
+			position = {
+				x = 382
+				y = 423
+			}
+			pdx_tooltip = KYO_mobilization_fulfillment_tooltip
+		}
+
+		iconType = {
+			name = "KYO_mobilization_fulfillment_red"
+			spriteType = "GFX_KYO_fulfillment_red"
+			position = {
+				x = 382
+				y = 423
+			}
+			pdx_tooltip = KYO_mobilization_fulfillment_tooltip
+		}
+
+		iconType = {
+			name = "KYO_hyakki_candidate_blocks_background"
+			spriteType = "GFX_KYO_hyakki_candidate_blocks_background"
+			position = {
+				x = 0
+				y = 478
+			}
+		}
+
+		instantTextBoxType = {
+			name = "KYO_candidate_blocks_title"
+			position = {
+				x = 16
+				y = 482
+			}
+			text = "KYO_candidate_strip_title"
+			font = "hoi_18b"
+			maxWidth = 480
+			maxHeight = 36
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "KYO_faith_candidate_block_title"
+			position = {
+				x = 6
+				y = 516
+			}
+			text = "KYO_faith_candidate_block_title"
+			font = "hoi_16mbs"
+			maxWidth = 160
+			maxHeight = 36
+			format = centre
+		}
+
+		buttonType = {
+			name = "KYO_candidate_byakuren"
+			spriteType = "GFX_gensokyo_Byakuren_large"
+			position = {
+				x = 22
+				y = 548
+			}
+			scale = 0.34
+			pdx_tooltip = KYO_leader_byakuren_tooltip
+		}
+
+		iconType = {
+			name = "KYO_candidate_byakuren_selected"
+			spriteType = "GFX_KYO_candidate_selected"
+			position = {
+				x = 18
+				y = 545
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_candidate_byakuren_current"
+			spriteType = "GFX_KYO_current_chair_frame"
+			position = {
+				x = 18
+				y = 545
+			}
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "KYO_candidate_byakuren_value"
+			position = {
+				x = 14
+				y = 624
+			}
+			text = "KYO_candidate_byakuren_value"
+			font = "hoi_16mbs"
+			maxWidth = 70
+			maxHeight = 36
+			format = centre
+		}
+
+		buttonType = {
+			name = "KYO_candidate_kanako"
+			spriteType = "GFX_gensokyo_kanako_large"
+			position = {
+				x = 97
+				y = 548
+			}
+			scale = 0.34
+			pdx_tooltip = KYO_leader_kanako_tooltip
+		}
+
+		iconType = {
+			name = "KYO_candidate_kanako_selected"
+			spriteType = "GFX_KYO_candidate_selected"
+			position = {
+				x = 93
+				y = 545
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_candidate_kanako_current"
+			spriteType = "GFX_KYO_current_chair_frame"
+			position = {
+				x = 93
+				y = 545
+			}
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "KYO_candidate_kanako_value"
+			position = {
+				x = 89
+				y = 624
+			}
+			text = "KYO_candidate_kanako_value"
+			font = "hoi_16mbs"
+			maxWidth = 70
+			maxHeight = 36
+			format = centre
+		}
+
+		buttonType = {
+			name = "KYO_candidate_satori"
+			spriteType = "GFX_gensokyo_satori_large"
+			position = {
+				x = 22
+				y = 680
+			}
+			scale = 0.34
+			pdx_tooltip = KYO_leader_satori_tooltip
+		}
+
+		iconType = {
+			name = "KYO_candidate_satori_selected"
+			spriteType = "GFX_KYO_candidate_selected"
+			position = {
+				x = 18
+				y = 677
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_candidate_satori_current"
+			spriteType = "GFX_KYO_current_chair_frame"
+			position = {
+				x = 18
+				y = 677
+			}
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "KYO_candidate_satori_value"
+			position = {
+				x = 14
+				y = 756
+			}
+			text = "KYO_candidate_satori_value"
+			font = "hoi_16mbs"
+			maxWidth = 70
+			maxHeight = 36
+			format = centre
+		}
+
+		buttonType = {
+			name = "KYO_candidate_megumu"
+			spriteType = "GFX_gensokyo_Megumu_large"
+			position = {
+				x = 97
+				y = 680
+			}
+			scale = 0.34
+			pdx_tooltip = KYO_leader_megumu_tooltip
+		}
+
+		iconType = {
+			name = "KYO_candidate_megumu_selected"
+			spriteType = "GFX_KYO_candidate_selected"
+			position = {
+				x = 93
+				y = 677
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_candidate_megumu_current"
+			spriteType = "GFX_KYO_current_chair_frame"
+			position = {
+				x = 93
+				y = 677
+			}
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "KYO_candidate_megumu_value"
+			position = {
+				x = 89
+				y = 756
+			}
+			text = "KYO_candidate_megumu_value"
+			font = "hoi_16mbs"
+			maxWidth = 70
+			maxHeight = 36
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "KYO_military_candidate_block_title"
+			position = {
+				x = 176
+				y = 516
+			}
+			text = "KYO_military_candidate_block_title"
+			font = "hoi_16mbs"
+			maxWidth = 160
+			maxHeight = 36
+			format = centre
+		}
+
+		buttonType = {
+			name = "KYO_candidate_remilia"
+			spriteType = "GFX_gensokyo_Remilia_large"
+			position = {
+				x = 192
+				y = 548
+			}
+			scale = 0.34
+			pdx_tooltip = KYO_leader_remilia_tooltip
+		}
+
+		iconType = {
+			name = "KYO_candidate_remilia_selected"
+			spriteType = "GFX_KYO_candidate_selected"
+			position = {
+				x = 188
+				y = 545
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_candidate_remilia_current"
+			spriteType = "GFX_KYO_current_chair_frame"
+			position = {
+				x = 188
+				y = 545
+			}
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "KYO_candidate_remilia_value"
+			position = {
+				x = 184
+				y = 624
+			}
+			text = "KYO_candidate_remilia_value"
+			font = "hoi_16mbs"
+			maxWidth = 70
+			maxHeight = 36
+			format = centre
+		}
+
+		buttonType = {
+			name = "KYO_candidate_yuyuko"
+			spriteType = "GFX_gensokyo_yuyuko_large"
+			position = {
+				x = 267
+				y = 548
+			}
+			scale = 0.34
+			pdx_tooltip = KYO_leader_yuyuko_tooltip
+		}
+
+		iconType = {
+			name = "KYO_candidate_yuyuko_selected"
+			spriteType = "GFX_KYO_candidate_selected"
+			position = {
+				x = 263
+				y = 545
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_candidate_yuyuko_current"
+			spriteType = "GFX_KYO_current_chair_frame"
+			position = {
+				x = 263
+				y = 545
+			}
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "KYO_candidate_yuyuko_value"
+			position = {
+				x = 259
+				y = 624
+			}
+			text = "KYO_candidate_yuyuko_value"
+			font = "hoi_16mbs"
+			maxWidth = 70
+			maxHeight = 36
+			format = centre
+		}
+
+		buttonType = {
+			name = "KYO_candidate_suika"
+			spriteType = "GFX_gensokyo_suika_large"
+			position = {
+				x = 192
+				y = 680
+			}
+			scale = 0.34
+			pdx_tooltip = KYO_leader_suika_tooltip
+		}
+
+		iconType = {
+			name = "KYO_candidate_suika_selected"
+			spriteType = "GFX_KYO_candidate_selected"
+			position = {
+				x = 188
+				y = 677
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_candidate_suika_current"
+			spriteType = "GFX_KYO_current_chair_frame"
+			position = {
+				x = 188
+				y = 677
+			}
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "KYO_candidate_suika_value"
+			position = {
+				x = 184
+				y = 756
+			}
+			text = "KYO_candidate_suika_value"
+			font = "hoi_16mbs"
+			maxWidth = 70
+			maxHeight = 36
+			format = centre
+		}
+
+		buttonType = {
+			name = "KYO_candidate_yuuka"
+			spriteType = "GFX_gensokyo_yuuka_large"
+			position = {
+				x = 267
+				y = 680
+			}
+			scale = 0.34
+			pdx_tooltip = KYO_leader_yuuka_tooltip
+		}
+
+		iconType = {
+			name = "KYO_candidate_yuuka_selected"
+			spriteType = "GFX_KYO_candidate_selected"
+			position = {
+				x = 263
+				y = 677
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_candidate_yuuka_current"
+			spriteType = "GFX_KYO_current_chair_frame"
+			position = {
+				x = 263
+				y = 677
+			}
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "KYO_candidate_yuuka_value"
+			position = {
+				x = 259
+				y = 756
+			}
+			text = "KYO_candidate_yuuka_value"
+			font = "hoi_16mbs"
+			maxWidth = 70
+			maxHeight = 36
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "KYO_mobilization_candidate_block_title"
+			position = {
+				x = 346
+				y = 516
+			}
+			text = "KYO_mobilization_candidate_block_title"
+			font = "hoi_16mbs"
+			maxWidth = 160
+			maxHeight = 36
+			format = centre
+		}
+
+		buttonType = {
+			name = "KYO_candidate_sekibanki"
+			spriteType = "GFX_gensokyo_sekibanki_large"
+			position = {
+				x = 362
+				y = 548
+			}
+			scale = 0.34
+			pdx_tooltip = KYO_leader_sekibanki_tooltip
+		}
+
+		iconType = {
+			name = "KYO_candidate_sekibanki_selected"
+			spriteType = "GFX_KYO_candidate_selected"
+			position = {
+				x = 358
+				y = 545
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_candidate_sekibanki_current"
+			spriteType = "GFX_KYO_current_chair_frame"
+			position = {
+				x = 358
+				y = 545
+			}
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "KYO_candidate_sekibanki_value"
+			position = {
+				x = 354
+				y = 624
+			}
+			text = "KYO_candidate_sekibanki_value"
+			font = "hoi_16mbs"
+			maxWidth = 70
+			maxHeight = 36
+			format = centre
+		}
+
+		buttonType = {
+			name = "KYO_candidate_eirin"
+			spriteType = "GFX_gensokyo_Eirin_large"
+			position = {
+				x = 437
+				y = 548
+			}
+			scale = 0.34
+			pdx_tooltip = KYO_leader_eirin_tooltip
+		}
+
+		iconType = {
+			name = "KYO_candidate_eirin_selected"
+			spriteType = "GFX_KYO_candidate_selected"
+			position = {
+				x = 433
+				y = 545
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_candidate_eirin_current"
+			spriteType = "GFX_KYO_current_chair_frame"
+			position = {
+				x = 433
+				y = 545
+			}
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "KYO_candidate_eirin_value"
+			position = {
+				x = 429
+				y = 624
+			}
+			text = "KYO_candidate_eirin_value"
+			font = "hoi_16mbs"
+			maxWidth = 70
+			maxHeight = 36
+			format = centre
+		}
+
+		buttonType = {
+			name = "KYO_candidate_raiko"
+			spriteType = "GFX_gensokyo_reiko_large"
+			position = {
+				x = 362
+				y = 680
+			}
+			scale = 0.34
+			pdx_tooltip = KYO_leader_raiko_tooltip
+		}
+
+		iconType = {
+			name = "KYO_candidate_raiko_selected"
+			spriteType = "GFX_KYO_candidate_selected"
+			position = {
+				x = 358
+				y = 677
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_candidate_raiko_current"
+			spriteType = "GFX_KYO_current_chair_frame"
+			position = {
+				x = 358
+				y = 677
+			}
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "KYO_candidate_raiko_value"
+			position = {
+				x = 354
+				y = 756
+			}
+			text = "KYO_candidate_raiko_value"
+			font = "hoi_16mbs"
+			maxWidth = 70
+			maxHeight = 36
+			format = centre
+		}
+
+		buttonType = {
+			name = "KYO_candidate_eiki"
+			spriteType = "GFX_gensokyo_eiki_large"
+			position = {
+				x = 437
+				y = 680
+			}
+			scale = 0.34
+			pdx_tooltip = KYO_leader_eiki_tooltip
+		}
+
+		iconType = {
+			name = "KYO_candidate_eiki_selected"
+			spriteType = "GFX_KYO_candidate_selected"
+			position = {
+				x = 433
+				y = 677
+			}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "KYO_candidate_eiki_current"
+			spriteType = "GFX_KYO_current_chair_frame"
+			position = {
+				x = 433
+				y = 677
+			}
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "KYO_candidate_eiki_value"
+			position = {
+				x = 429
+				y = 756
+			}
+			text = "KYO_candidate_eiki_value"
+			font = "hoi_16mbs"
+			maxWidth = 70
+			maxHeight = 36
+			format = centre
+		}
+
+	}
+}

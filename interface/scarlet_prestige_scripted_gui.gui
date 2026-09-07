@@ -1,0 +1,212 @@
+# Scarlet Prestige Scripted GUI (draft)
+# Layout inspired by remilia gui draft.png
+# You can reposition/resize freely.
+
+@SCARLET_GUI_W = 100%
+@SCARLET_GUI_H = 650
+@SCARLET_ROW_Y = 400
+@SCARLET_NUM_Y = 500
+
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "scarlet_prestige_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 510 height = @SCARLET_GUI_H }
+		clipping = no 
+
+		# background (use vanilla generic panel for now)
+
+		instantTextBoxType = {
+			name = "scarlet_title"
+			orientation = CENTER_LEFT
+			
+			position = { x = 150 y = 12 }
+			font = "hoi_36header"
+			text = "scarlet_prestige_gui_title"
+			format = center
+			
+		}
+
+		instantTextBoxType = {
+			name = "scarlet_subtitle"
+			orientation = CENTER_LEFT
+			position = { x = 150 y = 48 }
+			font = "hoi_18mbs"
+			text = "scarlet_prestige_gui_subtitle"
+			format = center
+			
+		}
+
+		# close button
+		buttonType = {
+			name = "scarlet_close_button"
+			orientation = UPPER_LEFT
+			position = { x = 0 y = 100 }
+			quadTextureSprite = "GFX_closebutton"
+			clicksound = click_close
+			pdx_tooltip = "scarlet_prestige_gui_close_tt"
+		}
+
+		# -------------------------------------------------
+		# Portrait strip (5 slots) + prestige number labels
+		# -------------------------------------------------
+		
+		iconType = {
+			name = "scarlet_all_characters"
+			orientation = upper_left
+			position = { x = 0 y = 100 }
+			spriteType = "GFX_decision_Scarlet_decision_all"
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "scarlet_patchouli_characters"
+			orientation = upper_left
+			position = { x = 0 y = 100 }
+			spriteType = "GFX_decision_Scarlet_decision_patchouli"
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "scarlet_flandre_characters"
+			orientation = upper_left
+			position = { x = 0 y = 100 }
+			spriteType = "GFX_decision_Scarlet_decision_flandre"
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "scarlet_remilia_characters"
+			orientation = upper_left
+			position = { x = 0 y = 100 }
+			spriteType = "GFX_decision_Scarlet_decision_remilia"
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "scarlet_meiling_characters"
+			orientation = upper_left
+			position = { x = 0 y = 100 }
+			spriteType = "GFX_decision_Scarlet_decision_meiling"
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "scarlet_sakuya_characters"
+			orientation = upper_left
+			position = { x = 0 y = 100 }
+			spriteType = "GFX_decision_Scarlet_decision_sakuya"
+			alwaystransparent = yes
+		}
+
+		# Slot 1 - Sakuya
+		buttonType = {
+			name = "scarlet_portrait_sakuya"
+			orientation = upper_left
+			position = { x = 45 y = @SCARLET_ROW_Y }
+			
+			spriteType = "GFX_add_pol_idea_button"
+			clicksound = click_action
+			
+			pdx_tooltip = "scarlet_prestige_tt_sakuya"
+		}
+		instantTextBoxType = {
+			name = "scarlet_num_sakuya"
+			orientation = upper_left
+			position = { x = 20 y = @SCARLET_NUM_Y }
+			font = "hoi_24header"
+			text = "[?scarlet_prestige_sakuya]"
+			format = center
+			maxWidth = 120
+		}
+
+		# Slot 2 - Meiling
+		buttonType = {
+			name = "scarlet_portrait_meiling"
+			orientation = upper_left
+			position = { x = 135 y = @SCARLET_ROW_Y }
+			spriteType = "GFX_add_pol_idea_button"
+			clicksound = click_action
+			pdx_tooltip = "scarlet_prestige_tt_meiling"
+		}
+		instantTextBoxType = {
+			name = "scarlet_num_meiling"
+			orientation = upper_left
+			position = { x = 105 y = @SCARLET_NUM_Y }
+			font = "hoi_24header"
+			text = "[?scarlet_prestige_meiling]"
+			format = center
+			maxWidth = 120
+		}
+
+		# Slot 3 - Remilia (center)
+		buttonType = {
+			name = "scarlet_portrait_remilia"
+			orientation = upper_left
+			position = { x = 235 y = @SCARLET_ROW_Y }
+			spriteType = "GFX_add_pol_idea_button"
+			clicksound = click_action
+			pdx_tooltip = "scarlet_prestige_tt_remilia"
+		}
+		instantTextBoxType = {
+			name = "scarlet_num_remilia"
+			orientation = upper_left
+			position = { x = 205 y = @SCARLET_NUM_Y }
+			font = "hoi_24header"
+			text = "[?scarlet_prestige_remilia]"
+			format = center
+			maxWidth = 120
+		}
+
+		# Slot 4 - Flandre
+		buttonType = {
+			name = "scarlet_portrait_flandre"
+			orientation = upper_left
+			position = { x = 330 y = @SCARLET_ROW_Y }
+			spriteType = "GFX_add_pol_idea_button"
+			clicksound = click_action
+			pdx_tooltip = "scarlet_prestige_tt_flandre"
+		}
+		instantTextBoxType = {
+			name = "scarlet_num_flandre"
+			orientation = upper_left
+			position = { x = 292 y = @SCARLET_NUM_Y }
+			font = "hoi_24header"
+			text = "[?scarlet_prestige_flandre]"
+			format = center
+			maxWidth = 120
+		}
+
+		# Slot 5 - Patchouli
+		buttonType = {
+			name = "scarlet_portrait_patchouli"
+			orientation = upper_left
+			position = { x = 420 y = @SCARLET_ROW_Y }
+			spriteType = "GFX_add_pol_idea_button"
+			clicksound = click_action
+			pdx_tooltip = "scarlet_prestige_tt_patchouli"
+		}
+		instantTextBoxType = {
+			name = "scarlet_num_patchouli"
+			orientation = upper_left
+			position = { x = 380 y = @SCARLET_NUM_Y }
+			font = "hoi_24header"
+			text = "[?scarlet_prestige_patchouli]"
+			format = center
+			maxWidth = 120
+		}
+
+		# footer hint
+		instantTextBoxType = {
+			name = "scarlet_hint"
+			orientation = CENTER_DOWN
+			position = { x = -50 y = -125}
+			font = "hoi_16mbs"
+			text = "scarlet_prestige_gui_hint"
+			format = center
+			
+		}
+	}
+}

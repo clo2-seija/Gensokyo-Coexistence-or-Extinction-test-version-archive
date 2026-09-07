@@ -1,0 +1,163 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_KYO_barrier_map_background"
+		texturefile = "gfx/interface/KYO_first_war/kyo_barrier_map.png"
+	}
+
+	spriteType = {
+		name = "GFX_KYO_barrier_node_hakurei"
+		texturefile = "gfx/interface/KYO_first_war/kyo_barrier_node_hakurei.png"
+	}
+
+	spriteType = {
+		name = "GFX_KYO_barrier_node_mountain"
+		texturefile = "gfx/interface/KYO_first_war/kyo_barrier_node_mountain.png"
+	}
+
+	spriteType = {
+		name = "GFX_KYO_barrier_node_bamboo"
+		texturefile = "gfx/interface/KYO_first_war/kyo_barrier_node_bamboo.png"
+	}
+
+	spriteType = {
+		name = "GFX_KYO_barrier_node_forest"
+		texturefile = "gfx/interface/KYO_first_war/kyo_barrier_node_forest.png"
+	}
+
+	spriteType = {
+		name = "GFX_KYO_barrier_node_old_capital"
+		texturefile = "gfx/interface/KYO_first_war/kyo_barrier_node_old_capital.png"
+	}
+
+	spriteType = {
+		name = "GFX_KYO_barrier_node_human_village"
+		texturefile = "gfx/interface/KYO_first_war/kyo_barrier_node_human_village.png"
+	}
+
+	spriteType = {
+		name = "GFX_KYO_barrier_node_scarlet_lake"
+		texturefile = "gfx/interface/KYO_first_war/kyo_barrier_node_scarlet_lake.png"
+	}
+
+	spriteType = {
+		name = "GFX_KYO_barrier_node_sunflower"
+		texturefile = "gfx/interface/KYO_first_war/kyo_barrier_node_sunflower.png"
+	}
+
+	spriteType = {
+		name = "GFX_KYO_barrier_node_higan"
+		texturefile = "gfx/interface/KYO_first_war/kyo_barrier_node_higan.png"
+	}
+
+	spriteType = {
+		name = "GFX_KYO_barrier_status_normal"
+		texturefile = "gfx/interface/KYO_first_war/kyo_barrier_status_normal.png"
+	}
+
+	spriteType = {
+		name = "GFX_KYO_barrier_status_glitch"
+		texturefile = "gfx/interface/KYO_first_war/kyo_barrier_status_glitch.png"
+	}
+
+	spriteType = {
+		name = "GFX_KYO_barrier_status_shattered"
+		texturefile = "gfx/interface/KYO_first_war/kyo_barrier_status_shattered.png"
+	}
+
+	spriteType = {
+		name = "GFX_KYO_barrier_node_selected"
+		texturefile = "gfx/interface/KYO_first_war/kyo_barrier_node_selected.png"
+	}
+
+	frameAnimatedSpriteType = {
+
+        name = "GFX_KYO_hyakki_triangle_background" 
+        texturefile = "gfx/interface/KYO_first_war/kyo_hyakki_triangle.png"
+        noOfFrames = 8  
+ 
+        animation_rate_fps = 8
+        looping = yes
+        play_on_show =  yes
+        pause_on_loop = 0 
+        
+        
+		
+    }
+
+	
+
+	spriteType = {
+		name = "GFX_KYO_fulfillment_green"
+		texturefile = "gfx/interface/KYO_first_war/kyo_fulfillment_green.png"
+	}
+
+	spriteType = {
+		name = "GFX_KYO_fulfillment_yellow"
+		texturefile = "gfx/interface/KYO_first_war/kyo_fulfillment_yellow.png"
+	}
+
+	spriteType = {
+		name = "GFX_KYO_fulfillment_orange"
+		texturefile = "gfx/interface/KYO_first_war/kyo_fulfillment_orange.png"
+	}
+
+	spriteType = {
+		name = "GFX_KYO_fulfillment_red"
+		texturefile = "gfx/interface/KYO_first_war/kyo_fulfillment_red.png"
+	}
+
+	spriteType = {
+		name = "GFX_KYO_hyakki_leader_placeholder"
+		texturefile = "gfx/interface/KYO_first_war/kyo_leader_placeholder.png"
+	}
+
+
+
+	spriteType = {
+		name = "GFX_KYO_candidate_selected"
+		texturefile = "gfx/interface/KYO_first_war/kyo_candidate_selected.png"
+	}
+
+	spriteType = {
+		name = "GFX_KYO_yukari_arbiter_frame"
+		texturefile = "gfx/interface/KYO_first_war/kyo_yukari_arbiter_frame.png"
+	}
+
+
+	spriteType = {
+		name = "GFX_KYO_current_chair_frame"
+		texturefile = "gfx/interface/KYO_first_war/kyo_current_chair_frame.png"
+	}
+
+
+	spriteType = {
+		name = "GFX_KYO_hyakki_candidate_blocks_background"
+		texturefile = "gfx/interface/KYO_first_war/kyo_hyakki_candidate_blocks.png"
+	}
+
+	spriteType = {
+		name = "GFX_KYO_barrier_node_netherworld"
+		texturefile = "gfx/interface/KYO_first_war/kyo_barrier_node_netherworld.png"
+	}
+
+	spriteType = {
+		name = "GFX_KYO_barrier_dot_green"
+		texturefile = "gfx/interface/KYO_first_war/kyo_barrier_dot_green.png"
+	}
+
+	spriteType = {
+		name = "GFX_KYO_barrier_dot_yellow"
+		texturefile = "gfx/interface/KYO_first_war/kyo_barrier_dot_yellow.png"
+	}
+
+	spriteType = {
+		name = "GFX_KYO_barrier_dot_red"
+		texturefile = "gfx/interface/KYO_first_war/kyo_barrier_dot_red.png"
+	}
+
+	spriteType = {
+		name = "GFX_KYO_barrier_summary_band"
+		texturefile = "gfx/interface/KYO_first_war/kyo_barrier_summary_band.png"
+	}
+}

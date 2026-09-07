@@ -1,0 +1,32 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_KYO_lunar_scale_left_3"
+		texturefile = "gfx/interface/lunar_scale/KYO_lunar_scale_left_3.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KYO_lunar_scale_left_2"
+		texturefile = "gfx/interface/lunar_scale/KYO_lunar_scale_left_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KYO_lunar_scale_left_1"
+		texturefile = "gfx/interface/lunar_scale/KYO_lunar_scale_left_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KYO_lunar_scale_right_1"
+		texturefile = "gfx/interface/lunar_scale/KYO_lunar_scale_right_1.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KYO_lunar_scale_right_2"
+		texturefile = "gfx/interface/lunar_scale/KYO_lunar_scale_right_2.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_KYO_lunar_scale_right_3"
+		texturefile = "gfx/interface/lunar_scale/KYO_lunar_scale_right_3.png"
+		legacy_lazy_load = no
+	}
+}

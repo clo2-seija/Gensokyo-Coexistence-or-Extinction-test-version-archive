@@ -1,0 +1,2528 @@
+guiTypes = {
+	containerWindowType = {
+		name = "KYO_cws_support_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 510 height = 1090 }
+		clipping = no
+
+		instantTextBoxType = {
+			name = "KYO_cws_title"
+			position = { x = 0 y = 0 }
+			font = "hoi_24header"
+			text = "KYO_cws_gui_title"
+			maxWidth = 510
+			maxHeight = 28
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "KYO_cws_summary"
+			position = { x = 0 y = 29 }
+			font = "hoi_16mbs"
+			text = "KYO_cws_gui_summary"
+			maxWidth = 510
+			maxHeight = 42
+			format = center
+		}
+
+		containerWindowType = {
+			name = "KYO_cws_yakumo_panel"
+			position = { x = 0 y = 52 }
+			size = { width = 240 height = 160 }
+			clipping = no
+
+			background = {
+				name = "KYO_cws_yakumo_panel_bg"
+				position = { x = 0 y = 0 }
+				quadTextureSprite = "GFX_tiled_decisions_bg_small"
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_yakumo_name"
+				position = { x = 0 y = 2 }
+				font = "hoi_18mbs"
+				text = "KYO_cws_gui_yakumo_name"
+				maxWidth = 240
+				maxHeight = 20
+				format = center
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_yakumo_seat_count"
+				position = { x = 0 y = 21 }
+				font = "hoi_16mbs"
+				text = "KYO_cws_gui_yakumo_seats"
+				maxWidth = 240
+				maxHeight = 18
+				format = center
+			}
+
+			iconType = {
+				name = "KYO_cws_yakumo_leader_alive"
+				position = { x = 10 y = 39 }
+				spriteType = "GFX_gensokyo_Chen_large"
+				scale = 0.52
+				pdx_tooltip = "KYO_cws_gui_yakumo_leader_tt"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_yakumo_leader_dead"
+				position = { x = 10 y = 39 }
+				spriteType = "GFX_gensokyo_chen_death_large"
+				scale = 0.52
+				pdx_tooltip = "KYO_cws_gui_yakumo_leader_dead_tt"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_yakumo_village"
+				position = { x = 104 y = 43 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_yakumo_village"
+				position = { x = 107 y = 42 }
+				spriteType = "GFX_gensokyo_keine_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_village_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_yakumo_village"
+				position = { x = 107 y = 42 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_yakumo_kappa"
+				position = { x = 130 y = 43 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_yakumo_kappa"
+				position = { x = 133 y = 42 }
+				spriteType = "GFX_gensokyo_eiki_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_kappa_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_yakumo_kappa"
+				position = { x = 133 y = 42 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_yakumo_tengu"
+				position = { x = 156 y = 43 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_yakumo_tengu"
+				position = { x = 159 y = 42 }
+				spriteType = "GFX_gensokyo_Megumu_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_tengu_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_yakumo_tengu"
+				position = { x = 159 y = 42 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_yakumo_eientei"
+				position = { x = 182 y = 43 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_yakumo_eientei"
+				position = { x = 185 y = 42 }
+				spriteType = "GFX_gensokyo_Eirin_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_eientei_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_yakumo_eientei"
+				position = { x = 185 y = 42 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_yakumo_hakugyokurou"
+				position = { x = 104 y = 80 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_yakumo_hakugyokurou"
+				position = { x = 107 y = 79 }
+				spriteType = "GFX_gensokyo_yuyuko_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_hakugyokurou_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_yakumo_hakugyokurou"
+				position = { x = 107 y = 79 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_yakumo_chireiden"
+				position = { x = 130 y = 80 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_yakumo_chireiden"
+				position = { x = 133 y = 79 }
+				spriteType = "GFX_gensokyo_satori_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_chireiden_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_yakumo_chireiden"
+				position = { x = 133 y = 79 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_yakumo_oni"
+				position = { x = 156 y = 80 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_yakumo_oni"
+				position = { x = 159 y = 79 }
+				spriteType = "GFX_gensokyo_yuugi_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_oni_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_yakumo_oni"
+				position = { x = 159 y = 79 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_yakumo_fairies"
+				position = { x = 182 y = 80 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_yakumo_fairies"
+				position = { x = 185 y = 79 }
+				spriteType = "GFX_gensokyo_Cirno_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_fairies_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_yakumo_fairies"
+				position = { x = 185 y = 79 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_yakumo_tsukumogami"
+				position = { x = 104 y = 117 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_yakumo_tsukumogami"
+				position = { x = 107 y = 116 }
+				spriteType = "GFX_gensokyo_reiko_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_tsukumogami_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_yakumo_tsukumogami"
+				position = { x = 107 y = 116 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_yakumo_moriya"
+				position = { x = 130 y = 117 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_yakumo_moriya"
+				position = { x = 133 y = 116 }
+				spriteType = "GFX_gensokyo_kanako_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_moriya_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_yakumo_moriya"
+				position = { x = 133 y = 116 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_yakumo_senkai"
+				position = { x = 156 y = 117 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_yakumo_senkai"
+				position = { x = 159 y = 116 }
+				spriteType = "GFX_gensokyo_miko_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_senkai_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_yakumo_senkai"
+				position = { x = 159 y = 116 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_yakumo_magic_forest"
+				position = { x = 182 y = 117 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_yakumo_magic_forest"
+				position = { x = 185 y = 116 }
+				spriteType = "GFX_gensokyo_yuma_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_magic_forest_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_yakumo_magic_forest"
+				position = { x = 185 y = 116 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "KYO_cws_remilia_panel"
+			position = { x = 270 y = 52 }
+			size = { width = 240 height = 160 }
+			clipping = no
+
+			background = {
+				name = "KYO_cws_remilia_panel_bg"
+				position = { x = 0 y = 0 }
+				quadTextureSprite = "GFX_tiled_decisions_bg_small"
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_remilia_name"
+				position = { x = 0 y = 2 }
+				font = "hoi_18mbs"
+				text = "KYO_cws_gui_remilia_name"
+				maxWidth = 240
+				maxHeight = 20
+				format = center
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_remilia_seat_count"
+				position = { x = 0 y = 21 }
+				font = "hoi_16mbs"
+				text = "KYO_cws_gui_remilia_seats"
+				maxWidth = 240
+				maxHeight = 18
+				format = center
+			}
+
+			iconType = {
+				name = "KYO_cws_remilia_leader_alive"
+				position = { x = 145 y = 39 }
+				spriteType = "GFX_gensokyo_Remilia_large"
+				scale = 0.52
+				pdx_tooltip = "KYO_cws_gui_remilia_leader_tt"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_remilia_leader_dead"
+				position = { x = 145 y = 39 }
+				spriteType = "GFX_gensokyo_remilia_death_large"
+				scale = 0.52
+				pdx_tooltip = "KYO_cws_gui_remilia_leader_dead_tt"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_remilia_village"
+				position = { x = 4 y = 43 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_remilia_village"
+				position = { x = 7 y = 42 }
+				spriteType = "GFX_gensokyo_keine_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_village_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_remilia_village"
+				position = { x = 7 y = 42 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_remilia_kappa"
+				position = { x = 30 y = 43 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_remilia_kappa"
+				position = { x = 33 y = 42 }
+				spriteType = "GFX_gensokyo_eiki_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_kappa_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_remilia_kappa"
+				position = { x = 33 y = 42 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_remilia_tengu"
+				position = { x = 56 y = 43 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_remilia_tengu"
+				position = { x = 59 y = 42 }
+				spriteType = "GFX_gensokyo_Megumu_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_tengu_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_remilia_tengu"
+				position = { x = 59 y = 42 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_remilia_eientei"
+				position = { x = 82 y = 43 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_remilia_eientei"
+				position = { x = 85 y = 42 }
+				spriteType = "GFX_gensokyo_Eirin_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_eientei_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_remilia_eientei"
+				position = { x = 85 y = 42 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_remilia_hakugyokurou"
+				position = { x = 4 y = 80 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_remilia_hakugyokurou"
+				position = { x = 7 y = 79 }
+				spriteType = "GFX_gensokyo_yuyuko_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_hakugyokurou_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_remilia_hakugyokurou"
+				position = { x = 7 y = 79 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_remilia_chireiden"
+				position = { x = 30 y = 80 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_remilia_chireiden"
+				position = { x = 33 y = 79 }
+				spriteType = "GFX_gensokyo_satori_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_chireiden_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_remilia_chireiden"
+				position = { x = 33 y = 79 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_remilia_oni"
+				position = { x = 56 y = 80 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_remilia_oni"
+				position = { x = 59 y = 79 }
+				spriteType = "GFX_gensokyo_yuugi_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_oni_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_remilia_oni"
+				position = { x = 59 y = 79 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_remilia_fairies"
+				position = { x = 82 y = 80 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_remilia_fairies"
+				position = { x = 85 y = 79 }
+				spriteType = "GFX_gensokyo_Cirno_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_fairies_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_remilia_fairies"
+				position = { x = 85 y = 79 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_remilia_tsukumogami"
+				position = { x = 4 y = 117 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_remilia_tsukumogami"
+				position = { x = 7 y = 116 }
+				spriteType = "GFX_gensokyo_reiko_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_tsukumogami_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_remilia_tsukumogami"
+				position = { x = 7 y = 116 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_remilia_moriya"
+				position = { x = 30 y = 117 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_remilia_moriya"
+				position = { x = 33 y = 116 }
+				spriteType = "GFX_gensokyo_kanako_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_moriya_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_remilia_moriya"
+				position = { x = 33 y = 116 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_remilia_senkai"
+				position = { x = 56 y = 117 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_remilia_senkai"
+				position = { x = 59 y = 116 }
+				spriteType = "GFX_gensokyo_miko_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_senkai_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_remilia_senkai"
+				position = { x = 59 y = 116 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_remilia_magic_forest"
+				position = { x = 82 y = 117 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_remilia_magic_forest"
+				position = { x = 85 y = 116 }
+				spriteType = "GFX_gensokyo_yuma_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_magic_forest_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_remilia_magic_forest"
+				position = { x = 85 y = 116 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "KYO_cws_hijiri_panel"
+			position = { x = 0 y = 445 }
+			size = { width = 240 height = 160 }
+			clipping = no
+
+			background = {
+				name = "KYO_cws_hijiri_panel_bg"
+				position = { x = 0 y = 0 }
+				quadTextureSprite = "GFX_tiled_decisions_bg_small"
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_hijiri_name"
+				position = { x = 0 y = 2 }
+				font = "hoi_18mbs"
+				text = "KYO_cws_gui_hijiri_name"
+				maxWidth = 240
+				maxHeight = 20
+				format = center
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_hijiri_seat_count"
+				position = { x = 0 y = 21 }
+				font = "hoi_16mbs"
+				text = "KYO_cws_gui_hijiri_seats"
+				maxWidth = 240
+				maxHeight = 18
+				format = center
+			}
+
+			iconType = {
+				name = "KYO_cws_hijiri_leader_alive"
+				position = { x = 10 y = 39 }
+				spriteType = "GFX_gensokyo_Byakuren_large"
+				scale = 0.52
+				pdx_tooltip = "KYO_cws_gui_hijiri_leader_tt"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_hijiri_leader_dead"
+				position = { x = 10 y = 39 }
+				spriteType = "GFX_gensokyo_hijiri_death_large"
+				scale = 0.52
+				pdx_tooltip = "KYO_cws_gui_hijiri_leader_dead_tt"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_hijiri_village"
+				position = { x = 104 y = 43 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_hijiri_village"
+				position = { x = 107 y = 42 }
+				spriteType = "GFX_gensokyo_keine_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_village_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_hijiri_village"
+				position = { x = 107 y = 42 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_hijiri_kappa"
+				position = { x = 130 y = 43 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_hijiri_kappa"
+				position = { x = 133 y = 42 }
+				spriteType = "GFX_gensokyo_eiki_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_kappa_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_hijiri_kappa"
+				position = { x = 133 y = 42 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_hijiri_tengu"
+				position = { x = 156 y = 43 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_hijiri_tengu"
+				position = { x = 159 y = 42 }
+				spriteType = "GFX_gensokyo_Megumu_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_tengu_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_hijiri_tengu"
+				position = { x = 159 y = 42 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_hijiri_eientei"
+				position = { x = 182 y = 43 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_hijiri_eientei"
+				position = { x = 185 y = 42 }
+				spriteType = "GFX_gensokyo_Eirin_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_eientei_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_hijiri_eientei"
+				position = { x = 185 y = 42 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_hijiri_hakugyokurou"
+				position = { x = 104 y = 80 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_hijiri_hakugyokurou"
+				position = { x = 107 y = 79 }
+				spriteType = "GFX_gensokyo_yuyuko_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_hakugyokurou_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_hijiri_hakugyokurou"
+				position = { x = 107 y = 79 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_hijiri_chireiden"
+				position = { x = 130 y = 80 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_hijiri_chireiden"
+				position = { x = 133 y = 79 }
+				spriteType = "GFX_gensokyo_satori_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_chireiden_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_hijiri_chireiden"
+				position = { x = 133 y = 79 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_hijiri_oni"
+				position = { x = 156 y = 80 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_hijiri_oni"
+				position = { x = 159 y = 79 }
+				spriteType = "GFX_gensokyo_yuugi_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_oni_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_hijiri_oni"
+				position = { x = 159 y = 79 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_hijiri_fairies"
+				position = { x = 182 y = 80 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_hijiri_fairies"
+				position = { x = 185 y = 79 }
+				spriteType = "GFX_gensokyo_Cirno_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_fairies_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_hijiri_fairies"
+				position = { x = 185 y = 79 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_hijiri_tsukumogami"
+				position = { x = 104 y = 117 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_hijiri_tsukumogami"
+				position = { x = 107 y = 116 }
+				spriteType = "GFX_gensokyo_reiko_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_tsukumogami_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_hijiri_tsukumogami"
+				position = { x = 107 y = 116 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_hijiri_moriya"
+				position = { x = 130 y = 117 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_hijiri_moriya"
+				position = { x = 133 y = 116 }
+				spriteType = "GFX_gensokyo_kanako_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_moriya_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_hijiri_moriya"
+				position = { x = 133 y = 116 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_hijiri_senkai"
+				position = { x = 156 y = 117 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_hijiri_senkai"
+				position = { x = 159 y = 116 }
+				spriteType = "GFX_gensokyo_miko_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_senkai_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_hijiri_senkai"
+				position = { x = 159 y = 116 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_hijiri_magic_forest"
+				position = { x = 182 y = 117 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_hijiri_magic_forest"
+				position = { x = 185 y = 116 }
+				spriteType = "GFX_gensokyo_yuma_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_magic_forest_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_hijiri_magic_forest"
+				position = { x = 185 y = 116 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "KYO_cws_seija_panel"
+			position = { x = 270 y = 445 }
+			size = { width = 240 height = 160 }
+			clipping = no
+
+			background = {
+				name = "KYO_cws_seija_panel_bg"
+				position = { x = 0 y = 0 }
+				quadTextureSprite = "GFX_tiled_decisions_bg_small"
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_seija_name"
+				position = { x = 0 y = 2 }
+				font = "hoi_18mbs"
+				text = "KYO_cws_gui_seija_name"
+				maxWidth = 240
+				maxHeight = 20
+				format = center
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_seija_seat_count"
+				position = { x = 0 y = 21 }
+				font = "hoi_16mbs"
+				text = "KYO_cws_gui_seija_seats"
+				maxWidth = 240
+				maxHeight = 18
+				format = center
+			}
+
+			iconType = {
+				name = "KYO_cws_seija_leader_alive"
+				position = { x = 145 y = 39 }
+				spriteType = "GFX_gensokyo_Seija_large"
+				scale = 0.52
+				pdx_tooltip = "KYO_cws_gui_seija_leader_tt"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_seija_leader_dead"
+				position = { x = 145 y = 39 }
+				spriteType = "GFX_gensokyo_seija_death_large"
+				scale = 0.52
+				pdx_tooltip = "KYO_cws_gui_seija_leader_dead_tt"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_seija_village"
+				position = { x = 4 y = 43 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_seija_village"
+				position = { x = 7 y = 42 }
+				spriteType = "GFX_gensokyo_keine_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_village_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_seija_village"
+				position = { x = 7 y = 42 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_seija_kappa"
+				position = { x = 30 y = 43 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_seija_kappa"
+				position = { x = 33 y = 42 }
+				spriteType = "GFX_gensokyo_eiki_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_kappa_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_seija_kappa"
+				position = { x = 33 y = 42 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_seija_tengu"
+				position = { x = 56 y = 43 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_seija_tengu"
+				position = { x = 59 y = 42 }
+				spriteType = "GFX_gensokyo_Megumu_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_tengu_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_seija_tengu"
+				position = { x = 59 y = 42 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_seija_eientei"
+				position = { x = 82 y = 43 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_seija_eientei"
+				position = { x = 85 y = 42 }
+				spriteType = "GFX_gensokyo_Eirin_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_eientei_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_seija_eientei"
+				position = { x = 85 y = 42 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_seija_hakugyokurou"
+				position = { x = 4 y = 80 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_seija_hakugyokurou"
+				position = { x = 7 y = 79 }
+				spriteType = "GFX_gensokyo_yuyuko_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_hakugyokurou_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_seija_hakugyokurou"
+				position = { x = 7 y = 79 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_seija_chireiden"
+				position = { x = 30 y = 80 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_seija_chireiden"
+				position = { x = 33 y = 79 }
+				spriteType = "GFX_gensokyo_satori_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_chireiden_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_seija_chireiden"
+				position = { x = 33 y = 79 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_seija_oni"
+				position = { x = 56 y = 80 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_seija_oni"
+				position = { x = 59 y = 79 }
+				spriteType = "GFX_gensokyo_yuugi_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_oni_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_seija_oni"
+				position = { x = 59 y = 79 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_seija_fairies"
+				position = { x = 82 y = 80 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_seija_fairies"
+				position = { x = 85 y = 79 }
+				spriteType = "GFX_gensokyo_Cirno_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_fairies_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_seija_fairies"
+				position = { x = 85 y = 79 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_seija_tsukumogami"
+				position = { x = 4 y = 117 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_seija_tsukumogami"
+				position = { x = 7 y = 116 }
+				spriteType = "GFX_gensokyo_reiko_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_tsukumogami_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_seija_tsukumogami"
+				position = { x = 7 y = 116 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_seija_moriya"
+				position = { x = 30 y = 117 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_seija_moriya"
+				position = { x = 33 y = 116 }
+				spriteType = "GFX_gensokyo_kanako_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_moriya_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_seija_moriya"
+				position = { x = 33 y = 116 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_seija_senkai"
+				position = { x = 56 y = 117 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_seija_senkai"
+				position = { x = 59 y = 116 }
+				spriteType = "GFX_gensokyo_miko_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_senkai_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_seija_senkai"
+				position = { x = 59 y = 116 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_slot_seija_magic_forest"
+				position = { x = 82 y = 117 }
+				spriteType = "GFX_add_pol_idea_button"
+				scale = 0.42
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_owned_seija_magic_forest"
+				position = { x = 85 y = 116 }
+				spriteType = "GFX_gensokyo_yuma_large"
+				scale = 0.13
+				pdx_tooltip = "KYO_cws_target_magic_forest_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_owned_selected_seija_magic_forest"
+				position = { x = 85 y = 116 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.34
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "KYO_cws_neutral_panel"
+			position = { x = 0 y = 216 }
+			size = { width = 510 height = 225 }
+			clipping = no
+
+			background = {
+				name = "KYO_cws_neutral_panel_bg"
+				position = { x = 0 y = 0 }
+				quadTextureSprite = "GFX_tiled_decisions_bg_small"
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_neutral_header"
+				position = { x = 0 y = 3 }
+				font = "hoi_18mbs"
+				text = "KYO_cws_gui_neutral_header"
+				maxWidth = 510
+				maxHeight = 20
+				format = center
+			}
+
+			buttonType = {
+				name = "KYO_cws_neutral_village"
+				position = { x = 25 y = 28 }
+				spriteType = "GFX_gensokyo_keine_large"
+				scale = 0.36
+				pdx_tooltip = "KYO_cws_target_village_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_neutral_selected_village"
+				position = { x = 25 y = 28 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.94
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_neutral_kappa"
+				position = { x = 107 y = 28 }
+				spriteType = "GFX_gensokyo_eiki_large"
+				scale = 0.36
+				pdx_tooltip = "KYO_cws_target_kappa_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_neutral_selected_kappa"
+				position = { x = 107 y = 28 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.94
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_neutral_tengu"
+				position = { x = 189 y = 28 }
+				spriteType = "GFX_gensokyo_Megumu_large"
+				scale = 0.36
+				pdx_tooltip = "KYO_cws_target_tengu_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_neutral_selected_tengu"
+				position = { x = 189 y = 28 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.94
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_neutral_eientei"
+				position = { x = 271 y = 28 }
+				spriteType = "GFX_gensokyo_Eirin_large"
+				scale = 0.36
+				pdx_tooltip = "KYO_cws_target_eientei_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_neutral_selected_eientei"
+				position = { x = 271 y = 28 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.94
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_neutral_hakugyokurou"
+				position = { x = 353 y = 28 }
+				spriteType = "GFX_gensokyo_yuyuko_large"
+				scale = 0.36
+				pdx_tooltip = "KYO_cws_target_hakugyokurou_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_neutral_selected_hakugyokurou"
+				position = { x = 353 y = 28 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.94
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_neutral_chireiden"
+				position = { x = 435 y = 28 }
+				spriteType = "GFX_gensokyo_satori_large"
+				scale = 0.36
+				pdx_tooltip = "KYO_cws_target_chireiden_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_neutral_selected_chireiden"
+				position = { x = 435 y = 28 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.94
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_neutral_oni"
+				position = { x = 25 y = 116 }
+				spriteType = "GFX_gensokyo_yuugi_large"
+				scale = 0.36
+				pdx_tooltip = "KYO_cws_target_oni_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_neutral_selected_oni"
+				position = { x = 25 y = 116 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.94
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_neutral_fairies"
+				position = { x = 107 y = 116 }
+				spriteType = "GFX_gensokyo_Cirno_large"
+				scale = 0.36
+				pdx_tooltip = "KYO_cws_target_fairies_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_neutral_selected_fairies"
+				position = { x = 107 y = 116 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.94
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_neutral_tsukumogami"
+				position = { x = 189 y = 116 }
+				spriteType = "GFX_gensokyo_reiko_large"
+				scale = 0.36
+				pdx_tooltip = "KYO_cws_target_tsukumogami_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_neutral_selected_tsukumogami"
+				position = { x = 189 y = 116 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.94
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_neutral_moriya"
+				position = { x = 271 y = 116 }
+				spriteType = "GFX_gensokyo_kanako_large"
+				scale = 0.36
+				pdx_tooltip = "KYO_cws_target_moriya_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_neutral_selected_moriya"
+				position = { x = 271 y = 116 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.94
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_neutral_senkai"
+				position = { x = 353 y = 116 }
+				spriteType = "GFX_gensokyo_miko_large"
+				scale = 0.36
+				pdx_tooltip = "KYO_cws_target_senkai_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_neutral_selected_senkai"
+				position = { x = 353 y = 116 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.94
+				alwaystransparent = yes
+			}
+
+			buttonType = {
+				name = "KYO_cws_neutral_magic_forest"
+				position = { x = 435 y = 116 }
+				spriteType = "GFX_gensokyo_yuma_large"
+				scale = 0.36
+				pdx_tooltip = "KYO_cws_target_magic_forest_tooltip"
+				clicksound = click_default
+			}
+
+			iconType = {
+				name = "KYO_cws_neutral_selected_magic_forest"
+				position = { x = 435 y = 116 }
+				spriteType = "GFX_KYO_candidate_selected"
+				scale = 0.94
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_neutral_hint"
+				position = { x = 10 y = 203 }
+				font = "hoi_16mbs"
+				text = "KYO_cws_gui_neutral_hint"
+				maxWidth = 490
+				maxHeight = 20
+				format = center
+			}
+		}
+
+		containerWindowType = {
+			name = "KYO_cws_detail_panel"
+			position = { x = 0 y = 250 }
+			show_position = { x = 0 y = 610 }
+			hide_position = { x = 0 y = 250 }
+			show_animation_type = decelerated
+			hide_animation_type = accelerated
+			animation_time = 260
+			size = { width = 510 height = 480 }
+			clipping = no
+
+			background = {
+				name = "KYO_cws_detail_bg"
+				position = { x = 0 y = 0 }
+				quadTextureSprite = "GFX_tiled_window2_1b_border"
+			}
+
+			buttonType = {
+				name = "KYO_cws_detail_close"
+				position = { x = 480 y = 8 }
+				quadTextureSprite = "GFX_closebutton"
+				pdx_tooltip = "KYO_cws_gui_close_detail"
+				clicksound = click_close
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_title_village"
+				position = { x = 20 y = 12 }
+				font = "hoi_30header"
+				text = "KYO_cws_target_village"
+				maxWidth = 460
+				maxHeight = 36
+				format = center
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_portrait_village"
+				position = { x = 18 y = 50 }
+				spriteType = "GFX_gensokyo_keine_large"
+				scale = 0.70
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_text_village"
+				position = { x = 150 y = 50 }
+				font = "hoi_18mbs"
+				text = "KYO_cws_gui_village_detail"
+				maxWidth = 340
+				maxHeight = 280
+				format = left
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_village_0"
+				position = { x = 190 y = 360 }
+				spriteType = "GFX_gensokyo_keine_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_village_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_village_1"
+				position = { x = 258 y = 360 }
+				spriteType = "GFX_gensokyo_mokou_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_village_tooltip"
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_title_kappa"
+				position = { x = 20 y = 12 }
+				font = "hoi_30header"
+				text = "KYO_cws_target_kappa"
+				maxWidth = 460
+				maxHeight = 36
+				format = center
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_portrait_kappa"
+				position = { x = 18 y = 50 }
+				spriteType = "GFX_gensokyo_eiki_large"
+				scale = 0.70
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_text_kappa"
+				position = { x = 150 y = 50 }
+				font = "hoi_18mbs"
+				text = "KYO_cws_gui_kappa_detail"
+				maxWidth = 340
+				maxHeight = 280
+				format = left
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_kappa_0"
+				position = { x = 88 y = 360 }
+				spriteType = "GFX_gensokyo_eiki_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_kappa_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_kappa_1"
+				position = { x = 156 y = 360 }
+				spriteType = "GFX_gensokyo_komachi_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_kappa_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_kappa_2"
+				position = { x = 224 y = 360 }
+				spriteType = "GFX_gensokyo_kutaka_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_kappa_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_kappa_3"
+				position = { x = 292 y = 360 }
+				spriteType = "GFX_gensokyo_zanmu_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_kappa_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_kappa_4"
+				position = { x = 360 y = 360 }
+				spriteType = "GFX_gensokyo_hisami_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_kappa_tooltip"
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_title_tengu"
+				position = { x = 20 y = 12 }
+				font = "hoi_30header"
+				text = "KYO_cws_target_tengu"
+				maxWidth = 460
+				maxHeight = 36
+				format = center
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_portrait_tengu"
+				position = { x = 18 y = 50 }
+				spriteType = "GFX_gensokyo_Megumu_large"
+				scale = 0.70
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_text_tengu"
+				position = { x = 150 y = 50 }
+				font = "hoi_18mbs"
+				text = "KYO_cws_gui_tengu_detail"
+				maxWidth = 340
+				maxHeight = 280
+				format = left
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_tengu_0"
+				position = { x = 20 y = 360 }
+				spriteType = "GFX_gensokyo_Megumu_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_tengu_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_tengu_1"
+				position = { x = 86 y = 360 }
+				spriteType = "GFX_gensokyo_Aya_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_tengu_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_tengu_2"
+				position = { x = 152 y = 360 }
+				spriteType = "GFX_gensokyo_Hatate_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_tengu_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_tengu_3"
+				position = { x = 218 y = 360 }
+				spriteType = "GFX_gensokyo_Momiji_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_tengu_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_tengu_4"
+				position = { x = 284 y = 360 }
+				spriteType = "GFX_gensokyo_nitori_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_tengu_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_tengu_5"
+				position = { x = 350 y = 360 }
+				spriteType = "GFX_gensokyo_takane_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_tengu_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_tengu_6"
+				position = { x = 416 y = 360 }
+				spriteType = "GFX_gensokyo_tsukasa_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_tengu_tooltip"
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_title_eientei"
+				position = { x = 20 y = 12 }
+				font = "hoi_30header"
+				text = "KYO_cws_target_eientei"
+				maxWidth = 460
+				maxHeight = 36
+				format = center
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_portrait_eientei"
+				position = { x = 18 y = 50 }
+				spriteType = "GFX_gensokyo_Eirin_large"
+				scale = 0.70
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_text_eientei"
+				position = { x = 150 y = 50 }
+				font = "hoi_18mbs"
+				text = "KYO_cws_gui_eientei_detail"
+				maxWidth = 340
+				maxHeight = 280
+				format = left
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_eientei_0"
+				position = { x = 122 y = 360 }
+				spriteType = "GFX_gensokyo_Eirin_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_eientei_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_eientei_1"
+				position = { x = 190 y = 360 }
+				spriteType = "GFX_gensokyo_reisen_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_eientei_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_eientei_2"
+				position = { x = 258 y = 360 }
+				spriteType = "GFX_gensokyo_tewi_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_eientei_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_eientei_3"
+				position = { x = 326 y = 360 }
+				spriteType = "GFX_gensokyo_kaguya_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_eientei_tooltip"
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_title_hakugyokurou"
+				position = { x = 20 y = 12 }
+				font = "hoi_30header"
+				text = "KYO_cws_target_hakugyokurou"
+				maxWidth = 460
+				maxHeight = 36
+				format = center
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_portrait_hakugyokurou"
+				position = { x = 18 y = 50 }
+				spriteType = "GFX_gensokyo_yuyuko_large"
+				scale = 0.70
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_text_hakugyokurou"
+				position = { x = 150 y = 50 }
+				font = "hoi_18mbs"
+				text = "KYO_cws_gui_hakugyokurou_detail"
+				maxWidth = 340
+				maxHeight = 280
+				format = left
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_hakugyokurou_0"
+				position = { x = 190 y = 360 }
+				spriteType = "GFX_gensokyo_yuyuko_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_hakugyokurou_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_hakugyokurou_1"
+				position = { x = 258 y = 360 }
+				spriteType = "GFX_gensokyo_youmu_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_hakugyokurou_tooltip"
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_title_chireiden"
+				position = { x = 20 y = 12 }
+				font = "hoi_30header"
+				text = "KYO_cws_target_chireiden"
+				maxWidth = 460
+				maxHeight = 36
+				format = center
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_portrait_chireiden"
+				position = { x = 18 y = 50 }
+				spriteType = "GFX_gensokyo_satori_large"
+				scale = 0.70
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_text_chireiden"
+				position = { x = 150 y = 50 }
+				font = "hoi_18mbs"
+				text = "KYO_cws_gui_chireiden_detail"
+				maxWidth = 340
+				maxHeight = 280
+				format = left
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_chireiden_0"
+				position = { x = 122 y = 360 }
+				spriteType = "GFX_gensokyo_satori_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_chireiden_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_chireiden_1"
+				position = { x = 190 y = 360 }
+				spriteType = "GFX_gensokyo_orin_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_chireiden_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_chireiden_2"
+				position = { x = 258 y = 360 }
+				spriteType = "GFX_gensokyo_okuu_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_chireiden_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_chireiden_3"
+				position = { x = 326 y = 360 }
+				spriteType = "GFX_gensokyo_koishi_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_chireiden_tooltip"
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_title_oni"
+				position = { x = 20 y = 12 }
+				font = "hoi_30header"
+				text = "KYO_cws_target_oni"
+				maxWidth = 460
+				maxHeight = 36
+				format = center
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_portrait_oni"
+				position = { x = 18 y = 50 }
+				spriteType = "GFX_gensokyo_yuugi_large"
+				scale = 0.70
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_text_oni"
+				position = { x = 150 y = 50 }
+				font = "hoi_18mbs"
+				text = "KYO_cws_gui_oni_detail"
+				maxWidth = 340
+				maxHeight = 280
+				format = left
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_oni_0"
+				position = { x = 54 y = 360 }
+				spriteType = "GFX_gensokyo_yuugi_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_oni_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_oni_1"
+				position = { x = 122 y = 360 }
+				spriteType = "GFX_gensokyo_suika_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_oni_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_oni_2"
+				position = { x = 190 y = 360 }
+				spriteType = "GFX_gensokyo_Kasen_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_oni_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_oni_3"
+				position = { x = 258 y = 360 }
+				spriteType = "GFX_gensokyo_parsee_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_oni_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_oni_4"
+				position = { x = 326 y = 360 }
+				spriteType = "GFX_gensokyo_yamame_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_oni_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_oni_5"
+				position = { x = 394 y = 360 }
+				spriteType = "GFX_gensokyo_kisume_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_oni_tooltip"
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_title_fairies"
+				position = { x = 20 y = 12 }
+				font = "hoi_30header"
+				text = "KYO_cws_target_fairies"
+				maxWidth = 460
+				maxHeight = 36
+				format = center
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_portrait_fairies"
+				position = { x = 18 y = 50 }
+				spriteType = "GFX_gensokyo_Cirno_large"
+				scale = 0.70
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_text_fairies"
+				position = { x = 150 y = 50 }
+				font = "hoi_18mbs"
+				text = "KYO_cws_gui_fairies_detail"
+				maxWidth = 340
+				maxHeight = 280
+				format = left
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_fairies_0"
+				position = { x = 54 y = 360 }
+				spriteType = "GFX_gensokyo_Cirno_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_fairies_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_fairies_1"
+				position = { x = 122 y = 360 }
+				spriteType = "GFX_gensokyo_daiyosei_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_fairies_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_fairies_2"
+				position = { x = 190 y = 360 }
+				spriteType = "GFX_gensokyo_sunny_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_fairies_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_fairies_3"
+				position = { x = 258 y = 360 }
+				spriteType = "GFX_gensokyo_luna_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_fairies_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_fairies_4"
+				position = { x = 326 y = 360 }
+				spriteType = "GFX_gensokyo_star_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_fairies_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_fairies_5"
+				position = { x = 394 y = 360 }
+				spriteType = "GFX_gensokyo_lily_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_fairies_tooltip"
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_title_tsukumogami"
+				position = { x = 20 y = 12 }
+				font = "hoi_30header"
+				text = "KYO_cws_target_tsukumogami"
+				maxWidth = 460
+				maxHeight = 36
+				format = center
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_portrait_tsukumogami"
+				position = { x = 18 y = 50 }
+				spriteType = "GFX_gensokyo_reiko_large"
+				scale = 0.70
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_text_tsukumogami"
+				position = { x = 150 y = 50 }
+				font = "hoi_18mbs"
+				text = "KYO_cws_gui_tsukumogami_detail"
+				maxWidth = 340
+				maxHeight = 280
+				format = left
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_tsukumogami_0"
+				position = { x = 122 y = 360 }
+				spriteType = "GFX_gensokyo_reiko_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_tsukumogami_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_tsukumogami_1"
+				position = { x = 190 y = 360 }
+				spriteType = "GFX_gensokyo_benben_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_tsukumogami_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_tsukumogami_2"
+				position = { x = 258 y = 360 }
+				spriteType = "GFX_gensokyo_yatsuhashi_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_tsukumogami_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_tsukumogami_3"
+				position = { x = 326 y = 360 }
+				spriteType = "GFX_gensokyo_kogasa_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_tsukumogami_tooltip"
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_title_moriya"
+				position = { x = 20 y = 12 }
+				font = "hoi_30header"
+				text = "KYO_cws_target_moriya"
+				maxWidth = 460
+				maxHeight = 36
+				format = center
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_portrait_moriya"
+				position = { x = 18 y = 50 }
+				spriteType = "GFX_gensokyo_kanako_large"
+				scale = 0.70
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_text_moriya"
+				position = { x = 150 y = 50 }
+				font = "hoi_18mbs"
+				text = "KYO_cws_gui_moriya_detail"
+				maxWidth = 340
+				maxHeight = 280
+				format = left
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_moriya_0"
+				position = { x = 190 y = 360 }
+				spriteType = "GFX_gensokyo_kanako_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_moriya_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_moriya_1"
+				position = { x = 258 y = 360 }
+				spriteType = "GFX_gensokyo_suwako_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_moriya_tooltip"
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_title_senkai"
+				position = { x = 20 y = 12 }
+				font = "hoi_30header"
+				text = "KYO_cws_target_senkai"
+				maxWidth = 460
+				maxHeight = 36
+				format = center
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_portrait_senkai"
+				position = { x = 18 y = 50 }
+				spriteType = "GFX_gensokyo_miko_large"
+				scale = 0.70
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_text_senkai"
+				position = { x = 150 y = 50 }
+				font = "hoi_18mbs"
+				text = "KYO_cws_gui_senkai_detail"
+				maxWidth = 340
+				maxHeight = 280
+				format = left
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_senkai_0"
+				position = { x = 88 y = 360 }
+				spriteType = "GFX_gensokyo_miko_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_senkai_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_senkai_1"
+				position = { x = 156 y = 360 }
+				spriteType = "GFX_gensokyo_futo_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_senkai_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_senkai_2"
+				position = { x = 224 y = 360 }
+				spriteType = "GFX_gensokyo_tojiko_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_senkai_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_senkai_3"
+				position = { x = 292 y = 360 }
+				spriteType = "GFX_gensokyo_seiga_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_senkai_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_senkai_4"
+				position = { x = 360 y = 360 }
+				spriteType = "GFX_gensokyo_yoshika_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_senkai_tooltip"
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_title_magic_forest"
+				position = { x = 20 y = 12 }
+				font = "hoi_30header"
+				text = "KYO_cws_target_magic_forest"
+				maxWidth = 460
+				maxHeight = 36
+				format = center
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_portrait_magic_forest"
+				position = { x = 18 y = 50 }
+				spriteType = "GFX_gensokyo_yuma_large"
+				scale = 0.70
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_text_magic_forest"
+				position = { x = 150 y = 50 }
+				font = "hoi_18mbs"
+				text = "KYO_cws_gui_magic_forest_detail"
+				maxWidth = 340
+				maxHeight = 280
+				format = left
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_magic_forest_0"
+				position = { x = 54 y = 360 }
+				spriteType = "GFX_gensokyo_yuma_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_magic_forest_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_magic_forest_1"
+				position = { x = 122 y = 360 }
+				spriteType = "GFX_gensokyo_yachie_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_magic_forest_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_magic_forest_2"
+				position = { x = 190 y = 360 }
+				spriteType = "GFX_gensokyo_saki_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_magic_forest_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_magic_forest_3"
+				position = { x = 258 y = 360 }
+				spriteType = "GFX_gensokyo_chiyari_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_magic_forest_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_magic_forest_4"
+				position = { x = 326 y = 360 }
+				spriteType = "GFX_gensokyo_enoko_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_magic_forest_tooltip"
+				alwaystransparent = yes
+			}
+
+			iconType = {
+				name = "KYO_cws_detail_member_magic_forest_5"
+				position = { x = 394 y = 360 }
+				spriteType = "GFX_gensokyo_biten_large"
+				scale = 0.40
+				pdx_tooltip = "KYO_cws_target_magic_forest_tooltip"
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_members_header"
+				position = { x = 15 y = 332 }
+				font = "hoi_24header"
+				text = "KYO_cws_gui_members_header"
+				maxWidth = 480
+				maxHeight = 28
+				format = center
+			}
+
+			instantTextBoxType = {
+				name = "KYO_cws_detail_hint"
+				position = { x = 15 y = 452 }
+				font = "hoi_16mbs"
+				text = "KYO_cws_gui_detail_hint"
+				maxWidth = 480
+				maxHeight = 20
+				format = center
+			}
+		}
+	}
+}

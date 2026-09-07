@@ -1,0 +1,8 @@
+spriteTypes = { 
+	##Icon For: The world of touhou
+	SpriteType = { 
+		name = "the_world_of_touhou-832726"
+		texturefile = "gfx/interface/bookmarks/the_world_of_touhou-bookmark/the_world_of_touhou-832726.dds"
+	}
+
+}

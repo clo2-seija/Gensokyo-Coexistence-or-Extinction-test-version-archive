@@ -1,0 +1,51 @@
+spriteTypes = {
+
+	spriteType = {
+		name = GFX_decision_picture_gensokyo_civilwar
+		textureFile = "gfx\interface\decisions\decision_gensokyo_civilwar.dds"
+	}
+
+	spriteType = {
+		name = GFX_decision_picture_Tsukumogami
+		textureFile = "gfx\interface\decisions\decision_picture_Tsukumogami.dds"
+	}
+
+	spriteType = {
+		name = GFX_decision_picture_seija_decision
+		textureFile = "gfx\interface\decisions\decision_picture_seija_decision.dds"
+	}
+
+	spriteType = {
+		name = GFX_decision_Scarlet_decision_patchouli
+		textureFile = "gfx\interface\decisions\Scarlet_decision_patchouli.png"
+	}
+
+	spriteType = {
+		name = GFX_decision_Scarlet_decision_flandre
+		textureFile = "gfx\interface\decisions\Scarlet_decision_flandre.png"
+	}
+	
+	spriteType = {
+		name = GFX_decision_Scarlet_decision_remilia
+		textureFile = "gfx\interface\decisions\Scarlet_decision_remilia.png"
+	}
+	
+	spriteType = {
+		name = GFX_decision_Scarlet_decision_meiling
+		textureFile = "gfx\interface\decisions\Scarlet_decision_meiling.png"
+	}
+	
+	spriteType = {
+		name = GFX_decision_Scarlet_decision_sakuya
+		textureFile = "gfx\interface\decisions\Scarlet_decision_sakuya.png"
+	}
+
+	spriteType = {
+		name = GFX_decision_Scarlet_decision_all
+		textureFile = "gfx\interface\decisions\Scarlet_decision_all.png"
+	}
+
+
+
+	
+}

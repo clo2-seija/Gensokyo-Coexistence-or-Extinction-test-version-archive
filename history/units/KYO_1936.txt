@@ -1,0 +1,39 @@
+#Create units
+division_template = {
+	name = "Yakumo Imperial Guard Division"
+	division_names_group = "KYO_DIV_0_0"
+	regiments = {
+		infantry = { x = 0 y = 0}
+		infantry = { x = 0 y = 1}
+		infantry = { x = 0 y = 2}
+		infantry = { x = 0 y = 3}
+		infantry = { x = 1 y = 0}
+		infantry = { x = 1 y = 1}
+		infantry = { x = 1 y = 2}
+		infantry = { x = 1 y = 3}
+	}
+	support = {
+		rangers_support = { x = 0 y = 0}
+		artillery = { x = 0 y = 1}
+	}
+
+}
+
+#Spawn units
+units = {
+	division= {
+		name = "1st Yakumo Imperial Guard Division"
+		location = 1097
+		division_template = "Yakumo Imperial Guard Division"
+	}
+	division= {
+		name = "2nd Yakumo Imperial Guard Division"
+		location = 4000
+		division_template = "Yakumo Imperial Guard Division"
+	}
+	division= {
+		name = "3rd Yakumo Imperial Guard Division"
+		location = 11908
+		division_template = "Yakumo Imperial Guard Division"
+	}
+}

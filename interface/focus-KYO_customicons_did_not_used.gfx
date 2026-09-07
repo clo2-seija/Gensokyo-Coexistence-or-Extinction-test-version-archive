@@ -1,0 +1,228 @@
+spriteTypes = {	
+	
+##Icon For:
+SpriteType = { name = "GFX_KYO_ideology_what_is_that" texturefile = "gfx/interface/goals/KYO/ideology_what_is_that.png" }
+##Icon Shine For:
+SpriteType = {
+	name = "GFX_KYO_ideology_what_is_that_shine"
+	texturefile = "gfx/interface/goals/KYO/ideology_what_is_that.png"
+	effectFile = "gfx/FX/buttonstate.lua"
+	animation = {
+		animationmaskfile = "gfx/interface/goals/KYO/ideology_what_is_that.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}
+	animation = {
+		animationmaskfile = "gfx/interface/goals/KYO/ideology_what_is_that.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}
+	legacy_lazy_load = no
+}
+
+
+
+
+
+##Icon For:
+SpriteType = {
+	name = "GFX_KYO_our_queen_yukari"
+	texturefile = "gfx/interface/goals/KYO/our_queen_yukari.png"
+}
+##Icon Shine For:
+SpriteType = {
+	name = "GFX_KYO_our_queen_yukari_shine"
+	texturefile = "gfx/interface/goals/KYO/our_queen_yukari.png"
+	effectFile = "gfx/FX/buttonstate.lua"
+	animation = {
+		animationmaskfile = "gfx/interface/goals/KYO/our_queen_yukari.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}
+	animation = {
+		animationmaskfile = "gfx/interface/goals/KYO/our_queen_yukari.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}
+	legacy_lazy_load = no
+}
+
+
+##Icon For:
+SpriteType = {
+	name = "GFX_KYO_Nue_what_monster_are_you"
+	texturefile = "gfx/interface/goals/KYO/Nue_what_monster_are_you.png"
+}
+##Icon Shine For:
+SpriteType = {
+	name = "GFX_KYO_Nue_what_monster_are_you_shine"
+	texturefile = "gfx/interface/goals/KYO/Nue_what_monster_are_you.png"
+	effectFile = "gfx/FX/buttonstate.lua"
+	animation = {
+		animationmaskfile = "gfx/interface/goals/KYO/Nue_what_monster_are_you.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}
+	animation = {
+		animationmaskfile = "gfx/interface/goals/KYO/Nue_what_monster_are_you.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}
+	legacy_lazy_load = no
+}
+
+##Icon For:
+SpriteType = {
+	name = "GFX_KYO_Four_player"
+	texturefile = "gfx/interface/goals/KYO/Four player.png"
+}
+##Icon Shine For:
+SpriteType = {
+	name = "GFX_KYO_Four_player_shine"
+	texturefile = "gfx/interface/goals/KYO/Four player.png"
+	effectFile = "gfx/FX/buttonstate.lua"
+	animation = {
+		animationmaskfile = "gfx/interface/goals/KYO/Four player.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}
+	animation = {
+		animationmaskfile = "gfx/interface/goals/KYO/Four player.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}
+	legacy_lazy_load = no
+}
+
+
+
+##Icon For:
+SpriteType = { name = "GFX_KYO_Hijiri_blue_mood" texturefile = "gfx/interface/goals/KYO/Hijiri_blue_mood.png" }
+##Icon Shine For:
+SpriteType = {
+	name = "GFX_KYO_Hijiri_blue_mood_shine"
+	texturefile = "gfx/interface/goals/KYO/Hijiri_blue_mood.png"
+	effectFile = "gfx/FX/buttonstate.lua"
+	animation = {
+		animationmaskfile = "gfx/interface/goals/KYO/Hijiri_blue_mood.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}
+	animation = {
+		animationmaskfile = "gfx/interface/goals/KYO/Hijiri_blue_mood.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}
+	legacy_lazy_load = no
+}
+
+##Icon For:
+SpriteType = { name = "GFX_KYO_catch_the_nue_2" texturefile = "gfx/interface/goals/KYO/catch_the_nue_2.png" }
+##Icon Shine For:
+SpriteType = {
+	name = "GFX_KYO_catch_the_nue_2_shine"
+	texturefile = "gfx/interface/goals/KYO/catch_the_nue_2.png"
+	effectFile = "gfx/FX/buttonstate.lua"
+	animation = {
+		animationmaskfile = "gfx/interface/goals/KYO/catch_the_nue_2.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = -90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}
+	animation = {
+		animationmaskfile = "gfx/interface/goals/KYO/catch_the_nue_2.png"
+		animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+		animationrotation = 90.0
+		animationlooping = no
+		animationtime = 0.75
+		animationdelay = 0
+		animationblendmode = "add"
+		animationtype = "scrolling"
+		animationrotationoffset = { x = 0.0 y = 0.0 }
+		animationtexturescale = { x = 1.0 y = 1.0 }
+	}
+	legacy_lazy_load = no
+}
+
+
+
+
+
+
+}

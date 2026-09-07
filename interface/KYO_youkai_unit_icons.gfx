@@ -1,0 +1,307 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_unit_KYO_youkai_beast_battalion_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/KYO_youkai_beast_battalion_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_youkai_beast_battalion_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_KYO_youkai_beast_battalion_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_youkai_beast_battalion_icon_small"
+		textureFile = "gfx/texticons/unit_KYO_youkai_beast_battalion_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_blood_spawn_battalion_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/KYO_blood_spawn_battalion_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_blood_spawn_battalion_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_KYO_blood_spawn_battalion_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_blood_spawn_battalion_icon_small"
+		textureFile = "gfx/texticons/unit_KYO_blood_spawn_battalion_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_fairy_battalion_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/KYO_fairy_battalion_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_fairy_battalion_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_KYO_fairy_battalion_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_fairy_battalion_icon_small"
+		textureFile = "gfx/texticons/unit_KYO_fairy_battalion_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_white_wolf_tengu_battlegroup_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/KYO_white_wolf_tengu_battlegroup_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_white_wolf_tengu_battlegroup_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_KYO_white_wolf_tengu_battlegroup_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_white_wolf_tengu_battlegroup_icon_small"
+		textureFile = "gfx/texticons/unit_KYO_white_wolf_tengu_battlegroup_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_ghost_battalion_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/KYO_ghost_battalion_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_ghost_battalion_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_KYO_ghost_battalion_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_ghost_battalion_icon_small"
+		textureFile = "gfx/texticons/unit_KYO_ghost_battalion_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_wind_magician_battalion_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/KYO_wind_magician_battalion_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_wind_magician_battalion_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_KYO_wind_magician_battalion_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_wind_magician_battalion_icon_small"
+		textureFile = "gfx/texticons/unit_KYO_wind_magician_battalion_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_fire_magician_battalion_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/KYO_fire_magician_battalion_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_fire_magician_battalion_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_KYO_fire_magician_battalion_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_fire_magician_battalion_icon_small"
+		textureFile = "gfx/texticons/unit_KYO_fire_magician_battalion_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_lightning_magician_battalion_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/KYO_lightning_magician_battalion_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_lightning_magician_battalion_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_KYO_lightning_magician_battalion_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_lightning_magician_battalion_icon_small"
+		textureFile = "gfx/texticons/unit_KYO_lightning_magician_battalion_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_water_magician_battalion_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/KYO_water_magician_battalion_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_water_magician_battalion_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_KYO_water_magician_battalion_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_water_magician_battalion_icon_small"
+		textureFile = "gfx/texticons/unit_KYO_water_magician_battalion_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_tsukumogami_motorized_battalion_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/KYO_tsukumogami_motorized_battalion_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_tsukumogami_motorized_battalion_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_KYO_tsukumogami_motorized_battalion_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_tsukumogami_motorized_battalion_icon_small"
+		textureFile = "gfx/texticons/unit_KYO_tsukumogami_motorized_battalion_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_beast_spirit_mechanized_battalion_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/KYO_beast_spirit_mechanized_battalion_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_beast_spirit_mechanized_battalion_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_KYO_beast_spirit_mechanized_battalion_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_beast_spirit_mechanized_battalion_icon_small"
+		textureFile = "gfx/texticons/unit_KYO_beast_spirit_mechanized_battalion_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_kappa_engineer_maintenance_company_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/KYO_kappa_engineer_maintenance_company_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_kappa_engineer_maintenance_company_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_KYO_kappa_engineer_maintenance_company_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_kappa_engineer_maintenance_company_icon_small"
+		textureFile = "gfx/texticons/unit_KYO_kappa_engineer_maintenance_company_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_oni_overseer_company_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/KYO_oni_overseer_company_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_oni_overseer_company_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_KYO_oni_overseer_company_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_oni_overseer_company_icon_small"
+		textureFile = "gfx/texticons/unit_KYO_oni_overseer_company_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_rabbit_medical_company_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/KYO_rabbit_medical_company_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_rabbit_medical_company_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_KYO_rabbit_medical_company_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_rabbit_medical_company_icon_small"
+		textureFile = "gfx/texticons/unit_KYO_rabbit_medical_company_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_crow_tengu_recon_company_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/KYO_crow_tengu_recon_company_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_crow_tengu_recon_company_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_KYO_crow_tengu_recon_company_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_crow_tengu_recon_company_icon_small"
+		textureFile = "gfx/texticons/unit_KYO_crow_tengu_recon_company_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_youkai_fox_logistics_company_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/KYO_youkai_fox_logistics_company_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_youkai_fox_logistics_company_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_KYO_youkai_fox_logistics_company_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_KYO_youkai_fox_logistics_company_icon_small"
+		textureFile = "gfx/texticons/unit_KYO_youkai_fox_logistics_company_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+}
+

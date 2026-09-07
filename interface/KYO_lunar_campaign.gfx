@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_KYO_lunar_yukari_red_base"
+		texturefile = "gfx/interface/KYO_lunar_yukari_red_base.tga"
+	}
+	spriteType = {
+		name = "GFX_KYO_lunar_moon_purple_base"
+		texturefile = "gfx/interface/KYO_lunar_moon_purple_base.tga"
+	}
+	spriteType = {
+		name = "GFX_KYO_lunar_tactic_card_core"
+		texturefile = "gfx/interface/KYO_lunar_tactic_card_core.tga"
+	}
+	spriteType = {
+		name = "GFX_KYO_lunar_tactic_card_extra"
+		texturefile = "gfx/interface/KYO_lunar_tactic_card_extra.tga"
+	}
+	spriteType = {
+		name = "GFX_KYO_lunar_report_panel"
+		texturefile = "gfx/interface/KYO_lunar_report_panel.tga"
+	}
+}

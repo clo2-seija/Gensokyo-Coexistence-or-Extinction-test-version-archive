@@ -1,0 +1,56 @@
+spriteTypes = {
+	
+	
+	spriteType = {
+		name = "GFX_sp_event_window"
+		textureFile = "/gfx/Super_Event_Window.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_close_button"
+		textureFile = "/gfx/Super_Event_Close_Button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_underlay"
+		textureFile = "/gfx/Super_Event_Underlay.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_Second_World_War"
+		textureFile = "/gfx/sp_events/Super_Event_World_War2.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_event_Yukari_path_the_end"
+		textureFile = "/gfx/sp_events/Yukari_path_the_end.png"
+	}
+	spriteType = {
+		name = "GFX_sp_event_japan_youkai_war_start"
+		textureFile = "/gfx/sp_events/japan_youkai_war_start.png"
+	}
+	spriteType = {
+		name = "GFX_sp_event_Youkai_civilwar_start"
+		textureFile = "/gfx/sp_events/Youkai_civilwar_start.png"
+	}
+
+	spriteType = {
+		name = "GFX_sp_event_Remilia_path_the_end"
+		textureFile = "/gfx/sp_events/Remilia_path_the_end.png"
+	}
+
+	spriteType = {
+		name = "GFX_sp_event_Hijiri_path_the_end"
+		textureFile = "/gfx/sp_events/Hijiri_path_the_end.png"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_Yukari_path_second_moon_war"
+		textureFile = "/gfx/sp_events/Yukari_path_second_moon_war.png"
+	}
+	spriteType = {
+		name = "GFX_sp_event_rabbit_army_defeat"
+		textureFile = "/gfx/sp_events/rabbit_army_defeat.png"
+	}
+	
+	
+}

@@ -1,0 +1,191 @@
+spriteTypes = {
+	# ===== News Event Pictures (sorted) =====
+	spriteType = { name = "GFX_news_event_gensokyo_1" texturefile = "gfx/interface/events/news_event_gensokyo_1.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_gensokyo_2" texturefile = "gfx/interface/events/news_event_gensokyo_2.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_gensokyo_3" texturefile = "gfx/interface/events/news_event_gensokyo_3.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_gensokyo_4" texturefile = "gfx/interface/events/news_event_gensokyo_4.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_gensokyo_5" texturefile = "gfx/interface/events/news_event_gensokyo_5.png" legacy_lazy_load = no }
+
+	spriteType = { 
+		name = "GFX_news_event_gensokyo_6" 
+		texturefile = "gfx/interface/events/news_event_gensokyo_6.png" 
+		legacy_lazy_load = no 
+	}
+	spriteType = { 
+		name = "GFX_news_event_gensokyo_7" 
+		texturefile = "gfx/interface/events/news_event_gensokyo_7.png" 
+		legacy_lazy_load = no 
+	}
+	spriteType = { 
+		name = "GFX_news_event_gensokyo_8" 
+		texturefile = "gfx/interface/events/news_event_gensokyo_8.png" 
+		legacy_lazy_load = no 
+	}
+	spriteType = { 
+		name = "GFX_news_event_gensokyo_9" 
+		texturefile = "gfx/interface/events/news_event_gensokyo_9.png" 
+		legacy_lazy_load = no 
+	}
+	spriteType = { 
+		name = "GFX_news_event_gensokyo_10" 
+		texturefile = "gfx/interface/events/news_event_gensokyo_10.png" 
+		legacy_lazy_load = no 
+	}
+	
+	spriteType = { name = "GFX_news_event_hijiri_1" texturefile = "gfx/interface/events/news_event_hijiri_1.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_hijiri_2" texturefile = "gfx/interface/events/news_event_hijiri_2.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_hijiri_3" texturefile = "gfx/interface/events/news_event_hijiri_3.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_hijiri_4" texturefile = "gfx/interface/events/news_event_hijiri_4.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_hijiri_5" texturefile = "gfx/interface/events/news_event_hijiri_5.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_hijiri_6" texturefile = "gfx/interface/events/news_event_hijiri_6.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_hijiri_7" texturefile = "gfx/interface/events/news_event_hijiri_7.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_remilia_1" texturefile = "gfx/interface/events/news_event_remilia_1.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_remilia_2" texturefile = "gfx/interface/events/news_event_remilia_2.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_remilia_3" texturefile = "gfx/interface/events/news_event_remilia_3.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_remilia_4" texturefile = "gfx/interface/events/news_event_remilia_4.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_remilia_5" texturefile = "gfx/interface/events/news_event_remilia_5.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_remilia_6" texturefile = "gfx/interface/events/news_event_remilia_6.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_remilia_7" texturefile = "gfx/interface/events/news_event_remilia_7.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_remilia_8" texturefile = "gfx/interface/events/news_event_remilia_8.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_seija_rebel_2" texturefile = "gfx/interface/events/news_event_seija_rebel_2.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_seija_rebel_3" texturefile = "gfx/interface/events/news_event_seija_rebel_3.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_seija_rebel_4" texturefile = "gfx/interface/events/news_event_seija_rebel_4.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_seija_rebel_5" texturefile = "gfx/interface/events/news_event_seija_rebel_5.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_seija_rebel_6" texturefile = "gfx/interface/events/news_event_seija_rebel_6.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_seija_rebel_7" texturefile = "gfx/interface/events/news_event_seija_rebel_7.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_seija_rebel_8" texturefile = "gfx/interface/events/news_event_seija_rebel_8.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_seija_rebel_9" texturefile = "gfx/interface/events/news_event_seija_rebel_9.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_seija_rebel_10" texturefile = "gfx/interface/events/news_event_seija_rebel_10.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_seija_rebel" texturefile = "gfx/interface/events/news_event_seija_rebel.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_yukari_1" texturefile = "gfx/interface/events/news_event_yukari_1.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_yukari_2" texturefile = "gfx/interface/events/news_event_yukari_2.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_yukari_3" texturefile = "gfx/interface/events/news_event_yukari_3.png" legacy_lazy_load = no }
+	
+	spriteType = { 
+		name = "GFX_news_event_yukari_4" 
+		texturefile = "gfx/interface/events/news_event_yukari_4.png" 
+		legacy_lazy_load = no 
+	}
+
+	spriteType = { name = "GFX_news_event_yukari_5" texturefile = "gfx/interface/events/news_event_yukari_5.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_yukari_6" texturefile = "gfx/interface/events/news_event_yukari_6.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_yukari_7" texturefile = "gfx/interface/events/news_event_yukari_7.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_news_event_yukari_8" texturefile = "gfx/interface/events/news_event_yukari_8.png" legacy_lazy_load = no }
+
+	# ===== Report / Country Event Pictures (sorted) =====
+	spriteType = { name = "GFX_report_event_hijiri_1" texturefile = "gfx/interface/events/report_event_hijiri_1.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_hijiri_2" texturefile = "gfx/interface/events/report_event_hijiri_2.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_hijiri_3" texturefile = "gfx/interface/events/report_event_hijiri_3.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_hijiri_4" texturefile = "gfx/interface/events/report_event_hijiri_4.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_miko_death" texturefile = "gfx/interface/events/report_event_miko_death.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_remilia_1" texturefile = "gfx/interface/events/report_event_remilia_1.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_remilia_2" texturefile = "gfx/interface/events/report_event_remilia_2.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_remilia_3" texturefile = "gfx/interface/events/report_event_remilia_3.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_remilia_4" texturefile = "gfx/interface/events/report_event_remilia_4.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_remilia_5" texturefile = "gfx/interface/events/report_event_remilia_5.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_remilia_6" texturefile = "gfx/interface/events/report_event_remilia_6.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_remilia_7" texturefile = "gfx/interface/events/report_event_remilia_7.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_remilia_8" texturefile = "gfx/interface/events/report_event_remilia_8.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_remilia_9" texturefile = "gfx/interface/events/report_event_remilia_9.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_remilia_10" texturefile = "gfx/interface/events/report_event_remilia_10.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_remilia_11" texturefile = "gfx/interface/events/report_event_remilia_11.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_seija_rebel_2" texturefile = "gfx/interface/events/report_event_seija_rebel_2.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_seija_rebel" texturefile = "gfx/interface/events/report_event_seija_rebel.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_yukari_1" texturefile = "gfx/interface/events/report_event_yukari_1.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_yukari_2" texturefile = "gfx/interface/events/report_event_yukari_2.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_yukari_3" texturefile = "gfx/interface/events/report_event_yukari_3.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_yukari_4" texturefile = "gfx/interface/events/report_event_yukari_4.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_yukari_death" texturefile = "gfx/interface/events/report_event_yukari_death.png" legacy_lazy_load = no }
+
+	spriteType = { name = "GFX_report_event_hijiri_5" texturefile = "gfx/interface/events/report_event_hijiri_5.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_hijiri_6" texturefile = "gfx/interface/events/report_event_hijiri_6.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_hijiri_7" texturefile = "gfx/interface/events/report_event_hijiri_7.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_hijiri_8" texturefile = "gfx/interface/events/report_event_hijiri_8.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_hijiri_9" texturefile = "gfx/interface/events/report_event_hijiri_9.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_hijiri_10" texturefile = "gfx/interface/events/report_event_hijiri_10.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_hijiri_11" texturefile = "gfx/interface/events/report_event_hijiri_11.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_hijiri_12" texturefile = "gfx/interface/events/report_event_hijiri_12.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_hijiri_13" texturefile = "gfx/interface/events/report_event_hijiri_13.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_hijiri_14" texturefile = "gfx/interface/events/report_event_hijiri_14.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_hijiri_15" texturefile = "gfx/interface/events/report_event_hijiri_15.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_hijiri_16" texturefile = "gfx/interface/events/report_event_hijiri_16.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_hijiri_17" texturefile = "gfx/interface/events/report_event_hijiri_17.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_hijiri_18" texturefile = "gfx/interface/events/report_event_hijiri_18.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_hijiri_19" texturefile = "gfx/interface/events/report_event_hijiri_19.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_hijiri_20" texturefile = "gfx/interface/events/report_event_hijiri_20.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_hijiri_21" texturefile = "gfx/interface/events/report_event_hijiri_21.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_hijiri_22" texturefile = "gfx/interface/events/report_event_hijiri_22.png" legacy_lazy_load = no }
+	spriteType = { name = "GFX_report_event_hijiri_23" texturefile = "gfx/interface/events/report_event_hijiri_23.png" legacy_lazy_load = no }
+
+	spriteType = { name = "GFX_report_event_first_war_1" texturefile = "gfx/interface/events/report_event_first_war_1.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_2" texturefile = "gfx/interface/events/report_event_first_war_2.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_3" texturefile = "gfx/interface/events/report_event_first_war_3.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_4" texturefile = "gfx/interface/events/report_event_first_war_4.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_5" texturefile = "gfx/interface/events/report_event_first_war_5.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_6" texturefile = "gfx/interface/events/report_event_first_war_6.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_7" texturefile = "gfx/interface/events/report_event_first_war_7.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_8" texturefile = "gfx/interface/events/report_event_first_war_8.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_9" texturefile = "gfx/interface/events/report_event_first_war_9.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_10" texturefile = "gfx/interface/events/report_event_first_war_10.png" legacy_lazy_load = no }
+
+spriteType = { name = "GFX_report_event_first_war_11" texturefile = "gfx/interface/events/report_event_first_war_11.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_12" texturefile = "gfx/interface/events/report_event_first_war_12.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_13" texturefile = "gfx/interface/events/report_event_first_war_13.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_14" texturefile = "gfx/interface/events/report_event_first_war_14.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_15" texturefile = "gfx/interface/events/report_event_first_war_15.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_16" texturefile = "gfx/interface/events/report_event_first_war_16.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_17" texturefile = "gfx/interface/events/report_event_first_war_17.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_18" texturefile = "gfx/interface/events/report_event_first_war_18.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_19" texturefile = "gfx/interface/events/report_event_first_war_19.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_20" texturefile = "gfx/interface/events/report_event_first_war_20.png" legacy_lazy_load = no }
+
+spriteType = { name = "GFX_report_event_first_war_21" texturefile = "gfx/interface/events/report_event_first_war_21.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_22" texturefile = "gfx/interface/events/report_event_first_war_22.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_23" texturefile = "gfx/interface/events/report_event_first_war_23.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_24" texturefile = "gfx/interface/events/report_event_first_war_24.png" legacy_lazy_load = no }
+
+
+
+spriteType = { name = "GFX_report_event_first_war_26" texturefile = "gfx/interface/events/report_event_first_war_26.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_27" texturefile = "gfx/interface/events/report_event_first_war_27.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_28" texturefile = "gfx/interface/events/report_event_first_war_28.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_29" texturefile = "gfx/interface/events/report_event_first_war_29.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_30" texturefile = "gfx/interface/events/report_event_first_war_30.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_31" texturefile = "gfx/interface/events/report_event_first_war_31.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_32" texturefile = "gfx/interface/events/report_event_first_war_32.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_33" texturefile = "gfx/interface/events/report_event_first_war_33.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_34" texturefile = "gfx/interface/events/report_event_first_war_34.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_35" texturefile = "gfx/interface/events/report_event_first_war_35.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_36" texturefile = "gfx/interface/events/report_event_first_war_36.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_37" texturefile = "gfx/interface/events/report_event_first_war_37.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_38" texturefile = "gfx/interface/events/report_event_first_war_38.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_39" texturefile = "gfx/interface/events/report_event_first_war_39.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_40" texturefile = "gfx/interface/events/report_event_first_war_40.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_41" texturefile = "gfx/interface/events/report_event_first_war_41.png" legacy_lazy_load = no }
+
+spriteType = { name = "GFX_report_event_first_war_42" texturefile = "gfx/interface/events/report_event_first_war_42.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_43" texturefile = "gfx/interface/events/report_event_first_war_43.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_44" texturefile = "gfx/interface/events/report_event_first_war_44.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_45" texturefile = "gfx/interface/events/report_event_first_war_45.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_first_war_46" texturefile = "gfx/interface/events/report_event_first_war_46.png" legacy_lazy_load = no }
+
+spriteType = { name = "GFX_report_event_yukari_legacy_2" texturefile = "gfx/interface/events/report_event_yukari_legacy_2.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_yukari_legacy_3" texturefile = "gfx/interface/events/report_event_yukari_legacy_3.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_yukari_legacy_4" texturefile = "gfx/interface/events/report_event_yukari_legacy_4.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_yukari_legacy_5" texturefile = "gfx/interface/events/report_event_yukari_legacy_5.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_yukari_legacy_6" texturefile = "gfx/interface/events/report_event_yukari_legacy_6.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_yukari_legacy_7" texturefile = "gfx/interface/events/report_event_yukari_legacy_7.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_yukari_legacy_8" texturefile = "gfx/interface/events/report_event_yukari_legacy_8.png" legacy_lazy_load = no }	
+spriteType = { name = "GFX_report_event_yukari_legacy_9" texturefile = "gfx/interface/events/report_event_yukari_legacy_9.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_yukari_legacy_10" texturefile = "gfx/interface/events/report_event_yukari_legacy_10.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_yukari_legacy_11" texturefile = "gfx/interface/events/report_event_yukari_legacy_11.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_yukari_legacy_12" texturefile = "gfx/interface/events/report_event_yukari_legacy_12.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_yukari_legacy_13" texturefile = "gfx/interface/events/report_event_yukari_legacy_13.png" legacy_lazy_load = no }
+spriteType = { name = "GFX_report_event_yukari_legacy_14" texturefile = "gfx/interface/events/report_event_yukari_legacy_14.png" legacy_lazy_load = no }
+
+
+
+spriteType = { name = "GFX_report_event_place_holder" texturefile = "gfx/interface/events/report_event_place_holder.png" legacy_lazy_load = no }
+	
+	
+} 

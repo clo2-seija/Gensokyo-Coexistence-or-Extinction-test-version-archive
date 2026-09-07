@@ -1,0 +1,279 @@
+spriteTypes = {
+
+	# ===== companies – Company/Designer Icons (64x64) =====
+	# Put PNGs here: gfx/interface/ideas/companies/
+
+	SpriteType = {
+		name = "GFX_companies_company_eirin"
+		texturefile = "gfx/interface/ideas/companies/Eirin_company.png"
+	}
+
+	SpriteType = {
+		name = "GFX_companies_company_magican"
+		texturefile = "gfx/interface/ideas/companies/magican_company.png"
+	}
+
+	SpriteType = {
+		name = "GFX_companies_company_nitori"
+		texturefile = "gfx/interface/ideas/companies/Nitori_company.png"
+	}
+
+	SpriteType = {
+		name = "GFX_companies_company_scarlet"
+		texturefile = "gfx/interface/ideas/companies/scarlet_company.png"
+	}
+
+	SpriteType = {
+		name = "GFX_companies_company_tsukumogami"
+		texturefile = "gfx/interface/ideas/companies/Tuskumogami_company.png"
+	}
+
+	SpriteType = {
+		name = "GFX_companies_company_prismriver"
+		texturefile = "gfx/interface/ideas/companies/company_prismriver.png"
+	}
+
+	SpriteType = {
+		name = "GFX_companies_company_nazrin"
+		texturefile = "gfx/interface/ideas/companies/company_nazrin.png"
+	}
+
+	SpriteType = {
+		name = "GFX_companies_company_parsee"
+		texturefile = "gfx/interface/ideas/companies/company_parsee.png"
+	}
+
+	SpriteType = {
+		name = "GFX_companies_company_wakasagihime"
+		texturefile = "gfx/interface/ideas/companies/company_wakasagihime.png"
+	}
+
+	SpriteType = {
+		name = "GFX_companies_company_sanzu"
+		texturefile = "gfx/interface/ideas/companies/company_sanzu.png"
+	}
+
+	SpriteType = {
+		name = "GFX_companies_company_chimata"
+		texturefile = "gfx/interface/ideas/companies/company_chimata.png"
+	}
+
+	SpriteType = {
+		name = "GFX_companies_company_inversion"
+		texturefile = "gfx/interface/ideas/companies/company_inversion.png"
+	}
+
+	SpriteType = {
+		name = "GFX_companies_company_earthspider"
+		texturefile = "gfx/interface/ideas/companies/company_earthspider.png"
+	}
+
+	SpriteType = {
+		name = "GFX_companies_company_kourindou"
+		texturefile = "gfx/interface/ideas/companies/company_kourindou.png"
+	}
+
+	SpriteType = {
+		name = "GFX_companies_company_keystone"
+		texturefile = "gfx/interface/ideas/companies/company_keystone.png"
+	}
+
+	SpriteType = {
+		name = "GFX_companies_company_saki"
+		texturefile = "gfx/interface/ideas/companies/company_saki.png"
+	}
+
+	SpriteType = {
+		name = "GFX_companies_company_lunarian"
+		texturefile = "gfx/interface/ideas/companies/company_lunarian.png"
+	}
+
+	SpriteType = {
+		name = "GFX_companies_company_byakuren"
+		texturefile = "gfx/interface/ideas/companies/company_byakuren.png"
+	}
+
+	SpriteType = {
+		name = "GFX_companies_company_nethernight"
+		texturefile = "gfx/interface/ideas/companies/company_nethernight.png"
+	}
+
+	SpriteType = {
+		name = "GFX_companies_company_shrine_maiden"
+		texturefile = "gfx/interface/ideas/companies/company_shrine_maiden.png"
+	}
+
+	SpriteType = {
+		name = "GFX_companies_company_oni"
+		texturefile = "gfx/interface/ideas/companies/company_oni.png"
+	}
+
+	SpriteType = {
+		name = "GFX_companies_company_old_hell"
+		texturefile = "gfx/interface/ideas/companies/company_old_hell.png"
+	}
+
+	SpriteType = {
+		name = "GFX_companies_company_tengu"
+		texturefile = "gfx/interface/ideas/companies/company_tengu.png"
+	}
+
+	SpriteType = {
+		name = "GFX_companies_company_moriya"
+		texturefile = "gfx/interface/ideas/companies/company_moriya.png"
+	}
+
+	SpriteType = {
+		name = "GFX_companies_company_nitori_tank"
+		texturefile = "gfx/interface/ideas/companies/nitori_tank_company.png"
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	SpriteType = {
+		name = "GFX_idea_company_eirin"
+		texturefile = "gfx/interface/ideas/companies/Eirin_company.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_company_magican"
+		texturefile = "gfx/interface/ideas/companies/magican_company.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_company_nitori"
+		texturefile = "gfx/interface/ideas/companies/Nitori_company.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_company_scarlet"
+		texturefile = "gfx/interface/ideas/companies/scarlet_company.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_company_tsukumogami"
+		texturefile = "gfx/interface/ideas/companies/Tuskumogami_company.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_company_prismriver"
+		texturefile = "gfx/interface/ideas/companies/company_prismriver.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_company_nazrin"
+		texturefile = "gfx/interface/ideas/companies/company_nazrin.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_company_parsee"
+		texturefile = "gfx/interface/ideas/companies/company_parsee.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_company_wakasagihime"
+		texturefile = "gfx/interface/ideas/companies/company_wakasagihime.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_company_sanzu"
+		texturefile = "gfx/interface/ideas/companies/company_sanzu.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_company_chimata"
+		texturefile = "gfx/interface/ideas/companies/company_chimata.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_company_inversion"
+		texturefile = "gfx/interface/ideas/companies/company_inversion.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_company_earthspider"
+		texturefile = "gfx/interface/ideas/companies/company_earthspider.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_company_kourindou"
+		texturefile = "gfx/interface/ideas/companies/company_kourindou.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_company_keystone"
+		texturefile = "gfx/interface/ideas/companies/company_keystone.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_company_saki"
+		texturefile = "gfx/interface/ideas/companies/company_saki.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_company_lunarian"
+		texturefile = "gfx/interface/ideas/companies/company_lunarian.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_company_byakuren"
+		texturefile = "gfx/interface/ideas/companies/company_byakuren.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_company_nethernight"
+		texturefile = "gfx/interface/ideas/companies/company_nethernight.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_company_shrine_maiden"
+		texturefile = "gfx/interface/ideas/companies/company_shrine_maiden.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_company_oni"
+		texturefile = "gfx/interface/ideas/companies/company_oni.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_company_old_hell"
+		texturefile = "gfx/interface/ideas/companies/company_old_hell.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_company_tengu"
+		texturefile = "gfx/interface/ideas/companies/company_tengu.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_company_moriya"
+		texturefile = "gfx/interface/ideas/companies/company_moriya.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_company_nitori_tank"
+		texturefile = "gfx/interface/ideas/companies/nitori_tank_company.png"
+	}
+
+
+
+
+	
+}

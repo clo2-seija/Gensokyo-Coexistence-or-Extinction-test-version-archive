@@ -1,0 +1,38 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ideology_buddhist_liberal"
+		texturefile = "gfx/interface/ideology/buddhist_liberal.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_gensokyo_balance"
+		texturefile = "gfx/interface/ideology/gensokyo_balance.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_reverse_ideology"
+		texturefile = "gfx/interface/ideology/reverse_ideology.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+	spriteType = {
+		name = "GFX_ideology_vampire_empire"
+		texturefile = "gfx/interface/ideology/vampire_empire.png"
+		noOfFrames = 1
+		alwaystransparent = no
+		legacy_lazy_load = yes
+		transparencecheck = no
+	}
+
+}

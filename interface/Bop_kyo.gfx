@@ -1,0 +1,29 @@
+spriteTypes = {
+    # 永遠亭
+    spriteType = {
+        name = "GFX_idea_Eientei"
+        texturefile = "gfx/interface/bop/Eientei.png"
+    }
+    spriteType = {
+        name = "GFX_idea_Eientei_dark"
+        texturefile = "gfx/interface/bop/Eientei_dark.png"
+    }
+    spriteType = {
+        name = "GFX_idea_Eientei_light"
+        texturefile = "gfx/interface/bop/Eientei_light.png"
+    }
+
+    # 冥界（西行寺一帶）
+    spriteType = {
+        name = "GFX_idea_Netherworld"
+        texturefile = "gfx/interface/bop/Netherworld.png"
+    }
+    spriteType = {
+        name = "GFX_idea_Netherworld_dark"
+        texturefile = "gfx/interface/bop/Netherworld_dark.png"
+    }
+    spriteType = {
+        name = "GFX_idea_Netherworld_light"
+        texturefile = "gfx/interface/bop/Netherworld_light.png"
+    }
+}

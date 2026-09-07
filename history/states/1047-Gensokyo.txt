@@ -1,0 +1,56 @@
+state={
+	id=1082
+	name="STATE_1082"
+	manpower = 3003000
+	
+	state_category = megalopolis
+	
+	resources = {
+		steel = 5
+		rubber = 2
+		aluminium = 3
+		tungsten = 3
+		chromium = 3
+		oil = 2
+		coal = 20
+	}
+
+	history = {
+
+		owner = KYO
+		add_core_of = KYO
+		add_core_of = JAP
+		add_core_of = CHI
+		add_core_of = LUN
+		add_core_of = EIN
+		add_core_of = AMJ
+		add_core_of = BSR
+		add_core_of = BYK
+		add_core_of = FLW
+		add_core_of = FRY
+		add_core_of = GRY
+		add_core_of = HGY
+		add_core_of = SDM
+		add_core_of = TAO
+		add_core_of = TNG
+
+		buildings = {
+			infrastructure = 4 #was: 8
+			air_base = 5
+			industrial_complex = 9
+			arms_factory = 4
+		}
+		victory_points = {
+			11908 200 # Gensokyo
+		}
+	
+	}
+	
+	provinces={
+		1097 4000 11908 
+	}
+
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
+	

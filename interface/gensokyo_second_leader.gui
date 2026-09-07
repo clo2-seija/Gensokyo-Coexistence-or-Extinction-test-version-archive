@@ -1,0 +1,50 @@
+guiTypes = {
+
+	containerWindowType = {
+		name ="political_attached_window"
+		position = { x=0 y =0}
+		size = { width=160 height =240}
+		orientation = "UPPER_LEFT"
+		clipping = no
+		iconType={
+			name = "second_leader_portrait"
+			position = { x= 20 y = 120 }
+			spriteType ="GFX_leader_unknown"
+			scale = 0.74
+			pdx_tooltip = "second_leader_name"
+			pdx_tooltip_delayed = "second_leader_desc"
+		}
+
+		buttonType = {
+			name = "change_leader"
+			position = { x = 20  y =120 }
+			spriteType = "button_left"
+			orientation = "UPPER_LEFT"
+			clicksound = click_default
+		}
+	}
+
+	containerWindowType = {
+		name ="political_attached_window_two"
+		position = { x=0 y =0}
+		size = { width=160 height =240}
+		orientation = "UPPER_LEFT"
+		clipping = no
+		iconType={
+			name = "second_leader_portrait"
+			position = { x= 16 y = 53 }
+			spriteType ="GFX_leader_unknown"
+			scale = 1
+			pdx_tooltip = "second_leader_name"
+			pdx_tooltip_delayed = "second_leader_desc"
+		}
+
+		buttonType = {
+			name = "change_leader"
+			position = { x = 153  y =242 }
+			spriteType = "button_left"
+			orientation = "UPPER_LEFT"
+			clicksound = click_default
+		}
+	}
+}
