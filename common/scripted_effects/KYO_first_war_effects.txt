@@ -1,0 +1,4471 @@
+# KYO 第一次人妖大戰 v1.0 — 共用效果
+# 玩家實際獲得的效果保持可見；hidden_effect 僅包 clamp / refresh / check 等內部維護呼叫。
+# 玩家會直接看到的入口效果使用 custom_effect_tooltip；實際加成放在 hidden_effect。
+
+KYO_refresh_military_committee_idea = {
+	if = {
+		limit = {
+			has_idea = KYO_military_committee_fulfillment_0
+		}
+		remove_ideas = KYO_military_committee_fulfillment_0
+	}
+	if = {
+		limit = {
+			has_idea = KYO_military_committee_fulfillment_1
+		}
+		remove_ideas = KYO_military_committee_fulfillment_1
+	}
+	if = {
+		limit = {
+			has_idea = KYO_military_committee_fulfillment_2
+		}
+		remove_ideas = KYO_military_committee_fulfillment_2
+	}
+	if = {
+		limit = {
+			has_idea = KYO_military_committee_fulfillment_3
+		}
+		remove_ideas = KYO_military_committee_fulfillment_3
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_fulfillment_military_committee > 74
+			}
+		}
+		add_ideas = KYO_military_committee_fulfillment_3
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_fulfillment_military_committee > 49
+			}
+		}
+		add_ideas = KYO_military_committee_fulfillment_2
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_fulfillment_military_committee > 24
+			}
+		}
+		add_ideas = KYO_military_committee_fulfillment_1
+	}
+	else = {
+		add_ideas = KYO_military_committee_fulfillment_0
+	}
+}
+
+KYO_refresh_faith_committee_idea = {
+	if = {
+		limit = {
+			has_idea = KYO_faith_committee_fulfillment_0
+		}
+		remove_ideas = KYO_faith_committee_fulfillment_0
+	}
+	if = {
+		limit = {
+			has_idea = KYO_faith_committee_fulfillment_1
+		}
+		remove_ideas = KYO_faith_committee_fulfillment_1
+	}
+	if = {
+		limit = {
+			has_idea = KYO_faith_committee_fulfillment_2
+		}
+		remove_ideas = KYO_faith_committee_fulfillment_2
+	}
+	if = {
+		limit = {
+			has_idea = KYO_faith_committee_fulfillment_3
+		}
+		remove_ideas = KYO_faith_committee_fulfillment_3
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_fulfillment_faith_committee > 74
+			}
+		}
+		add_ideas = KYO_faith_committee_fulfillment_3
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_fulfillment_faith_committee > 49
+			}
+		}
+		add_ideas = KYO_faith_committee_fulfillment_2
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_fulfillment_faith_committee > 24
+			}
+		}
+		add_ideas = KYO_faith_committee_fulfillment_1
+	}
+	else = {
+		add_ideas = KYO_faith_committee_fulfillment_0
+	}
+}
+
+KYO_refresh_mobilization_committee_idea = {
+	if = {
+		limit = {
+			has_idea = KYO_mobilization_committee_fulfillment_0
+		}
+		remove_ideas = KYO_mobilization_committee_fulfillment_0
+	}
+	if = {
+		limit = {
+			has_idea = KYO_mobilization_committee_fulfillment_1
+		}
+		remove_ideas = KYO_mobilization_committee_fulfillment_1
+	}
+	if = {
+		limit = {
+			has_idea = KYO_mobilization_committee_fulfillment_2
+		}
+		remove_ideas = KYO_mobilization_committee_fulfillment_2
+	}
+	if = {
+		limit = {
+			has_idea = KYO_mobilization_committee_fulfillment_3
+		}
+		remove_ideas = KYO_mobilization_committee_fulfillment_3
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_fulfillment_mobilization_committee > 74
+			}
+		}
+		add_ideas = KYO_mobilization_committee_fulfillment_3
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_fulfillment_mobilization_committee > 49
+			}
+		}
+		add_ideas = KYO_mobilization_committee_fulfillment_2
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_fulfillment_mobilization_committee > 24
+			}
+		}
+		add_ideas = KYO_mobilization_committee_fulfillment_1
+	}
+	else = {
+		add_ideas = KYO_mobilization_committee_fulfillment_0
+	}
+}
+
+KYO_clamp_and_refresh_fulfillment = {
+	if = {
+		limit = {
+			check_variable = {
+				KYO_fulfillment_military_committee > 100
+			}
+		}
+		set_variable = {
+			KYO_fulfillment_military_committee = 100
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_fulfillment_military_committee < 0
+			}
+		}
+		set_variable = {
+			KYO_fulfillment_military_committee = 0
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_fulfillment_faith_committee > 100
+			}
+		}
+		set_variable = {
+			KYO_fulfillment_faith_committee = 100
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_fulfillment_faith_committee < 0
+			}
+		}
+		set_variable = {
+			KYO_fulfillment_faith_committee = 0
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_fulfillment_mobilization_committee > 100
+			}
+		}
+		set_variable = {
+			KYO_fulfillment_mobilization_committee = 100
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_fulfillment_mobilization_committee < 0
+			}
+		}
+		set_variable = {
+			KYO_fulfillment_mobilization_committee = 0
+		}
+	}
+
+	KYO_refresh_military_committee_idea = yes
+	KYO_refresh_faith_committee_idea = yes
+	KYO_refresh_mobilization_committee_idea = yes
+	KYO_check_hyakki_crises = yes
+}
+
+KYO_add_military_fulfillment_5 = {
+	custom_effect_tooltip = KYO_add_military_fulfillment_5_tt
+
+	add_to_variable = {
+		KYO_fulfillment_military_committee = 5
+	}
+	hidden_effect = {
+		KYO_clamp_and_refresh_fulfillment = yes
+	}
+}
+
+KYO_add_military_fulfillment_10 = {
+	custom_effect_tooltip = KYO_add_military_fulfillment_10_tt
+
+	add_to_variable = {
+		KYO_fulfillment_military_committee = 10
+	}
+	hidden_effect = {
+		KYO_clamp_and_refresh_fulfillment = yes
+	}
+}
+
+KYO_add_military_fulfillment_15 = {
+	custom_effect_tooltip = KYO_add_military_fulfillment_15_tt
+
+	add_to_variable = {
+		KYO_fulfillment_military_committee = 15
+	}
+	hidden_effect = {
+		KYO_clamp_and_refresh_fulfillment = yes
+	}
+}
+
+KYO_remove_military_fulfillment_5 = {
+	custom_effect_tooltip = KYO_remove_military_fulfillment_5_tt
+
+	subtract_from_variable = {
+		KYO_fulfillment_military_committee = 5
+	}
+	hidden_effect = {
+		KYO_clamp_and_refresh_fulfillment = yes
+	}
+}
+
+KYO_add_faith_fulfillment_5 = {
+	custom_effect_tooltip = KYO_add_faith_fulfillment_5_tt
+
+	add_to_variable = {
+		KYO_fulfillment_faith_committee = 5
+	}
+	hidden_effect = {
+		KYO_clamp_and_refresh_fulfillment = yes
+	}
+}
+
+KYO_add_faith_fulfillment_10 = {
+	custom_effect_tooltip = KYO_add_faith_fulfillment_10_tt
+
+	add_to_variable = {
+		KYO_fulfillment_faith_committee = 10
+	}
+	hidden_effect = {
+		KYO_clamp_and_refresh_fulfillment = yes
+	}
+}
+
+KYO_add_faith_fulfillment_15 = {
+	custom_effect_tooltip = KYO_add_faith_fulfillment_15_tt
+
+	add_to_variable = {
+		KYO_fulfillment_faith_committee = 15
+	}
+	hidden_effect = {
+		KYO_clamp_and_refresh_fulfillment = yes
+	}
+}
+
+KYO_remove_faith_fulfillment_5 = {
+	custom_effect_tooltip = KYO_remove_faith_fulfillment_5_tt
+
+	subtract_from_variable = {
+		KYO_fulfillment_faith_committee = 5
+	}
+	hidden_effect = {
+		KYO_clamp_and_refresh_fulfillment = yes
+	}
+}
+
+KYO_add_mobilization_fulfillment_5 = {
+	custom_effect_tooltip = KYO_add_mobilization_fulfillment_5_tt
+
+	add_to_variable = {
+		KYO_fulfillment_mobilization_committee = 5
+	}
+	hidden_effect = {
+		KYO_clamp_and_refresh_fulfillment = yes
+	}
+}
+
+KYO_add_mobilization_fulfillment_10 = {
+	custom_effect_tooltip = KYO_add_mobilization_fulfillment_10_tt
+
+	add_to_variable = {
+		KYO_fulfillment_mobilization_committee = 10
+	}
+	hidden_effect = {
+		KYO_clamp_and_refresh_fulfillment = yes
+	}
+}
+
+KYO_add_mobilization_fulfillment_15 = {
+	custom_effect_tooltip = KYO_add_mobilization_fulfillment_15_tt
+
+	add_to_variable = {
+		KYO_fulfillment_mobilization_committee = 15
+	}
+	hidden_effect = {
+		KYO_clamp_and_refresh_fulfillment = yes
+	}
+}
+
+KYO_remove_mobilization_fulfillment_5 = {
+	custom_effect_tooltip = KYO_remove_mobilization_fulfillment_5_tt
+
+	subtract_from_variable = {
+		KYO_fulfillment_mobilization_committee = 5
+	}
+	hidden_effect = {
+		KYO_clamp_and_refresh_fulfillment = yes
+	}
+}
+
+
+
+
+
+
+
+
+ 
+
+################################################
+#以下為第一次人妖大戰的各種「登記」決議，主要是用來解鎖各個勢力的候選人與影響力。
+################################################
+
+KYO_register_scarlet_mansion = {
+	custom_effect_tooltip = KYO_register_scarlet_mansion_tt
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = KYO_group_scarlet_registered
+			}
+		}
+		set_country_flag = KYO_group_scarlet_registered
+		add_to_variable = {
+			KYO_fulfillment_military_committee = 15
+		}
+		set_country_flag = KYO_candidate_remilia_unlocked
+		add_to_variable = {
+			KYO_influence_remilia = 15
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+		hidden_effect = {
+			KYO_check_all_major_groups_joined = yes
+		}
+		hidden_effect = {
+			KYO_check_all_bloc_leaders = yes
+		}
+	}
+}
+
+
+KYO_register_eientei = {
+	custom_effect_tooltip = KYO_register_eientei_tt
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = KYO_group_eientei_registered
+			}
+		}
+		set_country_flag = KYO_group_eientei_registered
+		add_to_variable = {
+			KYO_fulfillment_mobilization_committee = 15
+		}
+		set_country_flag = KYO_candidate_eirin_unlocked
+		add_to_variable = {
+			KYO_influence_eirin = 15
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+		hidden_effect = {
+			KYO_check_all_major_groups_joined = yes
+		}
+		hidden_effect = {
+			KYO_check_all_bloc_leaders = yes
+		}
+	}
+}
+
+
+KYO_register_human_village = {
+	custom_effect_tooltip = KYO_register_human_village_tt
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = KYO_group_human_village_registered
+			}
+		}
+		set_country_flag = KYO_group_human_village_registered
+		add_to_variable = {
+			KYO_fulfillment_mobilization_committee = 10
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+		hidden_effect = {
+			KYO_check_all_major_groups_joined = yes
+		}
+		hidden_effect = {
+			KYO_check_all_bloc_leaders = yes
+		}
+	}
+}
+
+
+KYO_register_hakugyokurou = {
+	custom_effect_tooltip = KYO_register_hakugyokurou_tt
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = KYO_group_hakugyokurou_registered
+			}
+		}
+		set_country_flag = KYO_group_hakugyokurou_registered
+		add_to_variable = {
+			KYO_fulfillment_military_committee = 15
+		}
+		set_country_flag = KYO_candidate_yuyuko_unlocked
+		add_to_variable = {
+			KYO_influence_yuyuko = 10
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+		hidden_effect = {
+			KYO_check_all_major_groups_joined = yes
+		}
+		hidden_effect = {
+			KYO_check_all_bloc_leaders = yes
+		}
+	}
+}
+
+
+KYO_register_tengu_command = {
+	custom_effect_tooltip = KYO_register_tengu_command_tt
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = KYO_group_tengu_registered
+			}
+		}
+		set_country_flag = KYO_group_tengu_registered
+		add_to_variable = {
+			KYO_fulfillment_faith_committee = 15
+		}
+		set_country_flag = KYO_candidate_megumu_unlocked
+		add_to_variable = {
+			KYO_influence_megumu = 10
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+		hidden_effect = {
+			KYO_check_all_major_groups_joined = yes
+		}
+		hidden_effect = {
+			KYO_check_all_bloc_leaders = yes
+		}
+	}
+}
+
+
+KYO_register_kappa_engineers = {
+	custom_effect_tooltip = KYO_register_kappa_engineers_tt
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = KYO_group_kappa_registered
+			}
+		}
+		set_country_flag = KYO_group_kappa_registered
+		add_to_variable = {
+			KYO_fulfillment_mobilization_committee = 15
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+		hidden_effect = {
+			KYO_check_all_major_groups_joined = yes
+		}
+		hidden_effect = {
+			KYO_check_all_bloc_leaders = yes
+		}
+	}
+}
+
+
+KYO_register_fairy_network = {
+	custom_effect_tooltip = KYO_register_fairy_network_tt
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = KYO_group_fairy_registered
+			}
+		}
+		set_country_flag = KYO_group_fairy_registered
+		add_to_variable = {
+			KYO_fulfillment_mobilization_committee = 15
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+		hidden_effect = {
+			KYO_check_all_major_groups_joined = yes
+		}
+		hidden_effect = {
+			KYO_check_all_bloc_leaders = yes
+		}
+	}
+}
+
+
+KYO_register_old_hell = {
+	custom_effect_tooltip = KYO_register_old_hell_tt
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = KYO_group_old_hell_registered
+			}
+		}
+		set_country_flag = KYO_group_old_hell_registered
+		add_to_variable = {
+			KYO_fulfillment_military_committee = 15
+		}
+		add_to_variable = {
+			KYO_fulfillment_faith_committee = 10
+		}
+		set_country_flag = KYO_candidate_suika_unlocked
+		add_to_variable = {
+			KYO_influence_suika = 10
+		}
+		set_country_flag = KYO_candidate_satori_unlocked
+		add_to_variable = {
+			KYO_influence_satori = 10
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+		hidden_effect = {
+			KYO_check_all_major_groups_joined = yes
+		}
+		hidden_effect = {
+			KYO_check_all_bloc_leaders = yes
+		}
+	}
+}
+
+
+KYO_register_higan_court = {
+	custom_effect_tooltip = KYO_register_higan_court_tt
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = KYO_group_higan_registered
+			}
+		}
+		set_country_flag = KYO_group_higan_registered
+		add_to_variable = {
+			KYO_fulfillment_mobilization_committee = 15
+		}
+		set_country_flag = KYO_candidate_eiki_unlocked
+		add_to_variable = {
+			KYO_influence_eiki = 15
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+		hidden_effect = {
+			KYO_check_all_major_groups_joined = yes
+		}
+		hidden_effect = {
+			KYO_check_all_bloc_leaders = yes
+		}
+	}
+}
+
+
+KYO_register_grassroots_network = {
+	custom_effect_tooltip = KYO_register_grassroots_network_tt
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = KYO_group_grassroots_registered
+			}
+		}
+		set_country_flag = KYO_group_grassroots_registered
+		add_to_variable = {
+			KYO_fulfillment_mobilization_committee = 15
+		}
+		set_country_flag = KYO_candidate_sekibanki_unlocked
+		add_to_variable = {
+			KYO_influence_sekibanki = 15
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+		hidden_effect = {
+			KYO_check_all_major_groups_joined = yes
+		}
+		hidden_effect = {
+			KYO_check_all_bloc_leaders = yes
+		}
+	}
+}
+
+
+KYO_register_myouren_temple = {
+	custom_effect_tooltip = KYO_register_myouren_temple_tt
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = KYO_group_myouren_registered
+			}
+		}
+		set_country_flag = KYO_group_myouren_registered
+		add_to_variable = {
+			KYO_fulfillment_faith_committee = 10
+		}
+		set_country_flag = KYO_candidate_byakuren_unlocked
+		add_to_variable = {
+			KYO_influence_byakuren = 15
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+		hidden_effect = {
+			KYO_check_all_major_groups_joined = yes
+		}
+		hidden_effect = {
+			KYO_check_all_bloc_leaders = yes
+		}
+	}
+}
+
+
+KYO_register_moriya_shrine = {
+	custom_effect_tooltip = KYO_register_moriya_shrine_tt
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = KYO_group_moriya_registered
+			}
+		}
+		set_country_flag = KYO_group_moriya_registered
+		add_to_variable = {
+			KYO_fulfillment_faith_committee = 10
+		}
+		set_country_flag = KYO_candidate_kanako_unlocked
+		add_to_variable = {
+			KYO_influence_kanako = 15
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+		hidden_effect = {
+			KYO_check_all_major_groups_joined = yes
+		}
+		hidden_effect = {
+			KYO_check_all_bloc_leaders = yes
+		}
+	}
+}
+
+
+KYO_register_tsukumogami = {
+	custom_effect_tooltip = KYO_register_tsukumogami_tt
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = KYO_group_tsukumogami_registered
+			}
+		}
+		set_country_flag = KYO_group_tsukumogami_registered
+		add_to_variable = {
+			KYO_fulfillment_mobilization_committee = 10
+		}
+		set_country_flag = KYO_candidate_raiko_unlocked
+		add_to_variable = {
+			KYO_influence_raiko = 15
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+		hidden_effect = {
+			KYO_check_all_major_groups_joined = yes
+		}
+		hidden_effect = {
+			KYO_check_all_bloc_leaders = yes
+		}
+	}
+}
+
+
+KYO_register_tanuki_network = {
+	custom_effect_tooltip = KYO_register_tanuki_network_tt
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = KYO_group_tanuki_registered
+			}
+		}
+		set_country_flag = KYO_group_tanuki_registered
+		add_to_variable = {
+			KYO_fulfillment_mobilization_committee = 10
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+		hidden_effect = {
+			KYO_check_all_major_groups_joined = yes
+		}
+		hidden_effect = {
+			KYO_check_all_bloc_leaders = yes
+		}
+	}
+}
+
+
+KYO_register_night_forest_network = {
+	custom_effect_tooltip = KYO_register_night_forest_network_tt
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = KYO_group_night_forest_registered
+			}
+		}
+		set_country_flag = KYO_group_night_forest_registered
+		add_to_variable = {
+			KYO_fulfillment_mobilization_committee = 10
+		}
+		set_country_flag = KYO_candidate_sekibanki_unlocked
+		add_to_variable = {
+			KYO_influence_sekibanki = 5
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+		hidden_effect = {
+			KYO_check_all_major_groups_joined = yes
+		}
+		hidden_effect = {
+			KYO_check_all_bloc_leaders = yes
+		}
+	}
+}
+
+
+KYO_register_independent_strong = {
+	custom_effect_tooltip = KYO_register_independent_strong_tt
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = KYO_group_independent_strong_registered
+			}
+		}
+		set_country_flag = KYO_group_independent_strong_registered
+		add_to_variable = {
+			KYO_fulfillment_military_committee = 10
+		}
+		set_country_flag = KYO_candidate_yuuka_unlocked
+		add_to_variable = {
+			KYO_influence_yuuka = 15
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+		hidden_effect = {
+			KYO_check_all_major_groups_joined = yes
+		}
+		hidden_effect = {
+			KYO_check_all_bloc_leaders = yes
+		}
+	}
+}
+
+
+KYO_register_seija_underground = {
+	custom_effect_tooltip = KYO_register_seija_underground_tt
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = KYO_group_seija_underground_contact
+			}
+		}
+		set_country_flag = KYO_group_seija_underground_contact
+		add_to_variable = {
+			KYO_fulfillment_mobilization_committee = 8
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+		hidden_effect = {
+			KYO_check_all_major_groups_joined = yes
+		}
+		hidden_effect = {
+			KYO_check_all_bloc_leaders = yes
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+KYO_check_all_bloc_leaders = {
+	KYO_check_war_bloc_leader = yes
+	KYO_check_order_bloc_leader = yes
+	KYO_check_network_bloc_leader = yes
+}
+
+KYO_check_hyakki_crises = {
+	if = {
+		limit = {
+			check_variable = {
+				KYO_fulfillment_military_committee < 25
+			}
+			NOT = {
+				has_country_flag = KYO_war_bloc_crisis_active
+			}
+		}
+		set_country_flag = KYO_war_bloc_crisis_active
+		country_event = KYO_hyakki_council.10
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_fulfillment_military_committee > 24
+			}
+		}
+		clr_country_flag = KYO_war_bloc_crisis_active
+	}
+
+	if = {
+		limit = {
+			check_variable = {
+				KYO_fulfillment_faith_committee < 25
+			}
+			NOT = {
+				has_country_flag = KYO_order_bloc_crisis_active
+			}
+		}
+		set_country_flag = KYO_order_bloc_crisis_active
+		country_event = KYO_hyakki_council.11
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_fulfillment_faith_committee > 24
+			}
+		}
+		clr_country_flag = KYO_order_bloc_crisis_active
+	}
+
+	if = {
+		limit = {
+			check_variable = {
+				KYO_fulfillment_mobilization_committee < 25
+			}
+			NOT = {
+				has_country_flag = KYO_network_bloc_crisis_active
+			}
+		}
+		set_country_flag = KYO_network_bloc_crisis_active
+		country_event = KYO_hyakki_council.12
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_fulfillment_mobilization_committee > 24
+			}
+		}
+		clr_country_flag = KYO_network_bloc_crisis_active
+	}
+}
+
+KYO_check_all_major_groups_joined = {
+	if = {
+		limit = {
+			has_country_flag = KYO_group_scarlet_registered
+			has_country_flag = KYO_group_eientei_registered
+			has_country_flag = KYO_group_human_village_registered
+			has_country_flag = KYO_group_hakugyokurou_registered
+			has_country_flag = KYO_group_tengu_registered
+			has_country_flag = KYO_group_kappa_registered
+			has_country_flag = KYO_group_fairy_registered
+			has_country_flag = KYO_group_old_hell_registered
+			has_country_flag = KYO_group_higan_registered
+			has_country_flag = KYO_group_grassroots_registered
+			NOT = {
+				has_country_flag = KYO_all_major_groups_met
+			}
+		}
+		set_country_flag = KYO_all_major_groups_met
+		
+	}
+}
+
+KYO_refresh_barrier_hakurei_idea = {
+	if = {
+		limit = {
+			has_idea = KYO_barrier_hakurei_stage_1
+		}
+		remove_ideas = KYO_barrier_hakurei_stage_1
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_hakurei_stage_2
+		}
+		remove_ideas = KYO_barrier_hakurei_stage_2
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_hakurei_stage_3
+		}
+		remove_ideas = KYO_barrier_hakurei_stage_3
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_hakurei_stage_4
+		}
+		remove_ideas = KYO_barrier_hakurei_stage_4
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_hakurei > 3
+			}
+		}
+		add_ideas = KYO_barrier_hakurei_stage_4
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_hakurei > 2
+			}
+		}
+		add_ideas = KYO_barrier_hakurei_stage_3
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_hakurei > 1
+			}
+		}
+		add_ideas = KYO_barrier_hakurei_stage_2
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_hakurei > 0
+			}
+		}
+		add_ideas = KYO_barrier_hakurei_stage_1
+	}
+}
+
+
+KYO_refresh_barrier_mountain_idea = {
+	if = {
+		limit = {
+			has_idea = KYO_barrier_mountain_stage_1
+		}
+		remove_ideas = KYO_barrier_mountain_stage_1
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_mountain_stage_2
+		}
+		remove_ideas = KYO_barrier_mountain_stage_2
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_mountain_stage_3
+		}
+		remove_ideas = KYO_barrier_mountain_stage_3
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_mountain_stage_4
+		}
+		remove_ideas = KYO_barrier_mountain_stage_4
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_mountain > 3
+			}
+		}
+		add_ideas = KYO_barrier_mountain_stage_4
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_mountain > 2
+			}
+		}
+		add_ideas = KYO_barrier_mountain_stage_3
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_mountain > 1
+			}
+		}
+		add_ideas = KYO_barrier_mountain_stage_2
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_mountain > 0
+			}
+		}
+		add_ideas = KYO_barrier_mountain_stage_1
+	}
+}
+
+
+KYO_refresh_barrier_bamboo_idea = {
+	if = {
+		limit = {
+			has_idea = KYO_barrier_bamboo_stage_1
+		}
+		remove_ideas = KYO_barrier_bamboo_stage_1
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_bamboo_stage_2
+		}
+		remove_ideas = KYO_barrier_bamboo_stage_2
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_bamboo_stage_3
+		}
+		remove_ideas = KYO_barrier_bamboo_stage_3
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_bamboo_stage_4
+		}
+		remove_ideas = KYO_barrier_bamboo_stage_4
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_bamboo > 3
+			}
+		}
+		add_ideas = KYO_barrier_bamboo_stage_4
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_bamboo > 2
+			}
+		}
+		add_ideas = KYO_barrier_bamboo_stage_3
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_bamboo > 1
+			}
+		}
+		add_ideas = KYO_barrier_bamboo_stage_2
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_bamboo > 0
+			}
+		}
+		add_ideas = KYO_barrier_bamboo_stage_1
+	}
+}
+
+
+KYO_refresh_barrier_forest_idea = {
+	if = {
+		limit = {
+			has_idea = KYO_barrier_forest_stage_1
+		}
+		remove_ideas = KYO_barrier_forest_stage_1
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_forest_stage_2
+		}
+		remove_ideas = KYO_barrier_forest_stage_2
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_forest_stage_3
+		}
+		remove_ideas = KYO_barrier_forest_stage_3
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_forest_stage_4
+		}
+		remove_ideas = KYO_barrier_forest_stage_4
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_forest > 3
+			}
+		}
+		add_ideas = KYO_barrier_forest_stage_4
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_forest > 2
+			}
+		}
+		add_ideas = KYO_barrier_forest_stage_3
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_forest > 1
+			}
+		}
+		add_ideas = KYO_barrier_forest_stage_2
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_forest > 0
+			}
+		}
+		add_ideas = KYO_barrier_forest_stage_1
+	}
+}
+
+
+KYO_refresh_barrier_old_capital_idea = {
+	if = {
+		limit = {
+			has_idea = KYO_barrier_old_capital_stage_1
+		}
+		remove_ideas = KYO_barrier_old_capital_stage_1
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_old_capital_stage_2
+		}
+		remove_ideas = KYO_barrier_old_capital_stage_2
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_old_capital_stage_3
+		}
+		remove_ideas = KYO_barrier_old_capital_stage_3
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_old_capital_stage_4
+		}
+		remove_ideas = KYO_barrier_old_capital_stage_4
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_old_capital > 3
+			}
+		}
+		add_ideas = KYO_barrier_old_capital_stage_4
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_old_capital > 2
+			}
+		}
+		add_ideas = KYO_barrier_old_capital_stage_3
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_old_capital > 1
+			}
+		}
+		add_ideas = KYO_barrier_old_capital_stage_2
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_old_capital > 0
+			}
+		}
+		add_ideas = KYO_barrier_old_capital_stage_1
+	}
+}
+
+
+KYO_refresh_barrier_human_village_idea = {
+	if = {
+		limit = {
+			has_idea = KYO_barrier_human_village_stage_1
+		}
+		remove_ideas = KYO_barrier_human_village_stage_1
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_human_village_stage_2
+		}
+		remove_ideas = KYO_barrier_human_village_stage_2
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_human_village_stage_3
+		}
+		remove_ideas = KYO_barrier_human_village_stage_3
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_human_village_stage_4
+		}
+		remove_ideas = KYO_barrier_human_village_stage_4
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_human_village > 3
+			}
+		}
+		add_ideas = KYO_barrier_human_village_stage_4
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_human_village > 2
+			}
+		}
+		add_ideas = KYO_barrier_human_village_stage_3
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_human_village > 1
+			}
+		}
+		add_ideas = KYO_barrier_human_village_stage_2
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_human_village > 0
+			}
+		}
+		add_ideas = KYO_barrier_human_village_stage_1
+	}
+}
+
+
+KYO_refresh_barrier_scarlet_lake_idea = {
+	if = {
+		limit = {
+			has_idea = KYO_barrier_scarlet_lake_stage_1
+		}
+		remove_ideas = KYO_barrier_scarlet_lake_stage_1
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_scarlet_lake_stage_2
+		}
+		remove_ideas = KYO_barrier_scarlet_lake_stage_2
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_scarlet_lake_stage_3
+		}
+		remove_ideas = KYO_barrier_scarlet_lake_stage_3
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_scarlet_lake_stage_4
+		}
+		remove_ideas = KYO_barrier_scarlet_lake_stage_4
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_scarlet_lake > 3
+			}
+		}
+		add_ideas = KYO_barrier_scarlet_lake_stage_4
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_scarlet_lake > 2
+			}
+		}
+		add_ideas = KYO_barrier_scarlet_lake_stage_3
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_scarlet_lake > 1
+			}
+		}
+		add_ideas = KYO_barrier_scarlet_lake_stage_2
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_scarlet_lake > 0
+			}
+		}
+		add_ideas = KYO_barrier_scarlet_lake_stage_1
+	}
+}
+
+
+KYO_refresh_barrier_sunflower_idea = {
+	if = {
+		limit = {
+			has_idea = KYO_barrier_sunflower_stage_1
+		}
+		remove_ideas = KYO_barrier_sunflower_stage_1
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_sunflower_stage_2
+		}
+		remove_ideas = KYO_barrier_sunflower_stage_2
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_sunflower_stage_3
+		}
+		remove_ideas = KYO_barrier_sunflower_stage_3
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_sunflower_stage_4
+		}
+		remove_ideas = KYO_barrier_sunflower_stage_4
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_sunflower > 3
+			}
+		}
+		add_ideas = KYO_barrier_sunflower_stage_4
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_sunflower > 2
+			}
+		}
+		add_ideas = KYO_barrier_sunflower_stage_3
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_sunflower > 1
+			}
+		}
+		add_ideas = KYO_barrier_sunflower_stage_2
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_sunflower > 0
+			}
+		}
+		add_ideas = KYO_barrier_sunflower_stage_1
+	}
+}
+
+
+KYO_refresh_barrier_higan_idea = {
+	if = {
+		limit = {
+			has_idea = KYO_barrier_higan_stage_1
+		}
+		remove_ideas = KYO_barrier_higan_stage_1
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_higan_stage_2
+		}
+		remove_ideas = KYO_barrier_higan_stage_2
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_higan_stage_3
+		}
+		remove_ideas = KYO_barrier_higan_stage_3
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_higan_stage_4
+		}
+		remove_ideas = KYO_barrier_higan_stage_4
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_higan > 3
+			}
+		}
+		add_ideas = KYO_barrier_higan_stage_4
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_higan > 2
+			}
+		}
+		add_ideas = KYO_barrier_higan_stage_3
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_higan > 1
+			}
+		}
+		add_ideas = KYO_barrier_higan_stage_2
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_higan > 0
+			}
+		}
+		add_ideas = KYO_barrier_higan_stage_1
+	}
+}
+
+
+KYO_refresh_barrier_netherworld_idea = {
+	if = {
+		limit = {
+			has_idea = KYO_barrier_netherworld_stage_1
+		}
+		remove_ideas = KYO_barrier_netherworld_stage_1
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_netherworld_stage_2
+		}
+		remove_ideas = KYO_barrier_netherworld_stage_2
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_netherworld_stage_3
+		}
+		remove_ideas = KYO_barrier_netherworld_stage_3
+	}
+	if = {
+		limit = {
+			has_idea = KYO_barrier_netherworld_stage_4
+		}
+		remove_ideas = KYO_barrier_netherworld_stage_4
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_netherworld > 3
+			}
+		}
+		add_ideas = KYO_barrier_netherworld_stage_4
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_netherworld > 2
+			}
+		}
+		add_ideas = KYO_barrier_netherworld_stage_3
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_netherworld > 1
+			}
+		}
+		add_ideas = KYO_barrier_netherworld_stage_2
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_netherworld > 0
+			}
+		}
+		add_ideas = KYO_barrier_netherworld_stage_1
+	}
+}
+
+KYO_refresh_all_barrier_node_ideas = {
+	KYO_refresh_barrier_hakurei_idea = yes
+	KYO_refresh_barrier_mountain_idea = yes
+	KYO_refresh_barrier_bamboo_idea = yes
+	KYO_refresh_barrier_forest_idea = yes
+	KYO_refresh_barrier_old_capital_idea = yes
+	KYO_refresh_barrier_human_village_idea = yes
+	KYO_refresh_barrier_scarlet_lake_idea = yes
+	KYO_refresh_barrier_sunflower_idea = yes
+	KYO_refresh_barrier_higan_idea = yes
+	KYO_refresh_barrier_netherworld_idea = yes
+}
+
+
+KYO_refresh_fading_stage = {
+	if = {
+		limit = {
+			has_idea = KYO_fading_stage_1
+		}
+		remove_ideas = KYO_fading_stage_1
+	}
+	if = {
+		limit = {
+			has_idea = KYO_fading_stage_2
+		}
+		remove_ideas = KYO_fading_stage_2
+	}
+	if = {
+		limit = {
+			has_idea = KYO_fading_stage_3
+		}
+		remove_ideas = KYO_fading_stage_3
+	}
+	if = {
+		limit = {
+			has_idea = KYO_fading_stage_4
+		}
+		remove_ideas = KYO_fading_stage_4
+	}
+	set_variable = {
+		KYO_barrier_severe_nodes = 0
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_hakurei > 2
+			}
+		}
+		add_to_variable = {
+			KYO_barrier_severe_nodes = 1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_mountain > 2
+			}
+		}
+		add_to_variable = {
+			KYO_barrier_severe_nodes = 1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_bamboo > 2
+			}
+		}
+		add_to_variable = {
+			KYO_barrier_severe_nodes = 1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_forest > 2
+			}
+		}
+		add_to_variable = {
+			KYO_barrier_severe_nodes = 1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_old_capital > 2
+			}
+		}
+		add_to_variable = {
+			KYO_barrier_severe_nodes = 1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_human_village > 2
+			}
+		}
+		add_to_variable = {
+			KYO_barrier_severe_nodes = 1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_scarlet_lake > 2
+			}
+		}
+		add_to_variable = {
+			KYO_barrier_severe_nodes = 1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_sunflower > 2
+			}
+		}
+		add_to_variable = {
+			KYO_barrier_severe_nodes = 1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_higan > 2
+			}
+		}
+		add_to_variable = {
+			KYO_barrier_severe_nodes = 1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_netherworld > 2
+			}
+		}
+		add_to_variable = {
+			KYO_barrier_severe_nodes = 1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_severe_nodes > 5
+			}
+		}
+		set_variable = {
+			KYO_fading_stage = 4
+		}
+		add_ideas = KYO_fading_stage_4
+		set_country_flag = KYO_emergency_barrier_tasks_unlocked
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_severe_nodes > 3
+			}
+		}
+		set_variable = {
+			KYO_fading_stage = 3
+		}
+		add_ideas = KYO_fading_stage_3
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_severe_nodes > 2
+			}
+		}
+		set_variable = {
+			KYO_fading_stage = 2
+		}
+		add_ideas = KYO_fading_stage_2
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_severe_nodes > 0
+			}
+		}
+		set_variable = {
+			KYO_fading_stage = 1
+		}
+		add_ideas = KYO_fading_stage_1
+	}
+	else = {
+		set_variable = {
+			KYO_fading_stage = 0
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_severe_nodes > 0
+			}
+			NOT = {
+				has_country_flag = KYO_first_name_lost_event_fired
+			}
+		}
+		set_country_flag = KYO_first_name_lost_event_fired
+		
+	}
+}
+
+
+KYO_clamp_barrier_nodes = {
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_hakurei > 4
+			}
+		}
+		set_variable = {
+			KYO_barrier_hakurei = 4
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_hakurei < 0
+			}
+		}
+		set_variable = {
+			KYO_barrier_hakurei = 0
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_mountain > 4
+			}
+		}
+		set_variable = {
+			KYO_barrier_mountain = 4
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_mountain < 0
+			}
+		}
+		set_variable = {
+			KYO_barrier_mountain = 0
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_bamboo > 4
+			}
+		}
+		set_variable = {
+			KYO_barrier_bamboo = 4
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_bamboo < 0
+			}
+		}
+		set_variable = {
+			KYO_barrier_bamboo = 0
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_forest > 4
+			}
+		}
+		set_variable = {
+			KYO_barrier_forest = 4
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_forest < 0
+			}
+		}
+		set_variable = {
+			KYO_barrier_forest = 0
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_old_capital > 4
+			}
+		}
+		set_variable = {
+			KYO_barrier_old_capital = 4
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_old_capital < 0
+			}
+		}
+		set_variable = {
+			KYO_barrier_old_capital = 0
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_human_village > 4
+			}
+		}
+		set_variable = {
+			KYO_barrier_human_village = 4
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_human_village < 0
+			}
+		}
+		set_variable = {
+			KYO_barrier_human_village = 0
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_scarlet_lake > 4
+			}
+		}
+		set_variable = {
+			KYO_barrier_scarlet_lake = 4
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_scarlet_lake < 0
+			}
+		}
+		set_variable = {
+			KYO_barrier_scarlet_lake = 0
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_sunflower > 4
+			}
+		}
+		set_variable = {
+			KYO_barrier_sunflower = 4
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_sunflower < 0
+			}
+		}
+		set_variable = {
+			KYO_barrier_sunflower = 0
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_higan > 4
+			}
+		}
+		set_variable = {
+			KYO_barrier_higan = 4
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_higan < 0
+			}
+		}
+		set_variable = {
+			KYO_barrier_higan = 0
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_netherworld > 4
+			}
+		}
+		set_variable = {
+			KYO_barrier_netherworld = 4
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_barrier_netherworld < 0
+			}
+		}
+		set_variable = {
+			KYO_barrier_netherworld = 0
+		}
+	}
+	KYO_refresh_all_barrier_node_ideas = yes
+	KYO_refresh_fading_stage = yes
+	KYO_check_barrier_rebuild_completion = yes
+}
+
+
+KYO_initialize_first_war_system = {
+	custom_effect_tooltip = KYO_initialize_first_war_system_tt
+
+	hidden_effect = {
+		
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = KYO_first_war_system_initialized
+			}
+		}
+		set_country_flag = KYO_first_war_system_initialized
+		set_country_flag = KYO_barrier_crisis_active
+		set_variable = {
+			KYO_barrier_hakurei = 2
+		}
+		set_variable = {
+			KYO_barrier_mountain = 1
+		}
+		set_variable = {
+			KYO_barrier_bamboo = 0
+		}
+		set_variable = {
+			KYO_barrier_forest = 0
+		}
+		set_variable = {
+			KYO_barrier_old_capital = 0
+		}
+		set_variable = {
+			KYO_barrier_human_village = 1
+		}
+		set_variable = {
+			KYO_barrier_scarlet_lake = 0
+		}
+		set_variable = {
+			KYO_barrier_sunflower = 0
+		}
+		set_variable = {
+			KYO_barrier_higan = 0
+		}
+		set_variable = {
+			KYO_barrier_netherworld = 0
+		}
+		set_variable = {
+			KYO_barrier_selected_node = 1
+		}
+		set_variable = {
+			KYO_lunar_evidence = 1
+		}
+		set_variable = {
+			KYO_ritual_protection = 0
+		}
+		KYO_worsen_random_barrier_node = yes
+		KYO_worsen_random_barrier_node = yes
+		hidden_effect = {
+			KYO_clamp_barrier_nodes = yes
+		}
+		activate_mission = KYO_barrier_deterioration_cycle
+	}
+}
+
+
+
+
+
+KYO_evacuate_hakurei_node = {
+	custom_effect_tooltip = KYO_evacuate_hakurei_node_tt
+	set_country_flag = KYO_barrier_hakurei_evacuated
+	add_timed_idea = {
+		idea = KYO_barrier_evacuation_program
+		days = 60
+	}
+}
+
+
+KYO_repair_hakurei_node = {
+	custom_effect_tooltip = KYO_repair_hakurei_node_tt
+	subtract_from_variable = {
+		KYO_barrier_hakurei = 1
+	}
+	add_command_power = -15
+	hidden_effect = {
+		KYO_clamp_barrier_nodes = yes
+	}
+}
+
+
+KYO_transfer_hakurei_node = {
+	custom_effect_tooltip = KYO_transfer_hakurei_node_tt
+	subtract_from_variable = {
+		KYO_barrier_hakurei = 1
+	}
+	add_to_variable = {
+		KYO_barrier_forest = 1
+	}
+	add_to_variable = {
+		KYO_okina_redeployment_confusion = 1
+	}
+	hidden_effect = {
+		KYO_clamp_barrier_nodes = yes
+	}
+}
+
+
+
+
+KYO_evacuate_mountain_node = {
+	custom_effect_tooltip = KYO_evacuate_mountain_node_tt
+	set_country_flag = KYO_barrier_mountain_evacuated
+	add_timed_idea = {
+		idea = KYO_barrier_evacuation_program
+		days = 60
+	}
+}
+
+
+KYO_repair_mountain_node = {
+	custom_effect_tooltip = KYO_repair_mountain_node_tt
+	subtract_from_variable = {
+		KYO_barrier_mountain = 1
+	}
+	add_command_power = -15
+	hidden_effect = {
+		KYO_clamp_barrier_nodes = yes
+	}
+}
+
+
+KYO_transfer_mountain_node = {
+	custom_effect_tooltip = KYO_transfer_mountain_node_tt
+	subtract_from_variable = {
+		KYO_barrier_mountain = 1
+	}
+	add_to_variable = {
+		KYO_barrier_old_capital = 1
+	}
+	add_to_variable = {
+		KYO_okina_redeployment_confusion = 1
+	}
+	hidden_effect = {
+		KYO_clamp_barrier_nodes = yes
+	}
+}
+
+
+
+
+
+KYO_evacuate_bamboo_node = {
+	custom_effect_tooltip = KYO_evacuate_bamboo_node_tt
+	set_country_flag = KYO_barrier_bamboo_evacuated
+	add_timed_idea = {
+		idea = KYO_barrier_evacuation_program
+		days = 60
+	}
+}
+
+
+KYO_repair_bamboo_node = {
+	custom_effect_tooltip = KYO_repair_bamboo_node_tt
+	subtract_from_variable = {
+		KYO_barrier_bamboo = 1
+	}
+	add_command_power = -15
+	hidden_effect = {
+		KYO_clamp_barrier_nodes = yes
+	}
+}
+
+
+KYO_transfer_bamboo_node = {
+	custom_effect_tooltip = KYO_transfer_bamboo_node_tt
+	subtract_from_variable = {
+		KYO_barrier_bamboo = 1
+	}
+	add_to_variable = {
+		KYO_barrier_human_village = 1
+	}
+	add_to_variable = {
+		KYO_okina_redeployment_confusion = 1
+	}
+	hidden_effect = {
+		KYO_clamp_barrier_nodes = yes
+	}
+}
+
+
+
+KYO_evacuate_forest_node = {
+	custom_effect_tooltip = KYO_evacuate_forest_node_tt
+	set_country_flag = KYO_barrier_forest_evacuated
+	add_timed_idea = {
+		idea = KYO_barrier_evacuation_program
+		days = 60
+	}
+}
+
+
+KYO_repair_forest_node = {
+	custom_effect_tooltip = KYO_repair_forest_node_tt
+	subtract_from_variable = {
+		KYO_barrier_forest = 1
+	}
+	add_command_power = -15
+	hidden_effect = {
+		KYO_clamp_barrier_nodes = yes
+	}
+}
+
+
+KYO_transfer_forest_node = {
+	custom_effect_tooltip = KYO_transfer_forest_node_tt
+	subtract_from_variable = {
+		KYO_barrier_forest = 1
+	}
+	add_to_variable = {
+		KYO_barrier_sunflower = 1
+	}
+	add_to_variable = {
+		KYO_okina_redeployment_confusion = 1
+	}
+	hidden_effect = {
+		KYO_clamp_barrier_nodes = yes
+	}
+}
+
+
+
+
+KYO_evacuate_old_capital_node = {
+	custom_effect_tooltip = KYO_evacuate_old_capital_node_tt
+	set_country_flag = KYO_barrier_old_capital_evacuated
+	add_timed_idea = {
+		idea = KYO_barrier_evacuation_program
+		days = 60
+	}
+}
+
+
+KYO_repair_old_capital_node = {
+	custom_effect_tooltip = KYO_repair_old_capital_node_tt
+	subtract_from_variable = {
+		KYO_barrier_old_capital = 1
+	}
+	add_command_power = -15
+	hidden_effect = {
+		KYO_clamp_barrier_nodes = yes
+	}
+}
+
+
+KYO_transfer_old_capital_node = {
+	custom_effect_tooltip = KYO_transfer_old_capital_node_tt
+	subtract_from_variable = {
+		KYO_barrier_old_capital = 1
+	}
+	add_to_variable = {
+		KYO_barrier_mountain = 1
+	}
+	add_to_variable = {
+		KYO_okina_redeployment_confusion = 1
+	}
+	hidden_effect = {
+		KYO_clamp_barrier_nodes = yes
+	}
+}
+
+
+
+
+
+KYO_evacuate_human_village_node = {
+	custom_effect_tooltip = KYO_evacuate_human_village_node_tt
+	set_country_flag = KYO_barrier_human_village_evacuated
+	add_timed_idea = {
+		idea = KYO_barrier_evacuation_program
+		days = 60
+	}
+}
+
+
+KYO_repair_human_village_node = {
+	custom_effect_tooltip = KYO_repair_human_village_node_tt
+	subtract_from_variable = {
+		KYO_barrier_human_village = 1
+	}
+	add_command_power = -15
+	hidden_effect = {
+		KYO_clamp_barrier_nodes = yes
+	}
+}
+
+
+KYO_transfer_human_village_node = {
+	custom_effect_tooltip = KYO_transfer_human_village_node_tt
+	subtract_from_variable = {
+		KYO_barrier_human_village = 1
+	}
+	add_to_variable = {
+		KYO_barrier_scarlet_lake = 1
+	}
+	add_to_variable = {
+		KYO_okina_redeployment_confusion = 1
+	}
+	hidden_effect = {
+		KYO_clamp_barrier_nodes = yes
+	}
+}
+
+
+
+
+KYO_evacuate_scarlet_lake_node = {
+	custom_effect_tooltip = KYO_evacuate_scarlet_lake_node_tt
+	set_country_flag = KYO_barrier_scarlet_lake_evacuated
+	add_timed_idea = {
+		idea = KYO_barrier_evacuation_program
+		days = 60
+	}
+}
+
+
+KYO_repair_scarlet_lake_node = {
+	custom_effect_tooltip = KYO_repair_scarlet_lake_node_tt
+	subtract_from_variable = {
+		KYO_barrier_scarlet_lake = 1
+	}
+	add_command_power = -15
+	hidden_effect = {
+		KYO_clamp_barrier_nodes = yes
+	}
+}
+
+
+KYO_transfer_scarlet_lake_node = {
+	custom_effect_tooltip = KYO_transfer_scarlet_lake_node_tt
+	subtract_from_variable = {
+		KYO_barrier_scarlet_lake = 1
+	}
+	add_to_variable = {
+		KYO_barrier_human_village = 1
+	}
+	add_to_variable = {
+		KYO_okina_redeployment_confusion = 1
+	}
+	hidden_effect = {
+		KYO_clamp_barrier_nodes = yes
+	}
+}
+
+
+
+
+KYO_evacuate_sunflower_node = {
+	custom_effect_tooltip = KYO_evacuate_sunflower_node_tt
+	set_country_flag = KYO_barrier_sunflower_evacuated
+	add_timed_idea = {
+		idea = KYO_barrier_evacuation_program
+		days = 60
+	}
+}
+
+
+KYO_repair_sunflower_node = {
+	custom_effect_tooltip = KYO_repair_sunflower_node_tt
+	subtract_from_variable = {
+		KYO_barrier_sunflower = 1
+	}
+	add_command_power = -15
+	hidden_effect = {
+		KYO_clamp_barrier_nodes = yes
+	}
+}
+
+
+KYO_transfer_sunflower_node = {
+	custom_effect_tooltip = KYO_transfer_sunflower_node_tt
+	subtract_from_variable = {
+		KYO_barrier_sunflower = 1
+	}
+	add_to_variable = {
+		KYO_barrier_higan = 1
+	}
+	add_to_variable = {
+		KYO_okina_redeployment_confusion = 1
+	}
+	hidden_effect = {
+		KYO_clamp_barrier_nodes = yes
+	}
+}
+
+
+
+
+
+KYO_evacuate_higan_node = {
+	custom_effect_tooltip = KYO_evacuate_higan_node_tt
+	set_country_flag = KYO_barrier_higan_evacuated
+	add_timed_idea = {
+		idea = KYO_barrier_evacuation_program
+		days = 60
+	}
+}
+
+
+KYO_repair_higan_node = {
+	custom_effect_tooltip = KYO_repair_higan_node_tt
+	subtract_from_variable = {
+		KYO_barrier_higan = 1
+	}
+	add_command_power = -15
+	hidden_effect = {
+		KYO_clamp_barrier_nodes = yes
+	}
+}
+
+
+KYO_transfer_higan_node = {
+	custom_effect_tooltip = KYO_transfer_higan_node_tt
+	subtract_from_variable = {
+		KYO_barrier_higan = 1
+	}
+	add_to_variable = {
+		KYO_barrier_netherworld = 1
+	}
+	add_to_variable = {
+		KYO_okina_redeployment_confusion = 1
+	}
+	hidden_effect = {
+		KYO_clamp_barrier_nodes = yes
+	}
+}
+
+
+
+
+KYO_evacuate_netherworld_node = {
+	custom_effect_tooltip = KYO_evacuate_netherworld_node_tt
+	set_country_flag = KYO_barrier_netherworld_evacuated
+	add_timed_idea = {
+		idea = KYO_barrier_evacuation_program
+		days = 60
+	}
+}
+
+KYO_repair_netherworld_node = {
+	custom_effect_tooltip = KYO_repair_netherworld_node_tt
+	subtract_from_variable = {
+		KYO_barrier_netherworld = 1
+	}
+	add_command_power = -15
+	hidden_effect = {
+		KYO_clamp_barrier_nodes = yes
+	}
+}
+
+KYO_transfer_netherworld_node = {
+	custom_effect_tooltip = KYO_transfer_netherworld_node_tt
+	subtract_from_variable = {
+		KYO_barrier_netherworld = 1
+	}
+	add_to_variable = {
+		KYO_barrier_hakurei = 1
+	}
+	add_to_variable = {
+		KYO_okina_redeployment_confusion = 1
+	}
+	hidden_effect = {
+		KYO_clamp_barrier_nodes = yes
+	}
+}
+
+KYO_worsen_random_barrier_node = {
+	random_list = {
+		10 = {
+			if = {
+				limit = {
+					has_country_flag = KYO_barrier_hakurei_contained
+				}
+				clr_country_flag = KYO_barrier_hakurei_contained
+			}
+			else = {
+				add_to_variable = {
+					KYO_barrier_hakurei = 1
+				}
+			}
+		}
+		10 = {
+			if = {
+				limit = {
+					has_country_flag = KYO_barrier_mountain_contained
+				}
+				clr_country_flag = KYO_barrier_mountain_contained
+			}
+			else = {
+				add_to_variable = {
+					KYO_barrier_mountain = 1
+				}
+			}
+		}
+		10 = {
+			if = {
+				limit = {
+					has_country_flag = KYO_barrier_bamboo_contained
+				}
+				clr_country_flag = KYO_barrier_bamboo_contained
+			}
+			else = {
+				add_to_variable = {
+					KYO_barrier_bamboo = 1
+				}
+			}
+		}
+		10 = {
+			if = {
+				limit = {
+					has_country_flag = KYO_barrier_forest_contained
+				}
+				clr_country_flag = KYO_barrier_forest_contained
+			}
+			else = {
+				add_to_variable = {
+					KYO_barrier_forest = 1
+				}
+			}
+		}
+		10 = {
+			if = {
+				limit = {
+					has_country_flag = KYO_barrier_old_capital_contained
+				}
+				clr_country_flag = KYO_barrier_old_capital_contained
+			}
+			else = {
+				add_to_variable = {
+					KYO_barrier_old_capital = 1
+				}
+			}
+		}
+		10 = {
+			if = {
+				limit = {
+					has_country_flag = KYO_barrier_human_village_contained
+				}
+				clr_country_flag = KYO_barrier_human_village_contained
+			}
+			else = {
+				add_to_variable = {
+					KYO_barrier_human_village = 1
+				}
+			}
+		}
+		10 = {
+			if = {
+				limit = {
+					has_country_flag = KYO_barrier_scarlet_lake_contained
+				}
+				clr_country_flag = KYO_barrier_scarlet_lake_contained
+			}
+			else = {
+				add_to_variable = {
+					KYO_barrier_scarlet_lake = 1
+				}
+			}
+		}
+		10 = {
+			if = {
+				limit = {
+					has_country_flag = KYO_barrier_sunflower_contained
+				}
+				clr_country_flag = KYO_barrier_sunflower_contained
+			}
+			else = {
+				add_to_variable = {
+					KYO_barrier_sunflower = 1
+				}
+			}
+		}
+		10 = {
+			if = {
+				limit = {
+					has_country_flag = KYO_barrier_higan_contained
+				}
+				clr_country_flag = KYO_barrier_higan_contained
+			}
+			else_if = {
+				limit = {
+					has_country_flag = KYO_war_leader_yuyuko
+				}
+				random_list = {
+					50 = {
+					}
+					50 = {
+						add_to_variable = {
+							KYO_barrier_higan = 1
+						}
+					}
+				}
+			}
+			else = {
+				add_to_variable = {
+					KYO_barrier_higan = 1
+				}
+			}
+		}
+		10 = {
+			if = {
+				limit = {
+					has_country_flag = KYO_barrier_netherworld_contained
+				}
+				clr_country_flag = KYO_barrier_netherworld_contained
+			}
+			else_if = {
+				limit = {
+					has_country_flag = KYO_war_leader_yuyuko
+				}
+				random_list = {
+					50 = {
+					}
+					50 = {
+						add_to_variable = {
+							KYO_barrier_netherworld = 1
+						}
+					}
+				}
+			}
+			else = {
+				add_to_variable = {
+					KYO_barrier_netherworld = 1
+				}
+			}
+		}
+	}
+	KYO_clamp_barrier_nodes = yes
+}
+
+
+KYO_apply_barrier_timeout_disaster = {
+	random_list = {
+		60 = {
+			random_list = {
+			10 = {
+				add_to_variable = {
+					KYO_barrier_hakurei = 1
+				}
+				add_to_variable = {
+					KYO_barrier_forest = 1
+				}
+			}
+			10 = {
+				add_to_variable = {
+					KYO_barrier_mountain = 1
+				}
+				add_to_variable = {
+					KYO_barrier_old_capital = 1
+				}
+			}
+			10 = {
+				add_to_variable = {
+					KYO_barrier_bamboo = 1
+				}
+				add_to_variable = {
+					KYO_barrier_human_village = 1
+				}
+			}
+			10 = {
+				add_to_variable = {
+					KYO_barrier_forest = 1
+				}
+				add_to_variable = {
+					KYO_barrier_sunflower = 1
+				}
+			}
+			10 = {
+				add_to_variable = {
+					KYO_barrier_old_capital = 1
+				}
+				add_to_variable = {
+					KYO_barrier_mountain = 1
+				}
+			}
+			10 = {
+				add_to_variable = {
+					KYO_barrier_human_village = 1
+				}
+				add_to_variable = {
+					KYO_barrier_scarlet_lake = 1
+				}
+			}
+			10 = {
+				add_to_variable = {
+					KYO_barrier_scarlet_lake = 1
+				}
+				add_to_variable = {
+					KYO_barrier_human_village = 1
+				}
+			}
+			10 = {
+				add_to_variable = {
+					KYO_barrier_sunflower = 1
+				}
+				add_to_variable = {
+					KYO_barrier_higan = 1
+				}
+			}
+			10 = {
+				add_to_variable = {
+					KYO_barrier_higan = 1
+				}
+				add_to_variable = {
+					KYO_barrier_netherworld = 1
+				}
+			}
+			10 = {
+				add_to_variable = {
+					KYO_barrier_netherworld = 1
+				}
+				add_to_variable = {
+					KYO_barrier_hakurei = 1
+				}
+			}
+			}
+		}
+		40 = {
+			random_list = {
+			10 = {
+				add_to_variable = {
+					KYO_barrier_hakurei = 2
+				}
+			}
+			10 = {
+				add_to_variable = {
+					KYO_barrier_mountain = 2
+				}
+			}
+			10 = {
+				add_to_variable = {
+					KYO_barrier_bamboo = 2
+				}
+			}
+			10 = {
+				add_to_variable = {
+					KYO_barrier_forest = 2
+				}
+			}
+			10 = {
+				add_to_variable = {
+					KYO_barrier_old_capital = 2
+				}
+			}
+			10 = {
+				add_to_variable = {
+					KYO_barrier_human_village = 2
+				}
+			}
+			10 = {
+				add_to_variable = {
+					KYO_barrier_scarlet_lake = 2
+				}
+			}
+			10 = {
+				add_to_variable = {
+					KYO_barrier_sunflower = 2
+				}
+			}
+			10 = {
+				add_to_variable = {
+					KYO_barrier_higan = 2
+				}
+			}
+			10 = {
+				add_to_variable = {
+					KYO_barrier_netherworld = 2
+				}
+			}
+			}
+		}
+	}
+	KYO_clamp_barrier_nodes = yes
+}
+
+
+KYO_resolve_barrier_timeout_crisis = {
+	custom_effect_tooltip = KYO_resolve_barrier_timeout_crisis_tt
+
+	remove_mission = KYO_barrier_timeout_crisis
+	clr_country_flag = KYO_barrier_timeout_crisis_active
+	add_command_power = -30
+	add_to_variable = {
+		KYO_ritual_protection = 1
+	}
+}
+
+KYO_use_yukari_central_barrier_network = {
+	custom_effect_tooltip = KYO_use_yukari_central_barrier_network_tt
+
+	subtract_from_variable = {
+		KYO_barrier_hakurei = 1
+	}
+	subtract_from_variable = {
+		KYO_barrier_mountain = 1
+	}
+	
+	hidden_effect = {
+		KYO_clamp_barrier_nodes = yes
+	}
+}
+
+KYO_use_kasen_grassroots_maintenance = {
+	custom_effect_tooltip = KYO_use_kasen_grassroots_maintenance_tt
+
+	subtract_from_variable = {
+		KYO_barrier_hakurei = 1
+	}
+	add_timed_idea = {
+		idea = KYO_barrier_grassroots_maintenance_idea
+		days = 45
+	}
+	hidden_effect = {
+		KYO_clamp_barrier_nodes = yes
+	}
+}
+
+KYO_use_okina_backdoor_redeployment = {
+	custom_effect_tooltip = KYO_use_okina_backdoor_redeployment_tt
+
+	subtract_from_variable = {
+		KYO_barrier_mountain = 1
+	}
+	add_to_variable = {
+		KYO_barrier_forest = 1
+	}
+	add_to_variable = {
+		KYO_okina_redeployment_confusion = 1
+	}
+	hidden_effect = {
+		KYO_clamp_barrier_nodes = yes
+	}
+}
+
+KYO_add_lunar_evidence = {
+	add_to_variable = {
+		KYO_lunar_evidence = 1
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_lunar_evidence > 5
+			}
+		}
+		set_variable = {
+			KYO_lunar_evidence = 5
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_lunar_evidence > 2
+			}
+		}
+		set_country_flag = KYO_unknown_interference_visible
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_lunar_evidence > 4
+			}
+		}
+		set_country_flag = KYO_lunar_targeting_network_named
+	}
+}
+
+KYO_add_ritual_protection = {
+	add_to_variable = {
+		KYO_ritual_protection = 1
+	}
+	if = {
+		limit = {
+			check_variable = {
+				KYO_ritual_protection > 3
+			}
+		}
+		set_variable = {
+			KYO_ritual_protection = 3
+		}
+	}
+}
+
+KYO_activate_military_committee_support = {
+	custom_effect_tooltip = KYO_activate_military_committee_support_tt
+	if = {
+		limit = {
+			has_country_flag = KYO_war_leader_remilia
+		}
+		add_timed_idea = {
+			idea = KYO_support_war_remilia
+			days = 30
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_war_leader_yuyuko
+		}
+		add_timed_idea = {
+			idea = KYO_support_war_yuyuko
+			days = 30
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_war_leader_suika
+		}
+		add_timed_idea = {
+			idea = KYO_support_war_suika
+			days = 30
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_war_leader_yuuka
+		}
+		add_timed_idea = {
+			idea = KYO_support_war_yuuka
+			days = 30
+		}
+	}
+	KYO_remove_military_fulfillment_5 = yes
+}
+
+
+KYO_activate_faith_committee_support = {
+	custom_effect_tooltip = KYO_activate_faith_committee_support_tt
+	if = {
+		limit = {
+			has_country_flag = KYO_order_leader_byakuren
+		}
+		add_timed_idea = {
+			idea = KYO_support_order_byakuren
+			days = 30
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_order_leader_kanako
+		}
+		add_timed_idea = {
+			idea = KYO_support_order_kanako
+			days = 30
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_order_leader_satori
+		}
+		add_timed_idea = {
+			idea = KYO_support_order_satori
+			days = 30
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_order_leader_megumu
+		}
+		add_timed_idea = {
+			idea = KYO_support_order_megumu
+			days = 30
+		}
+	}
+	KYO_remove_faith_fulfillment_5 = yes
+}
+
+
+KYO_activate_mobilization_committee_support = {
+	custom_effect_tooltip = KYO_activate_mobilization_committee_support_tt
+	if = {
+		limit = {
+			has_country_flag = KYO_network_leader_sekibanki
+		}
+		add_timed_idea = {
+			idea = KYO_support_network_sekibanki
+			days = 30
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_network_leader_eirin
+		}
+		add_timed_idea = {
+			idea = KYO_support_network_eirin
+			days = 30
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_network_leader_raiko
+		}
+		add_timed_idea = {
+			idea = KYO_support_network_raiko
+			days = 30
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_network_leader_eiki
+		}
+		add_timed_idea = {
+			idea = KYO_support_network_eiki
+			days = 30
+		}
+	}
+	KYO_remove_mobilization_fulfillment_5 = yes
+}
+
+
+KYO_register_advance_plan_choice = {
+	add_to_variable = {
+		KYO_advance_plan_choices = 1
+	}
+}
+
+KYO_finalize_first_war = {
+
+	KYO_clear_tokyo_chain_war_buffs = yes
+	clr_country_flag = KYO_barrier_crisis_active
+	set_country_flag = KYO_barrier_postwar_active
+	clr_country_flag = KYO_first_war_planning_active
+	remove_mission = KYO_barrier_deterioration_cycle
+	remove_mission = KYO_barrier_timeout_crisis
+	clr_country_flag = KYO_barrier_timeout_crisis_active
+	activate_mission = KYO_barrier_postwar_deterioration_cycle
+	
+	remove_mission = KYO_advance_planning_deadline
+	set_country_flag = KYO_first_war_finished
+	KYO_check_all_bloc_leaders = yes
+	if = {
+		limit = {
+			has_country_flag = KYO_war_leader_remilia
+		}
+		set_country_flag = KYO_postwar_war_leader_remilia
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_war_leader_yuyuko
+		}
+		set_country_flag = KYO_postwar_war_leader_yuyuko
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_war_leader_suika
+		}
+		set_country_flag = KYO_postwar_war_leader_suika
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_war_leader_yuuka
+		}
+		set_country_flag = KYO_postwar_war_leader_yuuka
+	}
+	if = {
+		limit = {
+			has_country_flag = KYO_order_leader_byakuren
+		}
+		set_country_flag = KYO_postwar_order_leader_byakuren
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_order_leader_kanako
+		}
+		set_country_flag = KYO_postwar_order_leader_kanako
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_order_leader_satori
+		}
+		set_country_flag = KYO_postwar_order_leader_satori
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_order_leader_megumu
+		}
+		set_country_flag = KYO_postwar_order_leader_megumu
+	}
+	if = {
+		limit = {
+			has_country_flag = KYO_network_leader_sekibanki
+		}
+		set_country_flag = KYO_postwar_network_leader_sekibanki
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_network_leader_eirin
+		}
+		set_country_flag = KYO_postwar_network_leader_eirin
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_network_leader_raiko
+		}
+		set_country_flag = KYO_postwar_network_leader_raiko
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_network_leader_eiki
+		}
+		set_country_flag = KYO_postwar_network_leader_eiki
+	}
+	set_variable = {
+		KYO_postwar_fulfillment_military = KYO_fulfillment_military_committee
+	}
+	set_variable = {
+		KYO_postwar_fulfillment_faith = KYO_fulfillment_faith_committee
+	}
+	set_variable = {
+		KYO_postwar_fulfillment_mobilization = KYO_fulfillment_mobilization_committee
+	}
+}
+
+
+
+# v1.0 candidate leadership, quarterly mandate and fulfillment decay
+
+KYO_initialize_hyakki_coalition = {
+	custom_effect_tooltip = KYO_initialize_hyakki_coalition_tt
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = KYO_hyakki_coalition_initialized
+			}
+		}
+		set_country_flag = KYO_hyakki_coalition_initialized
+		set_variable = {
+			KYO_hyakki_selected_candidate = 1
+		}
+		set_variable = {
+			KYO_fulfillment_military_committee = 25
+		}
+		set_variable = {
+			KYO_fulfillment_faith_committee = 25
+		}
+		set_variable = {
+			KYO_fulfillment_mobilization_committee = 25
+		}
+		set_country_flag = KYO_candidate_remilia_unlocked
+		set_variable = {
+			KYO_influence_remilia = 10
+		}
+		set_country_flag = KYO_candidate_yuyuko_unlocked
+		set_variable = {
+			KYO_influence_yuyuko = 5
+		}
+		set_country_flag = KYO_candidate_suika_unlocked
+		set_variable = {
+			KYO_influence_suika = 5
+		}
+		set_country_flag = KYO_candidate_yuuka_unlocked
+		set_variable = {
+			KYO_influence_yuuka = 5
+		}
+		set_country_flag = KYO_candidate_byakuren_unlocked
+		set_variable = {
+			KYO_influence_byakuren = 10
+		}
+		set_country_flag = KYO_candidate_kanako_unlocked
+		set_variable = {
+			KYO_influence_kanako = 5
+		}
+		set_country_flag = KYO_candidate_satori_unlocked
+		set_variable = {
+			KYO_influence_satori = 5
+		}
+		set_country_flag = KYO_candidate_megumu_unlocked
+		set_variable = {
+			KYO_influence_megumu = 5
+		}
+		set_country_flag = KYO_candidate_sekibanki_unlocked
+		set_variable = {
+			KYO_influence_sekibanki = 10
+		}
+		set_country_flag = KYO_candidate_eirin_unlocked
+		set_variable = {
+			KYO_influence_eirin = 5
+		}
+		set_country_flag = KYO_candidate_raiko_unlocked
+		set_variable = {
+			KYO_influence_raiko = 5
+		}
+		set_country_flag = KYO_candidate_eiki_unlocked
+		set_variable = {
+			KYO_influence_eiki = 5
+		}
+		KYO_apply_war_leader_remilia = yes
+		KYO_apply_order_leader_byakuren = yes
+		KYO_apply_network_leader_sekibanki = yes
+		activate_mission = KYO_hyakki_leadership_cycle
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+			KYO_start_random_quarterly_candidate_mandate = yes
+			KYO_start_random_executive_pair = yes
+		}
+		
+		
+		country_event = {
+			id = KYO_hyakki_council.1
+			days = 1
+		}
+	}
+}
+
+KYO_apply_war_leader_remilia = {
+	if = {
+		limit = {
+			has_idea = KYO_war_leader_remilia_idea
+		}
+		remove_ideas = KYO_war_leader_remilia_idea
+	}
+	clr_country_flag = KYO_war_leader_remilia
+	if = {
+		limit = {
+			has_idea = KYO_war_leader_yuyuko_idea
+		}
+		remove_ideas = KYO_war_leader_yuyuko_idea
+	}
+	clr_country_flag = KYO_war_leader_yuyuko
+	if = {
+		limit = {
+			has_idea = KYO_war_leader_suika_idea
+		}
+		remove_ideas = KYO_war_leader_suika_idea
+	}
+	clr_country_flag = KYO_war_leader_suika
+	if = {
+		limit = {
+			has_idea = KYO_war_leader_yuuka_idea
+		}
+		remove_ideas = KYO_war_leader_yuuka_idea
+	}
+	clr_country_flag = KYO_war_leader_yuuka
+	set_country_flag = KYO_war_leader_remilia
+	add_ideas = KYO_war_leader_remilia_idea
+}
+
+KYO_apply_war_leader_yuyuko = {
+	if = {
+		limit = {
+			has_idea = KYO_war_leader_remilia_idea
+		}
+		remove_ideas = KYO_war_leader_remilia_idea
+	}
+	clr_country_flag = KYO_war_leader_remilia
+	if = {
+		limit = {
+			has_idea = KYO_war_leader_yuyuko_idea
+		}
+		remove_ideas = KYO_war_leader_yuyuko_idea
+	}
+	clr_country_flag = KYO_war_leader_yuyuko
+	if = {
+		limit = {
+			has_idea = KYO_war_leader_suika_idea
+		}
+		remove_ideas = KYO_war_leader_suika_idea
+	}
+	clr_country_flag = KYO_war_leader_suika
+	if = {
+		limit = {
+			has_idea = KYO_war_leader_yuuka_idea
+		}
+		remove_ideas = KYO_war_leader_yuuka_idea
+	}
+	clr_country_flag = KYO_war_leader_yuuka
+	set_country_flag = KYO_war_leader_yuyuko
+	add_ideas = KYO_war_leader_yuyuko_idea
+}
+
+KYO_apply_war_leader_suika = {
+	if = {
+		limit = {
+			has_idea = KYO_war_leader_remilia_idea
+		}
+		remove_ideas = KYO_war_leader_remilia_idea
+	}
+	clr_country_flag = KYO_war_leader_remilia
+	if = {
+		limit = {
+			has_idea = KYO_war_leader_yuyuko_idea
+		}
+		remove_ideas = KYO_war_leader_yuyuko_idea
+	}
+	clr_country_flag = KYO_war_leader_yuyuko
+	if = {
+		limit = {
+			has_idea = KYO_war_leader_suika_idea
+		}
+		remove_ideas = KYO_war_leader_suika_idea
+	}
+	clr_country_flag = KYO_war_leader_suika
+	if = {
+		limit = {
+			has_idea = KYO_war_leader_yuuka_idea
+		}
+		remove_ideas = KYO_war_leader_yuuka_idea
+	}
+	clr_country_flag = KYO_war_leader_yuuka
+	set_country_flag = KYO_war_leader_suika
+	add_ideas = KYO_war_leader_suika_idea
+}
+
+KYO_apply_war_leader_yuuka = {
+	if = {
+		limit = {
+			has_idea = KYO_war_leader_remilia_idea
+		}
+		remove_ideas = KYO_war_leader_remilia_idea
+	}
+	clr_country_flag = KYO_war_leader_remilia
+	if = {
+		limit = {
+			has_idea = KYO_war_leader_yuyuko_idea
+		}
+		remove_ideas = KYO_war_leader_yuyuko_idea
+	}
+	clr_country_flag = KYO_war_leader_yuyuko
+	if = {
+		limit = {
+			has_idea = KYO_war_leader_suika_idea
+		}
+		remove_ideas = KYO_war_leader_suika_idea
+	}
+	clr_country_flag = KYO_war_leader_suika
+	if = {
+		limit = {
+			has_idea = KYO_war_leader_yuuka_idea
+		}
+		remove_ideas = KYO_war_leader_yuuka_idea
+	}
+	clr_country_flag = KYO_war_leader_yuuka
+	set_country_flag = KYO_war_leader_yuuka
+	add_ideas = KYO_war_leader_yuuka_idea
+}
+
+KYO_check_war_bloc_leader = {
+	set_variable = {
+		KYO_leader_challenge_threshold = 999
+	}
+	if = {
+		limit = {
+			has_country_flag = KYO_war_leader_remilia
+		}
+		set_variable = {
+			KYO_leader_challenge_threshold = KYO_influence_remilia
+		}
+		add_to_variable = {
+			KYO_leader_challenge_threshold = 4
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = KYO_war_leader_yuyuko
+		}
+		set_variable = {
+			KYO_leader_challenge_threshold = KYO_influence_yuyuko
+		}
+		add_to_variable = {
+			KYO_leader_challenge_threshold = 4
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = KYO_war_leader_suika
+		}
+		set_variable = {
+			KYO_leader_challenge_threshold = KYO_influence_suika
+		}
+		add_to_variable = {
+			KYO_leader_challenge_threshold = 4
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = KYO_war_leader_yuuka
+		}
+		set_variable = {
+			KYO_leader_challenge_threshold = KYO_influence_yuuka
+		}
+		add_to_variable = {
+			KYO_leader_challenge_threshold = 4
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = KYO_candidate_remilia_unlocked
+			NOT = {
+				has_country_flag = KYO_war_leader_remilia
+			}
+			check_variable = {
+				KYO_influence_remilia > KYO_leader_challenge_threshold
+			}
+			check_variable = {
+				KYO_influence_remilia > KYO_influence_yuyuko
+			}
+			check_variable = {
+				KYO_influence_remilia > KYO_influence_suika
+			}
+			check_variable = {
+				KYO_influence_remilia > KYO_influence_yuuka
+			}
+		}
+		country_event = {
+			id = KYO_hyakki_leadership.1
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_candidate_yuyuko_unlocked
+			NOT = {
+				has_country_flag = KYO_war_leader_yuyuko
+			}
+			check_variable = {
+				KYO_influence_yuyuko > KYO_leader_challenge_threshold
+			}
+			check_variable = {
+				KYO_influence_yuyuko > KYO_influence_remilia
+			}
+			check_variable = {
+				KYO_influence_yuyuko > KYO_influence_suika
+			}
+			check_variable = {
+				KYO_influence_yuyuko > KYO_influence_yuuka
+			}
+		}
+		country_event = {
+			id = KYO_hyakki_leadership.2
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_candidate_suika_unlocked
+			NOT = {
+				has_country_flag = KYO_war_leader_suika
+			}
+			check_variable = {
+				KYO_influence_suika > KYO_leader_challenge_threshold
+			}
+			check_variable = {
+				KYO_influence_suika > KYO_influence_remilia
+			}
+			check_variable = {
+				KYO_influence_suika > KYO_influence_yuyuko
+			}
+			check_variable = {
+				KYO_influence_suika > KYO_influence_yuuka
+			}
+		}
+		country_event = {
+			id = KYO_hyakki_leadership.3
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_candidate_yuuka_unlocked
+			NOT = {
+				has_country_flag = KYO_war_leader_yuuka
+			}
+			check_variable = {
+				KYO_influence_yuuka > KYO_leader_challenge_threshold
+			}
+			check_variable = {
+				KYO_influence_yuuka > KYO_influence_remilia
+			}
+			check_variable = {
+				KYO_influence_yuuka > KYO_influence_yuyuko
+			}
+			check_variable = {
+				KYO_influence_yuuka > KYO_influence_suika
+			}
+		}
+		country_event = {
+			id = KYO_hyakki_leadership.4
+		}
+	}
+	clear_variable = KYO_leader_challenge_threshold
+}
+
+KYO_apply_order_leader_byakuren = {
+	if = {
+		limit = {
+			has_idea = KYO_order_leader_byakuren_idea
+		}
+		remove_ideas = KYO_order_leader_byakuren_idea
+	}
+	clr_country_flag = KYO_order_leader_byakuren
+	if = {
+		limit = {
+			has_idea = KYO_order_leader_kanako_idea
+		}
+		remove_ideas = KYO_order_leader_kanako_idea
+	}
+	clr_country_flag = KYO_order_leader_kanako
+	if = {
+		limit = {
+			has_idea = KYO_order_leader_satori_idea
+		}
+		remove_ideas = KYO_order_leader_satori_idea
+	}
+	clr_country_flag = KYO_order_leader_satori
+	if = {
+		limit = {
+			has_idea = KYO_order_leader_megumu_idea
+		}
+		remove_ideas = KYO_order_leader_megumu_idea
+	}
+	clr_country_flag = KYO_order_leader_megumu
+	set_country_flag = KYO_order_leader_byakuren
+	add_ideas = KYO_order_leader_byakuren_idea
+}
+
+KYO_apply_order_leader_kanako = {
+	if = {
+		limit = {
+			has_idea = KYO_order_leader_byakuren_idea
+		}
+		remove_ideas = KYO_order_leader_byakuren_idea
+	}
+	clr_country_flag = KYO_order_leader_byakuren
+	if = {
+		limit = {
+			has_idea = KYO_order_leader_kanako_idea
+		}
+		remove_ideas = KYO_order_leader_kanako_idea
+	}
+	clr_country_flag = KYO_order_leader_kanako
+	if = {
+		limit = {
+			has_idea = KYO_order_leader_satori_idea
+		}
+		remove_ideas = KYO_order_leader_satori_idea
+	}
+	clr_country_flag = KYO_order_leader_satori
+	if = {
+		limit = {
+			has_idea = KYO_order_leader_megumu_idea
+		}
+		remove_ideas = KYO_order_leader_megumu_idea
+	}
+	clr_country_flag = KYO_order_leader_megumu
+	set_country_flag = KYO_order_leader_kanako
+	add_ideas = KYO_order_leader_kanako_idea
+}
+
+KYO_apply_order_leader_satori = {
+	if = {
+		limit = {
+			has_idea = KYO_order_leader_byakuren_idea
+		}
+		remove_ideas = KYO_order_leader_byakuren_idea
+	}
+	clr_country_flag = KYO_order_leader_byakuren
+	if = {
+		limit = {
+			has_idea = KYO_order_leader_kanako_idea
+		}
+		remove_ideas = KYO_order_leader_kanako_idea
+	}
+	clr_country_flag = KYO_order_leader_kanako
+	if = {
+		limit = {
+			has_idea = KYO_order_leader_satori_idea
+		}
+		remove_ideas = KYO_order_leader_satori_idea
+	}
+	clr_country_flag = KYO_order_leader_satori
+	if = {
+		limit = {
+			has_idea = KYO_order_leader_megumu_idea
+		}
+		remove_ideas = KYO_order_leader_megumu_idea
+	}
+	clr_country_flag = KYO_order_leader_megumu
+	set_country_flag = KYO_order_leader_satori
+	add_ideas = KYO_order_leader_satori_idea
+}
+
+KYO_apply_order_leader_megumu = {
+	if = {
+		limit = {
+			has_idea = KYO_order_leader_byakuren_idea
+		}
+		remove_ideas = KYO_order_leader_byakuren_idea
+	}
+	clr_country_flag = KYO_order_leader_byakuren
+	if = {
+		limit = {
+			has_idea = KYO_order_leader_kanako_idea
+		}
+		remove_ideas = KYO_order_leader_kanako_idea
+	}
+	clr_country_flag = KYO_order_leader_kanako
+	if = {
+		limit = {
+			has_idea = KYO_order_leader_satori_idea
+		}
+		remove_ideas = KYO_order_leader_satori_idea
+	}
+	clr_country_flag = KYO_order_leader_satori
+	if = {
+		limit = {
+			has_idea = KYO_order_leader_megumu_idea
+		}
+		remove_ideas = KYO_order_leader_megumu_idea
+	}
+	clr_country_flag = KYO_order_leader_megumu
+	set_country_flag = KYO_order_leader_megumu
+	add_ideas = KYO_order_leader_megumu_idea
+}
+
+KYO_check_order_bloc_leader = {
+	set_variable = {
+		KYO_leader_challenge_threshold = 999
+	}
+	if = {
+		limit = {
+			has_country_flag = KYO_order_leader_byakuren
+		}
+		set_variable = {
+			KYO_leader_challenge_threshold = KYO_influence_byakuren
+		}
+		add_to_variable = {
+			KYO_leader_challenge_threshold = 4
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = KYO_order_leader_kanako
+		}
+		set_variable = {
+			KYO_leader_challenge_threshold = KYO_influence_kanako
+		}
+		add_to_variable = {
+			KYO_leader_challenge_threshold = 4
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = KYO_order_leader_satori
+		}
+		set_variable = {
+			KYO_leader_challenge_threshold = KYO_influence_satori
+		}
+		add_to_variable = {
+			KYO_leader_challenge_threshold = 4
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = KYO_order_leader_megumu
+		}
+		set_variable = {
+			KYO_leader_challenge_threshold = KYO_influence_megumu
+		}
+		add_to_variable = {
+			KYO_leader_challenge_threshold = 4
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = KYO_candidate_byakuren_unlocked
+			NOT = {
+				has_country_flag = KYO_order_leader_byakuren
+			}
+			check_variable = {
+				KYO_influence_byakuren > KYO_leader_challenge_threshold
+			}
+			check_variable = {
+				KYO_influence_byakuren > KYO_influence_kanako
+			}
+			check_variable = {
+				KYO_influence_byakuren > KYO_influence_satori
+			}
+			check_variable = {
+				KYO_influence_byakuren > KYO_influence_megumu
+			}
+		}
+		country_event = {
+			id = KYO_hyakki_leadership.11
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_candidate_kanako_unlocked
+			NOT = {
+				has_country_flag = KYO_order_leader_kanako
+			}
+			check_variable = {
+				KYO_influence_kanako > KYO_leader_challenge_threshold
+			}
+			check_variable = {
+				KYO_influence_kanako > KYO_influence_byakuren
+			}
+			check_variable = {
+				KYO_influence_kanako > KYO_influence_satori
+			}
+			check_variable = {
+				KYO_influence_kanako > KYO_influence_megumu
+			}
+		}
+		country_event = {
+			id = KYO_hyakki_leadership.12
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_candidate_satori_unlocked
+			NOT = {
+				has_country_flag = KYO_order_leader_satori
+			}
+			check_variable = {
+				KYO_influence_satori > KYO_leader_challenge_threshold
+			}
+			check_variable = {
+				KYO_influence_satori > KYO_influence_byakuren
+			}
+			check_variable = {
+				KYO_influence_satori > KYO_influence_kanako
+			}
+			check_variable = {
+				KYO_influence_satori > KYO_influence_megumu
+			}
+		}
+		country_event = {
+			id = KYO_hyakki_leadership.13
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_candidate_megumu_unlocked
+			NOT = {
+				has_country_flag = KYO_order_leader_megumu
+			}
+			check_variable = {
+				KYO_influence_megumu > KYO_leader_challenge_threshold
+			}
+			check_variable = {
+				KYO_influence_megumu > KYO_influence_byakuren
+			}
+			check_variable = {
+				KYO_influence_megumu > KYO_influence_kanako
+			}
+			check_variable = {
+				KYO_influence_megumu > KYO_influence_satori
+			}
+		}
+		country_event = {
+			id = KYO_hyakki_leadership.14
+		}
+	}
+	clear_variable = KYO_leader_challenge_threshold
+}
+
+KYO_apply_network_leader_sekibanki = {
+	if = {
+		limit = {
+			has_idea = KYO_network_leader_sekibanki_idea
+		}
+		remove_ideas = KYO_network_leader_sekibanki_idea
+	}
+	clr_country_flag = KYO_network_leader_sekibanki
+	if = {
+		limit = {
+			has_idea = KYO_network_leader_eirin_idea
+		}
+		remove_ideas = KYO_network_leader_eirin_idea
+	}
+	clr_country_flag = KYO_network_leader_eirin
+	if = {
+		limit = {
+			has_idea = KYO_network_leader_raiko_idea
+		}
+		remove_ideas = KYO_network_leader_raiko_idea
+	}
+	clr_country_flag = KYO_network_leader_raiko
+	if = {
+		limit = {
+			has_idea = KYO_network_leader_eiki_idea
+		}
+		remove_ideas = KYO_network_leader_eiki_idea
+	}
+	clr_country_flag = KYO_network_leader_eiki
+	set_country_flag = KYO_network_leader_sekibanki
+	add_ideas = KYO_network_leader_sekibanki_idea
+}
+
+KYO_apply_network_leader_eirin = {
+	if = {
+		limit = {
+			has_idea = KYO_network_leader_sekibanki_idea
+		}
+		remove_ideas = KYO_network_leader_sekibanki_idea
+	}
+	clr_country_flag = KYO_network_leader_sekibanki
+	if = {
+		limit = {
+			has_idea = KYO_network_leader_eirin_idea
+		}
+		remove_ideas = KYO_network_leader_eirin_idea
+	}
+	clr_country_flag = KYO_network_leader_eirin
+	if = {
+		limit = {
+			has_idea = KYO_network_leader_raiko_idea
+		}
+		remove_ideas = KYO_network_leader_raiko_idea
+	}
+	clr_country_flag = KYO_network_leader_raiko
+	if = {
+		limit = {
+			has_idea = KYO_network_leader_eiki_idea
+		}
+		remove_ideas = KYO_network_leader_eiki_idea
+	}
+	clr_country_flag = KYO_network_leader_eiki
+	set_country_flag = KYO_network_leader_eirin
+	add_ideas = KYO_network_leader_eirin_idea
+}
+
+KYO_apply_network_leader_raiko = {
+	if = {
+		limit = {
+			has_idea = KYO_network_leader_sekibanki_idea
+		}
+		remove_ideas = KYO_network_leader_sekibanki_idea
+	}
+	clr_country_flag = KYO_network_leader_sekibanki
+	if = {
+		limit = {
+			has_idea = KYO_network_leader_eirin_idea
+		}
+		remove_ideas = KYO_network_leader_eirin_idea
+	}
+	clr_country_flag = KYO_network_leader_eirin
+	if = {
+		limit = {
+			has_idea = KYO_network_leader_raiko_idea
+		}
+		remove_ideas = KYO_network_leader_raiko_idea
+	}
+	clr_country_flag = KYO_network_leader_raiko
+	if = {
+		limit = {
+			has_idea = KYO_network_leader_eiki_idea
+		}
+		remove_ideas = KYO_network_leader_eiki_idea
+	}
+	clr_country_flag = KYO_network_leader_eiki
+	set_country_flag = KYO_network_leader_raiko
+	add_ideas = KYO_network_leader_raiko_idea
+}
+
+KYO_apply_network_leader_eiki = {
+	if = {
+		limit = {
+			has_idea = KYO_network_leader_sekibanki_idea
+		}
+		remove_ideas = KYO_network_leader_sekibanki_idea
+	}
+	clr_country_flag = KYO_network_leader_sekibanki
+	if = {
+		limit = {
+			has_idea = KYO_network_leader_eirin_idea
+		}
+		remove_ideas = KYO_network_leader_eirin_idea
+	}
+	clr_country_flag = KYO_network_leader_eirin
+	if = {
+		limit = {
+			has_idea = KYO_network_leader_raiko_idea
+		}
+		remove_ideas = KYO_network_leader_raiko_idea
+	}
+	clr_country_flag = KYO_network_leader_raiko
+	if = {
+		limit = {
+			has_idea = KYO_network_leader_eiki_idea
+		}
+		remove_ideas = KYO_network_leader_eiki_idea
+	}
+	clr_country_flag = KYO_network_leader_eiki
+	set_country_flag = KYO_network_leader_eiki
+	add_ideas = KYO_network_leader_eiki_idea
+}
+
+KYO_check_network_bloc_leader = {
+	set_variable = {
+		KYO_leader_challenge_threshold = 999
+	}
+	if = {
+		limit = {
+			has_country_flag = KYO_network_leader_sekibanki
+		}
+		set_variable = {
+			KYO_leader_challenge_threshold = KYO_influence_sekibanki
+		}
+		add_to_variable = {
+			KYO_leader_challenge_threshold = 4
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = KYO_network_leader_eirin
+		}
+		set_variable = {
+			KYO_leader_challenge_threshold = KYO_influence_eirin
+		}
+		add_to_variable = {
+			KYO_leader_challenge_threshold = 4
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = KYO_network_leader_raiko
+		}
+		set_variable = {
+			KYO_leader_challenge_threshold = KYO_influence_raiko
+		}
+		add_to_variable = {
+			KYO_leader_challenge_threshold = 4
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = KYO_network_leader_eiki
+		}
+		set_variable = {
+			KYO_leader_challenge_threshold = KYO_influence_eiki
+		}
+		add_to_variable = {
+			KYO_leader_challenge_threshold = 4
+		}
+	}
+	if = {
+		limit = {
+			has_country_flag = KYO_candidate_sekibanki_unlocked
+			NOT = {
+				has_country_flag = KYO_network_leader_sekibanki
+			}
+			check_variable = {
+				KYO_influence_sekibanki > KYO_leader_challenge_threshold
+			}
+			check_variable = {
+				KYO_influence_sekibanki > KYO_influence_eirin
+			}
+			check_variable = {
+				KYO_influence_sekibanki > KYO_influence_raiko
+			}
+			check_variable = {
+				KYO_influence_sekibanki > KYO_influence_eiki
+			}
+		}
+		country_event = {
+			id = KYO_hyakki_leadership.21
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_candidate_eirin_unlocked
+			NOT = {
+				has_country_flag = KYO_network_leader_eirin
+			}
+			check_variable = {
+				KYO_influence_eirin > KYO_leader_challenge_threshold
+			}
+			check_variable = {
+				KYO_influence_eirin > KYO_influence_sekibanki
+			}
+			check_variable = {
+				KYO_influence_eirin > KYO_influence_raiko
+			}
+			check_variable = {
+				KYO_influence_eirin > KYO_influence_eiki
+			}
+		}
+		country_event = {
+			id = KYO_hyakki_leadership.22
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_candidate_raiko_unlocked
+			NOT = {
+				has_country_flag = KYO_network_leader_raiko
+			}
+			check_variable = {
+				KYO_influence_raiko > KYO_leader_challenge_threshold
+			}
+			check_variable = {
+				KYO_influence_raiko > KYO_influence_sekibanki
+			}
+			check_variable = {
+				KYO_influence_raiko > KYO_influence_eirin
+			}
+			check_variable = {
+				KYO_influence_raiko > KYO_influence_eiki
+			}
+		}
+		country_event = {
+			id = KYO_hyakki_leadership.23
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_candidate_eiki_unlocked
+			NOT = {
+				has_country_flag = KYO_network_leader_eiki
+			}
+			check_variable = {
+				KYO_influence_eiki > KYO_leader_challenge_threshold
+			}
+			check_variable = {
+				KYO_influence_eiki > KYO_influence_sekibanki
+			}
+			check_variable = {
+				KYO_influence_eiki > KYO_influence_eirin
+			}
+			check_variable = {
+				KYO_influence_eiki > KYO_influence_raiko
+			}
+		}
+		country_event = {
+			id = KYO_hyakki_leadership.24
+		}
+	}
+	clear_variable = KYO_leader_challenge_threshold
+}
+
+KYO_start_random_quarterly_candidate_mandate = {
+	remove_mission = KYO_quarterly_candidate_mandate_remilia
+	clr_country_flag = KYO_quarterly_candidate_target_remilia
+	remove_mission = KYO_quarterly_candidate_mandate_yuyuko
+	clr_country_flag = KYO_quarterly_candidate_target_yuyuko
+	remove_mission = KYO_quarterly_candidate_mandate_suika
+	clr_country_flag = KYO_quarterly_candidate_target_suika
+	remove_mission = KYO_quarterly_candidate_mandate_yuuka
+	clr_country_flag = KYO_quarterly_candidate_target_yuuka
+	remove_mission = KYO_quarterly_candidate_mandate_byakuren
+	clr_country_flag = KYO_quarterly_candidate_target_byakuren
+	remove_mission = KYO_quarterly_candidate_mandate_kanako
+	clr_country_flag = KYO_quarterly_candidate_target_kanako
+	remove_mission = KYO_quarterly_candidate_mandate_satori
+	clr_country_flag = KYO_quarterly_candidate_target_satori
+	remove_mission = KYO_quarterly_candidate_mandate_megumu
+	clr_country_flag = KYO_quarterly_candidate_target_megumu
+	remove_mission = KYO_quarterly_candidate_mandate_sekibanki
+	clr_country_flag = KYO_quarterly_candidate_target_sekibanki
+	remove_mission = KYO_quarterly_candidate_mandate_eirin
+	clr_country_flag = KYO_quarterly_candidate_target_eirin
+	remove_mission = KYO_quarterly_candidate_mandate_raiko
+	clr_country_flag = KYO_quarterly_candidate_target_raiko
+	remove_mission = KYO_quarterly_candidate_mandate_eiki
+	clr_country_flag = KYO_quarterly_candidate_target_eiki
+	random_list = {
+		10 = {
+			set_country_flag = KYO_quarterly_candidate_target_remilia
+			activate_mission = KYO_quarterly_candidate_mandate_remilia
+		}
+		10 = {
+			set_country_flag = KYO_quarterly_candidate_target_yuyuko
+			activate_mission = KYO_quarterly_candidate_mandate_yuyuko
+		}
+		10 = {
+			set_country_flag = KYO_quarterly_candidate_target_suika
+			activate_mission = KYO_quarterly_candidate_mandate_suika
+		}
+		10 = {
+			set_country_flag = KYO_quarterly_candidate_target_yuuka
+			activate_mission = KYO_quarterly_candidate_mandate_yuuka
+		}
+		10 = {
+			set_country_flag = KYO_quarterly_candidate_target_byakuren
+			activate_mission = KYO_quarterly_candidate_mandate_byakuren
+		}
+		10 = {
+			set_country_flag = KYO_quarterly_candidate_target_kanako
+			activate_mission = KYO_quarterly_candidate_mandate_kanako
+		}
+		10 = {
+			set_country_flag = KYO_quarterly_candidate_target_satori
+			activate_mission = KYO_quarterly_candidate_mandate_satori
+		}
+		10 = {
+			set_country_flag = KYO_quarterly_candidate_target_megumu
+			activate_mission = KYO_quarterly_candidate_mandate_megumu
+		}
+		10 = {
+			set_country_flag = KYO_quarterly_candidate_target_sekibanki
+			activate_mission = KYO_quarterly_candidate_mandate_sekibanki
+		}
+		10 = {
+			set_country_flag = KYO_quarterly_candidate_target_eirin
+			activate_mission = KYO_quarterly_candidate_mandate_eirin
+		}
+		10 = {
+			set_country_flag = KYO_quarterly_candidate_target_raiko
+			activate_mission = KYO_quarterly_candidate_mandate_raiko
+		}
+		10 = {
+			set_country_flag = KYO_quarterly_candidate_target_eiki
+			activate_mission = KYO_quarterly_candidate_mandate_eiki
+		}
+	}
+}
+
+KYO_resolve_quarterly_candidate_mandate_remilia = {
+	if = {
+		limit = {
+			has_country_flag = KYO_war_leader_remilia
+		}
+		custom_effect_tooltip = KYO_quarterly_candidate_mandate_success_tt
+		add_political_power = 75
+		add_command_power = 15
+		add_to_variable = {
+			KYO_fulfillment_military_committee = 10
+		}
+		add_timed_idea = {
+			idea = KYO_quarterly_candidate_mandate_success_idea
+			days = 45
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+	}
+	else = {
+		custom_effect_tooltip = KYO_quarterly_candidate_mandate_failure_tt
+	}
+}
+
+KYO_resolve_quarterly_candidate_mandate_yuyuko = {
+	if = {
+		limit = {
+			has_country_flag = KYO_war_leader_yuyuko
+		}
+		custom_effect_tooltip = KYO_quarterly_candidate_mandate_success_tt
+		add_political_power = 75
+		add_command_power = 15
+		add_to_variable = {
+			KYO_fulfillment_military_committee = 10
+		}
+		add_timed_idea = {
+			idea = KYO_quarterly_candidate_mandate_success_idea
+			days = 45
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+	}
+	else = {
+		custom_effect_tooltip = KYO_quarterly_candidate_mandate_failure_tt
+	}
+}
+
+KYO_resolve_quarterly_candidate_mandate_suika = {
+	if = {
+		limit = {
+			has_country_flag = KYO_war_leader_suika
+		}
+		custom_effect_tooltip = KYO_quarterly_candidate_mandate_success_tt
+		add_political_power = 75
+		add_command_power = 15
+		add_to_variable = {
+			KYO_fulfillment_military_committee = 10
+		}
+		add_timed_idea = {
+			idea = KYO_quarterly_candidate_mandate_success_idea
+			days = 45
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+	}
+	else = {
+		custom_effect_tooltip = KYO_quarterly_candidate_mandate_failure_tt
+	}
+}
+
+KYO_resolve_quarterly_candidate_mandate_yuuka = {
+	if = {
+		limit = {
+			has_country_flag = KYO_war_leader_yuuka
+		}
+		custom_effect_tooltip = KYO_quarterly_candidate_mandate_success_tt
+		add_political_power = 75
+		add_command_power = 15
+		add_to_variable = {
+			KYO_fulfillment_military_committee = 10
+		}
+		add_timed_idea = {
+			idea = KYO_quarterly_candidate_mandate_success_idea
+			days = 45
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+	}
+	else = {
+		custom_effect_tooltip = KYO_quarterly_candidate_mandate_failure_tt
+	}
+}
+
+KYO_resolve_quarterly_candidate_mandate_byakuren = {
+	if = {
+		limit = {
+			has_country_flag = KYO_order_leader_byakuren
+		}
+		custom_effect_tooltip = KYO_quarterly_candidate_mandate_success_tt
+		add_political_power = 75
+		add_command_power = 15
+		add_to_variable = {
+			KYO_fulfillment_faith_committee = 10
+		}
+		add_timed_idea = {
+			idea = KYO_quarterly_candidate_mandate_success_idea
+			days = 45
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+	}
+	else = {
+		custom_effect_tooltip = KYO_quarterly_candidate_mandate_failure_tt
+	}
+}
+
+KYO_resolve_quarterly_candidate_mandate_kanako = {
+	if = {
+		limit = {
+			has_country_flag = KYO_order_leader_kanako
+		}
+		custom_effect_tooltip = KYO_quarterly_candidate_mandate_success_tt
+		add_political_power = 75
+		add_command_power = 15
+		add_to_variable = {
+			KYO_fulfillment_faith_committee = 10
+		}
+		add_timed_idea = {
+			idea = KYO_quarterly_candidate_mandate_success_idea
+			days = 45
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+	}
+	else = {
+		custom_effect_tooltip = KYO_quarterly_candidate_mandate_failure_tt
+	}
+}
+
+KYO_resolve_quarterly_candidate_mandate_satori = {
+	if = {
+		limit = {
+			has_country_flag = KYO_order_leader_satori
+		}
+		custom_effect_tooltip = KYO_quarterly_candidate_mandate_success_tt
+		add_political_power = 75
+		add_command_power = 15
+		add_to_variable = {
+			KYO_fulfillment_faith_committee = 10
+		}
+		add_timed_idea = {
+			idea = KYO_quarterly_candidate_mandate_success_idea
+			days = 45
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+	}
+	else = {
+		custom_effect_tooltip = KYO_quarterly_candidate_mandate_failure_tt
+	}
+}
+
+KYO_resolve_quarterly_candidate_mandate_megumu = {
+	if = {
+		limit = {
+			has_country_flag = KYO_order_leader_megumu
+		}
+		custom_effect_tooltip = KYO_quarterly_candidate_mandate_success_tt
+		add_political_power = 75
+		add_command_power = 15
+		add_to_variable = {
+			KYO_fulfillment_faith_committee = 10
+		}
+		add_timed_idea = {
+			idea = KYO_quarterly_candidate_mandate_success_idea
+			days = 45
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+	}
+	else = {
+		custom_effect_tooltip = KYO_quarterly_candidate_mandate_failure_tt
+	}
+}
+
+KYO_resolve_quarterly_candidate_mandate_sekibanki = {
+	if = {
+		limit = {
+			has_country_flag = KYO_network_leader_sekibanki
+		}
+		custom_effect_tooltip = KYO_quarterly_candidate_mandate_success_tt
+		add_political_power = 75
+		add_command_power = 15
+		add_to_variable = {
+			KYO_fulfillment_mobilization_committee = 10
+		}
+		add_timed_idea = {
+			idea = KYO_quarterly_candidate_mandate_success_idea
+			days = 45
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+	}
+	else = {
+		custom_effect_tooltip = KYO_quarterly_candidate_mandate_failure_tt
+	}
+}
+
+KYO_resolve_quarterly_candidate_mandate_eirin = {
+	if = {
+		limit = {
+			has_country_flag = KYO_network_leader_eirin
+		}
+		custom_effect_tooltip = KYO_quarterly_candidate_mandate_success_tt
+		add_political_power = 75
+		add_command_power = 15
+		add_to_variable = {
+			KYO_fulfillment_mobilization_committee = 10
+		}
+		add_timed_idea = {
+			idea = KYO_quarterly_candidate_mandate_success_idea
+			days = 45
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+	}
+	else = {
+		custom_effect_tooltip = KYO_quarterly_candidate_mandate_failure_tt
+	}
+}
+
+KYO_resolve_quarterly_candidate_mandate_raiko = {
+	if = {
+		limit = {
+			has_country_flag = KYO_network_leader_raiko
+		}
+		custom_effect_tooltip = KYO_quarterly_candidate_mandate_success_tt
+		add_political_power = 75
+		add_command_power = 15
+		add_to_variable = {
+			KYO_fulfillment_mobilization_committee = 10
+		}
+		add_timed_idea = {
+			idea = KYO_quarterly_candidate_mandate_success_idea
+			days = 45
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+	}
+	else = {
+		custom_effect_tooltip = KYO_quarterly_candidate_mandate_failure_tt
+	}
+}
+
+KYO_resolve_quarterly_candidate_mandate_eiki = {
+	if = {
+		limit = {
+			has_country_flag = KYO_network_leader_eiki
+		}
+		custom_effect_tooltip = KYO_quarterly_candidate_mandate_success_tt
+		add_political_power = 75
+		add_command_power = 15
+		add_to_variable = {
+			KYO_fulfillment_mobilization_committee = 10
+		}
+		add_timed_idea = {
+			idea = KYO_quarterly_candidate_mandate_success_idea
+			days = 45
+		}
+		hidden_effect = {
+			KYO_clamp_and_refresh_fulfillment = yes
+		}
+	}
+	else = {
+		custom_effect_tooltip = KYO_quarterly_candidate_mandate_failure_tt
+	}
+}
+
+KYO_decay_random_committee_fulfillment = {
+	random_list = {
+		34 = {
+			custom_effect_tooltip = KYO_decay_military_fulfillment_tt
+			subtract_from_variable = {
+				KYO_fulfillment_military_committee = 10
+			}
+		}
+		33 = {
+			custom_effect_tooltip = KYO_decay_faith_fulfillment_tt
+			subtract_from_variable = {
+				KYO_fulfillment_faith_committee = 10
+			}
+		}
+		33 = {
+			custom_effect_tooltip = KYO_decay_mobilization_fulfillment_tt
+			subtract_from_variable = {
+				KYO_fulfillment_mobilization_committee = 10
+			}
+		}
+	}
+	hidden_effect = {
+		KYO_clamp_and_refresh_fulfillment = yes
+	}
+}
+
+
+
+
+KYO_resolve_tokyo_advance_plans = {
+	if = { limit = { has_country_flag = KYO_plan_seize_government } add_political_power = 50 }
+	if = {
+		limit = { has_country_flag = KYO_plan_cut_communications }
+		JAP = { add_timed_idea = { idea = KYO_tokyo_command_disrupted days = 30 } }
+	}
+	if = { limit = { has_country_flag = KYO_plan_open_barrier_corridor } add_command_power = 60 }
+	if = {
+		limit = { has_country_flag = KYO_plan_control_port_rail }
+		add_timed_idea = { idea = KYO_tokyo_bridgehead_secured days = 30 }
+	}
+	if = { limit = { has_country_flag = KYO_plan_evacuate_civilians } add_stability = 0.1 }
+	if = {
+		limit = { has_country_flag = KYO_plan_great_red_mist }
+		add_timed_idea = { idea = KYO_support_war_remilia days = 21 }
+	}
+	KYO_check_all_bloc_leaders = yes
+}
+
+KYO_start_tokyo_operation_chain = {
+	set_country_flag = KYO_tokyo_chain_active
+	activate_mission = KYO_tokyo_opening_deadline_mission
+	activate_mission = KYO_tokyo_division_count_mission
+	activate_mission = KYO_tokyo_active_manpower_mission
+	activate_mission = KYO_tokyo_rifle_stockpile_mission
+	activate_mission = KYO_tokyo_honshu_corridor_mission
+}
+
+KYO_remove_tokyo_provisional_buffs = {
+	remove_ideas = {
+		KYO_tokyo_initial_shock
+		KYO_tokyo_initial_logistics
+		KYO_tokyo_initial_mobilization
+	}
+}
+
+KYO_clear_tokyo_chain_war_buffs = {
+	clr_country_flag = KYO_tokyo_chain_active
+	remove_mission = KYO_tokyo_opening_deadline_mission
+	remove_mission = KYO_tokyo_division_count_mission
+	remove_mission = KYO_tokyo_active_manpower_mission
+	remove_mission = KYO_tokyo_rifle_stockpile_mission
+	remove_mission = KYO_tokyo_honshu_corridor_mission
+	KYO_remove_tokyo_provisional_buffs = yes
+	remove_ideas = {
+		KYO_incomplete_advance_plan
+		KYO_tokyo_bridgehead_secured
+		KYO_underground_supply_route
+		KYO_emergency_rotation_idea
+		KYO_tokyo_bridgehead_consolidated
+		KYO_tokyo_command_hunt
+		KYO_tokyo_order_of_battle
+		KYO_tokyo_flexible_columns
+		KYO_tokyo_mass_muster
+		KYO_tokyo_rotation_reserves
+		KYO_tokyo_arsenal_standardization
+		KYO_tokyo_weapon_recovery
+		KYO_tokyo_honshu_railnet
+		KYO_tokyo_occupation_bureaus
+	}
+	JAP = { remove_ideas = KYO_tokyo_command_disrupted }
+}
+

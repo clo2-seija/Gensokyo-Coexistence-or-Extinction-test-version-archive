@@ -1,0 +1,2067 @@
+ideas = {
+	############ industrial concern
+	#TODO 加標示
+	industrial_concern = {
+
+		# 妹紅炭火：廢料轉化與替代燃料
+		KYO_MOKU_coal = {
+			picture = MOKU_coal
+			allowed_civil_war = { tag = KYO }
+			allowed = { tag = KYO }
+			cost = 100
+
+			modifier = {
+				production_oil_factor = 0.25
+				production_lack_of_resource_penalty_factor = -0.10
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		# 地靈殿核能研究院：核研究、設施與裂變材料生產
+		KYO_chireiden_nuclear_org = {
+			picture = chireiden_nuclear_org
+			allowed_civil_war = { tag = KYO }
+			allowed = { tag = KYO }
+			available = {
+				has_completed_focus = KYO_Satori_thank_you
+			}
+			cost = 350
+
+			modifier = {
+				sp_nuclear_reactor_speed_factor = 0.25
+				sp_nuclear_bomb_speed_factor = 0.15
+				nuclear_production_factor = 0.35
+				thermonuclear_production_factor = 0.25
+				production_speed_nuclear_facility_factor = 0.25
+				production_speed_nuclear_reactor_factor = 0.25
+			}
+		}
+
+		# 八雲境界情報所：情報網、解密與滲透
+		KYO_yakumo_boundary_labs = {
+			picture = yakumo_boundary_labs
+			allowed_civil_war = { tag = KYO }
+			allowed = { tag = KYO }
+			cost = 200
+
+			modifier = {
+				civilian_intel_factor = 0.30
+				intel_network_gain = 0.25
+				intelligence_agency_defense = 0.20
+				operation_infiltrate_outcome = 0.15
+				decryption_power = 3
+				operative_slot = 1
+			}
+		}
+
+		# 因幡工業局：靈活換線、物料替換與空襲後續產
+		KYO_rabbit_qm_corps = {
+			picture = rabbit_qm_corps
+			allowed_civil_war = { tag = KYO }
+			allowed = { tag = KYO }
+			cost = 150
+
+			modifier = {
+				consumer_goods_expected_value = -0.03
+				line_change_production_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.10
+				production_factory_start_efficiency_factor = 0.05
+				industry_air_damage_factor = -0.10
+			}
+		}
+
+		# 道祖神道路建設：道路、補給節點與關卡工程
+		KYO_nareko_road_construction = {
+			picture = nareko_road_construction
+			allowed_civil_war = { tag = KYO }
+			allowed = { tag = KYO }
+			cost = 150
+
+			modifier = {
+				production_speed_infrastructure_factor = 0.30
+				production_speed_supply_node_factor = 0.15
+				production_speed_bunker_factor = 0.10
+				repair_speed_factor = 0.10
+			}
+		}
+
+		# 夜雀餐飲：野戰供餐與偏遠據點補給
+		KYO_mystia_food_industry = {
+			picture = mystia_food_industry
+			allowed_civil_war = { tag = KYO }
+			allowed = { tag = KYO }
+			cost = 100
+
+			modifier = {
+				supply_consumption_factor = -0.05
+				out_of_supply_factor = -0.15
+				army_morale_factor = 0.05
+				winter_attrition_factor = -0.10
+			}
+		}
+
+		# 依神保險：災害預防、風險管理與災後修復
+		KYO_yorigami_ensurance = {
+			picture = yorigami_ensurance
+			allowed_civil_war = { tag = KYO }
+			allowed = { tag = KYO }
+			cost = 100
+
+			modifier = {
+				repair_speed_factor = 0.3
+				industry_air_damage_factor = -0.25
+				stability_factor = 0.05
+			}
+		}
+
+		# 古明地溫泉旅社：休養、復健與精神安定
+		KYO_komeiji_hot_spring_hotel = {
+			picture = komeiji_hot_spring_hotel
+			allowed_civil_war = { tag = KYO }
+			allowed = { tag = KYO }
+			cost = 100
+
+			modifier = {
+				stability_factor = 0.15
+				army_morale_factor = 0.1
+				experience_loss_factor = -0.05
+			}
+		}
+
+		# 小町運輸公司：河運、遠程補給與護航
+		KYO_Komachi_shipping_company = {
+			picture = Komachi_shipping_company
+			allowed_civil_war = { tag = KYO }
+			allowed = { tag = KYO }
+			cost = 150
+
+			modifier = {
+				supply_node_range = 0.10
+				supply_consumption_factor = -0.05
+				convoy_escort_efficiency = 0.5
+				attrition = -0.05
+				convoy_retreat_speed = 1
+				weekly_convoys_war_support = 0.0075
+			}
+		}
+
+		# 幽香花卉農場：藥草、稀有花卉與出口聲譽
+		KYO_yuuka_flower_farm = {
+			picture = yuuka_flower_farm
+			allowed_civil_war = { tag = KYO }
+			allowed = { tag = KYO }
+			cost = 100
+
+			modifier = {
+				local_resources_factor = 0.15
+				trade_opinion_factor = 0.25
+				stability_factor = 0.1
+			}
+		}
+
+		# 橙橙貓咪收容所：社區互助與公共信任
+		KYO_chen_cat_store = {
+			picture = chen_cat_store
+			allowed_civil_war = { tag = KYO }
+			allowed = { tag = KYO }
+			cost = 75
+
+			modifier = {
+				stability_weekly = 0.003
+				stability_factor = 0.05
+				political_power_factor = 0.15
+			}
+		}
+
+		# 紅夢園藝社：荒地復育與戰後重建
+		KYO_youmu_gardening_club = {
+			picture = youmu_gardening_club
+			allowed_civil_war = { tag = KYO }
+			allowed = { tag = KYO }
+			cost = 100
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_buildings_factor = 0.05
+				local_resources_factor = 0.05
+			}
+		}
+
+		# 阿狸狸變形變形：偽裝、滲透與地下活動
+		KYO_raccon_raccoon_organization = {
+			picture = raccon_raccoon_organization
+			allowed_civil_war = { tag = KYO }
+			allowed = { tag = KYO }
+			cost = 150
+
+			modifier = {
+				agency_upgrade_time = -0.25
+				operation_infiltrate_outcome = 0.2
+				boost_resistance_factor = 0.25
+				own_operative_detection_chance_factor = -0.5
+			}
+		}
+
+		# 輝夜 Waste Day and Night：觀光、交流與民間消費
+		KYO_kaguya_waste_day_and_night = {
+			picture = kaguya_waste_day_and_night
+			allowed_civil_war = { tag = KYO }
+			allowed = { tag = KYO }
+			cost = 100
+
+			modifier = {
+				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
+				political_power_factor = 0.05
+				stability_factor = 0.05
+			}
+		}
+
+		# 最強冰淇淋工廠：低溫保存與寒地供應
+		KYO_cirno_ice_cream_factory = {
+			picture = cirno_ice_cream_factory
+			allowed_civil_war = { tag = KYO }
+			allowed = { tag = KYO }
+			cost = 75
+
+			modifier = {
+				winter_attrition_factor = -0.5
+				production_factory_start_efficiency_factor = 0.15
+				war_support_factor = 0.1
+			}
+		}
+
+		# 皇蟲公司：生態農業、害蟲治理與糧食節省
+		KYO_wriggle_bug_company = {
+			picture = wriggle_bug_company
+			allowed_civil_war = { tag = KYO }
+			allowed = { tag = KYO }
+			cost = 100
+
+			modifier = {
+				consumer_goods_expected_value = -0.05
+				weekly_manpower = 5000
+				monthly_population = 0.25
+				supply_consumption_factor = -0.1
+			}
+		}
+
+		# 百百蚣礦業：礦產勘探、採掘與礦區開發
+		KYO_momoyo_mining_company = {
+			picture = momoyo_mining_company
+			allowed_civil_war = { tag = KYO }
+			allowed = { tag = KYO }
+			cost = 150
+
+			modifier = {
+				local_resources_factor = 0.3
+				production_lack_of_resource_penalty_factor = -0.15
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+
+		# 秘封列車協會：鐵路、車站與跨區運輸
+		KYO_yukari_train_train_love = {
+			picture = yukari_train_train_love
+			allowed_civil_war = { tag = KYO }
+			allowed = { tag = KYO }
+			cost = 150
+
+			modifier = {
+				production_speed_rail_way_factor = 0.5
+				production_speed_supply_node_factor = 0.15
+				supply_node_range = 0.10
+				army_speed_factor = 0.05
+			}
+		}
+
+		# 後戶舞娘：激發生命力與勞動潛能
+		KYO_backdoor_dancer_coupon = {
+			picture = backdoor_dancer_coupon
+			allowed_civil_war = { tag = KYO }
+			allowed = { tag = KYO }
+			cost = 150
+
+			modifier = {
+				industrial_capacity_factory = 0.1
+				army_morale_factor = 0.1
+				army_org_factor = 0.05
+				training_time_army_factor = -0.25
+			}
+		}
+
+		# 三合會：資源控制、地下交易與強制秩序
+		KYO_yakuza_organization = {
+			picture = yakuza_organization
+			allowed_civil_war = { tag = KYO }
+			allowed = { tag = KYO }
+			cost = 200
+
+			modifier = {
+				consumer_goods_expected_value = 0.1
+				local_resources_factor = 0.3
+				compliance_gain = 0.5
+				resistance_damage_to_garrison = -0.75
+				resistance_growth = -0.25
+				resistance_target_on_our_occupied_states = -0.25
+			}
+		}
+
+		# 八雲藍會計：預算演算、產能上限與行政節省
+		KYO_ran_calculator_organization = {
+			picture = ran_calculator_organization
+			allowed_civil_war = { tag = KYO }
+			allowed = { tag = KYO }
+			cost = 150
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.10
+				consumer_goods_expected_value = -0.03
+				political_power_factor = 0.1
+				trade_cost_for_target_factor = -0.25
+			}
+		}
+
+		# 三月精公司：勘察、尋物、保全與臨時工程
+		KYO_three_fairies_organization = {
+			picture = three_fairies_organization
+			allowed_civil_war = { tag = KYO }
+			allowed = { tag = KYO }
+			cost = 100
+
+			modifier = {
+				army_intel_factor = 0.10
+				enemy_operative_detection_chance_factor = 0.10
+				repair_speed_factor = 0.10
+				production_speed_buildings_factor = 0.1
+			}
+		}
+	}
+
+
+	country = {
+ 
+		
+
+
+
+		KYO_Fade_away_1={
+			picture = Fade_away
+			allowed_civil_war = {
+				tag =KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = -0.5
+				conscription = -0.005
+				political_power_cost = 0.4
+				political_power_factor = -0.05
+				stability_factor = -0.1
+				surrender_limit = -0.5
+				consumer_goods_factor = 0.3
+				industrial_capacity_factory = -0.3
+				production_speed_buildings_factor = -0.3 
+			}
+		}
+
+		KYO_Fade_away_2={
+			picture = Fade_away
+			allowed_civil_war = {
+				tag =KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = -0.2
+				political_power_cost = 0.2
+				stability_factor = -0.05
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.15 
+			}
+		}
+
+		KYO_Hakurai_death = {
+			picture = Hakurai_death
+
+			allowed_civil_war = {
+				tag = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				political_power_factor = -0.1
+				stability_factor = -0.25
+				stability_weekly = -0.002
+				war_support_weekly = -0.003
+				
+			}
+		}
+		KYO_I_am_hungry = {
+			picture = I_am_hungry
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				
+				army_speed_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				land_night_attack = 0.1
+				army_morale_factor = -0.2
+				army_org_factor = -0.15
+				supply_consumption_factor = 0.25
+
+
+			}
+		}
+		KYO_Eiki_help={
+			picture = Eiki_help
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				
+				army_morale_factor = 0.15
+				army_org_factor = 0.15
+
+			}
+		}
+		KYO_Nitori_help={
+			picture = Nitori_help
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_speed_buildings_factor = 0.15
+				production_speed_facility_factor = 0.15
+			}
+		}
+		
+		KYO_Satori_help={
+			picture = Satori_help
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+
+				stability_factor = 0.2
+				war_support_factor = 0.1
+				war_stability_factor = 0.1
+				consumer_goods_factor = -0.15
+			}
+		}
+
+		KYO_three_youkai={
+			picture = three_youkai
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = 0.3
+				conscription = 0.02
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				river_crossing_factor = -0.2
+			}
+		}
+		
+
+		################
+		#Army tree buff#
+		################
+
+		KYO_youkai_new_army_1={
+			picture = youkai_new_army
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_army = 0.02
+				mobilization_speed = 0.01
+				army_org_factor = 0.01				
+			}
+		}
+		KYO_youkai_new_army_2={
+			picture = youkai_new_army
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_army = 0.03
+				conscription_factor = 0.1
+				mobilization_speed = 0.1
+				army_org_factor = 0.1
+				army_morale_factor = 0.05	
+				org_loss_when_moving = -0.1			
+			}
+		}
+		KYO_youkai_new_army_3={
+			picture = youkai_new_army
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_army = 0.05
+				conscription_factor = 0.15
+				mobilization_speed = 0.15
+				army_org_factor = 0.125
+				army_morale_factor = 0.1	
+				org_loss_when_moving = -0.15			
+			}
+		}
+
+		KYO_youkai_new_army_4={
+			picture = youkai_new_army
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_army = 0.1
+				mobilization_speed = 0.2
+				conscription_factor = 0.2
+				army_org_factor = 0.2
+				army_morale_factor = 0.2	
+				org_loss_when_moving = -0.2	
+								
+			}
+		}
+		KYO_youkai_new_mercenary_1={
+			picture = youkai_new_mercenary
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_army = 0.1
+				breakthrough_factor = 0.1
+				army_attack_factor =0.05
+				experience_loss_factor=0.05
+				army_speed_factor = 0.05
+				army_org_factor = -0.1
+			}
+		}
+		KYO_youkai_new_mercenary_2={
+			picture = youkai_new_mercenary
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_army = 0.1
+				breakthrough_factor = 0.1
+				army_attack_factor =0.1
+				army_defence_factor=0.05
+				army_speed_factor = 0.075
+				experience_loss_factor=0.1
+				army_org_factor = -0.05
+				army_morale_factor = -0.05
+				army_armor_attack_factor = 0.05
+				army_armor_defence_factor = 0.05
+			}
+		}
+		KYO_youkai_new_mercenary_3={
+			picture = youkai_new_mercenary
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_army = 0.15
+				breakthrough_factor = 0.125
+				army_attack_factor =0.125
+				army_defence_factor=0.125
+				experience_loss_factor=0.1
+				army_speed_factor = 0.075
+				army_org_factor = -0.05
+				army_morale_factor = -0.05		
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.1
+			}
+		}
+
+		KYO_youkai_new_mercenary_4={
+			picture = youkai_new_mercenary
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = -0.05
+				experience_loss_factor=0.1		
+				experience_gain_army = 0.2
+				breakthrough_factor = 0.15
+				army_attack_factor =0.15
+				army_defence_factor=0.15
+				army_speed_factor = 0.1
+				supply_consumption_factor = -0.05
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.1
+				
+					
+			}
+		}
+
+		KYO_strong_youkai={
+			picture = strong_youkai
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+
+				army_attack_factor =0.075
+				army_defence_factor=0.075
+				max_planning = 0.1
+
+	
+			}
+		}
+		KYO_tengu_intelligen_agent_1={
+			picture = tengu_intelligen_agent
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+
+				intel_network_gain = 0.25
+				army_intel_factor = 0.15
+				civilian_intel_factor = 0.15
+				airforce_intel_factor = 0.15
+	
+			}
+		}
+		KYO_tengu_intelligen_agent_2={
+			picture = tengu_intelligen_agent
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				operative_slot = 1
+				agency_upgrade_time = -0.5
+				intel_network_gain = 0.5
+				army_intel_factor = 0.3
+				civilian_intel_factor = 0.3
+				airforce_intel_factor = 0.3
+	
+			}
+		}
+		KYO_youkai_tech_is_best={
+			picture = youkai_tech_is_best
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+
+				research_speed_factor = 0.125
+
+			}
+		}
+		################
+		#navy      buff#
+		################
+		#TODO #以下都沒有GFX
+		
+		KYO_kogasa_idea={
+			picture = kogasa_idea
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+
+				weekly_manpower = -5000
+				stability_weekly = -0.05
+				war_support_weekly = -0.05
+				research_speed_factor = 0.25
+			}
+			equipment_bonus = {
+				submarine = {
+					build_cost_ic = -0.3
+					reliability = 0.1
+					surface_visibility = -0.15
+					sub_visibility =-0.1
+				}
+			}
+			
+
+		}
+
+		KYO_reiko_idea={
+			picture = reiko_idea
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+
+				production_factory_max_efficiency_factor = 0.5
+				production_factory_efficiency_gain_factor = 1
+				industrial_capacity_factory = 0.5
+				industrial_capacity_dockyard = 0.5
+				
+				political_power_cost = 1
+				political_power_factor = -0.5
+				consumer_goods_factor = 0.5
+			}
+			equipment_bonus = {
+				mio_cat_eq_all_battleship = {
+					build_cost_ic = -0.5
+				}
+				mio_cat_eq_all_destroyer = {
+
+					build_cost_ic = -0.5	
+				}
+			}
+
+		}
+		KYO_benben_idea={
+			picture = benben_idea
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+
+				stability_weekly = 0.05
+				war_support_weekly = 0.05
+
+				production_speed_buildings_factor = -0.5
+				local_resources_factor = -0.5
+
+			}
+			equipment_bonus = {
+				submarine = {
+
+					build_cost_ic = -0.5
+
+				}
+				mio_cat_eq_all_cruiser = {
+
+					build_cost_ic = -0.5	
+
+				}
+			}
+		}
+		KYO_yatsuhashi_idea={
+			picture = yatsuhashi_idea
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+
+				production_speed_buildings_factor = 0.99
+				industrial_capacity_dockyard = 0.99
+				industrial_concern_cost_factor = -0.5
+
+			}
+			equipment_bonus = {
+				mio_cat_eq_all_light_tank = {
+					build_cost_ic = 1.99
+					reliability = -0.2
+					armor_value = -0.05
+				}
+				mio_cat_eq_all_medium_tank = {
+					build_cost_ic = 1.99
+					reliability = -0.2
+					armor_value = -0.1
+				}
+				mio_cat_eq_all_heavy_tank = {
+					build_cost_ic = 1.99
+					reliability = -0.4
+					armor_value = -0.1
+				}
+				infantry_equipment = {
+					build_cost_ic = 1.99
+					reliability = -0.2
+				}
+				support_equipment = {
+					build_cost_ic = 1.99
+					reliability = -0.15
+				}
+			}
+		}
+		KYO_kokoro_idea={
+			picture = kokoro_idea
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+
+				production_speed_arms_factory_factor = 0.5
+				production_speed_industrial_complex_factor = 0.5
+				production_speed_bunker_factor = 0.5
+				
+				weekly_manpower = -10000
+			}
+		}
+		KYO_shinmyoumaru_idea={
+			picture = shinmyoumaru_idea
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = -3000
+				war_support_factor =  0.15
+				stability_factor = 0.15
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_speed_factor =0.1
+				experience_gain_army_factor =0.2
+				experience_loss_factor = -0.25
+				experience_gain_navy_factor = 0.5
+				experience_gain_air_factor = 0.5
+
+				training_time_army_factor = 1
+				command_power_gain = -0.5
+				max_command_power = -50
+				political_power_cost = 0.25
+				weekly_casualties_war_support = -0.01
+				weekly_bombing_war_support = -0.01
+				weekly_convoys_war_support = -0.01
+				experience_gain_army = -0.5
+				consumer_goods_factor =0.2
+				conscription_factor = -0.3
+				monthly_population =-0.5
+				
+				
+				
+
+			}
+		}
+
+		KYO_Tsukumogami_idea={
+			picture = Tsukumogami_idea
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+
+			modifier = {
+
+				research_speed_factor = 0.05
+				
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+					soft_attack = 0.05
+					hard_attack = 0.05
+					defense = 0.1
+				}
+			}
+		}
+
+
+		################
+		#factory   buff#
+		################
+		KYO_weak_ecomic={
+			picture = weak_ecomic
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.3
+				production_speed_bunker_factor = -0.2
+				production_speed_buildings_factor =-0.2
+				production_speed_industrial_complex_factor=-0.2
+				production_speed_arms_factory_factor=-0.2
+				production_speed_infrastructure_factor = -0.2
+				production_factory_efficiency_gain_factor =-0.2
+				production_factory_max_efficiency_factor =-0.2
+				research_speed_factor = -0.3
+			}
+		}
+
+		KYO_metro_system_1={
+			picture = metro_system
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.1	
+				production_speed_rail_way_factor = 0.2
+				production_speed_supply_node_factor = 0.1
+			}
+		}
+		KYO_metro_system_2={
+			picture = metro_system
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.15	
+				production_speed_rail_way_factor = 0.3
+				production_speed_supply_node_factor = 0.2
+			}
+		}
+		KYO_metro_system_3={
+			picture = metro_system
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.3	
+				production_speed_rail_way_factor = 0.3
+				production_speed_supply_node_factor = 0.3
+				production_speed_buildings_factor =0.1
+			}
+		}
+		KYO_kappa_plan_for_land_1={
+			picture = kappa_plan_for_land
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_bunker_factor = 0.1
+				production_speed_buildings_factor =0.1
+				production_speed_industrial_complex_factor=0.05
+				production_speed_arms_factory_factor=0.05
+			}
+		}
+		KYO_kappa_plan_for_land_2={
+			picture = kappa_plan_for_land
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_bunker_factor = 0.2
+				production_speed_buildings_factor =0.15
+				production_speed_industrial_complex_factor=0.1
+				production_speed_arms_factory_factor=0.1
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor =0.05
+			}
+		}
+		KYO_kappa_plan_for_land_3={
+			picture = kappa_plan_for_land
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_bunker_factor = 0.3
+				production_speed_buildings_factor =0.25
+				production_speed_industrial_complex_factor=0.15
+				production_speed_arms_factory_factor=0.15
+				industrial_capacity_factory = 0.2
+				production_factory_efficiency_gain_factor =0.1
+				production_factory_max_efficiency_factor =0.1
+			}
+		}
+
+		KYO_undergrond_nuke={
+			picture = undergrond_nuke
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_nuclear_reactor_factor = 0.2
+			}
+		}
+
+		KYO_nuclear_hotspring={
+			picture = nuclear_hotspring
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly_factor = 0.005
+				consumer_goods_factor = -0.2
+			}
+		}
+
+		
+		KYO_Satori_thanks={
+			picture = Satori_thanks
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.05
+				war_stability_factor = 0.2
+				consumer_goods_factor = -0.15
+			}
+		}
+
+	
+		KYO_farming_production_1={
+			picture = farming_production
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				conscription = 0.005
+				monthly_population = 0.1
+			
+			}
+		}
+
+		KYO_farming_production_2={
+			picture = farming_production_2
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				conscription = 0.01
+				monthly_population = 0.25
+			
+			}
+		}
+
+		#全新工業路線
+
+		KYO_foreign_machinery_1={
+			picture = foreign_machinery
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				theorist_cost_factor = 1
+				research_speed_factor = -0.1
+				local_resources_factor = -0.2
+				local_resources_steel_factor = -0.2
+				local_resources_aluminium_factor = -0.2
+				consumer_goods_factor = 0.5
+				political_power_factor = -0.1
+
+				production_speed_buildings_factor = 0.05
+				production_speed_industrial_complex_factor=0.1
+				production_speed_infrastructure_factor = 0.05	
+				production_speed_rail_way_factor = 0.05
+				production_speed_supply_node_factor = 0.05
+				refit_speed = 0.5
+				refit_ic_cost = -0.5
+				equipment_capture = 0.05
+				trade_laws_cost_factor = -0.75
+				economy_cost_factor = -0.75
+				
+				
+				
+				
+				
+			
+			}
+		}
+		KYO_foreign_machinery_2={
+			picture = foreign_machinery
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				theorist_cost_factor = 1
+				research_speed_factor = -0.125
+				local_resources_factor = -0.2
+				local_resources_steel_factor = -0.2
+				local_resources_aluminium_factor = -0.2
+				consumer_goods_factor = 0.5
+				political_power_factor = -0.1
+
+				production_speed_buildings_factor = 0.1
+				production_speed_industrial_complex_factor=0.15
+				production_speed_infrastructure_factor = 0.1	
+				production_speed_rail_way_factor = 0.1
+				production_speed_supply_node_factor = 0.1
+				refit_speed = 0.5
+				refit_ic_cost = -0.5
+				equipment_capture = 0.05
+				trade_laws_cost_factor = -0.75
+				economy_cost_factor = -0.75
+				
+				
+				
+				
+				
+			
+			}
+		}
+		KYO_foreign_machinery_3={
+			picture = foreign_machinery
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				theorist_cost_factor = 1
+				research_speed_factor = -0.15
+				local_resources_factor = -0.25
+				local_resources_steel_factor = -0.25
+				local_resources_aluminium_factor = -0.25
+				consumer_goods_factor = 0.3
+				political_power_factor = -0.15
+
+				production_speed_buildings_factor = 0.2
+				production_speed_industrial_complex_factor=0.2
+				production_speed_infrastructure_factor = 0.2	
+				production_speed_rail_way_factor = 0.2
+				production_speed_supply_node_factor = 0.2
+				refit_speed = 0.75
+				refit_ic_cost = -0.75
+				equipment_capture = 0.075
+				trade_laws_cost_factor = -0.75
+				economy_cost_factor = -0.75
+				
+				
+				
+				
+				
+			
+			}
+		}
+		KYO_foreign_machinery_4={
+			picture = foreign_machinery
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				theorist_cost_factor = 1
+				research_speed_factor = -0.15
+				local_resources_factor = -0.25
+				local_resources_steel_factor = -0.25
+				local_resources_aluminium_factor = -0.25
+				consumer_goods_factor = 0.1
+				political_power_factor = -0.175
+
+				production_speed_buildings_factor = 0.3
+				production_speed_industrial_complex_factor=0.3
+				production_speed_infrastructure_factor = 0.3	
+				production_speed_rail_way_factor = 0.3
+				production_speed_supply_node_factor = 0.3
+				refit_speed = 0.75
+				refit_ic_cost = -0.75
+				equipment_capture = 0.075
+				trade_laws_cost_factor = -0.75
+				economy_cost_factor = -0.75
+				
+				
+				
+				
+				
+			
+			}
+		}
+		KYO_foreign_machinery_5={
+			picture = foreign_machinery
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				theorist_cost_factor = 1
+				research_speed_factor = -0.2
+				local_resources_factor = -0.325
+				local_resources_steel_factor = -0.325
+				local_resources_aluminium_factor = -0.325
+				local_resources_coal_factor = -0.1
+				political_power_factor = -0.2
+
+				production_speed_buildings_factor = 0.4
+				production_speed_industrial_complex_factor=0.4
+				production_speed_infrastructure_factor = 0.4	
+				production_speed_rail_way_factor = 0.5
+				production_speed_supply_node_factor = 0.5
+				refit_speed = 0.75
+				refit_ic_cost = -0.75
+				equipment_capture = 0.075
+				trade_laws_cost_factor = -0.75
+				economy_cost_factor = -0.75	
+			
+			}
+		}
+
+		KYO_forced_labor_1={
+			picture = forced_labor
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.1
+				conscription = -0.03
+				monthly_population = -0.2
+				mobilization_speed = -0.25
+				conscription_factor = -0.2
+				license_production_speed = 0.25
+				industry_repair_factor = 0.05
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				
+			
+			}
+		}
+		KYO_forced_labor_2={
+			picture = forced_labor
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.15
+				conscription = -0.03
+				monthly_population = -0.2
+				mobilization_speed = -0.25
+				conscription_factor = -0.2
+				license_production_speed = 0.25
+				industry_repair_factor = 0.1
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				production_factory_efficiency_gain_factor =0.05
+				production_factory_max_efficiency_factor =0.05
+			
+			}
+		}
+		KYO_forced_labor_3={
+			picture = forced_labor
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.2
+				conscription = -0.03
+				monthly_population = -0.3
+				mobilization_speed = -0.25
+				conscription_factor = -0.2
+				license_production_speed = 0.5
+				industry_repair_factor = 0.2
+				industrial_capacity_factory = 0.25
+				industrial_capacity_dockyard = 0.25
+				production_factory_efficiency_gain_factor =0.125
+				production_factory_max_efficiency_factor =0.125
+			
+			}
+		}
+		KYO_forced_labor_4={
+			picture = forced_labor
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.2
+				conscription = -0.025
+				monthly_population = -0.4
+				mobilization_speed = -0.25
+				conscription_factor = -0.2
+				license_production_speed = 0.75
+				industry_repair_factor = 0.3
+				industrial_capacity_factory = 0.5
+				industrial_capacity_dockyard = 0.5
+				production_factory_efficiency_gain_factor =0.25
+				production_factory_max_efficiency_factor =0.25
+			
+			}
+		}
+
+		KYO_twenty_four_hours_work_time={
+			picture = twenty_four_hours_work_time
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				stability_factor = -0.35
+				stability_weekly_factor = -0.25
+				war_support_factor = -0.3
+				weekly_manpower = -5000
+				
+				
+				
+				industrial_capacity_factory = 0.3
+				industrial_capacity_dockyard = 0.3
+				
+			
+			}
+		}
+
+		KYO_sixteen_hours_work_time={
+			picture = sixteen_hours_work_time
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				stability_factor = -0.1
+				war_support_factor = -0.05
+
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			
+			}
+		}
+		
+		KYO_gensokyo_utopia={
+			picture = gensokyo_utopia
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				weekly_casualties_war_support = 0.0015
+				weekly_bombing_war_support = 0.001
+				weekly_convoys_war_support = 0.001
+
+				war_support_weekly = 0.0035
+				stability_weekly = 0.0035
+			
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		KYO_shikigami_Chen_1={
+			picture = shikigami_Chen
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				army_speed_factor = 0.05
+				weekly_manpower = 1250
+			
+			}
+		}
+		KYO_shikigami_Chen_2={
+			picture = shikigami_Chen
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				army_speed_factor = 0.075
+				weekly_manpower = 1250
+				experience_loss_factor = -0.05
+				
+			
+			}
+		}
+		KYO_shikigami_Chen_3={
+			picture = shikigami_Chen
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+					army_speed_factor = 0.15
+					weekly_manpower = 2000
+					experience_loss_factor = -0.1
+			
+			}
+		}
+		KYO_shikigami_Ran_1={
+			picture = shikigami_Ran
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				research_speed_factor = 0.05
+			
+			}
+		}
+		KYO_shikigami_Ran_2={
+			picture = shikigami_Ran
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				research_speed_factor = 0.1
+				political_advisor_cost_factor = -0.33
+			
+			}
+		}
+		KYO_shikigami_Ran_3={
+			picture = shikigami_Ran
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				research_speed_factor = 0.15
+				political_advisor_cost_factor = -0.33
+				economy_cost_factor = -0.33
+			
+			}
+			
+		}
+		KYO_Boundaries_youkari={
+			picture = Boundaries_youkari
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				political_power_factor = 0.2
+			
+			}
+			
+		}
+
+		KYO_everyone_hate_you={
+			picture = everyone_hate_you
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				opinion_gain_monthly_same_ideology_factor = -1
+				opinion_gain_monthly_factor = -1
+				trade_opinion_factor = -2
+			
+			}
+			
+		}
+
+
+
+		
+		
+
+		KYO_Let_start_war={
+			picture = Let_start_war
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				generate_wargoal_tension = -0.5
+				justify_war_goal_time = -1
+				war_support_factor = 0.1
+			}
+			
+		}
+		KYO_Shrine_navy={
+
+			picture = Shrine_navy
+			allowed_civil_war = {
+				TAG = KYO
+			}
+
+			removal_cost = -1
+
+		}
+
+		KYO_death_of_yukari = {
+			picture = death_of_yukari
+			allowed_civil_war = { TAG = KYO }
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.15
+				political_power_factor = -0.2
+				command_power_gain = -0.2
+
+				political_advisor_cost_factor = 0.5
+				
+			}
+		}
+
+		
+
+	KYO_hijiri_army_buff = {
+		picture = hijiri_army_buff
+		allowed_civil_war = { TAG = KYO }
+		removal_cost = -1
+
+		modifier = {
+			political_power_gain = 0.20
+
+			modifier_army_sub_unit_militia_defence_factor = 0.075
+			modifier_army_sub_unit_militia_max_org_factor = 0.05
+
+			army_org_factor = 0.025
+			army_morale_factor = 0.05
+			experience_gain_army_factor = 0.025
+			training_time_army_factor = -0.025
+
+			stability_factor = 0.05
+
+			production_factory_efficiency_gain_factor = 0.05
+			industrial_capacity_factory = 0.05
+		}
+	}
+
+
+	KYO_remilia_army_buff = {
+		picture = remilia_army_buff
+		allowed_civil_war = { TAG = KYO }
+		removal_cost = -1
+
+		modifier = {
+			political_power_gain = 0.075
+
+			modifier_army_sub_unit_mountaineers_attack_factor = 0.10
+			modifier_army_sub_unit_mountaineers_defence_factor = 0.10
+
+			army_attack_factor = 0.05
+			breakthrough_factor = 0.05
+
+			max_planning = 0.075
+
+			experience_loss_factor = -0.05
+
+			research_speed_factor = 0.075
+			nuclear_production_factor = 0.25
+		}
+	}
+
+
+	KYO_seija_army_buff = {
+		picture = seija_army_buff
+		allowed_civil_war = { TAG = KYO }
+		removal_cost = -1
+
+		modifier = {
+			modifier_army_sub_unit_militia_attack_factor = 0.10
+			modifier_army_sub_unit_militia_max_org_factor = 0.075
+
+			experience_gain_army_factor = 0.05
+
+			org_loss_when_moving = -0.05
+			supply_consumption_factor = -0.05
+
+			army_speed_factor = 0.05
+			army_attack_factor = 0.05
+			army_org_factor = -0.025
+
+			production_factory_max_efficiency_factor = 0.025
+			production_factory_start_efficiency_factor = 0.10
+			industrial_capacity_factory = 0.025
+		}
+	}
+
+
+	KYO_yakumo_army_buff = {
+		picture = yakumo_army_buff
+		allowed_civil_war = { TAG = KYO }
+		removal_cost = -1
+
+		modifier = {
+			local_factories = 0.10
+			local_resources_factor = 0.10
+
+			max_planning = 0.05
+			planning_speed = 0.025
+
+			army_defence_factor = 0.025
+			supply_consumption_factor = -0.05
+
+			mobilization_speed = 0.15
+
+			political_advisor_cost_factor = -0.25
+			economy_cost_factor = -0.25
+			mobilization_laws_cost_factor = -0.15
+			high_command_cost_factor = -0.15
+
+			army_core_attack_factor = 0.05
+			army_core_defence_factor = 0.05
+
+			minimum_training_level = -0.20
+
+			max_dig_in = 0.05
+			invasion_preparation = -0.25
+		}
+	}
+
+		KYO_judge_of_all_life = {
+			picture = judge_of_all_life
+			allowed_civil_war = { TAG = KYO }
+			removal_cost = -1
+
+			
+
+			modifier = {
+
+
+				political_power_factor = -0.05
+				drift_defence_factor = -0.5
+				conscription_factor = -0.35
+				supply_node_range = 0.5
+				supply_consumption_factor = -0.25
+				production_speed_buildings_factor = -0.125
+				production_speed_bunker_factor =-1
+				production_speed_anti_air_building_factor = -1
+
+				ai_get_ally_desire_factor = -30000
+				
+
+				
+			}
+
+			
+			targeted_modifier = {
+				tag = KYO
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+
+		KYO_fairy_of_freeze = {
+			picture = fairy_of_freeze
+			allowed_civil_war = { TAG = KYO }
+			removal_cost = -1
+
+			modifier = {
+				
+				winter_attrition_factor = -0.5
+				supply_consumption_factor = -0.15
+				army_speed_factor = 0.05
+				army_defence_factor = 0.05
+				modifier_army_sub_unit_militia_attack_factor = 0.2
+				modifier_army_sub_unit_militia_defence_factor = 0.2
+				river_crossing_factor = -0.3
+
+			}
+		}
+		
+
+		KYO_kappa_orgnization_help = {
+			picture = youkai_tech_is_best
+			allowed_civil_war = { TAG = KYO }
+			removal_cost = -1
+
+			modifier = {
+				
+				industrial_capacity_factory = 0.5
+				production_factory_efficiency_gain_factor = 0.5
+
+
+			}
+		}
+
+		KYO_oni_orgnization_help = {
+			picture = war_leader_suika
+			allowed_civil_war = { TAG = KYO }
+			removal_cost = -1
+
+			modifier = {
+				
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+
+			}
+		}
+KYO_beastrealm_orgnization_help = {
+	picture = Prototype_Hourai_Regimen
+	allowed_civil_war = { TAG = KYO }
+	removal_cost = -1
+
+	modifier = {
+		# 畜生界：兇猛進攻與快速突破
+		army_attack_factor = 0.1
+		breakthrough_factor = 0.125
+		army_speed_factor = 0.1
+		army_org_factor = 0.05
+		army_morale_factor = 0.1
+		experience_gain_army_factor = 0.20
+		planning_speed = 0.20
+	}
+}
+
+
+KYO_ghost_orgnization_help = {
+	picture = Ghost_Analgesia
+	allowed_civil_war = { TAG = KYO }
+	removal_cost = -1
+
+	modifier = {
+		# 白玉樓：穩定戰線、補員與低損耗
+		army_defence_factor = 0.125
+		army_org_factor = 0.075
+		army_morale_factor = 0.1
+		reinforce_rate = 0.10
+		experience_loss_factor = -0.20
+		supply_consumption_factor = -0.10
+		max_dig_in = 0.5
+	}
+}
+
+
+KYO_tengu_orgnization_help = {
+	picture = company_tengu
+	allowed_civil_war = { TAG = KYO }
+	removal_cost = -1
+
+	modifier = {
+		# 天狗：偵察、情報、空軍協同與高速調度
+		army_speed_factor = 0.1
+		army_intel_factor = 0.20
+		recon_factor = 0.20
+		planning_speed = 0.1
+		max_planning_factor = 0.10
+		air_mission_efficiency = 0.15
+		army_attack_factor = 0.05
+	}
+}
+
+
+KYO_eientei_orgnization_help = {
+	picture = Lunarian_Fragments
+	allowed_civil_war = { TAG = KYO }
+	removal_cost = -1
+
+	modifier = {
+		# 永遠亭：醫療、補給與部隊恢復
+		army_org_factor = 0.1
+		army_morale_factor = 0.15
+		reinforce_rate = 0.05
+		experience_loss_factor = -0.25
+		supply_consumption_factor = -0.15
+		training_time_army_factor = -0.15
+		army_org_regain = 0.1
+		weekly_manpower = 1000
+	}
+}
+
+
+KYO_last_chance_alliance_buff = {
+	picture = KYO_seija_dynamic_military_idea
+	allowed_civil_war = { TAG = KYO }
+	removal_cost = -1
+
+		modifier = {
+			# 最後勝機：所有盟友力量集中投入決戰
+			army_attack_factor = 0.1
+			army_defence_factor = 0.1
+			breakthrough_factor = 0.1
+
+			army_org_factor = 0.1
+			army_morale_factor = 0.1
+
+			army_speed_factor = 0.1
+			planning_speed = 0.1
+			max_planning_factor = 0.10
+			land_reinforce_rate = 0.03
+			
+			experience_loss_factor = -0.20
+			supply_consumption_factor = -0.15
+
+			army_intel_factor = 0.15
+			air_mission_efficiency = 0.10
+
+			experience_gain_army_factor = 0.20
+			training_time_army_factor = -0.10
+
+			industrial_capacity_factory = 0.15
+			production_factory_efficiency_gain_factor = 0.15
+			production_speed_arms_factory_factor = 0.15
+
+			weekly_manpower = 1500
+		}
+}
+
+
+		
+
+
+
+
+
+
+
+		
+
+		KYO_everyone_will_survive={
+			picture = everyone_will_survive
+			allowed_civil_war = {
+				tag =KYO
+			}
+
+			removal_cost = -1
+			rule = {
+				can_join_factions = no
+			}
+
+			modifier = {
+				monthly_population = -1
+				weekly_manpower = 500
+				mobilization_laws_cost_factor = 5
+				trade_laws_cost_factor = 2
+			}
+			
+		}
+
+
+	
+
+		KYO_yukari_gap_power ={
+			picture = yukari_gap_power
+			allowed_civil_war = {
+				tag =KYO
+			}
+
+			removal_cost = -1
+			
+
+			modifier = {
+				
+				army_speed_factor = 0.15
+
+			}
+			
+		}
+
+		KYO_ran_gap_power ={
+			picture = ran_gap_power
+			allowed_civil_war = {
+				tag =KYO
+			}
+
+			removal_cost = -1
+			
+
+			modifier = {
+				
+				political_power_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+
+			}
+			
+		}
+
+		KYO_chen_gap_power ={
+			picture = chen_gap_power
+			allowed_civil_war = {
+				tag =KYO
+			}
+
+			removal_cost = -1
+			
+
+			modifier = {
+				
+				weekly_manpower = 5000
+				stability_factor = 0.1
+
+			}
+			
+		}
+
+		KYO_renko_gap_power ={
+			picture = renko_gap_power
+			allowed_civil_war = {
+				tag =KYO
+			}
+
+			removal_cost = -1
+			
+
+			modifier = {
+				
+				stability_weekly = 0.01
+				war_support_weekly = 0.01
+
+			}
+			
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	}
+}

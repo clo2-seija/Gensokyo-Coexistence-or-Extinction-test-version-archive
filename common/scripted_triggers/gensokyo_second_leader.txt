@@ -1,0 +1,7 @@
+has_second_leader = {
+	or ={
+		# has_idea = we_have_new_Miko
+		has_idea = ENG_king_edward
+	}
+
+}

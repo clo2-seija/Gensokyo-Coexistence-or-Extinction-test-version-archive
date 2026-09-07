@@ -1,0 +1,13 @@
+KYO_lunar_scale_left_wins = {
+	check_variable = {
+		var = KYO_lunar_left_weight
+		value > var:KYO_lunar_right_weight
+	}
+}
+
+KYO_lunar_scale_right_wins = {
+	check_variable = {
+		var = KYO_lunar_right_weight
+		value > var:KYO_lunar_left_weight
+	}
+}

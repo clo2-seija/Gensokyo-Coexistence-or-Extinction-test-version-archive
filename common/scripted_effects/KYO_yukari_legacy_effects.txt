@@ -1,0 +1,462 @@
+# 日本戰後、四方內戰與「八雲紫的遺產」共通效果。
+# 四個動態國家仍使用 original_tag = KYO；陣營身分一律由國家旗標辨識。
+
+KYO_prepare_player_civil_role_common = {
+	set_country_flag = KYO_player_civil_war_faction
+	set_country_flag = KYO_civil_war_faction
+	set_country_flag = gensokyo_is_at_civil_war
+	set_country_flag = yukari_will_not_survive
+	set_variable = { var = KYO_yukari_legacy_progress value = 0 }
+	set_variable = { var = KYO_legacy_fragment_count value = 1 }
+	clr_global_flag = yakumo_has_dead
+	clr_global_flag = remilia_has_dead
+	clr_global_flag = hijiri_has_dead
+	clr_global_flag = seija_has_dead
+	country_event = { id = KYO_afterwar.23 days = 21 }
+}
+
+KYO_prepare_player_civil_role_yakumo = {
+	KYO_prepare_player_civil_role_common = yes
+	set_country_flag = KYO_civil_role_yakumo
+	set_country_flag = KYO_legacy_fragment_yakumo
+}
+
+KYO_prepare_player_civil_role_remilia = {
+	KYO_prepare_player_civil_role_common = yes
+	set_country_flag = KYO_civil_role_remilia
+	set_country_flag = KYO_legacy_fragment_remilia
+}
+
+KYO_prepare_player_civil_role_hijiri = {
+	KYO_prepare_player_civil_role_common = yes
+	set_country_flag = KYO_civil_role_hijiri
+	set_country_flag = KYO_legacy_fragment_hijiri
+}
+
+KYO_prepare_player_civil_role_seija = {
+	KYO_prepare_player_civil_role_common = yes
+	set_country_flag = KYO_civil_role_seija
+	set_country_flag = KYO_legacy_fragment_seija
+}
+
+KYO_prepare_npc_civil_role_yakumo = {
+	set_country_flag = KYO_civil_war_faction
+	set_country_flag = KYO_civil_war_npc
+	set_country_flag = gensokyo_is_at_civil_war
+	set_country_flag = yukari_will_not_survive
+	set_country_flag = KYO_civil_role_yakumo
+	set_country_flag = KYO_legacy_fragment_yakumo
+}
+
+KYO_prepare_npc_civil_role_remilia = {
+	set_country_flag = KYO_civil_war_faction
+	set_country_flag = KYO_civil_war_npc
+	set_country_flag = gensokyo_is_at_civil_war
+	set_country_flag = yukari_will_not_survive
+	set_country_flag = KYO_civil_role_remilia
+	set_country_flag = KYO_legacy_fragment_remilia
+}
+
+KYO_prepare_npc_civil_role_hijiri = {
+	set_country_flag = KYO_civil_war_faction
+	set_country_flag = KYO_civil_war_npc
+	set_country_flag = gensokyo_is_at_civil_war
+	set_country_flag = yukari_will_not_survive
+	set_country_flag = KYO_civil_role_hijiri
+	set_country_flag = KYO_legacy_fragment_hijiri
+}
+
+KYO_prepare_npc_civil_role_seija = {
+	set_country_flag = KYO_civil_war_faction
+	set_country_flag = KYO_civil_war_npc
+	set_country_flag = gensokyo_is_at_civil_war
+	set_country_flag = yukari_will_not_survive
+	set_country_flag = KYO_civil_role_seija
+	set_country_flag = KYO_legacy_fragment_seija
+}
+
+# 在協議真正崩潰前重新快照；確保日本戰後過渡期的履行度與最後一任委員長會進入內戰結算。
+KYO_snapshot_hyakki_for_civil_war = {
+	set_variable = { KYO_postwar_fulfillment_military = KYO_fulfillment_military_committee }
+	set_variable = { KYO_postwar_fulfillment_faith = KYO_fulfillment_faith_committee }
+	set_variable = { KYO_postwar_fulfillment_mobilization = KYO_fulfillment_mobilization_committee }
+
+	clr_country_flag = KYO_postwar_war_leader_remilia
+	clr_country_flag = KYO_postwar_war_leader_yuyuko
+	clr_country_flag = KYO_postwar_war_leader_suika
+	clr_country_flag = KYO_postwar_war_leader_yuuka
+	if = { limit = { has_country_flag = KYO_war_leader_remilia } set_country_flag = KYO_postwar_war_leader_remilia }
+	else_if = { limit = { has_country_flag = KYO_war_leader_yuyuko } set_country_flag = KYO_postwar_war_leader_yuyuko }
+	else_if = { limit = { has_country_flag = KYO_war_leader_suika } set_country_flag = KYO_postwar_war_leader_suika }
+	else_if = { limit = { has_country_flag = KYO_war_leader_yuuka } set_country_flag = KYO_postwar_war_leader_yuuka }
+
+	clr_country_flag = KYO_postwar_order_leader_byakuren
+	clr_country_flag = KYO_postwar_order_leader_kanako
+	clr_country_flag = KYO_postwar_order_leader_satori
+	clr_country_flag = KYO_postwar_order_leader_megumu
+	if = { limit = { has_country_flag = KYO_order_leader_byakuren } set_country_flag = KYO_postwar_order_leader_byakuren }
+	else_if = { limit = { has_country_flag = KYO_order_leader_kanako } set_country_flag = KYO_postwar_order_leader_kanako }
+	else_if = { limit = { has_country_flag = KYO_order_leader_satori } set_country_flag = KYO_postwar_order_leader_satori }
+	else_if = { limit = { has_country_flag = KYO_order_leader_megumu } set_country_flag = KYO_postwar_order_leader_megumu }
+
+	clr_country_flag = KYO_postwar_network_leader_sekibanki
+	clr_country_flag = KYO_postwar_network_leader_eirin
+	clr_country_flag = KYO_postwar_network_leader_raiko
+	clr_country_flag = KYO_postwar_network_leader_eiki
+	if = { limit = { has_country_flag = KYO_network_leader_sekibanki } set_country_flag = KYO_postwar_network_leader_sekibanki }
+	else_if = { limit = { has_country_flag = KYO_network_leader_eirin } set_country_flag = KYO_postwar_network_leader_eirin }
+	else_if = { limit = { has_country_flag = KYO_network_leader_raiko } set_country_flag = KYO_postwar_network_leader_raiko }
+	else_if = { limit = { has_country_flag = KYO_network_leader_eiki } set_country_flag = KYO_postwar_network_leader_eiki }
+}
+
+# 四國均已成立後結算百妖協議。履行度決定自然資產；最後委員長決定額外資產去向。
+KYO_settle_hyakki_committees = {
+	# 八雲中央總務固定隨緊急政府轉移。
+	every_country = {
+		limit = { has_country_flag = KYO_civil_role_yakumo }
+		add_ideas = KYO_committee_central_archives
+		add_political_power = 75
+	}
+
+	# 軍務委員會的正規軍、軍官與軍火自然流向紅魔館。
+	if = {
+		limit = { check_variable = { KYO_postwar_fulfillment_military > 24 } }
+		every_country = {
+			limit = { has_country_flag = KYO_civil_role_remilia }
+			add_ideas = KYO_committee_military_assets
+			army_experience = 20
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 1200 }
+		}
+	}
+	if = {
+		limit = { check_variable = { KYO_postwar_fulfillment_military > 49 } }
+		every_country = {
+			limit = { has_country_flag = KYO_civil_role_remilia }
+			army_experience = 20
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 }
+		}
+	}
+	if = {
+		limit = { check_variable = { KYO_postwar_fulfillment_military > 74 } }
+		every_country = {
+			limit = { has_country_flag = KYO_civil_role_remilia }
+			add_command_power = 25
+			add_equipment_to_stockpile = { type = artillery_equipment amount = 180 }
+		}
+	}
+
+	# 信仰委員會的寺社、救護與地方聲望自然流向命蓮寺。
+	if = {
+		limit = { check_variable = { KYO_postwar_fulfillment_faith > 24 } }
+		every_country = {
+			limit = { has_country_flag = KYO_civil_role_hijiri }
+			add_ideas = KYO_committee_faith_assets
+			add_manpower = 30000
+			add_stability = 0.03
+		}
+	}
+	if = {
+		limit = { check_variable = { KYO_postwar_fulfillment_faith > 49 } }
+		every_country = {
+			limit = { has_country_flag = KYO_civil_role_hijiri }
+			add_manpower = 30000
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = 300 }
+		}
+	}
+	if = {
+		limit = { check_variable = { KYO_postwar_fulfillment_faith > 74 } }
+		every_country = {
+			limit = { has_country_flag = KYO_civil_role_hijiri }
+			add_stability = 0.04
+			add_war_support = 0.03
+		}
+	}
+
+	# 萬民委員會的工坊、道路與地方自衛網自然流向正邪陣線。
+	if = {
+		limit = { check_variable = { KYO_postwar_fulfillment_mobilization > 24 } }
+		every_country = {
+			limit = { has_country_flag = KYO_civil_role_seija }
+			add_ideas = KYO_committee_mobilization_assets
+			add_manpower = 25000
+			add_equipment_to_stockpile = { type = infantry_equipment amount = 900 }
+		}
+	}
+	if = {
+		limit = { check_variable = { KYO_postwar_fulfillment_mobilization > 49 } }
+		every_country = {
+			limit = { has_country_flag = KYO_civil_role_seija }
+			add_manpower = 25000
+			add_equipment_to_stockpile = { type = train_equipment amount = 5 }
+		}
+	}
+	if = {
+		limit = { check_variable = { KYO_postwar_fulfillment_mobilization > 74 } }
+		every_country = {
+			limit = { has_country_flag = KYO_civil_role_seija }
+			add_political_power = 75
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = 200 }
+		}
+	}
+
+	# 最後一任軍務委員長的額外資產。
+	if = {
+		limit = { has_country_flag = KYO_postwar_war_leader_remilia }
+		every_country = { limit = { has_country_flag = KYO_civil_role_remilia } add_ideas = KYO_committee_military_chair }
+	}
+	else_if = {
+		limit = { has_country_flag = KYO_postwar_war_leader_yuyuko }
+		every_country = { limit = { has_country_flag = KYO_civil_role_hijiri } add_ideas = KYO_committee_military_chair }
+	}
+	else_if = {
+		limit = { has_country_flag = KYO_postwar_war_leader_suika }
+		every_country = { limit = { has_country_flag = KYO_civil_role_seija } add_ideas = KYO_committee_military_chair }
+	}
+	else_if = {
+		limit = { has_country_flag = KYO_postwar_war_leader_yuuka }
+		every_country = { limit = { has_country_flag = KYO_civil_role_yakumo } add_ideas = KYO_committee_military_chair }
+	}
+
+	# 最後一任信仰委員長的額外資產。
+	if = {
+		limit = { has_country_flag = KYO_postwar_order_leader_byakuren }
+		every_country = { limit = { has_country_flag = KYO_civil_role_hijiri } add_ideas = KYO_committee_faith_chair }
+	}
+	else_if = {
+		limit = { has_country_flag = KYO_postwar_order_leader_kanako }
+		every_country = { limit = { has_country_flag = KYO_civil_role_yakumo } add_ideas = KYO_committee_faith_chair }
+	}
+	else_if = {
+		limit = { has_country_flag = KYO_postwar_order_leader_satori }
+		every_country = { limit = { has_country_flag = KYO_civil_role_remilia } add_ideas = KYO_committee_faith_chair }
+	}
+	else_if = {
+		limit = { has_country_flag = KYO_postwar_order_leader_megumu }
+		every_country = { limit = { has_country_flag = KYO_civil_role_remilia } add_ideas = KYO_committee_faith_chair }
+	}
+
+	# 最後一任萬民委員長的額外資產。
+	if = {
+		limit = { has_country_flag = KYO_postwar_network_leader_sekibanki }
+		every_country = { limit = { has_country_flag = KYO_civil_role_seija } add_ideas = KYO_committee_network_chair }
+	}
+	else_if = {
+		limit = { has_country_flag = KYO_postwar_network_leader_eirin }
+		every_country = { limit = { has_country_flag = KYO_civil_role_hijiri } add_ideas = KYO_committee_network_chair }
+	}
+	else_if = {
+		limit = { has_country_flag = KYO_postwar_network_leader_raiko }
+		every_country = { limit = { has_country_flag = KYO_civil_role_seija } add_ideas = KYO_committee_network_chair }
+	}
+	else_if = {
+		limit = { has_country_flag = KYO_postwar_network_leader_eiki }
+		every_country = { limit = { has_country_flag = KYO_civil_role_yakumo } add_ideas = KYO_committee_network_chair }
+	}
+
+	set_global_flag = KYO_hyakki_committees_settled
+}
+
+KYO_start_four_way_civil_war = {
+	KYO_disable_barrier_and_hyakki_systems = yes
+	remove_ideas = KYO_Hakurai_death
+	set_country_flag = timeout_for_civilwar
+	set_global_flag = KYO_yukari_legacy_unlocked
+	set_global_flag = KYO_four_way_civil_war_active
+	set_country_flag = KYO_four_way_civil_war_started
+
+	KYO_settle_hyakki_committees = yes
+
+	every_country = {
+		limit = {
+			original_tag = KYO
+			has_country_flag = KYO_civil_war_faction
+		}
+		set_country_flag = KYO_four_way_civil_war_started
+		mark_focus_tree_layout_dirty = yes
+		add_ideas = KYO_civil_war_isolation
+		if = {
+			limit = { has_country_flag = KYO_civil_war_npc }
+			add_ideas = KYO_civil_war_npc_pressure
+		}
+	}
+
+	# 每一方都向其餘三方宣戰；自我目標由 NOT = { tag = PREV } 排除。
+	every_country = {
+		limit = {
+			original_tag = KYO
+			has_country_flag = KYO_civil_war_faction
+		}
+		save_event_target_as = KYO_civil_war_declarer
+		every_country = {
+			limit = {
+				original_tag = KYO
+				has_country_flag = KYO_civil_war_faction
+				NOT = { tag = PREV }
+			}
+			event_target:KYO_civil_war_declarer = {
+				declare_war_on = { target = PREV type = civil_war }
+				if = {
+					limit = { has_country_flag = KYO_civil_war_npc }
+					add_ai_strategy = { type = conquer id = PREV value = 250 }
+					add_ai_strategy = { type = antagonize id = PREV value = 150 }
+				}
+			}
+		}
+	}
+
+	KYO_cws_apply_prewar_power_packages = yes
+	KYO_cws_initialize_system = yes
+	
+}
+
+KYO_legacy_unlock_selected_main_route = {
+	if = {
+		limit = { has_country_flag = KYO_player_civil_war_faction }
+		if = {
+			limit = { has_country_flag = KYO_civil_role_yakumo }
+			complete_national_focus = KYO_Yukari_start
+		}
+		else_if = {
+			limit = { has_country_flag = KYO_civil_role_remilia }
+			complete_national_focus = KYO_remilia_start
+		}
+		else_if = {
+			limit = { has_country_flag = KYO_civil_role_hijiri }
+			complete_national_focus = KYO_Byakuren_start
+		}
+		else_if = {
+			limit = { has_country_flag = KYO_civil_role_seija }
+			complete_national_focus = KYO_Seija_start
+		}
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+
+KYO_clear_legacy_stage_ideas = {
+	remove_ideas = {
+		KYO_legacy_stage_1 KYO_legacy_stage_2 KYO_legacy_stage_3
+		KYO_legacy_stage_4 KYO_legacy_stage_5 KYO_legacy_stage_6
+	}
+}
+
+KYO_refresh_legacy_stage_idea = {
+	KYO_clear_legacy_stage_ideas = yes
+	if = {
+		limit = { NOT = { has_country_flag = KYO_civil_war_unified } }
+		if = { limit = { check_variable = { KYO_yukari_legacy_progress = 1 } } add_ideas = KYO_legacy_stage_1 }
+		else_if = { limit = { check_variable = { KYO_yukari_legacy_progress = 2 } } add_ideas = KYO_legacy_stage_2 }
+		else_if = { limit = { check_variable = { KYO_yukari_legacy_progress = 3 } } add_ideas = KYO_legacy_stage_3 }
+		else_if = { limit = { check_variable = { KYO_yukari_legacy_progress = 4 } } add_ideas = KYO_legacy_stage_4 }
+		else_if = { limit = { check_variable = { KYO_yukari_legacy_progress = 5 } } add_ideas = KYO_legacy_stage_5 }
+		else_if = { limit = { check_variable = { KYO_yukari_legacy_progress = 6 } } add_ideas = KYO_legacy_stage_6 }
+
+		if = { limit = { has_country_flag = KYO_civil_role_yakumo } add_ideas = KYO_legacy_doctrine_yakumo }
+		else_if = { limit = { has_country_flag = KYO_civil_role_remilia } add_ideas = KYO_legacy_doctrine_remilia }
+		else_if = { limit = { has_country_flag = KYO_civil_role_hijiri } add_ideas = KYO_legacy_doctrine_hijiri }
+		else_if = { limit = { has_country_flag = KYO_civil_role_seija } add_ideas = KYO_legacy_doctrine_seija }
+	}
+}
+
+KYO_increment_legacy_progress = {
+	add_to_variable = { KYO_yukari_legacy_progress = 1 }
+	if = {
+		limit = { check_variable = { KYO_yukari_legacy_progress > 6 } }
+		set_variable = { var = KYO_yukari_legacy_progress value = 6 }
+	}
+	KYO_refresh_legacy_stage_idea = yes
+	add_command_power = 5
+	KYO_try_finish_ownerless_barrier = yes
+}
+
+KYO_recount_legacy_fragments = {
+	set_variable = { var = KYO_legacy_fragment_count value = 0 }
+	if = { limit = { has_country_flag = KYO_legacy_fragment_yakumo } add_to_variable = { KYO_legacy_fragment_count = 1 } }
+	if = { limit = { has_country_flag = KYO_legacy_fragment_remilia } add_to_variable = { KYO_legacy_fragment_count = 1 } }
+	if = { limit = { has_country_flag = KYO_legacy_fragment_hijiri } add_to_variable = { KYO_legacy_fragment_count = 1 } }
+	if = { limit = { has_country_flag = KYO_legacy_fragment_seija } add_to_variable = { KYO_legacy_fragment_count = 1 } }
+}
+
+KYO_mark_civil_war_unified = {
+	if = {
+		limit = {
+			has_country_flag = KYO_player_civil_war_faction
+			NOT = { has_country_flag = KYO_civil_war_unified }
+			has_country_flag = KYO_legacy_fragment_yakumo
+			has_country_flag = KYO_legacy_fragment_remilia
+			has_country_flag = KYO_legacy_fragment_hijiri
+			has_country_flag = KYO_legacy_fragment_seija
+		}
+		set_country_flag = KYO_civil_war_unified
+		set_global_flag = KYO_four_way_civil_war_over
+		clr_global_flag = KYO_four_way_civil_war_active
+		clr_country_flag = gensokyo_is_at_civil_war
+		clr_country_flag = kyo_civil_war_countdown
+		remove_ideas = KYO_civil_war_isolation
+		remove_ideas = KYO_civil_war_npc_pressure
+		KYO_clear_legacy_stage_ideas = yes
+		remove_ideas = {
+			KYO_legacy_doctrine_yakumo KYO_legacy_doctrine_remilia
+			KYO_legacy_doctrine_hijiri KYO_legacy_doctrine_seija
+		}
+		KYO_cws_cleanup_system = yes
+		KYO_try_finish_ownerless_barrier = yes
+	}
+}
+
+# ROOT 是投降國，FROM 是勝利國。四個旗標逐一轉移，支援 AI 吞併 AI 後再由玩家一次收回。
+KYO_transfer_legacy_fragments_to_winner = {
+	if = {
+		limit = { has_country_flag = KYO_legacy_fragment_yakumo }
+		FROM = { set_country_flag = KYO_legacy_fragment_yakumo }
+		clr_country_flag = KYO_legacy_fragment_yakumo
+	}
+	if = {
+		limit = { has_country_flag = KYO_legacy_fragment_remilia }
+		FROM = { set_country_flag = KYO_legacy_fragment_remilia }
+		clr_country_flag = KYO_legacy_fragment_remilia
+	}
+	if = {
+		limit = { has_country_flag = KYO_legacy_fragment_hijiri }
+		FROM = { set_country_flag = KYO_legacy_fragment_hijiri }
+		clr_country_flag = KYO_legacy_fragment_hijiri
+	}
+	if = {
+		limit = { has_country_flag = KYO_legacy_fragment_seija }
+		FROM = { set_country_flag = KYO_legacy_fragment_seija }
+		clr_country_flag = KYO_legacy_fragment_seija
+	}
+
+	if = { limit = { has_country_flag = KYO_civil_role_yakumo } set_global_flag = yakumo_has_dead }
+	if = { limit = { has_country_flag = KYO_civil_role_remilia } set_global_flag = remilia_has_dead }
+	if = { limit = { has_country_flag = KYO_civil_role_hijiri } set_global_flag = hijiri_has_dead }
+	if = { limit = { has_country_flag = KYO_civil_role_seija } set_global_flag = seija_has_dead }
+
+	FROM = {
+		KYO_recount_legacy_fragments = yes
+		KYO_mark_civil_war_unified = yes
+	}
+}
+
+KYO_try_finish_ownerless_barrier = {
+	if = {
+		limit = {
+			has_country_flag = KYO_player_civil_war_faction
+			has_country_flag = KYO_civil_war_unified
+			check_variable = { KYO_yukari_legacy_progress > 5 }
+			NOT = { has_global_flag = KYO_barrier_crisis_permanently_resolved }
+			NOT = { has_country_flag = KYO_ownerless_barrier_finale_started }
+		}
+		set_country_flag = KYO_ownerless_barrier_finale_started
+		
+	}
+}
+
+KYO_finalize_ownerless_barrier = {
+	set_global_flag = KYO_barrier_crisis_permanently_resolved
+	set_country_flag = KYO_ownerless_barrier_completed
+	set_country_flag = KYO_barrier_reconstruction_completed
+	KYO_stop_barrier_missions = yes
+	KYO_clear_barrier_system_ideas = yes
+	remove_ideas = KYO_lunar_interference_penalty
+	add_ideas = KYO_ownerless_barrier
+}

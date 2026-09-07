@@ -1,0 +1,328 @@
+KYO_seija_distribution_init = {
+	if = {
+		limit = { NOT = { has_country_flag = KYO_seija_distribution_unlocked } }
+		set_country_flag = KYO_seija_distribution_unlocked
+		set_variable = { KYO_seija_supplies_total = 5 }
+		set_variable = { KYO_common_youkai_supply = 1 }
+		set_variable = { KYO_human_supply = 1 }
+		set_variable = { KYO_revolutionary_supply = 1 }
+		set_variable = { KYO_opposition_supply = 1 }
+		add_ideas = KYO_reconstruction_command
+	}
+	hidden_effect = {
+		# Always resynchronise the derived counter, including existing saves.
+		KYO_seija_distribution_refresh_all = yes
+	}
+}
+
+KYO_seija_add_total_supply = {
+	#if = {
+	#	limit = { check_variable = { var = KYO_seija_supplies_total value < 15 } }
+	#	add_to_variable = { KYO_seija_supplies_total = 1 }
+	#}
+	add_to_variable = { KYO_seija_supplies_total = 1 }
+}
+
+KYO_seija_add_two_total_supply = {
+	KYO_seija_add_total_supply = yes
+	KYO_seija_add_total_supply = yes
+}
+
+# KYO_seija_supplies_allocated is derived data. Rebuild it from the four
+# allocation variables so it can never desynchronise from the real values.
+KYO_seija_recalculate_allocated_supply = {
+	set_variable = {
+		KYO_seija_supplies_allocated = {
+			value = KYO_common_youkai_supply
+			add = KYO_human_supply
+			add = KYO_revolutionary_supply
+			add = KYO_opposition_supply
+		}
+	}
+}
+
+KYO_seija_remove_distribution_ideas = {
+	hidden_effect = {
+		remove_ideas = KYO_common_youkai_satisfaction_0
+		remove_ideas = KYO_common_youkai_satisfaction_1
+		remove_ideas = KYO_common_youkai_satisfaction_2
+		remove_ideas = KYO_common_youkai_satisfaction_3
+		remove_ideas = KYO_common_youkai_satisfaction_4
+		remove_ideas = KYO_common_youkai_satisfaction_5
+		remove_ideas = KYO_human_satisfaction_0
+		remove_ideas = KYO_human_satisfaction_1
+		remove_ideas = KYO_human_satisfaction_2
+		remove_ideas = KYO_human_satisfaction_3
+		remove_ideas = KYO_human_satisfaction_4
+		remove_ideas = KYO_human_satisfaction_5
+		remove_ideas = KYO_revolutionary_satisfaction_0
+		remove_ideas = KYO_revolutionary_satisfaction_1
+		remove_ideas = KYO_revolutionary_satisfaction_2
+		remove_ideas = KYO_revolutionary_satisfaction_3
+		remove_ideas = KYO_revolutionary_satisfaction_4
+		remove_ideas = KYO_revolutionary_satisfaction_5
+		remove_ideas = KYO_opposition_satisfaction_0
+		remove_ideas = KYO_opposition_satisfaction_1
+		remove_ideas = KYO_opposition_satisfaction_2
+		remove_ideas = KYO_opposition_satisfaction_3
+		remove_ideas = KYO_opposition_satisfaction_4
+		remove_ideas = KYO_opposition_satisfaction_5
+	}
+	
+}
+
+KYO_seija_refresh_common_youkai_idea = {
+	if = {
+		limit = { check_variable = { KYO_common_youkai_supply > 4 } }
+		add_ideas = KYO_common_youkai_satisfaction_5
+	}
+	else_if = {
+		limit = { check_variable = { KYO_common_youkai_supply > 3 } }
+		add_ideas = KYO_common_youkai_satisfaction_4
+	}
+	else_if = {
+		limit = { check_variable = { KYO_common_youkai_supply > 2 } }
+		add_ideas = KYO_common_youkai_satisfaction_3
+	}
+	else_if = {
+		limit = { check_variable = { KYO_common_youkai_supply > 1 } }
+		add_ideas = KYO_common_youkai_satisfaction_2
+	}
+	else_if = {
+		limit = { check_variable = { KYO_common_youkai_supply > 0 } }
+		add_ideas = KYO_common_youkai_satisfaction_1
+	}
+	else = {
+		add_ideas = KYO_common_youkai_satisfaction_0
+	}
+}
+
+KYO_seija_refresh_human_idea = {
+	if = {
+		limit = { check_variable = { KYO_human_supply > 4 } }
+		add_ideas = KYO_human_satisfaction_5
+	}
+	else_if = {
+		limit = { check_variable = { KYO_human_supply > 3 } }
+		add_ideas = KYO_human_satisfaction_4
+	}
+	else_if = {
+		limit = { check_variable = { KYO_human_supply > 2 } }
+		add_ideas = KYO_human_satisfaction_3
+	}
+	else_if = {
+		limit = { check_variable = { KYO_human_supply > 1 } }
+		add_ideas = KYO_human_satisfaction_2
+	}
+	else_if = {
+		limit = { check_variable = { KYO_human_supply > 0 } }
+		add_ideas = KYO_human_satisfaction_1
+	}
+	else = {
+		add_ideas = KYO_human_satisfaction_0
+	}
+}
+
+KYO_seija_refresh_revolutionary_idea = {
+	if = {
+		limit = { check_variable = { KYO_revolutionary_supply > 4 } }
+		add_ideas = KYO_revolutionary_satisfaction_5
+	}
+	else_if = {
+		limit = { check_variable = { KYO_revolutionary_supply > 3 } }
+		add_ideas = KYO_revolutionary_satisfaction_4
+	}
+	else_if = {
+		limit = { check_variable = { KYO_revolutionary_supply > 2 } }
+		add_ideas = KYO_revolutionary_satisfaction_3
+	}
+	else_if = {
+		limit = { check_variable = { KYO_revolutionary_supply > 1 } }
+		add_ideas = KYO_revolutionary_satisfaction_2
+	}
+	else_if = {
+		limit = { check_variable = { KYO_revolutionary_supply > 0 } }
+		add_ideas = KYO_revolutionary_satisfaction_1
+	}
+	else = {
+		add_ideas = KYO_revolutionary_satisfaction_0
+	}
+}
+
+KYO_seija_refresh_opposition_idea = {
+	if = {
+		limit = { check_variable = { KYO_opposition_supply > 4 } }
+		add_ideas = KYO_opposition_satisfaction_5
+	}
+	else_if = {
+		limit = { check_variable = { KYO_opposition_supply > 3 } }
+		add_ideas = KYO_opposition_satisfaction_4
+	}
+	else_if = {
+		limit = { check_variable = { KYO_opposition_supply > 2 } }
+		add_ideas = KYO_opposition_satisfaction_3
+	}
+	else_if = {
+		limit = { check_variable = { KYO_opposition_supply > 1 } }
+		add_ideas = KYO_opposition_satisfaction_2
+	}
+	else_if = {
+		limit = { check_variable = { KYO_opposition_supply > 0 } }
+		add_ideas = KYO_opposition_satisfaction_1
+	}
+	else = {
+		add_ideas = KYO_opposition_satisfaction_0
+	}
+}
+
+KYO_seija_distribution_refresh_all = {
+	KYO_seija_recalculate_allocated_supply = yes
+	KYO_seija_remove_distribution_ideas = yes
+	KYO_seija_refresh_common_youkai_idea = yes
+	KYO_seija_refresh_human_idea = yes
+	KYO_seija_refresh_revolutionary_idea = yes
+	KYO_seija_refresh_opposition_idea = yes
+}
+
+KYO_seija_common_youkai_add_supply = {
+	if = {
+		limit = {
+			KYO_seija_has_free_supply = yes
+			check_variable = { KYO_common_youkai_supply < 5 }
+		}
+		add_to_variable = { KYO_common_youkai_supply = 1 }
+		KYO_seija_distribution_refresh_all = yes
+	}
+}
+
+KYO_seija_human_add_supply = {
+	if = {
+		limit = {
+			KYO_seija_has_free_supply = yes
+			check_variable = { KYO_human_supply < 5 }
+		}
+		add_to_variable = { KYO_human_supply = 1 }
+		KYO_seija_distribution_refresh_all = yes
+	}
+}
+
+KYO_seija_revolutionary_add_supply = {
+	if = {
+		limit = {
+			KYO_seija_has_free_supply = yes
+			check_variable = { KYO_revolutionary_supply < 5 }
+		}
+		add_to_variable = { KYO_revolutionary_supply = 1 }
+		KYO_seija_distribution_refresh_all = yes
+	}
+}
+
+KYO_seija_opposition_add_supply = {
+	if = {
+		limit = {
+			KYO_seija_has_free_supply = yes
+			check_variable = { KYO_opposition_supply < 5 }
+		}
+		add_to_variable = { KYO_opposition_supply = 1 }
+		KYO_seija_distribution_refresh_all = yes
+	}
+}
+
+KYO_seija_common_youkai_remove_supply = {
+	if = {
+		limit = { check_variable = { KYO_common_youkai_supply > 0 } }
+		add_to_variable = { KYO_common_youkai_supply = -1 }
+		KYO_seija_distribution_refresh_all = yes
+	}
+}
+
+KYO_seija_human_remove_supply = {
+	if = {
+		limit = { check_variable = { KYO_human_supply > 0 } }
+		add_to_variable = { KYO_human_supply = -1 }
+		KYO_seija_distribution_refresh_all = yes
+	}
+}
+
+KYO_seija_revolutionary_remove_supply = {
+	if = {
+		limit = { check_variable = { KYO_revolutionary_supply > 0 } }
+		add_to_variable = { KYO_revolutionary_supply = -1 }
+		KYO_seija_distribution_refresh_all = yes
+	}
+}
+
+KYO_seija_opposition_remove_supply = {
+	if = {
+		limit = { check_variable = { KYO_opposition_supply > 0 } }
+		add_to_variable = { KYO_opposition_supply = -1 }
+		KYO_seija_distribution_refresh_all = yes
+	}
+}
+
+KYO_seija_transfer_common_youkai_to_humans = {
+	if = {
+		limit = {
+			check_variable = { KYO_common_youkai_supply > 0 }
+			check_variable = { KYO_human_supply < 5 }
+		}
+		add_to_variable = { KYO_common_youkai_supply = -1 }
+		add_to_variable = { KYO_human_supply = 1 }
+		KYO_seija_distribution_refresh_all = yes
+	}
+}
+
+KYO_seija_transfer_humans_to_common_youkai = {
+	if = {
+		limit = {
+			check_variable = { KYO_human_supply > 0 }
+			check_variable = { KYO_common_youkai_supply < 5 }
+		}
+		add_to_variable = { KYO_human_supply = -1 }
+		add_to_variable = { KYO_common_youkai_supply = 1 }
+		KYO_seija_distribution_refresh_all = yes
+	}
+}
+
+KYO_seija_transfer_revolutionaries_to_opposition = {
+	if = {
+		limit = {
+			check_variable = { KYO_revolutionary_supply > 0 }
+			check_variable = { KYO_opposition_supply < 5 }
+		}
+		add_to_variable = { KYO_revolutionary_supply = -1 }
+		add_to_variable = { KYO_opposition_supply = 1 }
+		KYO_seija_distribution_refresh_all = yes
+	}
+}
+
+KYO_seija_transfer_opposition_to_revolutionaries = {
+	if = {
+		limit = {
+			check_variable = { KYO_opposition_supply > 0 }
+			check_variable = { KYO_revolutionary_supply < 5 }
+		}
+		add_to_variable = { KYO_opposition_supply = -1 }
+		add_to_variable = { KYO_revolutionary_supply = 1 }
+		KYO_seija_distribution_refresh_all = yes
+	}
+}
+
+KYO_seija_monthly_bad_event_check = {
+	if = {
+		limit = {
+			has_country_flag = KYO_seija_distribution_unlocked
+			OR = {
+				check_variable = { KYO_common_youkai_supply < 2 }
+				check_variable = { KYO_human_supply < 2 }
+				check_variable = { KYO_revolutionary_supply < 2 }
+				check_variable = { KYO_opposition_supply < 2 }
+			}
+		}
+		random_list = {
+			35 = { country_event = kyo_seija_distribution.20 }
+			35 = { country_event = kyo_seija_distribution.21 }
+			30 = { country_event = kyo_seija_distribution.22 }
+		}
+	}
+}

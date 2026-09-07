@@ -1,0 +1,68 @@
+# Rebuilt direct-variable favor system triggers.
+
+KYO_cws_system_is_active = {
+	has_country_flag = KYO_cws_system_active
+	has_country_flag = KYO_player_civil_war_faction
+	has_country_flag = KYO_four_way_civil_war_started
+	NOT = { has_country_flag = KYO_civil_war_unified }
+	NOT = { has_global_flag = KYO_four_way_civil_war_over }
+	is_ai = no
+}
+
+KYO_cws_yakumo_is_active = {
+	any_country = {
+			has_country_flag = KYO_civil_role_yakumo
+			exists = yes
+			has_capitulated = no
+		}
+}
+
+KYO_cws_yakumo_is_enemy = {
+	KYO_cws_yakumo_is_active = yes
+	NOT = { has_country_flag = KYO_civil_role_yakumo }
+}
+
+KYO_cws_remilia_is_active = {
+	any_country = {
+			has_country_flag = KYO_civil_role_remilia
+			exists = yes
+			has_capitulated = no
+		}
+}
+
+KYO_cws_remilia_is_enemy = {
+	KYO_cws_remilia_is_active = yes
+	NOT = { has_country_flag = KYO_civil_role_remilia }
+}
+
+KYO_cws_hijiri_is_active = {
+	any_country = {
+			has_country_flag = KYO_civil_role_hijiri
+			exists = yes
+			has_capitulated = no
+		}
+}
+
+KYO_cws_hijiri_is_enemy = {
+	KYO_cws_hijiri_is_active = yes
+	NOT = { has_country_flag = KYO_civil_role_hijiri }
+}
+
+KYO_cws_seija_is_active = {
+	any_country = {
+			has_country_flag = KYO_civil_role_seija
+			exists = yes
+			has_capitulated = no
+		}
+}
+
+KYO_cws_seija_is_enemy = {
+	KYO_cws_seija_is_active = yes
+	NOT = { has_country_flag = KYO_civil_role_seija }
+}
+
+KYO_cws_legacy_decisions_available = {
+	KYO_cws_system_is_active = yes
+	check_variable = { var = KYO_cws_support_seats value > 2 }
+	NOT = { has_country_flag = KYO_cws_legacy_has_holder }
+}

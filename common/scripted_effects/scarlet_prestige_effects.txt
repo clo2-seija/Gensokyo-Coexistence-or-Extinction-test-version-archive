@@ -1,0 +1,158 @@
+# Scarlet Mansion prestige system
+# Variables (country scope):
+#  - scarlet_prestige_sakuya
+#  - scarlet_prestige_meiling
+#  - scarlet_prestige_remilia
+#  - scarlet_prestige_flandre
+#  - scarlet_prestige_patchouli
+#
+# Threshold rule (hardcoded): difference >= 3 triggers dominant/neglected.
+
+scarlet_prestige_add_sakuya = {
+	add_to_variable = { scarlet_prestige_sakuya = 1 }
+	scarlet_prestige_update = yes
+}
+scarlet_prestige_add_meiling = {
+	add_to_variable = { scarlet_prestige_meiling = 1 }
+	scarlet_prestige_update = yes
+}
+scarlet_prestige_add_remilia = {
+	add_to_variable = { scarlet_prestige_remilia = 1 }
+	scarlet_prestige_update = yes
+}
+scarlet_prestige_add_flandre = {
+	add_to_variable = { scarlet_prestige_flandre = 1 }
+	scarlet_prestige_update = yes
+}
+scarlet_prestige_add_patchouli = {
+	add_to_variable = { scarlet_prestige_patchouli = 1 }
+	scarlet_prestige_update = yes
+}
+
+# Re-evaluate all buffs/debuffs based on current prestige spread.
+scarlet_prestige_update = {
+	# --- compute +3 thresholds (temp vars) ---
+	set_variable = { scarlet_prestige_sakuya_th = var:scarlet_prestige_sakuya }
+	add_to_variable = { scarlet_prestige_sakuya_th = 3 }
+	set_variable = { scarlet_prestige_meiling_th = var:scarlet_prestige_meiling }
+	add_to_variable = { scarlet_prestige_meiling_th = 3 }
+	set_variable = { scarlet_prestige_remilia_th = var:scarlet_prestige_remilia }
+	add_to_variable = { scarlet_prestige_remilia_th = 3 }
+	set_variable = { scarlet_prestige_flandre_th = var:scarlet_prestige_flandre }
+	add_to_variable = { scarlet_prestige_flandre_th = 3 }
+	set_variable = { scarlet_prestige_patchouli_th = var:scarlet_prestige_patchouli }
+	add_to_variable = { scarlet_prestige_patchouli_th = 3 }
+
+	# --- clear all old states first ---
+	remove_ideas = scarlet_prestige_sakuya_dominant
+	remove_ideas = scarlet_prestige_sakuya_neglected
+	remove_ideas = scarlet_prestige_meiling_dominant
+	remove_ideas = scarlet_prestige_meiling_neglected
+	remove_ideas = scarlet_prestige_remilia_dominant
+	remove_ideas = scarlet_prestige_remilia_neglected
+	remove_ideas = scarlet_prestige_flandre_dominant
+	remove_ideas = scarlet_prestige_flandre_neglected
+	remove_ideas = scarlet_prestige_patchouli_dominant
+	remove_ideas = scarlet_prestige_patchouli_neglected
+
+	# --- Dominant checks (one stands >=3 above all others) ---
+	if = {
+		limit = {
+			check_variable = { var = scarlet_prestige_sakuya value > var:scarlet_prestige_meiling_th }
+			check_variable = { var = scarlet_prestige_sakuya value > var:scarlet_prestige_remilia_th }
+			check_variable = { var = scarlet_prestige_sakuya value > var:scarlet_prestige_flandre_th }
+			check_variable = { var = scarlet_prestige_sakuya value > var:scarlet_prestige_patchouli_th }
+		}
+		add_ideas = scarlet_prestige_sakuya_dominant
+	}
+	if = {
+		limit = {
+			check_variable = { var = scarlet_prestige_meiling value > var:scarlet_prestige_sakuya_th }
+			check_variable = { var = scarlet_prestige_meiling value > var:scarlet_prestige_remilia_th }
+			check_variable = { var = scarlet_prestige_meiling value > var:scarlet_prestige_flandre_th }
+			check_variable = { var = scarlet_prestige_meiling value > var:scarlet_prestige_patchouli_th }
+		}
+		add_ideas = scarlet_prestige_meiling_dominant
+	}
+	if = {
+		limit = {
+			check_variable = { var = scarlet_prestige_remilia value > var:scarlet_prestige_sakuya_th }
+			check_variable = { var = scarlet_prestige_remilia value > var:scarlet_prestige_meiling_th }
+			check_variable = { var = scarlet_prestige_remilia value > var:scarlet_prestige_flandre_th }
+			check_variable = { var = scarlet_prestige_remilia value > var:scarlet_prestige_patchouli_th }
+		}
+		add_ideas = scarlet_prestige_remilia_dominant
+	}
+	if = {
+		limit = {
+			check_variable = { var = scarlet_prestige_flandre value > var:scarlet_prestige_sakuya_th }
+			check_variable = { var = scarlet_prestige_flandre value > var:scarlet_prestige_meiling_th }
+			check_variable = { var = scarlet_prestige_flandre value > var:scarlet_prestige_remilia_th }
+			check_variable = { var = scarlet_prestige_flandre value > var:scarlet_prestige_patchouli_th }
+		}
+		add_ideas = scarlet_prestige_flandre_dominant
+	}
+	if = {
+		limit = {
+			check_variable = { var = scarlet_prestige_patchouli value > var:scarlet_prestige_sakuya_th }
+			check_variable = { var = scarlet_prestige_patchouli value > var:scarlet_prestige_meiling_th }
+			check_variable = { var = scarlet_prestige_patchouli value > var:scarlet_prestige_remilia_th }
+			check_variable = { var = scarlet_prestige_patchouli value > var:scarlet_prestige_flandre_th }
+		}
+		add_ideas = scarlet_prestige_patchouli_dominant
+	}
+
+	# --- Neglected checks (one is >=3 below all others) ---
+	if = {
+		limit = {
+			check_variable = { var = scarlet_prestige_meiling value > var:scarlet_prestige_sakuya_th }
+			check_variable = { var = scarlet_prestige_remilia value > var:scarlet_prestige_sakuya_th }
+			check_variable = { var = scarlet_prestige_flandre value > var:scarlet_prestige_sakuya_th }
+			check_variable = { var = scarlet_prestige_patchouli value > var:scarlet_prestige_sakuya_th }
+		}
+		add_ideas = scarlet_prestige_sakuya_neglected
+	}
+	if = {
+		limit = {
+			check_variable = { var = scarlet_prestige_sakuya value > var:scarlet_prestige_meiling_th }
+			check_variable = { var = scarlet_prestige_remilia value > var:scarlet_prestige_meiling_th }
+			check_variable = { var = scarlet_prestige_flandre value > var:scarlet_prestige_meiling_th }
+			check_variable = { var = scarlet_prestige_patchouli value > var:scarlet_prestige_meiling_th }
+		}
+		add_ideas = scarlet_prestige_meiling_neglected
+	}
+	if = {
+		limit = {
+			check_variable = { var = scarlet_prestige_sakuya value > var:scarlet_prestige_remilia_th }
+			check_variable = { var = scarlet_prestige_meiling value > var:scarlet_prestige_remilia_th }
+			check_variable = { var = scarlet_prestige_flandre value > var:scarlet_prestige_remilia_th }
+			check_variable = { var = scarlet_prestige_patchouli value > var:scarlet_prestige_remilia_th }
+		}
+		add_ideas = scarlet_prestige_remilia_neglected
+	}
+	if = {
+		limit = {
+			check_variable = { var = scarlet_prestige_sakuya value > var:scarlet_prestige_flandre_th }
+			check_variable = { var = scarlet_prestige_meiling value > var:scarlet_prestige_flandre_th }
+			check_variable = { var = scarlet_prestige_remilia value > var:scarlet_prestige_flandre_th }
+			check_variable = { var = scarlet_prestige_patchouli value > var:scarlet_prestige_flandre_th }
+		}
+		add_ideas = scarlet_prestige_flandre_neglected
+	}
+	if = {
+		limit = {
+			check_variable = { var = scarlet_prestige_sakuya value > var:scarlet_prestige_patchouli_th }
+			check_variable = { var = scarlet_prestige_meiling value > var:scarlet_prestige_patchouli_th }
+			check_variable = { var = scarlet_prestige_remilia value > var:scarlet_prestige_patchouli_th }
+			check_variable = { var = scarlet_prestige_flandre value > var:scarlet_prestige_patchouli_th }
+		}
+		add_ideas = scarlet_prestige_patchouli_neglected
+	}
+
+	# Optional cleanup of temp vars (safe to keep, but we clear to reduce save clutter)
+	clear_variable = scarlet_prestige_sakuya_th
+	clear_variable = scarlet_prestige_meiling_th
+	clear_variable = scarlet_prestige_remilia_th
+	clear_variable = scarlet_prestige_flandre_th
+	clear_variable = scarlet_prestige_patchouli_th
+}

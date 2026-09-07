@@ -1,0 +1,96 @@
+# KYO 第一次人妖大戰 v0.9 — 共用觸發
+# 所有數值門檻集中在此，方便後續平衡調整。
+
+KYO_hyakki_military_committee_ready = {
+	check_variable = {
+		KYO_fulfillment_military_committee > 49
+	}
+}
+
+KYO_hyakki_faith_committee_ready = {
+	check_variable = {
+		KYO_fulfillment_faith_committee > 49
+	}
+}
+
+KYO_hyakki_mobilization_committee_ready = {
+	check_variable = {
+		KYO_fulfillment_mobilization_committee > 49
+	}
+}
+
+KYO_hyakki_all_committees_ready = {
+	KYO_hyakki_military_committee_ready = yes
+	KYO_hyakki_faith_committee_ready = yes
+	KYO_hyakki_mobilization_committee_ready = yes
+}
+
+KYO_hyakki_military_support_available = {
+	check_variable = {
+		KYO_fulfillment_military_committee > 24
+	}
+}
+
+KYO_hyakki_faith_support_available = {
+	check_variable = {
+		KYO_fulfillment_faith_committee > 24
+	}
+}
+
+KYO_hyakki_mobilization_support_available = {
+	check_variable = {
+		KYO_fulfillment_mobilization_committee > 24
+	}
+}
+
+KYO_has_war_bloc_leader = {
+	OR = {
+		has_country_flag = KYO_war_leader_remilia
+		has_country_flag = KYO_war_leader_yuyuko
+		has_country_flag = KYO_war_leader_suika
+		has_country_flag = KYO_war_leader_yuuka
+	}
+}
+
+
+KYO_has_order_bloc_leader = {
+	OR = {
+		has_country_flag = KYO_order_leader_byakuren
+		has_country_flag = KYO_order_leader_kanako
+		has_country_flag = KYO_order_leader_satori
+		has_country_flag = KYO_order_leader_megumu
+	}
+}
+
+
+KYO_has_network_bloc_leader = {
+	OR = {
+		has_country_flag = KYO_network_leader_sekibanki
+		has_country_flag = KYO_network_leader_eirin
+		has_country_flag = KYO_network_leader_raiko
+		has_country_flag = KYO_network_leader_eiki
+	}
+}
+
+
+KYO_lunar_interference_visible = {
+	check_variable = {
+		KYO_lunar_evidence > 2
+	}
+}
+
+KYO_lunar_targeting_network_identified = {
+	check_variable = {
+		KYO_lunar_evidence > 4
+	}
+}
+
+KYO_yukari_survival_ready = {
+	check_variable = {
+		KYO_lunar_evidence > 3
+	}
+
+	check_variable = {
+		KYO_ritual_protection > 1
+	}
+}

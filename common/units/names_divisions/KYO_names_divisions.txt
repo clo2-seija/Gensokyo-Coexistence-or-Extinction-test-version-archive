@@ -1,0 +1,462 @@
+﻿### Gensokyo: Coexistence or Extinction
+### Division name groups for KYO and its civil-war successors.
+### Target path: common/units/names_divisions/KYO_names_divisions.txt
+###
+### Assign these groups explicitly with division_names_group in each template.
+### The can_use trigger keeps them available to KYO-derived civil-war countries.
+
+##############################
+### PRE-CIVIL-WAR GENSOKYO  ###
+##############################
+
+KYO_GENSOKYO_INF_01 = {
+	name = "百妖联军"
+
+	can_use = {
+		OR = {
+			tag = KYO
+			original_tag = KYO
+		}
+	}
+
+	for_countries = {
+		KYO 
+	}
+
+	division_types = {
+		"infantry"
+		"KYO_youkai_beast_battalion"
+		"KYO_fairy_battalion"
+	}
+
+	fallback_name = "第%d百妖联军"
+
+	ordered = {
+		1 = { "第一百妖联军「博丽」" }
+		2 = { "第二百妖联军「妖怪山」" }
+		3 = { "第三百妖联军「迷途竹林」" }
+		4 = { "第四百妖联军「旧地狱」" }
+		5 = { "第五百妖联军「人里」" }
+		6 = { "第六百妖联军「红魔湖」" }
+		7 = { "第七百妖联军「冥界」" }
+		8 = { "第八百妖联军「彼岸」" }
+		9 = { "第九百妖联军「太阳花田」" }
+		10 = { "第十百妖联军「魔法森林」" }
+		11 = { "幻想乡联合守备队" }
+		12 = { "百妖协议军务整编队" }
+	}
+}
+
+KYO_GENSOKYO_SPECIAL_01 = {
+	name = "幻想乡特殊战斗群"
+
+	can_use = {
+		OR = {
+			tag = KYO
+			original_tag = KYO
+		}
+	}
+
+	for_countries = {
+		KYO 
+	}
+
+	division_types = {
+		"mountaineers"
+		"marine"
+		"paratrooper"
+		"KYO_white_wolf_tengu_battlegroup"
+	}
+
+	fallback_name = "第%d幻想乡特殊战斗群"
+
+	ordered = {
+		1 = { "白狼天狗战斗群「天魔」" }
+		2 = { "博丽神社直卫队" }
+		3 = { "妖怪山快速反应队" }
+		4 = { "迷途竹林夜行队" }
+		5 = { "旧都地脉挺进队" }
+		6 = { "冥界渡航警备队" }
+		7 = { "红魔湖夜战队" }
+		8 = { "彼岸境界监视队" }
+	}
+}
+
+##############################
+###       YAKUMO YUKARI    ###
+###       正统日本语       ###
+##############################
+
+KYO_YUKARI_INF_01 = {
+	name = "幻想郷守備師団"
+
+	can_use = {
+		OR = {
+			tag = KYO
+			original_tag = KYO
+		}
+	}
+
+	for_countries = {
+		KYO 
+	}
+
+	division_types = {
+		"infantry"
+		"KYO_youkai_beast_battalion"
+		"KYO_ghost_battalion"
+	}
+
+	fallback_name = "第%d幻想郷守備師団"
+
+	ordered = {
+		1 = { "第一境界守備師団" }
+		2 = { "第二幻想郷警備師団" }
+		3 = { "第三博麗鎮護師団" }
+		4 = { "第四妖怪山守備師団" }
+		5 = { "第五迷いの竹林守備隊" }
+		6 = { "第六旧都鎮撫師団" }
+		7 = { "第七冥界境衛師団" }
+		8 = { "第八彼岸監視師団" }
+		9 = { "第九人里防衛師団" }
+		10 = { "第十夢幻守備師団" }
+		11 = { "幻想郷中央警備師団" }
+		12 = { "大結界常備守護隊" }
+	}
+}
+
+KYO_YUKARI_SF_01 = {
+	name = "境界特殊戦闘団"
+
+	can_use = {
+		OR = {
+			tag = KYO
+			original_tag = KYO
+		}
+	}
+
+	for_countries = {
+		KYO 
+	}
+
+	division_types = {
+		"mountaineers"
+		"marine"
+		"paratrooper"
+		"KYO_white_wolf_tengu_battlegroup"
+	}
+
+	fallback_name = "第%d境界特殊戦闘団"
+
+	ordered = {
+		1 = { "境界機動群「紫苑」" }
+		2 = { "隙間挺進隊「神隠し」" }
+		3 = { "白狼天狗戦闘団「天魔」" }
+		4 = { "博麗直衛隊「夢違」" }
+		5 = { "遠野境界猟兵団" }
+		6 = { "幻想郷山岳挺身隊" }
+		7 = { "冥界渡航戦闘団「幽明」" }
+		8 = { "八雲式神近衛団" }
+		9 = { "大結界空挺守護隊" }
+		10 = { "外縁境界強襲隊「夢現」" }
+	}
+}
+
+KYO_YUKARI_MOBILE_01 = {
+	name = "八雲機動師団"
+
+	can_use = {
+		OR = {
+			tag = KYO
+			original_tag = KYO
+		}
+	}
+
+	for_countries = {
+		KYO 
+	}
+
+	division_types = {
+		"motorized"
+		"mechanized"
+		"KYO_tsukumogami_motorized_battalion"
+		"KYO_beast_spirit_mechanized_battalion"
+	}
+
+	fallback_name = "第%d八雲機動師団"
+
+	ordered = {
+		1 = { "第一隙間機動師団" }
+		2 = { "付喪神機甲歩兵団「百器」" }
+		3 = { "畜生霊突撃師団「獣王」" }
+		4 = { "幽霊快速師団「夜行」" }
+		5 = { "妖怪山疾風機動団" }
+		6 = { "境界追跡隊「千里眼」" }
+		7 = { "八雲連絡機動隊" }
+		8 = { "幻想郷外縁巡察団" }
+		9 = { "大結界緊急展開隊" }
+		10 = { "迷途竹林快速救援隊" }
+	}
+}
+
+##############################
+###     REMILIA SCARLET     ###
+### Deutsch / Gaeilge / 中文 / English
+##############################
+
+KYO_REMILIA_INF_01 = {
+	name = "Scarlet Line Divisions"
+
+	can_use = {
+		OR = {
+			tag = KYO
+			original_tag = KYO
+		}
+	}
+
+	for_countries = {
+		KYO 
+	}
+
+	division_types = {
+		"infantry"
+		"KYO_blood_spawn_battalion"
+		"KYO_youkai_beast_battalion"
+	}
+
+	fallback_name = "Scharlachrote Division Nr. %d"
+
+	ordered = {
+		1 = { "1. Scharlachrote Garde-Division" } # Deutsch
+		2 = { "Scarlet Household Guard" } # English
+		3 = { "Briogáid na hOíche Deirge" } # Gaeilge
+		4 = { "绯红禁卫师" } # 中文
+		5 = { "Nachtjäger-Division" } # Deutsch
+		6 = { "Crimson Crown Division" } # English
+		7 = { "Gardaí na Gealaí Fola" } # Gaeilge
+		8 = { "血月守备军" } # 中文
+		9 = { "Kampfgruppe Blutmond" } # Deutsch
+		10 = { "The Devil's Own Regiment" } # English
+		11 = { "Clann an Róis Dheirg" } # Gaeilge
+		12 = { "猩红长夜军" } # 中文
+		13 = { "Dämmerungswacht-Division" } # Deutsch
+		14 = { "Midnight Household Regiment" } # English
+		15 = { "Briogáid na Sciathán Dubh" } # Gaeilge
+		16 = { "红魔馆常备军" } # 中文
+	}
+}
+
+KYO_REMILIA_MOT_01 = {
+	name = "Scarlet Mobile Formations"
+
+	can_use = {
+		OR = {
+			tag = KYO
+			original_tag = KYO
+		}
+	}
+
+	for_countries = {
+		KYO 
+	}
+
+	division_types = {
+		"motorized"
+		"mechanized"
+		"KYO_tsukumogami_motorized_battalion"
+		"KYO_beast_spirit_mechanized_battalion"
+	}
+
+	fallback_name = "Motorisierte Kampfgruppe Nr. %d"
+
+	ordered = {
+		1 = { "1. Scharlachrote Panzergrenadier-Division" } # Deutsch
+		2 = { "Midnight Motor Brigade" } # English
+		3 = { "Briogáid Mhótair na Fola" } # Gaeilge
+		4 = { "赤夜机动军" } # 中文
+		5 = { "Kampfgruppe Nachtwind" } # Deutsch
+		6 = { "Blood Moon Lancers" } # English
+		7 = { "Marcra na Gealaí Fola" } # Gaeilge
+		8 = { "绯红疾行旅" } # 中文
+		9 = { "Schnelle Brigade Gungnir" } # Deutsch
+		10 = { "Scarlet Lightning Column" } # English
+		11 = { "Conair Dhearg" } # Gaeilge: The Red Road
+		12 = { "夜枪突击纵队" } # 中文
+		13 = { "Mechanisierte Gruppe Walpurgis" } # Deutsch
+		14 = { "Crimson Road Vanguard" } # English
+		15 = { "Ridirí na hOíche" } # Gaeilge
+		16 = { "血色王冠机动团" } # 中文
+	}
+}
+
+KYO_REMILIA_ELITE_01 = {
+	name = "Scarlet Elite Guard"
+
+	can_use = {
+		OR = {
+			tag = KYO
+			original_tag = KYO
+		}
+	}
+
+	for_countries = {
+		KYO 
+	}
+
+	division_types = {
+		"mountaineers"
+		"paratrooper"
+		"KYO_white_wolf_tengu_battlegroup"
+	}
+
+	fallback_name = "Leibgarde-Bataillon Nr. %d"
+
+	ordered = {
+		1 = { "Leibgarde der Scharlachroten Herrin" } # Deutsch
+		2 = { "Her Majesty's Midnight Guard" } # English
+		3 = { "Garda Oíche na Bantiarna Rua" } # Gaeilge
+		4 = { "红魔馆御前近卫队" } # 中文
+		5 = { "Flügel der Finsternis" } # Deutsch
+		6 = { "Royal Scarlet Lancers" } # English
+		7 = { "Sciatháin Dhubha na Banríona" } # Gaeilge
+		8 = { "绯色王冠骑士团" } # 中文
+		9 = { "Kampfgruppe Gungnir" } # Deutsch
+		10 = { "The Walpurgis Night Guard" } # English
+		11 = { "Laochra na Gealaí Deirge" } # Gaeilge
+		12 = { "永夜恶魔亲卫军" } # 中文
+	}
+}
+
+##############################
+###      HIJIRI BYAKUREN    ###
+###       佛偈与法名        ###
+##############################
+
+KYO_BYAKUREN_INF_01 = {
+	name = "护法众"
+
+	can_use = {
+		OR = {
+			tag = KYO
+			original_tag = KYO
+		}
+	}
+
+	for_countries = {
+		KYO 
+	}
+
+	division_types = {
+		"infantry"
+		"KYO_fairy_battalion"
+		"KYO_youkai_beast_battalion"
+	}
+
+	fallback_name = "第%d护法众"
+
+	ordered = {
+		1 = { "护法军「诸行无常」" }
+		2 = { "护法军「诸法无我」" }
+		3 = { "护法军「涅槃寂静」" }
+		4 = { "莲华众「色即是空」" }
+		5 = { "莲华众「空即是色」" }
+		6 = { "持戒众「心无挂碍」" }
+		7 = { "慈航众「照见五蕴皆空」" }
+		8 = { "彼岸行「远离颠倒梦想」" }
+		9 = { "无畏众「应无所住」" }
+		10 = { "同愿众「众生无边誓愿度」" }
+		11 = { "精进众「烦恼无尽誓愿断」" }
+		12 = { "闻法众「法门无量誓愿学」" }
+		13 = { "菩提众「佛道无上誓愿成」" }
+		14 = { "如幻众「一切有为法」" }
+		15 = { "寂照众「不生不灭」" }
+		16 = { "平等众「怨亲无别」" }
+	}
+}
+
+KYO_BYAKUREN_ART_01 = {
+	name = "法轮火力众"
+
+	can_use = {
+		OR = {
+			tag = KYO
+			original_tag = KYO
+		}
+	}
+
+	for_countries = {
+		KYO 
+	}
+
+	division_types = {
+		"artillery_brigade"
+		"anti_air_brigade"
+		"anti_tank_brigade"
+		"rocket_artillery_brigade"
+		"KYO_wind_magician_battalion"
+		"KYO_fire_magician_battalion"
+		"KYO_lightning_magician_battalion"
+		"KYO_water_magician_battalion"
+	}
+
+	fallback_name = "第%d法轮火力众"
+
+	ordered = {
+		1 = { "明王火力众「不动」" }
+		2 = { "明王火力众「降三世」" }
+		3 = { "金刚炮战队「摧破无明」" }
+		4 = { "法雷众「如狮子吼」" }
+		5 = { "业火众「烧尽烦恼薪」" }
+		6 = { "甘露炮战团「法雨普润」" }
+		7 = { "宝塔火力群「光明遍照」" }
+		8 = { "莲华炮阵「一念三千」" }
+		9 = { "般若火力众「破诸邪见」" }
+		10 = { "无量光炮战团" }
+		11 = { "忿怒尊破阵队" }
+		12 = { "金刚夜叉镇护团" }
+	}
+}
+
+KYO_BYAKUREN_MOBILE_01 = {
+	name = "行脚护法团"
+
+	can_use = {
+		OR = {
+			tag = KYO
+			original_tag = KYO
+		}
+	}
+
+	for_countries = {
+		KYO 
+	}
+
+	division_types = {
+		"motorized"
+		"mechanized"
+		"KYO_tsukumogami_motorized_battalion"
+		"KYO_beast_spirit_mechanized_battalion"
+	}
+
+	fallback_name = "第%d行脚护法团"
+
+	ordered = {
+		1 = { "疾行众「行深般若」" }
+		2 = { "游方众「不住此岸」" }
+		3 = { "六道巡行众" }
+		4 = { "慈航机动队" }
+		5 = { "宝船护法团" }
+		6 = { "风轮疾走众" }
+		7 = { "狮子奋迅队" }
+		8 = { "无碍行军" }
+		9 = { "一切处行" }
+		10 = { "莲台远征众" }
+		11 = { "精进波罗蜜机动团" }
+		12 = { "到彼岸快速救援队" }
+	}
+}
+
+##############################
+###        KIJIN SEIJA      ###
+###        共产国际军        ###
+##############################

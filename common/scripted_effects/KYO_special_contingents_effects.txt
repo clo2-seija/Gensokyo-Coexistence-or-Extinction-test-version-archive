@@ -1,0 +1,332 @@
+# 八雲紫路線：百妖協議特殊編制部隊
+# 這些編制在 KYO_future_start 前保持鎖定；該國策會統一解鎖。
+
+KYO_spawn_eientei_contingent = {
+	custom_effect_tooltip = KYO_spawn_eientei_contingent_tt
+	set_technology = { tech_field_hospital = 1 }
+	division_template = {
+		name = "Eientei Medical Guard"
+		division_names_group = KYO_GENSOKYO_INF_01
+		is_locked = yes
+		force_allow_recruiting = no
+		regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 0 y = 2 }
+			infantry = { x = 1 y = 0 }
+			infantry = { x = 1 y = 1 }
+			infantry = { x = 1 y = 2 }
+			infantry = { x = 2 y = 0 }
+			infantry = { x = 2 y = 1 }
+			infantry = { x = 2 y = 2 }
+		}
+		support = {
+			field_hospital = { x = 0 y = 0 }
+			artillery = { x = 0 y = 1 }
+		}
+	}
+	capital_scope = {
+		create_unit = {
+			division = "division_template = \"Eientei Medical Guard\" start_experience_factor = 0.6 start_equipment_factor = 1.0"
+			owner = ROOT
+			count = 3
+		}
+	}
+}
+
+KYO_spawn_human_village_contingent = {
+	custom_effect_tooltip = KYO_spawn_human_village_contingent_tt
+	division_template = {
+		name = "Human Watcher"
+		division_names_group = KYO_GENSOKYO_INF_01
+		is_locked = yes
+		force_allow_recruiting = no
+		regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 0 y = 2 }
+			infantry = { x = 1 y = 0 }
+			infantry = { x = 1 y = 1 }
+			infantry = { x = 1 y = 2 }
+			infantry = { x = 2 y = 0 }
+			infantry = { x = 2 y = 1 }
+			infantry = { x = 2 y = 2 }
+		}
+		support = {
+			engineer = { x = 0 y = 0 }
+			mot_recon = { x = 0 y = 1 }
+			signal_company = { x = 0 y = 2 }
+			anti_air = { x = 0 y = 3 }
+			anti_tank = { x = 0 y = 4 }
+		}
+	}
+	capital_scope = {
+		create_unit = {
+			division = "division_template = \"Human Watcher\" start_experience_factor = 0.35 start_equipment_factor = 0.9"
+			owner = ROOT
+			count = 5
+		}
+	}
+}
+
+KYO_spawn_tengu_contingent = {
+	custom_effect_tooltip = KYO_spawn_tengu_contingent_tt
+	set_technology = {
+
+		paratroopers = 1
+		iw_small_airframe = 1	
+		
+	}
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+		create_equipment_variant = {
+			name = "Tengu Type-0 Gale"
+			allow_without_tech = yes
+			type = small_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+		add_equipment_to_stockpile = {
+			type = small_plane_airframe_0
+			variant_name = "Tengu Type-0 Gale"
+			amount = 120
+			producer = KYO
+		}
+	}
+	else = {
+		add_equipment_to_stockpile = {
+			type = fighter_equipment_0
+			amount = 120
+			producer = KYO
+		}
+	}
+	add_equipment_to_stockpile = {
+		type = transport_plane_equipment
+		amount = 24
+		producer = KYO
+	}
+	division_template = {
+		name = "Tengu Airborne Vanguard"
+		division_names_group = KYO_YUKARI_SF_01
+		is_locked = yes
+		force_allow_recruiting = no
+		regiments = {
+			paratrooper = { x = 0 y = 0 }
+			paratrooper = { x = 0 y = 1 }
+			paratrooper = { x = 0 y = 2 }
+			paratrooper = { x = 0 y = 3 }
+			paratrooper = { x = 1 y = 0 }
+			paratrooper = { x = 1 y = 1 }
+			paratrooper = { x = 1 y = 2 }
+			paratrooper = { x = 1 y = 3 }
+		}
+		support = {
+		
+		}
+	}
+	capital_scope = {
+		create_unit = {
+			division = "division_template = \"Tengu Airborne Vanguard\" start_experience_factor = 0.75 start_equipment_factor = 1.0"
+			owner = ROOT
+			count = 3
+		}
+	}
+}
+
+KYO_spawn_kappa_contingent = {
+	custom_effect_tooltip = KYO_spawn_kappa_contingent_tt
+	set_technology = { motorised_infantry = 1 }
+	if = {
+		limit = { has_dlc = "No Step Back" }
+		set_technology = { basic_light_tank_chassis = 1 }
+		create_equipment_variant = {
+			name = "Kappa Type-1 Water Strider"
+			allow_without_tech = yes
+			type = light_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_small_cannon_2
+				turret_type_slot = tank_light_two_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 3
+				tank_nsb_armor_upgrade = 1
+			}
+		}
+		add_equipment_to_stockpile = {
+			type = light_tank_chassis_1
+			variant_name = "Kappa Type-1 Water Strider"
+			amount = 240
+			producer = KYO
+		}
+	}
+	else = {
+		set_technology = { basic_light_tank = 1 }
+		add_equipment_to_stockpile = {
+			type = light_tank_equipment_1
+			amount = 240
+			producer = KYO
+		}
+	}
+	division_template = {
+		name = "Kappa Armored Engineers"
+		division_names_group = KYO_GENSOKYO_INF_01
+		is_locked = yes
+		force_allow_recruiting = no
+		regiments = {
+			light_armor = { x = 0 y = 0 }
+			light_armor = { x = 0 y = 1 }
+			light_armor = { x = 1 y = 0 }
+			light_armor = { x = 1 y = 1 }
+			motorized = { x = 2 y = 0 }
+			motorized = { x = 2 y = 1 }
+			motorized = { x = 2 y = 2 }
+			motorized = { x = 2 y = 3 }
+		}
+		support = {
+			engineer = { x = 0 y = 0 }
+			maintenance_company = { x = 0 y = 1 }
+			logistics_company = { x = 0 y = 2 }
+		}
+	}
+	capital_scope = {
+		create_unit = {
+			division = "division_template = \"Kappa Armored Engineers\" start_experience_factor = 0.7 start_equipment_factor = 1.0"
+			owner = ROOT
+			count = 2
+		}
+	}
+}
+
+KYO_spawn_old_hell_contingent = {
+	custom_effect_tooltip = KYO_spawn_old_hell_contingent_tt
+	division_template = {
+		name = "Old Hell Breakthrough Corps"
+		division_names_group = KYO_GENSOKYO_INF_01
+		is_locked = yes
+		force_allow_recruiting = no
+		regiments = {
+			infantry = { x = 0 y = 0 }
+			infantry = { x = 0 y = 1 }
+			infantry = { x = 0 y = 2 }
+			infantry = { x = 1 y = 0 }
+			infantry = { x = 1 y = 1 }
+			infantry = { x = 1 y = 2 }
+			infantry = { x = 2 y = 0 }
+			infantry = { x = 2 y = 1 }
+			infantry = { x = 2 y = 2 }
+			artillery_brigade = { x = 3 y = 0 }
+			artillery_brigade = { x = 3 y = 1 }
+		}
+		support = {
+			artillery = { x = 0 y = 0 }
+			engineer = { x = 0 y = 1 }
+		}
+	}
+	capital_scope = {
+		create_unit = {
+			division = "division_template = \"Old Hell Breakthrough Corps\" start_experience_factor = 0.8 start_equipment_factor = 1.0"
+			owner = ROOT
+			count = 3
+		}
+	}
+}
+
+KYO_spawn_higan_contingent = {
+	custom_effect_tooltip = KYO_spawn_higan_contingent_tt
+	
+	set_technology = {
+		tech_military_police = 1
+	}
+	division_template = {
+		name = "Higan Judgment Guard"
+		division_names_group = JAP_CAV_01
+		is_locked = yes
+		force_allow_recruiting = yes
+		regiments = {
+			cavalry = { x = 0 y = 0 }
+			cavalry = { x = 0 y = 1 }
+			cavalry = { x = 0 y = 2 }
+			cavalry = { x = 1 y = 0 }
+			cavalry = { x = 1 y = 1 }
+			cavalry = { x = 1 y = 2 }
+			cavalry = { x = 2 y = 0 }
+			cavalry = { x = 2 y = 1 }
+		}
+		support = {
+			military_police = { x = 0 y = 0 }
+			artillery = { x = 0 y = 1 }
+			recon = { x = 0 y = 2 }
+				
+			
+		}
+	}
+	capital_scope = {
+		create_unit = {
+			division = "division_template = \"Higan Judgment Guard\" start_experience_factor = 0.65 start_equipment_factor = 1.0"
+			owner = ROOT
+			count = 4
+		}
+	}
+}
+
+KYO_spawn_grassroots_contingent = {
+	custom_effect_tooltip = KYO_spawn_grassroots_contingent_tt
+	division_template = {
+		name = "Grassroots Youkai Militia"
+		division_names_group = KYO_GENSOKYO_INF_01
+		is_locked = yes
+		force_allow_recruiting = no
+		regiments = {
+			militia = { x = 0 y = 0 }
+			militia = { x = 0 y = 1 }
+			militia = { x = 0 y = 2 }
+			militia = { x = 0 y = 3 }
+			militia = { x = 1 y = 0 }
+			militia = { x = 1 y = 1 }
+			militia = { x = 1 y = 2 }
+			militia = { x = 1 y = 3 }
+		}
+	}
+	capital_scope = {
+		create_unit = {
+			division = "division_template = \"Grassroots Youkai Militia\" start_experience_factor = 0.2 start_equipment_factor = 0.85"
+			owner = ROOT
+			count = 10
+		}
+	}
+}
+
+KYO_unlock_hyakki_special_contingents = {
+	custom_effect_tooltip = KYO_unlock_hyakki_special_contingents_tt
+	if = { limit = { has_template = "Scarlet division" } set_division_template_lock = { division_template = "Scarlet division" is_locked = no } }
+	if = { limit = { has_template = "Eientei Medical Guard" } set_division_template_lock = { division_template = "Eientei Medical Guard" is_locked = no } }
+	if = { limit = { has_template = "Human Watcher" } set_division_template_lock = { division_template = "Human Watcher" is_locked = no } }
+	if = { limit = { has_template = "Spirt army" } set_division_template_lock = { division_template = "Spirt army" is_locked = no } }
+	if = { limit = { has_template = "Tengu Airborne Vanguard" } set_division_template_lock = { division_template = "Tengu Airborne Vanguard" is_locked = no } }
+	if = { limit = { has_template = "Kappa Armored Engineers" } set_division_template_lock = { division_template = "Kappa Armored Engineers" is_locked = no } }
+	if = { limit = { has_template = "Fairy army" } set_division_template_lock = { division_template = "Fairy army" is_locked = no } }
+	if = { limit = { has_template = "Old Hell Breakthrough Corps" } set_division_template_lock = { division_template = "Old Hell Breakthrough Corps" is_locked = no } }
+	if = { limit = { has_template = "Higan Judgment Guard" } set_division_template_lock = { division_template = "Higan Judgment Guard" is_locked = no } }
+	if = { limit = { has_template = "Grassroots Youkai Militia" } set_division_template_lock = { division_template = "Grassroots Youkai Militia" is_locked = no } }
+
+	if = { limit = { has_template = "Myouren Temple Guardian Corps" } set_division_template_lock = { division_template = "Myouren Temple Guardian Corps" is_locked = no } }
+	if = { limit = { has_template = "Moriya Wind God Corps" } set_division_template_lock = { division_template = "Moriya Wind God Corps" is_locked = no } }
+	if = { limit = { has_template = "Tsukumogami Unit" } set_division_template_lock = { division_template = "Tsukumogami Unit" is_locked = no } }
+	if = { limit = { has_template = "Sunflower Field Annihilation Unit" } set_division_template_lock = { division_template = "Sunflower Field Annihilation Unit" is_locked = no } }
+
+	if = { limit = { has_template = "Spawn division" } set_division_template_lock = { division_template = "Spawn division" is_locked = no } }
+	
+
+	
+	
+	
+	set_country_flag = KYO_hyakki_special_contingents_unlocked
+}

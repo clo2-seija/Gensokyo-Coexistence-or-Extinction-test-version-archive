@@ -1,0 +1,121 @@
+### KYO - Hidden unlock technologies
+### They intentionally have no folder position. Grant them from focuses/events/effects.
+
+technologies = {
+	KYO_tech_youkai_beast = {
+		enable_subunits = { KYO_youkai_beast_battalion }
+		research_cost = 1
+		start_year = 1936
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_tech_blood_spawn = {
+		enable_subunits = { KYO_blood_spawn_battalion }
+		research_cost = 1
+		start_year = 1936
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_tech_fairy = {
+		enable_subunits = { KYO_fairy_battalion }
+		research_cost = 1
+		start_year = 1936
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_tech_white_wolf_tengu = {
+		enable_subunits = { KYO_white_wolf_tengu_battlegroup }
+		research_cost = 1
+		start_year = 1936
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_tech_ghost = {
+		enable_subunits = { KYO_ghost_battalion }
+		research_cost = 1
+		start_year = 1936
+		categories = { infantry_weapons }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_tech_magician_units = {
+		enable_subunits = {
+			KYO_wind_magician_battalion
+			KYO_fire_magician_battalion
+			KYO_lightning_magician_battalion
+			KYO_water_magician_battalion
+		}
+		research_cost = 1
+		start_year = 1936
+		categories = { artillery }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_tech_tsukumogami_units = {
+		enable_subunits = { KYO_tsukumogami_motorized_battalion }
+		research_cost = 1
+		start_year = 1936
+		categories = { motorized_equipment }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_tech_beast_spirit = {
+		enable_subunits = { KYO_beast_spirit_mechanized_battalion }
+		research_cost = 1
+		start_year = 1936
+		categories = { cat_mechanized_equipment }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_tech_kappa_support = {
+		enable_subunits = { KYO_kappa_engineer_maintenance_company }
+		research_cost = 1
+		start_year = 1936
+		categories = { support_tech }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_tech_oni_support = {
+		enable_subunits = { KYO_oni_overseer_company }
+		research_cost = 1
+		start_year = 1936
+		categories = { support_tech }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_tech_rabbit_support = {
+		enable_subunits = { KYO_rabbit_medical_company }
+		research_cost = 1
+		start_year = 1936
+		categories = { support_tech }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_tech_crow_tengu_support = {
+		enable_subunits = { KYO_crow_tengu_recon_company }
+		research_cost = 1
+		start_year = 1936
+		categories = { support_tech }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_tech_fox_logistics = {
+		enable_subunits = { KYO_youkai_fox_logistics_company }
+		research_cost = 1
+		start_year = 1936
+		categories = { support_tech }
+		ai_will_do = { factor = 0 }
+	}
+
+	KYO_tech_tsukumogami_armor = {
+		enable_equipment_modules = { KYO_tsukumogami_armor_module }
+		research_cost = 1
+		start_year = 1936
+		categories = { armor }
+		ai_will_do = { factor = 0 }
+	}
+}

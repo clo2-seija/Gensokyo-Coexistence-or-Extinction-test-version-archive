@@ -1,0 +1,366 @@
+leader_traits= {
+
+	kyo_human_commander = {
+
+    type = all
+    trait_type = personality_trait
+    allowed = { always = yes }
+    modifier = {
+      planning_speed = 0.1
+      modifier_army_sub_unit_infantry_attack_factor = 0.1
+    }
+	sub_unit_modifiers = {
+		infantry = {
+			soft_attack = 0.1
+		}
+	}
+	new_commander_weight = {
+		factor = 0
+	}
+  }
+
+  kyo_fairy_swarm_leader = {
+    type = all
+    trait_type = personality_trait
+    modifier = {
+	  army_org_regain = 0.2
+      army_morale_factor = 0.3
+      org_loss_when_moving = -0.2
+	  army_attack_factor = -0.2
+	  army_defence_factor = -0.2 
+
+    }
+	new_commander_weight = {
+		factor = 0
+	}
+  }
+
+  kyo_oni_breaker = {
+    type = all
+    trait_type = personality_trait
+    modifier = {
+      breakthrough_factor = 0.3
+      army_attack_factor = 0.1
+      army_defence_factor = -0.2
+	  army_org_factor = -0.2
+    }
+	new_commander_weight = {
+		factor = 0
+	}
+  }
+
+  kyo_tengu_rapid_ops = {
+    type = all
+    trait_type = personality_trait
+    modifier = {
+      army_speed_factor = 0.1
+      enemy_army_bonus_air_superiority_factor = -0.1
+      coordination_bonus = 0.05
+    }
+	new_commander_weight = {
+		factor = 0
+	}
+  }
+
+  kyo_kappa_engineer = {
+    type = all
+    trait_type = personality_trait
+    modifier = {
+      max_planning = 0.05
+      planning_speed = 0.05
+      dig_in_speed_factor = 0.2
+    }
+	new_commander_weight = {
+		factor = 0
+	}
+  }
+
+  kyo_yaksha_predator = { #山姬／獸性系妖怪可用的泛化
+    type = all
+    trait_type = personality_trait
+    modifier = {
+      terrain_penalty_reduction = 0.05
+      army_attack_factor = 0.03
+      enemy_army_org_factor = -0.02
+    }
+	new_commander_weight = {
+		factor = 0
+	}
+  }
+
+  kyo_tsukumogami_attunement = {
+    type = all
+    trait_type = personality_trait
+    modifier = {
+      equipment_capture_factor = 0.1
+      reliability_factor = 0.1
+      army_attack_factor = -0.05
+	  army_morale_factor = -0.05
+	  army_defence_factor = -0.05
+    }
+	new_commander_weight = {
+		factor = 0
+	}
+  }
+
+  kyo_ghost_coolheaded = {
+    type = all
+    trait_type = personality_trait
+    modifier = {
+      tactic_counterattack_preferred_weight_factor = 0.5
+      org_loss_when_moving = -0.1
+      land_reinforce_rate = 0.03
+    }
+	new_commander_weight = {
+		factor = 0
+	}
+  }
+
+  kyo_lunar_rabbit_tactics = {
+    type = all
+    trait_type = personality_trait
+    modifier = {
+      special_forces_attack_factor = 0.1
+      enemy_army_bonus_air_superiority_factor = -0.1
+      coordination_bonus = 0.05
+    }
+	new_commander_weight = {
+		factor = 0
+	}
+  }
+
+  kyo_vampire_overlord = {
+    type = all
+    trait_type = personality_trait
+    modifier = {
+      army_morale_factor = 0.05
+      army_org_factor = 0.05
+      supply_consumption_factor = 0.05
+    }
+	new_commander_weight = {
+		factor = 0
+	}
+  }
+
+  kyo_boundary_savant = { #境界系／空間操弄者
+    type = all
+    trait_type = personality_trait
+    modifier = {
+     
+      planning_speed = 0.05
+      terrain_penalty_reduction = 0.5
+    }
+	new_commander_weight = {
+		factor = 0
+	}
+  }
+
+
+	kyo_loyal_scarlet = {
+    type = all
+    trait_type = personality_trait
+   
+	new_commander_weight = {
+			factor = 0
+		}
+    
+  }
+
+  kyo_loyal_yakumo = {
+    type = all
+    trait_type = personality_trait
+   
+  }
+
+  kyo_loyal_myouren = {
+    type = all
+    trait_type = personality_trait
+    
+    new_commander_weight = {
+			factor = 0
+		}
+  }
+
+  kyo_loyal_eientei = {
+    type = all
+    trait_type = personality_trait
+    new_commander_weight = {
+			factor = 0
+		}
+  }
+
+  kyo_loyal_shrinedomain = { #博麗／人里保護派
+    type = all
+    trait_type = personality_trait
+    
+    new_commander_weight = {
+			factor = 0
+		}
+  }
+
+  kyo_loyal_tenguclan = {
+    type = all
+    trait_type = personality_trait
+    
+    new_commander_weight = {
+			factor = 0
+		}
+  }
+
+  kyo_loyal_grassroots = { #草根妖怪／民粹
+    type = all
+    trait_type = personality_trait
+    
+   new_commander_weight = {
+			factor = 0
+		}
+  }
+
+  kyo_loyal_netherhouse = { #白玉樓
+    type = all
+    trait_type = personality_trait
+    
+   new_commander_weight = {
+			factor = 0
+		}
+  }
+
+  kyo_loyal_chireiden = { #忠於古明地統治
+    type = all
+    trait_type = personality_trait
+    
+   new_commander_weight = {
+			factor = 0
+		}
+  }
+
+  kyo_loyal_forest_of_magic = { #魔法之森
+    type = all
+    trait_type = personality_trait
+    
+   new_commander_weight = {
+			factor = 0
+		}
+  }
+
+  kyo_loyal_lunar_capital = { #月都使者
+    type = all
+    trait_type = personality_trait
+    
+   new_commander_weight = {
+			factor = 0
+		}
+  }
+
+  kyo_loyal_beastrealm = { #畜生界三家
+    type = all
+    trait_type = personality_trait
+    
+   new_commander_weight = {
+			factor = 0
+		}
+  }
+	kyo_loyal_gouyoku_alliance = { #畜生界三家
+    type = all
+    trait_type = personality_trait
+    
+   new_commander_weight = {
+			factor = 0
+		}
+  }
+	kyo_loyal_kiketsu_family = { #畜生界三家
+    type = all
+    trait_type = personality_trait
+    
+   new_commander_weight = {
+			factor = 0
+		}
+  }
+	kyo_loyal_keiga_family = { #畜生界三家
+    type = all
+    trait_type = personality_trait
+    
+   new_commander_weight = {
+			factor = 0
+		}
+  }
+
+	kyo_loyal_backdoor_coterie = { #後戶
+    type = all
+    trait_type = personality_trait
+    
+   new_commander_weight = {
+			factor = 0
+		}
+  }
+
+	kyo_loyal_human_village = { #人里自治會
+    type = all
+    trait_type = personality_trait
+    
+   new_commander_weight = {
+			factor = 0
+		}
+  }
+
+	kyo_loyal_oni_old_capital = { #鬼王酒豪會
+    type = all
+    trait_type = personality_trait
+    
+   new_commander_weight = {
+			factor = 0
+		}
+  }
+
+  kyo_loyal_fairy_freecompany = { 
+    type = all
+    trait_type = personality_trait
+    
+   new_commander_weight = {
+			factor = 0
+		}
+  }
+
+  kyo_loyal_moriyashrine = {  #守矢
+    type = all
+    trait_type = personality_trait
+    
+   new_commander_weight = {
+			factor = 0
+		}
+  }
+
+   kyo_loyal_Higan = {  
+    type = all
+    trait_type = personality_trait
+    
+   new_commander_weight = {
+			factor = 0
+		}
+  }
+# YAKUMO_ROUTE_V05_LUNAR_TRAITS_BEGIN
+KYO_ran_lunar_operations_mastermind = {
+	type = all
+	trait_type = personality_trait
+	allowed = { always = yes }
+	modifier = {
+		planning_speed = 0.10
+		supply_consumption_factor = -0.08
+		coordination_bonus = 0.05
+	}
+	new_commander_weight = { factor = 0 }
+}
+
+KYO_chen_lunar_pathfinder = {
+	type = all
+	trait_type = personality_trait
+	allowed = { always = yes }
+	modifier = {
+		army_speed_factor = 0.08
+		terrain_penalty_reduction = 0.08
+		breakthrough_factor = 0.10
+	}
+	new_commander_weight = { factor = 0 }
+}
+# YAKUMO_ROUTE_V05_LUNAR_TRAITS_END
+}

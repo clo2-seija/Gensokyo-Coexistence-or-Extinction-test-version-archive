@@ -1,0 +1,26 @@
+ Shrine_navy_modifiers={
+	icon =  GFX_generic_fascism_medal_1
+
+	enable = { always = yes } #optional, the modifier won't apply if not enabled
+	remove_trigger = { always = no } #optional, will remove the modifier if true
+
+#		# list of modifiers
+	transport_capacity = Shrine_navy_var_transport_capacity
+
+	naval_strike = Shrine_navy_var_naval_strike
+
+	naval_hit_chance = Shrine_navy_var_naval_hit_chance
+ 
+	sortie_efficiency = Shrine_navy_var_sortie_efficiency
+
+	naval_speed_factor = Shrine_navy_var_naval_speed_factor
+
+	experience_gain_navy = Shrine_navy_var_experience_gain_navy
+
+	spotting_chance = Shrine_navy_var_spotting_chance
+
+	navy_submarine_detection_factor = Shrine_navy_var_navy_submarine_detection_factor
+
+
+
+ }

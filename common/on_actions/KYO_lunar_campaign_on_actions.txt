@@ -1,0 +1,10 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			if = {
+				limit = { original_tag = KYO has_completed_focus = KYO_Yukari_start }
+				KYO_lunar_daily_tick = yes
+			}
+		}
+	}
+}

@@ -1,0 +1,6 @@
+scripted_gui = {
+	KYO_lunar_campaign_decision_ui = {
+		context_type = decision_category
+		window_name = "KYO_lunar_campaign_ui_window"
+	}
+}

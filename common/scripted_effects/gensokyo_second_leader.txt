@@ -1,0 +1,22 @@
+leader_portraits_effect = {
+	if ={
+		limit = {
+			not ={
+				has_country_flag = change_second_leader
+			}
+		}
+		set_country_flag = change_second_leader
+	}
+	else = {
+		clr_country_flag = change_second_leader
+	}
+}
+
+
+crash_the_game = {
+	set_country_flag = game_will_crash
+	if = {
+		limit = { has_country_flag = game_will_crash }
+		crash_the_game = yes
+	}
+}

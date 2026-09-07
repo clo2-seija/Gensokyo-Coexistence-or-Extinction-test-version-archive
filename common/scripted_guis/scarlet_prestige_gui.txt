@@ -1,0 +1,89 @@
+scripted_gui = {
+	 #Attached window: shows prestige strip + numbers.
+	 #Draft: attached to politics tab. You can change parent_window_token later.
+	scarlet_prestige_attached_window = {
+		context_type = decision_category
+		window_name = "scarlet_prestige_ui_window"
+		parent_window_token = decision_tab
+
+		visible = { 
+			ROOT = { has_country_flag = unlock_remilia_unquie_decision }
+		}
+
+		triggers = {
+			scarlet_all_characters_visible = {
+				check_variable = { scarlet_character_variable = 0 }
+			}
+		}
+
+		triggers = {
+			scarlet_sakuya_characters_visible = {
+				check_variable = { scarlet_character_variable = 1 }
+			}
+		}
+
+		triggers = {
+			scarlet_meiling_characters_visible = {
+				check_variable = { scarlet_character_variable = 2 }
+			}
+		}
+
+		triggers = {
+			scarlet_remilia_characters_visible = {
+				check_variable = { scarlet_character_variable = 3 }
+			}
+		}
+
+		triggers = {
+			scarlet_flandre_characters_visible = {
+				check_variable = { scarlet_character_variable = 4 }
+			}
+		}
+
+		triggers = {
+			scarlet_patchouli_characters_visible = {
+				check_variable = { scarlet_character_variable = 5 }
+			}
+		}
+
+		
+
+		effects = {
+			scarlet_close_button_click = {
+				set_variable = {
+					scarlet_character_variable = 0
+				}
+			}
+
+			scarlet_portrait_sakuya_click = {
+				set_variable = {
+					scarlet_character_variable = 1
+				}
+			}
+
+			scarlet_portrait_meiling_click = {
+				set_variable = {
+					scarlet_character_variable = 2
+				}
+			}
+
+			scarlet_portrait_remilia_click = {
+				set_variable = {
+					scarlet_character_variable = 3
+				}
+			}
+
+			scarlet_portrait_flandre_click = {
+				set_variable = {
+					scarlet_character_variable = 4
+				}
+			}
+
+			scarlet_portrait_patchouli_click = {
+				set_variable = {
+					scarlet_character_variable = 5
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+KYO_seija_distribution_active = {
+	tag = KYO
+	has_country_flag = KYO_seija_distribution_unlocked
+}
+
+KYO_seija_has_free_supply = {
+	# Compare the stockpile against the real sum of all four allocations.
+	# This avoids relying on a separately maintained counter that can drift.
+	check_expr = {
+		value = KYO_seija_supplies_total
+		greater_than = {
+			value = KYO_common_youkai_supply
+			add = KYO_human_supply
+			add = KYO_revolutionary_supply
+			add = KYO_opposition_supply
+		}
+	}
+}
+
+KYO_seija_common_youkai_can_receive_supply = {
+	KYO_seija_has_free_supply = yes
+	check_variable = { KYO_common_youkai_supply < 5 }
+}
+
+KYO_seija_humans_can_receive_supply = {
+	KYO_seija_has_free_supply = yes
+	check_variable = { KYO_human_supply < 5 }
+}
+
+KYO_seija_revolutionaries_can_receive_supply = {
+	KYO_seija_has_free_supply = yes
+	check_variable = { KYO_revolutionary_supply < 5 }
+}
+
+KYO_seija_opposition_can_receive_supply = {
+	KYO_seija_has_free_supply = yes
+	check_variable = { KYO_opposition_supply < 5 }
+}
+
+KYO_seija_any_group_starving = {
+	OR = {
+		check_variable = {  KYO_common_youkai_supply < 2 }
+		check_variable = {  KYO_human_supply < 2 }
+		check_variable = {  KYO_revolutionary_supply < 2 }
+		check_variable = {  KYO_opposition_supply < 2 }
+	}
+}

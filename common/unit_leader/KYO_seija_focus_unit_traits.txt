@@ -1,0 +1,47 @@
+leader_traits = {
+	KYO_nue_social_mirror = {
+		type = all
+		trait_type = personality_trait
+		modifier = {
+			recon_factor = 0.10
+			terrain_penalty_reduction = 0.05
+			army_org_factor = 0.03
+		}
+		new_commander_weight = { factor = 0 }
+	}
+
+	KYO_koishi_unconscious_trial = {
+		type = all
+		trait_type = personality_trait
+		modifier = {
+			army_speed_factor = 0.05
+			coordination_bonus = 0.05
+			land_night_attack = 0.08
+			army_org_factor = -0.02
+		}
+		new_commander_weight = { factor = 0 }
+	}
+
+	KYO_flandre_broken_blood = {
+		type = all
+		trait_type = personality_trait
+		modifier = {
+			breakthrough_factor = 0.10
+			army_attack_factor = 0.06
+			supply_consumption_factor = 0.04
+			army_defence_factor = -0.03
+		}
+		new_commander_weight = { factor = 0 }
+	}
+
+	KYO_kogasa_worksite_armorer = {
+		type = all
+		trait_type = personality_trait
+		modifier = {
+			equipment_capture_factor = 0.08
+			reliability_factor = 0.05
+			army_defence_factor = 0.03
+		}
+		new_commander_weight = { factor = 0 }
+	}
+}

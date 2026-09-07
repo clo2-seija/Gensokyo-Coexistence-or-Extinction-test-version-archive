@@ -1,0 +1,40 @@
+#頭像
+defined_text = {
+	name = GetPortrait
+
+	text = {
+		trigger = {
+			this = {
+				has_idea = ENG_king_edward
+			}
+		}
+		localization_key = GFX_portrait_Edward_VIII
+	}
+}
+#名稱 
+defined_text = {
+	name = GetSecondLeader
+
+	text = {
+		trigger = {
+			this = {
+				has_idea = ENG_king_edward
+			}
+		}
+		localization_key = "ENG_Edward_VIII"
+	}
+}
+#簡介
+defined_text = {
+	name = GetSecondLeaderDesc
+
+	text = {
+		trigger = {
+			this = {
+				has_idea = ENG_king_edward
+			}
+		}
+		localization_key = "ENG_Edward_VIII_desc"
+	}
+}
+

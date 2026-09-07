@@ -1,0 +1,479 @@
+defined_text = { #PORTRAIT OF ASCENDING ADSVISOR (THAT WILL REPLACE SOMEONE) FOR EVENT PIC
+	name = GetAscendingAdvisorPortrait
+	text = {
+		trigger = {
+			check_variable = { KYO_ascending_advisor = 1 }
+		}
+		localization_key = GFX_gensokyo_nazrin_large
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascending_advisor = 2 }
+		}
+		localization_key = GFX_gensokyo_ichirin_large
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascending_advisor = 3 }
+		}
+		localization_key = GFX_gensokyo_shou_large
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascending_advisor = 4 }
+		}
+		localization_key = GFX_gensokyo_murasa_large
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascending_advisor = 5 }
+		}
+		localization_key = GFX_gensokyo_kyouko_large
+	}
+	
+}
+defined_text = {
+	name = GetAscendedAdvisorName1
+	text = { #NO ONE
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 0 }	
+		}
+		localization_key = empty_key
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 1 }
+		}
+		localization_key = gensokyo_nazrin
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 2 }
+		}
+		localization_key = gensokyo_ichirin
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 3 }
+		}
+		localization_key = gensokyo_shou
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 4 }
+		}
+		localization_key = gensokyo_murasa
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 5 }
+		}
+		localization_key = gensokyo_kyouko
+	}
+}
+
+
+
+defined_text = {
+	name = GetAscendedAdvisorName3
+	text = { #NO ONE
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 0 }	
+		}
+		localization_key = empty_key
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 1 }
+		}
+		localization_key = gensokyo_nazrin
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 2 }
+		}
+		localization_key = gensokyo_ichirin
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 3 }
+		}
+		localization_key = gensokyo_shou
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 4 }
+		}
+		localization_key = gensokyo_murasa
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 5 }
+		}
+		localization_key = gensokyo_kyouko
+	}
+	
+}
+
+defined_text = {
+	name = GetAscendedAdvisorTraitName1
+	text = { #NO ONE
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 0 }	
+		}
+		localization_key = empty_key
+	}
+
+	# nazrin
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 1 }
+			has_idea = KYO_Treasure_Seeker_nazrin_0
+		}
+		localization_key = KYO_Treasure_Seeker_nazrin_0
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 1 }
+			has_idea = KYO_Treasure_Seeker_nazrin_1
+		}
+		localization_key = KYO_Treasure_Seeker_nazrin_1
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 1 }
+			has_idea = KYO_Treasure_Seeker_nazrin_2
+		}
+		localization_key = KYO_Treasure_Seeker_nazrin_2
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 1 }
+			has_idea = KYO_Treasure_Seeker_nazrin_3
+		}
+		localization_key = KYO_Treasure_Seeker_nazrin_3
+	}
+
+	# ichirin
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 2 }
+			has_idea = KYO_Cloud_Guardian_ichirin_0
+		}
+		localization_key = KYO_Cloud_Guardian_ichirin_0
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 2 }
+			has_idea = KYO_Cloud_Guardian_ichirin_1
+		}
+		localization_key = KYO_Cloud_Guardian_ichirin_1
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 2 }
+			has_idea = KYO_Cloud_Guardian_ichirin_2
+		}
+		localization_key = KYO_Cloud_Guardian_ichirin_2
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 2 }
+			has_idea = KYO_Cloud_Guardian_ichirin_3
+		}
+		localization_key = KYO_Cloud_Guardian_ichirin_3
+	}
+
+	#GÖRING
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 3 }
+			has_idea = KYO_The_Tiger_Commandments_0
+		}
+		localization_key = KYO_The_Tiger_Commandments_0
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 3 }
+			has_idea = KYO_The_Tiger_Commandments_1
+		}
+		localization_key = KYO_The_Tiger_Commandments_1
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 3 }
+			has_idea = KYO_The_Tiger_Commandments_2
+		}
+		localization_key = KYO_The_Tiger_Commandments_2
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 3 }
+			has_idea = KYO_The_Tiger_Commandments_3
+		}
+		localization_key = KYO_The_Tiger_Commandments_3
+	}
+
+	#HIMMLER
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 4 }
+			has_idea = KYO_Ghost_Captain_marusa_0
+		}
+		localization_key = KYO_Ghost_Captain_marusa_0
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 4 }
+			has_idea = KYO_Ghost_Captain_marusa_1
+		}
+		localization_key = KYO_Ghost_Captain_marusa_1
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 4 }
+			has_idea = KYO_Ghost_Captain_marusa_2
+		}
+		localization_key = KYO_Ghost_Captain_marusa_2
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 4 }
+			has_idea = KYO_Ghost_Captain_marusa_3
+		}
+		localization_key = KYO_Ghost_Captain_marusa_3
+	}
+
+	#GOEBBELS
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 5 }
+			has_idea = KYO_Echo_Propaganda_kyouko_0
+		}
+		localization_key = KYO_Echo_Propaganda_kyouko_0
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 5 }
+			has_idea = KYO_Echo_Propaganda_kyouko_1
+		}
+		localization_key = KYO_Echo_Propaganda_kyouko_1
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 5 }
+			has_idea = KYO_Echo_Propaganda_kyouko_2
+		}
+		localization_key = KYO_Echo_Propaganda_kyouko_2
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_1 = 5 }
+			has_idea = KYO_Echo_Propaganda_kyouko_3
+		}
+		localization_key = KYO_Echo_Propaganda_kyouko_3
+	}
+	
+	
+}
+
+
+
+defined_text = {
+	name = GetAscendedAdvisorTraitName3
+	text = { #NO ONE
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 0 }	
+		}
+		localization_key = empty_key
+	}
+
+	# nazrin
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 1 }
+			has_idea = KYO_Treasure_Seeker_nazrin_0
+		}
+		localization_key = KYO_Treasure_Seeker_nazrin_0
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 1 }
+			has_idea = KYO_Treasure_Seeker_nazrin_1
+		}
+		localization_key = KYO_Treasure_Seeker_nazrin_1
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 1 }
+			has_idea = KYO_Treasure_Seeker_nazrin_2
+		}
+		localization_key = KYO_Treasure_Seeker_nazrin_2
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 1 }
+			has_idea = KYO_Treasure_Seeker_nazrin_3
+		}
+		localization_key = KYO_Treasure_Seeker_nazrin_3
+	}
+
+	# ichirin
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 2 }
+			has_idea = KYO_Cloud_Guardian_ichirin_0
+		}
+		localization_key = KYO_Cloud_Guardian_ichirin_0
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 2 }
+			has_idea = KYO_Cloud_Guardian_ichirin_1
+		}
+		localization_key = KYO_Cloud_Guardian_ichirin_1
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 2 }
+			has_idea = KYO_Cloud_Guardian_ichirin_2
+		}
+		localization_key = KYO_Cloud_Guardian_ichirin_2
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 2 }
+			has_idea = KYO_Cloud_Guardian_ichirin_3
+		}
+		localization_key = KYO_Cloud_Guardian_ichirin_3
+	}
+
+	#GÖRING
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 3 }
+			has_idea = KYO_The_Tiger_Commandments_0
+		}
+		localization_key = KYO_The_Tiger_Commandments_0
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 3 }
+			has_idea = KYO_The_Tiger_Commandments_1
+		}
+		localization_key = KYO_The_Tiger_Commandments_1
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 3 }
+			has_idea = KYO_The_Tiger_Commandments_2
+		}
+		localization_key = KYO_The_Tiger_Commandments_2
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 3 }
+			has_idea = KYO_The_Tiger_Commandments_3
+		}
+		localization_key = KYO_The_Tiger_Commandments_3
+	}
+
+	#HIMMLER
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 4 }
+			has_idea = KYO_Ghost_Captain_marusa_0
+		}
+		localization_key = KYO_Ghost_Captain_marusa_0
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 4 }
+			has_idea = KYO_Ghost_Captain_marusa_1
+		}
+		localization_key = KYO_Ghost_Captain_marusa_1
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 4 }
+			has_idea = KYO_Ghost_Captain_marusa_2
+		}
+		localization_key = KYO_Ghost_Captain_marusa_2
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 4 }
+			has_idea = KYO_Ghost_Captain_marusa_3
+		}
+		localization_key = KYO_Ghost_Captain_marusa_3
+	}
+
+	#GOEBBELS
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 5 }
+			has_idea = KYO_Echo_Propaganda_kyouko_0
+		}
+		localization_key = KYO_Echo_Propaganda_kyouko_0
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 5 }
+			has_idea = KYO_Echo_Propaganda_kyouko_1
+		}
+		localization_key = KYO_Echo_Propaganda_kyouko_1
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 5 }
+			has_idea = KYO_Echo_Propaganda_kyouko_2
+		}
+		localization_key = KYO_Echo_Propaganda_kyouko_2
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascended_advisor_3 = 5 }
+			has_idea = KYO_Echo_Propaganda_kyouko_3
+		}
+		localization_key = KYO_Echo_Propaganda_kyouko_3
+	}
+
+	
+
+	
+}
+defined_text = { #NAME OF ASCENDING ADSVISOR (THAT WILL REPLACE SOMEONE) FOR EVENT LOC
+	name = GetAscendingAdvisorName
+	text = {
+		trigger = {
+			check_variable = { KYO_ascending_advisor = 1 }
+		}
+		localization_key = gensokyo_nazrin
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascending_advisor = 2 }
+		}
+		localization_key = gensokyo_ichirin
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascending_advisor = 3 }
+		}
+		localization_key = gensokyo_shou
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascending_advisor = 4 }
+		}
+		localization_key = gensokyo_murasa
+	}
+	text = {
+		trigger = {
+			check_variable = { KYO_ascending_advisor = 5 }
+		}
+		localization_key = gensokyo_kyouko
+	}
+	
+}
+

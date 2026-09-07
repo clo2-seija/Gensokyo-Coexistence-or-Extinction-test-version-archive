@@ -1,0 +1,135 @@
+scripted_gui = {
+
+	sp_event_window = {
+		window_name = "sp_event_window"
+		context_type = player_context
+
+		visible = {
+			has_global_flag = Super_Event_Visible
+		}
+		
+		triggers = {
+			Super_Event_Image_Second_World_War_visible = {
+				has_global_flag = GER_WW2
+			}
+		}
+		
+		triggers = {
+			Super_Event_Image_japan_youkai_war_start_visible = {
+				has_global_flag = sp_event_japan_youkai_war
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Yukari_path_the_end_visible = {
+				has_global_flag = sp_event_yukari_path_the_end
+			}
+		}
+		triggers = {
+			Super_Event_Image_Yukari_path_second_moon_war_visible = {
+				has_global_flag = sp_event_lunar_public_war
+			}
+		}
+		triggers = {
+			Super_Event_Image_rabbit_army_defeat_visible = {
+				has_global_flag = sp_event_rabbit_army_defeat
+			}
+		}
+
+		triggers = {
+			Super_Event_Image_Youkai_civilwar_start_visible = {
+				has_global_flag = sp_event_Youkai_civilwar_start
+			}
+		}
+		triggers = {
+			Super_Event_Image_Remilia_path_the_end_visible = {
+				has_global_flag = sp_event_Remilia_path_the_end
+			}
+		}
+		triggers = {
+			Super_Event_Image_Hijiri_path_the_end_visible = {
+				has_global_flag = sp_event_Hijiri_path_the_end
+			}
+		}
+		
+		############
+		###BUTTON###
+		############
+		
+		effects = {
+			sp_event_close_button_click = {
+				clr_global_flag = Super_Event_Visible
+				
+				if = {
+					limit = {
+						has_global_flag = GER_WW2
+					}
+					clr_global_flag = GER_WW2
+				}
+					
+				if = {
+					limit = {
+						has_global_flag = sp_event_japan_youkai_war
+					}
+					clr_global_flag = sp_event_japan_youkai_war
+				}
+
+				if = {
+					limit = {
+						has_global_flag = sp_event_yukari_world
+					}
+					clr_global_flag = sp_event_yukari_world
+				}
+
+				if = {
+					limit = {
+						has_global_flag = sp_event_Yukari_path_second_moon_war
+					}
+					clr_global_flag = sp_event_Yukari_path_second_moon_war
+				}
+				
+
+				if = {
+					limit = {
+						has_global_flag = sp_event_lunar_public_war
+					}
+					clr_global_flag = sp_event_lunar_public_war
+				}
+
+				if = {
+					limit = {
+						has_global_flag = sp_event_yukari_path_the_end
+					}
+					clr_global_flag = sp_event_yukari_path_the_end
+				}
+
+				if = {
+					limit = {
+						has_global_flag = sp_event_Youkai_civilwar_start
+					}
+					clr_global_flag = sp_event_Youkai_civilwar_start
+				}
+
+				if = {
+					limit = {
+						has_global_flag = sp_event_Remilia_path_the_end
+					}
+					clr_global_flag = sp_event_Remilia_path_the_end
+				}
+				
+				if = {
+					limit = {
+						has_global_flag = sp_event_Hijiri_path_the_end
+					}
+					clr_global_flag = sp_event_Hijiri_path_the_end
+				}
+
+				
+
+				
+				
+				
+			}
+		}
+	}
+}

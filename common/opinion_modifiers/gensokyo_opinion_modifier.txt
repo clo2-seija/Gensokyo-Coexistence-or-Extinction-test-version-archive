@@ -1,0 +1,18 @@
+opinion_modifiers = {
+    youkai_war_modifier_trade = {
+        trade = yes
+        value = -200    # Provides -200 
+		
+    }
+    youkai_war_modifier_hate = {
+        value = -200      
+    }
+
+    KYO_hijiri_buddhist_goodwill = {
+	    value = 100
+    }
+
+    KYO_hijiri_failed_puppet_pressure = {
+        value = -40
+    }
+}

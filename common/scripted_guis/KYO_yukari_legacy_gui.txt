@@ -1,0 +1,351 @@
+scripted_gui = {
+	KYO_civil_war_decision_ui = {
+		context_type = decision_category
+		window_name = "KYO_cws_support_ui_window"
+
+		triggers = {
+			KYO_cws_detail_panel_visible = { OR = { has_country_flag = KYO_cws_selected_village has_country_flag = KYO_cws_selected_kappa has_country_flag = KYO_cws_selected_tengu has_country_flag = KYO_cws_selected_eientei has_country_flag = KYO_cws_selected_hakugyokurou has_country_flag = KYO_cws_selected_chireiden has_country_flag = KYO_cws_selected_oni has_country_flag = KYO_cws_selected_fairies has_country_flag = KYO_cws_selected_tsukumogami has_country_flag = KYO_cws_selected_moriya has_country_flag = KYO_cws_selected_senkai has_country_flag = KYO_cws_selected_magic_forest } }
+			KYO_cws_detail_close_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_yakumo_leader_alive_visible = { KYO_cws_yakumo_is_active = yes }
+			KYO_cws_yakumo_leader_dead_visible = { NOT = { KYO_cws_yakumo_is_active = yes } }
+			KYO_cws_remilia_leader_alive_visible = { KYO_cws_remilia_is_active = yes }
+			KYO_cws_remilia_leader_dead_visible = { NOT = { KYO_cws_remilia_is_active = yes } }
+			KYO_cws_hijiri_leader_alive_visible = { KYO_cws_hijiri_is_active = yes }
+			KYO_cws_hijiri_leader_dead_visible = { NOT = { KYO_cws_hijiri_is_active = yes } }
+			KYO_cws_seija_leader_alive_visible = { KYO_cws_seija_is_active = yes }
+			KYO_cws_seija_leader_dead_visible = { NOT = { KYO_cws_seija_is_active = yes } }
+			KYO_cws_neutral_village_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_neutral_village_visible = { NOT = { OR = { has_country_flag = KYO_cws_village_owner_yakumo has_country_flag = KYO_cws_village_owner_remilia has_country_flag = KYO_cws_village_owner_hijiri has_country_flag = KYO_cws_village_owner_seija } } }
+			KYO_cws_neutral_selected_village_visible = { has_country_flag = KYO_cws_selected_village NOT = { OR = { has_country_flag = KYO_cws_village_owner_yakumo has_country_flag = KYO_cws_village_owner_remilia has_country_flag = KYO_cws_village_owner_hijiri has_country_flag = KYO_cws_village_owner_seija } } }
+			KYO_cws_detail_title_village_visible = { has_country_flag = KYO_cws_selected_village }
+			KYO_cws_detail_portrait_village_visible = { has_country_flag = KYO_cws_selected_village }
+			KYO_cws_detail_text_village_visible = { has_country_flag = KYO_cws_selected_village }
+			KYO_cws_detail_member_village_0_visible = { has_country_flag = KYO_cws_selected_village }
+			KYO_cws_detail_member_village_1_visible = { has_country_flag = KYO_cws_selected_village }
+			KYO_cws_owned_yakumo_village_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_yakumo_village_visible = { has_country_flag = KYO_cws_village_owner_yakumo }
+			KYO_cws_owned_selected_yakumo_village_visible = { has_country_flag = KYO_cws_village_owner_yakumo has_country_flag = KYO_cws_selected_village }
+			KYO_cws_owned_remilia_village_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_remilia_village_visible = { has_country_flag = KYO_cws_village_owner_remilia }
+			KYO_cws_owned_selected_remilia_village_visible = { has_country_flag = KYO_cws_village_owner_remilia has_country_flag = KYO_cws_selected_village }
+			KYO_cws_owned_hijiri_village_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_hijiri_village_visible = { has_country_flag = KYO_cws_village_owner_hijiri }
+			KYO_cws_owned_selected_hijiri_village_visible = { has_country_flag = KYO_cws_village_owner_hijiri has_country_flag = KYO_cws_selected_village }
+			KYO_cws_owned_seija_village_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_seija_village_visible = { has_country_flag = KYO_cws_village_owner_seija }
+			KYO_cws_owned_selected_seija_village_visible = { has_country_flag = KYO_cws_village_owner_seija has_country_flag = KYO_cws_selected_village }
+			KYO_cws_neutral_kappa_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_neutral_kappa_visible = { NOT = { OR = { has_country_flag = KYO_cws_kappa_owner_yakumo has_country_flag = KYO_cws_kappa_owner_remilia has_country_flag = KYO_cws_kappa_owner_hijiri has_country_flag = KYO_cws_kappa_owner_seija } } }
+			KYO_cws_neutral_selected_kappa_visible = { has_country_flag = KYO_cws_selected_kappa NOT = { OR = { has_country_flag = KYO_cws_kappa_owner_yakumo has_country_flag = KYO_cws_kappa_owner_remilia has_country_flag = KYO_cws_kappa_owner_hijiri has_country_flag = KYO_cws_kappa_owner_seija } } }
+			KYO_cws_detail_title_kappa_visible = { has_country_flag = KYO_cws_selected_kappa }
+			KYO_cws_detail_portrait_kappa_visible = { has_country_flag = KYO_cws_selected_kappa }
+			KYO_cws_detail_text_kappa_visible = { has_country_flag = KYO_cws_selected_kappa }
+			KYO_cws_detail_member_kappa_0_visible = { has_country_flag = KYO_cws_selected_kappa }
+			KYO_cws_detail_member_kappa_1_visible = { has_country_flag = KYO_cws_selected_kappa }
+			KYO_cws_detail_member_kappa_2_visible = { has_country_flag = KYO_cws_selected_kappa }
+			KYO_cws_detail_member_kappa_3_visible = { has_country_flag = KYO_cws_selected_kappa }
+			KYO_cws_detail_member_kappa_4_visible = { has_country_flag = KYO_cws_selected_kappa }
+			KYO_cws_owned_yakumo_kappa_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_yakumo_kappa_visible = { has_country_flag = KYO_cws_kappa_owner_yakumo }
+			KYO_cws_owned_selected_yakumo_kappa_visible = { has_country_flag = KYO_cws_kappa_owner_yakumo has_country_flag = KYO_cws_selected_kappa }
+			KYO_cws_owned_remilia_kappa_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_remilia_kappa_visible = { has_country_flag = KYO_cws_kappa_owner_remilia }
+			KYO_cws_owned_selected_remilia_kappa_visible = { has_country_flag = KYO_cws_kappa_owner_remilia has_country_flag = KYO_cws_selected_kappa }
+			KYO_cws_owned_hijiri_kappa_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_hijiri_kappa_visible = { has_country_flag = KYO_cws_kappa_owner_hijiri }
+			KYO_cws_owned_selected_hijiri_kappa_visible = { has_country_flag = KYO_cws_kappa_owner_hijiri has_country_flag = KYO_cws_selected_kappa }
+			KYO_cws_owned_seija_kappa_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_seija_kappa_visible = { has_country_flag = KYO_cws_kappa_owner_seija }
+			KYO_cws_owned_selected_seija_kappa_visible = { has_country_flag = KYO_cws_kappa_owner_seija has_country_flag = KYO_cws_selected_kappa }
+			KYO_cws_neutral_tengu_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_neutral_tengu_visible = { NOT = { OR = { has_country_flag = KYO_cws_tengu_owner_yakumo has_country_flag = KYO_cws_tengu_owner_remilia has_country_flag = KYO_cws_tengu_owner_hijiri has_country_flag = KYO_cws_tengu_owner_seija } } }
+			KYO_cws_neutral_selected_tengu_visible = { has_country_flag = KYO_cws_selected_tengu NOT = { OR = { has_country_flag = KYO_cws_tengu_owner_yakumo has_country_flag = KYO_cws_tengu_owner_remilia has_country_flag = KYO_cws_tengu_owner_hijiri has_country_flag = KYO_cws_tengu_owner_seija } } }
+			KYO_cws_detail_title_tengu_visible = { has_country_flag = KYO_cws_selected_tengu }
+			KYO_cws_detail_portrait_tengu_visible = { has_country_flag = KYO_cws_selected_tengu }
+			KYO_cws_detail_text_tengu_visible = { has_country_flag = KYO_cws_selected_tengu }
+			KYO_cws_detail_member_tengu_0_visible = { has_country_flag = KYO_cws_selected_tengu }
+			KYO_cws_detail_member_tengu_1_visible = { has_country_flag = KYO_cws_selected_tengu }
+			KYO_cws_detail_member_tengu_2_visible = { has_country_flag = KYO_cws_selected_tengu }
+			KYO_cws_detail_member_tengu_3_visible = { has_country_flag = KYO_cws_selected_tengu }
+			KYO_cws_detail_member_tengu_4_visible = { has_country_flag = KYO_cws_selected_tengu }
+			KYO_cws_detail_member_tengu_5_visible = { has_country_flag = KYO_cws_selected_tengu }
+			KYO_cws_detail_member_tengu_6_visible = { has_country_flag = KYO_cws_selected_tengu }
+			KYO_cws_owned_yakumo_tengu_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_yakumo_tengu_visible = { has_country_flag = KYO_cws_tengu_owner_yakumo }
+			KYO_cws_owned_selected_yakumo_tengu_visible = { has_country_flag = KYO_cws_tengu_owner_yakumo has_country_flag = KYO_cws_selected_tengu }
+			KYO_cws_owned_remilia_tengu_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_remilia_tengu_visible = { has_country_flag = KYO_cws_tengu_owner_remilia }
+			KYO_cws_owned_selected_remilia_tengu_visible = { has_country_flag = KYO_cws_tengu_owner_remilia has_country_flag = KYO_cws_selected_tengu }
+			KYO_cws_owned_hijiri_tengu_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_hijiri_tengu_visible = { has_country_flag = KYO_cws_tengu_owner_hijiri }
+			KYO_cws_owned_selected_hijiri_tengu_visible = { has_country_flag = KYO_cws_tengu_owner_hijiri has_country_flag = KYO_cws_selected_tengu }
+			KYO_cws_owned_seija_tengu_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_seija_tengu_visible = { has_country_flag = KYO_cws_tengu_owner_seija }
+			KYO_cws_owned_selected_seija_tengu_visible = { has_country_flag = KYO_cws_tengu_owner_seija has_country_flag = KYO_cws_selected_tengu }
+			KYO_cws_neutral_eientei_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_neutral_eientei_visible = { NOT = { OR = { has_country_flag = KYO_cws_eientei_owner_yakumo has_country_flag = KYO_cws_eientei_owner_remilia has_country_flag = KYO_cws_eientei_owner_hijiri has_country_flag = KYO_cws_eientei_owner_seija } } }
+			KYO_cws_neutral_selected_eientei_visible = { has_country_flag = KYO_cws_selected_eientei NOT = { OR = { has_country_flag = KYO_cws_eientei_owner_yakumo has_country_flag = KYO_cws_eientei_owner_remilia has_country_flag = KYO_cws_eientei_owner_hijiri has_country_flag = KYO_cws_eientei_owner_seija } } }
+			KYO_cws_detail_title_eientei_visible = { has_country_flag = KYO_cws_selected_eientei }
+			KYO_cws_detail_portrait_eientei_visible = { has_country_flag = KYO_cws_selected_eientei }
+			KYO_cws_detail_text_eientei_visible = { has_country_flag = KYO_cws_selected_eientei }
+			KYO_cws_detail_member_eientei_0_visible = { has_country_flag = KYO_cws_selected_eientei }
+			KYO_cws_detail_member_eientei_1_visible = { has_country_flag = KYO_cws_selected_eientei }
+			KYO_cws_detail_member_eientei_2_visible = { has_country_flag = KYO_cws_selected_eientei }
+			KYO_cws_detail_member_eientei_3_visible = { has_country_flag = KYO_cws_selected_eientei }
+			KYO_cws_owned_yakumo_eientei_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_yakumo_eientei_visible = { has_country_flag = KYO_cws_eientei_owner_yakumo }
+			KYO_cws_owned_selected_yakumo_eientei_visible = { has_country_flag = KYO_cws_eientei_owner_yakumo has_country_flag = KYO_cws_selected_eientei }
+			KYO_cws_owned_remilia_eientei_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_remilia_eientei_visible = { has_country_flag = KYO_cws_eientei_owner_remilia }
+			KYO_cws_owned_selected_remilia_eientei_visible = { has_country_flag = KYO_cws_eientei_owner_remilia has_country_flag = KYO_cws_selected_eientei }
+			KYO_cws_owned_hijiri_eientei_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_hijiri_eientei_visible = { has_country_flag = KYO_cws_eientei_owner_hijiri }
+			KYO_cws_owned_selected_hijiri_eientei_visible = { has_country_flag = KYO_cws_eientei_owner_hijiri has_country_flag = KYO_cws_selected_eientei }
+			KYO_cws_owned_seija_eientei_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_seija_eientei_visible = { has_country_flag = KYO_cws_eientei_owner_seija }
+			KYO_cws_owned_selected_seija_eientei_visible = { has_country_flag = KYO_cws_eientei_owner_seija has_country_flag = KYO_cws_selected_eientei }
+			KYO_cws_neutral_hakugyokurou_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_neutral_hakugyokurou_visible = { NOT = { OR = { has_country_flag = KYO_cws_hakugyokurou_owner_yakumo has_country_flag = KYO_cws_hakugyokurou_owner_remilia has_country_flag = KYO_cws_hakugyokurou_owner_hijiri has_country_flag = KYO_cws_hakugyokurou_owner_seija } } }
+			KYO_cws_neutral_selected_hakugyokurou_visible = { has_country_flag = KYO_cws_selected_hakugyokurou NOT = { OR = { has_country_flag = KYO_cws_hakugyokurou_owner_yakumo has_country_flag = KYO_cws_hakugyokurou_owner_remilia has_country_flag = KYO_cws_hakugyokurou_owner_hijiri has_country_flag = KYO_cws_hakugyokurou_owner_seija } } }
+			KYO_cws_detail_title_hakugyokurou_visible = { has_country_flag = KYO_cws_selected_hakugyokurou }
+			KYO_cws_detail_portrait_hakugyokurou_visible = { has_country_flag = KYO_cws_selected_hakugyokurou }
+			KYO_cws_detail_text_hakugyokurou_visible = { has_country_flag = KYO_cws_selected_hakugyokurou }
+			KYO_cws_detail_member_hakugyokurou_0_visible = { has_country_flag = KYO_cws_selected_hakugyokurou }
+			KYO_cws_detail_member_hakugyokurou_1_visible = { has_country_flag = KYO_cws_selected_hakugyokurou }
+			KYO_cws_owned_yakumo_hakugyokurou_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_yakumo_hakugyokurou_visible = { has_country_flag = KYO_cws_hakugyokurou_owner_yakumo }
+			KYO_cws_owned_selected_yakumo_hakugyokurou_visible = { has_country_flag = KYO_cws_hakugyokurou_owner_yakumo has_country_flag = KYO_cws_selected_hakugyokurou }
+			KYO_cws_owned_remilia_hakugyokurou_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_remilia_hakugyokurou_visible = { has_country_flag = KYO_cws_hakugyokurou_owner_remilia }
+			KYO_cws_owned_selected_remilia_hakugyokurou_visible = { has_country_flag = KYO_cws_hakugyokurou_owner_remilia has_country_flag = KYO_cws_selected_hakugyokurou }
+			KYO_cws_owned_hijiri_hakugyokurou_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_hijiri_hakugyokurou_visible = { has_country_flag = KYO_cws_hakugyokurou_owner_hijiri }
+			KYO_cws_owned_selected_hijiri_hakugyokurou_visible = { has_country_flag = KYO_cws_hakugyokurou_owner_hijiri has_country_flag = KYO_cws_selected_hakugyokurou }
+			KYO_cws_owned_seija_hakugyokurou_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_seija_hakugyokurou_visible = { has_country_flag = KYO_cws_hakugyokurou_owner_seija }
+			KYO_cws_owned_selected_seija_hakugyokurou_visible = { has_country_flag = KYO_cws_hakugyokurou_owner_seija has_country_flag = KYO_cws_selected_hakugyokurou }
+			KYO_cws_neutral_chireiden_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_neutral_chireiden_visible = { NOT = { OR = { has_country_flag = KYO_cws_chireiden_owner_yakumo has_country_flag = KYO_cws_chireiden_owner_remilia has_country_flag = KYO_cws_chireiden_owner_hijiri has_country_flag = KYO_cws_chireiden_owner_seija } } }
+			KYO_cws_neutral_selected_chireiden_visible = { has_country_flag = KYO_cws_selected_chireiden NOT = { OR = { has_country_flag = KYO_cws_chireiden_owner_yakumo has_country_flag = KYO_cws_chireiden_owner_remilia has_country_flag = KYO_cws_chireiden_owner_hijiri has_country_flag = KYO_cws_chireiden_owner_seija } } }
+			KYO_cws_detail_title_chireiden_visible = { has_country_flag = KYO_cws_selected_chireiden }
+			KYO_cws_detail_portrait_chireiden_visible = { has_country_flag = KYO_cws_selected_chireiden }
+			KYO_cws_detail_text_chireiden_visible = { has_country_flag = KYO_cws_selected_chireiden }
+			KYO_cws_detail_member_chireiden_0_visible = { has_country_flag = KYO_cws_selected_chireiden }
+			KYO_cws_detail_member_chireiden_1_visible = { has_country_flag = KYO_cws_selected_chireiden }
+			KYO_cws_detail_member_chireiden_2_visible = { has_country_flag = KYO_cws_selected_chireiden }
+			KYO_cws_detail_member_chireiden_3_visible = { has_country_flag = KYO_cws_selected_chireiden }
+			KYO_cws_owned_yakumo_chireiden_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_yakumo_chireiden_visible = { has_country_flag = KYO_cws_chireiden_owner_yakumo }
+			KYO_cws_owned_selected_yakumo_chireiden_visible = { has_country_flag = KYO_cws_chireiden_owner_yakumo has_country_flag = KYO_cws_selected_chireiden }
+			KYO_cws_owned_remilia_chireiden_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_remilia_chireiden_visible = { has_country_flag = KYO_cws_chireiden_owner_remilia }
+			KYO_cws_owned_selected_remilia_chireiden_visible = { has_country_flag = KYO_cws_chireiden_owner_remilia has_country_flag = KYO_cws_selected_chireiden }
+			KYO_cws_owned_hijiri_chireiden_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_hijiri_chireiden_visible = { has_country_flag = KYO_cws_chireiden_owner_hijiri }
+			KYO_cws_owned_selected_hijiri_chireiden_visible = { has_country_flag = KYO_cws_chireiden_owner_hijiri has_country_flag = KYO_cws_selected_chireiden }
+			KYO_cws_owned_seija_chireiden_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_seija_chireiden_visible = { has_country_flag = KYO_cws_chireiden_owner_seija }
+			KYO_cws_owned_selected_seija_chireiden_visible = { has_country_flag = KYO_cws_chireiden_owner_seija has_country_flag = KYO_cws_selected_chireiden }
+			KYO_cws_neutral_oni_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_neutral_oni_visible = { NOT = { OR = { has_country_flag = KYO_cws_oni_owner_yakumo has_country_flag = KYO_cws_oni_owner_remilia has_country_flag = KYO_cws_oni_owner_hijiri has_country_flag = KYO_cws_oni_owner_seija } } }
+			KYO_cws_neutral_selected_oni_visible = { has_country_flag = KYO_cws_selected_oni NOT = { OR = { has_country_flag = KYO_cws_oni_owner_yakumo has_country_flag = KYO_cws_oni_owner_remilia has_country_flag = KYO_cws_oni_owner_hijiri has_country_flag = KYO_cws_oni_owner_seija } } }
+			KYO_cws_detail_title_oni_visible = { has_country_flag = KYO_cws_selected_oni }
+			KYO_cws_detail_portrait_oni_visible = { has_country_flag = KYO_cws_selected_oni }
+			KYO_cws_detail_text_oni_visible = { has_country_flag = KYO_cws_selected_oni }
+			KYO_cws_detail_member_oni_0_visible = { has_country_flag = KYO_cws_selected_oni }
+			KYO_cws_detail_member_oni_1_visible = { has_country_flag = KYO_cws_selected_oni }
+			KYO_cws_detail_member_oni_2_visible = { has_country_flag = KYO_cws_selected_oni }
+			KYO_cws_detail_member_oni_3_visible = { has_country_flag = KYO_cws_selected_oni }
+			KYO_cws_detail_member_oni_4_visible = { has_country_flag = KYO_cws_selected_oni }
+			KYO_cws_detail_member_oni_5_visible = { has_country_flag = KYO_cws_selected_oni }
+			KYO_cws_owned_yakumo_oni_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_yakumo_oni_visible = { has_country_flag = KYO_cws_oni_owner_yakumo }
+			KYO_cws_owned_selected_yakumo_oni_visible = { has_country_flag = KYO_cws_oni_owner_yakumo has_country_flag = KYO_cws_selected_oni }
+			KYO_cws_owned_remilia_oni_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_remilia_oni_visible = { has_country_flag = KYO_cws_oni_owner_remilia }
+			KYO_cws_owned_selected_remilia_oni_visible = { has_country_flag = KYO_cws_oni_owner_remilia has_country_flag = KYO_cws_selected_oni }
+			KYO_cws_owned_hijiri_oni_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_hijiri_oni_visible = { has_country_flag = KYO_cws_oni_owner_hijiri }
+			KYO_cws_owned_selected_hijiri_oni_visible = { has_country_flag = KYO_cws_oni_owner_hijiri has_country_flag = KYO_cws_selected_oni }
+			KYO_cws_owned_seija_oni_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_seija_oni_visible = { has_country_flag = KYO_cws_oni_owner_seija }
+			KYO_cws_owned_selected_seija_oni_visible = { has_country_flag = KYO_cws_oni_owner_seija has_country_flag = KYO_cws_selected_oni }
+			KYO_cws_neutral_fairies_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_neutral_fairies_visible = { NOT = { OR = { has_country_flag = KYO_cws_fairies_owner_yakumo has_country_flag = KYO_cws_fairies_owner_remilia has_country_flag = KYO_cws_fairies_owner_hijiri has_country_flag = KYO_cws_fairies_owner_seija } } }
+			KYO_cws_neutral_selected_fairies_visible = { has_country_flag = KYO_cws_selected_fairies NOT = { OR = { has_country_flag = KYO_cws_fairies_owner_yakumo has_country_flag = KYO_cws_fairies_owner_remilia has_country_flag = KYO_cws_fairies_owner_hijiri has_country_flag = KYO_cws_fairies_owner_seija } } }
+			KYO_cws_detail_title_fairies_visible = { has_country_flag = KYO_cws_selected_fairies }
+			KYO_cws_detail_portrait_fairies_visible = { has_country_flag = KYO_cws_selected_fairies }
+			KYO_cws_detail_text_fairies_visible = { has_country_flag = KYO_cws_selected_fairies }
+			KYO_cws_detail_member_fairies_0_visible = { has_country_flag = KYO_cws_selected_fairies }
+			KYO_cws_detail_member_fairies_1_visible = { has_country_flag = KYO_cws_selected_fairies }
+			KYO_cws_detail_member_fairies_2_visible = { has_country_flag = KYO_cws_selected_fairies }
+			KYO_cws_detail_member_fairies_3_visible = { has_country_flag = KYO_cws_selected_fairies }
+			KYO_cws_detail_member_fairies_4_visible = { has_country_flag = KYO_cws_selected_fairies }
+			KYO_cws_detail_member_fairies_5_visible = { has_country_flag = KYO_cws_selected_fairies }
+			KYO_cws_owned_yakumo_fairies_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_yakumo_fairies_visible = { has_country_flag = KYO_cws_fairies_owner_yakumo }
+			KYO_cws_owned_selected_yakumo_fairies_visible = { has_country_flag = KYO_cws_fairies_owner_yakumo has_country_flag = KYO_cws_selected_fairies }
+			KYO_cws_owned_remilia_fairies_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_remilia_fairies_visible = { has_country_flag = KYO_cws_fairies_owner_remilia }
+			KYO_cws_owned_selected_remilia_fairies_visible = { has_country_flag = KYO_cws_fairies_owner_remilia has_country_flag = KYO_cws_selected_fairies }
+			KYO_cws_owned_hijiri_fairies_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_hijiri_fairies_visible = { has_country_flag = KYO_cws_fairies_owner_hijiri }
+			KYO_cws_owned_selected_hijiri_fairies_visible = { has_country_flag = KYO_cws_fairies_owner_hijiri has_country_flag = KYO_cws_selected_fairies }
+			KYO_cws_owned_seija_fairies_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_seija_fairies_visible = { has_country_flag = KYO_cws_fairies_owner_seija }
+			KYO_cws_owned_selected_seija_fairies_visible = { has_country_flag = KYO_cws_fairies_owner_seija has_country_flag = KYO_cws_selected_fairies }
+			KYO_cws_neutral_tsukumogami_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_neutral_tsukumogami_visible = { NOT = { OR = { has_country_flag = KYO_cws_tsukumogami_owner_yakumo has_country_flag = KYO_cws_tsukumogami_owner_remilia has_country_flag = KYO_cws_tsukumogami_owner_hijiri has_country_flag = KYO_cws_tsukumogami_owner_seija } } }
+			KYO_cws_neutral_selected_tsukumogami_visible = { has_country_flag = KYO_cws_selected_tsukumogami NOT = { OR = { has_country_flag = KYO_cws_tsukumogami_owner_yakumo has_country_flag = KYO_cws_tsukumogami_owner_remilia has_country_flag = KYO_cws_tsukumogami_owner_hijiri has_country_flag = KYO_cws_tsukumogami_owner_seija } } }
+			KYO_cws_detail_title_tsukumogami_visible = { has_country_flag = KYO_cws_selected_tsukumogami }
+			KYO_cws_detail_portrait_tsukumogami_visible = { has_country_flag = KYO_cws_selected_tsukumogami }
+			KYO_cws_detail_text_tsukumogami_visible = { has_country_flag = KYO_cws_selected_tsukumogami }
+			KYO_cws_detail_member_tsukumogami_0_visible = { has_country_flag = KYO_cws_selected_tsukumogami }
+			KYO_cws_detail_member_tsukumogami_1_visible = { has_country_flag = KYO_cws_selected_tsukumogami }
+			KYO_cws_detail_member_tsukumogami_2_visible = { has_country_flag = KYO_cws_selected_tsukumogami }
+			KYO_cws_detail_member_tsukumogami_3_visible = { has_country_flag = KYO_cws_selected_tsukumogami }
+			KYO_cws_owned_yakumo_tsukumogami_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_yakumo_tsukumogami_visible = { has_country_flag = KYO_cws_tsukumogami_owner_yakumo }
+			KYO_cws_owned_selected_yakumo_tsukumogami_visible = { has_country_flag = KYO_cws_tsukumogami_owner_yakumo has_country_flag = KYO_cws_selected_tsukumogami }
+			KYO_cws_owned_remilia_tsukumogami_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_remilia_tsukumogami_visible = { has_country_flag = KYO_cws_tsukumogami_owner_remilia }
+			KYO_cws_owned_selected_remilia_tsukumogami_visible = { has_country_flag = KYO_cws_tsukumogami_owner_remilia has_country_flag = KYO_cws_selected_tsukumogami }
+			KYO_cws_owned_hijiri_tsukumogami_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_hijiri_tsukumogami_visible = { has_country_flag = KYO_cws_tsukumogami_owner_hijiri }
+			KYO_cws_owned_selected_hijiri_tsukumogami_visible = { has_country_flag = KYO_cws_tsukumogami_owner_hijiri has_country_flag = KYO_cws_selected_tsukumogami }
+			KYO_cws_owned_seija_tsukumogami_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_seija_tsukumogami_visible = { has_country_flag = KYO_cws_tsukumogami_owner_seija }
+			KYO_cws_owned_selected_seija_tsukumogami_visible = { has_country_flag = KYO_cws_tsukumogami_owner_seija has_country_flag = KYO_cws_selected_tsukumogami }
+			KYO_cws_neutral_moriya_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_neutral_moriya_visible = { NOT = { OR = { has_country_flag = KYO_cws_moriya_owner_yakumo has_country_flag = KYO_cws_moriya_owner_remilia has_country_flag = KYO_cws_moriya_owner_hijiri has_country_flag = KYO_cws_moriya_owner_seija } } }
+			KYO_cws_neutral_selected_moriya_visible = { has_country_flag = KYO_cws_selected_moriya NOT = { OR = { has_country_flag = KYO_cws_moriya_owner_yakumo has_country_flag = KYO_cws_moriya_owner_remilia has_country_flag = KYO_cws_moriya_owner_hijiri has_country_flag = KYO_cws_moriya_owner_seija } } }
+			KYO_cws_detail_title_moriya_visible = { has_country_flag = KYO_cws_selected_moriya }
+			KYO_cws_detail_portrait_moriya_visible = { has_country_flag = KYO_cws_selected_moriya }
+			KYO_cws_detail_text_moriya_visible = { has_country_flag = KYO_cws_selected_moriya }
+			KYO_cws_detail_member_moriya_0_visible = { has_country_flag = KYO_cws_selected_moriya }
+			KYO_cws_detail_member_moriya_1_visible = { has_country_flag = KYO_cws_selected_moriya }
+			KYO_cws_owned_yakumo_moriya_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_yakumo_moriya_visible = { has_country_flag = KYO_cws_moriya_owner_yakumo }
+			KYO_cws_owned_selected_yakumo_moriya_visible = { has_country_flag = KYO_cws_moriya_owner_yakumo has_country_flag = KYO_cws_selected_moriya }
+			KYO_cws_owned_remilia_moriya_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_remilia_moriya_visible = { has_country_flag = KYO_cws_moriya_owner_remilia }
+			KYO_cws_owned_selected_remilia_moriya_visible = { has_country_flag = KYO_cws_moriya_owner_remilia has_country_flag = KYO_cws_selected_moriya }
+			KYO_cws_owned_hijiri_moriya_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_hijiri_moriya_visible = { has_country_flag = KYO_cws_moriya_owner_hijiri }
+			KYO_cws_owned_selected_hijiri_moriya_visible = { has_country_flag = KYO_cws_moriya_owner_hijiri has_country_flag = KYO_cws_selected_moriya }
+			KYO_cws_owned_seija_moriya_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_seija_moriya_visible = { has_country_flag = KYO_cws_moriya_owner_seija }
+			KYO_cws_owned_selected_seija_moriya_visible = { has_country_flag = KYO_cws_moriya_owner_seija has_country_flag = KYO_cws_selected_moriya }
+			KYO_cws_neutral_senkai_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_neutral_senkai_visible = { NOT = { OR = { has_country_flag = KYO_cws_senkai_owner_yakumo has_country_flag = KYO_cws_senkai_owner_remilia has_country_flag = KYO_cws_senkai_owner_hijiri has_country_flag = KYO_cws_senkai_owner_seija } } }
+			KYO_cws_neutral_selected_senkai_visible = { has_country_flag = KYO_cws_selected_senkai NOT = { OR = { has_country_flag = KYO_cws_senkai_owner_yakumo has_country_flag = KYO_cws_senkai_owner_remilia has_country_flag = KYO_cws_senkai_owner_hijiri has_country_flag = KYO_cws_senkai_owner_seija } } }
+			KYO_cws_detail_title_senkai_visible = { has_country_flag = KYO_cws_selected_senkai }
+			KYO_cws_detail_portrait_senkai_visible = { has_country_flag = KYO_cws_selected_senkai }
+			KYO_cws_detail_text_senkai_visible = { has_country_flag = KYO_cws_selected_senkai }
+			KYO_cws_detail_member_senkai_0_visible = { has_country_flag = KYO_cws_selected_senkai }
+			KYO_cws_detail_member_senkai_1_visible = { has_country_flag = KYO_cws_selected_senkai }
+			KYO_cws_detail_member_senkai_2_visible = { has_country_flag = KYO_cws_selected_senkai }
+			KYO_cws_detail_member_senkai_3_visible = { has_country_flag = KYO_cws_selected_senkai }
+			KYO_cws_detail_member_senkai_4_visible = { has_country_flag = KYO_cws_selected_senkai }
+			KYO_cws_owned_yakumo_senkai_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_yakumo_senkai_visible = { has_country_flag = KYO_cws_senkai_owner_yakumo }
+			KYO_cws_owned_selected_yakumo_senkai_visible = { has_country_flag = KYO_cws_senkai_owner_yakumo has_country_flag = KYO_cws_selected_senkai }
+			KYO_cws_owned_remilia_senkai_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_remilia_senkai_visible = { has_country_flag = KYO_cws_senkai_owner_remilia }
+			KYO_cws_owned_selected_remilia_senkai_visible = { has_country_flag = KYO_cws_senkai_owner_remilia has_country_flag = KYO_cws_selected_senkai }
+			KYO_cws_owned_hijiri_senkai_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_hijiri_senkai_visible = { has_country_flag = KYO_cws_senkai_owner_hijiri }
+			KYO_cws_owned_selected_hijiri_senkai_visible = { has_country_flag = KYO_cws_senkai_owner_hijiri has_country_flag = KYO_cws_selected_senkai }
+			KYO_cws_owned_seija_senkai_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_seija_senkai_visible = { has_country_flag = KYO_cws_senkai_owner_seija }
+			KYO_cws_owned_selected_seija_senkai_visible = { has_country_flag = KYO_cws_senkai_owner_seija has_country_flag = KYO_cws_selected_senkai }
+			KYO_cws_neutral_magic_forest_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_neutral_magic_forest_visible = { NOT = { OR = { has_country_flag = KYO_cws_magic_forest_owner_yakumo has_country_flag = KYO_cws_magic_forest_owner_remilia has_country_flag = KYO_cws_magic_forest_owner_hijiri has_country_flag = KYO_cws_magic_forest_owner_seija } } }
+			KYO_cws_neutral_selected_magic_forest_visible = { has_country_flag = KYO_cws_selected_magic_forest NOT = { OR = { has_country_flag = KYO_cws_magic_forest_owner_yakumo has_country_flag = KYO_cws_magic_forest_owner_remilia has_country_flag = KYO_cws_magic_forest_owner_hijiri has_country_flag = KYO_cws_magic_forest_owner_seija } } }
+			KYO_cws_detail_title_magic_forest_visible = { has_country_flag = KYO_cws_selected_magic_forest }
+			KYO_cws_detail_portrait_magic_forest_visible = { has_country_flag = KYO_cws_selected_magic_forest }
+			KYO_cws_detail_text_magic_forest_visible = { has_country_flag = KYO_cws_selected_magic_forest }
+			KYO_cws_detail_member_magic_forest_0_visible = { has_country_flag = KYO_cws_selected_magic_forest }
+			KYO_cws_detail_member_magic_forest_1_visible = { has_country_flag = KYO_cws_selected_magic_forest }
+			KYO_cws_detail_member_magic_forest_2_visible = { has_country_flag = KYO_cws_selected_magic_forest }
+			KYO_cws_detail_member_magic_forest_3_visible = { has_country_flag = KYO_cws_selected_magic_forest }
+			KYO_cws_detail_member_magic_forest_4_visible = { has_country_flag = KYO_cws_selected_magic_forest }
+			KYO_cws_detail_member_magic_forest_5_visible = { has_country_flag = KYO_cws_selected_magic_forest }
+			KYO_cws_owned_yakumo_magic_forest_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_yakumo_magic_forest_visible = { has_country_flag = KYO_cws_magic_forest_owner_yakumo }
+			KYO_cws_owned_selected_yakumo_magic_forest_visible = { has_country_flag = KYO_cws_magic_forest_owner_yakumo has_country_flag = KYO_cws_selected_magic_forest }
+			KYO_cws_owned_remilia_magic_forest_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_remilia_magic_forest_visible = { has_country_flag = KYO_cws_magic_forest_owner_remilia }
+			KYO_cws_owned_selected_remilia_magic_forest_visible = { has_country_flag = KYO_cws_magic_forest_owner_remilia has_country_flag = KYO_cws_selected_magic_forest }
+			KYO_cws_owned_hijiri_magic_forest_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_hijiri_magic_forest_visible = { has_country_flag = KYO_cws_magic_forest_owner_hijiri }
+			KYO_cws_owned_selected_hijiri_magic_forest_visible = { has_country_flag = KYO_cws_magic_forest_owner_hijiri has_country_flag = KYO_cws_selected_magic_forest }
+			KYO_cws_owned_seija_magic_forest_click_enabled = { KYO_cws_system_is_active = yes }
+			KYO_cws_owned_seija_magic_forest_visible = { has_country_flag = KYO_cws_magic_forest_owner_seija }
+			KYO_cws_owned_selected_seija_magic_forest_visible = { has_country_flag = KYO_cws_magic_forest_owner_seija has_country_flag = KYO_cws_selected_magic_forest }
+		}
+		effects = {
+			KYO_cws_detail_close_click = { KYO_cws_clear_selection = yes }
+			KYO_cws_owned_yakumo_village_click = { KYO_cws_select_village = yes }
+			KYO_cws_owned_remilia_village_click = { KYO_cws_select_village = yes }
+			KYO_cws_owned_hijiri_village_click = { KYO_cws_select_village = yes }
+			KYO_cws_owned_seija_village_click = { KYO_cws_select_village = yes }
+			KYO_cws_neutral_village_click = { KYO_cws_select_village = yes }
+			KYO_cws_owned_yakumo_kappa_click = { KYO_cws_select_kappa = yes }
+			KYO_cws_owned_remilia_kappa_click = { KYO_cws_select_kappa = yes }
+			KYO_cws_owned_hijiri_kappa_click = { KYO_cws_select_kappa = yes }
+			KYO_cws_owned_seija_kappa_click = { KYO_cws_select_kappa = yes }
+			KYO_cws_neutral_kappa_click = { KYO_cws_select_kappa = yes }
+			KYO_cws_owned_yakumo_tengu_click = { KYO_cws_select_tengu = yes }
+			KYO_cws_owned_remilia_tengu_click = { KYO_cws_select_tengu = yes }
+			KYO_cws_owned_hijiri_tengu_click = { KYO_cws_select_tengu = yes }
+			KYO_cws_owned_seija_tengu_click = { KYO_cws_select_tengu = yes }
+			KYO_cws_neutral_tengu_click = { KYO_cws_select_tengu = yes }
+			KYO_cws_owned_yakumo_eientei_click = { KYO_cws_select_eientei = yes }
+			KYO_cws_owned_remilia_eientei_click = { KYO_cws_select_eientei = yes }
+			KYO_cws_owned_hijiri_eientei_click = { KYO_cws_select_eientei = yes }
+			KYO_cws_owned_seija_eientei_click = { KYO_cws_select_eientei = yes }
+			KYO_cws_neutral_eientei_click = { KYO_cws_select_eientei = yes }
+			KYO_cws_owned_yakumo_hakugyokurou_click = { KYO_cws_select_hakugyokurou = yes }
+			KYO_cws_owned_remilia_hakugyokurou_click = { KYO_cws_select_hakugyokurou = yes }
+			KYO_cws_owned_hijiri_hakugyokurou_click = { KYO_cws_select_hakugyokurou = yes }
+			KYO_cws_owned_seija_hakugyokurou_click = { KYO_cws_select_hakugyokurou = yes }
+			KYO_cws_neutral_hakugyokurou_click = { KYO_cws_select_hakugyokurou = yes }
+			KYO_cws_owned_yakumo_chireiden_click = { KYO_cws_select_chireiden = yes }
+			KYO_cws_owned_remilia_chireiden_click = { KYO_cws_select_chireiden = yes }
+			KYO_cws_owned_hijiri_chireiden_click = { KYO_cws_select_chireiden = yes }
+			KYO_cws_owned_seija_chireiden_click = { KYO_cws_select_chireiden = yes }
+			KYO_cws_neutral_chireiden_click = { KYO_cws_select_chireiden = yes }
+			KYO_cws_owned_yakumo_oni_click = { KYO_cws_select_oni = yes }
+			KYO_cws_owned_remilia_oni_click = { KYO_cws_select_oni = yes }
+			KYO_cws_owned_hijiri_oni_click = { KYO_cws_select_oni = yes }
+			KYO_cws_owned_seija_oni_click = { KYO_cws_select_oni = yes }
+			KYO_cws_neutral_oni_click = { KYO_cws_select_oni = yes }
+			KYO_cws_owned_yakumo_fairies_click = { KYO_cws_select_fairies = yes }
+			KYO_cws_owned_remilia_fairies_click = { KYO_cws_select_fairies = yes }
+			KYO_cws_owned_hijiri_fairies_click = { KYO_cws_select_fairies = yes }
+			KYO_cws_owned_seija_fairies_click = { KYO_cws_select_fairies = yes }
+			KYO_cws_neutral_fairies_click = { KYO_cws_select_fairies = yes }
+			KYO_cws_owned_yakumo_tsukumogami_click = { KYO_cws_select_tsukumogami = yes }
+			KYO_cws_owned_remilia_tsukumogami_click = { KYO_cws_select_tsukumogami = yes }
+			KYO_cws_owned_hijiri_tsukumogami_click = { KYO_cws_select_tsukumogami = yes }
+			KYO_cws_owned_seija_tsukumogami_click = { KYO_cws_select_tsukumogami = yes }
+			KYO_cws_neutral_tsukumogami_click = { KYO_cws_select_tsukumogami = yes }
+			KYO_cws_owned_yakumo_moriya_click = { KYO_cws_select_moriya = yes }
+			KYO_cws_owned_remilia_moriya_click = { KYO_cws_select_moriya = yes }
+			KYO_cws_owned_hijiri_moriya_click = { KYO_cws_select_moriya = yes }
+			KYO_cws_owned_seija_moriya_click = { KYO_cws_select_moriya = yes }
+			KYO_cws_neutral_moriya_click = { KYO_cws_select_moriya = yes }
+			KYO_cws_owned_yakumo_senkai_click = { KYO_cws_select_senkai = yes }
+			KYO_cws_owned_remilia_senkai_click = { KYO_cws_select_senkai = yes }
+			KYO_cws_owned_hijiri_senkai_click = { KYO_cws_select_senkai = yes }
+			KYO_cws_owned_seija_senkai_click = { KYO_cws_select_senkai = yes }
+			KYO_cws_neutral_senkai_click = { KYO_cws_select_senkai = yes }
+			KYO_cws_owned_yakumo_magic_forest_click = { KYO_cws_select_magic_forest = yes }
+			KYO_cws_owned_remilia_magic_forest_click = { KYO_cws_select_magic_forest = yes }
+			KYO_cws_owned_hijiri_magic_forest_click = { KYO_cws_select_magic_forest = yes }
+			KYO_cws_owned_seija_magic_forest_click = { KYO_cws_select_magic_forest = yes }
+			KYO_cws_neutral_magic_forest_click = { KYO_cws_select_magic_forest = yes }
+		}
+	}
+}

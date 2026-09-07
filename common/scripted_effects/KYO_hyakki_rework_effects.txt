@@ -1,0 +1,54 @@
+# 百鬼協議候選人重製：每季抽選兩名「特別執行人選」。
+
+KYO_clear_executive_pair = {
+	clr_country_flag = KYO_executive_pair_remilia
+	clr_country_flag = KYO_executive_pair_yuyuko
+	clr_country_flag = KYO_executive_pair_suika
+	clr_country_flag = KYO_executive_pair_yuuka
+	clr_country_flag = KYO_executive_pair_byakuren
+	clr_country_flag = KYO_executive_pair_kanako
+	clr_country_flag = KYO_executive_pair_satori
+	clr_country_flag = KYO_executive_pair_megumu
+	clr_country_flag = KYO_executive_pair_sekibanki
+	clr_country_flag = KYO_executive_pair_eirin
+	clr_country_flag = KYO_executive_pair_raiko
+	clr_country_flag = KYO_executive_pair_eiki
+	clr_country_flag = KYO_executive_pair_mandate_used
+}
+
+KYO_start_random_executive_pair = {
+	KYO_clear_executive_pair = yes
+	random_list = {
+		10 = { set_country_flag = KYO_executive_pair_remilia }
+		10 = { set_country_flag = KYO_executive_pair_yuyuko }
+		10 = { set_country_flag = KYO_executive_pair_suika }
+		10 = { set_country_flag = KYO_executive_pair_yuuka }
+		10 = { set_country_flag = KYO_executive_pair_byakuren }
+		10 = { set_country_flag = KYO_executive_pair_kanako }
+		10 = { set_country_flag = KYO_executive_pair_satori }
+		10 = { set_country_flag = KYO_executive_pair_megumu }
+		10 = { set_country_flag = KYO_executive_pair_sekibanki }
+		10 = { set_country_flag = KYO_executive_pair_eirin }
+		10 = { set_country_flag = KYO_executive_pair_raiko }
+		10 = { set_country_flag = KYO_executive_pair_eiki }
+	}
+	random_list = {
+		10 = { modifier = { factor = 0 has_country_flag = KYO_executive_pair_remilia } set_country_flag = KYO_executive_pair_remilia }
+		10 = { modifier = { factor = 0 has_country_flag = KYO_executive_pair_yuyuko } set_country_flag = KYO_executive_pair_yuyuko }
+		10 = { modifier = { factor = 0 has_country_flag = KYO_executive_pair_suika } set_country_flag = KYO_executive_pair_suika }
+		10 = { modifier = { factor = 0 has_country_flag = KYO_executive_pair_yuuka } set_country_flag = KYO_executive_pair_yuuka }
+		10 = { modifier = { factor = 0 has_country_flag = KYO_executive_pair_byakuren } set_country_flag = KYO_executive_pair_byakuren }
+		10 = { modifier = { factor = 0 has_country_flag = KYO_executive_pair_kanako } set_country_flag = KYO_executive_pair_kanako }
+		10 = { modifier = { factor = 0 has_country_flag = KYO_executive_pair_satori } set_country_flag = KYO_executive_pair_satori }
+		10 = { modifier = { factor = 0 has_country_flag = KYO_executive_pair_megumu } set_country_flag = KYO_executive_pair_megumu }
+		10 = { modifier = { factor = 0 has_country_flag = KYO_executive_pair_sekibanki } set_country_flag = KYO_executive_pair_sekibanki }
+		10 = { modifier = { factor = 0 has_country_flag = KYO_executive_pair_eirin } set_country_flag = KYO_executive_pair_eirin }
+		10 = { modifier = { factor = 0 has_country_flag = KYO_executive_pair_raiko } set_country_flag = KYO_executive_pair_raiko }
+		10 = { modifier = { factor = 0 has_country_flag = KYO_executive_pair_eiki } set_country_flag = KYO_executive_pair_eiki }
+	}
+	activate_mission = KYO_executive_pair_cycle
+}
+
+KYO_use_executive_pair_mandate = {
+	set_country_flag = KYO_executive_pair_mandate_used
+}

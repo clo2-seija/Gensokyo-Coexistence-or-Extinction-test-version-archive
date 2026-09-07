@@ -1,0 +1,238 @@
+ideas = {
+	country = {
+
+		KYO_civil_war_isolation = {
+			picture = Eiki_disapoint
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				ai_call_ally_desire_factor = -10000
+				ai_join_ally_desire_factor = -10000
+
+				# 封闭战争带来的共同影响
+				war_support_factor = 0.05
+
+			}
+
+			rule = {
+				can_join_factions = no
+				can_create_factions = no
+				can_decline_call_to_war = yes
+			}
+		}
+
+		KYO_civil_war_npc_pressure = {
+			picture = twenty_four_hours_work_time
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				# 敌对阵营不会坐等玩家逐一击破
+				army_attack_factor = 0.03
+				army_defence_factor = 0.04
+				planning_speed = 0.05
+				division_recovery_rate = 0.025
+			}
+		}
+
+		KYO_committee_central_archives = {
+			picture = renko_gap_power
+			allowed = { always = no }
+
+			modifier = {
+				# 八云政府遗留的档案、地图和调度记录
+				planning_speed = 0.08
+				max_planning_factor = 0.05
+				land_reinforce_rate = 0.02
+				supply_consumption_factor = -0.03
+				army_intel_factor = 0.10
+			}
+		}
+
+		KYO_committee_military_assets = {
+			picture = military_committee_fulfillment
+			allowed = { always = no }
+
+			modifier = {
+				# 军务委员会留下的武器、教官与作战方案
+				army_attack_factor = 0.04
+				breakthrough_factor = 0.05
+				experience_gain_army_factor = 0.10
+				industrial_capacity_factory = 0.03
+			}
+		}
+
+		KYO_committee_faith_assets = {
+			picture = faith_committee_fulfillment
+			allowed = { always = no }
+
+			modifier = {
+				# 宗教组织提供的基层秩序与精神支柱
+				army_org_factor = 0.04
+				army_morale_factor = 0.06
+				experience_loss_factor = -0.10
+				stability_factor = 0.03
+			}
+		}
+
+		KYO_committee_mobilization_assets = {
+			picture = mobilization_committee_fulfillment
+			allowed = { always = no }
+
+			modifier = {
+				# 地方名册、工坊和草根运输网络
+				mobilization_speed = 0.08
+				training_time_army_factor = -0.05
+				supply_consumption_factor = -0.03
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+
+		KYO_committee_military_chair = {
+			picture = military_committee_fulfillment
+			allowed = { always = no }
+
+			modifier = {
+				# 军务委员长统一前线指挥
+				army_attack_factor = 0.03
+				breakthrough_factor = 0.05
+				planning_speed = 0.04
+				army_speed_factor = 0.025
+			}
+		}
+
+		KYO_committee_faith_chair = {
+			picture = faith_committee_fulfillment
+			allowed = { always = no }
+
+			modifier = {
+				# 信仰委员长维持军心与战时秩序
+				army_morale_factor = 0.05
+				division_recovery_rate = 0.04
+				stability_factor = 0.03
+				war_support_factor = 0.025
+			}
+		}
+
+		KYO_committee_network_chair = {
+			picture = mobilization_committee_fulfillment
+			allowed = { always = no }
+
+			modifier = {
+				# 万民委员长动员地方组织与生产网络
+				mobilization_speed = 0.06
+				production_factory_efficiency_gain_factor = 0.04
+				army_intel_factor = 0.08
+				supply_consumption_factor = -0.025
+			}
+		}
+
+		KYO_legacy_doctrine_yakumo = {
+			picture = yukari_gap_power
+			allowed = { always = no }
+
+			modifier = {
+				# 八云体系：预判、调度与精密控制
+				supply_consumption_factor = -0.05
+				planning_speed = 0.08
+				max_planning_factor = 0.05
+				land_reinforce_rate = 0.02
+				army_intel_factor = 0.10
+			}
+		}
+
+		KYO_legacy_doctrine_remilia = {
+			picture = remilia_power
+			allowed = { always = no }
+
+			modifier = {
+				# 红魔馆：先手、速度与正面突破
+				army_attack_factor = 0.05
+				breakthrough_factor = 0.075
+				army_speed_factor = 0.05
+				army_morale_factor = 0.03
+			}
+		}
+
+		KYO_legacy_doctrine_hijiri = {
+			picture = path_of_all_salvation
+			allowed = { always = no }
+
+			modifier = {
+				# 命莲寺：纪律、互助与保存有生力量
+				army_org_factor = 0.05
+				army_morale_factor = 0.075
+				division_recovery_rate = 0.05
+				experience_loss_factor = -0.10
+				supply_consumption_factor = -0.03
+			}
+		}
+
+		KYO_legacy_doctrine_seija = {
+			picture = KYO_seija_dynamic_political_idea
+			allowed = { always = no }
+
+			modifier = {
+				# 正邪阵线：群众动员、缴获与游击攻势
+				mobilization_speed = 0.10
+				training_time_army_factor = -0.075
+				equipment_capture_factor = 0.10
+				supply_consumption_factor = -0.04
+				army_attack_factor = 0.03
+			}
+		}
+
+		# KYO_legacy_stage_1 = {
+		# 	picture = generic_intel_bonus
+		# 	allowed = { always = no }
+		# 	modifier = { planning_speed = 0.02 }
+		# }
+		# KYO_legacy_stage_2 = {
+		# 	picture = generic_intel_bonus
+		# 	allowed = { always = no }
+		# 	modifier = { planning_speed = 0.03 army_org_factor = 0.01 }
+		# }
+		# KYO_legacy_stage_3 = {
+		# 	picture = generic_intel_bonus
+		# 	allowed = { always = no }
+		# 	modifier = { planning_speed = 0.04 army_org_factor = 0.02 }
+		# }
+		# KYO_legacy_stage_4 = {
+		# 	picture = generic_intel_bonus
+		# 	allowed = { always = no }
+		# 	modifier = { planning_speed = 0.05 army_org_factor = 0.025 supply_consumption_factor = -0.01 }
+		# }
+		# KYO_legacy_stage_5 = {
+		# 	picture = generic_intel_bonus
+		# 	allowed = { always = no }
+		# 	modifier = { planning_speed = 0.06 army_org_factor = 0.03 supply_consumption_factor = -0.02 }
+		# }
+		# KYO_legacy_stage_6 = {
+		# 	picture = generic_intel_bonus
+		# 	allowed = { always = no }
+		# 	modifier = { planning_speed = 0.08 army_org_factor = 0.04 supply_consumption_factor = -0.03 }
+		# }
+
+
+
+		KYO_lunar_interference_penalty = {
+			picture = company_lunarian
+			allowed = { always = no }
+			modifier = {
+				planning_speed = -0.10
+				land_reinforce_rate = -0.02
+			}
+		}
+
+		KYO_ownerless_barrier = {
+			picture = restored_great_barrier
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.10
+				supply_consumption_factor = -0.05
+				army_defence_factor = 0.05
+			}
+		}
+	}
+}

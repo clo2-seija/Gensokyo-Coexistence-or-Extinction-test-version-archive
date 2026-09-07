@@ -1,0 +1,534 @@
+### KYO - Youkai combat battalions
+### All units are inactive until their matching hidden technology is granted.
+
+sub_units = {
+	KYO_youkai_beast_battalion = {
+		abbreviation = "YKB"
+		sprite = cavalry
+		map_icon_category = infantry
+		priority = 1001
+		ai_priority = 180
+		active = no
+		affects_speed = yes
+
+		type = { infantry  }
+		group = mobile
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 2
+		max_strength = 35
+		max_organisation = 58
+		default_morale = 0.35
+		manpower = 1000
+		training_time = 105
+		suppression = 2.0
+		weight = 0.60
+		supply_consumption = 0.075
+
+		soft_attack = 0.05
+		hard_attack = 0.05
+		defense = 0.15
+		breakthrough = 0.10
+		maximum_speed = 0.45
+
+		need = {
+			infantry_equipment = 110
+		}
+	}
+
+	KYO_blood_spawn_battalion = {
+		abbreviation = "SPN"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 1002
+		ai_priority = 130
+		active = no
+
+		type = { infantry }
+		group = infantry
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 2
+		max_strength = 45
+		max_organisation = 75
+		default_morale = 0.25
+		manpower = 1200
+		training_time = 110
+		suppression = 2.5
+		weight = 0.60
+		supply_consumption = 0.080
+
+		soft_attack = -0.55
+		hard_attack = -0.55
+		defense = 0.10
+		breakthrough = -0.45
+		maximum_speed = -0.05
+
+		need = {
+			infantry_equipment = 100
+		}
+	}
+
+	KYO_fairy_battalion = {
+		abbreviation = "FAE"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 1003
+		ai_priority = 220
+		active = no
+
+		type = { infantry }
+		group = infantry
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 2
+		max_strength = 15
+		max_organisation = 40
+		default_morale = 0.45
+		manpower = 550
+		training_time = 45
+		suppression = 0.8
+		weight = 0.25
+		supply_consumption = 0.035
+
+		soft_attack = -0.40
+		hard_attack = -0.40
+		defense = -0.35
+		breakthrough = -0.35
+		maximum_speed = 0.05
+
+		need = {
+			infantry_equipment = 50
+		}
+	}
+
+	KYO_white_wolf_tengu_battlegroup = {
+		abbreviation = "WTG"
+		sprite = infantry
+		
+		map_icon_category = infantry
+		priority = 1010
+		ai_priority = 90
+		active = no
+		affects_speed = yes
+		special_forces = yes
+		mountaineers = yes
+		marines = yes
+		can_be_parachuted = yes
+
+		type = { infantry }
+		group = infantry
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+			category_special_forces
+		}
+
+		combat_width = 2
+		max_strength = 25
+		max_organisation = 75
+		default_morale = 0.50
+		manpower = 1100
+		training_time = 240
+		suppression = 2.0
+		weight = 0.80
+		supply_consumption = 0.110
+
+		soft_attack = 0.15
+		hard_attack = 0.15
+		defense = 0.25
+		breakthrough = 0.45
+		maximum_speed = 0.10
+
+		essential = {
+			infantry_equipment
+			support_equipment
+		}
+		need = {
+			infantry_equipment = 180
+			support_equipment = 40
+		}
+
+		plains = {
+			attack = 0.10
+			defence = 0.10
+			movement = 0.05
+		}
+		forest = {
+			attack = 0.15
+			defence = 0.15
+			movement = 0.10
+		}
+		hills = {
+			attack = 0.25
+			defence = 0.20
+			movement = 0.15
+		}
+		mountain = {
+			attack = 0.40
+			defence = 0.25
+			movement = 0.25
+		}
+		jungle = {
+			attack = 0.15
+			defence = 0.15
+			movement = 0.10
+		}
+		marsh = {
+			attack = 0.15
+			defence = 0.15
+			movement = 0.10
+		}
+		desert = {
+			attack = 0.10
+			defence = 0.10
+			movement = 0.05
+		}
+		urban = {
+			attack = 0.15
+			defence = 0.15
+		}
+		river = {
+			attack = 0.25
+			defence = 0.15
+			movement = 0.10
+		}
+		amphibious = {
+			attack = 0.35
+			defence = 0.20
+			movement = 0.15
+		}
+	}
+
+	KYO_ghost_battalion = {
+		abbreviation = "GST"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 1004
+		ai_priority = 170
+		active = no
+		affects_speed = yes
+
+		type = { infantry }
+		group = infantry
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+
+		combat_width = 2
+		max_strength = 18
+		max_organisation = 42
+		default_morale = 0.50
+		manpower = 800
+		training_time = 80
+		suppression = 1.0
+		weight = 0.25
+		supply_consumption = 0.050
+
+		soft_attack = -0.10
+		hard_attack = -0.10
+		defense = -0.10
+		breakthrough = 0.10
+		maximum_speed = 0.35
+
+		need = {
+			infantry_equipment = 80
+		}
+	}
+
+	KYO_wind_magician_battalion = {
+		abbreviation = "WND"
+		sprite = anti_air
+		map_icon_category = infantry
+		priority = 1020
+		ai_priority = 110
+		active = no
+		is_artillery_brigade = yes
+
+		type = { infantry artillery }
+		group = combat_support
+		categories = {
+			category_army
+			category_line_artillery
+			category_artillery
+		}
+
+		combat_width = 1
+		max_strength = 5
+		max_organisation = 16
+		default_morale = 0.15
+		manpower = 350
+		training_time = 150
+		weight = 0.50
+		supply_consumption = 0.150
+
+		soft_attack = 0.10
+		hard_attack = 0.15
+		air_attack = 0.35
+		defense = -0.25
+		breakthrough = 0.75
+		maximum_speed = 0.05
+
+		need = {
+			anti_air_equipment = 30
+		}
+	}
+
+	KYO_fire_magician_battalion = {
+		abbreviation = "FIR"
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 1021
+		ai_priority = 120
+		active = no
+		is_artillery_brigade = yes
+
+		type = { infantry artillery }
+		group = combat_support
+		categories = {
+			category_army
+			category_line_artillery
+			category_artillery
+		}
+
+		combat_width = 3
+		max_strength = 6
+		max_organisation = 18
+		default_morale = 0.15
+		manpower = 500
+		training_time = 150
+		weight = 0.80
+		supply_consumption = 0.220
+
+		soft_attack = 0.35
+		hard_attack = 0.10
+		defense = -0.30
+		breakthrough = 0.90
+		maximum_speed = 0.05
+
+		need = {
+			artillery_equipment = 36
+		}
+	}
+
+	KYO_lightning_magician_battalion = {
+		abbreviation = "LTN"
+		sprite = anti_tank
+		map_icon_category = infantry
+		priority = 1022
+		ai_priority = 110
+		active = no
+		is_artillery_brigade = yes
+
+		type = { infantry artillery }
+		group = combat_support
+		categories = {
+			category_army
+			category_line_artillery
+			category_artillery
+		}
+
+		combat_width = 1
+		max_strength = 5
+		max_organisation = 16
+		default_morale = 0.15
+		manpower = 350
+		training_time = 150
+		weight = 0.60
+		supply_consumption = 0.170
+
+		soft_attack = 0.10
+		hard_attack = 0.40
+		ap_attack = 0.40
+		defense = -0.25
+		breakthrough = 0.85
+		maximum_speed = 0.05
+
+		need = {
+			anti_tank_equipment = 36
+		}
+	}
+
+	KYO_water_magician_battalion = {
+		abbreviation = "WTR"
+		sprite = rocket_artillery
+		map_icon_category = infantry
+		priority = 1023
+		ai_priority = 110
+		active = no
+		is_artillery_brigade = yes
+
+		type = { infantry artillery }
+		group = combat_support
+		categories = {
+			category_army
+			category_line_artillery
+			category_artillery
+		}
+
+		combat_width = 3
+		max_strength = 5
+		max_organisation = 15
+		default_morale = 0.15
+		manpower = 450
+		training_time = 165
+		weight = 0.80
+		supply_consumption = 0.240
+
+		soft_attack = 0.45
+		hard_attack = 0.10
+		defense = -0.35
+		breakthrough = 1.00
+		maximum_speed = 0.05
+
+		need = {
+			rocket_artillery_equipment = 36
+		}
+	}
+
+	KYO_tsukumogami_motorized_battalion = {
+		abbreviation = "TSK"
+		sprite = motorized
+		map_icon_category = infantry
+		priority = 1030
+		ai_priority = 170
+		active = no
+		affects_speed = yes
+
+		type = { motorized }
+		group = mobile
+		categories = {
+			category_front_line
+			category_all_infantry
+			category_army
+			category_vehicle_infantry
+			category_mobile_and_mobile_combat_sup
+		}
+
+		combat_width = 2
+		max_strength = 15
+		max_organisation = 55
+		default_morale = 0.45
+		manpower = 900
+		training_time = 120
+		suppression = 2.0
+		weight = 0.75
+		supply_consumption = 0.065
+
+		soft_attack = 0.05
+		hard_attack = 0.05
+		defense = 0.35
+		breakthrough = 0.15
+		maximum_speed = 0.15
+
+		essential = {
+			infantry_equipment
+			motorized_equipment
+		}
+		transport = motorized_equipment
+		need = {
+			infantry_equipment = 90
+			motorized_equipment = 40
+		}
+
+		forest = {
+			attack = -0.05
+			movement = -0.35
+		}
+		mountain = { attack = -0.05 }
+		jungle = {
+			attack = -0.15
+			movement = -0.40
+		}
+		marsh = {
+			attack = -0.05
+			movement = -0.25
+		}
+		urban = { attack = -0.05 }
+		river = {
+			attack = -0.10
+			movement = -0.10
+		}
+		amphibious = { attack = -0.20 }
+	}
+
+	KYO_beast_spirit_mechanized_battalion = {
+		abbreviation = "BST"
+		sprite = mechanized
+		map_icon_category = infantry
+		priority = 1031
+		ai_priority = 160
+		active = no
+		affects_speed = yes
+
+		type = { mechanized }
+		group = mobile
+		categories = {
+			category_front_line
+			category_all_infantry
+			category_army
+			category_vehicle_infantry
+			category_mobile_and_mobile_combat_sup
+		}
+
+		combat_width = 2
+		max_strength = 22
+		max_organisation = 55
+		default_morale = 0.35
+		manpower = 1200
+		training_time = 130
+		suppression = 2.0
+		weight = 1.00
+		supply_consumption = 0.160
+
+		soft_attack = 0.30
+		hard_attack = 5.00
+		defense = -0.30
+		breakthrough = 0.30
+		maximum_speed = 0.20
+
+		essential = {
+			infantry_equipment
+			mechanized_equipment
+		}
+		transport = mechanized_equipment
+		need = {
+			mechanized_equipment = 45
+			infantry_equipment = 100
+		}
+
+		forest = { attack = -0.15 }
+		mountain = { attack = -0.05 }
+		jungle = { attack = -0.25 }
+		marsh = { attack = -0.10 }
+		urban = {
+			attack = -0.15
+			defence = -0.10
+		}
+		river = {
+			attack = -0.20
+			movement = -0.20
+		}
+		amphibious = { attack = -0.40 }
+	}
+}

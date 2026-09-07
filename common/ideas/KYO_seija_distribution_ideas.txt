@@ -1,0 +1,291 @@
+ideas = {
+	country = {
+		KYO_reconstruction_command = {
+			picture = grassroot_rebal
+			removal_cost = -1
+			allowed = { tag = KYO }
+			allowed_civil_war = { tag = KYO }
+
+			modifier = {
+				political_power_factor = 0.05
+				production_speed_industrial_complex_factor = 0.025
+				production_speed_arms_factory_factor = 0.025
+			}
+		}
+
+		KYO_common_youkai_satisfaction_0 = {
+			picture = youkai_satisfaction_0
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.10
+				political_power_factor = -0.15
+				resistance_target = 0.05
+			}
+		}
+		KYO_common_youkai_satisfaction_1 = {
+			picture = youkai_satisfaction_0
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				stability_factor = -0.07
+				war_support_factor = -0.04
+				political_power_factor = -0.05
+			}
+		}
+		KYO_common_youkai_satisfaction_2 = {
+			picture = youkai_satisfaction_1
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				stability_factor = 0.03
+				political_power_factor = 0.03
+			}
+		}
+		KYO_common_youkai_satisfaction_3 = {
+			picture = youkai_satisfaction_1
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				stability_factor = 0.06
+				war_support_factor = 0.03
+				political_power_factor = 0.06
+			}
+		}
+		KYO_common_youkai_satisfaction_4 = {
+			picture = youkai_satisfaction_2
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				stability_factor = 0.09
+				war_support_factor = 0.05
+				political_power_factor = 0.08
+			}
+		}
+		KYO_common_youkai_satisfaction_5 = {
+			picture = youkai_satisfaction_2
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				stability_factor = 0.12
+				war_support_factor = 0.08
+				political_power_factor = 0.12
+			}
+		}
+
+		KYO_human_satisfaction_0 = {
+			picture = human_satisfaction_0
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.12
+				conscription_factor = -0.10
+				stability_factor = -0.05
+			}
+		}
+		KYO_human_satisfaction_1 = {
+			picture = human_satisfaction_0
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				industrial_capacity_factory = -0.07
+				production_speed_buildings_factor = -0.05
+				conscription_factor = -0.04
+			}
+		}
+		KYO_human_satisfaction_2 = {
+			picture = human_satisfaction_1
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				industrial_capacity_factory = 0.03
+				conscription_factor = 0.03
+			}
+		}
+		KYO_human_satisfaction_3 = {
+			picture = human_satisfaction_1
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				industrial_capacity_factory = 0.06
+				production_speed_industrial_complex_factor = 0.04
+				conscription_factor = 0.05
+			}
+		}
+		KYO_human_satisfaction_4 = {
+			picture = human_satisfaction_2
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				industrial_capacity_factory = 0.09
+				production_speed_buildings_factor = 0.05
+				conscription_factor = 0.08
+			}
+		}
+		KYO_human_satisfaction_5 = {
+			picture = human_satisfaction_2
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				industrial_capacity_factory = 0.12
+				production_speed_buildings_factor = 0.08
+				conscription_factor = 0.12
+			}
+		}
+
+		KYO_revolutionary_satisfaction_0 = {
+			picture = revolutionary_satisfaction_0
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				army_attack_factor = -0.10
+				army_morale_factor = -0.08
+				war_support_factor = -0.05
+			}
+		}
+		KYO_revolutionary_satisfaction_1 = {
+			picture = revolutionary_satisfaction_0
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				army_attack_factor = -0.04
+				army_morale_factor = -0.04
+			}
+		}
+		KYO_revolutionary_satisfaction_2 = {
+			picture = revolutionary_satisfaction_1
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				army_attack_factor = 0.03
+				breakthrough_factor = 0.03
+			}
+		}
+		KYO_revolutionary_satisfaction_3 = {
+			picture = revolutionary_satisfaction_1
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				army_attack_factor = 0.06
+				breakthrough_factor = 0.05
+				army_morale_factor = 0.04
+			}
+		}
+		KYO_revolutionary_satisfaction_4 = {
+			picture = revolutionary_satisfaction_2
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				army_attack_factor = 0.09
+				breakthrough_factor = 0.08
+				army_speed_factor = 0.04
+			}
+		}
+		KYO_revolutionary_satisfaction_5 = {
+			picture = revolutionary_satisfaction_2
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				army_attack_factor = 0.12
+				breakthrough_factor = 0.10
+				army_speed_factor = 0.06
+				land_night_attack = 0.05
+			}
+		}
+
+		KYO_opposition_satisfaction_0 = {
+			picture = opposition_satisfaction_0
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				army_defence_factor = -0.10
+				dig_in_speed_factor = -0.10
+				stability_factor = -0.08
+			}
+		}
+		KYO_opposition_satisfaction_1 = {
+			picture = opposition_satisfaction_0
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				army_defence_factor = -0.04
+				dig_in_speed_factor = -0.05
+			}
+		}
+		KYO_opposition_satisfaction_2 = {
+			picture = opposition_satisfaction_1
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				army_defence_factor = 0.03
+				dig_in_speed_factor = 0.05
+			}
+		}
+		KYO_opposition_satisfaction_3 = {
+			picture = opposition_satisfaction_1
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				army_defence_factor = 0.06
+				dig_in_speed_factor = 0.10
+				max_dig_in = 1
+			}
+		}
+		KYO_opposition_satisfaction_4 = {
+			picture = opposition_satisfaction_2
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				army_defence_factor = 0.1
+				dig_in_speed_factor = 0.15
+				max_dig_in = 2
+			}
+		}
+		KYO_opposition_satisfaction_5 = {
+			picture = opposition_satisfaction_2
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				army_defence_factor = 0.10
+				dig_in_speed_factor = 0.20
+				max_dig_in = 3
+				army_org_factor = 0.04
+			}
+		}
+
+		KYO_distribution_black_market = {
+			picture = forced_labor
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_factor = -0.05
+				stability_factor = -0.03
+			}
+		}
+
+		KYO_distribution_local_riots = {
+			picture = I_am_hungry
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				production_speed_buildings_factor = -0.15
+			}
+		}
+
+		KYO_distribution_cadre_exhaustion = {
+			picture = twenty_four_hours_work_time
+			removal_cost = -1
+			allowed = { tag = KYO }
+			modifier = {
+				political_power_factor = -0.08
+				planning_speed = -0.05
+				army_morale_factor = -0.03
+			}
+		}
+	}
+}

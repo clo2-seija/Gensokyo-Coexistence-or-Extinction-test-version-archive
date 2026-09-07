@@ -1,0 +1,41 @@
+
+on_actions = {
+	
+
+	
+	on_monthly = {
+		effect = {
+				if = {
+					limit = { KYO_seija_distribution_active = yes  tag = KYO  }
+					random_list = {
+						10 = { country_event = kyo_seija_distribution.10 }
+						10 = { country_event = kyo_seija_distribution.11 }
+						10 = { country_event = kyo_seija_distribution.12 }
+						10 = { country_event = kyo_seija_distribution.13 }
+						10 = { country_event = kyo_seija_distribution.14 }
+						10 = { country_event = kyo_seija_distribution.15 }
+						10 = { country_event = kyo_seija_distribution.16 }
+						10 = { country_event = kyo_seija_distribution.17 }
+						20 = { }
+					}
+					KYO_seija_monthly_bad_event_check = yes
+				}
+			}
+	}
+
+	on_weekly_KYO = {
+			effect = {
+				if = {
+					limit = { KYO_seija_distribution_active = yes }
+					KYO_seija_distribution_refresh_all = yes
+				}
+			}
+		}
+
+	
+		
+}
+
+
+
+

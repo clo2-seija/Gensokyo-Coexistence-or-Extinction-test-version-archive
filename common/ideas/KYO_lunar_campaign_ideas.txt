@@ -1,0 +1,233 @@
+ideas = {
+	country = {
+		KYO_lunarian_controlled_major = {
+			picture = Eirina_eternal
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.10
+				stability_factor = -0.08
+				war_support_factor = 0.08
+				planning_speed = 0.05
+			}
+		}
+		KYO_lunarian_faction_lock = {
+			picture = Eirina_eternal
+			removal_cost = -1
+			rule = {
+				can_join_factions = no
+				can_decline_call_to_war = no
+			}
+		}
+		KYO_lunarian_control_fractured = {
+			picture = Eirina_eternal
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.03
+				stability_factor = -0.03
+				war_support_factor = 0.03
+			}
+		}
+		KYO_lunarian_crossline_disrupted = {
+			picture = Eirina_eternal
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = 0.08
+				land_reinforce_rate = -0.05
+				planning_speed = -0.05
+			}
+		}
+		KYO_lunarian_defeat_pressure_1 = {
+			picture = Eirina_eternal
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.10
+				army_attack_factor = -0.08
+				army_defence_factor = -0.08
+				supply_consumption_factor = 0.10
+				stability_factor = -0.05
+			}
+		}
+		KYO_lunarian_defeat_pressure_2 = {
+			picture = Eirina_eternal
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.20
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+				land_reinforce_rate = -0.10
+				planning_speed = -0.20
+				supply_consumption_factor = 0.20
+				stability_factor = -0.10
+			}
+		}
+		KYO_lunarian_defeat_pressure_3 = {
+			picture = Eirina_eternal
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.35
+				army_attack_factor = -0.30
+				army_defence_factor = -0.30
+				land_reinforce_rate = -0.20
+				planning_speed = -0.35
+				supply_consumption_factor = 0.35
+				stability_factor = -0.20
+				war_support_factor = -0.20
+			}
+		}
+
+		# Only one of these six standard ideas is active at a time.  Each Moon
+		# defeat replaces the current tier with the next, up to 50%.
+		KYO_lunarian_control_idea_1 = {
+			picture = company_lunarian
+			removal_cost = -1
+			rule = {
+				can_join_factions = no
+				can_decline_call_to_war = no
+			}
+			modifier = {
+				political_power_factor = 0.40
+				stability_factor = 0.40
+				war_support_factor = 0.40
+				army_org_factor = 0.40
+				army_attack_factor = 0.40
+				army_defence_factor = 0.40
+				land_reinforce_rate = 0.40
+				planning_speed = 0.40
+				supply_consumption_factor = -0.40
+			}
+		}
+		KYO_lunarian_control_idea_2 = {
+			picture = company_lunarian
+			removal_cost = -1
+			rule = {
+				can_join_factions = no
+				can_decline_call_to_war = no
+			}
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				army_org_factor = 0.15
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				land_reinforce_rate = 0.15
+				planning_speed = 0.15
+				supply_consumption_factor = -0.15
+			}
+		}
+		KYO_lunarian_control_idea_3 = {
+			picture = company_lunarian
+			removal_cost = -1
+			rule = {
+				can_join_factions = no
+				can_decline_call_to_war = no
+			}
+			modifier = {
+				political_power_factor = 0.025
+				stability_factor = 0.025
+				war_support_factor = 0.025
+				army_org_factor = 0.025
+				army_attack_factor = 0.025
+				army_defence_factor = 0.025
+				land_reinforce_rate = 0.025
+				planning_speed = 0.025
+				supply_consumption_factor = -0.025
+			}
+		}
+		KYO_lunarian_control_idea_4 = {
+			picture = company_lunarian
+			removal_cost = -1
+			rule = {
+				can_join_factions = no
+				can_decline_call_to_war = no
+			}
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				army_org_factor = -0.10
+				army_attack_factor = -0.10
+				army_defence_factor = -0.10
+				land_reinforce_rate = -0.10
+				planning_speed = -0.10
+				supply_consumption_factor = 0.10
+			}
+		}
+		KYO_lunarian_control_idea_5 = {
+			picture = company_lunarian
+			removal_cost = -1
+			rule = {
+				can_join_factions = no
+				can_decline_call_to_war = no
+			}
+			modifier = {
+				political_power_factor = -0.30
+				stability_factor = -0.30
+				war_support_factor = -0.30
+				army_org_factor = -0.30
+				army_attack_factor = -0.30
+				army_defence_factor = -0.30
+				land_reinforce_rate = -0.30
+				planning_speed = -0.30
+				supply_consumption_factor = 0.30
+			}
+		}
+		KYO_lunarian_control_idea_6 = {
+			picture = company_lunarian
+			removal_cost = -1
+			rule = {
+				can_join_factions = no
+				can_decline_call_to_war = no
+			}
+			modifier = {
+				political_power_factor = -0.50
+				stability_factor = -0.50
+				war_support_factor = -0.50
+				army_org_factor = -0.50
+				army_attack_factor = -0.50
+				army_defence_factor = -0.50
+				land_reinforce_rate = -0.50
+				planning_speed = -0.50
+				supply_consumption_factor = 0.50
+			}
+		}
+
+		KYO_gensokyo_wartime_coalition = {
+			picture = yakumo_army_buff
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				planning_speed = 0.08
+				supply_consumption_factor = -0.04
+				war_support_factor = 0.05
+			}
+		}
+		KYO_lunar_preemptive_strike = {
+			picture = barrier_bamboo
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.15
+				army_speed_factor = 0.1
+				planning_speed = 0.25
+				land_reinforce_rate = 0.05
+				supply_consumption_factor = -0.05
+			}
+		}
+		
+		KYO_world_life_can_change = {
+			picture = yakumo_wrath
+			removal_cost = -1
+			modifier = { stability_factor = 0.08 research_speed_factor = 0.05 weekly_manpower = 250 }
+		}
+		KYO_world_memory_remains = {
+			picture = yukari_gap_power
+			removal_cost = -1
+			modifier = { stability_factor = 0.10 war_support_factor = 0.05 army_org_factor = 0.04 }
+		}
+		KYO_world_science_and_fantasy = {
+			picture = renko_gap_power
+			removal_cost = -1
+			modifier = { stability_factor = 0.08 research_speed_factor = 0.04 political_power_gain = 0.08 }
+		}
+	}
+}

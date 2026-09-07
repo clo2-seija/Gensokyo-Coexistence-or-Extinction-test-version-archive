@@ -1,0 +1,99 @@
+on_actions = {
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = { ROOT = { has_country_flag = KYO_player_civil_war_faction } }
+				ROOT = { KYO_cws_cleanup_system = yes }
+			}
+			if = {
+				limit = { ROOT = { has_country_flag = KYO_civil_role_yakumo } }
+				every_country = {
+					limit = {
+						has_country_flag = KYO_cws_system_active
+						has_country_flag = KYO_player_civil_war_faction
+					}
+					KYO_cws_cleanup_defeated_yakumo = yes
+				}
+			}
+			if = {
+				limit = { ROOT = { has_country_flag = KYO_civil_role_remilia } }
+				every_country = {
+					limit = {
+						has_country_flag = KYO_cws_system_active
+						has_country_flag = KYO_player_civil_war_faction
+					}
+					KYO_cws_cleanup_defeated_remilia = yes
+				}
+			}
+			if = {
+				limit = { ROOT = { has_country_flag = KYO_civil_role_hijiri } }
+				every_country = {
+					limit = {
+						has_country_flag = KYO_cws_system_active
+						has_country_flag = KYO_player_civil_war_faction
+					}
+					KYO_cws_cleanup_defeated_hijiri = yes
+				}
+			}
+			if = {
+				limit = { ROOT = { has_country_flag = KYO_civil_role_seija } }
+				every_country = {
+					limit = {
+						has_country_flag = KYO_cws_system_active
+						has_country_flag = KYO_player_civil_war_faction
+					}
+					KYO_cws_cleanup_defeated_seija = yes
+				}
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			every_country = {
+				limit = {
+					has_country_flag = KYO_cws_system_active
+					has_country_flag = KYO_player_civil_war_faction
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = KYO_cws_defeat_cleaned_yakumo }
+						NOT = { KYO_cws_yakumo_is_active = yes }
+					}
+					KYO_cws_cleanup_defeated_yakumo = yes
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = KYO_cws_defeat_cleaned_remilia }
+						NOT = { KYO_cws_remilia_is_active = yes }
+					}
+					KYO_cws_cleanup_defeated_remilia = yes
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = KYO_cws_defeat_cleaned_hijiri }
+						NOT = { KYO_cws_hijiri_is_active = yes }
+					}
+					KYO_cws_cleanup_defeated_hijiri = yes
+				}
+				if = {
+					limit = {
+						NOT = { has_country_flag = KYO_cws_defeat_cleaned_seija }
+						NOT = { KYO_cws_seija_is_active = yes }
+					}
+					KYO_cws_cleanup_defeated_seija = yes
+				}
+				KYO_cws_recalculate_support_tier = yes
+				if = {
+					limit = {
+						OR = {
+							has_country_flag = KYO_civil_war_unified
+							has_global_flag = KYO_four_way_civil_war_over
+							NOT = { has_country_flag = KYO_four_way_civil_war_started }
+						}
+					}
+					KYO_cws_cleanup_system = yes
+				}
+			}
+		}
+	}
+}

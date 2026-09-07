@@ -1,0 +1,258 @@
+defined_text = {
+	name = GetKYOLunarSlot1
+	text = { trigger = { check_variable = { KYO_lunar_slot_1 = 1 } } localization_key = KYO_lunar_slot_tactic_1 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_1 = 2 } } localization_key = KYO_lunar_slot_tactic_2 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_1 = 3 } } localization_key = KYO_lunar_slot_tactic_3 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_1 = 4 } } localization_key = KYO_lunar_slot_tactic_4 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_1 = 5 } } localization_key = KYO_lunar_slot_tactic_5 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_1 = 6 } } localization_key = KYO_lunar_slot_tactic_6 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_1 = 7 } } localization_key = KYO_lunar_slot_tactic_7 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_1 = 8 } } localization_key = KYO_lunar_slot_tactic_8 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_1 = 9 } } localization_key = KYO_lunar_slot_tactic_9 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_1 = 10 } } localization_key = KYO_lunar_slot_tactic_10 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_1 = 11 } } localization_key = KYO_lunar_slot_tactic_11 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_1 = 12 } } localization_key = KYO_lunar_slot_tactic_12 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_1 = 13 } } localization_key = KYO_lunar_slot_tactic_13 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_1 = 14 } } localization_key = KYO_lunar_slot_tactic_14 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_1 = 15 } } localization_key = KYO_lunar_slot_tactic_15 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_1 = 16 } } localization_key = KYO_lunar_slot_tactic_16 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_1 = 17 } } localization_key = KYO_lunar_slot_tactic_17 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_1 = 18 } } localization_key = KYO_lunar_slot_tactic_18 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_1 = 19 } } localization_key = KYO_lunar_slot_tactic_19 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_1 = 20 } } localization_key = KYO_lunar_slot_tactic_20 }
+	text = { trigger = { always = yes } localization_key = KYO_lunar_slot_empty }
+}
+
+defined_text = {
+	name = GetKYOLunarSlot2
+	text = { trigger = { check_variable = { KYO_lunar_slot_2 = 1 } } localization_key = KYO_lunar_slot_tactic_1 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_2 = 2 } } localization_key = KYO_lunar_slot_tactic_2 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_2 = 3 } } localization_key = KYO_lunar_slot_tactic_3 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_2 = 4 } } localization_key = KYO_lunar_slot_tactic_4 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_2 = 5 } } localization_key = KYO_lunar_slot_tactic_5 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_2 = 6 } } localization_key = KYO_lunar_slot_tactic_6 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_2 = 7 } } localization_key = KYO_lunar_slot_tactic_7 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_2 = 8 } } localization_key = KYO_lunar_slot_tactic_8 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_2 = 9 } } localization_key = KYO_lunar_slot_tactic_9 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_2 = 10 } } localization_key = KYO_lunar_slot_tactic_10 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_2 = 11 } } localization_key = KYO_lunar_slot_tactic_11 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_2 = 12 } } localization_key = KYO_lunar_slot_tactic_12 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_2 = 13 } } localization_key = KYO_lunar_slot_tactic_13 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_2 = 14 } } localization_key = KYO_lunar_slot_tactic_14 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_2 = 15 } } localization_key = KYO_lunar_slot_tactic_15 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_2 = 16 } } localization_key = KYO_lunar_slot_tactic_16 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_2 = 17 } } localization_key = KYO_lunar_slot_tactic_17 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_2 = 18 } } localization_key = KYO_lunar_slot_tactic_18 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_2 = 19 } } localization_key = KYO_lunar_slot_tactic_19 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_2 = 20 } } localization_key = KYO_lunar_slot_tactic_20 }
+	text = { trigger = { always = yes } localization_key = KYO_lunar_slot_empty }
+}
+
+defined_text = {
+	name = GetKYOLunarSlot3
+	text = { trigger = { check_variable = { KYO_lunar_slot_3 = 1 } } localization_key = KYO_lunar_slot_tactic_1 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_3 = 2 } } localization_key = KYO_lunar_slot_tactic_2 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_3 = 3 } } localization_key = KYO_lunar_slot_tactic_3 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_3 = 4 } } localization_key = KYO_lunar_slot_tactic_4 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_3 = 5 } } localization_key = KYO_lunar_slot_tactic_5 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_3 = 6 } } localization_key = KYO_lunar_slot_tactic_6 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_3 = 7 } } localization_key = KYO_lunar_slot_tactic_7 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_3 = 8 } } localization_key = KYO_lunar_slot_tactic_8 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_3 = 9 } } localization_key = KYO_lunar_slot_tactic_9 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_3 = 10 } } localization_key = KYO_lunar_slot_tactic_10 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_3 = 11 } } localization_key = KYO_lunar_slot_tactic_11 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_3 = 12 } } localization_key = KYO_lunar_slot_tactic_12 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_3 = 13 } } localization_key = KYO_lunar_slot_tactic_13 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_3 = 14 } } localization_key = KYO_lunar_slot_tactic_14 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_3 = 15 } } localization_key = KYO_lunar_slot_tactic_15 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_3 = 16 } } localization_key = KYO_lunar_slot_tactic_16 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_3 = 17 } } localization_key = KYO_lunar_slot_tactic_17 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_3 = 18 } } localization_key = KYO_lunar_slot_tactic_18 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_3 = 19 } } localization_key = KYO_lunar_slot_tactic_19 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_3 = 20 } } localization_key = KYO_lunar_slot_tactic_20 }
+	text = { trigger = { always = yes } localization_key = KYO_lunar_slot_empty }
+}
+
+defined_text = {
+	name = GetKYOLunarSlot4
+	text = { trigger = { check_variable = { KYO_lunar_slot_4 = 1 } } localization_key = KYO_lunar_slot_tactic_1 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_4 = 2 } } localization_key = KYO_lunar_slot_tactic_2 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_4 = 3 } } localization_key = KYO_lunar_slot_tactic_3 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_4 = 4 } } localization_key = KYO_lunar_slot_tactic_4 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_4 = 5 } } localization_key = KYO_lunar_slot_tactic_5 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_4 = 6 } } localization_key = KYO_lunar_slot_tactic_6 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_4 = 7 } } localization_key = KYO_lunar_slot_tactic_7 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_4 = 8 } } localization_key = KYO_lunar_slot_tactic_8 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_4 = 9 } } localization_key = KYO_lunar_slot_tactic_9 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_4 = 10 } } localization_key = KYO_lunar_slot_tactic_10 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_4 = 11 } } localization_key = KYO_lunar_slot_tactic_11 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_4 = 12 } } localization_key = KYO_lunar_slot_tactic_12 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_4 = 13 } } localization_key = KYO_lunar_slot_tactic_13 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_4 = 14 } } localization_key = KYO_lunar_slot_tactic_14 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_4 = 15 } } localization_key = KYO_lunar_slot_tactic_15 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_4 = 16 } } localization_key = KYO_lunar_slot_tactic_16 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_4 = 17 } } localization_key = KYO_lunar_slot_tactic_17 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_4 = 18 } } localization_key = KYO_lunar_slot_tactic_18 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_4 = 19 } } localization_key = KYO_lunar_slot_tactic_19 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_4 = 20 } } localization_key = KYO_lunar_slot_tactic_20 }
+	text = { trigger = { always = yes } localization_key = KYO_lunar_slot_empty }
+}
+
+defined_text = {
+	name = GetKYOLunarSlot5
+	text = { trigger = { check_variable = { KYO_lunar_slot_5 = 1 } } localization_key = KYO_lunar_slot_tactic_1 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_5 = 2 } } localization_key = KYO_lunar_slot_tactic_2 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_5 = 3 } } localization_key = KYO_lunar_slot_tactic_3 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_5 = 4 } } localization_key = KYO_lunar_slot_tactic_4 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_5 = 5 } } localization_key = KYO_lunar_slot_tactic_5 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_5 = 6 } } localization_key = KYO_lunar_slot_tactic_6 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_5 = 7 } } localization_key = KYO_lunar_slot_tactic_7 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_5 = 8 } } localization_key = KYO_lunar_slot_tactic_8 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_5 = 9 } } localization_key = KYO_lunar_slot_tactic_9 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_5 = 10 } } localization_key = KYO_lunar_slot_tactic_10 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_5 = 11 } } localization_key = KYO_lunar_slot_tactic_11 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_5 = 12 } } localization_key = KYO_lunar_slot_tactic_12 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_5 = 13 } } localization_key = KYO_lunar_slot_tactic_13 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_5 = 14 } } localization_key = KYO_lunar_slot_tactic_14 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_5 = 15 } } localization_key = KYO_lunar_slot_tactic_15 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_5 = 16 } } localization_key = KYO_lunar_slot_tactic_16 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_5 = 17 } } localization_key = KYO_lunar_slot_tactic_17 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_5 = 18 } } localization_key = KYO_lunar_slot_tactic_18 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_5 = 19 } } localization_key = KYO_lunar_slot_tactic_19 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_5 = 20 } } localization_key = KYO_lunar_slot_tactic_20 }
+	text = { trigger = { always = yes } localization_key = KYO_lunar_slot_empty }
+}
+
+defined_text = {
+	name = GetKYOLunarSlot6
+	text = { trigger = { check_variable = { KYO_lunar_slot_6 = 1 } } localization_key = KYO_lunar_slot_tactic_1 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_6 = 2 } } localization_key = KYO_lunar_slot_tactic_2 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_6 = 3 } } localization_key = KYO_lunar_slot_tactic_3 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_6 = 4 } } localization_key = KYO_lunar_slot_tactic_4 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_6 = 5 } } localization_key = KYO_lunar_slot_tactic_5 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_6 = 6 } } localization_key = KYO_lunar_slot_tactic_6 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_6 = 7 } } localization_key = KYO_lunar_slot_tactic_7 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_6 = 8 } } localization_key = KYO_lunar_slot_tactic_8 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_6 = 9 } } localization_key = KYO_lunar_slot_tactic_9 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_6 = 10 } } localization_key = KYO_lunar_slot_tactic_10 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_6 = 11 } } localization_key = KYO_lunar_slot_tactic_11 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_6 = 12 } } localization_key = KYO_lunar_slot_tactic_12 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_6 = 13 } } localization_key = KYO_lunar_slot_tactic_13 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_6 = 14 } } localization_key = KYO_lunar_slot_tactic_14 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_6 = 15 } } localization_key = KYO_lunar_slot_tactic_15 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_6 = 16 } } localization_key = KYO_lunar_slot_tactic_16 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_6 = 17 } } localization_key = KYO_lunar_slot_tactic_17 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_6 = 18 } } localization_key = KYO_lunar_slot_tactic_18 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_6 = 19 } } localization_key = KYO_lunar_slot_tactic_19 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_6 = 20 } } localization_key = KYO_lunar_slot_tactic_20 }
+	text = { trigger = { always = yes } localization_key = KYO_lunar_slot_empty }
+}
+
+defined_text = {
+	name = GetKYOLunarSlot7
+	text = { trigger = { check_variable = { KYO_lunar_slot_7 = 1 } } localization_key = KYO_lunar_slot_tactic_1 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_7 = 2 } } localization_key = KYO_lunar_slot_tactic_2 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_7 = 3 } } localization_key = KYO_lunar_slot_tactic_3 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_7 = 4 } } localization_key = KYO_lunar_slot_tactic_4 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_7 = 5 } } localization_key = KYO_lunar_slot_tactic_5 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_7 = 6 } } localization_key = KYO_lunar_slot_tactic_6 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_7 = 7 } } localization_key = KYO_lunar_slot_tactic_7 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_7 = 8 } } localization_key = KYO_lunar_slot_tactic_8 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_7 = 9 } } localization_key = KYO_lunar_slot_tactic_9 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_7 = 10 } } localization_key = KYO_lunar_slot_tactic_10 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_7 = 11 } } localization_key = KYO_lunar_slot_tactic_11 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_7 = 12 } } localization_key = KYO_lunar_slot_tactic_12 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_7 = 13 } } localization_key = KYO_lunar_slot_tactic_13 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_7 = 14 } } localization_key = KYO_lunar_slot_tactic_14 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_7 = 15 } } localization_key = KYO_lunar_slot_tactic_15 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_7 = 16 } } localization_key = KYO_lunar_slot_tactic_16 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_7 = 17 } } localization_key = KYO_lunar_slot_tactic_17 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_7 = 18 } } localization_key = KYO_lunar_slot_tactic_18 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_7 = 19 } } localization_key = KYO_lunar_slot_tactic_19 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_7 = 20 } } localization_key = KYO_lunar_slot_tactic_20 }
+	text = { trigger = { always = yes } localization_key = KYO_lunar_slot_empty }
+}
+
+defined_text = {
+	name = GetKYOLunarSlot8
+	text = { trigger = { check_variable = { KYO_lunar_slot_8 = 1 } } localization_key = KYO_lunar_slot_tactic_1 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_8 = 2 } } localization_key = KYO_lunar_slot_tactic_2 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_8 = 3 } } localization_key = KYO_lunar_slot_tactic_3 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_8 = 4 } } localization_key = KYO_lunar_slot_tactic_4 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_8 = 5 } } localization_key = KYO_lunar_slot_tactic_5 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_8 = 6 } } localization_key = KYO_lunar_slot_tactic_6 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_8 = 7 } } localization_key = KYO_lunar_slot_tactic_7 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_8 = 8 } } localization_key = KYO_lunar_slot_tactic_8 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_8 = 9 } } localization_key = KYO_lunar_slot_tactic_9 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_8 = 10 } } localization_key = KYO_lunar_slot_tactic_10 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_8 = 11 } } localization_key = KYO_lunar_slot_tactic_11 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_8 = 12 } } localization_key = KYO_lunar_slot_tactic_12 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_8 = 13 } } localization_key = KYO_lunar_slot_tactic_13 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_8 = 14 } } localization_key = KYO_lunar_slot_tactic_14 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_8 = 15 } } localization_key = KYO_lunar_slot_tactic_15 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_8 = 16 } } localization_key = KYO_lunar_slot_tactic_16 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_8 = 17 } } localization_key = KYO_lunar_slot_tactic_17 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_8 = 18 } } localization_key = KYO_lunar_slot_tactic_18 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_8 = 19 } } localization_key = KYO_lunar_slot_tactic_19 }
+	text = { trigger = { check_variable = { KYO_lunar_slot_8 = 20 } } localization_key = KYO_lunar_slot_tactic_20 }
+	text = { trigger = { always = yes } localization_key = KYO_lunar_slot_empty }
+}
+
+defined_text = {
+	name = GetKYOLunarAttackerState
+	text = { trigger = { check_variable = { KYO_lunar_defender_wins > 5 } } localization_key = KYO_lunar_attacker_state_6 }
+	text = { trigger = { OR = { check_variable = { KYO_lunar_defender_wins > 4 } check_variable = { KYO_lunar_score_lead < -2 } } } localization_key = KYO_lunar_attacker_state_5 }
+	text = { trigger = { check_variable = { KYO_lunar_score_lead < -1 } } localization_key = KYO_lunar_attacker_state_4 }
+	text = { trigger = { check_variable = { KYO_lunar_score_lead > 2 } } localization_key = KYO_lunar_attacker_state_1 }
+	text = { trigger = { check_variable = { KYO_lunar_score_lead > 1 } } localization_key = KYO_lunar_attacker_state_2 }
+	text = { trigger = { always = yes } localization_key = KYO_lunar_attacker_state_3 }
+}
+
+defined_text = {
+	name = GetKYOLunarDefenderState
+	text = { trigger = { check_variable = { KYO_lunar_attacker_wins > 5 } } localization_key = KYO_lunar_defender_state_6 }
+	text = { trigger = { check_variable = { KYO_lunar_attacker_wins > 4 } } localization_key = KYO_lunar_defender_state_5 }
+	text = { trigger = { check_variable = { KYO_lunar_attacker_wins > 2 } } localization_key = KYO_lunar_defender_state_4 }
+	text = { trigger = { check_variable = { KYO_lunar_attacker_wins > 1 } } localization_key = KYO_lunar_defender_state_3 }
+	text = { trigger = { check_variable = { KYO_lunar_attacker_wins > 0 } } localization_key = KYO_lunar_defender_state_2 }
+	text = { trigger = { always = yes } localization_key = KYO_lunar_defender_state_1 }
+}
+
+defined_text = {
+	name = GetKYOLunarAttackerMarks
+	text = { trigger = { check_variable = { KYO_lunar_attacker_wins > 5 } } localization_key = KYO_lunar_score_marks_6 }
+	text = { trigger = { check_variable = { KYO_lunar_attacker_wins > 4 } } localization_key = KYO_lunar_score_marks_5 }
+	text = { trigger = { check_variable = { KYO_lunar_attacker_wins > 3 } } localization_key = KYO_lunar_score_marks_4 }
+	text = { trigger = { check_variable = { KYO_lunar_attacker_wins > 2 } } localization_key = KYO_lunar_score_marks_3 }
+	text = { trigger = { check_variable = { KYO_lunar_attacker_wins > 1 } } localization_key = KYO_lunar_score_marks_2 }
+	text = { trigger = { check_variable = { KYO_lunar_attacker_wins > 0 } } localization_key = KYO_lunar_score_marks_1 }
+	text = { trigger = { always = yes } localization_key = KYO_lunar_score_marks_0 }
+}
+
+defined_text = {
+	name = GetKYOLunarDefenderMarks
+	text = { trigger = { check_variable = { KYO_lunar_defender_wins > 5 } } localization_key = KYO_lunar_score_marks_6 }
+	text = { trigger = { check_variable = { KYO_lunar_defender_wins > 4 } } localization_key = KYO_lunar_score_marks_5 }
+	text = { trigger = { check_variable = { KYO_lunar_defender_wins > 3 } } localization_key = KYO_lunar_score_marks_4 }
+	text = { trigger = { check_variable = { KYO_lunar_defender_wins > 2 } } localization_key = KYO_lunar_score_marks_3 }
+	text = { trigger = { check_variable = { KYO_lunar_defender_wins > 1 } } localization_key = KYO_lunar_score_marks_2 }
+	text = { trigger = { check_variable = { KYO_lunar_defender_wins > 0 } } localization_key = KYO_lunar_score_marks_1 }
+	text = { trigger = { always = yes } localization_key = KYO_lunar_score_marks_0 }
+}
+
+defined_text = {
+	name = GetKYOLunarBattleReport
+	text = { trigger = { has_country_flag = KYO_lunar_last_round_attacker check_variable = { KYO_lunar_attacker_wins > 5 } } localization_key = KYO_lunar_report_6_win }
+	text = { trigger = { has_country_flag = KYO_lunar_last_round_attacker check_variable = { KYO_lunar_attacker_wins > 4 } } localization_key = KYO_lunar_report_5_win }
+	text = { trigger = { has_country_flag = KYO_lunar_last_round_attacker check_variable = { KYO_lunar_attacker_wins > 3 } } localization_key = KYO_lunar_report_4_win }
+	text = { trigger = { has_country_flag = KYO_lunar_last_round_attacker check_variable = { KYO_lunar_attacker_wins > 2 } } localization_key = KYO_lunar_report_3_win }
+	text = { trigger = { has_country_flag = KYO_lunar_last_round_attacker check_variable = { KYO_lunar_attacker_wins > 1 } } localization_key = KYO_lunar_report_2_win }
+	text = { trigger = { has_country_flag = KYO_lunar_last_round_attacker check_variable = { KYO_lunar_attacker_wins > 0 } } localization_key = KYO_lunar_report_1_win }
+	text = { trigger = { has_country_flag = KYO_lunar_last_round_defender check_variable = { KYO_lunar_attacker_wins > 4 } } localization_key = KYO_lunar_report_6_loss }
+	text = { trigger = { has_country_flag = KYO_lunar_last_round_defender check_variable = { KYO_lunar_attacker_wins > 3 } } localization_key = KYO_lunar_report_5_loss }
+	text = { trigger = { has_country_flag = KYO_lunar_last_round_defender check_variable = { KYO_lunar_attacker_wins > 2 } } localization_key = KYO_lunar_report_4_loss }
+	text = { trigger = { has_country_flag = KYO_lunar_last_round_defender check_variable = { KYO_lunar_attacker_wins > 1 } } localization_key = KYO_lunar_report_3_loss }
+	text = { trigger = { has_country_flag = KYO_lunar_last_round_defender check_variable = { KYO_lunar_attacker_wins > 0 } } localization_key = KYO_lunar_report_2_loss }
+	text = { trigger = { has_country_flag = KYO_lunar_last_round_defender } localization_key = KYO_lunar_report_1_loss }
+	text = { trigger = { always = yes } localization_key = KYO_lunar_report_none }
+}

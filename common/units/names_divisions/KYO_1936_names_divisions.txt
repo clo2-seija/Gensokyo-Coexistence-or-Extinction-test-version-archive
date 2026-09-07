@@ -1,0 +1,9 @@
+KYO_DIV_0_0 = {
+	name = "Yakumo Imperial Guard Division"
+	for_countries = { KYO }
+	can_use = { always = yes }
+	division_types = { 
+		"infantry" 
+	}
+	fallback_name = "%d. Yakumo Imperial Guard Division"
+}

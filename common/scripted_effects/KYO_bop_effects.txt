@@ -1,0 +1,23 @@
+
+KYO_apply_weekly_bop_shift = {
+
+    # 沒設置就當 0
+    if = { 
+		limit = { NOT = { has_variable = KYO_weekly_bop_shift } }
+
+	 	set_variable = { var = KYO_weekly_bop_shift value = 0 } 
+	}
+	
+
+    #（可選）限制上下限，避免一次飆太多
+ 	if = { limit = { check_variable = { var = KYO_weekly_bop_shift value = 0.05 } } set_variable = { var = KYO_weekly_bop_shift value = 0.05 } }
+    if = { limit = { check_variable = { var = KYO_weekly_bop_shift value = -0.05 } } set_variable = { var = KYO_weekly_bop_shift value = -0.05 } }
+
+    # 核心：把變數加到 BoP 上（正＝往右幽幽子；負＝往左永琳）
+	
+
+	
+	
+    
+
+}

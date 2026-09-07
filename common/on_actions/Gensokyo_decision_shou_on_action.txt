@@ -1,0 +1,39 @@
+on_actions = {
+	on_daily_KYO = {
+		effect = {
+			if ={
+				limit = {
+					has_country_flag = shou_progressbar_add
+				}
+				add_to_variable = { 
+					shouprogressbar_var = 2
+				}
+				clamp_temp_variable = {
+					var = shouprogressbar_var
+					min = 0
+					max = 100
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = shou_progressbar_decrease
+				 }
+				 add_to_variable = {
+					progressbar_var = -2
+				 }
+				 clamp_temp_variable = {
+					var = shou_progressbar_var
+					min = 0
+					max = 100
+				 }
+			}
+		}		
+	}
+	on_weekly_KYO = {
+		effect = {
+			if = {
+				limit = {  }
+			}
+		}
+	}
+}

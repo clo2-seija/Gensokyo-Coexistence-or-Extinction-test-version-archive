@@ -1,0 +1,2413 @@
+KYO_enforce_lunarian_surface_faction = {
+	# KYO_FACTION_ANCHOR_USA
+	if = {
+		limit = { has_country_flag = KYO_surface_anchor_USA country_exists = USA USA = { is_faction_leader = yes } }
+		if = {
+			limit = {
+				has_country_flag = KYO_surface_ENG_selected
+				NOT = { has_country_flag = KYO_surface_ENG_liberated }
+				country_exists = ENG
+				ENG = {
+					has_country_flag = KYO_lunarian_controlled_major
+					NOT = { is_in_faction_with = USA }
+				}
+			}
+			ENG = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			}
+			USA = { add_to_faction = ENG }
+		}
+		if = {
+			limit = {
+				has_country_flag = KYO_surface_GER_selected
+				NOT = { has_country_flag = KYO_surface_GER_liberated }
+				country_exists = GER
+				GER = {
+					has_country_flag = KYO_lunarian_controlled_major
+					NOT = { is_in_faction_with = USA }
+				}
+			}
+			GER = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			}
+			USA = { add_to_faction = GER }
+		}
+		if = {
+			limit = {
+				has_country_flag = KYO_surface_SOV_selected
+				NOT = { has_country_flag = KYO_surface_SOV_liberated }
+				country_exists = SOV
+				SOV = {
+					has_country_flag = KYO_lunarian_controlled_major
+					NOT = { is_in_faction_with = USA }
+				}
+			}
+			SOV = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			}
+			USA = { add_to_faction = SOV }
+		}
+		if = {
+			limit = {
+				has_country_flag = KYO_surface_FRA_selected
+				NOT = { has_country_flag = KYO_surface_FRA_liberated }
+				country_exists = FRA
+				FRA = {
+					has_country_flag = KYO_lunarian_controlled_major
+					NOT = { is_in_faction_with = USA }
+				}
+			}
+			FRA = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			}
+			USA = { add_to_faction = FRA }
+		}
+	}
+	# KYO_FACTION_ANCHOR_ENG
+	if = {
+		limit = { has_country_flag = KYO_surface_anchor_ENG country_exists = ENG ENG = { is_faction_leader = yes } }
+		if = {
+			limit = {
+				has_country_flag = KYO_surface_USA_selected
+				NOT = { has_country_flag = KYO_surface_USA_liberated }
+				country_exists = USA
+				USA = {
+					has_country_flag = KYO_lunarian_controlled_major
+					NOT = { is_in_faction_with = ENG }
+				}
+			}
+			USA = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			}
+			ENG = { add_to_faction = USA }
+		}
+		if = {
+			limit = {
+				has_country_flag = KYO_surface_GER_selected
+				NOT = { has_country_flag = KYO_surface_GER_liberated }
+				country_exists = GER
+				GER = {
+					has_country_flag = KYO_lunarian_controlled_major
+					NOT = { is_in_faction_with = ENG }
+				}
+			}
+			GER = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			}
+			ENG = { add_to_faction = GER }
+		}
+		if = {
+			limit = {
+				has_country_flag = KYO_surface_SOV_selected
+				NOT = { has_country_flag = KYO_surface_SOV_liberated }
+				country_exists = SOV
+				SOV = {
+					has_country_flag = KYO_lunarian_controlled_major
+					NOT = { is_in_faction_with = ENG }
+				}
+			}
+			SOV = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			}
+			ENG = { add_to_faction = SOV }
+		}
+		if = {
+			limit = {
+				has_country_flag = KYO_surface_FRA_selected
+				NOT = { has_country_flag = KYO_surface_FRA_liberated }
+				country_exists = FRA
+				FRA = {
+					has_country_flag = KYO_lunarian_controlled_major
+					NOT = { is_in_faction_with = ENG }
+				}
+			}
+			FRA = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			}
+			ENG = { add_to_faction = FRA }
+		}
+	}
+	# KYO_FACTION_ANCHOR_GER
+	if = {
+		limit = { has_country_flag = KYO_surface_anchor_GER country_exists = GER GER = { is_faction_leader = yes } }
+		if = {
+			limit = {
+				has_country_flag = KYO_surface_USA_selected
+				NOT = { has_country_flag = KYO_surface_USA_liberated }
+				country_exists = USA
+				USA = {
+					has_country_flag = KYO_lunarian_controlled_major
+					NOT = { is_in_faction_with = GER }
+				}
+			}
+			USA = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			}
+			GER = { add_to_faction = USA }
+		}
+		if = {
+			limit = {
+				has_country_flag = KYO_surface_ENG_selected
+				NOT = { has_country_flag = KYO_surface_ENG_liberated }
+				country_exists = ENG
+				ENG = {
+					has_country_flag = KYO_lunarian_controlled_major
+					NOT = { is_in_faction_with = GER }
+				}
+			}
+			ENG = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			}
+			GER = { add_to_faction = ENG }
+		}
+		if = {
+			limit = {
+				has_country_flag = KYO_surface_SOV_selected
+				NOT = { has_country_flag = KYO_surface_SOV_liberated }
+				country_exists = SOV
+				SOV = {
+					has_country_flag = KYO_lunarian_controlled_major
+					NOT = { is_in_faction_with = GER }
+				}
+			}
+			SOV = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			}
+			GER = { add_to_faction = SOV }
+		}
+		if = {
+			limit = {
+				has_country_flag = KYO_surface_FRA_selected
+				NOT = { has_country_flag = KYO_surface_FRA_liberated }
+				country_exists = FRA
+				FRA = {
+					has_country_flag = KYO_lunarian_controlled_major
+					NOT = { is_in_faction_with = GER }
+				}
+			}
+			FRA = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			}
+			GER = { add_to_faction = FRA }
+		}
+	}
+	# KYO_FACTION_ANCHOR_SOV
+	if = {
+		limit = { has_country_flag = KYO_surface_anchor_SOV country_exists = SOV SOV = { is_faction_leader = yes } }
+		if = {
+			limit = {
+				has_country_flag = KYO_surface_USA_selected
+				NOT = { has_country_flag = KYO_surface_USA_liberated }
+				country_exists = USA
+				USA = {
+					has_country_flag = KYO_lunarian_controlled_major
+					NOT = { is_in_faction_with = SOV }
+				}
+			}
+			USA = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			}
+			SOV = { add_to_faction = USA }
+		}
+		if = {
+			limit = {
+				has_country_flag = KYO_surface_ENG_selected
+				NOT = { has_country_flag = KYO_surface_ENG_liberated }
+				country_exists = ENG
+				ENG = {
+					has_country_flag = KYO_lunarian_controlled_major
+					NOT = { is_in_faction_with = SOV }
+				}
+			}
+			ENG = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			}
+			SOV = { add_to_faction = ENG }
+		}
+		if = {
+			limit = {
+				has_country_flag = KYO_surface_GER_selected
+				NOT = { has_country_flag = KYO_surface_GER_liberated }
+				country_exists = GER
+				GER = {
+					has_country_flag = KYO_lunarian_controlled_major
+					NOT = { is_in_faction_with = SOV }
+				}
+			}
+			GER = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			}
+			SOV = { add_to_faction = GER }
+		}
+		if = {
+			limit = {
+				has_country_flag = KYO_surface_FRA_selected
+				NOT = { has_country_flag = KYO_surface_FRA_liberated }
+				country_exists = FRA
+				FRA = {
+					has_country_flag = KYO_lunarian_controlled_major
+					NOT = { is_in_faction_with = SOV }
+				}
+			}
+			FRA = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			}
+			SOV = { add_to_faction = FRA }
+		}
+	}
+	# KYO_FACTION_ANCHOR_FRA
+	if = {
+		limit = { has_country_flag = KYO_surface_anchor_FRA country_exists = FRA FRA = { is_faction_leader = yes } }
+		if = {
+			limit = {
+				has_country_flag = KYO_surface_USA_selected
+				NOT = { has_country_flag = KYO_surface_USA_liberated }
+				country_exists = USA
+				USA = {
+					has_country_flag = KYO_lunarian_controlled_major
+					NOT = { is_in_faction_with = FRA }
+				}
+			}
+			USA = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			}
+			FRA = { add_to_faction = USA }
+		}
+		if = {
+			limit = {
+				has_country_flag = KYO_surface_ENG_selected
+				NOT = { has_country_flag = KYO_surface_ENG_liberated }
+				country_exists = ENG
+				ENG = {
+					has_country_flag = KYO_lunarian_controlled_major
+					NOT = { is_in_faction_with = FRA }
+				}
+			}
+			ENG = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			}
+			FRA = { add_to_faction = ENG }
+		}
+		if = {
+			limit = {
+				has_country_flag = KYO_surface_GER_selected
+				NOT = { has_country_flag = KYO_surface_GER_liberated }
+				country_exists = GER
+				GER = {
+					has_country_flag = KYO_lunarian_controlled_major
+					NOT = { is_in_faction_with = FRA }
+				}
+			}
+			GER = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			}
+			FRA = { add_to_faction = GER }
+		}
+		if = {
+			limit = {
+				has_country_flag = KYO_surface_SOV_selected
+				NOT = { has_country_flag = KYO_surface_SOV_liberated }
+				country_exists = SOV
+				SOV = {
+					has_country_flag = KYO_lunarian_controlled_major
+					NOT = { is_in_faction_with = FRA }
+				}
+			}
+			SOV = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			}
+			FRA = { add_to_faction = SOV }
+		}
+	}
+}
+
+KYO_start_lunarian_surface_war = {
+	if = {
+		limit = { NOT = { has_country_flag = KYO_lunarian_surface_war_started } }
+		set_country_flag = KYO_lunarian_surface_war_started
+		clr_country_flag = KYO_surface_liberation_completed
+		set_variable = { KYO_surface_selected = 0 }
+		set_variable = { KYO_surface_liberated = 0 }
+		clr_country_flag = KYO_surface_USA_selected
+		clr_country_flag = KYO_surface_USA_capital_breached
+		clr_country_flag = KYO_surface_USA_liberated
+		clr_country_flag = KYO_surface_anchor_USA
+		if = {
+			limit = { country_exists = USA USA = { is_major = yes has_capitulated = no NOT = { is_subject_of = KYO } } }
+			set_country_flag = KYO_surface_USA_selected
+			add_to_variable = { KYO_surface_selected = 1 }
+			USA = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+				remove_ideas = KYO_lunarian_crossline_disrupted
+				remove_ideas = KYO_lunarian_defeat_pressure_1
+				remove_ideas = KYO_lunarian_defeat_pressure_2
+				remove_ideas = KYO_lunarian_defeat_pressure_3
+				remove_ideas = KYO_lunarian_faction_lock
+				set_country_flag = KYO_lunarian_controlled_major
+			}
+		}
+		clr_country_flag = KYO_surface_ENG_selected
+		clr_country_flag = KYO_surface_ENG_capital_breached
+		clr_country_flag = KYO_surface_ENG_liberated
+		clr_country_flag = KYO_surface_anchor_ENG
+		if = {
+			limit = { country_exists = ENG ENG = { is_major = yes has_capitulated = no NOT = { is_subject_of = KYO } } }
+			set_country_flag = KYO_surface_ENG_selected
+			add_to_variable = { KYO_surface_selected = 1 }
+			ENG = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+				remove_ideas = KYO_lunarian_crossline_disrupted
+				remove_ideas = KYO_lunarian_defeat_pressure_1
+				remove_ideas = KYO_lunarian_defeat_pressure_2
+				remove_ideas = KYO_lunarian_defeat_pressure_3
+				remove_ideas = KYO_lunarian_faction_lock
+				set_country_flag = KYO_lunarian_controlled_major
+			}
+		}
+		clr_country_flag = KYO_surface_GER_selected
+		clr_country_flag = KYO_surface_GER_capital_breached
+		clr_country_flag = KYO_surface_GER_liberated
+		clr_country_flag = KYO_surface_anchor_GER
+		if = {
+			limit = { country_exists = GER GER = { is_major = yes has_capitulated = no NOT = { is_subject_of = KYO } } }
+			set_country_flag = KYO_surface_GER_selected
+			add_to_variable = { KYO_surface_selected = 1 }
+			GER = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+				remove_ideas = KYO_lunarian_crossline_disrupted
+				remove_ideas = KYO_lunarian_defeat_pressure_1
+				remove_ideas = KYO_lunarian_defeat_pressure_2
+				remove_ideas = KYO_lunarian_defeat_pressure_3
+				remove_ideas = KYO_lunarian_faction_lock
+				set_country_flag = KYO_lunarian_controlled_major
+			}
+		}
+		clr_country_flag = KYO_surface_SOV_selected
+		clr_country_flag = KYO_surface_SOV_capital_breached
+		clr_country_flag = KYO_surface_SOV_liberated
+		clr_country_flag = KYO_surface_anchor_SOV
+		if = {
+			limit = { country_exists = SOV SOV = { is_major = yes has_capitulated = no NOT = { is_subject_of = KYO } } }
+			set_country_flag = KYO_surface_SOV_selected
+			add_to_variable = { KYO_surface_selected = 1 }
+			SOV = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+				remove_ideas = KYO_lunarian_crossline_disrupted
+				remove_ideas = KYO_lunarian_defeat_pressure_1
+				remove_ideas = KYO_lunarian_defeat_pressure_2
+				remove_ideas = KYO_lunarian_defeat_pressure_3
+				remove_ideas = KYO_lunarian_faction_lock
+				set_country_flag = KYO_lunarian_controlled_major
+			}
+		}
+		clr_country_flag = KYO_surface_FRA_selected
+		clr_country_flag = KYO_surface_FRA_capital_breached
+		clr_country_flag = KYO_surface_FRA_liberated
+		clr_country_flag = KYO_surface_anchor_FRA
+		if = {
+			limit = { country_exists = FRA FRA = { is_major = yes has_capitulated = no NOT = { is_subject_of = KYO } } }
+			set_country_flag = KYO_surface_FRA_selected
+			add_to_variable = { KYO_surface_selected = 1 }
+			FRA = {
+				if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+				else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+				remove_ideas = KYO_lunarian_crossline_disrupted
+				remove_ideas = KYO_lunarian_defeat_pressure_1
+				remove_ideas = KYO_lunarian_defeat_pressure_2
+				remove_ideas = KYO_lunarian_defeat_pressure_3
+				remove_ideas = KYO_lunarian_faction_lock
+				set_country_flag = KYO_lunarian_controlled_major
+			}
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_USA_selected has_country_flag = KYO_surface_ENG_selected }
+			USA = { if = { limit = { has_war_with = ENG } white_peace = ENG } }
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_USA_selected has_country_flag = KYO_surface_GER_selected }
+			USA = { if = { limit = { has_war_with = GER } white_peace = GER } }
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_USA_selected has_country_flag = KYO_surface_SOV_selected }
+			USA = { if = { limit = { has_war_with = SOV } white_peace = SOV } }
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_USA_selected has_country_flag = KYO_surface_FRA_selected }
+			USA = { if = { limit = { has_war_with = FRA } white_peace = FRA } }
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_ENG_selected has_country_flag = KYO_surface_GER_selected }
+			ENG = { if = { limit = { has_war_with = GER } white_peace = GER } }
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_ENG_selected has_country_flag = KYO_surface_SOV_selected }
+			ENG = { if = { limit = { has_war_with = SOV } white_peace = SOV } }
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_ENG_selected has_country_flag = KYO_surface_FRA_selected }
+			ENG = { if = { limit = { has_war_with = FRA } white_peace = FRA } }
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_GER_selected has_country_flag = KYO_surface_SOV_selected }
+			GER = { if = { limit = { has_war_with = SOV } white_peace = SOV } }
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_GER_selected has_country_flag = KYO_surface_FRA_selected }
+			GER = { if = { limit = { has_war_with = FRA } white_peace = FRA } }
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_SOV_selected has_country_flag = KYO_surface_FRA_selected }
+			SOV = { if = { limit = { has_war_with = FRA } white_peace = FRA } }
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_USA_selected }
+			set_country_flag = KYO_surface_anchor_USA
+			USA = { 
+				create_faction_from_template = faction_template_generic_dominance
+				set_faction_name =  KYO_lunarian_surface_front }
+		}
+		else_if = {
+			limit = { has_country_flag = KYO_surface_ENG_selected }
+			set_country_flag = KYO_surface_anchor_ENG
+			ENG = { create_faction_from_template = faction_template_generic_dominance
+				set_faction_name =  KYO_lunarian_surface_front}
+		}
+		else_if = {
+			limit = { has_country_flag = KYO_surface_GER_selected }
+			set_country_flag = KYO_surface_anchor_GER
+			GER = { create_faction_from_template = faction_template_generic_dominance
+				set_faction_name =  KYO_lunarian_surface_front}
+		}
+		else_if = {
+			limit = { has_country_flag = KYO_surface_SOV_selected }
+			set_country_flag = KYO_surface_anchor_SOV
+			SOV = { create_faction_from_template = faction_template_generic_dominance
+				set_faction_name =  KYO_lunarian_surface_front}
+		}
+		else_if = {
+			limit = { has_country_flag = KYO_surface_FRA_selected }
+			set_country_flag = KYO_surface_anchor_FRA
+			FRA = { create_faction_from_template = faction_template_generic_dominance
+				set_faction_name =  KYO_lunarian_surface_front}
+		}
+		KYO_enforce_lunarian_surface_faction = yes
+		KYO_refresh_all_lunarian_control_modifiers = yes
+		if = {
+			limit = { has_country_flag = KYO_surface_USA_selected }
+			USA = { if = { limit = { NOT = { has_war_with = KYO } } declare_war_on = { target = KYO type = annex_everything } } }
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_ENG_selected }
+			ENG = { if = { limit = { NOT = { has_war_with = KYO } } declare_war_on = { target = KYO type = annex_everything } } }
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_GER_selected }
+			GER = { if = { limit = { NOT = { has_war_with = KYO } } declare_war_on = { target = KYO type = annex_everything } } }
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_SOV_selected }
+			SOV = { if = { limit = { NOT = { has_war_with = KYO } } declare_war_on = { target = KYO type = annex_everything } } }
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_FRA_selected }
+			FRA = { if = { limit = { NOT = { has_war_with = KYO } } declare_war_on = { target = KYO type = annex_everything } } }
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_USA_selected }
+			USA = {
+				every_neighbor_country = {
+					limit = {
+						has_capitulated = no
+						NOT = {
+							is_in_faction_with = PREV
+							has_war_with = PREV
+							is_subject_of = PREV
+						}
+					}
+					PREV = { declare_war_on = { target = PREV type = annex_everything } }
+				}
+			}
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_ENG_selected }
+			ENG = {
+				every_neighbor_country = {
+					limit = {
+						has_capitulated = no
+						NOT = {
+							is_in_faction_with = PREV
+							has_war_with = PREV
+							is_subject_of = PREV
+						}
+					}
+					PREV = { declare_war_on = { target = PREV type = annex_everything } }
+				}
+			}
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_GER_selected }
+			GER = {
+				every_neighbor_country = {
+					limit = {
+						has_capitulated = no
+						NOT = {
+							is_in_faction_with = PREV
+							has_war_with = PREV
+							is_subject_of = PREV
+						}
+					}
+					PREV = { declare_war_on = { target = PREV type = annex_everything } }
+				}
+			}
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_SOV_selected }
+			SOV = {
+				every_neighbor_country = {
+					limit = {
+						has_capitulated = no
+						NOT = {
+							is_in_faction_with = PREV
+							has_war_with = PREV
+							is_subject_of = PREV
+						}
+					}
+					PREV = { declare_war_on = { target = PREV type = annex_everything } }
+				}
+			}
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_FRA_selected }
+			FRA = {
+				every_neighbor_country = {
+					limit = {
+						has_capitulated = no
+						NOT = {
+							is_in_faction_with = PREV
+							has_war_with = PREV
+							is_subject_of = PREV
+						}
+					}
+					PREV = { declare_war_on = { target = PREV type = annex_everything } }
+				}
+			}
+		}
+		KYO_monitor_lunarian_surface_war = yes
+	}
+}
+
+# On the third lunar victory, one surviving controlled major leads the
+# Lunarian faction into total war against every independent country that has
+# not already been attacked.
+KYO_expand_lunarian_total_war = {
+	clr_country_flag = KYO_lunarian_total_war_declarer_ready
+	if = {
+		limit = { country_exists = USA USA = { has_country_flag = KYO_lunarian_controlled_major has_capitulated = no } }
+		USA = { save_event_target_as = KYO_lunarian_total_war_declarer }
+		set_country_flag = KYO_lunarian_total_war_declarer_ready
+	}
+	else_if = {
+		limit = { country_exists = ENG ENG = { has_country_flag = KYO_lunarian_controlled_major has_capitulated = no } }
+		ENG = { save_event_target_as = KYO_lunarian_total_war_declarer }
+		set_country_flag = KYO_lunarian_total_war_declarer_ready
+	}
+	else_if = {
+		limit = { country_exists = GER GER = { has_country_flag = KYO_lunarian_controlled_major has_capitulated = no } }
+		GER = { save_event_target_as = KYO_lunarian_total_war_declarer }
+		set_country_flag = KYO_lunarian_total_war_declarer_ready
+	}
+	else_if = {
+		limit = { country_exists = SOV SOV = { has_country_flag = KYO_lunarian_controlled_major has_capitulated = no } }
+		SOV = { save_event_target_as = KYO_lunarian_total_war_declarer }
+		set_country_flag = KYO_lunarian_total_war_declarer_ready
+	}
+	else_if = {
+		limit = { country_exists = FRA FRA = { has_country_flag = KYO_lunarian_controlled_major has_capitulated = no } }
+		FRA = { save_event_target_as = KYO_lunarian_total_war_declarer }
+		set_country_flag = KYO_lunarian_total_war_declarer_ready
+	}
+	if = {
+		limit = { has_country_flag = KYO_lunarian_total_war_declarer_ready }
+		every_country = {
+			limit = {
+				has_capitulated = no
+				is_subject = no
+				event_target:KYO_lunarian_total_war_declarer = {
+					NOT = { tag = PREV }
+					NOT = { has_war_with = PREV }
+					NOT = { is_in_faction_with = PREV }
+				}
+			}
+			event_target:KYO_lunarian_total_war_declarer = {
+				declare_war_on = { target = PREV type = annex_everything }
+			}
+		}
+		clr_country_flag = KYO_lunarian_total_war_declarer_ready
+	}
+}
+
+KYO_monitor_lunarian_surface_war = {
+	if = {
+		limit = { has_country_flag = KYO_lunarian_surface_war_started NOT = { has_country_flag = KYO_surface_liberation_completed } }
+		if = {
+			limit = { has_country_flag = KYO_surface_USA_selected NOT = { has_country_flag = KYO_surface_USA_capital_breached } country_exists = USA USA = { capital_scope = { is_controlled_by = KYO } } }
+			set_country_flag = KYO_surface_USA_capital_breached
+			USA = { KYO_refresh_lunarian_control_modifier = yes }
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_USA_selected NOT = { has_country_flag = KYO_surface_USA_liberated } OR = { NOT = { country_exists = USA } USA = { has_capitulated = yes } } }
+			set_country_flag = KYO_surface_USA_liberated
+			add_to_variable = { KYO_surface_liberated = 1 }
+			KYO_grant_lunar_free_order = yes
+			KYO_report_first_surface_order = yes
+			if = { limit = { country_exists = USA } USA = { clr_country_flag = KYO_lunarian_controlled_major remove_ideas = KYO_lunarian_controlled_major remove_ideas = KYO_lunarian_control_fractured remove_ideas = KYO_lunarian_crossline_disrupted remove_ideas = KYO_lunarian_defeat_pressure_1 remove_ideas = KYO_lunarian_defeat_pressure_2 remove_ideas = KYO_lunarian_defeat_pressure_3 remove_ideas = KYO_lunarian_faction_lock } }
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_ENG_selected NOT = { has_country_flag = KYO_surface_ENG_capital_breached } country_exists = ENG ENG = { capital_scope = { is_controlled_by = KYO } } }
+			set_country_flag = KYO_surface_ENG_capital_breached
+			ENG = { KYO_refresh_lunarian_control_modifier = yes }
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_ENG_selected NOT = { has_country_flag = KYO_surface_ENG_liberated } OR = { NOT = { country_exists = ENG } ENG = { has_capitulated = yes } } }
+			set_country_flag = KYO_surface_ENG_liberated
+			add_to_variable = { KYO_surface_liberated = 1 }
+			KYO_grant_lunar_free_order = yes
+			KYO_report_first_surface_order = yes
+			if = { limit = { country_exists = ENG } ENG = { clr_country_flag = KYO_lunarian_controlled_major remove_ideas = KYO_lunarian_controlled_major remove_ideas = KYO_lunarian_control_fractured remove_ideas = KYO_lunarian_crossline_disrupted remove_ideas = KYO_lunarian_defeat_pressure_1 remove_ideas = KYO_lunarian_defeat_pressure_2 remove_ideas = KYO_lunarian_defeat_pressure_3 remove_ideas = KYO_lunarian_faction_lock } }
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_GER_selected NOT = { has_country_flag = KYO_surface_GER_capital_breached } country_exists = GER GER = { capital_scope = { is_controlled_by = KYO } } }
+			set_country_flag = KYO_surface_GER_capital_breached
+			GER = { KYO_refresh_lunarian_control_modifier = yes }
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_GER_selected NOT = { has_country_flag = KYO_surface_GER_liberated } OR = { NOT = { country_exists = GER } GER = { has_capitulated = yes } } }
+			set_country_flag = KYO_surface_GER_liberated
+			add_to_variable = { KYO_surface_liberated = 1 }
+			KYO_grant_lunar_free_order = yes
+			KYO_report_first_surface_order = yes
+			if = { limit = { country_exists = GER } GER = { clr_country_flag = KYO_lunarian_controlled_major remove_ideas = KYO_lunarian_controlled_major remove_ideas = KYO_lunarian_control_fractured remove_ideas = KYO_lunarian_crossline_disrupted remove_ideas = KYO_lunarian_defeat_pressure_1 remove_ideas = KYO_lunarian_defeat_pressure_2 remove_ideas = KYO_lunarian_defeat_pressure_3 remove_ideas = KYO_lunarian_faction_lock } }
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_SOV_selected NOT = { has_country_flag = KYO_surface_SOV_capital_breached } country_exists = SOV SOV = { capital_scope = { is_controlled_by = KYO } } }
+			set_country_flag = KYO_surface_SOV_capital_breached
+			SOV = { KYO_refresh_lunarian_control_modifier = yes }
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_SOV_selected NOT = { has_country_flag = KYO_surface_SOV_liberated } OR = { NOT = { country_exists = SOV } SOV = { has_capitulated = yes } } }
+			set_country_flag = KYO_surface_SOV_liberated
+			add_to_variable = { KYO_surface_liberated = 1 }
+			KYO_grant_lunar_free_order = yes
+			KYO_report_first_surface_order = yes
+			if = { limit = { country_exists = SOV } SOV = { clr_country_flag = KYO_lunarian_controlled_major remove_ideas = KYO_lunarian_controlled_major remove_ideas = KYO_lunarian_control_fractured remove_ideas = KYO_lunarian_crossline_disrupted remove_ideas = KYO_lunarian_defeat_pressure_1 remove_ideas = KYO_lunarian_defeat_pressure_2 remove_ideas = KYO_lunarian_defeat_pressure_3 remove_ideas = KYO_lunarian_faction_lock } }
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_FRA_selected NOT = { has_country_flag = KYO_surface_FRA_capital_breached } country_exists = FRA FRA = { capital_scope = { is_controlled_by = KYO } } }
+			set_country_flag = KYO_surface_FRA_capital_breached
+			FRA = { KYO_refresh_lunarian_control_modifier = yes }
+		}
+		if = {
+			limit = { has_country_flag = KYO_surface_FRA_selected NOT = { has_country_flag = KYO_surface_FRA_liberated } OR = { NOT = { country_exists = FRA } FRA = { has_capitulated = yes } } }
+			set_country_flag = KYO_surface_FRA_liberated
+			add_to_variable = { KYO_surface_liberated = 1 }
+			KYO_grant_lunar_free_order = yes
+			KYO_report_first_surface_order = yes
+			if = { limit = { country_exists = FRA } FRA = { clr_country_flag = KYO_lunarian_controlled_major remove_ideas = KYO_lunarian_controlled_major remove_ideas = KYO_lunarian_control_fractured remove_ideas = KYO_lunarian_crossline_disrupted remove_ideas = KYO_lunarian_defeat_pressure_1 remove_ideas = KYO_lunarian_defeat_pressure_2 remove_ideas = KYO_lunarian_defeat_pressure_3 remove_ideas = KYO_lunarian_faction_lock } }
+		}
+		if = {
+			limit = { NOT = { check_variable = { KYO_surface_liberated < KYO_surface_selected } } }
+			set_country_flag = KYO_surface_liberation_completed
+			KYO_end_lunarian_surface_war = yes
+			news_event = { id = kyo_news.52 hours = 6 }
+		}
+	}
+}
+
+KYO_grant_lunar_free_order = {
+	add_to_variable = { KYO_lunar_free_orders = 1 }
+	clamp_variable = { var = KYO_lunar_free_orders min = 0 max = 4 }
+}
+
+KYO_report_first_surface_order = {
+	if = {
+		limit = { NOT = { has_country_flag = KYO_first_surface_order_reported } }
+		set_country_flag = KYO_first_surface_order_reported
+		country_event = { id = yakumo.63 hours = 6 }
+	}
+}
+
+KYO_form_gensokyo_faction_earth_axis = {
+	if = {
+		limit = { is_faction_leader = yes }
+	
+		set_faction_name = KYO_faction_earth_axis
+	}
+	else = {
+		if = { limit = { is_in_faction = yes } leave_faction = yes }
+
+		create_faction =  KYO_faction_earth_axis
+
+		hidden_effect = {
+			create_faction_from_template = faction_template_JAP_west_pacific_treaty_organization
+		}
+		
+		set_faction_name = KYO_faction_earth_axis
+	}
+	set_country_flag = KYO_gensokyo_faction_named
+}
+
+KYO_form_gensokyo_faction_lunarian_resistance = {
+	if = {
+		limit = { is_faction_leader = yes }
+		
+		set_faction_name = KYO_faction_lunarian_resistance_front
+	}
+	else = {
+		if = { limit = { is_in_faction = yes } leave_faction = yes }
+		create_faction = KYO_faction_lunarian_resistance_front
+
+		hidden_effect = {
+			create_faction_from_template = faction_template_JAP_west_pacific_treaty_organization
+		}
+		set_faction_name = KYO_faction_lunarian_resistance_front
+	}
+	set_country_flag = KYO_gensokyo_faction_named
+}
+
+KYO_form_gensokyo_faction_fantasy_alliance = {
+	if = {
+		limit = { is_faction_leader = yes }
+	
+		set_faction_name = KYO_faction_fantasy_alliance
+	}
+	else = {
+		if = { limit = { is_in_faction = yes } leave_faction = yes }
+		create_faction =  KYO_faction_fantasy_alliance
+
+		hidden_effect = {
+			create_faction_from_template = faction_template_JAP_west_pacific_treaty_organization
+		}
+		set_faction_name = KYO_faction_fantasy_alliance
+	}
+	set_country_flag = KYO_gensokyo_faction_named
+}
+
+KYO_form_gensokyo_faction_coexistence_pact = {
+	if = {
+		limit = { is_faction_leader = yes }
+		set_faction_name = KYO_faction_coexistence_pact
+	}
+	else = {
+		if = { limit = { is_in_faction = yes } leave_faction = yes }
+		create_faction = KYO_faction_coexistence_pact
+
+		hidden_effect = {
+			create_faction_from_template = faction_template_JAP_west_pacific_treaty_organization
+		}
+		set_faction_name = KYO_faction_coexistence_pact
+	}
+	set_country_flag = KYO_gensokyo_faction_named
+}
+
+KYO_continue_pending_preemptive_lunar_invasion = {
+	if = {
+		limit = { has_country_flag = KYO_lunar_preemptive_start_pending }
+		clr_country_flag = KYO_lunar_preemptive_start_pending
+		if = {
+			limit = { NOT = { has_country_flag = KYO_lunar_invasion_started } }
+			set_country_flag = KYO_lunar_preemptive_strike_used
+			add_timed_idea = { idea = KYO_lunar_preemptive_strike days = 180 }
+			KYO_begin_lunar_invasion = yes
+		}
+	}
+}
+
+KYO_schedule_lunar_invasion = {
+	if = {
+		limit = {
+			NOT = { has_country_flag = KYO_lunar_invasion_started }
+			NOT = { has_country_flag = KYO_lunar_invasion_timer_active }
+		}
+		set_country_flag = KYO_lunar_invasion_timer_active
+		clr_country_flag = KYO_lunar_preemptive_start_pending
+		clr_country_flag = KYO_gensokyo_faction_named
+		clr_country_flag = KYO_lunar_prewar_event_1_fired
+		clr_country_flag = KYO_lunar_prewar_event_2_fired
+		clr_country_flag = KYO_lunar_prewar_event_3_fired
+		clr_country_flag = KYO_lunar_prewar_event_4_fired
+		clr_country_flag = KYO_lunar_prewar_event_5_fired
+		clr_country_flag = KYO_lunar_prewar_event_6_fired
+		set_variable = { KYO_lunar_invasion_days_left = 730 }
+		activate_mission = KYO_lunar_invasion_countdown
+	}
+}
+
+KYO_lunar_prewar_tick = {
+	if = {
+		limit = { has_country_flag = KYO_lunar_invasion_timer_active NOT = { has_country_flag = KYO_lunar_invasion_started } }
+		subtract_from_variable = { KYO_lunar_invasion_days_left = 1 }
+		if = {
+			limit = { check_variable = { KYO_lunar_invasion_days_left < 43 } NOT = { has_country_flag = KYO_lunar_prewar_event_1_fired } }
+			set_country_flag = KYO_lunar_prewar_event_1_fired
+			country_event = { id = KYO_lunar_prewar.1 hours = 1 }
+		}
+		else_if = {
+			limit = { check_variable = { KYO_lunar_invasion_days_left < 36 } NOT = { has_country_flag = KYO_lunar_prewar_event_2_fired } }
+			set_country_flag = KYO_lunar_prewar_event_2_fired
+			country_event = { id = KYO_lunar_prewar.2 hours = 1 }
+		}
+		else_if = {
+			limit = { check_variable = { KYO_lunar_invasion_days_left < 29 } NOT = { has_country_flag = KYO_lunar_prewar_event_3_fired } }
+			set_country_flag = KYO_lunar_prewar_event_3_fired
+			country_event = { id = KYO_lunar_prewar.3 hours = 1 }
+		}
+		else_if = {
+			limit = { check_variable = { KYO_lunar_invasion_days_left < 22 } NOT = { has_country_flag = KYO_lunar_prewar_event_4_fired } }
+			set_country_flag = KYO_lunar_prewar_event_4_fired
+			country_event = { id = KYO_lunar_prewar.4 hours = 1 }
+		}
+		else_if = {
+			limit = { check_variable = { KYO_lunar_invasion_days_left < 15 } NOT = { has_country_flag = KYO_lunar_prewar_event_5_fired } }
+			set_country_flag = KYO_lunar_prewar_event_5_fired
+			country_event = { id = KYO_lunar_prewar.5 hours = 1 }
+		}
+		else_if = {
+			limit = { check_variable = { KYO_lunar_invasion_days_left < 8 } NOT = { has_country_flag = KYO_lunar_prewar_event_6_fired } }
+			set_country_flag = KYO_lunar_prewar_event_6_fired
+			country_event = { id = KYO_lunar_prewar.6 hours = 1 }
+		}
+	}
+}
+
+KYO_begin_lunar_invasion = {
+
+	custom_effect_tooltip = second_moon_war_start_tt
+	hidden_effect = {
+		if = {
+			limit = { NOT = { has_country_flag = KYO_lunar_invasion_started } }
+			if = {
+				limit = { NOT = { has_country_flag = KYO_gensokyo_faction_named } }
+				KYO_form_gensokyo_faction_coexistence_pact = yes
+			}
+			set_country_flag = KYO_lunar_invasion_started
+			clr_country_flag = KYO_lunar_invasion_timer_active
+			clr_country_flag = KYO_lunar_preemptive_start_pending
+			if = {
+				limit = {
+					has_active_mission = KYO_lunar_invasion_countdown
+					NOT = { has_country_flag = KYO_lunar_invasion_natural_start }
+				}
+				remove_mission = KYO_lunar_invasion_countdown
+			}
+			set_country_flag = KYO_gensokyo_united_against_lunar
+			set_country_flag = KYO_lunar_mediation_available
+			if = {
+				limit = { NOT = { has_idea = KYO_gensokyo_wartime_coalition } }
+				add_ideas = KYO_gensokyo_wartime_coalition
+			}
+			KYO_initialize_lunar_campaign = yes
+			if = {
+				limit = { has_country_flag = KYO_three_paths_joint_council_ready }
+				KYO_grant_lunar_free_order = yes
+			}
+			KYO_start_lunarian_surface_war = yes
+			KYO_refresh_all_lunarian_control_modifiers = yes
+			KYO_try_start_lunar_campaign = yes
+			news_event = { id = kyo_news.51 hours = 1 }
+			country_event = { id = sp_event.3 hours = 3 }
+		}
+	}
+		
+}
+
+KYO_begin_preemptive_lunar_invasion = {
+	if = {
+		limit = {
+			NOT = { has_country_flag = KYO_lunar_invasion_started }
+			NOT = { has_country_flag = KYO_gensokyo_faction_named }
+		}
+		set_country_flag = KYO_lunar_preemptive_start_pending
+		if = {
+			limit = { NOT = { has_country_flag = KYO_lunar_prewar_event_1_fired } }
+			set_country_flag = KYO_lunar_prewar_event_1_fired
+			country_event = { id = KYO_lunar_prewar.1 hours = 1 }
+		}
+		else = {
+			KYO_form_gensokyo_faction_coexistence_pact = yes
+			KYO_continue_pending_preemptive_lunar_invasion = yes
+		}
+	}
+	else_if = {
+		limit = { NOT = { has_country_flag = KYO_lunar_invasion_started } }
+
+		set_country_flag = KYO_lunar_preemptive_strike_used
+
+		add_timed_idea = { idea = KYO_lunar_preemptive_strike days = 180 }
+
+		KYO_begin_lunar_invasion = yes
+	}
+	else = {
+		KYO_grant_lunar_free_order = yes
+		add_command_power = 10
+	}
+}
+
+KYO_initialize_lunar_campaign = {
+	set_country_flag = KYO_lunar_campaign_unlocked
+	clr_country_flag = KYO_lunar_campaign_won
+	clr_country_flag = KYO_lunar_campaign_started
+	clr_country_flag = KYO_lunarian_total_war_stage_3
+	clr_country_flag = KYO_lunarian_release_stage_2
+	clr_country_flag = KYO_lunarian_release_stage_4
+	clr_country_flag = KYO_lunarian_release_stage_5
+	set_variable = { KYO_lunar_attacker_wins = 0 }
+	set_variable = { KYO_lunar_defender_wins = 0 }
+	set_variable = { KYO_lunar_round = 0 }
+	set_variable = { KYO_lunar_last_add = 0 }
+	clamp_variable = { var = KYO_lunar_free_orders min = 0 max = 4 }
+}
+
+# The decision category is visible as soon as the surface war starts, but the
+# lunar campaign itself waits for the Great Gensokyo focus.
+KYO_try_start_lunar_campaign = {
+	if = {
+		limit = {
+			has_country_flag = KYO_lunar_invasion_started
+			has_country_flag = KYO_lunar_campaign_unlocked
+			NOT = { has_completed_focus = KYO_creat_big_gensokyo }
+			has_country_flag = KYO_lunar_campaign_active
+		}
+		KYO_lunar_prepare_retreat = yes
+	}
+	else_if = {
+		limit = {
+			has_country_flag = KYO_lunar_invasion_started
+			has_country_flag = KYO_lunar_campaign_unlocked
+			has_completed_focus = KYO_creat_big_gensokyo
+			NOT = { has_country_flag = KYO_lunar_campaign_started }
+		}
+		set_country_flag = KYO_lunar_campaign_started
+		if = {
+			limit = {
+				NOT = { has_country_flag = KYO_lunar_campaign_active }
+				has_variable = KYO_lunar_difficulty
+			}
+			KYO_lunar_start_series = yes
+		}
+		else_if = {
+			limit = { NOT = { has_country_flag = KYO_lunar_campaign_active } }
+			country_event = { id = yakumo.50 hours = 1 }
+		}
+	}
+}
+
+KYO_eirin_history_reward = {
+	if = {
+		limit = { is_power_balance_in_range = { id = KYO_balance range < eirin_side_2 } }
+		add_political_power = 25
+	}
+	else = { add_political_power = 10 }
+}
+
+KYO_yuyuko_history_reward = {
+	if = {
+		limit = { is_power_balance_in_range = { id = KYO_balance range > yuyuko_side_2 } }
+		add_stability = 0.03
+	}
+	else = { add_stability = 0.01 }
+}
+
+KYO_remove_lunarian_control_ideas = {
+	remove_ideas = KYO_lunarian_controlled_major
+	remove_ideas = KYO_lunarian_control_fractured
+	remove_ideas = KYO_lunarian_crossline_disrupted
+	remove_ideas = KYO_lunarian_defeat_pressure_1
+	remove_ideas = KYO_lunarian_defeat_pressure_2
+	remove_ideas = KYO_lunarian_defeat_pressure_3
+	remove_ideas = KYO_lunarian_faction_lock
+	remove_ideas = KYO_lunarian_control_idea_1
+	remove_ideas = KYO_lunarian_control_idea_2
+	remove_ideas = KYO_lunarian_control_idea_3
+	remove_ideas = KYO_lunarian_control_idea_4
+	remove_ideas = KYO_lunarian_control_idea_5
+	remove_ideas = KYO_lunarian_control_idea_6
+}
+
+KYO_refresh_lunarian_control_modifier = {
+	# Save-compatible cleanup: remove every legacy or tier idea first, then add
+	# exactly one standard idea representing the current lunar-war situation.
+	KYO_remove_lunarian_control_ideas = yes
+	if = {
+		limit = { has_country_flag = KYO_lunarian_controlled_major }
+		if = {
+			limit = { KYO = { check_variable = { KYO_lunar_attacker_wins > 4 } } }
+			add_ideas = KYO_lunarian_control_idea_6
+		}
+		else_if = {
+			limit = { KYO = { check_variable = { KYO_lunar_attacker_wins > 3 } } }
+			add_ideas = KYO_lunarian_control_idea_5
+		}
+		else_if = {
+			limit = { KYO = { check_variable = { KYO_lunar_attacker_wins > 2 } } }
+			add_ideas = KYO_lunarian_control_idea_4
+		}
+		else_if = {
+			limit = { KYO = { check_variable = { KYO_lunar_attacker_wins > 1 } } }
+			add_ideas = KYO_lunarian_control_idea_3
+		}
+		else_if = {
+			limit = { KYO = { check_variable = { KYO_lunar_attacker_wins > 0 } } }
+			add_ideas = KYO_lunarian_control_idea_2
+		}
+		else = { add_ideas = KYO_lunarian_control_idea_1 }
+	}
+}
+
+KYO_refresh_all_lunarian_control_modifiers = {
+	if = { limit = { country_exists = USA } USA = { KYO_refresh_lunarian_control_modifier = yes } }
+	if = { limit = { country_exists = ENG } ENG = { KYO_refresh_lunarian_control_modifier = yes } }
+	if = { limit = { country_exists = GER } GER = { KYO_refresh_lunarian_control_modifier = yes } }
+	if = { limit = { country_exists = SOV } SOV = { KYO_refresh_lunarian_control_modifier = yes } }
+	if = { limit = { country_exists = FRA } FRA = { KYO_refresh_lunarian_control_modifier = yes } }
+}
+
+KYO_disrupt_lunarian_surface_front = {
+	KYO_refresh_all_lunarian_control_modifiers = yes
+}
+
+KYO_degrade_lunarian_surface_control = {
+	KYO_refresh_all_lunarian_control_modifiers = yes
+}
+
+KYO_release_one_lunarian_controlled_country = {
+	if = {
+		limit = { has_country_flag = KYO_surface_FRA_selected NOT = { has_country_flag = KYO_surface_FRA_liberated } country_exists = FRA FRA = { has_country_flag = KYO_lunarian_controlled_major is_faction_leader = no } }
+		set_country_flag = KYO_surface_FRA_liberated
+		add_to_variable = { KYO_surface_liberated = 1 }
+		FRA = {
+			clr_country_flag = KYO_lunarian_controlled_major
+			remove_ideas = KYO_lunarian_controlled_major
+			remove_ideas = KYO_lunarian_control_fractured
+			remove_ideas = KYO_lunarian_crossline_disrupted
+			remove_ideas = KYO_lunarian_defeat_pressure_1
+			remove_ideas = KYO_lunarian_defeat_pressure_2
+			remove_ideas = KYO_lunarian_defeat_pressure_3
+			remove_ideas = KYO_lunarian_faction_lock
+			if = { limit = { is_in_faction = yes } leave_faction = yes }
+			every_enemy_country = { white_peace = PREV }
+		}
+	}
+	else_if = {
+		limit = { has_country_flag = KYO_surface_SOV_selected NOT = { has_country_flag = KYO_surface_SOV_liberated } country_exists = SOV SOV = { has_country_flag = KYO_lunarian_controlled_major is_faction_leader = no } }
+		set_country_flag = KYO_surface_SOV_liberated
+		add_to_variable = { KYO_surface_liberated = 1 }
+		SOV = {
+			clr_country_flag = KYO_lunarian_controlled_major
+			remove_ideas = KYO_lunarian_controlled_major
+			remove_ideas = KYO_lunarian_control_fractured
+			remove_ideas = KYO_lunarian_crossline_disrupted
+			remove_ideas = KYO_lunarian_defeat_pressure_1
+			remove_ideas = KYO_lunarian_defeat_pressure_2
+			remove_ideas = KYO_lunarian_defeat_pressure_3
+			remove_ideas = KYO_lunarian_faction_lock
+			if = { limit = { is_in_faction = yes } leave_faction = yes }
+			every_enemy_country = { white_peace = PREV }
+		}
+	}
+	else_if = {
+		limit = { has_country_flag = KYO_surface_GER_selected NOT = { has_country_flag = KYO_surface_GER_liberated } country_exists = GER GER = { has_country_flag = KYO_lunarian_controlled_major is_faction_leader = no } }
+		set_country_flag = KYO_surface_GER_liberated
+		add_to_variable = { KYO_surface_liberated = 1 }
+		GER = {
+			clr_country_flag = KYO_lunarian_controlled_major
+			remove_ideas = KYO_lunarian_controlled_major
+			remove_ideas = KYO_lunarian_control_fractured
+			remove_ideas = KYO_lunarian_crossline_disrupted
+			remove_ideas = KYO_lunarian_defeat_pressure_1
+			remove_ideas = KYO_lunarian_defeat_pressure_2
+			remove_ideas = KYO_lunarian_defeat_pressure_3
+			remove_ideas = KYO_lunarian_faction_lock
+			if = { limit = { is_in_faction = yes } leave_faction = yes }
+			every_enemy_country = { white_peace = PREV }
+		}
+	}
+	else_if = {
+		limit = { has_country_flag = KYO_surface_ENG_selected NOT = { has_country_flag = KYO_surface_ENG_liberated } country_exists = ENG ENG = { has_country_flag = KYO_lunarian_controlled_major is_faction_leader = no } }
+		set_country_flag = KYO_surface_ENG_liberated
+		add_to_variable = { KYO_surface_liberated = 1 }
+		ENG = {
+			clr_country_flag = KYO_lunarian_controlled_major
+			remove_ideas = KYO_lunarian_controlled_major
+			remove_ideas = KYO_lunarian_control_fractured
+			remove_ideas = KYO_lunarian_crossline_disrupted
+			remove_ideas = KYO_lunarian_defeat_pressure_1
+			remove_ideas = KYO_lunarian_defeat_pressure_2
+			remove_ideas = KYO_lunarian_defeat_pressure_3
+			remove_ideas = KYO_lunarian_faction_lock
+			if = { limit = { is_in_faction = yes } leave_faction = yes }
+			every_enemy_country = { white_peace = PREV }
+		}
+	}
+	else_if = {
+		limit = { has_country_flag = KYO_surface_USA_selected NOT = { has_country_flag = KYO_surface_USA_liberated } country_exists = USA USA = { has_country_flag = KYO_lunarian_controlled_major is_faction_leader = no } }
+		set_country_flag = KYO_surface_USA_liberated
+		add_to_variable = { KYO_surface_liberated = 1 }
+		USA = {
+			clr_country_flag = KYO_lunarian_controlled_major
+			remove_ideas = KYO_lunarian_controlled_major
+			remove_ideas = KYO_lunarian_control_fractured
+			remove_ideas = KYO_lunarian_crossline_disrupted
+			remove_ideas = KYO_lunarian_defeat_pressure_1
+			remove_ideas = KYO_lunarian_defeat_pressure_2
+			remove_ideas = KYO_lunarian_defeat_pressure_3
+			remove_ideas = KYO_lunarian_faction_lock
+			if = { limit = { is_in_faction = yes } leave_faction = yes }
+			every_enemy_country = { white_peace = PREV }
+		}
+	}
+}
+
+KYO_release_all_lunarian_controlled_countries = {
+	if = {
+		limit = { has_country_flag = KYO_surface_FRA_selected NOT = { has_country_flag = KYO_surface_FRA_liberated } }
+		set_country_flag = KYO_surface_FRA_liberated
+		add_to_variable = { KYO_surface_liberated = 1 }
+		if = { limit = { country_exists = FRA } FRA = {
+			clr_country_flag = KYO_lunarian_controlled_major
+			remove_ideas = KYO_lunarian_controlled_major
+			remove_ideas = KYO_lunarian_control_fractured
+			remove_ideas = KYO_lunarian_crossline_disrupted
+			remove_ideas = KYO_lunarian_defeat_pressure_1
+			remove_ideas = KYO_lunarian_defeat_pressure_2
+			remove_ideas = KYO_lunarian_defeat_pressure_3
+			remove_ideas = KYO_lunarian_faction_lock
+			if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+			else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			every_enemy_country = { white_peace = PREV }
+		} }
+	}
+	if = {
+		limit = { has_country_flag = KYO_surface_SOV_selected NOT = { has_country_flag = KYO_surface_SOV_liberated } }
+		set_country_flag = KYO_surface_SOV_liberated
+		add_to_variable = { KYO_surface_liberated = 1 }
+		if = { limit = { country_exists = SOV } SOV = {
+			clr_country_flag = KYO_lunarian_controlled_major
+			remove_ideas = KYO_lunarian_controlled_major
+			remove_ideas = KYO_lunarian_control_fractured
+			remove_ideas = KYO_lunarian_crossline_disrupted
+			remove_ideas = KYO_lunarian_defeat_pressure_1
+			remove_ideas = KYO_lunarian_defeat_pressure_2
+			remove_ideas = KYO_lunarian_defeat_pressure_3
+			remove_ideas = KYO_lunarian_faction_lock
+			if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+			else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			every_enemy_country = { white_peace = PREV }
+		} }
+	}
+	if = {
+		limit = { has_country_flag = KYO_surface_GER_selected NOT = { has_country_flag = KYO_surface_GER_liberated } }
+		set_country_flag = KYO_surface_GER_liberated
+		add_to_variable = { KYO_surface_liberated = 1 }
+		if = { limit = { country_exists = GER } GER = {
+			clr_country_flag = KYO_lunarian_controlled_major
+			remove_ideas = KYO_lunarian_controlled_major
+			remove_ideas = KYO_lunarian_control_fractured
+			remove_ideas = KYO_lunarian_crossline_disrupted
+			remove_ideas = KYO_lunarian_defeat_pressure_1
+			remove_ideas = KYO_lunarian_defeat_pressure_2
+			remove_ideas = KYO_lunarian_defeat_pressure_3
+			remove_ideas = KYO_lunarian_faction_lock
+			if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+			else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			every_enemy_country = { white_peace = PREV }
+		} }
+	}
+	if = {
+		limit = { has_country_flag = KYO_surface_ENG_selected NOT = { has_country_flag = KYO_surface_ENG_liberated } }
+		set_country_flag = KYO_surface_ENG_liberated
+		add_to_variable = { KYO_surface_liberated = 1 }
+		if = { limit = { country_exists = ENG } ENG = {
+			clr_country_flag = KYO_lunarian_controlled_major
+			remove_ideas = KYO_lunarian_controlled_major
+			remove_ideas = KYO_lunarian_control_fractured
+			remove_ideas = KYO_lunarian_crossline_disrupted
+			remove_ideas = KYO_lunarian_defeat_pressure_1
+			remove_ideas = KYO_lunarian_defeat_pressure_2
+			remove_ideas = KYO_lunarian_defeat_pressure_3
+			remove_ideas = KYO_lunarian_faction_lock
+			if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+			else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			every_enemy_country = { white_peace = PREV }
+		} }
+	}
+	if = {
+		limit = { has_country_flag = KYO_surface_USA_selected NOT = { has_country_flag = KYO_surface_USA_liberated } }
+		set_country_flag = KYO_surface_USA_liberated
+		add_to_variable = { KYO_surface_liberated = 1 }
+		if = { limit = { country_exists = USA } USA = {
+			clr_country_flag = KYO_lunarian_controlled_major
+			remove_ideas = KYO_lunarian_controlled_major
+			remove_ideas = KYO_lunarian_control_fractured
+			remove_ideas = KYO_lunarian_crossline_disrupted
+			remove_ideas = KYO_lunarian_defeat_pressure_1
+			remove_ideas = KYO_lunarian_defeat_pressure_2
+			remove_ideas = KYO_lunarian_defeat_pressure_3
+			remove_ideas = KYO_lunarian_faction_lock
+			if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+			else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			every_enemy_country = { white_peace = PREV }
+		} }
+	}
+	KYO_monitor_lunarian_surface_war = yes
+}
+
+# A lunar-series defeat only breaks control over the United States.  The first
+# surviving controlled major becomes the new faction anchor, and the liberated
+# United States enters war against every country that remains controlled.
+KYO_release_lunarian_controlled_usa = {
+	if = {
+		limit = {
+			has_country_flag = KYO_surface_USA_selected
+			NOT = { has_country_flag = KYO_surface_USA_liberated }
+			country_exists = USA
+			USA = { has_country_flag = KYO_lunarian_controlled_major }
+		}
+		set_country_flag = KYO_surface_USA_liberated
+		add_to_variable = { KYO_surface_liberated = 1 }
+		clr_country_flag = KYO_surface_anchor_USA
+		clr_country_flag = KYO_surface_anchor_ENG
+		clr_country_flag = KYO_surface_anchor_GER
+		clr_country_flag = KYO_surface_anchor_SOV
+		clr_country_flag = KYO_surface_anchor_FRA
+		USA = {
+			if = { limit = { is_faction_leader = yes } dismantle_faction = yes }
+			else_if = { limit = { is_in_faction = yes } leave_faction = yes }
+			every_enemy_country = { white_peace = PREV }
+			clr_country_flag = KYO_lunarian_controlled_major
+			KYO_refresh_lunarian_control_modifier = yes
+		}
+		# Temporarily remove the faction-locking tier ideas while the controlled
+		# faction is rebuilt around a surviving member.
+		if = { limit = { country_exists = ENG } ENG = { KYO_remove_lunarian_control_ideas = yes } }
+		if = { limit = { country_exists = GER } GER = { KYO_remove_lunarian_control_ideas = yes } }
+		if = { limit = { country_exists = SOV } SOV = { KYO_remove_lunarian_control_ideas = yes } }
+		if = { limit = { country_exists = FRA } FRA = { KYO_remove_lunarian_control_ideas = yes } }
+		if = {
+			limit = {
+				has_country_flag = KYO_surface_ENG_selected
+				NOT = { has_country_flag = KYO_surface_ENG_liberated }
+				country_exists = ENG
+				ENG = { has_country_flag = KYO_lunarian_controlled_major }
+			}
+			set_country_flag = KYO_surface_anchor_ENG
+			ENG = {
+				if = {
+					limit = { is_faction_leader = yes }
+					set_faction_name = KYO_lunarian_surface_front
+				}
+				else = {
+					if = { limit = { is_in_faction = yes } leave_faction = yes }
+					create_faction_from_template = faction_template_generic_dominance
+				set_faction_name =  KYO_lunarian_surface_front
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = KYO_surface_GER_selected
+				NOT = { has_country_flag = KYO_surface_GER_liberated }
+				country_exists = GER
+				GER = { has_country_flag = KYO_lunarian_controlled_major }
+			}
+			set_country_flag = KYO_surface_anchor_GER
+			GER = {
+				if = {
+					limit = { is_faction_leader = yes }
+					set_faction_name = KYO_lunarian_surface_front
+				}
+				else = {
+					if = { limit = { is_in_faction = yes } leave_faction = yes }
+					create_faction = KYO_lunarian_surface_front
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = KYO_surface_SOV_selected
+				NOT = { has_country_flag = KYO_surface_SOV_liberated }
+				country_exists = SOV
+				SOV = { has_country_flag = KYO_lunarian_controlled_major }
+			}
+			set_country_flag = KYO_surface_anchor_SOV
+			SOV = {
+				if = {
+					limit = { is_faction_leader = yes }
+					set_faction_name = KYO_lunarian_surface_front
+				}
+				else = {
+					if = { limit = { is_in_faction = yes } leave_faction = yes }
+					create_faction_from_template = faction_template_generic_dominance
+				set_faction_name =  KYO_lunarian_surface_front
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = KYO_surface_FRA_selected
+				NOT = { has_country_flag = KYO_surface_FRA_liberated }
+				country_exists = FRA
+				FRA = { has_country_flag = KYO_lunarian_controlled_major }
+			}
+			set_country_flag = KYO_surface_anchor_FRA
+			FRA = {
+				if = {
+					limit = { is_faction_leader = yes }
+					set_faction_name = KYO_lunarian_surface_front
+				}
+				else = {
+					if = { limit = { is_in_faction = yes } leave_faction = yes }
+					create_faction_from_template = faction_template_generic_dominance
+				set_faction_name =  KYO_lunarian_surface_front
+				}
+			}
+		}
+		KYO_enforce_lunarian_surface_faction = yes
+		KYO_refresh_all_lunarian_control_modifiers = yes
+		USA = {
+			if = {
+				limit = {
+					country_exists = ENG
+					ENG = { has_country_flag = KYO_lunarian_controlled_major }
+					NOT = { has_war_with = ENG }
+					NOT = { is_in_faction_with = ENG }
+				}
+				declare_war_on = { target = ENG type = annex_everything }
+			}
+			if = {
+				limit = {
+					country_exists = GER
+					GER = { has_country_flag = KYO_lunarian_controlled_major }
+					NOT = { has_war_with = GER }
+					NOT = { is_in_faction_with = GER }
+				}
+				declare_war_on = { target = GER type = annex_everything }
+			}
+			if = {
+				limit = {
+					country_exists = SOV
+					SOV = { has_country_flag = KYO_lunarian_controlled_major }
+					NOT = { has_war_with = SOV }
+					NOT = { is_in_faction_with = SOV }
+				}
+				declare_war_on = { target = SOV type = annex_everything }
+			}
+			if = {
+				limit = {
+					country_exists = FRA
+					FRA = { has_country_flag = KYO_lunarian_controlled_major }
+					NOT = { has_war_with = FRA }
+					NOT = { is_in_faction_with = FRA }
+				}
+				declare_war_on = { target = FRA type = annex_everything }
+			}
+		}
+	}
+}
+
+KYO_apply_lunarian_defeat_pressure = {
+	KYO_refresh_all_lunarian_control_modifiers = yes
+}
+
+KYO_apply_lunar_victory_milestones = {
+	if = {
+		limit = {
+			check_variable = { KYO_lunar_attacker_wins > 2 }
+			NOT = { has_country_flag = KYO_lunarian_total_war_stage_3 }
+		}
+		set_country_flag = KYO_lunarian_total_war_stage_3
+		KYO_expand_lunarian_total_war = yes
+	}
+	if = {
+		limit = {
+			check_variable = { KYO_lunar_attacker_wins > 3 }
+			NOT = { has_country_flag = KYO_surface_USA_liberated }
+		}
+		KYO_release_lunarian_controlled_usa = yes
+	}
+}
+
+KYO_lunar_reset_draw_pool = {
+	set_variable = { KYO_lunar_weight_1 = 1 }
+	clr_country_flag = KYO_lunar_tactic_1_used
+	set_variable = { KYO_lunar_weight_2 = 1 }
+	clr_country_flag = KYO_lunar_tactic_2_used
+	set_variable = { KYO_lunar_weight_3 = 1 }
+	clr_country_flag = KYO_lunar_tactic_3_used
+	set_variable = { KYO_lunar_weight_4 = 1 }
+	clr_country_flag = KYO_lunar_tactic_4_used
+	set_variable = { KYO_lunar_weight_5 = 1 }
+	clr_country_flag = KYO_lunar_tactic_5_used
+	set_variable = { KYO_lunar_weight_6 = 1 }
+	clr_country_flag = KYO_lunar_tactic_6_used
+	set_variable = { KYO_lunar_weight_7 = 1 }
+	clr_country_flag = KYO_lunar_tactic_7_used
+	set_variable = { KYO_lunar_weight_8 = 1 }
+	clr_country_flag = KYO_lunar_tactic_8_used
+	set_variable = { KYO_lunar_weight_9 = 1 }
+	clr_country_flag = KYO_lunar_tactic_9_used
+	set_variable = { KYO_lunar_weight_10 = 1 }
+	clr_country_flag = KYO_lunar_tactic_10_used
+	set_variable = { KYO_lunar_weight_11 = 1 }
+	clr_country_flag = KYO_lunar_tactic_11_used
+	set_variable = { KYO_lunar_weight_12 = 1 }
+	clr_country_flag = KYO_lunar_tactic_12_used
+	set_variable = { KYO_lunar_weight_13 = 1 }
+	clr_country_flag = KYO_lunar_tactic_13_used
+	set_variable = { KYO_lunar_weight_14 = 1 }
+	clr_country_flag = KYO_lunar_tactic_14_used
+	set_variable = { KYO_lunar_weight_15 = 1 }
+	clr_country_flag = KYO_lunar_tactic_15_used
+	set_variable = { KYO_lunar_weight_16 = 1 }
+	clr_country_flag = KYO_lunar_tactic_16_used
+	set_variable = { KYO_lunar_weight_17 = 1 }
+	clr_country_flag = KYO_lunar_tactic_17_used
+	set_variable = { KYO_lunar_weight_18 = 1 }
+	clr_country_flag = KYO_lunar_tactic_18_used
+	set_variable = { KYO_lunar_weight_19 = 1 }
+	clr_country_flag = KYO_lunar_tactic_19_used
+	set_variable = { KYO_lunar_weight_20 = 1 }
+	clr_country_flag = KYO_lunar_tactic_20_used
+	set_variable = { KYO_lunar_slot_1 = 0 }
+	set_variable = { KYO_lunar_slot_2 = 0 }
+	set_variable = { KYO_lunar_slot_3 = 0 }
+	set_variable = { KYO_lunar_slot_4 = 0 }
+	set_variable = { KYO_lunar_slot_5 = 0 }
+	set_variable = { KYO_lunar_slot_6 = 0 }
+	set_variable = { KYO_lunar_slot_7 = 0 }
+	set_variable = { KYO_lunar_slot_8 = 0 }
+}
+
+KYO_lunar_draw_slot_1 = {
+	random_list = {
+		KYO_lunar_weight_1 = { set_variable = { KYO_lunar_slot_1 = 1 } set_variable = { KYO_lunar_weight_1 = 0 } }
+		KYO_lunar_weight_2 = { set_variable = { KYO_lunar_slot_1 = 2 } set_variable = { KYO_lunar_weight_2 = 0 } }
+		KYO_lunar_weight_3 = { set_variable = { KYO_lunar_slot_1 = 3 } set_variable = { KYO_lunar_weight_3 = 0 } }
+		KYO_lunar_weight_4 = { set_variable = { KYO_lunar_slot_1 = 4 } set_variable = { KYO_lunar_weight_4 = 0 } }
+		KYO_lunar_weight_5 = { set_variable = { KYO_lunar_slot_1 = 5 } set_variable = { KYO_lunar_weight_5 = 0 } }
+		KYO_lunar_weight_6 = { set_variable = { KYO_lunar_slot_1 = 6 } set_variable = { KYO_lunar_weight_6 = 0 } }
+		KYO_lunar_weight_7 = { set_variable = { KYO_lunar_slot_1 = 7 } set_variable = { KYO_lunar_weight_7 = 0 } }
+		KYO_lunar_weight_8 = { set_variable = { KYO_lunar_slot_1 = 8 } set_variable = { KYO_lunar_weight_8 = 0 } }
+		KYO_lunar_weight_9 = { set_variable = { KYO_lunar_slot_1 = 9 } set_variable = { KYO_lunar_weight_9 = 0 } }
+		KYO_lunar_weight_10 = { set_variable = { KYO_lunar_slot_1 = 10 } set_variable = { KYO_lunar_weight_10 = 0 } }
+		KYO_lunar_weight_11 = { set_variable = { KYO_lunar_slot_1 = 11 } set_variable = { KYO_lunar_weight_11 = 0 } }
+		KYO_lunar_weight_12 = { set_variable = { KYO_lunar_slot_1 = 12 } set_variable = { KYO_lunar_weight_12 = 0 } }
+		KYO_lunar_weight_13 = { set_variable = { KYO_lunar_slot_1 = 13 } set_variable = { KYO_lunar_weight_13 = 0 } }
+		KYO_lunar_weight_14 = { set_variable = { KYO_lunar_slot_1 = 14 } set_variable = { KYO_lunar_weight_14 = 0 } }
+		KYO_lunar_weight_15 = { set_variable = { KYO_lunar_slot_1 = 15 } set_variable = { KYO_lunar_weight_15 = 0 } }
+		KYO_lunar_weight_16 = { set_variable = { KYO_lunar_slot_1 = 16 } set_variable = { KYO_lunar_weight_16 = 0 } }
+		KYO_lunar_weight_17 = { set_variable = { KYO_lunar_slot_1 = 17 } set_variable = { KYO_lunar_weight_17 = 0 } }
+		KYO_lunar_weight_18 = { set_variable = { KYO_lunar_slot_1 = 18 } set_variable = { KYO_lunar_weight_18 = 0 } }
+		KYO_lunar_weight_19 = { set_variable = { KYO_lunar_slot_1 = 19 } set_variable = { KYO_lunar_weight_19 = 0 } }
+		KYO_lunar_weight_20 = { set_variable = { KYO_lunar_slot_1 = 20 } set_variable = { KYO_lunar_weight_20 = 0 } }
+	}
+}
+
+KYO_lunar_draw_slot_2 = {
+	random_list = {
+		KYO_lunar_weight_1 = { set_variable = { KYO_lunar_slot_2 = 1 } set_variable = { KYO_lunar_weight_1 = 0 } }
+		KYO_lunar_weight_2 = { set_variable = { KYO_lunar_slot_2 = 2 } set_variable = { KYO_lunar_weight_2 = 0 } }
+		KYO_lunar_weight_3 = { set_variable = { KYO_lunar_slot_2 = 3 } set_variable = { KYO_lunar_weight_3 = 0 } }
+		KYO_lunar_weight_4 = { set_variable = { KYO_lunar_slot_2 = 4 } set_variable = { KYO_lunar_weight_4 = 0 } }
+		KYO_lunar_weight_5 = { set_variable = { KYO_lunar_slot_2 = 5 } set_variable = { KYO_lunar_weight_5 = 0 } }
+		KYO_lunar_weight_6 = { set_variable = { KYO_lunar_slot_2 = 6 } set_variable = { KYO_lunar_weight_6 = 0 } }
+		KYO_lunar_weight_7 = { set_variable = { KYO_lunar_slot_2 = 7 } set_variable = { KYO_lunar_weight_7 = 0 } }
+		KYO_lunar_weight_8 = { set_variable = { KYO_lunar_slot_2 = 8 } set_variable = { KYO_lunar_weight_8 = 0 } }
+		KYO_lunar_weight_9 = { set_variable = { KYO_lunar_slot_2 = 9 } set_variable = { KYO_lunar_weight_9 = 0 } }
+		KYO_lunar_weight_10 = { set_variable = { KYO_lunar_slot_2 = 10 } set_variable = { KYO_lunar_weight_10 = 0 } }
+		KYO_lunar_weight_11 = { set_variable = { KYO_lunar_slot_2 = 11 } set_variable = { KYO_lunar_weight_11 = 0 } }
+		KYO_lunar_weight_12 = { set_variable = { KYO_lunar_slot_2 = 12 } set_variable = { KYO_lunar_weight_12 = 0 } }
+		KYO_lunar_weight_13 = { set_variable = { KYO_lunar_slot_2 = 13 } set_variable = { KYO_lunar_weight_13 = 0 } }
+		KYO_lunar_weight_14 = { set_variable = { KYO_lunar_slot_2 = 14 } set_variable = { KYO_lunar_weight_14 = 0 } }
+		KYO_lunar_weight_15 = { set_variable = { KYO_lunar_slot_2 = 15 } set_variable = { KYO_lunar_weight_15 = 0 } }
+		KYO_lunar_weight_16 = { set_variable = { KYO_lunar_slot_2 = 16 } set_variable = { KYO_lunar_weight_16 = 0 } }
+		KYO_lunar_weight_17 = { set_variable = { KYO_lunar_slot_2 = 17 } set_variable = { KYO_lunar_weight_17 = 0 } }
+		KYO_lunar_weight_18 = { set_variable = { KYO_lunar_slot_2 = 18 } set_variable = { KYO_lunar_weight_18 = 0 } }
+		KYO_lunar_weight_19 = { set_variable = { KYO_lunar_slot_2 = 19 } set_variable = { KYO_lunar_weight_19 = 0 } }
+		KYO_lunar_weight_20 = { set_variable = { KYO_lunar_slot_2 = 20 } set_variable = { KYO_lunar_weight_20 = 0 } }
+	}
+}
+
+KYO_lunar_draw_slot_3 = {
+	random_list = {
+		KYO_lunar_weight_1 = { set_variable = { KYO_lunar_slot_3 = 1 } set_variable = { KYO_lunar_weight_1 = 0 } }
+		KYO_lunar_weight_2 = { set_variable = { KYO_lunar_slot_3 = 2 } set_variable = { KYO_lunar_weight_2 = 0 } }
+		KYO_lunar_weight_3 = { set_variable = { KYO_lunar_slot_3 = 3 } set_variable = { KYO_lunar_weight_3 = 0 } }
+		KYO_lunar_weight_4 = { set_variable = { KYO_lunar_slot_3 = 4 } set_variable = { KYO_lunar_weight_4 = 0 } }
+		KYO_lunar_weight_5 = { set_variable = { KYO_lunar_slot_3 = 5 } set_variable = { KYO_lunar_weight_5 = 0 } }
+		KYO_lunar_weight_6 = { set_variable = { KYO_lunar_slot_3 = 6 } set_variable = { KYO_lunar_weight_6 = 0 } }
+		KYO_lunar_weight_7 = { set_variable = { KYO_lunar_slot_3 = 7 } set_variable = { KYO_lunar_weight_7 = 0 } }
+		KYO_lunar_weight_8 = { set_variable = { KYO_lunar_slot_3 = 8 } set_variable = { KYO_lunar_weight_8 = 0 } }
+		KYO_lunar_weight_9 = { set_variable = { KYO_lunar_slot_3 = 9 } set_variable = { KYO_lunar_weight_9 = 0 } }
+		KYO_lunar_weight_10 = { set_variable = { KYO_lunar_slot_3 = 10 } set_variable = { KYO_lunar_weight_10 = 0 } }
+		KYO_lunar_weight_11 = { set_variable = { KYO_lunar_slot_3 = 11 } set_variable = { KYO_lunar_weight_11 = 0 } }
+		KYO_lunar_weight_12 = { set_variable = { KYO_lunar_slot_3 = 12 } set_variable = { KYO_lunar_weight_12 = 0 } }
+		KYO_lunar_weight_13 = { set_variable = { KYO_lunar_slot_3 = 13 } set_variable = { KYO_lunar_weight_13 = 0 } }
+		KYO_lunar_weight_14 = { set_variable = { KYO_lunar_slot_3 = 14 } set_variable = { KYO_lunar_weight_14 = 0 } }
+		KYO_lunar_weight_15 = { set_variable = { KYO_lunar_slot_3 = 15 } set_variable = { KYO_lunar_weight_15 = 0 } }
+		KYO_lunar_weight_16 = { set_variable = { KYO_lunar_slot_3 = 16 } set_variable = { KYO_lunar_weight_16 = 0 } }
+		KYO_lunar_weight_17 = { set_variable = { KYO_lunar_slot_3 = 17 } set_variable = { KYO_lunar_weight_17 = 0 } }
+		KYO_lunar_weight_18 = { set_variable = { KYO_lunar_slot_3 = 18 } set_variable = { KYO_lunar_weight_18 = 0 } }
+		KYO_lunar_weight_19 = { set_variable = { KYO_lunar_slot_3 = 19 } set_variable = { KYO_lunar_weight_19 = 0 } }
+		KYO_lunar_weight_20 = { set_variable = { KYO_lunar_slot_3 = 20 } set_variable = { KYO_lunar_weight_20 = 0 } }
+	}
+}
+
+KYO_lunar_draw_slot_4 = {
+	random_list = {
+		KYO_lunar_weight_1 = { set_variable = { KYO_lunar_slot_4 = 1 } set_variable = { KYO_lunar_weight_1 = 0 } }
+		KYO_lunar_weight_2 = { set_variable = { KYO_lunar_slot_4 = 2 } set_variable = { KYO_lunar_weight_2 = 0 } }
+		KYO_lunar_weight_3 = { set_variable = { KYO_lunar_slot_4 = 3 } set_variable = { KYO_lunar_weight_3 = 0 } }
+		KYO_lunar_weight_4 = { set_variable = { KYO_lunar_slot_4 = 4 } set_variable = { KYO_lunar_weight_4 = 0 } }
+		KYO_lunar_weight_5 = { set_variable = { KYO_lunar_slot_4 = 5 } set_variable = { KYO_lunar_weight_5 = 0 } }
+		KYO_lunar_weight_6 = { set_variable = { KYO_lunar_slot_4 = 6 } set_variable = { KYO_lunar_weight_6 = 0 } }
+		KYO_lunar_weight_7 = { set_variable = { KYO_lunar_slot_4 = 7 } set_variable = { KYO_lunar_weight_7 = 0 } }
+		KYO_lunar_weight_8 = { set_variable = { KYO_lunar_slot_4 = 8 } set_variable = { KYO_lunar_weight_8 = 0 } }
+		KYO_lunar_weight_9 = { set_variable = { KYO_lunar_slot_4 = 9 } set_variable = { KYO_lunar_weight_9 = 0 } }
+		KYO_lunar_weight_10 = { set_variable = { KYO_lunar_slot_4 = 10 } set_variable = { KYO_lunar_weight_10 = 0 } }
+		KYO_lunar_weight_11 = { set_variable = { KYO_lunar_slot_4 = 11 } set_variable = { KYO_lunar_weight_11 = 0 } }
+		KYO_lunar_weight_12 = { set_variable = { KYO_lunar_slot_4 = 12 } set_variable = { KYO_lunar_weight_12 = 0 } }
+		KYO_lunar_weight_13 = { set_variable = { KYO_lunar_slot_4 = 13 } set_variable = { KYO_lunar_weight_13 = 0 } }
+		KYO_lunar_weight_14 = { set_variable = { KYO_lunar_slot_4 = 14 } set_variable = { KYO_lunar_weight_14 = 0 } }
+		KYO_lunar_weight_15 = { set_variable = { KYO_lunar_slot_4 = 15 } set_variable = { KYO_lunar_weight_15 = 0 } }
+		KYO_lunar_weight_16 = { set_variable = { KYO_lunar_slot_4 = 16 } set_variable = { KYO_lunar_weight_16 = 0 } }
+		KYO_lunar_weight_17 = { set_variable = { KYO_lunar_slot_4 = 17 } set_variable = { KYO_lunar_weight_17 = 0 } }
+		KYO_lunar_weight_18 = { set_variable = { KYO_lunar_slot_4 = 18 } set_variable = { KYO_lunar_weight_18 = 0 } }
+		KYO_lunar_weight_19 = { set_variable = { KYO_lunar_slot_4 = 19 } set_variable = { KYO_lunar_weight_19 = 0 } }
+		KYO_lunar_weight_20 = { set_variable = { KYO_lunar_slot_4 = 20 } set_variable = { KYO_lunar_weight_20 = 0 } }
+	}
+}
+
+KYO_lunar_draw_slot_5 = {
+	random_list = {
+		KYO_lunar_weight_1 = { set_variable = { KYO_lunar_slot_5 = 1 } set_variable = { KYO_lunar_weight_1 = 0 } }
+		KYO_lunar_weight_2 = { set_variable = { KYO_lunar_slot_5 = 2 } set_variable = { KYO_lunar_weight_2 = 0 } }
+		KYO_lunar_weight_3 = { set_variable = { KYO_lunar_slot_5 = 3 } set_variable = { KYO_lunar_weight_3 = 0 } }
+		KYO_lunar_weight_4 = { set_variable = { KYO_lunar_slot_5 = 4 } set_variable = { KYO_lunar_weight_4 = 0 } }
+		KYO_lunar_weight_5 = { set_variable = { KYO_lunar_slot_5 = 5 } set_variable = { KYO_lunar_weight_5 = 0 } }
+		KYO_lunar_weight_6 = { set_variable = { KYO_lunar_slot_5 = 6 } set_variable = { KYO_lunar_weight_6 = 0 } }
+		KYO_lunar_weight_7 = { set_variable = { KYO_lunar_slot_5 = 7 } set_variable = { KYO_lunar_weight_7 = 0 } }
+		KYO_lunar_weight_8 = { set_variable = { KYO_lunar_slot_5 = 8 } set_variable = { KYO_lunar_weight_8 = 0 } }
+		KYO_lunar_weight_9 = { set_variable = { KYO_lunar_slot_5 = 9 } set_variable = { KYO_lunar_weight_9 = 0 } }
+		KYO_lunar_weight_10 = { set_variable = { KYO_lunar_slot_5 = 10 } set_variable = { KYO_lunar_weight_10 = 0 } }
+		KYO_lunar_weight_11 = { set_variable = { KYO_lunar_slot_5 = 11 } set_variable = { KYO_lunar_weight_11 = 0 } }
+		KYO_lunar_weight_12 = { set_variable = { KYO_lunar_slot_5 = 12 } set_variable = { KYO_lunar_weight_12 = 0 } }
+		KYO_lunar_weight_13 = { set_variable = { KYO_lunar_slot_5 = 13 } set_variable = { KYO_lunar_weight_13 = 0 } }
+		KYO_lunar_weight_14 = { set_variable = { KYO_lunar_slot_5 = 14 } set_variable = { KYO_lunar_weight_14 = 0 } }
+		KYO_lunar_weight_15 = { set_variable = { KYO_lunar_slot_5 = 15 } set_variable = { KYO_lunar_weight_15 = 0 } }
+		KYO_lunar_weight_16 = { set_variable = { KYO_lunar_slot_5 = 16 } set_variable = { KYO_lunar_weight_16 = 0 } }
+		KYO_lunar_weight_17 = { set_variable = { KYO_lunar_slot_5 = 17 } set_variable = { KYO_lunar_weight_17 = 0 } }
+		KYO_lunar_weight_18 = { set_variable = { KYO_lunar_slot_5 = 18 } set_variable = { KYO_lunar_weight_18 = 0 } }
+		KYO_lunar_weight_19 = { set_variable = { KYO_lunar_slot_5 = 19 } set_variable = { KYO_lunar_weight_19 = 0 } }
+		KYO_lunar_weight_20 = { set_variable = { KYO_lunar_slot_5 = 20 } set_variable = { KYO_lunar_weight_20 = 0 } }
+	}
+}
+
+KYO_lunar_draw_slot_6 = {
+	random_list = {
+		KYO_lunar_weight_1 = { set_variable = { KYO_lunar_slot_6 = 1 } set_variable = { KYO_lunar_weight_1 = 0 } }
+		KYO_lunar_weight_2 = { set_variable = { KYO_lunar_slot_6 = 2 } set_variable = { KYO_lunar_weight_2 = 0 } }
+		KYO_lunar_weight_3 = { set_variable = { KYO_lunar_slot_6 = 3 } set_variable = { KYO_lunar_weight_3 = 0 } }
+		KYO_lunar_weight_4 = { set_variable = { KYO_lunar_slot_6 = 4 } set_variable = { KYO_lunar_weight_4 = 0 } }
+		KYO_lunar_weight_5 = { set_variable = { KYO_lunar_slot_6 = 5 } set_variable = { KYO_lunar_weight_5 = 0 } }
+		KYO_lunar_weight_6 = { set_variable = { KYO_lunar_slot_6 = 6 } set_variable = { KYO_lunar_weight_6 = 0 } }
+		KYO_lunar_weight_7 = { set_variable = { KYO_lunar_slot_6 = 7 } set_variable = { KYO_lunar_weight_7 = 0 } }
+		KYO_lunar_weight_8 = { set_variable = { KYO_lunar_slot_6 = 8 } set_variable = { KYO_lunar_weight_8 = 0 } }
+		KYO_lunar_weight_9 = { set_variable = { KYO_lunar_slot_6 = 9 } set_variable = { KYO_lunar_weight_9 = 0 } }
+		KYO_lunar_weight_10 = { set_variable = { KYO_lunar_slot_6 = 10 } set_variable = { KYO_lunar_weight_10 = 0 } }
+		KYO_lunar_weight_11 = { set_variable = { KYO_lunar_slot_6 = 11 } set_variable = { KYO_lunar_weight_11 = 0 } }
+		KYO_lunar_weight_12 = { set_variable = { KYO_lunar_slot_6 = 12 } set_variable = { KYO_lunar_weight_12 = 0 } }
+		KYO_lunar_weight_13 = { set_variable = { KYO_lunar_slot_6 = 13 } set_variable = { KYO_lunar_weight_13 = 0 } }
+		KYO_lunar_weight_14 = { set_variable = { KYO_lunar_slot_6 = 14 } set_variable = { KYO_lunar_weight_14 = 0 } }
+		KYO_lunar_weight_15 = { set_variable = { KYO_lunar_slot_6 = 15 } set_variable = { KYO_lunar_weight_15 = 0 } }
+		KYO_lunar_weight_16 = { set_variable = { KYO_lunar_slot_6 = 16 } set_variable = { KYO_lunar_weight_16 = 0 } }
+		KYO_lunar_weight_17 = { set_variable = { KYO_lunar_slot_6 = 17 } set_variable = { KYO_lunar_weight_17 = 0 } }
+		KYO_lunar_weight_18 = { set_variable = { KYO_lunar_slot_6 = 18 } set_variable = { KYO_lunar_weight_18 = 0 } }
+		KYO_lunar_weight_19 = { set_variable = { KYO_lunar_slot_6 = 19 } set_variable = { KYO_lunar_weight_19 = 0 } }
+		KYO_lunar_weight_20 = { set_variable = { KYO_lunar_slot_6 = 20 } set_variable = { KYO_lunar_weight_20 = 0 } }
+	}
+}
+
+KYO_lunar_draw_slot_7 = {
+	random_list = {
+		KYO_lunar_weight_1 = { set_variable = { KYO_lunar_slot_7 = 1 } set_variable = { KYO_lunar_weight_1 = 0 } }
+		KYO_lunar_weight_2 = { set_variable = { KYO_lunar_slot_7 = 2 } set_variable = { KYO_lunar_weight_2 = 0 } }
+		KYO_lunar_weight_3 = { set_variable = { KYO_lunar_slot_7 = 3 } set_variable = { KYO_lunar_weight_3 = 0 } }
+		KYO_lunar_weight_4 = { set_variable = { KYO_lunar_slot_7 = 4 } set_variable = { KYO_lunar_weight_4 = 0 } }
+		KYO_lunar_weight_5 = { set_variable = { KYO_lunar_slot_7 = 5 } set_variable = { KYO_lunar_weight_5 = 0 } }
+		KYO_lunar_weight_6 = { set_variable = { KYO_lunar_slot_7 = 6 } set_variable = { KYO_lunar_weight_6 = 0 } }
+		KYO_lunar_weight_7 = { set_variable = { KYO_lunar_slot_7 = 7 } set_variable = { KYO_lunar_weight_7 = 0 } }
+		KYO_lunar_weight_8 = { set_variable = { KYO_lunar_slot_7 = 8 } set_variable = { KYO_lunar_weight_8 = 0 } }
+		KYO_lunar_weight_9 = { set_variable = { KYO_lunar_slot_7 = 9 } set_variable = { KYO_lunar_weight_9 = 0 } }
+		KYO_lunar_weight_10 = { set_variable = { KYO_lunar_slot_7 = 10 } set_variable = { KYO_lunar_weight_10 = 0 } }
+		KYO_lunar_weight_11 = { set_variable = { KYO_lunar_slot_7 = 11 } set_variable = { KYO_lunar_weight_11 = 0 } }
+		KYO_lunar_weight_12 = { set_variable = { KYO_lunar_slot_7 = 12 } set_variable = { KYO_lunar_weight_12 = 0 } }
+		KYO_lunar_weight_13 = { set_variable = { KYO_lunar_slot_7 = 13 } set_variable = { KYO_lunar_weight_13 = 0 } }
+		KYO_lunar_weight_14 = { set_variable = { KYO_lunar_slot_7 = 14 } set_variable = { KYO_lunar_weight_14 = 0 } }
+		KYO_lunar_weight_15 = { set_variable = { KYO_lunar_slot_7 = 15 } set_variable = { KYO_lunar_weight_15 = 0 } }
+		KYO_lunar_weight_16 = { set_variable = { KYO_lunar_slot_7 = 16 } set_variable = { KYO_lunar_weight_16 = 0 } }
+		KYO_lunar_weight_17 = { set_variable = { KYO_lunar_slot_7 = 17 } set_variable = { KYO_lunar_weight_17 = 0 } }
+		KYO_lunar_weight_18 = { set_variable = { KYO_lunar_slot_7 = 18 } set_variable = { KYO_lunar_weight_18 = 0 } }
+		KYO_lunar_weight_19 = { set_variable = { KYO_lunar_slot_7 = 19 } set_variable = { KYO_lunar_weight_19 = 0 } }
+		KYO_lunar_weight_20 = { set_variable = { KYO_lunar_slot_7 = 20 } set_variable = { KYO_lunar_weight_20 = 0 } }
+	}
+}
+
+KYO_lunar_draw_slot_8 = {
+	random_list = {
+		KYO_lunar_weight_1 = { set_variable = { KYO_lunar_slot_8 = 1 } set_variable = { KYO_lunar_weight_1 = 0 } }
+		KYO_lunar_weight_2 = { set_variable = { KYO_lunar_slot_8 = 2 } set_variable = { KYO_lunar_weight_2 = 0 } }
+		KYO_lunar_weight_3 = { set_variable = { KYO_lunar_slot_8 = 3 } set_variable = { KYO_lunar_weight_3 = 0 } }
+		KYO_lunar_weight_4 = { set_variable = { KYO_lunar_slot_8 = 4 } set_variable = { KYO_lunar_weight_4 = 0 } }
+		KYO_lunar_weight_5 = { set_variable = { KYO_lunar_slot_8 = 5 } set_variable = { KYO_lunar_weight_5 = 0 } }
+		KYO_lunar_weight_6 = { set_variable = { KYO_lunar_slot_8 = 6 } set_variable = { KYO_lunar_weight_6 = 0 } }
+		KYO_lunar_weight_7 = { set_variable = { KYO_lunar_slot_8 = 7 } set_variable = { KYO_lunar_weight_7 = 0 } }
+		KYO_lunar_weight_8 = { set_variable = { KYO_lunar_slot_8 = 8 } set_variable = { KYO_lunar_weight_8 = 0 } }
+		KYO_lunar_weight_9 = { set_variable = { KYO_lunar_slot_8 = 9 } set_variable = { KYO_lunar_weight_9 = 0 } }
+		KYO_lunar_weight_10 = { set_variable = { KYO_lunar_slot_8 = 10 } set_variable = { KYO_lunar_weight_10 = 0 } }
+		KYO_lunar_weight_11 = { set_variable = { KYO_lunar_slot_8 = 11 } set_variable = { KYO_lunar_weight_11 = 0 } }
+		KYO_lunar_weight_12 = { set_variable = { KYO_lunar_slot_8 = 12 } set_variable = { KYO_lunar_weight_12 = 0 } }
+		KYO_lunar_weight_13 = { set_variable = { KYO_lunar_slot_8 = 13 } set_variable = { KYO_lunar_weight_13 = 0 } }
+		KYO_lunar_weight_14 = { set_variable = { KYO_lunar_slot_8 = 14 } set_variable = { KYO_lunar_weight_14 = 0 } }
+		KYO_lunar_weight_15 = { set_variable = { KYO_lunar_slot_8 = 15 } set_variable = { KYO_lunar_weight_15 = 0 } }
+		KYO_lunar_weight_16 = { set_variable = { KYO_lunar_slot_8 = 16 } set_variable = { KYO_lunar_weight_16 = 0 } }
+		KYO_lunar_weight_17 = { set_variable = { KYO_lunar_slot_8 = 17 } set_variable = { KYO_lunar_weight_17 = 0 } }
+		KYO_lunar_weight_18 = { set_variable = { KYO_lunar_slot_8 = 18 } set_variable = { KYO_lunar_weight_18 = 0 } }
+		KYO_lunar_weight_19 = { set_variable = { KYO_lunar_slot_8 = 19 } set_variable = { KYO_lunar_weight_19 = 0 } }
+		KYO_lunar_weight_20 = { set_variable = { KYO_lunar_slot_8 = 20 } set_variable = { KYO_lunar_weight_20 = 0 } }
+	}
+}
+
+KYO_lunar_start_round = {
+	set_country_flag = KYO_lunar_campaign_active
+	set_variable = { KYO_lunar_days_remaining = 60 }
+	set_variable = { KYO_lunar_X = 40 }
+	if = { limit = { has_country_flag = KYO_lunar_next_round_plus_6 } add_to_variable = { KYO_lunar_X = 6 } clr_country_flag = KYO_lunar_next_round_plus_6 }
+	clr_country_flag = KYO_lunar_next_draw_discount
+	set_variable = { KYO_lunar_last_add = 0 }
+	set_variable = { KYO_lunar_delta = 0 }
+	set_variable = { KYO_lunar_old_X = 0 }
+	set_variable = { KYO_lunar_candidate_1 = 0 }
+	set_variable = { KYO_lunar_candidate_2 = 0 }
+	set_variable = { KYO_lunar_base = 0 }
+	set_variable = { KYO_lunar_H = 0 }
+	if = { limit = { check_variable = { KYO_fulfillment_military_committee > 19 } } add_to_variable = { KYO_lunar_H = 1 } }
+	if = { limit = { check_variable = { KYO_fulfillment_faith_committee > 19 } } add_to_variable = { KYO_lunar_H = 1 } }
+	if = { limit = { check_variable = { KYO_fulfillment_mobilization_committee > 19 } } add_to_variable = { KYO_lunar_H = 1 } }
+	set_variable = { KYO_lunar_affordable_tactics = KYO_lunar_free_orders }
+	if = { limit = { KYO_lunar_tactic_1_resource_affordable = yes } add_to_variable = { KYO_lunar_affordable_tactics = 1 } }
+	if = { limit = { KYO_lunar_tactic_2_resource_affordable = yes } add_to_variable = { KYO_lunar_affordable_tactics = 1 } }
+	if = { limit = { KYO_lunar_tactic_3_resource_affordable = yes } add_to_variable = { KYO_lunar_affordable_tactics = 1 } }
+	if = { limit = { KYO_lunar_tactic_4_resource_affordable = yes } add_to_variable = { KYO_lunar_affordable_tactics = 1 } }
+	if = { limit = { KYO_lunar_tactic_5_resource_affordable = yes } add_to_variable = { KYO_lunar_affordable_tactics = 1 } }
+	if = { limit = { KYO_lunar_tactic_6_resource_affordable = yes } add_to_variable = { KYO_lunar_affordable_tactics = 1 } }
+	if = { limit = { KYO_lunar_tactic_7_resource_affordable = yes } add_to_variable = { KYO_lunar_affordable_tactics = 1 } }
+	if = { limit = { KYO_lunar_tactic_8_resource_affordable = yes } add_to_variable = { KYO_lunar_affordable_tactics = 1 } }
+	if = { limit = { KYO_lunar_tactic_9_resource_affordable = yes } add_to_variable = { KYO_lunar_affordable_tactics = 1 } }
+	if = { limit = { KYO_lunar_tactic_10_resource_affordable = yes } add_to_variable = { KYO_lunar_affordable_tactics = 1 } }
+	if = { limit = { KYO_lunar_tactic_11_resource_affordable = yes } add_to_variable = { KYO_lunar_affordable_tactics = 1 } }
+	if = { limit = { KYO_lunar_tactic_12_resource_affordable = yes } add_to_variable = { KYO_lunar_affordable_tactics = 1 } }
+	if = { limit = { KYO_lunar_tactic_13_resource_affordable = yes } add_to_variable = { KYO_lunar_affordable_tactics = 1 } }
+	if = { limit = { KYO_lunar_tactic_14_resource_affordable = yes } add_to_variable = { KYO_lunar_affordable_tactics = 1 } }
+	if = { limit = { KYO_lunar_tactic_15_resource_affordable = yes } add_to_variable = { KYO_lunar_affordable_tactics = 1 } }
+	if = { limit = { KYO_lunar_tactic_16_resource_affordable = yes } add_to_variable = { KYO_lunar_affordable_tactics = 1 } }
+	if = { limit = { KYO_lunar_tactic_17_resource_affordable = yes } add_to_variable = { KYO_lunar_affordable_tactics = 1 } }
+	if = { limit = { KYO_lunar_tactic_18_resource_affordable = yes } add_to_variable = { KYO_lunar_affordable_tactics = 1 } }
+	if = { limit = { KYO_lunar_tactic_19_resource_affordable = yes } add_to_variable = { KYO_lunar_affordable_tactics = 1 } }
+	if = { limit = { KYO_lunar_tactic_20_resource_affordable = yes } add_to_variable = { KYO_lunar_affordable_tactics = 1 } }
+	clamp_variable = { var = KYO_lunar_affordable_tactics min = 0 max = 20 }
+	set_variable = { KYO_lunar_E5 = KYO_surface_liberated }
+	multiply_variable = { KYO_lunar_E5 = 8 }
+	add_to_variable = { KYO_lunar_E5 = 144 }
+	set_variable = { KYO_lunar_delta = KYO_lunar_H }
+	multiply_variable = { KYO_lunar_delta = 6 }
+	add_to_variable = { KYO_lunar_E5 = KYO_lunar_delta }
+	set_variable = { KYO_lunar_E6 = KYO_surface_liberated }
+	multiply_variable = { KYO_lunar_E6 = 9 }
+	add_to_variable = { KYO_lunar_E6 = 155 }
+	add_to_variable = { KYO_lunar_E6 = KYO_lunar_delta }
+	set_variable = { KYO_lunar_E7 = KYO_surface_liberated }
+	multiply_variable = { KYO_lunar_E7 = 10 }
+	add_to_variable = { KYO_lunar_E7 = 166 }
+	add_to_variable = { KYO_lunar_E7 = KYO_lunar_delta }
+	set_variable = { KYO_lunar_E8 = KYO_surface_liberated }
+	multiply_variable = { KYO_lunar_E8 = 10 }
+	add_to_variable = { KYO_lunar_E8 = 177 }
+	add_to_variable = { KYO_lunar_E8 = KYO_lunar_delta }
+	# Resource-aware scarcity pass.  The calibrated full-resource baseline
+	# remains E5=180/E8=219 at G=3 and H=2.
+	if = { limit = { check_variable = { KYO_lunar_affordable_tactics < 5 } } subtract_from_variable = { KYO_lunar_E5 = 20 } subtract_from_variable = { KYO_lunar_E6 = 19 } subtract_from_variable = { KYO_lunar_E7 = 17 } subtract_from_variable = { KYO_lunar_E8 = 15 } }
+	else_if = { limit = { check_variable = { KYO_lunar_affordable_tactics < 8 } } subtract_from_variable = { KYO_lunar_E5 = 10 } subtract_from_variable = { KYO_lunar_E6 = 9 } subtract_from_variable = { KYO_lunar_E7 = 8 } subtract_from_variable = { KYO_lunar_E8 = 6 } }
+	else_if = { limit = { check_variable = { KYO_lunar_affordable_tactics < 12 } } subtract_from_variable = { KYO_lunar_E5 = 5 } subtract_from_variable = { KYO_lunar_E6 = 4 } subtract_from_variable = { KYO_lunar_E7 = 4 } subtract_from_variable = { KYO_lunar_E8 = 3 } }
+	# Stage one: use the baseline midpoint as a provisional T so the
+	# three T-dependent tactics can be estimated without a circular read.
+	set_variable = { KYO_lunar_Emin = KYO_lunar_E5 }
+	if = { limit = { check_variable = { KYO_lunar_E6 < KYO_lunar_Emin } } set_variable = { KYO_lunar_Emin = KYO_lunar_E6 } }
+	if = { limit = { check_variable = { KYO_lunar_E7 < KYO_lunar_Emin } } set_variable = { KYO_lunar_Emin = KYO_lunar_E7 } }
+	if = { limit = { check_variable = { KYO_lunar_E8 < KYO_lunar_Emin } } set_variable = { KYO_lunar_Emin = KYO_lunar_E8 } }
+	set_variable = { KYO_lunar_Emax = KYO_lunar_E5 }
+	if = { limit = { check_variable = { KYO_lunar_Emax < KYO_lunar_E6 } } set_variable = { KYO_lunar_Emax = KYO_lunar_E6 } }
+	if = { limit = { check_variable = { KYO_lunar_Emax < KYO_lunar_E7 } } set_variable = { KYO_lunar_Emax = KYO_lunar_E7 } }
+	if = { limit = { check_variable = { KYO_lunar_Emax < KYO_lunar_E8 } } set_variable = { KYO_lunar_Emax = KYO_lunar_E8 } }
+	set_variable = { KYO_lunar_T_provisional = KYO_lunar_Emin }
+	add_to_variable = { KYO_lunar_T_provisional = KYO_lunar_Emax }
+	divide_variable = { KYO_lunar_T_provisional = 2 }
+	round_variable = KYO_lunar_T_provisional
+	set_variable = { KYO_lunar_T = KYO_lunar_T_provisional }
+	KYO_lunar_refresh_previews = yes
+	set_variable = { KYO_lunar_T_dependent_estimate = 0 }
+	if = { limit = { KYO_lunar_tactic_12_affordable = yes } set_variable = { KYO_lunar_T_dependent_estimate = KYO_lunar_preview_12 } }
+	if = { limit = { KYO_lunar_tactic_18_affordable = yes check_variable = { KYO_lunar_T_dependent_estimate < KYO_lunar_preview_18 } } set_variable = { KYO_lunar_T_dependent_estimate = KYO_lunar_preview_18 } }
+	if = { limit = { KYO_lunar_tactic_20_affordable = yes check_variable = { KYO_lunar_T_dependent_estimate < KYO_lunar_preview_20 } } set_variable = { KYO_lunar_T_dependent_estimate = KYO_lunar_preview_20 } }
+	if = {
+		limit = { check_variable = { KYO_lunar_T_dependent_estimate > 0 } }
+		set_variable = { KYO_lunar_delta = KYO_lunar_T_dependent_estimate }
+		subtract_from_variable = { KYO_lunar_delta = 146 }
+		divide_variable = { KYO_lunar_delta = 10 }
+		round_variable = KYO_lunar_delta
+		add_to_variable = { KYO_lunar_E5 = KYO_lunar_delta }
+		add_to_variable = { KYO_lunar_E6 = KYO_lunar_delta }
+		add_to_variable = { KYO_lunar_E7 = KYO_lunar_delta }
+		add_to_variable = { KYO_lunar_E8 = KYO_lunar_delta }
+	}
+	# Stage two: recompute Emin/Emax, then apply J, D and score S.
+	set_variable = { KYO_lunar_Emin = KYO_lunar_E5 }
+	if = { limit = { check_variable = { KYO_lunar_E6 < KYO_lunar_Emin } } set_variable = { KYO_lunar_Emin = KYO_lunar_E6 } }
+	if = { limit = { check_variable = { KYO_lunar_E7 < KYO_lunar_Emin } } set_variable = { KYO_lunar_Emin = KYO_lunar_E7 } }
+	if = { limit = { check_variable = { KYO_lunar_E8 < KYO_lunar_Emin } } set_variable = { KYO_lunar_Emin = KYO_lunar_E8 } }
+	set_variable = { KYO_lunar_Emax = KYO_lunar_E5 }
+	if = { limit = { check_variable = { KYO_lunar_Emax < KYO_lunar_E6 } } set_variable = { KYO_lunar_Emax = KYO_lunar_E6 } }
+	if = { limit = { check_variable = { KYO_lunar_Emax < KYO_lunar_E7 } } set_variable = { KYO_lunar_Emax = KYO_lunar_E7 } }
+	if = { limit = { check_variable = { KYO_lunar_Emax < KYO_lunar_E8 } } set_variable = { KYO_lunar_Emax = KYO_lunar_E8 } }
+	set_variable = { KYO_lunar_T = KYO_lunar_Emin }
+	add_to_variable = { KYO_lunar_T = KYO_lunar_Emax }
+	divide_variable = { KYO_lunar_T = 2 }
+	set_variable_to_random = { var = KYO_lunar_J1 min = -3 max = 4 integer = yes }
+	set_variable_to_random = { var = KYO_lunar_J2 min = -3 max = 4 integer = yes }
+	add_to_variable = { KYO_lunar_T = KYO_lunar_J1 }
+	add_to_variable = { KYO_lunar_T = KYO_lunar_J2 }
+	add_to_variable = { KYO_lunar_T = KYO_lunar_difficulty }
+	set_variable = { KYO_lunar_score_lead = KYO_lunar_attacker_wins }
+	subtract_from_variable = { KYO_lunar_score_lead = KYO_lunar_defender_wins }
+	if = { limit = { check_variable = { KYO_lunar_score_lead > 2 } } add_to_variable = { KYO_lunar_T = 8 } }
+	else_if = { limit = { check_variable = { KYO_lunar_score_lead > 1 } } add_to_variable = { KYO_lunar_T = 4 } }
+	else_if = { limit = { check_variable = { KYO_lunar_score_lead < -2 } } subtract_from_variable = { KYO_lunar_T = 8 } }
+	else_if = { limit = { check_variable = { KYO_lunar_score_lead < -1 } } subtract_from_variable = { KYO_lunar_T = 4 } }
+	set_variable = { KYO_lunar_T_min = KYO_lunar_E5 }
+	subtract_from_variable = { KYO_lunar_T_min = 6 }
+	set_variable = { KYO_lunar_T_max = KYO_lunar_E8 }
+	subtract_from_variable = { KYO_lunar_T_max = 3 }
+	clamp_variable = { var = KYO_lunar_T min = KYO_lunar_T_min max = KYO_lunar_T_max }
+	# Keep the original dynamic expectation and difficulty choice, then make the
+	# final Moon value 6 points smaller.
+	subtract_from_variable = { KYO_lunar_T = 6 }
+	round_variable = KYO_lunar_T
+	KYO_lunar_reset_draw_pool = yes
+	KYO_lunar_draw_slot_1 = yes
+	KYO_lunar_draw_slot_2 = yes
+	KYO_lunar_draw_slot_3 = yes
+	KYO_lunar_draw_slot_4 = yes
+	KYO_lunar_draw_slot_5 = yes
+	KYO_lunar_refresh_previews = yes
+}
+
+KYO_lunar_start_series = {
+	if = {
+		limit = { has_completed_focus = KYO_creat_big_gensokyo }
+		set_country_flag = KYO_lunar_campaign_started
+		clr_country_flag = KYO_lunar_campaign_won
+		clr_country_flag = KYO_lunar_last_round_attacker
+		clr_country_flag = KYO_lunar_last_round_defender
+		clr_country_flag = KYO_lunar_next_round_plus_6
+		clr_country_flag = KYO_lunar_next_draw_discount
+		set_variable = { KYO_lunar_attacker_wins = 0 }
+		set_variable = { KYO_lunar_defender_wins = 0 }
+		set_variable = { KYO_lunar_round = 1 }
+		KYO_lunar_start_round = yes
+	}
+	else = { KYO_lunar_prepare_retreat = yes }
+}
+
+KYO_lunar_prepare_retreat = {
+	clr_country_flag = KYO_lunar_campaign_active
+	set_variable = { KYO_lunar_days_remaining = 0 }
+}
+
+KYO_lunar_restart_series = {
+	KYO_grant_lunar_free_order = yes
+	KYO_lunar_start_series = yes
+}
+
+KYO_lunar_resolve_round = {
+	set_variable = { KYO_lunar_last_X = KYO_lunar_X }
+	set_variable = { KYO_lunar_last_T = KYO_lunar_T }
+	if = {
+		limit = { check_variable = { KYO_lunar_X > KYO_lunar_T } }
+		add_to_variable = { KYO_lunar_attacker_wins = 1 }
+		set_country_flag = KYO_lunar_last_round_attacker
+		clr_country_flag = KYO_lunar_last_round_defender
+		KYO_disrupt_lunarian_surface_front = yes
+		KYO_apply_lunarian_defeat_pressure = yes
+		KYO_apply_lunar_victory_milestones = yes
+		if = { limit = { check_variable = { KYO_lunar_attacker_wins > 4 } check_variable = { KYO_lunar_attacker_wins < 6 } } country_event = { id = yakumo.67 hours = 6 } }
+	}
+	else = {
+		add_to_variable = { KYO_lunar_defender_wins = 1 }
+		set_country_flag = KYO_lunar_last_round_defender
+		clr_country_flag = KYO_lunar_last_round_attacker
+		if = { limit = { NOT = { has_country_flag = KYO_lunar_first_loss_reported } } set_country_flag = KYO_lunar_first_loss_reported country_event = { id = yakumo.65 hours = 6 } }
+	}
+	set_variable = { KYO_lunar_score_lead = KYO_lunar_attacker_wins }
+	subtract_from_variable = { KYO_lunar_score_lead = KYO_lunar_defender_wins }
+	if = {
+		limit = { check_variable = { KYO_lunar_attacker_wins > 5 } }
+		set_country_flag = KYO_lunar_campaign_won
+		set_country_flag = KYO_lunar_crossline_reinforcement_disabled
+		KYO_degrade_lunarian_surface_control = yes
+		clr_country_flag = KYO_lunar_campaign_active
+		country_event = { id = yakumo.68 hours = 6 }
+	}
+	else_if = {
+		limit = { check_variable = { KYO_lunar_defender_wins > 5 } }
+		clr_country_flag = KYO_lunar_campaign_active
+		country_event = { id = yakumo.74 hours = 6 }
+	}
+	else = { add_to_variable = { KYO_lunar_round = 1 } KYO_lunar_start_round = yes }
+}
+
+KYO_lunar_daily_tick = {
+	if = {
+		limit = {
+			has_completed_focus = KYO_Yukari_start
+			NOT = { has_country_flag = KYO_lunar_invasion_started }
+			NOT = { has_country_flag = KYO_lunar_invasion_timer_active }
+			NOT = { has_country_flag = KYO_lunar_campaign_unlocked }
+			NOT = { has_country_flag = KYO_lunar_reconstruction_started }
+		}
+		KYO_schedule_lunar_invasion = yes
+	}
+	KYO_lunar_prewar_tick = yes
+	KYO_enforce_lunarian_surface_faction = yes
+	KYO_monitor_lunarian_surface_war = yes
+	KYO_try_start_lunar_campaign = yes
+	KYO_apply_lunar_victory_milestones = yes
+	if = {
+		limit = { has_country_flag = KYO_lunarian_surface_war_started }
+		KYO_refresh_all_lunarian_control_modifiers = yes
+	}
+	if = {
+		limit = { has_country_flag = KYO_lunar_campaign_active }
+		subtract_from_variable = { KYO_lunar_days_remaining = 1 }
+		if = { limit = { check_variable = { KYO_lunar_days_remaining < 1 } } KYO_lunar_resolve_round = yes }
+	}
+}
+
+KYO_end_lunarian_surface_war = {
+	if = { limit = { country_exists = USA } USA = { clr_country_flag = KYO_lunarian_controlled_major KYO_refresh_lunarian_control_modifier = yes every_enemy_country = { white_peace = PREV } } }
+	if = { limit = { country_exists = ENG } ENG = { clr_country_flag = KYO_lunarian_controlled_major KYO_refresh_lunarian_control_modifier = yes every_enemy_country = { white_peace = PREV } } }
+	if = { limit = { country_exists = GER } GER = { clr_country_flag = KYO_lunarian_controlled_major KYO_refresh_lunarian_control_modifier = yes every_enemy_country = { white_peace = PREV } } }
+	if = { limit = { country_exists = SOV } SOV = { clr_country_flag = KYO_lunarian_controlled_major KYO_refresh_lunarian_control_modifier = yes every_enemy_country = { white_peace = PREV } } }
+	if = { limit = { country_exists = FRA } FRA = { clr_country_flag = KYO_lunarian_controlled_major KYO_refresh_lunarian_control_modifier = yes every_enemy_country = { white_peace = PREV } } }
+	clr_country_flag = KYO_lunarian_surface_war_started
+	clr_country_flag = KYO_lunar_crossline_reinforcement_disabled
+}
+
+KYO_lunar_compute_preview_1 = {
+	set_variable = { KYO_lunar_preview_1 = KYO_lunar_X }
+	set_variable = { KYO_lunar_preview_old = KYO_lunar_preview_1 }
+	add_to_variable = { KYO_lunar_preview_1 = 14 }
+}
+
+KYO_lunar_compute_preview_2 = {
+	set_variable = { KYO_lunar_preview_2 = KYO_lunar_X }
+	set_variable = { KYO_lunar_preview_old = KYO_lunar_preview_2 }
+	add_to_variable = { KYO_lunar_preview_2 = 26 }
+}
+
+KYO_lunar_compute_preview_3 = {
+	set_variable = { KYO_lunar_preview_3 = KYO_lunar_X }
+	set_variable = { KYO_lunar_preview_old = KYO_lunar_preview_3 }
+	add_to_variable = { KYO_lunar_preview_3 = 20 }
+}
+
+KYO_lunar_compute_preview_4 = {
+	set_variable = { KYO_lunar_preview_4 = KYO_lunar_X }
+	set_variable = { KYO_lunar_preview_old = KYO_lunar_preview_4 }
+	set_variable = { KYO_lunar_preview_delta = KYO_surface_liberated }
+	multiply_variable = { KYO_lunar_preview_delta = 2 }
+	add_to_variable = { KYO_lunar_preview_delta = 8 }
+	add_to_variable = { KYO_lunar_preview_4 = KYO_lunar_preview_delta }
+}
+
+KYO_lunar_compute_preview_5 = {
+	set_variable = { KYO_lunar_preview_5 = KYO_lunar_X }
+	set_variable = { KYO_lunar_preview_old = KYO_lunar_preview_5 }
+	set_variable = { KYO_lunar_preview_delta = KYO_surface_liberated }
+	multiply_variable = { KYO_lunar_preview_delta = 3 }
+	add_to_variable = { KYO_lunar_preview_delta = 6 }
+	clamp_variable = { var = KYO_lunar_preview_delta min = 0 max = 21 }
+	add_to_variable = { KYO_lunar_preview_5 = KYO_lunar_preview_delta }
+}
+
+KYO_lunar_compute_preview_6 = {
+	set_variable = { KYO_lunar_preview_6 = KYO_lunar_X }
+	set_variable = { KYO_lunar_preview_old = KYO_lunar_preview_6 }
+	add_to_variable = { KYO_lunar_preview_6 = 10 }
+}
+
+KYO_lunar_compute_preview_7 = {
+	set_variable = { KYO_lunar_preview_7 = KYO_lunar_X }
+	set_variable = { KYO_lunar_preview_old = KYO_lunar_preview_7 }
+	add_to_variable = { KYO_lunar_preview_7 = 12 }
+}
+
+KYO_lunar_compute_preview_8 = {
+	set_variable = { KYO_lunar_preview_8 = KYO_lunar_X }
+	set_variable = { KYO_lunar_preview_old = KYO_lunar_preview_8 }
+	set_variable = { KYO_lunar_preview_delta = KYO_lunar_H }
+	multiply_variable = { KYO_lunar_preview_delta = 4 }
+	add_to_variable = { KYO_lunar_preview_delta = 6 }
+	add_to_variable = { KYO_lunar_preview_8 = KYO_lunar_preview_delta }
+}
+
+KYO_lunar_compute_preview_9 = {
+	set_variable = { KYO_lunar_preview_9 = KYO_lunar_X }
+	set_variable = { KYO_lunar_preview_old = KYO_lunar_preview_9 }
+	multiply_variable = { KYO_lunar_preview_9 = 1.15 }
+	subtract_from_variable = { KYO_lunar_preview_9 = 0.499 }
+	round_variable = KYO_lunar_preview_9
+	add_to_variable = { KYO_lunar_preview_9 = 5 }
+}
+
+KYO_lunar_compute_preview_10 = {
+	set_variable = { KYO_lunar_preview_10 = KYO_lunar_X }
+	set_variable = { KYO_lunar_preview_old = KYO_lunar_preview_10 }
+	add_to_variable = { KYO_lunar_preview_10 = 10 }
+}
+
+KYO_lunar_compute_preview_11 = {
+	set_variable = { KYO_lunar_preview_11 = KYO_lunar_X }
+	set_variable = { KYO_lunar_preview_old = KYO_lunar_preview_11 }
+	multiply_variable = { KYO_lunar_preview_11 = 1.25 }
+	subtract_from_variable = { KYO_lunar_preview_11 = 0.499 }
+	round_variable = KYO_lunar_preview_11
+}
+
+KYO_lunar_compute_preview_12 = {
+	set_variable = { KYO_lunar_preview_12 = KYO_lunar_X }
+	set_variable = { KYO_lunar_preview_old = KYO_lunar_preview_12 }
+	if = {
+		limit = { check_variable = { KYO_lunar_preview_12 < KYO_lunar_T } }
+		set_variable = { KYO_lunar_preview_delta = KYO_lunar_T }
+		subtract_from_variable = { KYO_lunar_preview_delta = KYO_lunar_preview_12 }
+		divide_variable = { KYO_lunar_preview_delta = 2 }
+		add_to_variable = { KYO_lunar_preview_delta = 0.499 }
+		round_variable = KYO_lunar_preview_delta
+		add_to_variable = { KYO_lunar_preview_delta = 8 }
+		add_to_variable = { KYO_lunar_preview_12 = KYO_lunar_preview_delta }
+	}
+	else = { add_to_variable = { KYO_lunar_preview_12 = 8 } }
+}
+
+KYO_lunar_compute_preview_13 = {
+	set_variable = { KYO_lunar_preview_13 = KYO_lunar_X }
+	set_variable = { KYO_lunar_preview_old = KYO_lunar_preview_13 }
+	multiply_variable = { KYO_lunar_preview_13 = 1.18 }
+	subtract_from_variable = { KYO_lunar_preview_13 = 0.499 }
+	round_variable = KYO_lunar_preview_13
+	add_to_variable = { KYO_lunar_preview_13 = 8 }
+}
+
+KYO_lunar_compute_preview_14 = {
+	set_variable = { KYO_lunar_preview_14 = KYO_lunar_X }
+	set_variable = { KYO_lunar_preview_old = KYO_lunar_preview_14 }
+	multiply_variable = { KYO_lunar_preview_14 = 1.30 }
+	subtract_from_variable = { KYO_lunar_preview_14 = 0.499 }
+	round_variable = KYO_lunar_preview_14
+	add_to_variable = { KYO_lunar_preview_14 = 4 }
+}
+
+KYO_lunar_compute_preview_15 = {
+	set_variable = { KYO_lunar_preview_15 = KYO_lunar_X }
+	set_variable = { KYO_lunar_preview_old = KYO_lunar_preview_15 }
+	set_variable = { KYO_lunar_preview_delta = KYO_surface_liberated }
+	multiply_variable = { KYO_lunar_preview_delta = 5 }
+	add_to_variable = { KYO_lunar_preview_delta = 5 }
+	add_to_variable = { KYO_lunar_preview_15 = KYO_lunar_preview_delta }
+}
+
+KYO_lunar_compute_preview_16 = {
+	set_variable = { KYO_lunar_preview_16 = KYO_lunar_X }
+	set_variable = { KYO_lunar_preview_old = KYO_lunar_preview_16 }
+	set_variable = { KYO_lunar_preview_candidate_1 = KYO_lunar_preview_16 }
+	add_to_variable = { KYO_lunar_preview_candidate_1 = 8 }
+	set_variable = { KYO_lunar_preview_base = KYO_lunar_preview_16 }
+	add_to_variable = { KYO_lunar_preview_base = 30 }
+	set_variable = { KYO_lunar_preview_candidate_2 = KYO_lunar_preview_base }
+	multiply_variable = { KYO_lunar_preview_candidate_2 = KYO_lunar_preview_base }
+	divide_variable = { KYO_lunar_preview_candidate_2 = 100 }
+	subtract_from_variable = { KYO_lunar_preview_candidate_2 = 0.499 }
+	round_variable = KYO_lunar_preview_candidate_2
+	set_variable = { KYO_lunar_preview_16 = KYO_lunar_preview_candidate_1 }
+	if = { limit = { check_variable = { KYO_lunar_preview_16 < KYO_lunar_preview_candidate_2 } } set_variable = { KYO_lunar_preview_16 = KYO_lunar_preview_candidate_2 } }
+	clamp_variable = { var = KYO_lunar_preview_16 min = 0 max = 220 }
+}
+
+KYO_lunar_compute_preview_17 = {
+	set_variable = { KYO_lunar_preview_17 = KYO_lunar_X }
+	set_variable = { KYO_lunar_preview_old = KYO_lunar_preview_17 }
+	set_variable = { KYO_lunar_preview_candidate_1 = KYO_lunar_preview_17 }
+	add_to_variable = { KYO_lunar_preview_candidate_1 = 8 }
+	set_variable = { KYO_lunar_preview_base = KYO_lunar_preview_17 }
+	divide_variable = { KYO_lunar_preview_base = 8 }
+	set_variable = { KYO_lunar_preview_candidate_2 = KYO_lunar_preview_base }
+	multiply_variable = { KYO_lunar_preview_candidate_2 = KYO_lunar_preview_base }
+	subtract_from_variable = { KYO_lunar_preview_candidate_2 = 0.499 }
+	round_variable = KYO_lunar_preview_candidate_2
+	set_variable = { KYO_lunar_preview_17 = KYO_lunar_preview_candidate_1 }
+	if = { limit = { check_variable = { KYO_lunar_preview_17 < KYO_lunar_preview_candidate_2 } } set_variable = { KYO_lunar_preview_17 = KYO_lunar_preview_candidate_2 } }
+	clamp_variable = { var = KYO_lunar_preview_17 min = 0 max = 220 }
+}
+
+KYO_lunar_compute_preview_18 = {
+	set_variable = { KYO_lunar_preview_18 = KYO_lunar_X }
+	set_variable = { KYO_lunar_preview_old = KYO_lunar_preview_18 }
+	if = {
+		limit = { check_variable = { KYO_lunar_preview_18 < KYO_lunar_T } }
+		set_variable = { KYO_lunar_preview_delta = KYO_lunar_T }
+		subtract_from_variable = { KYO_lunar_preview_delta = KYO_lunar_preview_18 }
+		multiply_variable = { KYO_lunar_preview_delta = 0.60 }
+		subtract_from_variable = { KYO_lunar_preview_delta = 0.499 }
+		round_variable = KYO_lunar_preview_delta
+		add_to_variable = { KYO_lunar_preview_delta = 10 }
+		add_to_variable = { KYO_lunar_preview_18 = KYO_lunar_preview_delta }
+	}
+	else = { add_to_variable = { KYO_lunar_preview_18 = 8 } }
+}
+
+KYO_lunar_compute_preview_19 = {
+	set_variable = { KYO_lunar_preview_19 = KYO_lunar_X }
+	set_variable = { KYO_lunar_preview_old = KYO_lunar_preview_19 }
+	set_variable = { KYO_lunar_preview_delta = KYO_lunar_last_add }
+	multiply_variable = { KYO_lunar_preview_delta = 0.70 }
+	subtract_from_variable = { KYO_lunar_preview_delta = 0.499 }
+	round_variable = KYO_lunar_preview_delta
+	if = { limit = { check_variable = { KYO_lunar_preview_delta < 6 } } set_variable = { KYO_lunar_preview_delta = 6 } }
+	add_to_variable = { KYO_lunar_preview_19 = KYO_lunar_preview_delta }
+}
+
+KYO_lunar_compute_preview_20 = {
+	set_variable = { KYO_lunar_preview_20 = KYO_lunar_X }
+	set_variable = { KYO_lunar_preview_old = KYO_lunar_preview_20 }
+	if = {
+		limit = { check_variable = { KYO_lunar_preview_20 < KYO_lunar_T } }
+		add_to_variable = { KYO_lunar_preview_20 = KYO_lunar_T }
+		divide_variable = { KYO_lunar_preview_20 = 2 }
+		subtract_from_variable = { KYO_lunar_preview_20 = 0.499 }
+		round_variable = KYO_lunar_preview_20
+		add_to_variable = { KYO_lunar_preview_20 = 12 }
+	}
+	else = { add_to_variable = { KYO_lunar_preview_20 = 10 } }
+}
+
+KYO_lunar_refresh_previews = {
+	KYO_lunar_compute_preview_1 = yes
+	KYO_lunar_compute_preview_2 = yes
+	KYO_lunar_compute_preview_3 = yes
+	KYO_lunar_compute_preview_4 = yes
+	KYO_lunar_compute_preview_5 = yes
+	KYO_lunar_compute_preview_6 = yes
+	KYO_lunar_compute_preview_7 = yes
+	KYO_lunar_compute_preview_8 = yes
+	KYO_lunar_compute_preview_9 = yes
+	KYO_lunar_compute_preview_10 = yes
+	KYO_lunar_compute_preview_11 = yes
+	KYO_lunar_compute_preview_12 = yes
+	KYO_lunar_compute_preview_13 = yes
+	KYO_lunar_compute_preview_14 = yes
+	KYO_lunar_compute_preview_15 = yes
+	KYO_lunar_compute_preview_16 = yes
+	KYO_lunar_compute_preview_17 = yes
+	KYO_lunar_compute_preview_18 = yes
+	KYO_lunar_compute_preview_19 = yes
+	KYO_lunar_compute_preview_20 = yes
+}
+
+KYO_lunar_apply_tactic_1 = {
+	set_country_flag = KYO_lunar_tactic_1_used
+	set_variable = { KYO_lunar_old_X = KYO_lunar_X }
+	add_to_variable = { KYO_lunar_X = 14 }
+	set_variable = { KYO_lunar_last_add = KYO_lunar_X }
+	subtract_from_variable = { KYO_lunar_last_add = KYO_lunar_old_X }
+	KYO_lunar_refresh_previews = yes
+}
+
+KYO_lunar_apply_tactic_2 = {
+	set_country_flag = KYO_lunar_tactic_2_used
+	set_variable = { KYO_lunar_old_X = KYO_lunar_X }
+	add_to_variable = { KYO_lunar_X = 26 }
+	set_variable = { KYO_lunar_last_add = KYO_lunar_X }
+	subtract_from_variable = { KYO_lunar_last_add = KYO_lunar_old_X }
+	KYO_lunar_refresh_previews = yes
+}
+
+KYO_lunar_apply_tactic_3 = {
+	set_country_flag = KYO_lunar_tactic_3_used
+	set_variable = { KYO_lunar_old_X = KYO_lunar_X }
+	add_to_variable = { KYO_lunar_X = 20 }
+	set_variable = { KYO_lunar_last_add = KYO_lunar_X }
+	subtract_from_variable = { KYO_lunar_last_add = KYO_lunar_old_X }
+	KYO_lunar_refresh_previews = yes
+}
+
+KYO_lunar_apply_tactic_4 = {
+	set_country_flag = KYO_lunar_tactic_4_used
+	set_variable = { KYO_lunar_old_X = KYO_lunar_X }
+	set_variable = { KYO_lunar_delta = KYO_surface_liberated }
+	multiply_variable = { KYO_lunar_delta = 2 }
+	add_to_variable = { KYO_lunar_delta = 8 }
+	add_to_variable = { KYO_lunar_X = KYO_lunar_delta }
+	set_variable = { KYO_lunar_last_add = KYO_lunar_X }
+	subtract_from_variable = { KYO_lunar_last_add = KYO_lunar_old_X }
+	KYO_lunar_refresh_previews = yes
+}
+
+KYO_lunar_apply_tactic_5 = {
+	set_country_flag = KYO_lunar_tactic_5_used
+	set_variable = { KYO_lunar_old_X = KYO_lunar_X }
+	set_variable = { KYO_lunar_delta = KYO_surface_liberated }
+	multiply_variable = { KYO_lunar_delta = 3 }
+	add_to_variable = { KYO_lunar_delta = 6 }
+	clamp_variable = { var = KYO_lunar_delta min = 0 max = 21 }
+	add_to_variable = { KYO_lunar_X = KYO_lunar_delta }
+	set_variable = { KYO_lunar_last_add = KYO_lunar_X }
+	subtract_from_variable = { KYO_lunar_last_add = KYO_lunar_old_X }
+	KYO_lunar_refresh_previews = yes
+}
+
+KYO_lunar_apply_tactic_6 = {
+	set_country_flag = KYO_lunar_tactic_6_used
+	set_variable = { KYO_lunar_old_X = KYO_lunar_X }
+	add_to_variable = { KYO_lunar_X = 10 }
+	set_country_flag = KYO_lunar_next_round_plus_6
+	set_variable = { KYO_lunar_last_add = KYO_lunar_X }
+	subtract_from_variable = { KYO_lunar_last_add = KYO_lunar_old_X }
+	KYO_lunar_refresh_previews = yes
+}
+
+KYO_lunar_apply_tactic_7 = {
+	set_country_flag = KYO_lunar_tactic_7_used
+	set_variable = { KYO_lunar_old_X = KYO_lunar_X }
+	add_to_variable = { KYO_lunar_X = 12 }
+	set_variable = { KYO_lunar_last_add = KYO_lunar_X }
+	subtract_from_variable = { KYO_lunar_last_add = KYO_lunar_old_X }
+	KYO_lunar_refresh_previews = yes
+}
+
+KYO_lunar_apply_tactic_8 = {
+	set_country_flag = KYO_lunar_tactic_8_used
+	set_variable = { KYO_lunar_old_X = KYO_lunar_X }
+	set_variable = { KYO_lunar_delta = KYO_lunar_H }
+	multiply_variable = { KYO_lunar_delta = 4 }
+	add_to_variable = { KYO_lunar_delta = 6 }
+	add_to_variable = { KYO_lunar_X = KYO_lunar_delta }
+	set_variable = { KYO_lunar_last_add = KYO_lunar_X }
+	subtract_from_variable = { KYO_lunar_last_add = KYO_lunar_old_X }
+	KYO_lunar_refresh_previews = yes
+}
+
+KYO_lunar_apply_tactic_9 = {
+	set_country_flag = KYO_lunar_tactic_9_used
+	set_variable = { KYO_lunar_old_X = KYO_lunar_X }
+	multiply_variable = { KYO_lunar_X = 1.15 }
+	subtract_from_variable = { KYO_lunar_X = 0.499 }
+	round_variable = KYO_lunar_X
+	add_to_variable = { KYO_lunar_X = 5 }
+	KYO_lunar_refresh_previews = yes
+}
+
+KYO_lunar_apply_tactic_10 = {
+	set_country_flag = KYO_lunar_tactic_10_used
+	set_variable = { KYO_lunar_old_X = KYO_lunar_X }
+	add_to_variable = { KYO_lunar_X = 10 }
+	set_country_flag = KYO_lunar_next_draw_discount
+	set_variable = { KYO_lunar_last_add = KYO_lunar_X }
+	subtract_from_variable = { KYO_lunar_last_add = KYO_lunar_old_X }
+	KYO_lunar_refresh_previews = yes
+}
+
+KYO_lunar_apply_tactic_11 = {
+	set_country_flag = KYO_lunar_tactic_11_used
+	set_variable = { KYO_lunar_old_X = KYO_lunar_X }
+	multiply_variable = { KYO_lunar_X = 1.25 }
+	subtract_from_variable = { KYO_lunar_X = 0.499 }
+	round_variable = KYO_lunar_X
+	KYO_lunar_refresh_previews = yes
+}
+
+KYO_lunar_apply_tactic_12 = {
+	set_country_flag = KYO_lunar_tactic_12_used
+	set_variable = { KYO_lunar_old_X = KYO_lunar_X }
+	if = {
+		limit = { check_variable = { KYO_lunar_X < KYO_lunar_T } }
+		set_variable = { KYO_lunar_delta = KYO_lunar_T }
+		subtract_from_variable = { KYO_lunar_delta = KYO_lunar_X }
+		divide_variable = { KYO_lunar_delta = 2 }
+		add_to_variable = { KYO_lunar_delta = 0.499 }
+		round_variable = KYO_lunar_delta
+		add_to_variable = { KYO_lunar_delta = 8 }
+		add_to_variable = { KYO_lunar_X = KYO_lunar_delta }
+	}
+	else = { add_to_variable = { KYO_lunar_X = 8 } }
+	set_variable = { KYO_lunar_last_add = KYO_lunar_X }
+	subtract_from_variable = { KYO_lunar_last_add = KYO_lunar_old_X }
+	KYO_lunar_refresh_previews = yes
+}
+
+KYO_lunar_apply_tactic_13 = {
+	set_country_flag = KYO_lunar_tactic_13_used
+	set_variable = { KYO_lunar_old_X = KYO_lunar_X }
+	multiply_variable = { KYO_lunar_X = 1.18 }
+	subtract_from_variable = { KYO_lunar_X = 0.499 }
+	round_variable = KYO_lunar_X
+	add_to_variable = { KYO_lunar_X = 8 }
+	KYO_lunar_refresh_previews = yes
+}
+
+KYO_lunar_apply_tactic_14 = {
+	set_country_flag = KYO_lunar_tactic_14_used
+	set_variable = { KYO_lunar_old_X = KYO_lunar_X }
+	multiply_variable = { KYO_lunar_X = 1.30 }
+	subtract_from_variable = { KYO_lunar_X = 0.499 }
+	round_variable = KYO_lunar_X
+	add_to_variable = { KYO_lunar_X = 4 }
+	KYO_lunar_refresh_previews = yes
+}
+
+KYO_lunar_apply_tactic_15 = {
+	set_country_flag = KYO_lunar_tactic_15_used
+	set_variable = { KYO_lunar_old_X = KYO_lunar_X }
+	set_variable = { KYO_lunar_delta = KYO_surface_liberated }
+	multiply_variable = { KYO_lunar_delta = 5 }
+	add_to_variable = { KYO_lunar_delta = 5 }
+	add_to_variable = { KYO_lunar_X = KYO_lunar_delta }
+	set_variable = { KYO_lunar_last_add = KYO_lunar_X }
+	subtract_from_variable = { KYO_lunar_last_add = KYO_lunar_old_X }
+	KYO_lunar_refresh_previews = yes
+}
+
+KYO_lunar_apply_tactic_16 = {
+	set_country_flag = KYO_lunar_tactic_16_used
+	set_variable = { KYO_lunar_old_X = KYO_lunar_X }
+	set_variable = { KYO_lunar_candidate_1 = KYO_lunar_X }
+	add_to_variable = { KYO_lunar_candidate_1 = 8 }
+	set_variable = { KYO_lunar_base = KYO_lunar_X }
+	add_to_variable = { KYO_lunar_base = 30 }
+	set_variable = { KYO_lunar_candidate_2 = KYO_lunar_base }
+	multiply_variable = { KYO_lunar_candidate_2 = KYO_lunar_base }
+	divide_variable = { KYO_lunar_candidate_2 = 100 }
+	subtract_from_variable = { KYO_lunar_candidate_2 = 0.499 }
+	round_variable = KYO_lunar_candidate_2
+	set_variable = { KYO_lunar_X = KYO_lunar_candidate_1 }
+	if = { limit = { check_variable = { KYO_lunar_X < KYO_lunar_candidate_2 } } set_variable = { KYO_lunar_X = KYO_lunar_candidate_2 } }
+	clamp_variable = { var = KYO_lunar_X min = 0 max = 220 }
+	KYO_lunar_refresh_previews = yes
+}
+
+KYO_lunar_apply_tactic_17 = {
+	set_country_flag = KYO_lunar_tactic_17_used
+	set_variable = { KYO_lunar_old_X = KYO_lunar_X }
+	set_variable = { KYO_lunar_candidate_1 = KYO_lunar_X }
+	add_to_variable = { KYO_lunar_candidate_1 = 8 }
+	set_variable = { KYO_lunar_base = KYO_lunar_X }
+	divide_variable = { KYO_lunar_base = 8 }
+	set_variable = { KYO_lunar_candidate_2 = KYO_lunar_base }
+	multiply_variable = { KYO_lunar_candidate_2 = KYO_lunar_base }
+	subtract_from_variable = { KYO_lunar_candidate_2 = 0.499 }
+	round_variable = KYO_lunar_candidate_2
+	set_variable = { KYO_lunar_X = KYO_lunar_candidate_1 }
+	if = { limit = { check_variable = { KYO_lunar_X < KYO_lunar_candidate_2 } } set_variable = { KYO_lunar_X = KYO_lunar_candidate_2 } }
+	clamp_variable = { var = KYO_lunar_X min = 0 max = 220 }
+	KYO_lunar_refresh_previews = yes
+}
+
+KYO_lunar_apply_tactic_18 = {
+	set_country_flag = KYO_lunar_tactic_18_used
+	set_variable = { KYO_lunar_old_X = KYO_lunar_X }
+	if = {
+		limit = { check_variable = { KYO_lunar_X < KYO_lunar_T } }
+		set_variable = { KYO_lunar_delta = KYO_lunar_T }
+		subtract_from_variable = { KYO_lunar_delta = KYO_lunar_X }
+		multiply_variable = { KYO_lunar_delta = 0.60 }
+		subtract_from_variable = { KYO_lunar_delta = 0.499 }
+		round_variable = KYO_lunar_delta
+		add_to_variable = { KYO_lunar_delta = 10 }
+		add_to_variable = { KYO_lunar_X = KYO_lunar_delta }
+	}
+	else = { add_to_variable = { KYO_lunar_X = 8 } }
+	set_variable = { KYO_lunar_last_add = KYO_lunar_X }
+	subtract_from_variable = { KYO_lunar_last_add = KYO_lunar_old_X }
+	KYO_lunar_refresh_previews = yes
+}
+
+KYO_lunar_apply_tactic_19 = {
+	set_country_flag = KYO_lunar_tactic_19_used
+	set_variable = { KYO_lunar_old_X = KYO_lunar_X }
+	set_variable = { KYO_lunar_delta = KYO_lunar_last_add }
+	multiply_variable = { KYO_lunar_delta = 0.70 }
+	subtract_from_variable = { KYO_lunar_delta = 0.499 }
+	round_variable = KYO_lunar_delta
+	if = { limit = { check_variable = { KYO_lunar_delta < 6 } } set_variable = { KYO_lunar_delta = 6 } }
+	add_to_variable = { KYO_lunar_X = KYO_lunar_delta }
+	set_variable = { KYO_lunar_last_add = KYO_lunar_X }
+	subtract_from_variable = { KYO_lunar_last_add = KYO_lunar_old_X }
+	KYO_lunar_refresh_previews = yes
+}
+
+KYO_lunar_apply_tactic_20 = {
+	set_country_flag = KYO_lunar_tactic_20_used
+	set_variable = { KYO_lunar_old_X = KYO_lunar_X }
+	if = {
+		limit = { check_variable = { KYO_lunar_X < KYO_lunar_T } }
+		add_to_variable = { KYO_lunar_X = KYO_lunar_T }
+		divide_variable = { KYO_lunar_X = 2 }
+		subtract_from_variable = { KYO_lunar_X = 0.499 }
+		round_variable = KYO_lunar_X
+		add_to_variable = { KYO_lunar_X = 12 }
+	}
+	else = { add_to_variable = { KYO_lunar_X = 10 } }
+	KYO_lunar_refresh_previews = yes
+}

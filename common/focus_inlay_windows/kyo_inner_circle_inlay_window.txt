@@ -1,0 +1,143 @@
+kyo_inner_circle_inlay_window = {
+
+    window_name = kyo_inner_circle_ui_window
+
+    internal = no
+
+    visible = {
+               
+        has_government = democratic
+
+    }
+
+    scripted_images = {
+        #leader
+        leader_portrait = {
+            
+
+            GFX_inner_circle_leader_eva_braun = {
+                has_country_leader = {
+                    ruling_only = yes
+                    character = gensokyo_shou
+                }
+            }
+
+            GFX_inner_circle_hijiri = yes
+        }
+
+        #ASCENDED
+        ascended_advisor_1_portrait = {
+            GFX_blank_leader_portrait = {
+                check_variable = { KYO_ascended_advisor_1 = 0 }
+            }
+            GFX_gensokyo_nazrin_large = {
+       			check_variable = { KYO_ascended_advisor_1 = 1 }
+		    }
+            GFX_gensokyo_ichirin_large = {
+                check_variable = { KYO_ascended_advisor_1 = 2 }
+            }
+            GFX_gensokyo_shou_large = {
+                check_variable = { KYO_ascended_advisor_1 = 3 }
+            }
+            GFX_gensokyo_murasa_large = {
+                check_variable = { KYO_ascended_advisor_1 = 4 }
+            }
+            GFX_gensokyo_kyouko_large = {
+                check_variable = { KYO_ascended_advisor_1 = 5 }
+            }
+        }
+
+        ascended_advisor_3_portrait = {
+            GFX_blank_leader_portrait = {
+                check_variable = { KYO_ascended_advisor_3 = 0 }
+            }
+            GFX_gensokyo_nazrin_large = {
+       			check_variable = { KYO_ascended_advisor_3 = 1 }
+		    }
+            GFX_gensokyo_ichirin_large = {
+                check_variable = { KYO_ascended_advisor_3 = 2 }
+            }
+            GFX_gensokyo_shou_large = {
+                check_variable = { KYO_ascended_advisor_3 = 3 }
+            }
+            GFX_gensokyo_murasa_large = {
+                check_variable = { KYO_ascended_advisor_3 = 4 }
+            }
+            GFX_gensokyo_kyouko_large = {
+                check_variable = { KYO_ascended_advisor_3 = 5 }
+            }
+        }
+
+        ascended_advisor_1_frame = {
+            GFX_ascended_advisors_frame = {
+                check_variable = { KYO_ascended_advisor_1 = 0 compare = not_equals }	
+            }
+            GFX_ascended_advisors_unappointed_frame = yes
+        }
+        
+        ascended_advisor_3_frame = {
+            GFX_ascended_advisors_frame = {
+                check_variable = { KYO_ascended_advisor_3 = 0 compare = not_equals }	
+            }
+            GFX_ascended_advisors_unappointed_frame = yes
+        }
+
+        #ADVISOR
+        advisor_nazrin_portrait = {
+            inner_circle_nazrin_dark = {
+                OR = {
+                    check_variable = { KYO_ascended_advisor_1 = 1 }
+                    
+                    check_variable = { KYO_ascended_advisor_3 = 1 }
+                }
+            }
+            
+            inner_circle_nazrin = yes
+        }
+        advisor_ichirin_portrait = {
+            inner_circle_ichirin_dark = {
+                OR = {
+                    check_variable = { KYO_ascended_advisor_1 = 2 }
+                    
+                    check_variable = { KYO_ascended_advisor_3 = 2 }
+                }
+            }
+           
+            inner_circle_ichirin = yes
+        }
+        advisor_shou_portrait = {
+            inner_circle_Shou_dark = {
+                OR = {
+                    check_variable = { KYO_ascended_advisor_1 = 3 }
+                   
+                    check_variable = { KYO_ascended_advisor_3 = 3 }
+                }
+            }
+           
+            inner_circle_Shou = yes
+        }
+        advisor_murasa_portrait = {
+            inner_circle_murusa_dark = {
+                OR = {
+                    check_variable = { KYO_ascended_advisor_1 = 4 }
+                    
+                    check_variable = { KYO_ascended_advisor_3 = 4 }
+                }
+            }
+           
+            inner_circle_murusa = yes
+        }
+        advisor_kyouko_portrait = {
+            inner_circle_kyouko_dark = {
+                OR = {
+                    check_variable = { KYO_ascended_advisor_1 = 5 }
+                    
+                    check_variable = { KYO_ascended_advisor_3 = 5 }
+                }
+            }
+            
+            inner_circle_kyouko = yes
+        }
+
+    }
+}

@@ -1,0 +1,49 @@
+### KYO - Reusable unlock effects
+### Example inside a focus completion_reward: KYO_unlock_all_youkai_units = yes
+
+KYO_unlock_basic_youkai_units = {
+	set_technology = {
+		KYO_tech_youkai_beast = 1
+		KYO_tech_blood_spawn = 1
+		KYO_tech_fairy = 1
+		KYO_tech_ghost = 1
+	}
+}
+
+KYO_unlock_elite_youkai_units = {
+	set_technology = {
+		KYO_tech_white_wolf_tengu = 1
+		KYO_tech_tsukumogami_units = 1
+		KYO_tech_beast_spirit = 1
+	}
+}
+
+KYO_unlock_magician_units = {
+	set_technology = {
+		KYO_tech_magician_units = 1
+	}
+}
+
+KYO_unlock_youkai_support_companies = {
+	set_technology = {
+		KYO_tech_kappa_support = 1
+		KYO_tech_oni_support = 1
+		KYO_tech_rabbit_support = 1
+		KYO_tech_crow_tengu_support = 1
+		KYO_tech_fox_logistics = 1
+	}
+}
+
+KYO_unlock_tsukumogami_armor = {
+	set_technology = {
+		KYO_tech_tsukumogami_armor = 1
+	}
+}
+
+KYO_unlock_all_youkai_units = {
+	KYO_unlock_basic_youkai_units = yes
+	KYO_unlock_elite_youkai_units = yes
+	KYO_unlock_magician_units = yes
+	KYO_unlock_youkai_support_companies = yes
+	KYO_unlock_tsukumogami_armor = yes
+}

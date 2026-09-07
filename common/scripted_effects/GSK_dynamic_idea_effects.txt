@@ -1,0 +1,468 @@
+GSK_dynamic_ideas_setup = {
+	if = {
+		limit = { NOT = { has_country_flag = GSK_dynamic_ideas_initialized } }
+		set_country_flag = GSK_dynamic_ideas_initialized
+
+		set_variable = { GSK_dynamic_military_army_attack_factor = 0 }
+		set_variable = { GSK_dynamic_military_army_defence_factor = 0 }
+		set_variable = { GSK_dynamic_military_army_core_attack_factor = 0 }
+		set_variable = { GSK_dynamic_military_army_core_defence_factor = 0 }
+		set_variable = { GSK_dynamic_military_army_infantry_attack_factor = 0 }
+		set_variable = { GSK_dynamic_military_army_infantry_defence_factor = 0 }
+		set_variable = { GSK_dynamic_military_motorized_attack_factor = 0 }
+		set_variable = { GSK_dynamic_military_motorized_defence_factor = 0 }
+		set_variable = { GSK_dynamic_military_mechanized_attack_factor = 0 }
+		set_variable = { GSK_dynamic_military_mechanized_defence_factor = 0 }
+		set_variable = { GSK_dynamic_military_special_forces_attack_factor = 0 }
+		set_variable = { GSK_dynamic_military_special_forces_defence_factor = 0 }
+		set_variable = { GSK_dynamic_military_army_artillery_attack_factor = 0 }
+		set_variable = { GSK_dynamic_military_army_artillery_defence_factor = 0 }
+		set_variable = { GSK_dynamic_military_army_armor_attack_factor = 0 }
+		set_variable = { GSK_dynamic_military_army_armor_defence_factor = 0 }
+		set_variable = { GSK_dynamic_military_cavalry_attack_factor = 0 }
+		set_variable = { GSK_dynamic_military_cavalry_defence_factor = 0 }
+		set_variable = { GSK_dynamic_military_army_org_factor = 0 }
+		set_variable = { GSK_dynamic_military_army_morale_factor = 0 }
+		set_variable = { GSK_dynamic_military_org_loss_when_moving = 0 }
+		set_variable = { GSK_dynamic_military_army_speed_factor = 0 }
+		set_variable = { GSK_dynamic_military_land_reinforce_rate = 0 }
+		set_variable = { GSK_dynamic_military_breakthrough_factor = 0 }
+		set_variable = { GSK_dynamic_military_supply_consumption_factor = 0 }
+		set_variable = { GSK_dynamic_military_out_of_supply_factor = 0 }
+		set_variable = { GSK_dynamic_military_local_supplies = 0 }
+		set_variable = { GSK_dynamic_military_no_supply_grace = 0 }
+		set_variable = { GSK_dynamic_military_attrition = 0 }
+		set_variable = { GSK_dynamic_military_heat_attrition_factor = 0 }
+		set_variable = { GSK_dynamic_military_winter_attrition_factor = 0 }
+		set_variable = { GSK_dynamic_military_acclimatization_hot_climate_gain_factor = 0 }
+		set_variable = { GSK_dynamic_military_acclimatization_cold_climate_gain_factor = 0 }
+		set_variable = { GSK_dynamic_military_experience_gain_army_unit_factor = 0 }
+		set_variable = { GSK_dynamic_military_experience_loss_factor = 0 }
+		set_variable = { GSK_dynamic_military_equipment_capture_factor = 0 }
+		set_variable = { GSK_dynamic_military_training_time_factor = 0 }
+		set_variable = { GSK_dynamic_military_minimum_training_level = 0 }
+		set_variable = { GSK_dynamic_military_special_forces_training_time_factor = 0 }
+		set_variable = { GSK_dynamic_military_special_forces_cap = 0 }
+		set_variable = { GSK_dynamic_military_combat_width_factor = 0 }
+		set_variable = { GSK_dynamic_military_dig_in_speed_factor = 0 }
+		set_variable = { GSK_dynamic_military_max_dig_in = 0 }
+		set_variable = { GSK_dynamic_military_max_planning = 0 }
+		set_variable = { GSK_dynamic_military_planning_speed = 0 }
+		set_variable = { GSK_dynamic_military_enemy_army_bonus_air_superiority_factor = 0 }
+		set_variable = { GSK_dynamic_military_transport_capacity = 0 }
+		set_variable = { GSK_dynamic_military_naval_invasion_capacity = 0 }
+		set_variable = { GSK_dynamic_military_invasion_preparation = 0 }
+		set_variable = { GSK_dynamic_military_amphibious_invasion = 0 }
+		set_variable = { GSK_dynamic_military_air_ace_generation_chance_factor = 0 }
+		set_variable = { GSK_dynamic_military_experience_gain_factor = 0 }
+		set_variable = { GSK_dynamic_military_military_leader_cost_factor = 0 }
+		set_variable = { GSK_dynamic_military_army_leader_cost_factor = 0 }
+		set_variable = { GSK_dynamic_military_navy_leader_cost_factor = 0 }
+		set_variable = { GSK_dynamic_military_army_leader_start_level = 0 }
+		set_variable = { GSK_dynamic_military_navy_leader_start_level = 0 }
+		set_variable = { GSK_dynamic_military_army_leader_start_attack_level = 0 }
+		set_variable = { GSK_dynamic_military_army_leader_start_defense_level = 0 }
+		set_variable = { GSK_dynamic_military_army_leader_start_planning_level = 0 }
+		set_variable = { GSK_dynamic_military_army_leader_start_logistics_level = 0 }
+		set_variable = { GSK_dynamic_military_navy_leader_start_attack_level = 0 }
+		set_variable = { GSK_dynamic_military_navy_leader_start_defense_level = 0 }
+		set_variable = { GSK_dynamic_military_navy_leader_start_maneuvering_level = 0 }
+		set_variable = { GSK_dynamic_military_experience_gain_army = 0 }
+		set_variable = { GSK_dynamic_military_experience_gain_army_factor = 0 }
+		set_variable = { GSK_dynamic_military_experience_gain_navy = 0 }
+		set_variable = { GSK_dynamic_military_experience_gain_navy_factor = 0 }
+		set_variable = { GSK_dynamic_military_experience_gain_air = 0 }
+		set_variable = { GSK_dynamic_military_experience_gain_air_factor = 0 }
+		set_variable = { GSK_dynamic_military_air_mission_xp_gain_factor = 0 }
+		set_variable = { GSK_dynamic_military_air_training_xp_gain_factor = 0 }
+		set_variable = { GSK_dynamic_military_max_command_power = 0 }
+		set_variable = { GSK_dynamic_military_command_power_gain_mult = 0 }
+
+		set_variable = { GSK_dynamic_political_drift_defence_factor = 0 }
+		set_variable = { GSK_dynamic_political_foreign_subversive_activites = 0 }
+		set_variable = { GSK_dynamic_political_political_power_gain = 0 }
+		set_variable = { GSK_dynamic_political_political_power_cost = 0 }
+		set_variable = { GSK_dynamic_political_political_power_factor = 0 }
+		set_variable = { GSK_dynamic_political_stability_weekly = 0 }
+		set_variable = { GSK_dynamic_political_stability_factor = 0 }
+		set_variable = { GSK_dynamic_political_defensive_war_stability_factor = 0 }
+		set_variable = { GSK_dynamic_political_war_support_weekly = 0 }
+		set_variable = { GSK_dynamic_political_war_support_factor = 0 }
+		set_variable = { GSK_dynamic_political_mobilization_speed = 0 }
+		set_variable = { GSK_dynamic_political_conscription = 0 }
+		set_variable = { GSK_dynamic_political_conscription_factor = 0 }
+		set_variable = { GSK_dynamic_political_non_core_manpower = 0 }
+		set_variable = { GSK_dynamic_political_weekly_manpower = 0 }
+		set_variable = { GSK_dynamic_political_local_manpower = 0 }
+		set_variable = { GSK_dynamic_political_surrender_limit = 0 }
+		set_variable = { GSK_dynamic_political_max_surrender_limit_offset = 0 }
+		set_variable = { GSK_dynamic_political_political_advisor_cost_factor = 0 }
+		set_variable = { GSK_dynamic_political_trade_laws_cost_factor = 0 }
+		set_variable = { GSK_dynamic_political_mobilization_laws_cost_factor = 0 }
+		set_variable = { GSK_dynamic_political_economy_cost_factor = 0 }
+		set_variable = { GSK_dynamic_political_tank_manufacturer_cost_factor = 0 }
+		set_variable = { GSK_dynamic_political_naval_manufacturer_cost_factor = 0 }
+		set_variable = { GSK_dynamic_political_aircraft_manufacturer_cost_factor = 0 }
+		set_variable = { GSK_dynamic_political_materiel_manufacturer_cost_factor = 0 }
+		set_variable = { GSK_dynamic_political_industrial_concern_cost_factor = 0 }
+		set_variable = { GSK_dynamic_political_high_command_cost_factor = 0 }
+		set_variable = { GSK_dynamic_political_air_chief_cost_factor = 0 }
+		set_variable = { GSK_dynamic_political_navy_chief_cost_factor = 0 }
+		set_variable = { GSK_dynamic_political_army_chief_cost_factor = 0 }
+		set_variable = { GSK_dynamic_political_theorist_cost_factor = 0 }
+		
+		set_variable = { GSK_dynamic_industrial_research_speed_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_local_resources_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_local_resources = 0 }
+		set_variable = { GSK_dynamic_industrial_consumer_goods_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_industrial_capacity_factory = 0 }
+		set_variable = { GSK_dynamic_industrial_production_factory_max_efficiency_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_production_factory_efficiency_gain_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_production_factory_start_efficiency_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_line_change_production_efficiency_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_industrial_capacity_dockyard = 0 }
+		set_variable = { GSK_dynamic_industrial_nuclear_production_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_equipment_conversion_speed = 0 }
+		set_variable = { GSK_dynamic_industrial_global_building_slots_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_local_factories = 0 }
+		set_variable = { GSK_dynamic_industrial_industry_air_damage_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_production_speed_buildings_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_production_speed_industrial_complex_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_production_speed_arms_factory_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_production_speed_infrastructure_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_production_speed_air_base_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_production_speed_naval_base_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_production_speed_coastal_bunker_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_production_speed_bunker_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_production_speed_anti_air_building_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_production_speed_synthetic_refinery_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_production_speed_fuel_silo_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_production_speed_rocket_site_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_production_speed_radar_station_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_production_speed_nuclear_reactor_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_conversion_cost_civ_to_mil_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_conversion_cost_mil_to_civ_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_industry_repair_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_industry_free_repair_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_max_fuel_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_fuel_gain_factor = 0 }
+		set_variable = { GSK_dynamic_industrial_license_purchase_cost = 0 }
+		set_variable = { GSK_dynamic_industrial_license_armor_purchase_cost = 0 }
+		set_variable = { GSK_dynamic_industrial_license_air_purchase_cost = 0 }
+		set_variable = { GSK_dynamic_industrial_license_production_speed = 0 }
+	}
+
+	if = {
+		limit = { NOT = { has_dynamic_modifier = { modifier = KYO_seija_dynamic_military_idea } } }
+		add_dynamic_modifier = { modifier = KYO_seija_dynamic_military_idea }
+	}
+	if = {
+		limit = { NOT = { has_dynamic_modifier = { modifier = KYO_seija_dynamic_political_idea } } }
+		add_dynamic_modifier = { modifier = KYO_seija_dynamic_political_idea }
+	}
+	if = {
+		limit = { NOT = { has_dynamic_modifier = { modifier = KYO_seija_dynamic_industrial_idea } } }
+		add_dynamic_modifier = { modifier = KYO_seija_dynamic_industrial_idea }
+	}
+}
+KYO_dynamic_military_upgrade_01 = {
+
+	custom_effect_tooltip = KYO_modify_KYO_army_intro 
+	  
+	add_to_variable = { GSK_dynamic_military_army_org_factor = 0.025 tooltip = army_org_factor_tt }
+	add_to_variable = { GSK_dynamic_military_army_morale_factor = 0.025 tooltip = army_morale_factor_tt }
+	add_to_variable = { GSK_dynamic_military_training_time_factor = -0.025 tooltip = training_time_factor_tt }
+	add_to_variable = { GSK_dynamic_military_minimum_training_level = -0.025 tooltip = minimum_training_level_tt }
+	add_to_variable = { GSK_dynamic_military_experience_gain_army_unit_factor = 0.025 tooltip = experience_gain_army_unit_factor_tt }
+	
+}
+
+KYO_dynamic_military_upgrade_02 = {
+	custom_effect_tooltip = KYO_modify_KYO_army_intro
+	
+	add_to_variable = { GSK_dynamic_military_army_attack_factor = 0.025 tooltip = army_attack_factor_tt }
+	add_to_variable = { GSK_dynamic_military_army_defence_factor = 0.025 tooltip = army_defence_factor_tt }
+	add_to_variable = { GSK_dynamic_military_army_infantry_attack_factor = 0.025 tooltip = army_infantry_attack_factor_tt }
+	add_to_variable = { GSK_dynamic_military_army_infantry_defence_factor = 0.025 tooltip = army_infantry_defence_factor_tt }
+}
+
+KYO_dynamic_military_upgrade_03 = {
+	custom_effect_tooltip = KYO_modify_KYO_army_intro
+	
+	add_to_variable = { GSK_dynamic_military_army_core_attack_factor = 0.05 tooltip = army_core_attack_factor_tt }
+	add_to_variable = { GSK_dynamic_military_army_core_defence_factor = 0.05 tooltip = army_core_defence_factor_tt }
+	add_to_variable = { GSK_dynamic_military_dig_in_speed_factor = 0.10 tooltip = dig_in_speed_factor_tt }
+	add_to_variable = { GSK_dynamic_military_max_dig_in = 2 tooltip = max_dig_in_tt }
+}
+
+KYO_dynamic_military_upgrade_04 = {
+	custom_effect_tooltip = KYO_modify_KYO_army_intro
+	
+	add_to_variable = { GSK_dynamic_military_motorized_attack_factor = 0.025 tooltip = motorized_attack_factor_tt }
+
+	
+
+	add_to_variable = { GSK_dynamic_military_mechanized_attack_factor = 0.025 tooltip = mechanized_attack_factor_tt }
+
+	
+
+	add_to_variable = { GSK_dynamic_military_army_speed_factor = 0.025 tooltip = army_speed_factor_tt }
+}
+
+KYO_dynamic_military_upgrade_05 = {
+	custom_effect_tooltip = KYO_modify_KYO_army_intro
+	
+	add_to_variable = { GSK_dynamic_military_army_artillery_attack_factor = 0.05 tooltip = army_artillery_attack_factor_tt }
+	add_to_variable = { GSK_dynamic_military_army_artillery_defence_factor = 0.05 tooltip = army_artillery_defence_factor_tt }
+	add_to_variable = { GSK_dynamic_military_army_armor_attack_factor = 0.05 tooltip = army_armor_attack_factor_tt }
+	add_to_variable = { GSK_dynamic_military_army_armor_defence_factor = 0.05 tooltip = army_armor_defence_factor_tt }
+	add_to_variable = { GSK_dynamic_military_breakthrough_factor = 0.05 tooltip = breakthrough_factor_tt }
+}
+
+KYO_dynamic_military_upgrade_06 = {
+	custom_effect_tooltip = KYO_modify_KYO_army_intro
+	
+	add_to_variable = { GSK_dynamic_military_special_forces_attack_factor = 0.05 tooltip = special_forces_attack_factor_tt }
+	add_to_variable = { GSK_dynamic_military_special_forces_defence_factor = 0.05 tooltip = special_forces_defence_factor_tt }
+	add_to_variable = { GSK_dynamic_military_special_forces_training_time_factor = -0.08 tooltip = special_forces_training_time_factor_tt }
+	add_to_variable = { GSK_dynamic_military_special_forces_cap = 0.10 tooltip = special_forces_cap_tt }
+	add_to_variable = { GSK_dynamic_military_amphibious_invasion = 0.05 tooltip = amphibious_invasion_tt }
+}
+
+KYO_dynamic_military_upgrade_07 = {
+	custom_effect_tooltip = KYO_modify_KYO_army_intro
+	
+	add_to_variable = { GSK_dynamic_military_supply_consumption_factor = -0.05 tooltip = supply_consumption_factor_tt }
+	add_to_variable = { GSK_dynamic_military_out_of_supply_factor = -0.05 tooltip = out_of_supply_factor_tt }
+	add_to_variable = { GSK_dynamic_military_local_supplies = 0.10 tooltip = local_supplies_tt }
+	add_to_variable = { GSK_dynamic_military_no_supply_grace = 24 tooltip = no_supply_grace_tt }
+	add_to_variable = { GSK_dynamic_military_org_loss_when_moving = -0.05 tooltip = org_loss_when_moving_tt }
+}
+
+KYO_dynamic_military_upgrade_08 = {
+	custom_effect_tooltip = KYO_modify_KYO_army_intro
+	
+	add_to_variable = { GSK_dynamic_military_attrition = -0.05 tooltip = attrition_tt }
+	add_to_variable = { GSK_dynamic_military_heat_attrition_factor = -0.1 tooltip = heat_attrition_factor_tt }
+	add_to_variable = { GSK_dynamic_military_winter_attrition_factor = -0.1 tooltip = winter_attrition_factor_tt }
+	add_to_variable = { GSK_dynamic_military_acclimatization_hot_climate_gain_factor = 0.10 tooltip = acclimatization_hot_climate_gain_factor_tt }
+	add_to_variable = { GSK_dynamic_military_acclimatization_cold_climate_gain_factor = 0.10 tooltip = acclimatization_cold_climate_gain_factor_tt }
+}
+
+KYO_dynamic_military_upgrade_09 = {
+	custom_effect_tooltip = KYO_modify_KYO_army_intro
+	
+	add_to_variable = { GSK_dynamic_military_land_reinforce_rate = 0.01 tooltip = land_reinforce_rate_tt }
+	add_to_variable = { GSK_dynamic_military_combat_width_factor = -0.01 tooltip = combat_width_factor_tt }
+	add_to_variable = { GSK_dynamic_military_max_planning = 0.05 tooltip = max_planning_tt }
+	add_to_variable = { GSK_dynamic_military_planning_speed = 0.05 tooltip = planning_speed_tt }
+	add_to_variable = { GSK_dynamic_military_enemy_army_bonus_air_superiority_factor = -0.05 tooltip = enemy_army_bonus_air_superiority_factor_tt }
+}
+
+KYO_dynamic_military_upgrade_10 = {
+	custom_effect_tooltip = KYO_modify_KYO_army_intro
+	
+	add_to_variable = { GSK_dynamic_military_cavalry_attack_factor = 0.05 tooltip = cavalry_attack_factor_tt }
+	add_to_variable = { GSK_dynamic_military_cavalry_defence_factor = 0.05 tooltip = cavalry_defence_factor_tt }
+	add_to_variable = { GSK_dynamic_military_experience_loss_factor = -0.05 tooltip = experience_loss_factor_tt }
+	add_to_variable = { GSK_dynamic_military_equipment_capture_factor = 0.05 tooltip = equipment_capture_factor_tt }
+	add_to_variable = { GSK_dynamic_military_transport_capacity = -0.05 tooltip = transport_capacity_tt }
+	add_to_variable = { GSK_dynamic_military_naval_invasion_capacity = 5 tooltip = naval_invasion_capacity_tt }
+	add_to_variable = { GSK_dynamic_military_invasion_preparation = -0.05 tooltip = invasion_preparation_tt }
+	add_to_variable = { GSK_dynamic_military_air_ace_generation_chance_factor = 0.05 tooltip = air_ace_generation_chance_factor_tt }
+	add_to_variable = { GSK_dynamic_military_experience_gain_factor = 0.05 tooltip = experience_gain_factor_tt }
+	add_to_variable = { GSK_dynamic_military_military_leader_cost_factor = -0.05 tooltip = military_leader_cost_factor_tt }
+	add_to_variable = { GSK_dynamic_military_army_leader_cost_factor = -0.05 tooltip = army_leader_cost_factor_tt }
+	add_to_variable = { GSK_dynamic_military_navy_leader_cost_factor = -0.05 tooltip = navy_leader_cost_factor_tt }
+	add_to_variable = { GSK_dynamic_military_army_leader_start_level = 1 tooltip = army_leader_start_level_tt }
+	add_to_variable = { GSK_dynamic_military_navy_leader_start_level = 1 tooltip = navy_leader_start_level_tt }
+	add_to_variable = { GSK_dynamic_military_army_leader_start_attack_level = 1 tooltip = army_leader_start_attack_level_tt }
+	add_to_variable = { GSK_dynamic_military_army_leader_start_defense_level = 1 tooltip = army_leader_start_defense_level_tt }
+	add_to_variable = { GSK_dynamic_military_army_leader_start_planning_level = 1 tooltip = army_leader_start_planning_level_tt }
+	add_to_variable = { GSK_dynamic_military_army_leader_start_logistics_level = 1 tooltip = army_leader_start_logistics_level_tt }
+	add_to_variable = { GSK_dynamic_military_navy_leader_start_attack_level = 1 tooltip = navy_leader_start_attack_level_tt }
+	add_to_variable = { GSK_dynamic_military_navy_leader_start_defense_level = 1 tooltip = navy_leader_start_defense_level_tt }
+	add_to_variable = { GSK_dynamic_military_navy_leader_start_maneuvering_level = 1 tooltip = navy_leader_start_maneuvering_level_tt }
+	add_to_variable = { GSK_dynamic_military_experience_gain_army = 0.05 tooltip = experience_gain_army_tt }
+	add_to_variable = { GSK_dynamic_military_experience_gain_army_factor = 0.05 tooltip = experience_gain_army_factor_tt }
+	add_to_variable = { GSK_dynamic_military_experience_gain_navy = 0.05 tooltip = experience_gain_navy_tt }
+	add_to_variable = { GSK_dynamic_military_experience_gain_navy_factor = 0.05 tooltip = experience_gain_navy_factor_tt }
+	add_to_variable = { GSK_dynamic_military_experience_gain_air = 0.05 tooltip = experience_gain_air_tt }
+	add_to_variable = { GSK_dynamic_military_experience_gain_air_factor = 0.05 tooltip = experience_gain_air_factor_tt }
+	add_to_variable = { GSK_dynamic_military_air_mission_xp_gain_factor = 0.05 tooltip = air_mission_xp_gain_factor_tt }
+	add_to_variable = { GSK_dynamic_military_air_training_xp_gain_factor = 0.05 tooltip = air_training_xp_gain_factor_tt }
+	add_to_variable = { GSK_dynamic_military_max_command_power = 10 tooltip = max_command_power_tt }
+	add_to_variable = { GSK_dynamic_military_command_power_gain_mult = 0.05 tooltip = command_power_gain_mult_tt }
+}
+
+KYO_dynamic_political_upgrade_01 = {
+	custom_effect_tooltip = KYO_modify_KYO_political_intro
+	
+	add_to_variable = { GSK_dynamic_political_political_power_gain = 0.05 tooltip = political_power_gain_tt }
+	add_to_variable = { GSK_dynamic_political_political_power_factor = 0.025 tooltip = political_power_factor_tt }
+	add_to_variable = { GSK_dynamic_political_stability_factor = 0.05 tooltip = stability_factor_tt }
+}
+
+KYO_dynamic_political_upgrade_02 = {
+	custom_effect_tooltip = KYO_modify_KYO_political_intro
+	
+	add_to_variable = { GSK_dynamic_political_drift_defence_factor = 0.10 tooltip = drift_defence_factor_tt }
+	add_to_variable = { GSK_dynamic_political_foreign_subversive_activites = -0.05 tooltip = foreign_subversive_activites_tt }
+	add_to_variable = { GSK_dynamic_political_stability_weekly = 0.001 tooltip = stability_weekly_tt }
+}
+
+KYO_dynamic_political_upgrade_03 = {
+	custom_effect_tooltip = KYO_modify_KYO_political_intro
+	
+	add_to_variable = { GSK_dynamic_political_war_support_factor = 0.05 tooltip = war_support_factor_tt }
+	add_to_variable = { GSK_dynamic_political_war_support_weekly = 0.001 tooltip = war_support_weekly_tt }
+	add_to_variable = { GSK_dynamic_political_defensive_war_stability_factor = 0.05 tooltip = defensive_war_stability_factor_tt }
+}
+
+KYO_dynamic_political_upgrade_04 = {
+	custom_effect_tooltip = KYO_modify_KYO_political_intro
+	
+	add_to_variable = { GSK_dynamic_political_mobilization_speed = 0.1 tooltip = mobilization_speed_tt }
+	add_to_variable = { GSK_dynamic_political_conscription = 0.01 tooltip = conscription_tt }
+	add_to_variable = { GSK_dynamic_political_conscription_factor = 0.025 tooltip = conscription_factor_tt }
+}
+
+KYO_dynamic_political_upgrade_05 = {
+	custom_effect_tooltip = KYO_modify_KYO_political_intro
+	
+	add_to_variable = { GSK_dynamic_political_non_core_manpower = 0.05 tooltip = non_core_manpower_tt }
+	add_to_variable = { GSK_dynamic_political_weekly_manpower = 500 tooltip = weekly_manpower_tt }
+	add_to_variable = { GSK_dynamic_political_local_manpower = 0.05 tooltip = local_manpower_tt }
+}
+
+KYO_dynamic_political_upgrade_06 = {
+	custom_effect_tooltip = KYO_modify_KYO_political_intro
+	
+	add_to_variable = { GSK_dynamic_political_surrender_limit = 0.025 tooltip = surrender_limit_tt }
+	add_to_variable = { GSK_dynamic_political_max_surrender_limit_offset = 0.025 tooltip = max_surrender_limit_offset_tt }
+	
+}
+
+KYO_dynamic_political_upgrade_07 = {
+	custom_effect_tooltip = KYO_modify_KYO_political_intro
+	
+	add_to_variable = { GSK_dynamic_political_political_advisor_cost_factor = -0.05 tooltip = political_advisor_cost_factor_tt }
+	add_to_variable = { GSK_dynamic_political_trade_laws_cost_factor = -0.05 tooltip = trade_laws_cost_factor_tt }
+	add_to_variable = { GSK_dynamic_political_mobilization_laws_cost_factor = -0.05 tooltip = mobilization_laws_cost_factor_tt }
+	add_to_variable = { GSK_dynamic_political_economy_cost_factor = -0.05 tooltip = economy_cost_factor_tt }
+}
+
+KYO_dynamic_political_upgrade_08 = {
+	custom_effect_tooltip = KYO_modify_KYO_political_intro
+	
+	add_to_variable = { GSK_dynamic_political_tank_manufacturer_cost_factor = -0.05 tooltip = tank_manufacturer_cost_factor_tt }
+	add_to_variable = { GSK_dynamic_political_naval_manufacturer_cost_factor = -0.05 tooltip = naval_manufacturer_cost_factor_tt }
+	add_to_variable = { GSK_dynamic_political_aircraft_manufacturer_cost_factor = -0.05 tooltip = aircraft_manufacturer_cost_factor_tt }
+	add_to_variable = { GSK_dynamic_political_materiel_manufacturer_cost_factor = -0.05 tooltip = materiel_manufacturer_cost_factor_tt }
+}
+
+KYO_dynamic_political_upgrade_09 = {
+	custom_effect_tooltip = KYO_modify_KYO_political_intro
+	
+	add_to_variable = { GSK_dynamic_political_industrial_concern_cost_factor = -0.05 tooltip = industrial_concern_cost_factor_tt }
+	add_to_variable = { GSK_dynamic_political_high_command_cost_factor = -0.05 tooltip = high_command_cost_factor_tt }
+	add_to_variable = { GSK_dynamic_political_theorist_cost_factor = -0.05 tooltip = theorist_cost_factor_tt }
+}
+
+KYO_dynamic_political_upgrade_10 = {
+	custom_effect_tooltip = KYO_modify_KYO_political_intro
+	
+	add_to_variable = { GSK_dynamic_political_air_chief_cost_factor = -0.05 tooltip = air_chief_cost_factor_tt }
+	add_to_variable = { GSK_dynamic_political_navy_chief_cost_factor = -0.05 tooltip = navy_chief_cost_factor_tt }
+	add_to_variable = { GSK_dynamic_political_army_chief_cost_factor = -0.05 tooltip = army_chief_cost_factor_tt }
+	
+}
+
+KYO_dynamic_industrial_upgrade_01 = {
+	custom_effect_tooltip = KYO_modify_KYO_industrial_intro
+	
+	add_to_variable = { GSK_dynamic_industrial_research_speed_factor = 0.02 tooltip = research_speed_factor_tt }
+	add_to_variable = { GSK_dynamic_industrial_local_resources_factor = 0.05 tooltip = local_resources_factor_tt }
+	add_to_variable = { GSK_dynamic_industrial_local_resources = 1 tooltip = local_resources_tt }
+}
+
+KYO_dynamic_industrial_upgrade_02 = {
+	custom_effect_tooltip = KYO_modify_KYO_industrial_intro
+	
+	add_to_variable = { GSK_dynamic_industrial_consumer_goods_factor = -0.025 tooltip = consumer_goods_factor_tt }
+	add_to_variable = { GSK_dynamic_industrial_industrial_capacity_factory = 0.025 tooltip = industrial_capacity_factory_tt }
+	add_to_variable = { GSK_dynamic_industrial_global_building_slots_factor = 0.025 tooltip = global_building_slots_factor_tt }
+}
+
+KYO_dynamic_industrial_upgrade_03 = {
+	custom_effect_tooltip = KYO_modify_KYO_industrial_intro
+	
+	add_to_variable = { GSK_dynamic_industrial_production_factory_max_efficiency_factor = 0.05 tooltip = production_factory_max_efficiency_factor_tt }
+	add_to_variable = { GSK_dynamic_industrial_production_factory_efficiency_gain_factor = 0.05 tooltip = production_factory_efficiency_gain_factor_tt }
+	add_to_variable = { GSK_dynamic_industrial_production_factory_start_efficiency_factor = 0.025 tooltip = production_factory_start_efficiency_factor_tt }
+	add_to_variable = { GSK_dynamic_industrial_line_change_production_efficiency_factor = 0.05 tooltip = line_change_production_efficiency_factor_tt }
+}
+
+KYO_dynamic_industrial_upgrade_04 = {
+	custom_effect_tooltip = KYO_modify_KYO_industrial_intro
+	
+	add_to_variable = { GSK_dynamic_industrial_industrial_capacity_dockyard = 0.05 tooltip = industrial_capacity_dockyard_tt }
+	add_to_variable = { GSK_dynamic_industrial_equipment_conversion_speed = 0.1 tooltip = equipment_conversion_speed_tt }
+	add_to_variable = { GSK_dynamic_industrial_local_factories = 0.25 tooltip = local_factories_tt }
+}
+
+KYO_dynamic_industrial_upgrade_05 = {
+	custom_effect_tooltip = KYO_modify_KYO_industrial_intro
+	
+	add_to_variable = { GSK_dynamic_industrial_production_speed_buildings_factor = 0.05 tooltip = production_speed_buildings_factor_tt }
+	add_to_variable = { GSK_dynamic_industrial_production_speed_industrial_complex_factor = 0.05 tooltip = production_speed_industrial_complex_factor_tt }
+	add_to_variable = { GSK_dynamic_industrial_production_speed_arms_factory_factor = 0.05 tooltip = production_speed_arms_factory_factor_tt }
+	add_to_variable = { GSK_dynamic_industrial_production_speed_infrastructure_factor = 0.05 tooltip = production_speed_infrastructure_factor_tt }
+}
+
+KYO_dynamic_industrial_upgrade_06 = {
+	custom_effect_tooltip = KYO_modify_KYO_industrial_intro
+	
+	add_to_variable = { GSK_dynamic_industrial_production_speed_air_base_factor = 0.05 tooltip = production_speed_air_base_factor_tt }
+	add_to_variable = { GSK_dynamic_industrial_production_speed_naval_base_factor = 0.05 tooltip = production_speed_naval_base_factor_tt }
+	add_to_variable = { GSK_dynamic_industrial_production_speed_coastal_bunker_factor = 0.05 tooltip = production_speed_coastal_bunker_factor_tt }
+	add_to_variable = { GSK_dynamic_industrial_production_speed_bunker_factor = 0.05 tooltip = production_speed_bunker_factor_tt }
+}
+
+KYO_dynamic_industrial_upgrade_07 = {
+	custom_effect_tooltip = KYO_modify_KYO_industrial_intro
+	
+	add_to_variable = { GSK_dynamic_industrial_production_speed_anti_air_building_factor = 0.05 tooltip = production_speed_anti_air_building_factor_tt }
+	add_to_variable = { GSK_dynamic_industrial_production_speed_synthetic_refinery_factor = 0.05 tooltip = production_speed_synthetic_refinery_factor_tt }
+	add_to_variable = { GSK_dynamic_industrial_production_speed_fuel_silo_factor = 0.05 tooltip = production_speed_fuel_silo_factor_tt }
+	add_to_variable = { GSK_dynamic_industrial_production_speed_radar_station_factor = 0.05 tooltip = production_speed_radar_station_factor_tt }
+}
+
+KYO_dynamic_industrial_upgrade_08 = {
+	custom_effect_tooltip = KYO_modify_KYO_industrial_intro
+	
+	add_to_variable = { GSK_dynamic_industrial_production_speed_rocket_site_factor = 0.05 tooltip = production_speed_rocket_site_factor_tt }
+	add_to_variable = { GSK_dynamic_industrial_production_speed_nuclear_reactor_factor = 0.05 tooltip = production_speed_nuclear_reactor_factor_tt }
+	add_to_variable = { GSK_dynamic_industrial_nuclear_production_factor = 0.05 tooltip = nuclear_production_factor_tt }
+}
+
+KYO_dynamic_industrial_upgrade_09 = {
+	custom_effect_tooltip = KYO_modify_KYO_industrial_intro
+	
+	add_to_variable = { GSK_dynamic_industrial_conversion_cost_civ_to_mil_factor = -0.05 tooltip = conversion_cost_civ_to_mil_factor_tt }
+	add_to_variable = { GSK_dynamic_industrial_conversion_cost_mil_to_civ_factor = -0.05 tooltip = conversion_cost_mil_to_civ_factor_tt }
+	add_to_variable = { GSK_dynamic_industrial_industry_repair_factor = 0.075 tooltip = industry_repair_factor_tt }
+	add_to_variable = { GSK_dynamic_industrial_industry_free_repair_factor = 0.05 tooltip = industry_free_repair_factor_tt }
+	add_to_variable = { GSK_dynamic_industrial_industry_air_damage_factor = -0.05 tooltip = industry_air_damage_factor_tt }
+}
+
+KYO_dynamic_industrial_upgrade_10 = {
+	custom_effect_tooltip = KYO_modify_KYO_industrial_intro
+	
+	add_to_variable = { GSK_dynamic_industrial_max_fuel_factor = 0.10 tooltip = max_fuel_factor_tt }
+	add_to_variable = { GSK_dynamic_industrial_fuel_gain_factor = 0.05 tooltip = fuel_gain_factor_tt }
+	add_to_variable = { GSK_dynamic_industrial_license_purchase_cost = -0.05 tooltip = license_purchase_cost_tt }
+	add_to_variable = { GSK_dynamic_industrial_license_armor_purchase_cost = -0.05 tooltip = license_armor_purchase_cost_tt }
+	add_to_variable = { GSK_dynamic_industrial_license_air_purchase_cost = -0.05 tooltip = license_air_purchase_cost_tt }
+	add_to_variable = { GSK_dynamic_industrial_license_production_speed = 0.05 tooltip = license_production_speed_tt }
+}

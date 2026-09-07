@@ -1,0 +1,12 @@
+KYO_all_barrier_nodes_restored = {
+	check_variable = { KYO_barrier_hakurei < 1 }
+	check_variable = { KYO_barrier_mountain < 1 }
+	check_variable = { KYO_barrier_bamboo < 1 }
+	check_variable = { KYO_barrier_forest < 1 }
+	check_variable = { KYO_barrier_old_capital < 1 }
+	check_variable = { KYO_barrier_human_village < 1 }
+	check_variable = { KYO_barrier_scarlet_lake < 1 }
+	check_variable = { KYO_barrier_sunflower < 1 }
+	check_variable = { KYO_barrier_higan < 1 }
+	check_variable = { KYO_barrier_netherworld < 1 }
+}

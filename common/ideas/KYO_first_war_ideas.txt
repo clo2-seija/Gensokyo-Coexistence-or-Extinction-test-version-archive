@@ -1,0 +1,1205 @@
+ideas = {
+	country = {
+		KYO_fading_stage_1 = {
+			picture = Fade_away_1
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+
+		KYO_fading_stage_2 = {
+			picture = Fade_away_2
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.10
+				stability_factor = -0.15
+				recruitable_population_factor = -0.2
+				army_morale_factor = -0.05
+				industrial_capacity_factory = -0.10
+			}
+		}
+
+		KYO_fading_stage_3 = {
+			picture = Fade_away_3
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.20
+				stability_factor = -0.2
+				recruitable_population_factor = -0.25
+				army_org_factor = -0.10
+				army_morale_factor = -0.10
+				industrial_capacity_factory = -0.20
+				production_speed_buildings_factor = -0.15
+			}
+		}
+
+		KYO_fading_stage_4 = {
+			picture = Fade_away_4
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.3
+				stability_factor = -0.3
+				recruitable_population_factor = -0.4
+				army_org_factor = -0.20
+				army_morale_factor = -0.20
+				supply_consumption_factor = 0.20
+				industrial_capacity_factory = -0.35
+				production_speed_buildings_factor = -0.30
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		KYO_barrier_hakurei_stage_1 = {
+			picture = barrier_hakurei
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.025
+				stability_factor = -0.025
+			}
+		}
+
+		KYO_barrier_hakurei_stage_2 = {
+			picture = barrier_hakurei
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+			}
+		}
+
+		KYO_barrier_hakurei_stage_3 = {
+			picture = barrier_hakurei
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.075
+				stability_factor = -0.075
+			}
+		}
+
+		KYO_barrier_hakurei_stage_4 = {
+			picture = barrier_hakurei
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.1
+			}
+		}
+
+		KYO_barrier_mountain_stage_1 = {
+			picture = barrier_mountain
+			removal_cost = -1
+
+			modifier = {
+				planning_speed = -0.05
+				army_intel_factor = -0.05
+			}
+		}
+
+		KYO_barrier_mountain_stage_2 = {
+			picture = barrier_mountain
+			removal_cost = -1
+
+			modifier = {
+				planning_speed = -0.075
+				army_intel_factor = -0.075
+			}
+		}
+
+		KYO_barrier_mountain_stage_3 = {
+			picture = barrier_mountain
+			removal_cost = -1
+
+			modifier = {
+				planning_speed = -0.1
+				army_intel_factor = -0.1
+			}
+		}
+
+		KYO_barrier_mountain_stage_4 = {
+			picture = barrier_mountain
+			removal_cost = -1
+
+			modifier = {
+				planning_speed = -0.2
+				army_intel_factor = -0.2
+			}
+		}
+
+		KYO_barrier_bamboo_stage_1 = {
+			picture = barrier_bamboo
+			removal_cost = -1
+
+			modifier = {
+				experience_loss_factor = 0.05
+				supply_consumption_factor = 0.05
+			}
+		}
+
+		KYO_barrier_bamboo_stage_2 = {
+			picture = barrier_bamboo
+			removal_cost = -1
+
+			modifier = {
+				experience_loss_factor = 0.1
+				supply_consumption_factor = 0.1
+			}
+		}
+
+		KYO_barrier_bamboo_stage_3 = {
+			picture = barrier_bamboo
+			removal_cost = -1
+
+			modifier = {
+				experience_loss_factor = 0.15
+				supply_consumption_factor = 0.15
+			}
+		}
+
+		KYO_barrier_bamboo_stage_4 = {
+			picture = barrier_bamboo
+			removal_cost = -1
+
+			modifier = {
+				experience_loss_factor = 0.2
+				supply_consumption_factor = 0.2
+			}
+		}
+
+		KYO_barrier_forest_stage_1 = {
+			picture = barrier_forest
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+
+		KYO_barrier_forest_stage_2 = {
+			picture = barrier_forest
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.075
+				industrial_capacity_factory = -0.075
+			}
+		}
+
+		KYO_barrier_forest_stage_3 = {
+			picture = barrier_forest
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.1
+				industrial_capacity_factory = -0.1
+			}
+		}
+
+		KYO_barrier_forest_stage_4 = {
+			picture = barrier_forest
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.125
+				industrial_capacity_factory = -0.125
+			}
+		}
+
+		KYO_barrier_old_capital_stage_1 = {
+			picture = barrier_old_capital
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = -0.05
+				army_speed_factor = -0.05
+			}
+		}
+
+		KYO_barrier_old_capital_stage_2 = {
+			picture = barrier_old_capital
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = -0.075
+				army_speed_factor = -0.075
+			}
+		}
+
+		KYO_barrier_old_capital_stage_3 = {
+			picture = barrier_old_capital
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = -0.1
+				army_speed_factor = -0.1
+			}
+		}
+
+		KYO_barrier_old_capital_stage_4 = {
+			picture = barrier_old_capital
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = -0.125
+				army_speed_factor = -0.125
+			}
+		}
+
+		KYO_barrier_human_village_stage_1 = {
+			picture = barrier_human_village
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				recruitable_population_factor = -0.05
+			}
+		}
+
+		KYO_barrier_human_village_stage_2 = {
+			picture = barrier_human_village
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				recruitable_population_factor = -0.1
+			}
+		}
+
+		KYO_barrier_human_village_stage_3 = {
+			picture = barrier_human_village
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.15
+				recruitable_population_factor = -0.15
+			}
+		}
+
+		KYO_barrier_human_village_stage_4 = {
+			picture = barrier_human_village
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.2
+				recruitable_population_factor = -0.2
+			}
+		}
+
+		KYO_barrier_scarlet_lake_stage_1 = {
+			picture = barrier_scarlet_lake
+			removal_cost = -1
+
+			modifier = {
+				army_infantry_attack_factor = -0.025
+				industrial_capacity_factory = -0.025
+			}
+		}
+
+		KYO_barrier_scarlet_lake_stage_2 = {
+			picture = barrier_scarlet_lake
+			removal_cost = -1
+
+			modifier = {
+				army_infantry_attack_factor = -0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+
+		KYO_barrier_scarlet_lake_stage_3 = {
+			picture = barrier_scarlet_lake
+			removal_cost = -1
+
+			modifier = {
+				army_infantry_attack_factor = -0.075
+				industrial_capacity_factory = -0.075
+			}
+		}
+
+		KYO_barrier_scarlet_lake_stage_4 = {
+			picture = barrier_scarlet_lake
+			removal_cost = -1
+
+			modifier = {
+				army_infantry_attack_factor = -0.1
+				industrial_capacity_factory = -0.1
+			}
+		}
+
+		KYO_barrier_sunflower_stage_1 = {
+			picture = barrier_sunflower
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = -0.025
+				production_speed_buildings_factor = -0.025
+			}
+		}
+
+		KYO_barrier_sunflower_stage_2 = {
+			picture = barrier_sunflower
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = -0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
+
+		KYO_barrier_sunflower_stage_3 = {
+			picture = barrier_sunflower
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = -0.075
+				production_speed_buildings_factor = -0.075
+			}
+		}
+
+		KYO_barrier_sunflower_stage_4 = {
+			picture = barrier_sunflower
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = -0.1
+				production_speed_buildings_factor = -0.1
+			}
+		}
+
+		KYO_barrier_higan_stage_1 = {
+			picture = barrier_higan
+			removal_cost = -1
+
+			modifier = {
+				compliance_gain = -0.025
+				experience_loss_factor = 0.025
+			}
+		}
+
+		KYO_barrier_higan_stage_2 = {
+			picture = barrier_higan
+			removal_cost = -1
+
+			modifier = {
+				compliance_gain = -0.05
+				experience_loss_factor = 0.05
+			}
+		}
+
+		KYO_barrier_higan_stage_3 = {
+			picture = barrier_higan
+			removal_cost = -1
+
+			modifier = {
+				compliance_gain = -0.075
+				experience_loss_factor = 0.075
+			}
+		}
+
+		KYO_barrier_higan_stage_4 = {
+			picture = barrier_higan
+			removal_cost = -1
+
+			modifier = {
+				compliance_gain = -0.1
+				experience_loss_factor = 0.1
+			}
+		}
+
+		KYO_barrier_netherworld_stage_1 = {
+			picture = barrier_netherworld
+			removal_cost = -1
+
+			modifier = {
+				recruitable_population_factor = -0.05
+				army_morale_factor = -0.05
+			}
+		}
+
+		KYO_barrier_netherworld_stage_2 = {
+			picture = barrier_netherworld
+			removal_cost = -1
+
+			modifier = {
+				recruitable_population_factor = -0.075
+				army_morale_factor = -0.075
+			}
+		}
+
+		KYO_barrier_netherworld_stage_3 = {
+			picture = barrier_netherworld
+			removal_cost = -1
+
+			modifier = {
+				recruitable_population_factor = -0.1
+				army_morale_factor = -0.1
+			}
+		}
+
+		KYO_barrier_netherworld_stage_4 = {
+			picture = barrier_netherworld
+			removal_cost = -1
+
+			modifier = {
+				recruitable_population_factor = -0.125
+				army_morale_factor = -0.125
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+
+		KYO_military_committee_fulfillment_0 = {
+			picture = military_committee_fulfillment
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = -0.05
+				planning_speed = -0.10
+			}
+		}
+
+		KYO_military_committee_fulfillment_1 = {
+			picture = military_committee_fulfillment
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.04
+			}
+		}
+
+		KYO_military_committee_fulfillment_2 = {
+			picture = military_committee_fulfillment
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.05
+				breakthrough_factor = 0.1
+				planning_speed = 0.1
+			}
+		}
+
+		KYO_military_committee_fulfillment_3 = {
+			picture = military_committee_fulfillment
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.075
+				breakthrough_factor = 0.125
+				planning_speed = 0.125
+				army_org_factor = 0.075
+				command_power_gain_mult = 0.075
+			}
+		}
+
+		KYO_faith_committee_fulfillment_0 = {
+			picture = faith_committee_fulfillment
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.1
+				supply_consumption_factor = 0.05
+			}
+		}
+
+		KYO_faith_committee_fulfillment_1 = {
+			picture = faith_committee_fulfillment
+			removal_cost = -1
+
+			modifier = {
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		KYO_faith_committee_fulfillment_2 = {
+			picture = faith_committee_fulfillment
+			removal_cost = -1
+
+			modifier = {
+				supply_consumption_factor = -0.1
+				experience_loss_factor = -0.05
+				army_morale_factor = 0.075
+				production_factory_efficiency_gain_factor = 0.075
+			}
+		}
+
+		KYO_faith_committee_fulfillment_3 = {
+			picture = faith_committee_fulfillment
+			removal_cost = -1
+
+			modifier = {
+				supply_consumption_factor = -0.1
+				experience_loss_factor = -0.1
+				army_morale_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				stability_factor = 0.05
+				compliance_gain = 0.05
+			}
+		}
+
+		KYO_mobilization_committee_fulfillment_0 = {
+			picture = mobilization_committee_fulfillment
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = -0.1
+				supply_consumption_factor = 0.05
+			}
+		}
+
+		KYO_mobilization_committee_fulfillment_1 = {
+			picture = mobilization_committee_fulfillment
+			removal_cost = -1
+
+			modifier = {
+				army_speed_factor = 0.05
+			}
+		}
+
+		KYO_mobilization_committee_fulfillment_2 = {
+			picture = mobilization_committee_fulfillment
+			removal_cost = -1
+
+			modifier = {
+				army_speed_factor = 0.075
+				land_night_attack = 0.01
+				army_intel_factor = 0.015
+			}
+		}
+
+		KYO_mobilization_committee_fulfillment_3 = {
+			picture = mobilization_committee_fulfillment
+			removal_cost = -1
+
+			modifier = {
+				equipment_capture = 0.05
+				army_speed_factor = 0.1
+				land_night_attack = 0.15
+				army_intel_factor = 0.2
+				resistance_target = -0.1
+				
+			}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		KYO_barrier_grassroots_maintenance_idea = {
+			picture = gensokyo_Kasen_advisor
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.05
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		KYO_incomplete_advance_plan = {
+			picture = SWE_neither_death_nor_dishonor
+			removal_cost = -1
+
+			modifier = {
+				planning_speed = -0.10
+				army_org_factor = -0.075
+			}
+		}
+
+		KYO_tokyo_bridgehead_secured = {
+			picture = BEL_rexist_legion
+			removal_cost = -1
+
+			modifier = {
+				supply_consumption_factor = -0.1
+				army_morale_factor = 0.05
+			}
+		}
+
+		KYO_underground_supply_route = {
+			picture = chi_chinese_support
+			removal_cost = -1
+
+			modifier = {
+				supply_consumption_factor = -0.15
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		KYO_emergency_rotation_idea = {
+			picture = CHI_protracted_warfare
+			removal_cost = -1
+
+			modifier = {
+				army_morale_factor = 0.1
+				experience_loss_factor = -0.05
+			}
+		}
+
+		KYO_tokyo_command_disrupted = {
+			picture = CHI_inefficient_economy
+			removal_cost = -1
+
+			modifier = {
+				planning_speed = -0.15
+				army_org_factor = -0.05
+				political_power_factor = -0.05
+			}
+		}
+
+		KYO_barrier_evacuation_program = {
+			picture = HUN_mwg_raba
+			removal_cost = -1
+
+			modifier = {
+				experience_loss_factor = -0.075
+				supply_consumption_factor = 0.05
+			}
+		}
+	
+
+		
+
+		KYO_barrier_hakurei_ritual_restriction_idea = {
+			picture = barrier_hakurei
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = 0.05
+			}
+		}
+
+		KYO_barrier_mountain_press_suspension_idea = {
+			picture = barrier_mountain
+			removal_cost = -1
+
+			modifier = {
+				army_intel_factor = -0.05
+				stability_weekly = 0.002
+			}
+		}
+
+		KYO_barrier_bamboo_path_seal_idea = {
+			picture = barrier_bamboo
+			removal_cost = -1
+
+			modifier = {
+				supply_consumption_factor = 0.075
+				experience_loss_factor = -0.1
+				weekly_manpower = 1000
+			}
+		}
+
+		KYO_barrier_forest_experiment_moratorium_idea = {
+			picture = barrier_forest
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+		KYO_barrier_old_capital_output_curtailment_idea = {
+			picture = barrier_old_capital
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = -0.1
+				army_speed_factor = 0.1
+			}
+		}
+
+		KYO_barrier_human_village_school_closure_idea = {
+			picture = barrier_human_village
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = -0.05
+				stability_factor = 0.1
+			}
+		}
+
+		KYO_barrier_scarlet_lake_fog_lockdown_idea = {
+			picture = barrier_scarlet_lake
+			removal_cost = -1
+
+			modifier = {
+				air_mission_efficiency = -0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		KYO_barrier_sunflower_field_closure_idea = {
+			picture = barrier_sunflower_field
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = -0.15
+				production_speed_buildings_factor = 0.1
+			}
+		}
+
+		KYO_barrier_higan_ferry_restriction_idea = {
+			picture = barrier_higan
+			removal_cost = -1
+
+			modifier = {
+				compliance_gain = -0.05
+				experience_loss_factor = -0.05
+			}
+		}
+
+		KYO_barrier_netherworld_crossing_restriction_idea = {
+			picture = barrier_netherworld
+			removal_cost = -1
+
+			modifier = {
+				recruitable_population_factor = -0.1
+				army_morale_factor = 0.075
+			}
+		}
+
+
+
+
+
+
+
+		KYO_quarterly_candidate_mandate_success_idea = {
+			picture = judge_of_all_life
+			removal_cost = -1
+
+			modifier = {
+				political_power_factor = 0.15
+				war_support_factor = 0.15
+				industrial_capacity_factory = 0.15
+			}
+
+		}
+
+
+
+
+
+
+
+
+		KYO_war_leader_remilia_idea = {
+			picture = war_leader_remilia
+			removal_cost = -1
+
+			modifier = {
+				breakthrough_factor = 0.125
+				special_forces_attack_factor = 0.10
+				max_planning = 0.075
+				compliance_gain = -0.075
+			}
+		}
+
+		KYO_support_war_remilia = {
+			picture = war_leader_remilia
+			removal_cost = -1
+
+			modifier = {
+				breakthrough_factor = 0.175
+				special_forces_attack_factor = 0.15
+				army_speed_factor = 0.10
+			}
+		}
+
+		KYO_war_leader_yuyuko_idea = {
+			picture = war_leader_yuyuko
+			removal_cost = -1
+
+			modifier = {
+				no_supply_grace = 24
+				out_of_supply_factor = -0.125
+				org_loss_when_moving = -0.075
+			}
+		}
+
+		KYO_support_war_yuyuko = {
+			picture = war_leader_yuyuko
+			removal_cost = -1
+
+			modifier = {
+				no_supply_grace = 48
+				out_of_supply_factor = -0.175
+				army_morale_factor = 0.10
+			}
+		}
+
+		KYO_war_leader_suika_idea = {
+			picture = war_leader_suika
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.15
+				land_reinforce_rate = 0.01
+				equipment_capture = 0.05
+			}
+		}
+
+		KYO_support_war_suika = {
+			picture = war_leader_suika
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = 0.175
+				army_infantry_attack_factor = 0.1
+				land_reinforce_rate = 0.01
+			}
+		}
+
+		KYO_war_leader_yuuka_idea = {
+			picture = war_leader_yuuka
+			removal_cost = -1
+
+			modifier = {
+				army_artillery_attack_factor = 0.1
+				army_attack_factor = 0.1
+				supply_consumption_factor = 0.075
+			}
+		}
+
+		KYO_support_war_yuuka = {
+			picture = war_leader_yuuka
+			removal_cost = -1
+
+			modifier = {
+				army_artillery_attack_factor = 0.175
+				army_attack_factor = 0.125
+				supply_consumption_factor = 0.10
+			}
+		}
+
+		KYO_order_leader_byakuren_idea = {
+			picture = order_leader_byakuren
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.10
+				army_morale_factor = 0.10
+				drift_defence_factor = 0.175
+			}
+		}
+
+		KYO_support_order_byakuren = {
+			picture = order_leader_byakuren
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.125
+				army_morale_factor = 0.15
+				political_power_factor = 0.125
+			}
+		}
+
+		KYO_order_leader_kanako_idea = {
+			picture = order_leader_kanako
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				mobilization_speed = 0.125
+				conversion_cost_civ_to_mil_factor = -0.125
+			}
+		}
+
+		KYO_support_order_kanako = {
+			picture = order_leader_kanako
+			removal_cost = -1
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.175
+				production_factory_efficiency_gain_factor = 0.125
+				mobilization_speed = 0.175
+			}
+		}
+
+		KYO_order_leader_satori_idea = {
+			picture = order_leader_satori
+			removal_cost = -1
+
+			modifier = {
+				army_intel_factor = 0.175
+				planning_speed = 0.10
+				foreign_subversive_activites = -0.125
+			}
+		}
+
+		KYO_support_order_satori = {
+			picture = order_leader_satori
+			removal_cost = -1
+
+			modifier = {
+				army_intel_factor = 0.275
+				planning_speed = 0.15
+				foreign_subversive_activites = -0.175
+			}
+		}
+
+		KYO_order_leader_megumu_idea = {
+			picture = order_leader_megumu
+			removal_cost = -1
+
+			modifier = {
+				air_detection = 0.125
+				air_superiority_detect_factor = 0.125
+				political_power_factor = 0.075
+			}
+		}
+
+		KYO_support_order_megumu = {
+			picture = order_leader_megumu
+			removal_cost = -1
+
+			modifier = {
+				air_mission_efficiency = 0.15
+				air_superiority_efficiency = 0.15
+				war_support_factor = 0.10
+			}
+		}
+
+		KYO_network_leader_sekibanki_idea = {
+			picture = network_leader_sekibanki
+			removal_cost = -1
+
+			modifier = {
+				local_supplies = 0.125
+				army_defence_factor = 0.10
+				land_reinforce_rate = 0.025
+			}
+		}
+
+		KYO_support_network_sekibanki = {
+			picture = network_leader_sekibanki
+			removal_cost = -1
+
+			modifier = {
+				local_supplies = 0.175
+				supply_consumption_factor = -0.15
+				land_reinforce_rate = 0.025
+			}
+		}
+
+		KYO_network_leader_eirin_idea = {
+			picture = network_leader_eirin
+			removal_cost = -1
+
+			modifier = {
+				research_speed_factor = 0.1
+				experience_loss_factor = -0.125
+				attrition = -0.075
+			}
+		}
+
+		KYO_support_network_eirin = {
+			picture = network_leader_eirin
+			removal_cost = -1
+
+			modifier = {
+				experience_loss_factor = -0.175
+				attrition = -0.125
+				army_morale_factor = 0.10
+			}
+		}
+
+		KYO_network_leader_raiko_idea = {
+			picture = network_leader_raiko
+			removal_cost = -1
+
+			modifier = {
+				max_command_power = 20
+				command_power_gain_mult = 0.125
+				army_morale_factor = 0.10
+			}
+		}
+
+		KYO_support_network_raiko = {
+			picture = network_leader_raiko
+			removal_cost = -1
+
+			modifier = {
+				max_command_power = 40
+				command_power_gain_mult = 0.175
+				army_morale_factor = 0.15
+			}
+		}
+
+		KYO_network_leader_eiki_idea = {
+			picture = network_leader_eiki
+			removal_cost = -1
+
+			modifier = {
+				compliance_gain = 0.125
+				resistance_target = -0.10
+				political_power_gain = 0.125
+			}
+		}
+
+		KYO_support_network_eiki = {
+			picture = network_leader_eiki
+			removal_cost = -1
+
+			modifier = {
+				compliance_gain = 0.175
+				resistance_target = -0.15
+				political_power_gain = 0.175
+			}
+		}
+
+
+
+
+
+
+
+
+
+		KYO_tokyo_initial_shock = {
+			picture = remilia_power
+			removal_cost = -1
+			modifier = { planning_speed = 0.15 army_speed_factor = 0.05 supply_consumption_factor = 0.05 }
+		}
+		KYO_tokyo_initial_logistics = {
+			picture = foreign_machinery
+			removal_cost = -1
+			modifier = { supply_consumption_factor = -0.08 attrition = -0.05 }
+		}
+		KYO_tokyo_initial_mobilization = {
+			picture = seija_army_buff
+			removal_cost = -1
+			modifier = { army_morale_factor = 0.075 training_time_army_factor = -0.10 industrial_capacity_factory = -0.05 }
+		}
+		KYO_tokyo_bridgehead_consolidated = {
+			picture = KYO_seija_dynamic_military_idea
+			removal_cost = -1
+			modifier = { supply_consumption_factor = -0.10 army_morale_factor = 0.05 }
+		}
+		KYO_tokyo_command_hunt = {
+			picture = JAP_collapsing_government
+			removal_cost = -1
+			modifier = { planning_speed = 0.10 breakthrough_factor = 0.05 }
+		}
+		KYO_tokyo_order_of_battle = {
+			picture = gensokyo_balance
+			removal_cost = -1
+			modifier = { army_org_factor = 0.05 land_reinforce_rate = 0.02 }
+		}
+		KYO_tokyo_flexible_columns = {
+			picture = Konpaku_Hundred_Day
+			removal_cost = -1
+			modifier = { army_speed_factor = 0.07 attrition = -0.03 }
+		}
+		KYO_tokyo_mass_muster = {
+			picture = gensokyo_balance
+			removal_cost = -1
+			modifier = { recruitable_population_factor = 0.05 training_time_army_factor = -0.05 }
+		}
+		KYO_tokyo_rotation_reserves = {
+			picture = Eirin_help
+			removal_cost = -1
+			modifier = { army_morale_factor = 0.08 experience_loss_factor = -0.05 }
+		}
+		KYO_tokyo_arsenal_standardization = {
+			picture = Nitori_help
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = 0.05 production_factory_efficiency_gain_factor = 0.05 }
+		}
+		KYO_tokyo_weapon_recovery = {
+			picture = mobilization_committee_fulfillment
+			removal_cost = -1
+			modifier = { equipment_capture_factor = 0.08 }
+		}
+		KYO_tokyo_honshu_railnet = {
+			picture = gensokyo_utopia
+			removal_cost = -1
+			modifier = { supply_consumption_factor = -0.10 army_speed_factor = 0.05 }
+		}
+		KYO_tokyo_occupation_bureaus = {
+			picture = reverse_ideology
+			removal_cost = -1
+			modifier = { compliance_gain = 0.05 resistance_target = -0.1 }
+		}
+
+		KYO_restored_great_barrier = {
+			picture = restored_great_barrier
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				political_power_factor = 0.15
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				supply_consumption_factor = -0.05
+				research_speed_factor = 0.05
+			}
+		}
+}
+}

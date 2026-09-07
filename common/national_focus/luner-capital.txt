@@ -1,0 +1,332 @@
+focus_tree = {
+	id = lunar_capital_focus_tree
+	continuous_focus_position = { x = 6000 y = 140 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = LUN
+		}
+	}
+
+
+
+
+	focus = {
+		id = prepare_for_invasion_to_earth_1
+		icon = GFX_KYO_child_of_moon_enemy_of_earth
+		cost = 15
+		x = 5
+		y = 9
+		completion_reward = {
+
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 2
+			}
+
+			add_manpower = 15000000
+
+			division_template = {
+						name = "Moon division"
+						division_names_group = GER_PEN_01
+						is_locked = yes
+						force_allow_recruiting = yes
+
+						regiments = {
+							mountaineers = { x = 0 y = 0 }
+							mountaineers = { x = 0 y = 1 }
+							mountaineers = { x = 0 y = 2 }
+							mountaineers = { x = 1 y = 0 }
+							mountaineers = { x = 1 y = 1 }
+							mountaineers = { x = 1 y = 2 }
+							mountaineers = { x = 2 y = 0 }
+							mountaineers = { x = 2 y = 1 }
+							mountaineers = { x = 2 y = 2 }
+							artillery_brigade = { x = 3 y = 0}
+							artillery_brigade = { x = 3 y = 1}
+							artillery_brigade = { x = 3 y = 2}
+							artillery_brigade = { x = 4 y = 0}
+							
+							
+						}
+						support = {
+							artillery = { x = 0 y = 0 }
+							rangers_support = {x=0 y= 1	}
+							anti_air = {x=0 y= 2	}
+							field_hospital = {x=0 y= 3	}
+							logistics_company = {x=0 y= 4	}
+							
+							
+						}	
+					}
+
+					capital_scope = {
+						create_unit = {
+							division = "division_template = \"Moon division\" start_experience_factor = 1 start_equipment_factor = 1.0"
+							owner = ROOT
+							count = 125
+						}
+					}
+
+					758 = {
+						add_building_construction = {
+							type = supply_node
+							level = 1
+							province = 10802
+							instant_build = yes
+						}
+					}
+
+		 }
+	}
+
+
+
+
+
+
+
+
+
+
+
+focus = {
+		id = prepare_for_invasion_to_earth_2
+		icon = GFX_KYO_Scarlet_3
+		cost = 25
+		x = 5
+		y = 11
+		prerequisite = {
+			focus = prepare_for_invasion_to_earth_1
+		}
+		completion_reward = {
+
+			add_offsite_building = {
+				type = arms_factory
+				level = 5
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 10
+			}
+
+
+			build_railway = {
+				path = { 2010 2093 4994 5033 }
+				level = 5
+			}
+			322 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 2010
+					instant_build = yes
+				}
+			}
+
+			build_railway = {
+				path = { 10802 8029 1991 8121 4994 5033 }
+				level = 5
+			}
+			
+
+			build_railway = {
+				path = { 5033 10741 8041  }
+				level = 5
+			}
+			601 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 8041
+					instant_build = yes
+				}
+				
+			}
+			757 = {
+				add_building_construction = {
+					type = industrial_infrastructure
+					level = 1
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 4
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 10
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 10
+				}
+
+				add_resource = {
+					type = steel
+					amount = 50
+				}
+				add_resource = {
+					type = coal
+					amount = 30
+				}
+				set_state_category = megalopolis
+			}
+
+			every_country = {
+				limit = {
+					is_literally_china = yes
+				}
+				root = {
+					declare_war_on = {
+						target = prev
+						type = annex_everything
+					}
+				}
+			}
+
+			
+
+			
+
+
+		 }
+	}
+
+
+focus = {
+		id = prepare_for_invasion_to_earth_3
+		icon = GFX_KYO_last_chance_of_victory
+		cost = 52.15
+		x = 5
+		y = 13
+		prerequisite = {
+			focus = prepare_for_invasion_to_earth_2
+		}
+		completion_reward = {
+
+
+			set_cosmetic_tag = LUN_main_force
+
+			
+
+			add_offsite_building = {
+				type = arms_factory
+				level = 5
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 10
+			}
+			every_country = {
+				limit = {
+					is_neighbor_of = LUN
+				}
+				root = {
+					declare_war_on = {
+						target = prev
+						type = annex_everything
+					}
+				}
+			}
+
+			every_country = {
+				limit = {
+					is_major = yes
+					NOT = {
+						TAG = KYO
+					}
+				}
+				root = {
+					declare_war_on = {
+						target = prev
+						type = annex_everything
+					}
+				}
+			}
+
+
+		
+			
+
+
+		 }
+	}
+	focus = {
+		id = message_from_the_moon_1
+		icon = GFX_KYO_catch_the_nue_2_shine
+		cost = 10
+		prerequisite = {
+			focus = prepare_for_invasion_to_earth_3
+		}
+		x = 5
+		y = 15
+		completion_reward = { }
+	}
+	focus = {
+		id = message_from_the_moon_2
+		icon = GFX_KYO_catch_the_nue_2_shine
+		cost = 9
+		prerequisite = {
+			focus = message_from_the_moon_1
+		}
+		x = 5
+		y = 16
+		completion_reward = { }
+	}
+	focus = {
+		id = message_from_the_moon_3
+		icon = GFX_KYO_catch_the_nue_2_shine
+		cost = 8
+		prerequisite = {
+			focus = message_from_the_moon_2
+		}
+		x = 5
+		y = 17
+		completion_reward = { }
+	}
+	focus = {
+		id = message_from_the_moon_4
+		icon = GFX_KYO_catch_the_nue_2_shine
+		cost = 7
+		prerequisite = {
+			focus = message_from_the_moon_3
+		}
+		x = 5
+		y = 18
+		completion_reward = { }
+	}
+	focus = {
+		id = message_from_the_moon_5
+		icon = GFX_KYO_catch_the_nue_2_shine
+		cost = 6
+		prerequisite = {
+			focus = message_from_the_moon_4
+		}
+		x = 5
+		y = 19
+		completion_reward = { }
+	}
+	focus = {
+		id = message_from_the_moon_6
+		icon = GFX_KYO_catch_the_nue_2_shine
+		cost = 5
+		prerequisite = {
+			focus = message_from_the_moon_5
+		}
+		x = 5
+		y = 20
+		completion_reward = { }
+	}
+
+
+
+
+
+
+
+}

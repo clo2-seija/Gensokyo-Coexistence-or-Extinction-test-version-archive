@@ -1,0 +1,15 @@
+on_actions = {
+	# ROOT = 投降國；FROM = 主要勝利國。只處理已標記的四方內戰國家。
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = KYO_four_way_civil_war_active
+					ROOT = { has_country_flag = KYO_civil_war_faction }
+					FROM = { exists = yes }
+				}
+				ROOT = { KYO_transfer_legacy_fragments_to_winner = yes }
+			}
+		}
+	}
+}

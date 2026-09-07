@@ -1,0 +1,355 @@
+ideas = {
+	country = {
+		KYO_cws_support_tier_1 = {
+			picture = yakumo_army_buff
+			removal_cost = -1
+			modifier = {
+
+			}
+		}
+
+		KYO_cws_support_tier_2 = {
+			picture = yakumo_army_buff
+			removal_cost = -1
+			modifier = {
+
+			}
+		}
+
+		KYO_cws_support_tier_3 = {
+			picture = yakumo_army_buff
+			removal_cost = -1
+			modifier = {
+
+			}
+		}
+
+		KYO_cws_support_tier_4 = {
+			picture = yakumo_army_buff
+			removal_cost = -1
+			modifier = {
+
+			}
+		}
+
+		KYO_cws_support_tier_5 = {
+			picture = yakumo_army_buff
+			removal_cost = -1
+			modifier = {
+
+			}
+		}
+
+		KYO_cws_support_tier_6 = {
+			picture = yakumo_army_buff
+			removal_cost = -1
+			modifier = {
+
+			}
+		}
+
+		KYO_cws_support_village = {
+	picture = barrier_human_village
+	removal_cost = -1
+
+	modifier = {
+		weekly_manpower = 3000
+		army_defence_factor = 0.05
+		training_time_army_factor = -0.05
+	}
+}
+
+KYO_cws_support_kappa = {
+	picture = foreign_machinery
+	removal_cost = -1
+
+	modifier = {
+		political_power_gain = 0.10
+		army_org_factor = 0.05
+		stability_factor = 0.05
+	}
+}
+
+KYO_cws_support_tengu = {
+	picture = order_leader_megumu
+	removal_cost = -1
+
+	modifier = {
+		industrial_capacity_factory = 0.05
+		production_factory_efficiency_gain_factor = 0.05
+		air_mission_efficiency = 0.05
+		army_speed_factor = 0.05
+	}
+}
+
+KYO_cws_support_eientei = {
+	picture = network_leader_eirin
+	removal_cost = -1
+
+	modifier = {
+		weekly_manpower = 1000
+		army_org_regain = 0.10
+		experience_loss_factor = -0.10
+		supply_consumption_factor = -0.05
+	}
+}
+
+KYO_cws_support_hakugyokurou = {
+	picture = Konpaku_Hundred_Day
+	removal_cost = -1
+
+	modifier = {
+		army_org_factor = 0.05
+		army_defence_factor = 0.05
+		supply_consumption_factor = -0.05
+	}
+}
+
+KYO_cws_support_chireiden = {
+	picture = order_leader_satori
+	removal_cost = -1
+
+	modifier = {
+		army_intel_factor = 0.10
+		fuel_gain_factor = 0.10
+		industrial_capacity_factory = 0.05
+		army_defence_factor = 0.05
+	}
+}
+
+KYO_cws_support_oni = {
+	picture = war_leader_suika
+	removal_cost = -1
+
+	modifier = {
+		army_attack_factor = 0.05
+		army_org_factor = 0.05
+		army_speed_factor = 0.05
+	}
+}
+
+KYO_cws_support_fairies = {
+	picture = cirno_bad_smile
+	removal_cost = -1
+
+	modifier = {
+		weekly_manpower = 1000
+		army_speed_factor = 0.05
+		training_time_army_factor = -0.05
+		army_attack_factor = 0.05
+	}
+}
+
+KYO_cws_support_tsukumogami = {
+	picture = network_leader_raiko
+	removal_cost = -1
+
+	modifier = {
+		industrial_capacity_factory = 0.05
+		production_factory_efficiency_gain_factor = 0.05
+		production_speed_arms_factory_factor = 0.05
+	}
+}
+
+KYO_cws_support_moriya = {
+	picture = order_leader_kanako
+	removal_cost = -1
+
+	modifier = {
+		political_power_gain = 0.10
+		weekly_manpower = 1000
+		war_support_factor = 0.05
+	}
+}
+
+KYO_cws_support_senkai = {
+	picture = company_saki
+	removal_cost = -1
+
+	modifier = {
+		political_power_factor = 0.05
+		planning_speed = 0.10
+		max_planning_factor = 0.05
+		army_defence_factor = 0.05
+	}
+}
+
+KYO_cws_support_magic_forest = {
+	picture = youkai_new_mercenary
+	removal_cost = -1
+
+	modifier = {
+		weekly_manpower = 1000
+		army_attack_factor = 0.05
+		army_speed_factor = 0.05
+		army_org_regain = 0.05
+	}
+}
+
+		KYO_cws_focus_beast_aid = {
+			picture = NORDIC_army_democratic
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				army_speed_factor = 0.03
+			}
+		}
+
+		KYO_cws_focus_ghost_aid = {
+			picture = yakumo_army_buff
+			removal_cost = -1
+			modifier = {
+				army_org_regain = 0.1
+				army_defence_factor = 0.05
+			}
+		}
+
+		KYO_cws_focus_tengu_aid = {
+			picture = tengu_intelligen_agent
+			removal_cost = -1
+			modifier = {
+				air_mission_efficiency = 0.1
+				army_intel_factor = 0.1
+			}
+		}
+
+		KYO_cws_focus_eientei_aid = {
+			picture = Lunarian_Fragments
+			removal_cost = -1
+			modifier = {
+				experience_loss_factor = -0.1
+				supply_consumption_factor = -0.05
+				army_org_regain = 0.05
+			}
+		}
+
+		KYO_cws_final_offensive_1 = {
+			picture = Fade_away_1
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.02
+				army_defence_factor = 0.02
+				army_org_factor = 0.01
+				supply_consumption_factor = -0
+			}
+		}
+
+		KYO_cws_final_offensive_2 = {
+			picture = Fade_away_2
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.04
+				army_defence_factor = 0.04
+				army_org_factor = 0.02
+				supply_consumption_factor = -0.01
+			}
+		}
+
+		KYO_cws_final_offensive_3 = {
+			picture = Fade_away_2
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.06
+				army_defence_factor = 0.06
+				army_org_factor = 0.03
+				supply_consumption_factor = -0.02
+			}
+		}
+
+		KYO_cws_final_offensive_4 = {
+			picture = Fade_away_3
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.08
+				army_defence_factor = 0.08
+				army_org_factor = 0.04
+				supply_consumption_factor = -0.03
+			}
+		}
+
+		KYO_cws_final_offensive_5 = {
+			picture = Fade_away_3
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_org_factor = 0.05
+				supply_consumption_factor = -0.04
+			}
+		}
+
+		KYO_cws_final_offensive_6 = {
+			picture = Fade_away_4
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_org_factor = 0.05
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		KYO_cws_yukari_legacy_holder = {
+			picture = yakumo_army_buff
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.15
+				
+			}
+		}
+
+		KYO_cws_prewar_remilia_1 = {
+			picture = war_leader_remilia
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.025
+				army_org_factor = 0.025
+			}
+		}
+
+		KYO_cws_prewar_remilia_2 = {
+			picture = war_leader_remilia
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.075
+				army_org_factor = 0.075
+			}
+		}
+
+		KYO_cws_prewar_hijiri_1 = {
+			picture = order_leader_byakuren
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				army_org_regain = 0.05
+			}
+		}
+
+		KYO_cws_prewar_hijiri_2 = {
+			picture = order_leader_byakuren
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				army_org_regain = 0.075
+			}
+		}
+
+		KYO_cws_prewar_seija_1 = {
+			picture = network_leader_sekibanki
+			removal_cost = -1
+			modifier = {
+				army_speed_factor = 0.05
+				supply_consumption_factor = -0.03
+			}
+		}
+
+		KYO_cws_prewar_seija_2 = {
+			picture = network_leader_sekibanki
+			removal_cost = -1
+			modifier = {
+				army_speed_factor = 0.1
+				supply_consumption_factor = -0.075
+			}
+		}
+	}
+}

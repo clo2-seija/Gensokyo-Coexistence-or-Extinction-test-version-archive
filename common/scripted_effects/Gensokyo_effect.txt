@@ -1,0 +1,539 @@
+
+KYO_Shrine_navy_scripte = {
+  # 第一次呼叫時，補上精神與動態加成
+
+  if = { limit = { NOT = { has_dynamic_modifier = { modifier = Shrine_navy_modifiers } } } add_dynamic_modifier = { modifier = Shrine_navy_modifiers } }
+
+  # 確保所有用到的變數存在（沒有就設 0）
+  if = { limit = { NOT = { has_variable = Shrine_navy_var_transport_capacity } } set_variable = { var = Shrine_navy_var_transport_capacity value = 0 } }
+  if = { limit = { NOT = { has_variable = Shrine_navy_var_naval_strike } } set_variable = { var = Shrine_navy_var_naval_strike value = 0 } }
+  if = { limit = { NOT = { has_variable = Shrine_navy_var_naval_hit_chance } } set_variable = { var = Shrine_navy_var_naval_hit_chance value = 0 } }
+  if = { limit = { NOT = { has_variable = Shrine_navy_var_sortie_efficiency } } set_variable = { var = Shrine_navy_var_sortie_efficiency value = 0 } }
+  if = { limit = { NOT = { has_variable = Shrine_navy_var_naval_speed_factor } } set_variable = { var = Shrine_navy_var_naval_speed_factor value = 0 } }
+  if = { limit = { NOT = { has_variable = Shrine_navy_var_experience_gain_navy } } set_variable = { var = Shrine_navy_var_experience_gain_navy value = 0 } }
+  if = { limit = { NOT = { has_variable = Shrine_navy_var_spotting_chance } } set_variable = { var = Shrine_navy_var_spotting_chance value = 0 } }
+  if = { limit = { NOT = { has_variable = Shrine_navy_var_navy_submarine_detection_factor } } set_variable = { var = Shrine_navy_var_navy_submarine_detection_factor value = 0 } }
+
+
+}
+
+KYO_Shrine_navy = {
+  # 可選：做夾值，避免爆表（範例：科研最多 +25%）
+  #if = {
+    #limit = { check_variable = { var = Shrine_navy_var_naval_strike value > 0.25 } }
+    #set_variable = { var = Shrine_navy_var_naval_strike value = 0.25 }
+  #}
+  # 如果你有上限需求，其他變數也可類似夾值
+}
+
+#TODO加成要改
+KYO_remove_replaced_advisor_1_effects = {
+	custom_effect_tooltip = {
+		localization_key = replace_ascended_advisor_tt
+		CHARACTER = [GetAscendedAdvisorName1]
+		TRAIT = [GetAscendedAdvisorTrait1]
+	}
+	hidden_effect = {
+		if = { # TODT REPLACED
+			limit = {
+				check_variable = { KYO_ascended_advisor_1 = 1 }
+			}
+			KYO_remove_nazrin_effects = yes
+		}
+		else_if = { # ichirin REPLACED
+			limit = {
+				check_variable = { KYO_ascended_advisor_1 = 2 }
+			}
+			KYO_remove_ichirin_effects = yes
+		}
+		else_if = { # GÖRING REPLACED
+			limit = {
+				check_variable = { KYO_ascended_advisor_1 = 3 }
+			}
+			KYO_remove_shou_effects = yes
+		}
+		else_if = { # murasa REPLACED
+			limit = {
+				check_variable = { KYO_ascended_advisor_1 = 4 }
+			}
+			KYO_remove_murasa_effects = yes
+		}
+		else_if = { # kyouko REPLACED
+			limit = {
+				check_variable = { KYO_ascended_advisor_1 = 5 }
+			}
+			KYO_remove_kyouko_effects = yes
+		}
+		else = {
+			log = "Something bad happened trying to remove advisor [?KYO_ascended_advisor_1] effects."
+		}
+	}
+}
+
+
+KYO_remove_replaced_advisor_3_effects = {
+	custom_effect_tooltip = {
+		localization_key = replace_ascended_advisor_tt
+		CHARACTER = [GetAscendedAdvisorName3]
+		TRAIT = [GetAscendedAdvisorTrait3]
+	}
+	hidden_effect = {
+		if = { # nazrin replaced
+			limit = {
+				check_variable = { KYO_ascended_advisor_3 = 1 }
+			}
+			KYO_remove_nazrin_effects = yes
+		}
+		else_if = { # ichirin REPLACED
+			limit = {
+				check_variable = { KYO_ascended_advisor_3 = 2 }
+			}
+			KYO_remove_ichirin_effects = yes
+		}
+		else_if = { # GÖRING REPLACED
+			limit = {
+				check_variable = { KYO_ascended_advisor_3 = 3 }
+			}
+			KYO_remove_shou_effects = yes
+		}
+		else_if = { # murasa REPLACED
+			limit = {
+				check_variable = { KYO_ascended_advisor_3 = 4 }
+			}
+			KYO_remove_murasa_effects = yes
+		}
+		else_if = { # kyouko REPLACED
+			limit = {
+				check_variable = { KYO_ascended_advisor_3 = 5 }
+			}
+			KYO_remove_kyouko_effects = yes
+		}
+		else = {
+			log = "Something bad happened trying to remove advisor [?KYO_ascended_advisor_3] effects."
+		}
+	}
+}
+
+# Adding the new advisor effects after having replaced someone else
+KYO_add_replacing_advisor_effects = {
+	if = { # TODT ADDED
+		limit = {
+			check_variable = { KYO_ascending_advisor = 1 }
+		}
+		KYO_add_nazrin_effects = yes
+	}
+	else_if = { # ichirin ADDED
+		limit = {
+			check_variable = { KYO_ascending_advisor = 2 }
+		}
+		KYO_add_ichirin_effects = yes
+	}
+	else_if = { # GÖRING ADDED
+		limit = {
+			check_variable = { KYO_ascending_advisor = 3 }
+		}
+		KYO_add_shou_effects = yes
+	}
+	else_if = { # murasa ADDED
+		limit = {
+			check_variable = { KYO_ascending_advisor = 4 }
+		}
+		KYO_add_murasa_effects = yes
+	}
+	else_if = { # kyouko ADDED
+		limit = {
+			check_variable = { KYO_ascending_advisor = 5 }
+		}
+		KYO_add_kyouko_effects = yes
+	}
+	else = {
+		log = "Something bad happened trying to add advisor [?KYO_ascending_advisor] effects."
+	}
+}
+
+# ADD/REMOVE TODT EFFECTS
+KYO_add_nazrin_effects = {
+	if = {
+		limit = {
+			has_completed_focus = KYO_nazrin_follow_shou
+		}
+		add_ideas = KYO_Treasure_Seeker_nazrin_3
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = KYO_nazrin_rat_king
+		}
+		add_ideas = KYO_Treasure_Seeker_nazrin_2
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = KYO_treasure_hunter_nazrin
+		}
+		add_ideas = KYO_Treasure_Seeker_nazrin_1
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = KYO_our_rat_nazrin
+		}
+		add_ideas = KYO_Treasure_Seeker_nazrin_0
+	}
+}
+#TODO你媽給我寫好
+KYO_remove_nazrin_effects = {
+	if = {
+		limit = {
+			has_idea = KYO_Treasure_Seeker_nazrin_0
+		}
+		remove_ideas = KYO_Treasure_Seeker_nazrin_0
+	}
+	else_if = {
+		limit = {
+			has_idea = KYO_Treasure_Seeker_nazrin_1
+		}
+		remove_ideas = KYO_Treasure_Seeker_nazrin_1
+	}
+	else_if = {
+		limit = {
+			has_idea = KYO_Treasure_Seeker_nazrin_2
+		}
+		remove_ideas = KYO_Treasure_Seeker_nazrin_2
+	}
+	else_if = {
+		limit = {
+			has_idea = KYO_Treasure_Seeker_nazrin_3
+		}
+		remove_ideas = KYO_Treasure_Seeker_nazrin_3
+	}
+	else = {
+		log = "NOTHING TO REMOVE FROM nazrin"
+	}
+	uncomplete_national_focus = {
+				focus = KYO_our_rat_nazrin
+				uncomplete_children = no
+				refund_political_power = yes
+			}
+
+	if = { # REMOVE TODT FROM ASCENDED ADVISOR
+		limit = {
+			check_variable = { KYO_ascended_advisor_1 = 1 }
+		}
+		set_variable = { KYO_ascended_advisor_1 = 0 }
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = { KYO_ascended_advisor_3 = 1 }
+		}
+		set_variable = { KYO_ascended_advisor_3 = 0 }
+	}
+}
+
+# ADD/REMOVE ichirin EFFECTS
+KYO_add_ichirin_effects = {
+	if = {
+		limit = {
+			has_completed_focus = KYO_Ichirin_follow_hijiri
+		}
+		add_ideas = KYO_Cloud_Guardian_ichirin_3
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = KYO_Ichirin_cringe_name
+		}
+		add_ideas = KYO_Cloud_Guardian_ichirin_2
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = KYO_Ichirin_help_worker
+		}
+		add_ideas = KYO_Cloud_Guardian_ichirin_1
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = KYO_Ichirin_convert_everyone
+		}
+		add_ideas = KYO_Cloud_Guardian_ichirin_0
+	}
+}
+
+KYO_remove_ichirin_effects = {
+	if = {
+		limit = {
+			has_idea = KYO_Cloud_Guardian_ichirin_0
+		}
+		remove_ideas = KYO_Cloud_Guardian_ichirin_0
+	}
+	else_if = {
+		limit = {
+			has_idea = KYO_Cloud_Guardian_ichirin_1
+		}
+		remove_ideas = KYO_Cloud_Guardian_ichirin_1
+	}
+	else_if = {
+		limit = {
+			has_idea = KYO_Cloud_Guardian_ichirin_2
+		}
+		remove_ideas = KYO_Cloud_Guardian_ichirin_2
+	}
+	else_if = {
+		limit = {
+			has_idea = KYO_Cloud_Guardian_ichirin_3
+		}
+		remove_ideas = KYO_Cloud_Guardian_ichirin_3
+	}
+	else = {
+		log = "NOTHING TO REMOVE FROM nazrin"
+	}
+	uncomplete_national_focus = {
+				focus = KYO_Ichirin_convert_everyone
+				uncomplete_children = no
+				refund_political_power = yes
+			}
+
+	if = { # REMOVE ichirin FROM ASCENDED ADVISOR
+		limit = {
+			check_variable = { KYO_ascended_advisor_1 = 2 }
+		}
+		set_variable = { KYO_ascended_advisor_1 = 0 }
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = { KYO_ascended_advisor_3 = 2 }
+		}
+		set_variable = { KYO_ascended_advisor_3 = 0 }
+	}
+}
+
+# ADD/REMOVE GÖRING EFFECTS
+KYO_add_shou_effects = {
+	if = {
+		limit = {
+			has_completed_focus = KYO_shou_follow_hijiri
+		}
+		add_ideas = KYO_The_Tiger_Commandments_3
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = KYO_shou_the_tiger
+		}
+		add_ideas = KYO_The_Tiger_Commandments_2
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = KYO_shou_the_best_soilder
+		}
+		add_ideas = KYO_The_Tiger_Commandments_1
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = KYO_shou_money_beg
+		}
+		add_ideas = KYO_The_Tiger_Commandments_0
+	}
+}
+
+KYO_remove_shou_effects = {
+	if = {
+		limit = {
+			has_idea = KYO_The_Tiger_Commandments_0
+		}
+		remove_ideas = KYO_The_Tiger_Commandments_0
+	}
+	else_if = {
+		limit = {
+			has_idea = KYO_The_Tiger_Commandments_1
+		}
+		remove_ideas = KYO_The_Tiger_Commandments_1
+	}
+	else_if = {
+		limit = {
+			has_idea = KYO_The_Tiger_Commandments_2
+		}
+		remove_ideas = KYO_The_Tiger_Commandments_2
+	}
+	else_if = {
+		limit = {
+			has_idea = KYO_The_Tiger_Commandments_3
+		}
+		remove_ideas = KYO_The_Tiger_Commandments_3
+	}
+	else = {
+		log = "NOTHING TO REMOVE FROM nazrin"
+	}
+	uncomplete_national_focus = {
+				focus = KYO_shou_money_beg
+				uncomplete_children = no
+				refund_political_power = yes
+			}
+
+	if = { # REMOVE GÖRING FROM ASCENDED ADVISOR
+		limit = {
+			check_variable = { KYO_ascended_advisor_1 = 3 }
+		}
+		set_variable = { KYO_ascended_advisor_1 = 0 }
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = { KYO_ascended_advisor_3 = 3 }
+		}
+		set_variable = { KYO_ascended_advisor_3 = 0 }
+	}
+}
+
+# ADD/REMOVE murasa EFFECTS
+KYO_add_murasa_effects = {
+	log ="ADDING murasa"
+	if = {
+		limit = {
+			has_completed_focus = KYO_murasa_follow_hijiri
+		}
+		add_ideas = KYO_Ghost_Captain_marusa_3
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = KYO_murasa_lord_captain
+		}
+		add_ideas = KYO_Ghost_Captain_marusa_2
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = KYO_we_must_use_force
+		}
+		add_ideas = KYO_Ghost_Captain_marusa_1
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = KYO_murasa_war_army_leader
+		}
+		add_ideas = KYO_Ghost_Captain_marusa_0
+	}
+}
+
+KYO_remove_murasa_effects = {
+	if = {
+		limit = {
+			has_idea = KYO_Ghost_Captain_marusa_0
+		}
+		remove_ideas = KYO_Ghost_Captain_marusa_0
+	}
+	else_if = {
+		limit = {
+			has_idea = KYO_Ghost_Captain_marusa_1
+		}
+		remove_ideas = KYO_Ghost_Captain_marusa_1
+	}
+	else_if = {
+		limit = {
+			has_idea = KYO_Ghost_Captain_marusa_2
+		}
+		remove_ideas = KYO_Ghost_Captain_marusa_2
+	}
+	else_if = {
+		limit = {
+			has_idea = KYO_Ghost_Captain_marusa_3
+		}
+		remove_ideas = KYO_Ghost_Captain_marusa_3
+	}
+	else = {
+		log = "NOTHING TO REMOVE FROM nazrin"
+	}
+	uncomplete_national_focus = {
+				focus = KYO_murasa_war_army_leader
+				uncomplete_children = no
+				refund_political_power = yes
+			}
+
+	if = { # REMOVE murasa FROM ASCENDED ADVISOR
+		limit = {
+			check_variable = { KYO_ascended_advisor_1 = 4 }
+		}
+		set_variable = { KYO_ascended_advisor_1 = 0 }
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = { KYO_ascended_advisor_3 = 4 }
+		}
+		set_variable = { KYO_ascended_advisor_3 = 0 }
+	}
+}
+
+# ADD/REMOVE kyouko EFFECTS
+KYO_add_kyouko_effects = {
+	if = {
+		limit = {
+			has_completed_focus = KYO_kyouko_follow_hijiri
+		}
+		add_ideas = KYO_Echo_Propaganda_kyouko_3
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = KYO_kyouko_apprentice
+		}
+		add_ideas = KYO_Echo_Propaganda_kyouko_2
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = KYO_kyouko_democracy_shipping
+		}
+		add_ideas = KYO_Echo_Propaganda_kyouko_1
+	}
+	else_if = {
+		limit = {
+			has_completed_focus = KYO_kyouko_spring_time
+		}
+		add_ideas = KYO_Echo_Propaganda_kyouko_0
+	}
+}
+
+KYO_remove_kyouko_effects = {
+
+	if = {
+		limit = {
+			has_idea = KYO_Echo_Propaganda_kyouko_0
+		}
+		remove_ideas = KYO_Echo_Propaganda_kyouko_0
+	}
+	else_if = {
+		limit = {
+			has_idea = KYO_Echo_Propaganda_kyouko_1
+		}
+		remove_ideas = KYO_Echo_Propaganda_kyouko_1
+	}
+	else_if = {
+		limit = {
+			has_idea = KYO_Echo_Propaganda_kyouko_2
+		}
+		remove_ideas = KYO_Echo_Propaganda_kyouko_2
+	}
+	else_if = {
+		limit = {
+			has_idea = KYO_Echo_Propaganda_kyouko_3
+		}
+		remove_ideas = KYO_Echo_Propaganda_kyouko_3
+	}
+	else = {
+		log = "NOTHING TO REMOVE FROM nazrin"
+	}
+	uncomplete_national_focus = {
+				focus = KYO_kyouko_spring_time
+				uncomplete_children = no
+				refund_political_power = yes
+			}
+
+	if = { # REMOVE kyouko FROM ASCENDED ADVISOR
+		limit = {
+			check_variable = { KYO_ascended_advisor_1 = 5 }
+		}
+		set_variable = { KYO_ascended_advisor_1 = 0 }
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = { KYO_ascended_advisor_3 = 5 }
+		}
+		set_variable = { KYO_ascended_advisor_3 = 0 }
+	}
+}

@@ -1,0 +1,35 @@
+defined_text = {
+	name = get_super_event_title
+	text = { trigger = { has_global_flag = sp_event_yukari_world } localization_key = "sp_event_yukari_world" }
+	text = { trigger = { has_global_flag = sp_event_lunar_public_war } localization_key = "sp_event_lunar_public_war" }
+	text = { trigger = { has_global_flag = GER_WW2 } localization_key = "sp_event_Second_World_War" }
+	text = { trigger = { has_global_flag = sp_event_japan_youkai_war } localization_key = "sp_event_japan_youkai_war" }
+	text = { trigger = { has_global_flag = sp_event_Youkai_civilwar_start } localization_key = "sp_event_Youkai_civilwar_start" }
+	text = { trigger = { has_global_flag = sp_event_Remilia_path_the_end } localization_key = "sp_event_Remilia_path_the_end" }
+	text = { trigger = { has_global_flag = sp_event_Hijiri_path_the_end } localization_key = "sp_event_Hijiri_path_the_end" }
+	
+}
+
+defined_text = {
+	name = get_super_event_remark
+	text = { trigger = { has_global_flag = sp_event_yukari_world } localization_key = "sp_event_yukari_world_REMARK" }
+	text = { trigger = { has_global_flag = sp_event_lunar_public_war } localization_key = "sp_event_lunar_public_war_REMARK" }
+	text = { trigger = { has_global_flag = GER_WW2 } localization_key = "sp_event_Second_World_War_REMARK" }
+	text = { trigger = { has_global_flag = sp_event_japan_youkai_war } localization_key = "sp_event_japan_youkai_war_REMARK" }
+	text = { trigger = { has_global_flag = sp_event_Youkai_civilwar_start } localization_key = "sp_event_Youkai_civilwar_start_REMARK" }
+	text = { trigger = { has_global_flag = sp_event_Remilia_path_the_end } localization_key = "sp_event_Remilia_path_the_end_REMARK" }
+	text = { trigger = { has_global_flag = sp_event_Hijiri_path_the_end } localization_key = "sp_event_Hijiri_path_the_end_REMARK" }
+	
+}
+
+defined_text = {
+	name = get_super_event_quote
+	text = { trigger = { has_global_flag = sp_event_yukari_world } localization_key = "sp_event_yukari_world_QUOTE" }
+	text = { trigger = { has_global_flag = sp_event_lunar_public_war } localization_key = "sp_event_lunar_public_war_QUOTE" }
+	text = { trigger = { has_global_flag = GER_WW2 } localization_key = "sp_event_Second_World_War_QUOTE" }
+	text = { trigger = { has_global_flag = sp_event_japan_youkai_war } localization_key = "sp_event_japan_youkai_war_QUOTE" }
+	text = { trigger = { has_global_flag = sp_event_Youkai_civilwar_start } localization_key = "sp_event_Youkai_civilwar_start_QUOTE" }
+	text = { trigger = { has_global_flag = sp_event_Remilia_path_the_end } localization_key = "sp_event_Remilia_path_the_end_QUOTE" }
+	text = { trigger = { has_global_flag = sp_event_Hijiri_path_the_end } localization_key = "sp_event_Hijiri_path_the_end_QUOTE" }
+	
+}

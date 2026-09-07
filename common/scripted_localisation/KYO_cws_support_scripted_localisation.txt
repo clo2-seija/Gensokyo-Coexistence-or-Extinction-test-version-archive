@@ -1,0 +1,1103 @@
+defined_text = {
+	name = KYO_cws_village_owner_status
+	text = {
+		trigger = { has_country_flag = KYO_cws_village_owner_yakumo }
+		localization_key = KYO_cws_owner_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_village_owner_remilia }
+		localization_key = KYO_cws_owner_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_village_owner_hijiri }
+		localization_key = KYO_cws_owner_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_village_owner_seija }
+		localization_key = KYO_cws_owner_seija
+	}
+	text = {
+		localization_key = KYO_cws_owner_neutral
+	}
+}
+
+defined_text = {
+	name = KYO_cws_village_other_support_status
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_yakumo }
+		localization_key = KYO_cws_gui_village_other_support_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_remilia }
+		localization_key = KYO_cws_gui_village_other_support_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_hijiri }
+		localization_key = KYO_cws_gui_village_other_support_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_seija }
+		localization_key = KYO_cws_gui_village_other_support_seija
+	}
+	text = {
+		localization_key = KYO_cws_gui_village_other_support_all
+	}
+}
+
+defined_text = {
+	name = KYO_cws_village_player_favor_status
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_yakumo }
+		localization_key = KYO_cws_gui_village_player_favor_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_remilia }
+		localization_key = KYO_cws_gui_village_player_favor_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_hijiri }
+		localization_key = KYO_cws_gui_village_player_favor_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_seija }
+		localization_key = KYO_cws_gui_village_player_favor_seija
+	}
+	text = {
+		localization_key = KYO_cws_favor_unknown
+	}
+}
+
+defined_text = {
+	name = KYO_cws_village_situation_view
+	text = {
+		trigger = { has_country_flag = KYO_cws_village_owner_yakumo }
+		localization_key = KYO_cws_view_village_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_village_owner_remilia }
+		localization_key = KYO_cws_view_village_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_village_owner_hijiri }
+		localization_key = KYO_cws_view_village_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_village_owner_seija }
+		localization_key = KYO_cws_view_village_seija
+	}
+	text = {
+		localization_key = KYO_cws_view_village_neutral
+	}
+}
+
+defined_text = {
+	name = KYO_cws_kappa_owner_status
+	text = {
+		trigger = { has_country_flag = KYO_cws_kappa_owner_yakumo }
+		localization_key = KYO_cws_owner_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_kappa_owner_remilia }
+		localization_key = KYO_cws_owner_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_kappa_owner_hijiri }
+		localization_key = KYO_cws_owner_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_kappa_owner_seija }
+		localization_key = KYO_cws_owner_seija
+	}
+	text = {
+		localization_key = KYO_cws_owner_neutral
+	}
+}
+
+defined_text = {
+	name = KYO_cws_kappa_other_support_status
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_yakumo }
+		localization_key = KYO_cws_gui_kappa_other_support_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_remilia }
+		localization_key = KYO_cws_gui_kappa_other_support_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_hijiri }
+		localization_key = KYO_cws_gui_kappa_other_support_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_seija }
+		localization_key = KYO_cws_gui_kappa_other_support_seija
+	}
+	text = {
+		localization_key = KYO_cws_gui_kappa_other_support_all
+	}
+}
+
+defined_text = {
+	name = KYO_cws_kappa_player_favor_status
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_yakumo }
+		localization_key = KYO_cws_gui_kappa_player_favor_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_remilia }
+		localization_key = KYO_cws_gui_kappa_player_favor_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_hijiri }
+		localization_key = KYO_cws_gui_kappa_player_favor_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_seija }
+		localization_key = KYO_cws_gui_kappa_player_favor_seija
+	}
+	text = {
+		localization_key = KYO_cws_favor_unknown
+	}
+}
+
+defined_text = {
+	name = KYO_cws_kappa_situation_view
+	text = {
+		trigger = { has_country_flag = KYO_cws_kappa_owner_yakumo }
+		localization_key = KYO_cws_view_kappa_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_kappa_owner_remilia }
+		localization_key = KYO_cws_view_kappa_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_kappa_owner_hijiri }
+		localization_key = KYO_cws_view_kappa_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_kappa_owner_seija }
+		localization_key = KYO_cws_view_kappa_seija
+	}
+	text = {
+		localization_key = KYO_cws_view_kappa_neutral
+	}
+}
+
+defined_text = {
+	name = KYO_cws_tengu_owner_status
+	text = {
+		trigger = { has_country_flag = KYO_cws_tengu_owner_yakumo }
+		localization_key = KYO_cws_owner_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_tengu_owner_remilia }
+		localization_key = KYO_cws_owner_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_tengu_owner_hijiri }
+		localization_key = KYO_cws_owner_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_tengu_owner_seija }
+		localization_key = KYO_cws_owner_seija
+	}
+	text = {
+		localization_key = KYO_cws_owner_neutral
+	}
+}
+
+defined_text = {
+	name = KYO_cws_tengu_other_support_status
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_yakumo }
+		localization_key = KYO_cws_gui_tengu_other_support_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_remilia }
+		localization_key = KYO_cws_gui_tengu_other_support_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_hijiri }
+		localization_key = KYO_cws_gui_tengu_other_support_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_seija }
+		localization_key = KYO_cws_gui_tengu_other_support_seija
+	}
+	text = {
+		localization_key = KYO_cws_gui_tengu_other_support_all
+	}
+}
+
+defined_text = {
+	name = KYO_cws_tengu_player_favor_status
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_yakumo }
+		localization_key = KYO_cws_gui_tengu_player_favor_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_remilia }
+		localization_key = KYO_cws_gui_tengu_player_favor_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_hijiri }
+		localization_key = KYO_cws_gui_tengu_player_favor_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_seija }
+		localization_key = KYO_cws_gui_tengu_player_favor_seija
+	}
+	text = {
+		localization_key = KYO_cws_favor_unknown
+	}
+}
+
+defined_text = {
+	name = KYO_cws_tengu_situation_view
+	text = {
+		trigger = { has_country_flag = KYO_cws_tengu_owner_yakumo }
+		localization_key = KYO_cws_view_tengu_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_tengu_owner_remilia }
+		localization_key = KYO_cws_view_tengu_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_tengu_owner_hijiri }
+		localization_key = KYO_cws_view_tengu_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_tengu_owner_seija }
+		localization_key = KYO_cws_view_tengu_seija
+	}
+	text = {
+		localization_key = KYO_cws_view_tengu_neutral
+	}
+}
+
+defined_text = {
+	name = KYO_cws_eientei_owner_status
+	text = {
+		trigger = { has_country_flag = KYO_cws_eientei_owner_yakumo }
+		localization_key = KYO_cws_owner_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_eientei_owner_remilia }
+		localization_key = KYO_cws_owner_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_eientei_owner_hijiri }
+		localization_key = KYO_cws_owner_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_eientei_owner_seija }
+		localization_key = KYO_cws_owner_seija
+	}
+	text = {
+		localization_key = KYO_cws_owner_neutral
+	}
+}
+
+defined_text = {
+	name = KYO_cws_eientei_other_support_status
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_yakumo }
+		localization_key = KYO_cws_gui_eientei_other_support_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_remilia }
+		localization_key = KYO_cws_gui_eientei_other_support_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_hijiri }
+		localization_key = KYO_cws_gui_eientei_other_support_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_seija }
+		localization_key = KYO_cws_gui_eientei_other_support_seija
+	}
+	text = {
+		localization_key = KYO_cws_gui_eientei_other_support_all
+	}
+}
+
+defined_text = {
+	name = KYO_cws_eientei_player_favor_status
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_yakumo }
+		localization_key = KYO_cws_gui_eientei_player_favor_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_remilia }
+		localization_key = KYO_cws_gui_eientei_player_favor_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_hijiri }
+		localization_key = KYO_cws_gui_eientei_player_favor_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_seija }
+		localization_key = KYO_cws_gui_eientei_player_favor_seija
+	}
+	text = {
+		localization_key = KYO_cws_favor_unknown
+	}
+}
+
+defined_text = {
+	name = KYO_cws_eientei_situation_view
+	text = {
+		trigger = { has_country_flag = KYO_cws_eientei_owner_yakumo }
+		localization_key = KYO_cws_view_eientei_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_eientei_owner_remilia }
+		localization_key = KYO_cws_view_eientei_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_eientei_owner_hijiri }
+		localization_key = KYO_cws_view_eientei_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_eientei_owner_seija }
+		localization_key = KYO_cws_view_eientei_seija
+	}
+	text = {
+		localization_key = KYO_cws_view_eientei_neutral
+	}
+}
+
+defined_text = {
+	name = KYO_cws_hakugyokurou_owner_status
+	text = {
+		trigger = { has_country_flag = KYO_cws_hakugyokurou_owner_yakumo }
+		localization_key = KYO_cws_owner_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_hakugyokurou_owner_remilia }
+		localization_key = KYO_cws_owner_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_hakugyokurou_owner_hijiri }
+		localization_key = KYO_cws_owner_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_hakugyokurou_owner_seija }
+		localization_key = KYO_cws_owner_seija
+	}
+	text = {
+		localization_key = KYO_cws_owner_neutral
+	}
+}
+
+defined_text = {
+	name = KYO_cws_hakugyokurou_other_support_status
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_yakumo }
+		localization_key = KYO_cws_gui_hakugyokurou_other_support_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_remilia }
+		localization_key = KYO_cws_gui_hakugyokurou_other_support_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_hijiri }
+		localization_key = KYO_cws_gui_hakugyokurou_other_support_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_seija }
+		localization_key = KYO_cws_gui_hakugyokurou_other_support_seija
+	}
+	text = {
+		localization_key = KYO_cws_gui_hakugyokurou_other_support_all
+	}
+}
+
+defined_text = {
+	name = KYO_cws_hakugyokurou_player_favor_status
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_yakumo }
+		localization_key = KYO_cws_gui_hakugyokurou_player_favor_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_remilia }
+		localization_key = KYO_cws_gui_hakugyokurou_player_favor_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_hijiri }
+		localization_key = KYO_cws_gui_hakugyokurou_player_favor_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_seija }
+		localization_key = KYO_cws_gui_hakugyokurou_player_favor_seija
+	}
+	text = {
+		localization_key = KYO_cws_favor_unknown
+	}
+}
+
+defined_text = {
+	name = KYO_cws_hakugyokurou_situation_view
+	text = {
+		trigger = { has_country_flag = KYO_cws_hakugyokurou_owner_yakumo }
+		localization_key = KYO_cws_view_hakugyokurou_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_hakugyokurou_owner_remilia }
+		localization_key = KYO_cws_view_hakugyokurou_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_hakugyokurou_owner_hijiri }
+		localization_key = KYO_cws_view_hakugyokurou_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_hakugyokurou_owner_seija }
+		localization_key = KYO_cws_view_hakugyokurou_seija
+	}
+	text = {
+		localization_key = KYO_cws_view_hakugyokurou_neutral
+	}
+}
+
+defined_text = {
+	name = KYO_cws_chireiden_owner_status
+	text = {
+		trigger = { has_country_flag = KYO_cws_chireiden_owner_yakumo }
+		localization_key = KYO_cws_owner_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_chireiden_owner_remilia }
+		localization_key = KYO_cws_owner_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_chireiden_owner_hijiri }
+		localization_key = KYO_cws_owner_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_chireiden_owner_seija }
+		localization_key = KYO_cws_owner_seija
+	}
+	text = {
+		localization_key = KYO_cws_owner_neutral
+	}
+}
+
+defined_text = {
+	name = KYO_cws_chireiden_other_support_status
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_yakumo }
+		localization_key = KYO_cws_gui_chireiden_other_support_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_remilia }
+		localization_key = KYO_cws_gui_chireiden_other_support_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_hijiri }
+		localization_key = KYO_cws_gui_chireiden_other_support_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_seija }
+		localization_key = KYO_cws_gui_chireiden_other_support_seija
+	}
+	text = {
+		localization_key = KYO_cws_gui_chireiden_other_support_all
+	}
+}
+
+defined_text = {
+	name = KYO_cws_chireiden_player_favor_status
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_yakumo }
+		localization_key = KYO_cws_gui_chireiden_player_favor_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_remilia }
+		localization_key = KYO_cws_gui_chireiden_player_favor_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_hijiri }
+		localization_key = KYO_cws_gui_chireiden_player_favor_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_seija }
+		localization_key = KYO_cws_gui_chireiden_player_favor_seija
+	}
+	text = {
+		localization_key = KYO_cws_favor_unknown
+	}
+}
+
+defined_text = {
+	name = KYO_cws_chireiden_situation_view
+	text = {
+		trigger = { has_country_flag = KYO_cws_chireiden_owner_yakumo }
+		localization_key = KYO_cws_view_chireiden_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_chireiden_owner_remilia }
+		localization_key = KYO_cws_view_chireiden_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_chireiden_owner_hijiri }
+		localization_key = KYO_cws_view_chireiden_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_chireiden_owner_seija }
+		localization_key = KYO_cws_view_chireiden_seija
+	}
+	text = {
+		localization_key = KYO_cws_view_chireiden_neutral
+	}
+}
+
+defined_text = {
+	name = KYO_cws_oni_owner_status
+	text = {
+		trigger = { has_country_flag = KYO_cws_oni_owner_yakumo }
+		localization_key = KYO_cws_owner_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_oni_owner_remilia }
+		localization_key = KYO_cws_owner_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_oni_owner_hijiri }
+		localization_key = KYO_cws_owner_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_oni_owner_seija }
+		localization_key = KYO_cws_owner_seija
+	}
+	text = {
+		localization_key = KYO_cws_owner_neutral
+	}
+}
+
+defined_text = {
+	name = KYO_cws_oni_other_support_status
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_yakumo }
+		localization_key = KYO_cws_gui_oni_other_support_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_remilia }
+		localization_key = KYO_cws_gui_oni_other_support_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_hijiri }
+		localization_key = KYO_cws_gui_oni_other_support_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_seija }
+		localization_key = KYO_cws_gui_oni_other_support_seija
+	}
+	text = {
+		localization_key = KYO_cws_gui_oni_other_support_all
+	}
+}
+
+defined_text = {
+	name = KYO_cws_oni_player_favor_status
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_yakumo }
+		localization_key = KYO_cws_gui_oni_player_favor_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_remilia }
+		localization_key = KYO_cws_gui_oni_player_favor_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_hijiri }
+		localization_key = KYO_cws_gui_oni_player_favor_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_seija }
+		localization_key = KYO_cws_gui_oni_player_favor_seija
+	}
+	text = {
+		localization_key = KYO_cws_favor_unknown
+	}
+}
+
+defined_text = {
+	name = KYO_cws_oni_situation_view
+	text = {
+		trigger = { has_country_flag = KYO_cws_oni_owner_yakumo }
+		localization_key = KYO_cws_view_oni_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_oni_owner_remilia }
+		localization_key = KYO_cws_view_oni_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_oni_owner_hijiri }
+		localization_key = KYO_cws_view_oni_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_oni_owner_seija }
+		localization_key = KYO_cws_view_oni_seija
+	}
+	text = {
+		localization_key = KYO_cws_view_oni_neutral
+	}
+}
+
+defined_text = {
+	name = KYO_cws_fairies_owner_status
+	text = {
+		trigger = { has_country_flag = KYO_cws_fairies_owner_yakumo }
+		localization_key = KYO_cws_owner_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_fairies_owner_remilia }
+		localization_key = KYO_cws_owner_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_fairies_owner_hijiri }
+		localization_key = KYO_cws_owner_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_fairies_owner_seija }
+		localization_key = KYO_cws_owner_seija
+	}
+	text = {
+		localization_key = KYO_cws_owner_neutral
+	}
+}
+
+defined_text = {
+	name = KYO_cws_fairies_other_support_status
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_yakumo }
+		localization_key = KYO_cws_gui_fairies_other_support_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_remilia }
+		localization_key = KYO_cws_gui_fairies_other_support_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_hijiri }
+		localization_key = KYO_cws_gui_fairies_other_support_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_seija }
+		localization_key = KYO_cws_gui_fairies_other_support_seija
+	}
+	text = {
+		localization_key = KYO_cws_gui_fairies_other_support_all
+	}
+}
+
+defined_text = {
+	name = KYO_cws_fairies_player_favor_status
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_yakumo }
+		localization_key = KYO_cws_gui_fairies_player_favor_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_remilia }
+		localization_key = KYO_cws_gui_fairies_player_favor_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_hijiri }
+		localization_key = KYO_cws_gui_fairies_player_favor_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_seija }
+		localization_key = KYO_cws_gui_fairies_player_favor_seija
+	}
+	text = {
+		localization_key = KYO_cws_favor_unknown
+	}
+}
+
+defined_text = {
+	name = KYO_cws_fairies_situation_view
+	text = {
+		trigger = { has_country_flag = KYO_cws_fairies_owner_yakumo }
+		localization_key = KYO_cws_view_fairies_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_fairies_owner_remilia }
+		localization_key = KYO_cws_view_fairies_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_fairies_owner_hijiri }
+		localization_key = KYO_cws_view_fairies_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_fairies_owner_seija }
+		localization_key = KYO_cws_view_fairies_seija
+	}
+	text = {
+		localization_key = KYO_cws_view_fairies_neutral
+	}
+}
+
+defined_text = {
+	name = KYO_cws_tsukumogami_owner_status
+	text = {
+		trigger = { has_country_flag = KYO_cws_tsukumogami_owner_yakumo }
+		localization_key = KYO_cws_owner_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_tsukumogami_owner_remilia }
+		localization_key = KYO_cws_owner_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_tsukumogami_owner_hijiri }
+		localization_key = KYO_cws_owner_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_tsukumogami_owner_seija }
+		localization_key = KYO_cws_owner_seija
+	}
+	text = {
+		localization_key = KYO_cws_owner_neutral
+	}
+}
+
+defined_text = {
+	name = KYO_cws_tsukumogami_other_support_status
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_yakumo }
+		localization_key = KYO_cws_gui_tsukumogami_other_support_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_remilia }
+		localization_key = KYO_cws_gui_tsukumogami_other_support_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_hijiri }
+		localization_key = KYO_cws_gui_tsukumogami_other_support_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_seija }
+		localization_key = KYO_cws_gui_tsukumogami_other_support_seija
+	}
+	text = {
+		localization_key = KYO_cws_gui_tsukumogami_other_support_all
+	}
+}
+
+defined_text = {
+	name = KYO_cws_tsukumogami_player_favor_status
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_yakumo }
+		localization_key = KYO_cws_gui_tsukumogami_player_favor_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_remilia }
+		localization_key = KYO_cws_gui_tsukumogami_player_favor_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_hijiri }
+		localization_key = KYO_cws_gui_tsukumogami_player_favor_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_seija }
+		localization_key = KYO_cws_gui_tsukumogami_player_favor_seija
+	}
+	text = {
+		localization_key = KYO_cws_favor_unknown
+	}
+}
+
+defined_text = {
+	name = KYO_cws_tsukumogami_situation_view
+	text = {
+		trigger = { has_country_flag = KYO_cws_tsukumogami_owner_yakumo }
+		localization_key = KYO_cws_view_tsukumogami_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_tsukumogami_owner_remilia }
+		localization_key = KYO_cws_view_tsukumogami_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_tsukumogami_owner_hijiri }
+		localization_key = KYO_cws_view_tsukumogami_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_tsukumogami_owner_seija }
+		localization_key = KYO_cws_view_tsukumogami_seija
+	}
+	text = {
+		localization_key = KYO_cws_view_tsukumogami_neutral
+	}
+}
+
+defined_text = {
+	name = KYO_cws_moriya_owner_status
+	text = {
+		trigger = { has_country_flag = KYO_cws_moriya_owner_yakumo }
+		localization_key = KYO_cws_owner_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_moriya_owner_remilia }
+		localization_key = KYO_cws_owner_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_moriya_owner_hijiri }
+		localization_key = KYO_cws_owner_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_moriya_owner_seija }
+		localization_key = KYO_cws_owner_seija
+	}
+	text = {
+		localization_key = KYO_cws_owner_neutral
+	}
+}
+
+defined_text = {
+	name = KYO_cws_moriya_other_support_status
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_yakumo }
+		localization_key = KYO_cws_gui_moriya_other_support_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_remilia }
+		localization_key = KYO_cws_gui_moriya_other_support_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_hijiri }
+		localization_key = KYO_cws_gui_moriya_other_support_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_seija }
+		localization_key = KYO_cws_gui_moriya_other_support_seija
+	}
+	text = {
+		localization_key = KYO_cws_gui_moriya_other_support_all
+	}
+}
+
+defined_text = {
+	name = KYO_cws_moriya_player_favor_status
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_yakumo }
+		localization_key = KYO_cws_gui_moriya_player_favor_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_remilia }
+		localization_key = KYO_cws_gui_moriya_player_favor_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_hijiri }
+		localization_key = KYO_cws_gui_moriya_player_favor_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_seija }
+		localization_key = KYO_cws_gui_moriya_player_favor_seija
+	}
+	text = {
+		localization_key = KYO_cws_favor_unknown
+	}
+}
+
+defined_text = {
+	name = KYO_cws_moriya_situation_view
+	text = {
+		trigger = { has_country_flag = KYO_cws_moriya_owner_yakumo }
+		localization_key = KYO_cws_view_moriya_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_moriya_owner_remilia }
+		localization_key = KYO_cws_view_moriya_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_moriya_owner_hijiri }
+		localization_key = KYO_cws_view_moriya_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_moriya_owner_seija }
+		localization_key = KYO_cws_view_moriya_seija
+	}
+	text = {
+		localization_key = KYO_cws_view_moriya_neutral
+	}
+}
+
+defined_text = {
+	name = KYO_cws_senkai_owner_status
+	text = {
+		trigger = { has_country_flag = KYO_cws_senkai_owner_yakumo }
+		localization_key = KYO_cws_owner_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_senkai_owner_remilia }
+		localization_key = KYO_cws_owner_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_senkai_owner_hijiri }
+		localization_key = KYO_cws_owner_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_senkai_owner_seija }
+		localization_key = KYO_cws_owner_seija
+	}
+	text = {
+		localization_key = KYO_cws_owner_neutral
+	}
+}
+
+defined_text = {
+	name = KYO_cws_senkai_other_support_status
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_yakumo }
+		localization_key = KYO_cws_gui_senkai_other_support_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_remilia }
+		localization_key = KYO_cws_gui_senkai_other_support_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_hijiri }
+		localization_key = KYO_cws_gui_senkai_other_support_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_seija }
+		localization_key = KYO_cws_gui_senkai_other_support_seija
+	}
+	text = {
+		localization_key = KYO_cws_gui_senkai_other_support_all
+	}
+}
+
+defined_text = {
+	name = KYO_cws_senkai_player_favor_status
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_yakumo }
+		localization_key = KYO_cws_gui_senkai_player_favor_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_remilia }
+		localization_key = KYO_cws_gui_senkai_player_favor_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_hijiri }
+		localization_key = KYO_cws_gui_senkai_player_favor_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_seija }
+		localization_key = KYO_cws_gui_senkai_player_favor_seija
+	}
+	text = {
+		localization_key = KYO_cws_favor_unknown
+	}
+}
+
+defined_text = {
+	name = KYO_cws_senkai_situation_view
+	text = {
+		trigger = { has_country_flag = KYO_cws_senkai_owner_yakumo }
+		localization_key = KYO_cws_view_senkai_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_senkai_owner_remilia }
+		localization_key = KYO_cws_view_senkai_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_senkai_owner_hijiri }
+		localization_key = KYO_cws_view_senkai_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_senkai_owner_seija }
+		localization_key = KYO_cws_view_senkai_seija
+	}
+	text = {
+		localization_key = KYO_cws_view_senkai_neutral
+	}
+}
+
+defined_text = {
+	name = KYO_cws_magic_forest_owner_status
+	text = {
+		trigger = { has_country_flag = KYO_cws_magic_forest_owner_yakumo }
+		localization_key = KYO_cws_owner_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_magic_forest_owner_remilia }
+		localization_key = KYO_cws_owner_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_magic_forest_owner_hijiri }
+		localization_key = KYO_cws_owner_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_magic_forest_owner_seija }
+		localization_key = KYO_cws_owner_seija
+	}
+	text = {
+		localization_key = KYO_cws_owner_neutral
+	}
+}
+
+defined_text = {
+	name = KYO_cws_magic_forest_other_support_status
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_yakumo }
+		localization_key = KYO_cws_gui_magic_forest_other_support_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_remilia }
+		localization_key = KYO_cws_gui_magic_forest_other_support_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_hijiri }
+		localization_key = KYO_cws_gui_magic_forest_other_support_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_seija }
+		localization_key = KYO_cws_gui_magic_forest_other_support_seija
+	}
+	text = {
+		localization_key = KYO_cws_gui_magic_forest_other_support_all
+	}
+}
+
+defined_text = {
+	name = KYO_cws_magic_forest_player_favor_status
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_yakumo }
+		localization_key = KYO_cws_gui_magic_forest_player_favor_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_remilia }
+		localization_key = KYO_cws_gui_magic_forest_player_favor_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_hijiri }
+		localization_key = KYO_cws_gui_magic_forest_player_favor_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_civil_role_seija }
+		localization_key = KYO_cws_gui_magic_forest_player_favor_seija
+	}
+	text = {
+		localization_key = KYO_cws_favor_unknown
+	}
+}
+
+defined_text = {
+	name = KYO_cws_magic_forest_situation_view
+	text = {
+		trigger = { has_country_flag = KYO_cws_magic_forest_owner_yakumo }
+		localization_key = KYO_cws_view_magic_forest_yakumo
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_magic_forest_owner_remilia }
+		localization_key = KYO_cws_view_magic_forest_remilia
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_magic_forest_owner_hijiri }
+		localization_key = KYO_cws_view_magic_forest_hijiri
+	}
+	text = {
+		trigger = { has_country_flag = KYO_cws_magic_forest_owner_seija }
+		localization_key = KYO_cws_view_magic_forest_seija
+	}
+	text = {
+		localization_key = KYO_cws_view_magic_forest_neutral
+	}
+}

@@ -1,0 +1,113 @@
+# 「月之證據」天秤：左盤是讓紫生還的月都證據，右盤是以紫之死引爆內戰的壓力。
+# 左盤永遠為奇數、右盤永遠為偶數；所有正常增量皆為 2 或 4，因此兩盤不可能相等。
+
+KYO_initialize_lunar_scale = {
+	if = {
+		limit = { NOT = { has_country_flag = KYO_lunar_scale_active } }
+
+		set_country_flag = KYO_lunar_scale_active
+		clr_country_flag = KYO_lunar_scale_resolved
+		clr_country_flag = KYO_lunar_scale_left_outcome
+		clr_country_flag = KYO_lunar_scale_right_outcome
+		clr_country_flag = KYO_yukari_false_coordinate_ready
+		clr_country_flag = yukari_will_not_survive
+		set_variable = { KYO_lunar_right_weight = 12 }
+		set_variable = { KYO_lunar_scale_change_count = 0 }
+
+		# 將第一場戰爭留下的 1~5 點 lunar_evidence 換成 3~11 的奇數左盤重量。
+		if = {
+			limit = { check_variable = { KYO_lunar_evidence > 4 } }
+			set_variable = { KYO_lunar_left_weight = 1 }
+			set_variable = { KYO_lunar_scale_score = -11 }
+		}
+		else = {
+			set_variable = { KYO_lunar_left_weight = 1 }
+			set_variable = { KYO_lunar_scale_score = -11 }
+		}
+	}
+}
+
+KYO_lunar_scale_add_left_1 = {
+	custom_effect_tooltip = KYO_lunar_scale_add_left_1_tt
+	add_to_variable = { KYO_lunar_left_weight = 2 }
+	add_to_variable = { KYO_lunar_scale_score = 2 }
+	add_to_variable = { KYO_lunar_scale_change_count = 1 }
+}
+
+KYO_lunar_scale_add_left_2 = {
+	custom_effect_tooltip = KYO_lunar_scale_add_left_2_tt
+	add_to_variable = { KYO_lunar_left_weight = 4 }
+	add_to_variable = { KYO_lunar_scale_score = 4 }
+	add_to_variable = { KYO_lunar_scale_change_count = 1 }
+}
+
+KYO_lunar_scale_add_right_1 = {
+	custom_effect_tooltip = KYO_lunar_scale_add_right_1_tt
+	add_to_variable = { KYO_lunar_right_weight = 2 }
+	subtract_from_variable = { KYO_lunar_scale_score = 2 }
+	add_to_variable = { KYO_lunar_scale_change_count = 1 }
+}
+
+KYO_lunar_scale_add_right_2 = {
+	custom_effect_tooltip = KYO_lunar_scale_add_right_2_tt
+	add_to_variable = { KYO_lunar_right_weight = 4 }
+	subtract_from_variable = { KYO_lunar_scale_score = 4 }
+	add_to_variable = { KYO_lunar_scale_change_count = 1 }
+}
+
+KYO_finalize_lunar_scale = {
+	set_country_flag = KYO_lunar_scale_resolved
+	set_country_flag = KYO_lunar_scale_left_outcome
+	clr_country_flag = KYO_lunar_scale_right_outcome
+	if = {
+			limit = { check_variable = { KYO_lunar_left_weigh > KYO_lunar_right_weight } }
+			set_country_flag = KYO_yukari_false_coordinate_ready
+		}
+	
+	clr_country_flag = yukari_will_not_survive
+}
+
+KYO_add_civil_war_seija_power ={
+
+	custom_effect_tooltip = KYO_add_civil_war_seija_power_tt
+	add_to_variable = { KYO_civil_war_seija_power_var = 1 }
+
+}
+
+KYO_add_civil_war_remilia_power ={
+
+	custom_effect_tooltip = KYO_add_civil_war_remilia_power_tt
+	add_to_variable = { KYO_civil_war_remilia_power_var = 1 }
+
+}
+
+KYO_add_civil_war_hijiri_power ={
+
+	custom_effect_tooltip = KYO_add_civil_war_hijiri_power_tt
+	add_to_variable = { KYO_civil_war_hijiri_power_var = 1 }
+
+}
+
+
+
+
+
+# Debug 專用：把結果推到最接近中央的左傾狀態，仍維持奇偶不變式。
+KYO_debug_force_lunar_scale_left = {
+	set_variable = { KYO_lunar_left_weight = var:KYO_lunar_right_weight }
+	add_to_variable = { KYO_lunar_left_weight = 1 }
+	set_variable = { KYO_lunar_scale_score = 1 }
+	clr_country_flag = KYO_lunar_scale_resolved
+	clr_country_flag = KYO_lunar_scale_left_outcome
+	clr_country_flag = KYO_lunar_scale_right_outcome
+}
+
+# Debug 專用：把結果推到最接近中央的右傾狀態，仍維持奇偶不變式。
+KYO_debug_force_lunar_scale_right = {
+	set_variable = { KYO_lunar_right_weight = var:KYO_lunar_left_weight }
+	add_to_variable = { KYO_lunar_right_weight = 1 }
+	set_variable = { KYO_lunar_scale_score = -1 }
+	clr_country_flag = KYO_lunar_scale_resolved
+	clr_country_flag = KYO_lunar_scale_left_outcome
+	clr_country_flag = KYO_lunar_scale_right_outcome
+}

@@ -1,0 +1,339 @@
+ideas = {
+    
+    country = {
+
+        FOR_exile_administration = {
+            picture = generic_political_reform
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.15
+                political_power_factor = -0.1
+            }
+        }
+
+        FOR_emperor_in_exile = {
+            picture = generic_national_unity
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.05
+                war_support_factor = 0.1
+            }
+        }
+
+        FOR_emperor_hardened = {
+            picture = generic_national_unity
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.1
+                war_support_factor = 0.15
+                political_power_gain = 0.10
+            }
+        }
+
+        FOR_government_in_exile = {
+            picture = generic_democratic_reformer
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.03
+                war_support_factor = 0.03
+                political_power_gain = 0.10
+            }
+        }
+
+        FOR_japanese_diaspora_support = {
+            picture = generic_manpower
+            allowed = { always = yes }
+            modifier = {
+                weekly_manpower = 1200
+                war_support_factor = 0.02
+            }
+        }
+
+        FOR_taiwanese_tensions = {
+            picture = generic_propaganda
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = -0.04
+                consumer_goods_factor = 0.02
+            }
+        }
+
+        FOR_land_compromise = {
+            picture = generic_land_reform
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.05
+                consumer_goods_factor = 0.02
+            }
+        }
+
+        FOR_martial_law = {
+            picture = generic_political_purge
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.02
+                war_support_factor = 0.02
+                drift_defence_factor = 0.10
+                resistance_damage_to_garrison_on_our_occupied_states = -0.10
+            }
+        }
+
+        FOR_advisory_council = {
+            picture = generic_political_reform
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.03
+                political_power_gain = 0.05
+            }
+        }
+
+        FOR_special_security_bureau = {
+            picture = generic_intelligence
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.01
+                drift_defence_factor = 0.15
+            }
+        }
+
+        FOR_reconstructed_bureaucracy = {
+            picture = generic_bureaucracy
+            allowed = { always = yes }
+            modifier = {
+                political_power_gain = 0.15
+                stability_factor = 0.03
+            }
+        }
+
+        FOR_meiji_spirit_revived = {
+            picture = generic_national_unity
+            allowed = { always = yes }
+            modifier = {
+                war_support_factor = 0.06
+                stability_factor = 0.02
+            }
+        }
+
+        FOR_unity_in_exile = {
+            picture = generic_national_unity
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.07
+                war_support_factor = 0.05
+            }
+        }
+
+        # ---------
+        # Industry / Research
+        # ---------
+        FOR_logistics_modernization = {
+            picture = generic_infrastructure
+            allowed = { always = yes }
+            modifier = {
+                supply_node_range = 0.10
+                supply_consumption_factor = -0.02
+            }
+        }
+
+        FOR_wartime_industry_board = {
+            picture = generic_production
+            allowed = { always = yes }
+            modifier = {
+                production_speed_arms_factory_factor = 0.08
+                production_speed_industrial_complex_factor = 0.08
+            }
+        }
+
+        FOR_munitions_drive = {
+            picture = generic_military
+            allowed = { always = yes }
+            modifier = {
+                production_efficiency_gain_factor = 0.05
+                consumer_goods_factor = -0.01
+            }
+        }
+
+        FOR_aviation_industry = {
+            picture = generic_air
+            allowed = { always = yes }
+            modifier = {
+                air_production_factory_efficiency_gain_factor = 0.10
+            }
+        }
+
+        FOR_research_directorate = {
+            picture = generic_scientific_exchange
+            allowed = { always = yes }
+            modifier = {
+                research_speed_factor = 0.03
+            }
+        }
+
+        FOR_nuclear_project = {
+            picture = generic_nuclear
+            allowed = { always = yes }
+            modifier = {
+                research_speed_factor = 0.02
+            }
+        }
+
+        # ---------
+        # Military
+        # ---------
+        FOR_exiled_general_staff = {
+            picture = generic_army
+            allowed = { always = yes }
+            modifier = {
+                army_org_factor = 0.05
+                army_experience_gain = 0.10
+            }
+        }
+
+        FOR_island_garrison = {
+            picture = generic_suppression
+            allowed = { always = yes }
+            modifier = {
+                suppression_bonus = 0.15
+                resistance_target = -0.05
+            }
+        }
+
+        FOR_mechanized_rearmament = {
+            picture = generic_army_motorized
+            allowed = { always = yes }
+            modifier = {
+                army_speed_factor = 0.03
+                army_attack_factor = 0.03
+            }
+        }
+
+        FOR_amphibious_preparations = {
+            picture = generic_marines
+            allowed = { always = yes }
+            modifier = {
+                naval_invasion_preparation_speed = 0.10
+            }
+        }
+
+        FOR_shipyard_mobilization = {
+            picture = generic_naval
+            allowed = { always = yes }
+            modifier = {
+
+                industrial_capacity_dockyard = 0.10              
+                production_speed_dockyard_factor = 0.10
+                
+            }
+        }
+
+        FOR_carrier_revival = {
+            picture = generic_carrier
+            allowed = { always = yes }
+            modifier = {
+                naval_experience_gain = 0.10
+                carrier_organization_factor = 0.10
+            }
+        }
+
+        FOR_convoy_war = {
+            picture = generic_convoy
+            allowed = { always = yes }
+            modifier = {
+                convoy_escort_efficiency = 0.10
+            }
+        }
+
+        FOR_fleet_training = {
+            picture = generic_navy
+            allowed = { always = yes }
+            modifier = {
+                naval_experience_gain = 0.15
+            }
+        }
+
+        FOR_capital_ship_focus = {
+            picture = generic_battleship
+            allowed = { always = yes }
+            modifier = {
+                naval_organization_factor = 0.05
+            }
+        }
+
+        FOR_exile_air_wings = {
+            picture = generic_air
+            allowed = { always = yes }
+            modifier = {
+                air_experience_gain = 0.10
+                air_attack_factor = 0.05
+            }
+        }
+
+        FOR_pilot_training = {
+            picture = generic_air
+            allowed = { always = yes }
+            modifier = {
+                air_training_xp_gain_factor = 0.15
+            }
+        }
+
+        FOR_naval_strike_focus = {
+            picture = generic_air_naval
+            allowed = { always = yes }
+            modifier = {
+                naval_strike_attack_factor = 0.05
+            }
+        }
+
+        FOR_radar_network = {
+            picture = generic_radar
+            allowed = { always = yes }
+            modifier = {
+                air_detection = 0.05
+                navy_detection = 0.05
+            }
+        }
+
+        # ---------
+        # Reconquest / Victory
+        # ---------
+        FOR_homecoming_plan = {
+            picture = generic_prepare_for_war
+            allowed = { always = yes }
+            modifier = {
+                war_support_factor = 0.05
+                planning_speed = 0.05
+            }
+        }
+
+        FOR_victory_over_youkai = {
+            picture = generic_victory
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.10
+                war_support_factor = 0.10
+                political_power_gain = 0.20
+            }
+        }
+
+        FOR_restored_capital = {
+            picture = generic_construct_civilian
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.05
+                political_power_gain = 0.05
+            }
+        }
+
+        FOR_showa_restoration = {
+            picture = generic_political_reform
+            allowed = { always = yes }
+            modifier = {
+                stability_factor = 0.05
+                war_support_factor = 0.03
+                political_power_gain = 0.10
+            }
+        }
+    }
+
+    
+}

@@ -1,0 +1,145 @@
+# 八雲紫路線：結界危機與百妖協議的長期生命週期。
+
+KYO_clear_barrier_system_ideas = {
+	remove_ideas = {
+		KYO_fading_stage_1 KYO_fading_stage_2 KYO_fading_stage_3 KYO_fading_stage_4
+		KYO_barrier_hakurei_stage_1 KYO_barrier_hakurei_stage_2 KYO_barrier_hakurei_stage_3 KYO_barrier_hakurei_stage_4
+		KYO_barrier_mountain_stage_1 KYO_barrier_mountain_stage_2 KYO_barrier_mountain_stage_3 KYO_barrier_mountain_stage_4
+		KYO_barrier_bamboo_stage_1 KYO_barrier_bamboo_stage_2 KYO_barrier_bamboo_stage_3 KYO_barrier_bamboo_stage_4
+		KYO_barrier_forest_stage_1 KYO_barrier_forest_stage_2 KYO_barrier_forest_stage_3 KYO_barrier_forest_stage_4
+		KYO_barrier_old_capital_stage_1 KYO_barrier_old_capital_stage_2 KYO_barrier_old_capital_stage_3 KYO_barrier_old_capital_stage_4
+		KYO_barrier_human_village_stage_1 KYO_barrier_human_village_stage_2 KYO_barrier_human_village_stage_3 KYO_barrier_human_village_stage_4
+		KYO_barrier_scarlet_lake_stage_1 KYO_barrier_scarlet_lake_stage_2 KYO_barrier_scarlet_lake_stage_3 KYO_barrier_scarlet_lake_stage_4
+		KYO_barrier_sunflower_stage_1 KYO_barrier_sunflower_stage_2 KYO_barrier_sunflower_stage_3 KYO_barrier_sunflower_stage_4
+		KYO_barrier_higan_stage_1 KYO_barrier_higan_stage_2 KYO_barrier_higan_stage_3 KYO_barrier_higan_stage_4
+		KYO_barrier_netherworld_stage_1 KYO_barrier_netherworld_stage_2 KYO_barrier_netherworld_stage_3 KYO_barrier_netherworld_stage_4
+		KYO_barrier_evacuation_program KYO_barrier_grassroots_maintenance_idea
+		KYO_barrier_hakurei_ritual_restriction_idea KYO_barrier_mountain_press_suspension_idea
+		KYO_barrier_bamboo_path_seal_idea KYO_barrier_forest_experiment_moratorium_idea
+		KYO_barrier_old_capital_output_curtailment_idea KYO_barrier_human_village_school_closure_idea
+		KYO_barrier_scarlet_lake_fog_lockdown_idea KYO_barrier_sunflower_field_closure_idea
+		KYO_barrier_higan_ferry_restriction_idea KYO_barrier_netherworld_crossing_restriction_idea
+	}
+}
+
+KYO_clear_hyakki_system_ideas = {
+	remove_ideas = {
+		KYO_military_committee_fulfillment_0 KYO_military_committee_fulfillment_1 KYO_military_committee_fulfillment_2 KYO_military_committee_fulfillment_3
+		KYO_faith_committee_fulfillment_0 KYO_faith_committee_fulfillment_1 KYO_faith_committee_fulfillment_2 KYO_faith_committee_fulfillment_3
+		KYO_mobilization_committee_fulfillment_0 KYO_mobilization_committee_fulfillment_1 KYO_mobilization_committee_fulfillment_2 KYO_mobilization_committee_fulfillment_3
+		KYO_war_leader_remilia_idea KYO_war_leader_yuyuko_idea KYO_war_leader_suika_idea KYO_war_leader_yuuka_idea
+		KYO_order_leader_byakuren_idea KYO_order_leader_kanako_idea KYO_order_leader_satori_idea KYO_order_leader_megumu_idea
+		KYO_network_leader_sekibanki_idea KYO_network_leader_eirin_idea KYO_network_leader_raiko_idea KYO_network_leader_eiki_idea
+		KYO_support_war_remilia KYO_support_war_yuyuko KYO_support_war_suika KYO_support_war_yuuka
+		KYO_support_order_byakuren KYO_support_order_kanako KYO_support_order_satori KYO_support_order_megumu
+		KYO_support_network_sekibanki KYO_support_network_eirin KYO_support_network_raiko KYO_support_network_eiki
+		KYO_quarterly_candidate_mandate_success_idea
+	}
+}
+
+KYO_stop_barrier_missions = {
+	remove_mission = KYO_barrier_deterioration_cycle
+	remove_mission = KYO_barrier_postwar_deterioration_cycle
+	remove_mission = KYO_barrier_timeout_crisis
+	clr_country_flag = KYO_barrier_crisis_active
+	clr_country_flag = KYO_barrier_postwar_active
+	clr_country_flag = KYO_barrier_timeout_crisis_active
+}
+
+KYO_complete_barrier_reconstruction = {
+	KYO_stop_barrier_missions = yes
+	KYO_clear_barrier_system_ideas = yes
+	set_country_flag = KYO_barrier_reconstruction_completed
+	add_ideas = KYO_restored_great_barrier
+}
+
+KYO_check_barrier_rebuild_completion = {
+	if = {
+		limit = {
+			has_completed_focus = KYO_gensokyo_rebuild_plan
+			KYO_all_barrier_nodes_restored = yes
+			NOT = { has_country_flag = KYO_barrier_reconstruction_completed }
+			NOT = { has_country_flag = KYO_hyakki_system_disabled }
+		}
+		KYO_complete_barrier_reconstruction = yes
+	}
+}
+
+KYO_disable_barrier_and_hyakki_systems = {
+	set_country_flag = KYO_hyakki_system_disabled
+	KYO_stop_barrier_missions = yes
+	remove_mission = KYO_hyakki_leadership_cycle
+	remove_mission = KYO_executive_pair_cycle
+	remove_mission = KYO_quarterly_candidate_mandate_remilia
+	remove_mission = KYO_quarterly_candidate_mandate_yuyuko
+	remove_mission = KYO_quarterly_candidate_mandate_suika
+	remove_mission = KYO_quarterly_candidate_mandate_yuuka
+	remove_mission = KYO_quarterly_candidate_mandate_byakuren
+	remove_mission = KYO_quarterly_candidate_mandate_kanako
+	remove_mission = KYO_quarterly_candidate_mandate_satori
+	remove_mission = KYO_quarterly_candidate_mandate_megumu
+	remove_mission = KYO_quarterly_candidate_mandate_sekibanki
+	remove_mission = KYO_quarterly_candidate_mandate_eirin
+	remove_mission = KYO_quarterly_candidate_mandate_raiko
+	remove_mission = KYO_quarterly_candidate_mandate_eiki
+	clr_country_flag = KYO_hyakki_coalition_initialized
+	KYO_clear_executive_pair = yes
+	KYO_clear_barrier_system_ideas = yes
+	KYO_clear_hyakki_system_ideas = yes
+	remove_ideas = KYO_restored_great_barrier
+
+	clr_country_flag = KYO_war_leader_remilia
+	clr_country_flag = KYO_war_leader_yuyuko
+	clr_country_flag = KYO_war_leader_suika
+	clr_country_flag = KYO_war_leader_yuuka
+	clr_country_flag = KYO_order_leader_byakuren
+	clr_country_flag = KYO_order_leader_kanako
+	clr_country_flag = KYO_order_leader_satori
+	clr_country_flag = KYO_order_leader_megumu
+	clr_country_flag = KYO_network_leader_sekibanki
+	clr_country_flag = KYO_network_leader_eirin
+	clr_country_flag = KYO_network_leader_raiko
+	clr_country_flag = KYO_network_leader_eiki
+
+	clr_country_flag = KYO_quarterly_candidate_target_remilia
+	clr_country_flag = KYO_quarterly_candidate_target_yuyuko
+	clr_country_flag = KYO_quarterly_candidate_target_suika
+	clr_country_flag = KYO_quarterly_candidate_target_yuuka
+	clr_country_flag = KYO_quarterly_candidate_target_byakuren
+	clr_country_flag = KYO_quarterly_candidate_target_kanako
+	clr_country_flag = KYO_quarterly_candidate_target_satori
+	clr_country_flag = KYO_quarterly_candidate_target_megumu
+	clr_country_flag = KYO_quarterly_candidate_target_sekibanki
+	clr_country_flag = KYO_quarterly_candidate_target_eirin
+	clr_country_flag = KYO_quarterly_candidate_target_raiko
+	clr_country_flag = KYO_quarterly_candidate_target_eiki
+
+	clear_variable = KYO_barrier_hakurei
+	clear_variable = KYO_barrier_mountain
+	clear_variable = KYO_barrier_bamboo
+	clear_variable = KYO_barrier_forest
+	clear_variable = KYO_barrier_old_capital
+	clear_variable = KYO_barrier_human_village
+	clear_variable = KYO_barrier_scarlet_lake
+	clear_variable = KYO_barrier_sunflower
+	clear_variable = KYO_barrier_higan
+	clear_variable = KYO_barrier_netherworld
+	clear_variable = KYO_barrier_severe_nodes
+	clear_variable = KYO_fading_stage
+	clear_variable = KYO_fulfillment_military_committee
+	clear_variable = KYO_fulfillment_faith_committee
+	clear_variable = KYO_fulfillment_mobilization_committee
+	clear_variable = KYO_hyakki_selected_candidate
+	clear_variable = KYO_influence_remilia
+	clear_variable = KYO_influence_yuyuko
+	clear_variable = KYO_influence_suika
+	clear_variable = KYO_influence_yuuka
+	clear_variable = KYO_influence_byakuren
+	clear_variable = KYO_influence_kanako
+	clear_variable = KYO_influence_satori
+	clear_variable = KYO_influence_megumu
+	clear_variable = KYO_influence_sekibanki
+	clear_variable = KYO_influence_eirin
+	clear_variable = KYO_influence_raiko
+	clear_variable = KYO_influence_eiki
+}

@@ -1,0 +1,26 @@
+### KYO - Tsukumogami armour for the tank designer
+### A special-slot module: stronger and more reliable, but expensive and fuel-hungry.
+
+equipment_modules = {
+	KYO_tsukumogami_armor_module = {
+		abbreviation = "TSK"
+		category = tank_special_module
+		sfx = sfx_ui_sd_module_turret
+		gfx = GFX_EMI_tank_module_easy_maintenance_access
+
+		add_stats = {
+			reliability = 0.15
+		}
+
+		multiply_stats = {
+			armor_value = 0.10
+			defense = 0.15
+			breakthrough = 0.12
+			maximum_speed = 0.05
+			build_cost_ic = 0.20
+			fuel_consumption = 0.10
+		}
+
+		xp_cost = 5
+	}
+}

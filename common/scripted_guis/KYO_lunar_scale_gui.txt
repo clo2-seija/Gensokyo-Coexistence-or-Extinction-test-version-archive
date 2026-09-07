@@ -1,0 +1,54 @@
+scripted_gui = {
+	KYO_lunar_scale_decision_ui = {
+		context_type = decision_category
+		window_name = "KYO_lunar_scale_ui_window"
+
+		triggers = {
+			kyo_lunar_scale_left_3_visible = {
+				check_variable = { KYO_lunar_scale_score > 4 }
+			}
+			kyo_lunar_scale_left_2_visible = {
+				check_variable = { KYO_lunar_scale_score > 2 }
+				check_variable = { KYO_lunar_scale_score < 5 }
+			}
+			kyo_lunar_scale_left_1_visible = {
+				check_variable = { KYO_lunar_scale_score > 0 }
+				check_variable = { KYO_lunar_scale_score < 3 }
+			}
+			kyo_lunar_scale_right_1_visible = {
+				check_variable = { KYO_lunar_scale_score < 0 }
+				check_variable = { KYO_lunar_scale_score > -3 }
+			}
+			kyo_lunar_scale_right_2_visible = {
+				check_variable = { KYO_lunar_scale_score < -2 }
+				check_variable = { KYO_lunar_scale_score > -5 }
+			}
+			kyo_lunar_scale_right_3_visible = {
+				check_variable = { KYO_lunar_scale_score < -4 }
+			}
+
+			kyo_lunar_state_left_3_visible = {
+				check_variable = { KYO_lunar_scale_score > 4 }
+			}
+			kyo_lunar_state_left_2_visible = {
+				check_variable = { KYO_lunar_scale_score > 2 }
+				check_variable = { KYO_lunar_scale_score < 5 }
+			}
+			kyo_lunar_state_left_1_visible = {
+				check_variable = { KYO_lunar_scale_score > 0 }
+				check_variable = { KYO_lunar_scale_score < 3 }
+			}
+			kyo_lunar_state_right_1_visible = {
+				check_variable = { KYO_lunar_scale_score < 0 }
+				check_variable = { KYO_lunar_scale_score > -3 }
+			}
+			kyo_lunar_state_right_2_visible = {
+				check_variable = { KYO_lunar_scale_score < -2 }
+				check_variable = { KYO_lunar_scale_score > -5 }
+			}
+			kyo_lunar_state_right_3_visible = {
+				check_variable = { KYO_lunar_scale_score < -4 }
+			}
+		}
+	}
+}

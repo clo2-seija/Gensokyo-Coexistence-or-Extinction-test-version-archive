@@ -1,0 +1,265 @@
+### KYO - Youkai support companies
+### These use vanilla equipment archetypes and therefore need no new production line.
+
+sub_units = {
+	KYO_kappa_engineer_maintenance_company = {
+		abbreviation = "KAP"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 1040
+		ai_priority = 150
+		active = no
+		affects_speed = no
+
+		type = { infantry support }
+		group = support
+		categories = {
+			category_support_battalions
+			category_divisional_support_battalions
+			category_army
+		}
+		regimental = no
+		combat_width = 0
+
+		max_strength = 3
+		max_organisation = 20
+		default_morale = 0.30
+		manpower = 500
+		training_time = 160
+		weight = 0.20
+		supply_consumption = 0.050
+		can_be_parachuted = yes
+
+		entrenchment = 5
+		defense = 0.10
+		breakthrough = 0.50
+		soft_attack = -0.50
+		reliability_factor = 0.10
+		equipment_capture_factor = 0.05
+		own_equipment_fuel_consumption_mult = 0.0
+
+		essential = {
+			infantry_equipment
+			support_equipment
+			motorized_equipment
+		}
+		need = {
+			infantry_equipment = 10
+			support_equipment = 60
+			motorized_equipment = 20
+		}
+
+		forest = {
+			defence = 0.25
+			movement = 0.05
+		}
+		hills = { defence = 0.10 }
+		jungle = { defence = 0.25 }
+		marsh = {
+			defence = 0.25
+			movement = 0.20
+		}
+		fort = {
+			attack = 0.15
+			defence = 0.25
+		}
+		river = {
+			attack = 0.10
+			defence = 0.25
+			movement = 0.25
+		}
+		amphibious = { attack = 0.25 }
+
+		same_support_type = engineer
+	}
+
+	KYO_oni_overseer_company = {
+		abbreviation = "ONI"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 1041
+		ai_priority = 130
+		active = no
+		affects_speed = no
+
+		type = { infantry support }
+		group = support
+		categories = {
+			category_support_battalions
+			category_divisional_support_battalions
+			category_army
+		}
+		regimental = no
+		combat_width = 0
+
+		max_strength = 1
+		max_organisation = 0
+		default_morale = 0.30
+		manpower = 500
+		training_time = 180
+		weight = 0.10
+		supply_consumption = 0.020
+		can_be_parachuted = yes
+
+		suppression_factor = 0.50
+
+		essential = {
+			infantry_equipment
+			support_equipment
+		}
+		need = {
+			infantry_equipment = 40
+			support_equipment = 10
+		}
+
+		same_support_type = military_police
+	}
+
+	KYO_rabbit_medical_company = {
+		abbreviation = "RBT"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 1042
+		ai_priority = 160
+		active = no
+		affects_speed = no
+
+		type = { infantry support }
+		group = support
+		categories = {
+			category_support_battalions
+			category_divisional_support_battalions
+			category_army
+		}
+		regimental = no
+		combat_width = 0
+
+		max_strength = 8
+		max_organisation = 20
+		default_morale = 0.35
+		manpower = 500
+		training_time = 150
+		weight = 0.20
+		supply_consumption = 0.070
+		can_be_parachuted = yes
+
+		casualty_trickleback = 0.35
+		experience_loss_factor = -0.25
+		own_equipment_fuel_consumption_mult = 0.0
+
+		essential = {
+			support_equipment
+			motorized_equipment
+		}
+		need = {
+			support_equipment = 30
+			motorized_equipment = 20
+		}
+
+		same_support_type = field_hospital
+	}
+
+	KYO_crow_tengu_recon_company = {
+		abbreviation = "CRW"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 1043
+		ai_priority = 170
+		active = no
+		affects_speed = no
+
+		type = { infantry support }
+		group = support
+		categories = {
+			category_support_battalions
+			category_divisional_support_battalions
+			category_army
+		}
+		regimental = no
+		combat_width = 0
+
+		max_strength = 2
+		max_organisation = 20
+		default_morale = 0.30
+		manpower = 500
+		training_time = 180
+		weight = 0.15
+		supply_consumption = 0.045
+		can_be_parachuted = yes
+
+		recon = 3.0
+		initiative = 0.30
+		defense = -0.10
+		breakthrough = -0.40
+		soft_attack = -0.80
+		hard_attack = -0.80
+		own_equipment_fuel_consumption_mult = 0.0
+
+		essential = {
+			infantry_equipment
+			support_equipment
+			motorized_equipment
+		}
+		transport = motorized_equipment
+		need = {
+			infantry_equipment = 40
+			support_equipment = 35
+			motorized_equipment = 30
+		}
+
+		forest = { movement = 0.10 }
+		hills = { movement = 0.15 }
+		mountain = { movement = 0.15 }
+		jungle = { movement = 0.10 }
+		marsh = { movement = 0.10 }
+		plains = { movement = 0.15 }
+		desert = { movement = 0.20 }
+		river = { movement = 0.10 }
+
+		same_support_type = recon
+	}
+
+	KYO_youkai_fox_logistics_company = {
+		abbreviation = "FOX"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 1044
+		ai_priority = 170
+		active = no
+		affects_speed = no
+
+		type = { infantry support }
+		group = support
+		categories = {
+			category_support_battalions
+			category_divisional_support_battalions
+			category_army
+		}
+		regimental = no
+		combat_width = 0
+
+		max_strength = 1
+		max_organisation = 10
+		default_morale = 0.30
+		manpower = 500
+		training_time = 120
+		weight = 0.10
+		supply_consumption = 0.020
+		can_be_parachuted = yes
+
+		supply_consumption_factor = -0.10
+		fuel_consumption_factor = -0.05
+		own_equipment_fuel_consumption_mult = 0.0
+
+		essential = {
+			support_equipment
+			motorized_equipment
+		}
+		need = {
+			support_equipment = 20
+			motorized_equipment = 10
+		}
+
+		same_support_type = logistics_company
+	}
+}

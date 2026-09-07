@@ -1,0 +1,918 @@
+scripted_gui = {
+	KYO_barrier_crisis_decision_ui = {
+		context_type = decision_category
+		window_name = "KYO_barrier_crisis_decision_ui_window"
+
+		effects = {
+			KYO_barrier_node_hakurei_click = {
+				set_variable = {
+					KYO_barrier_selected_node = 1
+				}
+				add_to_variable = {
+					KYO_barrier_gui_dirty = 1
+				}
+			}
+			KYO_barrier_node_mountain_click = {
+				set_variable = {
+					KYO_barrier_selected_node = 2
+				}
+				add_to_variable = {
+					KYO_barrier_gui_dirty = 1
+				}
+			}
+			KYO_barrier_node_bamboo_click = {
+				set_variable = {
+					KYO_barrier_selected_node = 3
+				}
+				add_to_variable = {
+					KYO_barrier_gui_dirty = 1
+				}
+			}
+			KYO_barrier_node_forest_click = {
+				set_variable = {
+					KYO_barrier_selected_node = 4
+				}
+				add_to_variable = {
+					KYO_barrier_gui_dirty = 1
+				}
+			}
+			KYO_barrier_node_old_capital_click = {
+				set_variable = {
+					KYO_barrier_selected_node = 5
+				}
+				add_to_variable = {
+					KYO_barrier_gui_dirty = 1
+				}
+			}
+			KYO_barrier_node_human_village_click = {
+				set_variable = {
+					KYO_barrier_selected_node = 6
+				}
+				add_to_variable = {
+					KYO_barrier_gui_dirty = 1
+				}
+			}
+			KYO_barrier_node_scarlet_lake_click = {
+				set_variable = {
+					KYO_barrier_selected_node = 7
+				}
+				add_to_variable = {
+					KYO_barrier_gui_dirty = 1
+				}
+			}
+			KYO_barrier_node_sunflower_click = {
+				set_variable = {
+					KYO_barrier_selected_node = 8
+				}
+				add_to_variable = {
+					KYO_barrier_gui_dirty = 1
+				}
+			}
+			KYO_barrier_node_higan_click = {
+				set_variable = {
+					KYO_barrier_selected_node = 9
+				}
+				add_to_variable = {
+					KYO_barrier_gui_dirty = 1
+				}
+			}
+			KYO_barrier_node_netherworld_click = {
+				set_variable = {
+					KYO_barrier_selected_node = 10
+				}
+				add_to_variable = {
+					KYO_barrier_gui_dirty = 1
+				}
+			}
+		}
+
+		triggers = {
+			KYO_barrier_node_hakurei_click_enabled = {
+				OR = {
+	
+					has_country_flag = KYO_barrier_crisis_active
+					
+					has_country_flag = KYO_barrier_postwar_active
+				}
+				
+				
+			}
+			KYO_barrier_node_hakurei_selected_visible = {
+				check_variable = {
+					KYO_barrier_selected_node = 1
+				}
+			}
+			KYO_barrier_node_hakurei_normal_visible = {
+				check_variable = {
+					KYO_barrier_hakurei < 1
+				}
+			}
+			KYO_barrier_node_hakurei_glitch_visible = {
+				check_variable = {
+					KYO_barrier_hakurei > 0
+				}
+				check_variable = {
+					KYO_barrier_hakurei < 3
+				}
+			}
+			KYO_barrier_node_hakurei_shattered_visible = {
+				check_variable = {
+					KYO_barrier_hakurei > 2
+				}
+			}
+			KYO_barrier_summary_hakurei_green_visible = {
+				check_variable = {
+					KYO_barrier_hakurei < 1
+				}
+			}
+			KYO_barrier_summary_hakurei_yellow_visible = {
+				check_variable = {
+					KYO_barrier_hakurei > 0
+				}
+				check_variable = {
+					KYO_barrier_hakurei < 3
+				}
+			}
+			KYO_barrier_summary_hakurei_red_visible = {
+				check_variable = {
+					KYO_barrier_hakurei > 2
+				}
+			}
+			KYO_barrier_node_mountain_click_enabled = {
+				OR = {
+					has_country_flag = KYO_barrier_crisis_active
+					has_country_flag = KYO_barrier_postwar_active
+				}
+			}
+			KYO_barrier_node_mountain_selected_visible = {
+				check_variable = {
+					KYO_barrier_selected_node = 2
+				}
+			}
+			KYO_barrier_node_mountain_normal_visible = {
+				check_variable = {
+					KYO_barrier_mountain < 1
+				}
+			}
+			KYO_barrier_node_mountain_glitch_visible = {
+				check_variable = {
+					KYO_barrier_mountain > 0
+				}
+				check_variable = {
+					KYO_barrier_mountain < 3
+				}
+			}
+			KYO_barrier_node_mountain_shattered_visible = {
+				check_variable = {
+					KYO_barrier_mountain > 2
+				}
+			}
+			KYO_barrier_summary_mountain_green_visible = {
+				check_variable = {
+					KYO_barrier_mountain < 1
+				}
+			}
+			KYO_barrier_summary_mountain_yellow_visible = {
+				check_variable = {
+					KYO_barrier_mountain > 0
+				}
+				check_variable = {
+					KYO_barrier_mountain < 3
+				}
+			}
+			KYO_barrier_summary_mountain_red_visible = {
+				check_variable = {
+					KYO_barrier_mountain > 2
+				}
+			}
+			KYO_barrier_node_bamboo_click_enabled = {
+				OR = {
+					has_country_flag = KYO_barrier_crisis_active
+					has_country_flag = KYO_barrier_postwar_active
+				}
+			}
+			KYO_barrier_node_bamboo_selected_visible = {
+				check_variable = {
+					KYO_barrier_selected_node = 3
+				}
+			}
+			KYO_barrier_node_bamboo_normal_visible = {
+				check_variable = {
+					KYO_barrier_bamboo < 1
+				}
+			}
+			KYO_barrier_node_bamboo_glitch_visible = {
+				check_variable = {
+					KYO_barrier_bamboo > 0
+				}
+				check_variable = {
+					KYO_barrier_bamboo < 3
+				}
+			}
+			KYO_barrier_node_bamboo_shattered_visible = {
+				check_variable = {
+					KYO_barrier_bamboo > 2
+				}
+			}
+			KYO_barrier_summary_bamboo_green_visible = {
+				check_variable = {
+					KYO_barrier_bamboo < 1
+				}
+			}
+			KYO_barrier_summary_bamboo_yellow_visible = {
+				check_variable = {
+					KYO_barrier_bamboo > 0
+				}
+				check_variable = {
+					KYO_barrier_bamboo < 3
+				}
+			}
+			KYO_barrier_summary_bamboo_red_visible = {
+				check_variable = {
+					KYO_barrier_bamboo > 2
+				}
+			}
+			KYO_barrier_node_forest_click_enabled = {
+				OR = {
+					has_country_flag = KYO_barrier_crisis_active
+					has_country_flag = KYO_barrier_postwar_active
+				}
+			}
+			KYO_barrier_node_forest_selected_visible = {
+				check_variable = {
+					KYO_barrier_selected_node = 4
+				}
+			}
+			KYO_barrier_node_forest_normal_visible = {
+				check_variable = {
+					KYO_barrier_forest < 1
+				}
+			}
+			KYO_barrier_node_forest_glitch_visible = {
+				check_variable = {
+					KYO_barrier_forest > 0
+				}
+				check_variable = {
+					KYO_barrier_forest < 3
+				}
+			}
+			KYO_barrier_node_forest_shattered_visible = {
+				check_variable = {
+					KYO_barrier_forest > 2
+				}
+			}
+			KYO_barrier_summary_forest_green_visible = {
+				check_variable = {
+					KYO_barrier_forest < 1
+				}
+			}
+			KYO_barrier_summary_forest_yellow_visible = {
+				check_variable = {
+					KYO_barrier_forest > 0
+				}
+				check_variable = {
+					KYO_barrier_forest < 3
+				}
+			}
+			KYO_barrier_summary_forest_red_visible = {
+				check_variable = {
+					KYO_barrier_forest > 2
+				}
+			}
+			KYO_barrier_node_old_capital_click_enabled = {
+				OR = {
+					has_country_flag = KYO_barrier_crisis_active
+					has_country_flag = KYO_barrier_postwar_active
+				}
+			}
+			KYO_barrier_node_old_capital_selected_visible = {
+				check_variable = {
+					KYO_barrier_selected_node = 5
+				}
+			}
+			KYO_barrier_node_old_capital_normal_visible = {
+				check_variable = {
+					KYO_barrier_old_capital < 1
+				}
+			}
+			KYO_barrier_node_old_capital_glitch_visible = {
+				check_variable = {
+					KYO_barrier_old_capital > 0
+				}
+				check_variable = {
+					KYO_barrier_old_capital < 3
+				}
+			}
+			KYO_barrier_node_old_capital_shattered_visible = {
+				check_variable = {
+					KYO_barrier_old_capital > 2
+				}
+			}
+			KYO_barrier_summary_old_capital_green_visible = {
+				check_variable = {
+					KYO_barrier_old_capital < 1
+				}
+			}
+			KYO_barrier_summary_old_capital_yellow_visible = {
+				check_variable = {
+					KYO_barrier_old_capital > 0
+				}
+				check_variable = {
+					KYO_barrier_old_capital < 3
+				}
+			}
+			KYO_barrier_summary_old_capital_red_visible = {
+				check_variable = {
+					KYO_barrier_old_capital > 2
+				}
+			}
+			KYO_barrier_node_human_village_click_enabled = {
+				OR = {
+					has_country_flag = KYO_barrier_crisis_active
+					has_country_flag = KYO_barrier_postwar_active
+				}
+			}
+			KYO_barrier_node_human_village_selected_visible = {
+				check_variable = {
+					KYO_barrier_selected_node = 6
+				}
+			}
+			KYO_barrier_node_human_village_normal_visible = {
+				check_variable = {
+					KYO_barrier_human_village < 1
+				}
+			}
+			KYO_barrier_node_human_village_glitch_visible = {
+				check_variable = {
+					KYO_barrier_human_village > 0
+				}
+				check_variable = {
+					KYO_barrier_human_village < 3
+				}
+			}
+			KYO_barrier_node_human_village_shattered_visible = {
+				check_variable = {
+					KYO_barrier_human_village > 2
+				}
+			}
+			KYO_barrier_summary_human_village_green_visible = {
+				check_variable = {
+					KYO_barrier_human_village < 1
+				}
+			}
+			KYO_barrier_summary_human_village_yellow_visible = {
+				check_variable = {
+					KYO_barrier_human_village > 0
+				}
+				check_variable = {
+					KYO_barrier_human_village < 3
+				}
+			}
+			KYO_barrier_summary_human_village_red_visible = {
+				check_variable = {
+					KYO_barrier_human_village > 2
+				}
+			}
+			KYO_barrier_node_scarlet_lake_click_enabled = {
+				OR = {
+					has_country_flag = KYO_barrier_crisis_active
+					has_country_flag = KYO_barrier_postwar_active
+				}
+			}
+			KYO_barrier_node_scarlet_lake_selected_visible = {
+				check_variable = {
+					KYO_barrier_selected_node = 7
+				}
+			}
+			KYO_barrier_node_scarlet_lake_normal_visible = {
+				check_variable = {
+					KYO_barrier_scarlet_lake < 1
+				}
+			}
+			KYO_barrier_node_scarlet_lake_glitch_visible = {
+				check_variable = {
+					KYO_barrier_scarlet_lake > 0
+				}
+				check_variable = {
+					KYO_barrier_scarlet_lake < 3
+				}
+			}
+			KYO_barrier_node_scarlet_lake_shattered_visible = {
+				check_variable = {
+					KYO_barrier_scarlet_lake > 2
+				}
+			}
+			KYO_barrier_summary_scarlet_lake_green_visible = {
+				check_variable = {
+					KYO_barrier_scarlet_lake < 1
+				}
+			}
+			KYO_barrier_summary_scarlet_lake_yellow_visible = {
+				check_variable = {
+					KYO_barrier_scarlet_lake > 0
+				}
+				check_variable = {
+					KYO_barrier_scarlet_lake < 3
+				}
+			}
+			KYO_barrier_summary_scarlet_lake_red_visible = {
+				check_variable = {
+					KYO_barrier_scarlet_lake > 2
+				}
+			}
+			KYO_barrier_node_sunflower_click_enabled = {
+				OR = {
+					has_country_flag = KYO_barrier_crisis_active
+					has_country_flag = KYO_barrier_postwar_active
+				}
+			}
+			KYO_barrier_node_sunflower_selected_visible = {
+				check_variable = {
+					KYO_barrier_selected_node = 8
+				}
+			}
+			KYO_barrier_node_sunflower_normal_visible = {
+				check_variable = {
+					KYO_barrier_sunflower < 1
+				}
+			}
+			KYO_barrier_node_sunflower_glitch_visible = {
+				check_variable = {
+					KYO_barrier_sunflower > 0
+				}
+				check_variable = {
+					KYO_barrier_sunflower < 3
+				}
+			}
+			KYO_barrier_node_sunflower_shattered_visible = {
+				check_variable = {
+					KYO_barrier_sunflower > 2
+				}
+			}
+			KYO_barrier_summary_sunflower_green_visible = {
+				check_variable = {
+					KYO_barrier_sunflower < 1
+				}
+			}
+			KYO_barrier_summary_sunflower_yellow_visible = {
+				check_variable = {
+					KYO_barrier_sunflower > 0
+				}
+				check_variable = {
+					KYO_barrier_sunflower < 3
+				}
+			}
+			KYO_barrier_summary_sunflower_red_visible = {
+				check_variable = {
+					KYO_barrier_sunflower > 2
+				}
+			}
+			KYO_barrier_node_higan_click_enabled = {
+				OR = {
+					has_country_flag = KYO_barrier_crisis_active
+					has_country_flag = KYO_barrier_postwar_active
+				}
+			}
+			KYO_barrier_node_higan_selected_visible = {
+				check_variable = {
+					KYO_barrier_selected_node = 9
+				}
+			}
+			KYO_barrier_node_higan_normal_visible = {
+				check_variable = {
+					KYO_barrier_higan < 1
+				}
+			}
+			KYO_barrier_node_higan_glitch_visible = {
+				check_variable = {
+					KYO_barrier_higan > 0
+				}
+				check_variable = {
+					KYO_barrier_higan < 3
+				}
+			}
+			KYO_barrier_node_higan_shattered_visible = {
+				check_variable = {
+					KYO_barrier_higan > 2
+				}
+			}
+			KYO_barrier_summary_higan_green_visible = {
+				check_variable = {
+					KYO_barrier_higan < 1
+				}
+			}
+			KYO_barrier_summary_higan_yellow_visible = {
+				check_variable = {
+					KYO_barrier_higan > 0
+				}
+				check_variable = {
+					KYO_barrier_higan < 3
+				}
+			}
+			KYO_barrier_summary_higan_red_visible = {
+				check_variable = {
+					KYO_barrier_higan > 2
+				}
+			}
+			KYO_barrier_node_netherworld_click_enabled = {
+				OR = {
+					has_country_flag = KYO_barrier_crisis_active
+					has_country_flag = KYO_barrier_postwar_active
+				}
+			}
+			KYO_barrier_node_netherworld_selected_visible = {
+				check_variable = {
+					KYO_barrier_selected_node = 10
+				}
+			}
+			KYO_barrier_node_netherworld_normal_visible = {
+				check_variable = {
+					KYO_barrier_netherworld < 1
+				}
+			}
+			KYO_barrier_node_netherworld_glitch_visible = {
+				check_variable = {
+					KYO_barrier_netherworld > 0
+				}
+				check_variable = {
+					KYO_barrier_netherworld < 3
+				}
+			}
+			KYO_barrier_node_netherworld_shattered_visible = {
+				check_variable = {
+					KYO_barrier_netherworld > 2
+				}
+			}
+			KYO_barrier_summary_netherworld_green_visible = {
+				check_variable = {
+					KYO_barrier_netherworld < 1
+				}
+			}
+			KYO_barrier_summary_netherworld_yellow_visible = {
+				check_variable = {
+					KYO_barrier_netherworld > 0
+				}
+				check_variable = {
+					KYO_barrier_netherworld < 3
+				}
+			}
+			KYO_barrier_summary_netherworld_red_visible = {
+				check_variable = {
+					KYO_barrier_netherworld > 2
+				}
+			}
+		}
+	}
+	KYO_hyakki_coalition_decision_ui = {
+		context_type = decision_category
+		window_name = "KYO_hyakki_coalition_decision_ui_window"
+
+		effects = {
+			KYO_candidate_remilia_click = {
+				set_variable = {
+					KYO_hyakki_selected_candidate = 1
+				}
+				add_to_variable = {
+					KYO_hyakki_gui_dirty = 1
+				}
+			}
+			KYO_candidate_yuyuko_click = {
+				set_variable = {
+					KYO_hyakki_selected_candidate = 2
+				}
+				add_to_variable = {
+					KYO_hyakki_gui_dirty = 1
+				}
+			}
+			KYO_candidate_suika_click = {
+				set_variable = {
+					KYO_hyakki_selected_candidate = 3
+				}
+				add_to_variable = {
+					KYO_hyakki_gui_dirty = 1
+				}
+			}
+			KYO_candidate_yuuka_click = {
+				set_variable = {
+					KYO_hyakki_selected_candidate = 4
+				}
+				add_to_variable = {
+					KYO_hyakki_gui_dirty = 1
+				}
+			}
+			KYO_candidate_byakuren_click = {
+				set_variable = {
+					KYO_hyakki_selected_candidate = 5
+				}
+				add_to_variable = {
+					KYO_hyakki_gui_dirty = 1
+				}
+			}
+			KYO_candidate_kanako_click = {
+				set_variable = {
+					KYO_hyakki_selected_candidate = 6
+				}
+				add_to_variable = {
+					KYO_hyakki_gui_dirty = 1
+				}
+			}
+			KYO_candidate_satori_click = {
+				set_variable = {
+					KYO_hyakki_selected_candidate = 7
+				}
+				add_to_variable = {
+					KYO_hyakki_gui_dirty = 1
+				}
+			}
+			KYO_candidate_megumu_click = {
+				set_variable = {
+					KYO_hyakki_selected_candidate = 8
+				}
+				add_to_variable = {
+					KYO_hyakki_gui_dirty = 1
+				}
+			}
+			KYO_candidate_sekibanki_click = {
+				set_variable = {
+					KYO_hyakki_selected_candidate = 9
+				}
+				add_to_variable = {
+					KYO_hyakki_gui_dirty = 1
+				}
+			}
+			KYO_candidate_eirin_click = {
+				set_variable = {
+					KYO_hyakki_selected_candidate = 10
+				}
+				add_to_variable = {
+					KYO_hyakki_gui_dirty = 1
+				}
+			}
+			KYO_candidate_raiko_click = {
+				set_variable = {
+					KYO_hyakki_selected_candidate = 11
+				}
+				add_to_variable = {
+					KYO_hyakki_gui_dirty = 1
+				}
+			}
+			KYO_candidate_eiki_click = {
+				set_variable = {
+					KYO_hyakki_selected_candidate = 12
+				}
+				add_to_variable = {
+					KYO_hyakki_gui_dirty = 1
+				}
+			}
+		}
+
+		triggers = {
+			KYO_war_leader_remilia_portrait_visible = {
+				has_country_flag = KYO_war_leader_remilia
+			}
+			KYO_candidate_remilia_current_visible = {
+				has_country_flag = KYO_war_leader_remilia
+			}
+			KYO_candidate_remilia_click_enabled = {
+				has_country_flag = KYO_candidate_remilia_unlocked
+			}
+			KYO_candidate_remilia_selected_visible = {
+				check_variable = {
+					KYO_hyakki_selected_candidate = 1
+				}
+			}
+			KYO_war_leader_yuyuko_portrait_visible = {
+				has_country_flag = KYO_war_leader_yuyuko
+			}
+			KYO_candidate_yuyuko_current_visible = {
+				has_country_flag = KYO_war_leader_yuyuko
+			}
+			KYO_candidate_yuyuko_click_enabled = {
+				has_country_flag = KYO_candidate_yuyuko_unlocked
+			}
+			KYO_candidate_yuyuko_selected_visible = {
+				check_variable = {
+					KYO_hyakki_selected_candidate = 2
+				}
+			}
+			KYO_war_leader_suika_portrait_visible = {
+				has_country_flag = KYO_war_leader_suika
+			}
+			KYO_candidate_suika_current_visible = {
+				has_country_flag = KYO_war_leader_suika
+			}
+			KYO_candidate_suika_click_enabled = {
+				has_country_flag = KYO_candidate_suika_unlocked
+			}
+			KYO_candidate_suika_selected_visible = {
+				check_variable = {
+					KYO_hyakki_selected_candidate = 3
+				}
+			}
+			KYO_war_leader_yuuka_portrait_visible = {
+				has_country_flag = KYO_war_leader_yuuka
+			}
+			KYO_candidate_yuuka_current_visible = {
+				has_country_flag = KYO_war_leader_yuuka
+			}
+			KYO_candidate_yuuka_click_enabled = {
+				has_country_flag = KYO_candidate_yuuka_unlocked
+			}
+			KYO_candidate_yuuka_selected_visible = {
+				check_variable = {
+					KYO_hyakki_selected_candidate = 4
+				}
+			}
+			KYO_order_leader_byakuren_portrait_visible = {
+				has_country_flag = KYO_order_leader_byakuren
+			}
+			KYO_candidate_byakuren_current_visible = {
+				has_country_flag = KYO_order_leader_byakuren
+			}
+			KYO_candidate_byakuren_click_enabled = {
+				has_country_flag = KYO_candidate_byakuren_unlocked
+			}
+			KYO_candidate_byakuren_selected_visible = {
+				check_variable = {
+					KYO_hyakki_selected_candidate = 5
+				}
+			}
+			KYO_order_leader_kanako_portrait_visible = {
+				has_country_flag = KYO_order_leader_kanako
+			}
+			KYO_candidate_kanako_current_visible = {
+				has_country_flag = KYO_order_leader_kanako
+			}
+			KYO_candidate_kanako_click_enabled = {
+				has_country_flag = KYO_candidate_kanako_unlocked
+			}
+			KYO_candidate_kanako_selected_visible = {
+				check_variable = {
+					KYO_hyakki_selected_candidate = 6
+				}
+			}
+			KYO_order_leader_satori_portrait_visible = {
+				has_country_flag = KYO_order_leader_satori
+			}
+			KYO_candidate_satori_current_visible = {
+				has_country_flag = KYO_order_leader_satori
+			}
+			KYO_candidate_satori_click_enabled = {
+				has_country_flag = KYO_candidate_satori_unlocked
+			}
+			KYO_candidate_satori_selected_visible = {
+				check_variable = {
+					KYO_hyakki_selected_candidate = 7
+				}
+			}
+			KYO_order_leader_megumu_portrait_visible = {
+				has_country_flag = KYO_order_leader_megumu
+			}
+			KYO_candidate_megumu_current_visible = {
+				has_country_flag = KYO_order_leader_megumu
+			}
+			KYO_candidate_megumu_click_enabled = {
+				has_country_flag = KYO_candidate_megumu_unlocked
+			}
+			KYO_candidate_megumu_selected_visible = {
+				check_variable = {
+					KYO_hyakki_selected_candidate = 8
+				}
+			}
+			KYO_network_leader_sekibanki_portrait_visible = {
+				has_country_flag = KYO_network_leader_sekibanki
+			}
+			KYO_candidate_sekibanki_current_visible = {
+				has_country_flag = KYO_network_leader_sekibanki
+			}
+			KYO_candidate_sekibanki_click_enabled = {
+				has_country_flag = KYO_candidate_sekibanki_unlocked
+			}
+			KYO_candidate_sekibanki_selected_visible = {
+				check_variable = {
+					KYO_hyakki_selected_candidate = 9
+				}
+			}
+			KYO_network_leader_eirin_portrait_visible = {
+				has_country_flag = KYO_network_leader_eirin
+			}
+			KYO_candidate_eirin_current_visible = {
+				has_country_flag = KYO_network_leader_eirin
+			}
+			KYO_candidate_eirin_click_enabled = {
+				has_country_flag = KYO_candidate_eirin_unlocked
+			}
+			KYO_candidate_eirin_selected_visible = {
+				check_variable = {
+					KYO_hyakki_selected_candidate = 10
+				}
+			}
+			KYO_network_leader_raiko_portrait_visible = {
+				has_country_flag = KYO_network_leader_raiko
+			}
+			KYO_candidate_raiko_current_visible = {
+				has_country_flag = KYO_network_leader_raiko
+			}
+			KYO_candidate_raiko_click_enabled = {
+				has_country_flag = KYO_candidate_raiko_unlocked
+			}
+			KYO_candidate_raiko_selected_visible = {
+				check_variable = {
+					KYO_hyakki_selected_candidate = 11
+				}
+			}
+			KYO_network_leader_eiki_portrait_visible = {
+				has_country_flag = KYO_network_leader_eiki
+			}
+			KYO_candidate_eiki_current_visible = {
+				has_country_flag = KYO_network_leader_eiki
+			}
+			KYO_candidate_eiki_click_enabled = {
+				has_country_flag = KYO_candidate_eiki_unlocked
+			}
+			KYO_candidate_eiki_selected_visible = {
+				check_variable = {
+					KYO_hyakki_selected_candidate = 12
+				}
+			}
+			KYO_military_fulfillment_green_visible = {
+				check_variable = {
+					KYO_fulfillment_military_committee > 74
+				}
+			}
+			KYO_military_fulfillment_yellow_visible = {
+				check_variable = {
+					KYO_fulfillment_military_committee > 49
+				}
+				check_variable = {
+					KYO_fulfillment_military_committee < 75
+				}
+			}
+			KYO_military_fulfillment_orange_visible = {
+				check_variable = {
+					KYO_fulfillment_military_committee > 24
+				}
+				check_variable = {
+					KYO_fulfillment_military_committee < 50
+				}
+			}
+			KYO_military_fulfillment_red_visible = {
+				check_variable = {
+					KYO_fulfillment_military_committee < 25
+				}
+			}
+			KYO_faith_fulfillment_green_visible = {
+				check_variable = {
+					KYO_fulfillment_faith_committee > 74
+				}
+			}
+			KYO_faith_fulfillment_yellow_visible = {
+				check_variable = {
+					KYO_fulfillment_faith_committee > 49
+				}
+				check_variable = {
+					KYO_fulfillment_faith_committee < 75
+				}
+			}
+			KYO_faith_fulfillment_orange_visible = {
+				check_variable = {
+					KYO_fulfillment_faith_committee > 24
+				}
+				check_variable = {
+					KYO_fulfillment_faith_committee < 50
+				}
+			}
+			KYO_faith_fulfillment_red_visible = {
+				check_variable = {
+					KYO_fulfillment_faith_committee < 25
+				}
+			}
+			KYO_mobilization_fulfillment_green_visible = {
+				check_variable = {
+					KYO_fulfillment_mobilization_committee > 74
+				}
+			}
+			KYO_mobilization_fulfillment_yellow_visible = {
+				check_variable = {
+					KYO_fulfillment_mobilization_committee > 49
+				}
+				check_variable = {
+					KYO_fulfillment_mobilization_committee < 75
+				}
+			}
+			KYO_mobilization_fulfillment_orange_visible = {
+				check_variable = {
+					KYO_fulfillment_mobilization_committee > 24
+				}
+				check_variable = {
+					KYO_fulfillment_mobilization_committee < 50
+				}
+			}
+			KYO_mobilization_fulfillment_red_visible = {
+				check_variable = {
+					KYO_fulfillment_mobilization_committee < 25
+				}
+			}
+		}
+	}
+}
