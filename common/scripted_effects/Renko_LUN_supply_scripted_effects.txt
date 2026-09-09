@@ -1,0 +1,15 @@
+Renko_LUN_apply_connects_sea_and_mountain_supply = {
+    every_state = {
+        limit = {
+            NOT = {
+                has_dynamic_modifier = {
+                    modifier = Renko_LUN_connects_sea_and_mountain_state_modifier
+                }
+            }
+        }
+
+        add_dynamic_modifier = {
+            modifier = Renko_LUN_connects_sea_and_mountain_state_modifier
+        }
+    }
+}

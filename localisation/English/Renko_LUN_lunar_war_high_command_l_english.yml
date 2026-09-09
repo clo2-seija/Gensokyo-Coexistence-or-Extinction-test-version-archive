@@ -1,0 +1,8 @@
+﻿l_english:
+ Renko_LUN_lunar_war_high_command_category:0 "Lunar War Supreme Command"
+ Renko_LUN_lunar_war_high_command_category_desc:0 "The supreme command of the Lunar Capital's surface expedition, responsible for war preparations, logistics, and future operations."
+ Renko_LUN_mount_connects_sea_and_mountain_supply:0 "Connect Sea and Mountain"
+ Renko_LUN_mount_connects_sea_and_mountain_supply_desc:0 "Watatsuki no Toyohime can connect the Lunar Sea to the mountains of Earth. The Lunar War Supreme Command will use this power to establish a supply system unbound by earthly distance."
+ Renko_LUN_mount_connects_sea_and_mountain_supply_tt:0 "Grants the §YLunar Capital§! §Y+9999% Supply Node Range§! and adds §Y50 Local Supplies§! to §Yevery state in the world§!. State supplies are used by the current controller and can benefit both allies and enemies."
+ Renko_LUN_connects_sea_and_mountain_state_modifier:0 "The Ability to Connect Sea and Mountain"
+ Renko_LUN_connects_sea_and_mountain_state_modifier_desc:0 "Watatsuki no Toyohime connects the Lunar Sea to the mountains of Earth, ensuring that distance across the world no longer obstructs military supply."
