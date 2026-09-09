@@ -10,7 +10,7 @@ Renko_LUN_grant_dynamic_equipment = yes
 
 用于事件、国策、决议等效果块；内部固定转入LUN，不将装备发给调用者。LUN不存在或首都不受其控制时整包不执行。无AI/工业/难度门槛，无自动周期、永久领取标记或倍率。
 
-每次在首都创建4个现有月都步兵师和4个现有月都装甲师；满装备参数1.0，经验参数沿用日本N档的步兵0.30、装甲0.40。缺少这两份编制定义时调用现有编制创建效果；不解锁科技、不创建设计，不调用旧的100步兵+20装甲动员效果。
+每次在首都创建4个现有月都步兵师和4个现有月都装甲师；满装备参数1.0，经验参数沿用日本N档的步兵0.30、装甲0.40。缺少这两份编制定义时调用现有编制创建效果；不解锁科技、不创建设计，不反向调用整编月之军势效果。
 
 额外陆军库存按仓库现有编制的need逐项求和，与本轮新建8师的基准编制需求为1:1；不把额外库存当作扣除新建部队装备后的净值。是否实际扣库存、实际代际和完整配装须游戏内验证。玩家改编编制或后续改动单位need时需重算表，不是运行时读取玩家编制。
 
@@ -43,3 +43,13 @@ Renko_LUN_grant_dynamic_equipment = yes
 - 编制：common/scripted_effects/Renko_LUN_templates_scripted_effects.txt
 - 单位need：当前MOD覆盖与本机原版common/units合并读取。
 - 模式参考：日本JAP_equipment_scripted_loc.txt、JAP_equipment_scripted_effects.txt、JAP_templates_scripted_effects.txt的N档。
+
+## 2026-09-09 数量传递修正（待检验）
+
+移除共享装备helper中的参数宏及调用块参数；调用方先设置原生Renko_LUN_supply_amount变量，以yes调用，库存命令读取LUN.Renko_LUN_supply_amount，helper结束后清理。飞机与共享陆军库存调用同步修正，原有数量、定型/科技条件、代际及部队创建逻辑保持不变。未实机验证。
+
+## 2026-09-09 停止抵抗奖励入口（已实现，待检验）
+
+新增common/on_actions/Renko_LUN_capitulation_supply_on_actions.txt。在on_capitulation中以FROM = { tag = LUN }确认引擎认定的胜利国为月都，随后转入LUN，调用一次Renko_LUN_grant_dynamic_equipment。不要求和谈结束；不以仅参战或阵营关系替代胜利国判定。每次符合条件的停止抵抗均可调用，无冷却或一次性旗标。
+
+奖励沿用既有完整陆空补给包，包括4步兵师、4装甲师及陆空库存；既有首都控制条件与科技/设计跳过规则不变。不调用海军补给。未实机验证。

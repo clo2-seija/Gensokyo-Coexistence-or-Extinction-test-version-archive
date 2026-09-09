@@ -57,4 +57,24 @@ Renko_LUN_lunar_war_high_command_category = {
         }
         ai_will_do = { factor = 100 }
     }
+
+    Renko_LUN_form_lunar_sea_fleet = {
+        icon = generic_naval
+        cost = 0
+        fire_only_once = yes
+        priority = 70
+        available = {
+            any_controlled_state = { naval_base > 0 }
+        }
+        complete_effect = {
+            add_ideas = Renko_LUN_lunar_sea_fleet_idea
+            custom_effect_tooltip = Renko_LUN_form_lunar_sea_fleet_tt
+            hidden_effect = {
+                Renko_LUN_grant_dynamic_navy = yes
+                Renko_LUN_grant_dynamic_navy = yes
+                Renko_LUN_grant_dynamic_navy = yes
+            }
+        }
+        ai_will_do = { factor = 100 }
+    }
 }

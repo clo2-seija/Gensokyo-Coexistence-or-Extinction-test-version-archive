@@ -1,5 +1,6 @@
 # 公开入口：Renko_LUN_grant_dynamic_navy = yes；内部固定受赠国LUN。
-# 已拥有且控制带海军基地州时执行；舰船进入预备舰队，飞机进入库存。
+# 控制至少一个带海军基地的州时执行（不要求拥有）；舰船进入预备舰队，飞机进入库存。
+# 固定数量批次逐艘调用；不使用create_ship amount或scripted effect参数。
 # 单舰分支按定型年份降序选择确切设计；不授予科技/设计，不设置自动周期。
 # 每艘载机舰各发一份甲板容量的舰战与舰攻，合计两套量。缺任一机种设计则跳过载机舰。
 Renko_LUN_navy_create_one_escort_carrier = {
@@ -23,12 +24,10 @@ Renko_LUN_navy_create_one_escort_carrier = {
 			equipment_variant = "Moonhaven-class Mk.43"
 			creator = LUN
 		}
-		Renko_LUN_supply_cv_small_plane_airframe = {
-			Renko_AMOUNT = 40
-		}
-		Renko_LUN_supply_cv_small_plane_naval_bomber_airframe = {
-			Renko_AMOUNT = 40
-		}
+		set_variable = { Renko_LUN_supply_amount = 40 }
+		Renko_LUN_supply_cv_small_plane_airframe = yes
+		set_variable = { Renko_LUN_supply_amount = 40 }
+		Renko_LUN_supply_cv_small_plane_naval_bomber_airframe = yes
 	}
 	else_if = {
 		limit = {
@@ -50,12 +49,10 @@ Renko_LUN_navy_create_one_escort_carrier = {
 			equipment_variant = "Moonhaven-class Mk.40"
 			creator = LUN
 		}
-		Renko_LUN_supply_cv_small_plane_airframe = {
-			Renko_AMOUNT = 40
-		}
-		Renko_LUN_supply_cv_small_plane_naval_bomber_airframe = {
-			Renko_AMOUNT = 40
-		}
+		set_variable = { Renko_LUN_supply_amount = 40 }
+		Renko_LUN_supply_cv_small_plane_airframe = yes
+		set_variable = { Renko_LUN_supply_amount = 40 }
+		Renko_LUN_supply_cv_small_plane_naval_bomber_airframe = yes
 	}
 	else_if = {
 		limit = {
@@ -77,22 +74,20 @@ Renko_LUN_navy_create_one_escort_carrier = {
 			equipment_variant = "Moonhaven-class Mk.36"
 			creator = LUN
 		}
-		Renko_LUN_supply_cv_small_plane_airframe = {
-			Renko_AMOUNT = 40
-		}
-		Renko_LUN_supply_cv_small_plane_naval_bomber_airframe = {
-			Renko_AMOUNT = 40
-		}
+		set_variable = { Renko_LUN_supply_amount = 40 }
+		Renko_LUN_supply_cv_small_plane_airframe = yes
+		set_variable = { Renko_LUN_supply_amount = 40 }
+		Renko_LUN_supply_cv_small_plane_naval_bomber_airframe = yes
 	}
 }
-Renko_LUN_navy_create_escort_carrier_batch = {
+Renko_LUN_navy_create_escort_carrier_batch_4 = {
 	set_temp_variable = {
 		Renko_LUN_navy_ship_loop = 0
 	}
 	while_loop_effect = {
 		limit = {
 			check_variable = {
-				Renko_LUN_navy_ship_loop < $Renko_COUNT$
+				Renko_LUN_navy_ship_loop < 4
 			}
 		}
 		Renko_LUN_navy_create_one_escort_carrier = yes
@@ -122,12 +117,10 @@ Renko_LUN_navy_create_one_formal_carrier = {
 			equipment_variant = "Heavenly Ark-class Mk.43"
 			creator = LUN
 		}
-		Renko_LUN_supply_cv_small_plane_airframe = {
-			Renko_AMOUNT = 120
-		}
-		Renko_LUN_supply_cv_small_plane_naval_bomber_airframe = {
-			Renko_AMOUNT = 120
-		}
+		set_variable = { Renko_LUN_supply_amount = 120 }
+		Renko_LUN_supply_cv_small_plane_airframe = yes
+		set_variable = { Renko_LUN_supply_amount = 120 }
+		Renko_LUN_supply_cv_small_plane_naval_bomber_airframe = yes
 	}
 	else_if = {
 		limit = {
@@ -149,12 +142,10 @@ Renko_LUN_navy_create_one_formal_carrier = {
 			equipment_variant = "Heavenly Ark-class Mk.40"
 			creator = LUN
 		}
-		Renko_LUN_supply_cv_small_plane_airframe = {
-			Renko_AMOUNT = 100
-		}
-		Renko_LUN_supply_cv_small_plane_naval_bomber_airframe = {
-			Renko_AMOUNT = 100
-		}
+		set_variable = { Renko_LUN_supply_amount = 100 }
+		Renko_LUN_supply_cv_small_plane_airframe = yes
+		set_variable = { Renko_LUN_supply_amount = 100 }
+		Renko_LUN_supply_cv_small_plane_naval_bomber_airframe = yes
 	}
 	else_if = {
 		limit = {
@@ -176,22 +167,20 @@ Renko_LUN_navy_create_one_formal_carrier = {
 			equipment_variant = "Heavenly Ark-class Mk.36"
 			creator = LUN
 		}
-		Renko_LUN_supply_cv_small_plane_airframe = {
-			Renko_AMOUNT = 80
-		}
-		Renko_LUN_supply_cv_small_plane_naval_bomber_airframe = {
-			Renko_AMOUNT = 80
-		}
+		set_variable = { Renko_LUN_supply_amount = 80 }
+		Renko_LUN_supply_cv_small_plane_airframe = yes
+		set_variable = { Renko_LUN_supply_amount = 80 }
+		Renko_LUN_supply_cv_small_plane_naval_bomber_airframe = yes
 	}
 }
-Renko_LUN_navy_create_formal_carrier_batch = {
+Renko_LUN_navy_create_formal_carrier_batch_4 = {
 	set_temp_variable = {
 		Renko_LUN_navy_ship_loop = 0
 	}
 	while_loop_effect = {
 		limit = {
 			check_variable = {
-				Renko_LUN_navy_ship_loop < $Renko_COUNT$
+				Renko_LUN_navy_ship_loop < 4
 			}
 		}
 		Renko_LUN_navy_create_one_formal_carrier = yes
@@ -232,14 +221,14 @@ Renko_LUN_navy_create_one_heavy_cruiser = {
 		}
 	}
 }
-Renko_LUN_navy_create_heavy_cruiser_batch = {
+Renko_LUN_navy_create_heavy_cruiser_batch_6 = {
 	set_temp_variable = {
 		Renko_LUN_navy_ship_loop = 0
 	}
 	while_loop_effect = {
 		limit = {
 			check_variable = {
-				Renko_LUN_navy_ship_loop < $Renko_COUNT$
+				Renko_LUN_navy_ship_loop < 6
 			}
 		}
 		Renko_LUN_navy_create_one_heavy_cruiser = yes
@@ -280,14 +269,14 @@ Renko_LUN_navy_create_one_battleship = {
 		}
 	}
 }
-Renko_LUN_navy_create_battleship_batch = {
+Renko_LUN_navy_create_battleship_batch_8 = {
 	set_temp_variable = {
 		Renko_LUN_navy_ship_loop = 0
 	}
 	while_loop_effect = {
 		limit = {
 			check_variable = {
-				Renko_LUN_navy_ship_loop < $Renko_COUNT$
+				Renko_LUN_navy_ship_loop < 8
 			}
 		}
 		Renko_LUN_navy_create_one_battleship = yes
@@ -318,14 +307,14 @@ Renko_LUN_navy_create_one_super_battleship = {
 		}
 	}
 }
-Renko_LUN_navy_create_super_battleship_batch = {
+Renko_LUN_navy_create_super_battleship_batch_8 = {
 	set_temp_variable = {
 		Renko_LUN_navy_ship_loop = 0
 	}
 	while_loop_effect = {
 		limit = {
 			check_variable = {
-				Renko_LUN_navy_ship_loop < $Renko_COUNT$
+				Renko_LUN_navy_ship_loop < 8
 			}
 		}
 		Renko_LUN_navy_create_one_super_battleship = yes
@@ -366,14 +355,30 @@ Renko_LUN_navy_create_one_submarine = {
 		}
 	}
 }
-Renko_LUN_navy_create_submarine_batch = {
+Renko_LUN_navy_create_submarine_batch_8 = {
 	set_temp_variable = {
 		Renko_LUN_navy_ship_loop = 0
 	}
 	while_loop_effect = {
 		limit = {
 			check_variable = {
-				Renko_LUN_navy_ship_loop < $Renko_COUNT$
+				Renko_LUN_navy_ship_loop < 8
+			}
+		}
+		Renko_LUN_navy_create_one_submarine = yes
+		add_to_temp_variable = {
+			Renko_LUN_navy_ship_loop = 1
+		}
+	}
+}
+Renko_LUN_navy_create_submarine_batch_2 = {
+	set_temp_variable = {
+		Renko_LUN_navy_ship_loop = 0
+	}
+	while_loop_effect = {
+		limit = {
+			check_variable = {
+				Renko_LUN_navy_ship_loop < 2
 			}
 		}
 		Renko_LUN_navy_create_one_submarine = yes
@@ -403,22 +408,20 @@ Renko_LUN_navy_create_one_submarine_carrier = {
 			equipment_variant = "Hidden Heaven-class Mk.40"
 			creator = LUN
 		}
-		Renko_LUN_supply_cv_small_plane_airframe = {
-			Renko_AMOUNT = 3
-		}
-		Renko_LUN_supply_cv_small_plane_naval_bomber_airframe = {
-			Renko_AMOUNT = 3
-		}
+		set_variable = { Renko_LUN_supply_amount = 3 }
+		Renko_LUN_supply_cv_small_plane_airframe = yes
+		set_variable = { Renko_LUN_supply_amount = 3 }
+		Renko_LUN_supply_cv_small_plane_naval_bomber_airframe = yes
 	}
 }
-Renko_LUN_navy_create_submarine_carrier_batch = {
+Renko_LUN_navy_create_submarine_carrier_batch_2 = {
 	set_temp_variable = {
 		Renko_LUN_navy_ship_loop = 0
 	}
 	while_loop_effect = {
 		limit = {
 			check_variable = {
-				Renko_LUN_navy_ship_loop < $Renko_COUNT$
+				Renko_LUN_navy_ship_loop < 2
 			}
 		}
 		Renko_LUN_navy_create_one_submarine_carrier = yes
@@ -428,20 +431,12 @@ Renko_LUN_navy_create_submarine_carrier_batch = {
 	}
 }
 Renko_LUN_navy_grant_patrol_package = {
-	Renko_LUN_navy_create_escort_carrier_batch = {
-		Renko_COUNT = 4
-	}
-	Renko_LUN_navy_create_heavy_cruiser_batch = {
-		Renko_COUNT = 6
-	}
+	Renko_LUN_navy_create_escort_carrier_batch_4 = yes
+	Renko_LUN_navy_create_heavy_cruiser_batch_6 = yes
 }
 Renko_LUN_navy_grant_strike_package = {
-	Renko_LUN_navy_create_formal_carrier_batch = {
-		Renko_COUNT = 4
-	}
-	Renko_LUN_navy_create_battleship_batch = {
-		Renko_COUNT = 8
-	}
+	Renko_LUN_navy_create_formal_carrier_batch_4 = yes
+	Renko_LUN_navy_create_battleship_batch_8 = yes
 	if = {
 		limit = {
 			OR = {
@@ -449,20 +444,14 @@ Renko_LUN_navy_grant_strike_package = {
 				has_country_flag = Renko_LUN_super_battleship_1943_commissioned
 			}
 		}
-		Renko_LUN_navy_create_super_battleship_batch = {
-			Renko_COUNT = 8
-		}
+		Renko_LUN_navy_create_super_battleship_batch_8 = yes
 	}
 	else = {
-		Renko_LUN_navy_create_battleship_batch = {
-			Renko_COUNT = 8
-		}
+		Renko_LUN_navy_create_battleship_batch_8 = yes
 	}
 }
 Renko_LUN_navy_grant_submarine_package = {
-	Renko_LUN_navy_create_submarine_batch = {
-		Renko_COUNT = 8
-	}
+	Renko_LUN_navy_create_submarine_batch_8 = yes
 	if = {
 		limit = {
 			has_country_flag = Renko_LUN_submarine_carrier_1940_commissioned
@@ -478,14 +467,10 @@ Renko_LUN_navy_grant_submarine_package = {
 				has_country_flag = Renko_LUN_cv_attacker_1943_commissioned
 			}
 		}
-		Renko_LUN_navy_create_submarine_carrier_batch = {
-			Renko_COUNT = 2
-		}
+		Renko_LUN_navy_create_submarine_carrier_batch_2 = yes
 	}
 	else = {
-		Renko_LUN_navy_create_submarine_batch = {
-			Renko_COUNT = 2
-		}
+		Renko_LUN_navy_create_submarine_batch_2 = yes
 	}
 }
 Renko_LUN_grant_dynamic_navy = {
@@ -496,8 +481,7 @@ Renko_LUN_grant_dynamic_navy = {
 		LUN = {
 			if = {
 				limit = {
-					any_owned_state = {
-						is_controlled_by = LUN
+					any_controlled_state = {
 						naval_base > 0
 					}
 				}

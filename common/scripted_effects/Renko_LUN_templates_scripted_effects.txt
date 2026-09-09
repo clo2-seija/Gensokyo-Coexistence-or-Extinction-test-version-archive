@@ -183,7 +183,7 @@ Renko_LUN_grant_army_templates_and_units = {
 		create_unit = {
 			division = "division_template = \"Renko Lunar Infantry Division\" start_equipment_factor = 1.0"
 			owner = PREV
-			count = 100
+			count = 80
 		}
 		create_unit = {
 			division = "division_template = \"Renko Lunar Armored Division\" start_equipment_factor = 1.0"
@@ -191,4 +191,7 @@ Renko_LUN_grant_army_templates_and_units = {
 			count = 20
 		}
 	}
+	Renko_LUN_grant_dynamic_equipment = yes
+	Renko_LUN_grant_dynamic_equipment = yes
+	Renko_LUN_grant_dynamic_equipment = yes
 }

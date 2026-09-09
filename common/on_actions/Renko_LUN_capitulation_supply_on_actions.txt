@@ -1,0 +1,15 @@
+on_actions = {
+    # ROOT：停止抵抗国；FROM：引擎认定的胜利国。
+    on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+                    FROM = { tag = LUN }
+                }
+                LUN = {
+                    Renko_LUN_grant_dynamic_equipment = yes
+                }
+            }
+        }
+    }
+}

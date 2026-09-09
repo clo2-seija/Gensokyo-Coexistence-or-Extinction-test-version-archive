@@ -262,4 +262,5 @@ add_ideas = {
 # Renko: 月都新开局专属侵军编制。
 set_technology = {
 	Renko_LUN_invasion_units_tech = 1
+	Renko_LUN_special_tank_modules_tech = 1
 }

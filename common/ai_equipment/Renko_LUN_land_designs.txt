@@ -25,8 +25,8 @@ Renko_LUN_medium_tank_designs = {
 				engine_type_slot = tank_diesel_engine
 				main_armament_slot = tank_medium_cannon
 				special_type_slot_1 = tank_radio_1
-				special_type_slot_2 = additional_machine_guns
-				special_type_slot_3 = smoke_launchers
+				special_type_slot_2 = Renko_LUN_additional_machine_guns
+				special_type_slot_3 = Renko_LUN_smoke_launchers
 				special_type_slot_4 = wet_ammo_storage
 				suspension_type_slot = tank_bogie_suspension
 				turret_type_slot = tank_medium_three_man_tank_turret
@@ -41,8 +41,8 @@ Renko_LUN_medium_tank_designs = {
 			tank_diesel_engine
 			tank_medium_cannon
 			tank_radio_1
-			additional_machine_guns
-			smoke_launchers
+			Renko_LUN_additional_machine_guns
+			Renko_LUN_smoke_launchers
 			wet_ammo_storage
 			tank_bogie_suspension
 			tank_medium_three_man_tank_turret
@@ -63,9 +63,9 @@ Renko_LUN_medium_tank_designs = {
 				engine_type_slot = tank_diesel_engine
 				main_armament_slot = tank_medium_cannon_2
 				special_type_slot_1 = tank_radio_2
-				special_type_slot_2 = auto_loader
-				special_type_slot_3 = stabilizer
-				special_type_slot_4 = easy_maintenance
+				special_type_slot_2 = Renko_LUN_auto_loader
+				special_type_slot_3 = Renko_LUN_stabilizer
+				special_type_slot_4 = Renko_LUN_easy_maintenance
 				suspension_type_slot = tank_bogie_suspension
 				turret_type_slot = tank_medium_three_man_tank_turret
 			}
@@ -79,9 +79,9 @@ Renko_LUN_medium_tank_designs = {
 			tank_diesel_engine
 			tank_medium_cannon_2
 			tank_radio_2
-			auto_loader
-			stabilizer
-			easy_maintenance
+			Renko_LUN_auto_loader
+			Renko_LUN_stabilizer
+			Renko_LUN_easy_maintenance
 			tank_bogie_suspension
 			tank_medium_three_man_tank_turret
 		}
@@ -101,9 +101,9 @@ Renko_LUN_medium_tank_designs = {
 				engine_type_slot = tank_diesel_engine
 				main_armament_slot = tank_high_velocity_cannon_2
 				special_type_slot_1 = tank_radio_3
-				special_type_slot_2 = auto_loader
-				special_type_slot_3 = stabilizer
-				special_type_slot_4 = easy_maintenance
+				special_type_slot_2 = Renko_LUN_auto_loader
+				special_type_slot_3 = Renko_LUN_stabilizer
+				special_type_slot_4 = Renko_LUN_easy_maintenance
 				suspension_type_slot = tank_bogie_suspension
 				turret_type_slot = tank_medium_three_man_tank_turret
 			}
@@ -117,9 +117,9 @@ Renko_LUN_medium_tank_designs = {
 			tank_diesel_engine
 			tank_high_velocity_cannon_2
 			tank_radio_3
-			auto_loader
-			stabilizer
-			easy_maintenance
+			Renko_LUN_auto_loader
+			Renko_LUN_stabilizer
+			Renko_LUN_easy_maintenance
 			tank_bogie_suspension
 			tank_medium_three_man_tank_turret
 		}
@@ -136,13 +136,13 @@ Renko_LUN_medium_tank_designs = {
 			type = medium_tank_chassis_3
 			modules = {
 				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_gas_turbine_engine
+				engine_type_slot = Renko_LUN_tank_gas_turbine_engine
 				main_armament_slot = tank_high_velocity_cannon_2
 				special_type_slot_1 = tank_radio_3
-				special_type_slot_2 = stabilizer
-				special_type_slot_3 = auto_loader
-				special_type_slot_4 = easy_maintenance
-				suspension_type_slot = tank_interleaved_suspension
+				special_type_slot_2 = Renko_LUN_stabilizer
+				special_type_slot_3 = Renko_LUN_auto_loader
+				special_type_slot_4 = Renko_LUN_easy_maintenance
+				suspension_type_slot = Renko_LUN_tank_interleaved_suspension
 				turret_type_slot = tank_medium_three_man_tank_turret
 			}
 			upgrades = {
@@ -152,13 +152,13 @@ Renko_LUN_medium_tank_designs = {
 		}
 		allowed_modules = {
 			tank_riveted_armor
-			tank_gas_turbine_engine
+			Renko_LUN_tank_gas_turbine_engine
 			tank_high_velocity_cannon_2
 			tank_radio_3
-			stabilizer
-			auto_loader
-			easy_maintenance
-			tank_interleaved_suspension
+			Renko_LUN_stabilizer
+			Renko_LUN_auto_loader
+			Renko_LUN_easy_maintenance
+			Renko_LUN_tank_interleaved_suspension
 			tank_medium_three_man_tank_turret
 		}
 	}
@@ -189,7 +189,7 @@ Renko_LUN_medium_td_designs = {
 				engine_type_slot = tank_diesel_engine
 				main_armament_slot = tank_medium_cannon
 				special_type_slot_1 = secondary_turret_small_cannon
-				special_type_slot_2 = squeezebore_adaptor
+				special_type_slot_2 = Renko_LUN_squeezebore_adaptor
 				special_type_slot_3 = tank_radio_1
 				special_type_slot_4 = wet_ammo_storage
 				suspension_type_slot = tank_bogie_suspension
@@ -205,7 +205,7 @@ Renko_LUN_medium_td_designs = {
 			tank_diesel_engine
 			tank_medium_cannon
 			secondary_turret_small_cannon
-			squeezebore_adaptor
+			Renko_LUN_squeezebore_adaptor
 			tank_radio_1
 			wet_ammo_storage
 			tank_bogie_suspension
@@ -226,10 +226,10 @@ Renko_LUN_medium_td_designs = {
 				armor_type_slot = tank_riveted_armor
 				engine_type_slot = tank_diesel_engine
 				main_armament_slot = tank_medium_cannon_2
-				special_type_slot_1 = stabilizer
-				special_type_slot_2 = auto_loader
+				special_type_slot_1 = Renko_LUN_stabilizer
+				special_type_slot_2 = Renko_LUN_auto_loader
 				special_type_slot_3 = tank_radio_2
-				special_type_slot_4 = easy_maintenance
+				special_type_slot_4 = Renko_LUN_easy_maintenance
 				suspension_type_slot = tank_bogie_suspension
 				turret_type_slot = tank_medium_three_man_tank_turret
 			}
@@ -242,10 +242,10 @@ Renko_LUN_medium_td_designs = {
 			tank_riveted_armor
 			tank_diesel_engine
 			tank_medium_cannon_2
-			stabilizer
-			auto_loader
+			Renko_LUN_stabilizer
+			Renko_LUN_auto_loader
 			tank_radio_2
-			easy_maintenance
+			Renko_LUN_easy_maintenance
 			tank_bogie_suspension
 			tank_medium_three_man_tank_turret
 		}
@@ -264,10 +264,10 @@ Renko_LUN_medium_td_designs = {
 				armor_type_slot = tank_riveted_armor
 				engine_type_slot = tank_diesel_engine
 				main_armament_slot = tank_high_velocity_cannon_2
-				special_type_slot_1 = stabilizer
-				special_type_slot_2 = auto_loader
+				special_type_slot_1 = Renko_LUN_stabilizer
+				special_type_slot_2 = Renko_LUN_auto_loader
 				special_type_slot_3 = tank_radio_3
-				special_type_slot_4 = easy_maintenance
+				special_type_slot_4 = Renko_LUN_easy_maintenance
 				suspension_type_slot = tank_bogie_suspension
 				turret_type_slot = tank_medium_three_man_tank_turret
 			}
@@ -280,10 +280,10 @@ Renko_LUN_medium_td_designs = {
 			tank_riveted_armor
 			tank_diesel_engine
 			tank_high_velocity_cannon_2
-			stabilizer
-			auto_loader
+			Renko_LUN_stabilizer
+			Renko_LUN_auto_loader
 			tank_radio_3
-			easy_maintenance
+			Renko_LUN_easy_maintenance
 			tank_bogie_suspension
 			tank_medium_three_man_tank_turret
 		}
@@ -300,11 +300,11 @@ Renko_LUN_medium_td_designs = {
 			type = medium_tank_destroyer_chassis_3
 			modules = {
 				armor_type_slot = tank_riveted_armor
-				engine_type_slot = tank_gas_turbine_engine
+				engine_type_slot = Renko_LUN_tank_gas_turbine_engine
 				main_armament_slot = tank_high_velocity_cannon_2
-				special_type_slot_1 = stabilizer
-				special_type_slot_2 = auto_loader
-				special_type_slot_3 = easy_maintenance
+				special_type_slot_1 = Renko_LUN_stabilizer
+				special_type_slot_2 = Renko_LUN_auto_loader
+				special_type_slot_3 = Renko_LUN_easy_maintenance
 				special_type_slot_4 = tank_radio_3
 				suspension_type_slot = tank_bogie_suspension
 				turret_type_slot = tank_medium_three_man_tank_turret
@@ -316,11 +316,11 @@ Renko_LUN_medium_td_designs = {
 		}
 		allowed_modules = {
 			tank_riveted_armor
-			tank_gas_turbine_engine
+			Renko_LUN_tank_gas_turbine_engine
 			tank_high_velocity_cannon_2
-			stabilizer
-			auto_loader
-			easy_maintenance
+			Renko_LUN_stabilizer
+			Renko_LUN_auto_loader
+			Renko_LUN_easy_maintenance
 			tank_radio_3
 			tank_bogie_suspension
 			tank_medium_three_man_tank_turret
@@ -351,11 +351,11 @@ Renko_LUN_medium_aa_designs = {
 			modules = {
 				armor_type_slot = tank_riveted_armor
 				engine_type_slot = tank_diesel_engine
-				main_armament_slot = tank_anti_air_cannon_2
-				special_type_slot_1 = expanded_fuel_tank
+				main_armament_slot = Renko_LUN_tank_anti_air_cannon_2
+				special_type_slot_1 = Renko_LUN_expanded_fuel_tank
 				special_type_slot_2 = dozer_blade
-				special_type_slot_3 = easy_maintenance
-				special_type_slot_4 = additional_machine_guns
+				special_type_slot_3 = Renko_LUN_easy_maintenance
+				special_type_slot_4 = Renko_LUN_additional_machine_guns
 				suspension_type_slot = tank_bogie_suspension
 				turret_type_slot = tank_medium_one_man_tank_turret
 			}
@@ -367,11 +367,11 @@ Renko_LUN_medium_aa_designs = {
 		allowed_modules = {
 			tank_riveted_armor
 			tank_diesel_engine
-			tank_anti_air_cannon_2
-			expanded_fuel_tank
+			Renko_LUN_tank_anti_air_cannon_2
+			Renko_LUN_expanded_fuel_tank
 			dozer_blade
-			easy_maintenance
-			additional_machine_guns
+			Renko_LUN_easy_maintenance
+			Renko_LUN_additional_machine_guns
 			tank_bogie_suspension
 			tank_medium_one_man_tank_turret
 		}
@@ -389,11 +389,11 @@ Renko_LUN_medium_aa_designs = {
 			modules = {
 				armor_type_slot = tank_riveted_armor
 				engine_type_slot = tank_gasoline_engine
-				main_armament_slot = tank_anti_air_cannon_3
-				special_type_slot_1 = easy_maintenance
+				main_armament_slot = Renko_LUN_tank_anti_air_cannon_3
+				special_type_slot_1 = Renko_LUN_easy_maintenance
 				special_type_slot_2 = dozer_blade
-				special_type_slot_3 = auto_loader
-				special_type_slot_4 = additional_machine_guns
+				special_type_slot_3 = Renko_LUN_auto_loader
+				special_type_slot_4 = Renko_LUN_additional_machine_guns
 				suspension_type_slot = tank_bogie_suspension
 				turret_type_slot = tank_medium_one_man_tank_turret
 			}
@@ -405,11 +405,11 @@ Renko_LUN_medium_aa_designs = {
 		allowed_modules = {
 			tank_riveted_armor
 			tank_gasoline_engine
-			tank_anti_air_cannon_3
-			easy_maintenance
+			Renko_LUN_tank_anti_air_cannon_3
+			Renko_LUN_easy_maintenance
 			dozer_blade
-			auto_loader
-			additional_machine_guns
+			Renko_LUN_auto_loader
+			Renko_LUN_additional_machine_guns
 			tank_bogie_suspension
 			tank_medium_one_man_tank_turret
 		}
@@ -427,10 +427,10 @@ Renko_LUN_medium_aa_designs = {
 			modules = {
 				armor_type_slot = tank_riveted_armor
 				engine_type_slot = tank_gasoline_engine
-				main_armament_slot = tank_anti_air_cannon_3
-				special_type_slot_1 = stabilizer
-				special_type_slot_2 = auto_loader
-				special_type_slot_3 = easy_maintenance
+				main_armament_slot = Renko_LUN_tank_anti_air_cannon_3
+				special_type_slot_1 = Renko_LUN_stabilizer
+				special_type_slot_2 = Renko_LUN_auto_loader
+				special_type_slot_3 = Renko_LUN_easy_maintenance
 				special_type_slot_4 = dozer_blade
 				suspension_type_slot = tank_bogie_suspension
 				turret_type_slot = tank_medium_one_man_tank_turret
@@ -443,10 +443,10 @@ Renko_LUN_medium_aa_designs = {
 		allowed_modules = {
 			tank_riveted_armor
 			tank_gasoline_engine
-			tank_anti_air_cannon_3
-			stabilizer
-			auto_loader
-			easy_maintenance
+			Renko_LUN_tank_anti_air_cannon_3
+			Renko_LUN_stabilizer
+			Renko_LUN_auto_loader
+			Renko_LUN_easy_maintenance
 			dozer_blade
 			tank_bogie_suspension
 			tank_medium_one_man_tank_turret
@@ -480,8 +480,8 @@ Renko_LUN_heavy_td_designs = {
 				main_armament_slot = tank_heavy_cannon_2
 				special_type_slot_1 = secondary_turret_small_cannon
 				special_type_slot_2 = secondary_turret_small_cannon
-				special_type_slot_3 = easy_maintenance
-				special_type_slot_4 = squeezebore_adaptor
+				special_type_slot_3 = Renko_LUN_easy_maintenance
+				special_type_slot_4 = Renko_LUN_squeezebore_adaptor
 				suspension_type_slot = tank_bogie_suspension
 				turret_type_slot = tank_heavy_fixed_superstructure_turret
 			}
@@ -495,8 +495,8 @@ Renko_LUN_heavy_td_designs = {
 			tank_diesel_engine
 			tank_heavy_cannon_2
 			secondary_turret_small_cannon
-			easy_maintenance
-			squeezebore_adaptor
+			Renko_LUN_easy_maintenance
+			Renko_LUN_squeezebore_adaptor
 			tank_bogie_suspension
 			tank_heavy_fixed_superstructure_turret
 		}
@@ -515,10 +515,10 @@ Renko_LUN_heavy_td_designs = {
 				armor_type_slot = tank_riveted_armor
 				engine_type_slot = tank_diesel_engine
 				main_armament_slot = tank_super_heavy_cannon
-				special_type_slot_1 = easy_maintenance
-				special_type_slot_2 = squeezebore_adaptor
-				special_type_slot_3 = stabilizer
-				special_type_slot_4 = auto_loader
+				special_type_slot_1 = Renko_LUN_easy_maintenance
+				special_type_slot_2 = Renko_LUN_squeezebore_adaptor
+				special_type_slot_3 = Renko_LUN_stabilizer
+				special_type_slot_4 = Renko_LUN_auto_loader
 				suspension_type_slot = tank_bogie_suspension
 				turret_type_slot = tank_heavy_fixed_superstructure_turret
 			}
@@ -531,10 +531,10 @@ Renko_LUN_heavy_td_designs = {
 			tank_riveted_armor
 			tank_diesel_engine
 			tank_super_heavy_cannon
-			easy_maintenance
-			squeezebore_adaptor
-			stabilizer
-			auto_loader
+			Renko_LUN_easy_maintenance
+			Renko_LUN_squeezebore_adaptor
+			Renko_LUN_stabilizer
+			Renko_LUN_auto_loader
 			tank_bogie_suspension
 			tank_heavy_fixed_superstructure_turret
 		}
@@ -553,10 +553,10 @@ Renko_LUN_heavy_td_designs = {
 				armor_type_slot = tank_riveted_armor
 				engine_type_slot = tank_diesel_engine
 				main_armament_slot = tank_super_heavy_cannon
-				special_type_slot_1 = auto_loader
-				special_type_slot_2 = stabilizer
-				special_type_slot_3 = squeezebore_adaptor
-				special_type_slot_4 = easy_maintenance
+				special_type_slot_1 = Renko_LUN_auto_loader
+				special_type_slot_2 = Renko_LUN_stabilizer
+				special_type_slot_3 = Renko_LUN_squeezebore_adaptor
+				special_type_slot_4 = Renko_LUN_easy_maintenance
 				suspension_type_slot = tank_christie_suspension
 				turret_type_slot = tank_heavy_fixed_superstructure_turret
 			}
@@ -569,10 +569,10 @@ Renko_LUN_heavy_td_designs = {
 			tank_riveted_armor
 			tank_diesel_engine
 			tank_super_heavy_cannon
-			auto_loader
-			stabilizer
-			squeezebore_adaptor
-			easy_maintenance
+			Renko_LUN_auto_loader
+			Renko_LUN_stabilizer
+			Renko_LUN_squeezebore_adaptor
+			Renko_LUN_easy_maintenance
 			tank_christie_suspension
 			tank_heavy_fixed_superstructure_turret
 		}
@@ -606,7 +606,7 @@ Renko_LUN_medium_flame_designs = {
 				armor_type_slot = tank_riveted_armor
 				engine_type_slot = tank_diesel_engine
 				special_type_slot_1 = dozer_blade
-				special_type_slot_2 = expanded_fuel_tank
+				special_type_slot_2 = Renko_LUN_expanded_fuel_tank
 			}
 			upgrades = {
 				tank_nsb_armor_upgrade = 0
@@ -620,7 +620,7 @@ Renko_LUN_medium_flame_designs = {
 			tank_riveted_armor
 			tank_diesel_engine
 			dozer_blade
-			expanded_fuel_tank
+			Renko_LUN_expanded_fuel_tank
 		}
 	}
 	Renko_LUN_medium_flame_1940_design = {
@@ -639,10 +639,10 @@ Renko_LUN_medium_flame_designs = {
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_riveted_armor
 				engine_type_slot = tank_gasoline_engine
-				special_type_slot_1 = easy_maintenance
+				special_type_slot_1 = Renko_LUN_easy_maintenance
 				special_type_slot_2 = dozer_blade
-				special_type_slot_3 = expanded_fuel_tank
-				special_type_slot_4 = expanded_fuel_tank
+				special_type_slot_3 = Renko_LUN_expanded_fuel_tank
+				special_type_slot_4 = Renko_LUN_expanded_fuel_tank
 			}
 			upgrades = {
 				tank_nsb_armor_upgrade = 0
@@ -655,9 +655,9 @@ Renko_LUN_medium_flame_designs = {
 			tank_bogie_suspension
 			tank_riveted_armor
 			tank_gasoline_engine
-			easy_maintenance
+			Renko_LUN_easy_maintenance
 			dozer_blade
-			expanded_fuel_tank
+			Renko_LUN_expanded_fuel_tank
 		}
 	}
 }
