@@ -987,4 +987,67 @@ Renko_LUN_armaments_bureau = {
 			factor = 1000
 		}
 	}
+	Renko_LUN_formal_carrier_1936_commission = {
+		icon = generic_research
+		cost = 0
+		fire_only_once = yes
+		visible = {
+			NOT = {
+				has_country_flag = Renko_LUN_formal_carrier_1936_commissioned
+			}
+		}
+		available = {
+			always = yes
+		}
+		complete_effect = {
+			Renko_LUN_formal_carrier_1936_grant = yes
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	Renko_LUN_formal_carrier_1940_commission = {
+		icon = generic_research
+		cost = 0
+		fire_only_once = yes
+		visible = {
+			NOT = {
+				has_country_flag = Renko_LUN_formal_carrier_1940_commissioned
+			}
+		}
+		available = {
+			OR = {
+				has_tech = improved_ship_hull_carrier
+				date > 1939.12.31
+			}
+		}
+		complete_effect = {
+			Renko_LUN_formal_carrier_1940_grant = yes
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+	Renko_LUN_formal_carrier_1943_commission = {
+		icon = generic_research
+		cost = 0
+		fire_only_once = yes
+		visible = {
+			NOT = {
+				has_country_flag = Renko_LUN_formal_carrier_1943_commissioned
+			}
+		}
+		available = {
+			OR = {
+				has_tech = advanced_ship_hull_carrier
+				date > 1942.12.31
+			}
+		}
+		complete_effect = {
+			Renko_LUN_formal_carrier_1943_grant = yes
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
 }

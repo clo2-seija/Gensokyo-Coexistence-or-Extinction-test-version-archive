@@ -91,3 +91,10 @@
  Renko_LUN_cv_attacker_1943_commission_desc:0 "最迟于1943年1月1日开放，满足技术条件可提前定型。由月人制造承制，接收§YTidal Spear Mk.43§!的完整设计，并取得对应底盘、机身或舰体。每个型号仅可定型一次。"
  Renko_LUN_mothership_1941_commission:0 "定型：永恒之宫空天母舰——特种型号"
  Renko_LUN_mothership_1941_commission_desc:0 "最迟于1941年1月1日开放，满足技术条件可提前定型。由月人制造承制，接收§YPalace of Eternity Mk.41§!的完整设计，并取得对应底盘、机身或舰体。每个型号仅可定型一次。"
+
+ Renko_LUN_formal_carrier_1936_commission:0 "定型：天舟级正规航母——基础型"
+ Renko_LUN_formal_carrier_1936_commission_desc:0 "即刻开放。由月人制造承制，接收§YHeavenly Ark-class Mk.36§!的完整设计，并取得对应舰体。每个型号仅可定型一次。"
+ Renko_LUN_formal_carrier_1940_commission:0 "定型：天舟级正规航母——改良型"
+ Renko_LUN_formal_carrier_1940_commission_desc:0 "最迟于1940年1月1日开放，满足技术条件可提前定型。由月人制造承制，接收§YHeavenly Ark-class Mk.40§!的完整设计，并取得对应舰体。每个型号仅可定型一次。"
+ Renko_LUN_formal_carrier_1943_commission:0 "定型：天舟级正规航母——先进型"
+ Renko_LUN_formal_carrier_1943_commission_desc:0 "最迟于1943年1月1日开放，满足技术条件可提前定型。由月人制造承制，接收§YHeavenly Ark-class Mk.43§!的完整设计，并取得对应舰体。每个型号仅可定型一次。"

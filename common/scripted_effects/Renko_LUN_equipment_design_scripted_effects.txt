@@ -1208,3 +1208,81 @@ Renko_LUN_mothership_1941_grant = {
 	}
 	set_country_flag = Renko_LUN_mothership_1941_commissioned
 }
+
+# 正规航母：与打击舰队role 7匹配。
+Renko_LUN_formal_carrier_1936_grant = {
+	set_technology = {
+		basic_ship_hull_carrier = 1
+	}
+	create_equipment_variant = {
+		name = "Heavenly Ark-class Mk.36"
+		type = ship_hull_carrier_1
+		parent_version = 0
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		role_icon_index = 7
+		allow_without_tech = yes
+		modules = {
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_engine_slot = carrier_ship_engine_2
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_secondaries_slot = dp_ship_secondaries_1
+			front_1_custom_slot = ship_deck_space
+			mid_1_custom_slot = ship_deck_space
+		}
+	}
+	set_country_flag = Renko_LUN_formal_carrier_1936_commissioned
+}
+Renko_LUN_formal_carrier_1940_grant = {
+	set_technology = {
+		improved_ship_hull_carrier = 1
+	}
+	create_equipment_variant = {
+		name = "Heavenly Ark-class Mk.40"
+		type = ship_hull_carrier_2
+		parent_version = 0
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		role_icon_index = 7
+		allow_without_tech = yes
+		modules = {
+			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_engine_slot = carrier_ship_engine_3
+			fixed_ship_radar_slot = ship_radar_3
+			fixed_ship_secondaries_slot = dp_ship_secondaries_3
+			front_1_custom_slot = ship_deck_space
+			mid_1_custom_slot = ship_deck_space
+			mid_2_custom_slot = ship_deck_space
+		}
+	}
+	set_country_flag = Renko_LUN_formal_carrier_1940_commissioned
+}
+Renko_LUN_formal_carrier_1943_grant = {
+	set_technology = {
+		advanced_ship_hull_carrier = 1
+	}
+	create_equipment_variant = {
+		name = "Heavenly Ark-class Mk.43"
+		type = ship_hull_carrier_3
+		parent_version = 0
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		role_icon_index = 7
+		allow_without_tech = yes
+		modules = {
+			fixed_ship_anti_air_slot = ship_anti_air_4
+			fixed_ship_armor_slot = ship_armor_cruiser_4
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_engine_slot = carrier_ship_engine_4
+			fixed_ship_radar_slot = ship_radar_4
+			fixed_ship_secondaries_slot = dp_ship_secondaries_4
+			front_1_custom_slot = ship_deck_space
+			mid_1_custom_slot = ship_deck_space
+			mid_2_custom_slot = ship_deck_space
+			rear_1_custom_slot = ship_deck_space
+		}
+	}
+	set_country_flag = Renko_LUN_formal_carrier_1943_commissioned
+}

@@ -533,3 +533,108 @@ Renko_LUN_submarine_carrier_designs = {
 		}
 	}
 }
+
+Renko_LUN_formal_carrier_designs = {
+	category = naval
+	available_for = {
+		LUN
+	}
+	roles = {
+		Renko_LUN_carrier
+	}
+	priority = {
+		factor = 888
+	}
+	Renko_LUN_formal_carrier_1936_design = {
+		priority = {
+			factor = 1000
+		}
+		enable = {
+			has_country_flag = Renko_LUN_formal_carrier_1936_commissioned
+		}
+		target_variant = {
+			match_value = 10000
+			type = ship_hull_carrier_1
+			modules = {
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_engine_slot = carrier_ship_engine_2
+				fixed_ship_radar_slot = ship_radar_1
+				fixed_ship_secondaries_slot = dp_ship_secondaries_1
+				front_1_custom_slot = ship_deck_space
+				mid_1_custom_slot = ship_deck_space
+			}
+		}
+		allowed_modules = {
+			ship_anti_air_1
+			ship_deck_space
+			carrier_ship_engine_2
+			ship_radar_1
+			dp_ship_secondaries_1
+		}
+	}
+	Renko_LUN_formal_carrier_1940_design = {
+		priority = {
+			factor = 1000
+		}
+		enable = {
+			has_country_flag = Renko_LUN_formal_carrier_1940_commissioned
+		}
+		target_variant = {
+			match_value = 20000
+			type = ship_hull_carrier_2
+			modules = {
+				fixed_ship_anti_air_slot = ship_anti_air_3
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_engine_slot = carrier_ship_engine_3
+				fixed_ship_radar_slot = ship_radar_3
+				fixed_ship_secondaries_slot = dp_ship_secondaries_3
+				front_1_custom_slot = ship_deck_space
+				mid_1_custom_slot = ship_deck_space
+				mid_2_custom_slot = ship_deck_space
+			}
+		}
+		allowed_modules = {
+			ship_anti_air_3
+			ship_deck_space
+			carrier_ship_engine_3
+			ship_radar_3
+			dp_ship_secondaries_3
+		}
+	}
+	Renko_LUN_formal_carrier_1943_design = {
+		priority = {
+			factor = 1000
+		}
+		enable = {
+			has_country_flag = Renko_LUN_formal_carrier_1943_commissioned
+		}
+		target_variant = {
+			match_value = 30000
+			type = ship_hull_carrier_3
+			modules = {
+				fixed_ship_anti_air_slot = ship_anti_air_4
+				fixed_ship_armor_slot = ship_armor_cruiser_4
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_engine_slot = carrier_ship_engine_4
+				fixed_ship_radar_slot = ship_radar_4
+				fixed_ship_secondaries_slot = dp_ship_secondaries_4
+				front_1_custom_slot = ship_deck_space
+				mid_1_custom_slot = ship_deck_space
+				mid_2_custom_slot = ship_deck_space
+				rear_1_custom_slot = ship_deck_space
+			}
+		}
+		allowed_modules = {
+			ship_anti_air_4
+			ship_armor_cruiser_4
+			ship_deck_space
+			carrier_ship_engine_4
+			ship_radar_4
+			dp_ship_secondaries_4
+		}
+	}
+}

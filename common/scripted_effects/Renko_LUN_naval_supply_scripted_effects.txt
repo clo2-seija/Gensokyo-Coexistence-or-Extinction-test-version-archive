@@ -1,0 +1,510 @@
+# 公开入口：Renko_LUN_grant_dynamic_navy = yes；内部固定受赠国LUN。
+# 已拥有且控制带海军基地州时执行；舰船进入预备舰队，飞机进入库存。
+# 单舰分支按定型年份降序选择确切设计；不授予科技/设计，不设置自动周期。
+# 每艘载机舰各发一份甲板容量的舰战与舰攻，合计两套量。缺任一机种设计则跳过载机舰。
+Renko_LUN_navy_create_one_escort_carrier = {
+	if = {
+		limit = {
+			has_country_flag = Renko_LUN_escort_carrier_1943_commissioned
+			OR = {
+				has_country_flag = Renko_LUN_cv_fighter_1936_commissioned
+				has_country_flag = Renko_LUN_cv_fighter_1940_commissioned
+				has_country_flag = Renko_LUN_cv_fighter_1943_commissioned
+			}
+			OR = {
+				has_country_flag = Renko_LUN_cv_attacker_1936_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1940_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1941_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1943_commissioned
+			}
+		}
+		create_ship = {
+			type = ship_hull_escort_carrier
+			equipment_variant = "Moonhaven-class Mk.43"
+			creator = LUN
+		}
+		Renko_LUN_supply_cv_small_plane_airframe = {
+			Renko_AMOUNT = 40
+		}
+		Renko_LUN_supply_cv_small_plane_naval_bomber_airframe = {
+			Renko_AMOUNT = 40
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = Renko_LUN_escort_carrier_1940_commissioned
+			OR = {
+				has_country_flag = Renko_LUN_cv_fighter_1936_commissioned
+				has_country_flag = Renko_LUN_cv_fighter_1940_commissioned
+				has_country_flag = Renko_LUN_cv_fighter_1943_commissioned
+			}
+			OR = {
+				has_country_flag = Renko_LUN_cv_attacker_1936_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1940_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1941_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1943_commissioned
+			}
+		}
+		create_ship = {
+			type = ship_hull_escort_carrier
+			equipment_variant = "Moonhaven-class Mk.40"
+			creator = LUN
+		}
+		Renko_LUN_supply_cv_small_plane_airframe = {
+			Renko_AMOUNT = 40
+		}
+		Renko_LUN_supply_cv_small_plane_naval_bomber_airframe = {
+			Renko_AMOUNT = 40
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = Renko_LUN_escort_carrier_1936_commissioned
+			OR = {
+				has_country_flag = Renko_LUN_cv_fighter_1936_commissioned
+				has_country_flag = Renko_LUN_cv_fighter_1940_commissioned
+				has_country_flag = Renko_LUN_cv_fighter_1943_commissioned
+			}
+			OR = {
+				has_country_flag = Renko_LUN_cv_attacker_1936_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1940_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1941_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1943_commissioned
+			}
+		}
+		create_ship = {
+			type = ship_hull_escort_carrier
+			equipment_variant = "Moonhaven-class Mk.36"
+			creator = LUN
+		}
+		Renko_LUN_supply_cv_small_plane_airframe = {
+			Renko_AMOUNT = 40
+		}
+		Renko_LUN_supply_cv_small_plane_naval_bomber_airframe = {
+			Renko_AMOUNT = 40
+		}
+	}
+}
+Renko_LUN_navy_create_escort_carrier_batch = {
+	set_temp_variable = {
+		Renko_LUN_navy_ship_loop = 0
+	}
+	while_loop_effect = {
+		limit = {
+			check_variable = {
+				Renko_LUN_navy_ship_loop < $Renko_COUNT$
+			}
+		}
+		Renko_LUN_navy_create_one_escort_carrier = yes
+		add_to_temp_variable = {
+			Renko_LUN_navy_ship_loop = 1
+		}
+	}
+}
+Renko_LUN_navy_create_one_formal_carrier = {
+	if = {
+		limit = {
+			has_country_flag = Renko_LUN_formal_carrier_1943_commissioned
+			OR = {
+				has_country_flag = Renko_LUN_cv_fighter_1936_commissioned
+				has_country_flag = Renko_LUN_cv_fighter_1940_commissioned
+				has_country_flag = Renko_LUN_cv_fighter_1943_commissioned
+			}
+			OR = {
+				has_country_flag = Renko_LUN_cv_attacker_1936_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1940_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1941_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1943_commissioned
+			}
+		}
+		create_ship = {
+			type = ship_hull_carrier_3
+			equipment_variant = "Heavenly Ark-class Mk.43"
+			creator = LUN
+		}
+		Renko_LUN_supply_cv_small_plane_airframe = {
+			Renko_AMOUNT = 120
+		}
+		Renko_LUN_supply_cv_small_plane_naval_bomber_airframe = {
+			Renko_AMOUNT = 120
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = Renko_LUN_formal_carrier_1940_commissioned
+			OR = {
+				has_country_flag = Renko_LUN_cv_fighter_1936_commissioned
+				has_country_flag = Renko_LUN_cv_fighter_1940_commissioned
+				has_country_flag = Renko_LUN_cv_fighter_1943_commissioned
+			}
+			OR = {
+				has_country_flag = Renko_LUN_cv_attacker_1936_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1940_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1941_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1943_commissioned
+			}
+		}
+		create_ship = {
+			type = ship_hull_carrier_2
+			equipment_variant = "Heavenly Ark-class Mk.40"
+			creator = LUN
+		}
+		Renko_LUN_supply_cv_small_plane_airframe = {
+			Renko_AMOUNT = 100
+		}
+		Renko_LUN_supply_cv_small_plane_naval_bomber_airframe = {
+			Renko_AMOUNT = 100
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = Renko_LUN_formal_carrier_1936_commissioned
+			OR = {
+				has_country_flag = Renko_LUN_cv_fighter_1936_commissioned
+				has_country_flag = Renko_LUN_cv_fighter_1940_commissioned
+				has_country_flag = Renko_LUN_cv_fighter_1943_commissioned
+			}
+			OR = {
+				has_country_flag = Renko_LUN_cv_attacker_1936_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1940_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1941_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1943_commissioned
+			}
+		}
+		create_ship = {
+			type = ship_hull_carrier_1
+			equipment_variant = "Heavenly Ark-class Mk.36"
+			creator = LUN
+		}
+		Renko_LUN_supply_cv_small_plane_airframe = {
+			Renko_AMOUNT = 80
+		}
+		Renko_LUN_supply_cv_small_plane_naval_bomber_airframe = {
+			Renko_AMOUNT = 80
+		}
+	}
+}
+Renko_LUN_navy_create_formal_carrier_batch = {
+	set_temp_variable = {
+		Renko_LUN_navy_ship_loop = 0
+	}
+	while_loop_effect = {
+		limit = {
+			check_variable = {
+				Renko_LUN_navy_ship_loop < $Renko_COUNT$
+			}
+		}
+		Renko_LUN_navy_create_one_formal_carrier = yes
+		add_to_temp_variable = {
+			Renko_LUN_navy_ship_loop = 1
+		}
+	}
+}
+Renko_LUN_navy_create_one_heavy_cruiser = {
+	if = {
+		limit = {
+			has_country_flag = Renko_LUN_heavy_cruiser_1943_commissioned
+		}
+		create_ship = {
+			type = ship_hull_cruiser_4
+			equipment_variant = "Silver Edict-class Mk.43"
+			creator = LUN
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = Renko_LUN_heavy_cruiser_1940_commissioned
+		}
+		create_ship = {
+			type = ship_hull_cruiser_3
+			equipment_variant = "Silver Edict-class Mk.40"
+			creator = LUN
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = Renko_LUN_heavy_cruiser_1936_commissioned
+		}
+		create_ship = {
+			type = ship_hull_cruiser_2
+			equipment_variant = "Silver Edict-class Mk.36"
+			creator = LUN
+		}
+	}
+}
+Renko_LUN_navy_create_heavy_cruiser_batch = {
+	set_temp_variable = {
+		Renko_LUN_navy_ship_loop = 0
+	}
+	while_loop_effect = {
+		limit = {
+			check_variable = {
+				Renko_LUN_navy_ship_loop < $Renko_COUNT$
+			}
+		}
+		Renko_LUN_navy_create_one_heavy_cruiser = yes
+		add_to_temp_variable = {
+			Renko_LUN_navy_ship_loop = 1
+		}
+	}
+}
+Renko_LUN_navy_create_one_battleship = {
+	if = {
+		limit = {
+			has_country_flag = Renko_LUN_battleship_1943_commissioned
+		}
+		create_ship = {
+			type = ship_hull_heavy_4
+			equipment_variant = "Celestial Throne-class Mk.43"
+			creator = LUN
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = Renko_LUN_battleship_1940_commissioned
+		}
+		create_ship = {
+			type = ship_hull_heavy_3
+			equipment_variant = "Celestial Throne-class Mk.40"
+			creator = LUN
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = Renko_LUN_battleship_1936_commissioned
+		}
+		create_ship = {
+			type = ship_hull_heavy_2
+			equipment_variant = "Celestial Throne-class Mk.36"
+			creator = LUN
+		}
+	}
+}
+Renko_LUN_navy_create_battleship_batch = {
+	set_temp_variable = {
+		Renko_LUN_navy_ship_loop = 0
+	}
+	while_loop_effect = {
+		limit = {
+			check_variable = {
+				Renko_LUN_navy_ship_loop < $Renko_COUNT$
+			}
+		}
+		Renko_LUN_navy_create_one_battleship = yes
+		add_to_temp_variable = {
+			Renko_LUN_navy_ship_loop = 1
+		}
+	}
+}
+Renko_LUN_navy_create_one_super_battleship = {
+	if = {
+		limit = {
+			has_country_flag = Renko_LUN_super_battleship_1943_commissioned
+		}
+		create_ship = {
+			type = ship_hull_super_heavy_1
+			equipment_variant = "Eternal Palace-class Mk.43"
+			creator = LUN
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = Renko_LUN_super_battleship_1940_commissioned
+		}
+		create_ship = {
+			type = ship_hull_super_heavy_1
+			equipment_variant = "Eternal Palace-class Mk.40"
+			creator = LUN
+		}
+	}
+}
+Renko_LUN_navy_create_super_battleship_batch = {
+	set_temp_variable = {
+		Renko_LUN_navy_ship_loop = 0
+	}
+	while_loop_effect = {
+		limit = {
+			check_variable = {
+				Renko_LUN_navy_ship_loop < $Renko_COUNT$
+			}
+		}
+		Renko_LUN_navy_create_one_super_battleship = yes
+		add_to_temp_variable = {
+			Renko_LUN_navy_ship_loop = 1
+		}
+	}
+}
+Renko_LUN_navy_create_one_submarine = {
+	if = {
+		limit = {
+			has_country_flag = Renko_LUN_submarine_1943_commissioned
+		}
+		create_ship = {
+			type = ship_hull_fleet_submarine
+			equipment_variant = "Moonshadow-class Mk.43"
+			creator = LUN
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = Renko_LUN_submarine_1940_commissioned
+		}
+		create_ship = {
+			type = ship_hull_fleet_submarine
+			equipment_variant = "Moonshadow-class Mk.40"
+			creator = LUN
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = Renko_LUN_submarine_1936_commissioned
+		}
+		create_ship = {
+			type = ship_hull_cruiser_submarine
+			equipment_variant = "Moonshadow-class Mk.36"
+			creator = LUN
+		}
+	}
+}
+Renko_LUN_navy_create_submarine_batch = {
+	set_temp_variable = {
+		Renko_LUN_navy_ship_loop = 0
+	}
+	while_loop_effect = {
+		limit = {
+			check_variable = {
+				Renko_LUN_navy_ship_loop < $Renko_COUNT$
+			}
+		}
+		Renko_LUN_navy_create_one_submarine = yes
+		add_to_temp_variable = {
+			Renko_LUN_navy_ship_loop = 1
+		}
+	}
+}
+Renko_LUN_navy_create_one_submarine_carrier = {
+	if = {
+		limit = {
+			has_country_flag = Renko_LUN_submarine_carrier_1940_commissioned
+			OR = {
+				has_country_flag = Renko_LUN_cv_fighter_1936_commissioned
+				has_country_flag = Renko_LUN_cv_fighter_1940_commissioned
+				has_country_flag = Renko_LUN_cv_fighter_1943_commissioned
+			}
+			OR = {
+				has_country_flag = Renko_LUN_cv_attacker_1936_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1940_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1941_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1943_commissioned
+			}
+		}
+		create_ship = {
+			type = ship_hull_carrier_submarine
+			equipment_variant = "Hidden Heaven-class Mk.40"
+			creator = LUN
+		}
+		Renko_LUN_supply_cv_small_plane_airframe = {
+			Renko_AMOUNT = 3
+		}
+		Renko_LUN_supply_cv_small_plane_naval_bomber_airframe = {
+			Renko_AMOUNT = 3
+		}
+	}
+}
+Renko_LUN_navy_create_submarine_carrier_batch = {
+	set_temp_variable = {
+		Renko_LUN_navy_ship_loop = 0
+	}
+	while_loop_effect = {
+		limit = {
+			check_variable = {
+				Renko_LUN_navy_ship_loop < $Renko_COUNT$
+			}
+		}
+		Renko_LUN_navy_create_one_submarine_carrier = yes
+		add_to_temp_variable = {
+			Renko_LUN_navy_ship_loop = 1
+		}
+	}
+}
+Renko_LUN_navy_grant_patrol_package = {
+	Renko_LUN_navy_create_escort_carrier_batch = {
+		Renko_COUNT = 4
+	}
+	Renko_LUN_navy_create_heavy_cruiser_batch = {
+		Renko_COUNT = 6
+	}
+}
+Renko_LUN_navy_grant_strike_package = {
+	Renko_LUN_navy_create_formal_carrier_batch = {
+		Renko_COUNT = 4
+	}
+	Renko_LUN_navy_create_battleship_batch = {
+		Renko_COUNT = 8
+	}
+	if = {
+		limit = {
+			OR = {
+				has_country_flag = Renko_LUN_super_battleship_1940_commissioned
+				has_country_flag = Renko_LUN_super_battleship_1943_commissioned
+			}
+		}
+		Renko_LUN_navy_create_super_battleship_batch = {
+			Renko_COUNT = 8
+		}
+	}
+	else = {
+		Renko_LUN_navy_create_battleship_batch = {
+			Renko_COUNT = 8
+		}
+	}
+}
+Renko_LUN_navy_grant_submarine_package = {
+	Renko_LUN_navy_create_submarine_batch = {
+		Renko_COUNT = 8
+	}
+	if = {
+		limit = {
+			has_country_flag = Renko_LUN_submarine_carrier_1940_commissioned
+			OR = {
+				has_country_flag = Renko_LUN_cv_fighter_1936_commissioned
+				has_country_flag = Renko_LUN_cv_fighter_1940_commissioned
+				has_country_flag = Renko_LUN_cv_fighter_1943_commissioned
+			}
+			OR = {
+				has_country_flag = Renko_LUN_cv_attacker_1936_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1940_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1941_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1943_commissioned
+			}
+		}
+		Renko_LUN_navy_create_submarine_carrier_batch = {
+			Renko_COUNT = 2
+		}
+	}
+	else = {
+		Renko_LUN_navy_create_submarine_batch = {
+			Renko_COUNT = 2
+		}
+	}
+}
+Renko_LUN_grant_dynamic_navy = {
+	if = {
+		limit = {
+			exists = LUN
+		}
+		LUN = {
+			if = {
+				limit = {
+					any_owned_state = {
+						is_controlled_by = LUN
+						naval_base > 0
+					}
+				}
+				Renko_LUN_navy_grant_patrol_package = yes
+				Renko_LUN_navy_grant_strike_package = yes
+				Renko_LUN_navy_grant_submarine_package = yes
+			}
+		}
+	}
+}
