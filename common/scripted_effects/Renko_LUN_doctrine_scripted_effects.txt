@@ -1,0 +1,124 @@
+# 按日本特殊属国实现：先选主学说，再逐轨选子学说，最后各授予 1000 精通度。
+Renko_LUN_select_designated_doctrines = {
+    set_grand_doctrine = Renko_LUN_grand_battleplan
+    set_grand_doctrine = Renko_LUN_new_base_strike
+    set_grand_doctrine = Renko_LUN_new_operational_integrity
+    set_grand_doctrine = special_forces_quality
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_commandos
+        folder = land
+        track = 0
+    }
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_air_cavalry
+        folder = land
+        track = 1
+    }
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_streamlined_deployment
+        folder = land
+        track = 2
+    }
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_infiltration_tactics
+        folder = land
+        track = 3
+    }
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_long_range_submarines
+        folder = naval
+        track = 0
+    }
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_torpedo_primacy
+        folder = naval
+        track = 1
+    }
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_massed_carrier_fleet
+        folder = naval
+        track = 2
+    }
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_battleship_antiair_screen
+        folder = naval
+        track = 3
+    }
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_air_subdoctrine_fighter_central_field
+        folder = air
+        track = 0
+    }
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_air_subdoctrine_naval_torpedo_tactics
+        folder = air
+        track = 1
+    }
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_air_subdoctrine_long_range_escort
+        folder = air
+        track = 2
+    }
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_air_subdoctrine_flying_fortresses
+        folder = air
+        track = 3
+    }
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_lunar_host
+        folder = special_forces
+        track = 0
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_commandos
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_air_cavalry
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_streamlined_deployment
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_infiltration_tactics
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_long_range_submarines
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_torpedo_primacy
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_massed_carrier_fleet
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_battleship_antiair_screen
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_air_subdoctrine_fighter_central_field
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_air_subdoctrine_naval_torpedo_tactics
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_air_subdoctrine_long_range_escort
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_air_subdoctrine_flying_fortresses
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_lunar_host
+    }
+}

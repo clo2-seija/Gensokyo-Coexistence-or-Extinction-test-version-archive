@@ -1,0 +1,196 @@
+# 独立轨道锚定月都子学说；精通度来源保留日本 MOD 现行设定。
+Renko_LUN_infantry = {
+    name = DOCTRINE_TRACK_INFANTRY
+    background = "GFX_grand_battleplan_bg"
+    icon = "GFX_doctrine_milestone_infantry_land"
+    icon_frame = "GFX_doctrine_decor_land"
+    mastery = {
+        multiplier = 2
+        categories = {
+            category_army
+        }
+    }
+}
+Renko_LUN_combat_support = {
+    name = DOCTRINE_TRACK_COMBAT_SUPPORT
+    background = "GFX_sup_firepower_bg"
+    icon = "GFX_doctrine_milestone_artillery_land"
+    icon_frame = "GFX_doctrine_decor_land"
+    mastery = {
+        multiplier = 2
+        categories = {
+            category_army
+        }
+    }
+}
+Renko_LUN_armor = {
+    name = DOCTRINE_TRACK_ARMOR
+    background = "GFX_mob_warfare_bg"
+    icon = "GFX_doctrine_milestone_armored_land"
+    icon_frame = "GFX_doctrine_decor_land"
+    mastery = {
+        multiplier = 2
+        categories = {
+            category_army
+        }
+        sub_units = {
+            armored_car
+        }
+    }
+}
+Renko_LUN_operations = {
+    name = DOCTRINE_TRACK_OPERATIONS
+    background = "GFX_tac_operation_bg"
+    icon = "GFX_doctrine_milestone_operations_land"
+    icon_frame = "GFX_doctrine_decor_land"
+    mastery = {
+        multiplier = 2
+        categories = {
+            category_army
+        }
+    }
+}
+Renko_LUN_submarines = {
+    name = DOCTRINE_TRACK_SUBMARINES
+    background = "GFX_trade_interdiction_bg"
+    icon = "GFX_doctrine_milestone_submarine_naval"
+    icon_frame = "GFX_doctrine_decor_naval"
+    mastery = {
+        multiplier = 2
+        sub_units = {
+            carrier
+            destroyer
+            submarine
+            battleship
+        }
+    }
+}
+Renko_LUN_screens = {
+    name = DOCTRINE_TRACK_SCREENS
+    background = "GFX_screens_bg"
+    icon = "GFX_doctrine_milestone_screens_naval"
+    icon_frame = "GFX_doctrine_decor_naval"
+    mastery = {
+        multiplier = 2
+        sub_units = {
+            carrier
+            destroyer
+            submarine
+            battleship
+        }
+    }
+}
+Renko_LUN_carriers = {
+    name = DOCTRINE_TRACK_CARRIERS
+    background = "GFX_base_strike_bg"
+    icon = "GFX_doctrine_milestone_carriers_naval"
+    icon_frame = "GFX_doctrine_decor_naval"
+    mastery = {
+        multiplier = 2
+        sub_units = {
+            carrier
+            destroyer
+            submarine
+            battleship
+        }
+    }
+}
+Renko_LUN_capital_ships = {
+    name = DOCTRINE_TRACK_CAPITAL_SHIPS
+    background = "GFX_fleet_in_being_bg"
+    icon = "GFX_doctrine_milestone_ships_naval"
+    icon_frame = "GFX_doctrine_decor_naval"
+    mastery = {
+        multiplier = 2
+        sub_units = {
+            carrier
+            destroyer
+            submarine
+            battleship
+        }
+    }
+}
+Renko_LUN_fighter_aircraft = {
+    name = DOCTRINE_TRACK_FIGHTER_AIRCRAFT
+    background = "GFX_air_superiority_bg"
+    icon = "GFX_doctrine_milestone_fighter_air"
+    icon_frame = "GFX_doctrine_decor_air"
+    mastery = {
+        multiplier = 8.0
+        equipment = {
+            fighter
+            interceptor
+            cas
+            naval_bomber
+            suicide
+            tactical_bomber
+            heavy_fighter
+            scout_plane
+            strategic_bomber
+            maritime_patrol_plane
+        }
+    }
+}
+Renko_LUN_strike_aircraft = {
+    name = DOCTRINE_TRACK_STRIKE_AIRCRAFT
+    background = "GFX_battlefield_destruction_bg"
+    icon = "GFX_doctrine_milestone_striker_air"
+    icon_frame = "GFX_doctrine_decor_air"
+    mastery = {
+        multiplier = 8.0
+        equipment = {
+            fighter
+            interceptor
+            cas
+            naval_bomber
+            suicide
+            tactical_bomber
+            heavy_fighter
+            scout_plane
+            strategic_bomber
+            maritime_patrol_plane
+        }
+    }
+}
+Renko_LUN_medium_aircraft = {
+    name = DOCTRINE_TRACK_MEDIUM_AIRCRAFT
+    background = "GFX_operational_destruction_bg"
+    icon = "GFX_doctrine_milestone_medium_air"
+    icon_frame = "GFX_doctrine_decor_air"
+    mastery = {
+        multiplier = 8.0
+        equipment = {
+            fighter
+            interceptor
+            cas
+            naval_bomber
+            suicide
+            tactical_bomber
+            heavy_fighter
+            scout_plane
+            strategic_bomber
+            maritime_patrol_plane
+        }
+    }
+}
+Renko_LUN_heavy_aircraft = {
+    name = DOCTRINE_TRACK_HEAVY_AIRCRAFT
+    background = "GFX_strategic_destruction_bg"
+    icon = "GFX_doctrine_milestone_heavy_air"
+    icon_frame = "GFX_doctrine_decor_air"
+    mastery = {
+        multiplier = 8.0
+        equipment = {
+            fighter
+            interceptor
+            cas
+            naval_bomber
+            suicide
+            tactical_bomber
+            heavy_fighter
+            scout_plane
+            strategic_bomber
+            maritime_patrol_plane
+        }
+    }
+}

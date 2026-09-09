@@ -1,4 +1,4 @@
-# 月都侵军：基础数值取自日本 MOD 对应单位，地形能力单独强化。
+# 月都侵军：基础数值取自日本 MOD；步兵承担复杂地形，装甲仅保留少量开阔地形加成。
 # 三个营计入特种部队容量；两个团属支援连不计入。
 # 顶层 attack/defense 等为装备属性修正；地形块使用 defence。
 sub_units = {
@@ -145,56 +145,14 @@ sub_units = {
 		hard_attack = 0.05
 		defense = 0.05
 
-		# 月都科技与术式：补足复杂地形短板；不改动地图本身的基础地形惩罚。
+		# 装甲保留少量开阔地形加成；复杂地形主要由侵军步兵提供。
 		plains = {
-			attack = 0.10
-			defence = 0.10
-			movement = 0.10
+			attack = 0.05
+			movement = 0.05
 		}
 		desert = {
-			attack = 0.10
-			defence = 0.10
-			movement = 0.10
-		}
-		forest = {
-			attack = 0.10
-			defence = 0.10
-			movement = 0.10
-		}
-		hills = {
-			attack = 0.10
-			defence = 0.10
-			movement = 0.10
-		}
-		mountain = {
-			attack = 0.10
-			defence = 0.10
-			movement = 0.10
-		}
-		jungle = {
-			attack = 0.10
-			defence = 0.10
-			movement = 0.10
-		}
-		marsh = {
-			attack = 0.15
-			defence = 0.10
-			movement = 0.10
-		}
-		urban = {
-			attack = 0.10
-			defence = 0.10
-			movement = 0.10
-		}
-		river = {
-			attack = 0.20
-			movement = 0.10
-		}
-		amphibious = {
-			attack = 0.30
-		}
-		fort = {
-			attack = 0.10
+			attack = 0.05
+			movement = 0.05
 		}
 	}
 
@@ -246,56 +204,14 @@ sub_units = {
 
 		suppression = 1.25
 
-		# 月都科技与术式：补足复杂地形短板；不改动地图本身的基础地形惩罚。
+		# 装甲保留少量开阔地形加成；复杂地形主要由侵军步兵提供。
 		plains = {
-			attack = 0.10
-			defence = 0.10
-			movement = 0.10
+			attack = 0.05
+			movement = 0.05
 		}
 		desert = {
-			attack = 0.10
-			defence = 0.10
-			movement = 0.10
-		}
-		forest = {
-			attack = 0.10
-			defence = 0.10
-			movement = 0.10
-		}
-		hills = {
-			attack = 0.10
-			defence = 0.10
-			movement = 0.10
-		}
-		mountain = {
-			attack = 0.10
-			defence = 0.10
-			movement = 0.10
-		}
-		jungle = {
-			attack = 0.10
-			defence = 0.10
-			movement = 0.10
-		}
-		marsh = {
-			attack = 0.15
-			defence = 0.10
-			movement = 0.10
-		}
-		urban = {
-			attack = 0.10
-			defence = 0.10
-			movement = 0.10
-		}
-		river = {
-			attack = 0.20
-			movement = 0.10
-		}
-		amphibious = {
-			attack = 0.30
-		}
-		fort = {
-			attack = 0.10
+			attack = 0.05
+			movement = 0.05
 		}
 	}
 

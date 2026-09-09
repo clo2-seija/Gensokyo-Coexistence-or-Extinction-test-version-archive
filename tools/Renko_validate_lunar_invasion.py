@@ -110,7 +110,7 @@ def validate(root, japan, vanilla):
     for rel in ['common/units/Renko_LUN_invasion_units.txt','common/technologies/Renko_LUN_invasion_units_tech.txt','interface/Renko_LUN_invasion_unit_icons.gfx']:
         data=(root/rel).read_bytes();assert not data.startswith(b'\xef\xbb\xbf') and b'\r' not in data
     assert history.count(b'\n') == history.count(b'\r\n'), 'history line endings changed'
-    return {'result':'PASS','units':5,'special_battalions':3,'regimental_support_companies':2,'gfx_registrations':15,'two_frame_pngs':15,'localisation_keys_per_language':12,'baseline_core_stats':'unchanged except user-specified medium TD equipment count = 40','terrain':'3 battalions positive; 2 support companies have no terrain fields','RuntimeChecks':'NOT RUN'}
+    return {'result':'PASS','units':5,'special_battalions':3,'regimental_support_companies':2,'gfx_registrations':15,'two_frame_pngs':15,'localisation_keys_per_language':12,'baseline_core_stats':'unchanged except user-specified medium TD equipment count = 40','terrain':'infantry complex terrain; armor open terrain only; support has no terrain fields','RuntimeChecks':'NOT RUN'}
 
 if __name__ == '__main__':
     ap=argparse.ArgumentParser()

@@ -44,4 +44,17 @@ Renko_LUN_lunar_war_high_command_category = {
             factor = 100
         }
     }
+
+    Renko_LUN_adopt_designated_doctrines = {
+        icon = generic_military
+        cost = 0
+        fire_only_once = yes
+        priority = 80
+        available = { has_tech = Renko_LUN_invasion_units_tech }
+        complete_effect = {
+            custom_effect_tooltip = Renko_LUN_adopt_designated_doctrines_tt
+            hidden_effect = { Renko_LUN_select_designated_doctrines = yes }
+        }
+        ai_will_do = { factor = 100 }
+    }
 }
