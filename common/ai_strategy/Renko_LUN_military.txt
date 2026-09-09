@@ -1,0 +1,95 @@
+# 月都军事策略：编制比例。数量门槛沿用日本步兵类型统计，不按编制名称统计。
+Renko_LUN_infantry_role_ratio = {
+    allowed = { original_tag = LUN }
+    enable = { always = yes }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = role_ratio
+        id = Renko_LUN_infantry
+        value = 100
+    }
+}
+
+Renko_LUN_armored_role_ratio = {
+    allowed = { original_tag = LUN }
+    enable = { always = yes }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = role_ratio
+        id = Renko_LUN_armored
+        value = 100
+    }
+}
+
+# 只抵扣常驻的 100；200 师时不压制，201 师起合计为 0。
+Renko_LUN_suppress_infantry_above_200 = {
+    allowed = { original_tag = LUN }
+    enable = {
+        has_army_size = {
+            size > 200
+            type = infantry
+        }
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = role_ratio
+        id = Renko_LUN_infantry
+        value = -100
+    }
+}
+
+# XP / PP 管理：沿用日本与固定特殊属国共用策略的全部数值。
+Renko_LUN_xp_and_pp_management = {
+
+	allowed = { original_tag = LUN }
+
+	enable = {
+		always = yes
+	}
+
+	abort = {
+		always = no
+	}
+	#
+	ai_strategy = {
+		type = land_xp_spend_priority
+		id = division_template
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = land_xp_spend_priority
+		id = upgrade_xp_cutoff
+		value = 9999
+	}
+
+	ai_strategy = {
+		type = air_xp_spend_priority
+		id = upgrade_xp_cutoff
+		value = 9999
+	}
+
+	ai_strategy = {
+		type = navy_xp_spend_priority
+		id = upgrade_xp_cutoff
+		value = 9999
+	}
+
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = idea
+		value = 100
+	}
+    ai_strategy = {
+		type = pp_spend_priority
+		id = decision
+		value = 100
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = admiral
+		value = 100
+	}
+
+}

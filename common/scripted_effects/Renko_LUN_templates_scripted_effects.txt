@@ -1,0 +1,194 @@
+# 日本基础步兵师／特种步坦师布局的月都适配；装备设计留待后续。
+Renko_LUN_create_infantry_template = {
+	division_template = {
+		name = "Renko Lunar Infantry Division"
+		is_locked = no
+		obsolete = no
+		regiments = {
+			Renko_LUN_invasion_infantry = { x = 0 y = 0 }
+			Renko_LUN_invasion_infantry = { x = 0 y = 1 }
+			Renko_LUN_invasion_infantry = { x = 0 y = 2 }
+
+			Renko_LUN_invasion_infantry = { x = 1 y = 0 }
+			Renko_LUN_invasion_infantry = { x = 1 y = 1 }
+			Renko_LUN_invasion_infantry = { x = 1 y = 2 }
+
+			Renko_LUN_invasion_infantry = { x = 2 y = 0 }
+			Renko_LUN_invasion_infantry = { x = 2 y = 1 }
+			Renko_LUN_invasion_infantry = { x = 2 y = 2 }
+		}
+		regimental_support = {
+			fire_support = { x = 0 y = 0 }
+			field_guns = { x = 1 y = 0 }
+			field_guns = { x = 2 y = 0 }
+		}
+		support = {
+			engineer = { x = 0 y = 0 }
+			artillery = { x = 0 y = 1 }
+		}
+	}
+}
+
+Renko_LUN_create_armored_template = {
+	division_template = {
+		name = "Renko Lunar Armored Division"
+		is_locked = no
+		obsolete = no
+		regiments = {
+			Renko_LUN_invasion_infantry = { x = 0 y = 0 }
+			Renko_LUN_invasion_infantry = { x = 0 y = 1 }
+			Renko_LUN_invasion_infantry = { x = 0 y = 2 }
+			Renko_LUN_invasion_infantry = { x = 0 y = 3 }
+			Renko_LUN_invasion_infantry = { x = 0 y = 4 }
+
+			Renko_LUN_invasion_infantry = { x = 1 y = 0 }
+			Renko_LUN_invasion_infantry = { x = 1 y = 1 }
+			Renko_LUN_invasion_infantry = { x = 1 y = 2 }
+			Renko_LUN_invasion_infantry = { x = 1 y = 3 }
+			Renko_LUN_invasion_infantry = { x = 1 y = 4 }
+
+			Renko_LUN_invasion_medium_armor = { x = 2 y = 0 }
+			Renko_LUN_invasion_medium_armor = { x = 2 y = 1 }
+			Renko_LUN_invasion_medium_armor = { x = 2 y = 2 }
+			Renko_LUN_invasion_medium_armor = { x = 2 y = 3 }
+
+			Renko_LUN_invasion_medium_armor = { x = 3 y = 0 }
+			Renko_LUN_invasion_medium_armor = { x = 3 y = 1 }
+			Renko_LUN_invasion_medium_armor = { x = 3 y = 2 }
+
+			Renko_LUN_invasion_medium_tankdestroyer = { x = 4 y = 0 }
+			Renko_LUN_invasion_medium_tankdestroyer = { x = 4 y = 1 }
+			Renko_LUN_invasion_medium_tankdestroyer = { x = 4 y = 2 }
+		}
+		regimental_support = {
+			fire_support = { x = 0 y = 0 }
+			field_guns = { x = 1 y = 0 }
+			Renko_LUN_invasion_medium_anti_air_support = { x = 2 y = 0 }
+			Renko_LUN_invasion_medium_anti_air_support = { x = 3 y = 0 }
+			Renko_LUN_invasion_heavy_tankdestroyer_support = { x = 4 y = 0 }
+		}
+		support = {
+			armored_engineer = {
+				x = 0
+				y = 0
+			}
+			medium_flame_tank = {
+				x = 0
+				y = 1
+			}
+			helicopter_field_hospital = {
+				x = 0
+				y = 2
+			}
+			helicopter_recon = {
+				x = 0
+				y = 3
+			}
+			helicopter_transport = {
+				x = 0
+				y = 4
+			}
+		}
+	}
+}
+
+Renko_LUN_create_suppression_template = {
+	division_template = {
+		name = "Renko Lunar Cavalry Garrison"
+		regiments = {
+			cavalry = { x = 0 y = 0 }
+			cavalry = { x = 0 y = 1 }
+			cavalry = { x = 0 y = 2 }
+			cavalry = { x = 0 y = 3 }
+			cavalry = { x = 0 y = 4 }
+			cavalry = { x = 1 y = 0 }
+			cavalry = { x = 1 y = 1 }
+			cavalry = { x = 1 y = 2 }
+			cavalry = { x = 1 y = 3 }
+			cavalry = { x = 1 y = 4 }
+			cavalry = { x = 2 y = 0 }
+			cavalry = { x = 2 y = 1 }
+			cavalry = { x = 2 y = 2 }
+			cavalry = { x = 2 y = 3 }
+			cavalry = { x = 2 y = 4 }
+			cavalry = { x = 3 y = 0 }
+			cavalry = { x = 3 y = 1 }
+			cavalry = { x = 3 y = 2 }
+			cavalry = { x = 3 y = 3 }
+			cavalry = { x = 3 y = 4 }
+			cavalry = { x = 4 y = 0 }
+			cavalry = { x = 4 y = 1 }
+			cavalry = { x = 4 y = 2 }
+			cavalry = { x = 4 y = 3 }
+			cavalry = { x = 4 y = 4 }
+		}
+		support = { military_police = { x = 0 y = 0 } }
+	}
+}
+
+Renko_LUN_unlock_template_requirements = {
+	set_technology = {
+		Renko_LUN_invasion_units_tech = 1
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		support_weapons = 1
+		tech_support = 1
+		tech_engineers = 1
+		gw_artillery = 1
+		tech_military_police = 1
+		tech_trucks = 1
+		gwtank_chassis = 1
+		basic_medium_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+		interwar_antiair = 1
+		interwar_antitank = 1
+		popup = no
+	}
+	if = {
+		limit = { NOT = { is_special_project_completed = sp:sp_air_helicopter } }
+		complete_special_project = sp:sp_air_helicopter
+	}
+	if = {
+		limit = { NOT = { is_special_project_completed = sp:sp_land_military_engineering_vehicles } }
+		complete_special_project = sp:sp_land_military_engineering_vehicles
+	}
+	if = {
+		limit = { NOT = { is_special_project_completed = sp:sp_land_flamethrower_tank } }
+		complete_special_project = sp:sp_land_flamethrower_tank
+	}
+	set_technology = {
+		sp_armored_engineer_tech = 1
+		sp_helicopter_transport_pods_tech = 1
+		sp_helicopter_artillery_observers_tech = 1
+		sp_helicopter_med_evac_tech = 1
+		popup = no
+	}
+}
+
+Renko_LUN_grant_army_templates_and_units = {
+	Renko_LUN_unlock_template_requirements = yes
+	if = {
+		limit = { NOT = { has_template = "Renko Lunar Infantry Division" } }
+		Renko_LUN_create_infantry_template = yes
+	}
+	if = {
+		limit = { NOT = { has_template = "Renko Lunar Armored Division" } }
+		Renko_LUN_create_armored_template = yes
+	}
+	if = {
+		limit = { NOT = { has_template = "Renko Lunar Cavalry Garrison" } }
+		Renko_LUN_create_suppression_template = yes
+	}
+	capital_scope = {
+		create_unit = {
+			division = "division_template = \"Renko Lunar Infantry Division\" start_equipment_factor = 1.0"
+			owner = PREV
+			count = 100
+		}
+		create_unit = {
+			division = "division_template = \"Renko Lunar Armored Division\" start_equipment_factor = 1.0"
+			owner = PREV
+			count = 20
+		}
+	}
+}

@@ -3,6 +3,7 @@
 ######################
 
 marine_generic = {
+	blocked_for = { LUN }
 	role = marine
 
 	upgrade_prio = {

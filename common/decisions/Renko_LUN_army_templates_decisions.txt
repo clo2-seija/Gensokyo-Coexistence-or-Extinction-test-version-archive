@@ -1,0 +1,16 @@
+Renko_LUN_lunar_war_high_command_category = {
+    Renko_LUN_mobilize_lunar_army = {
+        icon = generic_military
+        cost = 0
+        fire_only_once = yes
+        priority = 70
+        available = {
+            capital_scope = { is_controlled_by = ROOT }
+        }
+        complete_effect = {
+            custom_effect_tooltip = Renko_LUN_mobilize_lunar_army_tt
+            hidden_effect = { Renko_LUN_grant_army_templates_and_units = yes }
+        }
+        ai_will_do = { factor = 0 }
+    }
+}

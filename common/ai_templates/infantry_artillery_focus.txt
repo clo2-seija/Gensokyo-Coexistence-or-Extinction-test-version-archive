@@ -1,5 +1,6 @@
 ###alternative upgrade route for artillery-heavy nations - ENG, IMP, USA
 infantry_artillery_focus = {
+	blocked_for = { LUN }
 	
 
 	role = infantry
