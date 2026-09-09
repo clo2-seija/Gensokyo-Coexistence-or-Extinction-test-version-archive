@@ -1,0 +1,13 @@
+﻿l_english:
+ Renko_LUN_invasion_infantry:0 "Lunar Invasion Infantry Battalion"
+ Renko_LUN_invasion_infantry_desc:0 "An elite lunar battalion enhanced by technology and magic. Counts toward the special forces cap."
+ Renko_LUN_invasion_medium_armor:0 "Lunar Invasion Medium Tank Battalion"
+ Renko_LUN_invasion_medium_armor_desc:0 "An elite lunar battalion enhanced by technology and magic. Counts toward the special forces cap."
+ Renko_LUN_invasion_medium_tankdestroyer:0 "Lunar Invasion Medium Tank Destroyer Battalion"
+ Renko_LUN_invasion_medium_tankdestroyer_desc:0 "An elite lunar battalion enhanced by technology and magic. Counts toward the special forces cap."
+ Renko_LUN_invasion_medium_anti_air_support:0 "Lunar Invasion Medium SPAA Regimental Support Company"
+ Renko_LUN_invasion_medium_anti_air_support_desc:0 "A regimental support company enhanced by lunar technology and magic. Does not count toward the special forces cap."
+ Renko_LUN_invasion_heavy_tankdestroyer_support:0 "Lunar Invasion Heavy Tank Destroyer Regimental Support Company"
+ Renko_LUN_invasion_heavy_tankdestroyer_support_desc:0 "A regimental support company enhanced by lunar technology and magic. Does not count toward the special forces cap."
+ Renko_LUN_invasion_units_tech:0 "Lunar Invasion Formations"
+ Renko_LUN_invasion_units_tech_desc:0 "Unlocks three lunar special forces battalions and two regimental support companies."

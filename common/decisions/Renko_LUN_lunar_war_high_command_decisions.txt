@@ -22,4 +22,26 @@ Renko_LUN_lunar_war_high_command_category = {
             factor = 100
         }
     }
+
+    Renko_LUN_elite_soldier_training = {
+        icon = generic_military
+        cost = 0
+        fire_only_once = yes
+        priority = 90
+
+        available = {
+            always = yes
+        }
+
+        complete_effect = {
+            custom_effect_tooltip = Renko_LUN_elite_soldier_training_tt
+            hidden_effect = {
+                add_ideas = Renko_LUN_elite_soldier_training_hidden_idea
+            }
+        }
+
+        ai_will_do = {
+            factor = 100
+        }
+    }
 }

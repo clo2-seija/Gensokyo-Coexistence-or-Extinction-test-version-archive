@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="76" height="42" viewBox="0 0 76 42">
+<title>月都侵军中型自行防空炮 · 第二版</title>
+<desc>冷灰装甲与银色浅浮雕弦月，参考原版高直炮塔与短促上扬炮管、概括履带；透明背景76×42单帧。</desc>
+<defs>
+ <linearGradient id="armor" x1=".14" y1="0" x2=".65" y2=".95"><stop stop-color="#d4dcd9"/><stop offset=".22" stop-color="#a8b8bc"/><stop offset=".44" stop-color="#7e929d"/><stop offset=".7" stop-color="#526975"/><stop offset="1" stop-color="#354550"/></linearGradient>
+ <linearGradient id="hull" x1=".1" y1="0" x2=".55" y2="1"><stop stop-color="#b8c5c6"/><stop offset=".3" stop-color="#8d9fa7"/><stop offset=".6" stop-color="#657b87"/><stop offset="1" stop-color="#3e515c"/></linearGradient>
+ <linearGradient id="gun" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c5cfcc"/><stop offset=".35" stop-color="#94a7ae"/><stop offset="1" stop-color="#354751"/></linearGradient>
+ <linearGradient id="silver" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#fffef1"/><stop offset=".4" stop-color="#e0e6e2"/><stop offset=".7" stop-color="#9caeb5"/><stop offset="1" stop-color="#d8dfda"/></linearGradient>
+ <path id="moon" d="M38.6 15.7 C34.8 14.9 32.3 17.4 33.1 20.5 C33.8 23.4 37.6 24.2 39.8 21.8 C36.9 22.8 35 21.1 35.1 19.2 C35.2 17.7 36.5 16.4 38.6 15.7 Z"/>
+</defs>
+<g id="track-mass">
+ <path d="M14 27 L57 27 Q62 27 63 30 L61 33.5 L57 35 L15 35 L10 33 L9 30 Z" fill="#2b363d"/>
+ <path d="M12 31 L15 32 L17 34 L22 34 L24 32.5 L26 34 L31 34 L33 32.5 L35 34 L40 34 L42 32.5 L44 34 L49 34 L51 32 L55 34 L59 32 L61 30.5" fill="none" stroke="#56636b" stroke-width=".8"/>
+ <path d="M18 34.8 L55 34.8" stroke="#1e2a31" stroke-width=".6"/>
+</g>
+<g id="hull">
+ <path d="M13 22.7 L22 21.5 L43 21.5 L52 23 L61.5 26.5 L64 29 L60.5 32 L55 33 L13 32 L9 30 L9.5 26.5 Z" fill="url(#hull)" stroke="#394a54" stroke-width=".5"/>
+ <path d="M13 22.7 L22 21.5 L43 21.5 L52 23 L48 24 L17 24.5 L10 27 Z" fill="#a0b1b7"/>
+ <path d="M11 27 L20 24.6 L45 24 L53 25.3 L57 27.3 L52 27 L46 26 L22 26 L14 28 Z" fill="#bcc8c7" opacity=".3"/>
+ <path d="M51 24 L61.5 26.5 L64 29 L60.5 32 L55 33 L54 29 Z" fill="#3d5461" opacity=".65"/>
+ <path d="M13 29 L23 28.5 L27 29.5 L43 28.7 L51 29.2 L55 31.7 L16 32 L11 30.5 Z" fill="#465d6a" opacity=".48"/>
+ <path d="M9.5 27 L13 26.2 L17 26.2" fill="none" stroke="#d1dad6" stroke-width=".65"/>
+ <path d="M18 23.1 L26 22.7" stroke="#d3dbd7" stroke-width=".55"/>
+ <path d="M11 30 L16 30.3 L18 32.5 L14 32.5 Z" fill="#344751"/>
+ <path d="M21 31.8 L22 33 L25 33 L25.7 31.8 M32 31.8 L33 33 L36 33 L36.7 31.8 M43 31.8 L44 33 L47 33 L47.7 31.8 M54 31 L55 32.7 L58 32.3" fill="#24353f"/>
+</g>
+<g id="compact-aa-barrels">
+ <path d="M39 15 L47.5 6.7 L49.2 8.3 L41.2 17.5 Z" fill="url(#gun)" stroke="#354954" stroke-width=".4"/>
+ <path d="M40 14.5 L47.8 7.1" stroke="#bdcccf" stroke-width=".5"/>
+ <path d="M42 17 L51.2 8.4 L52.8 10.2 L44.5 19.8 Z" fill="url(#gun)" stroke="#354954" stroke-width=".45"/>
+ <path d="M43 16.8 L51.3 8.9" stroke="#d0d9d6" stroke-width=".55"/>
+ <path d="M47.5 6.7 L49.2 8.3 M51.2 8.4 L52.8 10.2" stroke="#263843" stroke-width=".7"/>
+ <path d="M39 16 L43 14 L47 17.5 L45 22 L39 21 Z" fill="url(#armor)" stroke="#354a57" stroke-width=".45"/>
+</g>
+<g id="upright-aa-turret">
+ <path d="M23.5 14 L25 10 L28 11.5 L29.5 13 L34 11.6 L38 13.2 L40.5 12.6 L43.5 15 L44 24.4 L40 26.5 L26 25.8 L23.5 23.5 Z" fill="url(#armor)" stroke="#40535f" stroke-width=".5"/>
+ <path d="M25 10 L28 11.5 L29.5 13 L34 11.6 L38 13.2 L40.5 12.6 L43.5 15 L39 15.6 L34 13.8 L29 15 L25 13.2 Z" fill="#9fb2b9"/>
+ <path d="M29.5 13.5 L34 12.2 L38.3 13.9 L35.5 14.5 L33.6 13.6 L30 14.4 Z" fill="#304650"/>
+ <path d="M25 11 L27.5 12.1 L28.6 13.6" fill="none" stroke="#d7e1dc" stroke-width=".65"/>
+ <path d="M24 15 L27 14.7 L27.5 23.8 L24 23 Z" fill="#93a8b0" opacity=".65"/>
+ <path d="M39 15.6 L43.5 15 L44 24.4 L40 26.5 L38.8 24 Z" fill="#3b5361"/>
+ <path d="M26 24 L39 24.5 L40 26.5 L26 25.8 L23.5 23.5 Z" fill="#364e5c" opacity=".5"/>
+ <path d="M27 15 L30 14.6" stroke="#cbd7d5" stroke-width=".5"/>
+</g>
+<g id="silver-crescent" transform="translate(1.1 3.4) scale(.88)">
+ <use href="#moon" transform="translate(.4 .5)" fill="#233540" stroke="#233540" stroke-width=".5"/>
+ <use href="#moon" fill="url(#silver)" stroke="#d5dfdb" stroke-width=".2"/>
+ <path d="M37.5 16.1 C34.8 16.1 33.3 18.4 34.2 20.7" fill="none" stroke="#fffff3" stroke-width=".45"/>
+</g>
+</svg>

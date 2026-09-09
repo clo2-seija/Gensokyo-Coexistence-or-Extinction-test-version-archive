@@ -259,3 +259,7 @@ add_ideas = {
 				LUN_purification_weapon_system
 			}
 #添加民族精神（在common\ideas\你的国家tag_country.txt）
+# Renko: 月都新开局专属侵军编制。
+set_technology = {
+	Renko_LUN_invasion_units_tech = 1
+}

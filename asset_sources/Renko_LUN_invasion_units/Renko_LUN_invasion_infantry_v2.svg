@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="76" height="42" viewBox="0 0 76 42">
+<title>月都侵军步兵 · 兵牌版 v2</title>
+<desc>76×42 单帧设计稿。冷灰钢盔与银色浅浮雕弦月；左上光，细轮廓、薄盔沿。背景透明。</desc>
+<defs>
+ <linearGradient id="steel" x1=".18" y1=".04" x2=".83" y2=".88">
+  <stop stop-color="#d9dedd"/><stop offset=".18" stop-color="#bbc5c7"/><stop offset=".37" stop-color="#909fa5"/><stop offset=".57" stop-color="#6b7c86"/><stop offset=".77" stop-color="#485964"/><stop offset="1" stop-color="#303b43"/>
+ </linearGradient>
+ <linearGradient id="silver" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#f7f7ed"/><stop offset=".38" stop-color="#dce3e0"/><stop offset=".65" stop-color="#9aa9ae"/><stop offset="1" stop-color="#d2d9d6"/></linearGradient>
+ <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#89969a"/><stop offset=".45" stop-color="#5c686e"/><stop offset="1" stop-color="#30383e"/></linearGradient>
+ <path id="dome" d="M12 34 L14 26 C15 15 21 8 31 7 C42 5.7 50 10 54 18 C57 23 57 28 60 31 L66 33 L66 34.4 L57 34.5 C48 32.5 43 35 34 35 L12 35.5 Z"/>
+ <clipPath id="clip"><use href="#dome"/></clipPath>
+ <path id="moon" d="M39.7 15.2 C34.2 14.1 31 18 32.1 22.7 C33 27 38.2 28.5 41.1 24.5 C36.9 26 34.7 23.3 34.8 20.3 C34.8 17.9 36.5 16.1 39.7 15.2 Z"/>
+</defs>
+<g id="helmet">
+ <use href="#dome" fill="url(#steel)" stroke="#363c40" stroke-width=".65"/>
+ <g clip-path="url(#clip)">
+  <path d="M14 29 C15 16 21 9 31 8 C39 7 46 10 49 13 C39 9 30 9 24 14 C18 19 18 25 17 30 Z" fill="#d7dddc" opacity=".27"/>
+  <path d="M51 15 C57 22 55 29 61 32 L66 34 L53 33 C53 28 53 22 51 15 Z" fill="#28343e" opacity=".34"/>
+  <path d="M13 33 C27 31.5 36 34 46 31 C52 29 56 31 61 32 L67 34 L13 36 Z" fill="#34434d" opacity=".35"/>
+ </g>
+ <path d="M15.3 23 C17 14 22 9 30 8 C36 7.2 41 8.1 44 9.5" fill="none" stroke="#e0e4df" stroke-width=".65" opacity=".77"/>
+ <path d="M12 34.1 C23 33.5 30 35 38 34 C46 33 49 32 55 33 C59 34 62 34 66 33.5 L67 35 C60 35.8 56 34.9 53 34.5 C46 34 41 35.9 34 36 L11.5 36 Z" fill="url(#rim)"/>
+ <path d="M12 36 L34 36 C43 36 47 34.1 53 34.5 L61 35.4 L67 35" fill="none" stroke="#252d32" stroke-width=".6"/>
+</g>
+<g id="silver-crescent-relief">
+ <use href="#moon" transform="translate(.55 .65)" fill="#28333b" stroke="#28333b" stroke-width=".55"/>
+ <use href="#moon" fill="url(#silver)" stroke="#bec8c9" stroke-width=".28"/>
+ <path d="M37.7 15.7 C33.2 16 31.4 19.9 33.1 23.2" fill="none" stroke="#f5f6ed" stroke-width=".55"/>
+</g>
+</svg>
