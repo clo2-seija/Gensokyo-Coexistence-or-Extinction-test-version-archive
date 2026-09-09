@@ -15,6 +15,7 @@ default = {
 	breakthrough = 1
 	build_cost_ic = 1
 	carrier_size = 1
+	submarine_carrier_size = 1 # Renko: lunar MIO capacity
 	defense = 1
 	entrenchment = 1
 	fuel_consumption = 1
