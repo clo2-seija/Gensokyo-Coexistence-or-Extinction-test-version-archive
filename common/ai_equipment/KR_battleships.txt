@@ -1,5 +1,6 @@
 # By Pelmen, 1.10.7
 naval_capital_battleship = {
+	blocked_for = { LUN }
 	category = naval
 	#available_for = {}
 	#blocked_for = {}

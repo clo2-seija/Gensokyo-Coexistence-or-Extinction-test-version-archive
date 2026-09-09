@@ -1,0 +1,5 @@
+﻿l_simp_chinese:
+ Renko_LUN_production_loop_start:0 "启动军备生产调度"
+ Renko_LUN_production_loop_start_desc:0 "由军备局定期检查中型坦克与中型歼击车的库存，协调陆军装备生产。"
+ Renko_LUN_production_cycle_mission:0 "军备生产调度"
+ Renko_LUN_production_cycle_mission_desc:0 "每30日检查一次装甲装备库存：中型坦克按需增产，中型歼击车按需增产或温和减产。"

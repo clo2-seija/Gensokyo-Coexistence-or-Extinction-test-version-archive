@@ -1,4 +1,5 @@
 generic_heavy_fighter = {
+	blocked_for = { LUN }
 	category = air
 
 	roles = {

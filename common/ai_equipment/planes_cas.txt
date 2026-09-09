@@ -1,4 +1,5 @@
 generic_cas = {
+	blocked_for = { LUN }
 	category = air
 
 	roles = {

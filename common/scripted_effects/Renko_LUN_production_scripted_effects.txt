@@ -1,0 +1,105 @@
+Renko_LUN_update_medium_tank_production_state = {
+	if = {
+		limit = {
+			has_country_flag = Renko_LUN_medium_tank_increase
+		}
+		if = {
+			limit = {
+				stockpile_ratio = {
+					archetype = medium_tank_chassis
+					ratio > 0.18
+				}
+			}
+			clr_country_flag = Renko_LUN_medium_tank_increase
+		}
+	}
+	else_if = {
+		limit = {
+			stockpile_ratio = {
+				archetype = medium_tank_chassis
+				ratio < 0.08
+			}
+		}
+		set_country_flag = Renko_LUN_medium_tank_increase
+	}
+}
+Renko_LUN_update_medium_td_production_state = {
+	if = {
+		limit = {
+			has_country_flag = Renko_LUN_medium_td_increase
+		}
+		clr_country_flag = Renko_LUN_medium_td_decline
+		if = {
+			limit = {
+				stockpile_ratio = {
+					archetype = medium_tank_destroyer_chassis
+					ratio > 0.18
+				}
+			}
+			clr_country_flag = Renko_LUN_medium_td_increase
+			if = {
+				limit = {
+					stockpile_ratio = {
+						archetype = medium_tank_destroyer_chassis
+						ratio > 0.24
+					}
+				}
+				set_country_flag = Renko_LUN_medium_td_decline
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = Renko_LUN_medium_td_decline
+		}
+		clr_country_flag = Renko_LUN_medium_td_increase
+		if = {
+			limit = {
+				stockpile_ratio = {
+					archetype = medium_tank_destroyer_chassis
+					ratio < 0.16
+				}
+			}
+			clr_country_flag = Renko_LUN_medium_td_decline
+			if = {
+				limit = {
+					stockpile_ratio = {
+						archetype = medium_tank_destroyer_chassis
+						ratio < 0.08
+					}
+				}
+				set_country_flag = Renko_LUN_medium_td_increase
+			}
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				stockpile_ratio = {
+					archetype = medium_tank_destroyer_chassis
+					ratio < 0.08
+				}
+			}
+			set_country_flag = Renko_LUN_medium_td_increase
+		}
+		else_if = {
+			limit = {
+				stockpile_ratio = {
+					archetype = medium_tank_destroyer_chassis
+					ratio > 0.24
+				}
+			}
+			set_country_flag = Renko_LUN_medium_td_decline
+		}
+	}
+}
+Renko_LUN_update_land_production_state = {
+	Renko_LUN_update_medium_tank_production_state = yes
+	Renko_LUN_update_medium_td_production_state = yes
+}
+Renko_LUN_clear_production_state = {
+	clr_country_flag = Renko_LUN_production_loop_active
+	clr_country_flag = Renko_LUN_medium_tank_increase
+	clr_country_flag = Renko_LUN_medium_td_increase
+	clr_country_flag = Renko_LUN_medium_td_decline
+}

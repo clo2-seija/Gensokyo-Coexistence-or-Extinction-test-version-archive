@@ -1,0 +1,11 @@
+Renko_LUN_armaments_bureau = {
+	icon = decision_category_army_reform
+	priority = 99
+	allowed = {
+		original_tag = LUN
+	}
+	visible = {
+		tag = LUN
+	}
+	visible_when_empty = no
+}

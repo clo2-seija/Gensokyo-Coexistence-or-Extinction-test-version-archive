@@ -1,7 +1,7 @@
 destroyers = {
 	category = naval
 
-	blocked_for = { }
+	blocked_for = { LUN  }
 	available_for = { }
 
 	roles = { naval_screen }
@@ -196,7 +196,7 @@ destroyers = {
 generic_escorts = {
 	category = naval
 
-	blocked_for = { }
+	blocked_for = { LUN  }
 	available_for = { }
 
 	roles = { naval_escort }
@@ -408,7 +408,7 @@ generic_escorts = {
 naval_light_cruiser = {
 	category = naval
 
-	blocked_for = { }
+	blocked_for = { LUN  }
 	available_for = { }
 
 	roles = { naval_cruiser_light }
@@ -624,7 +624,7 @@ naval_light_cruiser = {
 naval_cruiser_heavy = {
 	category = naval
 
-	blocked_for = { }
+	blocked_for = { LUN  }
 	available_for = { }
 
 	roles = { naval_cruiser_heavy }
@@ -840,7 +840,7 @@ naval_cruiser_heavy = {
 naval_capital_battleship = {
 	category = naval
 
-	blocked_for = { }
+	blocked_for = { LUN  }
 	available_for = { }
 
 	roles = { naval_capital_bb }
@@ -1077,7 +1077,7 @@ naval_capital_battleship = {
 naval_super_heavy_battleship = {
 	category = naval
 
-	blocked_for = { }
+	blocked_for = { LUN  }
 	available_for = { }
 
 	roles = { naval_capital_shbb }
@@ -1147,7 +1147,7 @@ naval_super_heavy_battleship = {
 naval_capital_bc = {
 	category = naval
 
-	blocked_for = { }
+	blocked_for = { LUN  }
 	available_for = { }
 
 	roles = { naval_capital_bc }
@@ -1384,7 +1384,7 @@ naval_capital_bc = {
 naval_carrier = {
 	category = naval
 
-	blocked_for = { }
+	blocked_for = { LUN  }
 	available_for = { }
 
 	roles = { naval_carrier }
@@ -1597,7 +1597,7 @@ naval_carrier = {
 naval_carrier_light = {
 	category = naval
 
-	blocked_for = { }
+	blocked_for = { LUN  }
 	available_for = { }
 
 	roles = { naval_carrier_light }
@@ -1810,7 +1810,7 @@ naval_carrier_light = {
 naval_submarine = {
 	category = naval
 
-	blocked_for = { }
+	blocked_for = { LUN  }
 	available_for = { }
 
 	roles = { naval_submarine }

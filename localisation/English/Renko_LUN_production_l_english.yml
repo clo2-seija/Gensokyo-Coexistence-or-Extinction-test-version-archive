@@ -1,0 +1,5 @@
+﻿l_english:
+ Renko_LUN_production_loop_start:0 "Start Armaments Production Coordination"
+ Renko_LUN_production_loop_start_desc:0 "The Armaments Bureau periodically reviews medium tank and tank destroyer reserves to coordinate army equipment production."
+ Renko_LUN_production_cycle_mission:0 "Armaments Production Coordination"
+ Renko_LUN_production_cycle_mission_desc:0 "Review armored equipment reserves every 30 days. Increase medium tank production when needed; increase or moderately reduce medium tank destroyer production as reserves change."

@@ -1,0 +1,1210 @@
+# 日本装备设计适配：先取得底盘/必要项目，再创建月人制造设计。
+Renko_LUN_medium_tank_1936_grant = {
+	set_technology = {
+		basic_medium_tank_chassis = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = medium_tank_chassis_1
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Moonwarden Mk.36"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+			main_armament_slot = tank_medium_cannon
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = additional_machine_guns
+			special_type_slot_3 = smoke_launchers
+			special_type_slot_4 = wet_ammo_storage
+			suspension_type_slot = tank_bogie_suspension
+			turret_type_slot = tank_medium_three_man_tank_turret
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 0
+			tank_nsb_engine_upgrade = 0
+		}
+	}
+	set_country_flag = Renko_LUN_medium_tank_1936_commissioned
+}
+Renko_LUN_medium_tank_1940_grant = {
+	set_technology = {
+		improved_medium_tank_chassis = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = medium_tank_chassis_2
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Moonwarden Mk.40"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+			main_armament_slot = tank_medium_cannon_2
+			special_type_slot_1 = tank_radio_2
+			special_type_slot_2 = auto_loader
+			special_type_slot_3 = stabilizer
+			special_type_slot_4 = easy_maintenance
+			suspension_type_slot = tank_bogie_suspension
+			turret_type_slot = tank_medium_three_man_tank_turret
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 12
+			tank_nsb_engine_upgrade = 4
+		}
+	}
+	set_country_flag = Renko_LUN_medium_tank_1940_commissioned
+}
+Renko_LUN_medium_tank_1941_grant = {
+	set_technology = {
+		improved_medium_tank_chassis = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = medium_tank_chassis_2
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Moonwarden Mk.40A"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+			main_armament_slot = tank_high_velocity_cannon_2
+			special_type_slot_1 = tank_radio_3
+			special_type_slot_2 = auto_loader
+			special_type_slot_3 = stabilizer
+			special_type_slot_4 = easy_maintenance
+			suspension_type_slot = tank_bogie_suspension
+			turret_type_slot = tank_medium_three_man_tank_turret
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 14
+			tank_nsb_engine_upgrade = 4
+		}
+	}
+	set_country_flag = Renko_LUN_medium_tank_1941_commissioned
+}
+Renko_LUN_medium_tank_1943_grant = {
+	set_technology = {
+		advanced_medium_tank_chassis = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = medium_tank_chassis_3
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Moonwarden Mk.43"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gas_turbine_engine
+			main_armament_slot = tank_high_velocity_cannon_2
+			special_type_slot_1 = tank_radio_3
+			special_type_slot_2 = stabilizer
+			special_type_slot_3 = auto_loader
+			special_type_slot_4 = easy_maintenance
+			suspension_type_slot = tank_interleaved_suspension
+			turret_type_slot = tank_medium_three_man_tank_turret
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 19
+			tank_nsb_engine_upgrade = 6
+		}
+	}
+	set_country_flag = Renko_LUN_medium_tank_1943_commissioned
+}
+Renko_LUN_medium_td_1936_grant = {
+	set_technology = {
+		basic_medium_tank_chassis = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = medium_tank_destroyer_chassis_1
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Moonpiercer Mk.36"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+			main_armament_slot = tank_medium_cannon
+			special_type_slot_1 = secondary_turret_small_cannon
+			special_type_slot_2 = squeezebore_adaptor
+			special_type_slot_3 = tank_radio_1
+			special_type_slot_4 = wet_ammo_storage
+			suspension_type_slot = tank_bogie_suspension
+			turret_type_slot = tank_medium_three_man_tank_turret
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 4
+			tank_nsb_engine_upgrade = 0
+		}
+	}
+	set_country_flag = Renko_LUN_medium_td_1936_commissioned
+}
+Renko_LUN_medium_td_1940_grant = {
+	set_technology = {
+		improved_medium_tank_chassis = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = medium_tank_destroyer_chassis_2
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Moonpiercer Mk.40"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+			main_armament_slot = tank_medium_cannon_2
+			special_type_slot_1 = stabilizer
+			special_type_slot_2 = auto_loader
+			special_type_slot_3 = tank_radio_2
+			special_type_slot_4 = easy_maintenance
+			suspension_type_slot = tank_bogie_suspension
+			turret_type_slot = tank_medium_three_man_tank_turret
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 8
+			tank_nsb_engine_upgrade = 0
+		}
+	}
+	set_country_flag = Renko_LUN_medium_td_1940_commissioned
+}
+Renko_LUN_medium_td_1941_grant = {
+	set_technology = {
+		improved_medium_tank_chassis = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = medium_tank_destroyer_chassis_2
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Moonpiercer Mk.40A"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+			main_armament_slot = tank_high_velocity_cannon_2
+			special_type_slot_1 = stabilizer
+			special_type_slot_2 = auto_loader
+			special_type_slot_3 = tank_radio_3
+			special_type_slot_4 = easy_maintenance
+			suspension_type_slot = tank_bogie_suspension
+			turret_type_slot = tank_medium_three_man_tank_turret
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 12
+			tank_nsb_engine_upgrade = 4
+		}
+	}
+	set_country_flag = Renko_LUN_medium_td_1941_commissioned
+}
+Renko_LUN_medium_td_1943_grant = {
+	set_technology = {
+		advanced_medium_tank_chassis = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = medium_tank_destroyer_chassis_3
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Moonpiercer Mk.43"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gas_turbine_engine
+			main_armament_slot = tank_high_velocity_cannon_2
+			special_type_slot_1 = stabilizer
+			special_type_slot_2 = auto_loader
+			special_type_slot_3 = easy_maintenance
+			special_type_slot_4 = tank_radio_3
+			suspension_type_slot = tank_bogie_suspension
+			turret_type_slot = tank_medium_three_man_tank_turret
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 12
+			tank_nsb_engine_upgrade = 8
+		}
+	}
+	set_country_flag = Renko_LUN_medium_td_1943_commissioned
+}
+Renko_LUN_medium_aa_1936_grant = {
+	set_technology = {
+		basic_medium_tank_chassis = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = medium_tank_aa_chassis_1
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Skyveil Mk.36"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+			main_armament_slot = tank_anti_air_cannon_2
+			special_type_slot_1 = expanded_fuel_tank
+			special_type_slot_2 = dozer_blade
+			special_type_slot_3 = easy_maintenance
+			special_type_slot_4 = additional_machine_guns
+			suspension_type_slot = tank_bogie_suspension
+			turret_type_slot = tank_medium_one_man_tank_turret
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 0
+			tank_nsb_engine_upgrade = 0
+		}
+	}
+	set_country_flag = Renko_LUN_medium_aa_1936_commissioned
+}
+Renko_LUN_medium_aa_1940_grant = {
+	set_technology = {
+		improved_medium_tank_chassis = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = medium_tank_aa_chassis_2
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Skyveil Mk.40"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			main_armament_slot = tank_anti_air_cannon_3
+			special_type_slot_1 = easy_maintenance
+			special_type_slot_2 = dozer_blade
+			special_type_slot_3 = auto_loader
+			special_type_slot_4 = additional_machine_guns
+			suspension_type_slot = tank_bogie_suspension
+			turret_type_slot = tank_medium_one_man_tank_turret
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 0
+			tank_nsb_engine_upgrade = 0
+		}
+	}
+	set_country_flag = Renko_LUN_medium_aa_1940_commissioned
+}
+Renko_LUN_medium_aa_1943_grant = {
+	set_technology = {
+		advanced_medium_tank_chassis = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = medium_tank_aa_chassis_3
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Skyveil Mk.43"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			main_armament_slot = tank_anti_air_cannon_3
+			special_type_slot_1 = stabilizer
+			special_type_slot_2 = auto_loader
+			special_type_slot_3 = easy_maintenance
+			special_type_slot_4 = dozer_blade
+			suspension_type_slot = tank_bogie_suspension
+			turret_type_slot = tank_medium_one_man_tank_turret
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 0
+			tank_nsb_engine_upgrade = 0
+		}
+	}
+	set_country_flag = Renko_LUN_medium_aa_1943_commissioned
+}
+Renko_LUN_heavy_td_1936_grant = {
+	set_technology = {
+		basic_heavy_tank_chassis = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = heavy_tank_destroyer_chassis_1
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Heavenbreaker Mk.36"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+			main_armament_slot = tank_heavy_cannon_2
+			special_type_slot_1 = secondary_turret_small_cannon
+			special_type_slot_2 = secondary_turret_small_cannon
+			special_type_slot_3 = easy_maintenance
+			special_type_slot_4 = squeezebore_adaptor
+			suspension_type_slot = tank_bogie_suspension
+			turret_type_slot = tank_heavy_fixed_superstructure_turret
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 0
+			tank_nsb_engine_upgrade = 0
+		}
+	}
+	set_country_flag = Renko_LUN_heavy_td_1936_commissioned
+}
+Renko_LUN_heavy_td_1940_grant = {
+	set_technology = {
+		improved_heavy_tank_chassis = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = heavy_tank_destroyer_chassis_2
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Heavenbreaker Mk.40"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+			main_armament_slot = tank_super_heavy_cannon
+			special_type_slot_1 = easy_maintenance
+			special_type_slot_2 = squeezebore_adaptor
+			special_type_slot_3 = stabilizer
+			special_type_slot_4 = auto_loader
+			suspension_type_slot = tank_bogie_suspension
+			turret_type_slot = tank_heavy_fixed_superstructure_turret
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 0
+			tank_nsb_engine_upgrade = 3
+		}
+	}
+	set_country_flag = Renko_LUN_heavy_td_1940_commissioned
+}
+Renko_LUN_heavy_td_1943_grant = {
+	set_technology = {
+		advanced_heavy_tank_chassis = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = heavy_tank_destroyer_chassis_3
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Heavenbreaker Mk.43"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+			main_armament_slot = tank_super_heavy_cannon
+			special_type_slot_1 = auto_loader
+			special_type_slot_2 = stabilizer
+			special_type_slot_3 = squeezebore_adaptor
+			special_type_slot_4 = easy_maintenance
+			suspension_type_slot = tank_christie_suspension
+			turret_type_slot = tank_heavy_fixed_superstructure_turret
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 0
+			tank_nsb_engine_upgrade = 6
+		}
+	}
+	set_country_flag = Renko_LUN_heavy_td_1943_commissioned
+}
+Renko_LUN_medium_flame_1936_grant = {
+	set_technology = {
+		basic_medium_tank_chassis = 1
+		popup = no
+	}
+	if = {
+		limit = {
+			NOT = {
+				is_special_project_completed = sp:sp_land_flamethrower_tank
+			}
+		}
+		complete_special_project = sp:sp_land_flamethrower_tank
+	}
+	create_equipment_variant = {
+		type = medium_tank_flame_chassis_1
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Pureflame Mk.36"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			main_armament_slot = flamethrower
+			turret_type_slot = tank_medium_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = dozer_blade
+			special_type_slot_2 = expanded_fuel_tank
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 0
+			tank_nsb_engine_upgrade = 0
+		}
+	}
+	set_country_flag = Renko_LUN_medium_flame_1936_commissioned
+}
+Renko_LUN_medium_flame_1940_grant = {
+	set_technology = {
+		improved_medium_tank_chassis = 1
+		popup = no
+	}
+	if = {
+		limit = {
+			NOT = {
+				is_special_project_completed = sp:sp_land_flamethrower_tank
+			}
+		}
+		complete_special_project = sp:sp_land_flamethrower_tank
+	}
+	create_equipment_variant = {
+		type = medium_tank_flame_chassis_2
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Pureflame Mk.40"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			main_armament_slot = advanced_flamethrower
+			turret_type_slot = tank_medium_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = easy_maintenance
+			special_type_slot_2 = dozer_blade
+			special_type_slot_3 = expanded_fuel_tank
+			special_type_slot_4 = expanded_fuel_tank
+		}
+		upgrades = {
+			tank_nsb_armor_upgrade = 0
+			tank_nsb_engine_upgrade = 0
+		}
+	}
+	set_country_flag = Renko_LUN_medium_flame_1940_commissioned
+}
+Renko_LUN_escort_carrier_1936_grant = {
+	if = {
+		limit = {
+			NOT = {
+				is_special_project_completed = sp:sp_naval_escort_carrier
+			}
+		}
+		complete_special_project = sp:sp_naval_escort_carrier
+	}
+	create_equipment_variant = {
+		name = "Moonhaven-class Mk.36"
+		type = ship_hull_escort_carrier
+		parent_version = 0
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		role_icon_index = 3
+		allow_without_tech = yes
+		modules = {
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_deck_slot_1 = ship_escort_deck_space
+			fixed_ship_deck_slot_2 = ship_escort_deck_space
+			fixed_ship_engine_slot = carrier_ship_engine_2
+			fixed_ship_radar_slot = ship_radar_2
+			front_1_custom_slot = ship_escort_deck_space
+			mid_1_custom_slot = ship_escort_deck_space
+		}
+	}
+	set_country_flag = Renko_LUN_escort_carrier_1936_commissioned
+}
+Renko_LUN_escort_carrier_1940_grant = {
+	if = {
+		limit = {
+			NOT = {
+				is_special_project_completed = sp:sp_naval_escort_carrier
+			}
+		}
+		complete_special_project = sp:sp_naval_escort_carrier
+	}
+	create_equipment_variant = {
+		name = "Moonhaven-class Mk.40"
+		type = ship_hull_escort_carrier
+		parent_version = 0
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		role_icon_index = 3
+		allow_without_tech = yes
+		modules = {
+			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_deck_slot_1 = ship_escort_deck_space
+			fixed_ship_deck_slot_2 = ship_escort_deck_space
+			fixed_ship_engine_slot = carrier_ship_engine_3
+			fixed_ship_radar_slot = ship_radar_3
+			front_1_custom_slot = ship_escort_deck_space
+			mid_1_custom_slot = ship_escort_deck_space
+		}
+	}
+	set_country_flag = Renko_LUN_escort_carrier_1940_commissioned
+}
+Renko_LUN_escort_carrier_1943_grant = {
+	if = {
+		limit = {
+			NOT = {
+				is_special_project_completed = sp:sp_naval_escort_carrier
+			}
+		}
+		complete_special_project = sp:sp_naval_escort_carrier
+	}
+	create_equipment_variant = {
+		name = "Moonhaven-class Mk.43"
+		type = ship_hull_escort_carrier
+		parent_version = 0
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		role_icon_index = 3
+		allow_without_tech = yes
+		modules = {
+			fixed_ship_anti_air_slot = ship_anti_air_4
+			fixed_ship_deck_slot_1 = ship_escort_deck_space
+			fixed_ship_deck_slot_2 = ship_escort_deck_space
+			fixed_ship_engine_slot = carrier_ship_engine_4
+			fixed_ship_radar_slot = ship_radar_4
+			front_1_custom_slot = ship_escort_deck_space
+			mid_1_custom_slot = ship_escort_deck_space
+		}
+	}
+	set_country_flag = Renko_LUN_escort_carrier_1943_commissioned
+}
+Renko_LUN_battleship_1936_grant = {
+	set_technology = {
+		basic_ship_hull_heavy = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		name = "Celestial Throne-class Mk.36"
+		type = ship_hull_heavy_2
+		parent_version = 0
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		role_icon_index = 1
+		allow_without_tech = yes
+		modules = {
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_armor_slot = ship_armor_bb_2
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_secondaries_slot = dp_ship_secondaries_1
+			front_1_custom_slot = ship_heavy_battery_2
+			mid_1_custom_slot = dp_ship_secondaries_1
+			mid_2_custom_slot = dp_ship_secondaries_1
+			rear_1_custom_slot = dp_ship_secondaries_1
+		}
+	}
+	set_country_flag = Renko_LUN_battleship_1936_commissioned
+}
+Renko_LUN_battleship_1940_grant = {
+	set_technology = {
+		improved_ship_hull_heavy = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		name = "Celestial Throne-class Mk.40"
+		type = ship_hull_heavy_3
+		parent_version = 0
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		role_icon_index = 1
+		allow_without_tech = yes
+		modules = {
+			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_armor_slot = ship_armor_bb_3
+			fixed_ship_battery_slot = ship_heavy_battery_3
+			fixed_ship_engine_slot = heavy_ship_engine_3
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+			fixed_ship_radar_slot = ship_radar_3
+			fixed_ship_secondaries_slot = dp_ship_secondaries_3
+			front_1_custom_slot = ship_heavy_battery_3
+			mid_1_custom_slot = ship_heavy_battery_3
+			mid_2_custom_slot = dp_ship_secondaries_3
+			mid_3_custom_slot = dp_ship_secondaries_3
+			rear_1_custom_slot = ship_anti_air_3
+		}
+	}
+	set_country_flag = Renko_LUN_battleship_1940_commissioned
+}
+Renko_LUN_battleship_1943_grant = {
+	set_technology = {
+		advanced_ship_hull_heavy = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		name = "Celestial Throne-class Mk.43"
+		type = ship_hull_heavy_4
+		parent_version = 0
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		role_icon_index = 1
+		allow_without_tech = yes
+		modules = {
+			fixed_ship_anti_air_slot = ship_anti_air_4
+			fixed_ship_armor_slot = ship_armor_shbb
+			fixed_ship_battery_slot = ship_heavy_battery_4
+			fixed_ship_engine_slot = heavy_ship_engine_4
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+			fixed_ship_radar_slot = ship_radar_4
+			fixed_ship_secondaries_slot = dp_ship_secondaries_4
+			front_1_custom_slot = ship_heavy_battery_4
+			mid_1_custom_slot = ship_heavy_battery_4
+			mid_2_custom_slot = ship_heavy_battery_4
+			mid_3_custom_slot = ship_anti_air_4
+			rear_1_custom_slot = ship_anti_air_4
+		}
+	}
+	set_country_flag = Renko_LUN_battleship_1943_commissioned
+}
+Renko_LUN_super_battleship_1940_grant = {
+	set_technology = {
+		ship_hull_super_heavy = 1
+		popup = no
+	}
+	if = {
+		limit = {
+			NOT = {
+				is_special_project_completed = sp:sp_naval_super_heavy_battleship
+			}
+		}
+		complete_special_project = sp:sp_naval_super_heavy_battleship
+	}
+	create_equipment_variant = {
+		name = "Eternal Palace-class Mk.40"
+		type = ship_hull_super_heavy_1
+		parent_version = 0
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		role_icon_index = 7
+		allow_without_tech = yes
+		modules = {
+			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_armor_slot = ship_armor_shbb
+			fixed_ship_battery_slot = ship_super_heavy_battery_1
+			fixed_ship_engine_slot = heavy_ship_engine_3
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+			fixed_ship_radar_slot = ship_radar_3
+			fixed_ship_secondaries_slot = dp_ship_secondaries_3
+			front_1_custom_slot = ship_super_heavy_battery_1
+			front_2_custom_slot = ship_super_heavy_battery_1
+			mid_1_custom_slot = ship_anti_air_3
+			mid_2_custom_slot = ship_anti_air_3
+			mid_3_custom_slot = ship_anti_air_3
+			rear_1_custom_slot = ship_super_heavy_battery_1
+			rear_2_custom_slot = ship_super_heavy_battery_1
+		}
+	}
+	set_country_flag = Renko_LUN_super_battleship_1940_commissioned
+}
+Renko_LUN_super_battleship_1943_grant = {
+	set_technology = {
+		ship_hull_super_heavy = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		name = "Eternal Palace-class Mk.43"
+		type = ship_hull_super_heavy_1
+		parent_version = 0
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		role_icon_index = 7
+		allow_without_tech = yes
+		modules = {
+			fixed_ship_anti_air_slot = ship_anti_air_4
+			fixed_ship_armor_slot = ship_armor_shbb
+			fixed_ship_battery_slot = ship_super_heavy_battery_1
+			fixed_ship_engine_slot = heavy_ship_engine_4
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+			fixed_ship_radar_slot = ship_radar_4
+			fixed_ship_secondaries_slot = dp_ship_secondaries_4
+			front_1_custom_slot = ship_super_heavy_battery_1
+			front_2_custom_slot = ship_super_heavy_battery_1
+			mid_1_custom_slot = ship_anti_air_4
+			mid_2_custom_slot = ship_anti_air_4
+			mid_3_custom_slot = ship_anti_air_4
+			rear_1_custom_slot = ship_super_heavy_battery_1
+			rear_2_custom_slot = ship_super_heavy_battery_1
+		}
+	}
+	set_country_flag = Renko_LUN_super_battleship_1943_commissioned
+}
+Renko_LUN_heavy_cruiser_1936_grant = {
+	set_technology = {
+		basic_ship_hull_cruiser = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		name = "Silver Edict-class Mk.36"
+		type = ship_hull_cruiser_2
+		parent_version = 0
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		role_icon_index = 1
+		allow_without_tech = yes
+		modules = {
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = ship_radar_1
+			fixed_ship_secondaries_slot = dp_ship_secondaries_2
+			front_1_custom_slot = ship_medium_battery_2
+			mid_1_custom_slot = ship_torpedo_2
+			mid_2_custom_slot = ship_torpedo_2
+			rear_1_custom_slot = ship_medium_battery_2
+		}
+	}
+	set_country_flag = Renko_LUN_heavy_cruiser_1936_commissioned
+}
+Renko_LUN_heavy_cruiser_1940_grant = {
+	set_technology = {
+		improved_ship_hull_cruiser = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		name = "Silver Edict-class Mk.40"
+		type = ship_hull_cruiser_3
+		parent_version = 0
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		role_icon_index = 1
+		allow_without_tech = yes
+		modules = {
+			fixed_ship_anti_air_slot = ship_anti_air_3
+			fixed_ship_armor_slot = ship_armor_cruiser_3
+			fixed_ship_battery_slot = ship_medium_battery_3
+			fixed_ship_engine_slot = cruiser_ship_engine_3
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+			fixed_ship_radar_slot = ship_radar_3
+			fixed_ship_secondaries_slot = dp_ship_secondaries_3
+			front_1_custom_slot = ship_medium_battery_3
+			mid_1_custom_slot = ship_torpedo_3
+			mid_2_custom_slot = ship_torpedo_3
+			rear_1_custom_slot = ship_anti_air_3
+			rear_2_custom_slot = ship_medium_battery_3
+		}
+	}
+	set_country_flag = Renko_LUN_heavy_cruiser_1940_commissioned
+}
+Renko_LUN_heavy_cruiser_1943_grant = {
+	set_technology = {
+		advanced_ship_hull_cruiser = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		name = "Silver Edict-class Mk.43"
+		type = ship_hull_cruiser_4
+		parent_version = 0
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		role_icon_index = 1
+		allow_without_tech = yes
+		modules = {
+			fixed_ship_anti_air_slot = ship_anti_air_4
+			fixed_ship_armor_slot = ship_armor_cruiser_4
+			fixed_ship_battery_slot = ship_medium_battery_4
+			fixed_ship_engine_slot = cruiser_ship_engine_4
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+			fixed_ship_radar_slot = ship_radar_4
+			fixed_ship_secondaries_slot = dp_ship_secondaries_4
+			front_1_custom_slot = ship_medium_battery_4
+			mid_1_custom_slot = ship_torpedo_4
+			mid_2_custom_slot = ship_torpedo_4
+			rear_1_custom_slot = ship_anti_air_4
+			rear_2_custom_slot = ship_medium_battery_4
+		}
+	}
+	set_country_flag = Renko_LUN_heavy_cruiser_1943_commissioned
+}
+Renko_LUN_submarine_1936_grant = {
+	set_technology = {
+		cruiser_submarines = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		name = "Moonshadow-class Mk.36"
+		type = ship_hull_cruiser_submarine
+		parent_version = 0
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		role_icon_index = 6
+		allow_without_tech = yes
+		modules = {
+			fixed_ship_engine_slot = sub_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			front_1_custom_slot = ship_torpedo_sub_2
+			mid_1_custom_slot = ship_sub_snorkel_2
+			rear_1_custom_slot = ship_torpedo_sub_2
+		}
+	}
+	set_country_flag = Renko_LUN_submarine_1936_commissioned
+}
+Renko_LUN_submarine_1940_grant = {
+	if = {
+		limit = {
+			NOT = {
+				is_special_project_completed = sp:sp_naval_fleet_submarine
+			}
+		}
+		complete_special_project = sp:sp_naval_fleet_submarine
+	}
+	create_equipment_variant = {
+		name = "Moonshadow-class Mk.40"
+		type = ship_hull_fleet_submarine
+		parent_version = 0
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		role_icon_index = 6
+		allow_without_tech = yes
+		modules = {
+			fixed_ship_engine_slot = ship_engine_sub_aip_2
+			fixed_ship_torpedo_slot = ship_torpedo_sub_3
+			front_1_custom_slot = ship_torpedo_sub_3
+			mid_1_custom_slot = ship_anechoic_tile
+			rear_1_custom_slot = ship_torpedo_sub_3
+		}
+	}
+	set_country_flag = Renko_LUN_submarine_1940_commissioned
+}
+Renko_LUN_submarine_1943_grant = {
+	if = {
+		limit = {
+			NOT = {
+				is_special_project_completed = sp:sp_naval_fleet_submarine
+			}
+		}
+		complete_special_project = sp:sp_naval_fleet_submarine
+	}
+	create_equipment_variant = {
+		name = "Moonshadow-class Mk.43"
+		type = ship_hull_fleet_submarine
+		parent_version = 0
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		role_icon_index = 6
+		allow_without_tech = yes
+		modules = {
+			fixed_ship_engine_slot = ship_engine_sub_aip_3
+			fixed_ship_torpedo_slot = ship_torpedo_sub_4
+			front_1_custom_slot = ship_torpedo_sub_4
+			mid_1_custom_tech_slot = ship_anechoic_tile
+			rear_1_custom_slot = ship_torpedo_sub_4
+		}
+	}
+	set_country_flag = Renko_LUN_submarine_1943_commissioned
+}
+Renko_LUN_submarine_carrier_1940_grant = {
+	if = {
+		limit = {
+			NOT = {
+				is_special_project_completed = sp:sp_naval_submarine_carrier
+			}
+		}
+		complete_special_project = sp:sp_naval_submarine_carrier
+	}
+	create_equipment_variant = {
+		name = "Hidden Heaven-class Mk.40"
+		type = ship_hull_carrier_submarine
+		parent_version = 0
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		role_icon_index = 7
+		allow_without_tech = yes
+		modules = {
+			fixed_ship_engine_slot = ship_engine_sub_aip_3
+			fixed_ship_torpedo_slot = ship_torpedo_sub_3
+			mid_1_custom_slot = ship_anechoic_tile
+			rear_1_custom_slot = ship_submarine_deck_space
+		}
+	}
+	set_country_flag = Renko_LUN_submarine_carrier_1940_commissioned
+}
+Renko_LUN_fighter_1936_grant = {
+	set_technology = {
+		basic_small_airframe = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = small_plane_airframe_1
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Moonlance Mk.36"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			engine_type_slot = engine_2_1x
+			fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+			fixed_main_weapon_slot = light_mg_4x
+			special_type_slot_1 = self_sealing_fuel_tanks_small
+			special_type_slot_2 = fuel_tanks_small
+		}
+	}
+	set_country_flag = Renko_LUN_fighter_1936_commissioned
+}
+Renko_LUN_fighter_1940_grant = {
+	set_technology = {
+		improved_small_airframe = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = small_plane_airframe_2
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Moonlance Mk.40"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			engine_type_slot = jet_engine_1x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			fixed_main_weapon_slot = heavy_mg_4x
+			special_type_slot_1 = self_sealing_fuel_tanks_small
+			special_type_slot_2 = fuel_tanks_small
+			special_type_slot_3 = armor_plate_small
+		}
+	}
+	set_country_flag = Renko_LUN_fighter_1940_commissioned
+}
+Renko_LUN_fighter_1943_grant = {
+	set_technology = {
+		advanced_small_airframe = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = small_plane_airframe_3
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Moonlance Mk.43"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			engine_type_slot = jet_engine_axial_1x
+			fixed_auxiliary_weapon_slot_1 = large_aircraft_cannon_2x
+			fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+			fixed_main_weapon_slot = large_aircraft_cannon_2x
+			special_type_slot_1 = self_sealing_fuel_tanks_small
+			special_type_slot_2 = fuel_tanks_small
+			special_type_slot_3 = armor_plate_small
+		}
+	}
+	set_country_flag = Renko_LUN_fighter_1943_commissioned
+}
+Renko_LUN_cas_1936_grant = {
+	set_technology = {
+		basic_small_airframe = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = small_plane_cas_airframe_1
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Purifying Rain Mk.36"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			engine_type_slot = engine_2_1x
+			fixed_auxiliary_weapon_slot_1 = bomb_locks
+			fixed_main_weapon_slot = bomb_locks
+			special_type_slot_1 = self_sealing_fuel_tanks_small
+			special_type_slot_2 = fuel_tanks_small
+		}
+	}
+	set_country_flag = Renko_LUN_cas_1936_commissioned
+}
+Renko_LUN_cas_1940_grant = {
+	set_technology = {
+		improved_small_airframe = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = small_plane_cas_airframe_2
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Purifying Rain Mk.40"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			engine_type_slot = engine_3_1x
+			fixed_auxiliary_weapon_slot_1 = heavy_bomb_locks
+			fixed_main_weapon_slot = tank_buster_2
+			special_type_slot_1 = self_sealing_fuel_tanks_small
+			special_type_slot_2 = fuel_tanks_small
+			special_type_slot_3 = cannon_defense_turret
+		}
+	}
+	set_country_flag = Renko_LUN_cas_1940_commissioned
+}
+Renko_LUN_cas_1943_grant = {
+	set_technology = {
+		advanced_small_airframe = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = small_plane_cas_airframe_3
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Purifying Rain Mk.43"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			engine_type_slot = engine_4_1x
+			fixed_auxiliary_weapon_slot_1 = heavy_bomb_locks
+			fixed_auxiliary_weapon_slot_2 = rocket_rails
+			fixed_auxiliary_weapon_slot_3 = rocket_rails
+			fixed_main_weapon_slot = tank_buster_2
+			special_type_slot_1 = self_sealing_fuel_tanks_small
+			special_type_slot_2 = fuel_tanks_small
+			special_type_slot_3 = cannon_defense_turret
+		}
+	}
+	set_country_flag = Renko_LUN_cas_1943_commissioned
+}
+Renko_LUN_cv_fighter_1936_grant = {
+	set_technology = {
+		basic_small_airframe = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = cv_small_plane_airframe_1
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Silverwing Mk.36"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			engine_type_slot = engine_2_1x
+			fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+			fixed_main_weapon_slot = heavy_mg_4x
+			special_type_slot_1 = self_sealing_fuel_tanks_small
+		}
+	}
+	set_country_flag = Renko_LUN_cv_fighter_1936_commissioned
+}
+Renko_LUN_cv_fighter_1940_grant = {
+	set_technology = {
+		improved_small_airframe = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = cv_small_plane_airframe_2
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Silverwing Mk.40"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			engine_type_slot = jet_engine_2x
+			fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_2 = aircraft_cannon_1_2x
+			fixed_main_weapon_slot = aircraft_cannon_1_2x
+			special_type_slot_1 = self_sealing_fuel_tanks_small
+			special_type_slot_2 = armor_plate_small
+			special_type_slot_3 = armor_plate_small
+		}
+	}
+	set_country_flag = Renko_LUN_cv_fighter_1940_commissioned
+}
+Renko_LUN_cv_fighter_1943_grant = {
+	set_technology = {
+		advanced_small_airframe = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = cv_small_plane_airframe_3
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Silverwing Mk.43"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			engine_type_slot = jet_engine_axial_2x
+			fixed_auxiliary_weapon_slot_1 = large_aircraft_cannon_2x
+			fixed_auxiliary_weapon_slot_2 = large_aircraft_cannon_2x
+			fixed_main_weapon_slot = large_aircraft_cannon_2x
+			special_type_slot_1 = self_sealing_fuel_tanks_small
+			special_type_slot_2 = armor_plate_small
+			special_type_slot_3 = armor_plate_small
+		}
+	}
+	set_country_flag = Renko_LUN_cv_fighter_1943_commissioned
+}
+Renko_LUN_cv_attacker_1936_grant = {
+	set_technology = {
+		basic_small_airframe = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = cv_small_plane_naval_bomber_airframe_1
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Tidal Spear Mk.36"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			engine_type_slot = engine_2_1x
+			fixed_main_weapon_slot = torpedo_mounting
+			special_type_slot_1 = self_sealing_fuel_tanks_small
+			special_type_slot_2 = armor_plate_small
+		}
+	}
+	set_country_flag = Renko_LUN_cv_attacker_1936_commissioned
+}
+Renko_LUN_cv_attacker_1940_grant = {
+	set_technology = {
+		improved_small_airframe = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = cv_small_plane_naval_bomber_airframe_2
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Tidal Spear Mk.40"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			engine_type_slot = engine_3_1x
+			fixed_main_weapon_slot = torpedo_mounting_2
+			special_type_slot_1 = self_sealing_fuel_tanks_small
+			special_type_slot_2 = armor_plate_small
+			special_type_slot_3 = air_ground_radar_2
+		}
+	}
+	set_country_flag = Renko_LUN_cv_attacker_1940_commissioned
+}
+Renko_LUN_cv_attacker_1941_grant = {
+	set_technology = {
+		improved_small_airframe = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = cv_small_plane_naval_bomber_airframe_2
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Tidal Spear Mk.40A"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			engine_type_slot = engine_3_1x
+			fixed_main_weapon_slot = torpedo_mounting_3
+			special_type_slot_1 = self_sealing_fuel_tanks_small
+			special_type_slot_2 = armor_plate_small
+			special_type_slot_3 = air_ground_radar_2
+		}
+	}
+	set_country_flag = Renko_LUN_cv_attacker_1941_commissioned
+}
+Renko_LUN_cv_attacker_1943_grant = {
+	set_technology = {
+		advanced_small_airframe = 1
+		popup = no
+	}
+	create_equipment_variant = {
+		type = cv_small_plane_naval_bomber_airframe_3
+		parent_version = 0
+		allow_without_tech = yes
+		name = "Tidal Spear Mk.43"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		modules = {
+			engine_type_slot = engine_4_1x
+			fixed_main_weapon_slot = guided_anti_ship_missile
+			special_type_slot_1 = self_sealing_fuel_tanks_small
+			special_type_slot_2 = air_ground_radar_2
+		}
+	}
+	set_country_flag = Renko_LUN_cv_attacker_1943_commissioned
+}
+Renko_LUN_mothership_1941_grant = {
+	if = {
+		limit = {
+			NOT = {
+				is_special_project_completed = sp:sp_air_mothership_aircraft
+			}
+		}
+		complete_special_project = sp:sp_air_mothership_aircraft
+	}
+	create_equipment_variant = {
+		type = mothership_equipment_0
+		name = "Palace of Eternity Mk.41"
+		design_team = mio:Renko_LUN_lunarian_manufacturing_organization
+		parent_version = 1
+		allow_without_tech = yes
+		upgrades = {
+			plane_gun_upgrade = 5
+			plane_reliability_upgrade = 5
+			plane_engine_upgrade = 5
+			plane_range_upgrade = 0
+		}
+	}
+	set_country_flag = Renko_LUN_mothership_1941_commissioned
+}
