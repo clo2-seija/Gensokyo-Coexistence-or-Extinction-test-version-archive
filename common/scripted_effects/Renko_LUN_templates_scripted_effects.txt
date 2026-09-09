@@ -168,6 +168,42 @@ Renko_LUN_unlock_template_requirements = {
 Renko_LUN_grant_army_templates_and_units = {
 	Renko_LUN_unlock_template_requirements = yes
 	if = {
+		limit = { NOT = { has_country_flag = Renko_LUN_medium_tank_1936_commissioned } }
+		Renko_LUN_medium_tank_1936_grant = yes
+	}
+	if = {
+		limit = { NOT = { has_country_flag = Renko_LUN_medium_td_1936_commissioned } }
+		Renko_LUN_medium_td_1936_grant = yes
+	}
+	if = {
+		limit = { NOT = { has_country_flag = Renko_LUN_medium_aa_1936_commissioned } }
+		Renko_LUN_medium_aa_1936_grant = yes
+	}
+	if = {
+		limit = { NOT = { has_country_flag = Renko_LUN_heavy_td_1936_commissioned } }
+		Renko_LUN_heavy_td_1936_grant = yes
+	}
+	if = {
+		limit = { NOT = { has_country_flag = Renko_LUN_medium_flame_1936_commissioned } }
+		Renko_LUN_medium_flame_1936_grant = yes
+	}
+	if = {
+		limit = { NOT = { has_country_flag = Renko_LUN_fighter_1936_commissioned } }
+		Renko_LUN_fighter_1936_grant = yes
+	}
+	if = {
+		limit = { NOT = { has_country_flag = Renko_LUN_cas_1936_commissioned } }
+		Renko_LUN_cas_1936_grant = yes
+	}
+	if = {
+		limit = { NOT = { has_country_flag = Renko_LUN_cv_fighter_1936_commissioned } }
+		Renko_LUN_cv_fighter_1936_grant = yes
+	}
+	if = {
+		limit = { NOT = { has_country_flag = Renko_LUN_cv_attacker_1936_commissioned } }
+		Renko_LUN_cv_attacker_1936_grant = yes
+	}
+	if = {
 		limit = { NOT = { has_template = "Renko Lunar Infantry Division" } }
 		Renko_LUN_create_infantry_template = yes
 	}

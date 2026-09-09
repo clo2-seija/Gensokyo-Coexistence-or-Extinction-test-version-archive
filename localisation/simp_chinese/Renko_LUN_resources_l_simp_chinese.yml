@@ -1,0 +1,5 @@
+﻿l_simp_chinese:
+ Renko_LUN_lunar_resource_stockpile:0 "月面资源贮藏"
+ Renko_LUN_lunar_resource_stockpile_desc:0 "将月面贮藏的战略物资运至当前首都，建立支撑工业生产和三军行动的资源与燃油保障。"
+ Renko_LUN_lunar_resource_support_hidden_idea:0 "月面资源保障"
+ Renko_LUN_lunar_resource_stockpile_tt:0 "获得永久隐藏增益：战略资源获取§G+200%§!、燃油获取§G+200%§!、燃油容量§G+400%§!，陆军、海军和空军燃油消耗各§G−50%§!。"

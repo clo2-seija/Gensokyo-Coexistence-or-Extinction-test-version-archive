@@ -1,24 +1,5 @@
 # 基础型号即刻可用；科技满足可提前，日期是保底。
 Renko_LUN_armaments_bureau = {
-	Renko_LUN_medium_tank_1936_commission = {
-		icon = generic_research
-		cost = 0
-		fire_only_once = yes
-		visible = {
-			NOT = {
-				has_country_flag = Renko_LUN_medium_tank_1936_commissioned
-			}
-		}
-		available = {
-			always = yes
-		}
-		complete_effect = {
-			Renko_LUN_medium_tank_1936_grant = yes
-		}
-		ai_will_do = {
-			factor = 1000
-		}
-	}
 	Renko_LUN_medium_tank_1940_commission = {
 		icon = generic_research
 		cost = 0
@@ -89,25 +70,6 @@ Renko_LUN_armaments_bureau = {
 		}
 		complete_effect = {
 			Renko_LUN_medium_tank_1943_grant = yes
-		}
-		ai_will_do = {
-			factor = 1000
-		}
-	}
-	Renko_LUN_medium_td_1936_commission = {
-		icon = generic_research
-		cost = 0
-		fire_only_once = yes
-		visible = {
-			NOT = {
-				has_country_flag = Renko_LUN_medium_td_1936_commissioned
-			}
-		}
-		available = {
-			always = yes
-		}
-		complete_effect = {
-			Renko_LUN_medium_td_1936_grant = yes
 		}
 		ai_will_do = {
 			factor = 1000
@@ -188,25 +150,6 @@ Renko_LUN_armaments_bureau = {
 			factor = 1000
 		}
 	}
-	Renko_LUN_medium_aa_1936_commission = {
-		icon = generic_research
-		cost = 0
-		fire_only_once = yes
-		visible = {
-			NOT = {
-				has_country_flag = Renko_LUN_medium_aa_1936_commissioned
-			}
-		}
-		available = {
-			always = yes
-		}
-		complete_effect = {
-			Renko_LUN_medium_aa_1936_grant = yes
-		}
-		ai_will_do = {
-			factor = 1000
-		}
-	}
 	Renko_LUN_medium_aa_1940_commission = {
 		icon = generic_research
 		cost = 0
@@ -257,25 +200,6 @@ Renko_LUN_armaments_bureau = {
 			factor = 1000
 		}
 	}
-	Renko_LUN_heavy_td_1936_commission = {
-		icon = generic_research
-		cost = 0
-		fire_only_once = yes
-		visible = {
-			NOT = {
-				has_country_flag = Renko_LUN_heavy_td_1936_commissioned
-			}
-		}
-		available = {
-			always = yes
-		}
-		complete_effect = {
-			Renko_LUN_heavy_td_1936_grant = yes
-		}
-		ai_will_do = {
-			factor = 1000
-		}
-	}
 	Renko_LUN_heavy_td_1940_commission = {
 		icon = generic_research
 		cost = 0
@@ -321,25 +245,6 @@ Renko_LUN_armaments_bureau = {
 		}
 		complete_effect = {
 			Renko_LUN_heavy_td_1943_grant = yes
-		}
-		ai_will_do = {
-			factor = 1000
-		}
-	}
-	Renko_LUN_medium_flame_1936_commission = {
-		icon = generic_research
-		cost = 0
-		fire_only_once = yes
-		visible = {
-			NOT = {
-				has_country_flag = Renko_LUN_medium_flame_1936_commissioned
-			}
-		}
-		available = {
-			always = yes
-		}
-		complete_effect = {
-			Renko_LUN_medium_flame_1936_grant = yes
 		}
 		ai_will_do = {
 			factor = 1000
@@ -688,25 +593,6 @@ Renko_LUN_armaments_bureau = {
 			factor = 1000
 		}
 	}
-	Renko_LUN_fighter_1936_commission = {
-		icon = generic_research
-		cost = 0
-		fire_only_once = yes
-		visible = {
-			NOT = {
-				has_country_flag = Renko_LUN_fighter_1936_commissioned
-			}
-		}
-		available = {
-			always = yes
-		}
-		complete_effect = {
-			Renko_LUN_fighter_1936_grant = yes
-		}
-		ai_will_do = {
-			factor = 1000
-		}
-	}
 	Renko_LUN_fighter_1940_commission = {
 		icon = generic_research
 		cost = 0
@@ -746,25 +632,6 @@ Renko_LUN_armaments_bureau = {
 		}
 		complete_effect = {
 			Renko_LUN_fighter_1943_grant = yes
-		}
-		ai_will_do = {
-			factor = 1000
-		}
-	}
-	Renko_LUN_cas_1936_commission = {
-		icon = generic_research
-		cost = 0
-		fire_only_once = yes
-		visible = {
-			NOT = {
-				has_country_flag = Renko_LUN_cas_1936_commissioned
-			}
-		}
-		available = {
-			always = yes
-		}
-		complete_effect = {
-			Renko_LUN_cas_1936_grant = yes
 		}
 		ai_will_do = {
 			factor = 1000
@@ -814,25 +681,6 @@ Renko_LUN_armaments_bureau = {
 			factor = 1000
 		}
 	}
-	Renko_LUN_cv_fighter_1936_commission = {
-		icon = generic_research
-		cost = 0
-		fire_only_once = yes
-		visible = {
-			NOT = {
-				has_country_flag = Renko_LUN_cv_fighter_1936_commissioned
-			}
-		}
-		available = {
-			always = yes
-		}
-		complete_effect = {
-			Renko_LUN_cv_fighter_1936_grant = yes
-		}
-		ai_will_do = {
-			factor = 1000
-		}
-	}
 	Renko_LUN_cv_fighter_1940_commission = {
 		icon = generic_research
 		cost = 0
@@ -872,25 +720,6 @@ Renko_LUN_armaments_bureau = {
 		}
 		complete_effect = {
 			Renko_LUN_cv_fighter_1943_grant = yes
-		}
-		ai_will_do = {
-			factor = 1000
-		}
-	}
-	Renko_LUN_cv_attacker_1936_commission = {
-		icon = generic_research
-		cost = 0
-		fire_only_once = yes
-		visible = {
-			NOT = {
-				has_country_flag = Renko_LUN_cv_attacker_1936_commissioned
-			}
-		}
-		available = {
-			always = yes
-		}
-		complete_effect = {
-			Renko_LUN_cv_attacker_1936_grant = yes
 		}
 		ai_will_do = {
 			factor = 1000

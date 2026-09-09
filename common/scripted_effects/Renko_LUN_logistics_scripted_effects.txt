@@ -1,0 +1,23 @@
+Renko_LUN_logistics_army_initial = {
+    add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 10000 producer = LUN }
+    add_equipment_to_stockpile = { type = train_equipment_1 amount = 1000 producer = LUN }
+    add_equipment_to_stockpile = { type = convoy_1 amount = 2000 producer = LUN }
+}
+
+Renko_LUN_logistics_navy_initial = {
+    add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2000 producer = LUN }
+    add_equipment_to_stockpile = { type = train_equipment_1 amount = 200 producer = LUN }
+    add_equipment_to_stockpile = { type = convoy_1 amount = 3000 producer = LUN }
+}
+
+Renko_LUN_logistics_land_air_cycle = {
+    add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 2000 producer = LUN }
+    add_equipment_to_stockpile = { type = train_equipment_1 amount = 200 producer = LUN }
+    add_equipment_to_stockpile = { type = convoy_1 amount = 500 producer = LUN }
+}
+
+Renko_LUN_logistics_naval_cycle = {
+    add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 1000 producer = LUN }
+    add_equipment_to_stockpile = { type = train_equipment_1 amount = 100 producer = LUN }
+    add_equipment_to_stockpile = { type = convoy_1 amount = 1000 producer = LUN }
+}

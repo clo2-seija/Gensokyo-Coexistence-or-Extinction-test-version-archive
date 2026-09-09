@@ -1,0 +1,5 @@
+﻿l_english:
+ Renko_LUN_lunar_resource_stockpile:0 "Lunar Resource Stockpile"
+ Renko_LUN_lunar_resource_stockpile_desc:0 "Transfer lunar strategic reserves to the current capital to sustain industrial production and fuel all three services."
+ Renko_LUN_lunar_resource_support_hidden_idea:0 "Lunar Resource Support"
+ Renko_LUN_lunar_resource_stockpile_tt:0 "Gain permanent hidden bonuses: resource gain §G+200%§!, fuel gain §G+200%§!, fuel capacity §G+400%§!, and army, navy, and air fuel consumption each §G−50%§!."

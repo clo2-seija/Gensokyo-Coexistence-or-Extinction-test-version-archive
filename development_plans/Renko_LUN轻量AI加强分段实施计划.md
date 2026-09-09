@@ -232,3 +232,9 @@ common/national_focus/kyo-focus.txt已逐字节恢复到本次实施前的HEAD�
 - 日本其他入口也有固定owner=JAP（如JAP_templates_scripted_effects.txt:1411）及owner=ROOT（如JAP_scripted_effects.txt:1275）；写法必须结合调用入口及作用域判断。
 
 ROOT本身并非非法写法；但这些案例不能证明KYO国策中嵌套LUN后的ROOT必然指向LUN。此前将固定LUN描述为已经坐实的错误修复过于确定。本次按用户要求恢复owner=ROOT，保留作用域待核定项，等新编制/刷兵接口一起处理，不新增另一个修正。
+
+### 12.4 提升巡逻与打击舰队数量：待检验
+
+- 用户实测反馈（2026-09-09）：舰船数量宽裕时，月都 AI 仍只组建 1 支巡逻舰队和 1 支打击舰队。
+- 待办：检查巡逻与打击舰队的组建数量机制，提升舰船充足时的舰队数量，避免仅维持各 1 支。
+- 2026-09-10：按用户指定，在 Renko_LUN_dominance_fleet 中补充 optional_taskforces：1 支打击队、2 支巡逻队；保留必需的 1 支打击队、1 支巡逻队。脚本已补齐，实际组建数量待检验，未实机验证。

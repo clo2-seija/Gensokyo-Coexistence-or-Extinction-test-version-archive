@@ -1,0 +1,6 @@
+﻿l_english:
+ Renko_debug_toolbox_category:0 "Renko's Toolbox"
+ Renko_debug_toolbox_category_desc:0 "Renko's personal experimental tools, visible to human players only in debug mode."
+ Renko_debug_start_lunar_strength_experiment:0 "Start the Lunar Strength Experiment"
+ Renko_debug_start_lunar_strength_experiment_desc:0 "Deploy the Lunar Capital at the start and have Japan annex Gensokyo to prepare an environment for observing lunar development and combat."
+ Renko_debug_start_lunar_strength_experiment_tt:0 "Deploy the §YLunar Capital§! by annexing §YTibet and Nepal§! and opening the Lunar War High Command.\n§YJapan§! annexes §YGensokyo§! without taking its troops.\nThe Lunar AI then uses its existing decisions for formations, industry, and supply, retaining its normal focus and war schedule."

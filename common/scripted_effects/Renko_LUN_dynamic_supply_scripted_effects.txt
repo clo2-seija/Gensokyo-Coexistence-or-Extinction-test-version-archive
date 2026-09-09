@@ -489,7 +489,7 @@ Renko_LUN_supply_air_reserve = {
 Renko_LUN_grant_dynamic_equipment = {
 	if = {
 		limit = {
-			exists = LUN
+			LUN = { exists = yes }
 		}
 		LUN = {
 			if = {

@@ -1,0 +1,35 @@
+Renko_LUN_lunar_war_high_command_category = {
+    Renko_LUN_lunar_industrial_support = {
+        icon = generic_construction
+        cost = 0
+        fire_only_once = yes
+        available = { always = yes }
+        complete_effect = {
+            add_offsite_building = {
+                type = industrial_complex
+                level = 40
+            }
+            add_offsite_building = {
+                type = arms_factory
+                level = 40
+            }
+        }
+        ai_will_do = { factor = 1000 }
+    }
+
+    Renko_LUN_lunar_sea_dockyard_support = {
+        icon = generic_naval
+        cost = 0
+        fire_only_once = yes
+        available = {
+            any_controlled_state = { naval_base > 0 }
+        }
+        complete_effect = {
+            add_offsite_building = {
+                type = dockyard
+                level = 30
+            }
+        }
+        ai_will_do = { factor = 1000 }
+    }
+}

@@ -22,11 +22,11 @@ Renko_LUN_patrol_force = {
 	}
 	optimal_composition = {
 		carrier = {
-			amount = 4
+			amount = 6
 			role = 3
 		}
 		heavy_cruiser = {
-			amount = 6
+			amount = 9
 			role = 1
 		}
 	}

@@ -1,4 +1,4 @@
-# Renko: 用户授权从本机原版同路径复制；仅隔离 LUN 的陆军 role_ratio。
+# Renko: 用户授权从本机原版同路径复制；隔离 LUN 的自有陆空与舰船生产策略，保留原版运输船载荷。
 default_unit_production = {
 	# If adding country-unique ones, bear in mind that they STACK unless excluding countries in the enable
 	enable = {
@@ -48,23 +48,11 @@ default_unit_production = {
 
 
 	# Naval unit factors
-	ai_strategy = {
-		type = unit_ratio
-		id = capital_ship
-		value = 10
-	}
 
-	ai_strategy = {
-		type = unit_ratio
-		id = submarine
-		value = 10
-	}
 
-	ai_strategy = {
-		type = unit_ratio
-		id = screen_ship
-		value = 40
-	}
+
+
+
 
 	ai_strategy = {
 		type = unit_ratio
@@ -116,6 +104,7 @@ default_unit_production_land_cruiser = {
 }
 
 default_role_ratios = {
+	allowed = { NOT = { original_tag = LUN } }
 	enable = {
 		not = {
 			has_dlc = "Man the Guns"
@@ -149,6 +138,7 @@ default_role_ratios = {
 }
 
 default_role_ratios = {
+	allowed = { NOT = { original_tag = LUN } }
 	enable = {
 		has_dlc = "Man the Guns"
 		not = {
@@ -384,34 +374,14 @@ convoy_voy_voy_voy = {
 		convoy_threat < 0.2
 	}
 
-	ai_strategy = {
-		type = role_ratio
-		id = naval_cruiser_light
-		value = -20
-	}
 
-	ai_strategy = {
-		type = role_ratio
-		id = naval_escort
-		value = 25
-	}
 
-	ai_strategy = {
-		type = role_ratio
-		id = naval_mine_layer
-		value = -10
-	}
-	ai_strategy = {
-		type = unit_ratio
-		id = screen_ship
-		value = 30
-	}
 
-	ai_strategy = {
-		type = unit_ratio
-		id = capital_ship
-		value = -10
-	}
+
+
+
+
+
 
 	ai_strategy = {
 		type = unit_ratio
@@ -421,6 +391,7 @@ convoy_voy_voy_voy = {
 }
 
 ill_show_you_mine = {
+	allowed = { NOT = { original_tag = LUN } }
 	enable = {
 		has_dlc = "Man the Guns"
 		mine_threat > 0.2
@@ -449,6 +420,7 @@ ill_show_you_mine = {
 }
 
 ill_show_you_mine_2 = {
+	allowed = { NOT = { original_tag = LUN } }
 	enable = {
 		has_dlc = "Man the Guns"
 		mine_threat > 0.5
@@ -1018,6 +990,7 @@ default_market_convoy_purchases = {
 }
 
 dont_build_capitals_if_on_treaty = {
+	allowed = { NOT = { original_tag = LUN } }
 	enable = {
 		has_idea = MTG_naval_treaty_adherent
 	}
@@ -2162,4 +2135,125 @@ Renko_default_surplus_management_land_air = {
 		id = anti_tank_equipment
 		value = 2
 	}
+}
+
+Renko_generic_convoy_voy_voy_voy_naval = {
+	allowed = { NOT = { original_tag = LUN } }
+	enable = {
+		has_dlc = "Man the Guns"
+		convoy_threat > 0.2
+	}
+	abort = {
+		convoy_threat < 0.2
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = -20
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_escort
+		value = 25
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_layer
+		value = -10
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 30
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = -10
+	}
+
+
+}
+
+Renko_generic_default_unit_production_naval = {
+	allowed = { NOT = { original_tag = LUN } }
+	# If adding country-unique ones, bear in mind that they STACK unless excluding countries in the enable
+	enable = {
+		always = yes
+		NOT = {
+			OR = {
+				original_tag = GER
+				original_tag = FRA
+				original_tag = CHI
+				original_tag = ENG
+				original_tag = CZE
+				tag = SOV
+				original_tag = ITA
+				original_tag = JAP
+				original_tag = HUN
+				original_tag = SIA
+				original_tag = USA
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+
+	# Land division factors
+
+
+
+
+
+
+
+
+
+
+	# Air unit factors
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	# Naval unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 10
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 10
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 40
+	}
+
+
+
+
+
+
+
+
+
+
 }

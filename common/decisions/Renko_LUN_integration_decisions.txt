@@ -1,0 +1,29 @@
+Renko_LUN_lunar_war_high_command_category = {
+    Renko_LUN_integrate_controlled_states = {
+        icon = generic_construction
+        cost = 0
+        fire_only_once = no
+        days_re_enable = 1
+        state_target = yes
+        target_array = controlled_states
+        on_map_mode = map_and_decisions_view
+        target_trigger = {
+            FROM = {
+                NOT = { is_core_of = LUN }
+            }
+        }
+        available = {
+            FROM = {
+                is_controlled_by = ROOT
+                NOT = { is_core_of = LUN }
+                NOT = { compliance < 50 }
+            }
+        }
+        complete_effect = {
+            FROM = {
+                add_core_of = LUN
+            }
+        }
+        ai_will_do = { factor = 1000 }
+    }
+}

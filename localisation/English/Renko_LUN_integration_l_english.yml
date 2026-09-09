@@ -1,0 +1,3 @@
+﻿l_english:
+ Renko_LUN_integrate_controlled_states:0 "Lunar Territorial Integration: [FROM.GetName]"
+ Renko_LUN_integrate_controlled_states_desc:0 "Integrate [FROM.GetName] into the lunar administration. Once we control the state and its compliance reaches 50%, it can become a Lunar core at no cost."

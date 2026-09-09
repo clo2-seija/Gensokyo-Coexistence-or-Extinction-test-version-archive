@@ -80,14 +80,14 @@ Renko_LUN_navy_create_one_escort_carrier = {
 		Renko_LUN_supply_cv_small_plane_naval_bomber_airframe = yes
 	}
 }
-Renko_LUN_navy_create_escort_carrier_batch_4 = {
+Renko_LUN_navy_create_escort_carrier_batch_6 = {
 	set_temp_variable = {
 		Renko_LUN_navy_ship_loop = 0
 	}
 	while_loop_effect = {
 		limit = {
 			check_variable = {
-				Renko_LUN_navy_ship_loop < 4
+				Renko_LUN_navy_ship_loop < 6
 			}
 		}
 		Renko_LUN_navy_create_one_escort_carrier = yes
@@ -221,14 +221,14 @@ Renko_LUN_navy_create_one_heavy_cruiser = {
 		}
 	}
 }
-Renko_LUN_navy_create_heavy_cruiser_batch_6 = {
+Renko_LUN_navy_create_heavy_cruiser_batch_9 = {
 	set_temp_variable = {
 		Renko_LUN_navy_ship_loop = 0
 	}
 	while_loop_effect = {
 		limit = {
 			check_variable = {
-				Renko_LUN_navy_ship_loop < 6
+				Renko_LUN_navy_ship_loop < 9
 			}
 		}
 		Renko_LUN_navy_create_one_heavy_cruiser = yes
@@ -431,8 +431,8 @@ Renko_LUN_navy_create_submarine_carrier_batch_2 = {
 	}
 }
 Renko_LUN_navy_grant_patrol_package = {
-	Renko_LUN_navy_create_escort_carrier_batch_4 = yes
-	Renko_LUN_navy_create_heavy_cruiser_batch_6 = yes
+	Renko_LUN_navy_create_escort_carrier_batch_6 = yes
+	Renko_LUN_navy_create_heavy_cruiser_batch_9 = yes
 }
 Renko_LUN_navy_grant_strike_package = {
 	Renko_LUN_navy_create_formal_carrier_batch_4 = yes
@@ -476,7 +476,7 @@ Renko_LUN_navy_grant_submarine_package = {
 Renko_LUN_grant_dynamic_navy = {
 	if = {
 		limit = {
-			exists = LUN
+			LUN = { exists = yes }
 		}
 		LUN = {
 			if = {

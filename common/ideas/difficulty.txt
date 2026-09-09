@@ -214,6 +214,7 @@ ideas = {
 				recon_factor = 0.20
 				org_loss_when_moving = -0.25
 				army_speed_factor = 0.10
+				army_attack_speed_factor = 0.30
 				land_night_attack = 0.15
 			}
 		}
@@ -279,9 +280,10 @@ ideas = {
 			modifier = {
 				army_attack_factor = 0.15
 				army_defence_factor = 0.15
-				breakthrough_factor = 0.20
 				air_mission_efficiency = 0.15
-				air_night_penalty = -0.25
+				air_power_projection_factor = 0.20
+				air_range_factor = 0.20
+				air_superiority_efficiency = 0.15
 				air_superiority_bonus_in_combat = 0.15
 			}
 

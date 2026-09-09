@@ -68,11 +68,17 @@ Renko_LUN_lunar_war_high_command_category = {
         }
         complete_effect = {
             add_ideas = Renko_LUN_lunar_sea_fleet_idea
+            set_country_flag = Renko_LUN_lunar_sea_fleet_formed
+            Renko_LUN_logistics_navy_initial = yes
             custom_effect_tooltip = Renko_LUN_form_lunar_sea_fleet_tt
             hidden_effect = {
                 Renko_LUN_grant_dynamic_navy = yes
                 Renko_LUN_grant_dynamic_navy = yes
                 Renko_LUN_grant_dynamic_navy = yes
+                if = {
+                    limit = { is_ai = yes }
+                    activate_mission = Renko_LUN_naval_supply_cycle_mission
+                }
             }
         }
         ai_will_do = { factor = 100 }

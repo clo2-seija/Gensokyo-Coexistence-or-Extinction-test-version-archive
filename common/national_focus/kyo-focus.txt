@@ -9481,44 +9481,6 @@ focus = {
 						target = NEP
 					}
 
-					division_template = {
-					name = "Moon division"
-					division_names_group = KYO_REMILIA_INF_01
-					is_locked = yes
-					force_allow_recruiting = yes
-
-					regiments = {
-						mountaineers = { x = 0 y = 0 }
-						mountaineers = { x = 0 y = 1 }
-						mountaineers = { x = 0 y = 2 }
-						mountaineers = { x = 1 y = 0 }
-						mountaineers = { x = 1 y = 1 }
-						mountaineers = { x = 1 y = 2 }
-						mountaineers = { x = 2 y = 0 }
-						mountaineers = { x = 2 y = 1 }
-						mountaineers = { x = 2 y = 2 }
-						artillery_brigade = { x = 3 y = 0}
-						artillery_brigade = { x = 3 y = 1}
-						artillery_brigade = { x = 3 y = 2}
-						artillery_brigade = { x = 4 y = 0}
-					}
-					support = {
-						artillery = { x = 0 y = 0 }
-						rangers_support = {x=0 y= 1	}
-						anti_air = {x=0 y= 2	}
-						field_hospital = {x=0 y= 3	}
-						logistics_company = {x=0 y= 4	}
-						
-						
-					}	
-				}
-					capital_scope = {
-						create_unit = {
-							division = "division_template = \"Moon division\" start_experience_factor = 1 start_equipment_factor = 1.0"
-							owner = ROOT
-							count = 100
-						}
-					}
 				}
 				
 			}

@@ -1,0 +1,67 @@
+Renko_LUN_dynamic_arms_factory_baseline = {
+    allowed = { original_tag = LUN }
+    enable = {
+        Renko_LUN_has_industrial_construction_slot = yes
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = building_target
+        id = arms_factory
+        value = 9999
+    }
+}
+
+Renko_LUN_dynamic_civilian_correction = {
+    allowed = { original_tag = LUN }
+    enable = {
+        Renko_LUN_has_industrial_construction_slot = yes
+        Renko_LUN_construction_civilian_share_low = yes
+    }
+    abort = {
+        OR = {
+            Renko_LUN_has_industrial_construction_slot = no
+            Renko_LUN_construction_civilian_share_high = yes
+        }
+    }
+    ai_strategy = {
+        type = building_target
+        id = industrial_complex
+        value = 9999
+    }
+    ai_strategy = {
+        type = building_target
+        id = arms_factory
+        value = -9999
+    }
+}
+
+Renko_LUN_dynamic_dockyard_correction = {
+    allowed = { original_tag = LUN }
+    enable = {
+        Renko_LUN_has_port_dockyard_construction_slot = yes
+        Renko_LUN_construction_civilian_share_high = yes
+        Renko_LUN_construction_dockyard_share_low = yes
+    }
+    abort = {
+        OR = {
+            Renko_LUN_has_port_dockyard_construction_slot = no
+            Renko_LUN_construction_civilian_share_low = yes
+            Renko_LUN_construction_dockyard_share_high = yes
+        }
+    }
+    ai_strategy = {
+        type = building_target
+        id = industrial_complex
+        value = -9999
+    }
+    ai_strategy = {
+        type = building_target
+        id = arms_factory
+        value = -9999
+    }
+    ai_strategy = {
+        type = building_target
+        id = dockyard
+        value = 9999
+    }
+}

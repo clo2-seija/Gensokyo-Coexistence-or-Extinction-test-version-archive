@@ -93,3 +93,20 @@ Renko_LUN_xp_and_pp_management = {
 	}
 
 }
+
+# 月海舰队成立后，提高全局登陆意愿及登陆航线的海军优势投入。
+Renko_LUN_high_naval_invasion_focus = {
+    allowed = { original_tag = LUN }
+    enable = {
+        has_country_flag = Renko_LUN_lunar_sea_fleet_formed
+    }
+    abort_when_not_enabled = yes
+    ai_strategy = {
+        type = naval_invasion_focus
+        value = 100
+    }
+    ai_strategy = {
+        type = naval_invasion_dominance_weight
+        value = 30
+    }
+}

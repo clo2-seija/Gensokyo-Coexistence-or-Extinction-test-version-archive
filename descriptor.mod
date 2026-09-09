@@ -1,0 +1,15 @@
+version="1.0"
+tags={
+	"Alternative History"
+	"Events"
+	"National Focuses"
+	"Technologies"
+	"Gameplay"
+	"Ideologies"
+}
+replace_path="common/bookmarks"
+replace_path="common/ai_templates"
+replace_path="gfx/loadingscreens"
+name="Gensokyo: Coexistence or Extinction"
+supported_version="1.19.2.0"
+remote_file_id="3793731499"
