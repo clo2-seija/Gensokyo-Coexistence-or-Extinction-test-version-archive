@@ -108,6 +108,22 @@
         "attack": 0.05,
         "movement": 0.05
       }
+    },
+    "export_layout": {
+      "large_frame": [
+        76,
+        42
+      ],
+      "small_frame": [
+        30,
+        12
+      ],
+      "small_art_max": [
+        25,
+        9
+      ],
+      "preserve_svg_canvas_for_large": true,
+      "note": "小图体量分级；中坦歼小于重坦歼，两帧分别居中并保留四边透明余量。"
     }
   },
   {
@@ -136,6 +152,22 @@
       "map": "gfx/interface/counters/divisions_small/Renko_LUN_invasion_heavy_tankdestroyer_support_small.png",
       "text": "gfx/texticons/Renko_LUN_invasion_heavy_tankdestroyer_support_small.png"
     },
-    "terrain": {}
+    "terrain": {},
+    "export_layout": {
+      "large_frame": [
+        76,
+        42
+      ],
+      "small_frame": [
+        30,
+        12
+      ],
+      "small_art_max": [
+        25,
+        10
+      ],
+      "preserve_svg_canvas_for_large": true,
+      "note": "小图体量分级；中坦歼小于重坦歼，两帧分别居中并保留四边透明余量。"
+    }
   }
 ]

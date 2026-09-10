@@ -10906,6 +10906,18 @@ focus = {
 
 				
 				remove_ideas = LUN_watatsuki_integrated_discipline
+				hidden_effect = {
+					set_country_flag = Renko_LUN_lunar_sea_fleet_disrupted
+				}
+				if = {
+					limit = {
+						hidden_trigger = { has_idea = Renko_LUN_lunar_sea_fleet_idea }
+					}
+					swap_ideas = {
+						remove_idea = Renko_LUN_lunar_sea_fleet_idea
+						add_idea = Renko_LUN_lunar_sea_fleet_disrupted_idea
+					}
+				}
 			
 				
 			}

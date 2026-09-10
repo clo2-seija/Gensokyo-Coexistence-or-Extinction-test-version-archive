@@ -950,4 +950,14 @@ SpriteType = {
 
 
 	
+
+    # 月都独立难度民族精神
+spriteType = {
+        name = "GFX_idea_Renko_LUN_quantum_disturbance"
+        texturefile = "gfx/interface/ideas/Renko_LUN_quantum_disturbance.png"
+    }
+    spriteType = {
+        name = "GFX_idea_Renko_LUN_eternal_moon"
+        texturefile = "gfx/interface/ideas/Renko_LUN_eternal_moon.png"
+    }
 } 

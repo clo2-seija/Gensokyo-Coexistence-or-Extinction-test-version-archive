@@ -489,50 +489,53 @@ Renko_LUN_supply_air_reserve = {
     Renko_LUN_supply_mothership_equipment = yes
 }
 Renko_LUN_grant_dynamic_equipment = {
-    if = {
-        limit = {
-            LUN = { exists = yes }
-        }
-        LUN = {
-            if = {
-                limit = {
+    custom_effect_tooltip = Renko_LUN_grant_dynamic_equipment_tt
+    hidden_effect = {
+        if = {
+            limit = {
+                LUN = { exists = yes }
+            }
+            LUN = {
+                if = {
+                    limit = {
+                        capital_scope = {
+                            is_controlled_by = LUN
+                        }
+                    }
+                    if = {
+                        limit = {
+                            NOT = {
+                                has_template = "Renko Lunar Infantry Division"
+                            }
+                        }
+                        Renko_LUN_create_infantry_template = yes
+                    }
                     capital_scope = {
-                        is_controlled_by = LUN
-                    }
-                }
-                if = {
-                    limit = {
-                        NOT = {
-                            has_template = "Renko Lunar Infantry Division"
+                        create_unit = {
+                            division = "division_template = \"Renko Lunar Infantry Division\" start_experience_factor = 0.30 start_equipment_factor = 1.0"
+                            owner = PREV
+                            count = 4
                         }
                     }
-                    Renko_LUN_create_infantry_template = yes
-                }
-                capital_scope = {
-                    create_unit = {
-                        division = "division_template = \"Renko Lunar Infantry Division\" start_experience_factor = 0.30 start_equipment_factor = 1.0"
-                        owner = PREV
-                        count = 4
+                    Renko_LUN_supply_infantry_reserve = yes
+                    if = {
+                        limit = {
+                            NOT = {
+                                has_template = "Renko Lunar Armored Division"
+                            }
+                        }
+                        Renko_LUN_create_armored_template = yes
                     }
-                }
-                Renko_LUN_supply_infantry_reserve = yes
-                if = {
-                    limit = {
-                        NOT = {
-                            has_template = "Renko Lunar Armored Division"
+                    capital_scope = {
+                        create_unit = {
+                            division = "division_template = \"Renko Lunar Armored Division\" start_experience_factor = 0.40 start_equipment_factor = 1.0"
+                            owner = PREV
+                            count = 4
                         }
                     }
-                    Renko_LUN_create_armored_template = yes
+                    Renko_LUN_supply_armored_reserve = yes
+                    Renko_LUN_supply_air_reserve = yes
                 }
-                capital_scope = {
-                    create_unit = {
-                        division = "division_template = \"Renko Lunar Armored Division\" start_experience_factor = 0.40 start_equipment_factor = 1.0"
-                        owner = PREV
-                        count = 4
-                    }
-                }
-                Renko_LUN_supply_armored_reserve = yes
-                Renko_LUN_supply_air_reserve = yes
             }
         }
     }
@@ -1040,20 +1043,23 @@ Renko_LUN_navy_grant_submarine_package = {
     }
 }
 Renko_LUN_grant_dynamic_navy = {
-    if = {
-        limit = {
-            LUN = { exists = yes }
-        }
-        LUN = {
-            if = {
-                limit = {
-                    any_controlled_state = {
-                        naval_base > 0
+    custom_effect_tooltip = Renko_LUN_grant_dynamic_navy_tt
+    hidden_effect = {
+        if = {
+            limit = {
+                LUN = { exists = yes }
+            }
+            LUN = {
+                if = {
+                    limit = {
+                        any_controlled_state = {
+                            naval_base > 0
+                        }
                     }
+                    Renko_LUN_navy_grant_patrol_package = yes
+                    Renko_LUN_navy_grant_strike_package = yes
+                    Renko_LUN_navy_grant_submarine_package = yes
                 }
-                Renko_LUN_navy_grant_patrol_package = yes
-                Renko_LUN_navy_grant_strike_package = yes
-                Renko_LUN_navy_grant_submarine_package = yes
             }
         }
     }

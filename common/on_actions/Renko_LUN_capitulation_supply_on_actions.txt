@@ -8,6 +8,12 @@ on_actions = {
                 }
                 LUN = {
                     Renko_LUN_grant_dynamic_equipment = yes
+                    if = {
+                        limit = {
+                            hidden_trigger = { LUN = { has_country_flag = Renko_LUN_difficulty_above_normal } }
+                        }
+                        Renko_LUN_grant_dynamic_equipment = yes
+                    }
                 }
             }
         }

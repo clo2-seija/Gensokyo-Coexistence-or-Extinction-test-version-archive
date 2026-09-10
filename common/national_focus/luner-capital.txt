@@ -33,7 +33,13 @@ focus_tree = {
 
 			Renko_LUN_grant_dynamic_equipment = yes
 			Renko_LUN_grant_dynamic_equipment = yes
-			Renko_LUN_grant_dynamic_equipment = yes
+			if = {
+			    limit = {
+			        hidden_trigger = { LUN = { has_country_flag = Renko_LUN_difficulty_above_normal } }
+			    }
+			    Renko_LUN_grant_dynamic_equipment = yes
+			    Renko_LUN_grant_dynamic_equipment = yes
+			}
 
 
 					758 = {
@@ -68,6 +74,16 @@ focus = {
 			focus = prepare_for_invasion_to_earth_1
 		}
 		completion_reward = {
+			Renko_LUN_grant_dynamic_equipment = yes
+			Renko_LUN_grant_dynamic_equipment = yes
+			if = {
+			    limit = {
+			        hidden_trigger = { LUN = { has_country_flag = Renko_LUN_difficulty_above_normal } }
+			    }
+			    Renko_LUN_grant_dynamic_equipment = yes
+			    Renko_LUN_grant_dynamic_equipment = yes
+			}
+
 
 			add_offsite_building = {
 				type = arms_factory
@@ -171,6 +187,17 @@ focus = {
 			focus = prepare_for_invasion_to_earth_2
 		}
 		completion_reward = {
+			Renko_LUN_grant_dynamic_equipment = yes
+			Renko_LUN_grant_dynamic_equipment = yes
+			if = {
+			    limit = {
+			        hidden_trigger = { LUN = { has_country_flag = Renko_LUN_difficulty_above_normal } }
+			    }
+			    Renko_LUN_grant_dynamic_equipment = yes
+			    Renko_LUN_grant_dynamic_equipment = yes
+			}
+			Renko_LUN_grant_dynamic_navy = yes
+
 
 
 			set_cosmetic_tag = LUN_main_force

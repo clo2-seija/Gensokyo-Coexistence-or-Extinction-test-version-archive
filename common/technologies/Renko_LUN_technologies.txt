@@ -2,7 +2,7 @@
 technologies = {
     # 分节：Renko_LUN_invasion_units_tech
     Renko_LUN_invasion_units_tech = {
-        # 无科技树位置，由 LUN 新开局历史授予；禁止常规科研取得。
+        # 无科技树位置，由 LUN 新开局历史或 KYO「奥术解密」决议授予；禁止常规科研取得。
         allow = { always = no }
         enable_subunits = {
             Renko_LUN_invasion_infantry
@@ -15,7 +15,7 @@ technologies = {
 
     # 分节：Renko_LUN_special_tank_modules_tech
     Renko_LUN_special_tank_modules_tech = {
-        # 无科技树位置，仅由月都新开局历史授予。
+        # 无科技树位置，由月都新开局历史或 KYO「奥术解密」决议授予。
         allow = { always = no }
         enable_equipment_modules = {
             Renko_LUN_tank_petrol_electric_engine

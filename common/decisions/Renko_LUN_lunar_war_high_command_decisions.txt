@@ -1,5 +1,25 @@
 # 月都加强：按功能分节整合；标识符及效果保持原样。
 Renko_LUN_lunar_war_high_command_category = {
+    # 独立难度入口：最高司令部解锁后，由月都向幻想乡发起一次选择。
+    Renko_LUN_request_difficulty_selection = {
+        icon = generic_military
+        cost = 0
+        fire_only_once = yes
+        priority = 110
+        visible = {
+            KYO = { exists = yes }
+        }
+        available = {
+            always = yes
+        }
+        complete_effect = {
+            KYO = {
+                country_event = { id = Renko_LUN_difficulty.1 }
+            }
+        }
+        ai_will_do = { factor = 1000 }
+    }
+
     # 分节：Renko_LUN_army_templates_decisions
     Renko_LUN_mobilize_lunar_army = {
         icon = generic_military
@@ -148,7 +168,15 @@ Renko_LUN_lunar_war_high_command_category = {
             any_controlled_state = { naval_base > 0 }
         }
         complete_effect = {
-            add_ideas = Renko_LUN_lunar_sea_fleet_idea
+            if = {
+                limit = {
+                    hidden_trigger = { has_country_flag = Renko_LUN_lunar_sea_fleet_disrupted }
+                }
+                add_ideas = Renko_LUN_lunar_sea_fleet_disrupted_idea
+            }
+            else = {
+                add_ideas = Renko_LUN_lunar_sea_fleet_idea
+            }
             set_country_flag = Renko_LUN_lunar_sea_fleet_formed
             Renko_LUN_logistics_navy_initial = yes
             custom_effect_tooltip = Renko_LUN_form_lunar_sea_fleet_tt
@@ -260,6 +288,12 @@ Renko_LUN_lunar_war_high_command_category = {
             if = {
                 limit = { is_ai = yes }
                 Renko_LUN_grant_dynamic_equipment = yes
+                if = {
+                    limit = {
+                        hidden_trigger = { LUN = { has_country_flag = Renko_LUN_difficulty_above_normal } }
+                    }
+                    Renko_LUN_grant_dynamic_equipment = yes
+                }
                 Renko_LUN_logistics_land_air_cycle = yes
                 hidden_effect = {
                     activate_mission = Renko_LUN_land_air_supply_cycle_mission

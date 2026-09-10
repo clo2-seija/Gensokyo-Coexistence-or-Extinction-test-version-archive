@@ -1,0 +1,48 @@
+add_namespace = Renko_LUN_difficulty
+
+# 月都独立难度选择骨架；由最高司令部决议发送给 KYO。
+# 暂不配置图片；EASY 已接入量子扰动与决议，HARD/LUNATIC 隐藏标记高于 NORMAL。
+country_event = {
+    id = Renko_LUN_difficulty.1
+    title = Renko_LUN_difficulty.1.t
+    desc = Renko_LUN_difficulty.1.d
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = Renko_LUN_difficulty.1.a
+        custom_effect_tooltip = Renko_LUN_unlock_arcane_decryption_tt
+        hidden_effect = {
+            set_country_flag = Renko_KYO_arcane_decryption_unlocked
+        }
+        LUN = {
+            add_ideas = Renko_LUN_quantum_disturbance
+        }
+    }
+    option = {
+        name = Renko_LUN_difficulty.1.b
+        # TODO：第二档难度效果。
+    }
+    option = {
+        name = Renko_LUN_difficulty.1.c
+        custom_effect_tooltip = Renko_LUN_extra_equipment_supply_tt
+        hidden_effect = {
+            LUN = {
+                set_country_flag = Renko_LUN_difficulty_above_normal
+            }
+        }
+        # TODO：HARD 后续难度效果。
+    }
+    option = {
+        name = Renko_LUN_difficulty.1.e
+        custom_effect_tooltip = Renko_LUN_extra_equipment_supply_tt
+        hidden_effect = {
+            LUN = {
+                set_country_flag = Renko_LUN_difficulty_above_normal
+            }
+        }
+        LUN = {
+            add_ideas = Renko_LUN_eternal_moon
+        }
+    }
+}
