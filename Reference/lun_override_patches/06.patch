@@ -1,0 +1,101 @@
+--- vanilla-20260910/common/ai_equipment/generic_planes.txt
++++ mod-aac2956/common/ai_equipment/generic_planes.txt
+@@ -3,7 +3,7 @@
+ generic_fighter = {
+ 	category = air
+ 
+-	blocked_for = {GER ENG USA ITA}
++	blocked_for = { LUN GER ENG USA ITA}
+ 
+ 	available_for = {}
+ 
+@@ -157,7 +157,7 @@
+ generic_cas = {
+ 	category = air
+ 
+-	blocked_for = {GER ENG USA}
++	blocked_for = { LUN GER ENG USA}
+ 
+ 	available_for = {}
+ 
+@@ -246,7 +246,7 @@
+ generic_naval_bomber = {
+ 	category = air
+ 
+-	blocked_for = {GER ENG USA}
++	blocked_for = { LUN GER ENG USA}
+ 
+ 	available_for = {}
+ 
+@@ -333,7 +333,7 @@
+ 	category = air
+ 
+ 	#blocked_for = {  ENG USA FRA JAP } #Why
+-	blocked_for = { ENG }
++	blocked_for = { LUN  ENG }
+ 
+ 	available_for = {}
+ 
+@@ -487,7 +487,7 @@
+ 	category = air
+ 
+ 	#blocked_for = { ENG USA FRA JAP }
+-	blocked_for = { ENG }
++	blocked_for = { LUN  ENG }
+ 
+ 	available_for = {}
+ 
+@@ -589,7 +589,7 @@
+ 	category = air
+ 
+ 	#blocked_for = {  ENG USA FRA JAP }
+-	blocked_for = { ENG }
++	blocked_for = { LUN  ENG }
+ 
+ 	available_for = {}
+ 
+@@ -693,7 +693,7 @@
+ generic_tactical_bomber = {
+ 	category = air
+ 
+-	blocked_for = {GER ENG USA}
++	blocked_for = { LUN GER ENG USA}
+ 
+ 	available_for = {}
+ 
+@@ -858,7 +858,7 @@
+ generic_heavy_fighter = {
+ 	category = air
+ 
+-	blocked_for = {GER ENG USA}
++	blocked_for = { LUN GER ENG USA}
+ 
+ 	available_for = {}
+ 
+@@ -960,7 +960,7 @@
+ 
+ generic_scout_plane = {
+ 	category = air
+-	blocked_for = {}
++	blocked_for = { LUN }
+ 	available_for = {}
+ 
+ 	roles = {
+@@ -1065,7 +1065,7 @@
+ generic_strategic_bomber = {
+ 	category = air
+ 
+-	blocked_for = {GER ENG USA SOV}
++	blocked_for = { LUN GER ENG USA SOV}
+ 
+ 	available_for = {}
+ 
+@@ -1198,7 +1198,7 @@
+ generic_maritime_patrol = {
+ 	category = air
+ 
+-	blocked_for = {GER ENG USA}
++	blocked_for = { LUN GER ENG USA}
+ 
+ 	available_for = {}
+ 

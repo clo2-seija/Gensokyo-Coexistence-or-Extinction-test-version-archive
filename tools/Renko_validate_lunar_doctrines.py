@@ -51,7 +51,7 @@ sd=load('common/doctrines/subdoctrines/Renko_LUN_service_subdoctrines.txt')
 sf=load('common/doctrines/subdoctrines/Renko_LUN_special_forces_subdoctrine.txt')
 td=load('common/doctrines/tracks/Renko_LUN_doctrine_tracks.txt')
 assert (len(gd),len(sd),len(sf),len(td))==(3,12,1,12)
-entries=json.loads(resolved('development_plans/Renko_LUN_doctrine_sources.json').read_text(encoding='utf-8'))
+entries=json.loads(resolved('Reference/Renko_LUN_doctrine_sources.json').read_text(encoding='utf-8'))
 def normal(nodes):
     out=[]
     for k,v in nodes:

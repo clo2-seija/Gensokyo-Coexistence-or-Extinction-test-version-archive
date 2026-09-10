@@ -1,0 +1,10 @@
+--- mod-2cae441/common/military_industrial_organization/ai_bonus_weights/ai_bonus_weights.txt
++++ mod-aac2956/common/military_industrial_organization/ai_bonus_weights/ai_bonus_weights.txt
+@@ -15,6 +15,7 @@
+ 	breakthrough = 1
+ 	build_cost_ic = 1
+ 	carrier_size = 1
++	submarine_carrier_size = 1 # Renko: lunar MIO capacity
+ 	defense = 1
+ 	entrenchment = 1
+ 	fuel_consumption = 1

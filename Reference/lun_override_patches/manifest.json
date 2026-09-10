@@ -1,0 +1,99 @@
+{
+  "checked_on": "2026-09-10",
+  "mod_commit": "aac29560d8050da42d7425a64e55775840a77255",
+  "mod_increment_base": "2cae4412b1850fcc054afe233c0c13c013675e1f",
+  "declared_supported_version": "1.19.2.0",
+  "vanilla_git_head": "13b7ff9933f16ea2a3cb7c6cd8f0e0e07a8c4fbc",
+  "files": [
+    {
+      "number": 1,
+      "path": "common/ai_strategy/default.txt",
+      "existing": false,
+      "patch_base_sha256": "AF298A10143013FB50E38DA23841E4480021E6BAA18A85D3CD7BC498A9A08668",
+      "mod_sha256": "62D658C3F5B9508D34014B0B89C37E3869F8671EBF078772A6AA83998F3507D4",
+      "vanilla_sha256": "AF298A10143013FB50E38DA23841E4480021E6BAA18A85D3CD7BC498A9A08668",
+      "vanilla_matches_git_head": true
+    },
+    {
+      "number": 3,
+      "path": "common/ai_templates/generic.txt",
+      "existing": false,
+      "patch_base_sha256": "BB40BE1918B9A8E595593B98816E384BEAEB58843B8784D468FB2DAE8E606253",
+      "mod_sha256": "07B5E7A772F4FFD1DFC60CE4D8C14C52E20868BD8D7E2C1C4BC6D922D39AD0BD",
+      "vanilla_sha256": "BB40BE1918B9A8E595593B98816E384BEAEB58843B8784D468FB2DAE8E606253",
+      "vanilla_matches_git_head": false
+    },
+    {
+      "number": 4,
+      "path": "common/ai_equipment/generic_naval.txt",
+      "existing": true,
+      "patch_base_sha256": "16C7CE8A47748B7739B6E6018974A9D5A4BAC89534324D9D5AB45C125F2A6D86",
+      "mod_sha256": "B0187F7F516558BA96A1E97F117855AA309D9B7F9EDA95DA9A9AF741DA75B01D",
+      "vanilla_sha256": "690B7DDF73BCD604440C668301D8DBD84A511E1362E65749982FB47669456B35",
+      "vanilla_matches_git_head": false
+    },
+    {
+      "number": 5,
+      "path": "common/ai_equipment/generic_tank.txt",
+      "existing": true,
+      "patch_base_sha256": "F40A38F99E893A469EF5A1053D6F853AE1305CC984DA4C0197F87F30604FDBA4",
+      "mod_sha256": "EF8CE310CF68AE7F9395D49A7F30E31697CDE8D38D4430FB10370AA91D4941D7",
+      "vanilla_sha256": "8042B41A7D08009B4F429E320886675056FE9722FA813ED5006FF7A8CFB10646",
+      "vanilla_matches_git_head": false
+    },
+    {
+      "number": 6,
+      "path": "common/ai_equipment/generic_planes.txt",
+      "existing": false,
+      "patch_base_sha256": "87548F9512ADA1C1674A315405076F18A098350D3898E90E1326476E596DED76",
+      "mod_sha256": "4E2B1C38CA93C0DB11D03D076981E6D273CF3FC6828687CD01713984F4F42729",
+      "vanilla_sha256": "87548F9512ADA1C1674A315405076F18A098350D3898E90E1326476E596DED76",
+      "vanilla_matches_git_head": true
+    },
+    {
+      "number": 7,
+      "path": "common/ai_navy/taskforce/generic_taskforce_templates.txt",
+      "existing": false,
+      "patch_base_sha256": "8B1B9553FD29F325FCB1D4AE79157140126B62B7E3C2749B5F69FAAD61309821",
+      "mod_sha256": "C1B1E7196B0E9047F44EA44BA50965FF2694A2EB88E1D0ECA586E5B2DFEA1EE6",
+      "vanilla_sha256": "8B1B9553FD29F325FCB1D4AE79157140126B62B7E3C2749B5F69FAAD61309821",
+      "vanilla_matches_git_head": false
+    },
+    {
+      "number": 8,
+      "path": "common/military_industrial_organization/organizations/00_generic_organization.txt",
+      "existing": true,
+      "patch_base_sha256": "595B165C80B03D410072E948D859E9DF72496AEA466837ECA72FC8E8D93C52D9",
+      "mod_sha256": "C59A24C788F1FE077D6D4AC759664E8643D9FC1E744A1D621AD39470DB1EE6D9",
+      "vanilla_sha256": "8AB828D60A35316DFE49FB038133B1ECB2ABBF5F1F85858F1040A2258C8EC743",
+      "vanilla_matches_git_head": true
+    },
+    {
+      "number": 9,
+      "path": "common/military_industrial_organization/ai_bonus_weights/ai_bonus_weights.txt",
+      "existing": true,
+      "patch_base_sha256": "7BA7BEAEC9BE8A1C965D6B917BE89549D498C7DF25F133AC786058B677E48452",
+      "mod_sha256": "D2B33B4BE7AB9026B2F709C83FCA9AE6F201EA9876875DE10DA4EA7748874002",
+      "vanilla_sha256": "CECBD2693AD8223589FB6464003F96D8F82CFB4D2F06A57ED40FCFC60A263A2A",
+      "vanilla_matches_git_head": false
+    }
+  ],
+  "removed_overrides": [
+    {
+      "number": 2,
+      "path": "common/ai_strategy/doctrines.txt",
+      "existing": false,
+      "patch_base_sha256": "92D00604DC51B3F9A303C0F2BBBD46BA8F939B3AD848DD0DAAF9F6EC348E6E41",
+      "mod_sha256": "2675333A9C2692983CAEAF7C659EAFBD04EA59F4FE19897321B34CF06D017320",
+      "vanilla_sha256": "92D00604DC51B3F9A303C0F2BBBD46BA8F939B3AD848DD0DAAF9F6EC348E6E41",
+      "vanilla_matches_git_head": false,
+      "status": "removed",
+      "removed_on": "2026-09-10",
+      "patch_status": "historical_do_not_apply",
+      "reason": "Restore vanilla doctrine AI strategies; LUN uses independent doctrines and recruitment roles."
+    }
+  ],
+  "working_tree_adjustments": [
+    "Removed common/ai_strategy/doctrines.txt after mod_commit; remaining eight override contents unchanged."
+  ]
+}

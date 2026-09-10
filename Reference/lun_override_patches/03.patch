@@ -1,0 +1,83 @@
+--- vanilla-20260910/common/ai_templates/generic.txt
++++ mod-aac2956/common/ai_templates/generic.txt
+@@ -1,6 +1,8 @@
++# Renko: 按用户授权复制原版 generic.txt；除 HQ 外全部排除 LUN。
+ armor_generic = {
+ 
+ 	blocked_for = {
++		LUN
+ 		GER
+ 		JAP
+ 		ENG
+@@ -271,6 +273,7 @@
+ garrison_generic = {
+ 
+ 	blocked_for = {
++		LUN
+ 		GER
+ 		JAP
+ 		ENG
+@@ -321,6 +324,7 @@
+ 	
+ 	role = suppression
+ 	blocked_for = {
++		LUN
+ 		SIA
+ 	}
+ 	upgrade_prio = {
+@@ -375,6 +379,7 @@
+ infantry_generic = {
+ 
+ 	blocked_for = {
++		LUN
+ 		GER
+ 		JAP
+ 		ENG
+@@ -472,6 +477,7 @@
+ mountaineers_generic = {
+ 
+ 	blocked_for = {
++		LUN
+ 		GER
+ 		JAP
+ 		ENG
+@@ -527,6 +533,7 @@
+ marines_generic = {
+ 
+ 	blocked_for = {
++		LUN
+ 		GER
+ 		JAP
+ 		ENG
+@@ -630,6 +637,7 @@
+ paratrooper_generic = {
+ 
+ 	blocked_for = {
++		LUN
+ 		GER
+ 		JAP
+ 		ENG
+@@ -680,6 +688,7 @@
+ }
+ 
+ rangers_generic = {
++	blocked_for = { LUN }
+ 
+ 	role = rangers_role
+ 	
+@@ -726,6 +735,7 @@
+ }
+ 
+ landcruiser_generic = {
++	blocked_for = { LUN }
+ 
+ 
+ 	role = mega_heavy_breakthrough_role
+@@ -767,6 +777,7 @@
+ }
+ 
+ super_heavy_generic = {
++	blocked_for = { LUN }
+ 
+ 
+ 	role = super_heavy_breakthrough_role
