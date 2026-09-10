@@ -1,0 +1,44 @@
+# 月都加强：按功能分节整合；标识符及效果保持原样。
+# 分节：Renko_LUN_annual_technology_categories
+Renko_LUN_annual_technology_category = {
+    icon = decision_category_generic_industry
+    allowed = {
+        original_tag = LUN
+    }
+    visible = {
+        tag = LUN
+    }
+}
+
+# 分节：Renko_LUN_armaments_bureau_categories
+Renko_LUN_armaments_bureau = {
+    icon = decision_category_army_reform
+    priority = 99
+    allowed = {
+        original_tag = LUN
+    }
+    visible = {
+        tag = LUN
+    }
+    visible_when_empty = no
+}
+
+# 分节：Renko_LUN_lunar_war_high_command_categories
+Renko_LUN_lunar_war_high_command_category = {
+    icon = decision_category_army_reform
+    priority = 100
+
+    allowed = {
+        original_tag = LUN
+    }
+
+    visible = {
+        has_country_flag = Renko_LUN_lunar_war_high_command_initialized
+    }
+
+    available = {
+        always = yes
+    }
+
+    visible_when_empty = yes
+}

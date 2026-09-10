@@ -1,0 +1,1732 @@
+# 月都加强：按功能分节整合；标识符及效果保持原样。
+# 分节：Renko_LUN_air_designs
+# 仅供月都；与军备局已定型设计逐项匹配。
+Renko_LUN_fighter_designs = {
+    category = air
+    available_for = {
+        LUN
+    }
+    roles = {
+        air_fighter
+    }
+    priority = {
+        factor = 3333
+    }
+    Renko_LUN_fighter_1936_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_fighter_1936_commissioned
+        }
+        target_variant = {
+            match_value = 10000
+            type = small_plane_airframe_1
+            modules = {
+                engine_type_slot = engine_2_1x
+                fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+                fixed_main_weapon_slot = light_mg_4x
+                special_type_slot_1 = self_sealing_fuel_tanks_small
+                special_type_slot_2 = fuel_tanks_small
+            }
+        }
+        allowed_modules = {
+            engine_2_1x
+            aircraft_cannon_1_2x
+            light_mg_4x
+            self_sealing_fuel_tanks_small
+            fuel_tanks_small
+        }
+    }
+    Renko_LUN_fighter_1940_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_fighter_1940_commissioned
+        }
+        target_variant = {
+            match_value = 20000
+            type = small_plane_airframe_2
+            modules = {
+                engine_type_slot = jet_engine_1x
+                fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+                fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+                fixed_main_weapon_slot = heavy_mg_4x
+                special_type_slot_1 = self_sealing_fuel_tanks_small
+                special_type_slot_2 = fuel_tanks_small
+                special_type_slot_3 = armor_plate_small
+            }
+        }
+        allowed_modules = {
+            jet_engine_1x
+            heavy_mg_4x
+            self_sealing_fuel_tanks_small
+            fuel_tanks_small
+            armor_plate_small
+        }
+    }
+    Renko_LUN_fighter_1943_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_fighter_1943_commissioned
+        }
+        target_variant = {
+            match_value = 30000
+            type = small_plane_airframe_3
+            modules = {
+                engine_type_slot = jet_engine_axial_1x
+                fixed_auxiliary_weapon_slot_1 = large_aircraft_cannon_2x
+                fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+                fixed_main_weapon_slot = large_aircraft_cannon_2x
+                special_type_slot_1 = self_sealing_fuel_tanks_small
+                special_type_slot_2 = fuel_tanks_small
+                special_type_slot_3 = armor_plate_small
+            }
+        }
+        allowed_modules = {
+            jet_engine_axial_1x
+            large_aircraft_cannon_2x
+            heavy_mg_4x
+            self_sealing_fuel_tanks_small
+            fuel_tanks_small
+            armor_plate_small
+        }
+    }
+}
+Renko_LUN_cas_designs = {
+    category = air
+    available_for = {
+        LUN
+    }
+    roles = {
+        air_cas
+    }
+    priority = {
+        factor = 3333
+    }
+    Renko_LUN_cas_1936_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_cas_1936_commissioned
+        }
+        target_variant = {
+            match_value = 10000
+            type = small_plane_cas_airframe_1
+            modules = {
+                engine_type_slot = engine_2_1x
+                fixed_auxiliary_weapon_slot_1 = bomb_locks
+                fixed_main_weapon_slot = bomb_locks
+                special_type_slot_1 = self_sealing_fuel_tanks_small
+                special_type_slot_2 = fuel_tanks_small
+            }
+        }
+        allowed_modules = {
+            engine_2_1x
+            bomb_locks
+            self_sealing_fuel_tanks_small
+            fuel_tanks_small
+        }
+    }
+    Renko_LUN_cas_1940_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_cas_1940_commissioned
+        }
+        target_variant = {
+            match_value = 20000
+            type = small_plane_cas_airframe_2
+            modules = {
+                engine_type_slot = engine_3_1x
+                fixed_auxiliary_weapon_slot_1 = heavy_bomb_locks
+                fixed_main_weapon_slot = tank_buster_2
+                special_type_slot_1 = self_sealing_fuel_tanks_small
+                special_type_slot_2 = fuel_tanks_small
+                special_type_slot_3 = cannon_defense_turret
+            }
+        }
+        allowed_modules = {
+            engine_3_1x
+            heavy_bomb_locks
+            tank_buster_2
+            self_sealing_fuel_tanks_small
+            fuel_tanks_small
+            cannon_defense_turret
+        }
+    }
+    Renko_LUN_cas_1943_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_cas_1943_commissioned
+        }
+        target_variant = {
+            match_value = 30000
+            type = small_plane_cas_airframe_3
+            modules = {
+                engine_type_slot = engine_4_1x
+                fixed_auxiliary_weapon_slot_1 = heavy_bomb_locks
+                fixed_auxiliary_weapon_slot_2 = rocket_rails
+                fixed_auxiliary_weapon_slot_3 = rocket_rails
+                fixed_main_weapon_slot = tank_buster_2
+                special_type_slot_1 = self_sealing_fuel_tanks_small
+                special_type_slot_2 = fuel_tanks_small
+                special_type_slot_3 = cannon_defense_turret
+            }
+        }
+        allowed_modules = {
+            engine_4_1x
+            heavy_bomb_locks
+            rocket_rails
+            tank_buster_2
+            self_sealing_fuel_tanks_small
+            fuel_tanks_small
+            cannon_defense_turret
+        }
+    }
+}
+Renko_LUN_cv_fighter_designs = {
+    category = air
+    available_for = {
+        LUN
+    }
+    roles = {
+        air_cv_fighter
+    }
+    priority = {
+        factor = 3333
+    }
+    Renko_LUN_cv_fighter_1936_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_cv_fighter_1936_commissioned
+        }
+        target_variant = {
+            match_value = 10000
+            type = cv_small_plane_airframe_1
+            modules = {
+                engine_type_slot = engine_2_1x
+                fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+                fixed_main_weapon_slot = heavy_mg_4x
+                special_type_slot_1 = self_sealing_fuel_tanks_small
+            }
+        }
+        allowed_modules = {
+            engine_2_1x
+            heavy_mg_4x
+            self_sealing_fuel_tanks_small
+        }
+    }
+    Renko_LUN_cv_fighter_1940_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_cv_fighter_1940_commissioned
+        }
+        target_variant = {
+            match_value = 20000
+            type = cv_small_plane_airframe_2
+            modules = {
+                engine_type_slot = jet_engine_2x
+                fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+                fixed_auxiliary_weapon_slot_2 = aircraft_cannon_1_2x
+                fixed_main_weapon_slot = aircraft_cannon_1_2x
+                special_type_slot_1 = self_sealing_fuel_tanks_small
+                special_type_slot_2 = armor_plate_small
+                special_type_slot_3 = armor_plate_small
+            }
+        }
+        allowed_modules = {
+            jet_engine_2x
+            aircraft_cannon_1_2x
+            self_sealing_fuel_tanks_small
+            armor_plate_small
+        }
+    }
+    Renko_LUN_cv_fighter_1943_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_cv_fighter_1943_commissioned
+        }
+        target_variant = {
+            match_value = 30000
+            type = cv_small_plane_airframe_3
+            modules = {
+                engine_type_slot = jet_engine_axial_2x
+                fixed_auxiliary_weapon_slot_1 = large_aircraft_cannon_2x
+                fixed_auxiliary_weapon_slot_2 = large_aircraft_cannon_2x
+                fixed_main_weapon_slot = large_aircraft_cannon_2x
+                special_type_slot_1 = self_sealing_fuel_tanks_small
+                special_type_slot_2 = armor_plate_small
+                special_type_slot_3 = armor_plate_small
+            }
+        }
+        allowed_modules = {
+            jet_engine_axial_2x
+            large_aircraft_cannon_2x
+            self_sealing_fuel_tanks_small
+            armor_plate_small
+        }
+    }
+}
+Renko_LUN_cv_attacker_designs = {
+    category = air
+    available_for = {
+        LUN
+    }
+    roles = {
+        air_cv_naval_bomber
+    }
+    priority = {
+        factor = 3333
+    }
+    Renko_LUN_cv_attacker_1936_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_cv_attacker_1936_commissioned
+        }
+        target_variant = {
+            match_value = 10000
+            type = cv_small_plane_naval_bomber_airframe_1
+            modules = {
+                engine_type_slot = engine_2_1x
+                fixed_main_weapon_slot = torpedo_mounting
+                special_type_slot_1 = self_sealing_fuel_tanks_small
+                special_type_slot_2 = armor_plate_small
+            }
+        }
+        allowed_modules = {
+            engine_2_1x
+            torpedo_mounting
+            self_sealing_fuel_tanks_small
+            armor_plate_small
+        }
+    }
+    Renko_LUN_cv_attacker_1940_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_cv_attacker_1940_commissioned
+        }
+        target_variant = {
+            match_value = 20000
+            type = cv_small_plane_naval_bomber_airframe_2
+            modules = {
+                engine_type_slot = engine_3_1x
+                fixed_main_weapon_slot = torpedo_mounting_2
+                special_type_slot_1 = self_sealing_fuel_tanks_small
+                special_type_slot_2 = armor_plate_small
+                special_type_slot_3 = air_ground_radar_2
+            }
+        }
+        allowed_modules = {
+            engine_3_1x
+            torpedo_mounting_2
+            self_sealing_fuel_tanks_small
+            armor_plate_small
+            air_ground_radar_2
+        }
+    }
+    Renko_LUN_cv_attacker_1941_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_cv_attacker_1941_commissioned
+        }
+        target_variant = {
+            match_value = 30000
+            type = cv_small_plane_naval_bomber_airframe_2
+            modules = {
+                engine_type_slot = engine_3_1x
+                fixed_main_weapon_slot = torpedo_mounting_3
+                special_type_slot_1 = self_sealing_fuel_tanks_small
+                special_type_slot_2 = armor_plate_small
+                special_type_slot_3 = air_ground_radar_2
+            }
+        }
+        allowed_modules = {
+            engine_3_1x
+            torpedo_mounting_3
+            self_sealing_fuel_tanks_small
+            armor_plate_small
+            air_ground_radar_2
+        }
+    }
+    Renko_LUN_cv_attacker_1943_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_cv_attacker_1943_commissioned
+        }
+        target_variant = {
+            match_value = 40000
+            type = cv_small_plane_naval_bomber_airframe_3
+            modules = {
+                engine_type_slot = engine_4_1x
+                fixed_main_weapon_slot = guided_anti_ship_missile
+                special_type_slot_1 = self_sealing_fuel_tanks_small
+                special_type_slot_2 = air_ground_radar_2
+            }
+        }
+        allowed_modules = {
+            engine_4_1x
+            guided_anti_ship_missile
+            self_sealing_fuel_tanks_small
+            air_ground_radar_2
+        }
+    }
+}
+Renko_LUN_mothership_designs = {
+    category = air
+    available_for = {
+        LUN
+    }
+    roles = {
+        air_mothership
+    }
+    priority = {
+        factor = 3333
+    }
+    Renko_LUN_mothership_1941_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_mothership_1941_commissioned
+        }
+        target_variant = {
+            match_value = 10000
+            type = mothership_equipment_0
+            upgrades = {
+                plane_gun_upgrade = 5
+                plane_reliability_upgrade = 5
+                plane_engine_upgrade = 5
+                plane_range_upgrade = 0
+            }
+        }
+    }
+}
+
+# 分节：Renko_LUN_land_designs
+# 仅供月都；与军备局已定型设计逐项匹配。
+Renko_LUN_medium_tank_designs = {
+    category = land
+    available_for = {
+        LUN
+    }
+    roles = {
+        land_medium_tank
+    }
+    priority = {
+        factor = 500
+    }
+    Renko_LUN_medium_tank_1936_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_medium_tank_1936_commissioned
+        }
+        target_variant = {
+            match_value = 10000
+            type = medium_tank_chassis_1
+            modules = {
+                armor_type_slot = tank_riveted_armor
+                engine_type_slot = tank_diesel_engine
+                main_armament_slot = tank_medium_cannon
+                special_type_slot_1 = tank_radio_1
+                special_type_slot_2 = Renko_LUN_additional_machine_guns
+                special_type_slot_3 = Renko_LUN_smoke_launchers
+                special_type_slot_4 = wet_ammo_storage
+                suspension_type_slot = tank_bogie_suspension
+                turret_type_slot = tank_medium_three_man_tank_turret
+            }
+            upgrades = {
+                tank_nsb_armor_upgrade = 0
+                tank_nsb_engine_upgrade = 0
+            }
+        }
+        allowed_modules = {
+            tank_riveted_armor
+            tank_diesel_engine
+            tank_medium_cannon
+            tank_radio_1
+            Renko_LUN_additional_machine_guns
+            Renko_LUN_smoke_launchers
+            wet_ammo_storage
+            tank_bogie_suspension
+            tank_medium_three_man_tank_turret
+        }
+    }
+    Renko_LUN_medium_tank_1940_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_medium_tank_1940_commissioned
+        }
+        target_variant = {
+            match_value = 20000
+            type = medium_tank_chassis_2
+            modules = {
+                armor_type_slot = tank_riveted_armor
+                engine_type_slot = tank_diesel_engine
+                main_armament_slot = tank_medium_cannon_2
+                special_type_slot_1 = tank_radio_2
+                special_type_slot_2 = Renko_LUN_auto_loader
+                special_type_slot_3 = Renko_LUN_stabilizer
+                special_type_slot_4 = Renko_LUN_easy_maintenance
+                suspension_type_slot = tank_bogie_suspension
+                turret_type_slot = tank_medium_three_man_tank_turret
+            }
+            upgrades = {
+                tank_nsb_armor_upgrade = 12
+                tank_nsb_engine_upgrade = 4
+            }
+        }
+        allowed_modules = {
+            tank_riveted_armor
+            tank_diesel_engine
+            tank_medium_cannon_2
+            tank_radio_2
+            Renko_LUN_auto_loader
+            Renko_LUN_stabilizer
+            Renko_LUN_easy_maintenance
+            tank_bogie_suspension
+            tank_medium_three_man_tank_turret
+        }
+    }
+    Renko_LUN_medium_tank_1941_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_medium_tank_1941_commissioned
+        }
+        target_variant = {
+            match_value = 30000
+            type = medium_tank_chassis_2
+            modules = {
+                armor_type_slot = tank_riveted_armor
+                engine_type_slot = tank_diesel_engine
+                main_armament_slot = tank_high_velocity_cannon_2
+                special_type_slot_1 = tank_radio_3
+                special_type_slot_2 = Renko_LUN_auto_loader
+                special_type_slot_3 = Renko_LUN_stabilizer
+                special_type_slot_4 = Renko_LUN_easy_maintenance
+                suspension_type_slot = tank_bogie_suspension
+                turret_type_slot = tank_medium_three_man_tank_turret
+            }
+            upgrades = {
+                tank_nsb_armor_upgrade = 14
+                tank_nsb_engine_upgrade = 4
+            }
+        }
+        allowed_modules = {
+            tank_riveted_armor
+            tank_diesel_engine
+            tank_high_velocity_cannon_2
+            tank_radio_3
+            Renko_LUN_auto_loader
+            Renko_LUN_stabilizer
+            Renko_LUN_easy_maintenance
+            tank_bogie_suspension
+            tank_medium_three_man_tank_turret
+        }
+    }
+    Renko_LUN_medium_tank_1943_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_medium_tank_1943_commissioned
+        }
+        target_variant = {
+            match_value = 40000
+            type = medium_tank_chassis_3
+            modules = {
+                armor_type_slot = tank_riveted_armor
+                engine_type_slot = Renko_LUN_tank_gas_turbine_engine
+                main_armament_slot = tank_high_velocity_cannon_2
+                special_type_slot_1 = tank_radio_3
+                special_type_slot_2 = Renko_LUN_stabilizer
+                special_type_slot_3 = Renko_LUN_auto_loader
+                special_type_slot_4 = Renko_LUN_easy_maintenance
+                suspension_type_slot = Renko_LUN_tank_interleaved_suspension
+                turret_type_slot = tank_medium_three_man_tank_turret
+            }
+            upgrades = {
+                tank_nsb_armor_upgrade = 19
+                tank_nsb_engine_upgrade = 6
+            }
+        }
+        allowed_modules = {
+            tank_riveted_armor
+            Renko_LUN_tank_gas_turbine_engine
+            tank_high_velocity_cannon_2
+            tank_radio_3
+            Renko_LUN_stabilizer
+            Renko_LUN_auto_loader
+            Renko_LUN_easy_maintenance
+            Renko_LUN_tank_interleaved_suspension
+            tank_medium_three_man_tank_turret
+        }
+    }
+}
+Renko_LUN_medium_td_designs = {
+    category = land
+    available_for = {
+        LUN
+    }
+    roles = {
+        land_medium_tank_destroyer
+    }
+    priority = {
+        factor = 500
+    }
+    Renko_LUN_medium_td_1936_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_medium_td_1936_commissioned
+        }
+        target_variant = {
+            match_value = 10000
+            type = medium_tank_destroyer_chassis_1
+            modules = {
+                armor_type_slot = tank_riveted_armor
+                engine_type_slot = tank_diesel_engine
+                main_armament_slot = tank_medium_cannon
+                special_type_slot_1 = secondary_turret_small_cannon
+                special_type_slot_2 = Renko_LUN_squeezebore_adaptor
+                special_type_slot_3 = tank_radio_1
+                special_type_slot_4 = wet_ammo_storage
+                suspension_type_slot = tank_bogie_suspension
+                turret_type_slot = tank_medium_three_man_tank_turret
+            }
+            upgrades = {
+                tank_nsb_armor_upgrade = 4
+                tank_nsb_engine_upgrade = 0
+            }
+        }
+        allowed_modules = {
+            tank_riveted_armor
+            tank_diesel_engine
+            tank_medium_cannon
+            secondary_turret_small_cannon
+            Renko_LUN_squeezebore_adaptor
+            tank_radio_1
+            wet_ammo_storage
+            tank_bogie_suspension
+            tank_medium_three_man_tank_turret
+        }
+    }
+    Renko_LUN_medium_td_1940_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_medium_td_1940_commissioned
+        }
+        target_variant = {
+            match_value = 20000
+            type = medium_tank_destroyer_chassis_2
+            modules = {
+                armor_type_slot = tank_riveted_armor
+                engine_type_slot = tank_diesel_engine
+                main_armament_slot = tank_medium_cannon_2
+                special_type_slot_1 = Renko_LUN_stabilizer
+                special_type_slot_2 = Renko_LUN_auto_loader
+                special_type_slot_3 = tank_radio_2
+                special_type_slot_4 = Renko_LUN_easy_maintenance
+                suspension_type_slot = tank_bogie_suspension
+                turret_type_slot = tank_medium_three_man_tank_turret
+            }
+            upgrades = {
+                tank_nsb_armor_upgrade = 8
+                tank_nsb_engine_upgrade = 0
+            }
+        }
+        allowed_modules = {
+            tank_riveted_armor
+            tank_diesel_engine
+            tank_medium_cannon_2
+            Renko_LUN_stabilizer
+            Renko_LUN_auto_loader
+            tank_radio_2
+            Renko_LUN_easy_maintenance
+            tank_bogie_suspension
+            tank_medium_three_man_tank_turret
+        }
+    }
+    Renko_LUN_medium_td_1941_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_medium_td_1941_commissioned
+        }
+        target_variant = {
+            match_value = 30000
+            type = medium_tank_destroyer_chassis_2
+            modules = {
+                armor_type_slot = tank_riveted_armor
+                engine_type_slot = tank_diesel_engine
+                main_armament_slot = tank_high_velocity_cannon_2
+                special_type_slot_1 = Renko_LUN_stabilizer
+                special_type_slot_2 = Renko_LUN_auto_loader
+                special_type_slot_3 = tank_radio_3
+                special_type_slot_4 = Renko_LUN_easy_maintenance
+                suspension_type_slot = tank_bogie_suspension
+                turret_type_slot = tank_medium_three_man_tank_turret
+            }
+            upgrades = {
+                tank_nsb_armor_upgrade = 12
+                tank_nsb_engine_upgrade = 4
+            }
+        }
+        allowed_modules = {
+            tank_riveted_armor
+            tank_diesel_engine
+            tank_high_velocity_cannon_2
+            Renko_LUN_stabilizer
+            Renko_LUN_auto_loader
+            tank_radio_3
+            Renko_LUN_easy_maintenance
+            tank_bogie_suspension
+            tank_medium_three_man_tank_turret
+        }
+    }
+    Renko_LUN_medium_td_1943_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_medium_td_1943_commissioned
+        }
+        target_variant = {
+            match_value = 40000
+            type = medium_tank_destroyer_chassis_3
+            modules = {
+                armor_type_slot = tank_riveted_armor
+                engine_type_slot = Renko_LUN_tank_gas_turbine_engine
+                main_armament_slot = tank_high_velocity_cannon_2
+                special_type_slot_1 = Renko_LUN_stabilizer
+                special_type_slot_2 = Renko_LUN_auto_loader
+                special_type_slot_3 = Renko_LUN_easy_maintenance
+                special_type_slot_4 = tank_radio_3
+                suspension_type_slot = tank_bogie_suspension
+                turret_type_slot = tank_medium_three_man_tank_turret
+            }
+            upgrades = {
+                tank_nsb_armor_upgrade = 12
+                tank_nsb_engine_upgrade = 8
+            }
+        }
+        allowed_modules = {
+            tank_riveted_armor
+            Renko_LUN_tank_gas_turbine_engine
+            tank_high_velocity_cannon_2
+            Renko_LUN_stabilizer
+            Renko_LUN_auto_loader
+            Renko_LUN_easy_maintenance
+            tank_radio_3
+            tank_bogie_suspension
+            tank_medium_three_man_tank_turret
+        }
+    }
+}
+Renko_LUN_medium_aa_designs = {
+    category = land
+    available_for = {
+        LUN
+    }
+    roles = {
+        land_medium_tank_anti_air
+    }
+    priority = {
+        factor = 500
+    }
+    Renko_LUN_medium_aa_1936_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_medium_aa_1936_commissioned
+        }
+        target_variant = {
+            match_value = 10000
+            type = medium_tank_aa_chassis_1
+            modules = {
+                armor_type_slot = tank_riveted_armor
+                engine_type_slot = tank_diesel_engine
+                main_armament_slot = Renko_LUN_tank_anti_air_cannon_2
+                special_type_slot_1 = Renko_LUN_expanded_fuel_tank
+                special_type_slot_2 = dozer_blade
+                special_type_slot_3 = Renko_LUN_easy_maintenance
+                special_type_slot_4 = Renko_LUN_additional_machine_guns
+                suspension_type_slot = tank_bogie_suspension
+                turret_type_slot = tank_medium_one_man_tank_turret
+            }
+            upgrades = {
+                tank_nsb_armor_upgrade = 0
+                tank_nsb_engine_upgrade = 0
+            }
+        }
+        allowed_modules = {
+            tank_riveted_armor
+            tank_diesel_engine
+            Renko_LUN_tank_anti_air_cannon_2
+            Renko_LUN_expanded_fuel_tank
+            dozer_blade
+            Renko_LUN_easy_maintenance
+            Renko_LUN_additional_machine_guns
+            tank_bogie_suspension
+            tank_medium_one_man_tank_turret
+        }
+    }
+    Renko_LUN_medium_aa_1940_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_medium_aa_1940_commissioned
+        }
+        target_variant = {
+            match_value = 20000
+            type = medium_tank_aa_chassis_2
+            modules = {
+                armor_type_slot = tank_riveted_armor
+                engine_type_slot = tank_gasoline_engine
+                main_armament_slot = Renko_LUN_tank_anti_air_cannon_3
+                special_type_slot_1 = Renko_LUN_easy_maintenance
+                special_type_slot_2 = dozer_blade
+                special_type_slot_3 = Renko_LUN_auto_loader
+                special_type_slot_4 = Renko_LUN_additional_machine_guns
+                suspension_type_slot = tank_bogie_suspension
+                turret_type_slot = tank_medium_one_man_tank_turret
+            }
+            upgrades = {
+                tank_nsb_armor_upgrade = 0
+                tank_nsb_engine_upgrade = 0
+            }
+        }
+        allowed_modules = {
+            tank_riveted_armor
+            tank_gasoline_engine
+            Renko_LUN_tank_anti_air_cannon_3
+            Renko_LUN_easy_maintenance
+            dozer_blade
+            Renko_LUN_auto_loader
+            Renko_LUN_additional_machine_guns
+            tank_bogie_suspension
+            tank_medium_one_man_tank_turret
+        }
+    }
+    Renko_LUN_medium_aa_1943_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_medium_aa_1943_commissioned
+        }
+        target_variant = {
+            match_value = 30000
+            type = medium_tank_aa_chassis_3
+            modules = {
+                armor_type_slot = tank_riveted_armor
+                engine_type_slot = tank_gasoline_engine
+                main_armament_slot = Renko_LUN_tank_anti_air_cannon_3
+                special_type_slot_1 = Renko_LUN_stabilizer
+                special_type_slot_2 = Renko_LUN_auto_loader
+                special_type_slot_3 = Renko_LUN_easy_maintenance
+                special_type_slot_4 = dozer_blade
+                suspension_type_slot = tank_bogie_suspension
+                turret_type_slot = tank_medium_one_man_tank_turret
+            }
+            upgrades = {
+                tank_nsb_armor_upgrade = 0
+                tank_nsb_engine_upgrade = 0
+            }
+        }
+        allowed_modules = {
+            tank_riveted_armor
+            tank_gasoline_engine
+            Renko_LUN_tank_anti_air_cannon_3
+            Renko_LUN_stabilizer
+            Renko_LUN_auto_loader
+            Renko_LUN_easy_maintenance
+            dozer_blade
+            tank_bogie_suspension
+            tank_medium_one_man_tank_turret
+        }
+    }
+}
+Renko_LUN_heavy_td_designs = {
+    category = land
+    available_for = {
+        LUN
+    }
+    roles = {
+        land_heavy_tank_destroyer
+    }
+    priority = {
+        factor = 500
+    }
+    Renko_LUN_heavy_td_1936_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_heavy_td_1936_commissioned
+        }
+        target_variant = {
+            match_value = 10000
+            type = heavy_tank_destroyer_chassis_1
+            modules = {
+                armor_type_slot = tank_riveted_armor
+                engine_type_slot = tank_diesel_engine
+                main_armament_slot = tank_heavy_cannon_2
+                special_type_slot_1 = secondary_turret_small_cannon
+                special_type_slot_2 = secondary_turret_small_cannon
+                special_type_slot_3 = Renko_LUN_easy_maintenance
+                special_type_slot_4 = Renko_LUN_squeezebore_adaptor
+                suspension_type_slot = tank_bogie_suspension
+                turret_type_slot = tank_heavy_fixed_superstructure_turret
+            }
+            upgrades = {
+                tank_nsb_armor_upgrade = 0
+                tank_nsb_engine_upgrade = 0
+            }
+        }
+        allowed_modules = {
+            tank_riveted_armor
+            tank_diesel_engine
+            tank_heavy_cannon_2
+            secondary_turret_small_cannon
+            Renko_LUN_easy_maintenance
+            Renko_LUN_squeezebore_adaptor
+            tank_bogie_suspension
+            tank_heavy_fixed_superstructure_turret
+        }
+    }
+    Renko_LUN_heavy_td_1940_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_heavy_td_1940_commissioned
+        }
+        target_variant = {
+            match_value = 20000
+            type = heavy_tank_destroyer_chassis_2
+            modules = {
+                armor_type_slot = tank_riveted_armor
+                engine_type_slot = tank_diesel_engine
+                main_armament_slot = tank_super_heavy_cannon
+                special_type_slot_1 = Renko_LUN_easy_maintenance
+                special_type_slot_2 = Renko_LUN_squeezebore_adaptor
+                special_type_slot_3 = Renko_LUN_stabilizer
+                special_type_slot_4 = Renko_LUN_auto_loader
+                suspension_type_slot = tank_bogie_suspension
+                turret_type_slot = tank_heavy_fixed_superstructure_turret
+            }
+            upgrades = {
+                tank_nsb_armor_upgrade = 0
+                tank_nsb_engine_upgrade = 3
+            }
+        }
+        allowed_modules = {
+            tank_riveted_armor
+            tank_diesel_engine
+            tank_super_heavy_cannon
+            Renko_LUN_easy_maintenance
+            Renko_LUN_squeezebore_adaptor
+            Renko_LUN_stabilizer
+            Renko_LUN_auto_loader
+            tank_bogie_suspension
+            tank_heavy_fixed_superstructure_turret
+        }
+    }
+    Renko_LUN_heavy_td_1943_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_heavy_td_1943_commissioned
+        }
+        target_variant = {
+            match_value = 30000
+            type = heavy_tank_destroyer_chassis_3
+            modules = {
+                armor_type_slot = tank_riveted_armor
+                engine_type_slot = tank_diesel_engine
+                main_armament_slot = tank_super_heavy_cannon
+                special_type_slot_1 = Renko_LUN_auto_loader
+                special_type_slot_2 = Renko_LUN_stabilizer
+                special_type_slot_3 = Renko_LUN_squeezebore_adaptor
+                special_type_slot_4 = Renko_LUN_easy_maintenance
+                suspension_type_slot = tank_christie_suspension
+                turret_type_slot = tank_heavy_fixed_superstructure_turret
+            }
+            upgrades = {
+                tank_nsb_armor_upgrade = 0
+                tank_nsb_engine_upgrade = 6
+            }
+        }
+        allowed_modules = {
+            tank_riveted_armor
+            tank_diesel_engine
+            tank_super_heavy_cannon
+            Renko_LUN_auto_loader
+            Renko_LUN_stabilizer
+            Renko_LUN_squeezebore_adaptor
+            Renko_LUN_easy_maintenance
+            tank_christie_suspension
+            tank_heavy_fixed_superstructure_turret
+        }
+    }
+}
+Renko_LUN_medium_flame_designs = {
+    category = land
+    available_for = {
+        LUN
+    }
+    roles = {
+        land_medium_tank_flamethrower
+    }
+    priority = {
+        factor = 500
+    }
+    Renko_LUN_medium_flame_1936_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_medium_flame_1936_commissioned
+        }
+        target_variant = {
+            match_value = 10000
+            type = medium_tank_flame_chassis_1
+            modules = {
+                main_armament_slot = flamethrower
+                turret_type_slot = tank_medium_one_man_tank_turret
+                suspension_type_slot = tank_bogie_suspension
+                armor_type_slot = tank_riveted_armor
+                engine_type_slot = tank_diesel_engine
+                special_type_slot_1 = dozer_blade
+                special_type_slot_2 = Renko_LUN_expanded_fuel_tank
+            }
+            upgrades = {
+                tank_nsb_armor_upgrade = 0
+                tank_nsb_engine_upgrade = 0
+            }
+        }
+        allowed_modules = {
+            flamethrower
+            tank_medium_one_man_tank_turret
+            tank_bogie_suspension
+            tank_riveted_armor
+            tank_diesel_engine
+            dozer_blade
+            Renko_LUN_expanded_fuel_tank
+        }
+    }
+    Renko_LUN_medium_flame_1940_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_medium_flame_1940_commissioned
+        }
+        target_variant = {
+            match_value = 20000
+            type = medium_tank_flame_chassis_2
+            modules = {
+                main_armament_slot = advanced_flamethrower
+                turret_type_slot = tank_medium_one_man_tank_turret
+                suspension_type_slot = tank_bogie_suspension
+                armor_type_slot = tank_riveted_armor
+                engine_type_slot = tank_gasoline_engine
+                special_type_slot_1 = Renko_LUN_easy_maintenance
+                special_type_slot_2 = dozer_blade
+                special_type_slot_3 = Renko_LUN_expanded_fuel_tank
+                special_type_slot_4 = Renko_LUN_expanded_fuel_tank
+            }
+            upgrades = {
+                tank_nsb_armor_upgrade = 0
+                tank_nsb_engine_upgrade = 0
+            }
+        }
+        allowed_modules = {
+            advanced_flamethrower
+            tank_medium_one_man_tank_turret
+            tank_bogie_suspension
+            tank_riveted_armor
+            tank_gasoline_engine
+            Renko_LUN_easy_maintenance
+            dozer_blade
+            Renko_LUN_expanded_fuel_tank
+        }
+    }
+}
+
+# 分节：Renko_LUN_naval_designs
+# 仅供月都；与军备局已定型设计逐项匹配。
+Renko_LUN_escort_carrier_designs = {
+    category = naval
+    available_for = {
+        LUN
+    }
+    roles = {
+        Renko_LUN_escort_carrier
+    }
+    priority = {
+        factor = 888
+    }
+    Renko_LUN_escort_carrier_1936_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_escort_carrier_1936_commissioned
+        }
+        target_variant = {
+            match_value = 10000
+            type = ship_hull_escort_carrier
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_2
+                fixed_ship_deck_slot_1 = ship_escort_deck_space
+                fixed_ship_deck_slot_2 = ship_escort_deck_space
+                fixed_ship_engine_slot = carrier_ship_engine_2
+                fixed_ship_radar_slot = ship_radar_2
+                front_1_custom_slot = ship_escort_deck_space
+                mid_1_custom_slot = ship_escort_deck_space
+            }
+        }
+        allowed_modules = {
+            ship_anti_air_2
+            ship_escort_deck_space
+            carrier_ship_engine_2
+            ship_radar_2
+        }
+    }
+    Renko_LUN_escort_carrier_1940_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_escort_carrier_1940_commissioned
+        }
+        target_variant = {
+            match_value = 20000
+            type = ship_hull_escort_carrier
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_3
+                fixed_ship_deck_slot_1 = ship_escort_deck_space
+                fixed_ship_deck_slot_2 = ship_escort_deck_space
+                fixed_ship_engine_slot = carrier_ship_engine_3
+                fixed_ship_radar_slot = ship_radar_3
+                front_1_custom_slot = ship_escort_deck_space
+                mid_1_custom_slot = ship_escort_deck_space
+            }
+        }
+        allowed_modules = {
+            ship_anti_air_3
+            ship_escort_deck_space
+            carrier_ship_engine_3
+            ship_radar_3
+        }
+    }
+    Renko_LUN_escort_carrier_1943_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_escort_carrier_1943_commissioned
+        }
+        target_variant = {
+            match_value = 30000
+            type = ship_hull_escort_carrier
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_4
+                fixed_ship_deck_slot_1 = ship_escort_deck_space
+                fixed_ship_deck_slot_2 = ship_escort_deck_space
+                fixed_ship_engine_slot = carrier_ship_engine_4
+                fixed_ship_radar_slot = ship_radar_4
+                front_1_custom_slot = ship_escort_deck_space
+                mid_1_custom_slot = ship_escort_deck_space
+            }
+        }
+        allowed_modules = {
+            ship_anti_air_4
+            ship_escort_deck_space
+            carrier_ship_engine_4
+            ship_radar_4
+        }
+    }
+}
+Renko_LUN_battleship_designs = {
+    category = naval
+    available_for = {
+        LUN
+    }
+    roles = {
+        Renko_LUN_bb
+    }
+    priority = {
+        factor = 888
+    }
+    Renko_LUN_battleship_1936_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_battleship_1936_commissioned
+        }
+        target_variant = {
+            match_value = 10000
+            type = ship_hull_heavy_2
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_2
+                fixed_ship_armor_slot = ship_armor_bb_2
+                fixed_ship_battery_slot = ship_heavy_battery_2
+                fixed_ship_engine_slot = heavy_ship_engine_2
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+                fixed_ship_radar_slot = ship_radar_1
+                fixed_ship_secondaries_slot = dp_ship_secondaries_1
+                front_1_custom_slot = ship_heavy_battery_2
+                mid_1_custom_slot = dp_ship_secondaries_1
+                mid_2_custom_slot = dp_ship_secondaries_1
+                rear_1_custom_slot = dp_ship_secondaries_1
+            }
+        }
+        allowed_modules = {
+            ship_anti_air_2
+            ship_armor_bb_2
+            ship_heavy_battery_2
+            heavy_ship_engine_2
+            ship_fire_control_system_2
+            ship_radar_1
+            dp_ship_secondaries_1
+        }
+    }
+    Renko_LUN_battleship_1940_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_battleship_1940_commissioned
+        }
+        target_variant = {
+            match_value = 20000
+            type = ship_hull_heavy_3
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_3
+                fixed_ship_armor_slot = ship_armor_bb_3
+                fixed_ship_battery_slot = ship_heavy_battery_3
+                fixed_ship_engine_slot = heavy_ship_engine_3
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+                fixed_ship_radar_slot = ship_radar_3
+                fixed_ship_secondaries_slot = dp_ship_secondaries_3
+                front_1_custom_slot = ship_heavy_battery_3
+                mid_1_custom_slot = ship_heavy_battery_3
+                mid_2_custom_slot = dp_ship_secondaries_3
+                mid_3_custom_slot = dp_ship_secondaries_3
+                rear_1_custom_slot = ship_anti_air_3
+            }
+        }
+        allowed_modules = {
+            ship_anti_air_3
+            ship_armor_bb_3
+            ship_heavy_battery_3
+            heavy_ship_engine_3
+            ship_fire_control_system_3
+            ship_radar_3
+            dp_ship_secondaries_3
+        }
+    }
+    Renko_LUN_battleship_1943_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_battleship_1943_commissioned
+        }
+        target_variant = {
+            match_value = 30000
+            type = ship_hull_heavy_4
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_4
+                fixed_ship_armor_slot = ship_armor_shbb
+                fixed_ship_battery_slot = ship_heavy_battery_4
+                fixed_ship_engine_slot = heavy_ship_engine_4
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+                fixed_ship_radar_slot = ship_radar_4
+                fixed_ship_secondaries_slot = dp_ship_secondaries_4
+                front_1_custom_slot = ship_heavy_battery_4
+                mid_1_custom_slot = ship_heavy_battery_4
+                mid_2_custom_slot = ship_heavy_battery_4
+                mid_3_custom_slot = ship_anti_air_4
+                rear_1_custom_slot = ship_anti_air_4
+            }
+        }
+        allowed_modules = {
+            ship_anti_air_4
+            ship_armor_shbb
+            ship_heavy_battery_4
+            heavy_ship_engine_4
+            ship_fire_control_system_3
+            ship_radar_4
+            dp_ship_secondaries_4
+        }
+    }
+}
+Renko_LUN_super_battleship_designs = {
+    category = naval
+    available_for = {
+        LUN
+    }
+    roles = {
+        Renko_LUN_super_bb
+    }
+    priority = {
+        factor = 888
+    }
+    Renko_LUN_super_battleship_1940_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_super_battleship_1940_commissioned
+        }
+        target_variant = {
+            match_value = 10000
+            type = ship_hull_super_heavy_1
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_3
+                fixed_ship_armor_slot = ship_armor_shbb
+                fixed_ship_battery_slot = ship_super_heavy_battery_1
+                fixed_ship_engine_slot = heavy_ship_engine_3
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+                fixed_ship_radar_slot = ship_radar_3
+                fixed_ship_secondaries_slot = dp_ship_secondaries_3
+                front_1_custom_slot = ship_super_heavy_battery_1
+                front_2_custom_slot = ship_super_heavy_battery_1
+                mid_1_custom_slot = ship_anti_air_3
+                mid_2_custom_slot = ship_anti_air_3
+                mid_3_custom_slot = ship_anti_air_3
+                rear_1_custom_slot = ship_super_heavy_battery_1
+                rear_2_custom_slot = ship_super_heavy_battery_1
+            }
+        }
+        allowed_modules = {
+            ship_anti_air_3
+            ship_armor_shbb
+            ship_super_heavy_battery_1
+            heavy_ship_engine_3
+            ship_fire_control_system_3
+            ship_radar_3
+            dp_ship_secondaries_3
+        }
+    }
+    Renko_LUN_super_battleship_1943_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_super_battleship_1943_commissioned
+        }
+        target_variant = {
+            match_value = 20000
+            type = ship_hull_super_heavy_1
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_4
+                fixed_ship_armor_slot = ship_armor_shbb
+                fixed_ship_battery_slot = ship_super_heavy_battery_1
+                fixed_ship_engine_slot = heavy_ship_engine_4
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+                fixed_ship_radar_slot = ship_radar_4
+                fixed_ship_secondaries_slot = dp_ship_secondaries_4
+                front_1_custom_slot = ship_super_heavy_battery_1
+                front_2_custom_slot = ship_super_heavy_battery_1
+                mid_1_custom_slot = ship_anti_air_4
+                mid_2_custom_slot = ship_anti_air_4
+                mid_3_custom_slot = ship_anti_air_4
+                rear_1_custom_slot = ship_super_heavy_battery_1
+                rear_2_custom_slot = ship_super_heavy_battery_1
+            }
+        }
+        allowed_modules = {
+            ship_anti_air_4
+            ship_armor_shbb
+            ship_super_heavy_battery_1
+            heavy_ship_engine_4
+            ship_fire_control_system_3
+            ship_radar_4
+            dp_ship_secondaries_4
+        }
+    }
+}
+Renko_LUN_heavy_cruiser_designs = {
+    category = naval
+    available_for = {
+        LUN
+    }
+    roles = {
+        Renko_LUN_ca
+    }
+    priority = {
+        factor = 888
+    }
+    Renko_LUN_heavy_cruiser_1936_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_heavy_cruiser_1936_commissioned
+        }
+        target_variant = {
+            match_value = 10000
+            type = ship_hull_cruiser_2
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_2
+                fixed_ship_armor_slot = ship_armor_cruiser_2
+                fixed_ship_battery_slot = ship_medium_battery_2
+                fixed_ship_engine_slot = cruiser_ship_engine_2
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+                fixed_ship_radar_slot = ship_radar_1
+                fixed_ship_secondaries_slot = dp_ship_secondaries_2
+                front_1_custom_slot = ship_medium_battery_2
+                mid_1_custom_slot = ship_torpedo_2
+                mid_2_custom_slot = ship_torpedo_2
+                rear_1_custom_slot = ship_medium_battery_2
+            }
+        }
+        allowed_modules = {
+            ship_anti_air_2
+            ship_armor_cruiser_2
+            ship_medium_battery_2
+            cruiser_ship_engine_2
+            ship_fire_control_system_1
+            ship_radar_1
+            dp_ship_secondaries_2
+            ship_torpedo_2
+        }
+    }
+    Renko_LUN_heavy_cruiser_1940_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_heavy_cruiser_1940_commissioned
+        }
+        target_variant = {
+            match_value = 20000
+            type = ship_hull_cruiser_3
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_3
+                fixed_ship_armor_slot = ship_armor_cruiser_3
+                fixed_ship_battery_slot = ship_medium_battery_3
+                fixed_ship_engine_slot = cruiser_ship_engine_3
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+                fixed_ship_radar_slot = ship_radar_3
+                fixed_ship_secondaries_slot = dp_ship_secondaries_3
+                front_1_custom_slot = ship_medium_battery_3
+                mid_1_custom_slot = ship_torpedo_3
+                mid_2_custom_slot = ship_torpedo_3
+                rear_1_custom_slot = ship_anti_air_3
+                rear_2_custom_slot = ship_medium_battery_3
+            }
+        }
+        allowed_modules = {
+            ship_anti_air_3
+            ship_armor_cruiser_3
+            ship_medium_battery_3
+            cruiser_ship_engine_3
+            ship_fire_control_system_3
+            ship_radar_3
+            dp_ship_secondaries_3
+            ship_torpedo_3
+        }
+    }
+    Renko_LUN_heavy_cruiser_1943_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_heavy_cruiser_1943_commissioned
+        }
+        target_variant = {
+            match_value = 30000
+            type = ship_hull_cruiser_4
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_4
+                fixed_ship_armor_slot = ship_armor_cruiser_4
+                fixed_ship_battery_slot = ship_medium_battery_4
+                fixed_ship_engine_slot = cruiser_ship_engine_4
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+                fixed_ship_radar_slot = ship_radar_4
+                fixed_ship_secondaries_slot = dp_ship_secondaries_4
+                front_1_custom_slot = ship_medium_battery_4
+                mid_1_custom_slot = ship_torpedo_4
+                mid_2_custom_slot = ship_torpedo_4
+                rear_1_custom_slot = ship_anti_air_4
+                rear_2_custom_slot = ship_medium_battery_4
+            }
+        }
+        allowed_modules = {
+            ship_anti_air_4
+            ship_armor_cruiser_4
+            ship_medium_battery_4
+            cruiser_ship_engine_4
+            ship_fire_control_system_3
+            ship_radar_4
+            dp_ship_secondaries_4
+            ship_torpedo_4
+        }
+    }
+}
+Renko_LUN_submarine_designs = {
+    category = naval
+    available_for = {
+        LUN
+    }
+    roles = {
+        Renko_LUN_ss
+    }
+    priority = {
+        factor = 888
+    }
+    Renko_LUN_submarine_1936_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_submarine_1936_commissioned
+        }
+        target_variant = {
+            match_value = 10000
+            type = ship_hull_cruiser_submarine
+            modules = {
+                fixed_ship_engine_slot = sub_ship_engine_2
+                fixed_ship_torpedo_slot = ship_torpedo_sub_2
+                front_1_custom_slot = ship_torpedo_sub_2
+                mid_1_custom_slot = ship_sub_snorkel_2
+                rear_1_custom_slot = ship_torpedo_sub_2
+            }
+        }
+        allowed_modules = {
+            sub_ship_engine_2
+            ship_torpedo_sub_2
+            ship_sub_snorkel_2
+        }
+    }
+    Renko_LUN_submarine_1940_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_submarine_1940_commissioned
+        }
+        target_variant = {
+            match_value = 20000
+            type = ship_hull_fleet_submarine
+            modules = {
+                fixed_ship_engine_slot = ship_engine_sub_aip_2
+                fixed_ship_torpedo_slot = ship_torpedo_sub_3
+                front_1_custom_slot = ship_torpedo_sub_3
+                mid_1_custom_slot = ship_anechoic_tile
+                rear_1_custom_slot = ship_torpedo_sub_3
+            }
+        }
+        allowed_modules = {
+            ship_engine_sub_aip_2
+            ship_torpedo_sub_3
+            ship_anechoic_tile
+        }
+    }
+    Renko_LUN_submarine_1943_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_submarine_1943_commissioned
+        }
+        target_variant = {
+            match_value = 30000
+            type = ship_hull_fleet_submarine
+            modules = {
+                fixed_ship_engine_slot = ship_engine_sub_aip_3
+                fixed_ship_torpedo_slot = ship_torpedo_sub_4
+                front_1_custom_slot = ship_torpedo_sub_4
+                mid_1_custom_tech_slot = ship_anechoic_tile
+                rear_1_custom_slot = ship_torpedo_sub_4
+            }
+        }
+        allowed_modules = {
+            ship_engine_sub_aip_3
+            ship_torpedo_sub_4
+            ship_anechoic_tile
+        }
+    }
+}
+Renko_LUN_submarine_carrier_designs = {
+    category = naval
+    available_for = {
+        LUN
+    }
+    roles = {
+        Renko_LUN_ss_cv
+    }
+    priority = {
+        factor = 888
+    }
+    Renko_LUN_submarine_carrier_1940_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_submarine_carrier_1940_commissioned
+        }
+        target_variant = {
+            match_value = 10000
+            type = ship_hull_carrier_submarine
+            modules = {
+                fixed_ship_engine_slot = ship_engine_sub_aip_3
+                fixed_ship_torpedo_slot = ship_torpedo_sub_3
+                mid_1_custom_slot = ship_anechoic_tile
+                rear_1_custom_slot = ship_submarine_deck_space
+            }
+        }
+        allowed_modules = {
+            ship_engine_sub_aip_3
+            ship_torpedo_sub_3
+            ship_anechoic_tile
+            ship_submarine_deck_space
+        }
+    }
+}
+
+Renko_LUN_formal_carrier_designs = {
+    category = naval
+    available_for = {
+        LUN
+    }
+    roles = {
+        Renko_LUN_carrier
+    }
+    priority = {
+        factor = 888
+    }
+    Renko_LUN_formal_carrier_1936_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_formal_carrier_1936_commissioned
+        }
+        target_variant = {
+            match_value = 10000
+            type = ship_hull_carrier_1
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_1
+                fixed_ship_deck_slot_1 = ship_deck_space
+                fixed_ship_deck_slot_2 = ship_deck_space
+                fixed_ship_engine_slot = carrier_ship_engine_2
+                fixed_ship_radar_slot = ship_radar_1
+                fixed_ship_secondaries_slot = dp_ship_secondaries_1
+                front_1_custom_slot = ship_deck_space
+                mid_1_custom_slot = ship_deck_space
+            }
+        }
+        allowed_modules = {
+            ship_anti_air_1
+            ship_deck_space
+            carrier_ship_engine_2
+            ship_radar_1
+            dp_ship_secondaries_1
+        }
+    }
+    Renko_LUN_formal_carrier_1940_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_formal_carrier_1940_commissioned
+        }
+        target_variant = {
+            match_value = 20000
+            type = ship_hull_carrier_2
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_3
+                fixed_ship_deck_slot_1 = ship_deck_space
+                fixed_ship_deck_slot_2 = ship_deck_space
+                fixed_ship_engine_slot = carrier_ship_engine_3
+                fixed_ship_radar_slot = ship_radar_3
+                fixed_ship_secondaries_slot = dp_ship_secondaries_3
+                front_1_custom_slot = ship_deck_space
+                mid_1_custom_slot = ship_deck_space
+                mid_2_custom_slot = ship_deck_space
+            }
+        }
+        allowed_modules = {
+            ship_anti_air_3
+            ship_deck_space
+            carrier_ship_engine_3
+            ship_radar_3
+            dp_ship_secondaries_3
+        }
+    }
+    Renko_LUN_formal_carrier_1943_design = {
+        priority = {
+            factor = 1000
+        }
+        enable = {
+            has_country_flag = Renko_LUN_formal_carrier_1943_commissioned
+        }
+        target_variant = {
+            match_value = 30000
+            type = ship_hull_carrier_3
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_4
+                fixed_ship_armor_slot = ship_armor_cruiser_4
+                fixed_ship_deck_slot_1 = ship_deck_space
+                fixed_ship_deck_slot_2 = ship_deck_space
+                fixed_ship_engine_slot = carrier_ship_engine_4
+                fixed_ship_radar_slot = ship_radar_4
+                fixed_ship_secondaries_slot = dp_ship_secondaries_4
+                front_1_custom_slot = ship_deck_space
+                mid_1_custom_slot = ship_deck_space
+                mid_2_custom_slot = ship_deck_space
+                rear_1_custom_slot = ship_deck_space
+            }
+        }
+        allowed_modules = {
+            ship_anti_air_4
+            ship_armor_cruiser_4
+            ship_deck_space
+            carrier_ship_engine_4
+            ship_radar_4
+            dp_ship_secondaries_4
+        }
+    }
+}

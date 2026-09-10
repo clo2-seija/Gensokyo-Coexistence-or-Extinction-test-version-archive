@@ -32,7 +32,7 @@
 
 **必须保留：** 原 `default_unit_production` 中运输船基础生产权重 15、最低 1 船坞；原 `convoy_voy_voy_voy` 中运输船生产权重 50 及航线威胁启停条件。原库存管理块未迁出的内容继续保留。其他国家得到的载荷总和与触发时机应与所用原版一致。
 
-**联动：** `common/ai_strategy/Renko_LUN_military.txt`、`Renko_LUN_land_air_production.txt`、`Renko_LUN_naval_production.txt`。升级新增通用策略时，先判断是否与月都专属策略重叠，再决定是否隔离，不能只机械查找旧块名。
+**联动：** `common/ai_strategy/Renko_LUN_strategy.txt`、`Renko_LUN_strategy.txt`、`Renko_LUN_strategy.txt`。升级新增通用策略时，先判断是否与月都专属策略重叠，再决定是否隔离，不能只机械查找旧块名。
 
 ## 02．已移除：学说附带的 AI 比例
 
@@ -58,7 +58,7 @@
 
 受影响组：`destroyers`、`generic_escorts`、`naval_light_cruiser`、`naval_cruiser_heavy`、`naval_capital_battleship`、`naval_super_heavy_battleship`、`naval_capital_bc`、`naval_carrier`、`naval_carrier_light`、`naval_submarine`。
 
-原 MOD 已重写设计、模块选择与优先级，与原版存在大量差异；这些不是月都新增。维护时先保留／迁移原 MOD 设计，再恢复各组 LUN 排除。月都设计由 `common/ai_equipment/Renko_LUN_naval_designs.txt` 承接；不改通用组的模块或数值来加强月都。
+原 MOD 已重写设计、模块选择与优先级，与原版存在大量差异；这些不是月都新增。维护时先保留／迁移原 MOD 设计，再恢复各组 LUN 排除。月都设计由 `common/ai_equipment/Renko_LUN_designs.txt` 承接；不改通用组的模块或数值来加强月都。
 
 ## 05．通用坦克设计
 
@@ -66,7 +66,7 @@
 
 `generic_light_tanks`、`generic_light_tank_artillery`、`generic_light_tank_destroyers`、`generic_light_tank_anti_air`、`generic_medium_tanks`、`generic_medium_tank_artillery`、`generic_medium_tank_anti_air`、`generic_medium_tank_destroyer`、`generic_medium_flame_tanks`、`generic_amphibious_tanks`、`generic_medium_amphibious_tanks`、`generic_modern_tanks`、`generic_modern_tank_destroyer`、`generic_modern_tank_artillery`、`generic_modern_tank_anti_air`、`generic_heavy_tanks`、`generic_heavy_tank_destroyer`。
 
-原 MOD 设计与当前原版差异另行保留；月都模块、升级目标与允许模块列表在 `common/ai_equipment/Renko_LUN_land_designs.txt` 联动维护，不写入此通用文件。
+原 MOD 设计与当前原版差异另行保留；月都模块、升级目标与允许模块列表在 `common/ai_equipment/Renko_LUN_designs.txt` 联动维护，不写入此通用文件。
 
 ## 06．通用飞机设计
 
@@ -74,7 +74,7 @@
 
 只为 11 个设计组的 `blocked_for` 增加 `LUN`，保留原国家名单和全部设计：`generic_fighter`、`generic_cas`、`generic_naval_bomber`、`generic_cv_fighter`、`generic_cv_cas`、`generic_cv_naval_bomber`、`generic_tactical_bomber`、`generic_heavy_fighter`、`generic_scout_plane`、`generic_strategic_bomber`、`generic_maritime_patrol`。
 
-升级时以新原版为底，向仍有效的各组添加 LUN，不能拿空名单覆盖新版已有排除。专属设计由 `common/ai_equipment/Renko_LUN_air_designs.txt` 承接。
+升级时以新原版为底，向仍有效的各组添加 LUN，不能拿空名单覆盖新版已有排除。专属设计由 `common/ai_equipment/Renko_LUN_designs.txt` 承接。
 
 ## 07．通用海军特遣队
 

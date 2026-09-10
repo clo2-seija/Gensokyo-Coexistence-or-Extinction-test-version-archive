@@ -1,0 +1,468 @@
+# 月都加强：按功能分节整合；标识符及效果保持原样。
+# 分节：Renko_LUN_doctrine_scripted_effects
+# 按日本特殊属国实现：先选主学说，再逐轨选子学说，最后各授予 1000 精通度。
+Renko_LUN_select_designated_doctrines = {
+    set_grand_doctrine = Renko_LUN_grand_battleplan
+    set_grand_doctrine = Renko_LUN_new_base_strike
+    set_grand_doctrine = Renko_LUN_new_operational_integrity
+    set_grand_doctrine = special_forces_quality
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_commandos
+        folder = land
+        track = 0
+    }
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_air_cavalry
+        folder = land
+        track = 1
+    }
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_streamlined_deployment
+        folder = land
+        track = 2
+    }
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_infiltration_tactics
+        folder = land
+        track = 3
+    }
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_long_range_submarines
+        folder = naval
+        track = 0
+    }
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_torpedo_primacy
+        folder = naval
+        track = 1
+    }
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_massed_carrier_fleet
+        folder = naval
+        track = 2
+    }
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_battleship_antiair_screen
+        folder = naval
+        track = 3
+    }
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_air_subdoctrine_fighter_central_field
+        folder = air
+        track = 0
+    }
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_air_subdoctrine_naval_torpedo_tactics
+        folder = air
+        track = 1
+    }
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_air_subdoctrine_long_range_escort
+        folder = air
+        track = 2
+    }
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_air_subdoctrine_flying_fortresses
+        folder = air
+        track = 3
+    }
+    set_sub_doctrine = {
+        sub_doctrine = Renko_LUN_lunar_host
+        folder = special_forces
+        track = 0
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_commandos
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_air_cavalry
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_streamlined_deployment
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_infiltration_tactics
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_long_range_submarines
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_torpedo_primacy
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_massed_carrier_fleet
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_battleship_antiair_screen
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_air_subdoctrine_fighter_central_field
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_air_subdoctrine_naval_torpedo_tactics
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_air_subdoctrine_long_range_escort
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_air_subdoctrine_flying_fortresses
+    }
+    add_mastery = {
+        amount = 1000
+        sub_doctrine = Renko_LUN_lunar_host
+    }
+}
+
+# 分节：Renko_LUN_production_scripted_effects
+Renko_LUN_update_medium_tank_production_state = {
+    if = {
+        limit = {
+            has_country_flag = Renko_LUN_medium_tank_increase
+        }
+        if = {
+            limit = {
+                stockpile_ratio = {
+                    archetype = medium_tank_chassis
+                    ratio > 0.18
+                }
+            }
+            clr_country_flag = Renko_LUN_medium_tank_increase
+        }
+    }
+    else_if = {
+        limit = {
+            stockpile_ratio = {
+                archetype = medium_tank_chassis
+                ratio < 0.08
+            }
+        }
+        set_country_flag = Renko_LUN_medium_tank_increase
+    }
+}
+Renko_LUN_update_medium_td_production_state = {
+    if = {
+        limit = {
+            has_country_flag = Renko_LUN_medium_td_increase
+        }
+        clr_country_flag = Renko_LUN_medium_td_decline
+        if = {
+            limit = {
+                stockpile_ratio = {
+                    archetype = medium_tank_destroyer_chassis
+                    ratio > 0.18
+                }
+            }
+            clr_country_flag = Renko_LUN_medium_td_increase
+            if = {
+                limit = {
+                    stockpile_ratio = {
+                        archetype = medium_tank_destroyer_chassis
+                        ratio > 0.24
+                    }
+                }
+                set_country_flag = Renko_LUN_medium_td_decline
+            }
+        }
+    }
+    else_if = {
+        limit = {
+            has_country_flag = Renko_LUN_medium_td_decline
+        }
+        clr_country_flag = Renko_LUN_medium_td_increase
+        if = {
+            limit = {
+                stockpile_ratio = {
+                    archetype = medium_tank_destroyer_chassis
+                    ratio < 0.16
+                }
+            }
+            clr_country_flag = Renko_LUN_medium_td_decline
+            if = {
+                limit = {
+                    stockpile_ratio = {
+                        archetype = medium_tank_destroyer_chassis
+                        ratio < 0.08
+                    }
+                }
+                set_country_flag = Renko_LUN_medium_td_increase
+            }
+        }
+    }
+    else = {
+        if = {
+            limit = {
+                stockpile_ratio = {
+                    archetype = medium_tank_destroyer_chassis
+                    ratio < 0.08
+                }
+            }
+            set_country_flag = Renko_LUN_medium_td_increase
+        }
+        else_if = {
+            limit = {
+                stockpile_ratio = {
+                    archetype = medium_tank_destroyer_chassis
+                    ratio > 0.24
+                }
+            }
+            set_country_flag = Renko_LUN_medium_td_decline
+        }
+    }
+}
+Renko_LUN_update_land_production_state = {
+    Renko_LUN_update_medium_tank_production_state = yes
+    Renko_LUN_update_medium_td_production_state = yes
+}
+Renko_LUN_clear_production_state = {
+    clr_country_flag = Renko_LUN_production_loop_active
+    clr_country_flag = Renko_LUN_medium_tank_increase
+    clr_country_flag = Renko_LUN_medium_td_increase
+    clr_country_flag = Renko_LUN_medium_td_decline
+}
+
+# 分节：Renko_LUN_templates_scripted_effects
+# 日本基础步兵师／特种步坦师布局的月都适配；装备设计留待后续。
+Renko_LUN_create_infantry_template = {
+    division_template = {
+        name = "Renko Lunar Infantry Division"
+        is_locked = no
+        obsolete = no
+        regiments = {
+            Renko_LUN_invasion_infantry = { x = 0 y = 0 }
+            Renko_LUN_invasion_infantry = { x = 0 y = 1 }
+            Renko_LUN_invasion_infantry = { x = 0 y = 2 }
+
+            Renko_LUN_invasion_infantry = { x = 1 y = 0 }
+            Renko_LUN_invasion_infantry = { x = 1 y = 1 }
+            Renko_LUN_invasion_infantry = { x = 1 y = 2 }
+
+            Renko_LUN_invasion_infantry = { x = 2 y = 0 }
+            Renko_LUN_invasion_infantry = { x = 2 y = 1 }
+            Renko_LUN_invasion_infantry = { x = 2 y = 2 }
+        }
+        regimental_support = {
+            fire_support = { x = 0 y = 0 }
+            field_guns = { x = 1 y = 0 }
+            field_guns = { x = 2 y = 0 }
+        }
+        support = {
+            engineer = { x = 0 y = 0 }
+            artillery = { x = 0 y = 1 }
+        }
+    }
+}
+
+Renko_LUN_create_armored_template = {
+    division_template = {
+        name = "Renko Lunar Armored Division"
+        is_locked = no
+        obsolete = no
+        regiments = {
+            Renko_LUN_invasion_infantry = { x = 0 y = 0 }
+            Renko_LUN_invasion_infantry = { x = 0 y = 1 }
+            Renko_LUN_invasion_infantry = { x = 0 y = 2 }
+            Renko_LUN_invasion_infantry = { x = 0 y = 3 }
+            Renko_LUN_invasion_infantry = { x = 0 y = 4 }
+
+            Renko_LUN_invasion_infantry = { x = 1 y = 0 }
+            Renko_LUN_invasion_infantry = { x = 1 y = 1 }
+            Renko_LUN_invasion_infantry = { x = 1 y = 2 }
+            Renko_LUN_invasion_infantry = { x = 1 y = 3 }
+            Renko_LUN_invasion_infantry = { x = 1 y = 4 }
+
+            Renko_LUN_invasion_medium_armor = { x = 2 y = 0 }
+            Renko_LUN_invasion_medium_armor = { x = 2 y = 1 }
+            Renko_LUN_invasion_medium_armor = { x = 2 y = 2 }
+            Renko_LUN_invasion_medium_armor = { x = 2 y = 3 }
+
+            Renko_LUN_invasion_medium_armor = { x = 3 y = 0 }
+            Renko_LUN_invasion_medium_armor = { x = 3 y = 1 }
+            Renko_LUN_invasion_medium_armor = { x = 3 y = 2 }
+
+            Renko_LUN_invasion_medium_tankdestroyer = { x = 4 y = 0 }
+            Renko_LUN_invasion_medium_tankdestroyer = { x = 4 y = 1 }
+            Renko_LUN_invasion_medium_tankdestroyer = { x = 4 y = 2 }
+        }
+        regimental_support = {
+            fire_support = { x = 0 y = 0 }
+            field_guns = { x = 1 y = 0 }
+            Renko_LUN_invasion_medium_anti_air_support = { x = 2 y = 0 }
+            Renko_LUN_invasion_medium_anti_air_support = { x = 3 y = 0 }
+            Renko_LUN_invasion_heavy_tankdestroyer_support = { x = 4 y = 0 }
+        }
+        support = {
+            armored_engineer = {
+                x = 0
+                y = 0
+            }
+            medium_flame_tank = {
+                x = 0
+                y = 1
+            }
+            helicopter_field_hospital = {
+                x = 0
+                y = 2
+            }
+            helicopter_recon = {
+                x = 0
+                y = 3
+            }
+            helicopter_transport = {
+                x = 0
+                y = 4
+            }
+        }
+    }
+}
+
+Renko_LUN_create_suppression_template = {
+    division_template = {
+        name = "Renko Lunar Cavalry Garrison"
+        regiments = {
+            cavalry = { x = 0 y = 0 }
+            cavalry = { x = 0 y = 1 }
+            cavalry = { x = 0 y = 2 }
+            cavalry = { x = 0 y = 3 }
+            cavalry = { x = 0 y = 4 }
+            cavalry = { x = 1 y = 0 }
+            cavalry = { x = 1 y = 1 }
+            cavalry = { x = 1 y = 2 }
+            cavalry = { x = 1 y = 3 }
+            cavalry = { x = 1 y = 4 }
+            cavalry = { x = 2 y = 0 }
+            cavalry = { x = 2 y = 1 }
+            cavalry = { x = 2 y = 2 }
+            cavalry = { x = 2 y = 3 }
+            cavalry = { x = 2 y = 4 }
+            cavalry = { x = 3 y = 0 }
+            cavalry = { x = 3 y = 1 }
+            cavalry = { x = 3 y = 2 }
+            cavalry = { x = 3 y = 3 }
+            cavalry = { x = 3 y = 4 }
+            cavalry = { x = 4 y = 0 }
+            cavalry = { x = 4 y = 1 }
+            cavalry = { x = 4 y = 2 }
+            cavalry = { x = 4 y = 3 }
+            cavalry = { x = 4 y = 4 }
+        }
+        support = { military_police = { x = 0 y = 0 } }
+    }
+}
+
+Renko_LUN_unlock_template_requirements = {
+    set_technology = {
+        Renko_LUN_invasion_units_tech = 1
+        infantry_weapons = 1
+        infantry_weapons1 = 1
+        support_weapons = 1
+        tech_support = 1
+        tech_engineers = 1
+        gw_artillery = 1
+        tech_military_police = 1
+        tech_trucks = 1
+        gwtank_chassis = 1
+        basic_medium_tank_chassis = 1
+        basic_heavy_tank_chassis = 1
+        interwar_antiair = 1
+        interwar_antitank = 1
+        popup = no
+    }
+    if = {
+        limit = { NOT = { is_special_project_completed = sp:sp_air_helicopter } }
+        complete_special_project = sp:sp_air_helicopter
+    }
+    if = {
+        limit = { NOT = { is_special_project_completed = sp:sp_land_military_engineering_vehicles } }
+        complete_special_project = sp:sp_land_military_engineering_vehicles
+    }
+    if = {
+        limit = { NOT = { is_special_project_completed = sp:sp_land_flamethrower_tank } }
+        complete_special_project = sp:sp_land_flamethrower_tank
+    }
+    set_technology = {
+        sp_armored_engineer_tech = 1
+        sp_helicopter_transport_pods_tech = 1
+        sp_helicopter_artillery_observers_tech = 1
+        sp_helicopter_med_evac_tech = 1
+        popup = no
+    }
+}
+
+Renko_LUN_grant_army_templates_and_units = {
+    Renko_LUN_unlock_template_requirements = yes
+    if = {
+        limit = { NOT = { has_country_flag = Renko_LUN_medium_tank_1936_commissioned } }
+        Renko_LUN_medium_tank_1936_grant = yes
+    }
+    if = {
+        limit = { NOT = { has_country_flag = Renko_LUN_medium_td_1936_commissioned } }
+        Renko_LUN_medium_td_1936_grant = yes
+    }
+    if = {
+        limit = { NOT = { has_country_flag = Renko_LUN_medium_aa_1936_commissioned } }
+        Renko_LUN_medium_aa_1936_grant = yes
+    }
+    if = {
+        limit = { NOT = { has_country_flag = Renko_LUN_heavy_td_1936_commissioned } }
+        Renko_LUN_heavy_td_1936_grant = yes
+    }
+    if = {
+        limit = { NOT = { has_country_flag = Renko_LUN_medium_flame_1936_commissioned } }
+        Renko_LUN_medium_flame_1936_grant = yes
+    }
+    if = {
+        limit = { NOT = { has_country_flag = Renko_LUN_fighter_1936_commissioned } }
+        Renko_LUN_fighter_1936_grant = yes
+    }
+    if = {
+        limit = { NOT = { has_country_flag = Renko_LUN_cas_1936_commissioned } }
+        Renko_LUN_cas_1936_grant = yes
+    }
+    if = {
+        limit = { NOT = { has_country_flag = Renko_LUN_cv_fighter_1936_commissioned } }
+        Renko_LUN_cv_fighter_1936_grant = yes
+    }
+    if = {
+        limit = { NOT = { has_country_flag = Renko_LUN_cv_attacker_1936_commissioned } }
+        Renko_LUN_cv_attacker_1936_grant = yes
+    }
+    if = {
+        limit = { NOT = { has_template = "Renko Lunar Infantry Division" } }
+        Renko_LUN_create_infantry_template = yes
+    }
+    if = {
+        limit = { NOT = { has_template = "Renko Lunar Armored Division" } }
+        Renko_LUN_create_armored_template = yes
+    }
+    if = {
+        limit = { NOT = { has_template = "Renko Lunar Cavalry Garrison" } }
+        Renko_LUN_create_suppression_template = yes
+    }
+    capital_scope = {
+        create_unit = {
+            division = "division_template = \"Renko Lunar Infantry Division\" start_equipment_factor = 1.0"
+            owner = PREV
+            count = 80
+        }
+        create_unit = {
+            division = "division_template = \"Renko Lunar Armored Division\" start_equipment_factor = 1.0"
+            owner = PREV
+            count = 20
+        }
+    }
+    Renko_LUN_grant_dynamic_equipment = yes
+    Renko_LUN_grant_dynamic_equipment = yes
+    Renko_LUN_grant_dynamic_equipment = yes
+}

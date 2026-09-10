@@ -47,8 +47,10 @@ def read(p):return parse(p.read_text(encoding='utf-8-sig'))
 def resolved(rel):return root/rel if (root/rel).exists() else G/rel
 def load(rel):return read(resolved(rel))
 gd=load('common/doctrines/grand_doctrines/Renko_LUN_grand_doctrines.txt')
-sd=load('common/doctrines/subdoctrines/Renko_LUN_service_subdoctrines.txt')
-sf=load('common/doctrines/subdoctrines/Renko_LUN_special_forces_subdoctrine.txt')
+subdoctrines=load('common/doctrines/subdoctrines/Renko_LUN_subdoctrines.txt')
+assert len(subdoctrines)==len(dict(subdoctrines))==13
+sd=[(k,v) for k,v in subdoctrines if k!='Renko_LUN_lunar_host']
+sf=[(k,v) for k,v in subdoctrines if k=='Renko_LUN_lunar_host']
 td=load('common/doctrines/tracks/Renko_LUN_doctrine_tracks.txt')
 assert (len(gd),len(sd),len(sf),len(td))==(3,12,1,12)
 entries=json.loads(resolved('Reference/Renko_LUN_doctrine_sources.json').read_text(encoding='utf-8'))
@@ -77,7 +79,7 @@ for key,node in sd:
     grand=next(k for k,g in gd if get(node,'track') in get(g,'tracks'))
     assert get(node,'available')==[('original_tag','LUN'),('has_doctrine',grand)]
 all_new=dict(gd+sd+sf+td)
-effects=get(load('common/scripted_effects/Renko_LUN_doctrine_scripted_effects.txt'),'Renko_LUN_select_designated_doctrines')
+effects=get(load('common/scripted_effects/Renko_LUN_military_scripted_effects.txt'),'Renko_LUN_select_designated_doctrines')
 chosen={};mastery={};grand_by_folder={}
 for k,v in effects:
     if k=='set_grand_doctrine':grand_by_folder['special_forces' if v=='special_forces_quality' else get(all_new[v],'folder')]=v
@@ -113,7 +115,7 @@ for k in units:
 dec=dict(get(load('common/decisions/Renko_LUN_lunar_war_high_command_decisions.txt'),'Renko_LUN_lunar_war_high_command_category'))
 d=dict(dec['Renko_LUN_adopt_designated_doctrines']);assert d['fire_only_once']=='yes' and d['cost']=='0'
 assert get(d['ai_will_do'],'factor')=='100'
-locpath=resolved('localisation/simp_chinese/Renko_LUN_doctrines_l_simp_chinese.yml');locbytes=locpath.read_bytes()
+locpath=resolved('localisation/simp_chinese/Renko_LUN_l_simp_chinese.yml');locbytes=locpath.read_bytes()
 assert locbytes.startswith(b'\xef\xbb\xbf') and b'\r' not in locbytes
 locpairs=re.findall(r'^\s*(\w+):0 "([^"\n]*)"$',locbytes.decode('utf-8-sig'),re.M);loc=dict(locpairs)
 assert len(locpairs)==len(loc)
@@ -121,7 +123,13 @@ for key,n in gd+sd+sf:
     assert get(n,'name') in loc and get(n,'description') in loc
     if ('rewards' in dict(n)):
         for rk,_ in get(n,'rewards'):assert key+'_'+rk in loc and key+'_'+rk+'_desc' in loc
-for k,v in loc.items():
+doctrine_keys=set()
+for key,n in gd+sd+sf:
+    doctrine_keys.update([get(n,'name'),get(n,'description')])
+    for rk,_ in dict(n).get('rewards',[]):
+        doctrine_keys.update([key+'_'+rk,key+'_'+rk+'_desc'])
+for k in doctrine_keys:
+    v=loc[k]
     for ref in re.findall(r'\$([^$]+)\$',v):
         assert ref in loc or any(re.search(r'^\s*'+re.escape(ref)+':',p.read_text(encoding='utf-8-sig'),re.M) for p in (V/'localisation/simp_chinese').rglob('*.yml')),ref
     assert v.count('§!')==len(re.findall(r'§[^!]',v)),k

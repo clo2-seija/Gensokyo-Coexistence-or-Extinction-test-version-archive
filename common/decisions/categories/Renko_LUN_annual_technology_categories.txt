@@ -1,9 +1,0 @@
-Renko_LUN_annual_technology_category = {
-	icon = decision_category_generic_industry
-	allowed = {
-		original_tag = LUN
-	}
-	visible = {
-		tag = LUN
-	}
-}

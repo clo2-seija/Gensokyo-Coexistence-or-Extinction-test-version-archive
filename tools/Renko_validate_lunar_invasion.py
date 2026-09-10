@@ -89,17 +89,19 @@ def validate(root, japan, vanilla):
             assert len(match) == 1 and match[0]['texturefile'] == rel and match[0]['noOfFrames'] == '2'
             if kind == 'text': assert match[0]['legacy_lazy_load'] == 'no'
     tech = 'Renko_LUN_invasion_units_tech'
-    techdata = mapping(mapping(mapping(parse(root/'common/technologies/Renko_LUN_invasion_units_tech.txt'))['technologies'])[tech])
+    techdata = mapping(mapping(mapping(parse(root/'common/technologies/Renko_LUN_technologies.txt'))['technologies'])[tech])
     assert set(techdata['enable_subunits']) == set(units)
     assert mapping(techdata['allow']) == {'always':'no'}
     history = (root/'history/countries/LUN - Lunarians.txt').read_bytes()
     assert history.count((tech+' = 1').encode()) == 1
     for lang, folder in [('simp_chinese','simp_chinese'),('english','English')]:
-        p = root/f'localisation/{folder}/Renko_LUN_invasion_units_l_{lang}.yml'
+        p = root/f'localisation/{folder}/Renko_LUN_l_{lang}.yml'
         data=p.read_bytes(); assert data.startswith(b'\xef\xbb\xbf') and b'\r' not in data
         keys = re.findall(r'^\s*(\w+):0 "[^"\n]*"$',data.decode('utf-8-sig'),re.M)
         expected = {tech,tech+'_desc'} | set(units) | {k+'_desc' for k in units}
-        assert len(keys) == 12 and set(keys) == expected
+        assert len(expected) == 12 and expected <= set(keys)
+        assert len(keys) == len(set(keys)), 'duplicate localisation keys'
+        keys = sorted(expected)
         alltext='\n'.join(q.read_text(encoding='utf-8-sig') for q in (root/'localisation'/folder).rglob('*.yml'))
         for key in keys: assert len(re.findall(r'^\s*'+key+r':',alltext,re.M)) == 1,key
     # 全目录检查新标识符唯一性；原有内容不作本轮修复范围。
@@ -107,7 +109,7 @@ def validate(root, japan, vanilla):
     for key in units: assert len(re.findall(r'^\s*'+key+r'\s*=\s*\{',allunits,re.M)) == 1,key
     allgfx='\n'.join(p.read_text(encoding='utf-8-sig') for p in (root/'interface').glob('*.gfx'))
     for g in gfx: assert len(re.findall(r'name\s*=\s*"'+g['name']+'"',allgfx)) == 1,g['name']
-    for rel in ['common/units/Renko_LUN_invasion_units.txt','common/technologies/Renko_LUN_invasion_units_tech.txt','interface/Renko_LUN_invasion_unit_icons.gfx']:
+    for rel in ['common/units/Renko_LUN_invasion_units.txt','common/technologies/Renko_LUN_technologies.txt','interface/Renko_LUN_invasion_unit_icons.gfx']:
         data=(root/rel).read_bytes();assert not data.startswith(b'\xef\xbb\xbf') and b'\r' not in data
     assert history.count(b'\n') == history.count(b'\r\n'), 'history line endings changed'
     return {'result':'PASS','units':5,'special_battalions':3,'regimental_support_companies':2,'gfx_registrations':15,'two_frame_pngs':15,'localisation_keys_per_language':12,'baseline_core_stats':'unchanged except user-specified medium TD equipment count = 40','terrain':'infantry complex terrain; armor open terrain only; support has no terrain fields','RuntimeChecks':'NOT RUN'}

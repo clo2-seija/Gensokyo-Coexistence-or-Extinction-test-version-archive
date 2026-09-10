@@ -1,5 +1,53 @@
+# 月都加强：按功能分节整合；标识符及效果保持原样。
 ideas = {
+    hidden_ideas = {
+        # 分节：Renko_LUN_elite_training_hidden_ideas
+        Renko_LUN_elite_soldier_training_hidden_idea = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                # 日本 MOD JAP_rework_ideas.txt 的特种上限规格。
+                special_forces_cap = 10
+                special_forces_cap_flat = 1000
+            }
+        }
+
+        # 分节：Renko_LUN_resource_hidden_ideas
+        Renko_LUN_lunar_resource_support_hidden_idea = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                state_resources_factor = 2.00
+                fuel_gain_factor = 2.00
+                max_fuel_factor = 4.00
+                army_fuel_consumption_factor = -0.50
+                navy_fuel_consumption_factor = -0.50
+                air_fuel_consumption_factor = -0.50
+            }
+        }
+
+        # 分节：Renko_LUN_supply_hidden_ideas
+        Renko_LUN_toyohime_connects_sea_and_mountain_supply_hidden_idea = {
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                supply_node_range = 99.99
+            }
+        }
+    }
+
     country = {
+        # 分节：Renko_LUN_lunar_sea_fleet_ideas
         Renko_LUN_lunar_sea_fleet_idea = {
             picture = fleet_interoperability_navy_spirit
             allowed = { original_tag = LUN }

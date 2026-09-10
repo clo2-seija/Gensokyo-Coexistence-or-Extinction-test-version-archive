@@ -10871,6 +10871,10 @@ focus = {
 			
 				remove_ideas = LUN_celestial_war_industry
 				remove_ideas = LUN_pure_logistics_standard
+				custom_effect_tooltip = Renko_LUN_block_moon_rabbit_recruitment_tt
+				hidden_effect = {
+					set_country_flag = Renko_LUN_moon_rabbit_recruitment_blocked
+				}
 						
 			}
 
