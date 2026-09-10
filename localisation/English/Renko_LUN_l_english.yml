@@ -437,8 +437,8 @@
  # 月都独立难度与莲子的协助
  Renko_LUN_request_difficulty_selection:0 "Request Lunar Capital Difficulty Selection"
  Renko_LUN_request_difficulty_selection_desc:0 "Send the Lunar Capital difficulty selection event to Gensokyo."
- Renko_LUN_difficulty.1.t:0 "Lunar Capital Difficulty"
- Renko_LUN_difficulty.1.d:0 "The Lunar Capital has arrived on Earth. Choose its independent difficulty for this campaign."
+ Renko_LUN_difficulty.1.t:0 "Lunar Capital Difficulty Selection Menu"
+ Renko_LUN_difficulty.1.d:0 "We recommend saving your game now so that you can reload and choose a different difficulty later if needed.\n\nThe Lunar Capital is now much stronger than it was in the initial release, so we have created a dedicated difficulty selection menu for it. If you prefer a more relaxed experience or are still learning the game, we recommend choosing §7EASY§!.\n\n§7EASY§!: The Lunar Capital suffers substantial attack and defense penalties when fighting Gensokyo.\n§6NORMAL§!: No additional bonuses or penalties.\n§4HARD§!: The Lunar Capital will have more troops.\n§OLUNATIC§!: In addition to having more troops, the Lunar Capital receives extra bonuses to strengthen its forces."
  Renko_LUN_difficulty.1.a:0 "§7A Degree of Falling White Snow (EASY)§!"
  Renko_LUN_difficulty.1.b:0 "§6A Degree of Wind and Frost (NORMAL)§!"
  Renko_LUN_difficulty.1.c:0 "§4A Degree of Sun-Blocking Blizzard (HARD)§!"
