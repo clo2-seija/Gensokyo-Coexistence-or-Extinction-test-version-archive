@@ -438,7 +438,7 @@
  Renko_LUN_request_difficulty_selection:0 "Request Lunar Capital Difficulty Selection"
  Renko_LUN_request_difficulty_selection_desc:0 "Send the Lunar Capital difficulty selection event to Gensokyo."
  Renko_LUN_difficulty.1.t:0 "Lunar Capital Difficulty Selection Menu"
- Renko_LUN_difficulty.1.d:0 "We recommend saving your game now so that you can reload and choose a different difficulty later if needed.\n\nThe Lunar Capital is now much stronger than it was in the initial release, so we have created a dedicated difficulty selection menu for it. If you prefer a more relaxed experience or are still learning the game, we recommend choosing §7EASY§!.\n\n§7EASY§!: The Lunar Capital suffers substantial attack and defense penalties when fighting Gensokyo.\n§6NORMAL§!: No additional bonuses or penalties.\n§4HARD§!: The Lunar Capital will have more troops.\n§OLUNATIC§!: In addition to having more troops, the Lunar Capital receives extra bonuses to strengthen its forces."
+ Renko_LUN_difficulty.1.d:0 "We recommend saving your game now so that you can reload and choose a different difficulty later if needed.\n\nThe Lunar Capital is now much stronger than it was in the initial release, so we have created a dedicated difficulty selection menu for it. If you prefer a more relaxed experience or are still learning the game, we recommend choosing §7EASY§!.\n\n§7EASY§!: The Lunar Capital suffers substantial attack and defense penalties when fighting Gensokyo.\n§6NORMAL§!: No additional bonuses or penalties.\n§4HARD§!: The Lunar Capital will have more troops and receive 30 additional off-map civilian factories.\n§OLUNATIC§!: The Lunar Capital will have more troops, receive 45 additional off-map civilian factories and 45 additional off-map military factories, and gain extra bonuses to strengthen its forces."
  Renko_LUN_difficulty.1.a:0 "§7A Degree of Falling White Snow (EASY)§!"
  Renko_LUN_difficulty.1.b:0 "§6A Degree of Wind and Frost (NORMAL)§!"
  Renko_LUN_difficulty.1.c:0 "§4A Degree of Sun-Blocking Blizzard (HARD)§!"
@@ -454,3 +454,17 @@
  Renko_LUN_extra_equipment_supply_tt:0 "§RThe Lunar Capital receives more additional equipment supplies.§!"
  Renko_LUN_eternal_moon:0 "Eternal Moon"
  Renko_LUN_eternal_moon_desc:0 "Lunar industry and command endure beneath the unchanging moon. Experience survives each change in equipment, and armies ready for battle retain their defensive preparations even as they advance."
+
+ Renko_LUN_appoint_yorihime:0 "Appoint Watatsuki no Yorihime"
+ Renko_LUN_appoint_yorihime_desc:0 "Appoint Watatsuki no Yorihime as a political advisor, bringing the lunar princess's authority and military expertise into the High Command's deliberations. This appointment costs no political power."
+
+ Renko_LUN_integrated_industry:0 "Lunar Integrated Industrial System"
+ Renko_LUN_integrated_industry_desc:0 "Unify lunar workshops, military production and urban construction under a single plan. Lunar technology and discipline coordinate industrial resources, reducing civilian allocations and factory conversion costs at the expense of greater energy demand."
+
+ Renko_LUN_ai_adopt_integrated_industry:0 "Implement the Lunar Integrated Industrial System"
+ Renko_LUN_ai_adopt_integrated_industry_desc:0 "The Lunar War High Command directly implements the Lunar Integrated Industrial System to coordinate industrial resources. This decision is available only to the lunar AI and costs no political power."
+
+ Renko_LUN_start_air_base_construction:0 "Launch the Lunar Air Base Expansion Program"
+ Renko_LUN_start_air_base_construction_desc:0 "Begin an ongoing air base expansion program. Every 30 days, randomly select one state fully controlled by the Lunar Capital with an air base below level 10 and instantly expand it to level 10. If no eligible state exists, skip construction and continue the next cycle."
+ Renko_LUN_air_base_cycle_mission:0 "Lunar Air Base Expansion Cycle"
+ Renko_LUN_air_base_cycle_mission_desc:0 "At the end of this cycle, randomly select one fully controlled state with an air base below level 10 and instantly expand it to level 10, then begin another 30-day cycle. No construction occurs if no eligible state exists."

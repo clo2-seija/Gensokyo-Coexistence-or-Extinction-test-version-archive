@@ -960,4 +960,10 @@ spriteType = {
         name = "GFX_idea_Renko_LUN_eternal_moon"
         texturefile = "gfx/interface/ideas/Renko_LUN_eternal_moon.png"
     }
+
+    # 月都统合工业体制
+    spriteType = {
+        name = "GFX_idea_Renko_LUN_integrated_industry"
+        texturefile = "gfx/interface/ideas/Renko_LUN_integrated_industry.png"
+    }
 } 

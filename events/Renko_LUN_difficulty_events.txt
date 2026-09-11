@@ -31,7 +31,12 @@ country_event = {
                 set_country_flag = Renko_LUN_difficulty_above_normal
             }
         }
-        # TODO：HARD 后续难度效果。
+        LUN = {
+            add_offsite_building = {
+                type = industrial_complex
+                level = 30
+            }
+        }
     }
     option = {
         name = Renko_LUN_difficulty.1.e
@@ -42,6 +47,14 @@ country_event = {
             }
         }
         LUN = {
+            add_offsite_building = {
+                type = industrial_complex
+                level = 45
+            }
+            add_offsite_building = {
+                type = arms_factory
+                level = 45
+            }
             add_ideas = Renko_LUN_eternal_moon
         }
     }

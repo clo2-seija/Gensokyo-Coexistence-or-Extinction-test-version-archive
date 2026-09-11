@@ -20,14 +20,6 @@ focus_tree = {
 		y = 9
 		completion_reward = {
 
-			add_offsite_building = {
-				type = arms_factory
-				level = 2
-			}
-			add_offsite_building = {
-				type = industrial_complex
-				level = 2
-			}
 
 			add_manpower = 15000000
 
@@ -85,14 +77,6 @@ focus = {
 			}
 
 
-			add_offsite_building = {
-				type = arms_factory
-				level = 5
-			}
-			add_offsite_building = {
-				type = industrial_complex
-				level = 10
-			}
 
 
 			build_railway = {
@@ -135,14 +119,6 @@ focus = {
 				add_building_construction = {
 					type = infrastructure
 					level = 4
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 10
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 10
 				}
 
 				add_resource = {
@@ -204,14 +180,6 @@ focus = {
 
 			
 
-			add_offsite_building = {
-				type = arms_factory
-				level = 5
-			}
-			add_offsite_building = {
-				type = industrial_complex
-				level = 10
-			}
 			every_country = {
 				limit = {
 					is_neighbor_of = LUN

@@ -438,7 +438,7 @@
  Renko_LUN_request_difficulty_selection:0 "发起月都难度选择"
  Renko_LUN_request_difficulty_selection_desc:0 "向幻想乡发送月都独立难度选择事件。"
  Renko_LUN_difficulty.1.t:0 "月都难度调整选单"
- Renko_LUN_difficulty.1.d:0 "建议您在此存档，以便之后有需要时重新读档选择难度。\n\n现在的月之都比发布初版强大许多，因此我们为其设计了专属难度选择页面。如果您希望获得轻松的体验，或者游戏经验尚不丰富，建议选择 §7EASY§! 难度进行挑战。\n\n§7EASY§!：月都对幻想乡作战时将受到大量攻击与防御惩罚。\n§6NORMAL§!：没有额外奖励或惩罚。\n§4HARD§!：月都将拥有更多部队。\n§OLUNATIC§!：月都在拥有更多部队的基础上，还会获得额外的强化加成。"
+ Renko_LUN_difficulty.1.d:0 "建议您在此存档，以便之后有需要时重新读档选择难度。\n\n现在的月之都比发布初版强大许多，因此我们为其设计了专属难度选择页面。如果您希望获得轻松的体验，或者游戏经验尚不丰富，建议选择 §7EASY§! 难度进行挑战。\n\n§7EASY§!：月都对幻想乡作战时将受到大量攻击与防御惩罚。\n§6NORMAL§!：没有额外奖励或惩罚。\n§4HARD§!：月都将拥有更多部队，并额外获得30座地图外民用工厂。\n§OLUNATIC§!：月都将拥有更多部队，额外获得45座地图外民用工厂和45座地图外军用工厂，并获得额外的强化加成。"
  Renko_LUN_difficulty.1.a:0 "§7白雪纷飞的程度(EASY)§!"
  Renko_LUN_difficulty.1.b:0 "§6漫天风霜的程度(NORMAL)§!"
  Renko_LUN_difficulty.1.c:0 "§4暴雪蔽日的程度(HARD)§!"
@@ -454,3 +454,17 @@
  Renko_LUN_extra_equipment_supply_tt:0 "§R月都获得更多额外装备补给§!"
  Renko_LUN_eternal_moon:0 "永恒之月"
  Renko_LUN_eternal_moon_desc:0 "月都的生产与军令如弦月般恒常。旧有经验不会随装备更迭消逝，整备完毕的军势也不会因进攻而遗忘防御。"
+
+ Renko_LUN_appoint_yorihime:0 "任命绵月依姬"
+ Renko_LUN_appoint_yorihime_desc:0 "由绵月依姬出任政治顾问，将月之公主的威望与军略纳入最高司令部的统一决策。此次任命不消耗政治点。"
+
+ Renko_LUN_integrated_industry:0 "月都统合工业体制"
+ Renko_LUN_integrated_industry_desc:0 "将月面工坊、军需生产与都市建设纳入统一规划，以月都的技术与纪律统筹工业资源。集中生产降低了民用配给与工厂转产的负担，也带来了更高的能源需求。"
+
+ Renko_LUN_ai_adopt_integrated_industry:0 "实施月都统合工业体制"
+ Renko_LUN_ai_adopt_integrated_industry_desc:0 "由月战最高司令部直接实施月都统合工业体制，统一调配工业资源。此项决议仅供月都 AI 执行，不消耗政治点。"
+
+ Renko_LUN_start_air_base_construction:0 "启动月都机场扩建计划"
+ Renko_LUN_start_air_base_construction_desc:0 "启动持续的机场扩建计划。每 30 天，从月都完全控制且空军基地未满 10 级的地区中随机选择一处，将空军基地立即扩建至 10 级。没有合适地区时跳过当轮，并继续下一轮计时。"
+ Renko_LUN_air_base_cycle_mission:0 "月都机场扩建周期"
+ Renko_LUN_air_base_cycle_mission_desc:0 "本轮结束时，随机选取一处月都完全控制、空军基地不足 10 级的地区，将空军基地立即扩建至 10 级，随后开始下一个 30 天周期。没有合适地区时，本轮不进行建设。"

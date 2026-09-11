@@ -20,6 +20,40 @@ Renko_LUN_lunar_war_high_command_category = {
         ai_will_do = { factor = 1000 }
     }
 
+    # 日本共荣圈工业国策同样使用 add_ideas 直接切换经济法案。
+    Renko_LUN_ai_adopt_integrated_industry = {
+        icon = generic_construction
+        cost = 0
+        fire_only_once = yes
+        priority = 120
+        visible = {
+            is_ai = yes
+            NOT = { has_idea = Renko_LUN_integrated_industry }
+        }
+        available = { tag = LUN }
+        complete_effect = {
+            add_ideas = Renko_LUN_integrated_industry
+        }
+        ai_will_do = { factor = 1000 }
+    }
+
+    Renko_LUN_appoint_yorihime = {
+        icon = generic_military
+        cost = 0
+        fire_only_once = yes
+        priority = 100
+        visible = {
+            NOT = { has_idea = gensokyo_yorihime }
+        }
+        available = {
+            has_character = gensokyo_yorihime
+        }
+        complete_effect = {
+            activate_advisor = gensokyo_yorihime
+        }
+        ai_will_do = { factor = 1000 }
+    }
+
     # 分节：Renko_LUN_army_templates_decisions
     Renko_LUN_mobilize_lunar_army = {
         icon = generic_military
@@ -41,6 +75,48 @@ Renko_LUN_lunar_war_high_command_category = {
             }
         }
         ai_will_do = { factor = 100 }
+    }
+
+    # 月都机场建设：显式启动，首次建设在 30 天后。
+    Renko_LUN_start_air_base_construction = {
+        icon = generic_construction
+        cost = 0
+        fire_only_once = yes
+        priority = 90
+        available = { always = yes }
+        complete_effect = {
+            activate_mission = Renko_LUN_air_base_cycle_mission
+        }
+        ai_will_do = { factor = 1000 }
+    }
+
+    Renko_LUN_air_base_cycle_mission = {
+        icon = generic_construction
+        days_mission_timeout = 30
+        fire_only_once = no
+        selectable_mission = no
+        activation = { always = no }
+        available = { hidden_trigger = { always = no } }
+        is_good = yes
+        ai_will_do = { factor = 0 }
+        timeout_effect = {
+            random_controlled_state = {
+                limit = {
+                    is_fully_controlled_by = ROOT
+                    air_base < 10
+                }
+                # 原版空军基地为州建筑，上限 10；即时增加按建筑上限截断。
+                add_building_construction = {
+                    type = air_base
+                    level = 10
+                    instant_build = yes
+                }
+            }
+            # 无合格州时也继续循环，后续新占领地区可自动纳入。
+            hidden_effect = {
+                activate_mission = Renko_LUN_air_base_cycle_mission
+            }
+        }
     }
 
     # 分节：Renko_LUN_infrastructure_decisions
@@ -221,11 +297,11 @@ Renko_LUN_lunar_war_high_command_category = {
         complete_effect = {
             add_offsite_building = {
                 type = industrial_complex
-                level = 40
+                level = 15
             }
             add_offsite_building = {
                 type = arms_factory
-                level = 40
+                level = 20
             }
         }
         ai_will_do = { factor = 1000 }
@@ -241,7 +317,7 @@ Renko_LUN_lunar_war_high_command_category = {
         complete_effect = {
             add_offsite_building = {
                 type = dockyard
-                level = 30
+                level = 10
             }
         }
         ai_will_do = { factor = 1000 }

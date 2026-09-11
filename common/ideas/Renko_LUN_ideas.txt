@@ -141,4 +141,29 @@ ideas = {
             }
         }
     }
+
+    # 分节：月都专属经济法案
+    economy = {
+        law = yes
+        use_list_view = yes
+        Renko_LUN_integrated_industry = {
+            picture = Renko_LUN_integrated_industry
+            allowed = { original_tag = LUN }
+            visible = { tag = LUN }
+            available = { tag = LUN }
+            cost = 100
+            removal_cost = -1
+            allowed_to_remove = { is_ai = no }
+            ai_will_do = { factor = 999999 }
+            modifier = {
+                consumer_goods_expected_value = 0.10
+                production_speed_buildings_factor = 0.20
+                production_factory_max_efficiency_factor = 0.10
+                conversion_cost_civ_to_mil_factor = -0.50
+                conversion_cost_mil_to_civ_factor = -0.50
+                factory_energy_consumption = 0.20
+            }
+            cancel_if_invalid = no
+        }
+    }
 }

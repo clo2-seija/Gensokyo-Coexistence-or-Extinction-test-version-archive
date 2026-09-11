@@ -20,7 +20,7 @@
 | 陆空动态补给 | 每批在受控首都生成 4 步兵师、4 装甲师，并按现行编制发放陆军储备和飞机。整编、入侵准备国策、月都作为胜利方的停止抵抗事件均可调用；AI 整编后每 180 天追加一批及后勤库存，H/L 的该陆空循环和胜利补给各增至两批。首次整编三批不翻倍。 | `common/scripted_effects/Renko_LUN_supply_scripted_effects.txt`、`common/scripted_localisation/Renko_LUN_dynamic_supply_scripted_loc.txt`、`common/on_actions/Renko_LUN_capitulation_supply_on_actions.txt`、`common/decisions/Renko_LUN_lunar_war_high_command_decisions.txt`、`common/scripted_effects/Renko_LUN_supply_scripted_effects.txt` |
 | 月海舰队 | 控制港口即可领取一次性舰队及民族精神，并开启 AI 每 365 天补给。每批目标为 6 护航航母、9 重巡、4 正规航母、16 战列舰与 10 潜艇，共 45 艘；一次性决议三批共 135 艘，实际生成受设计、舰载机与港口条件限制。超重战列及潜母按定型状态替换部分普通舰。 | `common/scripted_effects/Renko_LUN_supply_scripted_effects.txt`、`common/ideas/Renko_LUN_ideas.txt`；入口仍在司令部决议文件 |
 | 军事与生产 AI | 独立步兵／装甲招募比例、XP／PP 管理、陆空库存调产、海军角色权重与装备设计目标。步兵类型师超过 200 时抵消其新增招募权重。舰队分为巡逻、打击、潜艇破交，制海舰队允许追加编组，组建月海舰队后提高登陆倾向。 | `common/ai_strategy/Renko_LUN_strategy.txt`；`common/ai_equipment/Renko_LUN_designs.txt`；`common/ai_navy/fleet/Renko_LUN_fleet_templates.txt`、`common/ai_navy/taskforce/Renko_LUN_taskforce_templates.txt`；调产循环在 `common/decisions/Renko_LUN_armaments_bureau_decisions.txt` 与 `common/scripted_effects/Renko_LUN_military_scripted_effects.txt` |
-| 基建与工业 | 可重复补满控制州基础设施；一次性增加 40 地图外民工、40 军工，控制港口后可领取 30 地图外船坞。建筑 AI 按民工、船坞比例纠偏，其余优先军工。 | `common/decisions/Renko_LUN_lunar_war_high_command_decisions.txt`；`common/ai_strategy/Renko_LUN_strategy.txt`、`common/scripted_triggers/Renko_LUN_construction_scripted_triggers.txt` |
+| 基建与工业 | 可重复补满控制州基础设施；一次性增加 15 地图外民工、20 军工，控制港口后可领取 10 地图外船坞。2026-09-11 削减：取消三个入侵国策的全部赠厂，以及 757 州的 10 民工、10 军工建设奖励；其余奖励保留。建筑 AI 按民工、船坞比例纠偏，其余优先军工。 | `common/decisions/Renko_LUN_lunar_war_high_command_decisions.txt`；`common/ai_strategy/Renko_LUN_strategy.txt`、`common/scripted_triggers/Renko_LUN_construction_scripted_triggers.txt` |
 | 资源、人力与占领 | 首都获得石油 200，钢、铝、钨、铬、橡胶、煤各 100，附带资源与燃油增益；人力低于 100 万时可重复征召 100 万，重新启用间隔 1 天；正邪完成“翻转主义”后永久封锁该人力决议，保留显示并提示原因。新增月都统制占领法案；控制且顺从度达到 50 的非核心州可逐州免费整合。 | `common/decisions/Renko_LUN_lunar_war_high_command_decisions.txt`；`common/ideas/Renko_LUN_ideas.txt`、`common/occupation_laws/Renko_LUN_occupation_laws.txt` |
 | 国家精神调整 | 月球指挥网新增陆军师进攻速度 +30%；净化兵器序列仅保留夺取制空权任务效率 +15%、跨空域力量投射 +10%、陆军攻击和防御各 +10%；移除其余修正及装备加成。 | `common/ideas/difficulty.txt` |
 | 调试、本地化与素材 | 增加调试模式下的“莲子的工具箱”，可直接部署月都并让日本吞并幻想乡。新增中英文本；侵军兵牌共 15 张 PNG；补齐工坊部署资源与描述符。 | `common/decisions/Renko_debug_toolbox_decisions.txt`、`common/decisions/categories/Renko_debug_toolbox_categories.txt`；`localisation/simp_chinese/`、`localisation/English/` 的 `Renko_LUN_*` 和 `Renko_debug_toolbox_*`；`interface/Renko_LUN_invasion_unit_icons.gfx`、`gfx/interface/counters/`、`gfx/texticons/`、`asset_sources/Renko_LUN_invasion_units/`、`descriptor.mod` |
@@ -34,6 +34,8 @@
 - **国家与作用域**：国家存在性写成 `LUN = { exists = yes }`；海军入口检查“控制港口”。停止抵抗事件的 `FROM` 是胜利方，补给落在 LUN 作用域。
 - **节奏与循环**：陆空 180 天、海军 365 天循环由对应决议启动，生产调整另有 30 天任务；没有新增日／月钩子。以新开局为维护基线。
 
+2026-09-11：月战最高司令部新增「任命绵月依姬」，零费用、一次性；要求月都持有依姬角色且尚未任用其政治顾问身份。使用 activate_advisor = gensokyo_yorihime 直接启用既有角色，AI 权重 1000。现有特质保持。用户随后确认在「天穹兵工体系」追加全建筑建设速度 +15%、生活消费品工厂系数 -20%；随「翻转主义」移除该精神而一并失效。
+
 ## 四档独立难度
 
 最高司令部沿用 Renko_LUN_lunar_war_high_command_initialized 解锁。一次性零费用决议仅在 KYO 存在时显示，AI 权重 1000，执行后在 KYO 作用域发送 Renko_LUN_difficulty.1，不保证 AI 于解锁当日立即执行。事件不配图、不设详情页，中文标题为「月都难度调整选单」。
@@ -42,8 +44,8 @@
 |---|---|---|
 | EASY | §7白雪纷飞的程度(EASY)§! | 给月都量子扰动；给 KYO 解锁莲子的协助 |
 | NORMAL | §6漫天风霜的程度(NORMAL)§! | 无额外奖励或惩罚 |
-| HARD | §4暴雪蔽日的程度(HARD)§! | 隐藏设置月都高于 NORMAL 旗标，使指定来源陆空增援翻倍 |
-| LUNATIC | §O雪虐风饕的程度(LUNATIC)§! | 同 HARD，并给月都永恒之月 |
+| HARD | §4暴雪蔽日的程度(HARD)§! | 隐藏设置月都高于 NORMAL 旗标，使指定来源陆空增援翻倍；额外获得 30 座地图外民工 |
+| LUNATIC | §O雪虐风饕的程度(LUNATIC)§! | 指定来源陆空增援翻倍，额外获得 45 座地图外民工和 45 座地图外军工，并给月都永恒之月；不叠加 HARD 的 30 座 |
 
 H/L 使用同一 LUN 国家旗标 Renko_LUN_difficulty_above_normal，设置过程隐藏，公开红色提示「月都获得更多额外装备补给」。没有新日/月钩子或旧存档迁移分支。
 
@@ -100,3 +102,11 @@ render_tankdestroyer_icons.py 依赖 resvg-py 与 Pillow，可按 manifest.json 
 中间日志与计划已归档，标记为“历史文件，无需阅览”；日常维护只需阅读本说明和维护指南。历史内容不再作为当前待办。现行代码说明：早期“100 步兵＋20 装甲”、单批 40 艘／总计 120 艘、巡逻理想 4 航母＋6 重巡、整编 AI 权重 0 等记录均已被后续修改取代。早期 WIP 的装备设计缺口已有后续实现；归档不等于合并或发布授权。
 
 工坊补齐资源属于加载配套，不是本次新绘素材；来源与哈希核对记录见 `development_logs/archive/2026-09-10_月都历史文件_无需阅览/2026-09-09_月都分支测试加载部署.md`。月都原作设定调查与尚未实现的设计讨论保留为参考，不列入完成项。
+
+2026-09-11：新增经济法案「月都统合工业体制」，月都可花费 100 政治点选择，AI 优先采用。规格参考日本「共荣圈统合经济」：消费品预期值 10%、通用建设 +20%、生产效率上限 +10%、民军双向转产成本 -50%、工厂能源消耗 +20%。与「天穹兵工体系」建设加成合计 +35%，原消费品系数 -20% 保留。图标为 SVG 手绘银月、宫殿与工坊组合，导出 64×64 PNG；法案定义已并入 common/ideas/Renko_LUN_ideas.txt，图标注册已并入 interface/Gensokyo_ideas.gfx。静态与图标预览检查通过，AI 采用、法案切换和游戏显示待实机检验。
+
+2026-09-11 后续：新增「实施月都统合工业体制」AI 专用决议，继承月战最高司令部解锁条件，未持有法案时可免费执行一次。参考日本共荣圈工业国策，以 add_ideas = Renko_LUN_integrated_industry 直接切换经济法案，AI 权重 1000；玩家仍需正常选择法案。执行时机与游戏内采用结果待实机检验。
+
+2026-09-11 后续：新增「启动月都机场扩建计划」，免费一次性启动，AI 优先执行，玩家可用。此后每 30 天随机选一处月都完全控制且机场不足 10 级的州，将机场即时建满；无合适州时空过并继续下一轮。继承月战最高司令部解锁门槛，沿用显式启动及超时自循环 mission，首次奖励在启动后 30 天；未实机验证。
+
+2026-09-11 文件归并完成：工业法案与图标注册并入现有总文件，源稿说明并入月都图标总说明；本轮四份日志合并为 [月都调整与文件归并](../development_logs/Renko_2026-09-11_月都调整与文件归并.md)。所有数值、决议与本地化保持不变。

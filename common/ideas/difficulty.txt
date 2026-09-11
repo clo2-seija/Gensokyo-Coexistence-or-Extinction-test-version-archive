@@ -239,6 +239,8 @@ ideas = {
 				production_factory_start_efficiency_factor = 0.15
 				production_lack_of_resource_penalty_factor = -0.25
 				conversion_cost_civ_to_mil_factor = -0.40
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.20
 			}
 		}
 
