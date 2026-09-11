@@ -20,58 +20,19 @@ focus_tree = {
 		y = 9
 		completion_reward = {
 
-			add_offsite_building = {
-				type = arms_factory
-				level = 2
-			}
-			add_offsite_building = {
-				type = industrial_complex
-				level = 2
-			}
 
 			add_manpower = 15000000
 
-			division_template = {
-						name = "Moon division"
-						division_names_group = GER_PEN_01
-						is_locked = yes
-						force_allow_recruiting = yes
+			Renko_LUN_grant_dynamic_equipment = yes
+			Renko_LUN_grant_dynamic_equipment = yes
+			if = {
+			    limit = {
+			        hidden_trigger = { LUN = { has_country_flag = Renko_LUN_difficulty_above_normal } }
+			    }
+			    Renko_LUN_grant_dynamic_equipment = yes
+			    Renko_LUN_grant_dynamic_equipment = yes
+			}
 
-						regiments = {
-							mountaineers = { x = 0 y = 0 }
-							mountaineers = { x = 0 y = 1 }
-							mountaineers = { x = 0 y = 2 }
-							mountaineers = { x = 1 y = 0 }
-							mountaineers = { x = 1 y = 1 }
-							mountaineers = { x = 1 y = 2 }
-							mountaineers = { x = 2 y = 0 }
-							mountaineers = { x = 2 y = 1 }
-							mountaineers = { x = 2 y = 2 }
-							artillery_brigade = { x = 3 y = 0}
-							artillery_brigade = { x = 3 y = 1}
-							artillery_brigade = { x = 3 y = 2}
-							artillery_brigade = { x = 4 y = 0}
-							
-							
-						}
-						support = {
-							artillery = { x = 0 y = 0 }
-							rangers_support = {x=0 y= 1	}
-							anti_air = {x=0 y= 2	}
-							field_hospital = {x=0 y= 3	}
-							logistics_company = {x=0 y= 4	}
-							
-							
-						}	
-					}
-
-					capital_scope = {
-						create_unit = {
-							division = "division_template = \"Moon division\" start_experience_factor = 1 start_equipment_factor = 1.0"
-							owner = ROOT
-							count = 125
-						}
-					}
 
 					758 = {
 						add_building_construction = {
@@ -105,15 +66,17 @@ focus = {
 			focus = prepare_for_invasion_to_earth_1
 		}
 		completion_reward = {
+			Renko_LUN_grant_dynamic_equipment = yes
+			Renko_LUN_grant_dynamic_equipment = yes
+			if = {
+			    limit = {
+			        hidden_trigger = { LUN = { has_country_flag = Renko_LUN_difficulty_above_normal } }
+			    }
+			    Renko_LUN_grant_dynamic_equipment = yes
+			    Renko_LUN_grant_dynamic_equipment = yes
+			}
 
-			add_offsite_building = {
-				type = arms_factory
-				level = 5
-			}
-			add_offsite_building = {
-				type = industrial_complex
-				level = 10
-			}
+
 
 
 			build_railway = {
@@ -156,14 +119,6 @@ focus = {
 				add_building_construction = {
 					type = infrastructure
 					level = 4
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 10
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 10
 				}
 
 				add_resource = {
@@ -208,20 +163,23 @@ focus = {
 			focus = prepare_for_invasion_to_earth_2
 		}
 		completion_reward = {
+			Renko_LUN_grant_dynamic_equipment = yes
+			Renko_LUN_grant_dynamic_equipment = yes
+			if = {
+			    limit = {
+			        hidden_trigger = { LUN = { has_country_flag = Renko_LUN_difficulty_above_normal } }
+			    }
+			    Renko_LUN_grant_dynamic_equipment = yes
+			    Renko_LUN_grant_dynamic_equipment = yes
+			}
+			Renko_LUN_grant_dynamic_navy = yes
+
 
 
 			set_cosmetic_tag = LUN_main_force
 
 			
 
-			add_offsite_building = {
-				type = arms_factory
-				level = 5
-			}
-			add_offsite_building = {
-				type = industrial_complex
-				level = 10
-			}
 			every_country = {
 				limit = {
 					is_neighbor_of = LUN

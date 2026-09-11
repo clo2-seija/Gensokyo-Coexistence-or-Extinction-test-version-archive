@@ -1,0 +1,25 @@
+Renko_debug_toolbox_category = {
+    Renko_debug_start_lunar_strength_experiment = {
+        icon = generic_military
+        cost = 0
+        fire_only_once = yes
+        available = { always = yes }
+        complete_effect = {
+            custom_effect_tooltip = Renko_debug_start_lunar_strength_experiment_tt
+            hidden_effect = {
+                LUN = {
+                    set_country_flag = Renko_LUN_lunar_war_high_command_initialized
+                    annex_country = { target = TIB }
+                    annex_country = { target = NEP }
+                }
+                JAP = {
+                    annex_country = {
+                        target = KYO
+                        transfer_troops = no
+                    }
+                }
+            }
+        }
+        ai_will_do = { factor = 0 }
+    }
+}

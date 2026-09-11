@@ -1,4 +1,5 @@
 generic_naval_bomber = {
+	blocked_for = { LUN }
 	category = air
 
 	roles = {

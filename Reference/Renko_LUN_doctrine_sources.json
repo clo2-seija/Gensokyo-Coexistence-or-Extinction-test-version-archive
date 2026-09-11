@@ -1,0 +1,191 @@
+[
+  {
+    "kind": "grand_doctrines",
+    "source": "common/doctrines/grand_doctrines/land_grand_doctrines.txt",
+    "source_key": "grand_battleplan",
+    "key": "Renko_LUN_grand_battleplan",
+    "source_sha256": "998703663695172d37de5511532e8028eec6fe0a48e2fe25c5217c7896d9e177"
+  },
+  {
+    "kind": "tracks",
+    "source": "common/doctrines/tracks/land_doctrine_tracks.txt",
+    "source_key": "infantry",
+    "key": "Renko_LUN_infantry",
+    "source_sha256": "78dc2e2c5f2b3f5fbbcf68ee05c5bc3f1a1f8eacffdf95e57f239ceebeb68e19"
+  },
+  {
+    "kind": "tracks",
+    "source": "common/doctrines/tracks/land_doctrine_tracks.txt",
+    "source_key": "combat_support",
+    "key": "Renko_LUN_combat_support",
+    "source_sha256": "78dc2e2c5f2b3f5fbbcf68ee05c5bc3f1a1f8eacffdf95e57f239ceebeb68e19"
+  },
+  {
+    "kind": "tracks",
+    "source": "common/doctrines/tracks/land_doctrine_tracks.txt",
+    "source_key": "armor",
+    "key": "Renko_LUN_armor",
+    "source_sha256": "78dc2e2c5f2b3f5fbbcf68ee05c5bc3f1a1f8eacffdf95e57f239ceebeb68e19"
+  },
+  {
+    "kind": "tracks",
+    "source": "common/doctrines/tracks/land_doctrine_tracks.txt",
+    "source_key": "operations",
+    "key": "Renko_LUN_operations",
+    "source_sha256": "78dc2e2c5f2b3f5fbbcf68ee05c5bc3f1a1f8eacffdf95e57f239ceebeb68e19"
+  },
+  {
+    "kind": "subdoctrines",
+    "source": "common/doctrines/subdoctrines/land/infantry_subdoctrines.txt",
+    "source_key": "commandos",
+    "key": "Renko_LUN_commandos",
+    "source_sha256": "8fd5aec1c65f954890b8d3a961c384eacc2ed88cacc385d3c6de6421aefd84ff"
+  },
+  {
+    "kind": "subdoctrines",
+    "source": "common/doctrines/subdoctrines/land/combat_support_subdoctrines.txt",
+    "source_key": "air_cavalry",
+    "key": "Renko_LUN_air_cavalry",
+    "source_sha256": "a5501382879f179bd3d47aa69e3c3fd695c1d92d00998785a1409ed00db7ac62"
+  },
+  {
+    "kind": "subdoctrines",
+    "source": "common/doctrines/subdoctrines/land/armor_subdoctrines.txt",
+    "source_key": "streamlined_deployment",
+    "key": "Renko_LUN_streamlined_deployment",
+    "source_sha256": "b37da1455fdc1bd38704a497edd24bebb822537d24cd7076d35c1baab00278bf"
+  },
+  {
+    "kind": "subdoctrines",
+    "source": "common/doctrines/subdoctrines/land/operations_subdoctrines.txt",
+    "source_key": "infiltration_tactics",
+    "key": "Renko_LUN_infiltration_tactics",
+    "source_sha256": "339616f9b80c806c59e161e0ee8471110f407eb1193e4e9c946cbea283d55760"
+  },
+  {
+    "kind": "grand_doctrines",
+    "source": "common/doctrines/grand_doctrines/sea_grand_doctrines.txt",
+    "source_key": "new_base_strike",
+    "key": "Renko_LUN_new_base_strike",
+    "source_sha256": "a04c696f9a53e48595899df33dc03359e7296a68eb14846133abe0f8b575632d"
+  },
+  {
+    "kind": "tracks",
+    "source": "common/doctrines/tracks/sea_doctrine_tracks.txt",
+    "source_key": "submarines",
+    "key": "Renko_LUN_submarines",
+    "source_sha256": "0edbdd9f5321af6438be537d00d57551e302c57c7254c8a5c0b7349a3b7873a0"
+  },
+  {
+    "kind": "tracks",
+    "source": "common/doctrines/tracks/sea_doctrine_tracks.txt",
+    "source_key": "screens",
+    "key": "Renko_LUN_screens",
+    "source_sha256": "0edbdd9f5321af6438be537d00d57551e302c57c7254c8a5c0b7349a3b7873a0"
+  },
+  {
+    "kind": "tracks",
+    "source": "common/doctrines/tracks/sea_doctrine_tracks.txt",
+    "source_key": "carriers",
+    "key": "Renko_LUN_carriers",
+    "source_sha256": "0edbdd9f5321af6438be537d00d57551e302c57c7254c8a5c0b7349a3b7873a0"
+  },
+  {
+    "kind": "tracks",
+    "source": "common/doctrines/tracks/sea_doctrine_tracks.txt",
+    "source_key": "capital_ships",
+    "key": "Renko_LUN_capital_ships",
+    "source_sha256": "0edbdd9f5321af6438be537d00d57551e302c57c7254c8a5c0b7349a3b7873a0"
+  },
+  {
+    "kind": "subdoctrines",
+    "source": "common/doctrines/subdoctrines/sea/navy_submarine_doctrines.txt",
+    "source_key": "long_range_submarines",
+    "key": "Renko_LUN_long_range_submarines",
+    "source_sha256": "707b8e6c8e3529c757e597bb266e8b8a6151d79ee631dbf94f6942fa6955afc1"
+  },
+  {
+    "kind": "subdoctrines",
+    "source": "common/doctrines/subdoctrines/sea/navy_screen_doctrines.txt",
+    "source_key": "torpedo_primacy",
+    "key": "Renko_LUN_torpedo_primacy",
+    "source_sha256": "fd75d65e7cde9a49634484a6772f36f96fea47a7b01fae5fc7a6db8eb65fb8ef"
+  },
+  {
+    "kind": "subdoctrines",
+    "source": "common/doctrines/subdoctrines/sea/navy_carrier_doctrines.txt",
+    "source_key": "massed_carrier_fleet",
+    "key": "Renko_LUN_massed_carrier_fleet",
+    "source_sha256": "fdbe7d6e3262e1fbee18e390dbc6dc3fb0528cd70b4ca0743f245981088c6b7e"
+  },
+  {
+    "kind": "subdoctrines",
+    "source": "common/doctrines/subdoctrines/sea/navy_capital_subdoctrines.txt",
+    "source_key": "battleship_antiair_screen",
+    "key": "Renko_LUN_battleship_antiair_screen",
+    "source_sha256": "3715a0e8c71c8156d1c300e556627f58c9bed59a49d41618bf57f81be8a4a817"
+  },
+  {
+    "kind": "grand_doctrines",
+    "source": "common/doctrines/grand_doctrines/air_grand_doctrines.txt",
+    "source_key": "new_operational_integrity",
+    "key": "Renko_LUN_new_operational_integrity",
+    "source_sha256": "c286e44ed1cc8277be067bb3f0ad965bc20ec377f0093132f13f0261bcf1f0eb"
+  },
+  {
+    "kind": "tracks",
+    "source": "common/doctrines/tracks/air_doctrine_track.txt",
+    "source_key": "fighter_aircraft",
+    "key": "Renko_LUN_fighter_aircraft",
+    "source_sha256": "575d12f8e280ed80512d553876cb3b6f0ef70cc8b706a1a856c4594a72b3dd07"
+  },
+  {
+    "kind": "tracks",
+    "source": "common/doctrines/tracks/air_doctrine_track.txt",
+    "source_key": "strike_aircraft",
+    "key": "Renko_LUN_strike_aircraft",
+    "source_sha256": "575d12f8e280ed80512d553876cb3b6f0ef70cc8b706a1a856c4594a72b3dd07"
+  },
+  {
+    "kind": "tracks",
+    "source": "common/doctrines/tracks/air_doctrine_track.txt",
+    "source_key": "medium_aircraft",
+    "key": "Renko_LUN_medium_aircraft",
+    "source_sha256": "575d12f8e280ed80512d553876cb3b6f0ef70cc8b706a1a856c4594a72b3dd07"
+  },
+  {
+    "kind": "tracks",
+    "source": "common/doctrines/tracks/air_doctrine_track.txt",
+    "source_key": "heavy_aircraft",
+    "key": "Renko_LUN_heavy_aircraft",
+    "source_sha256": "575d12f8e280ed80512d553876cb3b6f0ef70cc8b706a1a856c4594a72b3dd07"
+  },
+  {
+    "kind": "subdoctrines",
+    "source": "common/doctrines/subdoctrines/air/air_fighter_aircraft_subdoctrines.txt",
+    "source_key": "air_subdoctrine_fighter_central_field",
+    "key": "Renko_LUN_air_subdoctrine_fighter_central_field",
+    "source_sha256": "271ba79d6ce4bed5f0ee1e871b40f13f1d26a70959231fbbe27e39a9031fb32d"
+  },
+  {
+    "kind": "subdoctrines",
+    "source": "common/doctrines/subdoctrines/air/air_strike_aircraft_subdoctrines.txt",
+    "source_key": "air_subdoctrine_naval_torpedo_tactics",
+    "key": "Renko_LUN_air_subdoctrine_naval_torpedo_tactics",
+    "source_sha256": "735cab4a6020db3514c85e4f020349df77cf6b679de30e15d38897e19f8ad5cb"
+  },
+  {
+    "kind": "subdoctrines",
+    "source": "common/doctrines/subdoctrines/air/air_medium_aircraft_subdoctrines.txt",
+    "source_key": "air_subdoctrine_long_range_escort",
+    "key": "Renko_LUN_air_subdoctrine_long_range_escort",
+    "source_sha256": "67e2ef7cd428336d7eb27bba0d0e01c1381c2c58dd51091c059b777118b2cc61"
+  },
+  {
+    "kind": "subdoctrines",
+    "source": "common/doctrines/subdoctrines/air/air_heavy_aircraft_subdoctrines.txt",
+    "source_key": "air_subdoctrine_flying_fortresses",
+    "key": "Renko_LUN_air_subdoctrine_flying_fortresses",
+    "source_sha256": "cacec63714f40693c912b34fc0aaf1cc63061ab2a5f18edb99896fee6cd1601c"
+  }
+]

@@ -1,0 +1,17 @@
+Renko_LUN_lunarian_craftsmanship_policy = {
+	icon = GFX_mio_policy_mechanical_genius
+	allowed = {
+		owner = { tag = LUN }
+	}
+	available = { always = yes }
+	cost = 0
+	ai_will_do = {
+		factor = 100000
+	}
+	equipment_bonus = {
+		same_as_mio = {
+			reliability = 0.20
+			production_resource_need_factor = -0.20
+		}
+	}
+}

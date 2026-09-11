@@ -1,0 +1,577 @@
+# 数字代际选择器：分支互斥，只看当前LUN作用域内的科技/已定型标记。
+defined_text = {
+	name = GetRenko_LUN_supply_infantry_equipment
+	text = {
+		trigger = {
+			has_tech = infantry_weapons
+			NOT = {
+				OR = {
+					AND = {
+						has_tech = infantry_weapons1
+					}
+					AND = {
+						has_tech = improved_infantry_weapons
+					}
+					AND = {
+						has_tech = advanced_infantry_weapons
+					}
+				}
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_0
+	}
+	text = {
+		trigger = {
+			has_tech = infantry_weapons1
+			NOT = {
+				OR = {
+					AND = {
+						has_tech = improved_infantry_weapons
+					}
+					AND = {
+						has_tech = advanced_infantry_weapons
+					}
+				}
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_1
+	}
+	text = {
+		trigger = {
+			has_tech = improved_infantry_weapons
+			NOT = {
+				OR = {
+					AND = {
+						has_tech = advanced_infantry_weapons
+					}
+				}
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_2
+	}
+	text = {
+		trigger = {
+			has_tech = advanced_infantry_weapons
+		}
+		localization_key = Renko_LUN_supply_suffix_3
+	}
+	text = {
+		localization_key = Renko_LUN_supply_suffix_0
+	}
+}
+defined_text = {
+	name = GetRenko_LUN_supply_artillery_equipment
+	text = {
+		trigger = {
+			has_tech = gw_artillery
+			NOT = {
+				OR = {
+					AND = {
+						has_tech = artillery1
+					}
+					AND = {
+						has_tech = artillery4
+					}
+				}
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_1
+	}
+	text = {
+		trigger = {
+			has_tech = artillery1
+			NOT = {
+				OR = {
+					AND = {
+						has_tech = artillery4
+					}
+				}
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_2
+	}
+	text = {
+		trigger = {
+			has_tech = artillery4
+		}
+		localization_key = Renko_LUN_supply_suffix_3
+	}
+	text = {
+		localization_key = Renko_LUN_supply_suffix_0
+	}
+}
+defined_text = {
+	name = GetRenko_LUN_supply_medium_tank_chassis
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_medium_tank_1936_commissioned
+			}
+			NOT = {
+				OR = {
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_medium_tank_1940_commissioned
+							has_country_flag = Renko_LUN_medium_tank_1941_commissioned
+						}
+					}
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_medium_tank_1943_commissioned
+						}
+					}
+				}
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_1
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_medium_tank_1940_commissioned
+				has_country_flag = Renko_LUN_medium_tank_1941_commissioned
+			}
+			NOT = {
+				OR = {
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_medium_tank_1943_commissioned
+						}
+					}
+				}
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_2
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_medium_tank_1943_commissioned
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_3
+	}
+	text = {
+		localization_key = Renko_LUN_supply_suffix_0
+	}
+}
+defined_text = {
+	name = GetRenko_LUN_supply_medium_tank_destroyer_chassis
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_medium_td_1936_commissioned
+			}
+			NOT = {
+				OR = {
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_medium_td_1940_commissioned
+							has_country_flag = Renko_LUN_medium_td_1941_commissioned
+						}
+					}
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_medium_td_1943_commissioned
+						}
+					}
+				}
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_1
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_medium_td_1940_commissioned
+				has_country_flag = Renko_LUN_medium_td_1941_commissioned
+			}
+			NOT = {
+				OR = {
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_medium_td_1943_commissioned
+						}
+					}
+				}
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_2
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_medium_td_1943_commissioned
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_3
+	}
+	text = {
+		localization_key = Renko_LUN_supply_suffix_0
+	}
+}
+defined_text = {
+	name = GetRenko_LUN_supply_medium_tank_aa_chassis
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_medium_aa_1936_commissioned
+			}
+			NOT = {
+				OR = {
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_medium_aa_1940_commissioned
+						}
+					}
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_medium_aa_1943_commissioned
+						}
+					}
+				}
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_1
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_medium_aa_1940_commissioned
+			}
+			NOT = {
+				OR = {
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_medium_aa_1943_commissioned
+						}
+					}
+				}
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_2
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_medium_aa_1943_commissioned
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_3
+	}
+	text = {
+		localization_key = Renko_LUN_supply_suffix_0
+	}
+}
+defined_text = {
+	name = GetRenko_LUN_supply_heavy_tank_destroyer_chassis
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_heavy_td_1936_commissioned
+			}
+			NOT = {
+				OR = {
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_heavy_td_1940_commissioned
+						}
+					}
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_heavy_td_1943_commissioned
+						}
+					}
+				}
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_1
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_heavy_td_1940_commissioned
+			}
+			NOT = {
+				OR = {
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_heavy_td_1943_commissioned
+						}
+					}
+				}
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_2
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_heavy_td_1943_commissioned
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_3
+	}
+	text = {
+		localization_key = Renko_LUN_supply_suffix_0
+	}
+}
+defined_text = {
+	name = GetRenko_LUN_supply_medium_tank_flame_chassis
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_medium_flame_1936_commissioned
+			}
+			NOT = {
+				OR = {
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_medium_flame_1940_commissioned
+						}
+					}
+				}
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_1
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_medium_flame_1940_commissioned
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_2
+	}
+	text = {
+		localization_key = Renko_LUN_supply_suffix_0
+	}
+}
+defined_text = {
+	name = GetRenko_LUN_supply_small_plane_airframe
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_fighter_1936_commissioned
+			}
+			NOT = {
+				OR = {
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_fighter_1940_commissioned
+						}
+					}
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_fighter_1943_commissioned
+						}
+					}
+				}
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_1
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_fighter_1940_commissioned
+			}
+			NOT = {
+				OR = {
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_fighter_1943_commissioned
+						}
+					}
+				}
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_2
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_fighter_1943_commissioned
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_3
+	}
+	text = {
+		localization_key = Renko_LUN_supply_suffix_0
+	}
+}
+defined_text = {
+	name = GetRenko_LUN_supply_small_plane_cas_airframe
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_cas_1936_commissioned
+			}
+			NOT = {
+				OR = {
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_cas_1940_commissioned
+						}
+					}
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_cas_1943_commissioned
+						}
+					}
+				}
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_1
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_cas_1940_commissioned
+			}
+			NOT = {
+				OR = {
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_cas_1943_commissioned
+						}
+					}
+				}
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_2
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_cas_1943_commissioned
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_3
+	}
+	text = {
+		localization_key = Renko_LUN_supply_suffix_0
+	}
+}
+defined_text = {
+	name = GetRenko_LUN_supply_cv_small_plane_airframe
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_cv_fighter_1936_commissioned
+			}
+			NOT = {
+				OR = {
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_cv_fighter_1940_commissioned
+						}
+					}
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_cv_fighter_1943_commissioned
+						}
+					}
+				}
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_1
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_cv_fighter_1940_commissioned
+			}
+			NOT = {
+				OR = {
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_cv_fighter_1943_commissioned
+						}
+					}
+				}
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_2
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_cv_fighter_1943_commissioned
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_3
+	}
+	text = {
+		localization_key = Renko_LUN_supply_suffix_0
+	}
+}
+defined_text = {
+	name = GetRenko_LUN_supply_cv_small_plane_naval_bomber_airframe
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_cv_attacker_1936_commissioned
+			}
+			NOT = {
+				OR = {
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_cv_attacker_1940_commissioned
+							has_country_flag = Renko_LUN_cv_attacker_1941_commissioned
+						}
+					}
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_cv_attacker_1943_commissioned
+						}
+					}
+				}
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_1
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_cv_attacker_1940_commissioned
+				has_country_flag = Renko_LUN_cv_attacker_1941_commissioned
+			}
+			NOT = {
+				OR = {
+					AND = {
+						OR = {
+							has_country_flag = Renko_LUN_cv_attacker_1943_commissioned
+						}
+					}
+				}
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_2
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_cv_attacker_1943_commissioned
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_3
+	}
+	text = {
+		localization_key = Renko_LUN_supply_suffix_0
+	}
+}
+defined_text = {
+	name = GetRenko_LUN_supply_mothership_equipment
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = Renko_LUN_mothership_1941_commissioned
+			}
+		}
+		localization_key = Renko_LUN_supply_suffix_0
+	}
+	text = {
+		localization_key = Renko_LUN_supply_suffix_0
+	}
+}

@@ -1,0 +1,881 @@
+# 月都加强：按功能分节整合；标识符及效果保持原样。
+# 分节：Renko_LUN_service_subdoctrines
+# 日本自身三军偏好换皮；只调整标识、本地化、国别门槛及 AI 选择权重。
+Renko_LUN_commandos = {
+    track = Renko_LUN_infantry
+    name = Renko_LUN_commandos
+    description = Renko_LUN_commandos_desc
+    icon = GFX_doctrine_commandos_medium
+    xp_cost = 100
+    xp_type = army
+    available = {
+        original_tag = LUN
+        has_doctrine = Renko_LUN_grand_battleplan
+    }
+    visible = {
+        original_tag = LUN
+    }
+    ai_will_do = {
+        base = 1000
+    }
+    enable_tactic = tactic_infantry_charge
+    rewards = {
+        Renko_isolated_combat_elements = {
+            category_all_infantry = {
+                supply_consumption = -0.02
+            }
+            field_hospital = {
+                battalion_mult = {
+                    category = category_all_infantry
+                    max_strength = 5
+                    add = yes
+                }
+                casualty_trickleback = 0.05
+            }
+            helicopter_field_hospital = {
+                battalion_mult = {
+                    category = category_all_infantry
+                    max_strength = 5
+                    add = yes
+                }
+                casualty_trickleback = 0.05
+            }
+            category_regimental_support_artillery = {
+                supply_consumption = -0.01
+                soft_attack = 0.05
+            }
+        }
+        Renko_security_zone_operations = {
+            category_all_infantry = {
+                defense = 0.1
+            }
+        }
+        Renko_rigorous_training_regimen = {
+            category_all_infantry = {
+                soft_attack = 0.05
+            }
+            anti_tank_battery = {
+                battalion_mult = {
+                    category = category_light_infantry
+                    hard_attack = 0.1
+                }
+            }
+        }
+        Renko_field_intel_retrieval = {
+            intel_from_combat_factor = 0.15
+        }
+        Renko_integrated_assaults = {
+            category_all_infantry = {
+                soft_attack = 0.05
+            }
+            category_regimental_support_artillery = {
+                breakthrough = 0.15
+            }
+            fire_support = {
+                breakthrough = 0.15
+            }
+            mot_fire_support = {
+                breakthrough = 0.15
+            }
+        }
+    }
+}
+Renko_LUN_air_cavalry = {
+    track = Renko_LUN_combat_support
+    name = Renko_LUN_air_cavalry
+    description = Renko_LUN_air_cavalry_desc
+    icon = GFX_doctrine_air_cavalry_medium
+    xp_cost = 100
+    xp_type = army
+    available = {
+        original_tag = LUN
+        has_doctrine = Renko_LUN_grand_battleplan
+    }
+    visible = {
+        original_tag = LUN
+    }
+    ai_will_do = {
+        base = 1000
+    }
+    effect = {
+        add_tech_bonus = {
+            bonus = 0.5
+            uses = 2
+            category = helicopter_tech
+            name = Renko_LUN_air_cavalry
+        }
+    }
+    rewards = {
+        Renko_airborne_observers = {
+            helicopter_recon = {
+                battalion_mult = {
+                    category = category_all_armor
+                    breakthrough = 0.1
+                    hard_attack = 0.15
+                    soft_attack = 0.05
+                }
+            }
+        }
+        Renko_service_and_support = {
+            helicopter_brigade = {
+                battalion_mult = {
+                    category = category_army
+                    max_organisation = 5
+                    add = yes
+                }
+                battalion_mult = {
+                    category = category_all_infantry
+                    defense = 0.025
+                }
+                battalion_mult = {
+                    category = category_all_infantry
+                    max_strength = 2
+                    default_morale = 0.01
+                    add = yes
+                }
+                casualty_trickleback = 0.025
+            }
+        }
+        Renko_rescue_liasions = {
+            effect = {
+                complete_special_project = sp:sp_air_helicopter
+            }
+            helicopter_field_hospital = {
+                battalion_mult = {
+                    category = category_army
+                    max_organisation = 10
+                    add = yes
+                }
+                battalion_mult = {
+                    category = category_all_infantry
+                    defense = 0.05
+                }
+                battalion_mult = {
+                    category = category_all_infantry
+                    max_strength = 4
+                    default_morale = 0.02
+                    add = yes
+                }
+                casualty_trickleback = 0.05
+            }
+        }
+        Renko_transport_assault = {
+            helicopter_transport = {
+                battalion_mult = {
+                    category = category_army
+                    maximum_speed = 0.1
+                    fuel_consumption = -0.1
+                }
+                battalion_mult = {
+                    category = category_army
+                    supply_consumption = -0.04
+                    add = yes
+                }
+            }
+        }
+        Renko_intervention_units = {
+            helicopter_brigade = {
+                battalion_mult = {
+                    category = category_army
+                    maximum_speed = 0.05
+                    fuel_consumption = -0.05
+                }
+                battalion_mult = {
+                    category = category_army
+                    supply_consumption = -0.02
+                    add = yes
+                }
+            }
+        }
+    }
+}
+Renko_LUN_streamlined_deployment = {
+    track = Renko_LUN_armor
+    name = Renko_LUN_streamlined_deployment
+    description = Renko_LUN_streamlined_deployment_desc
+    icon = GFX_doctrine_streamlined_deployment_medium
+    xp_cost = 100
+    xp_type = army
+    available = {
+        original_tag = LUN
+        has_doctrine = Renko_LUN_grand_battleplan
+    }
+    ai_will_do = {
+        base = 1000
+    }
+    rewards = {
+        Renko_streamlined_armored_layout = {
+            equipment_bonus = {
+                armor = {
+                    build_cost_ic = -0.075
+                    instant = yes
+                }
+            }
+        }
+        Renko_compact_assault_groups = {
+            category_all_armor = {
+                max_organisation = 5
+            }
+        }
+        Renko_integrated_fire_elements = {
+            category_all_armor = {
+                soft_attack = 0.05
+                hard_attack = 0.1
+            }
+        }
+        Renko_lightened_breakthrough_drill = {
+            category_all_armor = {
+                breakthrough = 0.1
+            }
+        }
+        Renko_economized_forward_deployment = {
+            category_all_armor = {
+                supply_consumption = -0.05
+            }
+        }
+    }
+    visible = {
+        original_tag = LUN
+    }
+}
+Renko_LUN_infiltration_tactics = {
+    track = Renko_LUN_operations
+    name = Renko_LUN_infiltration_tactics
+    description = Renko_LUN_infiltration_tactics_desc
+    icon = GFX_doctrine_infiltration_assault_medium
+    xp_cost = 100
+    xp_type = army
+    available = {
+        original_tag = LUN
+        has_doctrine = Renko_LUN_grand_battleplan
+    }
+    ai_will_do = {
+        base = 1000
+    }
+    enable_tactic = tactic_infantry_charge
+    rewards = {
+        Renko_infiltration_assault = {
+            category_army = {
+                breakthrough = 0.1
+                max_organisation = 5
+            }
+            fire_support = {
+                soft_attack = 0.1
+            }
+        }
+        Renko_nightly_assaults = {
+            land_night_attack = 0.25
+        }
+        Renko_self_sustaining_infiltration_units = {
+            supply_consumption_factor = -0.10
+            category_all_armor = {
+                default_morale = 0.1
+            }
+        }
+        Renko_terrain_and_situation_assessment = {
+            category_recon = {
+                recon = 1
+            }
+        }
+        Renko_infiltration_in_depth = {
+            land_reinforce_rate = 0.02
+            org_loss_when_moving = -0.20
+        }
+    }
+    visible = {
+        original_tag = LUN
+    }
+}
+Renko_LUN_long_range_submarines = {
+    track = Renko_LUN_submarines
+    name = Renko_LUN_long_range_submarines
+    description = Renko_LUN_long_range_submarines_desc
+    icon = GFX_doctrine_long_range_submarines_medium
+    xp_cost = 100
+    xp_type = navy
+    ai_will_do = {
+        base = 1000
+    }
+    available = {
+        original_tag = LUN
+        has_doctrine = Renko_LUN_new_base_strike
+    }
+    visible = {
+        original_tag = LUN
+    }
+    naval_torpedo_hit_chance_factor = 0.15
+    rewards = {
+        Renko_ocean_patrols = {
+            equipment_bonus = {
+                ship_hull_fleet_submarine = {
+                    surface_detection = 0.1
+                    instant = yes
+                }
+                ship_hull_cruiser_submarine = {
+                    surface_detection = 0.1
+                    instant = yes
+                }
+                ship_hull_nuclear_submarine = {
+                    surface_detection = 0.1
+                    instant = yes
+                }
+            }
+            submarine = {
+                max_organisation = 10
+            }
+        }
+        Renko_improved_dive_protocols = {
+            equipment_bonus = {
+                ship_hull_fleet_submarine = {
+                    surface_visibility = -0.05
+                    instant = yes
+                }
+                ship_hull_cruiser_submarine = {
+                    surface_visibility = -0.05
+                    instant = yes
+                }
+                ship_hull_carrier_submarine = {
+                    surface_visibility = -0.1
+                    instant = yes
+                }
+                ship_hull_nuclear_submarine = {
+                    surface_visibility = -0.05
+                    instant = yes
+                }
+            }
+        }
+        Renko_support_the_surface = {
+            equipment_bonus = {
+                ship_hull_fleet_submarine = {
+                    naval_speed = 0.1
+                    torpedo_attack = 0.15
+                    instant = yes
+                }
+                ship_hull_cruiser_submarine = {
+                    naval_speed = 0.1
+                    torpedo_attack = 0.15
+                    instant = yes
+                }
+                ship_hull_carrier_submarine = {
+                    naval_speed = 0.2
+                    instant = yes
+                }
+                ship_hull_nuclear_submarine = {
+                    naval_speed = 0.1
+                    torpedo_attack = 0.15
+                    instant = yes
+                }
+            }
+        }
+        Renko_stowage_efficiency = {
+            equipment_bonus = {
+                ship_hull_fleet_submarine = {
+                    fuel_consumption = -0.2
+                    instant = yes
+                }
+                ship_hull_cruiser_submarine = {
+                    fuel_consumption = -0.2
+                    instant = yes
+                }
+                ship_hull_carrier_submarine = {
+                    submarine_carrier_size = 2
+                    instant = yes
+                }
+            }
+        }
+        Renko_deep_water_supremacy = {
+            submarine = {
+                sub_detection = 0.2
+                torpedo_attack = 0.1
+            }
+        }
+    }
+}
+Renko_LUN_torpedo_primacy = {
+    track = Renko_LUN_screens
+    name = Renko_LUN_torpedo_primacy
+    description = Renko_LUN_torpedo_primacy_desc
+    icon = GFX_doctrine_submarine_offensive_medium
+    xp_cost = 100
+    xp_type = navy
+    ai_will_do = {
+        base = 1000
+    }
+    available = {
+        original_tag = LUN
+        has_doctrine = Renko_LUN_new_base_strike
+    }
+    visible = {
+        original_tag = LUN
+    }
+    naval_night_attack = 0.25
+    rewards = {
+        Renko_modern_broadsides = {
+            destroyer = {
+                torpedo_attack = 0.1
+                naval_torpedo_hit_chance_factor = 0.1
+            }
+        }
+        Renko_coordinated_fire_patterns = {
+            destroyer = {
+                max_organisation = 20
+            }
+        }
+        Renko_dedicated_torpedo_task_forces = {
+            light_cruiser = {
+                sub_attack = 0.2
+                torpedo_attack = 0.1
+                naval_torpedo_hit_chance_factor = 0.1
+            }
+            destroyer = {
+                sub_attack = 0.2
+            }
+        }
+        Renko_improved_escort_role = {
+            destroyer = {
+                sub_detection = 0.2
+            }
+        }
+        Renko_task_force_integration = {
+            light_cruiser = {
+                max_organisation = 20
+            }
+            heavy_cruiser = {
+                max_organisation = 20
+                torpedo_attack = 0.2
+                naval_torpedo_hit_chance_factor = 0.1
+            }
+        }
+    }
+}
+Renko_LUN_massed_carrier_fleet = {
+    track = Renko_LUN_carriers
+    name = Renko_LUN_massed_carrier_fleet
+    description = Renko_LUN_massed_carrier_fleet_desc
+    icon = GFX_doctrine_carrier_primacy_medium
+    xp_cost = 100
+    xp_type = navy
+    ai_will_do = {
+        base = 1000
+    }
+    available = {
+        original_tag = LUN
+        has_doctrine = Renko_LUN_new_base_strike
+    }
+    naval_morale_factor = 0.05
+    rewards = {
+        Renko_deep_operative_support = {
+            carrier = {
+                reliability = 0.05
+                naval_range = 0.2
+            }
+        }
+        Renko_carrier_independence = {
+            screening_without_screens = 0.3
+        }
+        Renko_crew_shifts = {
+            sortie_efficiency = 0.3
+            carrier_sortie_hours_delay = -2
+        }
+        Renko_efficient_rearming = {
+            carrier = {
+                supply_consumption = -0.2
+                fuel_consumption = -0.1
+            }
+        }
+        Renko_unceasing_airpower = {
+            carrier_traffic = 0.3
+            carrier_night_traffic = 0.3
+            carrier = {
+                anti_air_attack = 0.2
+            }
+        }
+    }
+    visible = {
+        original_tag = LUN
+    }
+}
+Renko_LUN_battleship_antiair_screen = {
+    track = Renko_LUN_capital_ships
+    name = Renko_LUN_battleship_antiair_screen
+    description = Renko_LUN_battleship_antiair_screen_desc
+    icon = GFX_doctrine_battleship_antiair_screen_medium
+    xp_cost = 100
+    xp_type = navy
+    available = {
+        original_tag = LUN
+        has_doctrine = Renko_LUN_new_base_strike
+    }
+    visible = {
+        original_tag = LUN
+    }
+    ai_will_do = {
+        base = 1000
+    }
+    navy_anti_air_attack_factor = 0.1
+    rewards = {
+        Renko_all_seas_anti_aircraft = {
+            battleship = {
+                anti_air_attack = 0.1
+            }
+            battle_cruiser = {
+                anti_air_attack = 0.1
+            }
+        }
+        Renko_efficient_navigation = {
+            battleship = {
+                fuel_consumption = -0.1
+            }
+        }
+        Renko_broad_air_cover = {
+            battleship = {
+                max_organisation = 15
+                surface_detection = 0.05
+            }
+            battle_cruiser = {
+                max_organisation = 15
+                surface_detection = 0.05
+            }
+        }
+        Renko_inaccessible_skies = {
+            battleship = {
+                anti_air_attack = 0.15
+                lg_attack = 0.05
+            }
+            battle_cruiser = {
+                anti_air_attack = 0.15
+                lg_attack = 0.05
+            }
+        }
+        Renko_capital_screens = {
+            equipment_bonus = {
+                ship_hull_heavy = {
+                    armor_value = 0.15
+                    max_strength = 0.05
+                    lg_attack = 0.05
+                    instant = yes
+                }
+            }
+        }
+    }
+}
+Renko_LUN_air_subdoctrine_fighter_central_field = {
+    track = Renko_LUN_fighter_aircraft
+    name = Renko_LUN_air_subdoctrine_fighter_central_field
+    description = Renko_LUN_air_subdoctrine_fighter_central_field_desc
+    icon = GFX_doctrine_naval_air_operations_medium
+    xp_cost = 100
+    xp_type = air
+    available = {
+        original_tag = LUN
+        has_doctrine = Renko_LUN_new_operational_integrity
+    }
+    ai_will_do = {
+        base = 1000
+    }
+    sortie_efficiency = 0.15
+    rewards = {
+        Renko_decoy_tactic = {
+            air_superiority_detect_factor = 0.05
+            air_superiority_efficiency = 0.1
+        }
+        Renko_three_plane_formation = {
+            category_fighter = {
+                air_agility = 0.1
+                maximum_speed = 0.1
+            }
+        }
+        Renko_aggressive_spirit = {
+            air_ace_generation_chance_factor = 0.05
+            ace_effectiveness_factor = 0.1
+        }
+        Renko_naval_expertise = {
+            naval_strike_targetting_factor = 0.1
+        }
+        Renko_all_weather_operations = {
+            air_weather_penalty = -0.1
+            carrier_traffic = 0.15
+        }
+    }
+    visible = {
+        original_tag = LUN
+    }
+}
+Renko_LUN_air_subdoctrine_naval_torpedo_tactics = {
+    track = Renko_LUN_strike_aircraft
+    name = Renko_LUN_air_subdoctrine_naval_torpedo_tactics
+    description = Renko_LUN_air_subdoctrine_naval_torpedo_tactics_desc
+    icon = GFX_doctrine_naval_strike_torpedo_tactics_medium
+    xp_cost = 100
+    xp_type = air
+    available = {
+        original_tag = LUN
+        has_doctrine = Renko_LUN_new_operational_integrity
+    }
+    ai_will_do = {
+        base = 1000
+    }
+    category_nav_bomber = {
+        naval_strike_attack = 0.1
+    }
+    category_maritime_patrol_bomber = {
+        naval_strike_attack = 0.1
+    }
+    rewards = {
+        Renko_port_strikes = {
+            port_strike = 0.1
+            naval_strike_targetting_factor = 0.1
+        }
+        Renko_low_level_attack_runs = {
+            category_nav_bomber = {
+                air_agility = 0.1
+            }
+            category_maritime_patrol_bomber = {
+                air_agility = 0.1
+            }
+        }
+        Renko_extended_sea_patrols = {
+            category_nav_bomber = {
+                air_range = 0.05
+            }
+            category_carrier_nav_bomber = {
+                air_range = 0.05
+            }
+        }
+        Renko_all_weather_training = {
+            air_weather_penalty = -0.1
+        }
+        Renko_naval_strike_mastery = {
+            air_nav_efficiency = 0.1
+        }
+    }
+    visible = {
+        original_tag = LUN
+    }
+}
+Renko_LUN_air_subdoctrine_long_range_escort = {
+    track = Renko_LUN_medium_aircraft
+    name = Renko_LUN_air_subdoctrine_long_range_escort
+    description = Renko_LUN_air_subdoctrine_long_range_escort_desc
+    icon = GFX_doctrine_air_offense_medium
+    xp_cost = 100
+    xp_type = air
+    available = {
+        original_tag = LUN
+        has_doctrine = Renko_LUN_new_operational_integrity
+    }
+    ai_will_do = {
+        base = 1000
+    }
+    air_escort_efficiency = 0.1
+    rewards = {
+        Renko_efficient_fly_routes = {
+            category_heavy_fighter = {
+                air_range = 0.1
+            }
+        }
+        Renko_mutual_air_cover = {
+            air_superiority_detect_factor = 0.15
+        }
+        Renko_training_instructors = {
+            air_training_xp_gain_factor = 0.1
+        }
+        Renko_fighter_baiting = {
+            category_heavy_fighter = {
+                air_agility = 0.1
+            }
+        }
+        Renko_far_reaching_airforce = {
+            air_range_factor = 0.05
+        }
+    }
+    visible = {
+        original_tag = LUN
+    }
+}
+Renko_LUN_air_subdoctrine_flying_fortresses = {
+    track = Renko_LUN_heavy_aircraft
+    name = Renko_LUN_air_subdoctrine_flying_fortresses
+    description = Renko_LUN_air_subdoctrine_flying_fortresses_desc
+    icon = GFX_doctrine_flying_fortress_medium
+    xp_cost = 100
+    xp_type = air
+    available = {
+        original_tag = LUN
+        has_doctrine = Renko_LUN_new_operational_integrity
+    }
+    ai_will_do = {
+        base = 1000
+    }
+    category_strat_bomber = {
+        air_defence = 0.1
+    }
+    rewards = {
+        Renko_high_level_bombing = {
+            air_strategic_bomber_defence_factor = 0.2
+        }
+        Renko_experienced_gunners = {
+            category_strat_bomber = {
+                air_attack = 0.1
+            }
+        }
+        Renko_pilot_rescue_missions = {
+            air_wing_xp_loss_when_killed_factor = -0.1
+        }
+        Renko_extensive_training = {
+            air_training_xp_gain_factor = 0.1
+            air_ace_generation_chance_factor = 0.05
+        }
+        Renko_safety_landing_procedures = {
+            air_accidents_factor = -0.1
+        }
+    }
+    visible = {
+        original_tag = LUN
+    }
+}
+
+# 分节：Renko_LUN_special_forces_subdoctrine
+# 日本海空联合突击 + 山林渗透作战，按阶段合并；地形留给侵军步兵。
+# 装备降本改为侵军实际装备；直接 equipment_bonus 确保切换学说时可撤回。
+Renko_LUN_lunar_host = {
+    track = special_forces_first
+    name = Renko_LUN_lunar_host
+    description = Renko_LUN_lunar_host_desc
+    icon = GFX_doctrine_special_forces_2_medium
+    xp_cost = 60
+    xp_type = army
+    visible = {
+        original_tag = LUN
+    }
+    available = {
+        original_tag = LUN
+        has_tech = Renko_LUN_invasion_units_tech
+    }
+    ai_will_do = {
+        base = 1000
+    }
+    mastery = {
+        multiplier = 6
+        sub_units = {
+            Renko_LUN_invasion_infantry
+            Renko_LUN_invasion_medium_armor
+            Renko_LUN_invasion_medium_tankdestroyer
+        }
+    }
+    special_forces_cap_flat = 200
+    special_forces_cap = 2
+    rewards = {
+        Renko_highland_armaments = {
+            mastery = 120
+            equipment_bonus = {
+                infantry_equipment = {
+                    build_cost_ic = -0.15
+                    instant = yes
+                }
+                medium_tank_chassis = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+                medium_tank_destroyer_chassis = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+                medium_tank_aa_chassis = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+                heavy_tank_destroyer_chassis = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+            }
+            Renko_LUN_invasion_infantry = {
+                breakthrough = 0.05
+                hills = {
+                    attack = 0.15
+                    defence = 0.05
+                    movement = 0.10
+                }
+                mountain = {
+                    attack = 0.25
+                    defence = 0.10
+                    movement = 0.15
+                }
+            }
+        }
+        Renko_pathfinder_breakthrough = {
+            mastery = 120
+            Renko_LUN_invasion_medium_armor = {
+                breakthrough = 0.15
+            }
+            Renko_LUN_invasion_infantry = {
+                initiative = 0.01
+                forest = {
+                    attack = 0.10
+                    defence = 0.10
+                    movement = 0.10
+                }
+                jungle = {
+                    attack = 0.15
+                    defence = 0.10
+                    movement = 0.10
+                }
+                urban = {
+                    attack = 0.05
+                    defence = 0.05
+                    movement = 0.05
+                }
+            }
+        }
+        Renko_joint_fire_coordination = {
+            mastery = 120
+            army_bonus_air_superiority_factor = 0.10
+            shore_bombardment_bonus = 0.15
+            naval_invasion_planning_bonus_speed = 0.20
+            Renko_LUN_invasion_medium_armor = {
+                defense = 0.05
+                supply_consumption = -0.02
+            }
+            Renko_LUN_invasion_medium_tankdestroyer = {
+                defense = 0.05
+                supply_consumption = -0.02
+            }
+        }
+        Renko_assault_cohesion = {
+            mastery = 120
+            Renko_LUN_invasion_infantry = {
+                combat_width = -0.2
+                soft_attack = 0.10
+                supply_consumption = -0.02
+                maximum_speed = 0.10
+                max_organisation = 10
+                defense = 0.10
+                breakthrough = 0.05
+                amphibious = {
+                    attack = 0.10
+                    defence = 0.10
+                    movement = 0.10
+                }
+            }
+            Renko_LUN_invasion_medium_armor = {
+                max_organisation = 5
+            }
+            Renko_LUN_invasion_medium_tankdestroyer = {
+                max_organisation = 5
+            }
+        }
+        Renko_special_warfare_integration = {
+            mastery = 120
+            special_forces_attack_factor = 0.20
+            Renko_LUN_invasion_medium_armor = {
+                max_organisation = 5
+                defense = 0.10
+            }
+            Renko_LUN_invasion_medium_tankdestroyer = {
+                max_organisation = 5
+                defense = 0.10
+            }
+        }
+    }
+}

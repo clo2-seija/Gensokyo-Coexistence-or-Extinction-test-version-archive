@@ -1,0 +1,173 @@
+[
+  {
+    "key": "Renko_LUN_invasion_infantry",
+    "name": "月都侵军步兵营",
+    "source": "common/units/JAP_special_units.txt",
+    "source_key": "Rance_JAP_M_infantry",
+    "source_sha256": "1483ccc40bf425ef0af8727dd0794b9bb113d7c333f1693953177427a7b44983",
+    "svg": "Renko_LUN_invasion_infantry_v2.svg",
+    "paths": {
+      "large": "gfx/interface/counters/divisions_large/Renko_LUN_invasion_infantry_large.png",
+      "map": "gfx/interface/counters/divisions_small/Renko_LUN_invasion_infantry_small.png",
+      "text": "gfx/texticons/Renko_LUN_invasion_infantry_small.png"
+    },
+    "terrain": {
+      "plains": {
+        "attack": 0.1,
+        "defence": 0.1,
+        "movement": 0.1
+      },
+      "desert": {
+        "attack": 0.1,
+        "defence": 0.1,
+        "movement": 0.1
+      },
+      "forest": {
+        "attack": 0.15,
+        "defence": 0.1,
+        "movement": 0.1
+      },
+      "hills": {
+        "attack": 0.15,
+        "defence": 0.1,
+        "movement": 0.1
+      },
+      "mountain": {
+        "attack": 0.2,
+        "defence": 0.1,
+        "movement": 0.1
+      },
+      "jungle": {
+        "attack": 0.15,
+        "defence": 0.1,
+        "movement": 0.1
+      },
+      "marsh": {
+        "attack": 0.3,
+        "defence": 0.1,
+        "movement": 0.1
+      },
+      "urban": {
+        "attack": 0.15,
+        "defence": 0.1,
+        "movement": 0.1
+      },
+      "river": {
+        "attack": 0.3,
+        "movement": 0.1
+      },
+      "amphibious": {
+        "attack": 0.5
+      },
+      "fort": {
+        "attack": 0.1
+      }
+    }
+  },
+  {
+    "key": "Renko_LUN_invasion_medium_armor",
+    "name": "月都侵军中坦营",
+    "source": "common/units/JAP_army_units.txt",
+    "source_key": "Rance_JAP_A_medium_armor",
+    "source_sha256": "8255355d69126d38003446d2918573fbe30dbdd167e61393bacd663665e9d836",
+    "svg": "Renko_LUN_medium_tank_v2.svg",
+    "paths": {
+      "large": "gfx/interface/counters/divisions_large/Renko_LUN_invasion_medium_armor_large.png",
+      "map": "gfx/interface/counters/divisions_small/Renko_LUN_invasion_medium_armor_small.png",
+      "text": "gfx/texticons/Renko_LUN_invasion_medium_armor_small.png"
+    },
+    "terrain": {
+      "plains": {
+        "attack": 0.05,
+        "movement": 0.05
+      },
+      "desert": {
+        "attack": 0.05,
+        "movement": 0.05
+      }
+    }
+  },
+  {
+    "key": "Renko_LUN_invasion_medium_tankdestroyer",
+    "name": "月都侵军中坦歼营",
+    "source": "common/units/JAP_special_units.txt",
+    "source_key": "Rance_JAP_M_medium_tankdestroyer",
+    "source_sha256": "1483ccc40bf425ef0af8727dd0794b9bb113d7c333f1693953177427a7b44983",
+    "svg": "Renko_LUN_medium_tank_destroyer_v1.svg",
+    "paths": {
+      "large": "gfx/interface/counters/divisions_large/Renko_LUN_invasion_medium_tankdestroyer_large.png",
+      "map": "gfx/interface/counters/divisions_small/Renko_LUN_invasion_medium_tankdestroyer_small.png",
+      "text": "gfx/texticons/Renko_LUN_invasion_medium_tankdestroyer_small.png"
+    },
+    "terrain": {
+      "plains": {
+        "attack": 0.05,
+        "movement": 0.05
+      },
+      "desert": {
+        "attack": 0.05,
+        "movement": 0.05
+      }
+    },
+    "export_layout": {
+      "large_frame": [
+        76,
+        42
+      ],
+      "small_frame": [
+        30,
+        12
+      ],
+      "small_art_max": [
+        25,
+        9
+      ],
+      "preserve_svg_canvas_for_large": true,
+      "note": "小图体量分级；中坦歼小于重坦歼，两帧分别居中并保留四边透明余量。"
+    }
+  },
+  {
+    "key": "Renko_LUN_invasion_medium_anti_air_support",
+    "name": "月都侵军中防空团属支援连",
+    "source": "common/units/JAP_army_units.txt",
+    "source_key": "Rance_JAP_A_medium_anti_air_armor_support",
+    "source_sha256": "8255355d69126d38003446d2918573fbe30dbdd167e61393bacd663665e9d836",
+    "svg": "Renko_LUN_medium_anti_air_v2.svg",
+    "paths": {
+      "large": "gfx/interface/counters/divisions_large/Renko_LUN_invasion_medium_anti_air_support_large.png",
+      "map": "gfx/interface/counters/divisions_small/Renko_LUN_invasion_medium_anti_air_support_small.png",
+      "text": "gfx/texticons/Renko_LUN_invasion_medium_anti_air_support_small.png"
+    },
+    "terrain": {}
+  },
+  {
+    "key": "Renko_LUN_invasion_heavy_tankdestroyer_support",
+    "name": "月都侵军重坦歼团属支援连",
+    "source": "common/units/JAP_army_units.txt",
+    "source_key": "Rance_JAP_A_heavy_tankdestroyer_support",
+    "source_sha256": "8255355d69126d38003446d2918573fbe30dbdd167e61393bacd663665e9d836",
+    "svg": "Renko_LUN_heavy_tank_destroyer_v1.svg",
+    "paths": {
+      "large": "gfx/interface/counters/divisions_large/Renko_LUN_invasion_heavy_tankdestroyer_support_large.png",
+      "map": "gfx/interface/counters/divisions_small/Renko_LUN_invasion_heavy_tankdestroyer_support_small.png",
+      "text": "gfx/texticons/Renko_LUN_invasion_heavy_tankdestroyer_support_small.png"
+    },
+    "terrain": {},
+    "export_layout": {
+      "large_frame": [
+        76,
+        42
+      ],
+      "small_frame": [
+        30,
+        12
+      ],
+      "small_art_max": [
+        25,
+        10
+      ],
+      "preserve_svg_canvas_for_large": true,
+      "note": "小图体量分级；中坦歼小于重坦歼，两帧分别居中并保留四边透明余量。"
+    }
+  }
+]

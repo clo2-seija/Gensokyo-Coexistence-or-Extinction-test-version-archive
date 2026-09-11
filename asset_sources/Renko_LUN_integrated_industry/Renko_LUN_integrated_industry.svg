@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+<defs>
+ <linearGradient id="rim" x1="0" y1="0" x2="0.8" y2="1"><stop stop-color="#efe0b3"/><stop offset=".22" stop-color="#8f8a79"/><stop offset=".48" stop-color="#292f32"/><stop offset=".75" stop-color="#958770"/><stop offset="1" stop-color="#d5cab0"/></linearGradient>
+ <radialGradient id="enamel" cx=".48" cy=".65" r=".7"><stop stop-color="#557a87"/><stop offset=".5" stop-color="#273d50"/><stop offset="1" stop-color="#0c111b"/></radialGradient>
+ <linearGradient id="silver" x2=".4" y2="1"><stop stop-color="#fffae0"/><stop offset=".3" stop-color="#c9d2cb"/><stop offset=".63" stop-color="#7e8e99"/><stop offset="1" stop-color="#333f4d"/></linearGradient>
+ <linearGradient id="steel" x2=".25" y2="1"><stop stop-color="#b7b6a3"/><stop offset=".36" stop-color="#858d90"/><stop offset=".6" stop-color="#5f6d77"/><stop offset="1" stop-color="#242d38"/></linearGradient>
+ <linearGradient id="bronze" x2=".7" y2="1"><stop stop-color="#d6c191"/><stop offset=".4" stop-color="#938161"/><stop offset="1" stop-color="#3d3732"/></linearGradient>
+ <linearGradient id="light" x2="0" y2="1"><stop stop-color="#ead8a6"/><stop offset="1" stop-color="#807f70"/></linearGradient>
+</defs>
+<!-- 原版经济法案式圆形金属边框；所有形状均为手绘矢量，无外链素材。 -->
+<circle cx="256" cy="264" r="223" fill="#05080d" opacity=".7"/>
+<circle cx="256" cy="256" r="222" fill="url(#rim)" stroke="#15191d" stroke-width="7"/>
+<circle cx="256" cy="256" r="207" fill="url(#enamel)" stroke="#101821" stroke-width="8"/>
+<circle cx="256" cy="256" r="198" fill="none" stroke="#8ba2a4" stroke-opacity=".23" stroke-width="3"/>
+<!-- 低对比齿圈：给圆章增加工业属性，避免压过主体。 -->
+<g fill="url(#bronze)" stroke="#20252b" stroke-width="4" opacity=".6"><path d="M241 56 L271 56 L278 87 L234 87Z" transform="rotate(0 256 256)"/><path d="M241 56 L271 56 L278 87 L234 87Z" transform="rotate(30 256 256)"/><path d="M241 56 L271 56 L278 87 L234 87Z" transform="rotate(60 256 256)"/><path d="M241 56 L271 56 L278 87 L234 87Z" transform="rotate(90 256 256)"/><path d="M241 56 L271 56 L278 87 L234 87Z" transform="rotate(120 256 256)"/><path d="M241 56 L271 56 L278 87 L234 87Z" transform="rotate(150 256 256)"/><path d="M241 56 L271 56 L278 87 L234 87Z" transform="rotate(180 256 256)"/><path d="M241 56 L271 56 L278 87 L234 87Z" transform="rotate(210 256 256)"/><path d="M241 56 L271 56 L278 87 L234 87Z" transform="rotate(240 256 256)"/><path d="M241 56 L271 56 L278 87 L234 87Z" transform="rotate(270 256 256)"/><path d="M241 56 L271 56 L278 87 L234 87Z" transform="rotate(300 256 256)"/><path d="M241 56 L271 56 L278 87 L234 87Z" transform="rotate(330 256 256)"/>
+<circle cx="256" cy="256" r="168" fill="none" stroke="#92866b" stroke-width="17"/></g>
+<!-- 银月；不画烟雾，以清洁的月面工坊区别于地上重工业。 -->
+<path d="M307 94 C240 66 165 109 157 175 C150 242 210 293 269 281 C222 267 199 222 207 180 C217 131 258 105 307 94Z" fill="#060e1a" stroke="#0b131f" stroke-width="16"/>
+<path d="M307 88 C240 60 165 103 157 169 C150 236 210 287 269 275 C222 261 199 216 207 174 C217 125 258 99 307 88Z" fill="url(#silver)" stroke="#d2d2bd" stroke-width="3"/>
+<path d="M300 130 L305 143 L319 148 L305 153 L300 168 L295 153 L281 148 L295 143Z" fill="#dcd9c0"/>
+<!-- 工厂背后的月都宫殿屋脊和中轴塔。 -->
+<path d="M301 257 L301 181 L314 169 L327 181 L327 257Z" fill="url(#steel)" stroke="#111c29" stroke-width="6"/>
+<path d="M314 147 L318 171 L347 191 Q324 194 314 188 Q302 194 280 191 L308 171Z" fill="url(#silver)" stroke="#1a2937" stroke-width="5"/>
+<path d="M273 230 L314 203 L355 230 L341 236 L285 236Z" fill="url(#bronze)" stroke="#172330" stroke-width="5"/>
+<!-- 前景厂房：锯齿屋顶、暖色窗洞与厚重浮雕边缘。 -->
+<path d="M122 371 L122 264 L168 235 L168 259 L220 231 L220 258 L270 230 L270 267 L388 267 L388 371Z" fill="url(#steel)" stroke="#111923" stroke-width="10" stroke-linejoin="round"/>
+<path d="M126 264 L166 240 L167 266 L217 237 L218 266 L266 236 L266 274 L384 274" fill="none" stroke="#d3d0b5" stroke-width="5"/>
+<path d="M122 375 L388 375 L403 390 L108 390Z" fill="url(#bronze)" stroke="#111a25" stroke-width="6"/>
+<g fill="url(#light)" stroke="#202932" stroke-width="5"><rect x="149" y="295" width="19" height="23" rx="2"/><rect x="184" y="295" width="19" height="23" rx="2"/><rect x="219" y="295" width="19" height="23" rx="2"/><rect x="284" y="295" width="19" height="23" rx="2"/><rect x="319" y="295" width="19" height="23" rx="2"/><rect x="354" y="295" width="19" height="23" rx="2"/><rect x="149" y="334" width="19" height="23" rx="2"/><rect x="184" y="334" width="19" height="23" rx="2"/><rect x="219" y="334" width="19" height="23" rx="2"/><rect x="284" y="334" width="19" height="23" rx="2"/><rect x="319" y="334" width="19" height="23" rx="2"/><rect x="354" y="334" width="19" height="23" rx="2"/></g>
+<path d="M246 369 L246 309 Q260 295 274 309 L274 369Z" fill="#162530" stroke="#adac97" stroke-width="4"/>
+<path d="M122 283 L387 283 M135 365 L237 365 M284 365 L381 365" stroke="#b2b39f" stroke-opacity=".5" stroke-width="3"/>
+<path d="M174 418 Q256 445 339 418" fill="none" stroke="#b6ab8e" stroke-opacity=".65" stroke-width="4"/>
+</svg>

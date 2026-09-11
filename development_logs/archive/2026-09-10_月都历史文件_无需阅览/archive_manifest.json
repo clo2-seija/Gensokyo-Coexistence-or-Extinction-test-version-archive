@@ -1,0 +1,418 @@
+{
+  "archived_on": "2026-09-10",
+  "status": "历史文件，无需阅览",
+  "scope": "月都开发中间日志和计划；不含日本本土留兵记录",
+  "files": [
+    {
+      "original_path": "development_logs/2026-09-09_取消月都旧山地师生成.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/2026-09-09_取消月都旧山地师生成.md",
+      "original_sha256": "1c84bfd7361ee002c5dce37d88d5ccadb6ab0baa27c23cccab4556a1840a4da4",
+      "archived_sha256": "8813485bca096045970bded49ffbc9e350fdc2b1c903933f9149f41ca41c3f22",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/2026-09-09_征兆月兔入伍.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/2026-09-09_征兆月兔入伍.md",
+      "original_sha256": "ef8f6f9bc8feb057a90ea5168ec5d8cb84497a3083f51ee606caf03d61c36371",
+      "archived_sha256": "e708980decc7742bfc7644bc163ed4f805748783743da6c3f03f879727d6aa2d",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/2026-09-09_月都AI动态建筑策略.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/2026-09-09_月都AI动态建筑策略.md",
+      "original_sha256": "1ea7b6c8cc4553a5b8c114342ee64b3f3097ac90786050c2c1b8372bc9a0cfe0",
+      "archived_sha256": "7fbbe1b6992648f2a615615bee300bc27af3abc23c9923660e4eed49bd95fe49",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/2026-09-09_月都AI循环补给.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/2026-09-09_月都AI循环补给.md",
+      "original_sha256": "7cf9d48214be919963e4e76d30fcd4aa71766d5cd578346352da6fc2e858b0d7",
+      "archived_sha256": "7833bdd0099f7a99262ea29a30776bf4589e46d77f4be0fbd2a613d3c7b3ae7f",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/2026-09-09_月都分支测试加载部署.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/2026-09-09_月都分支测试加载部署.md",
+      "original_sha256": "b4914ee82879bed8dc15c3527145d6a7b38728db398a7ebc6aa92ea2b46fe271",
+      "archived_sha256": "37ade83645b1297eb26e0fcb3116739b68c1ed8fb1a0b849d781dad8bd3012d8",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/2026-09-09_月都海军编组数量待办.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/2026-09-09_月都海军编组数量待办.md",
+      "original_sha256": "63434d92cc2eaf6ececeb9b718e51899d5b4443b34e92214bc258a5bcb2da986",
+      "archived_sha256": "715a9905c94409686f1e3991d9d7e10c8c4fe16f09651ce4b6c96e7a60880037",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/2026-09-09_月都统制占领法案.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/2026-09-09_月都统制占领法案.md",
+      "original_sha256": "ffde03b726b0a2e34b70148fa4085db8b2a338db16f4c04057888acc5f101426",
+      "archived_sha256": "b3c0bbf6ecc8758fa6b54d34b002b38170bb379b44ed50c4ff78b5517ef95f2d",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/2026-09-09_月都自动化基建.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/2026-09-09_月都自动化基建.md",
+      "original_sha256": "a1118eed6bd0bfa09f3a484f0a258981f69207902ac4472c4dcd4fd3969c4768",
+      "archived_sha256": "a49f72a213bbc7f227acc55dd48c1b5aa75cda1b4cb1d0a0772b5b57c65cc838",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/2026-09-09_月都补给修复与海军生产.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/2026-09-09_月都补给修复与海军生产.md",
+      "original_sha256": "8d37216edd7cbea5a575313ee1f394d3672b9a57b7fbac44a6a3f205ff01dfe7",
+      "archived_sha256": "111cc2a639141c8c4c7b45cb8e1f40664c14e7a16390393de92aaeecba972625",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/2026-09-09_月都领土整合.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/2026-09-09_月都领土整合.md",
+      "original_sha256": "81b574c600ba801cd3223cf4fc7312f4cb56f40c5e989b42c96241f5b442d7be",
+      "archived_sha256": "45001f1b27f0d0a680a445146771ee118972da84da6d0d6f07268f71a8dc60b0",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/2026-09-09_月面工业与月海船坞支援.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/2026-09-09_月面工业与月海船坞支援.md",
+      "original_sha256": "82f2555ffae60986fb1000f0b4a260f439bff1e01bab774e20c3ac261cc5fe3d",
+      "archived_sha256": "823d5cb1a5f3b94d5364fb43c000e26893db8b015e9460bf78636d223d4315fc",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/2026-09-09_月面资源与首批设计整合.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/2026-09-09_月面资源与首批设计整合.md",
+      "original_sha256": "c2c0bc9fe7b08a445b40b8629e4d7e0118abc9251519c18e3f39a01521c79737",
+      "archived_sha256": "758a976704ad2521af2f1870e15e77a8530a1c3227f8fbb6ae91a0b2811e5ac7",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/2026-09-09_莲子的工具箱与月都登陆策略.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/2026-09-09_莲子的工具箱与月都登陆策略.md",
+      "original_sha256": "b3a2f45f942edd86676a7a36d77ccecccc9ce3ab9926686d933b4f9fe98c25f3",
+      "archived_sha256": "d5a08274de2c2fad50d525859565822883451a3e49ff80d5a7d81778306ffe26",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/2026-09-10_月都作者交接资料整理.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/2026-09-10_月都作者交接资料整理.md",
+      "original_sha256": "a215a1a2d967dce54c229408b0773eca31015157b92f2a2cb6e7d3515e1093d8",
+      "archived_sha256": "5d74cca7a291910f99a85811f95df0feaa83d173d1646a113feda3df6d97dd1d",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/2026-09-10_月都加强分支更新日志.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/2026-09-10_月都加强分支更新日志.md",
+      "original_sha256": "665487af0077c5fff2cd7b8d84fc495215f806dfc15e7dc46b07de8eafc23fbe",
+      "archived_sha256": "1285832d1f5f9327e8c84e1c18f0c362d8b4581ee896dd04efa0f73e90fea477",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/2026-09-10_月都学说AI覆盖移除.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/2026-09-10_月都学说AI覆盖移除.md",
+      "original_sha256": "e316aa5e30ec99106339271dbd4933a49b2e8d05b003fc45e3c6c9b9592b8167",
+      "archived_sha256": "f8c1bb2aca4d01d21719e90dbae4b390401f708f7ebe85ee89caa723caae8bb4",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/2026-09-10_月都指挥网与兵器序列调整.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/2026-09-10_月都指挥网与兵器序列调整.md",
+      "original_sha256": "ec24f2da2792e82acb312259b6815d3f5bd45e58b1bbde4a68c1d88e9ea6a0a5",
+      "archived_sha256": "313673913f7b50fc7c691b0b765b7899de616202d4214171f884f1917d8f1e85",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/2026-09-10_莲子英文译名约定.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/2026-09-10_莲子英文译名约定.md",
+      "original_sha256": "c1bbcecc01faec5f873944b8c8d93ff32b58a15352e932ec0c84b4b828dcd85a",
+      "archived_sha256": "79c8fa89baff613d2f5118a61db56c64f1bb15631d7c90a133b1a613fcd76c6c",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-08_LUN分段计划与首批实现.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-08_LUN分段计划与首批实现.md",
+      "original_sha256": "2da9c00a3de2152a0b83bf2cb5f36c9a4c4b410dd0c1c2b9bd1b97dc88de11b0",
+      "archived_sha256": "c61a1915fdacd65ab661d51337d0dc56904c333468e6ee89995544eaa888c666",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-08_月之都开发准备.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-08_月之都开发准备.md",
+      "original_sha256": "49790c494359a4b7eba4b96903cef6860625cc4f7647d1e1acd5b1e908f4a451",
+      "archived_sha256": "5908a70990c4a4d035a4cc339ab579eb65c2844de25c0c0cbee55a26e8b0ad92",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-08_月之都现状调查.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-08_月之都现状调查.md",
+      "original_sha256": "ecf50217ca1bbef65549cb87a50a52784b74607daea63e480f1c5e999b0c72cf",
+      "archived_sha256": "748f4082353642d041c4b611ee205dabf62c397b6231f0cc5a8bfc98ed4335ae",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-08_月都原作设定资料搜集.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-08_月都原作设定资料搜集.md",
+      "original_sha256": "21b434bc848837c1aaa40fbd592c7d877af3c460a557719e3e5a18336ec3a4c3",
+      "archived_sha256": "61b52d38d957a17e210d7f3206b7ba69677456d595aa211347fd7db186681714",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_LUN_batch_fleet_supply_and_industry.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_LUN_batch_fleet_supply_and_industry.md",
+      "original_sha256": "dcde9e299895609baec123de27ac49d9e2a0ad5a01f8256283a40f4d6a7bc42e",
+      "archived_sha256": "652eee0d14f09e4c1847b9f3957e8a9dbae80cbef4e6d04026fcb5059f09959a",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_LUN_lunarian_craftsmanship_policy.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_LUN_lunarian_craftsmanship_policy.md",
+      "original_sha256": "ae5d4489be2751f659a7f9c745cdf0ad358cbdda13291947b28a1d5604eb018a",
+      "archived_sha256": "c9a02502a14465e3fe6f4183772f33f804b6f00bcfdaa99d2dfe49a406a45431",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_LUN_special_tank_modules.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_LUN_special_tank_modules.md",
+      "original_sha256": "3ee9062ee9bebab04d1c3ccb204b1ad9cc49bccfe884070301419a692de11dcc",
+      "archived_sha256": "96cf8cd51b0f2f9410569fc973c869b39b647c5cafdaaa06d2e20dd9f03d722c",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_LUN三军与月之军势学说.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_LUN三军与月之军势学说.md",
+      "original_sha256": "1f64bc8c72b1e552863626d55a352f2d55c9827519eb99d55067b5ec7516be7b",
+      "archived_sha256": "bc204531d0112bfcbd608ab4615af648437ca002c8c2aa51d34f65171d9775fc",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_LUN三编制与首批军势.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_LUN三编制与首批军势.md",
+      "original_sha256": "412825d56b3c9535e5c87627e19db2732186bfa64bcc85c2d568cf3c8e09a96d",
+      "archived_sha256": "8ceec385511fd94fc70477f954e73b2c5970899c345995e7bb73490cddd96ae8",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_LUN军事AI编制比例.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_LUN军事AI编制比例.md",
+      "original_sha256": "ae5bb2de1e666e71c6e5915e7f04b7cc62593407120a9ff2f47772c42d378082",
+      "archived_sha256": "5b274cb2cf7f6468639c79e89ce0b0c75e425fb96a19b1fd076818bafe0acd9b",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_LUN军备局装备设计.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_LUN军备局装备设计.md",
+      "original_sha256": "f1d3672a32d11a5a4e7ffcd412795507fc61a3bdc943ccd72841500925395ee3",
+      "archived_sha256": "9bcc8e0076e28638bdc6232cff8644b450d5aff6038dfc91ecd2ea97b4302253",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_LUN军备系统本地提交.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_LUN军备系统本地提交.md",
+      "original_sha256": "8ec47ab00c3fab37d514e66d19a8e88d4ce1a9bff822aba11f308e4fef5411e4",
+      "archived_sha256": "3f912e49465a2d9e3a61bb02522bcde85d41b52e82b6f5f3963f994c06fcc96e",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_LUN动态装备与刷兵补给.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_LUN动态装备与刷兵补给.md",
+      "original_sha256": "cd93fb2d3f5f3cf7f064440f3fec483d442ef24e4fcc0259dd114349f4ea2eb8",
+      "archived_sha256": "605a6b98d4d517283d14d01f3a2027c12f26a41c768f07743e047c2ae22cfe86",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_LUN学说剧情文案.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_LUN学说剧情文案.md",
+      "original_sha256": "851a5c00420c4dd9d7c3eac795b34b4094a081204dc04f48deeee2ceffa2bce4",
+      "archived_sha256": "f005197ef733ccf314ab617436125f33e7a236a3e84071e9220fd8ea49859e91",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_LUN年度科技决议.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_LUN年度科技决议.md",
+      "original_sha256": "bc1170c8e026449cad050f11d6b10e56ec8791082d91edea14cd4704d9a301a0",
+      "archived_sha256": "dd7b3f238e0d86e128a60e6f5e8f9c57a5873a6a52973b2431916df8352dd27b",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_LUN月战最高司令部与连接山海补给.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_LUN月战最高司令部与连接山海补给.md",
+      "original_sha256": "7398d32a614c7a92b7ffcd0ef6d91aedb7ef447ce1d07d7163c42ee6895464a3",
+      "archived_sha256": "b6e5489f9e43e34f5a3c45f3424bde65685c45984a0b58b99dd416ab7dcffa28",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_LUN正规航母设计.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_LUN正规航母设计.md",
+      "original_sha256": "7a5c8cc1c55a163577114a4d07da9ac92a23e50c429f501c9cfa99a5bf386aab",
+      "archived_sha256": "6d73a81febad8882d295c1a020686805d0235bbed56edd1bdc5a0ae34e7f3ee5",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_LUN海军动态补给.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_LUN海军动态补给.md",
+      "original_sha256": "2d5a34fde427db887dc86876e6b65684476f6362eac5b0cb3eb453d30e7304cf",
+      "archived_sha256": "3c0ab5bd455a038bba8ca4c2866b6ad2ab906d20197a001b5b5df9550cddcde7",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_LUN海军编组.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_LUN海军编组.md",
+      "original_sha256": "d2987b580b6d073f68bbd3ab0c1e8a1ed29058964cefc82eb10414b204412a58",
+      "archived_sha256": "d45ff355b7b5e1ebe3f7b9dfb9211ed3e4728a1c19f2121b135b0e71fa020fc5",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_LUN海军进度与换机交接.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_LUN海军进度与换机交接.md",
+      "original_sha256": "e9ba6e07e4f961c3581ff143496b8a2ee68d31c6f963d36ce00c5e73296e6e96",
+      "archived_sha256": "72b73bcf9cefa1d43e92e08260f128e98081604ae51daaeb6fc61a711bae49a6",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_LUN陆空轻量生产.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_LUN陆空轻量生产.md",
+      "original_sha256": "f5a141bbee94e6c150159a3c8c43b99109f1cf97ab1e6dcb215fcadd49ac8332",
+      "archived_sha256": "08c78502ad85be28c81166ca3ba757563786ca4c6225659e781bc6664552e7a5",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_月人制造.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_月人制造.md",
+      "original_sha256": "5ff4ba07f381770e7e608116b53119348ad96171de6df70aa6e678b75e47c729",
+      "archived_sha256": "83879305912e7c7272424d58d555cab0c0c5cecac53a45f7ec25d4edc76d1620",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_月海舰队决议与民族精神.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_月海舰队决议与民族精神.md",
+      "original_sha256": "808adfe393b6ace84af5f320dac345beaacc83f7a1307841ea03e5ee45631d02",
+      "archived_sha256": "b383682036e53d89a58ff7abf181caf781ac23a94625b770b04d96dddf06a3af",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_月都侵军系列单位.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_月都侵军系列单位.md",
+      "original_sha256": "d7be13fb2876fb9cb6365761f28b66ffc952f144492308cff338274d74e748fb",
+      "archived_sha256": "ce1564111be6c60dfb3e8c683f43093c242059d03e63b6c66f2e614f741fba60",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_月都停止抵抗陆空补给.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_月都停止抵抗陆空补给.md",
+      "original_sha256": "aa3f05f31e6634eae5714683727bc14c388b71ab3cc59de284d2039c80ad3be1",
+      "archived_sha256": "fe84fe4cc72dd34f005e1383fdf84241df0b527b3cadc8ca82059da2b17818d8",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_月都整编增援调整.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_月都整编增援调整.md",
+      "original_sha256": "1d8d7be35e57843aafca75bd60797512a99e8f9c971b7856e3ce249c514dd0fc",
+      "archived_sha256": "6ea1a5b86bf4e0bbe85797539c5ac3ce17d5a7edf9e07e4b2688a1a574913682",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_月都精锐士兵训练.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_月都精锐士兵训练.md",
+      "original_sha256": "ad389be3751abd81983384176dac989746921d5df371691898c92e65b53aa017",
+      "archived_sha256": "f5eff95dcfa497ca34a214c099bed1c394f7888710ace0ab5ddca74c485ccc28",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_月都补给数量语法修正.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_月都补给数量语法修正.md",
+      "original_sha256": "325643e68cc21bab541b0b4cfca561236b1d1df87ac7d6db477e29e81f399fd8",
+      "archived_sha256": "189120bb892dbcb0e27795db1641fb22c9d7a4c8bc98ccdf577eddcc7cc12bb6",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_logs/Renko_2026-09-09_特殊兵种编写.md",
+      "archived_path": "development_logs/archive/2026-09-10_月都历史文件_无需阅览/Renko_2026-09-09_特殊兵种编写.md",
+      "original_sha256": "087c6645074064122e3c7cdb295005e18a254d43dd58888c13aa2b42f8f78ca9",
+      "archived_sha256": "d96017bd5a7f1c89f163e7671d2d7c08e064cd863e8c45bba2bf1764163933cf",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_plans/Renko_LUN三军与特种学说.md",
+      "archived_path": "development_plans/archive/2026-09-10_月都历史文件_无需阅览/Renko_LUN三军与特种学说.md",
+      "original_sha256": "39015391dd77ec940ee695bc104682a873f7ec51b93303c85ab36a9bec9773e8",
+      "archived_sha256": "eacca81ca7447736548fbd5b0a273edbacebaa59a971e7cc2deefd6330221e1e",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_plans/Renko_LUN侵军系列单位实现.md",
+      "archived_path": "development_plans/archive/2026-09-10_月都历史文件_无需阅览/Renko_LUN侵军系列单位实现.md",
+      "original_sha256": "595a81c55590c8f4bafbd37d9ac7b703c5b6c7d2053803a83801544e08c23374",
+      "archived_sha256": "8cd002a3364417a48e9e591ff3738f5f7329a7b6713adcc295d120efefb7de3f",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_plans/Renko_LUN军备局装备设计实现.md",
+      "archived_path": "development_plans/archive/2026-09-10_月都历史文件_无需阅览/Renko_LUN军备局装备设计实现.md",
+      "original_sha256": "39da2e902fdfa5f990bea0db22090399fd90e5aa558b23f6f12c538064d2e703",
+      "archived_sha256": "0c9424582dfc0f2281784d1233bab35d44c1ea1a903e6502805537b217096940",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_plans/Renko_LUN动态补给调用说明.md",
+      "archived_path": "development_plans/archive/2026-09-10_月都历史文件_无需阅览/Renko_LUN动态补给调用说明.md",
+      "original_sha256": "acb4eb66d07b76a0783f57649f59702b491bed152ff6079b07132305d03222fe",
+      "archived_sha256": "8e76a86c34542998d3a185b7c4346799a1b66a8d4e36b308aef0dcefc1d3f087",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_plans/Renko_LUN月人制造实现.md",
+      "archived_path": "development_plans/archive/2026-09-10_月都历史文件_无需阅览/Renko_LUN月人制造实现.md",
+      "original_sha256": "38ada3503050ce77321053f8e4b8bd350dd8bff0e882c1027ac451137d3040b8",
+      "archived_sha256": "3a5912b7bc61d8fe1ffeb0f860f6630b4188481d91b13288366dd391c00bf79c",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_plans/Renko_LUN海军动态补给调用说明.md",
+      "archived_path": "development_plans/archive/2026-09-10_月都历史文件_无需阅览/Renko_LUN海军动态补给调用说明.md",
+      "original_sha256": "f10aefae3409ddff40eaec7fb6d5b160ac4614b671cf75b21710eb2750c67aca",
+      "archived_sha256": "285d36ff45450206a1be302dc729579a661f0c9632274f5df3c1906fadab674b",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_plans/Renko_LUN轻量AI加强分段实施计划.md",
+      "archived_path": "development_plans/archive/2026-09-10_月都历史文件_无需阅览/Renko_LUN轻量AI加强分段实施计划.md",
+      "original_sha256": "222bbc36a21c9827ddb3fd40caa38b0b8935c984ac9acba45941dc827a98651f",
+      "archived_sha256": "c5b60a1dc6a48b3f9c9bea78766e55f66d43abbe767779a704d5ce08fe7022ad",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_plans/Renko_LUN陆空生产策略.md",
+      "archived_path": "development_plans/archive/2026-09-10_月都历史文件_无需阅览/Renko_LUN陆空生产策略.md",
+      "original_sha256": "1c79ac277786da972551107a3364dac5cf6267ded8a2dced7f3f50e66c8e093f",
+      "archived_sha256": "09cf8d9ecdd8b241285de49c85b5e4e401ed23aca158138aa200c73ffd1fc898",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_plans/Renko_README.md",
+      "archived_path": "development_plans/archive/2026-09-10_月都历史文件_无需阅览/Renko_README.md",
+      "original_sha256": "25616217988d2613bf316d81304edc1ead4ccdcc37782e5b0e0cdc4b2acfdd95",
+      "archived_sha256": "4c4c9211422f2f54a2890a6b02371ea2bd440c086dd37a783cf116bb611614d3",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_plans/Renko_月之都与相关人物设定参考.md",
+      "archived_path": "development_plans/archive/2026-09-10_月都历史文件_无需阅览/Renko_月之都与相关人物设定参考.md",
+      "original_sha256": "61d8cc4aca0fb0373d64fd2ea7b657502acb4e5bc581806b6d5e65a207d7c4ed",
+      "archived_sha256": "6f2ca791094ade69616c4ab4fb4e95975d82794b7b4cda75bfccea6199c57345",
+      "original_body_preserved": true
+    },
+    {
+      "original_path": "development_plans/Renko_月之都现状调查与加强讨论基础.md",
+      "archived_path": "development_plans/archive/2026-09-10_月都历史文件_无需阅览/Renko_月之都现状调查与加强讨论基础.md",
+      "original_sha256": "273f26f8c8056d4fe0e7556b7274be23e28fe5c76af66f262127c716a1b5dbfe",
+      "archived_sha256": "136408661fe1373d528e3f4afa82037585866369c4c3c68aca449633a43dc8c6",
+      "original_body_preserved": true
+    }
+  ],
+  "active_data_relocated": {
+    "from": "development_plans/Renko_LUN_doctrine_sources.json",
+    "to": "Reference/Renko_LUN_doctrine_sources.json",
+    "sha256": "bed57b9c90730596f0f25ed43c44bab30c84b18345b51e73d13a981b943a821f"
+  }
+}

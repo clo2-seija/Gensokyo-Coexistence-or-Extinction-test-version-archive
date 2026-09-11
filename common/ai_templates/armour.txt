@@ -3,6 +3,7 @@
 ######################
 
 armour_generic = {
+	blocked_for = { LUN }
 
 	role = armor_role #to distinguish from armor, a hardcoded keyword for all tank equipment types
 

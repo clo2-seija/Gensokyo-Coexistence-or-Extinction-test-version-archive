@@ -1,0 +1,67 @@
+Renko_LUN_infantry = {
+	available_for = { LUN }
+	role = Renko_LUN_infantry
+	upgrade_prio = { base = 0 }
+	Renko_LUN_infantry_default = {
+		upgrade_prio = { base = 0 }
+		target_template = {
+			regiments = {
+				Renko_LUN_invasion_infantry = 9
+			}
+			regimental_support = {
+				fire_support = 1
+				field_guns = 2
+			}
+			support = {
+				engineer = 1
+				artillery = 1
+			}
+		}
+	}
+}
+
+Renko_LUN_armored = {
+	available_for = { LUN }
+	role = Renko_LUN_armored
+	upgrade_prio = { base = 0 }
+	Renko_LUN_armored_default = {
+		upgrade_prio = { base = 0 }
+		target_template = {
+			regiments = {
+				Renko_LUN_invasion_infantry = 10
+				Renko_LUN_invasion_medium_armor = 7
+				Renko_LUN_invasion_medium_tankdestroyer = 3
+			}
+			regimental_support = {
+				fire_support = 1
+				field_guns = 1
+				Renko_LUN_invasion_medium_anti_air_support = 2
+				Renko_LUN_invasion_heavy_tankdestroyer_support = 1
+			}
+			support = {
+				armored_engineer = 1
+				medium_flame_tank = 1
+				helicopter_field_hospital = 1
+				helicopter_recon = 1
+				helicopter_transport = 1
+			}
+		}
+	}
+}
+
+Renko_LUN_suppression = {
+	available_for = { LUN }
+	role = Renko_LUN_suppression
+	upgrade_prio = { base = 0 }
+	Renko_LUN_suppression_default = {
+		upgrade_prio = { base = 0 }
+		target_template = {
+			regiments = {
+				cavalry = 25
+			}
+			support = {
+				military_police = 1
+			}
+		}
+	}
+}

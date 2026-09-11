@@ -1,0 +1,63 @@
+Renko_LUN_has_industrial_construction_slot = {
+    any_controlled_state = {
+        is_fully_controlled_by = ROOT
+        free_building_slots = {
+            building = industrial_complex
+            size > 0
+            include_locked = no
+        }
+    }
+}
+
+Renko_LUN_has_port_dockyard_construction_slot = {
+    any_controlled_state = {
+        is_fully_controlled_by = ROOT
+        is_coastal = yes
+        naval_base > 0
+        free_building_slots = {
+            building = dockyard
+            size > 0
+            include_locked = no
+        }
+    }
+}
+
+Renko_LUN_construction_civilian_share_low = {
+    set_temp_variable = { Renko_LUN_construction_total = num_of_civilian_factories }
+    add_to_temp_variable = { Renko_LUN_construction_total = num_of_military_factories }
+    add_to_temp_variable = { Renko_LUN_construction_total = num_of_naval_factories }
+    add_to_temp_variable = { Renko_LUN_construction_total = 1 }
+    set_temp_variable = { Renko_LUN_construction_share = num_of_civilian_factories }
+    divide_temp_variable = { Renko_LUN_construction_share = Renko_LUN_construction_total }
+    check_variable = { Renko_LUN_construction_share < 0.30 }
+}
+
+Renko_LUN_construction_civilian_share_high = {
+    set_temp_variable = { Renko_LUN_construction_total = num_of_civilian_factories }
+    add_to_temp_variable = { Renko_LUN_construction_total = num_of_military_factories }
+    add_to_temp_variable = { Renko_LUN_construction_total = num_of_naval_factories }
+    add_to_temp_variable = { Renko_LUN_construction_total = 1 }
+    set_temp_variable = { Renko_LUN_construction_share = num_of_civilian_factories }
+    divide_temp_variable = { Renko_LUN_construction_share = Renko_LUN_construction_total }
+    check_variable = { Renko_LUN_construction_share > 0.40 }
+}
+
+Renko_LUN_construction_dockyard_share_low = {
+    set_temp_variable = { Renko_LUN_construction_total = num_of_civilian_factories }
+    add_to_temp_variable = { Renko_LUN_construction_total = num_of_military_factories }
+    add_to_temp_variable = { Renko_LUN_construction_total = num_of_naval_factories }
+    add_to_temp_variable = { Renko_LUN_construction_total = 1 }
+    set_temp_variable = { Renko_LUN_construction_share = num_of_naval_factories }
+    divide_temp_variable = { Renko_LUN_construction_share = Renko_LUN_construction_total }
+    check_variable = { Renko_LUN_construction_share < 0.15 }
+}
+
+Renko_LUN_construction_dockyard_share_high = {
+    set_temp_variable = { Renko_LUN_construction_total = num_of_civilian_factories }
+    add_to_temp_variable = { Renko_LUN_construction_total = num_of_military_factories }
+    add_to_temp_variable = { Renko_LUN_construction_total = num_of_naval_factories }
+    add_to_temp_variable = { Renko_LUN_construction_total = 1 }
+    set_temp_variable = { Renko_LUN_construction_share = num_of_naval_factories }
+    divide_temp_variable = { Renko_LUN_construction_share = Renko_LUN_construction_total }
+    check_variable = { Renko_LUN_construction_share > 0.20 }
+}

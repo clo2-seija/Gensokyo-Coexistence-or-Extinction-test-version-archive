@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 128 128">
+<defs>
+ <linearGradient id="steel" x2=".8" y2="1"><stop stop-color="#e4debf"/><stop offset=".2" stop-color="#929c9c"/><stop offset=".48" stop-color="#38494e"/><stop offset=".72" stop-color="#adb1a0"/><stop offset="1" stop-color="#283b42"/></linearGradient>
+ <linearGradient id="gold" x2=".7" y2="1"><stop stop-color="#fff0b3"/><stop offset=".45" stop-color="#c69d50"/><stop offset="1" stop-color="#6a4e2e"/></linearGradient>
+ <radialGradient id="enamel" cx=".42" cy=".35" r=".8"><stop stop-color="#294e59"/><stop offset=".6" stop-color="#142b39"/><stop offset="1" stop-color="#080f1d"/></radialGradient>
+ <radialGradient id="core"><stop stop-color="#ffffe5"/><stop offset=".35" stop-color="#bcecf0"/><stop offset="1" stop-color="#39858f"/></radialGradient>
+ <linearGradient id="orbit"><stop stop-color="#edf7de"/><stop offset=".45" stop-color="#8fcad0"/><stop offset="1" stop-color="#548d9e"/></linearGradient>
+</defs>
+<!-- Embossed metal shield, transparent outside its silhouette. -->
+<path d="M25 8 L103 8 119 26 115 90 Q99 112 64 122 Q29 112 13 90 L9 26Z" fill="#03080e" opacity=".7" transform="translate(0 3)"/>
+<path d="M25 6 L103 6 119 24 115 88 Q99 110 64 120 Q29 110 13 88 L9 24Z" fill="url(#steel)" stroke="#101c22" stroke-width="3"/>
+<path d="M27 14 L101 14 110 27 107 85 Q91 104 64 112 Q37 104 21 85 L18 27Z" fill="url(#gold)" stroke="#202e30" stroke-width="2"/>
+<path d="M29 18 L99 18 106 29 103 83 Q88 100 64 108 Q40 100 25 83 L22 29Z" fill="url(#enamel)" stroke="#071319" stroke-width="2"/>
+<!-- Silver crescent relief. -->
+<path d="M80 27 C49 18 27 40 31 66 C35 94 67 105 89 82 C65 91 47 78 46 58 C45 44 58 29 80 27Z" fill="#040b17" transform="translate(1 3)"/>
+<path d="M80 27 C49 18 27 40 31 66 C35 94 67 105 89 82 C65 91 47 78 46 58 C45 44 58 29 80 27Z" fill="url(#steel)" stroke="#cddddd" stroke-width="1.5"/>
+<path d="M65 28 C43 29 31 48 35 67 C40 86 59 96 76 90" fill="none" stroke="#f4f4df" stroke-width="2.3"/>
+<path d="M79 42 L81 49 88 51 81 53 79 60 77 53 70 51 77 49Z" fill="#e6d79c"/>
+<!-- Lower rank chevron and corner rivets. -->
+<path d="M46 101 L64 109 82 101" fill="none" stroke="#e0bf78" stroke-width="2.5"/>
+<g fill="#c4c4ac" stroke="#29383a" stroke-width="1.5"><circle cx="21" cy="23" r="2.5"/><circle cx="107" cy="23" r="2.5"/><circle cx="18" cy="86" r="2.5"/><circle cx="110" cy="86" r="2.5"/></g>
+<path d="M26 9H101 M12 27L15 61" fill="none" stroke="#eee8ce" opacity=".65" stroke-width="1.5"/>
+</svg>

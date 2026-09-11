@@ -388,3 +388,13 @@ KYO_lunar_scale_debug_category = {
 	visible_when_empty = yes
 }
 # YAKUMO_ROUTE_V05_CATEGORIES_END
+
+# 月都 EASY：莲子的协助
+# 独立于各路线专属指挥部，避免 EASY 奖励被其他路线旗标遮蔽。
+Renko_KYO_lunar_technology_category = {
+    icon = decision_category_army_reform
+    priority = 985
+    allowed = { original_tag = KYO }
+    visible = { has_country_flag = Renko_KYO_arcane_decryption_unlocked }
+    visible_when_empty = no
+}

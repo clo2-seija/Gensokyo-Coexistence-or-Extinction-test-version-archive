@@ -1,0 +1,140 @@
+--- mod-2cae441/common/ai_equipment/generic_tank.txt
++++ mod-aac2956/common/ai_equipment/generic_tank.txt
+@@ -1,6 +1,7 @@
+ # AI tank design for testing
+ 
+ generic_light_tanks = {
++	blocked_for = { LUN }
+ 	category = land
+ 
+ 	roles = {
+@@ -176,6 +177,7 @@
+ }
+ 
+ generic_light_tank_artillery = {
++	blocked_for = { LUN }
+ 	category = land
+ 
+ 	roles = {
+@@ -324,7 +326,7 @@
+ generic_light_tank_destroyers = {
+ 	category = land
+ 
+-	blocked_for = { }
++	blocked_for = { LUN  }
+ 
+ 	available_for = {}
+ 
+@@ -448,6 +450,7 @@
+ }
+ 
+ generic_light_tank_anti_air = {
++	blocked_for = { LUN }
+ 	category = land
+ 
+ 	roles = {
+@@ -531,6 +534,7 @@
+ }
+ 
+ generic_medium_tanks = {
++	blocked_for = { LUN }
+ 	category = land
+ 
+ 	roles = {
+@@ -1369,6 +1373,7 @@
+ }
+ 
+ generic_medium_tank_artillery = {
++	blocked_for = { LUN }
+ 	category = land
+ 	
+ 	roles = {
+@@ -1514,6 +1519,7 @@
+ }
+ 
+ generic_medium_tank_anti_air = {
++	blocked_for = { LUN }
+ 	category = land
+ 
+ 	roles = {
+@@ -1658,7 +1664,7 @@
+ generic_medium_tank_destroyer = {
+ 	category = land
+ 
+-	blocked_for = { }
++	blocked_for = { LUN  }
+ 
+ 	available_for = {}
+ 
+@@ -1854,6 +1860,7 @@
+ }
+ 
+ generic_medium_flame_tanks = {
++	blocked_for = { LUN }
+ 	category = land
+ 
+ 	roles = {
+@@ -1989,6 +1996,7 @@
+ }
+ 
+ generic_amphibious_tanks = {
++	blocked_for = { LUN }
+ 	category = land
+ 
+ 	roles = {
+@@ -2070,6 +2078,7 @@
+ 
+ 
+ generic_medium_amphibious_tanks = {
++	blocked_for = { LUN }
+ 	category = land
+ 
+ 	roles = {
+@@ -2162,6 +2171,7 @@
+ }
+ 
+ generic_modern_tanks = {
++	blocked_for = { LUN }
+ 	category = land
+ 	
+ 	available_for = {}
+@@ -2404,6 +2414,7 @@
+ }
+ 
+ generic_modern_tank_destroyer = {
++	blocked_for = { LUN }
+ 	category = land
+ 
+ 	
+@@ -2621,6 +2632,7 @@
+ }
+ 
+ generic_modern_tank_artillery = {
++	blocked_for = { LUN }
+ 	category = land
+ 
+ 	
+@@ -2818,6 +2830,7 @@
+ }
+ 
+ generic_modern_tank_anti_air = {
++	blocked_for = { LUN }
+ 	category = land
+ 
+ 	
+@@ -3017,6 +3030,7 @@
+ }
+ 
+ generic_heavy_tanks = {
++	blocked_for = { LUN }
+ 	category = land
+ 
+ 	roles = {
+@@ -3237,6 +3251,7 @@
+ }
+ 
+ generic_heavy_tank_destroyer = {
++	blocked_for = { LUN }
+ 	category = land
+ 
+ 	roles = {

@@ -1,0 +1,169 @@
+# 月都加强：按功能分节整合；标识符及效果保持原样。
+ideas = {
+    hidden_ideas = {
+        # 分节：Renko_LUN_elite_training_hidden_ideas
+        Renko_LUN_elite_soldier_training_hidden_idea = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                # 日本 MOD JAP_rework_ideas.txt 的特种上限规格。
+                special_forces_cap = 10
+                special_forces_cap_flat = 1000
+            }
+        }
+
+        # 分节：Renko_LUN_resource_hidden_ideas
+        Renko_LUN_lunar_resource_support_hidden_idea = {
+            allowed = { always = no }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                state_resources_factor = 2.00
+                fuel_gain_factor = 2.00
+                max_fuel_factor = 4.00
+                army_fuel_consumption_factor = -0.50
+                navy_fuel_consumption_factor = -0.50
+                air_fuel_consumption_factor = -0.50
+            }
+        }
+
+        # 分节：Renko_LUN_supply_hidden_ideas
+        Renko_LUN_toyohime_connects_sea_and_mountain_supply_hidden_idea = {
+            allowed = {
+                always = no
+            }
+
+            allowed_civil_war = {
+                always = yes
+            }
+
+            removal_cost = -1
+
+            modifier = {
+                supply_node_range = 99.99
+            }
+        }
+    }
+
+    country = {
+        # LUNATIC 专属：永恒之月。
+        Renko_LUN_eternal_moon = {
+            picture = Renko_LUN_eternal_moon
+            allowed = { original_tag = LUN }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                line_change_production_efficiency_factor = 1.00
+                dont_lose_dig_in_on_attack = 1
+                planning_decay_rate_factor = -1.00
+                max_dig_in = 6
+            }
+        }
+
+        # EASY：仅对幻想乡作战时生效。
+        Renko_LUN_quantum_disturbance = {
+            picture = Renko_LUN_quantum_disturbance
+            allowed = { original_tag = LUN }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            targeted_modifier = {
+                tag = KYO
+                attack_bonus_against = -0.50
+                defense_bonus_against = -0.50
+                navy_capital_ship_attack_factor_against = -0.30
+            }
+        }
+
+        # 正邪「扭转月都的命运」后保留主力舰编成能力与核心战斗加成。
+        Renko_LUN_lunar_sea_fleet_disrupted_idea = {
+            picture = fleet_interoperability_navy_spirit
+            allowed = { original_tag = LUN }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                screening_without_screens = 0.60
+                navy_capital_ship_defence_factor = 0.10
+                naval_hit_chance = 0.10
+                naval_coordination = 0.10
+                sortie_efficiency = 0.15
+            }
+        }
+
+        # 分节：Renko_LUN_lunar_sea_fleet_ideas
+        Renko_LUN_lunar_sea_fleet_idea = {
+            picture = fleet_interoperability_navy_spirit
+            allowed = { original_tag = LUN }
+            allowed_civil_war = { always = yes }
+            removal_cost = -1
+            modifier = {
+                experience_gain_navy = 0.05
+                navy_visibility = -0.15
+                convoy_raiding_efficiency_factor = 0.10
+                navy_submarine_attack_factor = 0.10
+                navy_submarine_defence_factor = 0.10
+                naval_mines_damage_factor = 0.25
+                mines_planting_by_fleets_factor = 0.50
+                naval_torpedo_hit_chance_factor = 0.15
+                naval_torpedo_reveal_chance_factor = -0.10
+                naval_torpedo_screen_penetration_factor = 0.15
+                navy_capital_ship_defence_factor = 0.15
+                screening_without_screens = 0.60
+                naval_torpedo_damage_reduction_factor = 0.15
+                navy_anti_air_attack_factor = 0.15
+                sortie_efficiency = 0.20
+                carrier_traffic = 0.15
+                naval_detection = 0.25
+                navy_submarine_detection_factor = 0.30
+                spotting_chance = 0.20
+                naval_retreat_speed = 0.30
+                naval_retreat_chance = 0.15
+                naval_enemy_fleet_size_ratio_penalty_factor = 0.25
+                naval_enemy_positioning_in_initial_attack = -0.20
+                naval_enemy_retreat_chance = -0.20
+                naval_night_attack = 0.25
+                night_spotting_chance = 0.20
+                naval_hit_chance = 0.15
+                naval_coordination = 0.15
+                screening_efficiency = 0.15
+                navy_org_factor = 0.10
+            }
+            equipment_bonus = {
+                ship_hull_escort_carrier = {
+                    build_cost_ic = -0.10
+                    surface_visibility = -0.20
+                    instant = yes
+                }
+                mio_cat_eq_all_ships_no_convoys = {
+                    build_cost_ic = -0.10
+                    instant = yes
+                }
+            }
+        }
+    }
+
+    # 分节：月都专属经济法案
+    economy = {
+        law = yes
+        use_list_view = yes
+        Renko_LUN_integrated_industry = {
+            picture = Renko_LUN_integrated_industry
+            allowed = { original_tag = LUN }
+            visible = { tag = LUN }
+            available = { tag = LUN }
+            cost = 100
+            removal_cost = -1
+            allowed_to_remove = { is_ai = no }
+            ai_will_do = { factor = 999999 }
+            modifier = {
+                consumer_goods_expected_value = 0.10
+                production_speed_buildings_factor = 0.20
+                production_factory_max_efficiency_factor = 0.10
+                conversion_cost_civ_to_mil_factor = -0.50
+                conversion_cost_mil_to_civ_factor = -0.50
+                factory_energy_consumption = 0.20
+            }
+            cancel_if_invalid = no
+        }
+    }
+}

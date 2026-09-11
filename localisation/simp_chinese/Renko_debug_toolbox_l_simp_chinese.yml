@@ -1,0 +1,6 @@
+﻿l_simp_chinese:
+ Renko_debug_toolbox_category:0 "莲子的工具箱"
+ Renko_debug_toolbox_category_desc:0 "莲子的专用实验工具，仅在调试模式下向玩家显示。"
+ Renko_debug_start_lunar_strength_experiment:0 "启动月都实力实验"
+ Renko_debug_start_lunar_strength_experiment_desc:0 "在开局直接部署月都，并由日本接管幻想乡，为观察月都的发展与作战表现准备实验环境。"
+ Renko_debug_start_lunar_strength_experiment_tt:0 "释放§Y月都§!，由其接收§Y西藏与尼泊尔§!并开放月战最高司令部。\n§Y日本§!吞并§Y幻想乡§!，不接收幻想乡部队。\n月都随后通过现有AI决议获取编制、工业与补给，沿用原有国策和宣战节奏。"

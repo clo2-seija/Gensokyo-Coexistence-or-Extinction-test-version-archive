@@ -1,0 +1,116 @@
+--- vanilla-20260910/common/ai_strategy/doctrines.txt
++++ mod-aac2956/common/ai_strategy/doctrines.txt
+@@ -1,3 +1,4 @@
++# Renko: 用户授权从本机原版同路径复制；仅隔离 LUN 的陆军 role_ratio。
+ ############
+ ### LAND ###
+ ############
+@@ -16,6 +17,7 @@
+ ##### AI strategies to discriminate against horses #####
+ 
+ DOCTRINE_stop_making_horsies = {
++	allowed = { NOT = { original_tag = LUN } } # Renko: 月都使用专用陆军编制比例。
+ 	enable = {
+ 		num_of_factories > 20
+ 		date > 1938.1.1
+@@ -33,6 +35,7 @@
+ 
+ # No cav if we have motor inf
+ DOCTRINE_no_cavalry = {
++	allowed = { NOT = { original_tag = LUN } } # Renko: 月都使用专用陆军编制比例。
+ 	enable = {
+ 		has_tech = motorised_infantry
+ 	}
+@@ -51,6 +54,7 @@
+ ##### Mobile Warfare branch #####
+ 
+ DOCTRINE_MW_mobile_warfare_ratios = {
++	allowed = { NOT = { original_tag = LUN } } # Renko: 月都使用专用陆军编制比例。
+ 	enable = {
+ 		has_doctrine = new_mobile_warfare
+ 	}
+@@ -126,6 +130,7 @@
+ ##### Superior Firepower branch #####
+ 
+ DOCTRINE_SF_superior_firepower_ratios = {
++	allowed = { NOT = { original_tag = LUN } } # Renko: 月都使用专用陆军编制比例。
+ 	enable = {
+ 		has_doctrine = superior_firepower
+ 	}
+@@ -155,17 +160,9 @@
+ 		always = no
+ 	}
+ 	
+-	ai_strategy = {
+-		type = role_ratio
+-		id = infantry
+-		value = -5
+-	}
+-	
+-	ai_strategy = {
+-		type = role_ratio
+-		id = armor
+-		value = 10
+-	}
++	
++	
++	
+ 	#TODO_JBE: Add an OR/AND scope for appropriate air doctrine for this
+ 	ai_strategy = {
+ 		type = role_ratio
+@@ -217,6 +214,7 @@
+ ##### Grand Battleplan branch #####
+ 
+ DOCTRINE_GB_grand_battle_plan_ratios = {
++	allowed = { NOT = { original_tag = LUN } } # Renko: 月都使用专用陆军编制比例。
+ 	enable = {
+ 		has_doctrine = grand_battleplan
+ 	}
+@@ -316,6 +314,7 @@
+ ##### Mass Assault branch #####
+ 
+ DOCTRINE_MA_mass_assault_ratios = {
++	allowed = { NOT = { original_tag = LUN } } # Renko: 月都使用专用陆军编制比例。
+ 	enable = {
+ 		has_doctrine = deep_battle
+ 	}
+@@ -337,6 +336,7 @@
+ }
+ 
+ DOCTRINE_MA_large_front_operations_ratios = {
++	allowed = { NOT = { original_tag = LUN } } # Renko: 月都使用专用陆军编制比例。
+ 	enable = {
+ 		has_completed_subdoctrine = deep_battle
+ 	}
+@@ -553,3 +553,31 @@
+ 		value = 30
+ 	}
+ }
++
++Renko_DOCTRINE_SF_concentrated_fire_plans_ratios_land_role_ratios = {
++	allowed = { NOT = { original_tag = LUN } }
++
++	enable = {
++		has_completed_subdoctrine = fire_concentration
++	}
++	abort = {
++		always = no
++	}
++	
++	
++	
++	
++	#TODO_JBE: Add an OR/AND scope for appropriate air doctrine for this
++	
++
++	ai_strategy = {
++		type = role_ratio
++		id = infantry
++		value = -5
++	}
++	ai_strategy = {
++		type = role_ratio
++		id = armor
++		value = 10
++	}
++}

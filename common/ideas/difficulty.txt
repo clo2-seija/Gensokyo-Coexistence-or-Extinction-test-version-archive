@@ -214,6 +214,7 @@ ideas = {
 				recon_factor = 0.20
 				org_loss_when_moving = -0.25
 				army_speed_factor = 0.10
+				army_attack_speed_factor = 0.30
 				land_night_attack = 0.15
 			}
 		}
@@ -238,6 +239,8 @@ ideas = {
 				production_factory_start_efficiency_factor = 0.15
 				production_lack_of_resource_penalty_factor = -0.25
 				conversion_cost_civ_to_mil_factor = -0.40
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.20
 			}
 		}
 
@@ -277,29 +280,10 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_attack_factor = 0.15
-				army_defence_factor = 0.15
-				breakthrough_factor = 0.20
-				air_mission_efficiency = 0.15
-				air_night_penalty = -0.25
-				air_superiority_bonus_in_combat = 0.15
-			}
-
-			# equipment_bonus 與 modifier 同級，不能放進 modifier 內。
-			# instant = yes 使加成直接套用至現有裝備設計。
-			equipment_bonus = {
-				infantry_equipment = {
-					instant = yes
-					soft_attack = 0.10
-					hard_attack = 0.15
-					reliability = 0.15
-				}
-
-				support_equipment = {
-					instant = yes
-					build_cost_ic = -0.10
-					reliability = 0.20
-				}
+				air_superiority_efficiency = 0.15
+				air_power_projection_factor = 0.10
+				army_attack_factor = 0.10
+				army_defence_factor = 0.10
 			}
 		}
 	}

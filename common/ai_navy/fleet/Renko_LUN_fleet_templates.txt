@@ -1,0 +1,22 @@
+# 每个制海舰队必需一支巡逻队和一支打击队，可额外追加一支打击队、两支巡逻队。
+# 此处是单个舰队模板的组成，不是全国舰队总数上限。
+Renko_LUN_dominance_fleet = {
+ required_taskforces = {
+  Renko_LUN_patrol_force = 1
+  Renko_LUN_strike_force = 1
+ }
+ optional_taskforces = {
+  Renko_LUN_strike_force = 1
+  Renko_LUN_patrol_force = 2
+ }
+}
+
+# 沿用日本特殊属国：1支必需潜艇队，可追加9支。
+Renko_LUN_sub_raiding_fleet = {
+ required_taskforces = {
+  Renko_LUN_sub_raiding_force = 1
+ }
+ optional_taskforces = {
+  Renko_LUN_sub_raiding_force = 9
+ }
+}

@@ -1,0 +1,83 @@
+# 月都专属无屏卫编组。role 3为护航航母，role 7为正规航母，重巡role 1。
+# 战列位置兼容普通/超重战列；潜艇位置不限制role。此文件不创建设计或舰船。
+Renko_LUN_patrol_force = {
+	allowed = {
+		original_tag = LUN
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	mission = {
+		naval_patrol
+	}
+	min_composition = {
+		carrier = {
+			amount = 2
+			role = 3
+		}
+		heavy_cruiser = {
+			amount = 3
+			role = 1
+		}
+	}
+	optimal_composition = {
+		carrier = {
+			amount = 6
+			role = 3
+		}
+		heavy_cruiser = {
+			amount = 9
+			role = 1
+		}
+	}
+}
+Renko_LUN_strike_force = {
+	allowed = {
+		original_tag = LUN
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	mission = {
+		naval_strike
+	}
+	min_composition = {
+		carrier = {
+			amount = 2
+			role = 7
+		}
+		battleship = {
+			amount = 8
+		}
+	}
+	optimal_composition = {
+		carrier = {
+			amount = 4
+			role = 7
+		}
+		battleship = {
+			amount = 16
+		}
+	}
+}
+Renko_LUN_sub_raiding_force = {
+	allowed = {
+		original_tag = LUN
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	mission = {
+		convoy_raiding
+	}
+	min_composition = {
+		submarine = {
+			amount = 4
+		}
+	}
+	optimal_composition = {
+		submarine = {
+			amount = 10
+		}
+	}
+}

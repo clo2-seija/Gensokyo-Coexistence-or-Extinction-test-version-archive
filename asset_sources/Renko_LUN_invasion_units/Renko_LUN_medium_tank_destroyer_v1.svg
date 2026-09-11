@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="76" height="42" viewBox="0 0 76 42">
+<title>月都侵军中型坦克歼击车 · 比例修订版</title>
+<desc>冷灰装甲与银色浅浮雕弦月，固定战斗室、收短炮管、概括履带及安全边距；透明背景76×42单帧。</desc>
+<defs>
+ <linearGradient id="armor" x1=".14" y1="0" x2=".65" y2=".95"><stop stop-color="#d4dcd9"/><stop offset=".22" stop-color="#a8b8bc"/><stop offset=".44" stop-color="#7e929d"/><stop offset=".7" stop-color="#526975"/><stop offset="1" stop-color="#354550"/></linearGradient>
+ <linearGradient id="hull" x1=".1" y1="0" x2=".55" y2="1"><stop stop-color="#b8c5c6"/><stop offset=".3" stop-color="#8d9fa7"/><stop offset=".6" stop-color="#657b87"/><stop offset="1" stop-color="#3e515c"/></linearGradient>
+ <linearGradient id="gun" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c5cfcc"/><stop offset=".35" stop-color="#94a7ae"/><stop offset="1" stop-color="#354751"/></linearGradient>
+ <linearGradient id="silver" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#fffef1"/><stop offset=".4" stop-color="#e0e6e2"/><stop offset=".7" stop-color="#9caeb5"/><stop offset="1" stop-color="#d8dfda"/></linearGradient>
+ <path id="moon" d="M38.6 15.7 C34.8 14.9 32.3 17.4 33.1 20.5 C33.8 23.4 37.6 24.2 39.8 21.8 C36.9 22.8 35 21.1 35.1 19.2 C35.2 17.7 36.5 16.4 38.6 15.7 Z"/>
+</defs>
+<!-- 同尺寸兵牌保留四边余量；按吨位保持中型与重型体量差。 -->
+<g id="counter-safe-area" transform="translate(0 0) scale(1)">
+<g id="track-mass">
+ <path d="M14 27 L57 27 Q62 27 63 30 L61 33.5 L57 35 L15 35 L10 33 L9 30 Z" fill="#2b363d"/>
+ <path d="M12 31 L15 32 L17 34 L22 34 L24 32.5 L26 34 L31 34 L33 32.5 L35 34 L40 34 L42 32.5 L44 34 L49 34 L51 32 L55 34 L59 32 L61 30.5" fill="none" stroke="#56636b" stroke-width=".8"/>
+ <path d="M18 34.8 L55 34.8" stroke="#1e2a31" stroke-width=".6"/>
+</g>
+<g id="hull">
+ <path d="M13 22.7 L22 21.5 L43 21.5 L52 23 L61.5 26.5 L64 29 L60.5 32 L55 33 L13 32 L9 30 L9.5 26.5 Z" fill="url(#hull)" stroke="#394a54" stroke-width=".5"/>
+ <path d="M13 22.7 L22 21.5 L43 21.5 L52 23 L48 24 L17 24.5 L10 27 Z" fill="#a0b1b7"/>
+ <path d="M11 27 L20 24.6 L45 24 L53 25.3 L57 27.3 L52 27 L46 26 L22 26 L14 28 Z" fill="#bcc8c7" opacity=".3"/>
+ <path d="M51 24 L61.5 26.5 L64 29 L60.5 32 L55 33 L54 29 Z" fill="#3d5461" opacity=".65"/>
+ <path d="M13 29 L23 28.5 L27 29.5 L43 28.7 L51 29.2 L55 31.7 L16 32 L11 30.5 Z" fill="#465d6a" opacity=".48"/>
+ <path d="M9.5 27 L13 26.2 L17 26.2" fill="none" stroke="#d1dad6" stroke-width=".65"/>
+ <path d="M18 23.1 L26 22.7" stroke="#d3dbd7" stroke-width=".55"/>
+ <path d="M11 30 L16 30.3 L18 32.5 L14 32.5 Z" fill="#344751"/>
+ <path d="M21 31.8 L22 33 L25 33 L25.7 31.8 M32 31.8 L33 33 L36 33 L36.7 31.8 M43 31.8 L44 33 L47 33 L47.7 31.8 M54 31 L55 32.7 L58 32.3" fill="#24353f"/>
+</g>
+<g id="long-gun">
+ <path d="M42 17 L67 17 L67 19.1 L42 19.7 Z" fill="url(#gun)" stroke="#35454e" stroke-width=".35"/>
+ <path d="M49 17.2 L66.5 17.2" stroke="#c7d1ce" stroke-width=".4"/>
+ <path d="M66.5 17.3 L67 17.3 L67 18.9 L66.5 18.9 Z" fill="#283943"/>
+</g>
+<g id="fixed-casemate">
+ <path d="M19 25 L23 16 L40 14.7 L48 18 L52 25 L45 27 L24 27 Z" fill="url(#armor)" stroke="#41535d" stroke-width=".5"/>
+ <path d="M23 16 L40 14.7 L48 18 L29 18 Z" fill="#a9b9be"/>
+ <path d="M23 16 L29 18 L24 25.5 L19 25 Z" fill="#94a7ae"/>
+ <path d="M40 18 L48 18 L52 25 L45 27 L42 25 Z" fill="#3c5360"/>
+ <path d="M29 18 L40 17.7" stroke="#d3dcd7" stroke-width=".5"/>
+ <path d="M24 25.5 L43 25.3 L45 27 L24 27 Z" fill="#354c59" opacity=".5"/>
+ <path d="M45 17 L49 17.1 L50 20.5 L47 22 L44 21 Z" fill="url(#gun)" stroke="#40525d" stroke-width=".5"/>
+ <path d="M27 15.6 L28 14.3 L33 14.1 L34 15.1" fill="#8fa1a9" stroke="#445862" stroke-width=".4"/>
+</g>
+<g id="silver-crescent" transform="translate(-.7 2) scale(.94)">
+ <use href="#moon" transform="translate(.4 .5)" fill="#233540" stroke="#233540" stroke-width=".5"/>
+ <use href="#moon" fill="url(#silver)" stroke="#d5dfdb" stroke-width=".2"/>
+ <path d="M37.5 16.1 C34.8 16.1 33.3 18.4 34.2 20.7" fill="none" stroke="#fffff3" stroke-width=".45"/>
+</g>
+</g>
+</svg>

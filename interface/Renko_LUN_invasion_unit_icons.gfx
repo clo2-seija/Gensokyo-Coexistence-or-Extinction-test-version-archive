@@ -1,0 +1,82 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_unit_Renko_LUN_invasion_infantry_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/Renko_LUN_invasion_infantry_large.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_Renko_LUN_invasion_infantry_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/Renko_LUN_invasion_infantry_small.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_Renko_LUN_invasion_infantry_icon_small"
+		texturefile = "gfx/texticons/Renko_LUN_invasion_infantry_small.png"
+		noOfFrames = 2
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_Renko_LUN_invasion_medium_armor_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/Renko_LUN_invasion_medium_armor_large.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_Renko_LUN_invasion_medium_armor_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/Renko_LUN_invasion_medium_armor_small.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_Renko_LUN_invasion_medium_armor_icon_small"
+		texturefile = "gfx/texticons/Renko_LUN_invasion_medium_armor_small.png"
+		noOfFrames = 2
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_Renko_LUN_invasion_medium_tankdestroyer_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/Renko_LUN_invasion_medium_tankdestroyer_large.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_Renko_LUN_invasion_medium_tankdestroyer_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/Renko_LUN_invasion_medium_tankdestroyer_small.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_Renko_LUN_invasion_medium_tankdestroyer_icon_small"
+		texturefile = "gfx/texticons/Renko_LUN_invasion_medium_tankdestroyer_small.png"
+		noOfFrames = 2
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_Renko_LUN_invasion_medium_anti_air_support_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/Renko_LUN_invasion_medium_anti_air_support_large.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_Renko_LUN_invasion_medium_anti_air_support_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/Renko_LUN_invasion_medium_anti_air_support_small.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_Renko_LUN_invasion_medium_anti_air_support_icon_small"
+		texturefile = "gfx/texticons/Renko_LUN_invasion_medium_anti_air_support_small.png"
+		noOfFrames = 2
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_Renko_LUN_invasion_heavy_tankdestroyer_support_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/Renko_LUN_invasion_heavy_tankdestroyer_support_large.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_Renko_LUN_invasion_heavy_tankdestroyer_support_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/Renko_LUN_invasion_heavy_tankdestroyer_support_small.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_Renko_LUN_invasion_heavy_tankdestroyer_support_icon_small"
+		texturefile = "gfx/texticons/Renko_LUN_invasion_heavy_tankdestroyer_support_small.png"
+		noOfFrames = 2
+		legacy_lazy_load = no
+	}
+}

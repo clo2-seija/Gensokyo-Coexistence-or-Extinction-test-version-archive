@@ -3,6 +3,7 @@
 ######################
 
 mountaineer_generic = {
+	blocked_for = { LUN }
 	role = mountaineer
 
 	upgrade_prio = {

@@ -3753,22 +3753,23 @@ shou_progressbar_category={
 	
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# 月都 EASY：莲子的协助
+Renko_KYO_lunar_technology_category = {
+    Renko_KYO_arcane_decryption = {
+        icon = generic_military
+        cost = 0
+        fire_only_once = yes
+        priority = 100
+        available = { has_war_with = LUN }
+        complete_effect = {
+            custom_effect_tooltip = Renko_KYO_arcane_decryption_effect_tt
+            hidden_effect = {
+                set_technology = {
+                    Renko_LUN_invasion_units_tech = 1
+                    Renko_LUN_special_tank_modules_tech = 1
+                }
+            }
+        }
+        ai_will_do = { factor = 1000 }
+    }
+}

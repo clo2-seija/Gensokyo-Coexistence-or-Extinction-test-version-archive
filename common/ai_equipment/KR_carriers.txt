@@ -1,5 +1,6 @@
 # By Pelmen, 1.10.7
 naval_carrier = {
+	blocked_for = { LUN }
 	category = naval
 	#available_for = { ENG IMP GER USA WCA ACC APG JAP FRA NFA AST }
 	#blocked_for = {}

@@ -1,0 +1,20 @@
+Renko_LUN_lunar_administration_law = {
+    icon = 17
+    sound_effect = "Martial_Law_Interface_Autonomous_Occupation_Unique_DEM"
+    fallback_law = foreign_civilian_oversight
+    visible = {
+        original_tag = LUN
+    }
+    state_modifier = {
+        resistance_target = -0.30
+        compliance_gain = 0.50
+        required_garrison_factor = -0.50
+        local_factories = 0.50
+        local_resources = 0.30
+        local_supplies = 0.30
+        recruitable_population = 0.015
+    }
+    ai_will_do = {
+        base = 2000
+    }
+}

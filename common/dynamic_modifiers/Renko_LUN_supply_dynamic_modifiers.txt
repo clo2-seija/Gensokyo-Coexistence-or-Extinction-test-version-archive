@@ -1,0 +1,7 @@
+Renko_LUN_connects_sea_and_mountain_state_modifier = { # STATE MODIFIER
+    enable = { always = yes }
+
+    icon = GFX_modifiers_generic_supply
+
+    local_supplies = 50
+}

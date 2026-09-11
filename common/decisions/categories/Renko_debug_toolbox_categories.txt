@@ -1,0 +1,9 @@
+Renko_debug_toolbox_category = {
+    icon = decision_category_generic
+    priority = 1000
+    visible = {
+        is_debug = yes
+        is_ai = no
+    }
+    visible_when_empty = yes
+}

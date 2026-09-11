@@ -1,4 +1,5 @@
 generic_scout_plane = {
+	blocked_for = { LUN }
 	category = air
 
 	roles = {

@@ -1,4 +1,5 @@
 generic_cv_fighter = {
+	blocked_for = { LUN }
 	category = air
 
 	roles = {
