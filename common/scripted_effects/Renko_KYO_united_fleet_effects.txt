@@ -1,0 +1,13 @@
+# 国策或决议在追加变量奖励前调用；变量只在 KYO 新开局历史中初始化。
+Renko_KYO_add_or_modify_united_fleet = {
+    if = {
+        limit = {
+            NOT = { has_dynamic_modifier = { modifier = Renko_KYO_united_fleet_dm } }
+        }
+        custom_effect_tooltip = Renko_KYO_add_united_fleet_tt
+        hidden_effect = { add_dynamic_modifier = { modifier = Renko_KYO_united_fleet_dm } }
+    }
+    else = {
+        custom_effect_tooltip = Renko_KYO_modify_united_fleet_tt
+    }
+}

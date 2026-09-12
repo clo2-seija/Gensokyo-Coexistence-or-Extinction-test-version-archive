@@ -1,0 +1,1453 @@
+{
+  "schema": "Renko_moriya_naval_planner_v1",
+  "revision": "80299f8731733da2de62062780bc8fc1f82ee095",
+  "date": "2026-09-12",
+  "nodes": [
+    {
+      "id": "KYO_start_the_naval_plan",
+      "title": "海上幻想计划启动",
+      "x": 9,
+      "y": 0,
+      "cost": 6.0,
+      "parents": [
+        [
+          "KYO_the_reform_meeting"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "",
+      "status": "context",
+      "icon": "GFX_goal_unknown",
+      "summary": "【共同入口／范围参照】基础工期 42 天；前置为“妖怪军事重组”（本画布之外）。\n【直接效果】解锁战间期防空炮、基础防空炮与基础火控系统（interwar_antiair、antiair1、basic_fire_control_system）。\n【隐藏造舰效果】创建 Taihō Class（ship_hull_carrier_1）和 Kawachi Class（ship_hull_heavy_2）设计；分别添加 2 条生产线，共 4 条，每条请求 3 个船坞、初始进度 40%、建造 1 艘。不是即时获得 4 艘成品舰。生产条目 creator 写为 JAP，设计在当前作用域创建；是否能正确匹配需游戏内验证。具体模块保留在源码快照。\n【关联】这是守矢线、付丧神线及公共海军研发/船坞线的共同入口，本编辑器只展开守矢路线。未发现直接事件调用。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:14641",
+      "raw": "focus  = {\n\t\tid = KYO_start_the_naval_plan\n\t\ticon = GFX_goal_unknown\n\t\tcost = 6\n\n\t\trelative_position_id = KYO_the_reform_meeting\n\t\tx = 17\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_the_reform_meeting\n\t\t}\n\n\t\tai_will_do = { factor = 100 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\t\n\t\t\t\n\n\t\t\tset_technology = {\n\n\t\t\t\tinterwar_antiair = 1\n\n\t\t\t\tantiair1 = 1\n\n\t\t\t\tbasic_fire_control_system = 1\n\n\t\t\t}\n\t\n\t\n\t\t\t\thidden_effect = {\n\t\t\t\t\tcreate_equipment_variant = {\n\t\t\t\t\t\tname = \"Taihō Class\"\n\t\t\t\t\t\ttype = ship_hull_carrier_1\n\t\t\t\t\t\tname_group = JAP_CV_HISTORICAL\n\t\t\t\t\t\tparent_version = 0\n\t\t\t\t\t\tmodules = {\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tfixed_ship_anti_air_slot = ship_anti_air_2\n\t\t\t\t\t\t\tfixed_ship_radar_slot = empty\n\t\t\t\t\t\t\tfixed_ship_engine_slot = carrier_ship_engine_2\n\t\t\t\t\t\t\tfixed_ship_secondaries_slot = ship_secondaries_1\n\t\t\t\t\t\t\tfixed_ship_armor_slot = ship_armor_cruiser_2\n\t\t\t\t\t\t\tfront_1_custom_slot = ship_deck_space\n\t\t\t\t\t\t\tmid_1_custom_slot = ship_armor_carrier_deck\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t\tadd_equipment_production = {\n\t\t\t\t\t\tequipment = {\n\t\t\t\t\t\t\ttype = ship_hull_carrier_1\n\t\t\t\t\t\t\tcreator = \"JAP\"\n\t\t\t\t\t\t\tversion_name = \"Taihō Class\"\n\t\t\t\t\t\t}\n\t\t\t\t\t\trequested_factories = 3\n\t\t\t\t\t\tprogress = 0.4\n\t\t\t\t\t\tamount = 1\n\t\t\t\t\t}\n\t\t\t\t\tadd_equipment_production = {\n\t\t\t\t\t\tequipment = {\n\t\t\t\t\t\t\ttype = ship_hull_carrier_1\n\t\t\t\t\t\t\tcreator = \"JAP\"\n\t\t\t\t\t\t\tversion_name = \"Taihō Class\"\n\t\t\t\t\t\t}\n\t\t\t\t\t\trequested_factories = 3\n\t\t\t\t\t\tprogress = 0.4\n\t\t\t\t\t\tamount = 1\n\t\t\t\t\t}\n\t\t\t\t\tcreate_equipment_variant = {\n\t\t\t\t\t\tname = \"Kawachi Class\"\n\t\t\t\t\t\ttype = ship_hull_heavy_2\n\t\t\t\t\t\tname_group = JAP_PREFECTURES\n\t\t\t\t\t\tparent_version = 0\n\t\t\t\t\t\tmodules = {\n\t\t\t\t\t\t\tfixed_ship_battery_slot = ship_heavy_battery_2\n\t\t\t\t\t\t\tfixed_ship_anti_air_slot = ship_anti_air_2\n\t\t\t\t\t\t\tfixed_ship_fire_control_system_slot = ship_fire_control_system_1\n\t\t\t\t\t\t\tfixed_ship_radar_slot = empty\n\t\t\t\t\t\t\tfixed_ship_engine_slot = heavy_ship_engine_2\n\t\t\t\t\t\t\tfixed_ship_secondaries_slot = ship_secondaries_2\n\t\t\t\t\t\t\tfixed_ship_armor_slot = ship_armor_bb_2\n\t\t\t\t\t\t\tfront_1_custom_slot = empty\n\t\t\t\t\t\t\tmid_1_custom_slot = ship_anti_air_2\n\t\t\t\t\t\t\tmid_2_custom_slot = ship_airplane_launcher_1\n\t\t\t\t\t\t\trear_1_custom_slot = ship_heavy_battery_2\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t\tadd_equipment_production = {\n\t\t\t\t\t\tequipment = {\n\t\t\t\t\t\t\ttype = ship_hull_heavy_2\n\t\t\t\t\t\t\tcreator = \"JAP\"\n\t\t\t\t\t\t\tversion_name = \"Kawachi Class\"\n\t\t\t\t\t\t}\n\t\t\t\t\t\trequested_factories = 3\n\t\t\t\t\t\tprogress = 0.4\n\t\t\t\t\t\tamount = 1\n\t\t\t\t\t}\n\n\t\t\t\t\tadd_equipment_production = {\n\t\t\t\t\t\tequipment = {\n\t\t\t\t\t\t\ttype = ship_hull_heavy_2\n\t\t\t\t\t\t\tcreator = \"JAP\"\n\t\t\t\t\t\t\tversion_name = \"Kawachi Class\"\n\t\t\t\t\t\t}\n\t\t\t\t\t\trequested_factories = 3\n\t\t\t\t\t\tprogress = 0.4\n\t\t\t\t\t\tamount = 1\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_BONUS }\n\t}",
+      "originalRelative": {
+        "reference": "KYO_the_reform_meeting",
+        "x": 17.0,
+        "y": 1.0
+      }
+    },
+    {
+      "id": "KYO_Moriya_Shrine_ship",
+      "title": "守矢神社·神威舰计划",
+      "x": 5.0,
+      "y": 2.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_start_the_naval_plan"
+        ]
+      ],
+      "exclusive": [
+        "KYO_Tsukumogami_ship"
+      ],
+      "anchor": "KYO_start_the_naval_plan",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军经验 +25；2 次海军学说经验花费减免 50%。\n【关联决议】完成后显示“舰队权衡调整”决议分类（Shrine_navy_decision）。8 项决议每次各花费 50 政治点数，即时调整，30 天后可再次使用；AI 权重均为 0。无有效数值上下限，重复使用持续累加：\n• 强化运输能力（取舍）：部队运输船需求 +10%；袭击舰艇（naval_strike）：变量 -0.1（原 MOD 提示 -10%，实机作用待核验）。\n• 强化对舰打击（取舍）：袭击舰艇（naval_strike）：变量 +0.1（原 MOD 提示 +10%，实机作用待核验）；海军命中率 -10%。\n• 强化命中率（取舍）：海军命中率 +10%；舰载机出击效率 -10%。\n• 强化出击效率（取舍）：舰载机出击效率 +10%；舰队速度 -10%。\n• 强化舰队速度（取舍）：舰队速度 +10%；海军每日经验 -0.10/日（不是百分比）。\n• 强化经验获取（取舍）：海军每日经验 +0.10/日（不是百分比）；索敌速度（原 MOD 提示：发现率） -10%。\n• 强化发现率（取舍）：索敌速度（原 MOD 提示：发现率） +10%；反潜探测 -10%。\n• 强化反潜侦测（取舍）：反潜探测 +10%；部队运输船需求 -10%。\n【人物关联】设置全局旗标 recruit_moriyashrine，使神奈子与诹访子的职位可见。二人已在 KYO 开局历史中招募，此处不是凭空生成新人物。神奈子：5 级元帅、军事最高指挥部（150 政治点数）、政治顾问（150）、空军部长（200）；诹访子：4 级元帅、政治顾问（150）、军事最高指挥部（150）、海军部长（200）。顾问须另行任用，不能把顾问加成计作国策即时奖励；该全局旗标也被其他政治国策设置或清除，并非守矢海军路线独占。\n【隐藏效果】设置 KYO_Moriya_Shrine_ship_flag；当前检索未找到读取它的后续逻辑。入口本身不调用动态修正脚本；第一次完成后续强化国策或使用上述决议时才添加动态修正。\n【事件】未发现本入口直接触发事件或通过上述旗标触发事件。\n【注意】“强化运输能力（取舍）”实际使部队运输船需求 +10%，不是更省运输船。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:14925",
+      "raw": "focus = {\n\t\tid = KYO_Moriya_Shrine_ship\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_start_the_naval_plan\n\t\tx = -4\n\t\ty = 2\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_start_the_naval_plan\n\t\t}\n\t\tmutually_exclusive = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = { factor = 20 }\n\n\t\tcompletion_reward = {\n\n\t\t\tcustom_effect_tooltip = decision_unlocked_tt\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\tunlock_decision_category_tooltip = Shrine_navy_decision\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t\n\t\t\tnavy_experience = 25\n\n\t\t\tadd_doctrine_cost_reduction = {\n\t\t\t\tname = KYO_Moriya_Shrine_ship\n\t\t\t\tcategory = naval_doctrine\n\t\t\t\tcost_reduction = 0.5\n\t\t\t\tuses = 2\n\t\t\t}\n\t\t\tset_global_flag = recruit_moriyashrine\n\n\t\t#\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t#\tcustom_effect_tooltip = available_political_advisor\n\t\t#\tshow_unit_leaders_tooltip = gensokyo_kanako\n\t\t#\tshow_ideas_tooltip = gensokyo_kanako\n\n\t\t#\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t#\tcustom_effect_tooltip = available_political_advisor\n\t\t#\tshow_unit_leaders_tooltip = gensokyo_suwako\n\t\t#\tshow_ideas_tooltip = gensokyo_suwako\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_transport_capacity\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_naval_strike\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_naval_hit_chance\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_sortie_efficiency\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_naval_speed_factor\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_experience_gain_navy\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_spotting_chance\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_navy_sub_detection\n\t\t\thidden_effect = {\n\t\t\t\tset_country_flag = KYO_Moriya_Shrine_ship_flag\n\t\t\t}\n\t\t\t\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_start_the_naval_plan",
+        "x": -4.0,
+        "y": 2.0
+      }
+    },
+    {
+      "id": "KYO_side_with_Kanako",
+      "title": "立御柱而行：追随八坂神奈子",
+      "x": 4.0,
+      "y": 3.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_Moriya_Shrine_ship"
+        ]
+      ],
+      "exclusive": [
+        "KYO_side_with_Suwako"
+      ],
+      "anchor": "KYO_Moriya_Shrine_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】袭击舰艇（naval_strike）：变量 +0.1（原 MOD 提示 +10%，实机作用待核验）；舰队速度 +10%。\n【关联动态修正】调用 KYO_Shrine_navy_scripte，首次添加“守矢的舰队强化”，仅为尚不存在的变量初始化为 0；已有值保留。国策和 8 项取舍决议累加到同一组变量，未设置有效上限或下限。动态修正没有定时到期。\n【事件】未发现该国策直接触发事件，也未在 events 中发现本路线国策 ID 或守矢海军变量的事件引用。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:14990",
+      "raw": "focus = {\n\t\tid = KYO_side_with_Kanako\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Moriya_Shrine_ship\n\t\tx = -1\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Moriya_Shrine_ship\n\t\t}\n\t\tmutually_exclusive = {\n\t\t\tfocus = KYO_side_with_Suwako\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 }   # 工廠輸出 +5%\n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_speed_factor value = 0.1 } \n    \t\tKYO_Shrine_navy_scripte = yes  \t\t\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_speed_factor\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_Moriya_Shrine_ship",
+        "x": -1.0,
+        "y": 1.0
+      }
+    },
+    {
+      "id": "KYO_war_god_ship",
+      "title": "战神御座的舰队",
+      "x": 2.0,
+      "y": 4.0,
+      "cost": 6.0,
+      "parents": [
+        [
+          "KYO_side_with_Kanako"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_side_with_Kanako",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军命中率 +10%；袭击舰艇（naval_strike）：变量 +0.1（原 MOD 提示 +10%，实机作用待核验）。\n【关联动态修正】调用 KYO_Shrine_navy_scripte，首次添加“守矢的舰队强化”，仅为尚不存在的变量初始化为 0；已有值保留。国策和 8 项取舍决议累加到同一组变量，未设置有效上限或下限。动态修正没有定时到期。\n【事件】未发现该国策直接触发事件，也未在 events 中发现本路线国策 ID 或守矢海军变量的事件引用。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15023",
+      "raw": "focus = {\n\t\tid = KYO_war_god_ship\n\t\ticon = GFX_goal_unknown\n\t\tcost = 6\n\n\t\trelative_position_id = KYO_side_with_Kanako\n\t\tx = -2\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_side_with_Kanako\n\t\t}\n\n\t\tai_will_do = { factor = 20 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_hit_chance value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 }  \n    \t\tKYO_Shrine_navy_scripte = yes  \t\t\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_hit_chance\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_side_with_Kanako",
+        "x": -2.0,
+        "y": 1.0
+      }
+    },
+    {
+      "id": "KYO_control_weather",
+      "title": "祈风制雷：天候操控",
+      "x": 0.0,
+      "y": 5.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_war_god_ship"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_war_god_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】袭击舰艇（naval_strike）：变量 +0.1（原 MOD 提示 +10%，实机作用待核验）。\n【关联动态修正】调用 KYO_Shrine_navy_scripte，首次添加“守矢的舰队强化”，仅为尚不存在的变量初始化为 0；已有值保留。国策和 8 项取舍决议累加到同一组变量，未设置有效上限或下限。动态修正没有定时到期。\n【事件】未发现该国策直接触发事件，也未在 events 中发现本路线国策 ID 或守矢海军变量的事件引用。\n【名称与实现】当前只增加 naval_strike，没有天气修正或天候事件。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15052",
+      "raw": "focus = {\n\t\tid = KYO_control_weather\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_war_god_ship\n\t\tx = -2\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_war_god_ship\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 }  \n    \t\tKYO_Shrine_navy_scripte = yes  \t\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_war_god_ship",
+        "x": -2.0,
+        "y": 1.0
+      }
+    },
+    {
+      "id": "KYO_god_of_many_power",
+      "title": "万祇加持：多神权能合一",
+      "x": 4.0,
+      "y": 5.0,
+      "cost": 7.0,
+      "parents": [
+        [
+          "KYO_war_god_ship",
+          "KYO_ship_be_like_frog"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_war_god_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军每日经验 +0.10/日（不是百分比）；索敌速度（原 MOD 提示：发现率） +10%。\n【关联动态修正】调用 KYO_Shrine_navy_scripte，首次添加“守矢的舰队强化”，仅为尚不存在的变量初始化为 0；已有值保留。国策和 8 项取舍决议累加到同一组变量，未设置有效上限或下限。动态修正没有定时到期。\n【事件】未发现该国策直接触发事件，也未在 events 中发现本路线国策 ID 或守矢海军变量的事件引用。\n【提示差异】experience_gain_navy 是每日海军经验的固定增量；原 MOD 的“经验获取 +10%”提示不准确。\n【前置逻辑】“战神御座的舰队”或“蛙跃舰设计”完成任意一个即可；二者写在同一 prerequisite 块，属于或关系。两条互斥路线均可进入此节点。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15079",
+      "raw": "focus = {\n\t\tid = KYO_god_of_many_power\n\t\ticon = GFX_goal_unknown\n\t\tcost = 7\n\n\t\trelative_position_id = KYO_war_god_ship\n\t\tx = 2\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_war_god_ship\n\t\t\tfocus = KYO_ship_be_like_frog\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tadd_to_variable = { var = Shrine_navy_var_experience_gain_navy value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_spotting_chance value = 0.1 }  \n    \t\tKYO_Shrine_navy_scripte = yes  \t\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_experience_gain_navy\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_spotting_chance\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_war_god_ship",
+        "x": 2.0,
+        "y": 1.0
+      }
+    },
+    {
+      "id": "KYO_side_with_Suwako",
+      "title": "御蛙之道：追随泄矢诹访子",
+      "x": 6.0,
+      "y": 3.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_Moriya_Shrine_ship"
+        ]
+      ],
+      "exclusive": [
+        "KYO_side_with_Kanako"
+      ],
+      "anchor": "KYO_Moriya_Shrine_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】索敌速度（原 MOD 提示：发现率） +10%；反潜探测 +10%。\n【关联动态修正】调用 KYO_Shrine_navy_scripte，首次添加“守矢的舰队强化”，仅为尚不存在的变量初始化为 0；已有值保留。国策和 8 项取舍决议累加到同一组变量，未设置有效上限或下限。动态修正没有定时到期。\n【事件】未发现该国策直接触发事件，也未在 events 中发现本路线国策 ID 或守矢海军变量的事件引用。\n【AI】现有国策 ai_will_do.factor = 0。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15109",
+      "raw": "focus = {\n\t\tid = KYO_side_with_Suwako\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Moriya_Shrine_ship\n\t\tx = 1\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Moriya_Shrine_ship\n\t\t}\n\t\tmutually_exclusive = {\n\t\t\tfocus = KYO_side_with_Kanako\n\t\t}\n\n\t\tai_will_do = { factor = 0 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\t\n\t\t\tadd_to_variable = { var = Shrine_navy_var_spotting_chance value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_navy_submarine_detection_factor value = 0.1 } \n\t\t\t \n    \t\tKYO_Shrine_navy_scripte = yes \n\t\t\tcustom_effect_tooltip = shrine_navy_tt_spotting_chance\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_navy_sub_detection\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_Moriya_Shrine_ship",
+        "x": 1.0,
+        "y": 1.0
+      }
+    },
+    {
+      "id": "KYO_ship_be_like_frog",
+      "title": "蛙跃舰设计",
+      "x": 8.0,
+      "y": 4.0,
+      "cost": 6.0,
+      "parents": [
+        [
+          "KYO_side_with_Suwako"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_side_with_Suwako",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】反潜探测 +10%；袭击舰艇（naval_strike）：变量 +0.1（原 MOD 提示 +10%，实机作用待核验）。\n【关联动态修正】调用 KYO_Shrine_navy_scripte，首次添加“守矢的舰队强化”，仅为尚不存在的变量初始化为 0；已有值保留。国策和 8 项取舍决议累加到同一组变量，未设置有效上限或下限。动态修正没有定时到期。\n【事件】未发现该国策直接触发事件，也未在 events 中发现本路线国策 ID 或守矢海军变量的事件引用。\n【建造效果】两次随机选择本国拥有且控制的地区，各增加 1 建筑槽并立即建造 1 船坞；分别优先北九州（528）和山阳（529）。脚本未另加沿海或可建造限制，实际落点和能否落成须实机验证，不能保证固定落在两地。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15142",
+      "raw": "focus = {\n\t\tid = KYO_ship_be_like_frog\n\t\ticon = GFX_goal_unknown\n\t\tcost = 6\n\n\t\trelative_position_id = KYO_side_with_Suwako\n\t\tx = 2\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_side_with_Suwako\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\n\t\t\tadd_to_variable = { var = Shrine_navy_var_navy_submarine_detection_factor value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 } \n\t\t\t \n    \t\tKYO_Shrine_navy_scripte = yes \n\t\t\tcustom_effect_tooltip = shrine_navy_tt_navy_sub_detection\t\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\n\t\t\trandom_owned_controlled_state = {\n\t\t\t\tprioritize = { 528 } #North Kyushu\n\t\t\t\tadd_extra_state_shared_building_slots = 1\n\t\t\t\tadd_building_construction = {\n\t\t\t\t\ttype = dockyard\n\t\t\t\t\tlevel = 1\n\t\t\t\t\tinstant_build = yes\n\t\t\t\t}\n\t\t\t}\n\t\t\trandom_owned_controlled_state = {\n\t\t\t\tprioritize = { 529 } #San'yo\n\t\t\t\tadd_extra_state_shared_building_slots = 1\n\t\t\t\tadd_building_construction = {\n\t\t\t\t\ttype = dockyard\n\t\t\t\t\tlevel = 1\n\t\t\t\t\tinstant_build = yes\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_INDUSTRY\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_side_with_Suwako",
+        "x": 2.0,
+        "y": 1.0
+      }
+    },
+    {
+      "id": "KYO_god_of_many_children",
+      "title": "多子嗣之神的庇佑",
+      "x": 6.0,
+      "y": 5.0,
+      "cost": 7.0,
+      "parents": [
+        [
+          "KYO_ship_be_like_frog",
+          "KYO_war_god_ship"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_ship_be_like_frog",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】舰载机出击效率 +10%；部队运输船需求 -10%；舰队速度 +10%。\n【关联动态修正】调用 KYO_Shrine_navy_scripte，首次添加“守矢的舰队强化”，仅为尚不存在的变量初始化为 0；已有值保留。国策和 8 项取舍决议累加到同一组变量，未设置有效上限或下限。动态修正没有定时到期。\n【事件】未发现该国策直接触发事件，也未在 events 中发现本路线国策 ID 或守矢海军变量的事件引用。\n【提示差异】transport_capacity 的原版含义是“部队运输船需求”，越低越有利；这里脚本为 -0.1，原 MOD 却写“运输容量 +10%”。概述按脚本及原版词义记录，不把它算作运输容量增加。\n【前置逻辑】“战神御座的舰队”或“蛙跃舰设计”完成任意一个即可；二者写在同一 prerequisite 块，属于或关系。两条互斥路线均可进入此节点。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15190",
+      "raw": "focus = {\n\t\tid = KYO_god_of_many_children\n\t\ticon = GFX_goal_unknown\n\t\tcost = 7\n\t\tdynamic = yes\n\n\t\trelative_position_id = KYO_ship_be_like_frog\n\t\tx = -2\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_ship_be_like_frog \n\t\t\tfocus = KYO_war_god_ship\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\n\t\t\tadd_to_variable = { var = Shrine_navy_var_sortie_efficiency value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_transport_capacity value = -0.1 }  \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_speed_factor value = 0.1 } \n    \t\tKYO_Shrine_navy_scripte = yes \n\t\t\tcustom_effect_tooltip = shrine_navy_tt_sortie_efficiency\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_transport_capacity\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_speed_factor\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_ship_be_like_frog",
+        "x": -2.0,
+        "y": 1.0
+      }
+    },
+    {
+      "id": "KYO_frog_power",
+      "title": "蛙神神威显现",
+      "x": 10.0,
+      "y": 5.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_ship_be_like_frog"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_ship_be_like_frog",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】舰载机出击效率 +10%；袭击舰艇（naval_strike）：变量 +0.1（原 MOD 提示 +10%，实机作用待核验）。\n【关联动态修正】调用 KYO_Shrine_navy_scripte，首次添加“守矢的舰队强化”，仅为尚不存在的变量初始化为 0；已有值保留。国策和 8 项取舍决议累加到同一组变量，未设置有效上限或下限。动态修正没有定时到期。\n【事件】未发现该国策直接触发事件，也未在 events 中发现本路线国策 ID 或守矢海军变量的事件引用。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15223",
+      "raw": "focus = {\n\t\tid = KYO_frog_power\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_ship_be_like_frog\n\t\tx = 2\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_ship_be_like_frog\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tadd_to_variable = { var = Shrine_navy_var_sortie_efficiency value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 }  \n    \t\tKYO_Shrine_navy_scripte = yes \n\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_sortie_efficiency\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_ship_be_like_frog",
+        "x": 2.0,
+        "y": 1.0
+      }
+    },
+    {
+      "id": "KYO_shrine_power",
+      "title": "守矢二柱·神威全开",
+      "x": 5.0,
+      "y": 6.0,
+      "cost": 7.0,
+      "parents": [
+        [
+          "KYO_god_of_many_power"
+        ],
+        [
+          "KYO_god_of_many_children"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_god_of_many_power",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】舰载机出击效率 +10%；袭击舰艇（naval_strike）：变量 +0.1（原 MOD 提示 +10%，实机作用待核验）；部队运输船需求 -10%；海军每日经验 +0.10/日（不是百分比）；索敌速度（原 MOD 提示：发现率） +10%；海军命中率 +10%；反潜探测 +10%；舰队速度 +10%。\n【关联动态修正】调用 KYO_Shrine_navy_scripte，首次添加“守矢的舰队强化”，仅为尚不存在的变量初始化为 0；已有值保留。国策和 8 项取舍决议累加到同一组变量，未设置有效上限或下限。动态修正没有定时到期。\n【事件】未发现该国策直接触发事件，也未在 events 中发现本路线国策 ID 或守矢海军变量的事件引用。\n【提示差异】experience_gain_navy 是每日海军经验的固定增量；原 MOD 的“经验获取 +10%”提示不准确。\n【提示差异】transport_capacity 的原版含义是“部队运输船需求”，越低越有利；这里脚本为 -0.1，原 MOD 却写“运输容量 +10%”。概述按脚本及原版词义记录，不把它算作运输容量增加。\n【前置逻辑】必须同时完成“万祇加持：多神权能合一”和“多子嗣之神的庇佑”（两个 prerequisite 块，为且关系）。不要求“祈风制雷”或“蛙神神威显现”。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15253",
+      "raw": "focus = {\n\t\tid = KYO_shrine_power\n\t\ticon = GFX_goal_unknown\n\t\tcost = 7\n\n\t\trelative_position_id = KYO_god_of_many_power\n\t\tx = 1\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_god_of_many_power\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_god_of_many_children\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\n\t\t\tadd_to_variable = { var = Shrine_navy_var_sortie_efficiency value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 }  \n\t\t\tadd_to_variable = { var = Shrine_navy_var_transport_capacity value = -0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_experience_gain_navy value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_spotting_chance value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_hit_chance value = 0.1 }  \n\t\t\tadd_to_variable = { var = Shrine_navy_var_navy_submarine_detection_factor value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_speed_factor value = 0.1 } \n\n\t\t\tKYO_Shrine_navy_scripte = yes \n\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_transport_capacity\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_hit_chance\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_sortie_efficiency\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_speed_factor\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_experience_gain_navy\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_spotting_chance\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_navy_sub_detection\n\t\t\t\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_god_of_many_power",
+        "x": 1.0,
+        "y": 1.0
+      }
+    },
+    {
+      "id": "KYO_Tsukumogami_ship",
+      "title": "百器夜行：与付丧神的合作",
+      "x": 12.0,
+      "y": 2.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_start_the_naval_plan"
+        ]
+      ],
+      "exclusive": [
+        "KYO_Moriya_Shrine_ship"
+      ],
+      "anchor": "KYO_start_the_naval_plan",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军经验 +75；水雷科技 1 次 +100% 研究加成；海军学说 1 次经验花费减免 50%。立即获得“付丧神之军器”：科研速度 +5%，步兵装备造价 -5%、软攻与硬攻各 +5%、防御 +10%。这个基础精神当前主要是科研与步兵收益。\n【关联决议】显示“付丧神・调律专案”，包含小伞、雷鼓、弁弁、八桥、秦心、针妙丸的 6 对启用／停用决议，共 12 项。各对需要完成对应人物国策后才能使用，每次启用或停用均花费 10 政治点数；精神不会由人物国策自动发放。各精神未设置彼此互斥，可以并存，代价也随之叠加。每项具体收益和代价见对应国策概述及关联资料。\n【事件】未发现直接事件调用；本路线国策 ID 和关联精神 ID 在 events 中未找到引用。装备类别加成按源码登记，不代表已实机验证。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15351",
+      "raw": "focus = {\n\t\tid = KYO_Tsukumogami_ship\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_start_the_naval_plan\n\t\tx = 3\n\t\ty = 2\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_start_the_naval_plan\n\t\t}\n\t\tmutually_exclusive = {\n\t\t\tfocus =  KYO_Moriya_Shrine_ship\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\n\t\t\t\n\n\t\t\tadd_ideas = KYO_Tsukumogami_idea\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\n\t\t\tunlock_decision_category_tooltip = Tsukumogami_ship_decision\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt \n\t\t\t\n\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_Tsukumogami_ship\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 1\n\t\t\t\tcategory = naval_mines\n\t\t\t}\n\t\t\tnavy_experience = 75\n\t\t\t\n\t\t\tadd_doctrine_cost_reduction = {\n\t\t\t\tname = KYO_Tsukumogami_ship\n\t\t\t\tcategory = naval_doctrine\n\t\t\t\tcost_reduction = 0.5\n\t\t\t\tuses = 1\n\t\t\t}\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_start_the_naval_plan",
+        "x": 3.0,
+        "y": 2.0
+      },
+      "route": "tsukumogami"
+    },
+    {
+      "id": "KYO_reiko_beat",
+      "title": "让人不自觉跳动的雷鼓",
+      "x": 12.0,
+      "y": 5.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_Tsukumogami_ship"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_Tsukumogami_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军经验 +15；驱逐舰科技 2 次 +100% 研究加成。\n【关联决议与精神】解锁“启用：雷鼓·节拍工学”及对应停用决议；启用、停用各花费 10 政治点数。启用后获得“堀川雷鼓的节拍工学”：生产效率上限 +50%、生产效率增长 +100%、军工和船坞产出各 +50%；代价为每日政治点数消耗 +1、政治点数获取 -50%、生活消费品工厂系数 +50%。装备加成按脚本类别：战列舰（mio_cat_eq_all_battleship）及驱逐舰（mio_cat_eq_all_destroyer）造价各 -50%。 停用时移除该精神。各人物精神可并存；days_re_enable = -1，重复切换表现待实机验证。\n【人物】原脚本的顾问显示／招募提示段落已被注释，不计作现行国策奖励。\n【事件】未发现直接事件调用；本路线国策 ID 和关联精神 ID 在 events 中未找到引用。装备类别加成按源码登记，不代表已实机验证。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15403",
+      "raw": "focus = {\n\t\tid = KYO_reiko_beat\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 0\n\t\ty = 3\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_reiko_beat\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 2\n\t\t\t\tcategory = dd_tech\n\t\t\t}\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_reiko\n\t\t\t# show_ideas_tooltip = gensokyo_reiko\n\t\t\t# set_global_flag = recruit_gensokyo_reiko\n\n\t\t\t\n\t\t\t\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_Tsukumogami_ship",
+        "x": 0.0,
+        "y": 3.0
+      },
+      "route": "tsukumogami"
+    },
+    {
+      "id": "KYO_kokoro_ways",
+      "title": "能够控制群众情感的秦心",
+      "x": 15.0,
+      "y": 3.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_Tsukumogami_ship"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_Tsukumogami_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军经验 +15；航母科技 2 次 +100% 研究加成；一次性人力 +500000。\n【关联决议与精神】解锁“启用：秦心·面灵气”及对应停用决议；启用、停用各花费 10 政治点数。启用后获得“秦心的面灵气”：军工厂、民用工厂和陆上要塞建造速度各 +50%；每周人力 -10000。 停用时移除该精神。各人物精神可并存；days_re_enable = -1，重复切换表现待实机验证。\n【人物】原脚本的顾问显示／招募提示段落已被注释，不计作现行国策奖励。\n【事件】未发现直接事件调用；本路线国策 ID 和关联精神 ID 在 events 中未找到引用。装备类别加成按源码登记，不代表已实机验证。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15446",
+      "raw": "focus = {\n\t\tid = KYO_kokoro_ways\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 3\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = {\n\t\t\tfactor = 5\n\t\t\tmodifier = {\n\t\t\t\tfactor = 10\n\t\t\t\tthreat > 0.50\n\t\t\t}\n\t\t}\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_kokoro_ways\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 2\n\t\t\t\tcategory = cv_tech\n\t\t\t}\n\n\t\t\tadd_manpower = 500000\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_kokoro\n\t\t\t# show_ideas_tooltip = gensokyo_kokoro\n\t\t\t# set_global_flag = recruit_gensokyo_kokoro\n\n\t\t\t\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_MANPOWER\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_Tsukumogami_ship",
+        "x": 3.0,
+        "y": 1.0
+      },
+      "route": "tsukumogami"
+    },
+    {
+      "id": "KYO_benben_strong",
+      "title": "自称最强付丧神的弁弁",
+      "x": 13.0,
+      "y": 4.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_Tsukumogami_ship"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_Tsukumogami_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军经验 +15；潜艇科技与鱼雷科技各 1 次 +100% 研究加成。\n【关联决议与精神】解锁“启用：弁弁·琵琶声学”及对应停用决议；启用、停用各花费 10 政治点数。启用后获得“九十九弁弁的琵琶声学”：每周稳定度和战争支持度各 +5 个百分点；建筑建造速度 -50%、本地资源 -50%。潜艇（submarine）和巡洋舰（mio_cat_eq_all_cruiser）造价各 -50%。 停用时移除该精神。各人物精神可并存；days_re_enable = -1，重复切换表现待实机验证。\n【人物】原脚本的顾问显示／招募提示段落已被注释，不计作现行国策奖励。\n【事件】未发现直接事件调用；本路线国策 ID 和关联精神 ID 在 events 中未找到引用。装备类别加成按源码登记，不代表已实机验证。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15497",
+      "raw": "focus = {\n\t\tid = KYO_benben_strong\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 1\n\t\ty = 2\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = { factor = 1 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_benben_strong\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 1\n\t\t\t\tcategory = ss_tech\n\t\t\t}\n\t\t\t\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_benben_strong\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 1\n\t\t\t\tcategory = cat_torpedoes\n\t\t\t}\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_benben\n\t\t\t# show_ideas_tooltip = gensokyo_benben\n\t\t\t# set_global_flag = recruit_gensokyo_benben\n\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_Tsukumogami_ship",
+        "x": 1.0,
+        "y": 2.0
+      },
+      "route": "tsukumogami"
+    },
+    {
+      "id": "KYO_yatsuhashi_wish",
+      "title": "充满希望的付丧神八桥",
+      "x": 17.0,
+      "y": 4.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_Tsukumogami_ship"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_Tsukumogami_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军经验 +15；战列舰科技 2 次 +100% 研究加成。\n【关联决议与精神】解锁“启用：八桥·筝韵结构”及对应停用决议；启用、停用各花费 10 政治点数。启用后获得“九十九八桥的筝韵结构”：建筑建造速度和船坞产出各 +99%，工业企业顾问花费 -50%。代价：轻／中／重坦、步兵装备、支援装备造价均 +199%；可靠性分别 -20%／-20%／-40%／-20%／-15%；轻／中／重坦装甲分别 -5%／-10%／-10%。装备类别命中范围需实机核验。 停用时移除该精神。各人物精神可并存；days_re_enable = -1，重复切换表现待实机验证。\n【人物】原脚本的顾问显示／招募提示段落已被注释，不计作现行国策奖励。\n【事件】未发现直接事件调用；本路线国策 ID 和关联精神 ID 在 events 中未找到引用。装备类别加成按源码登记，不代表已实机验证。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15548",
+      "raw": "focus = {\n\t\tid = KYO_yatsuhashi_wish\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 5\n\t\ty = 2\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = {\n\t\t\tfactor = 5\n\t\t\tmodifier = {\n\t\t\t\tfactor = 10\n\t\t\t\tthreat > 0.50\n\t\t\t}\n\t\t}\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_yatsuhashi_wish\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 2\n\t\t\t\tcategory = bb_tech\n\t\t\t}\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_yatsuhashi\n\t\t\t# show_ideas_tooltip = gensokyo_yatsuhashi\n\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_Tsukumogami_ship",
+        "x": 5.0,
+        "y": 2.0
+      },
+      "route": "tsukumogami"
+    },
+    {
+      "id": "KYO_kogasa_iron",
+      "title": "永远吓不到人的小伞",
+      "x": 18.0,
+      "y": 5.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_Tsukumogami_ship"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_Tsukumogami_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军经验 +15。若未完成鱼雷巡洋舰特别项目，则直接完成该项目并给巡洋舰科技 1 次 +100% 研究加成；若已完成，则给巡洋舰科技 2 次 +75% 研究加成。随后创建 Ōyodo Class 鱼雷巡洋舰设计，未直接给成品舰或生产线。特别项目关联鱼雷巡洋舰装备解锁；有 Man the Guns 时还有 1 次免费设计奖励，具体项目完成结算和 DLC 差异待实机核验。\n【关联决议与精神】解锁“启用：小伞·惊吓灵感”及对应停用决议；启用、停用各花费 10 政治点数。启用后获得“多多良小伞的惊吓灵感”：科研速度 +25%；每周人力 -5000，每周稳定度和战争支持度各 -5 个百分点。潜艇（submarine）造价 -30%、可靠性 +10%、水面可见度 -15%、水下可见度 -10%。 停用时移除该精神。各人物精神可并存；days_re_enable = -1，重复切换表现待实机验证。\n【人物】原脚本的顾问显示／招募提示段落已被注释，不计作现行国策奖励。\n【事件】未发现直接事件调用；本路线国策 ID 和关联精神 ID 在 events 中未找到引用。装备类别加成按源码登记，不代表已实机验证。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15595",
+      "raw": "focus = {\n\t\tid = KYO_kogasa_iron\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 6\n\t\ty = 3\n\n\t\tavailable = {\n\t\t\t\n\t\t}\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = { factor = 1 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tif = {\n\t\t\t\tlimit = { NOT = { is_special_project_completed = sp:sp_naval_torpedo_cruiser } }\n\t\t\t\t\n\t\t\t\tcomplete_special_project = {\n\t\t\t\t\tproject = sp:sp_naval_torpedo_cruiser\n\t\t\t\t\tshow_modifiers = no\n\t\t\t\t}\n\t\t\t\tadd_tech_bonus = {\n\t\t\t\t\tname = KYO_kogasa_iron\n\t\t\t\t\tbonus = 1\n\t\t\t\t\tuses = 1\n\t\t\t\t\t\n\t\t\t\t\tcategory = ca_tech\n\t\t\t\t}\n\t\t\t}\n\t\t\telse = {\n\t\t\t\tadd_tech_bonus = {\n\t\t\t\t\tname = KYO_kogasa_iron\n\t\t\t\t\tbonus = 0.75\n\t\t\t\t\tuses = 2\n\t\t\t\t\t\n\t\t\t\t\tcategory = ca_tech\n\t\t\t\t}\n\t\t\t}\n\t\t\t\n\t\t\tcreate_equipment_variant = {\n\n\t\t\t\t\tname = \"Ōyodo Class\"\n\t\t\t\t\ttype = ship_hull_torpedo_cruiser\n\t\t\t\t\t\n\t\t\t\t\tparent_version = 0\n\t\t\t\t\tmodules = {\n\t\t\t\t\t\tfixed_ship_battery_slot = ship_light_medium_battery_2\n\t\t\t\t\t\tfixed_ship_anti_air_slot = ship_anti_air_2\n\t\t\t\t\t\tfixed_ship_fire_control_system_slot = ship_fire_control_system_0\n\t\t\t\t\t\tfixed_ship_radar_slot = empty\n\t\t\t\t\t\tfixed_ship_engine_slot = cruiser_ship_engine_2\n\t\t\t\t\t\tfixed_ship_secondaries_slot = empty\n\t\t\t\t\t\tfixed_ship_armor_slot = ship_armor_cruiser_2\n\t\t\t\t\t\tfront_1_custom_slot = ship_anti_air_2\n\t\t\t\t\t\tmid_1_custom_slot = ship_torpedo_2\n\t\t\t\t\t\tmid_2_custom_slot = ship_torpedo_2\n\t\t\t\t\t\trear_1_custom_slot = ship_torpedo_2\n\t\t\t\t\t\trear_2_custom_slot = ship_anti_air_2\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t# custom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_kogasa\n\t\t\t# show_ideas_tooltip = gensokyo_kogasa\n\n\t\t\t\n\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_Tsukumogami_ship",
+        "x": 6.0,
+        "y": 3.0
+      },
+      "route": "tsukumogami"
+    },
+    {
+      "id": "KYO_shinmyoumaru_mallet",
+      "title": "付丧神的能力来源万宝槌的持有者针妙丸",
+      "x": 15.0,
+      "y": 6.0,
+      "cost": 4.0,
+      "parents": [
+        [
+          "KYO_reiko_beat"
+        ],
+        [
+          "KYO_benben_strong"
+        ],
+        [
+          "KYO_kokoro_ways"
+        ],
+        [
+          "KYO_yatsuhashi_wish"
+        ],
+        [
+          "KYO_kogasa_iron"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_Tsukumogami_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军经验 +15；战列舰科技 2 次 +100% 研究加成。研究加成名称键仍引用八桥国策，但类别和次数按当前脚本记录。\n【关联决议与精神】解锁“启用：针妙丸·万宝槌”及对应停用决议；启用、停用各花费 10 政治点数。启用后获得“少名针妙丸的万宝槌”：稳定度和战争支持度各 +15%；陆军攻防和速度各 +10%；陆军经验获取百分比 +20%，海空经验获取百分比各 +50%，经验损失 -25%。代价：每周人力 -3000、陆军训练时间 +100%、每日指挥点数获取 -0.50、指挥点数上限 -50、每日政治点数消耗 +0.25、每日陆军经验 -0.50、生活消费品工厂系数 +20%、适役人口系数 -30%、每月人口增长 -50%；每周伤亡／轰炸／运输船损失对应的战争支持度修正各 -0.01（按原字段记录，表现待实机验证）。 停用时移除该精神。各人物精神可并存；days_re_enable = -1，重复切换表现待实机验证。\n【人物】原脚本的顾问显示／招募提示段落已被注释，不计作现行国策奖励。\n【前置】雷鼓、弁弁、秦心、八桥、小伞五项国策全部完成才可进入（五个独立前置组）。\n【事件】未发现直接事件调用；本路线国策 ID 和关联精神 ID 在 events 中未找到引用。装备类别加成按源码登记，不代表已实机验证。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15682",
+      "raw": "focus = {\n\t\tid = KYO_shinmyoumaru_mallet\n\t\ticon = GFX_goal_unknown\n\t\tcost = 4\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 3\n\t\ty = 4\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_reiko_beat\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_benben_strong\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_kokoro_ways\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_yatsuhashi_wish\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_kogasa_iron\n\t\t}\n\n\t\tai_will_do = {\n\t\t\tfactor = 5\n\t\t\tmodifier = {\n\t\t\t\tfactor = 10\n\t\t\t\tthreat > 0.50\n\t\t\t}\n\t\t}\n\n\t\tcompletion_reward = {\n\t\t\t\n\n\t\t\tnavy_experience = 15\n\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_yatsuhashi_wish\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 2\n\t\t\t\tcategory = bb_tech\n\t\t\t}\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_shinmyoumaru\n\t\t\t# show_ideas_tooltip = gensokyo_shinmyoumaru\n\t\t\t# set_global_flag = recruit_gensokyo_shinmyoumaru\n\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_Tsukumogami_ship",
+        "x": 3.0,
+        "y": 4.0
+      },
+      "route": "tsukumogami"
+    }
+  ],
+  "baseline": [
+    {
+      "id": "KYO_start_the_naval_plan",
+      "title": "海上幻想计划启动",
+      "x": 9,
+      "y": 0,
+      "cost": 6.0,
+      "parents": [
+        [
+          "KYO_the_reform_meeting"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "",
+      "status": "context",
+      "icon": "GFX_goal_unknown",
+      "summary": "【共同入口／范围参照】基础工期 42 天；前置为“妖怪军事重组”（本画布之外）。\n【直接效果】解锁战间期防空炮、基础防空炮与基础火控系统（interwar_antiair、antiair1、basic_fire_control_system）。\n【隐藏造舰效果】创建 Taihō Class（ship_hull_carrier_1）和 Kawachi Class（ship_hull_heavy_2）设计；分别添加 2 条生产线，共 4 条，每条请求 3 个船坞、初始进度 40%、建造 1 艘。不是即时获得 4 艘成品舰。生产条目 creator 写为 JAP，设计在当前作用域创建；是否能正确匹配需游戏内验证。具体模块保留在源码快照。\n【关联】这是守矢线、付丧神线及公共海军研发/船坞线的共同入口，本编辑器只展开守矢路线。未发现直接事件调用。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:14641",
+      "raw": "focus  = {\n\t\tid = KYO_start_the_naval_plan\n\t\ticon = GFX_goal_unknown\n\t\tcost = 6\n\n\t\trelative_position_id = KYO_the_reform_meeting\n\t\tx = 17\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_the_reform_meeting\n\t\t}\n\n\t\tai_will_do = { factor = 100 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\t\n\t\t\t\n\n\t\t\tset_technology = {\n\n\t\t\t\tinterwar_antiair = 1\n\n\t\t\t\tantiair1 = 1\n\n\t\t\t\tbasic_fire_control_system = 1\n\n\t\t\t}\n\t\n\t\n\t\t\t\thidden_effect = {\n\t\t\t\t\tcreate_equipment_variant = {\n\t\t\t\t\t\tname = \"Taihō Class\"\n\t\t\t\t\t\ttype = ship_hull_carrier_1\n\t\t\t\t\t\tname_group = JAP_CV_HISTORICAL\n\t\t\t\t\t\tparent_version = 0\n\t\t\t\t\t\tmodules = {\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tfixed_ship_anti_air_slot = ship_anti_air_2\n\t\t\t\t\t\t\tfixed_ship_radar_slot = empty\n\t\t\t\t\t\t\tfixed_ship_engine_slot = carrier_ship_engine_2\n\t\t\t\t\t\t\tfixed_ship_secondaries_slot = ship_secondaries_1\n\t\t\t\t\t\t\tfixed_ship_armor_slot = ship_armor_cruiser_2\n\t\t\t\t\t\t\tfront_1_custom_slot = ship_deck_space\n\t\t\t\t\t\t\tmid_1_custom_slot = ship_armor_carrier_deck\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t\tadd_equipment_production = {\n\t\t\t\t\t\tequipment = {\n\t\t\t\t\t\t\ttype = ship_hull_carrier_1\n\t\t\t\t\t\t\tcreator = \"JAP\"\n\t\t\t\t\t\t\tversion_name = \"Taihō Class\"\n\t\t\t\t\t\t}\n\t\t\t\t\t\trequested_factories = 3\n\t\t\t\t\t\tprogress = 0.4\n\t\t\t\t\t\tamount = 1\n\t\t\t\t\t}\n\t\t\t\t\tadd_equipment_production = {\n\t\t\t\t\t\tequipment = {\n\t\t\t\t\t\t\ttype = ship_hull_carrier_1\n\t\t\t\t\t\t\tcreator = \"JAP\"\n\t\t\t\t\t\t\tversion_name = \"Taihō Class\"\n\t\t\t\t\t\t}\n\t\t\t\t\t\trequested_factories = 3\n\t\t\t\t\t\tprogress = 0.4\n\t\t\t\t\t\tamount = 1\n\t\t\t\t\t}\n\t\t\t\t\tcreate_equipment_variant = {\n\t\t\t\t\t\tname = \"Kawachi Class\"\n\t\t\t\t\t\ttype = ship_hull_heavy_2\n\t\t\t\t\t\tname_group = JAP_PREFECTURES\n\t\t\t\t\t\tparent_version = 0\n\t\t\t\t\t\tmodules = {\n\t\t\t\t\t\t\tfixed_ship_battery_slot = ship_heavy_battery_2\n\t\t\t\t\t\t\tfixed_ship_anti_air_slot = ship_anti_air_2\n\t\t\t\t\t\t\tfixed_ship_fire_control_system_slot = ship_fire_control_system_1\n\t\t\t\t\t\t\tfixed_ship_radar_slot = empty\n\t\t\t\t\t\t\tfixed_ship_engine_slot = heavy_ship_engine_2\n\t\t\t\t\t\t\tfixed_ship_secondaries_slot = ship_secondaries_2\n\t\t\t\t\t\t\tfixed_ship_armor_slot = ship_armor_bb_2\n\t\t\t\t\t\t\tfront_1_custom_slot = empty\n\t\t\t\t\t\t\tmid_1_custom_slot = ship_anti_air_2\n\t\t\t\t\t\t\tmid_2_custom_slot = ship_airplane_launcher_1\n\t\t\t\t\t\t\trear_1_custom_slot = ship_heavy_battery_2\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t\tadd_equipment_production = {\n\t\t\t\t\t\tequipment = {\n\t\t\t\t\t\t\ttype = ship_hull_heavy_2\n\t\t\t\t\t\t\tcreator = \"JAP\"\n\t\t\t\t\t\t\tversion_name = \"Kawachi Class\"\n\t\t\t\t\t\t}\n\t\t\t\t\t\trequested_factories = 3\n\t\t\t\t\t\tprogress = 0.4\n\t\t\t\t\t\tamount = 1\n\t\t\t\t\t}\n\n\t\t\t\t\tadd_equipment_production = {\n\t\t\t\t\t\tequipment = {\n\t\t\t\t\t\t\ttype = ship_hull_heavy_2\n\t\t\t\t\t\t\tcreator = \"JAP\"\n\t\t\t\t\t\t\tversion_name = \"Kawachi Class\"\n\t\t\t\t\t\t}\n\t\t\t\t\t\trequested_factories = 3\n\t\t\t\t\t\tprogress = 0.4\n\t\t\t\t\t\tamount = 1\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_BONUS }\n\t}",
+      "originalRelative": {
+        "reference": "KYO_the_reform_meeting",
+        "x": 17.0,
+        "y": 1.0
+      }
+    },
+    {
+      "id": "KYO_Moriya_Shrine_ship",
+      "title": "守矢神社·神威舰计划",
+      "x": 5.0,
+      "y": 2.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_start_the_naval_plan"
+        ]
+      ],
+      "exclusive": [
+        "KYO_Tsukumogami_ship"
+      ],
+      "anchor": "KYO_start_the_naval_plan",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军经验 +25；2 次海军学说经验花费减免 50%。\n【关联决议】完成后显示“舰队权衡调整”决议分类（Shrine_navy_decision）。8 项决议每次各花费 50 政治点数，即时调整，30 天后可再次使用；AI 权重均为 0。无有效数值上下限，重复使用持续累加：\n• 强化运输能力（取舍）：部队运输船需求 +10%；袭击舰艇（naval_strike）：变量 -0.1（原 MOD 提示 -10%，实机作用待核验）。\n• 强化对舰打击（取舍）：袭击舰艇（naval_strike）：变量 +0.1（原 MOD 提示 +10%，实机作用待核验）；海军命中率 -10%。\n• 强化命中率（取舍）：海军命中率 +10%；舰载机出击效率 -10%。\n• 强化出击效率（取舍）：舰载机出击效率 +10%；舰队速度 -10%。\n• 强化舰队速度（取舍）：舰队速度 +10%；海军每日经验 -0.10/日（不是百分比）。\n• 强化经验获取（取舍）：海军每日经验 +0.10/日（不是百分比）；索敌速度（原 MOD 提示：发现率） -10%。\n• 强化发现率（取舍）：索敌速度（原 MOD 提示：发现率） +10%；反潜探测 -10%。\n• 强化反潜侦测（取舍）：反潜探测 +10%；部队运输船需求 -10%。\n【人物关联】设置全局旗标 recruit_moriyashrine，使神奈子与诹访子的职位可见。二人已在 KYO 开局历史中招募，此处不是凭空生成新人物。神奈子：5 级元帅、军事最高指挥部（150 政治点数）、政治顾问（150）、空军部长（200）；诹访子：4 级元帅、政治顾问（150）、军事最高指挥部（150）、海军部长（200）。顾问须另行任用，不能把顾问加成计作国策即时奖励；该全局旗标也被其他政治国策设置或清除，并非守矢海军路线独占。\n【隐藏效果】设置 KYO_Moriya_Shrine_ship_flag；当前检索未找到读取它的后续逻辑。入口本身不调用动态修正脚本；第一次完成后续强化国策或使用上述决议时才添加动态修正。\n【事件】未发现本入口直接触发事件或通过上述旗标触发事件。\n【注意】“强化运输能力（取舍）”实际使部队运输船需求 +10%，不是更省运输船。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:14925",
+      "raw": "focus = {\n\t\tid = KYO_Moriya_Shrine_ship\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_start_the_naval_plan\n\t\tx = -4\n\t\ty = 2\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_start_the_naval_plan\n\t\t}\n\t\tmutually_exclusive = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = { factor = 20 }\n\n\t\tcompletion_reward = {\n\n\t\t\tcustom_effect_tooltip = decision_unlocked_tt\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\tunlock_decision_category_tooltip = Shrine_navy_decision\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t\n\t\t\tnavy_experience = 25\n\n\t\t\tadd_doctrine_cost_reduction = {\n\t\t\t\tname = KYO_Moriya_Shrine_ship\n\t\t\t\tcategory = naval_doctrine\n\t\t\t\tcost_reduction = 0.5\n\t\t\t\tuses = 2\n\t\t\t}\n\t\t\tset_global_flag = recruit_moriyashrine\n\n\t\t#\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t#\tcustom_effect_tooltip = available_political_advisor\n\t\t#\tshow_unit_leaders_tooltip = gensokyo_kanako\n\t\t#\tshow_ideas_tooltip = gensokyo_kanako\n\n\t\t#\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t#\tcustom_effect_tooltip = available_political_advisor\n\t\t#\tshow_unit_leaders_tooltip = gensokyo_suwako\n\t\t#\tshow_ideas_tooltip = gensokyo_suwako\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_transport_capacity\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_naval_strike\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_naval_hit_chance\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_sortie_efficiency\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_naval_speed_factor\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_experience_gain_navy\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_spotting_chance\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_navy_sub_detection\n\t\t\thidden_effect = {\n\t\t\t\tset_country_flag = KYO_Moriya_Shrine_ship_flag\n\t\t\t}\n\t\t\t\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_start_the_naval_plan",
+        "x": -4.0,
+        "y": 2.0
+      }
+    },
+    {
+      "id": "KYO_side_with_Kanako",
+      "title": "立御柱而行：追随八坂神奈子",
+      "x": 4.0,
+      "y": 3.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_Moriya_Shrine_ship"
+        ]
+      ],
+      "exclusive": [
+        "KYO_side_with_Suwako"
+      ],
+      "anchor": "KYO_Moriya_Shrine_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】袭击舰艇（naval_strike）：变量 +0.1（原 MOD 提示 +10%，实机作用待核验）；舰队速度 +10%。\n【关联动态修正】调用 KYO_Shrine_navy_scripte，首次添加“守矢的舰队强化”，仅为尚不存在的变量初始化为 0；已有值保留。国策和 8 项取舍决议累加到同一组变量，未设置有效上限或下限。动态修正没有定时到期。\n【事件】未发现该国策直接触发事件，也未在 events 中发现本路线国策 ID 或守矢海军变量的事件引用。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:14990",
+      "raw": "focus = {\n\t\tid = KYO_side_with_Kanako\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Moriya_Shrine_ship\n\t\tx = -1\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Moriya_Shrine_ship\n\t\t}\n\t\tmutually_exclusive = {\n\t\t\tfocus = KYO_side_with_Suwako\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 }   # 工廠輸出 +5%\n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_speed_factor value = 0.1 } \n    \t\tKYO_Shrine_navy_scripte = yes  \t\t\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_speed_factor\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_Moriya_Shrine_ship",
+        "x": -1.0,
+        "y": 1.0
+      }
+    },
+    {
+      "id": "KYO_war_god_ship",
+      "title": "战神御座的舰队",
+      "x": 2.0,
+      "y": 4.0,
+      "cost": 6.0,
+      "parents": [
+        [
+          "KYO_side_with_Kanako"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_side_with_Kanako",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军命中率 +10%；袭击舰艇（naval_strike）：变量 +0.1（原 MOD 提示 +10%，实机作用待核验）。\n【关联动态修正】调用 KYO_Shrine_navy_scripte，首次添加“守矢的舰队强化”，仅为尚不存在的变量初始化为 0；已有值保留。国策和 8 项取舍决议累加到同一组变量，未设置有效上限或下限。动态修正没有定时到期。\n【事件】未发现该国策直接触发事件，也未在 events 中发现本路线国策 ID 或守矢海军变量的事件引用。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15023",
+      "raw": "focus = {\n\t\tid = KYO_war_god_ship\n\t\ticon = GFX_goal_unknown\n\t\tcost = 6\n\n\t\trelative_position_id = KYO_side_with_Kanako\n\t\tx = -2\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_side_with_Kanako\n\t\t}\n\n\t\tai_will_do = { factor = 20 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_hit_chance value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 }  \n    \t\tKYO_Shrine_navy_scripte = yes  \t\t\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_hit_chance\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_side_with_Kanako",
+        "x": -2.0,
+        "y": 1.0
+      }
+    },
+    {
+      "id": "KYO_control_weather",
+      "title": "祈风制雷：天候操控",
+      "x": 0.0,
+      "y": 5.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_war_god_ship"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_war_god_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】袭击舰艇（naval_strike）：变量 +0.1（原 MOD 提示 +10%，实机作用待核验）。\n【关联动态修正】调用 KYO_Shrine_navy_scripte，首次添加“守矢的舰队强化”，仅为尚不存在的变量初始化为 0；已有值保留。国策和 8 项取舍决议累加到同一组变量，未设置有效上限或下限。动态修正没有定时到期。\n【事件】未发现该国策直接触发事件，也未在 events 中发现本路线国策 ID 或守矢海军变量的事件引用。\n【名称与实现】当前只增加 naval_strike，没有天气修正或天候事件。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15052",
+      "raw": "focus = {\n\t\tid = KYO_control_weather\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_war_god_ship\n\t\tx = -2\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_war_god_ship\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 }  \n    \t\tKYO_Shrine_navy_scripte = yes  \t\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_war_god_ship",
+        "x": -2.0,
+        "y": 1.0
+      }
+    },
+    {
+      "id": "KYO_god_of_many_power",
+      "title": "万祇加持：多神权能合一",
+      "x": 4.0,
+      "y": 5.0,
+      "cost": 7.0,
+      "parents": [
+        [
+          "KYO_war_god_ship",
+          "KYO_ship_be_like_frog"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_war_god_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军每日经验 +0.10/日（不是百分比）；索敌速度（原 MOD 提示：发现率） +10%。\n【关联动态修正】调用 KYO_Shrine_navy_scripte，首次添加“守矢的舰队强化”，仅为尚不存在的变量初始化为 0；已有值保留。国策和 8 项取舍决议累加到同一组变量，未设置有效上限或下限。动态修正没有定时到期。\n【事件】未发现该国策直接触发事件，也未在 events 中发现本路线国策 ID 或守矢海军变量的事件引用。\n【提示差异】experience_gain_navy 是每日海军经验的固定增量；原 MOD 的“经验获取 +10%”提示不准确。\n【前置逻辑】“战神御座的舰队”或“蛙跃舰设计”完成任意一个即可；二者写在同一 prerequisite 块，属于或关系。两条互斥路线均可进入此节点。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15079",
+      "raw": "focus = {\n\t\tid = KYO_god_of_many_power\n\t\ticon = GFX_goal_unknown\n\t\tcost = 7\n\n\t\trelative_position_id = KYO_war_god_ship\n\t\tx = 2\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_war_god_ship\n\t\t\tfocus = KYO_ship_be_like_frog\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tadd_to_variable = { var = Shrine_navy_var_experience_gain_navy value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_spotting_chance value = 0.1 }  \n    \t\tKYO_Shrine_navy_scripte = yes  \t\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_experience_gain_navy\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_spotting_chance\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_war_god_ship",
+        "x": 2.0,
+        "y": 1.0
+      }
+    },
+    {
+      "id": "KYO_side_with_Suwako",
+      "title": "御蛙之道：追随泄矢诹访子",
+      "x": 6.0,
+      "y": 3.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_Moriya_Shrine_ship"
+        ]
+      ],
+      "exclusive": [
+        "KYO_side_with_Kanako"
+      ],
+      "anchor": "KYO_Moriya_Shrine_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】索敌速度（原 MOD 提示：发现率） +10%；反潜探测 +10%。\n【关联动态修正】调用 KYO_Shrine_navy_scripte，首次添加“守矢的舰队强化”，仅为尚不存在的变量初始化为 0；已有值保留。国策和 8 项取舍决议累加到同一组变量，未设置有效上限或下限。动态修正没有定时到期。\n【事件】未发现该国策直接触发事件，也未在 events 中发现本路线国策 ID 或守矢海军变量的事件引用。\n【AI】现有国策 ai_will_do.factor = 0。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15109",
+      "raw": "focus = {\n\t\tid = KYO_side_with_Suwako\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Moriya_Shrine_ship\n\t\tx = 1\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Moriya_Shrine_ship\n\t\t}\n\t\tmutually_exclusive = {\n\t\t\tfocus = KYO_side_with_Kanako\n\t\t}\n\n\t\tai_will_do = { factor = 0 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\t\n\t\t\tadd_to_variable = { var = Shrine_navy_var_spotting_chance value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_navy_submarine_detection_factor value = 0.1 } \n\t\t\t \n    \t\tKYO_Shrine_navy_scripte = yes \n\t\t\tcustom_effect_tooltip = shrine_navy_tt_spotting_chance\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_navy_sub_detection\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_Moriya_Shrine_ship",
+        "x": 1.0,
+        "y": 1.0
+      }
+    },
+    {
+      "id": "KYO_ship_be_like_frog",
+      "title": "蛙跃舰设计",
+      "x": 8.0,
+      "y": 4.0,
+      "cost": 6.0,
+      "parents": [
+        [
+          "KYO_side_with_Suwako"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_side_with_Suwako",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】反潜探测 +10%；袭击舰艇（naval_strike）：变量 +0.1（原 MOD 提示 +10%，实机作用待核验）。\n【关联动态修正】调用 KYO_Shrine_navy_scripte，首次添加“守矢的舰队强化”，仅为尚不存在的变量初始化为 0；已有值保留。国策和 8 项取舍决议累加到同一组变量，未设置有效上限或下限。动态修正没有定时到期。\n【事件】未发现该国策直接触发事件，也未在 events 中发现本路线国策 ID 或守矢海军变量的事件引用。\n【建造效果】两次随机选择本国拥有且控制的地区，各增加 1 建筑槽并立即建造 1 船坞；分别优先北九州（528）和山阳（529）。脚本未另加沿海或可建造限制，实际落点和能否落成须实机验证，不能保证固定落在两地。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15142",
+      "raw": "focus = {\n\t\tid = KYO_ship_be_like_frog\n\t\ticon = GFX_goal_unknown\n\t\tcost = 6\n\n\t\trelative_position_id = KYO_side_with_Suwako\n\t\tx = 2\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_side_with_Suwako\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\n\t\t\tadd_to_variable = { var = Shrine_navy_var_navy_submarine_detection_factor value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 } \n\t\t\t \n    \t\tKYO_Shrine_navy_scripte = yes \n\t\t\tcustom_effect_tooltip = shrine_navy_tt_navy_sub_detection\t\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\n\t\t\trandom_owned_controlled_state = {\n\t\t\t\tprioritize = { 528 } #North Kyushu\n\t\t\t\tadd_extra_state_shared_building_slots = 1\n\t\t\t\tadd_building_construction = {\n\t\t\t\t\ttype = dockyard\n\t\t\t\t\tlevel = 1\n\t\t\t\t\tinstant_build = yes\n\t\t\t\t}\n\t\t\t}\n\t\t\trandom_owned_controlled_state = {\n\t\t\t\tprioritize = { 529 } #San'yo\n\t\t\t\tadd_extra_state_shared_building_slots = 1\n\t\t\t\tadd_building_construction = {\n\t\t\t\t\ttype = dockyard\n\t\t\t\t\tlevel = 1\n\t\t\t\t\tinstant_build = yes\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_INDUSTRY\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_side_with_Suwako",
+        "x": 2.0,
+        "y": 1.0
+      }
+    },
+    {
+      "id": "KYO_god_of_many_children",
+      "title": "多子嗣之神的庇佑",
+      "x": 6.0,
+      "y": 5.0,
+      "cost": 7.0,
+      "parents": [
+        [
+          "KYO_ship_be_like_frog",
+          "KYO_war_god_ship"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_ship_be_like_frog",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】舰载机出击效率 +10%；部队运输船需求 -10%；舰队速度 +10%。\n【关联动态修正】调用 KYO_Shrine_navy_scripte，首次添加“守矢的舰队强化”，仅为尚不存在的变量初始化为 0；已有值保留。国策和 8 项取舍决议累加到同一组变量，未设置有效上限或下限。动态修正没有定时到期。\n【事件】未发现该国策直接触发事件，也未在 events 中发现本路线国策 ID 或守矢海军变量的事件引用。\n【提示差异】transport_capacity 的原版含义是“部队运输船需求”，越低越有利；这里脚本为 -0.1，原 MOD 却写“运输容量 +10%”。概述按脚本及原版词义记录，不把它算作运输容量增加。\n【前置逻辑】“战神御座的舰队”或“蛙跃舰设计”完成任意一个即可；二者写在同一 prerequisite 块，属于或关系。两条互斥路线均可进入此节点。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15190",
+      "raw": "focus = {\n\t\tid = KYO_god_of_many_children\n\t\ticon = GFX_goal_unknown\n\t\tcost = 7\n\t\tdynamic = yes\n\n\t\trelative_position_id = KYO_ship_be_like_frog\n\t\tx = -2\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_ship_be_like_frog \n\t\t\tfocus = KYO_war_god_ship\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\n\t\t\tadd_to_variable = { var = Shrine_navy_var_sortie_efficiency value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_transport_capacity value = -0.1 }  \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_speed_factor value = 0.1 } \n    \t\tKYO_Shrine_navy_scripte = yes \n\t\t\tcustom_effect_tooltip = shrine_navy_tt_sortie_efficiency\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_transport_capacity\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_speed_factor\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_ship_be_like_frog",
+        "x": -2.0,
+        "y": 1.0
+      }
+    },
+    {
+      "id": "KYO_frog_power",
+      "title": "蛙神神威显现",
+      "x": 10.0,
+      "y": 5.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_ship_be_like_frog"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_ship_be_like_frog",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】舰载机出击效率 +10%；袭击舰艇（naval_strike）：变量 +0.1（原 MOD 提示 +10%，实机作用待核验）。\n【关联动态修正】调用 KYO_Shrine_navy_scripte，首次添加“守矢的舰队强化”，仅为尚不存在的变量初始化为 0；已有值保留。国策和 8 项取舍决议累加到同一组变量，未设置有效上限或下限。动态修正没有定时到期。\n【事件】未发现该国策直接触发事件，也未在 events 中发现本路线国策 ID 或守矢海军变量的事件引用。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15223",
+      "raw": "focus = {\n\t\tid = KYO_frog_power\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_ship_be_like_frog\n\t\tx = 2\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_ship_be_like_frog\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tadd_to_variable = { var = Shrine_navy_var_sortie_efficiency value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 }  \n    \t\tKYO_Shrine_navy_scripte = yes \n\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_sortie_efficiency\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_ship_be_like_frog",
+        "x": 2.0,
+        "y": 1.0
+      }
+    },
+    {
+      "id": "KYO_shrine_power",
+      "title": "守矢二柱·神威全开",
+      "x": 5.0,
+      "y": 6.0,
+      "cost": 7.0,
+      "parents": [
+        [
+          "KYO_god_of_many_power"
+        ],
+        [
+          "KYO_god_of_many_children"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_god_of_many_power",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】舰载机出击效率 +10%；袭击舰艇（naval_strike）：变量 +0.1（原 MOD 提示 +10%，实机作用待核验）；部队运输船需求 -10%；海军每日经验 +0.10/日（不是百分比）；索敌速度（原 MOD 提示：发现率） +10%；海军命中率 +10%；反潜探测 +10%；舰队速度 +10%。\n【关联动态修正】调用 KYO_Shrine_navy_scripte，首次添加“守矢的舰队强化”，仅为尚不存在的变量初始化为 0；已有值保留。国策和 8 项取舍决议累加到同一组变量，未设置有效上限或下限。动态修正没有定时到期。\n【事件】未发现该国策直接触发事件，也未在 events 中发现本路线国策 ID 或守矢海军变量的事件引用。\n【提示差异】experience_gain_navy 是每日海军经验的固定增量；原 MOD 的“经验获取 +10%”提示不准确。\n【提示差异】transport_capacity 的原版含义是“部队运输船需求”，越低越有利；这里脚本为 -0.1，原 MOD 却写“运输容量 +10%”。概述按脚本及原版词义记录，不把它算作运输容量增加。\n【前置逻辑】必须同时完成“万祇加持：多神权能合一”和“多子嗣之神的庇佑”（两个 prerequisite 块，为且关系）。不要求“祈风制雷”或“蛙神神威显现”。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15253",
+      "raw": "focus = {\n\t\tid = KYO_shrine_power\n\t\ticon = GFX_goal_unknown\n\t\tcost = 7\n\n\t\trelative_position_id = KYO_god_of_many_power\n\t\tx = 1\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_god_of_many_power\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_god_of_many_children\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\n\t\t\tadd_to_variable = { var = Shrine_navy_var_sortie_efficiency value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 }  \n\t\t\tadd_to_variable = { var = Shrine_navy_var_transport_capacity value = -0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_experience_gain_navy value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_spotting_chance value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_hit_chance value = 0.1 }  \n\t\t\tadd_to_variable = { var = Shrine_navy_var_navy_submarine_detection_factor value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_speed_factor value = 0.1 } \n\n\t\t\tKYO_Shrine_navy_scripte = yes \n\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_transport_capacity\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_hit_chance\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_sortie_efficiency\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_speed_factor\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_experience_gain_navy\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_spotting_chance\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_navy_sub_detection\n\t\t\t\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_god_of_many_power",
+        "x": 1.0,
+        "y": 1.0
+      }
+    },
+    {
+      "id": "KYO_Tsukumogami_ship",
+      "title": "百器夜行：与付丧神的合作",
+      "x": 12.0,
+      "y": 2.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_start_the_naval_plan"
+        ]
+      ],
+      "exclusive": [
+        "KYO_Moriya_Shrine_ship"
+      ],
+      "anchor": "KYO_start_the_naval_plan",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军经验 +75；水雷科技 1 次 +100% 研究加成；海军学说 1 次经验花费减免 50%。立即获得“付丧神之军器”：科研速度 +5%，步兵装备造价 -5%、软攻与硬攻各 +5%、防御 +10%。这个基础精神当前主要是科研与步兵收益。\n【关联决议】显示“付丧神・调律专案”，包含小伞、雷鼓、弁弁、八桥、秦心、针妙丸的 6 对启用／停用决议，共 12 项。各对需要完成对应人物国策后才能使用，每次启用或停用均花费 10 政治点数；精神不会由人物国策自动发放。各精神未设置彼此互斥，可以并存，代价也随之叠加。每项具体收益和代价见对应国策概述及关联资料。\n【事件】未发现直接事件调用；本路线国策 ID 和关联精神 ID 在 events 中未找到引用。装备类别加成按源码登记，不代表已实机验证。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15351",
+      "raw": "focus = {\n\t\tid = KYO_Tsukumogami_ship\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_start_the_naval_plan\n\t\tx = 3\n\t\ty = 2\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_start_the_naval_plan\n\t\t}\n\t\tmutually_exclusive = {\n\t\t\tfocus =  KYO_Moriya_Shrine_ship\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\n\t\t\t\n\n\t\t\tadd_ideas = KYO_Tsukumogami_idea\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\n\t\t\tunlock_decision_category_tooltip = Tsukumogami_ship_decision\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt \n\t\t\t\n\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_Tsukumogami_ship\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 1\n\t\t\t\tcategory = naval_mines\n\t\t\t}\n\t\t\tnavy_experience = 75\n\t\t\t\n\t\t\tadd_doctrine_cost_reduction = {\n\t\t\t\tname = KYO_Tsukumogami_ship\n\t\t\t\tcategory = naval_doctrine\n\t\t\t\tcost_reduction = 0.5\n\t\t\t\tuses = 1\n\t\t\t}\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_start_the_naval_plan",
+        "x": 3.0,
+        "y": 2.0
+      },
+      "route": "tsukumogami"
+    },
+    {
+      "id": "KYO_reiko_beat",
+      "title": "让人不自觉跳动的雷鼓",
+      "x": 12.0,
+      "y": 5.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_Tsukumogami_ship"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_Tsukumogami_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军经验 +15；驱逐舰科技 2 次 +100% 研究加成。\n【关联决议与精神】解锁“启用：雷鼓·节拍工学”及对应停用决议；启用、停用各花费 10 政治点数。启用后获得“堀川雷鼓的节拍工学”：生产效率上限 +50%、生产效率增长 +100%、军工和船坞产出各 +50%；代价为每日政治点数消耗 +1、政治点数获取 -50%、生活消费品工厂系数 +50%。装备加成按脚本类别：战列舰（mio_cat_eq_all_battleship）及驱逐舰（mio_cat_eq_all_destroyer）造价各 -50%。 停用时移除该精神。各人物精神可并存；days_re_enable = -1，重复切换表现待实机验证。\n【人物】原脚本的顾问显示／招募提示段落已被注释，不计作现行国策奖励。\n【事件】未发现直接事件调用；本路线国策 ID 和关联精神 ID 在 events 中未找到引用。装备类别加成按源码登记，不代表已实机验证。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15403",
+      "raw": "focus = {\n\t\tid = KYO_reiko_beat\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 0\n\t\ty = 3\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_reiko_beat\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 2\n\t\t\t\tcategory = dd_tech\n\t\t\t}\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_reiko\n\t\t\t# show_ideas_tooltip = gensokyo_reiko\n\t\t\t# set_global_flag = recruit_gensokyo_reiko\n\n\t\t\t\n\t\t\t\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_Tsukumogami_ship",
+        "x": 0.0,
+        "y": 3.0
+      },
+      "route": "tsukumogami"
+    },
+    {
+      "id": "KYO_kokoro_ways",
+      "title": "能够控制群众情感的秦心",
+      "x": 15.0,
+      "y": 3.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_Tsukumogami_ship"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_Tsukumogami_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军经验 +15；航母科技 2 次 +100% 研究加成；一次性人力 +500000。\n【关联决议与精神】解锁“启用：秦心·面灵气”及对应停用决议；启用、停用各花费 10 政治点数。启用后获得“秦心的面灵气”：军工厂、民用工厂和陆上要塞建造速度各 +50%；每周人力 -10000。 停用时移除该精神。各人物精神可并存；days_re_enable = -1，重复切换表现待实机验证。\n【人物】原脚本的顾问显示／招募提示段落已被注释，不计作现行国策奖励。\n【事件】未发现直接事件调用；本路线国策 ID 和关联精神 ID 在 events 中未找到引用。装备类别加成按源码登记，不代表已实机验证。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15446",
+      "raw": "focus = {\n\t\tid = KYO_kokoro_ways\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 3\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = {\n\t\t\tfactor = 5\n\t\t\tmodifier = {\n\t\t\t\tfactor = 10\n\t\t\t\tthreat > 0.50\n\t\t\t}\n\t\t}\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_kokoro_ways\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 2\n\t\t\t\tcategory = cv_tech\n\t\t\t}\n\n\t\t\tadd_manpower = 500000\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_kokoro\n\t\t\t# show_ideas_tooltip = gensokyo_kokoro\n\t\t\t# set_global_flag = recruit_gensokyo_kokoro\n\n\t\t\t\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_MANPOWER\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_Tsukumogami_ship",
+        "x": 3.0,
+        "y": 1.0
+      },
+      "route": "tsukumogami"
+    },
+    {
+      "id": "KYO_benben_strong",
+      "title": "自称最强付丧神的弁弁",
+      "x": 13.0,
+      "y": 4.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_Tsukumogami_ship"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_Tsukumogami_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军经验 +15；潜艇科技与鱼雷科技各 1 次 +100% 研究加成。\n【关联决议与精神】解锁“启用：弁弁·琵琶声学”及对应停用决议；启用、停用各花费 10 政治点数。启用后获得“九十九弁弁的琵琶声学”：每周稳定度和战争支持度各 +5 个百分点；建筑建造速度 -50%、本地资源 -50%。潜艇（submarine）和巡洋舰（mio_cat_eq_all_cruiser）造价各 -50%。 停用时移除该精神。各人物精神可并存；days_re_enable = -1，重复切换表现待实机验证。\n【人物】原脚本的顾问显示／招募提示段落已被注释，不计作现行国策奖励。\n【事件】未发现直接事件调用；本路线国策 ID 和关联精神 ID 在 events 中未找到引用。装备类别加成按源码登记，不代表已实机验证。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15497",
+      "raw": "focus = {\n\t\tid = KYO_benben_strong\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 1\n\t\ty = 2\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = { factor = 1 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_benben_strong\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 1\n\t\t\t\tcategory = ss_tech\n\t\t\t}\n\t\t\t\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_benben_strong\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 1\n\t\t\t\tcategory = cat_torpedoes\n\t\t\t}\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_benben\n\t\t\t# show_ideas_tooltip = gensokyo_benben\n\t\t\t# set_global_flag = recruit_gensokyo_benben\n\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_Tsukumogami_ship",
+        "x": 1.0,
+        "y": 2.0
+      },
+      "route": "tsukumogami"
+    },
+    {
+      "id": "KYO_yatsuhashi_wish",
+      "title": "充满希望的付丧神八桥",
+      "x": 17.0,
+      "y": 4.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_Tsukumogami_ship"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_Tsukumogami_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军经验 +15；战列舰科技 2 次 +100% 研究加成。\n【关联决议与精神】解锁“启用：八桥·筝韵结构”及对应停用决议；启用、停用各花费 10 政治点数。启用后获得“九十九八桥的筝韵结构”：建筑建造速度和船坞产出各 +99%，工业企业顾问花费 -50%。代价：轻／中／重坦、步兵装备、支援装备造价均 +199%；可靠性分别 -20%／-20%／-40%／-20%／-15%；轻／中／重坦装甲分别 -5%／-10%／-10%。装备类别命中范围需实机核验。 停用时移除该精神。各人物精神可并存；days_re_enable = -1，重复切换表现待实机验证。\n【人物】原脚本的顾问显示／招募提示段落已被注释，不计作现行国策奖励。\n【事件】未发现直接事件调用；本路线国策 ID 和关联精神 ID 在 events 中未找到引用。装备类别加成按源码登记，不代表已实机验证。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15548",
+      "raw": "focus = {\n\t\tid = KYO_yatsuhashi_wish\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 5\n\t\ty = 2\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = {\n\t\t\tfactor = 5\n\t\t\tmodifier = {\n\t\t\t\tfactor = 10\n\t\t\t\tthreat > 0.50\n\t\t\t}\n\t\t}\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_yatsuhashi_wish\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 2\n\t\t\t\tcategory = bb_tech\n\t\t\t}\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_yatsuhashi\n\t\t\t# show_ideas_tooltip = gensokyo_yatsuhashi\n\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_Tsukumogami_ship",
+        "x": 5.0,
+        "y": 2.0
+      },
+      "route": "tsukumogami"
+    },
+    {
+      "id": "KYO_kogasa_iron",
+      "title": "永远吓不到人的小伞",
+      "x": 18.0,
+      "y": 5.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_Tsukumogami_ship"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_Tsukumogami_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军经验 +15。若未完成鱼雷巡洋舰特别项目，则直接完成该项目并给巡洋舰科技 1 次 +100% 研究加成；若已完成，则给巡洋舰科技 2 次 +75% 研究加成。随后创建 Ōyodo Class 鱼雷巡洋舰设计，未直接给成品舰或生产线。特别项目关联鱼雷巡洋舰装备解锁；有 Man the Guns 时还有 1 次免费设计奖励，具体项目完成结算和 DLC 差异待实机核验。\n【关联决议与精神】解锁“启用：小伞·惊吓灵感”及对应停用决议；启用、停用各花费 10 政治点数。启用后获得“多多良小伞的惊吓灵感”：科研速度 +25%；每周人力 -5000，每周稳定度和战争支持度各 -5 个百分点。潜艇（submarine）造价 -30%、可靠性 +10%、水面可见度 -15%、水下可见度 -10%。 停用时移除该精神。各人物精神可并存；days_re_enable = -1，重复切换表现待实机验证。\n【人物】原脚本的顾问显示／招募提示段落已被注释，不计作现行国策奖励。\n【事件】未发现直接事件调用；本路线国策 ID 和关联精神 ID 在 events 中未找到引用。装备类别加成按源码登记，不代表已实机验证。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15595",
+      "raw": "focus = {\n\t\tid = KYO_kogasa_iron\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 6\n\t\ty = 3\n\n\t\tavailable = {\n\t\t\t\n\t\t}\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = { factor = 1 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tif = {\n\t\t\t\tlimit = { NOT = { is_special_project_completed = sp:sp_naval_torpedo_cruiser } }\n\t\t\t\t\n\t\t\t\tcomplete_special_project = {\n\t\t\t\t\tproject = sp:sp_naval_torpedo_cruiser\n\t\t\t\t\tshow_modifiers = no\n\t\t\t\t}\n\t\t\t\tadd_tech_bonus = {\n\t\t\t\t\tname = KYO_kogasa_iron\n\t\t\t\t\tbonus = 1\n\t\t\t\t\tuses = 1\n\t\t\t\t\t\n\t\t\t\t\tcategory = ca_tech\n\t\t\t\t}\n\t\t\t}\n\t\t\telse = {\n\t\t\t\tadd_tech_bonus = {\n\t\t\t\t\tname = KYO_kogasa_iron\n\t\t\t\t\tbonus = 0.75\n\t\t\t\t\tuses = 2\n\t\t\t\t\t\n\t\t\t\t\tcategory = ca_tech\n\t\t\t\t}\n\t\t\t}\n\t\t\t\n\t\t\tcreate_equipment_variant = {\n\n\t\t\t\t\tname = \"Ōyodo Class\"\n\t\t\t\t\ttype = ship_hull_torpedo_cruiser\n\t\t\t\t\t\n\t\t\t\t\tparent_version = 0\n\t\t\t\t\tmodules = {\n\t\t\t\t\t\tfixed_ship_battery_slot = ship_light_medium_battery_2\n\t\t\t\t\t\tfixed_ship_anti_air_slot = ship_anti_air_2\n\t\t\t\t\t\tfixed_ship_fire_control_system_slot = ship_fire_control_system_0\n\t\t\t\t\t\tfixed_ship_radar_slot = empty\n\t\t\t\t\t\tfixed_ship_engine_slot = cruiser_ship_engine_2\n\t\t\t\t\t\tfixed_ship_secondaries_slot = empty\n\t\t\t\t\t\tfixed_ship_armor_slot = ship_armor_cruiser_2\n\t\t\t\t\t\tfront_1_custom_slot = ship_anti_air_2\n\t\t\t\t\t\tmid_1_custom_slot = ship_torpedo_2\n\t\t\t\t\t\tmid_2_custom_slot = ship_torpedo_2\n\t\t\t\t\t\trear_1_custom_slot = ship_torpedo_2\n\t\t\t\t\t\trear_2_custom_slot = ship_anti_air_2\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t# custom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_kogasa\n\t\t\t# show_ideas_tooltip = gensokyo_kogasa\n\n\t\t\t\n\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_Tsukumogami_ship",
+        "x": 6.0,
+        "y": 3.0
+      },
+      "route": "tsukumogami"
+    },
+    {
+      "id": "KYO_shinmyoumaru_mallet",
+      "title": "付丧神的能力来源万宝槌的持有者针妙丸",
+      "x": 15.0,
+      "y": 6.0,
+      "cost": 4.0,
+      "parents": [
+        [
+          "KYO_reiko_beat"
+        ],
+        [
+          "KYO_benben_strong"
+        ],
+        [
+          "KYO_kokoro_ways"
+        ],
+        [
+          "KYO_yatsuhashi_wish"
+        ],
+        [
+          "KYO_kogasa_iron"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_Tsukumogami_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军经验 +15；战列舰科技 2 次 +100% 研究加成。研究加成名称键仍引用八桥国策，但类别和次数按当前脚本记录。\n【关联决议与精神】解锁“启用：针妙丸·万宝槌”及对应停用决议；启用、停用各花费 10 政治点数。启用后获得“少名针妙丸的万宝槌”：稳定度和战争支持度各 +15%；陆军攻防和速度各 +10%；陆军经验获取百分比 +20%，海空经验获取百分比各 +50%，经验损失 -25%。代价：每周人力 -3000、陆军训练时间 +100%、每日指挥点数获取 -0.50、指挥点数上限 -50、每日政治点数消耗 +0.25、每日陆军经验 -0.50、生活消费品工厂系数 +20%、适役人口系数 -30%、每月人口增长 -50%；每周伤亡／轰炸／运输船损失对应的战争支持度修正各 -0.01（按原字段记录，表现待实机验证）。 停用时移除该精神。各人物精神可并存；days_re_enable = -1，重复切换表现待实机验证。\n【人物】原脚本的顾问显示／招募提示段落已被注释，不计作现行国策奖励。\n【前置】雷鼓、弁弁、秦心、八桥、小伞五项国策全部完成才可进入（五个独立前置组）。\n【事件】未发现直接事件调用；本路线国策 ID 和关联精神 ID 在 events 中未找到引用。装备类别加成按源码登记，不代表已实机验证。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15682",
+      "raw": "focus = {\n\t\tid = KYO_shinmyoumaru_mallet\n\t\ticon = GFX_goal_unknown\n\t\tcost = 4\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 3\n\t\ty = 4\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_reiko_beat\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_benben_strong\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_kokoro_ways\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_yatsuhashi_wish\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_kogasa_iron\n\t\t}\n\n\t\tai_will_do = {\n\t\t\tfactor = 5\n\t\t\tmodifier = {\n\t\t\t\tfactor = 10\n\t\t\t\tthreat > 0.50\n\t\t\t}\n\t\t}\n\n\t\tcompletion_reward = {\n\t\t\t\n\n\t\t\tnavy_experience = 15\n\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_yatsuhashi_wish\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 2\n\t\t\t\tcategory = bb_tech\n\t\t\t}\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_shinmyoumaru\n\t\t\t# show_ideas_tooltip = gensokyo_shinmyoumaru\n\t\t\t# set_global_flag = recruit_gensokyo_shinmyoumaru\n\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_Tsukumogami_ship",
+        "x": 3.0,
+        "y": 4.0
+      },
+      "route": "tsukumogami"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "shrine_navy_decision_transport_up",
+      "title": "强化运输能力（取舍）",
+      "summary": "部队运输船需求 +10%；袭击舰艇（naval_strike）：变量 -0.1（原 MOD 提示 -10%，实机作用待核验）",
+      "raw": "shrine_navy_decision_transport_up = {\n\n\ticon = GFX_decision_generic_construction\n\tcost = 50\n\tdays_re_enable = 30\n\tcomplete_effect = {\n\t\tadd_to_variable = { var = Shrine_navy_var_transport_capacity value = 0.1 }\n\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = -0.1 }\n\t\tKYO_Shrine_navy_scripte = yes \n\t\tcustom_effect_tooltip = shrine_navy_tt_transport_capacity\n\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike_debuff\n\t}\n\tai_will_do = { factor = 0 }\n\n\t\t}",
+      "source": "common/decisions/KYO_decision.txt:1912"
+    },
+    {
+      "id": "shrine_navy_decision_strike_up",
+      "title": "强化对舰打击（取舍）",
+      "summary": "袭击舰艇（naval_strike）：变量 +0.1（原 MOD 提示 +10%，实机作用待核验）；海军命中率 -10%",
+      "raw": "shrine_navy_decision_strike_up = {\n\t\n\t\n\ticon = GFX_decision_generic_construction\n\tcost = 50\n\tdays_re_enable = 30\n\tcomplete_effect = {\n\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 }\n\t\tadd_to_variable = { var = Shrine_navy_var_naval_hit_chance value = -0.1 }\n\t\tKYO_Shrine_navy_scripte = yes \n\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\t\tcustom_effect_tooltip = shrine_navy_tt_naval_hit_chance_debuff\n\t}\n\tai_will_do = { factor = 0 }\n\t}",
+      "source": "common/decisions/KYO_decision.txt:1929"
+    },
+    {
+      "id": "shrine_navy_decision_hit_up",
+      "title": "强化命中率（取舍）",
+      "summary": "海军命中率 +10%；舰载机出击效率 -10%",
+      "raw": "shrine_navy_decision_hit_up = {\n\t\n\ticon = GFX_decision_generic_construction\n\tcost = 50\n\tdays_re_enable = 30\n\tcomplete_effect = {\n\t\tadd_to_variable = { var = Shrine_navy_var_naval_hit_chance value = 0.1 }\n\t\tadd_to_variable = { var = Shrine_navy_var_sortie_efficiency value = -0.1 }\n\t\tKYO_Shrine_navy_scripte = yes \n\t\tcustom_effect_tooltip = shrine_navy_tt_naval_hit_chance\n\t\tcustom_effect_tooltip = shrine_navy_tt_sortie_efficiency_debuff\n\t}\n\tai_will_do = { factor = 0 }\n\t}",
+      "source": "common/decisions/KYO_decision.txt:1946"
+    },
+    {
+      "id": "shrine_navy_decision_sortie_up",
+      "title": "强化出击效率（取舍）",
+      "summary": "舰载机出击效率 +10%；舰队速度 -10%",
+      "raw": "shrine_navy_decision_sortie_up= {\n\t\n\n\ticon = GFX_decision_generic_construction\n\tcost = 50\n\tdays_re_enable = 30\n\tcomplete_effect = {\n\t\tadd_to_variable = { var = Shrine_navy_var_sortie_efficiency value = 0.1 }\n\t\tadd_to_variable = { var = Shrine_navy_var_naval_speed_factor value = -0.1 }\n\t\tKYO_Shrine_navy_scripte = yes \n\t\tcustom_effect_tooltip = shrine_navy_tt_sortie_efficiency\n\t\tcustom_effect_tooltip = shrine_navy_tt_naval_speed_factor_debuff\n\t}\n\tai_will_do = { factor = 0 }\n\t}",
+      "source": "common/decisions/KYO_decision.txt:1962"
+    },
+    {
+      "id": "shrine_navy_decision_speed_up",
+      "title": "强化舰队速度（取舍）",
+      "summary": "舰队速度 +10%；海军每日经验 -0.10/日（不是百分比）",
+      "raw": "shrine_navy_decision_speed_up = {\n\t\n\t\n\ticon = GFX_decision_generic_construction\n\tcost = 50\n\tdays_re_enable = 30\n\tcomplete_effect = {\n\t\tadd_to_variable = { var = Shrine_navy_var_naval_speed_factor value = 0.1 }\n\t\tadd_to_variable = { var = Shrine_navy_var_experience_gain_navy value = -0.1 }\n\t\tKYO_Shrine_navy_scripte = yes \n\t\tcustom_effect_tooltip = shrine_navy_tt_naval_speed_factor\n\t\tcustom_effect_tooltip = shrine_navy_tt_experience_gain_navy_debuff\n\t}\n\tai_will_do = { factor = 0 }\n\t}",
+      "source": "common/decisions/KYO_decision.txt:1979"
+    },
+    {
+      "id": "shrine_navy_decision_navy_xp_up",
+      "title": "强化经验获取（取舍）",
+      "summary": "海军每日经验 +0.10/日（不是百分比）；索敌速度（原 MOD 提示：发现率） -10%",
+      "raw": "shrine_navy_decision_navy_xp_up = {\n\t\n\t\n\ticon = GFX_decision_generic_construction\n\tcost = 50\n\tdays_re_enable = 30\n\tcomplete_effect = {\n\t\tadd_to_variable = { var = Shrine_navy_var_experience_gain_navy value = 0.1 }\n\t\tadd_to_variable = { var = Shrine_navy_var_spotting_chance value = -0.1 }\n\t\tKYO_Shrine_navy_scripte = yes \n\t\tcustom_effect_tooltip = shrine_navy_tt_experience_gain_navy\n\t\tcustom_effect_tooltip = shrine_navy_tt_spotting_chance_debuff\n\t}\n\tai_will_do = { factor = 0 }\n\t}",
+      "source": "common/decisions/KYO_decision.txt:1996"
+    },
+    {
+      "id": "shrine_navy_decision_spotting_up",
+      "title": "强化发现率（取舍）",
+      "summary": "索敌速度（原 MOD 提示：发现率） +10%；反潜探测 -10%",
+      "raw": "shrine_navy_decision_spotting_up = {\n\t\n\t\n\ticon = GFX_decision_generic_construction\n\tcost = 50\n\tdays_re_enable = 30\n\tcomplete_effect = {\n\t\tadd_to_variable = { var = Shrine_navy_var_spotting_chance value = 0.1 }\n\t\tadd_to_variable = { var = Shrine_navy_var_navy_submarine_detection_factor value = -0.1 }\n\t\tKYO_Shrine_navy_scripte = yes \n\t\tcustom_effect_tooltip = shrine_navy_tt_spotting_chance\n\t\tcustom_effect_tooltip = shrine_navy_tt_navy_sub_detection_debuff\n\t}\n\tai_will_do = { factor = 0 }\n\t}",
+      "source": "common/decisions/KYO_decision.txt:2013"
+    },
+    {
+      "id": "shrine_navy_decision_asw_up",
+      "title": "强化反潜侦测（取舍）",
+      "summary": "反潜探测 +10%；部队运输船需求 -10%",
+      "raw": "shrine_navy_decision_asw_up= {\n\t\n\n\ticon = GFX_decision_generic_construction\n\tcost = 50\n\tdays_re_enable = 30\n\tcomplete_effect = {\n\t\tadd_to_variable = { var = Shrine_navy_var_navy_submarine_detection_factor value = 0.1 }\n\t\tadd_to_variable = { var = Shrine_navy_var_transport_capacity value = -0.1 }\n\t\tKYO_Shrine_navy_scripte = yes \n\t\tcustom_effect_tooltip = shrine_navy_tt_navy_sub_detection\n\t\tcustom_effect_tooltip = shrine_navy_tt_transport_capacity_debuff\n\t}\n\tai_will_do = { factor = 0 }\n\t}",
+      "source": "common/decisions/KYO_decision.txt:2030"
+    }
+  ],
+  "sources": [
+    {
+      "id": "KYO_Shrine_navy_scripte",
+      "source": "common/scripted_effects/Gensokyo_effect.txt:2",
+      "raw": "KYO_Shrine_navy_scripte = {\n  # 第一次呼叫時，補上精神與動態加成\n\n  if = { limit = { NOT = { has_dynamic_modifier = { modifier = Shrine_navy_modifiers } } } add_dynamic_modifier = { modifier = Shrine_navy_modifiers } }\n\n  # 確保所有用到的變數存在（沒有就設 0）\n  if = { limit = { NOT = { has_variable = Shrine_navy_var_transport_capacity } } set_variable = { var = Shrine_navy_var_transport_capacity value = 0 } }\n  if = { limit = { NOT = { has_variable = Shrine_navy_var_naval_strike } } set_variable = { var = Shrine_navy_var_naval_strike value = 0 } }\n  if = { limit = { NOT = { has_variable = Shrine_navy_var_naval_hit_chance } } set_variable = { var = Shrine_navy_var_naval_hit_chance value = 0 } }\n  if = { limit = { NOT = { has_variable = Shrine_navy_var_sortie_efficiency } } set_variable = { var = Shrine_navy_var_sortie_efficiency value = 0 } }\n  if = { limit = { NOT = { has_variable = Shrine_navy_var_naval_speed_factor } } set_variable = { var = Shrine_navy_var_naval_speed_factor value = 0 } }\n  if = { limit = { NOT = { has_variable = Shrine_navy_var_experience_gain_navy } } set_variable = { var = Shrine_navy_var_experience_gain_navy value = 0 } }\n  if = { limit = { NOT = { has_variable = Shrine_navy_var_spotting_chance } } set_variable = { var = Shrine_navy_var_spotting_chance value = 0 } }\n  if = { limit = { NOT = { has_variable = Shrine_navy_var_navy_submarine_detection_factor } } set_variable = { var = Shrine_navy_var_navy_submarine_detection_factor value = 0 } }\n\n\n}"
+    },
+    {
+      "id": "KYO_Shrine_navy",
+      "source": "common/scripted_effects/Gensokyo_effect.txt:20",
+      "raw": "KYO_Shrine_navy = {\n  # 可選：做夾值，避免爆表（範例：科研最多 +25%）\n  #if = {\n    #limit = { check_variable = { var = Shrine_navy_var_naval_strike value > 0.25 } }\n    #set_variable = { var = Shrine_navy_var_naval_strike value = 0.25 }\n  #}\n  # 如果你有上限需求，其他變數也可類似夾值\n}"
+    },
+    {
+      "id": "Shrine_navy_modifiers",
+      "source": "common/dynamic_modifiers/KYO_dynamic_modifiers.txt:1",
+      "raw": "Shrine_navy_modifiers={\n\ticon =  GFX_generic_fascism_medal_1\n\n\tenable = { always = yes } #optional, the modifier won't apply if not enabled\n\tremove_trigger = { always = no } #optional, will remove the modifier if true\n\n#\t\t# list of modifiers\n\ttransport_capacity = Shrine_navy_var_transport_capacity\n\n\tnaval_strike = Shrine_navy_var_naval_strike\n\n\tnaval_hit_chance = Shrine_navy_var_naval_hit_chance\n \n\tsortie_efficiency = Shrine_navy_var_sortie_efficiency\n\n\tnaval_speed_factor = Shrine_navy_var_naval_speed_factor\n\n\texperience_gain_navy = Shrine_navy_var_experience_gain_navy\n\n\tspotting_chance = Shrine_navy_var_spotting_chance\n\n\tnavy_submarine_detection_factor = Shrine_navy_var_navy_submarine_detection_factor\n\n\n\n }"
+    },
+    {
+      "id": "Shrine_navy_decision",
+      "source": "common/decisions/categories/gensokyo_decision.txt:131",
+      "raw": "Shrine_navy_decision = {\n\ticon = GFX_decision_category_ITA_cooperation_programs\n\tpicture = GFX_decision_cat_picture_generic_shipbuilding\n\t\n\tvisible = {\n\t\thas_completed_focus =  KYO_Moriya_Shrine_ship\n\t}\n\tvisible_when_empty = yes\n\n\t\n}"
+    },
+    {
+      "id": "gensokyo_kanako",
+      "source": "common/characters/gensokyo.txt:4204",
+      "raw": "gensokyo_kanako = {\n\t\tname = gensokyo_kanako\n\t\tportraits = {\n\t\t\tcivilian = {\n\t\t\t\tsmall = GFX_gensokyo_kanako_advisor\n\t\t\t}\n\t\t\tarmy = {\n\t\t\t\tlarge = GFX_gensokyo_kanako_large\n\t\t\t\tsmall = GFX_gensokyo_kanako_advisor\n\t\t\t}\n\t\t}\n\t\tadvisor = {\n\t\t\tslot = high_command\n\t\t\tidea_token = gensokyo_kanako\n\t\t\ttraits = { KR_MHC_armoured_3 }\n\t\t\tcost = 150\n\t\t\tvisible ={\n\t\t\t\thas_global_flag = recruit_moriyashrine\n\t\t\t}\n\t\t}\n\n\t\tadvisor = {\n\t\t\tslot = political_advisor\n\t\t\tidea_token = gensokyo_kanako\n\t\t\ttraits = { the_avatar_of_mountains_and_lakes }\n\t\t\tcost = 150\n\t\t\tvisible ={\n\t\t\t\thas_global_flag = recruit_moriyashrine\n\t\t\t}\n\t\t}\n\n\t\t\n\n\t\tfield_marshal = {\n\t\t\ttraits = { kyo_loyal_moriyashrine }\n\t\t\tskill = 5\n\t\t\tattack_skill = 5\n\t\t\tdefense_skill = 3\n\t\t\tplanning_skill = 5\n\t\t\tlogistics_skill = 4\n\t\t\tvisible ={\n\t\t\t\thas_global_flag = recruit_moriyashrine\n\t\t\t}\n\t\t}\n\t\t\n\t\tadvisor = {\n\t\t\tslot = air_chief\n\t\t\tidea_token = gensokyo_kanako_air_chief\n\t\t\tcost = 200\n\t\t\ttraits = { air_chief_old_guard }\n\t\t\tvisible ={\n\t\t\t\thas_global_flag = recruit_moriyashrine\n\t\t\t}\n\t\t}\n\t\t\n\t}"
+    },
+    {
+      "id": "gensokyo_suwako",
+      "source": "common/characters/gensokyo.txt:4261",
+      "raw": "gensokyo_suwako = {\n\t\tname = gensokyo_suwako\n\t\tportraits = {\n\t\t\tcivilian = {\n\t\t\t\tsmall = GFX_gensokyo_suwako_advisor\n\t\t\t}\n\t\t\tarmy = {\n\t\t\t\tlarge = GFX_gensokyo_suwako_large\n\t\t\t\tsmall = GFX_gensokyo_suwako_advisor\n\t\t\t}\n\t\t}\n\t\tadvisor = {\n\t\t\tslot = political_advisor\n\t\t\tidea_token = gensokyo_suwako\n\t\t\tcost = 150\n\t\t\ttraits = { highest_of_the_native_gods  }\n\t\t\tvisible ={\n\t\t\t\thas_global_flag = recruit_moriyashrine\n\t\t\t}\t\n\t\t}\n\t\tfield_marshal = {\n\t\t\ttraits = { kyo_loyal_moriyashrine }\n\t\t\tskill = 4\n\t\t\tattack_skill = 2\n\t\t\tdefense_skill = 5\n\t\t\tplanning_skill = 3\n\t\t\tlogistics_skill = 3\n\t\t\tvisible ={\n\t\t\t\thas_global_flag = recruit_moriyashrine\n\t\t\t}\n\t\t}\n\t\t\n\t\tadvisor = {\n\t\t\tslot = high_command\n\t\t\tidea_token = gensokyo_suwako_high_command\n\t\t\tcost = 150\n\t\t\ttraits = { navy_amphibious_assault_1 }\n\t\t\tvisible ={\n\t\t\t\thas_global_flag = recruit_moriyashrine\n\t\t\t}\t\n\t\t}\n\t\tadvisor = {\n\t\t\tslot = navy_chief\n\t\t\tidea_token = gensokyo_suwako_navy_chief\n\t\t\tcost = 200\n\t\t\ttraits = { navy_chief_old_guard }\n\t\t\tvisible ={\n\t\t\t\thas_global_flag = recruit_moriyashrine\n\t\t\t}\t\n\t\t}\n\t\t\n\t}"
+    },
+    {
+      "id": "the_avatar_of_mountains_and_lakes",
+      "source": "common/country_leader/KYO_political_advisor_traits.txt:1071",
+      "raw": "the_avatar_of_mountains_and_lakes = {\n\t\tsprite = 13\n\t\trandom = no\n\n\t\tpolitical_power_gain = 0.10\n\t\tstability_factor = 0.08\n\t\twar_support_factor = 0.05\n\t\tproduction_speed_buildings_factor = 0.12\n\t\tproduction_speed_infrastructure_factor = 0.12\n\t\tmonthly_population = 0.06\n\t}"
+    },
+    {
+      "id": "highest_of_the_native_gods",
+      "source": "common/country_leader/KYO_political_advisor_traits.txt:1458",
+      "raw": "highest_of_the_native_gods = {\n\t\tsprite = 13\n\t\trandom = no\n\n\t\tstability_factor = 0.10\n\t\tpolitical_power_gain = 0.08\n\t\tproduction_speed_infrastructure_factor = 0.10\n\t\tarmy_core_defence_factor = 0.06\n\t\tlocal_supplies = 0.10\n\t}"
+    },
+    {
+      "id": "KYO_Tsukumogami_idea",
+      "source": "common/ideas/gensokyo_idea.txt:901",
+      "raw": "KYO_Tsukumogami_idea={\n\t\t\tpicture = Tsukumogami_idea\n\t\t\tallowed_civil_war = {\n\t\t\t\tTAG = KYO\n\t\t\t}\n\n\t\t\tremoval_cost = -1\n\n\t\t\tmodifier = {\n\n\t\t\t\tresearch_speed_factor = 0.05\n\t\t\t\t\n\t\t\t}\n\t\t\tequipment_bonus = {\n\t\t\t\tinfantry_equipment = {\n\t\t\t\t\tbuild_cost_ic = -0.05\n\t\t\t\t\tsoft_attack = 0.05\n\t\t\t\t\thard_attack = 0.05\n\t\t\t\t\tdefense = 0.1\n\t\t\t\t}\n\t\t\t}\n\t\t}"
+    },
+    {
+      "id": "KYO_reiko_idea",
+      "source": "common/ideas/gensokyo_idea.txt:745",
+      "raw": "KYO_reiko_idea={\n\t\t\tpicture = reiko_idea\n\t\t\tallowed_civil_war = {\n\t\t\t\tTAG = KYO\n\t\t\t}\n\n\t\t\tremoval_cost = -1\n\n\t\t\tmodifier = {\n\n\t\t\t\tproduction_factory_max_efficiency_factor = 0.5\n\t\t\t\tproduction_factory_efficiency_gain_factor = 1\n\t\t\t\tindustrial_capacity_factory = 0.5\n\t\t\t\tindustrial_capacity_dockyard = 0.5\n\t\t\t\t\n\t\t\t\tpolitical_power_cost = 1\n\t\t\t\tpolitical_power_factor = -0.5\n\t\t\t\tconsumer_goods_factor = 0.5\n\t\t\t}\n\t\t\tequipment_bonus = {\n\t\t\t\tmio_cat_eq_all_battleship = {\n\t\t\t\t\tbuild_cost_ic = -0.5\n\t\t\t\t}\n\t\t\t\tmio_cat_eq_all_destroyer = {\n\n\t\t\t\t\tbuild_cost_ic = -0.5\t\n\t\t\t\t}\n\t\t\t}\n\n\t\t}"
+    },
+    {
+      "id": "KYO_kokoro_idea",
+      "source": "common/ideas/gensokyo_idea.txt:846",
+      "raw": "KYO_kokoro_idea={\n\t\t\tpicture = kokoro_idea\n\t\t\tallowed_civil_war = {\n\t\t\t\tTAG = KYO\n\t\t\t}\n\n\t\t\tremoval_cost = -1\n\n\t\t\tmodifier = {\n\n\t\t\t\tproduction_speed_arms_factory_factor = 0.5\n\t\t\t\tproduction_speed_industrial_complex_factor = 0.5\n\t\t\t\tproduction_speed_bunker_factor = 0.5\n\t\t\t\t\n\t\t\t\tweekly_manpower = -10000\n\t\t\t}\n\t\t}"
+    },
+    {
+      "id": "KYO_benben_idea",
+      "source": "common/ideas/gensokyo_idea.txt:775",
+      "raw": "KYO_benben_idea={\n\t\t\tpicture = benben_idea\n\t\t\tallowed_civil_war = {\n\t\t\t\tTAG = KYO\n\t\t\t}\n\n\t\t\tremoval_cost = -1\n\n\t\t\tmodifier = {\n\n\t\t\t\tstability_weekly = 0.05\n\t\t\t\twar_support_weekly = 0.05\n\n\t\t\t\tproduction_speed_buildings_factor = -0.5\n\t\t\t\tlocal_resources_factor = -0.5\n\n\t\t\t}\n\t\t\tequipment_bonus = {\n\t\t\t\tsubmarine = {\n\n\t\t\t\t\tbuild_cost_ic = -0.5\n\n\t\t\t\t}\n\t\t\t\tmio_cat_eq_all_cruiser = {\n\n\t\t\t\t\tbuild_cost_ic = -0.5\t\n\n\t\t\t\t}\n\t\t\t}\n\t\t}"
+    },
+    {
+      "id": "KYO_yatsuhashi_idea",
+      "source": "common/ideas/gensokyo_idea.txt:805",
+      "raw": "KYO_yatsuhashi_idea={\n\t\t\tpicture = yatsuhashi_idea\n\t\t\tallowed_civil_war = {\n\t\t\t\tTAG = KYO\n\t\t\t}\n\n\t\t\tremoval_cost = -1\n\n\t\t\tmodifier = {\n\n\t\t\t\tproduction_speed_buildings_factor = 0.99\n\t\t\t\tindustrial_capacity_dockyard = 0.99\n\t\t\t\tindustrial_concern_cost_factor = -0.5\n\n\t\t\t}\n\t\t\tequipment_bonus = {\n\t\t\t\tmio_cat_eq_all_light_tank = {\n\t\t\t\t\tbuild_cost_ic = 1.99\n\t\t\t\t\treliability = -0.2\n\t\t\t\t\tarmor_value = -0.05\n\t\t\t\t}\n\t\t\t\tmio_cat_eq_all_medium_tank = {\n\t\t\t\t\tbuild_cost_ic = 1.99\n\t\t\t\t\treliability = -0.2\n\t\t\t\t\tarmor_value = -0.1\n\t\t\t\t}\n\t\t\t\tmio_cat_eq_all_heavy_tank = {\n\t\t\t\t\tbuild_cost_ic = 1.99\n\t\t\t\t\treliability = -0.4\n\t\t\t\t\tarmor_value = -0.1\n\t\t\t\t}\n\t\t\t\tinfantry_equipment = {\n\t\t\t\t\tbuild_cost_ic = 1.99\n\t\t\t\t\treliability = -0.2\n\t\t\t\t}\n\t\t\t\tsupport_equipment = {\n\t\t\t\t\tbuild_cost_ic = 1.99\n\t\t\t\t\treliability = -0.15\n\t\t\t\t}\n\t\t\t}\n\t\t}"
+    },
+    {
+      "id": "KYO_kogasa_idea",
+      "source": "common/ideas/gensokyo_idea.txt:718",
+      "raw": "KYO_kogasa_idea={\n\t\t\tpicture = kogasa_idea\n\t\t\tallowed_civil_war = {\n\t\t\t\tTAG = KYO\n\t\t\t}\n\n\t\t\tremoval_cost = -1\n\n\t\t\tmodifier = {\n\n\t\t\t\tweekly_manpower = -5000\n\t\t\t\tstability_weekly = -0.05\n\t\t\t\twar_support_weekly = -0.05\n\t\t\t\tresearch_speed_factor = 0.25\n\t\t\t}\n\t\t\tequipment_bonus = {\n\t\t\t\tsubmarine = {\n\t\t\t\t\tbuild_cost_ic = -0.3\n\t\t\t\t\treliability = 0.1\n\t\t\t\t\tsurface_visibility = -0.15\n\t\t\t\t\tsub_visibility =-0.1\n\t\t\t\t}\n\t\t\t}\n\t\t\t\n\n\t\t}"
+    },
+    {
+      "id": "KYO_shinmyoumaru_idea",
+      "source": "common/ideas/gensokyo_idea.txt:863",
+      "raw": "KYO_shinmyoumaru_idea={\n\t\t\tpicture = shinmyoumaru_idea\n\t\t\tallowed_civil_war = {\n\t\t\t\tTAG = KYO\n\t\t\t}\n\n\t\t\tremoval_cost = -1\n\n\t\t\tmodifier = {\n\t\t\t\tweekly_manpower = -3000\n\t\t\t\twar_support_factor =  0.15\n\t\t\t\tstability_factor = 0.15\n\t\t\t\tarmy_attack_factor = 0.1\n\t\t\t\tarmy_defence_factor = 0.1\n\t\t\t\tarmy_speed_factor =0.1\n\t\t\t\texperience_gain_army_factor =0.2\n\t\t\t\texperience_loss_factor = -0.25\n\t\t\t\texperience_gain_navy_factor = 0.5\n\t\t\t\texperience_gain_air_factor = 0.5\n\n\t\t\t\ttraining_time_army_factor = 1\n\t\t\t\tcommand_power_gain = -0.5\n\t\t\t\tmax_command_power = -50\n\t\t\t\tpolitical_power_cost = 0.25\n\t\t\t\tweekly_casualties_war_support = -0.01\n\t\t\t\tweekly_bombing_war_support = -0.01\n\t\t\t\tweekly_convoys_war_support = -0.01\n\t\t\t\texperience_gain_army = -0.5\n\t\t\t\tconsumer_goods_factor =0.2\n\t\t\t\tconscription_factor = -0.3\n\t\t\t\tmonthly_population =-0.5\n\t\t\t\t\n\t\t\t\t\n\t\t\t\t\n\n\t\t\t}\n\t\t}"
+    },
+    {
+      "id": "Tsukumogami_ship_decision",
+      "source": "common/decisions/categories/gensokyo_decision.txt:143",
+      "raw": "Tsukumogami_ship_decision = {\n\ticon = GFX_decision_category_ITA_cooperation_programs\n\tpicture = GFX_decision_picture_Tsukumogami\n\n\tpriority = 100 \n\t \n\tvisible = {\n\t\thas_completed_focus =  KYO_Tsukumogami_ship\n\t}\n\tvisible_when_empty = yes          \n\t\n}"
+    }
+  ],
+  "externalNames": {
+    "KYO_the_reform_meeting": "妖怪军事重组",
+    "KYO_Tsukumogami_ship": "百器夜行：与付丧神的合作"
+  },
+  "sourceHashes": {
+    "common/national_focus/kyo-focus.txt": "e348d9c3952d849428f07a594cd07ae1c17aab9121b11315f4cbf1ab3aa4aac1",
+    "common/decisions/KYO_decision.txt": "b540c45f287936962c30ee056416f9e1d8df67cd255f12d093e19d33b473566d",
+    "common/scripted_effects/Gensokyo_effect.txt": "032cadd3fc89b1a990ad9a0efe1d3c1e5173809c8b1f128cab21985b2b344fac",
+    "common/dynamic_modifiers/KYO_dynamic_modifiers.txt": "bd06217fd19cf522490b57cd1712c0f3574e0950e1777ca9793bd787cac222fb",
+    "common/characters/gensokyo.txt": "39ecc534ebfcf5cac396b1d74043122b3d62e1c6e6b4e750bc070e39d6f63838"
+  },
+  "tsukuNodes": [
+    {
+      "id": "KYO_Tsukumogami_ship",
+      "title": "百器夜行：与付丧神的合作",
+      "x": 12.0,
+      "y": 2.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_start_the_naval_plan"
+        ]
+      ],
+      "exclusive": [
+        "KYO_Moriya_Shrine_ship"
+      ],
+      "anchor": "KYO_start_the_naval_plan",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军经验 +75；水雷科技 1 次 +100% 研究加成；海军学说 1 次经验花费减免 50%。立即获得“付丧神之军器”：科研速度 +5%，步兵装备造价 -5%、软攻与硬攻各 +5%、防御 +10%。这个基础精神当前主要是科研与步兵收益。\n【关联决议】显示“付丧神・调律专案”，包含小伞、雷鼓、弁弁、八桥、秦心、针妙丸的 6 对启用／停用决议，共 12 项。各对需要完成对应人物国策后才能使用，每次启用或停用均花费 10 政治点数；精神不会由人物国策自动发放。各精神未设置彼此互斥，可以并存，代价也随之叠加。每项具体收益和代价见对应国策概述及关联资料。\n【事件】未发现直接事件调用；本路线国策 ID 和关联精神 ID 在 events 中未找到引用。装备类别加成按源码登记，不代表已实机验证。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15351",
+      "raw": "focus = {\n\t\tid = KYO_Tsukumogami_ship\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_start_the_naval_plan\n\t\tx = 3\n\t\ty = 2\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_start_the_naval_plan\n\t\t}\n\t\tmutually_exclusive = {\n\t\t\tfocus =  KYO_Moriya_Shrine_ship\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\n\t\t\t\n\n\t\t\tadd_ideas = KYO_Tsukumogami_idea\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\n\t\t\tunlock_decision_category_tooltip = Tsukumogami_ship_decision\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt \n\t\t\t\n\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_Tsukumogami_ship\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 1\n\t\t\t\tcategory = naval_mines\n\t\t\t}\n\t\t\tnavy_experience = 75\n\t\t\t\n\t\t\tadd_doctrine_cost_reduction = {\n\t\t\t\tname = KYO_Tsukumogami_ship\n\t\t\t\tcategory = naval_doctrine\n\t\t\t\tcost_reduction = 0.5\n\t\t\t\tuses = 1\n\t\t\t}\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_start_the_naval_plan",
+        "x": 3.0,
+        "y": 2.0
+      },
+      "route": "tsukumogami"
+    },
+    {
+      "id": "KYO_reiko_beat",
+      "title": "让人不自觉跳动的雷鼓",
+      "x": 12.0,
+      "y": 5.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_Tsukumogami_ship"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_Tsukumogami_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军经验 +15；驱逐舰科技 2 次 +100% 研究加成。\n【关联决议与精神】解锁“启用：雷鼓·节拍工学”及对应停用决议；启用、停用各花费 10 政治点数。启用后获得“堀川雷鼓的节拍工学”：生产效率上限 +50%、生产效率增长 +100%、军工和船坞产出各 +50%；代价为每日政治点数消耗 +1、政治点数获取 -50%、生活消费品工厂系数 +50%。装备加成按脚本类别：战列舰（mio_cat_eq_all_battleship）及驱逐舰（mio_cat_eq_all_destroyer）造价各 -50%。 停用时移除该精神。各人物精神可并存；days_re_enable = -1，重复切换表现待实机验证。\n【人物】原脚本的顾问显示／招募提示段落已被注释，不计作现行国策奖励。\n【事件】未发现直接事件调用；本路线国策 ID 和关联精神 ID 在 events 中未找到引用。装备类别加成按源码登记，不代表已实机验证。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15403",
+      "raw": "focus = {\n\t\tid = KYO_reiko_beat\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 0\n\t\ty = 3\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_reiko_beat\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 2\n\t\t\t\tcategory = dd_tech\n\t\t\t}\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_reiko\n\t\t\t# show_ideas_tooltip = gensokyo_reiko\n\t\t\t# set_global_flag = recruit_gensokyo_reiko\n\n\t\t\t\n\t\t\t\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_Tsukumogami_ship",
+        "x": 0.0,
+        "y": 3.0
+      },
+      "route": "tsukumogami"
+    },
+    {
+      "id": "KYO_kokoro_ways",
+      "title": "能够控制群众情感的秦心",
+      "x": 15.0,
+      "y": 3.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_Tsukumogami_ship"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_Tsukumogami_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军经验 +15；航母科技 2 次 +100% 研究加成；一次性人力 +500000。\n【关联决议与精神】解锁“启用：秦心·面灵气”及对应停用决议；启用、停用各花费 10 政治点数。启用后获得“秦心的面灵气”：军工厂、民用工厂和陆上要塞建造速度各 +50%；每周人力 -10000。 停用时移除该精神。各人物精神可并存；days_re_enable = -1，重复切换表现待实机验证。\n【人物】原脚本的顾问显示／招募提示段落已被注释，不计作现行国策奖励。\n【事件】未发现直接事件调用；本路线国策 ID 和关联精神 ID 在 events 中未找到引用。装备类别加成按源码登记，不代表已实机验证。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15446",
+      "raw": "focus = {\n\t\tid = KYO_kokoro_ways\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 3\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = {\n\t\t\tfactor = 5\n\t\t\tmodifier = {\n\t\t\t\tfactor = 10\n\t\t\t\tthreat > 0.50\n\t\t\t}\n\t\t}\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_kokoro_ways\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 2\n\t\t\t\tcategory = cv_tech\n\t\t\t}\n\n\t\t\tadd_manpower = 500000\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_kokoro\n\t\t\t# show_ideas_tooltip = gensokyo_kokoro\n\t\t\t# set_global_flag = recruit_gensokyo_kokoro\n\n\t\t\t\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_MANPOWER\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_Tsukumogami_ship",
+        "x": 3.0,
+        "y": 1.0
+      },
+      "route": "tsukumogami"
+    },
+    {
+      "id": "KYO_benben_strong",
+      "title": "自称最强付丧神的弁弁",
+      "x": 13.0,
+      "y": 4.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_Tsukumogami_ship"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_Tsukumogami_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军经验 +15；潜艇科技与鱼雷科技各 1 次 +100% 研究加成。\n【关联决议与精神】解锁“启用：弁弁·琵琶声学”及对应停用决议；启用、停用各花费 10 政治点数。启用后获得“九十九弁弁的琵琶声学”：每周稳定度和战争支持度各 +5 个百分点；建筑建造速度 -50%、本地资源 -50%。潜艇（submarine）和巡洋舰（mio_cat_eq_all_cruiser）造价各 -50%。 停用时移除该精神。各人物精神可并存；days_re_enable = -1，重复切换表现待实机验证。\n【人物】原脚本的顾问显示／招募提示段落已被注释，不计作现行国策奖励。\n【事件】未发现直接事件调用；本路线国策 ID 和关联精神 ID 在 events 中未找到引用。装备类别加成按源码登记，不代表已实机验证。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15497",
+      "raw": "focus = {\n\t\tid = KYO_benben_strong\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 1\n\t\ty = 2\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = { factor = 1 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_benben_strong\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 1\n\t\t\t\tcategory = ss_tech\n\t\t\t}\n\t\t\t\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_benben_strong\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 1\n\t\t\t\tcategory = cat_torpedoes\n\t\t\t}\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_benben\n\t\t\t# show_ideas_tooltip = gensokyo_benben\n\t\t\t# set_global_flag = recruit_gensokyo_benben\n\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_Tsukumogami_ship",
+        "x": 1.0,
+        "y": 2.0
+      },
+      "route": "tsukumogami"
+    },
+    {
+      "id": "KYO_yatsuhashi_wish",
+      "title": "充满希望的付丧神八桥",
+      "x": 17.0,
+      "y": 4.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_Tsukumogami_ship"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_Tsukumogami_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军经验 +15；战列舰科技 2 次 +100% 研究加成。\n【关联决议与精神】解锁“启用：八桥·筝韵结构”及对应停用决议；启用、停用各花费 10 政治点数。启用后获得“九十九八桥的筝韵结构”：建筑建造速度和船坞产出各 +99%，工业企业顾问花费 -50%。代价：轻／中／重坦、步兵装备、支援装备造价均 +199%；可靠性分别 -20%／-20%／-40%／-20%／-15%；轻／中／重坦装甲分别 -5%／-10%／-10%。装备类别命中范围需实机核验。 停用时移除该精神。各人物精神可并存；days_re_enable = -1，重复切换表现待实机验证。\n【人物】原脚本的顾问显示／招募提示段落已被注释，不计作现行国策奖励。\n【事件】未发现直接事件调用；本路线国策 ID 和关联精神 ID 在 events 中未找到引用。装备类别加成按源码登记，不代表已实机验证。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15548",
+      "raw": "focus = {\n\t\tid = KYO_yatsuhashi_wish\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 5\n\t\ty = 2\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = {\n\t\t\tfactor = 5\n\t\t\tmodifier = {\n\t\t\t\tfactor = 10\n\t\t\t\tthreat > 0.50\n\t\t\t}\n\t\t}\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_yatsuhashi_wish\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 2\n\t\t\t\tcategory = bb_tech\n\t\t\t}\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_yatsuhashi\n\t\t\t# show_ideas_tooltip = gensokyo_yatsuhashi\n\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_Tsukumogami_ship",
+        "x": 5.0,
+        "y": 2.0
+      },
+      "route": "tsukumogami"
+    },
+    {
+      "id": "KYO_kogasa_iron",
+      "title": "永远吓不到人的小伞",
+      "x": 18.0,
+      "y": 5.0,
+      "cost": 5.0,
+      "parents": [
+        [
+          "KYO_Tsukumogami_ship"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_Tsukumogami_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军经验 +15。若未完成鱼雷巡洋舰特别项目，则直接完成该项目并给巡洋舰科技 1 次 +100% 研究加成；若已完成，则给巡洋舰科技 2 次 +75% 研究加成。随后创建 Ōyodo Class 鱼雷巡洋舰设计，未直接给成品舰或生产线。特别项目关联鱼雷巡洋舰装备解锁；有 Man the Guns 时还有 1 次免费设计奖励，具体项目完成结算和 DLC 差异待实机核验。\n【关联决议与精神】解锁“启用：小伞·惊吓灵感”及对应停用决议；启用、停用各花费 10 政治点数。启用后获得“多多良小伞的惊吓灵感”：科研速度 +25%；每周人力 -5000，每周稳定度和战争支持度各 -5 个百分点。潜艇（submarine）造价 -30%、可靠性 +10%、水面可见度 -15%、水下可见度 -10%。 停用时移除该精神。各人物精神可并存；days_re_enable = -1，重复切换表现待实机验证。\n【人物】原脚本的顾问显示／招募提示段落已被注释，不计作现行国策奖励。\n【事件】未发现直接事件调用；本路线国策 ID 和关联精神 ID 在 events 中未找到引用。装备类别加成按源码登记，不代表已实机验证。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15595",
+      "raw": "focus = {\n\t\tid = KYO_kogasa_iron\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 6\n\t\ty = 3\n\n\t\tavailable = {\n\t\t\t\n\t\t}\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = { factor = 1 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tif = {\n\t\t\t\tlimit = { NOT = { is_special_project_completed = sp:sp_naval_torpedo_cruiser } }\n\t\t\t\t\n\t\t\t\tcomplete_special_project = {\n\t\t\t\t\tproject = sp:sp_naval_torpedo_cruiser\n\t\t\t\t\tshow_modifiers = no\n\t\t\t\t}\n\t\t\t\tadd_tech_bonus = {\n\t\t\t\t\tname = KYO_kogasa_iron\n\t\t\t\t\tbonus = 1\n\t\t\t\t\tuses = 1\n\t\t\t\t\t\n\t\t\t\t\tcategory = ca_tech\n\t\t\t\t}\n\t\t\t}\n\t\t\telse = {\n\t\t\t\tadd_tech_bonus = {\n\t\t\t\t\tname = KYO_kogasa_iron\n\t\t\t\t\tbonus = 0.75\n\t\t\t\t\tuses = 2\n\t\t\t\t\t\n\t\t\t\t\tcategory = ca_tech\n\t\t\t\t}\n\t\t\t}\n\t\t\t\n\t\t\tcreate_equipment_variant = {\n\n\t\t\t\t\tname = \"Ōyodo Class\"\n\t\t\t\t\ttype = ship_hull_torpedo_cruiser\n\t\t\t\t\t\n\t\t\t\t\tparent_version = 0\n\t\t\t\t\tmodules = {\n\t\t\t\t\t\tfixed_ship_battery_slot = ship_light_medium_battery_2\n\t\t\t\t\t\tfixed_ship_anti_air_slot = ship_anti_air_2\n\t\t\t\t\t\tfixed_ship_fire_control_system_slot = ship_fire_control_system_0\n\t\t\t\t\t\tfixed_ship_radar_slot = empty\n\t\t\t\t\t\tfixed_ship_engine_slot = cruiser_ship_engine_2\n\t\t\t\t\t\tfixed_ship_secondaries_slot = empty\n\t\t\t\t\t\tfixed_ship_armor_slot = ship_armor_cruiser_2\n\t\t\t\t\t\tfront_1_custom_slot = ship_anti_air_2\n\t\t\t\t\t\tmid_1_custom_slot = ship_torpedo_2\n\t\t\t\t\t\tmid_2_custom_slot = ship_torpedo_2\n\t\t\t\t\t\trear_1_custom_slot = ship_torpedo_2\n\t\t\t\t\t\trear_2_custom_slot = ship_anti_air_2\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t# custom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_kogasa\n\t\t\t# show_ideas_tooltip = gensokyo_kogasa\n\n\t\t\t\n\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_Tsukumogami_ship",
+        "x": 6.0,
+        "y": 3.0
+      },
+      "route": "tsukumogami"
+    },
+    {
+      "id": "KYO_shinmyoumaru_mallet",
+      "title": "付丧神的能力来源万宝槌的持有者针妙丸",
+      "x": 15.0,
+      "y": 6.0,
+      "cost": 4.0,
+      "parents": [
+        [
+          "KYO_reiko_beat"
+        ],
+        [
+          "KYO_benben_strong"
+        ],
+        [
+          "KYO_kokoro_ways"
+        ],
+        [
+          "KYO_yatsuhashi_wish"
+        ],
+        [
+          "KYO_kogasa_iron"
+        ]
+      ],
+      "exclusive": [],
+      "anchor": "KYO_Tsukumogami_ship",
+      "status": "existing",
+      "icon": "GFX_goal_unknown",
+      "summary": "【直接效果】海军经验 +15；战列舰科技 2 次 +100% 研究加成。研究加成名称键仍引用八桥国策，但类别和次数按当前脚本记录。\n【关联决议与精神】解锁“启用：针妙丸·万宝槌”及对应停用决议；启用、停用各花费 10 政治点数。启用后获得“少名针妙丸的万宝槌”：稳定度和战争支持度各 +15%；陆军攻防和速度各 +10%；陆军经验获取百分比 +20%，海空经验获取百分比各 +50%，经验损失 -25%。代价：每周人力 -3000、陆军训练时间 +100%、每日指挥点数获取 -0.50、指挥点数上限 -50、每日政治点数消耗 +0.25、每日陆军经验 -0.50、生活消费品工厂系数 +20%、适役人口系数 -30%、每月人口增长 -50%；每周伤亡／轰炸／运输船损失对应的战争支持度修正各 -0.01（按原字段记录，表现待实机验证）。 停用时移除该精神。各人物精神可并存；days_re_enable = -1，重复切换表现待实机验证。\n【人物】原脚本的顾问显示／招募提示段落已被注释，不计作现行国策奖励。\n【前置】雷鼓、弁弁、秦心、八桥、小伞五项国策全部完成才可进入（五个独立前置组）。\n【事件】未发现直接事件调用；本路线国策 ID 和关联精神 ID 在 events 中未找到引用。装备类别加成按源码登记，不代表已实机验证。",
+      "notes": "",
+      "description": "",
+      "source": "common/national_focus/kyo-focus.txt:15682",
+      "raw": "focus = {\n\t\tid = KYO_shinmyoumaru_mallet\n\t\ticon = GFX_goal_unknown\n\t\tcost = 4\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 3\n\t\ty = 4\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_reiko_beat\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_benben_strong\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_kokoro_ways\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_yatsuhashi_wish\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_kogasa_iron\n\t\t}\n\n\t\tai_will_do = {\n\t\t\tfactor = 5\n\t\t\tmodifier = {\n\t\t\t\tfactor = 10\n\t\t\t\tthreat > 0.50\n\t\t\t}\n\t\t}\n\n\t\tcompletion_reward = {\n\t\t\t\n\n\t\t\tnavy_experience = 15\n\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_yatsuhashi_wish\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 2\n\t\t\t\tcategory = bb_tech\n\t\t\t}\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_shinmyoumaru\n\t\t\t# show_ideas_tooltip = gensokyo_shinmyoumaru\n\t\t\t# set_global_flag = recruit_gensokyo_shinmyoumaru\n\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
+      "originalRelative": {
+        "reference": "KYO_Tsukumogami_ship",
+        "x": 3.0,
+        "y": 4.0
+      },
+      "route": "tsukumogami"
+    }
+  ],
+  "tsukuDecisions": [
+    {
+      "id": "on_kogasa_idea_decisoin",
+      "title": "启用：小伞·惊吓灵感",
+      "summary": "10 政治点数；需完成“永远吓不到人的小伞”；未持有时显示，添加对应精神。科研速度 +25%；每周人力 -5000，每周稳定度和战争支持度各 -5 个百分点。潜艇（submarine）造价 -30%、可靠性 +10%、水面可见度 -15%、水下可见度 -10%。 fire_only_once = no；days_re_enable = -1，重复切换表现待实机验证。",
+      "raw": "on_kogasa_idea_decisoin={\n\n\t\ticon = generic_prepare_civil_war\n\n\t\t#基础花费\n\n\t\tcost = 10\n\n\t\t#自定义花费，其本质上是一个tt字符串，本身不会扣除任何东西，需要在complete_effect内进行扣除\n\t\tcustom_cost_trigger = {\n\t\t\t                        #条件，满足条件显示custom_cost_text定义的tt字符\n\t\t}\n\n\n\t\t #当鼠标悬浮在花费上时，会显示<loc_ket>_tooltip的文本；当条件不满足时，则会显示<loc_key>_blocked\n\t\t\n\t\t\n\t\tfire_only_once = no #（yes/no）\n\t\tdays_re_enable = -1\n\n\t\t#条件\n\t\tallowed = {\n\t\t\t#条件,仅开局检测一次\n\t\t}\n\t\tavailable = {\n\t\t\t\n\t\t\thas_completed_focus = KYO_kogasa_iron\n\n\n\t\t\t#条件，持续检测\n\t\t}\n\t\tvisible = {\n\t\t\t\n\n\t\t\tNOT = {\n\t\t\t\thas_idea = KYO_kogasa_idea\n\t\t\t}\n\n\t\t\t#条件，持续检测,满足才显示决议\n\t\t}\n\n\t\tremove_trigger = {\n\t\t\t\n\t\t}\n\t\tcancel_trigger = {\n\t\t\t\n\t\t}\n\t\t\n\t\t#修正\n\t\tmodifier = {\n\t\t\t\n\t   \t}\n\t\ttargeted_modifier = { #决议正在进行时的修正，可以专门指向某国（天数为days_remove设定的数）\n\t\t\t\n\t\t}\n\n\t\t#效果\n\t\tcomplete_effect = {  \n\t\t\t\n\t\t\tadd_ideas =  KYO_kogasa_idea\n\t\t}\n\n\t\tremove_effect = {\n\t\t\t\n\t\t}\n\t\t\n\t\tcancel_effect = {\n\t\t\t\n\t\t}\t\n\t}",
+      "source": "common/decisions/KYO_decision.txt:2049"
+    },
+    {
+      "id": "off_kogasa_idea_decisoin",
+      "title": "停用：小伞·惊吓灵感",
+      "summary": "10 政治点数；需完成“永远吓不到人的小伞”；持有时显示，移除对应精神及其全部收益／代价。 fire_only_once = no；days_re_enable = -1，重复切换表现待实机验证。",
+      "raw": "off_kogasa_idea_decisoin={\n\t\ticon = generic_prepare_civil_war\n\t\t#基础花费\n\t\tcost = 10\n\t\t#自定义花费，其本质上是一个tt字符串，本身不会扣除任何东西，需要在complete_effect内进行扣除\n\t\tcustom_cost_trigger = {\n\t\t\n\t\t\t#条件，满足条件显示custom_cost_text定义的tt字符\n\t\t}\n\t\t #当鼠标悬浮在花费上时，会显示<loc_ket>_tooltip的文本；当条件不满足时，则会显示<loc_key>_blocked\n\t\t\n\t\t\n\t\tfire_only_once = no #（yes/no）\n\t\tdays_re_enable = -1\n\n\t\t#条件\n\t\tallowed = {\n\t\t\t#条件,仅开局检测一次\n\t\t}\n\t\tavailable = {\n\n\t\t\thas_completed_focus = KYO_kogasa_iron\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t#条件，持续检测\n\t\t}\n\t\tvisible = {\n\n\t\t\t\n\n\t\t\thas_idea = KYO_kogasa_idea\n\t\t\t\n\t\t\t#条件，持续检测,满足才显示决议\n\t\t}\n\n\t\tremove_trigger = {\n\t\t\t\n\t\t}\n\t\tcancel_trigger = {\n\t\t\t\n\t\t}\n\t\t\n\t\t#修正\n\t\tmodifier = {\n\t\t\t\n\t   \t}\n\t\ttargeted_modifier = { #决议正在进行时的修正，可以专门指向某国（天数为days_remove设定的数）\n\t\t\t\n\t\t}\n\n\t\t#效果\n\t\tcomplete_effect = {  \n\n\t\t\tremove_ideas =  KYO_kogasa_idea\n\n\t\t}\n\t\t\n\t\tremove_effect = {\n\t\t\t\n\t\t}\n\t\t\n\t\tcancel_effect = {\n\t\t\t\n\t\t}\t\n\t}",
+      "source": "common/decisions/KYO_decision.txt:2119"
+    },
+    {
+      "id": "on_reiko_idea_decisoin",
+      "title": "启用：雷鼓·节拍工学",
+      "summary": "10 政治点数；需完成“让人不自觉跳动的雷鼓”；未持有时显示，添加对应精神。生产效率上限 +50%、生产效率增长 +100%、军工和船坞产出各 +50%；代价为每日政治点数消耗 +1、政治点数获取 -50%、生活消费品工厂系数 +50%。装备加成按脚本类别：战列舰（mio_cat_eq_all_battleship）及驱逐舰（mio_cat_eq_all_destroyer）造价各 -50%。 fire_only_once = no；days_re_enable = -1，重复切换表现待实机验证。",
+      "raw": "on_reiko_idea_decisoin={\n\t\ticon = generic_prepare_civil_war\n\n\t\t#基础花费\n\n\t\tcost = 10\n\n\t\t#自定义花费，其本质上是一个tt字符串，本身不会扣除任何东西，需要在complete_effect内进行扣除\n\t\tcustom_cost_trigger = {\n\t\t\t                        #条件，满足条件显示custom_cost_text定义的tt字符\n\t\t}\n\n\n\t\t #当鼠标悬浮在花费上时，会显示<loc_ket>_tooltip的文本；当条件不满足时，则会显示<loc_key>_blocked\n\t\t\n\t\t\n\t\tfire_only_once = no #（yes/no）\n\t\tdays_re_enable = -1\n\n\t\t#条件\n\t\tallowed = {\n\t\t\t#条件,仅开局检测一次\n\t\t}\n\t\tavailable = {\n\t\t\t\n\t\t\thas_completed_focus = KYO_reiko_beat\n\t\t\t\n\t\t\t#条件，持续检测\n\t\t}\n\t\tvisible = {\n\t\t\t\n\n\t\t\tNOT = {\n\t\t\t\thas_idea = KYO_reiko_idea\n\t\t\t}\n\t\t\t#条件，持续检测,满足才显示决议\n\t\t}\n\n\t\tremove_trigger = {\n\t\t\t\n\t\t}\n\t\tcancel_trigger = {\n\t\t\t\n\t\t}\n\t\t\n\t\t#修正\n\t\tmodifier = {\n\t\t\t\n\t   \t}\n\t\ttargeted_modifier = { #决议正在进行时的修正，可以专门指向某国（天数为days_remove设定的数）\n\t\t\t\n\t\t}\n\n\t\t#效果\n\t\tcomplete_effect = {  \n\t\t\t\n\t\t\tadd_ideas = KYO_reiko_idea\n\t\t}\n\n\t\tremove_effect = {\n\t\t\t\n\t\t}\n\t\t\n\t\tcancel_effect = {\n\t\t\t\n\t\t}\t\n\t}",
+      "source": "common/decisions/KYO_decision.txt:2185"
+    },
+    {
+      "id": "off_reiko_idea_decisoin",
+      "title": "停用：雷鼓·节拍工学",
+      "summary": "10 政治点数；需完成“让人不自觉跳动的雷鼓”；持有时显示，移除对应精神及其全部收益／代价。 fire_only_once = no；days_re_enable = -1，重复切换表现待实机验证。",
+      "raw": "off_reiko_idea_decisoin={\n\t\ticon = generic_prepare_civil_war\n\t\t#基础花费\n\t\tcost = 10\n\t\t#自定义花费，其本质上是一个tt字符串，本身不会扣除任何东西，需要在complete_effect内进行扣除\n\t\tcustom_cost_trigger = {\n\t\t\n\t\t\t#条件，满足条件显示custom_cost_text定义的tt字符\n\t\t}\n\t\t #当鼠标悬浮在花费上时，会显示<loc_ket>_tooltip的文本；当条件不满足时，则会显示<loc_key>_blocked\n\t\t\n\t\t\n\t\tfire_only_once = no #（yes/no）\n\t\tdays_re_enable = -1\n\n\t\t#条件\n\t\tallowed = {\n\t\t\t#条件,仅开局检测一次\n\t\t}\n\t\tavailable = {\n\n\t\t\thas_completed_focus = KYO_reiko_beat\n\t\t\t\n\t\t\t\n\t\t\t#条件，持续检测\n\t\t}\n\t\tvisible = {\n\n\t\t\t\n\t\t\t\n\t\t\thas_idea = KYO_reiko_idea\n\t\t\t\n\t\t\t#条件，持续检测,满足才显示决议\n\t\t}\n\n\t\tremove_trigger = {\n\t\t\t\n\t\t}\n\t\tcancel_trigger = {\n\t\t\t\n\t\t}\n\t\t\n\t\t#修正\n\t\tmodifier = {\n\t\t\t\n\t   \t}\n\t\ttargeted_modifier = { #决议正在进行时的修正，可以专门指向某国（天数为days_remove设定的数）\n\t\t\t\n\t\t}\n\n\t\t#效果\n\t\tcomplete_effect = {  \n\t\t\tremove_ideas =  KYO_reiko_idea\n\n\t\t}\n\t\t\n\t\tremove_effect = {\n\t\t\t\n\t\t}\n\t\t\n\t\tcancel_effect = {\n\t\t\t\n\t\t}\t\n\t}",
+      "source": "common/decisions/KYO_decision.txt:2252"
+    },
+    {
+      "id": "on_benben_idea_decisoin",
+      "title": "启用：弁弁·琵琶声学",
+      "summary": "10 政治点数；需完成“自称最强付丧神的弁弁”；未持有时显示，添加对应精神。每周稳定度和战争支持度各 +5 个百分点；建筑建造速度 -50%、本地资源 -50%。潜艇（submarine）和巡洋舰（mio_cat_eq_all_cruiser）造价各 -50%。 fire_only_once = no；days_re_enable = -1，重复切换表现待实机验证。",
+      "raw": "on_benben_idea_decisoin={\n\t\ticon = generic_prepare_civil_war\n\n\t\t#基础花费\n\n\t\tcost = 10\n\n\t\t#自定义花费，其本质上是一个tt字符串，本身不会扣除任何东西，需要在complete_effect内进行扣除\n\t\tcustom_cost_trigger = {\n\t\t\t                        #条件，满足条件显示custom_cost_text定义的tt字符\n\t\t}\n\n\n\t\t #当鼠标悬浮在花费上时，会显示<loc_ket>_tooltip的文本；当条件不满足时，则会显示<loc_key>_blocked\n\t\t\n\t\t\n\t\tfire_only_once = no #（yes/no）\n\t\tdays_re_enable = -1\n\n\t\t#条件\n\t\tallowed = {\n\t\t\t#条件,仅开局检测一次\n\t\t}\n\t\tavailable = {\n\t\t\t\n\t\t\thas_completed_focus = KYO_benben_strong\n\t\t\t\n\t\t\t#条件，持续检测\n\t\t}\n\t\tvisible = {\n\t\t\t\n\n\t\t\tNOT = {\n\t\t\t\thas_idea = KYO_benben_idea\n\t\t\t}\n\t\t\t#条件，持续检测,满足才显示决议\n\t\t}\n\n\t\tremove_trigger = {\n\t\t\t\n\t\t}\n\t\tcancel_trigger = {\n\t\t\t\n\t\t}\n\t\t\n\t\t#修正\n\t\tmodifier = {\n\t\t\t\n\t   \t}\n\t\ttargeted_modifier = { #决议正在进行时的修正，可以专门指向某国（天数为days_remove设定的数）\n\t\t\t\n\t\t}\n\n\t\t#效果\n\t\tcomplete_effect = {  \n\t\t\t\n\t\t\tadd_ideas =  KYO_benben_idea\n\t\t}\n\n\t\tremove_effect = {\n\t\t\t\n\t\t}\n\t\t\n\t\tcancel_effect = {\n\t\t\t\n\t\t}\t\n\t}",
+      "source": "common/decisions/KYO_decision.txt:2316"
+    },
+    {
+      "id": "off_benben_idea_decisoin",
+      "title": "停用：弁弁·琵琶声学",
+      "summary": "10 政治点数；需完成“自称最强付丧神的弁弁”；持有时显示，移除对应精神及其全部收益／代价。 fire_only_once = no；days_re_enable = -1，重复切换表现待实机验证。",
+      "raw": "off_benben_idea_decisoin={\n\t\ticon = generic_prepare_civil_war\n\t\t#基础花费\n\t\tcost = 10\n\t\t#自定义花费，其本质上是一个tt字符串，本身不会扣除任何东西，需要在complete_effect内进行扣除\n\t\tcustom_cost_trigger = {\n\t\t\n\t\t\t#条件，满足条件显示custom_cost_text定义的tt字符\n\t\t}\n\t\t #当鼠标悬浮在花费上时，会显示<loc_ket>_tooltip的文本；当条件不满足时，则会显示<loc_key>_blocked\n\t\t\n\t\t\n\t\tfire_only_once = no #（yes/no）\n\t\tdays_re_enable = -1\n\n\t\t#条件\n\t\tallowed = {\n\t\t\t#条件,仅开局检测一次\n\t\t}\n\t\tavailable = {\n\n\t\t\thas_completed_focus = KYO_benben_strong\n\t\t\t\n\t\t\t\n\t\t\t#条件，持续检测\n\t\t}\n\t\tvisible = {\n\n\t\t\t\n\t\t\t\n\t\t\thas_idea = KYO_benben_idea\n\t\t\t\n\t\t\t#条件，持续检测,满足才显示决议\n\t\t}\n\n\t\tremove_trigger = {\n\t\t\t\n\t\t}\n\t\tcancel_trigger = {\n\t\t\t\n\t\t}\n\t\t\n\t\t#修正\n\t\tmodifier = {\n\t\t\t\n\t   \t}\n\t\ttargeted_modifier = { #决议正在进行时的修正，可以专门指向某国（天数为days_remove设定的数）\n\t\t\t\n\t\t}\n\n\t\t#效果\n\t\tcomplete_effect = {  \n\t\t\t\n\t\t\tremove_ideas =  KYO_benben_idea\n\t\t}\n\t\t\n\t\tremove_effect = {\n\t\t\t\n\t\t}\n\t\t\n\t\tcancel_effect = {\n\t\t\t\n\t\t}\t\n\t}",
+      "source": "common/decisions/KYO_decision.txt:2383"
+    },
+    {
+      "id": "on_yatsuhashi_idea_decisoin",
+      "title": "启用：八桥·筝韵结构",
+      "summary": "10 政治点数；需完成“充满希望的付丧神八桥”；未持有时显示，添加对应精神。建筑建造速度和船坞产出各 +99%，工业企业顾问花费 -50%。代价：轻／中／重坦、步兵装备、支援装备造价均 +199%；可靠性分别 -20%／-20%／-40%／-20%／-15%；轻／中／重坦装甲分别 -5%／-10%／-10%。装备类别命中范围需实机核验。 fire_only_once = no；days_re_enable = -1，重复切换表现待实机验证。",
+      "raw": "on_yatsuhashi_idea_decisoin={\n\t\ticon = generic_prepare_civil_war\n\n\t\t#基础花费\n\n\t\tcost = 10\n\n\t\t#自定义花费，其本质上是一个tt字符串，本身不会扣除任何东西，需要在complete_effect内进行扣除\n\t\tcustom_cost_trigger = {\n\t\t\t                        #条件，满足条件显示custom_cost_text定义的tt字符\n\t\t}\n\n\n\t\t #当鼠标悬浮在花费上时，会显示<loc_ket>_tooltip的文本；当条件不满足时，则会显示<loc_key>_blocked\n\t\t\n\t\t\n\t\tfire_only_once = no #（yes/no）\n\t\tdays_re_enable = -1\n\n\t\t#条件\n\t\tallowed = {\n\t\t\t#条件,仅开局检测一次\n\t\t}\n\t\tavailable = {\n\t\t\t\n\t\t\thas_completed_focus = KYO_yatsuhashi_wish\n\t\t\t\n\t\t\t#条件，持续检测\n\t\t}\n\t\tvisible = {\n\t\t\t\n\n\t\t\tNOT = {\n\t\t\t\thas_idea = KYO_yatsuhashi_idea\n\t\t\t}\n\t\t\t#条件，持续检测,满足才显示决议\n\t\t}\n\n\t\tremove_trigger = {\n\t\t\t\n\t\t}\n\t\tcancel_trigger = {\n\t\t\t\n\t\t}\n\t\t\n\t\t#修正\n\t\tmodifier = {\n\t\t\t\n\t   \t}\n\t\ttargeted_modifier = { #决议正在进行时的修正，可以专门指向某国（天数为days_remove设定的数）\n\t\t\t\n\t\t}\n\n\t\t#效果\n\t\tcomplete_effect = {  \n\t\t\t\n\t\t\tadd_ideas =  KYO_yatsuhashi_idea\n\t\t}\n\n\t\tremove_effect = {\n\t\t\t\n\t\t}\n\t\t\n\t\tcancel_effect = {\n\t\t\t\n\t\t}\t\n\t}",
+      "source": "common/decisions/KYO_decision.txt:2447"
+    },
+    {
+      "id": "off_yatsuhashi_idea_decisoin",
+      "title": "停用：八桥·筝韵结构",
+      "summary": "10 政治点数；需完成“充满希望的付丧神八桥”；持有时显示，移除对应精神及其全部收益／代价。 fire_only_once = no；days_re_enable = -1，重复切换表现待实机验证。",
+      "raw": "off_yatsuhashi_idea_decisoin={\n\t\ticon = generic_prepare_civil_war\n\t\t#基础花费\n\t\tcost = 10\n\t\t#自定义花费，其本质上是一个tt字符串，本身不会扣除任何东西，需要在complete_effect内进行扣除\n\t\tcustom_cost_trigger = {\n\t\t\n\t\t\t#条件，满足条件显示custom_cost_text定义的tt字符\n\t\t}\n\t\t #当鼠标悬浮在花费上时，会显示<loc_ket>_tooltip的文本；当条件不满足时，则会显示<loc_key>_blocked\n\t\t\n\t\t\n\t\tfire_only_once = no #（yes/no）\n\t\tdays_re_enable = -1\n\n\t\t#条件\n\t\tallowed = {\n\t\t\t#条件,仅开局检测一次\n\t\t}\n\t\tavailable = {\n\n\t\t\thas_completed_focus = KYO_yatsuhashi_wish\n\t\t\t\n\t\t\t\n\t\t\t#条件，持续检测\n\t\t}\n\t\tvisible = {\n\n\t\t\t\n\t\t\t\n\t\t\thas_idea = KYO_yatsuhashi_idea\n\t\t\t\n\t\t\t#条件，持续检测,满足才显示决议\n\t\t}\n\n\t\tremove_trigger = {\n\t\t\t\n\t\t}\n\t\tcancel_trigger = {\n\t\t\t\n\t\t}\n\t\t\n\t\t#修正\n\t\tmodifier = {\n\t\t\t\n\t   \t}\n\t\ttargeted_modifier = { #决议正在进行时的修正，可以专门指向某国（天数为days_remove设定的数）\n\t\t\t\n\t\t}\n\n\t\t#效果\n\t\tcomplete_effect = {  \n\t\t\t\n\t\t\tremove_ideas =  KYO_yatsuhashi_idea\n\t\t}\n\t\t\n\t\tremove_effect = {\n\t\t\t\n\t\t}\n\t\t\n\t\tcancel_effect = {\n\t\t\t\n\t\t}\t\n\t}",
+      "source": "common/decisions/KYO_decision.txt:2514"
+    },
+    {
+      "id": "on_kokoro_idea_decisoin",
+      "title": "启用：秦心·面灵气",
+      "summary": "10 政治点数；需完成“能够控制群众情感的秦心”；未持有时显示，添加对应精神。军工厂、民用工厂和陆上要塞建造速度各 +50%；每周人力 -10000。 fire_only_once = no；days_re_enable = -1，重复切换表现待实机验证。",
+      "raw": "on_kokoro_idea_decisoin={\n\t\ticon = generic_prepare_civil_war\n\n\t\t#基础花费\n\n\t\tcost = 10\n\n\t\t#自定义花费，其本质上是一个tt字符串，本身不会扣除任何东西，需要在complete_effect内进行扣除\n\t\tcustom_cost_trigger = {\n\t\t\t                        #条件，满足条件显示custom_cost_text定义的tt字符\n\t\t}\n\n\n\t\t #当鼠标悬浮在花费上时，会显示<loc_ket>_tooltip的文本；当条件不满足时，则会显示<loc_key>_blocked\n\t\t\n\t\t\n\t\tfire_only_once = no #（yes/no）\n\t\tdays_re_enable = -1\n\n\t\t#条件\n\t\tallowed = {\n\t\t\t#条件,仅开局检测一次\n\t\t}\n\t\tavailable = {\n\t\t\t\n\t\t\thas_completed_focus = KYO_kokoro_ways\n\t\t\t\n\t\t\t#条件，持续检测\n\t\t}\n\t\tvisible = {\n\t\t\t\n\n\t\t\tNOT = {\n\t\t\t\thas_idea = KYO_kokoro_idea\n\t\t\t}\n\t\t\t#条件，持续检测,满足才显示决议\n\t\t}\n\n\t\tremove_trigger = {\n\t\t\t\n\t\t}\n\t\tcancel_trigger = {\n\t\t\t\n\t\t}\n\t\t\n\t\t#修正\n\t\tmodifier = {\n\t\t\t\n\t   \t}\n\t\ttargeted_modifier = { #决议正在进行时的修正，可以专门指向某国（天数为days_remove设定的数）\n\t\t\t\n\t\t}\n\n\t\t#效果\n\t\tcomplete_effect = {  \n\t\t\t\n\t\t\tadd_ideas =  KYO_kokoro_idea\t\n\t\t}\n\n\t\tremove_effect = {\n\t\t\t\n\t\t}\n\t\t\n\t\tcancel_effect = {\n\t\t\t\n\t\t}\t\n\t}",
+      "source": "common/decisions/KYO_decision.txt:2578"
+    },
+    {
+      "id": "off_kokoro_idea_decisoin",
+      "title": "停用：秦心·面灵气",
+      "summary": "10 政治点数；需完成“能够控制群众情感的秦心”；持有时显示，移除对应精神及其全部收益／代价。 fire_only_once = no；days_re_enable = -1，重复切换表现待实机验证。",
+      "raw": "off_kokoro_idea_decisoin={\n\t\ticon = generic_prepare_civil_war\n\t\t#基础花费\n\t\tcost = 10\n\t\t#自定义花费，其本质上是一个tt字符串，本身不会扣除任何东西，需要在complete_effect内进行扣除\n\t\tcustom_cost_trigger = {\n\t\t\n\t\t\t#条件，满足条件显示custom_cost_text定义的tt字符\n\t\t}\n\t\t #当鼠标悬浮在花费上时，会显示<loc_ket>_tooltip的文本；当条件不满足时，则会显示<loc_key>_blocked\n\t\t\n\t\t\n\t\tfire_only_once = no #（yes/no）\n\t\tdays_re_enable = -1\n\n\t\t#条件\n\t\tallowed = {\n\t\t\t#条件,仅开局检测一次\n\t\t}\n\t\tavailable = {\n\n\t\t\thas_completed_focus = KYO_kokoro_ways\n\t\t\n\t\t\t#条件，持续检测\n\t\t}\n\t\tvisible = {\n\n\t\t\t\n\t\t\t\n\t\t\thas_idea = KYO_kokoro_idea\n\t\t\t\n\t\t\t#条件，持续检测,满足才显示决议\n\t\t}\n\n\t\tremove_trigger = {\n\t\t\t\n\t\t}\n\t\tcancel_trigger = {\n\t\t\t\n\t\t}\n\t\t\n\t\t#修正\n\t\tmodifier = {\n\t\t\t\n\t   \t}\n\t\ttargeted_modifier = { #决议正在进行时的修正，可以专门指向某国（天数为days_remove设定的数）\n\t\t\t\n\t\t}\n\n\t\t#效果\n\t\tcomplete_effect = {  \n\t\t\t\n\t\t\tremove_ideas =  KYO_kokoro_idea\t\n\t\t}\n\t\t\n\t\tremove_effect = {\n\t\t\t\n\t\t}\n\t\t\n\t\tcancel_effect = {\n\t\t\t\n\t\t}\t\n\t}",
+      "source": "common/decisions/KYO_decision.txt:2645"
+    },
+    {
+      "id": "on_shinmyoumaru_idea_decisoin",
+      "title": "启用：针妙丸·万宝槌",
+      "summary": "10 政治点数；需完成“付丧神的能力来源万宝槌的持有者针妙丸”；未持有时显示，添加对应精神。稳定度和战争支持度各 +15%；陆军攻防和速度各 +10%；陆军经验获取百分比 +20%，海空经验获取百分比各 +50%，经验损失 -25%。代价：每周人力 -3000、陆军训练时间 +100%、每日指挥点数获取 -0.50、指挥点数上限 -50、每日政治点数消耗 +0.25、每日陆军经验 -0.50、生活消费品工厂系数 +20%、适役人口系数 -30%、每月人口增长 -50%；每周伤亡／轰炸／运输船损失对应的战争支持度修正各 -0.01（按原字段记录，表现待实机验证）。 fire_only_once = no；days_re_enable = -1，重复切换表现待实机验证。",
+      "raw": "on_shinmyoumaru_idea_decisoin={\n\t\ticon = generic_prepare_civil_war\n\n\t\t#基础花费\n\n\t\tcost = 10\n\n\t\t#自定义花费，其本质上是一个tt字符串，本身不会扣除任何东西，需要在complete_effect内进行扣除\n\t\tcustom_cost_trigger = {\n\t\t\t                        #条件，满足条件显示custom_cost_text定义的tt字符\n\t\t}\n\n\n\t\t #当鼠标悬浮在花费上时，会显示<loc_ket>_tooltip的文本；当条件不满足时，则会显示<loc_key>_blocked\n\t\t\n\t\t\n\t\tfire_only_once = no #（yes/no）\n\t\tdays_re_enable = -1\n\n\t\t#条件\n\t\tallowed = {\n\t\t\t#条件,仅开局检测一次\n\t\t}\n\t\tavailable = {\n\t\t\t\n\t\t\thas_completed_focus = KYO_shinmyoumaru_mallet\n\t\t\t\n\t\t\t#条件，持续检测\n\t\t}\n\t\tvisible = {\n\t\t\t\n\n\t\t\tNOT = {\n\t\t\t\thas_idea = KYO_shinmyoumaru_idea\n\t\t\t}\n\t\t\t#条件，持续检测,满足才显示决议\n\t\t}\n\n\t\tremove_trigger = {\n\t\t\t\n\t\t}\n\t\tcancel_trigger = {\n\t\t\t\n\t\t}\n\t\t\n\t\t#修正\n\t\tmodifier = {\n\t\t\t\n\t   \t}\n\t\ttargeted_modifier = { #决议正在进行时的修正，可以专门指向某国（天数为days_remove设定的数）\n\t\t\t\n\t\t}\n\n\t\t#效果\n\t\tcomplete_effect = {  \n\t\t\tadd_ideas = KYO_shinmyoumaru_idea\t\n\n\t\t}\n\n\t\tremove_effect = {\n\t\t\t\n\t\t}\n\t\t\n\t\tcancel_effect = {\n\t\t\t\n\t\t}\t\n\t}",
+      "source": "common/decisions/KYO_decision.txt:2708"
+    },
+    {
+      "id": "off_shinmyoumaru_idea_decisoin",
+      "title": "停用：针妙丸·万宝槌",
+      "summary": "10 政治点数；需完成“付丧神的能力来源万宝槌的持有者针妙丸”；持有时显示，移除对应精神及其全部收益／代价。 fire_only_once = no；days_re_enable = -1，重复切换表现待实机验证。",
+      "raw": "off_shinmyoumaru_idea_decisoin={\n\t\ticon = generic_prepare_civil_war\n\t\t#基础花费\n\t\tcost = 10\n\t\t#自定义花费，其本质上是一个tt字符串，本身不会扣除任何东西，需要在complete_effect内进行扣除\n\t\tcustom_cost_trigger = {\n\t\t\n\t\t\t#条件，满足条件显示custom_cost_text定义的tt字符\n\t\t}\n\t\t #当鼠标悬浮在花费上时，会显示<loc_ket>_tooltip的文本；当条件不满足时，则会显示<loc_key>_blocked\n\t\t\n\t\t\n\t\tfire_only_once = no #（yes/no）\n\t\tdays_re_enable = -1\n\n\t\t#条件\n\t\tallowed = {\n\t\t\t#条件,仅开局检测一次\n\t\t}\n\t\tavailable = {\n\n\t\t\thas_completed_focus = KYO_shinmyoumaru_mallet\n\t\t\n\t\t\t#条件，持续检测\n\t\t}\n\t\tvisible = {\n\n\t\t\t\n\t\t\t\n\t\t\thas_idea = KYO_shinmyoumaru_idea\n\t\t\t\n\t\t\t#条件，持续检测,满足才显示决议\n\t\t}\n\n\t\tremove_trigger = {\n\t\t\t\n\t\t}\n\t\tcancel_trigger = {\n\t\t\t\n\t\t}\n\t\t\n\t\t#修正\n\t\tmodifier = {\n\t\t\t\n\t   \t}\n\t\ttargeted_modifier = { #决议正在进行时的修正，可以专门指向某国（天数为days_remove设定的数）\n\t\t\t\n\t\t}\n\n\t\t#效果\n\t\tcomplete_effect = {  \n\t\t\t\n\t\t\tremove_ideas =  KYO_shinmyoumaru_idea\n\t\t}\n\t\t\n\t\tremove_effect = {\n\t\t\t\n\t\t}\n\t\t\n\t\tcancel_effect = {\n\t\t\t\n\t\t}\t\n\t}",
+      "source": "common/decisions/KYO_decision.txt:2775"
+    }
+  ],
+  "extensionDate": "2026-09-12",
+  "extensionNote": "付丧神线按当前工作区导入，保留此前守矢草稿；共同入口已在游戏源码追加幻想乡联合舰队每日海军经验 +0.10，原只读基线保留历史状态。"
+}

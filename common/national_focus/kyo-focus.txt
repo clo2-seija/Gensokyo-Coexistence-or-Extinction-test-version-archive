@@ -14654,6 +14654,11 @@ focus = {
 		ai_will_do = { factor = 100 }
 
 		completion_reward = {
+			# Renko：建立幻想乡联合舰队，海军经验按每日固定值增加。
+			Renko_KYO_add_or_modify_united_fleet = yes
+			add_to_variable = { Renko_KYO_united_fleet_experience_gain_navy = 0.10 tooltip = experience_gain_navy_tt }
+			custom_effect_tooltip = generic_skip_one_line_tt
+
 			
 			
 			

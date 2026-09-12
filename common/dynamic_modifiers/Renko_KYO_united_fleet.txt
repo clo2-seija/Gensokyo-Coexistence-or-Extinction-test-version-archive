@@ -1,0 +1,53 @@
+# 幻想乡本国海军变量池；字段参照日本共荣圈海军，数值不跨国共享。
+Renko_KYO_united_fleet_dm = {
+    # 临时占位图标；建议作者后续自行制作正式图标替换。
+    icon = GFX_idea_Renko_KYO_united_fleet
+    enable = { always = yes }
+    remove_trigger = { always = no }
+
+    experience_gain_navy = Renko_KYO_united_fleet_experience_gain_navy
+    navy_org_factor = Renko_KYO_united_fleet_navy_org_factor
+    naval_morale_factor = Renko_KYO_united_fleet_naval_morale_factor
+    navy_max_range_factor = Renko_KYO_united_fleet_navy_max_range_factor
+    naval_coordination = Renko_KYO_united_fleet_naval_coordination
+    navy_visibility = Renko_KYO_united_fleet_navy_visibility
+    naval_invasion_prep_speed = Renko_KYO_united_fleet_naval_invasion_prep_speed
+    convoy_raiding_efficiency_factor = Renko_KYO_united_fleet_convoy_raiding_efficiency_factor
+    convoy_escort_efficiency = Renko_KYO_united_fleet_convoy_escort_efficiency
+    naval_detection = Renko_KYO_united_fleet_naval_detection
+    repair_speed_factor = Renko_KYO_united_fleet_repair_speed_factor
+    refit_speed = Renko_KYO_united_fleet_refit_speed
+    naval_ship_recovery_chance = Renko_KYO_united_fleet_naval_ship_recovery_chance
+    navy_capital_ship_attack_factor = Renko_KYO_united_fleet_navy_capital_ship_attack_factor
+    navy_capital_ship_defence_factor = Renko_KYO_united_fleet_navy_capital_ship_defence_factor
+    navy_screen_attack_factor = Renko_KYO_united_fleet_navy_screen_attack_factor
+    navy_screen_defence_factor = Renko_KYO_united_fleet_navy_screen_defence_factor
+    navy_submarine_attack_factor = Renko_KYO_united_fleet_navy_submarine_attack_factor
+    navy_submarine_defence_factor = Renko_KYO_united_fleet_navy_submarine_defence_factor
+    navy_submarine_detection_factor = Renko_KYO_united_fleet_navy_submarine_detection_factor
+    naval_mines_damage_factor = Renko_KYO_united_fleet_naval_mines_damage_factor
+    mines_planting_by_fleets_factor = Renko_KYO_united_fleet_mines_planting_by_fleets_factor
+    navy_anti_air_attack_factor = Renko_KYO_united_fleet_navy_anti_air_attack_factor
+    navy_carrier_air_attack_factor = Renko_KYO_united_fleet_navy_carrier_air_attack_factor
+    navy_carrier_air_targetting_factor = Renko_KYO_united_fleet_navy_carrier_air_targetting_factor
+    sortie_efficiency = Renko_KYO_united_fleet_sortie_efficiency
+    carrier_traffic = Renko_KYO_united_fleet_carrier_traffic
+    naval_torpedo_hit_chance_factor = Renko_KYO_united_fleet_naval_torpedo_hit_chance_factor
+    naval_torpedo_reveal_chance_factor = Renko_KYO_united_fleet_naval_torpedo_reveal_chance_factor
+    naval_torpedo_screen_penetration_factor = Renko_KYO_united_fleet_naval_torpedo_screen_penetration_factor
+    naval_torpedo_damage_reduction_factor = Renko_KYO_united_fleet_naval_torpedo_damage_reduction_factor
+    screening_without_screens = Renko_KYO_united_fleet_screening_without_screens
+    spotting_chance = Renko_KYO_united_fleet_spotting_chance
+    naval_retreat_speed = Renko_KYO_united_fleet_naval_retreat_speed
+    naval_retreat_chance = Renko_KYO_united_fleet_naval_retreat_chance
+    naval_enemy_fleet_size_ratio_penalty_factor = Renko_KYO_united_fleet_naval_enemy_fleet_size_ratio_penalty_factor
+    naval_enemy_positioning_in_initial_attack = Renko_KYO_united_fleet_naval_enemy_positioning_in_initial_attack
+    naval_enemy_retreat_chance = Renko_KYO_united_fleet_naval_enemy_retreat_chance
+    naval_night_attack = Renko_KYO_united_fleet_naval_night_attack
+    night_spotting_chance = Renko_KYO_united_fleet_night_spotting_chance
+    naval_hit_chance = Renko_KYO_united_fleet_naval_hit_chance
+    naval_damage_factor = Renko_KYO_united_fleet_naval_damage_factor
+    naval_defense_factor = Renko_KYO_united_fleet_naval_defense_factor
+    positioning = Renko_KYO_united_fleet_positioning
+    screening_efficiency = Renko_KYO_united_fleet_screening_efficiency
+}

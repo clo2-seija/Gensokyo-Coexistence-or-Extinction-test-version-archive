@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+<title id="title">幻想乡联合舰队</title><desc id="desc">参照钢铁雄心四海军国家精神的旗帜与舰船构图：红白阴阳旗、钢灰战列舰、旧金属圆章。透明背景 SVG 设计稿。</desc>
+<defs>
+ <linearGradient id="rim" x2=".7" y2="1"><stop stop-color="#b4a17b"/><stop offset=".32" stop-color="#736953"/><stop offset=".64" stop-color="#363832"/><stop offset=".85" stop-color="#93856a"/><stop offset="1" stop-color="#453d30"/></linearGradient>
+ <radialGradient id="navy" cx=".4" cy=".25" r=".8"><stop stop-color="#3d5058"/><stop offset=".55" stop-color="#243039"/><stop offset="1" stop-color="#10191e"/></radialGradient>
+ <linearGradient id="cloth" x1="0" y1="0" x2="1" y2=".45"><stop stop-color="#c1bca8"/><stop offset=".23" stop-color="#eee8d4"/><stop offset=".48" stop-color="#aaa996"/><stop offset=".69" stop-color="#e8e4d5"/><stop offset="1" stop-color="#bcbba9"/></linearGradient>
+ <linearGradient id="red" x2=".8" y2="1"><stop stop-color="#bf514c"/><stop offset=".4" stop-color="#96342f"/><stop offset="1" stop-color="#552724"/></linearGradient>
+ <linearGradient id="steel" x2=".2" y2="1"><stop stop-color="#c7c9bd"/><stop offset=".22" stop-color="#939e9c"/><stop offset=".55" stop-color="#58676b"/><stop offset="1" stop-color="#2b383f"/></linearGradient>
+ <linearGradient id="hull" x2="0" y2="1"><stop stop-color="#a0aaa5"/><stop offset=".3" stop-color="#67777b"/><stop offset="1" stop-color="#26343d"/></linearGradient>
+ <linearGradient id="fold"><stop stop-color="#0c1114" stop-opacity=".27"/><stop offset=".4" stop-color="#fff8df" stop-opacity=".1"/><stop offset="1" stop-color="#0c1114" stop-opacity=".3"/></linearGradient>
+ <clipPath id="flag"><path d="M51 52C86 65 119 35 153 44S201 67 218 51L210 136C184 150 165 123 140 128S86 153 57 140Z"/></clipPath>
+</defs>
+<!-- 暗金属外缘，弱化现代矢量图标的粗轮廓。 -->
+<g fill="url(#rim)" stroke="#252826" stroke-width="1"><path d="M121 21L124 11L131 11L135 21Z" transform="rotate(0 128 128)"/><path d="M121 21L124 11L131 11L135 21Z" transform="rotate(15 128 128)"/><path d="M121 21L124 11L131 11L135 21Z" transform="rotate(30 128 128)"/><path d="M121 21L124 11L131 11L135 21Z" transform="rotate(45 128 128)"/><path d="M121 21L124 11L131 11L135 21Z" transform="rotate(60 128 128)"/><path d="M121 21L124 11L131 11L135 21Z" transform="rotate(75 128 128)"/><path d="M121 21L124 11L131 11L135 21Z" transform="rotate(90 128 128)"/><path d="M121 21L124 11L131 11L135 21Z" transform="rotate(105 128 128)"/><path d="M121 21L124 11L131 11L135 21Z" transform="rotate(120 128 128)"/><path d="M121 21L124 11L131 11L135 21Z" transform="rotate(135 128 128)"/><path d="M121 21L124 11L131 11L135 21Z" transform="rotate(150 128 128)"/><path d="M121 21L124 11L131 11L135 21Z" transform="rotate(165 128 128)"/><path d="M121 21L124 11L131 11L135 21Z" transform="rotate(180 128 128)"/><path d="M121 21L124 11L131 11L135 21Z" transform="rotate(195 128 128)"/><path d="M121 21L124 11L131 11L135 21Z" transform="rotate(210 128 128)"/><path d="M121 21L124 11L131 11L135 21Z" transform="rotate(225 128 128)"/><path d="M121 21L124 11L131 11L135 21Z" transform="rotate(240 128 128)"/><path d="M121 21L124 11L131 11L135 21Z" transform="rotate(255 128 128)"/><path d="M121 21L124 11L131 11L135 21Z" transform="rotate(270 128 128)"/><path d="M121 21L124 11L131 11L135 21Z" transform="rotate(285 128 128)"/><path d="M121 21L124 11L131 11L135 21Z" transform="rotate(300 128 128)"/><path d="M121 21L124 11L131 11L135 21Z" transform="rotate(315 128 128)"/><path d="M121 21L124 11L131 11L135 21Z" transform="rotate(330 128 128)"/><path d="M121 21L124 11L131 11L135 21Z" transform="rotate(345 128 128)"/></g>
+<circle cx="128" cy="128" r="109" fill="url(#rim)" stroke="#252b2a" stroke-width="3"/>
+<circle cx="128" cy="128" r="102" fill="url(#navy)" stroke="#afa184" stroke-opacity=".45" stroke-width="2"/>
+<path d="M49 185A94 94 0 0 0 207 182" fill="none" stroke="#8b8067" stroke-width="2" opacity=".55"/>
+<!-- 阴阳旗。红白阴阳玉保留为唯一鲜明的识别符号。 -->
+<path d="M48 40L57 192" stroke="#101a20" stroke-width="7"/>
+<path d="M47 40L56 192" stroke="url(#steel)" stroke-width="4"/>
+<path d="M45 41L48 30L52 41Z" fill="#c3b594"/>
+<path d="M54 57C90 70 120 41 154 50S202 73 221 56L214 141C183 158 165 131 140 134S85 160 60 145Z" fill="#080f14" opacity=".55"/>
+<path d="M51 52C86 65 119 35 153 44S201 67 218 51L210 136C184 150 165 123 140 128S86 153 57 140Z" fill="url(#cloth)" stroke="#68685d" stroke-width="1.4"/>
+<g clip-path="url(#flag)">
+ <g transform="translate(133 94) rotate(-8)">
+  <circle r="37" fill="url(#red)"/>
+  <path d="M0 -37A37 37 0 0 1 0 37A18.5 18.5 0 0 1 0 0A18.5 18.5 0 0 0 0 -37Z" fill="#e7e1cd"/>
+  <circle cy="-18.5" r="6.4" fill="#e7e1cd"/><circle cy="18.5" r="6.4" fill="#8f302c"/>
+  <circle r="37" fill="none" stroke="#5d3d34" stroke-opacity=".35"/>
+ </g>
+ <path d="M50 51C95 69 111 29 152 43L143 137C110 133 87 162 55 144Z" fill="url(#fold)"/>
+ <path d="M58 60C89 72 117 44 148 50M59 134C87 146 112 120 139 123" fill="none" stroke="#f5efd9" stroke-opacity=".35" stroke-width="1.5"/>
+</g>
+<!-- 舰船侧影：低舰体、炮塔、舰桥和桅杆，在小尺寸保留海军识别。 -->
+<path d="M25 191L228 186L221 208L40 211Z" fill="#081118" opacity=".7"/>
+<g stroke="#26343b" stroke-width="1.5" stroke-linejoin="round">
+ <path d="M35 182H219L213 194L45 197Z" fill="url(#steel)"/>
+ <path d="M25 189L231 184L216 203L42 206Z" fill="url(#hull)"/>
+ <path d="M107 180V158H116V143H129V155H138V182Z" fill="url(#steel)"/>
+ <path d="M111 155H137V161H108Z" fill="#9ba8a5"/>
+ <path d="M116 142H131V149H116Z" fill="#667779"/>
+ <path d="M144 180V161H155L160 180Z" fill="url(#steel)"/>
+ <path d="M151 158V153H155V161" fill="#3f4c50"/>
+ <path d="M65 183L68 176H85L91 183Z M171 182L174 174H190L197 182Z" fill="url(#steel)"/>
+</g>
+<g fill="none" stroke-linecap="square">
+ <path d="M123 142V119M113 135H134M161 174V140M154 148H168" stroke="#a3afaa" stroke-width="2"/>
+ <path d="M123 125L96 176M123 131L146 173M161 144L184 174" stroke="#718181" stroke-width=".8"/>
+ <path d="M68 177L44 175M68 180L45 179M190 175L216 171M190 178L216 175" stroke="#a6b1ac" stroke-width="2.4"/>
+ <path d="M38 190L221 186" stroke="#ccd0bb" stroke-width="1.5"/>
+ <path d="M39 202L214 199" stroke="#172833" stroke-width="2"/>
+</g>
+<g fill="#1b2b32"><path d="M117 150H121V154H117Z M125 150H129V154H125Z M111 164H115V167H111Z M122 164H126V167H122Z"/><circle cx="61" cy="195" r="1.3"/><circle cx="77" cy="195" r="1.3"/><circle cx="94" cy="194" r="1.3"/><circle cx="177" cy="192" r="1.3"/><circle cx="194" cy="191" r="1.3"/></g>
+<path d="M26 207L78 209L131 206L185 208L229 204" fill="none" stroke="#7b9397" stroke-width="2" opacity=".65"/>
+<!-- 少量刻痕代替噪点滤镜，确保独立 SVG 易于编辑。 -->
+<path d="M58 48L69 39M189 41L198 48M224 91L226 102M54 210L64 215M160 231L174 226" fill="none" stroke="#d1c3a4" opacity=".35" stroke-width="1"/>
+</svg>

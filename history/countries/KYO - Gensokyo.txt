@@ -304,3 +304,50 @@ set_variable = { KYO_ascended_advisor_1 = 0 } #Ascended Advisor Portrait
 
 set_variable = { KYO_ascended_advisor_3 = 0 } #Ascended Advisor Portrait
 
+
+# Renko：幻想乡联合舰队变量，新开局统一初始化；国策完成前不添加动态修正。
+set_variable = { Renko_KYO_united_fleet_experience_gain_navy = 0 }
+set_variable = { Renko_KYO_united_fleet_navy_org_factor = 0 }
+set_variable = { Renko_KYO_united_fleet_naval_morale_factor = 0 }
+set_variable = { Renko_KYO_united_fleet_navy_max_range_factor = 0 }
+set_variable = { Renko_KYO_united_fleet_naval_coordination = 0 }
+set_variable = { Renko_KYO_united_fleet_navy_visibility = 0 }
+set_variable = { Renko_KYO_united_fleet_naval_invasion_prep_speed = 0 }
+set_variable = { Renko_KYO_united_fleet_convoy_raiding_efficiency_factor = 0 }
+set_variable = { Renko_KYO_united_fleet_convoy_escort_efficiency = 0 }
+set_variable = { Renko_KYO_united_fleet_naval_detection = 0 }
+set_variable = { Renko_KYO_united_fleet_repair_speed_factor = 0 }
+set_variable = { Renko_KYO_united_fleet_refit_speed = 0 }
+set_variable = { Renko_KYO_united_fleet_naval_ship_recovery_chance = 0 }
+set_variable = { Renko_KYO_united_fleet_navy_capital_ship_attack_factor = 0 }
+set_variable = { Renko_KYO_united_fleet_navy_capital_ship_defence_factor = 0 }
+set_variable = { Renko_KYO_united_fleet_navy_screen_attack_factor = 0 }
+set_variable = { Renko_KYO_united_fleet_navy_screen_defence_factor = 0 }
+set_variable = { Renko_KYO_united_fleet_navy_submarine_attack_factor = 0 }
+set_variable = { Renko_KYO_united_fleet_navy_submarine_defence_factor = 0 }
+set_variable = { Renko_KYO_united_fleet_navy_submarine_detection_factor = 0 }
+set_variable = { Renko_KYO_united_fleet_naval_mines_damage_factor = 0 }
+set_variable = { Renko_KYO_united_fleet_mines_planting_by_fleets_factor = 0 }
+set_variable = { Renko_KYO_united_fleet_navy_anti_air_attack_factor = 0 }
+set_variable = { Renko_KYO_united_fleet_navy_carrier_air_attack_factor = 0 }
+set_variable = { Renko_KYO_united_fleet_navy_carrier_air_targetting_factor = 0 }
+set_variable = { Renko_KYO_united_fleet_sortie_efficiency = 0 }
+set_variable = { Renko_KYO_united_fleet_carrier_traffic = 0 }
+set_variable = { Renko_KYO_united_fleet_naval_torpedo_hit_chance_factor = 0 }
+set_variable = { Renko_KYO_united_fleet_naval_torpedo_reveal_chance_factor = 0 }
+set_variable = { Renko_KYO_united_fleet_naval_torpedo_screen_penetration_factor = 0 }
+set_variable = { Renko_KYO_united_fleet_naval_torpedo_damage_reduction_factor = 0 }
+set_variable = { Renko_KYO_united_fleet_screening_without_screens = 0 }
+set_variable = { Renko_KYO_united_fleet_spotting_chance = 0 }
+set_variable = { Renko_KYO_united_fleet_naval_retreat_speed = 0 }
+set_variable = { Renko_KYO_united_fleet_naval_retreat_chance = 0 }
+set_variable = { Renko_KYO_united_fleet_naval_enemy_fleet_size_ratio_penalty_factor = 0 }
+set_variable = { Renko_KYO_united_fleet_naval_enemy_positioning_in_initial_attack = 0 }
+set_variable = { Renko_KYO_united_fleet_naval_enemy_retreat_chance = 0 }
+set_variable = { Renko_KYO_united_fleet_naval_night_attack = 0 }
+set_variable = { Renko_KYO_united_fleet_night_spotting_chance = 0 }
+set_variable = { Renko_KYO_united_fleet_naval_hit_chance = 0 }
+set_variable = { Renko_KYO_united_fleet_naval_damage_factor = 0 }
+set_variable = { Renko_KYO_united_fleet_naval_defense_factor = 0 }
+set_variable = { Renko_KYO_united_fleet_positioning = 0 }
+set_variable = { Renko_KYO_united_fleet_screening_efficiency = 0 }

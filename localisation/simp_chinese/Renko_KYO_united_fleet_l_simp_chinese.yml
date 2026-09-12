@@ -1,0 +1,5 @@
+﻿l_simp_chinese:
+ Renko_KYO_united_fleet_dm:0 "幻想乡联合舰队"
+ Renko_KYO_united_fleet_dm_desc:0 "来自幻想乡各方的海上力量集结在共同的旗帜之下。统一的训练与指挥，将使这支舰队逐步成长为能够驰骋外界海洋的力量。"
+ Renko_KYO_add_united_fleet_tt:0 "获得§Y$Renko_KYO_united_fleet_dm$§!，其效果为："
+ Renko_KYO_modify_united_fleet_tt:0 "§Y$Renko_KYO_united_fleet_dm$§!追加效果："

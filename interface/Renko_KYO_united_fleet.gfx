@@ -1,0 +1,7 @@
+spriteTypes = {
+    # 临时占位：建议作者自行制作正式图标替换此贴图。
+    spriteType = {
+        name = "GFX_idea_Renko_KYO_united_fleet"
+        texturefile = "gfx/interface/ideas/Renko_KYO_united_fleet.png"
+    }
+}
