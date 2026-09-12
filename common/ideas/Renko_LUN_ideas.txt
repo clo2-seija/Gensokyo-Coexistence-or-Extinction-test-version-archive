@@ -71,7 +71,7 @@ ideas = {
                 tag = KYO
                 attack_bonus_against = -0.50
                 defense_bonus_against = -0.50
-                navy_capital_ship_attack_factor_against = -0.30
+                navy_capital_ship_attack_factor_against = -0.50
             }
         }
 
