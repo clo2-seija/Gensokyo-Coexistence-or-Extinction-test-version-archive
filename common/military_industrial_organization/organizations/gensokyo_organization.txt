@@ -505,7 +505,14 @@ KYO_tsukumogami_drydocks = {
 }
 
 KYO_moriya_shipyards = {
-	include = generic_battle_line_ship_organization
+	initial_trait = {
+		name = Renko_KYO_moriya_naval_initial_trait
+		equipment_bonus = {
+			max_strength = 0.03
+			armor_value = 0.03
+		}
+	}
+	include = Renko_model_battle_line_ship_manufacturer_organization
 	icon = GFX_companies_company_moriya
 	
 	allowed = {	
@@ -766,7 +773,14 @@ KYO_inversion_works= {
 	
 }
 KYO_chimata_convoy_trust= {
-	include = generic_escort_ship_organization
+	initial_trait = {
+		name = Renko_KYO_chimata_naval_initial_trait
+		equipment_bonus = {
+			naval_range = 0.05
+			fuel_consumption = -0.03
+		}
+	}
+	include = Renko_model_escort_fleet_manufacturer_organization
 	icon = GFX_companies_company_chimata
 	
 	allowed = {	
@@ -802,7 +816,14 @@ KYO_sanzu_shipyards= {
 	
 }
 KYO_wakasagihime_littoral= {
-	include = generic_submarine_organization
+	initial_trait = {
+		name = Renko_KYO_wakasagihime_naval_initial_trait
+		equipment_bonus = {
+			sub_visibility = -0.03
+			torpedo_attack = 0.03
+		}
+	}
+	include = Renko_model_submarine_manufacturer_organization
 	icon = GFX_companies_company_wakasagihime
 	
 	allowed = {	
@@ -819,7 +840,14 @@ KYO_wakasagihime_littoral= {
 	
 }
 KYO_parsee_coastalworks= {
-	include = generic_task_force_ship_organization
+	initial_trait = {
+		name = Renko_KYO_parsee_naval_initial_trait
+		equipment_bonus = {
+			naval_speed = 0.03
+			lg_attack = 0.03
+		}
+	}
+	include = Renko_model_task_force_ship_manufacturer_organization
 	icon = GFX_companies_company_parsee
 	
 	allowed = {	
@@ -836,7 +864,14 @@ KYO_parsee_coastalworks= {
 	
 }
 KYO_nazrin_salvage = {
-	include = generic_raider_ship_organization
+	initial_trait = {
+		name = Renko_KYO_nazrin_naval_initial_trait
+		equipment_bonus = {
+			surface_detection = 0.05
+			naval_range = 0.03
+		}
+	}
+	include = Renko_model_raider_ship_manufacturer_organization
 	icon = GFX_companies_company_nazrin
 	
 	allowed = {	
@@ -854,7 +889,14 @@ KYO_nazrin_salvage = {
 }
 
 KYO_prismriver_acoustics = {
-	include = generic_naval_aircraft_organization
+	initial_trait = {
+		name = Renko_KYO_prismriver_naval_initial_trait
+		equipment_bonus = {
+			naval_strike_targetting = 0.03
+			reliability = 0.03
+		}
+	}
+	include = Renko_model_naval_aircraft_manufacturer_organization
 	icon = GFX_companies_company_prismriver
 	
 	allowed = {	

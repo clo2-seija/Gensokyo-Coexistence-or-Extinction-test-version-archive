@@ -1,0 +1,1928 @@
+# 海军与舰载机 MIO 模板；仅供成品组织继承，模板本身不可直接使用。
+Renko_model_naval_aircraft_manufacturer_organization = {
+    icon = GFX_idea_generic_air_manufacturer_1
+
+    allowed = {
+        always = no
+    }
+
+    equipment_type = {
+        small_plane_naval_bomber_airframe
+        cv_small_plane_airframe
+        cv_small_plane_cas_airframe
+        cv_small_plane_naval_bomber_airframe
+    }
+
+    research_categories = { mio_cat_all_naval_bomber_and_modules }
+
+    tree_header_text = {
+        text = Renko_mio_header_ra_naval_aircraft_deck_handling
+        x = 1
+    }
+
+    tree_header_text = {
+        text = Renko_mio_header_ra_naval_aircraft_carrier_production
+        x = 4
+    }
+
+    tree_header_text = {
+        text = Renko_mio_header_ra_naval_aircraft_maritime_strike
+        x = 7
+    }
+
+    initial_trait = {
+        name = Renko_model_naval_aircraft_manufacturer_initial_trait
+    }
+
+    trait = {
+        token = Renko_mio_trait_naval_aircraft_development_bureau
+        name = Renko_model_mio_trait_naval_aircraft_development_bureau
+        icon = GFX_generic_mio_department_icon_facilities
+
+        position = { x = 4 y = 0 }
+
+        organization_modifier = {
+            military_industrial_organization_research_bonus = 0.15
+            military_industrial_organization_funds_gain = 0.15
+            military_industrial_organization_size_up_requirement = -0.15
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_folding_wing_layout
+        name = Renko_model_mio_trait_folding_wing_layout
+        icon = GFX_generic_mio_trait_icon_air_agility
+
+        position = { x = 0 y = 1 }
+
+        any_parent = { Renko_mio_trait_naval_aircraft_development_bureau }
+
+        equipment_bonus = {
+            air_agility = 0.10
+            reliability = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_reinforced_arrestor_gear
+        name = Renko_model_mio_trait_reinforced_arrestor_gear
+        icon = GFX_generic_mio_trait_icon_reliability
+
+        position = { x = 2 y = 1 }
+
+        any_parent = { Renko_mio_trait_naval_aircraft_development_bureau }
+
+        equipment_bonus = {
+            air_defence = 0.10
+            reliability = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_carrier_airframe_tooling
+        name = Renko_model_mio_trait_carrier_airframe_tooling
+        icon = GFX_generic_mio_trait_icon_production_capacity
+
+        position = { x = 4 y = 1 }
+
+        any_parent = { Renko_mio_trait_naval_aircraft_development_bureau }
+
+        production_bonus = {
+            production_capacity_factor = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_internal_torpedo_mounts
+        name = Renko_model_mio_trait_internal_torpedo_mounts
+        icon = GFX_generic_mio_trait_icon_torpedo_attack
+
+        position = { x = 6 y = 1 }
+
+        any_parent = { Renko_mio_trait_naval_aircraft_development_bureau }
+
+        equipment_bonus = {
+            naval_strike_attack = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_maritime_search_radar
+        name = Renko_model_mio_trait_maritime_search_radar
+        icon = GFX_generic_mio_trait_icon_detection
+
+        position = { x = 8 y = 1 }
+
+        any_parent = { Renko_mio_trait_naval_aircraft_development_bureau }
+
+        equipment_bonus = {
+            surface_detection = 0.10
+            sub_detection = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_high_lift_wing_profile
+        name = Renko_model_mio_trait_high_lift_wing_profile
+        icon = GFX_generic_mio_trait_icon_air_agility
+
+        position = { x = 0 y = 2 }
+
+        any_parent = { Renko_mio_trait_folding_wing_layout }
+
+        equipment_bonus = {
+            air_agility = 0.15
+            air_range = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_compact_airframe_tuning
+        name = Renko_model_mio_trait_compact_airframe_tuning
+        icon = GFX_generic_mio_trait_icon_maximum_speed
+
+        position = { x = 2 y = 2 }
+
+        any_parent = { Renko_mio_trait_reinforced_arrestor_gear }
+
+        equipment_bonus = {
+            maximum_speed = 0.10
+            air_agility = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_corrosion_proof_materials
+        name = Renko_model_mio_trait_corrosion_proof_materials
+        icon = GFX_generic_mio_trait_icon_efficiency_cap
+
+        position = { x = 3 y = 2 }
+
+        any_parent = { Renko_mio_trait_carrier_airframe_tooling }
+
+        production_bonus = {
+            production_efficiency_cap_factor = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_carrier_engine_standardization
+        name = Renko_model_mio_trait_carrier_engine_standardization
+        icon = GFX_generic_mio_trait_icon_maximum_speed
+
+        position = { x = 5 y = 2 }
+
+        any_parent = { Renko_mio_trait_carrier_airframe_tooling }
+
+        equipment_bonus = {
+            maximum_speed = 0.20
+            thrust = 0.10
+            air_agility = 0.10
+        }
+
+        production_bonus = {
+            production_efficiency_gain_factor = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_high_speed_release_gear
+        name = Renko_model_mio_trait_high_speed_release_gear
+        icon = GFX_generic_mio_trait_icon_maximum_speed
+
+        position = { x = 6 y = 2 }
+
+        any_parent = { Renko_mio_trait_internal_torpedo_mounts }
+
+        equipment_bonus = {
+            naval_strike_targetting = 0.10
+            maximum_speed = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_forward_gun_package
+        name = Renko_model_mio_trait_forward_gun_package
+        icon = GFX_generic_mio_trait_icon_air_attack
+
+        position = { x = 8 y = 2 }
+
+        any_parent = { Renko_mio_trait_maritime_search_radar }
+
+        equipment_bonus = {
+            air_attack = 0.10
+            naval_strike_attack = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_deck_survivability_package
+        name = Renko_model_mio_trait_deck_survivability_package
+        icon = GFX_generic_mio_trait_icon_defense
+
+        position = { x = 1 y = 3 }
+
+        all_parents = {
+            Renko_mio_trait_high_lift_wing_profile
+            Renko_mio_trait_compact_airframe_tuning
+        }
+
+        equipment_bonus = {
+            air_defence = 0.10
+            reliability = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_deck_assembly_flow
+        name = Renko_model_mio_trait_deck_assembly_flow
+        icon = GFX_generic_mio_trait_icon_efficiency_gain
+
+        position = { x = 4 y = 3 }
+
+        all_parents = {
+            Renko_mio_trait_corrosion_proof_materials
+            Renko_mio_trait_carrier_engine_standardization
+        }
+
+        production_bonus = {
+            production_efficiency_gain_factor = 0.05
+            production_efficiency_cap_factor = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_coordinated_strike_profile
+        name = Renko_model_mio_trait_coordinated_strike_profile
+        icon = GFX_generic_mio_trait_icon_torpedo_attack
+
+        position = { x = 7 y = 3 }
+
+        all_parents = {
+            Renko_mio_trait_high_speed_release_gear
+            Renko_mio_trait_forward_gun_package
+        }
+
+        equipment_bonus = {
+            naval_strike_attack = 0.05
+            naval_strike_targetting = 0.05
+            air_range = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_naval_aircraft_material_economy
+        name = Renko_model_mio_trait_naval_aircraft_material_economy
+        icon = GFX_generic_mio_trait_icon_resources
+
+        position = { x = 4 y = 4 }
+
+        all_parents = {
+            Renko_mio_trait_deck_survivability_package
+            Renko_mio_trait_deck_assembly_flow
+            Renko_mio_trait_coordinated_strike_profile
+        }
+
+        equipment_bonus = {
+            build_cost_ic = -0.10
+        }
+
+        production_bonus = {
+            production_cost_factor = -0.10
+            production_resource_need_factor = -0.25
+        }
+    }
+}
+
+## Medium aircraft manufacturer template
+## Smart layout finalized.
+
+Renko_model_battle_line_ship_manufacturer_organization = {
+    icon = GFX_idea_generic_naval_manufacturer_2
+
+    allowed = {
+        always = no
+    }
+
+    equipment_type = {
+        mio_cat_eq_all_battleship
+        mio_cat_eq_all_cruiser
+    }
+
+    research_categories = {
+        mio_cat_tech_all_capital_ship_and_modules
+        mio_cat_tech_all_cruiser_and_modules
+    }
+
+    tree_header_text = {
+        text = Renko_mio_header_ra_battle_line_hull_protection
+        x = 1
+    }
+
+    tree_header_text = {
+        text = Renko_mio_header_ra_battle_line_shipyard_production
+        x = 4
+    }
+
+    tree_header_text = {
+        text = Renko_mio_header_ra_battle_line_gunnery_control
+        x = 7
+    }
+
+    initial_trait = {
+        name = Renko_model_battle_line_ship_manufacturer_initial_trait
+    }
+
+    trait = {
+        token = Renko_mio_trait_battle_line_foundation
+        name = Renko_model_mio_trait_battle_line_foundation
+        icon = GFX_generic_mio_department_icon_facilities
+
+        position = { x = 4 y = 0 }
+
+        organization_modifier = {
+            military_industrial_organization_research_bonus = 0.15
+            military_industrial_organization_funds_gain = 0.15
+            military_industrial_organization_size_up_requirement = -0.15
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_armor_belt_scheme
+        name = Renko_model_mio_trait_armor_belt_scheme
+        icon = GFX_generic_mio_trait_icon_armor_value
+
+        position = { x = 0 y = 1 }
+
+        any_parent = { Renko_mio_trait_battle_line_foundation }
+
+        equipment_bonus = {
+            armor_value = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_hardened_bulkhead_grid
+        name = Renko_model_mio_trait_hardened_bulkhead_grid
+        icon = GFX_generic_mio_trait_icon_naval_torpedo_damage_reduction_factor
+
+        position = { x = 2 y = 1 }
+
+        any_parent = { Renko_mio_trait_battle_line_foundation }
+
+        equipment_bonus = {
+            naval_torpedo_enemy_critical_chance_factor = -0.10
+            naval_torpedo_damage_reduction_factor = -0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_battle_line_shipyard_expansion
+        name = Renko_model_mio_trait_battle_line_shipyard_expansion
+        icon = GFX_generic_mio_trait_icon_production_capacity
+
+        position = { x = 4 y = 1 }
+
+        any_parent = { Renko_mio_trait_battle_line_foundation }
+
+        production_bonus = {
+            production_capacity_factor = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_secondary_battery_network
+        name = Renko_model_mio_trait_secondary_battery_network
+        icon = GFX_generic_mio_trait_icon_lg_attack
+
+        position = { x = 6 y = 1 }
+
+        any_parent = { Renko_mio_trait_battle_line_foundation }
+
+        equipment_bonus = {
+            lg_attack = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_primary_battery_scheme
+        name = Renko_model_mio_trait_primary_battery_scheme
+        icon = GFX_generic_mio_trait_icon_hg_attack
+
+        position = { x = 8 y = 1 }
+
+        any_parent = { Renko_mio_trait_battle_line_foundation }
+
+        equipment_bonus = {
+            hg_attack = 0.05
+            naval_heavy_gun_hit_chance_factor = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_hydrodynamic_hull_lines
+        name = Renko_model_mio_trait_hydrodynamic_hull_lines
+        icon = GFX_generic_mio_trait_icon_maximum_speed
+
+        position = { x = 0 y = 2 }
+
+        any_parent = { Renko_mio_trait_armor_belt_scheme }
+
+        equipment_bonus = {
+            naval_speed = 0.05
+            naval_range = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_reinforced_main_citadel
+        name = Renko_model_mio_trait_reinforced_main_citadel
+        icon = GFX_generic_mio_trait_icon_armor_value
+
+        position = { x = 2 y = 2 }
+
+        any_parent = { Renko_mio_trait_hardened_bulkhead_grid }
+
+        equipment_bonus = {
+            armor_value = 0.10
+            max_strength = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_battle_line_command_workflow
+        name = Renko_model_mio_trait_battle_line_command_workflow
+        icon = GFX_generic_mio_trait_icon_efficiency_gain
+
+        position = { x = 4 y = 2 }
+
+        any_parent = { Renko_mio_trait_battle_line_shipyard_expansion }
+
+        production_bonus = {
+            production_efficiency_cap_factor = 0.10
+            production_efficiency_gain_factor = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_anti_air_battery_layout
+        name = Renko_model_mio_trait_anti_air_battery_layout
+        icon = GFX_generic_mio_trait_icon_anti_air_attack
+
+        position = { x = 6 y = 2 }
+
+        any_parent = { Renko_mio_trait_secondary_battery_network }
+
+        equipment_bonus = {
+            anti_air_attack = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_semi_armor_piercing_shell_suite
+        name = Renko_model_mio_trait_semi_armor_piercing_shell_suite
+        icon = GFX_generic_mio_trait_icon_lg_attack
+
+        position = { x = 8 y = 2 }
+
+        any_parent = { Renko_mio_trait_primary_battery_scheme }
+
+        equipment_bonus = {
+            lg_attack = 0.05
+            lg_armor_piercing = 0.10
+            hg_attack = 0.05
+            hg_armor_piercing = 0.10
+            naval_heavy_gun_hit_chance_factor = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_combat_command_center
+        name = Renko_model_mio_trait_combat_command_center
+        icon = GFX_generic_mio_trait_icon_max_strength
+
+        position = { x = 1 y = 3 }
+
+        all_parents = { Renko_mio_trait_hydrodynamic_hull_lines Renko_mio_trait_reinforced_main_citadel }
+
+        equipment_bonus = {
+            naval_range = 0.05
+            max_strength = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_secondary_fire_control_grid
+        name = Renko_model_mio_trait_secondary_fire_control_grid
+        icon = GFX_generic_mio_department_icon_ship_capital_ship_offense
+
+        position = { x = 7 y = 3 }
+
+        all_parents = { Renko_mio_trait_anti_air_battery_layout Renko_mio_trait_semi_armor_piercing_shell_suite }
+
+        equipment_bonus = {
+            anti_air_attack = 0.10
+            naval_light_gun_hit_chance_factor = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_battle_line_material_simplification
+        name = Renko_model_mio_trait_battle_line_material_simplification
+        icon = GFX_generic_mio_trait_icon_resources
+
+        position = { x = 4 y = 4 }
+
+        all_parents = {
+            Renko_mio_trait_combat_command_center
+            Renko_mio_trait_battle_line_command_workflow
+            Renko_mio_trait_secondary_fire_control_grid
+        }
+
+        equipment_bonus = {
+            build_cost_ic = -0.10
+        }
+
+        production_bonus = {
+            production_cost_factor = -0.10
+            production_resource_need_factor = -0.25
+        }
+    }
+}
+
+## Task force ship manufacturer template
+## Smart layout finalized.
+
+Renko_model_task_force_ship_manufacturer_organization = {
+    icon = GFX_idea_generic_naval_manufacturer_1
+
+    allowed = {
+        always = no
+    }
+
+    equipment_type = {
+        mio_cat_eq_all_carrier
+        mio_cat_eq_all_cruiser
+        mio_cat_eq_all_destroyer
+    }
+
+    research_categories = {
+        mio_cat_tech_all_carrier_and_modules
+        mio_cat_tech_all_cruiser_and_modules
+        mio_cat_tech_all_destroyer_and_modules
+    }
+
+    tree_header_text = {
+        text = Renko_mio_header_ra_task_force_mobility_screen
+        x = 1
+    }
+
+    tree_header_text = {
+        text = Renko_mio_header_ra_task_force_fitting_operations
+        x = 4
+    }
+
+    tree_header_text = {
+        text = Renko_mio_header_ra_task_force_strike_control
+        x = 7
+    }
+
+    initial_trait = {
+        name = Renko_model_task_force_ship_manufacturer_initial_trait
+    }
+
+    trait = {
+        token = Renko_mio_trait_task_force_foundation
+        name = Renko_model_mio_trait_task_force_foundation
+        icon = GFX_generic_mio_department_icon_facilities
+
+        position = { x = 4 y = 0 }
+
+        organization_modifier = {
+            military_industrial_organization_research_bonus = 0.15
+            military_industrial_organization_funds_gain = 0.15
+            military_industrial_organization_size_up_requirement = -0.15
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_long_range_operations
+        name = Renko_model_mio_trait_long_range_operations
+        icon = GFX_generic_mio_trait_icon_naval_range
+
+        position = { x = 0 y = 1 }
+
+        any_parent = { Renko_mio_trait_task_force_foundation }
+
+        equipment_bonus = {
+            naval_range = 0.05
+            surface_detection = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_high_speed_operations
+        name = Renko_model_mio_trait_high_speed_operations
+        icon = GFX_generic_mio_trait_icon_maximum_speed
+
+        position = { x = 2 y = 1 }
+
+        any_parent = { Renko_mio_trait_task_force_foundation }
+
+        equipment_bonus = {
+            naval_speed = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_task_force_fitting_works
+        name = Renko_model_mio_trait_task_force_fitting_works
+        icon = GFX_generic_mio_department_icon_ship_general_production
+
+        position = { x = 4 y = 1 }
+
+        any_parent = { Renko_mio_trait_task_force_foundation }
+
+        equipment_bonus = {
+            max_strength = 0.05
+        }
+
+        production_bonus = {
+            production_capacity_factor = 0.10
+            production_efficiency_cap_factor = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_task_force_anti_air_control
+        name = Renko_model_mio_trait_task_force_anti_air_control
+        icon = GFX_generic_mio_trait_icon_anti_air_attack
+
+        position = { x = 6 y = 1 }
+
+        any_parent = { Renko_mio_trait_task_force_foundation }
+
+        equipment_bonus = {
+            anti_air_attack = 0.05
+            naval_light_gun_hit_chance_factor = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_torpedo_strike_package
+        name = Renko_model_mio_trait_torpedo_strike_package
+        icon = GFX_generic_mio_trait_icon_torpedo_attack
+
+        position = { x = 8 y = 1 }
+
+        any_parent = { Renko_mio_trait_task_force_foundation }
+
+        equipment_bonus = {
+            torpedo_attack = 0.05
+            naval_torpedo_hit_chance_factor = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_task_force_search_network
+        name = Renko_model_mio_trait_task_force_search_network
+        icon = GFX_generic_mio_trait_icon_surface_detection
+
+        position = { x = 0 y = 2 }
+
+        any_parent = { Renko_mio_trait_long_range_operations }
+
+        equipment_bonus = {
+            surface_detection = 0.05
+            sub_detection = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_splinter_protection_grid
+        name = Renko_model_mio_trait_splinter_protection_grid
+        icon = GFX_generic_mio_trait_icon_armor_value
+
+        position = { x = 2 y = 2 }
+
+        any_parent = { Renko_mio_trait_high_speed_operations }
+
+        equipment_bonus = {
+            armor_value = 0.15
+            naval_torpedo_damage_reduction_factor = -0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_task_force_operations_center
+        name = Renko_model_mio_trait_task_force_operations_center
+        icon = GFX_generic_mio_trait_icon_max_strength
+
+        position = { x = 4 y = 2 }
+
+        any_parent = { Renko_mio_trait_task_force_fitting_works }
+
+        equipment_bonus = {
+            max_strength = 0.10
+        }
+
+        production_bonus = {
+            production_efficiency_cap_factor = 0.05
+            production_efficiency_gain_factor = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_carrier_edge_aa_mounts
+        name = Renko_model_mio_trait_carrier_edge_aa_mounts
+        icon = GFX_generic_mio_department_icon_ship_carrier_offense
+
+        position = { x = 6 y = 2 }
+
+        any_parent = { Renko_mio_trait_task_force_anti_air_control }
+
+        equipment_bonus = {
+            anti_air_attack = 0.10
+            carrier_size = 1
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_rapid_response_gunnery
+        name = Renko_model_mio_trait_rapid_response_gunnery
+        icon = GFX_generic_mio_department_icon_ship_general_offense
+
+        position = { x = 8 y = 2 }
+
+        any_parent = { Renko_mio_trait_torpedo_strike_package }
+
+        equipment_bonus = {
+            lg_attack = 0.10
+            naval_light_gun_hit_chance_factor = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_underway_supply_group
+        name = Renko_model_mio_trait_underway_supply_group
+        icon = GFX_generic_mio_trait_icon_fuel_consumption
+
+        position = { x = 1 y = 3 }
+
+        all_parents = { Renko_mio_trait_task_force_search_network Renko_mio_trait_splinter_protection_grid }
+
+        equipment_bonus = {
+            naval_range = 0.05
+            max_strength = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_escort_hunter_package
+        name = Renko_model_mio_trait_escort_hunter_package
+        icon = GFX_generic_mio_trait_icon_sub_detection
+
+        position = { x = 7 y = 3 }
+
+        all_parents = { Renko_mio_trait_carrier_edge_aa_mounts Renko_mio_trait_rapid_response_gunnery }
+
+        equipment_bonus = {
+            torpedo_attack = 0.05
+            sub_attack = 0.10
+            sub_detection = 0.05
+            lg_armor_piercing = 0.10
+            naval_torpedo_hit_chance_factor = 0.05
+            naval_torpedo_enemy_critical_chance_factor = -0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_task_force_material_simplification
+        name = Renko_model_mio_trait_task_force_material_simplification
+        icon = GFX_generic_mio_trait_icon_resources
+
+        position = { x = 4 y = 4 }
+
+        all_parents = {
+            Renko_mio_trait_underway_supply_group
+            Renko_mio_trait_task_force_operations_center
+            Renko_mio_trait_escort_hunter_package
+        }
+
+        equipment_bonus = {
+            build_cost_ic = -0.10
+        }
+
+        production_bonus = {
+            production_cost_factor = -0.10
+            production_resource_need_factor = -0.25
+        }
+    }
+}
+
+## Raider ship manufacturer template
+## Smart layout finalized.
+
+Renko_model_raider_ship_manufacturer_organization = {
+    icon = GFX_idea_generic_naval_manufacturer_3
+
+    allowed = {
+        always = no
+    }
+
+    equipment_type = {
+        capital_ship
+        screen_ship
+    }
+
+    research_categories = {
+        mio_cat_tech_all_capital_ship_and_modules
+        mio_cat_tech_all_screen_ship_and_modules
+    }
+
+    tree_header_text = {
+        text = Renko_mio_header_ra_raider_ship_ocean_hunting
+        x = 1
+    }
+
+    tree_header_text = {
+        text = Renko_mio_header_ra_raider_ship_production_preparation
+        x = 4
+    }
+
+    tree_header_text = {
+        text = Renko_mio_header_ra_raider_ship_strike_battery
+        x = 7
+    }
+
+    initial_trait = {
+        name = Renko_model_raider_ship_manufacturer_initial_trait
+    }
+
+    trait = {
+        token = Renko_mio_trait_raider_ship_development_bureau
+        name = Renko_model_mio_trait_raider_ship_development_bureau
+        icon = GFX_generic_mio_department_icon_facilities
+
+        position = { x = 4 y = 0 }
+
+        organization_modifier = {
+            military_industrial_organization_research_bonus = 0.15
+            military_industrial_organization_funds_gain = 0.15
+            military_industrial_organization_size_up_requirement = -0.15
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_long_range_raiding_hull
+        name = Renko_model_mio_trait_long_range_raiding_hull
+        icon = GFX_generic_mio_trait_icon_naval_range
+
+        position = { x = 0 y = 1 }
+
+        any_parent = { Renko_mio_trait_raider_ship_development_bureau }
+
+        equipment_bonus = {
+            naval_range = 0.10
+            surface_visibility = -0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_efficient_cruising_machinery
+        name = Renko_model_mio_trait_efficient_cruising_machinery
+        icon = GFX_generic_mio_trait_icon_fuel_consumption
+
+        position = { x = 2 y = 1 }
+
+        any_parent = { Renko_mio_trait_raider_ship_development_bureau }
+
+        equipment_bonus = {
+            naval_speed = 0.05
+            fuel_consumption = -0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_raider_shipyard_tooling
+        name = Renko_model_mio_trait_raider_shipyard_tooling
+        icon = GFX_generic_mio_trait_icon_production_capacity
+
+        position = { x = 4 y = 1 }
+
+        any_parent = { Renko_mio_trait_raider_ship_development_bureau }
+
+        production_bonus = {
+            production_capacity_factor = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_heavy_raider_battery
+        name = Renko_model_mio_trait_heavy_raider_battery
+        icon = GFX_generic_mio_trait_icon_hg_attack
+
+        position = { x = 6 y = 1 }
+
+        any_parent = { Renko_mio_trait_raider_ship_development_bureau }
+
+        equipment_bonus = {
+            hg_attack = 0.10
+            hg_armor_piercing = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_screen_killer_battery
+        name = Renko_model_mio_trait_screen_killer_battery
+        icon = GFX_generic_mio_trait_icon_lg_attack
+
+        position = { x = 8 y = 1 }
+
+        any_parent = { Renko_mio_trait_raider_ship_development_bureau }
+
+        equipment_bonus = {
+            lg_attack = 0.10
+            lg_armor_piercing = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_extended_operation_stores
+        name = Renko_model_mio_trait_extended_operation_stores
+        icon = GFX_generic_mio_department_icon_ship_general_engine
+
+        position = { x = 2 y = 2 }
+
+        any_parent = { Renko_mio_trait_efficient_cruising_machinery }
+
+        equipment_bonus = {
+            naval_range = 0.10
+            naval_speed = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_torpedo_attack_run
+        name = Renko_model_mio_trait_torpedo_attack_run
+        icon = GFX_generic_mio_trait_icon_torpedo_attack
+
+        position = { x = 6 y = 2 }
+
+        any_parent = { Renko_mio_trait_heavy_raider_battery }
+
+        equipment_bonus = {
+            torpedo_attack = 0.10
+            naval_torpedo_hit_chance_factor = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_concealed_raider_profile
+        name = Renko_model_mio_trait_concealed_raider_profile
+        icon = GFX_generic_mio_trait_icon_surface_visibility
+
+        position = { x = 0 y = 2 }
+
+        any_parent = { Renko_mio_trait_long_range_raiding_hull }
+
+        equipment_bonus = {
+            surface_visibility = -0.10
+            surface_detection = 0.05
+            sub_detection = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_modular_raider_fittings
+        name = Renko_model_mio_trait_modular_raider_fittings
+        icon = GFX_generic_mio_trait_icon_efficiency_gain
+
+        position = { x = 3 y = 2 }
+
+        any_parent = { Renko_mio_trait_raider_shipyard_tooling }
+
+        production_bonus = {
+            production_efficiency_gain_factor = 0.05
+            production_efficiency_cap_factor = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_standardized_raider_assembly
+        name = Renko_model_mio_trait_standardized_raider_assembly
+        icon = GFX_generic_mio_trait_icon_efficiency_cap
+
+        position = { x = 5 y = 2 }
+
+        any_parent = { Renko_mio_trait_raider_shipyard_tooling }
+
+        production_bonus = {
+            production_efficiency_gain_factor = 0.05
+            production_efficiency_cap_factor = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_close_defense_mounts
+        name = Renko_model_mio_trait_close_defense_mounts
+        icon = GFX_generic_mio_trait_icon_anti_air_attack
+
+        position = { x = 8 y = 2 }
+
+        any_parent = { Renko_mio_trait_screen_killer_battery }
+
+        equipment_bonus = {
+            anti_air_attack = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_independent_ocean_hunter
+        name = Renko_model_mio_trait_independent_ocean_hunter
+        icon = GFX_generic_mio_trait_icon_surface_detection
+
+        position = { x = 1 y = 3 }
+
+        all_parents = {
+            Renko_mio_trait_concealed_raider_profile
+            Renko_mio_trait_extended_operation_stores
+        }
+
+        equipment_bonus = {
+            naval_speed = 0.10
+            surface_detection = 0.10
+            sub_detection = 0.10
+            surface_visibility = -0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_coordinated_raider_strike
+        name = Renko_model_mio_trait_coordinated_raider_strike
+        icon = GFX_generic_mio_trait_icon_torpedo_attack
+
+        position = { x = 7 y = 3 }
+
+        all_parents = {
+            Renko_mio_trait_torpedo_attack_run
+            Renko_mio_trait_close_defense_mounts
+        }
+
+        equipment_bonus = {
+            torpedo_attack = 0.05
+            naval_torpedo_hit_chance_factor = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_raider_material_economy
+        name = Renko_model_mio_trait_raider_material_economy
+        icon = GFX_generic_mio_trait_icon_resources
+
+        position = { x = 4 y = 4 }
+
+        all_parents = {
+            Renko_mio_trait_independent_ocean_hunter
+            Renko_mio_trait_modular_raider_fittings
+            Renko_mio_trait_standardized_raider_assembly
+            Renko_mio_trait_coordinated_raider_strike
+        }
+
+        equipment_bonus = {
+            build_cost_ic = -0.10
+        }
+
+        production_bonus = {
+            production_cost_factor = -0.10
+            production_resource_need_factor = -0.25
+        }
+    }
+}
+
+## Carrier raider ship manufacturer template
+## Smart layout finalized.
+
+Renko_model_carrier_raider_ship_manufacturer_organization = {
+    icon = GFX_idea_generic_naval_manufacturer_3
+
+    allowed = {
+        always = no
+    }
+
+    equipment_type = {
+        carrier
+        screen_ship
+    }
+
+    research_categories = {
+        mio_cat_tech_all_carrier_and_modules
+        mio_cat_tech_all_screen_ship_and_modules
+    }
+
+    tree_header_text = {
+        text = Renko_mio_header_ra_carrier_raider_ocean_hunting
+        x = 1
+    }
+
+    tree_header_text = {
+        text = Renko_mio_header_ra_carrier_raider_production_preparation
+        x = 4
+    }
+
+    tree_header_text = {
+        text = Renko_mio_header_ra_carrier_raider_strike_group
+        x = 7
+    }
+
+    initial_trait = {
+        name = Renko_model_carrier_raider_ship_manufacturer_initial_trait
+    }
+
+    trait = {
+        token = Renko_mio_trait_carrier_raider_development_bureau
+        name = Renko_model_mio_trait_carrier_raider_development_bureau
+        icon = GFX_generic_mio_department_icon_facilities
+
+        position = { x = 4 y = 0 }
+
+        organization_modifier = {
+            military_industrial_organization_research_bonus = 0.15
+            military_industrial_organization_funds_gain = 0.15
+            military_industrial_organization_size_up_requirement = -0.15
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_carrier_raider_long_range_hull
+        name = Renko_model_mio_trait_carrier_raider_long_range_hull
+        icon = GFX_generic_mio_trait_icon_naval_range
+
+        position = { x = 0 y = 1 }
+
+        any_parent = { Renko_mio_trait_carrier_raider_development_bureau }
+
+        equipment_bonus = {
+            naval_range = 0.10
+            surface_visibility = -0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_carrier_raider_efficient_cruising_machinery
+        name = Renko_model_mio_trait_carrier_raider_efficient_cruising_machinery
+        icon = GFX_generic_mio_trait_icon_fuel_consumption
+
+        position = { x = 2 y = 1 }
+
+        any_parent = { Renko_mio_trait_carrier_raider_development_bureau }
+
+        equipment_bonus = {
+            naval_speed = 0.05
+            fuel_consumption = -0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_carrier_raider_shipyard_tooling
+        name = Renko_model_mio_trait_carrier_raider_shipyard_tooling
+        icon = GFX_generic_mio_trait_icon_production_capacity
+
+        position = { x = 4 y = 1 }
+
+        any_parent = { Renko_mio_trait_carrier_raider_development_bureau }
+
+        production_bonus = {
+            production_capacity_factor = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_raider_carrier_flight_deck_group
+        name = Renko_model_mio_trait_raider_carrier_flight_deck_group
+        icon = GFX_generic_mio_department_icon_ship_carrier_offense
+
+        position = { x = 6 y = 1 }
+
+        any_parent = { Renko_mio_trait_carrier_raider_development_bureau }
+
+        equipment_bonus = {
+            carrier_size = 1
+            anti_air_attack = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_raider_carrier_screen_killer_battery
+        name = Renko_model_mio_trait_raider_carrier_screen_killer_battery
+        icon = GFX_generic_mio_trait_icon_lg_attack
+
+        position = { x = 8 y = 1 }
+
+        any_parent = { Renko_mio_trait_carrier_raider_development_bureau }
+
+        equipment_bonus = {
+            lg_attack = 0.10
+            lg_armor_piercing = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_carrier_raider_concealed_task_profile
+        name = Renko_model_mio_trait_carrier_raider_concealed_task_profile
+        icon = GFX_generic_mio_trait_icon_surface_visibility
+
+        position = { x = 0 y = 2 }
+
+        any_parent = { Renko_mio_trait_carrier_raider_long_range_hull }
+
+        equipment_bonus = {
+            surface_visibility = -0.10
+            surface_detection = 0.05
+            sub_detection = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_carrier_raider_search_air_group
+        name = Renko_model_mio_trait_carrier_raider_search_air_group
+        icon = GFX_generic_mio_trait_icon_surface_detection
+
+        position = { x = 2 y = 2 }
+
+        any_parent = { Renko_mio_trait_carrier_raider_efficient_cruising_machinery }
+
+        equipment_bonus = {
+            surface_detection = 0.05
+            sub_detection = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_modular_carrier_raider_fittings
+        name = Renko_model_mio_trait_modular_carrier_raider_fittings
+        icon = GFX_generic_mio_trait_icon_efficiency_gain
+
+        position = { x = 3 y = 2 }
+
+        any_parent = { Renko_mio_trait_carrier_raider_shipyard_tooling }
+
+        production_bonus = {
+            production_efficiency_gain_factor = 0.05
+            production_efficiency_cap_factor = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_standardized_carrier_raider_assembly
+        name = Renko_model_mio_trait_standardized_carrier_raider_assembly
+        icon = GFX_generic_mio_trait_icon_efficiency_cap
+
+        position = { x = 5 y = 2 }
+
+        any_parent = { Renko_mio_trait_carrier_raider_shipyard_tooling }
+
+        production_bonus = {
+            production_efficiency_gain_factor = 0.05
+            production_efficiency_cap_factor = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_carrier_raider_torpedo_attack_run
+        name = Renko_model_mio_trait_carrier_raider_torpedo_attack_run
+        icon = GFX_generic_mio_trait_icon_torpedo_attack
+
+        position = { x = 6 y = 2 }
+
+        any_parent = { Renko_mio_trait_raider_carrier_flight_deck_group }
+
+        equipment_bonus = {
+            torpedo_attack = 0.10
+            naval_torpedo_hit_chance_factor = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_raider_heavy_support_battery
+        name = Renko_model_mio_trait_raider_heavy_support_battery
+        icon = GFX_generic_mio_trait_icon_hg_attack
+
+        position = { x = 8 y = 2 }
+
+        any_parent = { Renko_mio_trait_raider_carrier_screen_killer_battery }
+
+        equipment_bonus = {
+            hg_attack = 0.05
+            hg_armor_piercing = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_independent_carrier_raider_group
+        name = Renko_model_mio_trait_independent_carrier_raider_group
+        icon = GFX_generic_mio_trait_icon_surface_detection
+
+        position = { x = 1 y = 3 }
+
+        all_parents = {
+            Renko_mio_trait_carrier_raider_concealed_task_profile
+            Renko_mio_trait_carrier_raider_search_air_group
+        }
+
+        equipment_bonus = {
+            naval_range = 0.10
+            naval_speed = 0.10
+            surface_visibility = -0.10
+            surface_detection = 0.05
+            sub_detection = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_coordinated_carrier_raider_strike
+        name = Renko_model_mio_trait_coordinated_carrier_raider_strike
+        icon = GFX_generic_mio_trait_icon_torpedo_attack
+
+        position = { x = 7 y = 3 }
+
+        all_parents = {
+            Renko_mio_trait_carrier_raider_torpedo_attack_run
+            Renko_mio_trait_raider_heavy_support_battery
+        }
+
+        equipment_bonus = {
+            torpedo_attack = 0.05
+            naval_torpedo_hit_chance_factor = 0.05
+            naval_speed = 0.05
+            anti_air_attack = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_carrier_raider_material_economy
+        name = Renko_model_mio_trait_carrier_raider_material_economy
+        icon = GFX_generic_mio_trait_icon_resources
+
+        position = { x = 4 y = 4 }
+
+        all_parents = {
+            Renko_mio_trait_independent_carrier_raider_group
+            Renko_mio_trait_modular_carrier_raider_fittings
+            Renko_mio_trait_standardized_carrier_raider_assembly
+            Renko_mio_trait_coordinated_carrier_raider_strike
+        }
+
+        equipment_bonus = {
+            build_cost_ic = -0.10
+        }
+
+        production_bonus = {
+            production_cost_factor = -0.10
+            production_resource_need_factor = -0.25
+        }
+    }
+}
+
+## Submarine manufacturer template
+## Smart layout finalized.
+
+Renko_model_submarine_manufacturer_organization = {
+    icon = GFX_idea_generic_naval_manufacturer_1
+
+    allowed = {
+        always = no
+    }
+
+    equipment_type = {
+        ship_hull_submarine
+    }
+
+    research_categories = {
+        mio_cat_tech_all_submarine_and_modules
+    }
+
+    tree_header_text = {
+        text = Renko_mio_header_ra_submarine_stealth_endurance
+        x = 1
+    }
+
+    tree_header_text = {
+        text = Renko_mio_header_ra_submarine_production_preparation
+        x = 4
+    }
+
+    tree_header_text = {
+        text = Renko_mio_header_ra_submarine_torpedo_raiding
+        x = 7
+    }
+
+    initial_trait = {
+        name = Renko_model_submarine_manufacturer_initial_trait
+    }
+
+    trait = {
+        token = Renko_mio_trait_submarine_development_bureau
+        name = Renko_model_mio_trait_submarine_development_bureau
+        icon = GFX_generic_mio_department_icon_facilities
+
+        position = { x = 4 y = 0 }
+
+        organization_modifier = {
+            military_industrial_organization_research_bonus = 0.15
+            military_industrial_organization_funds_gain = 0.15
+            military_industrial_organization_size_up_requirement = -0.15
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_long_range_submarine_hull
+        name = Renko_model_mio_trait_long_range_submarine_hull
+        icon = GFX_generic_mio_trait_icon_naval_range
+
+        position = { x = 0 y = 1 }
+
+        any_parent = { Renko_mio_trait_submarine_development_bureau }
+
+        equipment_bonus = {
+            naval_range = 0.10
+            sub_visibility = -0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_efficient_diesel_electric_drive
+        name = Renko_model_mio_trait_efficient_diesel_electric_drive
+        icon = GFX_generic_mio_trait_icon_fuel_consumption
+
+        position = { x = 2 y = 1 }
+
+        any_parent = { Renko_mio_trait_submarine_development_bureau }
+
+        equipment_bonus = {
+            naval_range = 0.10
+            fuel_consumption = -0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_submarine_pressure_hull_tooling
+        name = Renko_model_mio_trait_submarine_pressure_hull_tooling
+        icon = GFX_generic_mio_department_icon_ship_submarine_production
+
+        position = { x = 4 y = 1 }
+
+        any_parent = { Renko_mio_trait_submarine_development_bureau }
+
+        production_bonus = {
+            production_capacity_factor = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_decalin_fueled_torpedo
+        name = Renko_model_mio_trait_decalin_fueled_torpedo
+        icon = GFX_generic_mio_trait_icon_torpedo_attack
+
+        position = { x = 6 y = 1 }
+
+        any_parent = { Renko_mio_trait_submarine_development_bureau }
+
+        equipment_bonus = {
+            torpedo_attack = 0.05
+            naval_torpedo_hit_chance_factor = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_advanced_periscope_sonar
+        name = Renko_model_mio_trait_advanced_periscope_sonar
+        icon = GFX_generic_mio_trait_icon_surface_detection
+
+        position = { x = 8 y = 1 }
+
+        any_parent = { Renko_mio_trait_submarine_development_bureau }
+
+        equipment_bonus = {
+            surface_detection = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_anechoic_tile_coating
+        name = Renko_model_mio_trait_anechoic_tile_coating
+        icon = GFX_generic_mio_trait_icon_sub_visibility
+
+        position = { x = 0 y = 2 }
+
+        any_parent = { Renko_mio_trait_long_range_submarine_hull }
+
+        equipment_bonus = {
+            surface_visibility = -0.10
+            sub_visibility = -0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_high_capacity_mine_storage
+        name = Renko_model_mio_trait_high_capacity_mine_storage
+        icon = GFX_generic_mio_trait_icon_mines
+
+        position = { x = 8 y = 2 }
+
+        any_parent = { Renko_mio_trait_advanced_periscope_sonar }
+
+        equipment_bonus = {
+            mines_planting = 0.15
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_deep_diving_pressure_hull
+        name = Renko_model_mio_trait_deep_diving_pressure_hull
+        icon = GFX_generic_mio_department_icon_ship_submarine_survivability
+
+        position = { x = 2 y = 2 }
+
+        any_parent = { Renko_mio_trait_efficient_diesel_electric_drive }
+
+        equipment_bonus = {
+            max_strength = 0.10
+            sub_visibility = -0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_modular_pressure_hull_assembly
+        name = Renko_model_mio_trait_modular_pressure_hull_assembly
+        icon = GFX_generic_mio_trait_icon_efficiency_gain
+
+        position = { x = 3 y = 2 }
+
+        any_parent = { Renko_mio_trait_submarine_pressure_hull_tooling }
+
+        production_bonus = {
+            production_efficiency_gain_factor = 0.05
+            production_efficiency_cap_factor = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_standardized_submarine_sections
+        name = Renko_model_mio_trait_standardized_submarine_sections
+        icon = GFX_generic_mio_trait_icon_efficiency_cap
+
+        position = { x = 5 y = 2 }
+
+        any_parent = { Renko_mio_trait_submarine_pressure_hull_tooling }
+
+        production_bonus = {
+            production_efficiency_gain_factor = 0.05
+            production_efficiency_cap_factor = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_large_torpedo_banks
+        name = Renko_model_mio_trait_large_torpedo_banks
+        icon = GFX_generic_mio_trait_icon_torpedo_attack
+
+        position = { x = 6 y = 2 }
+
+        any_parent = { Renko_mio_trait_decalin_fueled_torpedo }
+
+        equipment_bonus = {
+            torpedo_attack = 0.10
+            naval_torpedo_hit_chance_factor = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_silent_ocean_raider
+        name = Renko_model_mio_trait_silent_ocean_raider
+        icon = GFX_generic_mio_trait_icon_sub_visibility
+
+        position = { x = 1 y = 3 }
+
+        all_parents = {
+            Renko_mio_trait_anechoic_tile_coating
+            Renko_mio_trait_deep_diving_pressure_hull
+        }
+
+        equipment_bonus = {
+            naval_speed = 0.05
+            surface_detection = 0.05
+            sub_visibility = -0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_submarine_carrier_conversion
+        name = Renko_model_mio_trait_submarine_carrier_conversion
+        icon = GFX_generic_mio_department_icon_ship_submarine_conversion
+
+        position = { x = 7 y = 3 }
+
+        all_parents = {
+            Renko_mio_trait_large_torpedo_banks
+            Renko_mio_trait_high_capacity_mine_storage
+        }
+
+        equipment_bonus = {
+            submarine_carrier_size = 2
+            naval_speed = 0.10
+            max_strength = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_submarine_material_economy
+        name = Renko_model_mio_trait_submarine_material_economy
+        icon = GFX_generic_mio_department_icon_ship_submarine_materials
+
+        position = { x = 4 y = 4 }
+
+        all_parents = {
+            Renko_mio_trait_silent_ocean_raider
+            Renko_mio_trait_modular_pressure_hull_assembly
+            Renko_mio_trait_standardized_submarine_sections
+            Renko_mio_trait_submarine_carrier_conversion
+        }
+
+        equipment_bonus = {
+            build_cost_ic = -0.10
+        }
+
+        production_bonus = {
+            production_cost_factor = -0.10
+            production_resource_need_factor = -0.25
+        }
+    }
+}
+
+## Escort fleet manufacturer template
+## Smart layout skeleton.
+## Smart layout finalized.
+
+Renko_model_escort_fleet_manufacturer_organization = {
+    icon = GFX_idea_generic_naval_manufacturer_1
+
+    allowed = {
+        always = no
+    }
+
+    equipment_type = {
+        screen_ship
+    }
+
+    research_categories = {
+        mio_cat_tech_all_screen_ship_and_modules
+    }
+
+    tree_header_text = {
+        text = Renko_mio_header_ra_escort_fleet_screen_patrol
+        x = 1
+    }
+
+    tree_header_text = {
+        text = Renko_mio_header_ra_escort_fleet_mass_production
+        x = 4
+    }
+
+    tree_header_text = {
+        text = Renko_mio_header_ra_escort_fleet_fire_control
+        x = 7
+    }
+
+    initial_trait = {
+        name = Renko_model_escort_fleet_manufacturer_initial_trait
+    }
+
+    trait = {
+        token = Renko_mio_trait_escort_asw_foundation
+        name = Renko_model_mio_trait_escort_asw_foundation
+        icon = GFX_generic_mio_department_icon_facilities
+
+        position = { x = 4 y = 0 }
+
+        organization_modifier = {
+            military_industrial_organization_research_bonus = 0.15
+            military_industrial_organization_funds_gain = 0.15
+            military_industrial_organization_size_up_requirement = -0.15
+        }
+
+        equipment_bonus = {
+            sub_detection = 0.10
+            sub_attack = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_high_speed_mine_hunting_gear
+        name = Renko_model_mio_trait_high_speed_mine_hunting_gear
+        icon = GFX_generic_mio_trait_icon_sub_visibility
+
+        position = { x = 0 y = 1 }
+
+        any_parent = { Renko_mio_trait_escort_asw_foundation }
+
+        equipment_bonus = {
+            sub_detection = 0.05
+            mines_sweeping = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_hydrodynamic_escort_hull
+        name = Renko_model_mio_trait_hydrodynamic_escort_hull
+        icon = GFX_generic_mio_trait_icon_maximum_speed
+
+        position = { x = 2 y = 1 }
+
+        any_parent = { Renko_mio_trait_escort_asw_foundation }
+
+        equipment_bonus = {
+            naval_speed = 0.10
+            surface_detection = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_mass_escort_production
+        name = Renko_model_mio_trait_mass_escort_production
+        icon = GFX_generic_mio_trait_icon_production_capacity
+
+        position = { x = 4 y = 1 }
+
+        any_parent = { Renko_mio_trait_escort_asw_foundation }
+
+        production_bonus = {
+            production_capacity_factor = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_escort_fire_group
+        name = Renko_model_mio_trait_escort_fire_group
+        icon = GFX_generic_mio_trait_icon_anti_air_attack
+
+        position = { x = 6 y = 1 }
+
+        any_parent = { Renko_mio_trait_escort_asw_foundation }
+
+        equipment_bonus = {
+            anti_air_attack = 0.10
+            lg_attack = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_anti_sub_torpedo_suite
+        name = Renko_model_mio_trait_anti_sub_torpedo_suite
+        icon = GFX_generic_mio_trait_icon_torpedo_attack
+
+        position = { x = 8 y = 1 }
+
+        any_parent = { Renko_mio_trait_escort_asw_foundation }
+
+        equipment_bonus = {
+            sub_attack = 0.15
+            torpedo_attack = 0.10
+            naval_torpedo_hit_chance_factor = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_long_range_escort_configuration
+        name = Renko_model_mio_trait_long_range_escort_configuration
+        icon = GFX_generic_mio_trait_icon_naval_range
+
+        position = { x = 0 y = 2 }
+
+        any_parent = { Renko_mio_trait_high_speed_mine_hunting_gear }
+
+        equipment_bonus = {
+            naval_speed = 0.10
+            naval_range = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_escort_search_radar_network
+        name = Renko_model_mio_trait_escort_search_radar_network
+        icon = GFX_generic_mio_trait_icon_sub_detection
+
+        position = { x = 2 y = 2 }
+
+        any_parent = { Renko_mio_trait_hydrodynamic_escort_hull }
+
+        equipment_bonus = {
+            naval_range = 0.10
+            surface_detection = 0.15
+            sub_detection = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_escort_workflow_standardization
+        name = Renko_model_mio_trait_escort_workflow_standardization
+        icon = GFX_generic_mio_trait_icon_efficiency_gain
+
+        position = { x = 4 y = 2 }
+
+        any_parent = { Renko_mio_trait_mass_escort_production }
+
+        production_bonus = {
+            production_efficiency_cap_factor = 0.10
+            production_efficiency_gain_factor = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_area_anti_air_screen
+        name = Renko_model_mio_trait_area_anti_air_screen
+        icon = GFX_generic_mio_trait_icon_anti_air_attack
+
+        position = { x = 6 y = 2 }
+
+        any_parent = { Renko_mio_trait_escort_fire_group }
+
+        equipment_bonus = {
+            anti_air_attack = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_stabilized_escort_mounts
+        name = Renko_model_mio_trait_stabilized_escort_mounts
+        icon = GFX_generic_mio_department_icon_ship_screen_ship_offense
+
+        position = { x = 8 y = 2 }
+
+        any_parent = { Renko_mio_trait_anti_sub_torpedo_suite }
+
+        equipment_bonus = {
+            anti_air_attack = 0.05
+            lg_attack = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_underway_supply_group
+        name = Renko_model_mio_trait_underway_supply_group
+        icon = GFX_generic_mio_trait_icon_naval_range
+
+        position = { x = 1 y = 3 }
+
+        all_parents = {
+            Renko_mio_trait_long_range_escort_configuration
+            Renko_mio_trait_escort_search_radar_network
+        }
+
+        equipment_bonus = {
+            naval_range = 0.05
+            max_strength = 0.05
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_improved_light_gun_integration
+        name = Renko_model_mio_trait_improved_light_gun_integration
+        icon = GFX_generic_mio_trait_icon_lg_attack
+
+        position = { x = 7 y = 3 }
+
+        all_parents = {
+            Renko_mio_trait_area_anti_air_screen
+            Renko_mio_trait_stabilized_escort_mounts
+        }
+
+        equipment_bonus = {
+            lg_attack = 0.05
+            lg_armor_piercing = 0.10
+        }
+    }
+
+    trait = {
+        token = Renko_mio_trait_escort_material_simplification
+        name = Renko_model_mio_trait_escort_material_simplification
+        icon = GFX_generic_mio_trait_icon_resources
+
+        position = { x = 4 y = 4 }
+
+        all_parents = {
+            Renko_mio_trait_underway_supply_group
+            Renko_mio_trait_escort_workflow_standardization
+            Renko_mio_trait_improved_light_gun_integration
+        }
+
+        equipment_bonus = {
+            build_cost_ic = -0.15
+        }
+
+        production_bonus = {
+            production_cost_factor = -0.10
+            production_resource_need_factor = -0.25
+        }
+    }
+}

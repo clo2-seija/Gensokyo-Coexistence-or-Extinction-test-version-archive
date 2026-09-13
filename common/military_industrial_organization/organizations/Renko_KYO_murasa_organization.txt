@@ -1,0 +1,18 @@
+# 村纱幽灵船坞：航母袭击舰队；组织及初始特质暂用原版占位图标。
+Renko_KYO_murasa_ghost_shipyards = {
+	include = Renko_model_carrier_raider_ship_manufacturer_organization
+	icon = GFX_idea_generic_naval_manufacturer_3
+
+	allowed = { original_tag = KYO }
+	available = { }
+
+	initial_trait = {
+		name = Renko_KYO_murasa_naval_initial_trait
+		# 临时占位，正式特质图标待定。
+		icon = GFX_generic_mio_trait_icon_unique
+		equipment_bonus = {
+			surface_visibility = -0.03
+			naval_speed = 0.03
+		}
+	}
+}
