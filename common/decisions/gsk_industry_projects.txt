@@ -1,522 +1,388 @@
 KYO_industry_projects = {
 
-
-     GSK_indproj_civ_1 = {
-            icon = GFX_decision_generic_build_civ_factory
-            state_target = yes
-            on_map_mode = map_and_decisions_view
-            targets = { 282 1018 1019 1020 526 528 529 530 531 533 535 }
-
-            cost = 25
-            days_remove = 45
-            days_re_enable = -1
-
-            modifier = {
-                civilian_factory_use = 1
-            }
- 
-            target_trigger = {
-                FROM = {
-                    is_owned_by = ROOT
-                    NOT = { has_state_flag = GSK_indproj_civ_1_done }
-                    NOT = { has_state_flag = GSK_indproj_civ_1_active }
-
-                }
-            }
-
-            visible = {
-                FROM = {
-                    is_owned_by = ROOT
-                    NOT = { has_state_flag = GSK_indproj_civ_1_done }
-                    NOT = { has_state_flag = GSK_indproj_civ_1_active }
-
-                }
-            }
-
-            available = {
-                num_of_civilian_factories_available_for_projects > 0
-            }
-
-            complete_effect = {
-                FROM = {
-                    set_state_flag = GSK_indproj_civ_1_active
-                }
-            }
-
-            remove_effect = {
-                FROM = {
-                    clr_state_flag = GSK_indproj_civ_1_active
-                    set_state_flag = GSK_indproj_civ_1_done
-
-                    add_extra_state_shared_building_slots = 1
-                    add_building_construction = {
-                        type = industrial_complex
-                        level = 1
-                        instant_build = yes
-                    }
-                }
-            }
-
-            
-        }
-
-        # Civilian industry: +2 shared slots, +2 civilian factories
-        GSK_indproj_civ_2 = {
-            icon = GFX_decision_generic_build_civ_factory
-            state_target = yes
-            on_map_mode = map_and_decisions_view
-            targets = { 1019 530 532 536 }
-
-            cost = 75
-            days_remove = 120
-            days_re_enable = -1
-
-            modifier = {
-                civilian_factory_use = 3
-            }
-
-            target_trigger = {
-                FROM = {
-                    is_owned_by = ROOT
-                    NOT = { has_state_flag = GSK_indproj_civ_2_done }
-                    NOT = { has_state_flag = GSK_indproj_civ_2_active }
-
-                }
-            }
-
-            visible = {
-                FROM = {
-                    is_owned_by = ROOT
-                    NOT = { has_state_flag = GSK_indproj_civ_2_done }
-                    NOT = { has_state_flag = GSK_indproj_civ_2_active }
-
-                }
-            }
-
-            available = {
-                num_of_civilian_factories_available_for_projects > 0
-            }
-
-            complete_effect = {
-                FROM = {
-                    set_state_flag = GSK_indproj_civ_2_active
-                }
-            }
-
-            remove_effect = {
-                FROM = {
-                    clr_state_flag = GSK_indproj_civ_2_active
-                    set_state_flag = GSK_indproj_civ_2_done
-
-                    add_extra_state_shared_building_slots = 2
-                    add_building_construction = {
-                        type = industrial_complex
-                        level = 2
-                        instant_build = yes
-                    }
-                }
-            }
-
-            
-        }
-
-        # Military industry: +1 shared slot, +1 military factory
-        GSK_indproj_mil_1 = {
-            icon = GFX_decision_generic_build_mil_factory
-            state_target = yes
-            on_map_mode = map_and_decisions_view
-            targets = { 1018 1020 526 531 532 534 535 536 }
-
-            cost = 50
-            days_remove = 60
-            days_re_enable = -1
-
-            modifier = {
-                civilian_factory_use = 2
-            }
-
-            target_trigger = {
-                FROM = {
-                    is_owned_by = ROOT
-                    NOT = { has_state_flag = GSK_indproj_mil_1_done }
-                    NOT = { has_state_flag = GSK_indproj_mil_1_active }
-
-                }
-            }
-
-            visible = {
-                FROM = {
-                    is_owned_by = ROOT
-                    NOT = { has_state_flag = GSK_indproj_mil_1_done }
-                    NOT = { has_state_flag = GSK_indproj_mil_1_active }
-
-                }
-            }
-
-            available = {
-                num_of_civilian_factories_available_for_projects > 0
-            }
-
-            complete_effect = {
-                FROM = {
-                    set_state_flag = GSK_indproj_mil_1_active
-                }
-            }
-
-            remove_effect = {
-                FROM = {
-                    clr_state_flag = GSK_indproj_mil_1_active
-                    set_state_flag = GSK_indproj_mil_1_done
-
-                    add_extra_state_shared_building_slots = 1
-                    add_building_construction = {
-                        type = arms_factory
-                        level = 1
-                        instant_build = yes
-                    }
-                }
-            }
-
-            
-        }
-
-        # Military industry: +2 shared slots, +2 military factories
-        GSK_indproj_mil_2 = {
-            icon = GFX_decision_generic_build_mil_factory
-            state_target = yes
-            on_map_mode = map_and_decisions_view
-            targets = { 282 528 529 533 534 }
-
-            cost = 100
-            days_remove = 150
-            days_re_enable = -1
-
-            modifier = {
-                civilian_factory_use = 4
-            }
-
-            target_trigger = {
-                FROM = {
-                    is_owned_by = ROOT
-                    NOT = { has_state_flag = GSK_indproj_mil_2_done }
-                    NOT = { has_state_flag = GSK_indproj_mil_2_active }
-
-                }
-            }
-
-            visible = {
-                FROM = {
-                    is_owned_by = ROOT
-                    NOT = { has_state_flag = GSK_indproj_mil_2_done }
-                    NOT = { has_state_flag = GSK_indproj_mil_2_active }
-
-                }
-            }
-
-            available = {
-                num_of_civilian_factories_available_for_projects > 0
-            }
-
-            complete_effect = {
-                FROM = {
-                    set_state_flag = GSK_indproj_mil_2_active
-                }
-            }
-
-            remove_effect = {
-                FROM = {
-                    clr_state_flag = GSK_indproj_mil_2_active
-                    set_state_flag = GSK_indproj_mil_2_done
-
-                    add_extra_state_shared_building_slots = 2
-                    add_building_construction = {
-                        type = arms_factory
-                        level = 2
-                        instant_build = yes
-                    }
-                }
-            }
-
-            
-        }
-
-        # Infrastructure: +1 infrastructure in targeted state
-        GSK_indproj_infrastructure = {
-            icon = GFX_decision_generic_construction
-            state_target = yes
-            on_map_mode = map_and_decisions_view
-            targets = { 525 1030 1031 633 645 646 648 684 745 555 }
-
-            cost = 25
-            days_remove = 60
-            days_re_enable = -1
-
-            modifier = {
-                civilian_factory_use = 1
-            }
-
-            target_trigger = {
-                FROM = {
-                    is_owned_by = ROOT
-                    NOT = { has_state_flag = GSK_indproj_infrastructure_done }
-                    NOT = { has_state_flag = GSK_indproj_infrastructure_active }
-
-                }
-            }
-
-            visible = {
-                FROM = {
-                    is_owned_by = ROOT
-                    NOT = { has_state_flag = GSK_indproj_infrastructure_done }
-                    NOT = { has_state_flag = GSK_indproj_infrastructure_active }
-
-                }
-            }
-
-            available = {
-                num_of_civilian_factories_available_for_projects > 0
-            }
-
-            complete_effect = {
-                FROM = {
-                    set_state_flag = GSK_indproj_infrastructure_active
-                }
-            }
-
-            remove_effect = {
-                FROM = {
-                    clr_state_flag = GSK_indproj_infrastructure_active
-                    set_state_flag = GSK_indproj_infrastructure_done
-
-                    add_building_construction = {
-                        type = infrastructure
-                        level = 1
-                        instant_build = yes
-                    }
-                }
-            }
-
-            
-        }
-
-        # Resource prospecting: state-specific resources, merged into one map decision
-        GSK_indproj_resource_prospecting = {
-            icon = GFX_decision_generic_prospect_for_resources
-            state_target = yes
-            on_map_mode = map_and_decisions_view
-            targets = { 524 527 1028 1029 537 647 609 }
-
-            cost = 50
-            days_remove = 90
-            days_re_enable = -1
-
-            modifier = {
-                civilian_factory_use = 2
-            }
-
-            target_trigger = {
-                FROM = {
-                    is_owned_by = ROOT
-                    NOT = { has_state_flag = GSK_indproj_resource_prospecting_done }
-                    NOT = { has_state_flag = GSK_indproj_resource_prospecting_active }
-
-                }
-            }
-
-            visible = {
-                FROM = {
-                    is_owned_by = ROOT
-                    NOT = { has_state_flag = GSK_indproj_resource_prospecting_done }
-                    NOT = { has_state_flag = GSK_indproj_resource_prospecting_active }
-
-                }
-            }
-
-            available = {
-                num_of_civilian_factories_available_for_projects > 0
-            }
-
-            complete_effect = {
-                FROM = {
-                    set_state_flag = GSK_indproj_resource_prospecting_active
-                }
-            }
-
-            remove_effect = {
-                FROM = {
-                    clr_state_flag = GSK_indproj_resource_prospecting_active
-                    set_state_flag = GSK_indproj_resource_prospecting_done
-
-                    if = {
-                        limit = { state = 524 }
-                        add_resource = {
-                            type = coal
-                            amount = 12
-                        }
-                        add_resource = {
-                            type = oil
-                            amount = 2
-                        }
-                    }
-                    if = {
-                        limit = { state = 527 }
-                        add_resource = {
-                            type = steel
-                            amount = 20
-                        }
-                    }
-                    if = {
-                        limit = { state = 1028 }
-                        add_resource = {
-                            type = steel
-                            amount = 18
-                        }
-                        add_resource = {
-                            type = tungsten
-                            amount = 5
-                        }
-                    }
-                    if = {
-                        limit = { state = 1029 }
-                        add_resource = {
-                            type = tungsten
-                            amount = 12
-                        }
-                        add_resource = {
-                            type = aluminium
-                            amount = 8
-                        }
-                    }
-                    if = {
-                        limit = { state = 537 }
-                        add_resource = {
-                            type = oil
-                            amount = 7
-                        }
-                    }
-                    if = {
-                        limit = { state = 647 }
-                        add_resource = {
-                            type = aluminium
-                            amount = 18
-                        }
-                    }
-                    if = {
-                        limit = { state = 609 }
-                        add_resource = {
-                            type = coal
-                            amount = 18
-                        }
-                    }
-                }
-            }
-
-            
-        }
-
-        # Facilities: land / air / nuclear facility, state-specific building type
-        GSK_indproj_special_facility = {
-            icon = GFX_decision_generic_construction
-            state_target = yes
-            on_map_mode = map_and_decisions_view
-            targets = { 282 1082 530 }
-
-            cost = 50
-            days_remove = 120
-            days_re_enable = -1
-
-            modifier = {
-                civilian_factory_use = 4
-            }
-
-            target_trigger = {
-                FROM = {
-                    is_owned_by = ROOT
-                    NOT = { has_state_flag = GSK_indproj_special_facility_done }
-                    NOT = { has_state_flag = GSK_indproj_special_facility_active }
-                #   OR = {
-                #       AND = {
-                #           state = 282
-
-                #           free_building_slots = {
-                #               building = land_facility 
-                #               size > 1
-                #           }
-                #       
-                #       }
-                #       AND = {
-                #           state = 1082
-                #           free_building_slots = {
-                #               building = air_facility
-                #               size > 0
-                #           }
-                #       }
-                #       AND = {
-                #           state = 530
-                #           free_building_slots = {
-                #               building = nuclear_facility
-                #               size > 0
-                #           }
-                #       }
-                #   }
-                }
-            }
-
-            visible = {
-                FROM = {
-                    is_owned_by = ROOT
-                    NOT = { has_state_flag = GSK_indproj_special_facility_done }
-                    NOT = { has_state_flag = GSK_indproj_special_facility_active }
-                   
-                }
-            }
-
-            available = {
-                num_of_civilian_factories_available_for_projects > 0
-            }
-
-            complete_effect = {
-                FROM = {
-                    set_state_flag = GSK_indproj_special_facility_active
-                }
-            }
-
-            remove_effect = {
-                FROM = {
-                    clr_state_flag = GSK_indproj_special_facility_active
-                    set_state_flag = GSK_indproj_special_facility_done
-
-                    if = {
-                        limit = { state = 282 }
-                        add_building_construction = {
-                            type = land_facility
-                            level = 1
-                            instant_build = yes
-                        }
-                    }
-                    if = {
-                        limit = { state = 1082 }
-                        add_building_construction = {
-                            type = air_facility
-                            level = 1
-                            instant_build = yes
-                        }
-                    }
-                    if = {
-                        limit = { state = 530 }
-                        add_building_construction = {
-                            type = nuclear_facility
-                            level = 1
-                            instant_build = yes
-                        }
-                    }
-                }
-            }
-
-            
-        }
-
-
+	# ------------------------------------------------------------
+	# 河童工業化計畫
+	#
+	# timed decision 的流程：
+	# 1. 點擊時支付 cost，modifier 在讀條期間生效。
+	# 2. days_remove 結束後執行 remove_effect。
+	# 3. 不要在 target_trigger 中排除點擊時才寫入的 active flag，
+	#    否則決議會在啟動後立刻失去合法目標並消失。
+	# ------------------------------------------------------------
+
+	# 民用工業：+1 共用建築槽、+1 民用工廠
+	GSK_indproj_civ_1 = {
+		icon = GFX_decision_generic_build_civ_factory
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		targets = { 282 1018 1019 1020 526 528 529 530 531 533 535 }
+
+		cost = 25
+		days_remove = 45
+		fire_only_once = yes
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				NOT = { has_state_flag = GSK_indproj_civ_1_done }
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
+
+		remove_effect = {
+			FROM = {
+				set_state_flag = GSK_indproj_civ_1_done
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	# 民用工業：+2 共用建築槽、+2 民用工廠
+	GSK_indproj_civ_2 = {
+		icon = GFX_decision_generic_build_civ_factory
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		targets = { 1019 530 532 536 }
+
+		cost = 75
+		days_remove = 120
+		fire_only_once = yes
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				NOT = { has_state_flag = GSK_indproj_civ_2_done }
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+		}
+
+		remove_effect = {
+			FROM = {
+				set_state_flag = GSK_indproj_civ_2_done
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	# 軍用工業：+1 共用建築槽、+1 軍用工廠
+	GSK_indproj_mil_1 = {
+		icon = GFX_decision_generic_build_mil_factory
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		targets = { 1018 1020 526 531 532 534 535 536 }
+
+		cost = 50
+		days_remove = 60
+		fire_only_once = yes
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				NOT = { has_state_flag = GSK_indproj_mil_1_done }
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+		}
+
+		remove_effect = {
+			FROM = {
+				set_state_flag = GSK_indproj_mil_1_done
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	# 軍用工業：+2 共用建築槽、+2 軍用工廠
+	GSK_indproj_mil_2 = {
+		icon = GFX_decision_generic_build_mil_factory
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		targets = { 282 528 529 533 534 }
+
+		cost = 100
+		days_remove = 150
+		fire_only_once = yes
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				NOT = { has_state_flag = GSK_indproj_mil_2_done }
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+		}
+
+		remove_effect = {
+			FROM = {
+				set_state_flag = GSK_indproj_mil_2_done
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	# 基礎設施：目標州 +1 基礎設施
+	GSK_indproj_infrastructure = {
+		icon = GFX_decision_generic_construction
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		targets = { 525 1030 1031 633 645 646 648 684 745 555 }
+
+		cost = 25
+		days_remove = 60
+		fire_only_once = yes
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				NOT = { has_state_flag = GSK_indproj_infrastructure_done }
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
+
+		remove_effect = {
+			FROM = {
+				set_state_flag = GSK_indproj_infrastructure_done
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	# 資源勘探：依目標州增加不同資源
+	GSK_indproj_resource_prospecting = {
+		icon = GFX_decision_generic_prospect_for_resources
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		targets = { 524 527 1028 1029 537 647 609 }
+
+		cost = 50
+		days_remove = 90
+		fire_only_once = yes
+
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				NOT = { has_state_flag = GSK_indproj_resource_prospecting_done }
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+		}
+
+		remove_effect = {
+			FROM = {
+				set_state_flag = GSK_indproj_resource_prospecting_done
+
+				if = {
+					limit = { state = 524 }
+					add_resource = {
+						type = coal
+						amount = 12
+					}
+					add_resource = {
+						type = oil
+						amount = 2
+					}
+				}
+				if = {
+					limit = { state = 527 }
+					add_resource = {
+						type = steel
+						amount = 20
+					}
+				}
+				if = {
+					limit = { state = 1028 }
+					add_resource = {
+						type = steel
+						amount = 18
+					}
+					add_resource = {
+						type = tungsten
+						amount = 5
+					}
+				}
+				if = {
+					limit = { state = 1029 }
+					add_resource = {
+						type = tungsten
+						amount = 12
+					}
+					add_resource = {
+						type = aluminium
+						amount = 8
+					}
+				}
+				if = {
+					limit = { state = 537 }
+					add_resource = {
+						type = oil
+						amount = 7
+					}
+				}
+				if = {
+					limit = { state = 647 }
+					add_resource = {
+						type = aluminium
+						amount = 18
+					}
+				}
+				if = {
+					limit = { state = 609 }
+					add_resource = {
+						type = coal
+						amount = 18
+					}
+				}
+			}
+		}
+	}
+
+	# 特殊設施：282 陸軍設施、1082 空軍設施、530 核設施
+	GSK_indproj_special_facility = {
+		icon = GFX_decision_generic_construction
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		targets = { 282 1082 530 }
+
+		cost = 50
+		days_remove = 120
+		fire_only_once = yes
+
+		modifier = {
+			civilian_factory_use = 4
+		}
+
+		target_trigger = {
+			FROM = {
+				is_owned_and_controlled_by = ROOT
+				NOT = { has_state_flag = GSK_indproj_special_facility_done }
+
+				OR = {
+					AND = {
+						state = 282
+						free_building_slots = {
+							building = land_facility
+							size > 0
+							include_locked = yes
+						}
+					}
+					AND = {
+						state = 1082
+						free_building_slots = {
+							building = air_facility
+							size > 0
+							include_locked = yes
+						}
+					}
+					AND = {
+						state = 530
+						free_building_slots = {
+							building = nuclear_facility
+							size > 0
+							include_locked = yes
+						}
+					}
+				}
+			}
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 3
+		}
+
+		remove_effect = {
+			FROM = {
+				set_state_flag = GSK_indproj_special_facility_done
+
+				if = {
+					limit = { state = 282 }
+					add_building_construction = {
+						type = land_facility
+						level = 1
+						instant_build = yes
+					}
+				}
+				if = {
+					limit = { state = 1082 }
+					add_building_construction = {
+						type = air_facility
+						level = 1
+						instant_build = yes
+					}
+				}
+				if = {
+					limit = { state = 530 }
+					add_building_construction = {
+						type = nuclear_facility
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
 }
 
 
