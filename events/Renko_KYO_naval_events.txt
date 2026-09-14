@@ -1,0 +1,79 @@
+add_namespace = Renko_KYO_naval
+
+country_event = {
+    id = Renko_KYO_naval.1
+    title = Renko_KYO_naval.1.t
+    desc = Renko_KYO_naval.1.d
+    picture = GFX_report_event_generic_naval_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = { tag = KYO }
+    option = {
+        name = Renko_KYO_naval.1.a
+        Renko_KYO_create_old_japan_naval_designs_chinese = yes
+        hidden_effect = {
+            clr_country_flag = Renko_KYO_naval_designs_english
+            set_country_flag = Renko_KYO_naval_designs_chinese
+            country_event = { id = Renko_KYO_naval.2 days = 1 }
+        }
+    }
+    option = {
+        name = Renko_KYO_naval.1.b
+        Renko_KYO_create_old_japan_naval_designs_english = yes
+        hidden_effect = {
+            clr_country_flag = Renko_KYO_naval_designs_chinese
+            set_country_flag = Renko_KYO_naval_designs_english
+            country_event = { id = Renko_KYO_naval.2 days = 1 }
+        }
+    }
+}
+
+country_event = {
+    id = Renko_KYO_naval.2
+    title = Renko_KYO_naval.2.t
+    desc = Renko_KYO_naval.2.d
+    picture = GFX_report_event_generic_naval_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        tag = KYO
+        NOT = { has_country_flag = Renko_KYO_naval_fleet_choice_resolved }
+        OR = {
+            has_country_flag = Renko_KYO_naval_designs_chinese
+            has_country_flag = Renko_KYO_naval_designs_english
+        }
+    }
+    option = {
+        name = Renko_KYO_naval.2.a
+        custom_effect_tooltip = Renko_KYO_replace_naval_fleet_tt
+        hidden_effect = {
+            if = {
+                limit = { NOT = { has_country_flag = Renko_KYO_naval_fleet_choice_resolved } }
+                # 国家作用域逐舰种清除，覆盖维修舰和支援舰；必须在新 OOB 加载之前执行。
+                destroy_ships = { type = carrier count = all }
+                destroy_ships = { type = battleship count = all }
+                destroy_ships = { type = battle_cruiser count = all }
+                destroy_ships = { type = heavy_cruiser count = all }
+                destroy_ships = { type = light_cruiser count = all }
+                destroy_ships = { type = destroyer count = all }
+                destroy_ships = { type = submarine count = all }
+                destroy_ships = { type = repair_ship count = all }
+                destroy_ships = { type = support_ship count = all }
+                if = {
+                    limit = { has_country_flag = Renko_KYO_naval_designs_chinese }
+                    load_oob = "Renko_KYO_event2_naval_chinese"
+                }
+                else_if = {
+                    limit = { has_country_flag = Renko_KYO_naval_designs_english }
+                    load_oob = "Renko_KYO_event2_naval_english"
+                }
+                set_country_flag = Renko_KYO_naval_fleet_choice_resolved
+            }
+        }
+    }
+    option = {
+        name = Renko_KYO_naval.2.b
+        custom_effect_tooltip = Renko_KYO_keep_naval_fleet_tt
+        hidden_effect = { set_country_flag = Renko_KYO_naval_fleet_choice_resolved }
+    }
+}

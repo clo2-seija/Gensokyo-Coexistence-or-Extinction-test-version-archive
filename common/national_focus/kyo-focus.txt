@@ -14638,126 +14638,27 @@ focus = {
 ### Navy - Base ###
 ###################
 	
-	focus  = {
-		id = KYO_start_the_naval_plan
-		icon = GFX_goal_unknown
-		cost = 6
-
-		relative_position_id = KYO_the_reform_meeting
-		x = 17
-		y = 1
-
-		prerequisite = {
-			focus = KYO_the_reform_meeting
-		}
-
-		ai_will_do = { factor = 100 }
-
-		completion_reward = {
-			# Renko：建立幻想乡联合舰队，海军经验按每日固定值增加。
-			Renko_KYO_add_or_modify_united_fleet = yes
-			add_to_variable = { Renko_KYO_united_fleet_experience_gain_navy = 0.10 tooltip = experience_gain_navy_tt }
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			
-			
-			
-
-			set_technology = {
-
-				interwar_antiair = 1
-
-				antiair1 = 1
-
-				basic_fire_control_system = 1
-
-			}
-	
-	
-				hidden_effect = {
-					create_equipment_variant = {
-						name = "Taihō Class"
-						type = ship_hull_carrier_1
-						name_group = JAP_CV_HISTORICAL
-						parent_version = 0
-						modules = {
-							
-							fixed_ship_anti_air_slot = ship_anti_air_2
-							fixed_ship_radar_slot = empty
-							fixed_ship_engine_slot = carrier_ship_engine_2
-							fixed_ship_secondaries_slot = ship_secondaries_1
-							fixed_ship_armor_slot = ship_armor_cruiser_2
-							front_1_custom_slot = ship_deck_space
-							mid_1_custom_slot = ship_armor_carrier_deck
-						}
-					}
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_carrier_1
-							creator = "JAP"
-							version_name = "Taihō Class"
-						}
-						requested_factories = 3
-						progress = 0.4
-						amount = 1
-					}
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_carrier_1
-							creator = "JAP"
-							version_name = "Taihō Class"
-						}
-						requested_factories = 3
-						progress = 0.4
-						amount = 1
-					}
-					create_equipment_variant = {
-						name = "Kawachi Class"
-						type = ship_hull_heavy_2
-						name_group = JAP_PREFECTURES
-						parent_version = 0
-						modules = {
-							fixed_ship_battery_slot = ship_heavy_battery_2
-							fixed_ship_anti_air_slot = ship_anti_air_2
-							fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-							fixed_ship_radar_slot = empty
-							fixed_ship_engine_slot = heavy_ship_engine_2
-							fixed_ship_secondaries_slot = ship_secondaries_2
-							fixed_ship_armor_slot = ship_armor_bb_2
-							front_1_custom_slot = empty
-							mid_1_custom_slot = ship_anti_air_2
-							mid_2_custom_slot = ship_airplane_launcher_1
-							rear_1_custom_slot = ship_heavy_battery_2
-						}
-					}
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_heavy_2
-							creator = "JAP"
-							version_name = "Kawachi Class"
-						}
-						requested_factories = 3
-						progress = 0.4
-						amount = 1
-					}
-
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_heavy_2
-							creator = "JAP"
-							version_name = "Kawachi Class"
-						}
-						requested_factories = 3
-						progress = 0.4
-						amount = 1
-					}
-				}
-				
-			
-			
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_BONUS }
-	}
+	focus = {
+        id = KYO_start_the_naval_plan
+        icon = GFX_goal_generic_navy_cruiser
+        cost = 5
+        relative_position_id = KYO_the_reform_meeting
+        x = 17
+        y = 1
+        prerequisite = { focus = KYO_the_reform_meeting }
+        available = { has_full_control_of_state = 282 }
+        ai_will_do = { factor = 100 }
+        completion_reward = {
+            Renko_KYO_add_or_modify_united_fleet = yes
+            add_to_variable = { Renko_KYO_united_fleet_experience_gain_navy = 0.10 tooltip = experience_gain_navy_tt }
+            custom_effect_tooltip = generic_skip_one_line_tt
+            Renko_KYO_grant_basic_naval_technologies = yes
+            custom_effect_tooltip = Renko_KYO_naval_event1_preview_tt
+            custom_effect_tooltip = Renko_KYO_naval_event2_preview_tt
+            hidden_effect = { country_event = { id = Renko_KYO_naval.1 days = 1 } }
+        }
+        search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_BONUS }
+    }
 
 	focus = {
 		id = KYO_naval_research

@@ -42,9 +42,9 @@ Renko_model_naval_aircraft_manufacturer_organization = {
         position = { x = 4 y = 0 }
 
         organization_modifier = {
-            military_industrial_organization_research_bonus = 0.15
-            military_industrial_organization_funds_gain = 0.15
-            military_industrial_organization_size_up_requirement = -0.15
+            military_industrial_organization_research_bonus = 0.12
+            military_industrial_organization_funds_gain = 0.12
+            military_industrial_organization_size_up_requirement = -0.12
         }
     }
 
@@ -73,7 +73,7 @@ Renko_model_naval_aircraft_manufacturer_organization = {
         any_parent = { Renko_mio_trait_naval_aircraft_development_bureau }
 
         equipment_bonus = {
-            air_defence = 0.10
+            air_defence = 0.08
             reliability = 0.05
         }
     }
@@ -88,7 +88,7 @@ Renko_model_naval_aircraft_manufacturer_organization = {
         any_parent = { Renko_mio_trait_naval_aircraft_development_bureau }
 
         production_bonus = {
-            production_capacity_factor = 0.10
+            production_capacity_factor = 0.08
         }
     }
 
@@ -116,8 +116,8 @@ Renko_model_naval_aircraft_manufacturer_organization = {
         any_parent = { Renko_mio_trait_naval_aircraft_development_bureau }
 
         equipment_bonus = {
-            surface_detection = 0.10
-            sub_detection = 0.10
+            surface_detection = 0.08
+            sub_detection = 0.08
         }
     }
 
@@ -146,7 +146,7 @@ Renko_model_naval_aircraft_manufacturer_organization = {
         any_parent = { Renko_mio_trait_reinforced_arrestor_gear }
 
         equipment_bonus = {
-            maximum_speed = 0.10
+            maximum_speed = 0.08
             air_agility = 0.05
         }
     }
@@ -161,7 +161,7 @@ Renko_model_naval_aircraft_manufacturer_organization = {
         any_parent = { Renko_mio_trait_carrier_airframe_tooling }
 
         production_bonus = {
-            production_efficiency_cap_factor = 0.05
+            production_efficiency_cap_factor = 0.04
         }
     }
 
@@ -175,13 +175,13 @@ Renko_model_naval_aircraft_manufacturer_organization = {
         any_parent = { Renko_mio_trait_carrier_airframe_tooling }
 
         equipment_bonus = {
-            maximum_speed = 0.20
+            maximum_speed = 0.15
             thrust = 0.10
             air_agility = 0.10
         }
 
         production_bonus = {
-            production_efficiency_gain_factor = 0.05
+            production_efficiency_gain_factor = 0.04
         }
     }
 
@@ -196,7 +196,7 @@ Renko_model_naval_aircraft_manufacturer_organization = {
 
         equipment_bonus = {
             naval_strike_targetting = 0.10
-            maximum_speed = 0.10
+            maximum_speed = 0.08
         }
     }
 
@@ -210,7 +210,7 @@ Renko_model_naval_aircraft_manufacturer_organization = {
         any_parent = { Renko_mio_trait_maritime_search_radar }
 
         equipment_bonus = {
-            air_attack = 0.10
+            air_attack = 0.08
             naval_strike_attack = 0.05
         }
     }
@@ -228,7 +228,7 @@ Renko_model_naval_aircraft_manufacturer_organization = {
         }
 
         equipment_bonus = {
-            air_defence = 0.10
+            air_defence = 0.08
             reliability = 0.05
         }
     }
@@ -246,8 +246,8 @@ Renko_model_naval_aircraft_manufacturer_organization = {
         }
 
         production_bonus = {
-            production_efficiency_gain_factor = 0.05
-            production_efficiency_cap_factor = 0.05
+            production_efficiency_gain_factor = 0.04
+            production_efficiency_cap_factor = 0.04
         }
     }
 
@@ -284,12 +284,12 @@ Renko_model_naval_aircraft_manufacturer_organization = {
         }
 
         equipment_bonus = {
-            build_cost_ic = -0.10
+            build_cost_ic = -0.08
         }
 
         production_bonus = {
-            production_cost_factor = -0.10
-            production_resource_need_factor = -0.25
+            production_cost_factor = -0.08
+            production_resource_need_factor = -0.20
         }
     }
 }
@@ -341,9 +341,9 @@ Renko_model_battle_line_ship_manufacturer_organization = {
         position = { x = 4 y = 0 }
 
         organization_modifier = {
-            military_industrial_organization_research_bonus = 0.15
-            military_industrial_organization_funds_gain = 0.15
-            military_industrial_organization_size_up_requirement = -0.15
+            military_industrial_organization_research_bonus = 0.12
+            military_industrial_organization_funds_gain = 0.12
+            military_industrial_organization_size_up_requirement = -0.12
         }
     }
 
@@ -386,7 +386,7 @@ Renko_model_battle_line_ship_manufacturer_organization = {
         any_parent = { Renko_mio_trait_battle_line_foundation }
 
         production_bonus = {
-            production_capacity_factor = 0.10
+            production_capacity_factor = 0.08
         }
     }
 
@@ -459,8 +459,8 @@ Renko_model_battle_line_ship_manufacturer_organization = {
         any_parent = { Renko_mio_trait_battle_line_shipyard_expansion }
 
         production_bonus = {
-            production_efficiency_cap_factor = 0.10
-            production_efficiency_gain_factor = 0.10
+            production_efficiency_cap_factor = 0.08
+            production_efficiency_gain_factor = 0.08
         }
     }
 
@@ -489,7 +489,7 @@ Renko_model_battle_line_ship_manufacturer_organization = {
 
         equipment_bonus = {
             lg_attack = 0.05
-            lg_armor_piercing = 0.10
+            lg_armor_piercing = 0.08
             hg_attack = 0.05
             hg_armor_piercing = 0.10
             naval_heavy_gun_hit_chance_factor = 0.05
@@ -521,8 +521,8 @@ Renko_model_battle_line_ship_manufacturer_organization = {
         all_parents = { Renko_mio_trait_anti_air_battery_layout Renko_mio_trait_semi_armor_piercing_shell_suite }
 
         equipment_bonus = {
-            anti_air_attack = 0.10
-            naval_light_gun_hit_chance_factor = 0.10
+            anti_air_attack = 0.08
+            naval_light_gun_hit_chance_factor = 0.08
         }
     }
 
@@ -540,12 +540,12 @@ Renko_model_battle_line_ship_manufacturer_organization = {
         }
 
         equipment_bonus = {
-            build_cost_ic = -0.10
+            build_cost_ic = -0.08
         }
 
         production_bonus = {
-            production_cost_factor = -0.10
-            production_resource_need_factor = -0.25
+            production_cost_factor = -0.08
+            production_resource_need_factor = -0.20
         }
     }
 }
@@ -599,9 +599,9 @@ Renko_model_task_force_ship_manufacturer_organization = {
         position = { x = 4 y = 0 }
 
         organization_modifier = {
-            military_industrial_organization_research_bonus = 0.15
-            military_industrial_organization_funds_gain = 0.15
-            military_industrial_organization_size_up_requirement = -0.15
+            military_industrial_organization_research_bonus = 0.12
+            military_industrial_organization_funds_gain = 0.12
+            military_industrial_organization_size_up_requirement = -0.12
         }
     }
 
@@ -648,8 +648,8 @@ Renko_model_task_force_ship_manufacturer_organization = {
         }
 
         production_bonus = {
-            production_capacity_factor = 0.10
-            production_efficiency_cap_factor = 0.05
+            production_capacity_factor = 0.08
+            production_efficiency_cap_factor = 0.04
         }
     }
 
@@ -708,7 +708,7 @@ Renko_model_task_force_ship_manufacturer_organization = {
         any_parent = { Renko_mio_trait_high_speed_operations }
 
         equipment_bonus = {
-            armor_value = 0.15
+            armor_value = 0.12
             naval_torpedo_damage_reduction_factor = -0.10
         }
     }
@@ -723,12 +723,12 @@ Renko_model_task_force_ship_manufacturer_organization = {
         any_parent = { Renko_mio_trait_task_force_fitting_works }
 
         equipment_bonus = {
-            max_strength = 0.10
+            max_strength = 0.08
         }
 
         production_bonus = {
-            production_efficiency_cap_factor = 0.05
-            production_efficiency_gain_factor = 0.10
+            production_efficiency_cap_factor = 0.04
+            production_efficiency_gain_factor = 0.08
         }
     }
 
@@ -790,7 +790,7 @@ Renko_model_task_force_ship_manufacturer_organization = {
             torpedo_attack = 0.05
             sub_attack = 0.10
             sub_detection = 0.05
-            lg_armor_piercing = 0.10
+            lg_armor_piercing = 0.08
             naval_torpedo_hit_chance_factor = 0.05
             naval_torpedo_enemy_critical_chance_factor = -0.10
         }
@@ -810,12 +810,12 @@ Renko_model_task_force_ship_manufacturer_organization = {
         }
 
         equipment_bonus = {
-            build_cost_ic = -0.10
+            build_cost_ic = -0.08
         }
 
         production_bonus = {
-            production_cost_factor = -0.10
-            production_resource_need_factor = -0.25
+            production_cost_factor = -0.08
+            production_resource_need_factor = -0.20
         }
     }
 }
@@ -867,9 +867,9 @@ Renko_model_raider_ship_manufacturer_organization = {
         position = { x = 4 y = 0 }
 
         organization_modifier = {
-            military_industrial_organization_research_bonus = 0.15
-            military_industrial_organization_funds_gain = 0.15
-            military_industrial_organization_size_up_requirement = -0.15
+            military_industrial_organization_research_bonus = 0.12
+            military_industrial_organization_funds_gain = 0.12
+            military_industrial_organization_size_up_requirement = -0.12
         }
     }
 
@@ -913,7 +913,7 @@ Renko_model_raider_ship_manufacturer_organization = {
         any_parent = { Renko_mio_trait_raider_ship_development_bureau }
 
         production_bonus = {
-            production_capacity_factor = 0.10
+            production_capacity_factor = 0.08
         }
     }
 
@@ -927,7 +927,7 @@ Renko_model_raider_ship_manufacturer_organization = {
         any_parent = { Renko_mio_trait_raider_ship_development_bureau }
 
         equipment_bonus = {
-            hg_attack = 0.10
+            hg_attack = 0.08
             hg_armor_piercing = 0.05
         }
     }
@@ -942,7 +942,7 @@ Renko_model_raider_ship_manufacturer_organization = {
         any_parent = { Renko_mio_trait_raider_ship_development_bureau }
 
         equipment_bonus = {
-            lg_attack = 0.10
+            lg_attack = 0.08
             lg_armor_piercing = 0.05
         }
     }
@@ -989,7 +989,7 @@ Renko_model_raider_ship_manufacturer_organization = {
         equipment_bonus = {
             surface_visibility = -0.10
             surface_detection = 0.05
-            sub_detection = 0.05
+            sub_detection = 0.04
         }
     }
 
@@ -1003,8 +1003,8 @@ Renko_model_raider_ship_manufacturer_organization = {
         any_parent = { Renko_mio_trait_raider_shipyard_tooling }
 
         production_bonus = {
-            production_efficiency_gain_factor = 0.05
-            production_efficiency_cap_factor = 0.05
+            production_efficiency_gain_factor = 0.04
+            production_efficiency_cap_factor = 0.04
         }
     }
 
@@ -1018,8 +1018,8 @@ Renko_model_raider_ship_manufacturer_organization = {
         any_parent = { Renko_mio_trait_raider_shipyard_tooling }
 
         production_bonus = {
-            production_efficiency_gain_factor = 0.05
-            production_efficiency_cap_factor = 0.05
+            production_efficiency_gain_factor = 0.04
+            production_efficiency_cap_factor = 0.04
         }
     }
 
@@ -1033,7 +1033,7 @@ Renko_model_raider_ship_manufacturer_organization = {
         any_parent = { Renko_mio_trait_screen_killer_battery }
 
         equipment_bonus = {
-            anti_air_attack = 0.10
+            anti_air_attack = 0.08
         }
     }
 
@@ -1052,7 +1052,7 @@ Renko_model_raider_ship_manufacturer_organization = {
         equipment_bonus = {
             naval_speed = 0.10
             surface_detection = 0.10
-            sub_detection = 0.10
+            sub_detection = 0.08
             surface_visibility = -0.05
         }
     }
@@ -1090,12 +1090,12 @@ Renko_model_raider_ship_manufacturer_organization = {
         }
 
         equipment_bonus = {
-            build_cost_ic = -0.10
+            build_cost_ic = -0.08
         }
 
         production_bonus = {
-            production_cost_factor = -0.10
-            production_resource_need_factor = -0.25
+            production_cost_factor = -0.08
+            production_resource_need_factor = -0.20
         }
     }
 }
@@ -1147,9 +1147,9 @@ Renko_model_carrier_raider_ship_manufacturer_organization = {
         position = { x = 4 y = 0 }
 
         organization_modifier = {
-            military_industrial_organization_research_bonus = 0.15
-            military_industrial_organization_funds_gain = 0.15
-            military_industrial_organization_size_up_requirement = -0.15
+            military_industrial_organization_research_bonus = 0.12
+            military_industrial_organization_funds_gain = 0.12
+            military_industrial_organization_size_up_requirement = -0.12
         }
     }
 
@@ -1179,7 +1179,7 @@ Renko_model_carrier_raider_ship_manufacturer_organization = {
 
         equipment_bonus = {
             naval_speed = 0.05
-            fuel_consumption = -0.10
+            fuel_consumption = -0.08
         }
     }
 
@@ -1193,7 +1193,7 @@ Renko_model_carrier_raider_ship_manufacturer_organization = {
         any_parent = { Renko_mio_trait_carrier_raider_development_bureau }
 
         production_bonus = {
-            production_capacity_factor = 0.10
+            production_capacity_factor = 0.08
         }
     }
 
@@ -1222,7 +1222,7 @@ Renko_model_carrier_raider_ship_manufacturer_organization = {
         any_parent = { Renko_mio_trait_carrier_raider_development_bureau }
 
         equipment_bonus = {
-            lg_attack = 0.10
+            lg_attack = 0.08
             lg_armor_piercing = 0.05
         }
     }
@@ -1268,8 +1268,8 @@ Renko_model_carrier_raider_ship_manufacturer_organization = {
         any_parent = { Renko_mio_trait_carrier_raider_shipyard_tooling }
 
         production_bonus = {
-            production_efficiency_gain_factor = 0.05
-            production_efficiency_cap_factor = 0.05
+            production_efficiency_gain_factor = 0.04
+            production_efficiency_cap_factor = 0.04
         }
     }
 
@@ -1283,8 +1283,8 @@ Renko_model_carrier_raider_ship_manufacturer_organization = {
         any_parent = { Renko_mio_trait_carrier_raider_shipyard_tooling }
 
         production_bonus = {
-            production_efficiency_gain_factor = 0.05
-            production_efficiency_cap_factor = 0.05
+            production_efficiency_gain_factor = 0.04
+            production_efficiency_cap_factor = 0.04
         }
     }
 
@@ -1298,8 +1298,8 @@ Renko_model_carrier_raider_ship_manufacturer_organization = {
         any_parent = { Renko_mio_trait_raider_carrier_flight_deck_group }
 
         equipment_bonus = {
-            torpedo_attack = 0.10
-            naval_torpedo_hit_chance_factor = 0.10
+            torpedo_attack = 0.08
+            naval_torpedo_hit_chance_factor = 0.08
         }
     }
 
@@ -1355,7 +1355,7 @@ Renko_model_carrier_raider_ship_manufacturer_organization = {
             torpedo_attack = 0.05
             naval_torpedo_hit_chance_factor = 0.05
             naval_speed = 0.05
-            anti_air_attack = 0.10
+            anti_air_attack = 0.08
         }
     }
 
@@ -1374,12 +1374,12 @@ Renko_model_carrier_raider_ship_manufacturer_organization = {
         }
 
         equipment_bonus = {
-            build_cost_ic = -0.10
+            build_cost_ic = -0.08
         }
 
         production_bonus = {
-            production_cost_factor = -0.10
-            production_resource_need_factor = -0.25
+            production_cost_factor = -0.08
+            production_resource_need_factor = -0.20
         }
     }
 }
@@ -1429,9 +1429,9 @@ Renko_model_submarine_manufacturer_organization = {
         position = { x = 4 y = 0 }
 
         organization_modifier = {
-            military_industrial_organization_research_bonus = 0.15
-            military_industrial_organization_funds_gain = 0.15
-            military_industrial_organization_size_up_requirement = -0.15
+            military_industrial_organization_research_bonus = 0.12
+            military_industrial_organization_funds_gain = 0.12
+            military_industrial_organization_size_up_requirement = -0.12
         }
     }
 
@@ -1461,7 +1461,7 @@ Renko_model_submarine_manufacturer_organization = {
 
         equipment_bonus = {
             naval_range = 0.10
-            fuel_consumption = -0.10
+            fuel_consumption = -0.08
         }
     }
 
@@ -1475,7 +1475,7 @@ Renko_model_submarine_manufacturer_organization = {
         any_parent = { Renko_mio_trait_submarine_development_bureau }
 
         production_bonus = {
-            production_capacity_factor = 0.10
+            production_capacity_factor = 0.08
         }
     }
 
@@ -1533,7 +1533,7 @@ Renko_model_submarine_manufacturer_organization = {
         any_parent = { Renko_mio_trait_advanced_periscope_sonar }
 
         equipment_bonus = {
-            mines_planting = 0.15
+            mines_planting = 0.12
         }
     }
 
@@ -1547,7 +1547,7 @@ Renko_model_submarine_manufacturer_organization = {
         any_parent = { Renko_mio_trait_efficient_diesel_electric_drive }
 
         equipment_bonus = {
-            max_strength = 0.10
+            max_strength = 0.08
             sub_visibility = -0.05
         }
     }
@@ -1562,8 +1562,8 @@ Renko_model_submarine_manufacturer_organization = {
         any_parent = { Renko_mio_trait_submarine_pressure_hull_tooling }
 
         production_bonus = {
-            production_efficiency_gain_factor = 0.05
-            production_efficiency_cap_factor = 0.05
+            production_efficiency_gain_factor = 0.04
+            production_efficiency_cap_factor = 0.04
         }
     }
 
@@ -1577,8 +1577,8 @@ Renko_model_submarine_manufacturer_organization = {
         any_parent = { Renko_mio_trait_submarine_pressure_hull_tooling }
 
         production_bonus = {
-            production_efficiency_gain_factor = 0.05
-            production_efficiency_cap_factor = 0.05
+            production_efficiency_gain_factor = 0.04
+            production_efficiency_cap_factor = 0.04
         }
     }
 
@@ -1630,7 +1630,7 @@ Renko_model_submarine_manufacturer_organization = {
 
         equipment_bonus = {
             submarine_carrier_size = 2
-            naval_speed = 0.10
+            naval_speed = 0.08
             max_strength = 0.05
         }
     }
@@ -1650,12 +1650,12 @@ Renko_model_submarine_manufacturer_organization = {
         }
 
         equipment_bonus = {
-            build_cost_ic = -0.10
+            build_cost_ic = -0.08
         }
 
         production_bonus = {
-            production_cost_factor = -0.10
-            production_resource_need_factor = -0.25
+            production_cost_factor = -0.08
+            production_resource_need_factor = -0.20
         }
     }
 }
@@ -1706,9 +1706,9 @@ Renko_model_escort_fleet_manufacturer_organization = {
         position = { x = 4 y = 0 }
 
         organization_modifier = {
-            military_industrial_organization_research_bonus = 0.15
-            military_industrial_organization_funds_gain = 0.15
-            military_industrial_organization_size_up_requirement = -0.15
+            military_industrial_organization_research_bonus = 0.12
+            military_industrial_organization_funds_gain = 0.12
+            military_industrial_organization_size_up_requirement = -0.12
         }
 
         equipment_bonus = {
@@ -1742,7 +1742,7 @@ Renko_model_escort_fleet_manufacturer_organization = {
         any_parent = { Renko_mio_trait_escort_asw_foundation }
 
         equipment_bonus = {
-            naval_speed = 0.10
+            naval_speed = 0.08
             surface_detection = 0.05
         }
     }
@@ -1787,8 +1787,8 @@ Renko_model_escort_fleet_manufacturer_organization = {
 
         equipment_bonus = {
             sub_attack = 0.15
-            torpedo_attack = 0.10
-            naval_torpedo_hit_chance_factor = 0.10
+            torpedo_attack = 0.08
+            naval_torpedo_hit_chance_factor = 0.08
         }
     }
 
@@ -1802,7 +1802,7 @@ Renko_model_escort_fleet_manufacturer_organization = {
         any_parent = { Renko_mio_trait_high_speed_mine_hunting_gear }
 
         equipment_bonus = {
-            naval_speed = 0.10
+            naval_speed = 0.08
             naval_range = 0.10
         }
     }
@@ -1818,7 +1818,7 @@ Renko_model_escort_fleet_manufacturer_organization = {
 
         equipment_bonus = {
             naval_range = 0.10
-            surface_detection = 0.15
+            surface_detection = 0.12
             sub_detection = 0.05
         }
     }
@@ -1833,8 +1833,8 @@ Renko_model_escort_fleet_manufacturer_organization = {
         any_parent = { Renko_mio_trait_mass_escort_production }
 
         production_bonus = {
-            production_efficiency_cap_factor = 0.10
-            production_efficiency_gain_factor = 0.10
+            production_efficiency_cap_factor = 0.08
+            production_efficiency_gain_factor = 0.08
         }
     }
 
@@ -1863,7 +1863,7 @@ Renko_model_escort_fleet_manufacturer_organization = {
 
         equipment_bonus = {
             anti_air_attack = 0.05
-            lg_attack = 0.10
+            lg_attack = 0.08
         }
     }
 
@@ -1899,7 +1899,7 @@ Renko_model_escort_fleet_manufacturer_organization = {
 
         equipment_bonus = {
             lg_attack = 0.05
-            lg_armor_piercing = 0.10
+            lg_armor_piercing = 0.08
         }
     }
 
@@ -1917,12 +1917,12 @@ Renko_model_escort_fleet_manufacturer_organization = {
         }
 
         equipment_bonus = {
-            build_cost_ic = -0.15
+            build_cost_ic = -0.12
         }
 
         production_bonus = {
-            production_cost_factor = -0.10
-            production_resource_need_factor = -0.25
+            production_cost_factor = -0.08
+            production_resource_need_factor = -0.20
         }
     }
 }

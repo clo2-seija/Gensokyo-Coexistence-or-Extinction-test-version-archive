@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_idea_Renko_KYO_murasa_ghost_shipyards"
+        texturefile = "gfx/interface/ideas/Renko_KYO_murasa_ghost_shipyards.png"
+    }
+}

@@ -1,0 +1,260 @@
+# Renko：事件2舰队 OOB；先创建同语言设计，再在 KYO 作用域加载。
+# 全部位于横须贺省份 9998（关东州 282）；由起点国策要求 KYO 完整控制关东州，事件2不另作港口检查。
+units = {
+    fleet = {
+        name = "Combined Fleet"
+        naval_base = 9998
+        task_force = {
+            name = "First Mobile Fleet"
+            location = 9998
+            ship = { name = "Akagi" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = KYO version_name = "Akagi-class" } } }
+            ship = { name = "Kaga" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = KYO version_name = "Akagi-class" } } }
+            ship = { name = "Soryu" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = KYO version_name = "Akagi-class" } } }
+            ship = { name = "Hiryu" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = KYO version_name = "Akagi-class" } } }
+            ship = { name = "Nagato" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = KYO version_name = "Nagato-class" } } }
+            ship = { name = "Mutsu" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = KYO version_name = "Nagato-class" } } }
+            ship = { name = "Fuso" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = KYO version_name = "Nagato-class" } } }
+            ship = { name = "Yamashiro" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = KYO version_name = "Nagato-class" } } }
+            ship = { name = "Ise" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = KYO version_name = "Nagato-class" } } }
+            ship = { name = "Hyuga" definition = battleship equipment = { ship_hull_heavy_2 = { amount = 1 owner = KYO version_name = "Nagato-class" } } }
+            ship = { name = "Yubari" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Yubari-class" } } }
+            ship = { name = "Noshiro" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Yubari-class" } } }
+            ship = { name = "Yahagi" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Yubari-class" } } }
+            ship = { name = "Sakawa" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Yubari-class" } } }
+            ship = { name = "Katori" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Yubari-class" } } }
+            ship = { name = "Kashima" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Yubari-class" } } }
+            ship = { name = "Kashii" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Yubari-class" } } }
+            ship = { name = "Kashiwabara" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Yubari-class" } } }
+            ship = { name = "Agano" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Yubari-class" } } }
+            ship = { name = "Oyodo" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Yubari-class" } } }
+            ship = { name = "Suzuya" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Yubari-class" } } }
+            ship = { name = "Kumano" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Yubari-class" } } }
+            ship = { name = "Iwaki" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Yubari-class" } } }
+            ship = { name = "Mabuchi" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Yubari-class" } } }
+            ship = { name = "Takase" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Yubari-class" } } }
+            ship = { name = "Yoneshiro" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Yubari-class" } } }
+            ship = { name = "Omono" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Yubari-class" } } }
+            ship = { name = "Koyoshi" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Yubari-class" } } }
+            ship = { name = "Kuji" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Yubari-class" } } }
+            ship = { name = "Tsurumi" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Yubari-class" } } }
+            ship = { name = "Ota" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Ota-class" } } }
+            ship = { name = "Kikuchi" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Ota-class" } } }
+            ship = { name = "Oita" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Ota-class" } } }
+            ship = { name = "Kumamoto" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Ota-class" } } }
+            ship = { name = "Otsu" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Ota-class" } } }
+            ship = { name = "Tokyo" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Ota-class" } } }
+            ship = { name = "Yokohama" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Ota-class" } } }
+            ship = { name = "Osaka" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Ota-class" } } }
+            ship = { name = "Nagoya" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Ota-class" } } }
+            ship = { name = "Sapporo" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Ota-class" } } }
+            ship = { name = "Kobe" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Ota-class" } } }
+            ship = { name = "Kyoto" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Ota-class" } } }
+            ship = { name = "Fukuoka" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Ota-class" } } }
+            ship = { name = "Kawasaki" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Ota-class" } } }
+            ship = { name = "Saitama" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Ota-class" } } }
+            ship = { name = "Hiroshima" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Ota-class" } } }
+            ship = { name = "Sendai" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Ota-class" } } }
+            ship = { name = "Kitakyushu" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Ota-class" } } }
+            ship = { name = "Chiba" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Ota-class" } } }
+            ship = { name = "Setagaya" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Ota-class" } } }
+            ship = { name = "Yukikaze" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Shiranui" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Kuroshio" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Oyashio" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Hayashio" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Natsushio" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Hatsukaze" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Amatsukaze" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Tokitsukaze" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Urakaze" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Isokaze" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Hamakaze" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Tanikaze" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Nowaki" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Arashi" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Hagikaze" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Maikaze" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Akigumo" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Makigumo" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Kazagumo" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Naganami" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Makinami" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Takanami" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Onami" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Kiyonami" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Tamanami" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Suzunami" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Fujinami" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Hayanami" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Hamanami" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+            ship = { name = "Yugumo" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Shimushu" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Hachijo" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Kunashiri" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Ishigaki" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Etorofu" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Oki" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Sado" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Matsuwa" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Fukue" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Tsushima" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Mutsure" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Wakamiya" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Kanju" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Hirado" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Amakusa" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Manju" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Kasado" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Iki" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Matsu" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Take" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Ume" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Momo" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Kuwa" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Kiri" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Sugi" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Maki" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Momi" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Kunugi" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+            ship = { name = "Kaya" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yugumo-class" } } }
+        }
+        task_force = {
+            name = "Sea Control Deterrence Group"
+            location = 9998
+            ship = { name = "Hosho" definition = carrier equipment = { ship_hull_escort_carrier = { amount = 1 owner = KYO version_name = "Ryujo-class" } } }
+            ship = { name = "Aoba" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Aoba-class" } } }
+			ship = { name = "Momo-2" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Sendai-class" } } }
+			ship = { name = "Kunugi-2" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Sendai-class" } } }
+			ship = { name = "Isokaze-2" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+			ship = { name = "Hamakaze-2" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+			ship = { name = "Tanikaze-2" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+			ship = { name = "Nowaki-2" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+			ship = { name = "Arashi-2" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+			ship = { name = "Hagikaze-2" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+        }
+		task_force = { name = "Recon Group 1" location = 9998 ship = { name = "Oita-2" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Komaru-class" } } } }
+		task_force = { name = "Recon Group 2" location = 9998 ship = { name = "Kumamoto-2" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Komaru-class" } } } }
+        task_force = { name = "Recon Group 3" location = 9998 ship = { name = "Edogawa" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Komaru-class" } } } }
+        task_force = { name = "Recon Group 4" location = 9998 ship = { name = "Adachi" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Komaru-class" } } } }
+        task_force = { name = "Recon Group 5" location = 9998 ship = { name = "Kagoshima" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Komaru-class" } } } }
+        task_force = { name = "Recon Group 6" location = 9998 ship = { name = "Funabashi" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Komaru-class" } } } }
+        task_force = { name = "Recon Group 7" location = 9998 ship = { name = "Hachioji" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Komaru-class" } } } }
+        task_force = { name = "Recon Group 8" location = 9998 ship = { name = "Kawaguchi" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Komaru-class" } } } }
+    }
+fleet = {
+        name = "Southern Raiding Fleet"
+        naval_base = 9998
+        task_force = {
+            name = "Raider Group 1"
+            location = 9998
+            ship = { name = "Zuiho" definition = carrier equipment = { ship_hull_escort_carrier = { amount = 1 owner = KYO version_name = "Ryujo-class" } } }
+            ship = { name = "Tone" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Aoba-class" } } }
+            ship = { name = "Hinoki" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Sendai-class" } } }
+            ship = { name = "Yanagi" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Sendai-class" } } }
+			ship = { name = "Maikaze-2" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+			ship = { name = "Nowaki-3" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+			ship = { name = "Arashi-3" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+			ship = { name = "Hagikaze-3" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+			ship = { name = "Tanikaze-3" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+			ship = { name = "Hamakaze-3" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+        }
+        task_force = {
+            name = "Raider Group 2"
+            location = 9998
+            ship = { name = "Shoho" definition = carrier equipment = { ship_hull_escort_carrier = { amount = 1 owner = KYO version_name = "Ryujo-class" } } }
+            ship = { name = "Chikuma" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Aoba-class" } } }
+            ship = { name = "Enoki" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Sendai-class" } } }
+			ship = { name = "Maki-2" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Sendai-class" } } }
+			ship = { name = "Akigumo-2" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+			ship = { name = "Yugumo-2" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+			ship = { name = "Makigumo-2" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+			ship = { name = "Kazagumo-2" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+			ship = { name = "Naganami-2" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+			ship = { name = "Makinami-2" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Yukikaze-class" } } }
+        }
+    }
+ fleet = {
+        name = "Deep-Sea Submarine Group"
+        naval_base = 9998
+        task_force = {
+            name = "Hunter Group 1"
+            location = 9998
+            ship = { name = "I-19" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KYO version_name = "I-19" } } }
+            ship = { name = "I-20" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KYO version_name = "I-19" } } }
+            ship = { name = "I-21" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KYO version_name = "I-19" } } }
+            ship = { name = "I-22" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KYO version_name = "I-19" } } }
+        }
+        task_force = {
+            name = "Hunter Group 2"
+            location = 9998
+            ship = { name = "I-23" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KYO version_name = "I-19" } } }
+            ship = { name = "I-24" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KYO version_name = "I-19" } } }
+            ship = { name = "I-25" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KYO version_name = "I-19" } } }
+            ship = { name = "I-26" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KYO version_name = "I-19" } } }
+        }
+        task_force = {
+            name = "Hunter Group 3"
+            location = 9998
+            ship = { name = "I-27" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KYO version_name = "I-19" } } }
+            ship = { name = "I-28" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KYO version_name = "I-19" } } }
+            ship = { name = "I-29" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KYO version_name = "I-19" } } }
+            ship = { name = "I-30" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KYO version_name = "I-19" } } }
+        }
+        task_force = {
+            name = "Hunter Group 4"
+            location = 9998
+            ship = { name = "I-31" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KYO version_name = "I-19" } } }
+            ship = { name = "I-32" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KYO version_name = "I-19" } } }
+            ship = { name = "I-33" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KYO version_name = "I-19" } } }
+            ship = { name = "I-34" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KYO version_name = "I-19" } } }
+        }
+        task_force = {
+            name = "Hunter Group 5"
+            location = 9998
+            ship = { name = "I-35" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KYO version_name = "I-19" } } }
+            ship = { name = "I-36" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KYO version_name = "I-19" } } }
+            ship = { name = "I-37" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KYO version_name = "I-19" } } }
+            ship = { name = "I-38" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KYO version_name = "I-19" } } }
+        }
+        task_force = {
+            name = "Hunter Group 6"
+            location = 9998
+            ship = { name = "I-39" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KYO version_name = "I-19" } } }
+            ship = { name = "I-40" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KYO version_name = "I-19" } } }
+            ship = { name = "I-41" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KYO version_name = "I-19" } } }
+            ship = { name = "I-42" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = KYO version_name = "I-19" } } }
+        }
+    }
+    fleet = {
+        name = "Combined Escort Fleet"
+        naval_base = 9998
+        task_force = {
+            name = "Escort Group 1"
+            location = 9998
+            ship = { name = "Chitose" definition = carrier equipment = { ship_hull_escort_carrier = { amount = 1 owner = KYO version_name = "Ryujo-class" } } }
+            ship = { name = "Aso" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Aoba-class" } } }
+            ship = { name = "Keyaki" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Sendai-class" } } }
+			ship = { name = "Kuwa-2" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Sendai-class" } } }
+			ship = { name = "Suzunami-2" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Mutsuki-class" } } }
+			ship = { name = "Takanami-2" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Mutsuki-class" } } }
+            ship = { name = "Mutsuki" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Mutsuki-class" } } }
+            ship = { name = "Kisaragi" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Mutsuki-class" } } }
+            ship = { name = "Satsuki" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Mutsuki-class" } } }
+            ship = { name = "Minazuki" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Mutsuki-class" } } }
+        }
+        task_force = {
+            name = "Escort Group 2"
+            location = 9998
+            ship = { name = "Chiyoda" definition = carrier equipment = { ship_hull_escort_carrier = { amount = 1 owner = KYO version_name = "Ryujo-class" } } }
+            ship = { name = "Tsugaru" definition = heavy_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Aoba-class" } } }
+            ship = { name = "Tsubaki" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Sendai-class" } } }
+			ship = { name = "Momi-2" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = KYO version_name = "Sendai-class" } } }
+			ship = { name = "Fujinami-2" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Mutsuki-class" } } }
+			ship = { name = "Hayanami-2" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Mutsuki-class" } } }
+            ship = { name = "Yayoi" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Mutsuki-class" } } }
+            ship = { name = "Uzuki" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Mutsuki-class" } } }
+            ship = { name = "Fumizuki" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Mutsuki-class" } } }
+            ship = { name = "Nagatsuki" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = KYO version_name = "Mutsuki-class" } } }
+        }
+    }
+}

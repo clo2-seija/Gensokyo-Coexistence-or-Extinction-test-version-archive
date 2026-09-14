@@ -1,0 +1,520 @@
+# 旧日本帝国舰船与舰载机设计。调用作用域：幻想乡 KYO 国家。
+# 两个入口按设计名语言择一调用；仅创建设计，不生成装备/舰船，不设置 AI 标记或授予科技。
+
+Renko_KYO_create_old_japan_naval_designs_chinese = {
+    custom_effect_tooltip = Renko_KYO_old_japan_naval_designs_tt
+    hidden_effect = {
+        create_equipment_variant = {
+            name = "赤城级"
+            type = ship_hull_carrier_1
+            parent_version = 0
+            design_team = mio:Renko_KYO_murasa_ghost_shipyards
+            name_group = Renko_KYO_JAP_CN_CV_HISTORICAL
+            role_icon_index = 7
+            allow_without_tech = yes
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_1
+                fixed_ship_deck_slot_1 = ship_deck_space
+                fixed_ship_deck_slot_2 = ship_deck_space
+                fixed_ship_engine_slot = carrier_ship_engine_2
+                fixed_ship_radar_slot = ship_radar_1
+                fixed_ship_secondaries_slot = dp_ship_secondaries_1
+                front_1_custom_slot = ship_deck_space
+                mid_1_custom_slot = ship_deck_space
+            }
+        }
+        create_equipment_variant = {
+            name = "龙骧级"
+            type = ship_hull_escort_carrier
+            parent_version = 0
+            design_team = mio:Renko_KYO_murasa_ghost_shipyards
+            name_group = Renko_KYO_JAP_CN_CVL_HISTORICAL
+            role_icon_index = 3
+            allow_without_tech = yes
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_2
+                fixed_ship_deck_slot_1 = ship_escort_deck_space
+                fixed_ship_deck_slot_2 = ship_escort_deck_space
+                fixed_ship_engine_slot = carrier_ship_engine_2
+                fixed_ship_radar_slot = ship_radar_2
+                front_1_custom_slot = ship_escort_deck_space
+                mid_1_custom_slot = ship_escort_deck_space
+            }
+        }
+        create_equipment_variant = {
+            name = "长门级"
+            type = ship_hull_heavy_2
+            parent_version = 0
+            design_team = mio:KYO_moriya_shipyards
+            name_group = Renko_KYO_JAP_CN_BB_HISTORICAL
+            role_icon_index = 1
+            allow_without_tech = yes
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_2
+                fixed_ship_armor_slot = ship_armor_bb_2
+                fixed_ship_battery_slot = ship_heavy_battery_2
+                fixed_ship_engine_slot = heavy_ship_engine_2
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+                fixed_ship_radar_slot = ship_radar_1
+                fixed_ship_secondaries_slot = dp_ship_secondaries_1
+                front_1_custom_slot = ship_heavy_battery_2
+                mid_1_custom_slot = dp_ship_secondaries_1
+                mid_2_custom_slot = dp_ship_secondaries_1
+                rear_1_custom_slot = dp_ship_secondaries_1
+            }
+        }
+        create_equipment_variant = {
+            name = "青叶级"
+            type = ship_hull_cruiser_2
+            parent_version = 0
+            design_team = mio:KYO_moriya_shipyards
+            name_group = Renko_KYO_JAP_CN_CA_HISTORICAL
+            role_icon_index = 1
+            allow_without_tech = yes
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_2
+                fixed_ship_armor_slot = ship_armor_cruiser_2
+                fixed_ship_battery_slot = ship_medium_battery_2
+                fixed_ship_engine_slot = cruiser_ship_engine_2
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+                fixed_ship_radar_slot = ship_radar_1
+                fixed_ship_secondaries_slot = dp_ship_secondaries_2
+                front_1_custom_slot = ship_medium_battery_2
+                mid_1_custom_slot = ship_torpedo_2
+                mid_2_custom_slot = ship_torpedo_2
+                rear_1_custom_slot = ship_medium_battery_2
+            }
+        }
+        create_equipment_variant = {
+            name = "太田级"
+            type = ship_hull_cruiser_2
+            parent_version = 0
+            design_team = mio:KYO_parsee_coastalworks
+            name_group = Renko_KYO_JAP_CN_CITIES
+            role_icon_index = 1
+            allow_without_tech = yes
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_2
+                fixed_ship_armor_slot = ship_armor_cruiser_4
+                fixed_ship_battery_slot = ship_light_battery_2
+                fixed_ship_engine_slot = cruiser_ship_engine_2
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+            }
+        }
+        create_equipment_variant = {
+            name = "川内级"
+            type = ship_hull_cruiser_2
+            parent_version = 0
+            design_team = mio:KYO_nazrin_salvage
+            name_group = Renko_KYO_JAP_CN_NATURE
+            role_icon_index = 6
+            allow_without_tech = yes
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_2
+                fixed_ship_armor_slot = ship_armor_cruiser_2
+                fixed_ship_battery_slot = ship_light_medium_battery_2
+                fixed_ship_engine_slot = cruiser_ship_engine_2
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+                fixed_ship_radar_slot = ship_radar_1
+                fixed_ship_secondaries_slot = ship_secondaries_2
+                front_1_custom_slot = ship_light_medium_battery_2
+                mid_1_custom_slot = ship_light_medium_battery_2
+                mid_2_custom_slot = ship_torpedo_2 # 同步：由舰载机更改为鱼雷
+                rear_1_custom_slot = ship_light_medium_battery_2
+            }
+        }
+        create_equipment_variant = {
+            name = "夕张级"
+            type = ship_hull_cruiser_2
+            parent_version = 0
+            design_team = mio:KYO_parsee_coastalworks
+            name_group = Renko_KYO_JAP_CN_CL_HISTORICAL
+            role_icon_index = 1
+            allow_without_tech = yes
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_2
+                fixed_ship_armor_slot = ship_armor_cruiser_2
+                fixed_ship_battery_slot = ship_light_medium_battery_2
+                fixed_ship_engine_slot = cruiser_ship_engine_2
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+                fixed_ship_radar_slot = ship_radar_1
+                fixed_ship_secondaries_slot = ship_secondaries_2
+                front_1_custom_slot = ship_light_medium_battery_2
+                mid_1_custom_slot = ship_light_medium_battery_2
+                mid_2_custom_slot = ship_anti_air_2
+                rear_1_custom_slot = ship_light_medium_battery_2
+            }
+        }
+        create_equipment_variant = {
+            name = "小丸级"
+            type = ship_hull_cruiser_2
+            parent_version = 0
+            design_team = mio:KYO_chimata_convoy_trust
+            role_icon_index = 3
+            allow_without_tech = yes
+            name_group = Renko_KYO_JAP_CN_CITIES
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_2
+                fixed_ship_battery_slot = ship_light_battery_1
+                fixed_ship_engine_slot = cruiser_ship_engine_2
+                fixed_ship_fire_control_system_slot = ship_sonar_2
+                fixed_ship_radar_slot = ship_radar_2
+                mid_1_custom_slot = ship_airplane_launcher_2
+                mid_2_custom_slot = ship_airplane_launcher_2
+                rear_1_custom_slot = ship_airplane_launcher_2
+            }
+        }
+        create_equipment_variant = {
+            name = "夕云级"
+            type = ship_hull_light_2
+            parent_version = 0
+            design_team = mio:KYO_parsee_coastalworks
+            name_group = Renko_KYO_JAP_CN_DE_HISTORICAL
+            role_icon_index = 2
+            allow_without_tech = yes
+            modules = {
+                fixed_ship_battery_slot = ship_light_battery_1
+                fixed_ship_engine_slot = light_ship_engine_2
+            }
+        }
+        create_equipment_variant = {
+            name = "睦月级"
+            type = ship_hull_light_2
+            parent_version = 0
+            design_team = mio:KYO_chimata_convoy_trust
+            name_group = Renko_KYO_JAP_CN_WEATHER
+            role_icon_index = 8
+            allow_without_tech = yes
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_2
+                fixed_ship_battery_slot = ship_light_battery_2
+                fixed_ship_engine_slot = light_ship_engine_2
+                fixed_ship_fire_control_system_slot = ship_sonar_2
+                fixed_ship_radar_slot = ship_radar_2
+                fixed_ship_torpedo_slot = ship_torpedo_2
+                mid_1_custom_slot = ship_depth_charge_2
+                rear_1_custom_slot = ship_depth_charge_2
+            }
+        }
+        create_equipment_variant = {
+            name = "雪风级"
+            type = ship_hull_light_2
+            parent_version = 0
+            design_team = mio:KYO_nazrin_salvage
+            name_group = Renko_KYO_JAP_CN_DD_HISTORICAL
+            role_icon_index = 6
+            allow_without_tech = yes
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_2
+                fixed_ship_battery_slot = ship_light_battery_2
+                fixed_ship_engine_slot = light_ship_engine_2
+                fixed_ship_fire_control_system_slot = ship_sonar_2
+                fixed_ship_radar_slot = ship_radar_2
+                fixed_ship_torpedo_slot = ship_torpedo_2
+                mid_1_custom_slot = ship_torpedo_2
+                rear_1_custom_slot = ship_torpedo_2
+            }
+        }
+        create_equipment_variant = {
+            name = "伊19"
+            type = ship_hull_cruiser_submarine
+            parent_version = 0
+            design_team = mio:KYO_wakasagihime_littoral
+            name_group = Renko_KYO_JAP_CN_SS_HISTORICAL
+            role_icon_index = 6
+            allow_without_tech = yes
+            modules = {
+                fixed_ship_engine_slot = sub_ship_engine_2
+                fixed_ship_torpedo_slot = ship_torpedo_sub_2
+                front_1_custom_slot = ship_torpedo_sub_2
+                mid_1_custom_slot = ship_sub_snorkel_2
+                rear_1_custom_slot = ship_torpedo_sub_2
+            }
+        }
+        create_equipment_variant = {
+            type = cv_small_plane_airframe_1
+            parent_version = 0
+            allow_without_tech = yes
+            name = "A5M 九六式舰上战斗机"
+            design_team = mio:KYO_prismriver_acoustics
+            modules = {
+                engine_type_slot = engine_2_1x
+                fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+                fixed_main_weapon_slot = heavy_mg_4x
+                special_type_slot_1 = self_sealing_fuel_tanks_small
+            }
+        }
+        create_equipment_variant = {
+            type = cv_small_plane_naval_bomber_airframe_1
+            parent_version = 0
+            allow_without_tech = yes
+            name = "B5N 九七式舰攻"
+            design_team = mio:KYO_prismriver_acoustics
+            modules = {
+                engine_type_slot = engine_2_1x
+                fixed_main_weapon_slot = torpedo_mounting
+                special_type_slot_1 = self_sealing_fuel_tanks_small
+                special_type_slot_2 = armor_plate_small
+            }
+        }
+    }
+}
+
+Renko_KYO_create_old_japan_naval_designs_english = {
+    custom_effect_tooltip = Renko_KYO_old_japan_naval_designs_tt
+    hidden_effect = {
+        create_equipment_variant = {
+            name = "Akagi-class"
+            type = ship_hull_carrier_1
+            parent_version = 0
+            design_team = mio:Renko_KYO_murasa_ghost_shipyards
+            name_group = JAP_CV_HISTORICAL
+            role_icon_index = 7
+            allow_without_tech = yes
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_1
+                fixed_ship_deck_slot_1 = ship_deck_space
+                fixed_ship_deck_slot_2 = ship_deck_space
+                fixed_ship_engine_slot = carrier_ship_engine_2
+                fixed_ship_radar_slot = ship_radar_1
+                fixed_ship_secondaries_slot = dp_ship_secondaries_1
+                front_1_custom_slot = ship_deck_space
+                mid_1_custom_slot = ship_deck_space
+            }
+        }
+        create_equipment_variant = {
+            name = "Ryujo-class"
+            type = ship_hull_escort_carrier
+            parent_version = 0
+            design_team = mio:Renko_KYO_murasa_ghost_shipyards
+            name_group = JAP_CVL_HISTORICAL
+            role_icon_index = 3
+            allow_without_tech = yes
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_2
+                fixed_ship_deck_slot_1 = ship_escort_deck_space
+                fixed_ship_deck_slot_2 = ship_escort_deck_space
+                fixed_ship_engine_slot = carrier_ship_engine_2
+                fixed_ship_radar_slot = ship_radar_2
+                front_1_custom_slot = ship_escort_deck_space
+                mid_1_custom_slot = ship_escort_deck_space
+            }
+        }
+        create_equipment_variant = {
+            name = "Nagato-class"
+            type = ship_hull_heavy_2
+            parent_version = 0
+            design_team = mio:KYO_moriya_shipyards
+            name_group = JAP_BB_HISTORICAL
+            role_icon_index = 1
+            allow_without_tech = yes
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_2
+                fixed_ship_armor_slot = ship_armor_bb_2
+                fixed_ship_battery_slot = ship_heavy_battery_2
+                fixed_ship_engine_slot = heavy_ship_engine_2
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+                fixed_ship_radar_slot = ship_radar_1
+                fixed_ship_secondaries_slot = dp_ship_secondaries_1
+                front_1_custom_slot = ship_heavy_battery_2
+                mid_1_custom_slot = dp_ship_secondaries_1
+                mid_2_custom_slot = dp_ship_secondaries_1
+                rear_1_custom_slot = dp_ship_secondaries_1
+            }
+        }
+        create_equipment_variant = {
+            name = "Aoba-class"
+            type = ship_hull_cruiser_2
+            parent_version = 0
+            design_team = mio:KYO_moriya_shipyards
+            name_group = JAP_CA_HISTORICAL
+            role_icon_index = 1
+            allow_without_tech = yes
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_2
+                fixed_ship_armor_slot = ship_armor_cruiser_2
+                fixed_ship_battery_slot = ship_medium_battery_2
+                fixed_ship_engine_slot = cruiser_ship_engine_2
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+                fixed_ship_radar_slot = ship_radar_1
+                fixed_ship_secondaries_slot = dp_ship_secondaries_2
+                front_1_custom_slot = ship_medium_battery_2
+                mid_1_custom_slot = ship_torpedo_2
+                mid_2_custom_slot = ship_torpedo_2
+                rear_1_custom_slot = ship_medium_battery_2
+            }
+        }
+        create_equipment_variant = {
+            name = "Ota-class"
+            type = ship_hull_cruiser_2
+            parent_version = 0
+            design_team = mio:KYO_parsee_coastalworks
+            name_group = JAP_CITIES
+            role_icon_index = 1
+            allow_without_tech = yes
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_2
+                fixed_ship_armor_slot = ship_armor_cruiser_4
+                fixed_ship_battery_slot = ship_light_battery_2
+                fixed_ship_engine_slot = cruiser_ship_engine_2
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+            }
+        }
+        create_equipment_variant = {
+            name = "Sendai-class"
+            type = ship_hull_cruiser_2
+            parent_version = 0
+            design_team = mio:KYO_nazrin_salvage
+            name_group = JAP_NATURE
+            role_icon_index = 6
+            allow_without_tech = yes
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_2
+                fixed_ship_armor_slot = ship_armor_cruiser_2
+                fixed_ship_battery_slot = ship_light_medium_battery_2
+                fixed_ship_engine_slot = cruiser_ship_engine_2
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+                fixed_ship_radar_slot = ship_radar_1
+                fixed_ship_secondaries_slot = ship_secondaries_2
+                front_1_custom_slot = ship_light_medium_battery_2
+                mid_1_custom_slot = ship_light_medium_battery_2
+                mid_2_custom_slot = ship_torpedo_2 # 同步：由舰载机更改为鱼雷
+                rear_1_custom_slot = ship_light_medium_battery_2
+            }
+        }
+        create_equipment_variant = {
+            name = "Yubari-class"
+            type = ship_hull_cruiser_2
+            parent_version = 0
+            design_team = mio:KYO_parsee_coastalworks
+            name_group = JAP_CL_HISTORICAL
+            role_icon_index = 1
+            allow_without_tech = yes
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_2
+                fixed_ship_armor_slot = ship_armor_cruiser_2
+                fixed_ship_battery_slot = ship_light_medium_battery_2
+                fixed_ship_engine_slot = cruiser_ship_engine_2
+                fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+                fixed_ship_radar_slot = ship_radar_1
+                fixed_ship_secondaries_slot = ship_secondaries_2
+                front_1_custom_slot = ship_light_medium_battery_2
+                mid_1_custom_slot = ship_light_medium_battery_2
+                mid_2_custom_slot = ship_anti_air_2
+                rear_1_custom_slot = ship_light_medium_battery_2
+            }
+        }
+        create_equipment_variant = {
+            name = "Komaru-class"
+            type = ship_hull_cruiser_2
+            parent_version = 0
+            design_team = mio:KYO_chimata_convoy_trust
+            role_icon_index = 3
+            allow_without_tech = yes
+            name_group = JAP_CITIES
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_2
+                fixed_ship_battery_slot = ship_light_battery_1
+                fixed_ship_engine_slot = cruiser_ship_engine_2
+                fixed_ship_fire_control_system_slot = ship_sonar_2
+                fixed_ship_radar_slot = ship_radar_2
+                mid_1_custom_slot = ship_airplane_launcher_2
+                mid_2_custom_slot = ship_airplane_launcher_2
+                rear_1_custom_slot = ship_airplane_launcher_2
+            }
+        }
+        create_equipment_variant = {
+            name = "Yugumo-class"
+            type = ship_hull_light_2
+            parent_version = 0
+            design_team = mio:KYO_parsee_coastalworks
+            name_group = JAP_DE_HISTORICAL
+            role_icon_index = 2
+            allow_without_tech = yes
+            modules = {
+                fixed_ship_battery_slot = ship_light_battery_1
+                fixed_ship_engine_slot = light_ship_engine_2
+            }
+        }
+        create_equipment_variant = {
+            name = "Mutsuki-class"
+            type = ship_hull_light_2
+            parent_version = 0
+            design_team = mio:KYO_chimata_convoy_trust
+            name_group = JAP_WEATHER
+            role_icon_index = 8
+            allow_without_tech = yes
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_2
+                fixed_ship_battery_slot = ship_light_battery_2
+                fixed_ship_engine_slot = light_ship_engine_2
+                fixed_ship_fire_control_system_slot = ship_sonar_2
+                fixed_ship_radar_slot = ship_radar_2
+                fixed_ship_torpedo_slot = ship_torpedo_2
+                mid_1_custom_slot = ship_depth_charge_2
+                rear_1_custom_slot = ship_depth_charge_2
+            }
+        }
+        create_equipment_variant = {
+            name = "Yukikaze-class"
+            type = ship_hull_light_2
+            parent_version = 0
+            design_team = mio:KYO_nazrin_salvage
+            name_group = JAP_DD_HISTORICAL
+            role_icon_index = 6
+            allow_without_tech = yes
+            modules = {
+                fixed_ship_anti_air_slot = ship_anti_air_2
+                fixed_ship_battery_slot = ship_light_battery_2
+                fixed_ship_engine_slot = light_ship_engine_2
+                fixed_ship_fire_control_system_slot = ship_sonar_2
+                fixed_ship_radar_slot = ship_radar_2
+                fixed_ship_torpedo_slot = ship_torpedo_2
+                mid_1_custom_slot = ship_torpedo_2
+                rear_1_custom_slot = ship_torpedo_2
+            }
+        }
+        create_equipment_variant = {
+            name = "I-19"
+            type = ship_hull_cruiser_submarine
+            parent_version = 0
+            design_team = mio:KYO_wakasagihime_littoral
+            name_group = JAP_SS_HISTORICAL
+            role_icon_index = 6
+            allow_without_tech = yes
+            modules = {
+                fixed_ship_engine_slot = sub_ship_engine_2
+                fixed_ship_torpedo_slot = ship_torpedo_sub_2
+                front_1_custom_slot = ship_torpedo_sub_2
+                mid_1_custom_slot = ship_sub_snorkel_2
+                rear_1_custom_slot = ship_torpedo_sub_2
+            }
+        }
+        create_equipment_variant = {
+            type = cv_small_plane_airframe_1
+            parent_version = 0
+            allow_without_tech = yes
+            name = "A5M Type 96 Carrier Fighter"
+            design_team = mio:KYO_prismriver_acoustics
+            modules = {
+                engine_type_slot = engine_2_1x
+                fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+                fixed_main_weapon_slot = heavy_mg_4x
+                special_type_slot_1 = self_sealing_fuel_tanks_small
+            }
+        }
+        create_equipment_variant = {
+            type = cv_small_plane_naval_bomber_airframe_1
+            parent_version = 0
+            allow_without_tech = yes
+            name = "B5N Type 97 Carrier Attack Bomber"
+            design_team = mio:KYO_prismriver_acoustics
+            modules = {
+                engine_type_slot = engine_2_1x
+                fixed_main_weapon_slot = torpedo_mounting
+                special_type_slot_1 = self_sealing_fuel_tanks_small
+                special_type_slot_2 = armor_plate_small
+            }
+        }
+    }
+}

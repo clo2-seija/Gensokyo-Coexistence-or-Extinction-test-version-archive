@@ -1,0 +1,13 @@
+﻿l_english:
+ Renko_KYO_naval_event1_preview_tt:0 "Event Preview: Catalogue the former Imperial Japanese naval designs and choose the naming language for ships and carrier aircraft."
+ Renko_KYO_naval_event2_preview_tt:0 "Event Preview: A message from the future allows us to replace our current fleet with a superior one."
+ Renko_KYO_naval.1.t:0 "The Old Empire's Naval Legacy"
+ Renko_KYO_naval.1.d:0 "The captured ship plans and naval research records have finally been catalogued. The kappa have selected a batch of ship and carrier aircraft designs suited to our shipyards and entrusted their manufacture to Gensokyo's military industrial organizations.\n\nOne question remains before the designs enter our catalogues: should they bear Chinese or English names? Our choice will also determine the names used by the fleet we may receive later."
+ Renko_KYO_naval.1.a:0 "Use Chinese names."
+ Renko_KYO_naval.1.b:0 "Use English names."
+ Renko_KYO_naval.2.t:0 "A Message from the Future"
+ Renko_KYO_naval.2.d:0 "An unidentified transmission has reached our naval communications network. Its sender claims to come from the future and offers to replace our entire navy with a better-organized fleet. The kappa have checked the accompanying plans: capital ships, scouts, raiders and escorts each have a clear purpose, and the whole force will assemble at Yokosuka.\n\nThe decision is ours. Accepting will remove every warship we currently possess and replace them with 192 ships organized into four fleets and twenty task forces. We can also refuse and continue with our own navy."
+ Renko_KYO_naval.2.a:0 "Accept the offer and replace our entire navy."
+ Renko_KYO_naval.2.b:0 "Keep our own fleet."
+ Renko_KYO_replace_naval_fleet_tt:0 "§RRemove all current Gensokyo warships, wherever they are located.§!\nThen receive §Y192 ships§! at Yokosuka, organized into §Y4 fleets and 20 task forces§!, using the previously selected naming language.\nCarrier air wings are not included."
+ Renko_KYO_keep_naval_fleet_tt:0 "Keep the current navy and decline the replacement fleet."
