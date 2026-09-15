@@ -14653,9 +14653,11 @@ focus = {
             add_to_variable = { Renko_KYO_united_fleet_experience_gain_navy = 0.10 tooltip = experience_gain_navy_tt }
             custom_effect_tooltip = generic_skip_one_line_tt
             Renko_KYO_grant_basic_naval_technologies = yes
+            custom_effect_tooltip = generic_skip_one_line_tt
+            country_event = { id = Renko_KYO_naval.1 }
             custom_effect_tooltip = Renko_KYO_naval_event1_preview_tt
             custom_effect_tooltip = Renko_KYO_naval_event2_preview_tt
-            hidden_effect = { country_event = { id = Renko_KYO_naval.1 days = 1 } }
+            custom_effect_tooltip = generic_skip_one_line_tt
         }
         search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_BONUS }
     }

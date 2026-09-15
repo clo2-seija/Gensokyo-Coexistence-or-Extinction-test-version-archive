@@ -14,7 +14,7 @@ country_event = {
         hidden_effect = {
             clr_country_flag = Renko_KYO_naval_designs_english
             set_country_flag = Renko_KYO_naval_designs_chinese
-            country_event = { id = Renko_KYO_naval.2 days = 1 }
+            country_event = { id = Renko_KYO_naval.2 }
         }
     }
     option = {
@@ -23,7 +23,7 @@ country_event = {
         hidden_effect = {
             clr_country_flag = Renko_KYO_naval_designs_chinese
             set_country_flag = Renko_KYO_naval_designs_english
-            country_event = { id = Renko_KYO_naval.2 days = 1 }
+            country_event = { id = Renko_KYO_naval.2 }
         }
     }
 }
@@ -73,7 +73,6 @@ country_event = {
     }
     option = {
         name = Renko_KYO_naval.2.b
-        custom_effect_tooltip = Renko_KYO_keep_naval_fleet_tt
         hidden_effect = { set_country_flag = Renko_KYO_naval_fleet_choice_resolved }
     }
 }
