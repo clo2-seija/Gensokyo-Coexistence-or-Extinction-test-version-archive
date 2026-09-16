@@ -25,8 +25,8 @@
       "raw": "focus  = {\n\t\tid = KYO_start_the_naval_plan\n\t\ticon = GFX_goal_unknown\n\t\tcost = 6\n\n\t\trelative_position_id = KYO_the_reform_meeting\n\t\tx = 17\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_the_reform_meeting\n\t\t}\n\n\t\tai_will_do = { factor = 100 }\n\n\t\tcompletion_reward = {\n\t\t\t# Renko：建立幻想乡联合舰队，海军经验按每日固定值增加。\n\t\t\tRenko_KYO_add_or_modify_united_fleet = yes\n\t\t\tadd_to_variable = { Renko_KYO_united_fleet_experience_gain_navy = 0.10 tooltip = experience_gain_navy_tt }\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\n\t\t\t\n\t\t\t\n\t\t\t\n\n\t\t\tset_technology = {\n\n\t\t\t\tinterwar_antiair = 1\n\n\t\t\t\tantiair1 = 1\n\n\t\t\t\tbasic_fire_control_system = 1\n\n\t\t\t}\n\t\n\t\n\t\t\t\thidden_effect = {\n\t\t\t\t\tcreate_equipment_variant = {\n\t\t\t\t\t\tname = \"Taihō Class\"\n\t\t\t\t\t\ttype = ship_hull_carrier_1\n\t\t\t\t\t\tname_group = JAP_CV_HISTORICAL\n\t\t\t\t\t\tparent_version = 0\n\t\t\t\t\t\tmodules = {\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tfixed_ship_anti_air_slot = ship_anti_air_2\n\t\t\t\t\t\t\tfixed_ship_radar_slot = empty\n\t\t\t\t\t\t\tfixed_ship_engine_slot = carrier_ship_engine_2\n\t\t\t\t\t\t\tfixed_ship_secondaries_slot = ship_secondaries_1\n\t\t\t\t\t\t\tfixed_ship_armor_slot = ship_armor_cruiser_2\n\t\t\t\t\t\t\tfront_1_custom_slot = ship_deck_space\n\t\t\t\t\t\t\tmid_1_custom_slot = ship_armor_carrier_deck\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t\tadd_equipment_production = {\n\t\t\t\t\t\tequipment = {\n\t\t\t\t\t\t\ttype = ship_hull_carrier_1\n\t\t\t\t\t\t\tcreator = \"JAP\"\n\t\t\t\t\t\t\tversion_name = \"Taihō Class\"\n\t\t\t\t\t\t}\n\t\t\t\t\t\trequested_factories = 3\n\t\t\t\t\t\tprogress = 0.4\n\t\t\t\t\t\tamount = 1\n\t\t\t\t\t}\n\t\t\t\t\tadd_equipment_production = {\n\t\t\t\t\t\tequipment = {\n\t\t\t\t\t\t\ttype = ship_hull_carrier_1\n\t\t\t\t\t\t\tcreator = \"JAP\"\n\t\t\t\t\t\t\tversion_name = \"Taihō Class\"\n\t\t\t\t\t\t}\n\t\t\t\t\t\trequested_factories = 3\n\t\t\t\t\t\tprogress = 0.4\n\t\t\t\t\t\tamount = 1\n\t\t\t\t\t}\n\t\t\t\t\tcreate_equipment_variant = {\n\t\t\t\t\t\tname = \"Kawachi Class\"\n\t\t\t\t\t\ttype = ship_hull_heavy_2\n\t\t\t\t\t\tname_group = JAP_PREFECTURES\n\t\t\t\t\t\tparent_version = 0\n\t\t\t\t\t\tmodules = {\n\t\t\t\t\t\t\tfixed_ship_battery_slot = ship_heavy_battery_2\n\t\t\t\t\t\t\tfixed_ship_anti_air_slot = ship_anti_air_2\n\t\t\t\t\t\t\tfixed_ship_fire_control_system_slot = ship_fire_control_system_1\n\t\t\t\t\t\t\tfixed_ship_radar_slot = empty\n\t\t\t\t\t\t\tfixed_ship_engine_slot = heavy_ship_engine_2\n\t\t\t\t\t\t\tfixed_ship_secondaries_slot = ship_secondaries_2\n\t\t\t\t\t\t\tfixed_ship_armor_slot = ship_armor_bb_2\n\t\t\t\t\t\t\tfront_1_custom_slot = empty\n\t\t\t\t\t\t\tmid_1_custom_slot = ship_anti_air_2\n\t\t\t\t\t\t\tmid_2_custom_slot = ship_airplane_launcher_1\n\t\t\t\t\t\t\trear_1_custom_slot = ship_heavy_battery_2\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t\tadd_equipment_production = {\n\t\t\t\t\t\tequipment = {\n\t\t\t\t\t\t\ttype = ship_hull_heavy_2\n\t\t\t\t\t\t\tcreator = \"JAP\"\n\t\t\t\t\t\t\tversion_name = \"Kawachi Class\"\n\t\t\t\t\t\t}\n\t\t\t\t\t\trequested_factories = 3\n\t\t\t\t\t\tprogress = 0.4\n\t\t\t\t\t\tamount = 1\n\t\t\t\t\t}\n\n\t\t\t\t\tadd_equipment_production = {\n\t\t\t\t\t\tequipment = {\n\t\t\t\t\t\t\ttype = ship_hull_heavy_2\n\t\t\t\t\t\t\tcreator = \"JAP\"\n\t\t\t\t\t\t\tversion_name = \"Kawachi Class\"\n\t\t\t\t\t\t}\n\t\t\t\t\t\trequested_factories = 3\n\t\t\t\t\t\tprogress = 0.4\n\t\t\t\t\t\tamount = 1\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_BONUS }\n\t}",
       "originalRelative": {
         "reference": "KYO_the_reform_meeting",
-        "x": 17.0,
-        "y": 1.0
+        "x": 17,
+        "y": 1
       }
     },
     {
@@ -51,8 +51,8 @@
       "raw": "focus = {\n\t\tid = KYO_Moriya_Shrine_ship\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_start_the_naval_plan\n\t\tx = -4\n\t\ty = 2\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_start_the_naval_plan\n\t\t}\n\t\tmutually_exclusive = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = { factor = 20 }\n\n\t\tcompletion_reward = {\n\n\t\t\tcustom_effect_tooltip = decision_unlocked_tt\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\tunlock_decision_category_tooltip = Shrine_navy_decision\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t\n\t\t\tnavy_experience = 25\n\n\t\t\tadd_doctrine_cost_reduction = {\n\t\t\t\tname = KYO_Moriya_Shrine_ship\n\t\t\t\tcategory = naval_doctrine\n\t\t\t\tcost_reduction = 0.5\n\t\t\t\tuses = 2\n\t\t\t}\n\t\t\tset_global_flag = recruit_moriyashrine\n\n\t\t#\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t#\tcustom_effect_tooltip = available_political_advisor\n\t\t#\tshow_unit_leaders_tooltip = gensokyo_kanako\n\t\t#\tshow_ideas_tooltip = gensokyo_kanako\n\n\t\t#\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t#\tcustom_effect_tooltip = available_political_advisor\n\t\t#\tshow_unit_leaders_tooltip = gensokyo_suwako\n\t\t#\tshow_ideas_tooltip = gensokyo_suwako\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_transport_capacity\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_naval_strike\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_naval_hit_chance\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_sortie_efficiency\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_naval_speed_factor\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_experience_gain_navy\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_spotting_chance\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_navy_sub_detection\n\t\t\thidden_effect = {\n\t\t\t\tset_country_flag = KYO_Moriya_Shrine_ship_flag\n\t\t\t}\n\t\t\t\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_start_the_naval_plan",
-        "x": -4.0,
-        "y": 2.0
+        "x": -4,
+        "y": 2
       },
       "baselineId": "KYO_Moriya_Shrine_ship"
     },
@@ -81,8 +81,8 @@
       "raw": "focus = {\n\t\tid = KYO_side_with_Kanako\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Moriya_Shrine_ship\n\t\tx = -1\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Moriya_Shrine_ship\n\t\t}\n\t\tmutually_exclusive = {\n\t\t\tfocus = KYO_side_with_Suwako\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 }   # 工廠輸出 +5%\n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_speed_factor value = 0.1 } \n    \t\tKYO_Shrine_navy_scripte = yes  \t\t\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_speed_factor\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_Moriya_Shrine_ship",
-        "x": -1.0,
-        "y": 1.0
+        "x": -1,
+        "y": 1
       },
       "baselineId": "KYO_side_with_Kanako"
     },
@@ -140,15 +140,15 @@
       "raw": "focus = {\n\t\tid = KYO_side_with_Suwako\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Moriya_Shrine_ship\n\t\tx = 1\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Moriya_Shrine_ship\n\t\t}\n\t\tmutually_exclusive = {\n\t\t\tfocus = KYO_side_with_Kanako\n\t\t}\n\n\t\tai_will_do = { factor = 0 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\t\n\t\t\tadd_to_variable = { var = Shrine_navy_var_spotting_chance value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_navy_submarine_detection_factor value = 0.1 } \n\t\t\t \n    \t\tKYO_Shrine_navy_scripte = yes \n\t\t\tcustom_effect_tooltip = shrine_navy_tt_spotting_chance\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_navy_sub_detection\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_Moriya_Shrine_ship",
-        "x": 1.0,
-        "y": 1.0
+        "x": 1,
+        "y": 1
       },
       "baselineId": "KYO_side_with_Suwako"
     },
     {
       "id": "KYO_war_god_ship",
       "title": "战神御座的舰队",
-      "x": 2,
+      "x": 3,
       "y": 3,
       "cost": null,
       "parents": [
@@ -168,8 +168,8 @@
       "raw": "focus = {\n\t\tid = KYO_war_god_ship\n\t\ticon = GFX_goal_unknown\n\t\tcost = 6\n\n\t\trelative_position_id = KYO_side_with_Kanako\n\t\tx = -2\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_side_with_Kanako\n\t\t}\n\n\t\tai_will_do = { factor = 20 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_hit_chance value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 }  \n    \t\tKYO_Shrine_navy_scripte = yes  \t\t\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_hit_chance\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_side_with_Kanako",
-        "x": -2.0,
-        "y": 1.0
+        "x": -2,
+        "y": 1
       },
       "baselineId": "KYO_war_god_ship"
     },
@@ -204,7 +204,7 @@
     {
       "id": "KYO_ship_be_like_frog",
       "title": "青蛙式神出击",
-      "x": 8,
+      "x": 7,
       "y": 3,
       "cost": null,
       "parents": [
@@ -224,8 +224,8 @@
       "raw": "focus = {\n\t\tid = KYO_ship_be_like_frog\n\t\ticon = GFX_goal_unknown\n\t\tcost = 6\n\n\t\trelative_position_id = KYO_side_with_Suwako\n\t\tx = 2\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_side_with_Suwako\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\n\t\t\tadd_to_variable = { var = Shrine_navy_var_navy_submarine_detection_factor value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 } \n\t\t\t \n    \t\tKYO_Shrine_navy_scripte = yes \n\t\t\tcustom_effect_tooltip = shrine_navy_tt_navy_sub_detection\t\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\n\t\t\trandom_owned_controlled_state = {\n\t\t\t\tprioritize = { 528 } #North Kyushu\n\t\t\t\tadd_extra_state_shared_building_slots = 1\n\t\t\t\tadd_building_construction = {\n\t\t\t\t\ttype = dockyard\n\t\t\t\t\tlevel = 1\n\t\t\t\t\tinstant_build = yes\n\t\t\t\t}\n\t\t\t}\n\t\t\trandom_owned_controlled_state = {\n\t\t\t\tprioritize = { 529 } #San'yo\n\t\t\t\tadd_extra_state_shared_building_slots = 1\n\t\t\t\tadd_building_construction = {\n\t\t\t\t\ttype = dockyard\n\t\t\t\t\tlevel = 1\n\t\t\t\t\tinstant_build = yes\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_INDUSTRY\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_side_with_Suwako",
-        "x": 2.0,
-        "y": 1.0
+        "x": 2,
+        "y": 1
       },
       "baselineId": "KYO_ship_be_like_frog"
     },
@@ -233,7 +233,7 @@
       "id": "Renko_moriya_naval_yamato",
       "title": "大和神威",
       "x": 0,
-      "y": 4,
+      "y": 3,
       "cost": null,
       "parents": [
         [
@@ -263,7 +263,8 @@
       "cost": null,
       "parents": [
         [
-          "KYO_war_god_ship"
+          "KYO_war_god_ship",
+          "Renko_moriya_naval_living_god"
         ]
       ],
       "exclusive": [],
@@ -277,20 +278,22 @@
       "raw": "focus = {\n\t\tid = KYO_control_weather\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_war_god_ship\n\t\tx = -2\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_war_god_ship\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 }  \n    \t\tKYO_Shrine_navy_scripte = yes  \t\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_war_god_ship",
-        "x": -2.0,
-        "y": 1.0
+        "x": -2,
+        "y": 1
       },
       "baselineId": "KYO_control_weather"
     },
     {
       "id": "Renko_moriya_naval_fusion_engine",
-      "title": "核聚变引擎（标题待定）",
+      "title": "奇迹能源",
       "x": 5,
       "y": 4,
       "cost": null,
       "parents": [
         [
-          "Renko_moriya_naval_living_god"
+          "Renko_moriya_naval_living_god",
+          "KYO_war_god_ship",
+          "KYO_ship_be_like_frog"
         ]
       ],
       "exclusive": [],
@@ -316,7 +319,8 @@
       "cost": null,
       "parents": [
         [
-          "KYO_ship_be_like_frog"
+          "KYO_ship_be_like_frog",
+          "Renko_moriya_naval_living_god"
         ]
       ],
       "exclusive": [],
@@ -330,8 +334,8 @@
       "raw": "focus = {\n\t\tid = KYO_frog_power\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_ship_be_like_frog\n\t\tx = 2\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_ship_be_like_frog\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tadd_to_variable = { var = Shrine_navy_var_sortie_efficiency value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 }  \n    \t\tKYO_Shrine_navy_scripte = yes \n\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_sortie_efficiency\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_ship_be_like_frog",
-        "x": 2.0,
-        "y": 1.0
+        "x": 2,
+        "y": 1
       },
       "baselineId": "KYO_frog_power"
     },
@@ -339,7 +343,7 @@
       "id": "Renko_moriya_naval_cirno",
       "title": "教育琪露诺",
       "x": 10,
-      "y": 4,
+      "y": 3,
       "cost": null,
       "parents": [
         [
@@ -369,11 +373,9 @@
       "cost": null,
       "parents": [
         [
-          "Renko_moriya_naval_fusion_engine"
-        ],
-        [
           "KYO_control_weather",
-          "KYO_frog_power"
+          "KYO_frog_power",
+          "Renko_moriya_naval_fusion_engine"
         ]
       ],
       "exclusive": [],
@@ -387,17 +389,17 @@
       "raw": "focus = {\n\t\tid = KYO_shrine_power\n\t\ticon = GFX_goal_unknown\n\t\tcost = 7\n\n\t\trelative_position_id = KYO_god_of_many_power\n\t\tx = 1\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_god_of_many_power\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_god_of_many_children\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\n\t\t\tadd_to_variable = { var = Shrine_navy_var_sortie_efficiency value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 }  \n\t\t\tadd_to_variable = { var = Shrine_navy_var_transport_capacity value = -0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_experience_gain_navy value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_spotting_chance value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_hit_chance value = 0.1 }  \n\t\t\tadd_to_variable = { var = Shrine_navy_var_navy_submarine_detection_factor value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_speed_factor value = 0.1 } \n\n\t\t\tKYO_Shrine_navy_scripte = yes \n\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_transport_capacity\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_hit_chance\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_sortie_efficiency\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_speed_factor\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_experience_gain_navy\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_spotting_chance\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_navy_sub_detection\n\t\t\t\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_god_of_many_power",
-        "x": 1.0,
-        "y": 1.0
+        "x": 1,
+        "y": 1
       },
       "baselineId": "KYO_shrine_power"
     },
     {
       "id": "KYO_Tsukumogami_ship",
       "title": "百器夜行：与付丧神的合作",
-      "x": 12.0,
-      "y": 2.0,
-      "cost": 5.0,
+      "x": 12,
+      "y": 2,
+      "cost": 5,
       "parents": [
         [
           "KYO_start_the_naval_plan"
@@ -414,17 +416,17 @@
       "raw": "focus = {\n\t\tid = KYO_Tsukumogami_ship\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_start_the_naval_plan\n\t\tx = 3\n\t\ty = 2\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_start_the_naval_plan\n\t\t}\n\t\tmutually_exclusive = {\n\t\t\tfocus =  KYO_Moriya_Shrine_ship\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\n\t\t\t\n\n\t\t\tadd_ideas = KYO_Tsukumogami_idea\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\n\t\t\tunlock_decision_category_tooltip = Tsukumogami_ship_decision\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt \n\t\t\t\n\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_Tsukumogami_ship\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 1\n\t\t\t\tcategory = naval_mines\n\t\t\t}\n\t\t\tnavy_experience = 75\n\t\t\t\n\t\t\tadd_doctrine_cost_reduction = {\n\t\t\t\tname = KYO_Tsukumogami_ship\n\t\t\t\tcategory = naval_doctrine\n\t\t\t\tcost_reduction = 0.5\n\t\t\t\tuses = 1\n\t\t\t}\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_start_the_naval_plan",
-        "x": 3.0,
-        "y": 2.0
+        "x": 3,
+        "y": 2
       },
       "route": "tsukumogami"
     },
     {
       "id": "KYO_reiko_beat",
       "title": "让人不自觉跳动的雷鼓",
-      "x": 12.0,
-      "y": 5.0,
-      "cost": 5.0,
+      "x": 12,
+      "y": 5,
+      "cost": 5,
       "parents": [
         [
           "KYO_Tsukumogami_ship"
@@ -441,17 +443,17 @@
       "raw": "focus = {\n\t\tid = KYO_reiko_beat\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 0\n\t\ty = 3\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_reiko_beat\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 2\n\t\t\t\tcategory = dd_tech\n\t\t\t}\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_reiko\n\t\t\t# show_ideas_tooltip = gensokyo_reiko\n\t\t\t# set_global_flag = recruit_gensokyo_reiko\n\n\t\t\t\n\t\t\t\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_Tsukumogami_ship",
-        "x": 0.0,
-        "y": 3.0
+        "x": 0,
+        "y": 3
       },
       "route": "tsukumogami"
     },
     {
       "id": "KYO_kokoro_ways",
       "title": "能够控制群众情感的秦心",
-      "x": 15.0,
-      "y": 3.0,
-      "cost": 5.0,
+      "x": 15,
+      "y": 3,
+      "cost": 5,
       "parents": [
         [
           "KYO_Tsukumogami_ship"
@@ -468,17 +470,17 @@
       "raw": "focus = {\n\t\tid = KYO_kokoro_ways\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 3\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = {\n\t\t\tfactor = 5\n\t\t\tmodifier = {\n\t\t\t\tfactor = 10\n\t\t\t\tthreat > 0.50\n\t\t\t}\n\t\t}\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_kokoro_ways\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 2\n\t\t\t\tcategory = cv_tech\n\t\t\t}\n\n\t\t\tadd_manpower = 500000\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_kokoro\n\t\t\t# show_ideas_tooltip = gensokyo_kokoro\n\t\t\t# set_global_flag = recruit_gensokyo_kokoro\n\n\t\t\t\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_MANPOWER\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_Tsukumogami_ship",
-        "x": 3.0,
-        "y": 1.0
+        "x": 3,
+        "y": 1
       },
       "route": "tsukumogami"
     },
     {
       "id": "KYO_benben_strong",
       "title": "自称最强付丧神的弁弁",
-      "x": 13.0,
-      "y": 4.0,
-      "cost": 5.0,
+      "x": 13,
+      "y": 4,
+      "cost": 5,
       "parents": [
         [
           "KYO_Tsukumogami_ship"
@@ -495,17 +497,17 @@
       "raw": "focus = {\n\t\tid = KYO_benben_strong\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 1\n\t\ty = 2\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = { factor = 1 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_benben_strong\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 1\n\t\t\t\tcategory = ss_tech\n\t\t\t}\n\t\t\t\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_benben_strong\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 1\n\t\t\t\tcategory = cat_torpedoes\n\t\t\t}\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_benben\n\t\t\t# show_ideas_tooltip = gensokyo_benben\n\t\t\t# set_global_flag = recruit_gensokyo_benben\n\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_Tsukumogami_ship",
-        "x": 1.0,
-        "y": 2.0
+        "x": 1,
+        "y": 2
       },
       "route": "tsukumogami"
     },
     {
       "id": "KYO_yatsuhashi_wish",
       "title": "充满希望的付丧神八桥",
-      "x": 17.0,
-      "y": 4.0,
-      "cost": 5.0,
+      "x": 17,
+      "y": 4,
+      "cost": 5,
       "parents": [
         [
           "KYO_Tsukumogami_ship"
@@ -522,17 +524,17 @@
       "raw": "focus = {\n\t\tid = KYO_yatsuhashi_wish\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 5\n\t\ty = 2\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = {\n\t\t\tfactor = 5\n\t\t\tmodifier = {\n\t\t\t\tfactor = 10\n\t\t\t\tthreat > 0.50\n\t\t\t}\n\t\t}\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_yatsuhashi_wish\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 2\n\t\t\t\tcategory = bb_tech\n\t\t\t}\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_yatsuhashi\n\t\t\t# show_ideas_tooltip = gensokyo_yatsuhashi\n\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_Tsukumogami_ship",
-        "x": 5.0,
-        "y": 2.0
+        "x": 5,
+        "y": 2
       },
       "route": "tsukumogami"
     },
     {
       "id": "KYO_kogasa_iron",
       "title": "永远吓不到人的小伞",
-      "x": 18.0,
-      "y": 5.0,
-      "cost": 5.0,
+      "x": 18,
+      "y": 5,
+      "cost": 5,
       "parents": [
         [
           "KYO_Tsukumogami_ship"
@@ -549,17 +551,17 @@
       "raw": "focus = {\n\t\tid = KYO_kogasa_iron\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 6\n\t\ty = 3\n\n\t\tavailable = {\n\t\t\t\n\t\t}\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = { factor = 1 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tif = {\n\t\t\t\tlimit = { NOT = { is_special_project_completed = sp:sp_naval_torpedo_cruiser } }\n\t\t\t\t\n\t\t\t\tcomplete_special_project = {\n\t\t\t\t\tproject = sp:sp_naval_torpedo_cruiser\n\t\t\t\t\tshow_modifiers = no\n\t\t\t\t}\n\t\t\t\tadd_tech_bonus = {\n\t\t\t\t\tname = KYO_kogasa_iron\n\t\t\t\t\tbonus = 1\n\t\t\t\t\tuses = 1\n\t\t\t\t\t\n\t\t\t\t\tcategory = ca_tech\n\t\t\t\t}\n\t\t\t}\n\t\t\telse = {\n\t\t\t\tadd_tech_bonus = {\n\t\t\t\t\tname = KYO_kogasa_iron\n\t\t\t\t\tbonus = 0.75\n\t\t\t\t\tuses = 2\n\t\t\t\t\t\n\t\t\t\t\tcategory = ca_tech\n\t\t\t\t}\n\t\t\t}\n\t\t\t\n\t\t\tcreate_equipment_variant = {\n\n\t\t\t\t\tname = \"Ōyodo Class\"\n\t\t\t\t\ttype = ship_hull_torpedo_cruiser\n\t\t\t\t\t\n\t\t\t\t\tparent_version = 0\n\t\t\t\t\tmodules = {\n\t\t\t\t\t\tfixed_ship_battery_slot = ship_light_medium_battery_2\n\t\t\t\t\t\tfixed_ship_anti_air_slot = ship_anti_air_2\n\t\t\t\t\t\tfixed_ship_fire_control_system_slot = ship_fire_control_system_0\n\t\t\t\t\t\tfixed_ship_radar_slot = empty\n\t\t\t\t\t\tfixed_ship_engine_slot = cruiser_ship_engine_2\n\t\t\t\t\t\tfixed_ship_secondaries_slot = empty\n\t\t\t\t\t\tfixed_ship_armor_slot = ship_armor_cruiser_2\n\t\t\t\t\t\tfront_1_custom_slot = ship_anti_air_2\n\t\t\t\t\t\tmid_1_custom_slot = ship_torpedo_2\n\t\t\t\t\t\tmid_2_custom_slot = ship_torpedo_2\n\t\t\t\t\t\trear_1_custom_slot = ship_torpedo_2\n\t\t\t\t\t\trear_2_custom_slot = ship_anti_air_2\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t# custom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_kogasa\n\t\t\t# show_ideas_tooltip = gensokyo_kogasa\n\n\t\t\t\n\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_Tsukumogami_ship",
-        "x": 6.0,
-        "y": 3.0
+        "x": 6,
+        "y": 3
       },
       "route": "tsukumogami"
     },
     {
       "id": "KYO_shinmyoumaru_mallet",
       "title": "付丧神的能力来源万宝槌的持有者针妙丸",
-      "x": 15.0,
-      "y": 6.0,
-      "cost": 4.0,
+      "x": 15,
+      "y": 6,
+      "cost": 4,
       "parents": [
         [
           "KYO_reiko_beat"
@@ -588,8 +590,8 @@
       "raw": "focus = {\n\t\tid = KYO_shinmyoumaru_mallet\n\t\ticon = GFX_goal_unknown\n\t\tcost = 4\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 3\n\t\ty = 4\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_reiko_beat\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_benben_strong\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_kokoro_ways\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_yatsuhashi_wish\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_kogasa_iron\n\t\t}\n\n\t\tai_will_do = {\n\t\t\tfactor = 5\n\t\t\tmodifier = {\n\t\t\t\tfactor = 10\n\t\t\t\tthreat > 0.50\n\t\t\t}\n\t\t}\n\n\t\tcompletion_reward = {\n\t\t\t\n\n\t\t\tnavy_experience = 15\n\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_yatsuhashi_wish\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 2\n\t\t\t\tcategory = bb_tech\n\t\t\t}\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_shinmyoumaru\n\t\t\t# show_ideas_tooltip = gensokyo_shinmyoumaru\n\t\t\t# set_global_flag = recruit_gensokyo_shinmyoumaru\n\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_Tsukumogami_ship",
-        "x": 3.0,
-        "y": 4.0
+        "x": 3,
+        "y": 4
       },
       "route": "tsukumogami"
     }
@@ -600,7 +602,7 @@
       "title": "海上幻想计划启动",
       "x": 9,
       "y": 0,
-      "cost": 6.0,
+      "cost": 6,
       "parents": [
         [
           "KYO_the_reform_meeting"
@@ -617,16 +619,16 @@
       "raw": "focus  = {\n\t\tid = KYO_start_the_naval_plan\n\t\ticon = GFX_goal_unknown\n\t\tcost = 6\n\n\t\trelative_position_id = KYO_the_reform_meeting\n\t\tx = 17\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_the_reform_meeting\n\t\t}\n\n\t\tai_will_do = { factor = 100 }\n\n\t\tcompletion_reward = {\n\t\t\t# Renko：建立幻想乡联合舰队，海军经验按每日固定值增加。\n\t\t\tRenko_KYO_add_or_modify_united_fleet = yes\n\t\t\tadd_to_variable = { Renko_KYO_united_fleet_experience_gain_navy = 0.10 tooltip = experience_gain_navy_tt }\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\n\t\t\t\n\t\t\t\n\t\t\t\n\n\t\t\tset_technology = {\n\n\t\t\t\tinterwar_antiair = 1\n\n\t\t\t\tantiair1 = 1\n\n\t\t\t\tbasic_fire_control_system = 1\n\n\t\t\t}\n\t\n\t\n\t\t\t\thidden_effect = {\n\t\t\t\t\tcreate_equipment_variant = {\n\t\t\t\t\t\tname = \"Taihō Class\"\n\t\t\t\t\t\ttype = ship_hull_carrier_1\n\t\t\t\t\t\tname_group = JAP_CV_HISTORICAL\n\t\t\t\t\t\tparent_version = 0\n\t\t\t\t\t\tmodules = {\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tfixed_ship_anti_air_slot = ship_anti_air_2\n\t\t\t\t\t\t\tfixed_ship_radar_slot = empty\n\t\t\t\t\t\t\tfixed_ship_engine_slot = carrier_ship_engine_2\n\t\t\t\t\t\t\tfixed_ship_secondaries_slot = ship_secondaries_1\n\t\t\t\t\t\t\tfixed_ship_armor_slot = ship_armor_cruiser_2\n\t\t\t\t\t\t\tfront_1_custom_slot = ship_deck_space\n\t\t\t\t\t\t\tmid_1_custom_slot = ship_armor_carrier_deck\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t\tadd_equipment_production = {\n\t\t\t\t\t\tequipment = {\n\t\t\t\t\t\t\ttype = ship_hull_carrier_1\n\t\t\t\t\t\t\tcreator = \"JAP\"\n\t\t\t\t\t\t\tversion_name = \"Taihō Class\"\n\t\t\t\t\t\t}\n\t\t\t\t\t\trequested_factories = 3\n\t\t\t\t\t\tprogress = 0.4\n\t\t\t\t\t\tamount = 1\n\t\t\t\t\t}\n\t\t\t\t\tadd_equipment_production = {\n\t\t\t\t\t\tequipment = {\n\t\t\t\t\t\t\ttype = ship_hull_carrier_1\n\t\t\t\t\t\t\tcreator = \"JAP\"\n\t\t\t\t\t\t\tversion_name = \"Taihō Class\"\n\t\t\t\t\t\t}\n\t\t\t\t\t\trequested_factories = 3\n\t\t\t\t\t\tprogress = 0.4\n\t\t\t\t\t\tamount = 1\n\t\t\t\t\t}\n\t\t\t\t\tcreate_equipment_variant = {\n\t\t\t\t\t\tname = \"Kawachi Class\"\n\t\t\t\t\t\ttype = ship_hull_heavy_2\n\t\t\t\t\t\tname_group = JAP_PREFECTURES\n\t\t\t\t\t\tparent_version = 0\n\t\t\t\t\t\tmodules = {\n\t\t\t\t\t\t\tfixed_ship_battery_slot = ship_heavy_battery_2\n\t\t\t\t\t\t\tfixed_ship_anti_air_slot = ship_anti_air_2\n\t\t\t\t\t\t\tfixed_ship_fire_control_system_slot = ship_fire_control_system_1\n\t\t\t\t\t\t\tfixed_ship_radar_slot = empty\n\t\t\t\t\t\t\tfixed_ship_engine_slot = heavy_ship_engine_2\n\t\t\t\t\t\t\tfixed_ship_secondaries_slot = ship_secondaries_2\n\t\t\t\t\t\t\tfixed_ship_armor_slot = ship_armor_bb_2\n\t\t\t\t\t\t\tfront_1_custom_slot = empty\n\t\t\t\t\t\t\tmid_1_custom_slot = ship_anti_air_2\n\t\t\t\t\t\t\tmid_2_custom_slot = ship_airplane_launcher_1\n\t\t\t\t\t\t\trear_1_custom_slot = ship_heavy_battery_2\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t\tadd_equipment_production = {\n\t\t\t\t\t\tequipment = {\n\t\t\t\t\t\t\ttype = ship_hull_heavy_2\n\t\t\t\t\t\t\tcreator = \"JAP\"\n\t\t\t\t\t\t\tversion_name = \"Kawachi Class\"\n\t\t\t\t\t\t}\n\t\t\t\t\t\trequested_factories = 3\n\t\t\t\t\t\tprogress = 0.4\n\t\t\t\t\t\tamount = 1\n\t\t\t\t\t}\n\n\t\t\t\t\tadd_equipment_production = {\n\t\t\t\t\t\tequipment = {\n\t\t\t\t\t\t\ttype = ship_hull_heavy_2\n\t\t\t\t\t\t\tcreator = \"JAP\"\n\t\t\t\t\t\t\tversion_name = \"Kawachi Class\"\n\t\t\t\t\t\t}\n\t\t\t\t\t\trequested_factories = 3\n\t\t\t\t\t\tprogress = 0.4\n\t\t\t\t\t\tamount = 1\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_NAVY_BONUS }\n\t}",
       "originalRelative": {
         "reference": "KYO_the_reform_meeting",
-        "x": 17.0,
-        "y": 1.0
+        "x": 17,
+        "y": 1
       }
     },
     {
       "id": "KYO_Moriya_Shrine_ship",
       "title": "守矢神社·神威舰计划",
-      "x": 5.0,
-      "y": 2.0,
-      "cost": 5.0,
+      "x": 5,
+      "y": 2,
+      "cost": 5,
       "parents": [
         [
           "KYO_start_the_naval_plan"
@@ -645,16 +647,16 @@
       "raw": "focus = {\n\t\tid = KYO_Moriya_Shrine_ship\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_start_the_naval_plan\n\t\tx = -4\n\t\ty = 2\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_start_the_naval_plan\n\t\t}\n\t\tmutually_exclusive = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = { factor = 20 }\n\n\t\tcompletion_reward = {\n\n\t\t\tcustom_effect_tooltip = decision_unlocked_tt\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\tunlock_decision_category_tooltip = Shrine_navy_decision\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t\n\t\t\tnavy_experience = 25\n\n\t\t\tadd_doctrine_cost_reduction = {\n\t\t\t\tname = KYO_Moriya_Shrine_ship\n\t\t\t\tcategory = naval_doctrine\n\t\t\t\tcost_reduction = 0.5\n\t\t\t\tuses = 2\n\t\t\t}\n\t\t\tset_global_flag = recruit_moriyashrine\n\n\t\t#\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t#\tcustom_effect_tooltip = available_political_advisor\n\t\t#\tshow_unit_leaders_tooltip = gensokyo_kanako\n\t\t#\tshow_ideas_tooltip = gensokyo_kanako\n\n\t\t#\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t#\tcustom_effect_tooltip = available_political_advisor\n\t\t#\tshow_unit_leaders_tooltip = gensokyo_suwako\n\t\t#\tshow_ideas_tooltip = gensokyo_suwako\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_transport_capacity\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_naval_strike\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_naval_hit_chance\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_sortie_efficiency\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_naval_speed_factor\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_experience_gain_navy\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_spotting_chance\n\t\t#\t#custom_effect_tooltip = shrine_navy_tt_navy_sub_detection\n\t\t\thidden_effect = {\n\t\t\t\tset_country_flag = KYO_Moriya_Shrine_ship_flag\n\t\t\t}\n\t\t\t\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_start_the_naval_plan",
-        "x": -4.0,
-        "y": 2.0
+        "x": -4,
+        "y": 2
       }
     },
     {
       "id": "KYO_side_with_Kanako",
       "title": "立御柱而行：追随八坂神奈子",
-      "x": 4.0,
-      "y": 3.0,
-      "cost": 5.0,
+      "x": 4,
+      "y": 3,
+      "cost": 5,
       "parents": [
         [
           "KYO_Moriya_Shrine_ship"
@@ -673,16 +675,16 @@
       "raw": "focus = {\n\t\tid = KYO_side_with_Kanako\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Moriya_Shrine_ship\n\t\tx = -1\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Moriya_Shrine_ship\n\t\t}\n\t\tmutually_exclusive = {\n\t\t\tfocus = KYO_side_with_Suwako\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 }   # 工廠輸出 +5%\n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_speed_factor value = 0.1 } \n    \t\tKYO_Shrine_navy_scripte = yes  \t\t\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_speed_factor\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_Moriya_Shrine_ship",
-        "x": -1.0,
-        "y": 1.0
+        "x": -1,
+        "y": 1
       }
     },
     {
       "id": "KYO_war_god_ship",
       "title": "战神御座的舰队",
-      "x": 2.0,
-      "y": 4.0,
-      "cost": 6.0,
+      "x": 2,
+      "y": 4,
+      "cost": 6,
       "parents": [
         [
           "KYO_side_with_Kanako"
@@ -699,16 +701,16 @@
       "raw": "focus = {\n\t\tid = KYO_war_god_ship\n\t\ticon = GFX_goal_unknown\n\t\tcost = 6\n\n\t\trelative_position_id = KYO_side_with_Kanako\n\t\tx = -2\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_side_with_Kanako\n\t\t}\n\n\t\tai_will_do = { factor = 20 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_hit_chance value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 }  \n    \t\tKYO_Shrine_navy_scripte = yes  \t\t\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_hit_chance\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_side_with_Kanako",
-        "x": -2.0,
-        "y": 1.0
+        "x": -2,
+        "y": 1
       }
     },
     {
       "id": "KYO_control_weather",
       "title": "祈风制雷：天候操控",
-      "x": 0.0,
-      "y": 5.0,
-      "cost": 5.0,
+      "x": 0,
+      "y": 5,
+      "cost": 5,
       "parents": [
         [
           "KYO_war_god_ship"
@@ -725,16 +727,16 @@
       "raw": "focus = {\n\t\tid = KYO_control_weather\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_war_god_ship\n\t\tx = -2\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_war_god_ship\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 }  \n    \t\tKYO_Shrine_navy_scripte = yes  \t\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_war_god_ship",
-        "x": -2.0,
-        "y": 1.0
+        "x": -2,
+        "y": 1
       }
     },
     {
       "id": "KYO_god_of_many_power",
       "title": "万祇加持：多神权能合一",
-      "x": 4.0,
-      "y": 5.0,
-      "cost": 7.0,
+      "x": 4,
+      "y": 5,
+      "cost": 7,
       "parents": [
         [
           "KYO_war_god_ship",
@@ -752,16 +754,16 @@
       "raw": "focus = {\n\t\tid = KYO_god_of_many_power\n\t\ticon = GFX_goal_unknown\n\t\tcost = 7\n\n\t\trelative_position_id = KYO_war_god_ship\n\t\tx = 2\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_war_god_ship\n\t\t\tfocus = KYO_ship_be_like_frog\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tadd_to_variable = { var = Shrine_navy_var_experience_gain_navy value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_spotting_chance value = 0.1 }  \n    \t\tKYO_Shrine_navy_scripte = yes  \t\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_experience_gain_navy\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_spotting_chance\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_war_god_ship",
-        "x": 2.0,
-        "y": 1.0
+        "x": 2,
+        "y": 1
       }
     },
     {
       "id": "KYO_side_with_Suwako",
       "title": "御蛙之道：追随泄矢诹访子",
-      "x": 6.0,
-      "y": 3.0,
-      "cost": 5.0,
+      "x": 6,
+      "y": 3,
+      "cost": 5,
       "parents": [
         [
           "KYO_Moriya_Shrine_ship"
@@ -780,16 +782,16 @@
       "raw": "focus = {\n\t\tid = KYO_side_with_Suwako\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Moriya_Shrine_ship\n\t\tx = 1\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Moriya_Shrine_ship\n\t\t}\n\t\tmutually_exclusive = {\n\t\t\tfocus = KYO_side_with_Kanako\n\t\t}\n\n\t\tai_will_do = { factor = 0 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\t\n\t\t\tadd_to_variable = { var = Shrine_navy_var_spotting_chance value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_navy_submarine_detection_factor value = 0.1 } \n\t\t\t \n    \t\tKYO_Shrine_navy_scripte = yes \n\t\t\tcustom_effect_tooltip = shrine_navy_tt_spotting_chance\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_navy_sub_detection\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_Moriya_Shrine_ship",
-        "x": 1.0,
-        "y": 1.0
+        "x": 1,
+        "y": 1
       }
     },
     {
       "id": "KYO_ship_be_like_frog",
       "title": "蛙跃舰设计",
-      "x": 8.0,
-      "y": 4.0,
-      "cost": 6.0,
+      "x": 8,
+      "y": 4,
+      "cost": 6,
       "parents": [
         [
           "KYO_side_with_Suwako"
@@ -806,16 +808,16 @@
       "raw": "focus = {\n\t\tid = KYO_ship_be_like_frog\n\t\ticon = GFX_goal_unknown\n\t\tcost = 6\n\n\t\trelative_position_id = KYO_side_with_Suwako\n\t\tx = 2\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_side_with_Suwako\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\n\t\t\tadd_to_variable = { var = Shrine_navy_var_navy_submarine_detection_factor value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 } \n\t\t\t \n    \t\tKYO_Shrine_navy_scripte = yes \n\t\t\tcustom_effect_tooltip = shrine_navy_tt_navy_sub_detection\t\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\n\t\t\trandom_owned_controlled_state = {\n\t\t\t\tprioritize = { 528 } #North Kyushu\n\t\t\t\tadd_extra_state_shared_building_slots = 1\n\t\t\t\tadd_building_construction = {\n\t\t\t\t\ttype = dockyard\n\t\t\t\t\tlevel = 1\n\t\t\t\t\tinstant_build = yes\n\t\t\t\t}\n\t\t\t}\n\t\t\trandom_owned_controlled_state = {\n\t\t\t\tprioritize = { 529 } #San'yo\n\t\t\t\tadd_extra_state_shared_building_slots = 1\n\t\t\t\tadd_building_construction = {\n\t\t\t\t\ttype = dockyard\n\t\t\t\t\tlevel = 1\n\t\t\t\t\tinstant_build = yes\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_INDUSTRY\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_side_with_Suwako",
-        "x": 2.0,
-        "y": 1.0
+        "x": 2,
+        "y": 1
       }
     },
     {
       "id": "KYO_god_of_many_children",
       "title": "多子嗣之神的庇佑",
-      "x": 6.0,
-      "y": 5.0,
-      "cost": 7.0,
+      "x": 6,
+      "y": 5,
+      "cost": 7,
       "parents": [
         [
           "KYO_ship_be_like_frog",
@@ -833,16 +835,16 @@
       "raw": "focus = {\n\t\tid = KYO_god_of_many_children\n\t\ticon = GFX_goal_unknown\n\t\tcost = 7\n\t\tdynamic = yes\n\n\t\trelative_position_id = KYO_ship_be_like_frog\n\t\tx = -2\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_ship_be_like_frog \n\t\t\tfocus = KYO_war_god_ship\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\n\t\t\tadd_to_variable = { var = Shrine_navy_var_sortie_efficiency value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_transport_capacity value = -0.1 }  \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_speed_factor value = 0.1 } \n    \t\tKYO_Shrine_navy_scripte = yes \n\t\t\tcustom_effect_tooltip = shrine_navy_tt_sortie_efficiency\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_transport_capacity\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_speed_factor\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_ship_be_like_frog",
-        "x": -2.0,
-        "y": 1.0
+        "x": -2,
+        "y": 1
       }
     },
     {
       "id": "KYO_frog_power",
       "title": "蛙神神威显现",
-      "x": 10.0,
-      "y": 5.0,
-      "cost": 5.0,
+      "x": 10,
+      "y": 5,
+      "cost": 5,
       "parents": [
         [
           "KYO_ship_be_like_frog"
@@ -859,16 +861,16 @@
       "raw": "focus = {\n\t\tid = KYO_frog_power\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_ship_be_like_frog\n\t\tx = 2\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_ship_be_like_frog\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tadd_to_variable = { var = Shrine_navy_var_sortie_efficiency value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 }  \n    \t\tKYO_Shrine_navy_scripte = yes \n\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_sortie_efficiency\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_ship_be_like_frog",
-        "x": 2.0,
-        "y": 1.0
+        "x": 2,
+        "y": 1
       }
     },
     {
       "id": "KYO_shrine_power",
       "title": "守矢二柱·神威全开",
-      "x": 5.0,
-      "y": 6.0,
-      "cost": 7.0,
+      "x": 5,
+      "y": 6,
+      "cost": 7,
       "parents": [
         [
           "KYO_god_of_many_power"
@@ -888,16 +890,16 @@
       "raw": "focus = {\n\t\tid = KYO_shrine_power\n\t\ticon = GFX_goal_unknown\n\t\tcost = 7\n\n\t\trelative_position_id = KYO_god_of_many_power\n\t\tx = 1\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_god_of_many_power\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_god_of_many_children\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\n\t\t\tadd_to_variable = { var = Shrine_navy_var_sortie_efficiency value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_strike value = 0.1 }  \n\t\t\tadd_to_variable = { var = Shrine_navy_var_transport_capacity value = -0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_experience_gain_navy value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_spotting_chance value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_hit_chance value = 0.1 }  \n\t\t\tadd_to_variable = { var = Shrine_navy_var_navy_submarine_detection_factor value = 0.1 } \n\t\t\tadd_to_variable = { var = Shrine_navy_var_naval_speed_factor value = 0.1 } \n\n\t\t\tKYO_Shrine_navy_scripte = yes \n\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_transport_capacity\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_strike\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_hit_chance\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_sortie_efficiency\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_naval_speed_factor\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_experience_gain_navy\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_spotting_chance\n\t\t\tcustom_effect_tooltip = shrine_navy_tt_navy_sub_detection\n\t\t\t\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_god_of_many_power",
-        "x": 1.0,
-        "y": 1.0
+        "x": 1,
+        "y": 1
       }
     },
     {
       "id": "KYO_Tsukumogami_ship",
       "title": "百器夜行：与付丧神的合作",
-      "x": 12.0,
-      "y": 2.0,
-      "cost": 5.0,
+      "x": 12,
+      "y": 2,
+      "cost": 5,
       "parents": [
         [
           "KYO_start_the_naval_plan"
@@ -916,17 +918,17 @@
       "raw": "focus = {\n\t\tid = KYO_Tsukumogami_ship\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_start_the_naval_plan\n\t\tx = 3\n\t\ty = 2\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_start_the_naval_plan\n\t\t}\n\t\tmutually_exclusive = {\n\t\t\tfocus =  KYO_Moriya_Shrine_ship\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\n\t\t\t\n\n\t\t\tadd_ideas = KYO_Tsukumogami_idea\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\n\t\t\tunlock_decision_category_tooltip = Tsukumogami_ship_decision\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt \n\t\t\t\n\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_Tsukumogami_ship\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 1\n\t\t\t\tcategory = naval_mines\n\t\t\t}\n\t\t\tnavy_experience = 75\n\t\t\t\n\t\t\tadd_doctrine_cost_reduction = {\n\t\t\t\tname = KYO_Tsukumogami_ship\n\t\t\t\tcategory = naval_doctrine\n\t\t\t\tcost_reduction = 0.5\n\t\t\t\tuses = 1\n\t\t\t}\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_start_the_naval_plan",
-        "x": 3.0,
-        "y": 2.0
+        "x": 3,
+        "y": 2
       },
       "route": "tsukumogami"
     },
     {
       "id": "KYO_reiko_beat",
       "title": "让人不自觉跳动的雷鼓",
-      "x": 12.0,
-      "y": 5.0,
-      "cost": 5.0,
+      "x": 12,
+      "y": 5,
+      "cost": 5,
       "parents": [
         [
           "KYO_Tsukumogami_ship"
@@ -943,17 +945,17 @@
       "raw": "focus = {\n\t\tid = KYO_reiko_beat\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 0\n\t\ty = 3\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_reiko_beat\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 2\n\t\t\t\tcategory = dd_tech\n\t\t\t}\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_reiko\n\t\t\t# show_ideas_tooltip = gensokyo_reiko\n\t\t\t# set_global_flag = recruit_gensokyo_reiko\n\n\t\t\t\n\t\t\t\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_Tsukumogami_ship",
-        "x": 0.0,
-        "y": 3.0
+        "x": 0,
+        "y": 3
       },
       "route": "tsukumogami"
     },
     {
       "id": "KYO_kokoro_ways",
       "title": "能够控制群众情感的秦心",
-      "x": 15.0,
-      "y": 3.0,
-      "cost": 5.0,
+      "x": 15,
+      "y": 3,
+      "cost": 5,
       "parents": [
         [
           "KYO_Tsukumogami_ship"
@@ -970,17 +972,17 @@
       "raw": "focus = {\n\t\tid = KYO_kokoro_ways\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 3\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = {\n\t\t\tfactor = 5\n\t\t\tmodifier = {\n\t\t\t\tfactor = 10\n\t\t\t\tthreat > 0.50\n\t\t\t}\n\t\t}\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_kokoro_ways\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 2\n\t\t\t\tcategory = cv_tech\n\t\t\t}\n\n\t\t\tadd_manpower = 500000\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_kokoro\n\t\t\t# show_ideas_tooltip = gensokyo_kokoro\n\t\t\t# set_global_flag = recruit_gensokyo_kokoro\n\n\t\t\t\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_MANPOWER\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_Tsukumogami_ship",
-        "x": 3.0,
-        "y": 1.0
+        "x": 3,
+        "y": 1
       },
       "route": "tsukumogami"
     },
     {
       "id": "KYO_benben_strong",
       "title": "自称最强付丧神的弁弁",
-      "x": 13.0,
-      "y": 4.0,
-      "cost": 5.0,
+      "x": 13,
+      "y": 4,
+      "cost": 5,
       "parents": [
         [
           "KYO_Tsukumogami_ship"
@@ -997,17 +999,17 @@
       "raw": "focus = {\n\t\tid = KYO_benben_strong\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 1\n\t\ty = 2\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = { factor = 1 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_benben_strong\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 1\n\t\t\t\tcategory = ss_tech\n\t\t\t}\n\t\t\t\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_benben_strong\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 1\n\t\t\t\tcategory = cat_torpedoes\n\t\t\t}\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_benben\n\t\t\t# show_ideas_tooltip = gensokyo_benben\n\t\t\t# set_global_flag = recruit_gensokyo_benben\n\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_Tsukumogami_ship",
-        "x": 1.0,
-        "y": 2.0
+        "x": 1,
+        "y": 2
       },
       "route": "tsukumogami"
     },
     {
       "id": "KYO_yatsuhashi_wish",
       "title": "充满希望的付丧神八桥",
-      "x": 17.0,
-      "y": 4.0,
-      "cost": 5.0,
+      "x": 17,
+      "y": 4,
+      "cost": 5,
       "parents": [
         [
           "KYO_Tsukumogami_ship"
@@ -1024,17 +1026,17 @@
       "raw": "focus = {\n\t\tid = KYO_yatsuhashi_wish\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 5\n\t\ty = 2\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = {\n\t\t\tfactor = 5\n\t\t\tmodifier = {\n\t\t\t\tfactor = 10\n\t\t\t\tthreat > 0.50\n\t\t\t}\n\t\t}\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_yatsuhashi_wish\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 2\n\t\t\t\tcategory = bb_tech\n\t\t\t}\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_yatsuhashi\n\t\t\t# show_ideas_tooltip = gensokyo_yatsuhashi\n\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_Tsukumogami_ship",
-        "x": 5.0,
-        "y": 2.0
+        "x": 5,
+        "y": 2
       },
       "route": "tsukumogami"
     },
     {
       "id": "KYO_kogasa_iron",
       "title": "永远吓不到人的小伞",
-      "x": 18.0,
-      "y": 5.0,
-      "cost": 5.0,
+      "x": 18,
+      "y": 5,
+      "cost": 5,
       "parents": [
         [
           "KYO_Tsukumogami_ship"
@@ -1051,17 +1053,17 @@
       "raw": "focus = {\n\t\tid = KYO_kogasa_iron\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 6\n\t\ty = 3\n\n\t\tavailable = {\n\t\t\t\n\t\t}\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = { factor = 1 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tif = {\n\t\t\t\tlimit = { NOT = { is_special_project_completed = sp:sp_naval_torpedo_cruiser } }\n\t\t\t\t\n\t\t\t\tcomplete_special_project = {\n\t\t\t\t\tproject = sp:sp_naval_torpedo_cruiser\n\t\t\t\t\tshow_modifiers = no\n\t\t\t\t}\n\t\t\t\tadd_tech_bonus = {\n\t\t\t\t\tname = KYO_kogasa_iron\n\t\t\t\t\tbonus = 1\n\t\t\t\t\tuses = 1\n\t\t\t\t\t\n\t\t\t\t\tcategory = ca_tech\n\t\t\t\t}\n\t\t\t}\n\t\t\telse = {\n\t\t\t\tadd_tech_bonus = {\n\t\t\t\t\tname = KYO_kogasa_iron\n\t\t\t\t\tbonus = 0.75\n\t\t\t\t\tuses = 2\n\t\t\t\t\t\n\t\t\t\t\tcategory = ca_tech\n\t\t\t\t}\n\t\t\t}\n\t\t\t\n\t\t\tcreate_equipment_variant = {\n\n\t\t\t\t\tname = \"Ōyodo Class\"\n\t\t\t\t\ttype = ship_hull_torpedo_cruiser\n\t\t\t\t\t\n\t\t\t\t\tparent_version = 0\n\t\t\t\t\tmodules = {\n\t\t\t\t\t\tfixed_ship_battery_slot = ship_light_medium_battery_2\n\t\t\t\t\t\tfixed_ship_anti_air_slot = ship_anti_air_2\n\t\t\t\t\t\tfixed_ship_fire_control_system_slot = ship_fire_control_system_0\n\t\t\t\t\t\tfixed_ship_radar_slot = empty\n\t\t\t\t\t\tfixed_ship_engine_slot = cruiser_ship_engine_2\n\t\t\t\t\t\tfixed_ship_secondaries_slot = empty\n\t\t\t\t\t\tfixed_ship_armor_slot = ship_armor_cruiser_2\n\t\t\t\t\t\tfront_1_custom_slot = ship_anti_air_2\n\t\t\t\t\t\tmid_1_custom_slot = ship_torpedo_2\n\t\t\t\t\t\tmid_2_custom_slot = ship_torpedo_2\n\t\t\t\t\t\trear_1_custom_slot = ship_torpedo_2\n\t\t\t\t\t\trear_2_custom_slot = ship_anti_air_2\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t# custom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_kogasa\n\t\t\t# show_ideas_tooltip = gensokyo_kogasa\n\n\t\t\t\n\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_Tsukumogami_ship",
-        "x": 6.0,
-        "y": 3.0
+        "x": 6,
+        "y": 3
       },
       "route": "tsukumogami"
     },
     {
       "id": "KYO_shinmyoumaru_mallet",
       "title": "付丧神的能力来源万宝槌的持有者针妙丸",
-      "x": 15.0,
-      "y": 6.0,
-      "cost": 4.0,
+      "x": 15,
+      "y": 6,
+      "cost": 4,
       "parents": [
         [
           "KYO_reiko_beat"
@@ -1090,8 +1092,8 @@
       "raw": "focus = {\n\t\tid = KYO_shinmyoumaru_mallet\n\t\ticon = GFX_goal_unknown\n\t\tcost = 4\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 3\n\t\ty = 4\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_reiko_beat\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_benben_strong\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_kokoro_ways\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_yatsuhashi_wish\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_kogasa_iron\n\t\t}\n\n\t\tai_will_do = {\n\t\t\tfactor = 5\n\t\t\tmodifier = {\n\t\t\t\tfactor = 10\n\t\t\t\tthreat > 0.50\n\t\t\t}\n\t\t}\n\n\t\tcompletion_reward = {\n\t\t\t\n\n\t\t\tnavy_experience = 15\n\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_yatsuhashi_wish\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 2\n\t\t\t\tcategory = bb_tech\n\t\t\t}\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_shinmyoumaru\n\t\t\t# show_ideas_tooltip = gensokyo_shinmyoumaru\n\t\t\t# set_global_flag = recruit_gensokyo_shinmyoumaru\n\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_Tsukumogami_ship",
-        "x": 3.0,
-        "y": 4.0
+        "x": 3,
+        "y": 4
       },
       "route": "tsukumogami"
     }
@@ -1251,9 +1253,9 @@
     {
       "id": "KYO_Tsukumogami_ship",
       "title": "百器夜行：与付丧神的合作",
-      "x": 12.0,
-      "y": 2.0,
-      "cost": 5.0,
+      "x": 12,
+      "y": 2,
+      "cost": 5,
       "parents": [
         [
           "KYO_start_the_naval_plan"
@@ -1270,17 +1272,17 @@
       "raw": "focus = {\n\t\tid = KYO_Tsukumogami_ship\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_start_the_naval_plan\n\t\tx = 3\n\t\ty = 2\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_start_the_naval_plan\n\t\t}\n\t\tmutually_exclusive = {\n\t\t\tfocus =  KYO_Moriya_Shrine_ship\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\n\t\t\t\n\n\t\t\tadd_ideas = KYO_Tsukumogami_idea\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\n\t\t\tunlock_decision_category_tooltip = Tsukumogami_ship_decision\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt \n\t\t\t\n\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_Tsukumogami_ship\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 1\n\t\t\t\tcategory = naval_mines\n\t\t\t}\n\t\t\tnavy_experience = 75\n\t\t\t\n\t\t\tadd_doctrine_cost_reduction = {\n\t\t\t\tname = KYO_Tsukumogami_ship\n\t\t\t\tcategory = naval_doctrine\n\t\t\t\tcost_reduction = 0.5\n\t\t\t\tuses = 1\n\t\t\t}\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_start_the_naval_plan",
-        "x": 3.0,
-        "y": 2.0
+        "x": 3,
+        "y": 2
       },
       "route": "tsukumogami"
     },
     {
       "id": "KYO_reiko_beat",
       "title": "让人不自觉跳动的雷鼓",
-      "x": 12.0,
-      "y": 5.0,
-      "cost": 5.0,
+      "x": 12,
+      "y": 5,
+      "cost": 5,
       "parents": [
         [
           "KYO_Tsukumogami_ship"
@@ -1297,17 +1299,17 @@
       "raw": "focus = {\n\t\tid = KYO_reiko_beat\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 0\n\t\ty = 3\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = { factor = 10 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_reiko_beat\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 2\n\t\t\t\tcategory = dd_tech\n\t\t\t}\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_reiko\n\t\t\t# show_ideas_tooltip = gensokyo_reiko\n\t\t\t# set_global_flag = recruit_gensokyo_reiko\n\n\t\t\t\n\t\t\t\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_Tsukumogami_ship",
-        "x": 0.0,
-        "y": 3.0
+        "x": 0,
+        "y": 3
       },
       "route": "tsukumogami"
     },
     {
       "id": "KYO_kokoro_ways",
       "title": "能够控制群众情感的秦心",
-      "x": 15.0,
-      "y": 3.0,
-      "cost": 5.0,
+      "x": 15,
+      "y": 3,
+      "cost": 5,
       "parents": [
         [
           "KYO_Tsukumogami_ship"
@@ -1324,17 +1326,17 @@
       "raw": "focus = {\n\t\tid = KYO_kokoro_ways\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 3\n\t\ty = 1\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = {\n\t\t\tfactor = 5\n\t\t\tmodifier = {\n\t\t\t\tfactor = 10\n\t\t\t\tthreat > 0.50\n\t\t\t}\n\t\t}\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_kokoro_ways\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 2\n\t\t\t\tcategory = cv_tech\n\t\t\t}\n\n\t\t\tadd_manpower = 500000\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_kokoro\n\t\t\t# show_ideas_tooltip = gensokyo_kokoro\n\t\t\t# set_global_flag = recruit_gensokyo_kokoro\n\n\t\t\t\n\n\t\t}\n\t\tsearch_filters = {\n\t\t\tFOCUS_FILTER_MANPOWER\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_Tsukumogami_ship",
-        "x": 3.0,
-        "y": 1.0
+        "x": 3,
+        "y": 1
       },
       "route": "tsukumogami"
     },
     {
       "id": "KYO_benben_strong",
       "title": "自称最强付丧神的弁弁",
-      "x": 13.0,
-      "y": 4.0,
-      "cost": 5.0,
+      "x": 13,
+      "y": 4,
+      "cost": 5,
       "parents": [
         [
           "KYO_Tsukumogami_ship"
@@ -1351,17 +1353,17 @@
       "raw": "focus = {\n\t\tid = KYO_benben_strong\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 1\n\t\ty = 2\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = { factor = 1 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_benben_strong\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 1\n\t\t\t\tcategory = ss_tech\n\t\t\t}\n\t\t\t\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_benben_strong\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 1\n\t\t\t\tcategory = cat_torpedoes\n\t\t\t}\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_benben\n\t\t\t# show_ideas_tooltip = gensokyo_benben\n\t\t\t# set_global_flag = recruit_gensokyo_benben\n\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_Tsukumogami_ship",
-        "x": 1.0,
-        "y": 2.0
+        "x": 1,
+        "y": 2
       },
       "route": "tsukumogami"
     },
     {
       "id": "KYO_yatsuhashi_wish",
       "title": "充满希望的付丧神八桥",
-      "x": 17.0,
-      "y": 4.0,
-      "cost": 5.0,
+      "x": 17,
+      "y": 4,
+      "cost": 5,
       "parents": [
         [
           "KYO_Tsukumogami_ship"
@@ -1378,17 +1380,17 @@
       "raw": "focus = {\n\t\tid = KYO_yatsuhashi_wish\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 5\n\t\ty = 2\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = {\n\t\t\tfactor = 5\n\t\t\tmodifier = {\n\t\t\t\tfactor = 10\n\t\t\t\tthreat > 0.50\n\t\t\t}\n\t\t}\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_yatsuhashi_wish\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 2\n\t\t\t\tcategory = bb_tech\n\t\t\t}\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_yatsuhashi\n\t\t\t# show_ideas_tooltip = gensokyo_yatsuhashi\n\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_Tsukumogami_ship",
-        "x": 5.0,
-        "y": 2.0
+        "x": 5,
+        "y": 2
       },
       "route": "tsukumogami"
     },
     {
       "id": "KYO_kogasa_iron",
       "title": "永远吓不到人的小伞",
-      "x": 18.0,
-      "y": 5.0,
-      "cost": 5.0,
+      "x": 18,
+      "y": 5,
+      "cost": 5,
       "parents": [
         [
           "KYO_Tsukumogami_ship"
@@ -1405,17 +1407,17 @@
       "raw": "focus = {\n\t\tid = KYO_kogasa_iron\n\t\ticon = GFX_goal_unknown\n\t\tcost = 5\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 6\n\t\ty = 3\n\n\t\tavailable = {\n\t\t\t\n\t\t}\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_Tsukumogami_ship\n\t\t}\n\n\t\tai_will_do = { factor = 1 }\n\n\t\tcompletion_reward = {\n\t\t\t\n\t\t\tnavy_experience = 15\n\t\t\tif = {\n\t\t\t\tlimit = { NOT = { is_special_project_completed = sp:sp_naval_torpedo_cruiser } }\n\t\t\t\t\n\t\t\t\tcomplete_special_project = {\n\t\t\t\t\tproject = sp:sp_naval_torpedo_cruiser\n\t\t\t\t\tshow_modifiers = no\n\t\t\t\t}\n\t\t\t\tadd_tech_bonus = {\n\t\t\t\t\tname = KYO_kogasa_iron\n\t\t\t\t\tbonus = 1\n\t\t\t\t\tuses = 1\n\t\t\t\t\t\n\t\t\t\t\tcategory = ca_tech\n\t\t\t\t}\n\t\t\t}\n\t\t\telse = {\n\t\t\t\tadd_tech_bonus = {\n\t\t\t\t\tname = KYO_kogasa_iron\n\t\t\t\t\tbonus = 0.75\n\t\t\t\t\tuses = 2\n\t\t\t\t\t\n\t\t\t\t\tcategory = ca_tech\n\t\t\t\t}\n\t\t\t}\n\t\t\t\n\t\t\tcreate_equipment_variant = {\n\n\t\t\t\t\tname = \"Ōyodo Class\"\n\t\t\t\t\ttype = ship_hull_torpedo_cruiser\n\t\t\t\t\t\n\t\t\t\t\tparent_version = 0\n\t\t\t\t\tmodules = {\n\t\t\t\t\t\tfixed_ship_battery_slot = ship_light_medium_battery_2\n\t\t\t\t\t\tfixed_ship_anti_air_slot = ship_anti_air_2\n\t\t\t\t\t\tfixed_ship_fire_control_system_slot = ship_fire_control_system_0\n\t\t\t\t\t\tfixed_ship_radar_slot = empty\n\t\t\t\t\t\tfixed_ship_engine_slot = cruiser_ship_engine_2\n\t\t\t\t\t\tfixed_ship_secondaries_slot = empty\n\t\t\t\t\t\tfixed_ship_armor_slot = ship_armor_cruiser_2\n\t\t\t\t\t\tfront_1_custom_slot = ship_anti_air_2\n\t\t\t\t\t\tmid_1_custom_slot = ship_torpedo_2\n\t\t\t\t\t\tmid_2_custom_slot = ship_torpedo_2\n\t\t\t\t\t\trear_1_custom_slot = ship_torpedo_2\n\t\t\t\t\t\trear_2_custom_slot = ship_anti_air_2\n\t\t\t\t\t}\n\t\t\t\t}\n\n\t\t\t# custom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_kogasa\n\t\t\t# show_ideas_tooltip = gensokyo_kogasa\n\n\t\t\t\n\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_Tsukumogami_ship",
-        "x": 6.0,
-        "y": 3.0
+        "x": 6,
+        "y": 3
       },
       "route": "tsukumogami"
     },
     {
       "id": "KYO_shinmyoumaru_mallet",
       "title": "付丧神的能力来源万宝槌的持有者针妙丸",
-      "x": 15.0,
-      "y": 6.0,
-      "cost": 4.0,
+      "x": 15,
+      "y": 6,
+      "cost": 4,
       "parents": [
         [
           "KYO_reiko_beat"
@@ -1444,8 +1446,8 @@
       "raw": "focus = {\n\t\tid = KYO_shinmyoumaru_mallet\n\t\ticon = GFX_goal_unknown\n\t\tcost = 4\n\n\t\trelative_position_id = KYO_Tsukumogami_ship\n\t\tx = 3\n\t\ty = 4\n\n\t\tprerequisite = {\n\t\t\tfocus = KYO_reiko_beat\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_benben_strong\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_kokoro_ways\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_yatsuhashi_wish\n\t\t}\n\t\tprerequisite = {\n\t\t\tfocus = KYO_kogasa_iron\n\t\t}\n\n\t\tai_will_do = {\n\t\t\tfactor = 5\n\t\t\tmodifier = {\n\t\t\t\tfactor = 10\n\t\t\t\tthreat > 0.50\n\t\t\t}\n\t\t}\n\n\t\tcompletion_reward = {\n\t\t\t\n\n\t\t\tnavy_experience = 15\n\n\t\t\tadd_tech_bonus = {\n\t\t\t\tname = KYO_yatsuhashi_wish\n\t\t\t\tbonus = 1\n\t\t\t\tuses = 2\n\t\t\t\tcategory = bb_tech\n\t\t\t}\n\n\t\t\tcustom_effect_tooltip = generic_skip_one_line_tt\n\t\t\t# custom_effect_tooltip = available_political_advisor\n\t\t\t# show_unit_leaders_tooltip = gensokyo_shinmyoumaru\n\t\t\t# show_ideas_tooltip = gensokyo_shinmyoumaru\n\t\t\t# set_global_flag = recruit_gensokyo_shinmyoumaru\n\n\t\t\t\n\t\t\t\n\t\t}\n\t\tsearch_filters = {\n\t\t\t\n\t\t\tFOCUS_FILTER_NAVY_XP\n\t\t\tFOCUS_FILTER_POLITICAL\n\t\t\tFOCUS_FILTER_RESEARCH\n\t\t}\n\t}",
       "originalRelative": {
         "reference": "KYO_Tsukumogami_ship",
-        "x": 3.0,
-        "y": 4.0
+        "x": 3,
+        "y": 4
       },
       "route": "tsukumogami"
     }
@@ -1540,5 +1542,6 @@
   "extensionNote": "付丧神线按当前工作区导入，保留此前守矢草稿；共同入口已在游戏源码追加幻想乡联合舰队每日海军经验 +0.10，原只读基线保留历史状态。",
   "Renko_resetId": "moriya_plan_20260916_v1",
   "Renko_resetNote": "载入已确认的 13 节点守矢规划；历史源码基线保留。新缓存命名空间保留旧草稿，不自动覆盖旧浏览器缓存。",
-  "Renko_planNote": "守矢中轴 x=5；纵向间距 1，独占舰艇国策前置跨度 2；仅三个追随节点互斥。付丧神内容和坐标保留，仅移除与守矢入口的互斥。"
+  "Renko_planNote": "守矢中轴 x=5；纵向间距 1，独占舰艇国策前置跨度 2；仅三个追随节点互斥。付丧神内容和坐标保留，仅移除与守矢入口的互斥。",
+  "updatedAt": "2026-09-16T10:49:10.964Z"
 }
